@@ -5,7 +5,9 @@ from urllib.error import HTTPError
 urls=[
  "https://bop.diba.cat/anteriors/2026-10-28",
  "https://bop.diba.cat/anteriors/2026-10-24",
- "https://bop.diba.cat/anunci/ver-pdf/3872372",
+ "https://bop.diba.cat/anteriors",
+ "https://bop.diba.cat/anunci/4007735/acord-de-la-junta-electoral-de-zona-de-l-hospitalet-de-llobregat-junta-electoral-de-zona-de-l-hospitalet-de-llobregat",
+ "https://bop.diba.cat/anunci/ver-pdf/4007735",
  "https://www.ddgi.cat/bop/mostra-bop/2026-10-26/2026/206",
 ]
 for u in urls:
@@ -22,6 +24,7 @@ for u in urls:
    print("CARD HTML",str(card)[:5500],flush=True)
   for a in soup.select('a[href*=".pdf"]')[:3]:
    print("PDF ANCHOR",str(a.parent)[:2600],flush=True)
+  print("DOC LINKS",[(a.get("href"),a.get_text(" ",strip=True)[:70]) for a in soup.select("a[href]") if "pdf" in a.get("href","")][:8],flush=True)
   print("PAGINATION",[(a.get("href"),a.get_text(" ",strip=True)[:50]) for a in soup.select("a[href]") if any(x in a.get("href","") for x in ("/2","/3","/4","pagination"))][-20:],flush=True)
  except HTTPError as e:print("HTTP ERR",e.code,flush=True)
  except Exception as e:print("ERROR",type(e).__name__,str(e),flush=True)
