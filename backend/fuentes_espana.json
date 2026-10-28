@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catálogo 50 provincias y Ceuta/Melilla: 7 BOP oficiales auditados (Valencia, Alicante, Castellón, Tarragona, Barcelona, Girona y Huesca), BOE nacional y CIDO 4 provincias. El BOP Lleida no esta conectado; CIDO no equivale a BOP. No declarar cobertura total antes de integracion y prueba.",
+  "note": "Catálogo territorial 50 provincias y Ceuta/Melilla. Nueve BOP provinciales auditados (Valencia, Alicante, Castellón, Tarragona, Barcelona, Girona, Huesca, Teruel y Zaragoza), BOE nacional y cuatro fuentes CIDO. BOP Lleida todavía sin cobertura directa. La publicación de una provincia requiere superar auditoría antes de fusionar la rama.",
   "nationalSources": [
     {
       "code": "VA",
@@ -128,6 +128,16 @@
       "feed": "teruel_bop.json",
       "state": "active",
       "scope": "BOP Teruel, 30 dias auditados con paginacion XPages y anuncios individuales originales oficiales"
+    },
+    {
+      "code": "ZA",
+      "territory": "50",
+      "kind": "bop",
+      "name": "BOP Zaragoza",
+      "portal": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
+      "feed": "zaragoza_bop.json",
+      "state": "active",
+      "scope": "Boletin provincial de Zaragoza completo a través de Open Data oficial Gobierno de Aragón; todas las secciones y 30 dias auditados; PDF original"
     }
   ],
   "communities": [
@@ -389,7 +399,9 @@
       "community": "AR",
       "communityName": "Aragón",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "bopState": "active",
+      "coverageKind": "BOP"
     },
     {
       "ine": "33",
