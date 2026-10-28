@@ -32,6 +32,19 @@ with sync_playwright() as p:
             "spanish_locale_selected": page.locator("span.ui-state-disabled:has-text('CAS')").count() > 0,
         }
         print("CASTELLANO_DIAGNOSTICO=" + json.dumps(report, ensure_ascii=False), flush=True)
+        ficha = page.locator("#list_content .ui-datagrid-column").first.inner_text()
+        from scan import META, extract_index
+        lectura = "OK"
+        try:
+            datos, _ = extract_index(page.content())
+            lectura = {"fichas": len(datos), "primer_id": datos[0]["id"] if datos else None}
+        except Exception as err:
+            lectura = {"error": str(err)}
+        print("CASTELLANO_FICHA=" + json.dumps({
+            "text": ficha[:750],
+            "meta_match": bool(META.search(ficha)),
+            "extraccion": lectura
+        }, ensure_ascii=False), flush=True)
         if not before or not after:
             raise RuntimeError("Los titulos del BOP no se cargaron")
         if not report["changed"] or not report["spanish_title"]:
