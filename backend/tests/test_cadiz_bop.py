@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from cadiz_bop import (
-    HOME,PROVINCE,ProvincialCoverageError,
+    HOME,PROVINCE,ProvincialCoverageError,parse_web_date,
     validate_doc,validate_full_pdf,available_issues,parse_issue,audit
 )
 
@@ -30,6 +30,11 @@ def html():
     """
 
 class CadizTests(unittest.TestCase):
+    def test_date_can_be_in_spanish_or_english(self):
+        self.assertEqual(parse_web_date("28 de octubre de 2026"),date(2026,10,28))
+        self.assertEqual(parse_web_date("Wed Oct 28 08:00:00 CET 2026"),date(2026,10,28))
+        with self.assertRaises(ProvincialCoverageError):parse_web_date("sin fecha")
+
     def test_original_pdf_links_strict_and_fragment(self):
         self.assertTrue(validate_doc(DOC))
         self.assertTrue(validate_full_pdf(FULL))
@@ -67,6 +72,10 @@ class CadizTests(unittest.TestCase):
         latest=208
         root="<h2>Boletín número 208 del año 2026</h2>"
         root+="".join(f"<a href='/boletin/Boletin-numero-{n}-del-ano-2026/'>BOP</a>" for n in range(169,209))
+        root+="".join(
+            f"<div class='resumenEventos'><h3><a href='/boletin/Boletin-numero-{n}-del-ano-2026/'>BOP</a></h3>"
+            f"<p class='fechaEvento'>{(date(2026,10,28)-timedelta(days=208-n)).strftime('%a %b %d 08:00:00 CEST %Y')}</p></div>"
+            for n in range(169,209))
         class Dummy:
             def close(self):pass
         class R:
