@@ -38,6 +38,8 @@ class CadizTests(unittest.TestCase):
 
     def test_original_pdf_links_strict_and_fragment(self):
         self.assertTrue(validate_doc(DOC))
+        self.assertTrue(validate_doc(DOC.split("#")[0]))
+        self.assertFalse(validate_doc(DOC.replace("page=7","page=xyz")))
         self.assertTrue(validate_full_pdf(FULL))
         self.assertFalse(validate_doc(FULL))
         self.assertFalse(validate_doc(DOC.replace("www.bopcadiz.es","false.invalid")))
@@ -54,6 +56,13 @@ class CadizTests(unittest.TestCase):
         self.assertEqual(n["id"],"CA-2026-354710")
         self.assertIn("Alcalá del Valle",n["entity"])
         self.assertEqual(n["url"],DOC)
+    def test_older_issues_allow_bold_and_pdf_without_page_anchor(self):
+        html_issue=html().replace("<strong>250.620.- Consejería de Industria.</strong>", "<b>250.620.- Consejería de Industria.</b>")
+        html_issue=html_issue.replace("#page=7", "")
+        n=parse_issue(html_issue,2026,208)
+        self.assertEqual(n["count"],2)
+        self.assertEqual(n["candidates"][0]["url"],DOC.split("#")[0])
+
     def test_rejects_mismatched_edition_and_dates(self):
         with self.assertRaises(ProvincialCoverageError):
             parse_issue(html(),2026,207)
