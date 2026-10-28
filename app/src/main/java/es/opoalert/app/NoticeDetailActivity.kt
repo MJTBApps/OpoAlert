@@ -210,12 +210,16 @@ class NoticeDetailActivity : Activity() {
             "Castellón" -> "Boletín Oficial de la Provincia de Castellón"
             "España (BOE)" -> "Boletín Oficial del Estado (BOE)"
             "Tarragona (BOP)" -> "Boletín Oficial de la Provincia de Tarragona"
+            "Barcelona (BOP)" -> "Boletín Oficial de la Provincia de Barcelona"
+            "Girona (BOP)" -> "Boletín Oficial de la Provincia de Girona"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
         }
         card.addView(text("▤  " + province, 13f, "#203856", true))
         val reference = if (notice.id.startsWith("CIDO"))
             "Actualización " + notice.date + "   ·   Ref. " + notice.id
+        else if (notice.id.startsWith("BA-"))
+            "BOP Barcelona · " + notice.date + "   ·   Registro " + notice.id
         else (if (notice.province == Province.BOE.label) "BOE n.º " else "BOP n.º ") +
             notice.bulletin + "   ·   Registro " + notice.id
         card.addView(text(reference, 11f, "#60748C").apply {
