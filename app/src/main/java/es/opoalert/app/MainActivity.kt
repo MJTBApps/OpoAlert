@@ -20,6 +20,8 @@ import android.view.Gravity
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.FrameLayout
+import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.PopupMenu
 import android.widget.ProgressBar
@@ -31,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 0.8.2: the notices are the main content. The compact header only presents
+ * OpoAlert 0.9.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -54,6 +56,8 @@ class MainActivity : Activity() {
     private var selectedFilter = FILTER_ALL
     private var notices: List<Notice> = emptyList()
     private var loading = false
+    private lateinit var demoAds: DemoAds
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -76,6 +80,9 @@ class MainActivity : Activity() {
         selectedTab = savedInstanceState?.getString("selectedTab") ?: TAB_ALL
         selectedFilter = savedInstanceState?.getString("selectedFilter") ?: FILTER_ALL
 
+        demoAds = DemoAds(this) {
+            if (!isFinishing && !isDestroyed) render(keepScroll = true)
+        }
         Notifications.createChannel(this)
         BopWorker.schedule(this)
         refreshButton.setOnClickListener { refresh() }
@@ -98,7 +105,9 @@ class MainActivity : Activity() {
 
         // Android 13+ requests the system notification permission once on first launch.
         // On earlier Android versions, notification channels are enabled by default.
-        window.decorView.post { requestNotificationsOnce() }
+        window.decorView.post {
+            if (!requestNotificationsOnce()) demoAds.start()
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -107,17 +116,19 @@ class MainActivity : Activity() {
         super.onSaveInstanceState(outState)
     }
 
-    private fun requestNotificationsOnce() {
+    /** Devuelve true cuando el sistema abre el dialogo de notificaciones. */
+    private fun requestNotificationsOnce(): Boolean {
         val prefs = getSharedPreferences(UI_PREFS, MODE_PRIVATE)
-        if (prefs.getBoolean(NOTIFICATIONS_PROMPTED, false)) return
+        if (prefs.getBoolean(NOTIFICATIONS_PROMPTED, false)) return false
         prefs.edit().putBoolean(NOTIFICATIONS_PROMPTED, true).apply()
         if (Build.VERSION.SDK_INT >= 33 &&
             checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
         ) {
             requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), NOTIFICATION_PERMISSION_REQUEST)
-        } else {
-            Repository.setAlertsEnabled(this, true)
+            return true
         }
+        Repository.setAlertsEnabled(this, true)
+        return false
     }
 
     override fun onRequestPermissionsResult(
@@ -130,6 +141,7 @@ class MainActivity : Activity() {
             if (!granted) {
                 Toast.makeText(this, "Avisos desactivados. Puedes activarlos en Más opciones.", Toast.LENGTH_LONG).show()
             }
+            demoAds.start()
         }
     }
 
@@ -139,6 +151,7 @@ class MainActivity : Activity() {
         val enabled = Repository.alertsEnabled(this) && notificationPermissionGranted()
         menu.menu.add(0, 1, 0, if (enabled) "Desactivar avisos" else "Activar avisos")
         menu.menu.add(0, 2, 1, "Acerca de OpoAlert")
+        menu.menu.add(0, 3, 2, "Privacidad y publicidad de prueba")
         menu.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 1 -> {
@@ -159,12 +172,16 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 0.8.2")
+                        .setTitle("OpoAlert 0.9.0 · Pruebas")
                         .setMessage("Convocatorias de empleo público del BOP de Valencia. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
                         .setPositiveButton("Entendido", null)
                         .show()
+                    true
+                }
+                3 -> {
+                    demoAds.showPrivacyOptions()
                     true
                 }
                 else -> false
@@ -361,14 +378,8 @@ class MainActivity : Activity() {
                 (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
                 (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
             val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
-            // La busqueda ignora las tildes y las mayusculas, no altera el texto oficial.
-            val matches = SearchText.matchesNormalized(
-                query,
-                item.title,
-                NoticeText.headline(item.title),
-                item.entity,
-                item.id
-            )
+            val matches = SearchText.matchesNormalized(query,
+                item.title, NoticeText.headline(item.title), item.entity, item.id)
             correctType && correctDate && matches
         }
         resultsText.text = if (selectedTab == TAB_FAVORITES)
@@ -385,13 +396,55 @@ class MainActivity : Activity() {
                 setPadding(dp(20), dp(34), dp(20), dp(34))
             })
         } else {
-            for (item in shown) addCard(item, item.id in favoriteIds)
+            for ((index, item) in shown.withIndex()) {
+                addCard(item, item.id in favoriteIds)
+                if (selectedTab == TAB_ALL && index == 3) addDemoBannerIfAvailable()
+            }
             val note = text("Consulta siempre las bases oficiales y los plazos de inscripción.", 10.5f, "#94A3B8")
             note.gravity = Gravity.CENTER
             note.setPadding(dp(7), dp(15), dp(7), 0)
             list.addView(note)
         }
         if (keepScroll) scroll.post { scroll.scrollTo(0, oldScroll) }
+    }
+
+    private fun addDemoBannerIfAvailable() {
+        val ad = demoAds.availableBanner() ?: return
+        val block = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(dp(6), dp(10), dp(6), dp(18))
+        }
+        block.addView(text("PUBLICIDAD · ANUNCIO DE PRUEBA", 10f, "#64748B").apply {
+            gravity = Gravity.CENTER
+            setPadding(0, 0, 0, dp(8))
+        })
+        val slot = FrameLayout(this).apply { minimumHeight = dp(50) }
+        (ad.parent as? ViewGroup)?.removeView(ad)
+        slot.addView(ad, FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.WRAP_CONTENT,
+            FrameLayout.LayoutParams.WRAP_CONTENT,
+            Gravity.CENTER
+        ))
+        block.addView(slot, LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.MATCH_PARENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        ))
+        list.addView(block)
+    }
+
+    override fun onPause() {
+        if (::demoAds.isInitialized) demoAds.pause()
+        super.onPause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (::demoAds.isInitialized) demoAds.resume()
+    }
+
+    override fun onDestroy() {
+        if (::demoAds.isInitialized) demoAds.destroy()
+        super.onDestroy()
     }
 
     private fun addCard(item: Notice, favorite: Boolean) {

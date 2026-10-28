@@ -1,4 +1,4 @@
-name: OpoAlert - Crear APK Android 0.8.2
+name: OpoAlert - Crear APK Android 0.9.0
 
 on:
   workflow_dispatch:
@@ -37,28 +37,30 @@ jobs:
           test -n "$SDKMANAGER"
           "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
           test -d "$ANDROID_HOME/platforms/android-35"
-      - name: Validar estructura de interfaz 0.8.2
+      - name: Validar estructura de interfaz 0.9.0
         run: python3 scripts/test_ui_080.py
       - name: Configurar Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
-      - name: Probar buscador y compilar APK Android
+      - name: Compilar APK Android
         run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug
       - name: Verificar APK
         run: |
           test -s app/build/outputs/apk/debug/app-debug.apk
-          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-0.8.2.apk
-          unzip -t OpoAlert-0.8.2.apk > /dev/null
-          sha256sum OpoAlert-0.8.2.apk
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-0.9.0.apk
+          unzip -t OpoAlert-0.9.0.apk > /dev/null
+          sha256sum OpoAlert-0.9.0.apk
       - name: Guardar APK descargable como artefacto
         uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-Android-0.8.2
-          path: OpoAlert-0.8.2.apk
+          name: OpoAlert-Android-0.9.0
+          path: OpoAlert-0.9.0.apk
           if-no-files-found: error
           retention-days: 30
-      - name: Indicar ubicacion de APK verificada
+      # GitHub Actions entrega el APK en Artefactos. Crear Releases mediante
+      # GITHUB_TOKEN puede dar HTTP 403 cuando el repositorio restringe esa API.
+      - name: Indicar ubicacion del APK compilado
         run: |
-          echo "### OpoAlert 0.8.2" >> "$GITHUB_STEP_SUMMARY"
-          echo "APK disponible en Artefactos: OpoAlert-Android-0.8.2 (30 dias)." >> "$GITHUB_STEP_SUMMARY"
+          echo "### OpoAlert 0.9.0" >> "$GITHUB_STEP_SUMMARY"
+          echo "APK verificada y disponible en **Artifacts** de esta ejecucion: OpoAlert-Android-0.9.0" >> "$GITHUB_STEP_SUMMARY"

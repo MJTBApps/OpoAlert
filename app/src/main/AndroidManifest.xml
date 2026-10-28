@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OpoAlert"
         android:usesCleartextTraffic="false">
+        <!-- ID oficial de ejemplo Google AdMob, SOLO pruebas. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
