@@ -33,8 +33,8 @@ object Repository {
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putBoolean(ALERTS, enabled).apply()
     }
 
-    fun feedUrl(ctx: Context): String =
-        ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(FEED_URL, DEFAULT_FEED_URL) ?: DEFAULT_FEED_URL
+    // The feed belongs to OpoAlert; end users do not need to configure a URL.
+    fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL
 
     fun setFeedUrl(ctx: Context, address: String) {
         val normalized = address.trim()
@@ -42,7 +42,7 @@ object Repository {
             throw IllegalArgumentException("La direccion debe empezar por https://")
         }
         val prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        if (prefs.getString(FEED_URL, DEFAULT_FEED_URL) != normalized) {
+        if (prefs.getString(FEED_URL, "") != normalized) {
             prefs.edit().putString(FEED_URL, normalized)
                 .putBoolean(REMOTE_INITIALIZED, false).apply()
         }

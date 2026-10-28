@@ -2,185 +2,230 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7F9FC"
+    android:background="#F6F8FC"
     android:orientation="vertical">
 
+    <!-- Compact fixed toolbar: real icons with 44dp touch targets. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingStart="20dp"
+        android:paddingStart="18dp"
         android:paddingEnd="14dp"
-        android:paddingTop="22dp"
-        android:paddingBottom="10dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:includeFontPadding="false"
                 android:text="OpoAlert"
-                android:textColor="#0F172A"
-                android:textSize="29sp"
+                android:textColor="#101D36"
+                android:textSize="25sp"
                 android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Oportunidades de empleo público"
-                android:textColor="#64748B"
-                android:textSize="13sp" />
+                android:layout_marginTop="2dp"
+                android:includeFontPadding="false"
+                android:text="Empleo público · BOP Valencia"
+                android:textColor="#718097"
+                android:textSize="11sp" />
         </LinearLayout>
 
-        <Button
+        <ImageButton
             android:id="@+id/refreshButton"
-            android:layout_width="58dp"
-            android:layout_height="48dp"
-            android:text="↻"
-            android:textAllCaps="false"
-            android:textSize="28sp"
-            android:textColor="#1D4ED8"
-            android:contentDescription="Actualizar boletín" />
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_toolbar_action"
+            android:contentDescription="Actualizar convocatorias"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_refresh"
+            android:tint="#1D4ED8" />
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Más opciones"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_more_vert"
+            android:tint="#64748B" />
     </LinearLayout>
 
+    <!-- A single concise source card replaces four tall configuration blocks. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/bg_blue_card"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_summary_compact"
         android:orientation="vertical"
-        android:padding="18dp">
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BOP DE VALENCIA"
-            android:textColor="#1E40AF"
-            android:textStyle="bold"
-            android:textSize="12sp" />
-        <TextView
-            android:id="@+id/countText"
+            android:includeFontPadding="false"
+            android:text="BOP DE VALENCIA · ÚLTIMOS 30 DÍAS"
+            android:textColor="#2452A4"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            android:text="0 convocatorias guardadas"
-            android:textColor="#0F172A"
-            android:textStyle="bold"
-            android:textSize="22sp" />
-        <TextView
-            android:id="@+id/favoritesCountText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="★ 0 favoritas"
-            android:textColor="#92400E"
-            android:textStyle="bold"
-            android:textSize="13sp" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/countText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textColor="#111E38"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:text="convocatorias"
+                android:textColor="#233655"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/favoritesCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="★ 0 favoritas"
+                android:textColor="#97632C"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/statusText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:text="Preparando primera consulta…"
-            android:textColor="#475569"
-            android:textSize="12sp" />
-    </LinearLayout>
+            android:layout_marginTop="6dp"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="Conectando con el BOP…"
+            android:textColor="#475A78"
+            android:textSize="11sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="12dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Notificaciones de novedades"
-            android:textColor="#0F172A"
-            android:textSize="13sp"
-            android:textStyle="bold" />
-        <Switch
-            android:id="@+id/alertsSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:contentDescription="Activar avisos" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:orientation="vertical">
-        <Button
-            android:id="@+id/feedSettingsButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fuente de datos · configurar lector completo"
-            android:textAllCaps="false"
-            android:textSize="12sp" />
         <TextView
             android:id="@+id/sourceInfoText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:paddingBottom="6dp"
-            android:text="Fuente: portada parcial"
-            android:textSize="11sp"
-            android:textColor="#64748B" />
-        <Switch
-            android:id="@+id/recentOnlySwitch"
+            android:layout_marginTop="3dp"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="Comprobando boletín y anuncios"
+            android:textColor="#475A78"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/historyInfoText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="Filtrar a ultimos 30 dias (datos disponibles)"
-            android:textSize="12sp"
-            android:textColor="#0F172A" />
+            android:layout_marginTop="3dp"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:text="Histórico pendiente de comprobar"
+            android:textColor="#316B5A"
+            android:textSize="11sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/tabsRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
         android:layout_marginTop="10dp"
         android:orientation="horizontal" />
 
     <EditText
         android:id="@+id/searchInput"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/bg_search"
         android:hint="Buscar puesto, entidad o registro…"
+        android:imeOptions="actionSearch"
         android:inputType="text"
         android:maxLines="1"
-        android:paddingStart="15dp"
-        android:paddingEnd="15dp"
-        android:textColor="#0F172A"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:singleLine="true"
+        android:textColor="#101D36"
         android:textColorHint="#94A3B8"
-        android:textSize="14sp" />
+        android:textSize="13sp" />
 
     <LinearLayout
         android:id="@+id/filterRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="9dp"
         android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/resultsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:text="CONVOCATORIAS"
+            android:textColor="#475569"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Más recientes primero"
+            android:textColor="#9AA8BB"
+            android:textSize="10sp" />
+    </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -190,47 +235,23 @@
         android:indeterminate="true"
         android:visibility="gone" />
 
+    <!-- The list gets all remaining screen height. -->
     <ScrollView
         android:id="@+id/resultsScroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true"
-        android:clipToPadding="false">
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
         <LinearLayout
+            android:id="@+id/listContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="14dp">
-            <TextView
-                android:id="@+id/resultsText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:text="CONVOCATORIAS"
-                android:textColor="#64748B"
-                android:textStyle="bold"
-                android:textSize="11sp" />
-            <LinearLayout
-                android:id="@+id/listContainer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </LinearLayout>
+            android:paddingStart="18dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="28dp" />
     </ScrollView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="7dp"
-        android:paddingBottom="9dp"
-        android:text="Fuente: bop.dival.es · Comprueba siempre los plazos oficiales"
-        android:textColor="#64748B"
-        android:gravity="center"
-        android:textSize="10sp" />
 </LinearLayout>

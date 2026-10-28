@@ -81,7 +81,7 @@ object RemoteFeedReader {
         else coverage.optString("bulletin", "?")
         val pages = coverage.optInt("pagesVisited", 0)
         val announcements = coverage.optInt("announcementsRead", 0)
-        val status = "BOP $bulletin: $announcements anuncios en $pages paginas · Feed actualizado $checked"
+        val status = "BOP $bulletin · $announcements anuncios · $pages páginas"
         val historyStatus = if (history?.optBoolean("complete", false) == true) {
             "Historico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
         } else {

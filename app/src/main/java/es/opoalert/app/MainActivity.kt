@@ -12,33 +12,38 @@ import android.graphics.drawable.GradientDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.text.Editable
+import android.text.TextUtils
 import android.text.TextWatcher
 import android.view.Gravity
 import android.view.View
-import android.widget.Button
-import android.widget.Switch
-import java.util.Calendar
-import java.text.SimpleDateFormat
-import java.util.Locale
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.PopupMenu
 import android.widget.ProgressBar
 import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
+/**
+ * OpoAlert 0.8: the notices are the main content. The compact header only presents
+ * verified source metadata; all advanced settings are off the home screen.
+ */
 class MainActivity : Activity() {
     private lateinit var list: LinearLayout
     private lateinit var countText: TextView
     private lateinit var favoritesCountText: TextView
     private lateinit var statusText: TextView
-    private lateinit var progressBar: ProgressBar
-    private lateinit var refreshButton: Button
-    private lateinit var alertsSwitch: Switch
-    private lateinit var recentOnlySwitch: Switch
-    private lateinit var feedSettingsButton: Button
     private lateinit var sourceInfoText: TextView
+    private lateinit var historyInfoText: TextView
+    private lateinit var progressBar: ProgressBar
+    private lateinit var refreshButton: ImageButton
+    private lateinit var menuButton: ImageButton
     private lateinit var searchInput: EditText
     private lateinit var tabsRow: LinearLayout
     private lateinit var filterRow: LinearLayout
@@ -57,12 +62,11 @@ class MainActivity : Activity() {
         countText = findViewById(R.id.countText)
         favoritesCountText = findViewById(R.id.favoritesCountText)
         statusText = findViewById(R.id.statusText)
+        sourceInfoText = findViewById(R.id.sourceInfoText)
+        historyInfoText = findViewById(R.id.historyInfoText)
         progressBar = findViewById(R.id.progressBar)
         refreshButton = findViewById(R.id.refreshButton)
-        alertsSwitch = findViewById(R.id.alertsSwitch)
-        recentOnlySwitch = findViewById(R.id.recentOnlySwitch)
-        feedSettingsButton = findViewById(R.id.feedSettingsButton)
-        sourceInfoText = findViewById(R.id.sourceInfoText)
+        menuButton = findViewById(R.id.menuButton)
         searchInput = findViewById(R.id.searchInput)
         tabsRow = findViewById(R.id.tabsRow)
         filterRow = findViewById(R.id.filterRow)
@@ -74,31 +78,27 @@ class MainActivity : Activity() {
 
         Notifications.createChannel(this)
         BopWorker.schedule(this)
-        alertsSwitch.isChecked = Repository.alertsEnabled(this)
-        alertsSwitch.setOnCheckedChangeListener { _, enabled ->
-            Repository.setAlertsEnabled(this, enabled)
-            if (enabled && Build.VERSION.SDK_INT >= 33 &&
-                checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
-            ) {
-                requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 333)
-            } else if (enabled) {
-                Toast.makeText(this, "Avisos activados; Android programa las comprobaciones", Toast.LENGTH_LONG).show()
-            }
-        }
         refreshButton.setOnClickListener { refresh() }
-        feedSettingsButton.setOnClickListener { configureFeed() }
-        recentOnlySwitch.setOnCheckedChangeListener { _, _ -> render() }
+        menuButton.setOnClickListener { showOptions() }
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { render() }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                render()
+                scroll.scrollTo(0, 0)
+            }
             override fun afterTextChanged(s: Editable?) {}
         })
+
         notices = Repository.cached(this)
         updateHeader()
         buildTabs()
         buildFilters()
         render()
         refresh()
+
+        // Android 13+ requests the system notification permission once on first launch.
+        // On earlier Android versions, notification channels are enabled by default.
+        window.decorView.post { requestNotificationsOnce() }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -107,15 +107,87 @@ class MainActivity : Activity() {
         super.onSaveInstanceState(outState)
     }
 
+    private fun requestNotificationsOnce() {
+        val prefs = getSharedPreferences(UI_PREFS, MODE_PRIVATE)
+        if (prefs.getBoolean(NOTIFICATIONS_PROMPTED, false)) return
+        prefs.edit().putBoolean(NOTIFICATIONS_PROMPTED, true).apply()
+        if (Build.VERSION.SDK_INT >= 33 &&
+            checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+        ) {
+            requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), NOTIFICATION_PERMISSION_REQUEST)
+        } else {
+            Repository.setAlertsEnabled(this, true)
+        }
+    }
+
     override fun onRequestPermissionsResult(
         requestCode: Int, permissions: Array<out String>, grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == 333 && grantResults.firstOrNull() != PackageManager.PERMISSION_GRANTED) {
-            Repository.setAlertsEnabled(this, false)
-            alertsSwitch.isChecked = false
-            Toast.makeText(this, "Sin permiso de notificaciones; puedes activarlo después", Toast.LENGTH_LONG).show()
+        if (requestCode == NOTIFICATION_PERMISSION_REQUEST) {
+            val granted = grantResults.firstOrNull() == PackageManager.PERMISSION_GRANTED
+            Repository.setAlertsEnabled(this, granted)
+            if (!granted) {
+                Toast.makeText(this, "Avisos desactivados. Puedes activarlos en Más opciones.", Toast.LENGTH_LONG).show()
+            }
         }
+    }
+
+    /** Keeps notification settings accessible without taking space from the feed. */
+    private fun showOptions() {
+        val menu = PopupMenu(this, menuButton)
+        val enabled = Repository.alertsEnabled(this) && notificationPermissionGranted()
+        menu.menu.add(0, 1, 0, if (enabled) "Desactivar avisos" else "Activar avisos")
+        menu.menu.add(0, 2, 1, "Acerca de OpoAlert")
+        menu.setOnMenuItemClickListener { item ->
+            when (item.itemId) {
+                1 -> {
+                    if (enabled) {
+                        Repository.setAlertsEnabled(this, false)
+                        Toast.makeText(this, "Avisos desactivados", Toast.LENGTH_SHORT).show()
+                    } else if (!notificationPermissionGranted() && Build.VERSION.SDK_INT >= 33) {
+                        if (shouldShowRequestPermissionRationale(Manifest.permission.POST_NOTIFICATIONS)) {
+                            requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), NOTIFICATION_PERMISSION_REQUEST)
+                        } else {
+                            showNotificationSettingsHelp()
+                        }
+                    } else {
+                        Repository.setAlertsEnabled(this, true)
+                        Toast.makeText(this, "Avisos activados", Toast.LENGTH_SHORT).show()
+                    }
+                    true
+                }
+                2 -> {
+                    AlertDialog.Builder(this)
+                        .setTitle("OpoAlert 0.8")
+                        .setMessage("Convocatorias de empleo público del BOP de Valencia. " +
+                            "Las novedades se consultan automáticamente. " +
+                            "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
+                        .setPositiveButton("Entendido", null)
+                        .show()
+                    true
+                }
+                else -> false
+            }
+        }
+        menu.show()
+    }
+
+    private fun notificationPermissionGranted(): Boolean =
+        Build.VERSION.SDK_INT < 33 ||
+            checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
+
+    private fun showNotificationSettingsHelp() {
+        AlertDialog.Builder(this)
+            .setTitle("Permiso de notificaciones")
+            .setMessage("Para recibir avisos, habilita las notificaciones de OpoAlert en los ajustes de Android.")
+            .setPositiveButton("Abrir ajustes") { _, _ ->
+                startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                    data = Uri.fromParts("package", packageName, null)
+                })
+            }
+            .setNegativeButton("Cancelar", null)
+            .show()
     }
 
     private fun refresh() {
@@ -123,8 +195,8 @@ class MainActivity : Activity() {
         loading = true
         progressBar.visibility = View.VISIBLE
         refreshButton.isEnabled = false
-        statusText.text = if (Repository.feedUrl(this).isBlank())
-            "Consultando la portada del BOP (parcial)…" else "Consultando el lector central…"
+        refreshButton.alpha = 0.48f
+        statusText.text = "Actualizando convocatorias…"
         Thread {
             try {
                 val result = Repository.sync(applicationContext)
@@ -132,61 +204,26 @@ class MainActivity : Activity() {
                     notices = result.all
                     updateHeader()
                     buildTabs()
-                    render()
-                    statusText.text = "Consulta: ${Repository.lastSync(this)} · ${result.scanned} convocatorias recibidas"
-                    sourceInfoText.text = "${result.sourceMessage}\n${result.historyMessage}"
+                    render(keepScroll = true)
                     Notifications.show(this, result.newOnes)
                     finishRefresh()
                 }
             } catch (error: Exception) {
                 runOnUiThread {
-                    statusText.text = "Sin actualizar: ${error.message ?: "Error de conexión"}. Datos guardados disponibles."
-                    sourceInfoText.text = Repository.lastSource(this) + "\n" + Repository.lastHistory(this)
+                    updateHeader()
+                    statusText.text = "Sin conexión · Mostrando los datos guardados"
+                    Toast.makeText(this, "No se pudo actualizar: ${error.message ?: "Error de conexión"}", Toast.LENGTH_LONG).show()
                     finishRefresh()
                 }
             }
         }.start()
     }
 
-    /** Permite configurar GitHub Pages sin recompilar; no toca los favoritos. */
-    private fun configureFeed() {
-        val field = EditText(this).apply {
-            setSingleLine(true)
-            setText(Repository.feedUrl(this@MainActivity))
-            hint = "https://usuario.github.io/OpoAlert/convocatorias.json"
-            inputType = android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_VARIATION_URI
-            textSize = 14f
-        }
-        val wrapper = LinearLayout(this).apply {
-            orientation = LinearLayout.VERTICAL
-            setPadding(dp(20), dp(8), dp(20), 0)
-            addView(field)
-        }
-        AlertDialog.Builder(this)
-            .setTitle("Fuente de convocatorias")
-            .setMessage("Pega aqui la URL publica HTTPS del feed generado por OpoAlert. Si no tienes servidor, puedes continuar con la portada parcial.")
-            .setView(wrapper)
-            .setPositiveButton("Guardar") { _, _ ->
-                try {
-                    val address = field.text.toString().trim()
-                    if (address.isBlank()) {
-                        Toast.makeText(this, "Introduce la URL o elige Solo portada", Toast.LENGTH_LONG).show()
-                    } else {
-                        Repository.setFeedUrl(this, address)
-                        updateHeader()
-                        refresh()
-                    }
-                } catch (error: IllegalArgumentException) {
-                    Toast.makeText(this, error.message ?: "URL no valida", Toast.LENGTH_LONG).show()
-                }
-            }
-            .setNeutralButton("Solo portada") { _, _ ->
-                Repository.setFeedUrl(this, "")
-                updateHeader()
-                refresh()
-            }
-            .setNegativeButton("Cancelar", null)
-            .show()
+    private fun finishRefresh() {
+        loading = false
+        progressBar.visibility = View.GONE
+        refreshButton.isEnabled = true
+        refreshButton.alpha = 1f
     }
 
     private fun isRecent(date: String): Boolean {
@@ -200,49 +237,67 @@ class MainActivity : Activity() {
                 set(Calendar.MILLISECOND, 999)
             }
             val earliest = (today.clone() as Calendar).apply { add(Calendar.DAY_OF_YEAR, -29) }
-            val dateOnly = Calendar.getInstance().apply { time = published }
-            dateOnly.set(Calendar.HOUR_OF_DAY, 23)
-            dateOnly.set(Calendar.MINUTE, 59)
-            dateOnly.set(Calendar.SECOND, 59)
-            dateOnly.set(Calendar.MILLISECOND, 999)
-            !dateOnly.before(earliest) && !dateOnly.after(today)
+            val candidate = Calendar.getInstance().apply {
+                time = published
+                set(Calendar.HOUR_OF_DAY, 23)
+                set(Calendar.MINUTE, 59)
+                set(Calendar.SECOND, 59)
+                set(Calendar.MILLISECOND, 999)
+            }
+            !candidate.before(earliest) && !candidate.after(today)
         } catch (_: Exception) { false }
     }
 
-    private fun finishRefresh() {
-        loading = false
-        progressBar.visibility = View.GONE
-        refreshButton.isEnabled = true
+    private fun updateHeader() {
+        // Repository retains old cache entries; the home count reflects this 30-day view.
+        countText.text = notices.count { isRecent(it.date) }.toString()
+        val favorites = FavoritesStore.list(this).size
+        favoritesCountText.text = "★ $favorites favorita${if (favorites == 1) "" else "s"}"
+        val lastSync = Repository.lastSync(this)
+        statusText.text = if (lastSync.isBlank()) "Preparando la primera consulta…" else "Actualizado: $lastSync"
+        sourceInfoText.text = compactSource(Repository.lastSource(this))
+        historyInfoText.text = compactHistory(Repository.lastHistory(this))
     }
 
-    private fun updateHeader() {
-        countText.text = "${notices.size} convocatorias guardadas"
-        favoritesCountText.text = "★ ${FavoritesStore.list(this).size} favoritas"
-        val previous = Repository.lastSync(this)
-        statusText.text = if (previous.isBlank())
-            "Primera conexión pendiente · Fuente: BOP Valencia" else
-            "Última consulta: $previous"
-        sourceInfoText.text = if (Repository.feedUrl(this).isBlank())
-            "Fuente: solo portada del BOP. Pulsa FUENTE para usar el lector completo."
-        else Repository.lastSource(this) + "\n" + Repository.lastHistory(this)
+    private fun compactSource(raw: String): String {
+        if (raw.isBlank()) return "Comprobando el boletín y sus anuncios"
+        val previous = Regex("""BOP\s+(\d+):\s*(\d+)\s+anuncios\s+en\s+(\d+)\s+paginas""", RegexOption.IGNORE_CASE)
+            .find(raw)
+        if (previous != null) {
+            return "BOP ${previous.groupValues[1]} · ${previous.groupValues[2]} anuncios · ${previous.groupValues[3]} páginas"
+        }
+        return if (raw.startsWith("BOP ")) raw.substringBefore(" · Feed actualizado")
+        else "BOP de Valencia · Información guardada"
+    }
+
+    private fun compactHistory(raw: String): String {
+        if (!raw.contains("verificado", ignoreCase = true)) return "Histórico pendiente de comprobar"
+        val dates = Regex("""(\d{4})-(\d{2})-(\d{2})""").findAll(raw).take(2).toList()
+        if (dates.size != 2) return "Histórico verificado · Últimos 30 días"
+        val a = dates[0].groupValues
+        val b = dates[1].groupValues
+        return if (a[1] == b[1]) {
+            "Histórico verificado · ${a[3]}/${a[2]} – ${b[3]}/${b[2]}"
+        } else {
+            "Histórico verificado · ${a[3]}/${a[2]}/${a[1].takeLast(2)} – ${b[3]}/${b[2]}/${b[1].takeLast(2)}"
+        }
     }
 
     private fun buildTabs() {
         tabsRow.removeAllViews()
-        val favoritesCount = FavoritesStore.list(this).size
-        for ((tab, label) in listOf(TAB_ALL to "Explorar", TAB_FAVORITES to "★ Favoritas ($favoritesCount)")) {
-            val selected = tab == selectedTab
-            val item = TextView(this).apply {
+        val favorites = FavoritesStore.list(this).size
+        for ((tab, label) in listOf(TAB_ALL to "Explorar", TAB_FAVORITES to "★ Favoritas ($favorites)")) {
+            val selected = selectedTab == tab
+            val button = TextView(this).apply {
                 text = label
-                textSize = 15f
+                textSize = 14f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
                 gravity = Gravity.CENTER
-                setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#334155"))
-                background = rounded(if (selected) "#1D4ED8" else "#E8EEF6", 14)
-                setPadding(dp(12), dp(13), dp(12), dp(13))
+                setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
+                background = rounded(if (selected) "#1E4FD5" else "#E7EDF5", 13)
                 isClickable = true
                 isFocusable = true
-                contentDescription = if (tab == TAB_ALL) "Ver todas las convocatorias" else "Ver mis favoritos"
+                contentDescription = if (tab == TAB_ALL) "Ver todas las convocatorias" else "Ver mis favoritas"
                 setOnClickListener {
                     selectedTab = tab
                     buildTabs()
@@ -250,7 +305,7 @@ class MainActivity : Activity() {
                     scroll.scrollTo(0, 0)
                 }
             }
-            tabsRow.addView(item, LinearLayout.LayoutParams(0, dp(48), 1f).apply {
+            tabsRow.addView(button, LinearLayout.LayoutParams(0, dp(44), 1f).apply {
                 if (tab == TAB_ALL) marginEnd = dp(7)
             })
         }
@@ -258,126 +313,157 @@ class MainActivity : Activity() {
 
     private fun buildFilters() {
         filterRow.removeAllViews()
-        for (name in listOf(FILTER_ALL, FILTER_POOLS, FILTER_POSITIONS)) {
-            val selected = name == selectedFilter
+        for (filter in listOf(FILTER_ALL, FILTER_POOLS, FILTER_POSITIONS)) {
+            val selected = selectedFilter == filter
             val chip = TextView(this).apply {
-                text = name
-                textSize = 13f
-                setTextColor(if (selected) Color.WHITE else Color.rgb(51, 65, 85))
+                text = filter
+                textSize = 12.5f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
+                setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
+                background = rounded(if (selected) "#1E4FD5" else "#E7EDF5", 30)
                 gravity = Gravity.CENTER
-                setPadding(dp(16), dp(10), dp(16), dp(10))
-                background = rounded(if (selected) "#1D4ED8" else "#E8EEF6", 30)
+                setPadding(dp(15), dp(7), dp(15), dp(7))
+                minHeight = dp(34)
                 isClickable = true
                 isFocusable = true
                 setOnClickListener {
-                    selectedFilter = name
+                    selectedFilter = filter
                     buildFilters()
                     render()
                     scroll.scrollTo(0, 0)
                 }
             }
             filterRow.addView(chip, LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply { marginEnd = dp(8) })
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { marginEnd = dp(7) })
         }
     }
 
     private fun render(keepScroll: Boolean = false) {
         val oldScroll = if (keepScroll) scroll.scrollY else 0
         list.removeAllViews()
-        val term = searchInput.text.toString().trim()
+        val query = searchInput.text.toString().trim()
         val favorites = FavoritesStore.list(this)
         val favoriteIds = favorites.map { it.id }.toHashSet()
-        val source = if (selectedTab == TAB_FAVORITES) favorites else notices
-        val shown = source.filter { notice ->
-            val matchesFilter = selectedFilter == FILTER_ALL ||
-                (selectedFilter == FILTER_POOLS && notice.type.startsWith("Bolsa")) ||
-                (selectedFilter == FILTER_POSITIONS && notice.type.startsWith("Plaza"))
-            val matchesDate = selectedTab == TAB_FAVORITES || !recentOnlySwitch.isChecked || isRecent(notice.date)
-            matchesFilter && matchesDate && (term.isEmpty() || notice.title.contains(term, ignoreCase = true) ||
-                notice.entity.contains(term, ignoreCase = true) ||
-                notice.id.contains(term, ignoreCase = true))
+        val from = if (selectedTab == TAB_FAVORITES) favorites else notices
+        val shown = from.filter { item ->
+            val correctType = selectedFilter == FILTER_ALL ||
+                (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
+                (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
+            val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
+            val matches = query.isEmpty() || item.title.contains(query, ignoreCase = true) ||
+                item.entity.contains(query, ignoreCase = true) || item.id.contains(query, ignoreCase = true)
+            correctType && correctDate && matches
         }
         resultsText.text = if (selectedTab == TAB_FAVORITES)
             "MIS FAVORITAS · ${shown.size}" else "CONVOCATORIAS · ${shown.size}"
         if (shown.isEmpty()) {
-            val label = when {
+            val message = when {
                 selectedTab == TAB_FAVORITES && favorites.isEmpty() ->
-                    "Todavía no has guardado ninguna convocatoria.\n\nEn Explorar, toca la estrella ☆ de una plaza o bolsa para añadirla aquí."
-                source.isEmpty() -> "Todavía no hay datos. Pulsa ↻ para consultar el BOP."
-                else -> "No hay convocatorias que coincidan con la búsqueda o el filtro."
+                    "Aún no tienes favoritas. Toca la estrella de una convocatoria para guardarla aquí."
+                from.isEmpty() -> "Todavía no hay convocatorias. Pulsa actualizar para consultar el BOP."
+                else -> "No hay convocatorias que coincidan con tu búsqueda."
             }
-            val empty = text(label, 14, "#64748B")
-            empty.gravity = Gravity.CENTER
-            empty.setPadding(dp(18), dp(45), dp(18), dp(45))
-            list.addView(empty)
+            list.addView(text(message, 13f, "#64748B").apply {
+                gravity = Gravity.CENTER
+                setPadding(dp(20), dp(34), dp(20), dp(34))
+            })
         } else {
             for (item in shown) addCard(item, item.id in favoriteIds)
+            val note = text("Consulta siempre las bases oficiales y los plazos de inscripción.", 10.5f, "#94A3B8")
+            note.gravity = Gravity.CENTER
+            note.setPadding(dp(7), dp(15), dp(7), 0)
+            list.addView(note)
         }
         if (keepScroll) scroll.post { scroll.scrollTo(0, oldScroll) }
     }
 
-    private fun addCard(item: Notice, isFavorite: Boolean) {
+    private fun addCard(item: Notice, favorite: Boolean) {
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(dp(16), dp(15), dp(16), dp(14))
-            background = rounded("#FFFFFF", 17, if (isFavorite) "#FCD34D" else "#E2E8F0")
+            setPadding(dp(14), dp(11), dp(14), dp(12))
+            background = rounded("#FFFFFF", 16, if (favorite) "#EEC77A" else "#DEE5EF")
             elevation = dp(1).toFloat()
             isClickable = true
             isFocusable = true
             setOnClickListener { showDetail(item) }
         }
-        val meta = LinearLayout(this).apply {
+
+        val top = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
         }
-        meta.addView(text(item.type.uppercase(), 11, "#1D4ED8", true),
-            LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
-        meta.addView(text(item.date, 11, "#64748B"))
-        val star = text(if (isFavorite) "★" else "☆", 26, if (isFavorite) "#B45309" else "#64748B", true).apply {
+        val isPool = item.type.startsWith("Bolsa")
+        val tag = text(if (isPool) "BOLSA" else "PLAZA", 10f,
+            if (isPool) "#0F766E" else "#1E4FD5", true).apply {
             gravity = Gravity.CENTER
-            setPadding(dp(12), dp(3), dp(2), dp(3))
+            setPadding(dp(9), dp(5), dp(9), dp(5))
+            background = rounded(if (isPool) "#D9F5EB" else "#E4EDFF", 8)
+        }
+        top.addView(tag)
+        if (NoticeText.isProcedureUpdate(item.title)) {
+            val procedure = text("TRÁMITE", 9f, "#A16207", true).apply {
+                setPadding(dp(8), dp(5), dp(8), dp(5))
+                background = rounded("#FEF3C7", 8)
+            }
+            top.addView(procedure, LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { marginStart = dp(5) })
+        }
+        top.addView(text(item.date, 11f, "#718096").apply {
+            gravity = Gravity.END or Gravity.CENTER_VERTICAL
+        }, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
+        val star = text(if (favorite) "★" else "☆", 25f,
+            if (favorite) "#B7791F" else "#64748B").apply {
+            gravity = Gravity.CENTER
+            minWidth = dp(42)
+            minHeight = dp(40)
             isClickable = true
             isFocusable = true
-            contentDescription = if (isFavorite) "Quitar de favoritos" else "Añadir a favoritos"
+            contentDescription = if (favorite) "Quitar de favoritas" else "Añadir a favoritas"
             setOnClickListener { toggleFavorite(item) }
         }
-        meta.addView(star)
-        card.addView(meta)
-        card.addView(text(item.title, 14, "#0F172A", true).apply {
-            maxLines = 4
-            setPadding(0, dp(10), 0, dp(7))
+        top.addView(star)
+        card.addView(top)
+
+        card.addView(text(NoticeText.headline(item.title), 15f, "#17243C", true).apply {
+            maxLines = 3
+            ellipsize = TextUtils.TruncateAt.END
+            setLineSpacing(dp(2).toFloat(), 1f)
+            setPadding(0, dp(5), 0, 0)
         })
-        card.addView(text(item.entity, 12, "#64748B"))
+        card.addView(text(item.entity, 12f, "#64748B").apply {
+            maxLines = 2
+            ellipsize = TextUtils.TruncateAt.END
+            setPadding(0, dp(6), 0, 0)
+        })
+
         val footer = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            setPadding(0, dp(13), 0, 0)
+            setPadding(0, dp(8), 0, 0)
         }
-        footer.addView(text("BOP ${item.bulletin} · ${item.id}    ›", 12, "#2563EB").apply {
+        footer.addView(text("BOP ${item.bulletin} · Reg. ${item.id}", 10.5f, "#64748B"),
+            LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
+        footer.addView(text("Compartir ↗", 11f, "#2452A4", true).apply {
+            gravity = Gravity.CENTER_VERTICAL
+            minHeight = dp(32)
+            setPadding(dp(10), 0, dp(1), 0)
             isClickable = true
             isFocusable = true
-            contentDescription = "Abrir detalles de la convocatoria"
-            setOnClickListener { showDetail(item) }
-        }, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
-        footer.addView(text("Compartir ↗", 12, "#1D4ED8", true).apply {
-            isClickable = true
-            isFocusable = true
-            setPadding(dp(12), dp(5), 0, dp(5))
+            contentDescription = "Compartir convocatoria"
             setOnClickListener { share(item) }
         })
         card.addView(footer)
         list.addView(card, LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
-        ).apply { bottomMargin = dp(11) })
+        ).apply { bottomMargin = dp(9) })
     }
 
     private fun toggleFavorite(item: Notice) {
         try {
             val saved = FavoritesStore.toggle(this, item)
-            Toast.makeText(this, if (saved) "Añadida a favoritas ★" else "Eliminada de favoritas", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, if (saved) "Guardada en favoritas ★" else "Eliminada de favoritas", Toast.LENGTH_SHORT).show()
             updateHeader()
             buildTabs()
             render(keepScroll = true)
@@ -392,7 +478,8 @@ class MainActivity : Activity() {
             "Publicación: ${item.date}\n" +
             "Boletín: ${item.bulletin}\n" +
             "Registro: ${item.id}\n\n" +
-            "IMPORTANTE: publicar las bases no implica necesariamente que el plazo de solicitudes esté abierto. Comprueba el anuncio oficial y, cuando proceda, el BOE."
+            "IMPORTANTE: publicar las bases no implica necesariamente que el plazo de solicitudes esté abierto. " +
+            "Comprueba el anuncio oficial y, cuando proceda, el BOE."
         val favoriteAction = if (FavoritesStore.contains(this, item.id)) "★ Quitar favorita" else "☆ Guardar favorita"
         AlertDialog.Builder(this)
             .setTitle(item.title)
@@ -404,7 +491,8 @@ class MainActivity : Activity() {
     }
 
     private fun share(item: Notice) {
-        val message = "${item.title}\n${item.entity}\nBOP Valencia · ${item.date} · Registro ${item.id}\n${item.url}\n\nConsulta siempre el anuncio oficial y los plazos."
+        val message = "${item.title}\n${item.entity}\nBOP Valencia · ${item.date} · Registro ${item.id}\n" +
+            "${item.url}\n\nComprueba siempre el anuncio oficial y los plazos."
         try {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
@@ -424,10 +512,11 @@ class MainActivity : Activity() {
         }
     }
 
-    private fun text(value: String, sp: Int, color: String, bold: Boolean = false): TextView =
+    private fun text(value: String, sp: Float, color: String, bold: Boolean = false): TextView =
         TextView(this).apply {
             text = value
-            textSize = sp.toFloat()
+            textSize = sp
+            includeFontPadding = false
             setTextColor(Color.parseColor(color))
             if (bold) typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
         }
@@ -448,5 +537,8 @@ class MainActivity : Activity() {
         private const val FILTER_ALL = "Todas"
         private const val FILTER_POOLS = "Bolsas"
         private const val FILTER_POSITIONS = "Plazas"
+        private const val UI_PREFS = "opoalert_ui"
+        private const val NOTIFICATIONS_PROMPTED = "notifications_prompted_v08"
+        private const val NOTIFICATION_PERMISSION_REQUEST = 333
     }
 }

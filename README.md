@@ -1,88 +1,59 @@
-# OpoAlert v0.6 — BOP Valencia automático (Android + GitHub)
+# OpoAlert 0.8 — Empleo público, BOP Valencia
 
-OpoAlert identifica **plazas, oposiciones y bolsas de empleo público** a partir
-del BOP de Valencia. Es un proyecto independiente y los anuncios deben
-confirmarse siempre en el boletín oficial. La aplicación Android es nativa
-(Kotlin) y mantiene los favoritos en el teléfono.
+Aplicación Android nativa, gratuita, para consultar publicaciones de plazas,
+oposiciones y bolsas de empleo del BOP de Valencia. El historial lo recopila y
+audita automáticamente un lector Playwright que se ejecuta en GitHub Actions.
 
-## Estado del proyecto
+## Instalar Android
 
-- **Lector del BOP 0.5.2:** se ha verificado desde un PC Windows la recuperación
-  completa del 29/09 al 28/10/2026: 21 boletines, 54 páginas, 1.270 anuncios
-  leídos y 50 fichas de empleo clasificadas. El archivo está en
-  `docs/convocatorias.json`, como conjunto inicial de datos públicos.
-- **Automatización 0.6:** dos workflows de GitHub: una publicación inicial que
-  NO consulta la web, y un rastreo diario que reconstruye el histórico y SOLO
-  publica si supera las auditorías. Las pruebas locales de software han pasado,
-  pero **la ejecución real en los servidores de GitHub está pendiente**.
-- **Android:** ya permite indicar una URL HTTPS con el botón «Fuente de datos».
-  No necesita recompilarse para cambiar al feed de GitHub Pages. WorkManager
-  comprueba las novedades aproximadamente cada seis horas, sujeto a las
-  restricciones de Android.
+Descarga la última APK desde **Releases**:
 
-## Primeros pasos
+https://github.com/MJTBApps/OpoAlert/releases/tag/v0.8.0
 
-Lee **`INSTRUCCIONES_GITHUB_060.txt`**. Contiene todos los pasos: copiar el
-parche en Windows, comprobar los datos, publicar el repositorio con GitHub
-Desktop, activar GitHub Pages, publicar la primera captura y configurar la app.
+La app trae configurada su fuente pública; no es necesario indicar ninguna URL.
+En el primer inicio Android puede solicitar permiso para avisos de nuevas convocatorias.
+Puede activarse o desactivarse desde el menú de tres puntos, sin ocupar la portada.
 
-En Windows, tras descomprimir el parche en la carpeta OpoAlert:
+**Aviso de instalación:** la APK descargada desde GitHub Actions es una compilación
+de prueba con firma de depuración. Si la versión anterior tiene otra firma,
+Android exigirá desinstalarla antes. Al desinstalar se pierden los favoritos
+guardados en ese teléfono. Para distribuir futuras actualizaciones sin perder
+favoritos será necesario configurar una firma privada estable.
 
-```bat
-COMPROBAR_Y_PREPARAR_GITHUB_060.bat
-```
+## Interfaz v0.8
 
-### Flujos de GitHub
+- Encabezado compacto: convocatorias recientes, favoritas, última sincronización,
+  boletín y estado del histórico.
+- Actualizar mediante icono correctamente alineado.
+- Se muestran de inmediato Explorar, Favoritas, búsqueda, filtros y la lista.
+- Las tarjetas priorizan la descripción de la plaza/bolsa y el organismo;
+  el anuncio oficial completo permanece accesible al tocar la tarjeta.
+- Los anuncios de trámite identificables se señalan como `TRÁMITE`.
+- El usuario no configura la URL ni el filtro redundante de 30 días.
 
-- `.github/workflows/publicar-inicial.yml`: publica el JSON de 50 anuncios ya
-  auditados; útil para comprobar GitHub Pages antes de probar el rastreo web.
-- `.github/workflows/revisar-bop.yml`: ejecuta diariamente el lector del último
-  boletín, la búsqueda de 30 días, la validación estricta del feed, y publica
-  en Pages solo si todo funciona. Se puede ejecutar manualmente en «Actions».
+## Datos y actualizaciones
 
-La revisión programada tiene lugar sobre las **09:43 UTC** cada día, sujeta
-al servicio de GitHub. Esto equivale a 10:43 o 11:43 en la España peninsular,
-según la época del año. **No es un sistema de alertas en tiempo real.**
+El lector diario utiliza `.github/workflows/revisar-bop.yml`, con calendario
+real de publicaciones y auditoría de 30 días antes de publicar.
 
-### Fuente de datos de Android
+Feed público: https://mjtbapps.github.io/OpoAlert/convocatorias.json
 
-Una vez publicado Pages, introduce en «Fuente de datos» una URL de este tipo:
+La comprobación Android utiliza WorkManager aproximadamente cada seis horas,
+cuando hay conexión y el sistema operativo lo permite. No es un servicio de
+notificaciones instantáneas ni garantiza la hora de entrega.
 
-`https://TUUSUARIO.github.io/OpoAlert/convocatorias.json`
+El archivo oficial del BOP y, cuando proceda, el BOE son las fuentes que
+determinan los requisitos y los plazos de solicitud. OpoAlert es una ayuda
+para localizar anuncios, no sustituye la lectura del documento oficial.
 
-Pulsa refrescar. La primera sincronización con un feed nuevo **no genera un
-aluvión de avisos antiguos**; en las siguientes se notifican los identificadores
-nuevos. Los favoritos están almacenados en el teléfono, no en GitHub.
+## Desarrollo
 
-### Seguridad y límites
+- Código Android Kotlin: `app/src/main/`.
+- Extracción Python Playwright: `backend/`.
+- Pruebas del lector: `python -m unittest discover -s backend/tests -q`.
+- Comprobación de interfaz: `python scripts/test_ui_080.py`.
+- Build automatizado de la APK: `.github/workflows/android-apk.yml`.
+- Publicación del feed: `.github/workflows/revisar-bop.yml`.
 
-- GitHub Pages con cuenta gratuita exige repositorio **público**. Los datos
-  del JSON son anuncios públicos del BOP; no subas documentos privados.
-- No se suben entornos `.venv`, datos de trabajo `data/` ni diagnósticos HTML
-  (pueden contener información temporal de sesión del portal).
-- Si falla la lectura o la validación, el paso de publicación NO se ejecuta.
-  Queda el feed anterior de Pages accesible, con su antigua fecha de consulta.
-- Los periodos de 30 días son calendarios, ajustados a las fechas con edición
-  del BOP. El lector no declara cobertura si falta una fecha de publicación.
-- La clasificación incluye modificaciones de bases o trámites de procesos
-  selectivos: no todos equivalen a una convocatoria con plazo abierto.
-- La app es gratuita y no depende de publicar el APK en Play Store, pero hay
-  que habilitar en el teléfono la instalación del APK ya compilado.
-
-## Arquitectura
-
-```text
-BOP de Valencia
-   |
-   +--> Python/Playwright (ultimo boletin + calendario de 30 dias)
-              |
-              +--> Auditoria de paginacion, ventanas y fechas
-              |
-              +--> backend/validar_feed.py (control final)
-                          |
-                          v
-              docs/convocatorias.json en GitHub Pages
-                          |
-                          v
-              OpoAlert Android (HTTPs / cache / favoritos / avisos)
-```
+Este proyecto no incluye contraseñas, claves privadas ni datos personales de
+usuarios. Los favoritos se guardan localmente en el teléfono.
