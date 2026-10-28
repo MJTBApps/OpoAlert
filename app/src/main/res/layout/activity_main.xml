@@ -226,20 +226,12 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/alertsButton"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:contentDescription="Gestionar mis alertas personalizadas"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center_vertical"
-            android:paddingStart="9dp"
-            android:paddingEnd="2dp"
-            android:text="🔔 Crear alerta"
-            android:textColor="#1E4FD5"
-            android:textSize="11sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Más recientes primero"
+            android:textColor="#9AA8BB"
+            android:textSize="10sp" />
     </LinearLayout>
 
     <ProgressBar

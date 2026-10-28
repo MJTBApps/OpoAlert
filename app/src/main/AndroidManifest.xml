@@ -17,6 +17,9 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
         <activity
+            android:name=".NoticeDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlertsActivity"
             android:exported="false" />
         <activity

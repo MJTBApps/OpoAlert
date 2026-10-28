@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 1.1.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.2.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -52,7 +52,6 @@ class MainActivity : Activity() {
     private lateinit var filterRow: LinearLayout
     private lateinit var scroll: ScrollView
     private lateinit var resultsText: TextView
-    private lateinit var alertsButton: TextView
 
     private var selectedTab = TAB_ALL
     private var selectedFilter = FILTER_ALL
@@ -80,9 +79,9 @@ class MainActivity : Activity() {
         filterRow = findViewById(R.id.filterRow)
         scroll = findViewById(R.id.resultsScroll)
         resultsText = findViewById(R.id.resultsText)
-        alertsButton = findViewById(R.id.alertsButton)
 
-        selectedTab = savedInstanceState?.getString("selectedTab") ?: TAB_ALL
+        selectedTab = savedInstanceState?.getString("selectedTab")
+            ?: intent.getStringExtra(EXTRA_OPEN_TAB) ?: TAB_ALL
         selectedFilter = savedInstanceState?.getString("selectedFilter") ?: FILTER_ALL
 
         demoAds = DemoAds(this) {
@@ -93,7 +92,6 @@ class MainActivity : Activity() {
         refreshButton.setOnClickListener { refresh() }
         menuButton.setOnClickListener { showOptions() }
         provinceSelector.setOnClickListener { showProvinceChooser() }
-        alertsButton.setOnClickListener { openAlerts() }
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -181,7 +179,7 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 1.1.0")
+                        .setTitle("OpoAlert 1.2.0")
                         .setMessage("Convocatorias de empleo público de las provincias seleccionadas. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
@@ -209,11 +207,6 @@ class MainActivity : Activity() {
 
     private fun openAlerts() {
         startActivity(Intent(this, AlertsActivity::class.java))
-    }
-
-    private fun updateAlertsButton() {
-        val active = AlertRuleStore.list(this).count { it.enabled }
-        alertsButton.text = if (active == 0) "🔔 Crear alerta" else "🔔 Alertas ($active)"
     }
 
     private fun showProvincePickerIfFirstLaunch() {
@@ -345,7 +338,6 @@ class MainActivity : Activity() {
         val selected = ProvinceSettings.selected(this).map { it.label }.toSet()
         countText.text = notices.count { isRecent(it.date) && it.province in selected }.toString()
         updateProvinceSelector()
-        updateAlertsButton()
         val favorites = FavoritesStore.list(this).size
         favoritesCountText.text = "★ $favorites favorita${if (favorites == 1) "" else "s"}"
         val lastSync = Repository.lastSync(this)
@@ -383,30 +375,44 @@ class MainActivity : Activity() {
         }
     }
 
+    /** Tres pestañas equivalentes, sin añadir una fila extra al listado. */
     private fun buildTabs() {
         tabsRow.removeAllViews()
-        val favorites = FavoritesStore.list(this).size
-        for ((tab, label) in listOf(TAB_ALL to "Explorar", TAB_FAVORITES to "★ Favoritas ($favorites)")) {
+        val choices = listOf(
+            TAB_ALL to "Explorar",
+            TAB_FAVORITES to "★ Favoritas",
+            TAB_ALERTS to "♧ Alertas"
+        )
+        for ((index, choice) in choices.withIndex()) {
+            val (tab, label) = choice
             val selected = selectedTab == tab
             val button = TextView(this).apply {
                 text = label
-                textSize = 14f
+                textSize = 12.5f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
                 gravity = Gravity.CENTER
                 setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
                 background = rounded(if (selected) "#1E4FD5" else "#E7EDF5", 13)
                 isClickable = true
                 isFocusable = true
-                contentDescription = if (tab == TAB_ALL) "Ver todas las convocatorias" else "Ver mis favoritas"
+                contentDescription = when (tab) {
+                    TAB_ALL -> "Explorar convocatorias"
+                    TAB_FAVORITES -> "Ver mis favoritas"
+                    else -> "Gestionar mis alertas"
+                }
                 setOnClickListener {
-                    selectedTab = tab
-                    buildTabs()
-                    render()
-                    scroll.scrollTo(0, 0)
+                    if (tab == TAB_ALERTS) {
+                        openAlerts()
+                    } else {
+                        selectedTab = tab
+                        buildTabs()
+                        render()
+                        scroll.scrollTo(0, 0)
+                    }
                 }
             }
             tabsRow.addView(button, LinearLayout.LayoutParams(0, dp(44), 1f).apply {
-                if (tab == TAB_ALL) marginEnd = dp(7)
+                if (index < choices.lastIndex) marginEnd = dp(6)
             })
         }
     }
@@ -520,7 +526,26 @@ class MainActivity : Activity() {
     override fun onResume() {
         super.onResume()
         if (::demoAds.isInitialized) demoAds.resume()
-        if (::alertsButton.isInitialized) updateAlertsButton()
+        if (::tabsRow.isInitialized) {
+            // Las favoritas pueden haber cambiado desde la nueva ficha a pantalla completa.
+            updateHeader()
+            buildTabs()
+            render(keepScroll = true)
+        }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        when (intent.getStringExtra(EXTRA_OPEN_TAB)) {
+            TAB_ALL -> selectedTab = TAB_ALL
+            TAB_FAVORITES -> selectedTab = TAB_FAVORITES
+        }
+        if (::tabsRow.isInitialized) {
+            buildTabs()
+            render()
+            scroll.scrollTo(0, 0)
+        }
     }
 
     override fun onDestroy() {
@@ -623,22 +648,9 @@ class MainActivity : Activity() {
     }
 
     private fun showDetail(item: Notice) {
-        val message = "${item.entity}\n\n" +
-            "Provincia: ${item.province}\n" +
-            "Tipo: ${item.type}\n" +
-            "Publicación: ${item.date}\n" +
-            "Boletín: ${item.bulletin}\n" +
-            "Registro: ${item.id}\n\n" +
-            "IMPORTANTE: publicar las bases no implica necesariamente que el plazo de solicitudes esté abierto. " +
-            "Comprueba el anuncio oficial y, cuando proceda, el BOE."
-        val favoriteAction = if (FavoritesStore.contains(this, item.id)) "★ Quitar favorita" else "☆ Guardar favorita"
-        AlertDialog.Builder(this)
-            .setTitle(NoticeText.headline(item.title))
-            .setMessage(message)
-            .setPositiveButton("PDF oficial") { _, _ -> openUrl(item.url) }
-            .setNeutralButton(favoriteAction) { _, _ -> toggleFavorite(item) }
-            .setNegativeButton("Cerrar", null)
-            .show()
+        startActivity(Intent(this, NoticeDetailActivity::class.java).apply {
+            putExtra(NoticeDetailActivity.EXTRA_NOTICE, item.toJson().toString())
+        })
     }
 
     private fun share(item: Notice) {
@@ -685,6 +697,8 @@ class MainActivity : Activity() {
     companion object {
         private const val TAB_ALL = "all"
         private const val TAB_FAVORITES = "favorites"
+        private const val TAB_ALERTS = "alerts"
+        const val EXTRA_OPEN_TAB = "es.opoalert.app.open_tab"
         private const val FILTER_ALL = "Todas"
         private const val FILTER_POOLS = "Bolsas"
         private const val FILTER_POSITIONS = "Plazas"
