@@ -1,0 +1,35 @@
+name: OpoAlert - Auditar CIDO para cuatro provincias
+on:
+  push:
+    branches:
+      - feature/tarragona-spain-20261028
+    paths:
+      - 'backend/cido_cataluna.py'
+      - 'backend/validar_cido.py'
+      - 'backend/tests/test_cido_cataluna.py'
+      - '.github/workflows/cido-auditar.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  comprobar-cataluna:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pruebas del lector oficial CIDO
+        run: python -m unittest discover -s backend/tests -p test_cido_cataluna.py -v
+      - name: Descargar todos los procesos provinciales de 30 dias
+        run: python -u backend/cido_cataluna.py --days 30 --output out_cido
+      - name: Verificar fechas, enlaces, recuentos y todas las provincias
+        run: python backend/validar_cido.py --directory out_cido --require-today
+      - name: Guardar evidencias piloto sin publicacion
+        uses: actions/upload-artifact@v4
+        with:
+          name: cido-cataluna-cuatro-provincias
+          path: out_cido/*.json
+          if-no-files-found: ignore
+          retention-days: 7
