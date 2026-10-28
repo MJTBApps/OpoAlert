@@ -23,3 +23,34 @@ for url in urls:
   print("INPUTS",[(i.get("name"),i.get("id"),i.get("value"),i.get("type")) for i in soup.select("input")[:35]],flush=True)
   print("SCRIPTS",[(x.get("src")) for x in soup.select("script[src]")[:20]],flush=True)
  except Exception as e:print("ERROR",type(e).__name__,str(e)[:400],flush=True)
+
+
+# Inspect official announcement, historical search, calendar script and daily PDF.
+from urllib.parse import urlsplit
+MORE=[
+ "https://bender.dpteruel.es/dpt/bopt.nsf/historicos.xsp",
+ "https://bender.dpteruel.es/dpt/bopt.nsf/busquedas.xsp",
+ "https://bender.dpteruel.es/dpt/bopt.nsf/busquedasn.xsp",
+ "https://bender.dpteruel.es/dpt/bopt.nsf/0/78AF45C9E931954CC1258E9D0035774E",
+ "https://bender.dpteruel.es/dpt/bopt.nsf/0/78AF45C9E931954CC1258E9D0035774E?OpenDocument",
+ "https://bender.dpteruel.es/DPT/bopt.nsf/Redireccion?OpenPage&dia=20261028",
+ "https://bender.dpteruel.es/DPT/bopt.nsf/Redireccion?OpenPage&dia=20261027",
+ "https://bender.dpteruel.es/DPT/bopt.nsf/Redireccion?OpenPage&dia=20261024",
+ "https://236ws.dpteruel.es/DPT/bopt.nsf/calendarportada-siniframe.js",
+]
+for url in MORE:
+ print("\nPROBE",url,flush=True)
+ try:
+  with urlopen(Request(url,headers={"User-Agent":"Mozilla/5.0","Accept-Language":"es"}),timeout=20) as r:
+   raw=r.read(750_000)
+   print("HTTP",r.status,"URL",r.url,"TYPE",r.headers.get("content-type"),"SIZE",len(raw),"TOTAL",r.headers.get("content-length"),flush=True)
+  if raw[:4]==b"%PDF":
+   print("PDF HEADER",raw[:50],flush=True)
+   continue
+  soup=BeautifulSoup(raw,"html.parser")
+  print("TEXT",soup.get_text(" ",strip=True)[:1800],flush=True)
+  print("FORMS",[(f.get("action"),f.get("id")) for f in soup.select("form")[:8]],flush=True)
+  print("LINKS",[(a.get("href"),a.get_text(" ",strip=True)[:65]) for a in soup.select("a[href]")[:55]],flush=True)
+  print("INPUTS",[(i.get("name"),i.get("id"),i.get("type")) for i in soup.select("input")[:35]],flush=True)
+  print("HTML EXCERPT",raw.decode("utf-8","replace")[:1900],flush=True)
+ except Exception as e:print("ERROR",type(e).__name__,str(e)[:320],flush=True)
