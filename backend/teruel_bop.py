@@ -146,8 +146,8 @@ def parse_page(html:str,day:date,total:int|None=None)->tuple[int,list[dict],Beau
             or int(match.group(4))!=day.year):
             raise ProvincialCoverageError(f"Teruel {day}: datos incoherentes {stamp.get_text(' ',strip=True)}")
         rows.append({"id":match.group(1),"title":label,"entity":entity,"url":url})
-    if len({x["id"] for x in rows})!=len(rows):
-        raise ProvincialCoverageError(f"Teruel {day}: ID duplicado en pagina: "+str([(x["id"],x["url"]) for x in rows]))
+    if len({x["url"] for x in rows})!=len(rows):
+        raise ProvincialCoverageError(f"Teruel {day}: documento original duplicado en pagina")
     if (found==0 and rows) or (found>0 and not rows):
         raise ProvincialCoverageError(f"Teruel {day}: ausencia o presencia incoherente de anuncios")
     return found,rows,soup
@@ -207,7 +207,7 @@ def scan(day:date,session_factory=official_session)->dict|None:
             if len(more)!=expected:
                 raise ProvincialCoverageError(f"Teruel {day}: pagina {n} con {len(more)} de {expected}")
             rows.extend(more)
-        if len(rows)!=total or len({x["id"] for x in rows})!=total:
+        if len(rows)!=total or len({x["url"] for x in rows})!=total:
             raise ProvincialCoverageError(f"Teruel {day}: faltan anuncios tras paginacion")
         sample=rows[0]
         number=parse_detail(request(session,sample["url"]),sample,day)
@@ -220,7 +220,7 @@ def scan(day:date,session_factory=official_session)->dict|None:
             if found_number!=number:
                 raise ProvincialCoverageError(f"Teruel {day}: anuncio de otra edicion")
             notices.append({
-                "id":"TE-"+item["id"],"province":PROVINCE,"title":item["title"],
+                "id":"TE-"+item["id"]+"-"+item["url"].rsplit("/",1)[-1],"province":PROVINCE,"title":item["title"],
                 "entity":item["entity"],"date":day.strftime("%d/%m/%Y"),
                 "bulletin":str(number),"type":kind,"url":item["url"],
             })
