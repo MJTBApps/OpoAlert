@@ -547,7 +547,9 @@
       "primaryGazette": "bop",
       "state": "active",
       "coverageKind": "CIDO",
-      "bopState": "pending"
+      "bopState": "blocked_official_portal_timeout",
+      "bopPortal": "https://ebop.diputaciolleida.cat/",
+      "bopBlocker": "Las pruebas HTTPS del portal oficial desde GitHub Actions agotan el tiempo de espera. No se publica BOP parcial."
     },
     {
       "ine": "43",
