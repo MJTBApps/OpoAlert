@@ -102,6 +102,13 @@ enum class Province(
         "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
         "www.boa.aragon.es", "/cgi-bin/EBOA/BRSCGI",
         Regex("ZA-\\d{9}"),
+    ),
+    CADIZ(
+        "CA", "Cádiz",
+        "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
+        "https://www.bopcadiz.es/",
+        "www.bopcadiz.es", "/export/sites/default/.boletines_pdf/",
+        Regex("CA-\\d{4}-\\d{4,7}"),
     );
 
     companion object {
@@ -120,6 +127,7 @@ enum class Province(
             id.startsWith("HU-") -> HUESCA
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
+            id.startsWith("CA-") -> CADIZ
             else -> VALENCIA
         }
     }
