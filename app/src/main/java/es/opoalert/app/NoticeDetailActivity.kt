@@ -209,13 +209,17 @@ class NoticeDetailActivity : Activity() {
             "Alicante" -> "Boletín Oficial de la Provincia de Alicante"
             "Castellón" -> "Boletín Oficial de la Provincia de Castellón"
             "España (BOE)" -> "Boletín Oficial del Estado (BOE)"
+            "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
         }
         card.addView(text("▤  " + province, 13f, "#203856", true))
-        card.addView(text(
-            (if (notice.province == Province.BOE.label) "BOE n.º " else "BOP n.º ") +
-                notice.bulletin + "   ·   Registro " + notice.id, 11f, "#60748C"
-        ).apply { setPadding(dp(2), dp(8), 0, 0) })
+        val reference = if (notice.id.startsWith("CIDO"))
+            "Actualización " + notice.date + "   ·   Ref. " + notice.id
+        else (if (notice.province == Province.BOE.label) "BOE n.º " else "BOP n.º ") +
+            notice.bulletin + "   ·   Registro " + notice.id
+        card.addView(text(reference, 11f, "#60748C").apply {
+            setPadding(dp(2), dp(8), 0, 0)
+        })
         content.addView(card)
     }
 
@@ -228,7 +232,8 @@ class NoticeDetailActivity : Activity() {
         content.addView(favoriteAction, LinearLayout.LayoutParams(-1, dp(52)).apply {
             topMargin = dp(9)
         })
-        content.addView(action("▤   Ver PDF oficial", "#FE4559", "#FFFFFF") { openOfficial() },
+        content.addView(action(if (notice.id.startsWith("CIDO"))
+            "▤   Ver convocatoria en CIDO" else "▤   Ver PDF oficial", "#FE4559", "#FFFFFF") { openOfficial() },
             LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(9) })
         content.addView(text(
             "OpoAlert no es una aplicación oficial. Las bases, requisitos y plazos válidos son los publicados por la Administración competente.",
@@ -256,7 +261,7 @@ class NoticeDetailActivity : Activity() {
 
     private fun share() {
         val message = NoticeText.headline(notice.title) + "\n" + notice.entity +
-            "\nBOP " + notice.province + " · " + notice.date +
+            "\n" + (if (notice.id.startsWith("CIDO")) "CIDO" else if (notice.id.startsWith("BOE-A-")) "BOE" else "BOP") + " " + notice.province + " · " + notice.date +
             " · Registro " + notice.id + "\n" + notice.url +
             "\n\nVerifica las bases y los plazos en el anuncio oficial."
         try {
@@ -282,7 +287,7 @@ class NoticeDetailActivity : Activity() {
         try {
             startActivity(Intent(Intent.ACTION_VIEW, link))
         } catch (_: ActivityNotFoundException) {
-            Toast.makeText(this, "No hay aplicación para abrir el PDF.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "No hay aplicación para abrir la publicación.", Toast.LENGTH_LONG).show()
         }
     }
 
