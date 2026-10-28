@@ -47,6 +47,7 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
 - revisar-cido.yml — API CIDO, cuatro feeds de Cataluña.
 - revisar-tarragona.yml — 30 días del BOP Tarragona, PDF oficial y feed separado.
 - revisar-barcelona.yml, revisar-girona.yml — nuevos BOP catalanes.
+- revisar-huesca.yml, revisar-teruel.yml — fuentes provinciales de Aragón.
 
 GitHub Actions puede retrasar ejecuciones. La app sólo consume datos
 verificados desde GitHub Pages.
@@ -60,7 +61,7 @@ verificados desde GitHub Pages.
   correlación de fechas y numeración de los BOP, entidad anunciadora y PDF oficial individual.
   La exportación JSON del portal está mal formada; se consulta el HTML, no se inventan datos.
   Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40694818774
-- **Teruel**: portal de la Diputación accesible, siguiente integración pendiente de auditoría.
+- **Teruel**: el BOP oficial está en `https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp`. Su archivo se consulta con un buscador XPages por fecha, recuperando todas las páginas de resultados (10 anuncios por página) para cada uno de los 30 días. Los anuncios individuales muestran la publicación oficial íntegra en HTML; los PDF del dominio alternativo no son accesibles desde el sistema de validación, por lo que se enlazan únicamente esos anuncios originales. Integración sujeta al resultado exitoso de la auditoría y a su posterior publicación.
 - **Zaragoza**: la URL oficial de la Diputación agotó el tiempo de espera en GitHub Actions;
   investigar alternativa oficial antes de activar el feed.
 - **Lleida** continúa pendiente; la existencia de CIDO no equivale a BOP completo.
