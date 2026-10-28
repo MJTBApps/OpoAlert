@@ -73,11 +73,15 @@ object RemoteFeedReader {
             }
             notice
         }.distinctBy { it.id }
-        val bulletin = coverage.optString("bulletin", "?")
+        val history = root.optJSONObject("historyCoverage")
+        val historyBulletins = history?.optJSONArray("bulletins")
+        val bulletin = if (history?.optBoolean("complete", false) == true &&
+            historyBulletins != null && historyBulletins.length() > 0
+        ) historyBulletins.optString(historyBulletins.length() - 1, "?")
+        else coverage.optString("bulletin", "?")
         val pages = coverage.optInt("pagesVisited", 0)
         val announcements = coverage.optInt("announcementsRead", 0)
         val status = "BOP $bulletin: $announcements anuncios en $pages paginas · Feed actualizado $checked"
-        val history = root.optJSONObject("historyCoverage")
         val historyStatus = if (history?.optBoolean("complete", false) == true) {
             "Historico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
         } else {
