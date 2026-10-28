@@ -26,19 +26,22 @@ def validate(path:Path,expected_end:date|None=None)->dict:
     pub=hist.get("publicationDates",[])
     absent=hist.get("nonPublicationDates",[])
     nums=hist.get("bulletins",[])
+    issue_dates=hist.get("issuePublicationDates",[])
     if (not isinstance(pub,list) or len(pub)<20 or pub!=sorted(set(pub))
-        or len(nums)!=len(pub)
+        or len(nums)!=len(issue_dates) or len(issue_dates)<20
+        or issue_dates!=sorted(issue_dates)
+        or set(issue_dates)!=set(pub)
         or not isinstance(absent,list) or len(absent)!=len(set(absent))
         or set(pub)&set(absent)
         or set(pub)|set(absent)!={(start+timedelta(days=i)).isoformat() for i in range(30)}
-        or hist.get("issuesRead")!=len(pub)
+        or hist.get("issuesRead")!=len(issue_dates)
         or end-date.fromisoformat(pub[-1])>timedelta(days=4)):
         raise ProvincialCoverageError("Zaragoza: calendario de boletines incompleto")
     numbers=[int(n) for n in nums]
     if (not all(1<=n<=366 for n in numbers) or cov.get("bulletin")!=nums[-1]):
         raise ProvincialCoverageError("Zaragoza: numero de BOP incorrecto")
     for i in range(1,len(numbers)):
-        if date.fromisoformat(pub[i]).year==date.fromisoformat(pub[i-1]).year:
+        if date.fromisoformat(issue_dates[i]).year==date.fromisoformat(issue_dates[i-1]).year:
             if numbers[i]!=numbers[i-1]+1:
                 raise ProvincialCoverageError("Zaragoza: hay saltos en la numeracion del BOP")
         elif numbers[i]!=1:
@@ -53,24 +56,26 @@ def validate(path:Path,expected_end:date|None=None)->dict:
         or not isinstance(total,int) or total<len(notices) or total<100
         or total!=hist.get("announcementsRead")
         or not isinstance(pages,int) or pages!=hist.get("pagesVisited")
-        or pages!=2*len(pub)
+        or pages!=2
         or cov.get("opportunities")!=len(notices)
         or hist.get("opportunities")!=len(notices)):
         raise ProvincialCoverageError("Zaragoza: totales o paginacion incoherentes")
-    lookup=dict(zip(pub,nums))
+    lookup={}
+    for d,num in zip(issue_dates,nums):
+        lookup.setdefault(d,set()).add(num)
     ids=set()
     for rec in notices:
         ident=rec.get("id","")
         if not re.fullmatch(r"ZA-\d{9}",ident) or ident in ids:
             raise ProvincialCoverageError("Zaragoza: identificador no unico")
         d=datetime.strptime(rec["date"],"%d/%m/%Y").date()
-        if (d.isoformat() not in lookup or rec.get("bulletin")!=lookup[d.isoformat()]
+        if (d.isoformat() not in lookup or rec.get("bulletin") not in lookup[d.isoformat()]
             or rec.get("province")!=PROVINCE or not rec.get("title","").strip()
             or not rec.get("entity","").strip() or not safe_pdf(rec.get("url",""))
             or rec.get("type") not in ("Plaza / oposición","Bolsa de trabajo")):
             raise ProvincialCoverageError(f"Zaragoza: convocatoria no verificable {ident}")
         ids.add(ident)
-    print(f"ZARAGOZA VALIDADA: {len(pub)} ediciones, {total} anuncios, {len(notices)} candidatas "
+    print(f"ZARAGOZA VALIDADA: {len(nums)} ediciones, {total} anuncios, {len(notices)} candidatas "
           f"entre {start} y {end}",flush=True)
     return data
 
