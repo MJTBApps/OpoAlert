@@ -5,17 +5,20 @@ import java.util.Locale
 /** Short, faithful previews of the public notice headings. The PDF remains authoritative. */
 object NoticeText {
     private val rolePattern = Regex(
-        """(?iu)(?:\b(?:\d+|un|una|dues|dos|tres|quatre|cuatro|cinc|cinco|sis|seis|set|siete|vuit|ocho|nou|nueve|deu|diez)\s+places?\s+(?:de\b|d')|\bborsa\b|\bbolsa de trabajo\b|\bplaça\s+(?:de\b|d')|\bplaza\s+(?:de\b|d')|\bplaces\s+(?:de\b|d')|\bplazas\s+(?:de\b|d'))"""
+        """(?iu)(?:\b(?:\d+|un|una|dues|dos|tres|quatre|cuatro|cinc|cinco|sis|seis|set|siete|vuit|ocho|nou|nueve|deu|diez)\s+(?:places?|plazas?)\s+(?:de\b|d')|\bborsa\b|\bbolsa de trabajo\b|\bplaça\s+(?:de\b|d')|\bplaza\s+(?:de\b|d')|\bplaces\s+(?:de\b|d')|\bplazas\s+(?:de\b|d'))"""
     )
     private val procedures = listOf(
         "designació de membres", "designación de miembros", "nomenament de membres",
         "modificació de les bases", "modificación de las bases", "rectificació de les bases",
         "correcció d'errades", "corrección de errores", "estimació del recurs",
+        "estimación del recurso", "adición de una plaza", "ampliación de plazas",
         "addició d'una plaça"
     )
     private val cutMarkers = listOf(
-        " corresponent a ", " incloses en ", " inclosa en ",
-        " mitjançant el sistema ", " mediante el sistema ", " expedient "
+        " corresponent a ", " correspondiente a ", " correspondientes a ",
+        " incloses en ", " inclosa en ", " incluidas en ", " incluida en ",
+        " incluidos en ", " incluido en ", " mitjançant el sistema ",
+        " mediante el sistema ", " expedient ", " expediente "
     )
 
     /** A procedural notice must never look like a fresh vacancy just because it mentions a role. */

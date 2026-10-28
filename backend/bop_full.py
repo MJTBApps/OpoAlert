@@ -20,6 +20,7 @@ import time
 from typing import Any
 
 from scan import SOURCE, extract_index, datagrid_row_count, TextParser
+from idioma_bop import seleccionar_castellano
 
 # PrimeFaces y variantes compatibles; no todos los portales usan el mismo HTML.
 NEXT_SELECTORS = (
@@ -360,11 +361,12 @@ def main():
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=not args.headful)
-        page = browser.new_page(locale='ca-ES', viewport={'width': 1280, 'height': 900})
+        page = browser.new_page(locale='es-ES', viewport={'width': 1280, 'height': 900})
         try:
             page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
             page.locator('body').wait_for(timeout=15000)
             page.wait_for_timeout(1600)
+            seleccionar_castellano(page)
             opportunities, audit = scan_browser(page, max_pages=args.max_pages)
             print(json.dumps(asdict(audit), ensure_ascii=False, indent=2))
             if not audit.complete:

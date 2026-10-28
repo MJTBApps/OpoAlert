@@ -1,4 +1,4 @@
-"""Static UI smoke checks for the native v0.8 layout and its view wiring."""
+"""Static UI smoke checks for the native v0.8.1 layout and its view wiring."""
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -41,9 +41,19 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "0.8.0"' in gradle
-    assert "versionCode = 8" in gradle
-    print("OK: Android 0.8, XML, pantalla compacta, scroll, avisos y fuente fija")
+    assert 'versionName = "0.8.1"' in gradle
+    assert "versionCode = 9" in gradle
+    # El bloque resumen debe permitir que el listado crezca: maximo 8dp
+    # de relleno vertical y el texto de metadatos en una sola linea.
+    summary = next(node for node in tree.getroot() if
+                   node.attrib.get(ANDROID + "background") == "@drawable/bg_summary_compact")
+    assert summary.attrib.get(ANDROID + "paddingTop") == "8dp"
+    assert summary.attrib.get(ANDROID + "paddingBottom") == "8dp"
+    assert ids["historyInfoText"].attrib.get(ANDROID + "maxLines") == "1"
+    assert ids["countText"].attrib.get(ANDROID + "textSize") == "24sp"
+    assert "compactUpdated(lastSync)" in activity
+    assert "latestById" in activity
+    print("OK: Android 0.8.1, resumen mas compacto, titulos CAS, scroll, favoritos")
 
 
 if __name__ == "__main__":

@@ -57,3 +57,14 @@ para localizar anuncios, no sustituye la lectura del documento oficial.
 
 Este proyecto no incluye contraseñas, claves privadas ni datos personales de
 usuarios. Los favoritos se guardan localmente en el teléfono.
+
+## Idioma de los anuncios
+
+El portal BOP permite pulsar **CAS** para obtener sus titulares oficiales en
+castellano. Los lectores de portada y de historico seleccionan y comprueban
+ese idioma antes de extraer las fichas. No se reescriben ni traducen titulos
+de manera aproximada; el PDF oficial se abre con el parametro `lang=es`.
+
+Tras actualizar el repositorio es necesario que se complete la siguiente
+ejecucion verde del workflow de lectura de BOP para que los titulares del
+feed publico cambien de valenciano a castellano.

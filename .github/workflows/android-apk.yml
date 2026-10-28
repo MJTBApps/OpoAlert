@@ -1,4 +1,4 @@
-name: OpoAlert - Crear APK Android 0.8.0
+name: OpoAlert - Crear APK Android 0.8.1
 
 on:
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
           test -n "$SDKMANAGER"
           "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
           test -d "$ANDROID_HOME/platforms/android-35"
-      - name: Validar estructura de interfaz 0.8
+      - name: Validar estructura de interfaz 0.8.1
         run: python3 scripts/test_ui_080.py
       - name: Configurar Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -48,25 +48,25 @@ jobs:
       - name: Verificar APK
         run: |
           test -s app/build/outputs/apk/debug/app-debug.apk
-          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-0.8.0.apk
-          unzip -t OpoAlert-0.8.0.apk > /dev/null
-          sha256sum OpoAlert-0.8.0.apk
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-0.8.1.apk
+          unzip -t OpoAlert-0.8.1.apk > /dev/null
+          sha256sum OpoAlert-0.8.1.apk
       - name: Guardar APK descargable como artefacto
         uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-Android-0.8.0
-          path: OpoAlert-0.8.0.apk
+          name: OpoAlert-Android-0.8.1
+          path: OpoAlert-0.8.1.apk
           if-no-files-found: error
           retention-days: 30
       - name: Publicar APK en Releases
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v0.8.0 >/dev/null 2>&1; then
-            gh release upload v0.8.0 OpoAlert-0.8.0.apk --clobber
+          if gh release view v0.8.1 >/dev/null 2>&1; then
+            gh release upload v0.8.1 OpoAlert-0.8.1.apk --clobber
           else
-            gh release create v0.8.0 OpoAlert-0.8.0.apk \
+            gh release create v0.8.1 OpoAlert-0.8.1.apk \
               --target "${{ github.sha }}" \
-              --title "OpoAlert 0.8.0 - Interfaz renovada" \
-              --notes "Android nativo: interfaz compacta, tarjetas de convocatorias legibles, icono de actualizar corregido, avisos al primer inicio, fuente publica ya configurada, favoritos, buscador y filtros. Compilacion de prueba con clave Android Debug Key propia del runner. La instalacion sobre una APK con otra firma puede requerir desinstalar la anterior (se perderan sus favoritos locales)."
+              --title "OpoAlert 0.8.1 - Interfaz renovada" \
+              --notes "Android 0.8.1: resumen superior mas compacto, mayor superficie para los anuncios y titulos castellanos oficiales leidos desde el BOP (CAS), favoritos, buscador y filtros. Compilacion de prueba con clave Android Debug Key propia del runner. La instalacion sobre una APK con otra firma puede requerir desinstalar la anterior (se perderan sus favoritos locales)."
           fi

@@ -20,6 +20,7 @@ import traceback
 from urllib.parse import parse_qs
 
 from scan import SOURCE
+from idioma_bop import seleccionar_castellano
 from bop_full import CoverageError, scan_browser, safe_write_json, Audit
 
 
@@ -651,7 +652,7 @@ def run():
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=not args.headful)
-        page = browser.new_page(locale='ca-ES', viewport={'width': 1280, 'height': 900})
+        page = browser.new_page(locale='es-ES', viewport={'width': 1280, 'height': 900})
         chunks = []
         all_by_id = {}
         audits = []
@@ -662,6 +663,7 @@ def run():
             page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
             page.locator('body').wait_for(timeout=15000)
             page.wait_for_timeout(1200)
+            seleccionar_castellano(page)
             from scan import extract_index
             _, baseline_issue = extract_index(page.content())
             if not baseline_issue:
@@ -676,6 +678,7 @@ def run():
             page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
             page.locator('body').wait_for(timeout=15000)
             page.wait_for_timeout(800)
+            seleccionar_castellano(page)
             for number, window in enumerate(windows, 1):
                 requested_start, requested_end = window['requestedStart'], window['requestedEnd']
                 start, end = window['start'], window['end']
@@ -701,6 +704,7 @@ def run():
                     page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
                     page.locator('body').wait_for(timeout=15000)
                     page.wait_for_timeout(1000)
+                    seleccionar_castellano(page)
                 request_info = search_date_range(page, start, end)
                 if not request_info.get('serverConfirmed'):
                     raise CoverageError('No se ha comprobado respuesta del servidor')

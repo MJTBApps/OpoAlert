@@ -31,7 +31,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 0.8: the notices are the main content. The compact header only presents
+ * OpoAlert 0.8.1: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -159,7 +159,7 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 0.8")
+                        .setTitle("OpoAlert 0.8.1")
                         .setMessage("Convocatorias de empleo público del BOP de Valencia. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
@@ -196,7 +196,7 @@ class MainActivity : Activity() {
         progressBar.visibility = View.VISIBLE
         refreshButton.isEnabled = false
         refreshButton.alpha = 0.48f
-        statusText.text = "Actualizando convocatorias…"
+        statusText.text = "Actualizando…"
         Thread {
             try {
                 val result = Repository.sync(applicationContext)
@@ -211,7 +211,7 @@ class MainActivity : Activity() {
             } catch (error: Exception) {
                 runOnUiThread {
                     updateHeader()
-                    statusText.text = "Sin conexión · Mostrando los datos guardados"
+                    statusText.text = "Sin conexión"
                     Toast.makeText(this, "No se pudo actualizar: ${error.message ?: "Error de conexión"}", Toast.LENGTH_LONG).show()
                     finishRefresh()
                 }
@@ -254,17 +254,23 @@ class MainActivity : Activity() {
         val favorites = FavoritesStore.list(this).size
         favoritesCountText.text = "★ $favorites favorita${if (favorites == 1) "" else "s"}"
         val lastSync = Repository.lastSync(this)
-        statusText.text = if (lastSync.isBlank()) "Preparando la primera consulta…" else "Actualizado: $lastSync"
+        statusText.text = if (lastSync.isBlank()) "Sin consultar" else compactUpdated(lastSync)
         sourceInfoText.text = compactSource(Repository.lastSource(this))
         historyInfoText.text = compactHistory(Repository.lastHistory(this))
     }
 
+    private fun compactUpdated(raw: String): String {
+        val match = Regex("""(\d{2})/(\d{2})/\d{4}\s+(\d{2}:\d{2})""").find(raw)
+        return if (match == null) "Act. $raw" else
+            "Act. ${match.groupValues[1]}/${match.groupValues[2]} ${match.groupValues[3]}"
+    }
+
     private fun compactSource(raw: String): String {
-        if (raw.isBlank()) return "Comprobando el boletín y sus anuncios"
+        if (raw.isBlank()) return "BOP de Valencia"
         val previous = Regex("""BOP\s+(\d+):\s*(\d+)\s+anuncios\s+en\s+(\d+)\s+paginas""", RegexOption.IGNORE_CASE)
             .find(raw)
         if (previous != null) {
-            return "BOP ${previous.groupValues[1]} · ${previous.groupValues[2]} anuncios · ${previous.groupValues[3]} páginas"
+            return "BOP ${previous.groupValues[1]} · ${previous.groupValues[2]} anuncios · ${previous.groupValues[3]} pág."
         }
         return if (raw.startsWith("BOP ")) raw.substringBefore(" · Feed actualizado")
         else "BOP de Valencia · Información guardada"
@@ -345,13 +351,18 @@ class MainActivity : Activity() {
         val query = searchInput.text.toString().trim()
         val favorites = FavoritesStore.list(this)
         val favoriteIds = favorites.map { it.id }.toHashSet()
-        val from = if (selectedTab == TAB_FAVORITES) favorites else notices
+        // Las favoritas guardadas en versiones anteriores pueden tener titulos en
+        // valenciano; mostramos la ficha castellana actual cuando el feed la trae.
+        val latestById = notices.associateBy { it.id }
+        val from = if (selectedTab == TAB_FAVORITES)
+            favorites.map { latestById[it.id] ?: it } else notices
         val shown = from.filter { item ->
             val correctType = selectedFilter == FILTER_ALL ||
                 (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
                 (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
             val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
             val matches = query.isEmpty() || item.title.contains(query, ignoreCase = true) ||
+                NoticeText.headline(item.title).contains(query, ignoreCase = true) ||
                 item.entity.contains(query, ignoreCase = true) || item.id.contains(query, ignoreCase = true)
             correctType && correctDate && matches
         }
@@ -482,7 +493,7 @@ class MainActivity : Activity() {
             "Comprueba el anuncio oficial y, cuando proceda, el BOE."
         val favoriteAction = if (FavoritesStore.contains(this, item.id)) "★ Quitar favorita" else "☆ Guardar favorita"
         AlertDialog.Builder(this)
-            .setTitle(item.title)
+            .setTitle(NoticeText.headline(item.title))
             .setMessage(message)
             .setPositiveButton("PDF oficial") { _, _ -> openUrl(item.url) }
             .setNeutralButton(favoriteAction) { _, _ -> toggleFavorite(item) }
@@ -491,7 +502,7 @@ class MainActivity : Activity() {
     }
 
     private fun share(item: Notice) {
-        val message = "${item.title}\n${item.entity}\nBOP Valencia · ${item.date} · Registro ${item.id}\n" +
+        val message = "${NoticeText.headline(item.title)}\n${item.entity}\nBOP Valencia · ${item.date} · Registro ${item.id}\n" +
             "${item.url}\n\nComprueba siempre el anuncio oficial y los plazos."
         try {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
