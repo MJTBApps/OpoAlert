@@ -147,7 +147,7 @@ def parse_page(html:str,day:date,total:int|None=None)->tuple[int,list[dict],Beau
             raise ProvincialCoverageError(f"Teruel {day}: datos incoherentes {stamp.get_text(' ',strip=True)}")
         rows.append({"id":match.group(1),"title":label,"entity":entity,"url":url})
     if len({x["id"] for x in rows})!=len(rows):
-        raise ProvincialCoverageError(f"Teruel {day}: ID duplicado en pagina")
+        raise ProvincialCoverageError(f"Teruel {day}: ID duplicado en pagina: "+str([(x["id"],x["url"]) for x in rows]))
     if (found==0 and rows) or (found>0 and not rows):
         raise ProvincialCoverageError(f"Teruel {day}: ausencia o presencia incoherente de anuncios")
     return found,rows,soup
