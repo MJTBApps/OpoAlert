@@ -21,8 +21,8 @@ with sync_playwright() as p:
         links = page.locator("a[title='Castellà'],a[aria-label='Castellà'],a:has-text('CAS')")
         if links.count() == 0:
             raise RuntimeError("No se detecta enlace CAS")
-        links.first.click(timeout=15000)
-        page.wait_for_timeout(2500)
+        from idioma_bop import seleccionar_castellano
+        seleccionar_castellano(page)
         after = titles(page)
         report = {
             "before": before,
