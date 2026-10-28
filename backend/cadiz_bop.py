@@ -137,7 +137,7 @@ def parse_issue(html:str,year:int,number:int)->dict:
     stamp=soup.select_one("p.fecha")
     match_day=DATE_STAMP_RE.search(stamp.get_text(" ",strip=True)) if stamp else None
     if match_day is None:
-        raise ProvincialCoverageError(f"Cadiz BOP {number}: falta fecha del portal en cabecera")
+        raise ProvincialCoverageError(f"Cadiz BOP {number}: falta fecha del portal en cabecera; texto={stamp.get_text(' ',strip=True)[:180] if stamp else None!r}")
     try:
         official_day=datetime.strptime(f"{match_day.group(1)} {match_day.group(2)} {match_day.group(3)}","%b %d %Y").date()
     except ValueError as ex:
