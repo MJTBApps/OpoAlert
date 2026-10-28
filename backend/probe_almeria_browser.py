@@ -31,6 +31,27 @@ async def main():
    print("TABLES",await page.locator("table").count(),flush=True)
    print("BODY_HTML_SLICE",(await page.locator("body").inner_html())[:8500],flush=True)
    print("NETWORK",json.dumps(stats,ensure_ascii=False),flush=True)
+   print("ROW_CLASSES",await page.locator("tr").evaluate_all("(els)=>[...new Set(els.map(e=>e.className))].slice(0,25)"),flush=True)
+   for sel in [".z-listitem",".z-listcell",".z-grid",".z-row",".z-rows",".z-listbox","tr.z-listitem","[role=row]","a[title]"]:
+    print("SELECTOR",sel,"COUNT",await page.locator(sel).count(),flush=True)
+   for sel in ["tr.z-listitem",".z-listitem","tr.z-row",".z-row"]:
+    if await page.locator(sel).count():
+     print("SAMPLE_ROWS",sel,await page.locator(sel).evaluate_all("(els)=>els.slice(0,4).map(e=>({text:e.innerText,html:e.outerHTML.slice(0,2200)}))"),flush=True)
+   for day in ["27/10/2026","01/10/2026","25/10/2026"]:
+    print("SEARCH_DAY",day,flush=True)
+    try:
+     fields=page.locator('input[placeholder="dd/mm/aaaa"]')
+     print("DATE_FIELDS",await fields.count(),flush=True)
+     await fields.first.fill(day)
+     await page.locator('a[title="Buscar registros con los parámetros indicados"]').click(timeout=12000)
+     await page.wait_for_timeout(2200)
+     txt=await page.locator("body").inner_text()
+     idx=txt.find("Anuncios\n")
+     print("RESULT_DAY",day,repr(txt[idx:idx+4000]),flush=True)
+     for sel in ["tr.z-listitem",".z-listitem","tr.z-row"]:
+      if await page.locator(sel).count():
+       print("RESULT_ROWS",sel,await page.locator(sel).count(),(await page.locator(sel).all_inner_texts())[:4],flush=True)
+    except Exception as ex:print("SEARCH_ERROR",day,type(ex).__name__,str(ex)[:520],flush=True)
    for title in ("Boletines","Histórico","Último boletín"):
     candidate=page.get_by_text(title,exact=True)
     count=await candidate.count()
