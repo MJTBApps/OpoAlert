@@ -232,6 +232,7 @@ class MainActivity : Activity() {
             .setTitle("Boletines que quieres seguir")
             .setMultiChoiceItems(options.map { when (it) {
                 Province.BOE -> "BOE · toda España"
+                Province.TARRAGONA_BOP -> "BOP · Tarragona"
                 Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA -> "CIDO · ${it.label}"
                 else -> "BOP · ${it.label}"
             } }.toTypedArray(), checked) { _, index, enabled ->
@@ -643,7 +644,7 @@ class MainActivity : Activity() {
             setPadding(0, dp(8), 0, 0)
         }
         val origin = if (item.id.startsWith("CIDO")) "CIDO · ${item.province}"
-            else if (item.id.startsWith("BOE-A-")) "BOE · España" else "BOP ${item.province} ${item.bulletin}"
+            else if (item.id.startsWith("BOE-A-")) "BOE · España" else if (item.id.startsWith("TA-")) "BOP · Tarragona ${item.bulletin}" else "BOP ${item.province} ${item.bulletin}"
         footer.addView(text("$origin · Ref. ${item.id}", 10.5f, "#64748B"),
             LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
         footer.addView(text("Compartir ↗", 11f, "#2452A4", true).apply {
