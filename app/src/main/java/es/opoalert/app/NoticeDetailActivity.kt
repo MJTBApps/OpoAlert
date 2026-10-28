@@ -213,6 +213,7 @@ class NoticeDetailActivity : Activity() {
             "Barcelona (BOP)" -> "Boletín Oficial de la Provincia de Barcelona"
             "Girona (BOP)" -> "Boletín Oficial de la Provincia de Girona"
             "Huesca" -> "Boletín Oficial de la Provincia de Huesca"
+            "Teruel" -> "Boletín Oficial de la Provincia de Teruel"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
         }
@@ -238,8 +239,11 @@ class NoticeDetailActivity : Activity() {
         content.addView(favoriteAction, LinearLayout.LayoutParams(-1, dp(52)).apply {
             topMargin = dp(9)
         })
-        content.addView(action(if (notice.id.startsWith("CIDO"))
-            "▤   Ver convocatoria en CIDO" else "▤   Ver PDF oficial", "#FE4559", "#FFFFFF") { openOfficial() },
+        content.addView(action(when {
+            notice.id.startsWith("CIDO") -> "▤   Ver convocatoria en CIDO"
+            notice.province == "Teruel" -> "▤   Ver anuncio oficial"
+            else -> "▤   Ver PDF oficial"
+        }, "#FE4559", "#FFFFFF") { openOfficial() },
             LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(9) })
         content.addView(text(
             "OpoAlert no es una aplicación oficial. Las bases, requisitos y plazos válidos son los publicados por la Administración competente.",

@@ -1,4 +1,4 @@
-# OpoAlert 1.7 — convocatorias públicas con fuentes verificadas
+# OpoAlert 1.9 — convocatorias públicas con fuentes verificadas
 
 Aplicación nativa Android que busca convocatorias de empleo público,
 bolsas y oposiciones en boletines oficiales y catálogos públicos.
@@ -6,8 +6,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 
 ## Descargar Android
 
-Última versión publicada: desde GitHub Pages, archivo de descarga
-OpoAlert-1.7.0.apk (después de comprobar la compilación del proyecto).
+Última versión de esta rama: OpoAlert-1.9.0.apk (se publicará en GitHub Pages únicamente tras validar el BOP Teruel y compilar Android).
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
@@ -15,7 +14,7 @@ Si la firma no coincide con otra APK instalada, Android puede obligar a
 desinstalarla primero, con pérdida de favoritos locales. No se guardan
 favoritos ni alertas en un servidor.
 
-## Fuentes disponibles en 1.8
+## Fuentes previstas en 1.9
 
 - BOP Valencia, Alicante y Castellón — 30 días auditados.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
@@ -27,7 +26,9 @@ favoritos ni alertas en un servidor.
 
 - BOP Huesca (Aragón) — 30 días y 22 ediciones auditados, 544 anuncios revisados y acceso al PDF individual oficial.
 
-Total: 12 fuentes independientes. El archivo de catálogo mantiene las 50
+- BOP Teruel (Aragón): lector del boletín de la Diputación con anuncios individuales HTML oficiales y paginación XPages. Solo se activa cuando una auditoría completa de 30 días supera las comprobaciones.
+
+Total previsto: 13 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
@@ -55,7 +56,7 @@ No se garantiza notificación instantánea.
 - Pruebas UI: python scripts/test_ui_080.py.
 - APK automatizada: .github/workflows/android-apk.yml.
 - Publicación de feeds: revisar-bop.yml, revisar-provincias.yml,
-  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml y revisar-huesca.yml.
+  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml, revisar-huesca.yml y revisar-teruel.yml.
 
 La expansión geográfica está documentada en backend/ESPANA.md y el estado
 de las fuentes se encuentra en backend/fuentes_espana.json.

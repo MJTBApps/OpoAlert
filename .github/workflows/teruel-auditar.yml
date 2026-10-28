@@ -1,0 +1,38 @@
+name: OpoAlert - Piloto BOP Teruel 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/teruel-bop-audit-20261028]
+    paths:
+      - backend/teruel_bop.py
+      - backend/validar_teruel_bop.py
+      - backend/tests/test_teruel_bop.py
+      - .github/workflows/teruel-auditar.yml
+permissions:
+  contents: read
+concurrency:
+  group: opoalert-piloto-teruel-30-dias
+  cancel-in-progress: true
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Probar fechas, paginacion y enlaces del BOP
+        run: python -m unittest discover -s backend/tests -p test_teruel_bop.py -v
+      - name: Auditar de verdad todos los dias y resultados
+        run: python -u backend/teruel_bop.py --days 30 --output out_teruel/teruel_bop.json
+      - name: Control independiente de cobertura y calidad
+        run: python backend/validar_teruel_bop.py --file out_teruel/teruel_bop.json --require-today
+      - name: Guardar datos exclusivamente si pasan la auditoria
+        uses: actions/upload-artifact@v4
+        with:
+          name: teruel-bop-30-dias-auditado
+          path: out_teruel/teruel_bop.json
+          if-no-files-found: ignore
+          retention-days: 7
