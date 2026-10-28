@@ -29,8 +29,8 @@ class ProvinceTest {
         assertEquals(Province.GIRONA_BOP, Province.fromNoticeId("GI-2026-208-09310"))
         assertEquals(Province.HUESCA, Province.fromNoticeId("HU-2026-207001"))
         assertTrue(Province.HUESCA.idPattern.matches("HU-2026-207001"))
-        assertEquals(Province.TERUEL, Province.fromNoticeId("TE-2026-3129"))
-        assertTrue(Province.TERUEL.idPattern.matches("TE-2026-3129"))
+        assertEquals(Province.TERUEL, Province.fromNoticeId("TE-2026-3129-78AF45C9E931954CC1258E9D0035774E"))
+        assertTrue(Province.TERUEL.idPattern.matches("TE-2026-3129-78AF45C9E931954CC1258E9D0035774E"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
         assertEquals(13, Province.entries.map { it.feedUrl }.toSet().size)
