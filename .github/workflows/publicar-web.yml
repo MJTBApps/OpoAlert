@@ -1,18 +1,19 @@
 name: OpoAlert - Publicar portada nacional y feeds
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '10 20 * * *'
   push:
     branches: [main]
     paths:
-      - 'docs/index.html'
-      - 'docs/tarragona_bop.json'
+      - 'docs/**'
       - '.github/workflows/publicar-web.yml'
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: opoalert-web-publicacion
+  group: opoalert-pages-unico
   cancel-in-progress: true
 jobs:
   publicar:
