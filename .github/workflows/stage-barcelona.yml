@@ -1,0 +1,45 @@
+name: OpoAlert - Preparar BOP Barcelona validado en rama
+on:
+  push:
+    branches: [feature/bop-cataluna-restantes-20261028]
+    paths: ['.github/workflows/stage-barcelona.yml']
+permissions:
+  actions: read
+  contents: write
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Recuperar historico BOP Barcelona auditado
+        uses: actions/download-artifact@v4
+        with:
+          name: barcelona-bop-auditado
+          run-id: 40689612399
+          repository: MJTBApps/OpoAlert
+          github-token: ${{ github.token }}
+          path: stage/barcelona
+      - name: Validar 30 dias antes de incorporar datos al repositorio
+        run: |
+          set -eu
+          SRC="$(find stage/barcelona -type f -name 'barcelona_bop.json' -print -quit)"
+          test -n "$SRC"
+          python backend/validar_barcelona_bop.py --file "$SRC" --require-today
+          cp "$SRC" docs/barcelona_bop.json
+          python backend/validar_barcelona_bop.py --file docs/barcelona_bop.json --require-today
+      - name: Guardar feed BOP Barcelona solo en rama de pruebas
+        run: |
+          set -eu
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/barcelona_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: staging BOP Barcelona auditado 30 dias'
+            git pull --rebase origin feature/bop-cataluna-restantes-20261028
+            git push origin HEAD:feature/bop-cataluna-restantes-20261028
+          fi
