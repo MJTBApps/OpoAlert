@@ -94,7 +94,7 @@ enum class Province(
         "TE", "Teruel",
         "https://mjtbapps.github.io/OpoAlert/teruel_bop.json",
         "https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp",
-        "bender.dpteruel.es", "/dpt/bopt.nsf/0/", Regex("TE-\\d{4}-\\d{4}"),
+        "bender.dpteruel.es", "/dpt/bopt.nsf/0/", Regex("TE-\\d{4}-\\d{4}-[A-F0-9]{32}"),
     );
 
     companion object {
