@@ -64,7 +64,6 @@ class NoticeDetailActivity : Activity() {
         addActions(content)
         scroll.addView(content)
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
-        root.addView(bottomTabs(), LinearLayout.LayoutParams(-1, dp(77)))
         return root
     }
 
@@ -233,40 +232,6 @@ class NoticeDetailActivity : Activity() {
             "OpoAlert no es una aplicación oficial. Las bases, requisitos y plazos válidos son los publicados por la Administración competente.",
             10.5f, "#8190A5"
         ).apply { setPadding(dp(4), dp(14), dp(4), 0) })
-    }
-
-    private fun bottomTabs(): LinearLayout {
-        val row = LinearLayout(this).apply {
-            orientation = LinearLayout.HORIZONTAL
-            gravity = Gravity.CENTER_VERTICAL
-            setPadding(dp(15), dp(6), dp(15), dp(9))
-            background = rounded("#FFFFFF", 21, "#E2E9F3")
-        }
-        row.addView(nav("⌕", "Explorar") { navigateMain("all") }, LinearLayout.LayoutParams(0, -1, 1f))
-        row.addView(nav("★", "Favoritas") { navigateMain("favorites") }, LinearLayout.LayoutParams(0, -1, 1f))
-        row.addView(nav("♧", "Alertas") {
-            startActivity(Intent(this, AlertsActivity::class.java))
-        }, LinearLayout.LayoutParams(0, -1, 1f))
-        return row
-    }
-
-    private fun nav(icon: String, title: String, action: () -> Unit): LinearLayout =
-        column().apply {
-            gravity = Gravity.CENTER
-            isClickable = true
-            isFocusable = true
-            contentDescription = title
-            setOnClickListener { action() }
-            addView(text(icon, 23f, "#53627C").apply { gravity = Gravity.CENTER })
-            addView(text(title, 11f, "#53627C", true).apply { gravity = Gravity.CENTER })
-        }
-
-    private fun navigateMain(tab: String) {
-        startActivity(Intent(this, MainActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-            putExtra(MainActivity.EXTRA_OPEN_TAB, tab)
-        })
-        finish()
     }
 
     private fun updateFavoriteState() {
