@@ -301,12 +301,215 @@ def audit(days:int=30,today:date|None=None,scanner=fetch_day)->dict:
        "notices":notices,
     }
 
+
+def query_range(start:date,end:date,xml:bool=False)->dict:
+    params=dict(BASE)
+    params["@PUBL-GE"]=start.strftime("%Y%m%d")
+    params["@PUBL-LE"]=end.strftime("%Y%m%d")
+    if xml:
+        params["OUTPUTMODE"]="XML"
+        params["SEC"]="OPENDATABOAXML"
+    return params
+
+def parse_range_json(raw:bytes,start:date,end:date)->list[dict]:
+    # Some official notices contain a literal backslash before a letter/digit
+    # (for example a reference to a power line), which violates JSON escaping.
+    # Escape ONLY malformed backslashes, then independently compare every
+    # document ID, date, agency and PDF with the official XML export.
+    try:
+        source=raw.decode("ISO-8859-1")
+    except UnicodeError as ex:
+        raise ProvincialCoverageError("Zaragoza: codificacion no valida") from ex
+    fixed=source
+    try:
+        data=json.loads(source)
+    except json.JSONDecodeError as ex:
+        if "Invalid \\escape" not in str(ex):
+            raise ProvincialCoverageError(f"Zaragoza: JSON corrupto no reparable: {ex}") from ex
+        fixed=re.sub(r"\\(?![\"\\/bfnrtu])",r"\\\\",source)
+        if fixed==source or len(fixed)-len(source)>30:
+            raise ProvincialCoverageError("Zaragoza: demasiadas alteraciones en JSON oficial")
+        try:data=json.loads(fixed)
+        except (ValueError,UnicodeError) as err:
+            raise ProvincialCoverageError("Zaragoza: JSON oficial no corregible") from err
+        print(f"Zaragoza: normalizados {len(fixed)-len(source)} caracteres de escape invalidos en JSON; contraste XML obligatorio",flush=True)
+    if not isinstance(data,list) or not 20<=len(data)<MAX_RESULTS:
+        raise ProvincialCoverageError(f"Zaragoza: volumen insuficiente o paginacion truncada: {len(data) if isinstance(data,list) else '?'}")
+    ids=set()
+    seen_pdfs=set()
+    totals=set()
+    for position,item in enumerate(data,1):
+        if not isinstance(item,dict):
+            raise ProvincialCoverageError("Zaragoza: entrada JSON irregular")
+        m=ORDINAL_RE.fullmatch(str(item.get("NOrden","")))
+        docn=item.get("DOCN","")
+        date_raw=item.get("FechaPublicacion","")
+        number=str(item.get("Numeroboletin",""))
+        agency=item.get("Emisor","")
+        title=item.get("Titulo","")
+        full_text=item.get("Texto","")
+        try:d=datetime.strptime(date_raw,"%Y%m%d").date()
+        except (ValueError,TypeError) as ex:
+            raise ProvincialCoverageError("Zaragoza: fecha de publicacion incorrecta") from ex
+        if (m is None or int(m.group(1))!=position
+            or not ID_RE.fullmatch(str(docn)) or docn in ids
+            or not start<=d<=end or not number.isdigit() or not 1<=int(number)<=366
+            or not SECTION_RE.search(str(item.get("Seccion","")))
+            or not isinstance(item.get("Subseccion"),str) or not item["Subseccion"].strip()
+            or not isinstance(agency,str) or not agency.strip()
+            or not isinstance(title,str) or not title.strip()
+            or not isinstance(full_text,str) or not full_text.strip()):
+            raise ProvincialCoverageError(f"Zaragoza: fecha, contenido o indice incongruente, fila {position}")
+        pdf=pdf_url(item.get("UrlPdf",""))
+        issue_pdf=pdf_url(item.get("UrlBCOM",""))
+        if pdf in seen_pdfs:
+            raise ProvincialCoverageError(f"Zaragoza: PDF duplicado para anuncio {docn}")
+        seen_pdfs.add(pdf)
+        ids.add(docn)
+        totals.add(int(m.group(2)))
+    if totals!={len(data)}:
+        raise ProvincialCoverageError(f"Zaragoza: API informa {totals}, pero llegaron {len(data)} anuncios")
+    return data
+
+def parse_range_xml(raw:bytes,start:date,end:date)->dict[str,dict]:
+    try:root=ET.fromstring(raw)
+    except ET.ParseError as ex:
+        raise ProvincialCoverageError(f"Zaragoza: XML oficial no integro: {ex}") from ex
+    if root.tag.lower()!="documento":
+        raise ProvincialCoverageError("Zaragoza: XML no es formato de datos abiertos")
+    out={}
+    for reg in root.findall("registro"):
+        docn=(reg.findtext("docn") or "").strip()
+        date_raw=(reg.findtext("fecha") or "").strip()
+        agency=(reg.findtext("emisor") or "").strip()
+        sec=(reg.findtext("seccion") or "").strip()
+        title=(reg.findtext("titulo") or "").strip()
+        try:d=datetime.strptime(date_raw,"%Y%m%d").date()
+        except (ValueError,TypeError) as ex:
+            raise ProvincialCoverageError("Zaragoza: fecha XML incorrecta") from ex
+        if (not ID_RE.fullmatch(docn) or docn in out
+            or not start<=d<=end or not SECTION_RE.search(sec)
+            or not agency or not title):
+            raise ProvincialCoverageError("Zaragoza: XML no corresponde al BOPZ esperado")
+        out[docn]={"date":date_raw,"agency":agency,
+                    "title":title,"pdf":pdf_url(reg.findtext("url") or "")}
+    if not 20<=len(out)<MAX_RESULTS:
+        raise ProvincialCoverageError("Zaragoza: XML vacio o truncado")
+    return out
+
+def audit_batch(days:int=30,today:date|None=None,
+                session_factory=official_session,pdf_check=verify_pdf)->dict:
+    if days!=30:
+        raise ProvincialCoverageError("Zaragoza: se exige historial exacto de 30 dias")
+    end=today or date.today()
+    start=end-timedelta(days=29)
+    s=session_factory()
+    try:
+        raw_json=get(s,query_range(start,end)).content
+        raw_xml=get(s,query_range(start,end,True)).content
+        rows=parse_range_json(raw_json,start,end)
+        xml=parse_range_xml(raw_xml,start,end)
+        if set(xml)!={item["DOCN"] for item in rows}:
+            raise ProvincialCoverageError("Zaragoza: los dos formatos oficiales no coinciden en identificadores")
+        for item in rows:
+            match=xml[item["DOCN"]]
+            if (match["date"]!=item["FechaPublicacion"]
+                or fold(" ".join(match["agency"].split()))!=fold(" ".join(item["Emisor"].split()))
+                or match["pdf"]!=pdf_url(item["UrlPdf"])):
+                raise ProvincialCoverageError(f"Zaragoza: datos contradictorios para anuncio {item['DOCN']}")
+        per_issue={}
+        for row in rows:
+            rawday=row["FechaPublicacion"]
+            no=int(row["Numeroboletin"])
+            key=(rawday,no)
+            if key not in per_issue:
+                per_issue[key]=[]
+            per_issue[key].append(row)
+        keys=sorted(per_issue)
+        issue_numbers=[n for _,n in keys]
+        if (not 20<=len(keys)<=30
+            or len(issue_numbers)!=len(set(issue_numbers))
+            or keys[0][0]>(start+timedelta(days=4)).strftime("%Y%m%d")
+            or keys[-1][0]<(end-timedelta(days=4)).strftime("%Y%m%d")):
+            raise ProvincialCoverageError("Zaragoza: faltan boletines en el periodo consultado")
+        for a,b in zip(keys,keys[1:]):
+            if a[0][:4]==b[0][:4]:
+                if b[1]!=a[1]+1:
+                    raise ProvincialCoverageError(f"Zaragoza: falta numero BOP entre {a[1]} y {b[1]}")
+            elif b[1]!=1:
+                raise ProvincialCoverageError("Zaragoza: cambio anual incompleto")
+        # Ensure all announcements within each edition share the same original
+        # signed full-boletin PDF; individual links are checked separately.
+        pdfs=set()
+        seen=[]
+        notices=[]
+        sections=Counter()
+        for (date_raw,number),group in keys and [(k,per_issue[k]) for k in keys]:
+            day=datetime.strptime(date_raw,"%Y%m%d").date()
+            whole_issue={pdf_url(x["UrlBCOM"]) for x in group}
+            if len(whole_issue)!=1:
+                raise ProvincialCoverageError(f"Zaragoza: varias ediciones originales en BOP {number}")
+            first=pdf_url(group[0]["UrlPdf"])
+            pdfs.add(first)
+            for item in group:
+                sections[item["Subseccion"]]+=1
+                kind=classify_candidate(item)
+                if kind is None:continue
+                link=pdf_url(item["UrlPdf"])
+                pdfs.add(link)
+                notices.append({
+                    "id":"ZA-"+item["DOCN"],"province":PROVINCE,
+                    "title":public_title(item),"entity":item["Emisor"].strip(),
+                    "date":day.strftime("%d/%m/%Y"),"bulletin":str(number),
+                    "type":kind,"url":link,
+                })
+            seen.append({"day":day,"number":number,"read":len(group)})
+            print(f"Zaragoza {day}: BOP {number}, {len(group)} anuncios (secciones verificadas en XML)",flush=True)
+        if len(sections)<2:
+            raise ProvincialCoverageError("Zaragoza: solo una seccion del boletin fue consultada")
+        if not notices or len({x["id"] for x in notices})!=len(notices):
+            raise ProvincialCoverageError("Zaragoza: ninguna candidata o IDs repetidos")
+        # Limit network concurrency; no unverified PDF link can enter the feed.
+        # Each request checks real application/pdf and PDF magic bytes.
+        print(f"Zaragoza: verificando {len(pdfs)} PDF originales",flush=True)
+        for i,url in enumerate(sorted(pdfs),1):
+            pdf_check(s,url)
+            if i%20==0:
+                print(f"Zaragoza PDF verificados: {i}/{len(pdfs)}",flush=True)
+        notices.sort(key=lambda n:(datetime.strptime(n["date"],"%d/%m/%Y"),n["id"]),reverse=True)
+        published_days=sorted({x["day"].isoformat() for x in seen})
+        absent=sorted({(start+timedelta(days=i)).isoformat() for i in range(30)}-set(published_days))
+        if any(date.fromisoformat(d).weekday()!=6 for d in absent):
+            raise ProvincialCoverageError(f"Zaragoza: dia no dominical sin datos en BOP: {absent}")
+        num_issues=len(seen)
+        result={
+            "schemaVersion":1,"source":SOURCE,"province":PROVINCE,
+            "lastCheckedUTC":datetime.now(timezone.utc).isoformat(),
+            "coverage":{"complete":True,"status":"complete","bulletin":str(seen[-1]["number"]),
+                "pagesVisited":2,"announcementsRead":len(rows),"opportunities":len(notices)},
+            "historyCoverage":{
+                "complete":True,"rangeStart":start.isoformat(),"rangeEnd":end.isoformat(),
+                "issuesRead":num_issues,"pagesVisited":2,"announcementsRead":len(rows),
+                "opportunities":len(notices),
+                "bulletins":[str(x["number"]) for x in seen],
+                "publicationDates":published_days,
+                "issuePublicationDates":[x["day"].isoformat() for x in seen],
+                "nonPublicationDates":absent,
+                "sectionsRead":dict(sections),
+                "documentsVerified":len(pdfs)},
+            "notices":notices,
+        }
+        print(f"ZARAGOZA OK: {num_issues} boletines, {len(rows)} anuncios, {len(notices)} candidatas",flush=True)
+        return result
+    finally:
+        s.close()
+
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("--days",type=int,default=30)
     parser.add_argument("--output",required=True,type=Path)
     args=parser.parse_args()
-    feed=audit(args.days)
+    feed=audit_batch(args.days)
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"ZARAGOZA VALIDADO: {feed['historyCoverage']['issuesRead']} ediciones, "
