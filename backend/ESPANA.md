@@ -16,9 +16,11 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
   paginación completa se auditan. Es un catálogo de empleo municipal,
   **no la lectura exhaustiva de los cuatro BOP**. La fecha es la de
   última actualización del proceso, no necesariamente su primera convocatoria.
-- BOP Tarragona: lector independiente de CIDO, con histórico completo de 30
-  días auditado, enlaces originales a PDF y publicación automática. En Android
-  se selecciona como «BOP · Tarragona», distinto de «CIDO · Tarragona».
+- BOP Tarragona, Barcelona y Girona: tres lectores independientes de CIDO,
+  con 30 días auditados, acceso a los PDF originales y publicación automática.
+  Se seleccionan como BOP provinciales, diferenciados de sus catálogos CIDO.
+- BOP Lleida: pendiente; el portal eBOP no respondió a las pruebas técnicas,
+  por lo que no puede darse por cubierto. CIDO sí proporciona procesos selectivos.
 
 ## Próximas integraciones
 
@@ -44,6 +46,7 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
 - revisar-boe.yml — BOE II.B.
 - revisar-cido.yml — API CIDO, cuatro feeds de Cataluña.
 - revisar-tarragona.yml — 30 días del BOP Tarragona, PDF oficial y feed separado.
+- revisar-barcelona.yml, revisar-girona.yml — nuevos BOP catalanes.
 
 GitHub Actions puede retrasar ejecuciones. La app sólo consume datos
 verificados desde GitHub Pages.
