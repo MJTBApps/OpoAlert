@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 class BopWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, params) {
     override suspend fun doWork(): Result = try {
         val result = Repository.sync(applicationContext)
-        Notifications.show(applicationContext, result.newOnes)
+        Notifications.show(applicationContext, result.alertMatches)
         Result.success()
     } catch (_: Exception) {
         Result.retry()

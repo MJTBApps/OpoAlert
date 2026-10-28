@@ -21,7 +21,7 @@ def main() -> None:
         "listContainer", "countText", "favoritesCountText", "statusText",
         "sourceInfoText", "historyInfoText", "progressBar", "refreshButton",
         "menuButton", "provinceSelector", "searchInput", "tabsRow", "filterRow", "resultsScroll",
-        "resultsText",
+        "resultsText", "alertsButton",
     )
     activity = (KOTLIN / "MainActivity.kt").read_text(encoding="utf-8")
     for item in desired:
@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.0.0"' in gradle
-    assert "versionCode = 12" in gradle
+    assert 'versionName = "1.1.0"' in gradle
+    assert "versionCode = 13" in gradle
     # El bloque resumen debe permitir que el listado crezca: maximo 8dp
     # de relleno vertical y el texto de metadatos en una sola linea.
     summary = next(node for node in tree.getroot() if
@@ -66,7 +66,22 @@ def main() -> None:
     assert "loadAndShowConsentFormIfRequired" in ads
     manifest = (ROOT / "app/src/main/AndroidManifest.xml").read_text(encoding="utf-8")
     assert "ca-app-pub-3940256099942544~3347511713" in manifest
-    print("OK: Android 1.0.0, resumen mas compacto, titulos CAS, scroll, favoritos")
+    assert "R.id.alertsButton" in activity
+    assert "AlertsActivity::class.java" in activity
+    assert "Notifications.show(this, result.alertMatches)" in activity
+    assert "AlertRuleStore.list(ctx)" in repository
+    assert "SmartAlertMatcher.matching(newOnes" in repository
+    worker = (KOTLIN / "BopWorker.kt").read_text(encoding="utf-8")
+    assert "result.alertMatches" in worker
+    notifications = (KOTLIN / "Notifications.kt").read_text(encoding="utf-8")
+    assert "SmartAlertMatcher.matching(" in notifications
+    assert "AlertRuleStore.list(context)" in notifications
+    manifest = (ROOT / "app/src/main/AndroidManifest.xml").read_text(encoding="utf-8")
+    assert 'android:name=".AlertsActivity"' in manifest
+    assert 'android:exported="false"' in manifest
+    assert (KOTLIN / "AlertRuleStore.kt").exists()
+    assert (KOTLIN / "AlertsActivity.kt").exists()
+    print("OK: Android 1.1.0, alertas personalizadas por provincia y puesto")
 
 
 if __name__ == "__main__":

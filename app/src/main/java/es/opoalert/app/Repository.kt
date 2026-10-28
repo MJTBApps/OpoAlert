@@ -13,6 +13,7 @@ data class SyncResult(
     val scanned: Int,
     val sourceMessage: String,
     val historyMessage: String,
+    val alertMatches: List<Notice>,
 )
 
 object Repository {
@@ -56,6 +57,9 @@ object Repository {
     @Synchronized
     fun sync(ctx: Context): SyncResult {
         val chosen = ProvinceSettings.selected(ctx)
+        // Regla de tiempo: las alertas creadas mientras se descarga el feed
+        // no deben recibir avisos retroactivos del mismo ciclo.
+        val rulesAtSyncStart = AlertRuleStore.list(ctx)
         val prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val old = cached(ctx)
         val oldIds = old.map { it.id }.toHashSet()
@@ -100,7 +104,8 @@ object Repository {
             editor.putBoolean(INITIALIZED_PREFIX + province.code, true)
         }
         if (!editor.commit()) throw IOException("No se han podido guardar los datos")
-        return SyncResult(merged, newOnes, fresh.size, status, historyMessage)
+        val alertMatches = SmartAlertMatcher.matching(newOnes, rulesAtSyncStart, chosen)
+        return SyncResult(merged, newOnes, fresh.size, status, historyMessage, alertMatches)
     }
 
     private fun dateKey(date: String): String {

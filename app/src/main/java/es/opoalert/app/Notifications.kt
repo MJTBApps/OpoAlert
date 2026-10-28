@@ -19,7 +19,7 @@ object Notifications {
         val channel = NotificationChannel(
             CHANNEL, "Nuevas convocatorias", NotificationManager.IMPORTANCE_DEFAULT
         ).apply {
-            description = "Avisos cuando se detectan nuevas plazas o bolsas en el BOP de Valencia"
+            description = "Avisos de nuevos anuncios que coincidan con tus alertas y provincias"
         }
         val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         manager.createNotificationChannel(channel)
@@ -27,6 +27,12 @@ object Notifications {
 
     fun show(context: Context, notices: List<Notice>) {
         if (notices.isEmpty() || !Repository.alertsEnabled(context)) return
+        // Segunda comprobacion: si el usuario pausa o elimina una regla durante
+        // la sincronizacion, no debe llegar una notificacion de ella.
+        val matching = SmartAlertMatcher.matching(
+            notices, AlertRuleStore.list(context), ProvinceSettings.selected(context)
+        )
+        if (matching.isEmpty()) return
         if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(
                 context, Manifest.permission.POST_NOTIFICATIONS
             ) != PackageManager.PERMISSION_GRANTED
@@ -38,15 +44,22 @@ object Notifications {
         val pending = PendingIntent.getActivity(
             context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
-        val title = if (notices.size == 1) "Nueva convocatoria en el BOP" else
-            "${notices.size} nuevas convocatorias en el BOP"
-        val body = if (notices.size == 1) notices[0].entity else
-            notices.take(3).joinToString(" · ") { it.entity }
+        val title = if (matching.size == 1) "Nueva convocatoria para tus alertas"
+            else "${matching.size} convocatorias para tus alertas"
+        val lines = matching.take(5).map {
+            NoticeText.headline(it.title).take(76) + " · " + it.province
+        }
+        val body = lines.first()
+        val inbox = NotificationCompat.InboxStyle()
+        for (line in lines) inbox.addLine(line)
+        if (matching.size > lines.size) {
+            inbox.setSummaryText("+ " + (matching.size - lines.size) + " anuncios más")
+        }
         val notification = NotificationCompat.Builder(context, CHANNEL)
             .setSmallIcon(R.drawable.ic_opoalert)
             .setContentTitle(title)
             .setContentText(body)
-            .setStyle(NotificationCompat.BigTextStyle().bigText(body))
+            .setStyle(inbox)
             .setAutoCancel(true)
             .setContentIntent(pending)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)

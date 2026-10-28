@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 1.0.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.1.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -52,6 +52,7 @@ class MainActivity : Activity() {
     private lateinit var filterRow: LinearLayout
     private lateinit var scroll: ScrollView
     private lateinit var resultsText: TextView
+    private lateinit var alertsButton: TextView
 
     private var selectedTab = TAB_ALL
     private var selectedFilter = FILTER_ALL
@@ -79,6 +80,7 @@ class MainActivity : Activity() {
         filterRow = findViewById(R.id.filterRow)
         scroll = findViewById(R.id.resultsScroll)
         resultsText = findViewById(R.id.resultsText)
+        alertsButton = findViewById(R.id.alertsButton)
 
         selectedTab = savedInstanceState?.getString("selectedTab") ?: TAB_ALL
         selectedFilter = savedInstanceState?.getString("selectedFilter") ?: FILTER_ALL
@@ -91,6 +93,7 @@ class MainActivity : Activity() {
         refreshButton.setOnClickListener { refresh() }
         menuButton.setOnClickListener { showOptions() }
         provinceSelector.setOnClickListener { showProvinceChooser() }
+        alertsButton.setOnClickListener { openAlerts() }
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -157,6 +160,7 @@ class MainActivity : Activity() {
         menu.menu.add(0, 2, 1, "Acerca de OpoAlert")
         menu.menu.add(0, 3, 2, "Privacidad y publicidad de prueba")
         menu.menu.add(0, 4, 3, "Elegir provincias")
+        menu.menu.add(0, 5, 4, "Mis alertas personalizadas")
         menu.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 1 -> {
@@ -177,7 +181,7 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 1.0.0")
+                        .setTitle("OpoAlert 1.1.0")
                         .setMessage("Convocatorias de empleo público de las provincias seleccionadas. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
@@ -193,10 +197,23 @@ class MainActivity : Activity() {
                     showProvinceChooser()
                     true
                 }
+                5 -> {
+                    openAlerts()
+                    true
+                }
                 else -> false
             }
         }
         menu.show()
+    }
+
+    private fun openAlerts() {
+        startActivity(Intent(this, AlertsActivity::class.java))
+    }
+
+    private fun updateAlertsButton() {
+        val active = AlertRuleStore.list(this).count { it.enabled }
+        alertsButton.text = if (active == 0) "🔔 Crear alerta" else "🔔 Alertas ($active)"
     }
 
     private fun showProvincePickerIfFirstLaunch() {
@@ -276,7 +293,7 @@ class MainActivity : Activity() {
                     updateHeader()
                     buildTabs()
                     render(keepScroll = true)
-                    Notifications.show(this, result.newOnes)
+                    Notifications.show(this, result.alertMatches)
                     finishRefresh()
                 }
             } catch (error: Exception) {
@@ -328,6 +345,7 @@ class MainActivity : Activity() {
         val selected = ProvinceSettings.selected(this).map { it.label }.toSet()
         countText.text = notices.count { isRecent(it.date) && it.province in selected }.toString()
         updateProvinceSelector()
+        updateAlertsButton()
         val favorites = FavoritesStore.list(this).size
         favoritesCountText.text = "★ $favorites favorita${if (favorites == 1) "" else "s"}"
         val lastSync = Repository.lastSync(this)
@@ -502,6 +520,7 @@ class MainActivity : Activity() {
     override fun onResume() {
         super.onResume()
         if (::demoAds.isInitialized) demoAds.resume()
+        if (::alertsButton.isInitialized) updateAlertsButton()
     }
 
     override fun onDestroy() {
