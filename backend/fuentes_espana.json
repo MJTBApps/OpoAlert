@@ -118,6 +118,16 @@
       "feed": "huesca_bop.json",
       "state": "active",
       "scope": "BOP oficial Huesca, 30 dias auditados con paginacion, anuncios y enlaces a PDF originales"
+    },
+    {
+      "code": "TE",
+      "territory": "44",
+      "kind": "bop",
+      "name": "BOP Teruel",
+      "portal": "https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp",
+      "feed": "teruel_bop.json",
+      "state": "active",
+      "scope": "BOP Teruel, 30 dias auditados con paginacion XPages y anuncios individuales originales oficiales"
     }
   ],
   "communities": [
@@ -369,7 +379,9 @@
       "community": "AR",
       "communityName": "Aragón",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "bopState": "active",
+      "coverageKind": "BOP"
     },
     {
       "ine": "50",
