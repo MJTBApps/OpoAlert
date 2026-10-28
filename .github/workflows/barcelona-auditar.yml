@@ -1,0 +1,35 @@
+name: OpoAlert - Auditar BOP Barcelona 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-cataluna-restantes-20261028]
+    paths:
+      - backend/barcelona_bop.py
+      - backend/validar_barcelona_bop.py
+      - backend/tests/test_barcelona_bop.py
+      - .github/workflows/barcelona-auditar.yml
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 23
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Verificar sumarios, festivos y paginas oficiales
+        run: python -m unittest discover -s backend/tests -p test_barcelona_bop.py -v
+      - name: Leer 30 dias completos con todos los registros y PDF originales
+        run: python -u backend/barcelona_bop.py --output out_barcelona/barcelona_bop.json
+      - name: Validar historico, calendario y enlaces
+        run: python backend/validar_barcelona_bop.py --file out_barcelona/barcelona_bop.json --require-today
+      - name: Guardar pruebas, no publicar feeds parciales
+        uses: actions/upload-artifact@v4
+        with:
+          name: barcelona-bop-auditado
+          path: out_barcelona/barcelona_bop.json
+          if-no-files-found: ignore
+          retention-days: 7

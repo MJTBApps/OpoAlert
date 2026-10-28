@@ -1,0 +1,35 @@
+name: OpoAlert - Auditar BOP Girona 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-cataluna-restantes-20261028]
+    paths:
+      - backend/girona_bop.py
+      - backend/validar_girona_bop.py
+      - backend/tests/test_girona_bop.py
+      - .github/workflows/girona-auditar.yml
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Verificar lector HTML y serie de boletines
+        run: python -m unittest discover -s backend/tests -p test_girona_bop.py -v
+      - name: Leer ultimo numero y todas las ediciones de 30 dias
+        run: python -u backend/girona_bop.py --output out_girona/girona_bop.json
+      - name: Auditoria estricta de 30 dias
+        run: python backend/validar_girona_bop.py --file out_girona/girona_bop.json --require-today
+      - name: Guardar pruebas, sin publicar
+        uses: actions/upload-artifact@v4
+        with:
+          name: girona-bop-auditado
+          path: out_girona/girona_bop.json
+          if-no-files-found: ignore
+          retention-days: 7

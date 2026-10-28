@@ -1,0 +1,76 @@
+name: OpoAlert - Auditar y publicar BOP Girona
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 14 * * 1-5'
+  push:
+    branches: [main]
+    paths:
+      - backend/girona_bop.py
+      - backend/validar_girona_bop.py
+      - backend/tests/test_girona_bop.py
+      - .github/workflows/revisar-girona.yml
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar y verificar parser oficial de Girona
+        run: |
+          pip install 'beautifulsoup4>=4.12,<5'
+          python -m unittest discover -s backend/tests -p test_girona_bop.py -v
+      - name: Escanear los ultimos 30 dias y PDFs oficiales
+        run: python -u backend/girona_bop.py --output out_girona/girona_bop.json
+      - name: Validar los registros y el calendario completo
+        run: python backend/validar_girona_bop.py --file out_girona/girona_bop.json --require-today
+      - name: Publicar solo feed verificado y preservar el anterior si falla
+        run: |
+          set -eu
+          cp out_girona/girona_bop.json docs/girona_bop.json
+          python backend/validar_girona_bop.py --file docs/girona_bop.json --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/girona_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: actualizar BOP Girona 30 dias verificados'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: girona-diagnostico
+          path: out_girona/*.json
+          if-no-files-found: ignore
+          retention-days: 3
+  pages:
+    needs: auditar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deploy
+        uses: actions/deploy-pages@v4

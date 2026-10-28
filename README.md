@@ -1,4 +1,4 @@
-# OpoAlert 1.5 — convocatorias públicas con fuentes verificadas
+# OpoAlert 1.6 — convocatorias públicas con fuentes verificadas
 
 Aplicación nativa Android que busca convocatorias de empleo público,
 bolsas y oposiciones en boletines oficiales y catálogos públicos.
@@ -7,7 +7,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 ## Descargar Android
 
 Última versión publicada: desde GitHub Pages, archivo de descarga
-OpoAlert-1.5.0.apk (después de comprobar la compilación del proyecto).
+OpoAlert-1.6.0.apk (después de comprobar la compilación del proyecto).
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
@@ -21,11 +21,11 @@ favoritos ni alertas en un servidor.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
 - CIDO — Barcelona, Girona, Lleida y Tarragona. Catálogo público de
   procesos selectivos municipales, no lectura exhaustiva de los BOP.
-- BOP Tarragona — anuncios provinciales y PDF originales, 30 días auditados.
+- BOP Tarragona, Barcelona y Girona — anuncios provinciales y PDF originales, 30 días auditados.
   Fuente **distinta** de CIDO Tarragona; un mismo proceso puede aparecer
   publicado en ambas.
 
-Total: 9 fuentes independientes. El archivo de catálogo mantiene las 50
+Total: 11 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
@@ -53,7 +53,7 @@ No se garantiza notificación instantánea.
 - Pruebas UI: python scripts/test_ui_080.py.
 - APK automatizada: .github/workflows/android-apk.yml.
 - Publicación de feeds: revisar-bop.yml, revisar-provincias.yml,
-  revisar-boe.yml, revisar-cido.yml y revisar-tarragona.yml.
+  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml y revisar-girona.yml.
 
 La expansión geográfica está documentada en backend/ESPANA.md y el estado
 de las fuentes se encuentra en backend/fuentes_espana.json.

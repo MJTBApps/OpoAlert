@@ -1,0 +1,45 @@
+name: OpoAlert - Preparar BOP Girona validado en rama
+on:
+  push:
+    branches: [feature/bop-cataluna-restantes-20261028]
+    paths: ['.github/workflows/stage-girona.yml']
+permissions:
+  actions: read
+  contents: write
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install "beautifulsoup4>=4.12,<5"
+      - name: Recuperar historico BOP Girona auditado
+        uses: actions/download-artifact@v4
+        with:
+          name: girona-bop-auditado
+          run-id: 40690259571
+          repository: MJTBApps/OpoAlert
+          github-token: ${{ github.token }}
+          path: stage/girona
+      - name: Confirmar origen y validar auditoria vigente
+        run: |
+          set -eu
+          SRC="$(find stage/girona -type f -name 'girona_bop.json' -print -quit)"
+          test -n "$SRC"
+          python backend/validar_girona_bop.py --file "$SRC" --require-today
+          cp "$SRC" docs/girona_bop.json
+          python backend/validar_girona_bop.py --file docs/girona_bop.json --require-today
+      - name: Guardar feed BOP en rama sin publicarlo
+        run: |
+          set -eu
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/girona_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: staging BOP Girona auditado 30 dias'
+            git pull --rebase origin feature/bop-cataluna-restantes-20261028
+            git push origin HEAD:feature/bop-cataluna-restantes-20261028
+          fi
