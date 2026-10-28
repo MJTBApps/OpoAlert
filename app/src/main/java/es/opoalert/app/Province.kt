@@ -63,6 +63,13 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/tarragona_cido.json",
         "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
         "cido.diba.cat", "/oposicions/", Regex("CIDO8-\\d+"),
+    ),
+    TARRAGONA_BOP(
+        "TB", "Tarragona (BOP)",
+        "https://mjtbapps.github.io/OpoAlert/tarragona_bop.json",
+        "https://aplicacions.dipta.cat/bopt/web/anteriores/",
+        "aplicacions.dipta.cat", "/bopt/web/anuncio/descargar-pdf/",
+        Regex("TA-\\d{4}-\\d{5}"),
     );
 
     companion object {
@@ -75,6 +82,7 @@ enum class Province(
             id.startsWith("CIDO6-") -> GIRONA
             id.startsWith("CIDO7-") -> LLEIDA
             id.startsWith("CIDO8-") -> TARRAGONA
+            id.startsWith("TA-") -> TARRAGONA_BOP
             else -> VALENCIA
         }
     }
