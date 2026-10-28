@@ -113,7 +113,7 @@ def pick_castellon(page, number:str) -> None:
     target = None
     for i in range(anchors.count()):
         candidate = anchors.nth(i)
-        label = candidate.get_attribute('aria-label') or candidate.inner_text()
+        label = candidate.get_attribute('aria-label') or (candidate.text_content() or '')
         try:
             found_number, _day = parse_cs_label(label)
         except ProvincialCoverageError:
@@ -152,7 +152,7 @@ def castellon_scan(page, start:date,end:date) -> tuple[list[VerifiedIssue],set[d
     anchors=page.locator('.ui-carousel-item a.ui-commandlink')
     bulletin_dates={}
     for i in range(anchors.count()):
-        label=anchors.nth(i).get_attribute('aria-label') or anchors.nth(i).inner_text()
+        label=anchors.nth(i).get_attribute('aria-label') or (anchors.nth(i).text_content() or '')
         try:number,day=parse_cs_label(label)
         except ProvincialCoverageError:continue
         if start<=day<=end:
@@ -163,7 +163,7 @@ def castellon_scan(page, start:date,end:date) -> tuple[list[VerifiedIssue],set[d
     if not bulletin_dates:
         raise ProvincialCoverageError('Castellon: no hay boletines con fecha dentro del periodo')
     if min(bulletin_dates.values())>start+timedelta(days=4):
-        raise ProvincialCoverageError('Castellon: la lista visible empieza demasiado tarde')
+        raise ProvincialCoverageError('Castellon: el indice de boletines no cubre el comienzo de los 30 dias')
     result=[]
     for number,day in sorted(bulletin_dates.items(),key=lambda x:x[1],reverse=True):
         pick_castellon(page,number)
