@@ -48,8 +48,19 @@ jobs:
           git add -f docs/OpoAlert-1.9.0.apk
           if ! git diff --cached --quiet; then
             git commit -m 'OpoAlert: descarga publica Android 1.9.0'
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "APK 1.9.0 guardada en main"
+                break
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo "No se pudo actualizar main tras 5 intentos" >&2
+                exit 1
+              fi
+              sleep 3
+            done
           fi
 
       - name: Informar publicacion mediante el flujo unico de Pages
