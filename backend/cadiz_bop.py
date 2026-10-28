@@ -45,6 +45,8 @@ def calendar_dates(html:str)->dict[int,date]:
     for event in soup.select(".resumenEventos"):
         a=event.select_one('a[href*="/boletin/Boletin-numero-"]')
         raw_date=event.select_one(".fechaEvento")
+        if a is None and raw_date is None:
+            continue
         if a is None or raw_date is None:
             raise ProvincialCoverageError("Cadiz: evento de calendario sin fecha o numero")
         m=ISSUE_RE.fullmatch(a.get("href",""))
