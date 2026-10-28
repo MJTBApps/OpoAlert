@@ -38,6 +38,13 @@ class GironaBOPTests(unittest.TestCase):
         with self.assertRaises(ProvincialCoverageError):
             parse_issue(html.replace("202620809310.pdf","202620809311.pdf"),208)
 
+    def test_official_secondary_pdf_series(self):
+        html=issue_html(208,date(2026,10,28)).replace(
+            "202620809310.pdf","202620819310.pdf")
+        parsed=parse_issue(html,208)
+        self.assertEqual(parsed["read"],1)
+        self.assertEqual(parsed["notices"][0]["id"],"GI-2026-208-09310")
+
     def test_full_30_days_by_consecutive_issues(self):
         end=date(2026,10,28)
         weekdays=[end-timedelta(days=i) for i in range(32) if (end-timedelta(days=i)).weekday()<5]
