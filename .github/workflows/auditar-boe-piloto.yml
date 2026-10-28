@@ -1,0 +1,36 @@
+name: OpoAlert España - Auditar 30 días BOE (piloto)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/espana-fase1]
+    paths:
+      - 'backend/boe_nacional.py'
+      - 'backend/validar_boe.py'
+      - 'backend/tests/test_boe_nacional.py'
+      - '.github/workflows/auditar-boe-piloto.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verificar-boe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Ejecutar pruebas unitarias de BOE
+        run: python -m unittest discover -s backend/tests -p test_boe_nacional.py -v
+      - name: Auditar 30 dias del sumario BOE sección II.B
+        run: python -u backend/boe_nacional.py --days 30 --output out_boe/boe.json
+      - name: Validar integridad y actualidad del histórico
+        run: python backend/validar_boe.py --file out_boe/boe.json --require-today
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-BOE-30-dias-auditado
+          path: out_boe/boe.json
+          retention-days: 7
+          if-no-files-found: error
