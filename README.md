@@ -15,7 +15,7 @@ Si la firma no coincide con otra APK instalada, Android puede obligar a
 desinstalarla primero, con pérdida de favoritos locales. No se guardan
 favoritos ni alertas en un servidor.
 
-## Fuentes disponibles en 1.5
+## Fuentes disponibles en 1.8
 
 - BOP Valencia, Alicante y Castellón — 30 días auditados.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
@@ -25,12 +25,14 @@ favoritos ni alertas en un servidor.
   Fuente **distinta** de CIDO Tarragona; un mismo proceso puede aparecer
   publicado en ambas.
 
-Total: 11 fuentes independientes. El archivo de catálogo mantiene las 50
+- BOP Huesca (Aragón) — 30 días y 22 ediciones auditados, 544 anuncios revisados y acceso al PDF individual oficial.
+
+Total: 12 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
 
-En Android, toca el selector «Fuentes» para elegir uno o varios boletines.
+En Android, toca el botón «Elegir boletines». Las fuentes aparecen agrupadas por comunidad autónoma y provincia; puedes desplegar cada comunidad y seleccionar BOP o CIDO por separado, además del BOE nacional.
 La búsqueda, favoritas y alertas inteligentes usan las fuentes seguidas.
 Los avisos se comprueban periódicamente según Android y la conexión.
 No se garantiza notificación instantánea.
@@ -53,7 +55,7 @@ No se garantiza notificación instantánea.
 - Pruebas UI: python scripts/test_ui_080.py.
 - APK automatizada: .github/workflows/android-apk.yml.
 - Publicación de feeds: revisar-bop.yml, revisar-provincias.yml,
-  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml y revisar-girona.yml.
+  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml y revisar-huesca.yml.
 
 La expansión geográfica está documentada en backend/ESPANA.md y el estado
 de las fuentes se encuentra en backend/fuentes_espana.json.
