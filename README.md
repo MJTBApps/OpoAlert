@@ -1,4 +1,4 @@
-# OpoAlert 1.6 — convocatorias públicas con fuentes verificadas
+# OpoAlert 1.7 — convocatorias públicas con fuentes verificadas
 
 Aplicación nativa Android que busca convocatorias de empleo público,
 bolsas y oposiciones en boletines oficiales y catálogos públicos.
@@ -7,7 +7,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 ## Descargar Android
 
 Última versión publicada: desde GitHub Pages, archivo de descarga
-OpoAlert-1.6.0.apk (después de comprobar la compilación del proyecto).
+OpoAlert-1.7.0.apk (después de comprobar la compilación del proyecto).
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
