@@ -82,7 +82,7 @@ class TarragonaTests(unittest.TestCase):
             return {"date":day, "total":1 if day.weekday() < 5 else 0,
                     "pages":1, "notices":[]}
         result=build_history(30,end,fake)
-        self.assertEqual(len(visited),30)
+        self.assertEqual(len(visited),sum((end-timedelta(days=i)).weekday()<5 for i in range(30)))
         self.assertEqual(len(result["historyCoverage"]["publicationDates"]) +
                          len(result["historyCoverage"]["nonPublicationDates"]),30)
 
