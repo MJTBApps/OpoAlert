@@ -24,3 +24,30 @@ for url in URLS:
     except Exception as exc:
         print("ERR",type(exc).__name__,str(exc),flush=True)
     time.sleep(0.2)
+
+# Endpoint filters/paging documented by Diputacio de Barcelona, not guessed coverage.
+from urllib.parse import quote
+EXTRA=[
+    BASE+"?sort=-maxDataPublicacioDocument",
+    BASE+"?sort=-documents.dataPublicacio",
+    BASE+"?page[size]=2&sort=-maxDataPublicacioDocument",
+    BASE+"?page[limit]=2&sort=-maxDataPublicacioDocument",
+    BASE+"?filter[idEstat]=1,2,3&sort=-maxDataPublicacioDocument",
+    BASE+"?filter[idAmbit]=8&sort=-maxDataPublicacioDocument",
+]
+for url in EXTRA:
+    print("\nSORT/PAGE",url,flush=True)
+    try:
+        with urlopen(Request(url,headers={"Accept":"application/vnd.api+json","User-Agent":"OpoAlert/1.4"}),timeout=25) as resp:
+            body=resp.read(3_000_000)
+            print("HTTP",resp.status,"BYTES",len(body),flush=True)
+        data=json.loads(body)
+        print("META",data.get("meta"),"LINKS",data.get("links"),flush=True)
+        for item in data.get("data",[])[:3]:
+            a=item.get("attributes",{})
+            print("RECORD",{"id":item.get("id"),"ambit":a.get("ambit"),"titol":a.get("titol"),"fecha":a.get("maxDataPublicacioDocument"),"estat":a.get("estat"),"urlCido":a.get("urlCido")},flush=True)
+    except HTTPError as exc:
+        print("HTTP ERROR",exc.code,exc.read(1200).decode("utf-8","replace"),flush=True)
+    except Exception as exc:
+        print("ERROR",type(exc).__name__,str(exc),flush=True)
+    time.sleep(0.2)
