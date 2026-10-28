@@ -32,7 +32,7 @@ class TarragonaTests(unittest.TestCase):
         self.day = date(2026, 10, 23)
 
     def test_one_correct_notice(self):
-        total, rows = parse_index(fixture(self.day, [(365703, "Convocatòria de plaça d'administratiu")]), self.day)
+        total, rows = parse_index(fixture(self.day, [(36570, "Convocatòria de plaça d'administratiu")]), self.day)
         self.assertEqual(total, 1)
         self.assertEqual(rows[0]["registry"], "2026-36570")
 
