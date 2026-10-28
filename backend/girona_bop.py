@@ -85,7 +85,7 @@ def parse_issue(html: str, expected_number: int|None=None) -> dict:
         edict=int(match_prefix.group(1))
         expected_file=f"{day.year}{number:03d}{edict:05d}"
         if filename!=expected_file:
-            raise ProvincialCoverageError(f"Girona BOP {number}: PDF con registro distinto")
+            raise ProvincialCoverageError(f"Girona BOP {number}: PDF con registro distinto {filename=} {expected_file=} {full[:170]=}")
         rest=full[match_prefix.end():]
         if not rest.startswith(agency):
             raise ProvincialCoverageError(f"Girona BOP {number}: entidad no coincide")
