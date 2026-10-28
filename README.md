@@ -6,7 +6,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 
 ## Descargar Android
 
-Nueva versión Android 1.10.0 preparada en esta rama, pendiente de la auditoría oficial del BOP Zaragoza y su publicación. La última APK pública hasta completar estas pruebas continúa siendo [OpoAlert 1.9.0](https://mjtbapps.github.io/OpoAlert/OpoAlert-1.9.0.apk).
+Última versión publicada: [OpoAlert 1.10.0 para Android](https://mjtbapps.github.io/OpoAlert/OpoAlert-1.10.0.apk). Zaragoza incorporada con 26 boletines provinciales, 750 anuncios revisados, 58 convocatorias candidatas y 84 PDF originales verificados en los últimos 30 días.
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
@@ -14,7 +14,7 @@ Si la firma no coincide con otra APK instalada, Android puede obligar a
 desinstalarla primero, con pérdida de favoritos locales. No se guardan
 favoritos ni alertas en un servidor.
 
-## Fuentes previstas en 1.10
+## Fuentes disponibles en 1.10
 
 - BOP Valencia, Alicante y Castellón — 30 días auditados.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
@@ -28,9 +28,9 @@ favoritos ni alertas en un servidor.
 
 - BOP Teruel (Aragón): lector del boletín de la Diputación con anuncios individuales HTML oficiales y paginación XPages. Auditoría completa de 30 días aprobada el 28/10/2026: https://github.com/MJTBApps/OpoAlert/actions/runs/40724272627.
 
-- BOP Zaragoza: archivo de la provincia completo a través de la exportación oficial de datos abiertos del Gobierno de Aragón (incluye todas las secciones, no solo la sexta). Descarga XML/JSON de 30 días, cotejo de anuncios y PDF originales. Auditoría completa obligatoria antes de publicar.
+- BOP Zaragoza: archivo de la provincia completo a través de la exportación oficial de datos abiertos del Gobierno de Aragón (incluye todas las secciones, no solo la sexta). Descarga XML/JSON de 30 días, cotejo de anuncios y PDF originales. Auditoría de 30 días, 26 ediciones y 750 anuncios aprobada: https://github.com/MJTBApps/OpoAlert/actions/runs/40729482210.
 
-Total previsto: 14 fuentes independientes. El archivo de catálogo mantiene las 50
+Total: 14 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
