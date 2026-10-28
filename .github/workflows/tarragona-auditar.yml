@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - feature/tarragona-spain-20261028
+      - feature/bop-tarragona-prod-20261028
     paths:
       - backend/tarragona.py
       - backend/validar_tarragona.py
