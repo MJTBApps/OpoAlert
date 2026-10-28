@@ -61,7 +61,7 @@ verificados desde GitHub Pages.
   correlación de fechas y numeración de los BOP, entidad anunciadora y PDF oficial individual.
   La exportación JSON del portal está mal formada; se consulta el HTML, no se inventan datos.
   Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40694818774
-- **Teruel**: el BOP oficial está en `https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp`. Su archivo se consulta con un buscador XPages por fecha, recuperando todas las páginas de resultados (10 anuncios por página) para cada uno de los 30 días. Los anuncios individuales muestran la publicación oficial íntegra en HTML; los PDF del dominio alternativo no son accesibles desde el sistema de validación, por lo que se enlazan únicamente esos anuncios originales. Integración sujeta al resultado exitoso de la auditoría y a su posterior publicación.
+- **BOP Teruel**, validado el 28/10/2026: 30 días de histórico (29/09–28/10), **22 ediciones (BOP 186–207), 46 páginas, 358 anuncios y 9 candidatos**, desde `https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp`. El buscador XPages devuelve 10 anuncios por página y puede repetir números de anuncio; OpoAlert conserva el identificador único del documento de cada anuncio. Los documentos originales son HTML íntegros del portal oficial; el PDF reside en otro servidor inaccesible desde la auditoría, por lo que no se ofrece como acceso principal. Lector y validador independiente aprobados: https://github.com/MJTBApps/OpoAlert/actions/runs/40724272627.
 - **Zaragoza**: la URL oficial de la Diputación agotó el tiempo de espera en GitHub Actions;
   investigar alternativa oficial antes de activar el feed.
 - **Lleida** continúa pendiente; la existencia de CIDO no equivale a BOP completo.
