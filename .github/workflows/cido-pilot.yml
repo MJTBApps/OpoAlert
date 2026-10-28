@@ -1,0 +1,21 @@
+name: OpoAlert - Piloto API abierta CIDO Cataluna
+on:
+  push:
+    branches: [feature/tarragona-spain-20261028]
+    paths:
+      - 'backend/cido_probe.py'
+      - '.github/workflows/cido-pilot.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Probar API oficial CIDO, sin publicar feeds
+        run: python -u backend/cido_probe.py
