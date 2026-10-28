@@ -51,3 +51,25 @@ for url in EXTRA:
     except Exception as exc:
         print("ERROR",type(exc).__name__,str(exc),flush=True)
     time.sleep(0.2)
+
+FILTERS = [
+    BASE+"?filter[maxDataPublicacioDocument][GE]=2026-09-29&page[limit]=3&sort=-maxDataPublicacioDocument",
+    BASE+"?filter[idEstat]=1,2,3&filter[maxDataPublicacioDocument][GE]=2026-09-29&page[limit]=3&sort=-maxDataPublicacioDocument",
+    BASE+"?filter[idAmbit]=6,7,8&filter[maxDataPublicacioDocument][GE]=2026-09-29&page[limit]=3&sort=-maxDataPublicacioDocument",
+    BASE+"/16615670/documents?page[limit]=2",
+]
+for url in FILTERS:
+    print("\nCIDO FILTER",url,flush=True)
+    try:
+        with urlopen(Request(url,headers={"Accept":"application/vnd.api+json","User-Agent":"OpoAlert/1.4"}),timeout=30) as resp:
+            body=resp.read(180_000)
+            print("STATUS",resp.status,"BYTES",len(body),flush=True)
+        data=json.loads(body)
+        print("META",data.get("meta"),"LINKS",data.get("links"),flush=True)
+        for item in data.get("data",[])[:3]:
+            a=item.get("attributes",{})
+            print("RECORD",{"id":item.get("id"),"ambit":a.get("ambit"),"idAmbit":a.get("idAmbit"),"titol":a.get("titol"),"fecha":a.get("maxDataPublicacioDocument"),"doc":a.get("urlDocument"),"urlCido":a.get("urlCido")},flush=True)
+            if "/documents?" in url: print("DOCUMENT JSON",json.dumps(item,ensure_ascii=False)[:2600],flush=True)
+    except HTTPError as exc: print("HTTP ERROR",exc.code,exc.read(1400).decode("utf-8","replace"),flush=True)
+    except Exception as exc: print("ERROR",type(exc).__name__,str(exc),flush=True)
+    time.sleep(0.15)
