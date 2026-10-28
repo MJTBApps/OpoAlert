@@ -47,7 +47,7 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
 - revisar-cido.yml — API CIDO, cuatro feeds de Cataluña.
 - revisar-tarragona.yml — 30 días del BOP Tarragona, PDF oficial y feed separado.
 - revisar-barcelona.yml, revisar-girona.yml — nuevos BOP catalanes.
-- revisar-huesca.yml, revisar-teruel.yml — fuentes provinciales de Aragón.
+- revisar-huesca.yml, revisar-teruel.yml y revisar-zaragoza.yml — fuentes provinciales de Aragón.
 
 GitHub Actions puede retrasar ejecuciones. La app sólo consume datos
 verificados desde GitHub Pages.
@@ -62,8 +62,7 @@ verificados desde GitHub Pages.
   La exportación JSON del portal está mal formada; se consulta el HTML, no se inventan datos.
   Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40694818774
 - **BOP Teruel**, validado el 28/10/2026: 30 días de histórico (29/09–28/10), **22 ediciones (BOP 186–207), 46 páginas, 358 anuncios y 9 candidatos**, desde `https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp`. El buscador XPages devuelve 10 anuncios por página y puede repetir números de anuncio; OpoAlert conserva el identificador único del documento de cada anuncio. Los documentos originales son HTML íntegros del portal oficial; el PDF reside en otro servidor inaccesible desde la auditoría, por lo que no se ofrece como acceso principal. Lector y validador independiente aprobados: https://github.com/MJTBApps/OpoAlert/actions/runs/40724272627.
-- **Zaragoza**: la URL oficial de la Diputación agotó el tiempo de espera en GitHub Actions;
-  investigar alternativa oficial antes de activar el feed.
+- **BOP Zaragoza**: auditoría superada del 29/09/2026 al 28/10/2026: **26 boletines oficiales (224–249), 750 anuncios completos, 58 candidatas y 84 PDF originales verificados**, incluidas las secciones I-VII y no oficiales. La Diputación no respondió en GitHub Actions, pero el Gobierno de Aragón proporciona los mismos edictos provinciales a través de `https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI` con `BASE=BZHT`, `SECC-C=zaragoza` y exportaciones JSON+XML. Se comprueban dos exportaciones de los 30 días completos y se coteja cada identificador, organismo, fecha y enlace PDF. Se recuperaron incluso el boletín 246 del 24/10 y los documentos cuyos caracteres escapados estaban mal formados en JSON, mediante contraste estricto con XML. Prueba: https://github.com/MJTBApps/OpoAlert/actions/runs/40729482210.
 - **Lleida** continúa pendiente; la existencia de CIDO no equivale a BOP completo.
 
 Las provincias futuras se añaden únicamente cuando su lector y sus documentos

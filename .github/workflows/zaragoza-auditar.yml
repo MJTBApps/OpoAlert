@@ -1,0 +1,37 @@
+name: OpoAlert - Piloto BOP Zaragoza 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/zaragoza-bop-official-20261028]
+    paths:
+      - 'backend/zaragoza_bop.py'
+      - 'backend/validar_zaragoza_bop.py'
+      - 'backend/tests/test_zaragoza_bop.py'
+      - '.github/workflows/zaragoza-auditar.yml'
+concurrency:
+  group: opoalert-zaragoza-auditoria-piloto
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3'
+      - name: Pruebas unitarias de fuentes, fechas y PDF
+        run: python -m unittest discover -s backend/tests -p test_zaragoza_bop.py -v
+      - name: Auditar 30 fechas de todas las secciones BOP Zaragoza
+        run: python -u backend/zaragoza_bop.py --days 30 --output out_zaragoza/zaragoza_bop.json
+      - name: Verificar historicidad, boletines y documentos
+        run: python backend/validar_zaragoza_bop.py --file out_zaragoza/zaragoza_bop.json --require-today
+      - uses: actions/upload-artifact@v4
+        with:
+          name: zaragoza-bop-30-dias-auditado
+          path: out_zaragoza/zaragoza_bop.json
+          if-no-files-found: error
+          retention-days: 7

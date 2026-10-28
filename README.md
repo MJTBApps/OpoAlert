@@ -1,4 +1,4 @@
-# OpoAlert 1.9 — convocatorias públicas con fuentes verificadas
+# OpoAlert 1.10 — convocatorias públicas con fuentes verificadas
 
 Aplicación nativa Android que busca convocatorias de empleo público,
 bolsas y oposiciones en boletines oficiales y catálogos públicos.
@@ -6,7 +6,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 
 ## Descargar Android
 
-Última versión publicada: [OpoAlert 1.9.0 para Android](https://mjtbapps.github.io/OpoAlert/OpoAlert-1.9.0.apk), con BOP Teruel auditado e integrado (22 ediciones, 358 anuncios originales revisados y 9 candidatos).
+Nueva versión Android 1.10.0 preparada en esta rama, pendiente de la auditoría oficial del BOP Zaragoza y su publicación. La última APK pública hasta completar estas pruebas continúa siendo [OpoAlert 1.9.0](https://mjtbapps.github.io/OpoAlert/OpoAlert-1.9.0.apk).
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
@@ -14,7 +14,7 @@ Si la firma no coincide con otra APK instalada, Android puede obligar a
 desinstalarla primero, con pérdida de favoritos locales. No se guardan
 favoritos ni alertas en un servidor.
 
-## Fuentes disponibles en 1.9
+## Fuentes previstas en 1.10
 
 - BOP Valencia, Alicante y Castellón — 30 días auditados.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
@@ -28,7 +28,9 @@ favoritos ni alertas en un servidor.
 
 - BOP Teruel (Aragón): lector del boletín de la Diputación con anuncios individuales HTML oficiales y paginación XPages. Auditoría completa de 30 días aprobada el 28/10/2026: https://github.com/MJTBApps/OpoAlert/actions/runs/40724272627.
 
-Total: 13 fuentes independientes. El archivo de catálogo mantiene las 50
+- BOP Zaragoza: archivo de la provincia completo a través de la exportación oficial de datos abiertos del Gobierno de Aragón (incluye todas las secciones, no solo la sexta). Descarga XML/JSON de 30 días, cotejo de anuncios y PDF originales. Auditoría completa obligatoria antes de publicar.
+
+Total previsto: 14 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
@@ -56,7 +58,7 @@ No se garantiza notificación instantánea.
 - Pruebas UI: python scripts/test_ui_080.py.
 - APK automatizada: .github/workflows/android-apk.yml.
 - Publicación de feeds: revisar-bop.yml, revisar-provincias.yml,
-  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml, revisar-huesca.yml y revisar-teruel.yml.
+  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml, revisar-huesca.yml, revisar-teruel.yml y revisar-zaragoza.yml.
 
 La expansión geográfica está documentada en backend/ESPANA.md y el estado
 de las fuentes se encuentra en backend/fuentes_espana.json.

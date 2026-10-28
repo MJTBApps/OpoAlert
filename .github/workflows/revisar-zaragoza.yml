@@ -1,0 +1,60 @@
+name: OpoAlert - Auditar y publicar BOP Zaragoza
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 17 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'backend/zaragoza_bop.py'
+      - 'backend/validar_zaragoza_bop.py'
+      - 'backend/tests/test_zaragoza_bop.py'
+      - '.github/workflows/revisar-zaragoza.yml'
+concurrency:
+  group: opoalert-feed-zaragoza
+  cancel-in-progress: false
+permissions:
+  contents: write
+  actions: write
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3'
+      - name: Probar parser BOPZ y validaciones cruzadas
+        run: python -m unittest discover -s backend/tests -p test_zaragoza_bop.py -v
+      - name: Auditar 30 dias de boletines, secciones y PDF
+        run: python -u backend/zaragoza_bop.py --days 30 --output out_zaragoza/zaragoza_bop.json
+      - name: Validar cobertura antes de publicar datos
+        run: python backend/validar_zaragoza_bop.py --file out_zaragoza/zaragoza_bop.json --require-today
+      - name: Conservar version auditada y publicar en repositorio
+        run: |
+          set -eu
+          cp out_zaragoza/zaragoza_bop.json docs/zaragoza_bop.json
+          python backend/validar_zaragoza_bop.py --file docs/zaragoza_bop.json --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/zaragoza_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: BOP Zaragoza auditado 30 dias'
+            for i in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "Zaragoza publicado en main"
+                break
+              fi
+              if [ "$i" -eq 5 ]; then exit 1; fi
+              sleep 4
+            done
+          fi
+      - name: Solicitar publicacion de la pagina de descargas
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-web.yml --ref main
