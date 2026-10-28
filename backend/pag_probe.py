@@ -51,3 +51,15 @@ for method,payload in [("POST",b""),("POST",urlencode({"type":"xml"}).encode())]
         print("EXPORT HTTP ERR",exc.code,exc.read(1200).decode("utf-8","replace"),flush=True)
     except Exception as exc:
         print("EXPORT ERROR",type(exc).__name__,str(exc),flush=True)
+
+print("\nPAG PAGE/ELASTIC ATTRIBUTES",flush=True)
+from collections import Counter
+inputs=[(i.name,i.get("name"),i.get("type"),i.get("value")) for i in soup.select("input[name],select[name]")]
+print("INPUTS",inputs[:110],flush=True)
+endpoints=[(x.name,x.get("id"),x.get("data-endpoint"),x.get("data-extra-parameters"),x.get("data-recover-parameters")) for x in soup.select("[data-endpoint]")]
+print("ENDPOINTS",endpoints[:55],flush=True)
+for token in ["size", "pagina", "numPagina", "pageSize", "offset", "pagination", "numregistros","resultsPerPage"]:
+    print("TOKEN",token,len(re.findall(token,str(soup),re.I)),flush=True)
+for a in soup.select("[data-endpoint]"):
+    if "empleo-elastic" in a.get("data-endpoint",""):
+        print("ENDPOINT HTML",str(a.parent)[:1300],flush=True)
