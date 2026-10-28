@@ -11,7 +11,8 @@ on:
       - 'OpoAlert - Auditar y publicar BOP Barcelona'
       - 'OpoAlert - Auditar y publicar BOP Girona'
       - 'OpoAlert - Auditar y publicar BOP Huesca'
-      - 'OpoAlert - Publicar APK 1.6.0 en web'
+      - 'OpoAlert - Auditar y publicar BOP Teruel'
+      - 'OpoAlert - Publicar APK 1.9.0 en web'
     types: [completed]
   schedule:
     - cron: '10 20 * * *'
@@ -41,9 +42,11 @@ jobs:
         run: |
           test -s docs/index.html
           test -s docs/OpoAlert-1.8.0.apk
+          test -s docs/OpoAlert-1.9.0.apk
           test -s docs/barcelona_bop.json
           test -s docs/girona_bop.json
           test -s docs/huesca_bop.json
+          test -s docs/teruel_bop.json
           test -s docs/convocatorias.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
