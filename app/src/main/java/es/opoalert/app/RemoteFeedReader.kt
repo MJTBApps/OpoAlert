@@ -5,88 +5,101 @@ import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
 
-/** Lee el resultado auditado del rastreador central. No interpreta el HTML del BOP. */
+/** The backend audits each provincial bulletin before Android accepts its feed. */
 data class RemoteFeed(
     val notices: List<Notice>,
     val status: String,
-    val historyStatus: String
+    val historyStatus: String,
 )
 
 object RemoteFeedReader {
-    fun fetch(address: String): RemoteFeed {
+    fun fetch(address: String, province: Province = Province.VALENCIA): RemoteFeed {
+        // URLs are never taken from user input: only our audited Github Pages files.
+        if (address != province.feedUrl) throw IOException("Fuente provincial no autorizada")
         val url = URL(address)
-        if (url.protocol.lowercase() != "https" || url.host.isBlank() ||
+        if (url.protocol.lowercase() != "https" || url.host != "mjtbapps.github.io" ||
             url.userInfo != null || url.port != -1 || url.ref != null) {
-            throw IOException("La fuente debe ser una URL HTTPS publica y valida")
+            throw IOException("La fuente debe ser una URL HTTPS de OpoAlert")
         }
         val connection = url.openConnection() as HttpURLConnection
         connection.connectTimeout = 16000
         connection.readTimeout = 20000
         connection.instanceFollowRedirects = true
         connection.setRequestProperty("Accept", "application/json")
-        connection.setRequestProperty("User-Agent", "OpoAlert-Android/0.4")
+        connection.setRequestProperty("User-Agent", "OpoAlert-Android/1.0")
         return try {
             if (connection.responseCode !in 200..299) {
-                throw IOException("La fuente devolvio HTTP ${connection.responseCode}")
+                throw IOException("Fuente ${province.label}: HTTP ${connection.responseCode}")
             }
-            // Evita cargar archivos arbitrariamente grandes en la memoria del movil.
             val bytes = connection.inputStream.use { stream ->
                 val out = java.io.ByteArrayOutputStream()
                 val buffer = ByteArray(8192)
                 while (true) {
                     val n = stream.read(buffer)
                     if (n == -1) break
-                    if (out.size() + n > 5_000_000) throw IOException("Archivo JSON demasiado grande")
+                    if (out.size() + n > 5_000_000) throw IOException("JSON provincial demasiado grande")
                     out.write(buffer, 0, n)
                 }
                 out.toByteArray()
             }
-            parse(String(bytes, Charsets.UTF_8))
+            parse(String(bytes, Charsets.UTF_8), province)
         } catch (error: org.json.JSONException) {
-            throw IOException("La fuente no contiene un JSON valido", error)
+            throw IOException("Fuente ${province.label}: JSON invalido", error)
         } finally {
             connection.disconnect()
         }
     }
 
-    fun parse(text: String): RemoteFeed {
+    fun parse(text: String, province: Province = Province.VALENCIA): RemoteFeed {
         val root = JSONObject(text)
         val coverage = root.optJSONObject("coverage")
-            ?: throw IOException("El feed no incluye auditoria de cobertura")
+            ?: throw IOException("${province.label}: falta auditoria oficial")
         if (!coverage.optBoolean("complete", false)) {
-            throw IOException("El lector central no ha confirmado el final del boletin")
+            throw IOException("${province.label}: lectura no confirmada")
         }
         val source = root.optString("source", "")
-        if (source != "https://bop.dival.es/bop/xhtml/portal.xhtml") {
-            throw IOException("La fuente de los anuncios no coincide con el BOP Valencia")
+        if (source != province.expectedSource) {
+            throw IOException("${province.label}: fuente oficial inesperada")
         }
-        val checked = root.optString("lastCheckedUTC", "")
-        if (checked.isBlank()) throw IOException("No consta fecha de la ultima lectura")
+        if (province != Province.VALENCIA && root.optString("province") != province.label) {
+            throw IOException("${province.label}: identificacion provincial incorrecta")
+        }
+        if (root.optString("lastCheckedUTC").isBlank()) {
+            throw IOException("${province.label}: falta fecha de comprobacion")
+        }
+        val history = root.optJSONObject("historyCoverage")
+            ?: throw IOException("${province.label}: falta auditoria de 30 dias")
+        if (!history.optBoolean("complete", false)) {
+            throw IOException("${province.label}: falta auditoria de 30 dias")
+        }
+        if (history.optString("rangeStart").isBlank() || history.optString("rangeEnd").isBlank()) {
+            throw IOException("${province.label}: periodo de fechas ausente")
+        }
         val array = root.optJSONArray("notices")
-            ?: throw IOException("El feed no contiene una lista de anuncios")
-        if (array.length() > 5000) throw IOException("Demasiados anuncios para esta version")
+            ?: throw IOException("${province.label}: falta lista de anuncios")
+        if (array.length() > 5000) throw IOException("Demasiados anuncios de ${province.label}")
         val records = (0 until array.length()).map { index ->
             val notice = Notice.fromJson(array.getJSONObject(index))
-            if (!notice.id.matches(Regex("\\d{4}/\\d{3,7}")) ||
-                !notice.url.startsWith("https://bop.dival.es/bop/downloads?")) {
-                throw IOException("El feed contiene un registro no valido")
+            val docUrl = URL(notice.url)
+            if (notice.title.isBlank() || !notice.id.matches(province.idPattern) ||
+                notice.province != province.label ||
+                docUrl.protocol.lowercase() != "https" ||
+                docUrl.host != province.pdfHost ||
+                !docUrl.path.startsWith(province.pdfPathPrefix) ||
+                docUrl.userInfo != null) {
+                throw IOException("${province.label}: anuncio o enlace no validado")
             }
             notice
-        }.distinctBy { it.id }
-        val history = root.optJSONObject("historyCoverage")
-        val historyBulletins = history?.optJSONArray("bulletins")
-        val bulletin = if (history?.optBoolean("complete", false) == true &&
-            historyBulletins != null && historyBulletins.length() > 0
-        ) historyBulletins.optString(historyBulletins.length() - 1, "?")
-        else coverage.optString("bulletin", "?")
-        val pages = coverage.optInt("pagesVisited", 0)
-        val announcements = coverage.optInt("announcementsRead", 0)
-        val status = "BOP $bulletin · $announcements anuncios · $pages páginas"
-        val historyStatus = if (history?.optBoolean("complete", false) == true) {
-            "Historico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
-        } else {
-            "Historico acumulado: aun sin confirmar los ultimos 30 dias completos"
         }
+        if (records.distinctBy { it.id }.size != records.size) {
+            throw IOException("${province.label}: anuncios duplicados")
+        }
+        val bulletins = history.optJSONArray("bulletins")
+        val currentBulletin = if (bulletins != null && bulletins.length() > 0)
+            bulletins.optString(bulletins.length() - 1) else coverage.optString("bulletin", "?")
+        val read = coverage.optInt("announcementsRead", 0)
+        val status = "${province.label}: BOP $currentBulletin · $read anuncios"
+        val historyStatus = "Histórico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}" 
         return RemoteFeed(records, status, historyStatus)
     }
 }

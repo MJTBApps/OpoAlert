@@ -1,0 +1,48 @@
+name: OpoAlert 1.0 RC - Compilar multi-provincia (desarrollo)
+
+on:
+  push:
+    branches: [feature/comunitat-valenciana-1-0]
+    paths:
+      - 'app/**'
+      - 'scripts/test_ui_080.py'
+      - '.github/workflows/android-rc-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: SDK Android 35
+        run: |
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f -print -quit)"
+          test -n "$SDKMANAGER"
+          "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
+      - name: Gradle 8.11.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Verificar vista y fuentes provinciales
+        run: python3 scripts/test_ui_080.py
+      - name: Tests Android y compilar release candidate
+        run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug
+      - name: Comprobar APK preliminar
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.0.0-rc1.apk
+          unzip -t OpoAlert-1.0.0-rc1.apk >/dev/null
+          sha256sum OpoAlert-1.0.0-rc1.apk
+      - name: Guardar solo para pruebas, no publicar la 1.0 aun
+        uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-1.0.0-rc1-preliminar
+          path: OpoAlert-1.0.0-rc1.apk
+          retention-days: 7
