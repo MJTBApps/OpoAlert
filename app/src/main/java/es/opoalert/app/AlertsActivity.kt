@@ -82,8 +82,8 @@ class AlertsActivity : Activity() {
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         body.addView(list)
         body.addView(text(
-            "Las alertas se guardan en este móvil. Si dejas de seguir una provincia " +
-                "en la pantalla principal, no recibirás avisos de esa provincia. " +
+            "Las alertas se guardan en este móvil. Si dejas de seguir un boletín " +
+                "en la pantalla principal, no recibirás avisos de esa fuente. " +
                 "Solo se avisa de anuncios nuevos detectados después de configurar la alerta.",
             11f, "#64748B"
         ).apply { setPadding(dp(3), dp(16), dp(3), 0) })
@@ -175,7 +175,7 @@ class AlertsActivity : Activity() {
             selectAll()
         }
         content.addView(input, LinearLayout.LayoutParams(-1, dp(52)))
-        content.addView(text("Provincias para esta alerta", 13f, "#34435B", true).apply {
+        content.addView(text("Boletines para esta alerta", 13f, "#34435B", true).apply {
             setPadding(0, dp(13), 0, dp(4))
         })
         val initial = existing?.provinces ?: ProvinceSettings.selected(this)
@@ -188,7 +188,7 @@ class AlertsActivity : Activity() {
             }.also { content.addView(it) }
         }
         content.addView(text(
-            "Solo recibirás avisos de las provincias que también tengas seleccionadas en Explorar.",
+            "Solo recibirás avisos de los boletines que también hayas seleccionado en Explorar.",
             11f, "#64748B"
         ).apply { setPadding(0, dp(12), 0, 0) })
         val dialog = AlertDialog.Builder(this)

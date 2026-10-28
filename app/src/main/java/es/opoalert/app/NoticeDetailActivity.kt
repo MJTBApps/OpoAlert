@@ -208,11 +208,13 @@ class NoticeDetailActivity : Activity() {
             "Valencia" -> "Boletín Oficial de la Provincia de Valencia"
             "Alicante" -> "Boletín Oficial de la Provincia de Alicante"
             "Castellón" -> "Boletín Oficial de la Provincia de Castellón"
+            "España (BOE)" -> "Boletín Oficial del Estado (BOE)"
             else -> "Boletín Oficial Provincial"
         }
         card.addView(text("▤  " + province, 13f, "#203856", true))
         card.addView(text(
-            "BOP n.º " + notice.bulletin + "   ·   Registro " + notice.id, 11f, "#60748C"
+            (if (notice.province == Province.BOE.label) "BOE n.º " else "BOP n.º ") +
+                notice.bulletin + "   ·   Registro " + notice.id, 11f, "#60748C"
         ).apply { setPadding(dp(2), dp(8), 0, 0) })
         content.addView(card)
     }
