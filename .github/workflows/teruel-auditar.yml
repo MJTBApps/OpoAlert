@@ -10,6 +10,9 @@ on:
       - .github/workflows/teruel-auditar.yml
 permissions:
   contents: read
+concurrency:
+  group: opoalert-piloto-teruel-30-dias
+  cancel-in-progress: true
 jobs:
   auditar:
     runs-on: ubuntu-latest
