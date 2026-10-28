@@ -235,6 +235,158 @@ def fetch_day(day:date,session_factory=official_session)->dict|None:
                 "notices":notices,"sections":dict(Counter(x["Subseccion"] for x in rows))}
     finally:session.close()
 
+
+def strict_json_range(raw:bytes,start:date,end:date)->list[dict]:
+    """Parse BOA JSON with its literal-backslash export bug; verify all records via XML."""
+    raw_text=raw.decode("ISO-8859-1")
+    try:
+        values=json.loads(raw_text)
+    except json.JSONDecodeError as first:
+        # Official BOPZ export sometimes emits unescaped backslashes in place
+        # names or electrical asset IDs. Escape *only* illegal JSON escapes.
+        # Never change other text, and always compare all IDs/metadata to XML.
+        repaired=re.sub(r'\\(?!["\\/bfnrtu])',r'\\\\',raw_text)
+        if repaired==raw_text:
+            raise ProvincialCoverageError(
+                f"Zaragoza: JSON oficial incorrecto no reparable: {first}"
+            ) from first
+        try:
+            values=json.loads(repaired)
+        except json.JSONDecodeError as ex:
+            raise ProvincialCoverageError(
+                f"Zaragoza: JSON oficial incorrecto tras escape limitado: {ex}"
+            ) from ex
+        print("Zaragoza: exportacion con barras no escapadas; contrastando XML oficial",flush=True)
+    if not isinstance(values,list) or not values or len(values)>=MAX_RESULTS:
+        raise ProvincialCoverageError("Zaragoza: rango de fechas vacio, truncado o no valido")
+    seen=set()
+    for i,row in enumerate(values,1):
+        if not isinstance(row,dict):
+            raise ProvincialCoverageError("Zaragoza: registro no estructurado")
+        ordinal=ORDINAL_RE.fullmatch(str(row.get("NOrden","")))
+        docid=str(row.get("DOCN",""))
+        try:
+            stamp=date.fromisoformat(str(row.get("FechaPublicacion",""))[:4]+"-"+
+                 str(row.get("FechaPublicacion",""))[4:6]+"-"+
+                 str(row.get("FechaPublicacion",""))[6:])
+        except ValueError as ex:
+            raise ProvincialCoverageError(f"Zaragoza: fecha malformada en {docid}") from ex
+        if (not ordinal or int(ordinal.group(1))!=i or int(ordinal.group(2))!=len(values)
+            or not ID_RE.fullmatch(docid) or docid in seen or not start<=stamp<=end):
+            raise ProvincialCoverageError(
+                f"Zaragoza: listado de 30 dias incompleto o desordenado en indice {i}")
+        seen.add(docid)
+    return values
+
+
+def strict_xml_range(raw:bytes,start:date,end:date)->dict[str,dict]:
+    try:
+        root=ET.fromstring(raw)
+    except ET.ParseError as ex:
+        raise ProvincialCoverageError(f"Zaragoza: XML de 30 dias invalido: {ex}") from ex
+    if root.tag!="documento":
+        raise ProvincialCoverageError("Zaragoza: raiz XML no corresponde al boletin")
+    records={}
+    for item in root.findall("registro"):
+        ident=(item.findtext("docn") or "").strip()
+        stamp=(item.findtext("fecha") or "").strip()
+        agency=(item.findtext("emisor") or "").strip()
+        section=(item.findtext("seccion") or "").strip()
+        subsection=(item.findtext("subseccion") or "").strip()
+        title=(item.findtext("titulo") or "").strip()
+        body=(item.findtext("texto") or "").strip()
+        link=(item.findtext("url") or "").strip()
+        if (not ID_RE.fullmatch(ident) or ident in records
+            or not re.fullmatch(r"\d{8}",stamp)
+            or stamp<start.strftime("%Y%m%d") or stamp>end.strftime("%Y%m%d")
+            or not SECTION_RE.search(section) or not subsection or not agency
+            or not title or not body):
+            raise ProvincialCoverageError(f"Zaragoza: registro XML invalido {ident}")
+        records[ident]={
+            "date":stamp,"agency":agency,"section":section,
+            "subsection":subsection,"title":title,
+            "pdf":pdf_url(link),
+        }
+    if not records or len(records)>=MAX_RESULTS:
+        raise ProvincialCoverageError("Zaragoza: XML oficial incompleto o vacio")
+    return records
+
+
+def fetch_range(start:date,end:date,session_factory=official_session)->dict[date,dict|None]:
+    """Fetch entire 30 days in one request per official format, never 30 requests."""
+    session=session_factory()
+    try:
+        params=dict(BASE)
+        params["@PUBL-GE"]=start.strftime("%Y%m%d")
+        params["@PUBL-LE"]=end.strftime("%Y%m%d")
+        raw_json=get(session,params).content
+        values=strict_json_range(raw_json,start,end)
+        params["OUTPUTMODE"]="XML"
+        params["SEC"]="OPENDATABOAXML"
+        raw_xml=get(session,params).content
+        xml=strict_xml_range(raw_xml,start,end)
+        if set(xml)!={str(v["DOCN"]) for v in values}:
+            missing_json=set(xml)-{str(v["DOCN"]) for v in values}
+            missing_xml={str(v["DOCN"]) for v in values}-set(xml)
+            raise ProvincialCoverageError(
+                f"Zaragoza: diferencia JSON/XML {len(missing_json)} y {len(missing_xml)}")
+        by_day={}
+        for item in values:
+            ident=str(item["DOCN"])
+            metadata=xml[ident]
+            if (metadata["date"]!=str(item["FechaPublicacion"])
+                or fold(metadata["agency"])!=fold(str(item.get("Emisor","")).strip())
+                or fold(metadata["section"])!=fold(str(item.get("Seccion","")).strip())
+                or fold(metadata["subsection"])!=fold(str(item.get("Subseccion","")).strip())
+                or metadata["pdf"]!=pdf_url(item.get("UrlPdf",""))
+                or fold(" ".join(metadata["title"].split()))!=
+                   fold(" ".join(str(item.get("Titulo","")).split()))):
+                raise ProvincialCoverageError(f"Zaragoza: XML/JSON contradictorios en {ident}")
+            d=date(int(metadata["date"][:4]),int(metadata["date"][4:6]),int(metadata["date"][6:]))
+            by_day.setdefault(d,[]).append(item)
+        if len(by_day)<20:
+            raise ProvincialCoverageError("Zaragoza: faltan demasiadas ediciones en 30 dias")
+        print(f"Zaragoza: JSON/XML oficial coincide en {len(values)} anuncios, "
+              f"{len(by_day)} ediciones",flush=True)
+        result={}
+        for day in (start+timedelta(days=i) for i in range((end-start).days+1)):
+            rows=by_day.get(day,[])
+            if not rows:
+                result[day]=None
+                continue
+            # Parsing validated per day, against the global ordinal verification.
+            normalized=[{**v,"NOrden":f"{i} de {len(rows)}"}
+                for i,v in enumerate(rows,1)]
+            number,verified=parse_json(
+                json.dumps(normalized,ensure_ascii=False).encode("ISO-8859-1"),day)
+            if not verified:
+                raise ProvincialCoverageError(f"Zaragoza {day}: dia inconsistente")
+            verify_pdf(session,pdf_url(verified[0]["UrlPdf"]))
+            notices=[]
+            for item in verified:
+                kind=classify_candidate(item)
+                if kind is None:continue
+                url=pdf_url(item["UrlPdf"])
+                if item is not verified[0]:verify_pdf(session,url)
+                notices.append({
+                    "id":"ZA-"+item["DOCN"],"province":PROVINCE,
+                    "title":public_title(item),
+                    "entity":str(item["Emisor"]).strip(),
+                    "date":day.strftime("%d/%m/%Y"),
+                    "bulletin":str(number),"type":kind,"url":url,
+                })
+            result[day]={
+                "date":day,"number":number,"read":len(verified),"pages":2,
+                "notices":notices,
+                "sections":dict(Counter(v["Subseccion"] for v in verified)),
+            }
+        if sum(x["read"] for x in result.values() if x)!=len(values):
+            raise ProvincialCoverageError("Zaragoza: suma diaria incompleta respecto al lote")
+        return result
+    finally:
+        session.close()
+
+
 def audit(days:int=30,today:date|None=None,scanner=fetch_day)->dict:
     if days!=30:
         raise ProvincialCoverageError("Zaragoza: no se permite historico menor de 30 dias")
@@ -246,8 +398,12 @@ def audit(days:int=30,today:date|None=None,scanner=fetch_day)->dict:
         try:return scanner(day),None
         except (ProvincialCoverageError,requests.RequestException,ValueError) as ex:
             return None,str(ex)
-    with ThreadPoolExecutor(max_workers=4) as p:
-        responses=list(p.map(checked,dates))
+    if scanner is fetch_day:
+        archive=fetch_range(start,end)
+        responses=[(archive.get(day),None) for day in dates]
+    else:
+        with ThreadPoolExecutor(max_workers=4) as p:
+            responses=list(p.map(checked,dates))
     issues=[]
     missing=[]
     for day,(data,error) in zip(dates,responses):
