@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.3.0"' in gradle
-    assert "versionCode = 16" in gradle
+    assert 'versionName = "1.4.0"' in gradle
+    assert "versionCode = 17" in gradle
     # El bloque resumen debe permitir que el listado crezca: maximo 8dp
     # de relleno vertical y el texto de metadatos en una sola linea.
     summary = next(node for node in tree.getroot() if
@@ -101,7 +101,7 @@ def main() -> None:
     assert 'shown.take(displayedLimit)' in activity, "Paginación necesaria para anuncios nacionales"
     assert 'Boletines que quieres seguir' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.3.0: BOE nacional opcional, favoritos y paginación")
+    print("OK: Android 1.4.0: BOE + provincias catalanas CIDO, favoritos y paginación")
 
 
 if __name__ == "__main__":
