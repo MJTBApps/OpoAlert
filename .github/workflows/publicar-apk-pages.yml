@@ -1,4 +1,4 @@
-name: OpoAlert - Publicar APK 1.2.1 en web
+name: OpoAlert - Publicar APK 1.3.0 en web
 
 on:
   workflow_dispatch:
@@ -31,8 +31,8 @@ jobs:
       - name: Recuperar APK verificada desde compilacion Android
         uses: actions/download-artifact@v4
         with:
-          name: OpoAlert-Android-1.2.1
-          run-id: 40678804381
+          name: OpoAlert-Android-1.3.0
+          run-id: 40681022146
           repository: MJTBApps/OpoAlert
           github-token: ${{ github.token }}
           path: apk
@@ -40,19 +40,19 @@ jobs:
       - name: Comprobar y preparar APK para descarga directa
         run: |
           set -eu
-          test -s apk/OpoAlert-1.2.1.apk
-          unzip -t apk/OpoAlert-1.2.1.apk > /dev/null
-          cp apk/OpoAlert-1.2.1.apk docs/OpoAlert-1.2.1.apk
-          sha256sum docs/OpoAlert-1.2.1.apk
+          test -s apk/OpoAlert-1.3.0.apk
+          unzip -t apk/OpoAlert-1.3.0.apk > /dev/null
+          cp apk/OpoAlert-1.3.0.apk docs/OpoAlert-1.3.0.apk
+          sha256sum docs/OpoAlert-1.3.0.apk
 
       - name: Guardar APK en GitHub para futuras publicaciones de Pages
         run: |
           set -eu
           git config user.name 'OpoAlert Bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f docs/OpoAlert-1.2.1.apk
+          git add -f docs/OpoAlert-1.3.0.apk
           if ! git diff --cached --quiet; then
-            git commit -m 'OpoAlert: descarga publica Android 1.2.1'
+            git commit -m 'OpoAlert: descarga publica Android 1.3.0'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
@@ -68,5 +68,5 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Informar descarga directa
         run: |
-          echo "### APK OpoAlert 1.2.1 lista" >> "$GITHUB_STEP_SUMMARY"
-          echo "https://mjtbapps.github.io/OpoAlert/OpoAlert-1.2.1.apk" >> "$GITHUB_STEP_SUMMARY"
+          echo "### APK OpoAlert 1.3.0 lista" >> "$GITHUB_STEP_SUMMARY"
+          echo "https://mjtbapps.github.io/OpoAlert/OpoAlert-1.3.0.apk" >> "$GITHUB_STEP_SUMMARY"
