@@ -95,6 +95,13 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/teruel_bop.json",
         "https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp",
         "bender.dpteruel.es", "/dpt/bopt.nsf/0/", Regex("TE-\\d{4}-\\d{4}-[A-F0-9]{32}"),
+    ),
+    ZARAGOZA(
+        "ZA", "Zaragoza",
+        "https://mjtbapps.github.io/OpoAlert/zaragoza_bop.json",
+        "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
+        "www.boa.aragon.es", "/cgi-bin/EBOA/BRSCGI",
+        Regex("ZA-\\d{9}"),
     );
 
     companion object {
@@ -112,6 +119,7 @@ enum class Province(
             id.startsWith("GI-") -> GIRONA_BOP
             id.startsWith("HU-") -> HUESCA
             id.startsWith("TE-") -> TERUEL
+            id.startsWith("ZA-") -> ZARAGOZA
             else -> VALENCIA
         }
     }
