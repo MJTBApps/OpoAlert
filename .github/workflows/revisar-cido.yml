@@ -57,10 +57,6 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Empaquetar feed y APK existentes
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
       - name: Diagnostico sin sustituir feeds en caso de error
         if: failure()
         uses: actions/upload-artifact@v4
@@ -69,20 +65,3 @@ jobs:
           path: out_cido/*.json
           if-no-files-found: ignore
           retention-days: 3
-
-  publicar-pages:
-    needs: auditar-y-publicar
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - uses: actions/configure-pages@v5
-      - name: Publicar fuentes CIDO
-        id: deploy
-        uses: actions/deploy-pages@v4
