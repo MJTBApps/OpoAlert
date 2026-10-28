@@ -1,0 +1,25 @@
+name: OpoAlert - Comprobar titulos castellano BOP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - backend/diagnosticar_castellano.py
+      - .github/workflows/probar-castellano.yml
+  workflow_dispatch:
+
+jobs:
+  comprobar-cas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar Playwright
+        run: |
+          python -m pip install -r backend/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Comparar anuncios VAL y CAS
+        run: python -u backend/diagnosticar_castellano.py
