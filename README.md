@@ -6,7 +6,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 
 ## Descargar Android
 
-Última versión de esta rama: OpoAlert-1.9.0.apk (se publicará en GitHub Pages únicamente tras validar el BOP Teruel y compilar Android).
+Última versión publicada: [OpoAlert 1.9.0 para Android](https://mjtbapps.github.io/OpoAlert/OpoAlert-1.9.0.apk), con BOP Teruel auditado e integrado (22 ediciones, 358 anuncios originales revisados y 9 candidatos).
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
@@ -14,7 +14,7 @@ Si la firma no coincide con otra APK instalada, Android puede obligar a
 desinstalarla primero, con pérdida de favoritos locales. No se guardan
 favoritos ni alertas en un servidor.
 
-## Fuentes previstas en 1.9
+## Fuentes disponibles en 1.9
 
 - BOP Valencia, Alicante y Castellón — 30 días auditados.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
@@ -26,9 +26,9 @@ favoritos ni alertas en un servidor.
 
 - BOP Huesca (Aragón) — 30 días y 22 ediciones auditados, 544 anuncios revisados y acceso al PDF individual oficial.
 
-- BOP Teruel (Aragón): lector del boletín de la Diputación con anuncios individuales HTML oficiales y paginación XPages. Solo se activa cuando una auditoría completa de 30 días supera las comprobaciones.
+- BOP Teruel (Aragón): lector del boletín de la Diputación con anuncios individuales HTML oficiales y paginación XPages. Auditoría completa de 30 días aprobada el 28/10/2026: https://github.com/MJTBApps/OpoAlert/actions/runs/40724272627.
 
-Total previsto: 13 fuentes independientes. El archivo de catálogo mantiene las 50
+Total: 13 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
