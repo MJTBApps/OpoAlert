@@ -1,4 +1,4 @@
-name: OpoAlert - Verificar descarga publica 1.10.0 y BOP
+name: OpoAlert - Verificar descarga publica 1.11.0 y BOP
 on:
   workflow_dispatch:
   push:
@@ -16,7 +16,7 @@ jobs:
         run: |
           set -eu
           BASE=https://mjtbapps.github.io/OpoAlert
-          for FILE in OpoAlert-1.10.0.apk barcelona_bop.json girona_bop.json huesca_bop.json teruel_bop.json zaragoza_bop.json; do
+          for FILE in OpoAlert-1.11.0.apk barcelona_bop.json girona_bop.json huesca_bop.json teruel_bop.json zaragoza_bop.json cadiz_bop.json; do
             echo "Comprobando $FILE en Pages"
             curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors --output /dev/null "$BASE/$FILE"
           done
@@ -25,12 +25,13 @@ jobs:
           curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/huesca_bop.json" --output /tmp/huesca.json
           curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/teruel_bop.json" --output /tmp/teruel.json
           curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/zaragoza_bop.json" --output /tmp/zaragoza.json
-          curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/OpoAlert-1.10.0.apk" --output /tmp/OpoAlert-1.10.0.apk
-          echo "01772cc2e4965c717591bf5edae366a64ed170ddd2da2c382a7d808027afe70c  /tmp/OpoAlert-1.10.0.apk" | sha256sum -c -
-          unzip -t /tmp/OpoAlert-1.10.0.apk > /dev/null
+          curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/cadiz_bop.json" --output /tmp/cadiz.json
+          curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/OpoAlert-1.11.0.apk" --output /tmp/OpoAlert-1.11.0.apk
+          echo "bad6b89f26e44b0d85627394b51a13b7f85b889a09f926ccca56bfad0ae28966  /tmp/OpoAlert-1.11.0.apk" | sha256sum -c -
+          unzip -t /tmp/OpoAlert-1.11.0.apk > /dev/null
           python - <<'PY'
           import json
-          for name in ("barcelona","girona","huesca","teruel","zaragoza"):
+          for name in ("barcelona","girona","huesca","teruel","zaragoza","cadiz"):
               data=json.load(open(f"/tmp/{name}.json",encoding="utf-8"))
               assert data["coverage"]["complete"]
               assert data["historyCoverage"]["complete"]
