@@ -226,7 +226,7 @@ def audit(days:int=30,today:date|None=None,scanner=scan_issue,session_factory=of
             errors.append(f"{number}: {error}")
             print(f"Cadiz BOP {number}: ERROR {error}",flush=True)
             continue
-        if issue["number"]!=number or issue["count"]<len(issue["candidates"]):
+        if issue is None or issue["number"]!=number or issue["count"]<len(issue["candidates"]):
             raise ProvincialCoverageError(f"Cadiz: BOP {number} incoherente")
         all_rows.append(issue)
         print(f"Cadiz BOP {number} {issue['date']}: {issue['count']} anuncios, "
