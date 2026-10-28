@@ -25,17 +25,13 @@ URLS=[
     "https://www.ddgi.cat/bop/",
     "https://www.ddgi.cat/bop/cerca",
     "https://www.ddgi.cat/bop/?data=2026-10-27",
-    "https://www.ddgi.cat/bop/2026/207",
-    "https://bop.diba.cat/",
+    "https://ebop.diputaciolleida.cat/bop/",
     "https://bop.diba.cat/cercador-butlletins",
-    "https://www.diputaciolleida.cat/publicacions-i-bases-de-dades/butlleti-oficial-de-la-provincia-bop/",
-    "https://www.diputaciolleida.cat/",
-    "https://bop.diputaciolleida.cat/",
 ]
 for url in URLS:
     print("\nSITE",url,flush=True)
     try:
-        with urlopen(Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; OpoAlert source verification/1.5)","Accept-Language":"ca,es;q=0.8","Accept":"text/html,application/xhtml+xml,*/*"}),timeout=22) as r:
+        with urlopen(Request(url,headers={"User-Agent":"Mozilla/5.0 (compatible; OpoAlert source verification/1.5)","Accept-Language":"ca,es;q=0.8","Accept":"text/html,application/xhtml+xml,*/*"}),timeout=9) as r:
             raw=r.read(300000)
             print("HTTP",r.status,"FINAL",r.url,"TYPE",r.headers.get("content-type"),"BYTES",len(raw),flush=True)
         html=raw.decode("utf-8","replace")
