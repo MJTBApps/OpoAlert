@@ -1,0 +1,88 @@
+name: OpoAlert - Publicar CIDO Cataluna verificado
+on:
+  workflow_dispatch:
+  schedule:
+    # Turno posterior a BOE y BOP valencianos; UTC.
+    - cron: '35 12 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'backend/cido_cataluna.py'
+      - 'backend/validar_cido.py'
+      - 'backend/tests/test_cido_cataluna.py'
+      - 'backend/fuentes_espana.json'
+      - '.github/workflows/revisar-cido.yml'
+
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+permissions:
+  contents: read
+
+jobs:
+  auditar-y-publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - name: Codigo del repositorio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pruebas puras y catalogo nacional
+        run: |
+          python -m unittest discover -s backend/tests -p test_cido_cataluna.py -q
+          python -m unittest discover -s backend/tests -p test_catalogo_espana.py -q
+      - name: Leer catalogo CIDO con filtro 30 dias y paginacion completa
+        run: python -u backend/cido_cataluna.py --days 30 --output out_cido
+      - name: Validar los cuatro feeds, no confundir CIDO con BOP
+        run: python backend/validar_cido.py --directory out_cido --require-today
+      - name: Publicar SOLO los cuatro feeds verificados
+        run: |
+          set -eu
+          cp out_cido/barcelona.json docs/barcelona.json
+          cp out_cido/girona.json docs/girona.json
+          cp out_cido/lleida.json docs/lleida.json
+          cp out_cido/tarragona_cido.json docs/tarragona_cido.json
+          python backend/validar_cido.py --directory docs --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/barcelona.json docs/girona.json docs/lleida.json docs/tarragona_cido.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: refrescar CIDO auditado Barcelona Girona Lleida Tarragona'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Empaquetar feed y APK existentes
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Diagnostico sin sustituir feeds en caso de error
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cido-diagnostico
+          path: out_cido/*.json
+          if-no-files-found: ignore
+          retention-days: 3
+
+  publicar-pages:
+    needs: auditar-y-publicar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publicar fuentes CIDO
+        id: deploy
+        uses: actions/deploy-pages@v4
