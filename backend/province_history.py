@@ -52,9 +52,26 @@ def valid_issues(issues: list[VerifiedIssue], province: str, start: date, end: d
 
 
 def alicante_scan(page, start:date, end:date) -> tuple[list[VerifiedIssue],set[date]]:
-    page.goto(ALICANTE,wait_until='domcontentloaded',timeout=70000)
-    page.locator('#fechaboletin').wait_for(timeout=30000)
-    page.wait_for_timeout(1600)
+    # La sede puede mostrar temporalmente un error en vez del formulario oficial.
+    # Reintentar sin dar por valido un indice de boletines incompleto.
+    for attempt in range(4):
+        response = None
+        try:
+            response = page.goto(ALICANTE, wait_until='domcontentloaded', timeout=70000)
+            page.locator('#fechaboletin').wait_for(state='visible', timeout=15000)
+            page.wait_for_timeout(600)
+            break
+        except Exception as exc:
+            title = (page.title() or '')[:90]
+            status = response.status if response else '?'
+            print(f'Alicante: formulario no disponible, intento {attempt+1}/4, '
+                  f'HTTP {status}, titulo={title!r}', flush=True)
+            if attempt == 3:
+                try: page.screenshot(path='backend/diagnostico_provincias.png', full_page=True)
+                except Exception: pass
+                raise ProvincialCoverageError(
+                    f'Alicante: no se ha cargado el formulario oficial tras 4 intentos: {exc}') from exc
+            page.wait_for_timeout(1100*(attempt+1))
     issues=[]
     days=set()
     for k in range((end-start).days+1):
