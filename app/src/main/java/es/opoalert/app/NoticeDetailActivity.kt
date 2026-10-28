@@ -209,6 +209,7 @@ class NoticeDetailActivity : Activity() {
             "Alicante" -> "Boletín Oficial de la Provincia de Alicante"
             "Castellón" -> "Boletín Oficial de la Provincia de Castellón"
             "España (BOE)" -> "Boletín Oficial del Estado (BOE)"
+            "Tarragona (BOP)" -> "Boletín Oficial de la Provincia de Tarragona"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
         }
