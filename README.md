@@ -1,4 +1,4 @@
-# OpoAlert 1.10 — convocatorias públicas con fuentes verificadas
+# OpoAlert 1.11 — convocatorias públicas con fuentes verificadas
 
 Aplicación nativa Android que busca convocatorias de empleo público,
 bolsas y oposiciones en boletines oficiales y catálogos públicos.
@@ -14,7 +14,7 @@ Si la firma no coincide con otra APK instalada, Android puede obligar a
 desinstalarla primero, con pérdida de favoritos locales. No se guardan
 favoritos ni alertas en un servidor.
 
-## Fuentes disponibles en 1.10
+## Fuentes incluidas en 1.11
 
 - BOP Valencia, Alicante y Castellón — 30 días auditados.
 - BOE, sección II.B Oposiciones y concursos — 30 días auditados.
@@ -30,7 +30,9 @@ favoritos ni alertas en un servidor.
 
 - BOP Zaragoza: archivo de la provincia completo a través de la exportación oficial de datos abiertos del Gobierno de Aragón (incluye todas las secciones, no solo la sexta). Descarga XML/JSON de 30 días, cotejo de anuncios y PDF originales. Auditoría de 30 días, 26 ediciones y 750 anuncios aprobada: https://github.com/MJTBApps/OpoAlert/actions/runs/40729482210.
 
-Total: 14 fuentes independientes. El archivo de catálogo mantiene las 50
+- BOP Cádiz (Andalucía): 30 días auditados entre el 29/09 y 28/10/2026. **21 ediciones oficiales, 359 anuncios y 41 candidatas**, índice completo con fechas y organismos y enlaces directos al PDF original del BOP. Auditoría independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40782858099.
+
+Total: 15 fuentes independientes. El archivo de catálogo mantiene las 50
 provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
 de todo el territorio español** hasta que se conecten y auditen. El BOE
 y el buscador estatal no sustituyen los boletines locales/autonómicos.
@@ -58,7 +60,7 @@ No se garantiza notificación instantánea.
 - Pruebas UI: python scripts/test_ui_080.py.
 - APK automatizada: .github/workflows/android-apk.yml.
 - Publicación de feeds: revisar-bop.yml, revisar-provincias.yml,
-  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml, revisar-huesca.yml, revisar-teruel.yml y revisar-zaragoza.yml.
+  revisar-boe.yml, revisar-cido.yml, revisar-tarragona.yml, revisar-barcelona.yml, revisar-girona.yml, revisar-huesca.yml, revisar-teruel.yml, revisar-zaragoza.yml y revisar-cadiz.yml.
 
 La expansión geográfica está documentada en backend/ESPANA.md y el estado
 de las fuentes se encuentra en backend/fuentes_espana.json.

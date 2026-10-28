@@ -1,0 +1,37 @@
+name: OpoAlert - Piloto BOP Cadiz 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/andalucia-cadiz-bop-20261028]
+    paths:
+      - backend/cadiz_bop.py
+      - backend/validar_cadiz_bop.py
+      - backend/tests/test_cadiz_bop.py
+      - .github/workflows/cadiz-auditar.yml
+concurrency:
+  group: opoalert-cadiz-piloto
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Probar lectura y validación de cada edición
+        run: python -m unittest discover -s backend/tests -p test_cadiz_bop.py -v
+      - name: Auditar 30 dias y PDF de cada boletin
+        run: python -u backend/cadiz_bop.py --days 30 --output out_cadiz/cadiz_bop.json
+      - name: Comprobar historico independiente
+        run: python backend/validar_cadiz_bop.py --file out_cadiz/cadiz_bop.json --require-today
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cadiz-bop-30-dias-auditado
+          path: out_cadiz/cadiz_bop.json
+          if-no-files-found: error
+          retention-days: 7

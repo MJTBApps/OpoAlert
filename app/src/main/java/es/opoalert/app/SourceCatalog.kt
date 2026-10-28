@@ -24,15 +24,17 @@ object SourceCatalog {
         Province.HUESCA -> Territory("Aragón", "Huesca")
         Province.TERUEL -> Territory("Aragón", "Teruel")
         Province.ZARAGOZA -> Territory("Aragón", "Zaragoza")
+        Province.CADIZ -> Territory("Andalucía", "Cádiz")
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón"),
         "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza"),
+        "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"),
     )
 
     fun groups(sources: List<Province> = Province.entries): List<BulletinCommunity> {

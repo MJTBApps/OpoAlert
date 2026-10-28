@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catálogo territorial 50 provincias y Ceuta/Melilla. Nueve BOP provinciales auditados (Valencia, Alicante, Castellón, Tarragona, Barcelona, Girona, Huesca, Teruel y Zaragoza), BOE nacional y cuatro fuentes CIDO. BOP Lleida todavía sin cobertura directa. La publicación de una provincia requiere superar auditoría antes de fusionar la rama.",
+  "note": "Catálogo territorial de España: 10 BOP provinciales auditados (Valencia, Alicante, Castellón, Tarragona, Barcelona, Girona, Huesca, Teruel, Zaragoza y Cádiz), BOE nacional y 4 fuentes CIDO. BOP Lleida sigue sin cobertura directa. La publicación de nuevos BOP exige auditoría de los últimos 30 días, PDF original y validación independiente.",
   "nationalSources": [
     {
       "code": "VA",
@@ -138,6 +138,16 @@
       "feed": "zaragoza_bop.json",
       "state": "active",
       "scope": "Boletin provincial de Zaragoza completo a través de Open Data oficial Gobierno de Aragón; todas las secciones y 30 dias auditados; PDF original"
+    },
+    {
+      "code": "CA",
+      "territory": "11",
+      "kind": "bop",
+      "name": "BOP Cádiz",
+      "portal": "https://www.bopcadiz.es/",
+      "feed": "cadiz_bop.json",
+      "state": "active",
+      "scope": "BOP de Cádiz con los últimos 30 días completos; índice oficial paginado por páginas PDF con cada anuncio y organismo; 21 ediciones y 359 anuncios auditados"
     }
   ],
   "communities": [
@@ -323,7 +333,9 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "bopState": "active",
+      "coverageKind": "BOP"
     },
     {
       "ine": "14",

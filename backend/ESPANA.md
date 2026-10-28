@@ -48,6 +48,7 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
 - revisar-tarragona.yml — 30 días del BOP Tarragona, PDF oficial y feed separado.
 - revisar-barcelona.yml, revisar-girona.yml — nuevos BOP catalanes.
 - revisar-huesca.yml, revisar-teruel.yml y revisar-zaragoza.yml — fuentes provinciales de Aragón.
+- revisar-cadiz.yml — BOP Cádiz con historico y PDF originales.
 
 GitHub Actions puede retrasar ejecuciones. La app sólo consume datos
 verificados desde GitHub Pages.
@@ -67,3 +68,7 @@ verificados desde GitHub Pages.
 
 Las provincias futuras se añaden únicamente cuando su lector y sus documentos
 oficiales superan auditoría real de 30 días. Los fallos nunca publican archivos parciales.
+
+## Andalucía — BOP Cádiz incorporado (28/10/2026)
+
+El BOP de Cádiz tiene portal oficial https://www.bopcadiz.es/ con índice completo por edición y enlace a los PDFs originales. El lector valida el calendario oficial, la correlación entre fecha HTML y PDF, los 30 días y las ediciones consecutivas, con organismo emisor, código de anuncio y enlace PDF con número de página cuando consta. **Auditoría superada: 21 boletines (188–208), 359 anuncios y 41 candidatos** del 29/09/2026 al 28/10/2026. Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40782858099. Almería dispone de un buscador ZK que se ha podido consultar con Playwright y aún requiere lector de histórico validado. Córdoba, Granada, Huelva, Jaén, Málaga y Sevilla pendientes de incorporación.
