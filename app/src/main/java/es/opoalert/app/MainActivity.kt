@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 1.2.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.3.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -56,6 +56,7 @@ class MainActivity : Activity() {
     private var selectedTab = TAB_ALL
     private var selectedFilter = FILTER_ALL
     private var notices: List<Notice> = emptyList()
+    private var displayedLimit = PAGE_SIZE
     private var loading = false
     private var refreshPending = false
     private lateinit var demoAds: DemoAds
@@ -157,7 +158,7 @@ class MainActivity : Activity() {
         menu.menu.add(0, 1, 0, if (enabled) "Desactivar avisos" else "Activar avisos")
         menu.menu.add(0, 2, 1, "Acerca de OpoAlert")
         menu.menu.add(0, 3, 2, "Privacidad y publicidad de prueba")
-        menu.menu.add(0, 4, 3, "Elegir provincias")
+        menu.menu.add(0, 4, 3, "Elegir boletines")
         menu.menu.add(0, 5, 4, "Mis alertas personalizadas")
         menu.setOnMenuItemClickListener { item ->
             when (item.itemId) {
@@ -179,8 +180,8 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 1.2.0")
-                        .setMessage("Convocatorias de empleo público de las provincias seleccionadas. " +
+                        .setTitle("OpoAlert 1.3.0")
+                        .setMessage("Convocatorias de empleo público de los boletines seleccionados. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
                         .setPositiveButton("Entendido", null)
@@ -219,7 +220,7 @@ class MainActivity : Activity() {
     }
 
     private fun updateProvinceSelector() {
-        provinceSelector.text = "Provincias: ${ProvinceSettings.display(this)} ▾"
+        provinceSelector.text = "Fuentes: ${ProvinceSettings.display(this)} ▾"
     }
 
     /** Multi-choice dialog without location permission. Favorites remain saved for all provinces. */
@@ -228,13 +229,13 @@ class MainActivity : Activity() {
         val chosen = ProvinceSettings.selected(this).toMutableSet()
         val checked = options.map { it in chosen }.toBooleanArray()
         AlertDialog.Builder(this)
-            .setTitle("Provincias que quieres seguir")
-            .setMultiChoiceItems(options.map { it.label }.toTypedArray(), checked) { _, index, enabled ->
+            .setTitle("Boletines que quieres seguir")
+            .setMultiChoiceItems(options.map { if (it == Province.BOE) "BOE · toda España" else "BOP · ${it.label}" }.toTypedArray(), checked) { _, index, enabled ->
                 if (enabled) chosen.add(options[index]) else chosen.remove(options[index])
             }
             .setPositiveButton("Guardar") { _, _ ->
                 if (chosen.isEmpty()) {
-                    Toast.makeText(this, "Selecciona al menos una provincia", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Selecciona al menos un boletín", Toast.LENGTH_LONG).show()
                 } else if (ProvinceSettings.save(this, chosen)) {
                     updateProvinceSelector()
                     updateHeader()
@@ -353,13 +354,13 @@ class MainActivity : Activity() {
     }
 
     private fun compactSource(raw: String): String {
-        if (raw.isBlank()) return "BOP de ${ProvinceSettings.display(this)}"
+        if (raw.isBlank()) return "Fuentes: ${ProvinceSettings.display(this)}"
         val previous = Regex("""BOP\s+(\d+):\s*(\d+)\s+anuncios\s+en\s+(\d+)\s+paginas""", RegexOption.IGNORE_CASE)
             .find(raw)
         if (previous != null) {
             return "BOP ${previous.groupValues[1]} · ${previous.groupValues[2]} anuncios · ${previous.groupValues[3]} pág."
         }
-        return raw.ifBlank { "BOP de ${ProvinceSettings.display(this)}" }
+        return raw.ifBlank { "Fuentes: ${ProvinceSettings.display(this)}" }
     }
 
     private fun compactHistory(raw: String): String {
@@ -446,6 +447,7 @@ class MainActivity : Activity() {
     }
 
     private fun render(keepScroll: Boolean = false) {
+        if (!keepScroll) displayedLimit = PAGE_SIZE
         val oldScroll = if (keepScroll) scroll.scrollY else 0
         list.removeAllViews()
         val query = SearchText.normalize(searchInput.text.toString().trim())
@@ -474,7 +476,7 @@ class MainActivity : Activity() {
             val message = when {
                 selectedTab == TAB_FAVORITES && favorites.isEmpty() ->
                     "Aún no tienes favoritas. Toca la estrella de una convocatoria para guardarla aquí."
-                from.isEmpty() -> "Todavía no hay convocatorias. Pulsa actualizar para consultar el BOP."
+                from.isEmpty() -> "Todavía no hay convocatorias. Pulsa actualizar para consultar los boletines."
                 else -> "No hay convocatorias que coincidan con tu búsqueda."
             }
             list.addView(text(message, 13f, "#64748B").apply {
@@ -482,9 +484,27 @@ class MainActivity : Activity() {
                 setPadding(dp(20), dp(34), dp(20), dp(34))
             })
         } else {
-            for ((index, item) in shown.withIndex()) {
+            for ((index, item) in shown.take(displayedLimit).withIndex()) {
                 addCard(item, item.id in favoriteIds)
                 if (selectedTab == TAB_ALL && index == 3) addDemoBannerIfAvailable()
+            }
+            if (shown.size > displayedLimit) {
+                val pending = shown.size - displayedLimit
+                val more = text("Ver ${minOf(PAGE_SIZE, pending)} más · ${shown.size} resultados", 14f, "#1E4FD5", true).apply {
+                    gravity = Gravity.CENTER
+                    background = rounded("#E7F1FF", 14)
+                    minHeight = dp(49)
+                    isClickable = true
+                    isFocusable = true
+                    contentDescription = "Mostrar más convocatorias"
+                    setOnClickListener {
+                        displayedLimit += PAGE_SIZE
+                        render(keepScroll = true)
+                    }
+                }
+                list.addView(more, LinearLayout.LayoutParams(-1, dp(49)).apply {
+                    topMargin = dp(11)
+                })
             }
             val note = text("Consulta siempre las bases oficiales y los plazos de inscripción.", 10.5f, "#94A3B8")
             note.gravity = Gravity.CENTER
@@ -695,6 +715,7 @@ class MainActivity : Activity() {
     private fun dp(value: Int): Int = (value * resources.displayMetrics.density + 0.5f).toInt()
 
     companion object {
+        private const val PAGE_SIZE = 45
         private const val TAB_ALL = "all"
         private const val TAB_FAVORITES = "favorites"
         private const val TAB_ALERTS = "alerts"

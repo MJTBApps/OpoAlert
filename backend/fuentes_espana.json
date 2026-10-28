@@ -1,0 +1,629 @@
+{
+  "country": "ES",
+  "updated": "2026-10-28",
+  "note": "Catálogo de las 50 provincias, Ceuta/Melilla y las fuentes realmente auditadas. Solo fuentes active se muestran en Android; los territorios pending aún no tienen cobertura provincial.",
+  "nationalSources": [
+    {
+      "code": "VA",
+      "territory": "46",
+      "kind": "bop",
+      "name": "BOP Valencia",
+      "portal": "https://bop.dival.es/bop/xhtml/portal.xhtml",
+      "feed": "convocatorias.json",
+      "state": "active"
+    },
+    {
+      "code": "AL",
+      "territory": "03",
+      "kind": "bop",
+      "name": "BOP Alicante",
+      "portal": "https://sede.diputacionalicante.es/consultas.bop/",
+      "feed": "alicante.json",
+      "state": "active"
+    },
+    {
+      "code": "CS",
+      "territory": "12",
+      "kind": "bop",
+      "name": "BOP Castellón",
+      "portal": "https://bop.dipcas.es/PortalBOP/",
+      "feed": "castellon.json",
+      "state": "active"
+    },
+    {
+      "code": "ES",
+      "territory": null,
+      "kind": "boe",
+      "name": "BOE · Oposiciones y concursos",
+      "portal": "https://www.boe.es/datosabiertos/api/boe/sumario/",
+      "feed": "boe.json",
+      "state": "active"
+    }
+  ],
+  "communities": [
+    {
+      "code": "AN",
+      "name": "Andalucía",
+      "provinces": [
+        "04",
+        "11",
+        "14",
+        "18",
+        "21",
+        "23",
+        "29",
+        "41"
+      ]
+    },
+    {
+      "code": "AR",
+      "name": "Aragón",
+      "provinces": [
+        "22",
+        "44",
+        "50"
+      ]
+    },
+    {
+      "code": "AS",
+      "name": "Principado de Asturias",
+      "provinces": [
+        "33"
+      ]
+    },
+    {
+      "code": "IB",
+      "name": "Illes Balears",
+      "provinces": [
+        "07"
+      ]
+    },
+    {
+      "code": "CN",
+      "name": "Canarias",
+      "provinces": [
+        "35",
+        "38"
+      ]
+    },
+    {
+      "code": "CB",
+      "name": "Cantabria",
+      "provinces": [
+        "39"
+      ]
+    },
+    {
+      "code": "CM",
+      "name": "Castilla-La Mancha",
+      "provinces": [
+        "02",
+        "13",
+        "16",
+        "19",
+        "45"
+      ]
+    },
+    {
+      "code": "CL",
+      "name": "Castilla y León",
+      "provinces": [
+        "05",
+        "09",
+        "24",
+        "34",
+        "37",
+        "40",
+        "42",
+        "47",
+        "49"
+      ]
+    },
+    {
+      "code": "CT",
+      "name": "Cataluña",
+      "provinces": [
+        "08",
+        "17",
+        "25",
+        "43"
+      ]
+    },
+    {
+      "code": "VC",
+      "name": "Comunitat Valenciana",
+      "provinces": [
+        "03",
+        "12",
+        "46"
+      ]
+    },
+    {
+      "code": "EX",
+      "name": "Extremadura",
+      "provinces": [
+        "06",
+        "10"
+      ]
+    },
+    {
+      "code": "GA",
+      "name": "Galicia",
+      "provinces": [
+        "15",
+        "27",
+        "32",
+        "36"
+      ]
+    },
+    {
+      "code": "MD",
+      "name": "Comunidad de Madrid",
+      "provinces": [
+        "28"
+      ]
+    },
+    {
+      "code": "MC",
+      "name": "Región de Murcia",
+      "provinces": [
+        "30"
+      ]
+    },
+    {
+      "code": "NC",
+      "name": "Comunidad Foral de Navarra",
+      "provinces": [
+        "31"
+      ]
+    },
+    {
+      "code": "PV",
+      "name": "País Vasco",
+      "provinces": [
+        "01",
+        "48",
+        "20"
+      ]
+    },
+    {
+      "code": "RI",
+      "name": "La Rioja",
+      "provinces": [
+        "26"
+      ]
+    },
+    {
+      "code": "CE",
+      "name": "Ciudad Autónoma de Ceuta",
+      "provinces": [
+        "51"
+      ]
+    },
+    {
+      "code": "ML",
+      "name": "Ciudad Autónoma de Melilla",
+      "provinces": [
+        "52"
+      ]
+    }
+  ],
+  "territories": [
+    {
+      "ine": "04",
+      "name": "Almería",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "11",
+      "name": "Cádiz",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "14",
+      "name": "Córdoba",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "18",
+      "name": "Granada",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "21",
+      "name": "Huelva",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "23",
+      "name": "Jaén",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "29",
+      "name": "Málaga",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "41",
+      "name": "Sevilla",
+      "community": "AN",
+      "communityName": "Andalucía",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "22",
+      "name": "Huesca",
+      "community": "AR",
+      "communityName": "Aragón",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "44",
+      "name": "Teruel",
+      "community": "AR",
+      "communityName": "Aragón",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "50",
+      "name": "Zaragoza",
+      "community": "AR",
+      "communityName": "Aragón",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "33",
+      "name": "Asturias",
+      "community": "AS",
+      "communityName": "Principado de Asturias",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "07",
+      "name": "Illes Balears",
+      "community": "IB",
+      "communityName": "Illes Balears",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "35",
+      "name": "Las Palmas",
+      "community": "CN",
+      "communityName": "Canarias",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "38",
+      "name": "Santa Cruz de Tenerife",
+      "community": "CN",
+      "communityName": "Canarias",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "39",
+      "name": "Cantabria",
+      "community": "CB",
+      "communityName": "Cantabria",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "02",
+      "name": "Albacete",
+      "community": "CM",
+      "communityName": "Castilla-La Mancha",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "13",
+      "name": "Ciudad Real",
+      "community": "CM",
+      "communityName": "Castilla-La Mancha",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "16",
+      "name": "Cuenca",
+      "community": "CM",
+      "communityName": "Castilla-La Mancha",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "19",
+      "name": "Guadalajara",
+      "community": "CM",
+      "communityName": "Castilla-La Mancha",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "45",
+      "name": "Toledo",
+      "community": "CM",
+      "communityName": "Castilla-La Mancha",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "05",
+      "name": "Ávila",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "09",
+      "name": "Burgos",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "24",
+      "name": "León",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "34",
+      "name": "Palencia",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "37",
+      "name": "Salamanca",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "40",
+      "name": "Segovia",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "42",
+      "name": "Soria",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "47",
+      "name": "Valladolid",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "49",
+      "name": "Zamora",
+      "community": "CL",
+      "communityName": "Castilla y León",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "08",
+      "name": "Barcelona",
+      "community": "CT",
+      "communityName": "Cataluña",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "17",
+      "name": "Girona",
+      "community": "CT",
+      "communityName": "Cataluña",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "25",
+      "name": "Lleida",
+      "community": "CT",
+      "communityName": "Cataluña",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "43",
+      "name": "Tarragona",
+      "community": "CT",
+      "communityName": "Cataluña",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "03",
+      "name": "Alicante",
+      "community": "VC",
+      "communityName": "Comunitat Valenciana",
+      "primaryGazette": "bop",
+      "state": "active"
+    },
+    {
+      "ine": "12",
+      "name": "Castellón",
+      "community": "VC",
+      "communityName": "Comunitat Valenciana",
+      "primaryGazette": "bop",
+      "state": "active"
+    },
+    {
+      "ine": "46",
+      "name": "Valencia",
+      "community": "VC",
+      "communityName": "Comunitat Valenciana",
+      "primaryGazette": "bop",
+      "state": "active"
+    },
+    {
+      "ine": "06",
+      "name": "Badajoz",
+      "community": "EX",
+      "communityName": "Extremadura",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "10",
+      "name": "Cáceres",
+      "community": "EX",
+      "communityName": "Extremadura",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "15",
+      "name": "A Coruña",
+      "community": "GA",
+      "communityName": "Galicia",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "27",
+      "name": "Lugo",
+      "community": "GA",
+      "communityName": "Galicia",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "32",
+      "name": "Ourense",
+      "community": "GA",
+      "communityName": "Galicia",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "36",
+      "name": "Pontevedra",
+      "community": "GA",
+      "communityName": "Galicia",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "28",
+      "name": "Madrid",
+      "community": "MD",
+      "communityName": "Comunidad de Madrid",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "30",
+      "name": "Murcia",
+      "community": "MC",
+      "communityName": "Región de Murcia",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "31",
+      "name": "Navarra",
+      "community": "NC",
+      "communityName": "Comunidad Foral de Navarra",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "01",
+      "name": "Araba/Álava",
+      "community": "PV",
+      "communityName": "País Vasco",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "48",
+      "name": "Bizkaia",
+      "community": "PV",
+      "communityName": "País Vasco",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "20",
+      "name": "Gipuzkoa",
+      "community": "PV",
+      "communityName": "País Vasco",
+      "primaryGazette": "bop",
+      "state": "pending"
+    },
+    {
+      "ine": "26",
+      "name": "La Rioja",
+      "community": "RI",
+      "communityName": "La Rioja",
+      "primaryGazette": "diario_autonomico",
+      "state": "pending"
+    },
+    {
+      "ine": "51",
+      "name": "Ceuta",
+      "community": "CE",
+      "communityName": "Ciudad Autónoma de Ceuta",
+      "primaryGazette": "boletin_ciudad",
+      "state": "pending"
+    },
+    {
+      "ine": "52",
+      "name": "Melilla",
+      "community": "ML",
+      "communityName": "Ciudad Autónoma de Melilla",
+      "primaryGazette": "boletin_ciudad",
+      "state": "pending"
+    }
+  ]
+}

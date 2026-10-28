@@ -1,0 +1,91 @@
+name: OpoAlert España - Auditar y publicar BOE nacional
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Tras los tres BOP valencianos, para repartir las consultas a portales.
+    - cron: '20 11 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'backend/boe_nacional.py'
+      - 'backend/validar_boe.py'
+      - 'backend/provincial_common.py'
+      - 'backend/fuentes_espana.json'
+      - 'backend/tests/test_boe_nacional.py'
+      - 'backend/tests/test_catalogo_espana.py'
+      - '.github/workflows/revisar-boe.yml'
+
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pruebas puras de BOE
+        run: |
+          python -m unittest discover -s backend/tests -p test_boe_nacional.py -q
+          python -m unittest discover -s backend/tests -p test_catalogo_espana.py -q
+      - name: Leer completos 30 dias del sumario BOE II.B
+        run: python -u backend/boe_nacional.py --days 30 --output out_boe/boe.json
+      - name: Verificar calendario, datos, contadores y URLs oficiales
+        run: python backend/validar_boe.py --file out_boe/boe.json --require-today
+      - name: Publicar solo con 30 dias auditados
+        run: |
+          set -eu
+          cp out_boe/boe.json docs/boe.json
+          python backend/validar_boe.py --file docs/boe.json --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/boe.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: actualizar BOE nacional auditado II.B'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Empaquetar web y fuentes existentes
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Evidencias si falla la auditoria
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-boe
+          path: out_boe/boe.json
+          retention-days: 3
+          if-no-files-found: ignore
+
+  publicar:
+    needs: auditar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Publicar BOE junto a BOP
+        id: deploy
+        uses: actions/deploy-pages@v4
