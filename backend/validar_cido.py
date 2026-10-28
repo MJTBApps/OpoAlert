@@ -34,8 +34,8 @@ def validate(folder:Path, today:date|None=None):
               or set(published)|set(other)!={first+timedelta(days=i) for i in range(30)}):
             raise CidoCoverageError(f"{province}: faltan fechas")
         notices=data.get("notices")
-        if not isinstance(notices,list):
-            raise CidoCoverageError(f"{province}: no hay datos")
+        if not isinstance(notices,list) or not notices:
+            raise CidoCoverageError(f"{province}: fuente sin convocatorias; no sustituir feed previo")
         if len(notices)!=cov.get("opportunities") or len(notices)!=cov.get("announcementsRead") or len(notices)!=history.get("announcementsRead"):
             raise CidoCoverageError(f"{province}: contadores incoherentes")
         for row in notices:
