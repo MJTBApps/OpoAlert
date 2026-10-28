@@ -61,10 +61,6 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Empaquetar paginas y APK anteriores
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
       - name: Diagnosticos si algo falla
         if: failure()
         uses: actions/upload-artifact@v4
@@ -75,21 +71,3 @@ jobs:
             backend/diagnostico_provincias.png
           retention-days: 3
           if-no-files-found: ignore
-
-  publicar:
-    needs: auditar-y-preparar
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - name: Configurar Pages
-        uses: actions/configure-pages@v5
-      - name: Publicar JSON provinciales
-        id: deploy
-        uses: actions/deploy-pages@v4
