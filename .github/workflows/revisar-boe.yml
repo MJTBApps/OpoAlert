@@ -59,10 +59,6 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Empaquetar web y fuentes existentes
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
       - name: Evidencias si falla la auditoria
         if: failure()
         uses: actions/upload-artifact@v4
@@ -71,21 +67,3 @@ jobs:
           path: out_boe/boe.json
           retention-days: 3
           if-no-files-found: ignore
-
-  publicar:
-    needs: auditar
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Publicar BOE junto a BOP
-        id: deploy
-        uses: actions/deploy-pages@v4
