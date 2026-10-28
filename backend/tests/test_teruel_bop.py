@@ -68,6 +68,13 @@ class TeruelTests(unittest.TestCase):
         with self.assertRaises(ProvincialCoverageError):
             parse_page(results(total=100),DAY)
 
+    def test_two_official_notices_can_share_announcement_number(self):
+        html=results(total=2).replace("Anuncio #2026-3130", "Anuncio #2026-3129")
+        n,rows,_=parse_page(html,DAY)
+        self.assertEqual(n,2)
+        self.assertEqual(rows[0]["id"],rows[1]["id"])
+        self.assertNotEqual(rows[0]["url"],rows[1]["url"])
+
     def test_post_has_date_filter_and_viewid(self):
         _,_,soup=parse_page(results(),DAY)
         d=post_form(soup,"fake-event",DAY)
