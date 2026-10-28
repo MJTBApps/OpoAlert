@@ -1,4 +1,4 @@
-name: OpoAlert - Verificar descarga publica 1.6.0 y BOP
+name: OpoAlert - Verificar descarga publica 1.7.0 y BOP
 on:
   workflow_dispatch:
   push:
@@ -16,7 +16,7 @@ jobs:
         run: |
           set -eu
           BASE=https://mjtbapps.github.io/OpoAlert
-          for FILE in OpoAlert-1.6.0.apk barcelona_bop.json girona_bop.json; do
+          for FILE in OpoAlert-1.7.0.apk barcelona_bop.json girona_bop.json; do
             echo "Comprobando $FILE en Pages"
             curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors --output /dev/null "$BASE/$FILE"
           done
