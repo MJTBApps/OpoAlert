@@ -29,6 +29,13 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/castellon.json",
         "https://bop.dipcas.es/PortalBOP/",
         "bop.dipcas.es", "/PortalBOP/api/descargarAnuncio", Regex("CS-\\d+"),
+    ),
+    // BOE es una fuente de ámbito nacional, no un boletín provincial.
+    BOE(
+        "ES", "España (BOE)",
+        "https://mjtbapps.github.io/OpoAlert/boe.json",
+        "https://www.boe.es/datosabiertos/api/boe/sumario/",
+        "www.boe.es", "/boe/dias/", Regex("BOE-A-\\d{4}-\\d{1,7}"),
     );
 
     companion object {
@@ -36,6 +43,7 @@ enum class Province(
         fun fromNoticeId(id: String): Province = when {
             id.startsWith("AL-") -> ALICANTE
             id.startsWith("CS-") -> CASTELLON
+            id.startsWith("BOE-A-") -> BOE
             else -> VALENCIA
         }
     }
@@ -71,7 +79,17 @@ object ProvinceSettings {
             .edit().putBoolean(INITIAL_PICKER_SHOWN, true).apply()
     }
 
-    fun display(context: Context): String =
-        Province.entries.filter { it in selected(context) }
-            .joinToString(" · ") { it.label }
+    fun display(context: Context): String {
+        val chosen = selected(context)
+        val locals = Province.entries.filter { it in chosen && it != Province.BOE }
+        val localText = when (locals.size) {
+            0 -> ""
+            1 -> locals.first().label
+            else -> "${locals.size} provincias"
+        }
+        return listOfNotNull(
+            localText.takeIf { it.isNotEmpty() },
+            "BOE".takeIf { Province.BOE in chosen }
+        ).joinToString(" + ")
+    }
 }
