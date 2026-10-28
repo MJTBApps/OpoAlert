@@ -242,16 +242,22 @@ def audit(days:int=30,today:date|None=None,scanner=scan,session_factory=official
         raise ProvincialCoverageError(f"Teruel: BOP portada desactualizado {latest}")
     issues=[]
     absent=[]
+    errors=[]
     for i in range(days):
         day=start+timedelta(days=i)
-        result=scanner(day)
+        try:
+            result=scanner(day)
+        except ProvincialCoverageError as ex:
+            errors.append(f"{day}: {ex}")
+            print(f"Teruel {day}: ERROR VALIDACION {ex}",flush=True)
+            continue
         if result is None:
             absent.append(day.isoformat())
             print(f"Teruel {day}: no hay anuncios oficiales",flush=True)
             continue
         if result["date"]!=day or result["read"]<len(result["notices"]) or result["pages"]<1:
             raise ProvincialCoverageError(f"Teruel {day}: datos de edicion incorrectos")
-        if issues:
+        if issues and not errors:
             old=issues[-1]
             if old["date"].year==day.year and result["number"]!=old["number"]+1:
                 raise ProvincialCoverageError(f"Teruel: saltan los numeros {old['number']} a {result['number']}")
@@ -260,6 +266,8 @@ def audit(days:int=30,today:date|None=None,scanner=scan,session_factory=official
         issues.append(result)
         print(f"Teruel {day}: BOP {result['number']}, {result['read']} anuncios, "
               f"{result['pages']} paginas, {len(result['notices'])} candidatas",flush=True)
+    if errors:
+        raise ProvincialCoverageError(f"Teruel: {len(errors)} fechas rechazadas; "+" | ".join(errors))
     if (len(issues)<15 or issues[-1]["date"]!=latest
         or issues[-1]["number"]!=latest_number
         or (issues[0]["date"]-start).days>4):
