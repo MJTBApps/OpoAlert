@@ -1,4 +1,4 @@
-name: OpoAlert - Publicar APK 1.8.0 en web
+name: OpoAlert - Publicar APK 1.9.0 en web
 
 on:
   workflow_dispatch:
@@ -26,8 +26,8 @@ jobs:
       - name: Recuperar APK verificada desde compilacion Android
         uses: actions/download-artifact@v4
         with:
-          name: OpoAlert-Android-1.8.0
-          run-id: 40695383227
+          name: OpoAlert-Android-1.9.0
+          run-id: 40723297084
           repository: MJTBApps/OpoAlert
           github-token: ${{ github.token }}
           path: apk
@@ -35,26 +35,26 @@ jobs:
       - name: Comprobar y preparar APK para descarga directa
         run: |
           set -eu
-          test -s apk/OpoAlert-1.8.0.apk
-          unzip -t apk/OpoAlert-1.8.0.apk > /dev/null
-          cp apk/OpoAlert-1.8.0.apk docs/OpoAlert-1.8.0.apk
-          sha256sum docs/OpoAlert-1.8.0.apk
+          test -s apk/OpoAlert-1.9.0.apk
+          unzip -t apk/OpoAlert-1.9.0.apk > /dev/null
+          cp apk/OpoAlert-1.9.0.apk docs/OpoAlert-1.9.0.apk
+          sha256sum docs/OpoAlert-1.9.0.apk
 
       - name: Guardar APK en GitHub para futuras publicaciones de Pages
         run: |
           set -eu
           git config user.name 'OpoAlert Bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f docs/OpoAlert-1.8.0.apk
+          git add -f docs/OpoAlert-1.9.0.apk
           if ! git diff --cached --quiet; then
-            git commit -m 'OpoAlert: descarga publica Android 1.8.0'
+            git commit -m 'OpoAlert: descarga publica Android 1.9.0'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
 
       - name: Informar publicacion mediante el flujo unico de Pages
         run: |
-          echo "### APK OpoAlert 1.8.0 archivada" >> "$GITHUB_STEP_SUMMARY"
+          echo "### APK OpoAlert 1.9.0 archivada" >> "$GITHUB_STEP_SUMMARY"
           echo "GitHub Pages se actualiza al detectar el commit en docs/" >> "$GITHUB_STEP_SUMMARY"
       - name: Solicitar despliegue de Pages tras guardar APK
         if: success()
