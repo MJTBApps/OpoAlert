@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 1.3.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.4.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
