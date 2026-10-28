@@ -41,7 +41,7 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "0.8.1"' in gradle
+    assert 'versionName = "0.8.2"' in gradle
     assert "versionCode = 10" in gradle
     # El bloque resumen debe permitir que el listado crezca: maximo 8dp
     # de relleno vertical y el texto de metadatos en una sola linea.
@@ -55,7 +55,7 @@ def main() -> None:
     assert "latestById" in activity
     assert "SearchText.normalize(searchInput.text.toString().trim())" in activity
     assert "SearchText.matchesNormalized(" in activity
-    print("OK: Android 0.8.1, resumen mas compacto, titulos CAS, scroll, favoritos")
+    print("OK: Android 0.8.2, resumen mas compacto, titulos CAS, scroll, favoritos")
 
 
 if __name__ == "__main__":
