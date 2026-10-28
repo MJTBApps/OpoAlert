@@ -52,7 +52,7 @@ class AlertsActivity : Activity() {
         top.addView(count)
         root.addView(top)
 
-        val scroll = ScrollView(this).apply { fillViewport = true }
+        val scroll = ScrollView(this).apply { isFillViewport = true }
         val body = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(18), dp(7), dp(18), dp(24))
