@@ -177,8 +177,10 @@ def parse_detail(html:str,record:dict,day:date)->int:
     if not m or m.group(1)!=record["id"] or date_parts!=[day.day,day.month,day.year]:
         raise ProvincialCoverageError(f"Teruel {day}: detalle no corresponde a {record['id']}: {text[:500]}")
     # Only the official notice pages contain the full wording and issuer.
-    normalized=fold(text)
-    if fold(record["title"]).rstrip(". ") not in normalized or fold(record["entity"]) not in normalized:
+    normalized=fold(" ".join(text.split()))
+    title=fold(" ".join(record["title"].split())).rstrip(". ")
+    entity=fold(" ".join(record["entity"].split()))
+    if title not in normalized or entity not in normalized:
         raise ProvincialCoverageError(f"Teruel {day}: titulo/emisor no coinciden {record['id']}; titulo={record['title']!r}; entidad={record['entity']!r}; detalle={text[:850]!r}")
     number=int(m.group(3))
     if number<1 or number>366:
