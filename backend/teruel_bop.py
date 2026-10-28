@@ -27,7 +27,7 @@ FORM="Busquedas:_id1"
 PREFIX=FORM+":_id53:"
 ENTRY_RE=re.compile(r"Anuncio\s*#\s*(\d{4}-\d{4})\s*\((\d{2})/([^/]+)/(\d{4})\)",re.I)
 FOUND_RE=re.compile(r"Se han encontrado\s+(\d+)\s+anuncios",re.I)
-DETAIL_RE=re.compile(r"Anuncio\s*#\s*(\d{4}-\d{4}).*?Publicado el\s+(\d{2}/\d{2}/\d{2})\s*,?\s*BOP\s+n[uú]mero\s+(\d+)",re.I|re.S)
+DETAIL_RE=re.compile(r"Anuncio\s*#\s*(\d{4}-\d{4}).*?Publicado el\s+(\d{1,2}/\d{1,2}/\d{2,4})\s*,?\s*BOP\s+n[uú]mero\s+(\d+)",re.I|re.S)
 HEADER_RE=re.compile(r"BOP del d[ií]a\s+(\d{1,2}) de\s+([A-Za-záéíóúñ]+) de\s+(\d{4}).*?BOP n[uú]mero\s+(\d+)",re.I|re.S)
 MONTHS={
  "enero":1,"febrero":2,"marzo":3,"abril":4,"mayo":5,"junio":6,
@@ -171,7 +171,10 @@ def parse_detail(html:str,record:dict,day:date)->int:
     soup=BeautifulSoup(html,"html.parser")
     text=" ".join(soup.get_text(" ",strip=True).split())
     m=DETAIL_RE.search(text)
-    if not m or m.group(1)!=record["id"] or m.group(2)!=day.strftime("%d/%m/%y"):
+    date_parts=[int(x) for x in m.group(2).split("/")] if m else []
+    if len(date_parts)==3 and date_parts[2]<100:
+        date_parts[2]+=2000
+    if not m or m.group(1)!=record["id"] or date_parts!=[day.day,day.month,day.year]:
         raise ProvincialCoverageError(f"Teruel {day}: detalle no corresponde a {record['id']}: {text[:500]}")
     # Only the official notice pages contain the full wording and issuer.
     normalized=fold(text)
