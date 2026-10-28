@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 from datetime import date,datetime,timedelta,timezone
 import json
+from concurrent.futures import ThreadPoolExecutor
 from math import ceil
 from pathlib import Path
 import re
@@ -243,13 +244,19 @@ def audit(days:int=30,today:date|None=None,scanner=scan,session_factory=official
     issues=[]
     absent=[]
     errors=[]
-    for i in range(days):
-        day=start+timedelta(days=i)
+    dates=[start+timedelta(days=i) for i in range(days)]
+    # Dos conexiones independientes como maximo, con sesiones HTTP por fecha.
+    def checked(day:date):
         try:
-            result=scanner(day)
+            return scanner(day),None
         except ProvincialCoverageError as ex:
-            errors.append(f"{day}: {ex}")
-            print(f"Teruel {day}: ERROR VALIDACION {ex}",flush=True)
+            return None,str(ex)
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        results=list(pool.map(checked,dates))
+    for day,(result,error) in zip(dates,results):
+        if error:
+            errors.append(f"{day}: {error}")
+            print(f"Teruel {day}: ERROR VALIDACION {error}",flush=True)
             continue
         if result is None:
             absent.append(day.isoformat())
