@@ -83,9 +83,16 @@ def parse_issue(html: str, expected_number: int|None=None) -> dict:
         if not agency or not match_prefix:
             raise ProvincialCoverageError(f"Girona BOP {number}: edicto sin entidad/registro")
         edict=int(match_prefix.group(1))
-        expected_file=f"{day.year}{number:03d}{edict:05d}"
-        if filename!=expected_file:
-            raise ProvincialCoverageError(f"Girona BOP {number}: PDF con registro distinto {filename=} {expected_file=} {full[:170]=}")
+        # El BOPG distingue ciertos edictos (p. ej. electorales) mediante
+        # el digito de serie 1 delante de un registro de cuatro cifras.
+        # Comprobar siempre año, numero y las cuatro cifras del registro.
+        base=f"{day.year}{number:03d}"
+        suffix=filename[len(base):]
+        valid_suffix=(suffix==f"{edict:05d}" or
+                      (edict<10000 and suffix=="1"+f"{edict:04d}"))
+        if not filename.startswith(base) or not valid_suffix:
+            raise ProvincialCoverageError(
+                f"Girona BOP {number}: PDF no coincide con edicto {edict}: {filename}")
         rest=full[match_prefix.end():]
         if not rest.startswith(agency):
             raise ProvincialCoverageError(f"Girona BOP {number}: entidad no coincide")
