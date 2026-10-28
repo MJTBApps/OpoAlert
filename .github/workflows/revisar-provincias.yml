@@ -1,0 +1,95 @@
+name: OpoAlert - Auditar y publicar BOP Alicante Castellon
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Tras Valencia (09:43 UTC) para repartir consultas y evitar conflictos.
+    - cron: '25 10 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'backend/provincial_common.py'
+      - 'backend/alicante.py'
+      - 'backend/castellon.py'
+      - 'backend/province_history.py'
+      - 'backend/validar_provincias.py'
+      - '.github/workflows/revisar-provincias.yml'
+
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  auditar-y-preparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias oficiales Playwright
+        run: |
+          python -m pip install -r backend/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Pruebas de los extractores antes de consultar el BOP
+        run: python -m unittest discover -s backend/tests -q
+      - name: Leer los 30 dias de Alicante y Castellon
+        run: python -u backend/province_history.py --days 30 --province both --output out_provincias
+      - name: Comprobar 30 dias y todos los enlaces originales
+        run: python backend/validar_provincias.py --directory out_provincias --require-today
+      - name: Publicar solo si los dos historicos estan verificados
+        run: |
+          set -e
+          cp out_provincias/alicante.json docs/alicante.json
+          cp out_provincias/castellon.json docs/castellon.json
+          python backend/validar_provincias.py --directory docs --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/alicante.json docs/castellon.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: actualizar boletines auditados de Alicante y Castellon'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Empaquetar paginas y APK anteriores
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Diagnosticos si algo falla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnosticos-provinciales
+          path: |
+            out_provincias/*.json
+            backend/diagnostico_provincias.png
+          retention-days: 3
+          if-no-files-found: ignore
+
+  publicar:
+    needs: auditar-y-preparar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Publicar JSON provinciales
+        id: deploy
+        uses: actions/deploy-pages@v4

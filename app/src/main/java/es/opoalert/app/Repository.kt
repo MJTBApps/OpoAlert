@@ -2,6 +2,7 @@ package es.opoalert.app
 
 import android.content.Context
 import org.json.JSONArray
+import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -11,15 +12,14 @@ data class SyncResult(
     val newOnes: List<Notice>,
     val scanned: Int,
     val sourceMessage: String,
-    val historyMessage: String
+    val historyMessage: String,
 )
 
 object Repository {
     private const val PREFS = "opoalert_store"
     private const val ENTRIES = "entries"
-    private const val INITIALIZED = "initialized"
     private const val REMOTE_INITIALIZED = "remote_feed_initialized_v04"
-    private const val FEED_URL = "remote_feed_url_v04"
+    private const val INITIALIZED_PREFIX = "province_initialized_v1_"
     private const val DEFAULT_FEED_URL = "https://mjtbapps.github.io/OpoAlert/convocatorias.json"
     private const val LAST_SYNC = "last_sync"
     private const val LAST_SOURCE = "last_source_v04"
@@ -33,27 +33,11 @@ object Repository {
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putBoolean(ALERTS, enabled).apply()
     }
 
-    // The feed belongs to OpoAlert; end users do not need to configure a URL.
     fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL
-
-    fun setFeedUrl(ctx: Context, address: String) {
-        val normalized = address.trim()
-        if (normalized.isNotEmpty() && !normalized.startsWith("https://", ignoreCase = true)) {
-            throw IllegalArgumentException("La direccion debe empezar por https://")
-        }
-        val prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        if (prefs.getString(FEED_URL, "") != normalized) {
-            prefs.edit().putString(FEED_URL, normalized)
-                .putBoolean(REMOTE_INITIALIZED, false).apply()
-        }
-    }
-
     fun lastSync(ctx: Context): String =
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(LAST_SYNC, "") ?: ""
-
     fun lastSource(ctx: Context): String =
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(LAST_SOURCE, "") ?: ""
-
     fun lastHistory(ctx: Context): String =
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(LAST_HISTORY, "") ?: ""
 
@@ -71,33 +55,52 @@ object Repository {
 
     @Synchronized
     fun sync(ctx: Context): SyncResult {
-        // Nunca se borra una cache correcta si la descarga o auditoria fallan.
-        val remote = feedUrl(ctx).isNotBlank()
-        val feed = if (remote) RemoteFeedReader.fetch(feedUrl(ctx)) else null
-        val freshRead = feed?.notices ?: BopReader().fetch()
+        val chosen = ProvinceSettings.selected(ctx)
         val prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val old = cached(ctx)
         val oldIds = old.map { it.id }.toHashSet()
-        // Al activar un feed historico no se envian alertas de 30 dias anteriores.
-        val wasInitialized = prefs.getBoolean(if (remote) REMOTE_INITIALIZED else INITIALIZED, false)
-        val newOnes = if (wasInitialized) freshRead.filter { it.id !in oldIds } else emptyList()
-        val merged = (freshRead + old).distinctBy { it.id }
+        val downloaded = mutableListOf<Pair<Province, RemoteFeed>>()
+        val failures = mutableListOf<String>()
+        // The Android app reads validated JSON; it never scrapes BOP HTML.
+        for (province in Province.entries.filter { it in chosen }) {
+            try {
+                downloaded.add(province to RemoteFeedReader.fetch(province.feedUrl, province))
+            } catch (_: Exception) {
+                failures.add(province.label)
+            }
+        }
+        if (downloaded.isEmpty()) {
+            throw IOException("No se ha podido consultar ninguna de las provincias seleccionadas")
+        }
+        val fresh = downloaded.flatMap { it.second.notices }
+        val newOnes = downloaded.flatMap { (province, feed) ->
+            val initialized = prefs.getBoolean(INITIALIZED_PREFIX + province.code,
+                province == Province.VALENCIA && prefs.getBoolean(REMOTE_INITIALIZED, false))
+            if (initialized) feed.notices.filter { it.id !in oldIds } else emptyList()
+        }
+        val merged = (fresh + old).distinctBy { it.id }
             .sortedWith(compareByDescending<Notice> { dateKey(it.date) }.thenByDescending { it.id })
             .take(2000)
         val saved = JSONArray().also { array -> merged.forEach { array.put(it.toJson()) } }
         val whenSync = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale("es", "ES")).format(Date())
-        val sourceMessage = feed?.status ?: "Solo portada del BOP · lectura NO exhaustiva"
-        val historyMessage = feed?.historyStatus ?: "Configura un feed central para leer el sumario completo"
-        val preferenceKey = if (remote) REMOTE_INITIALIZED else INITIALIZED
-        if (!prefs.edit()
-                .putString(ENTRIES, saved.toString())
-                .putString(LAST_SYNC, whenSync)
-                .putString(LAST_SOURCE, sourceMessage)
-                .putString(LAST_HISTORY, historyMessage)
-                .putBoolean(preferenceKey, true).commit()) {
-            throw IllegalStateException("No se han podido guardar los datos")
+        val sources = downloaded.joinToString(" · ") { (province, feed) ->
+            "${province.code}: ${feed.notices.size}"
         }
-        return SyncResult(merged, newOnes, freshRead.size, sourceMessage, historyMessage)
+        val status = if (failures.isEmpty()) sources
+            else "$sources · Sin datos verificados: ${failures.joinToString(", ")}" 
+        val historyMessage = if (failures.isEmpty()) downloaded.first().second.historyStatus
+            else "Cobertura parcial: pendientes ${failures.joinToString(", ")}" 
+        val editor = prefs.edit()
+            .putString(ENTRIES, saved.toString())
+            .putString(LAST_SYNC, whenSync)
+            .putString(LAST_SOURCE, status)
+            .putString(LAST_HISTORY, historyMessage)
+            .putBoolean(REMOTE_INITIALIZED, true)
+        for ((province, _) in downloaded) {
+            editor.putBoolean(INITIALIZED_PREFIX + province.code, true)
+        }
+        if (!editor.commit()) throw IOException("No se han podido guardar los datos")
+        return SyncResult(merged, newOnes, fresh.size, status, historyMessage)
     }
 
     private fun dateKey(date: String): String {

@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 0.9.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.0.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -46,6 +46,7 @@ class MainActivity : Activity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var refreshButton: ImageButton
     private lateinit var menuButton: ImageButton
+    private lateinit var provinceSelector: TextView
     private lateinit var searchInput: EditText
     private lateinit var tabsRow: LinearLayout
     private lateinit var filterRow: LinearLayout
@@ -56,6 +57,7 @@ class MainActivity : Activity() {
     private var selectedFilter = FILTER_ALL
     private var notices: List<Notice> = emptyList()
     private var loading = false
+    private var refreshPending = false
     private lateinit var demoAds: DemoAds
 
 
@@ -71,6 +73,7 @@ class MainActivity : Activity() {
         progressBar = findViewById(R.id.progressBar)
         refreshButton = findViewById(R.id.refreshButton)
         menuButton = findViewById(R.id.menuButton)
+        provinceSelector = findViewById(R.id.provinceSelector)
         searchInput = findViewById(R.id.searchInput)
         tabsRow = findViewById(R.id.tabsRow)
         filterRow = findViewById(R.id.filterRow)
@@ -87,6 +90,7 @@ class MainActivity : Activity() {
         BopWorker.schedule(this)
         refreshButton.setOnClickListener { refresh() }
         menuButton.setOnClickListener { showOptions() }
+        provinceSelector.setOnClickListener { showProvinceChooser() }
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -106,7 +110,7 @@ class MainActivity : Activity() {
         // Android 13+ requests the system notification permission once on first launch.
         // On earlier Android versions, notification channels are enabled by default.
         window.decorView.post {
-            if (!requestNotificationsOnce()) demoAds.start()
+            if (!requestNotificationsOnce()) showProvincePickerIfFirstLaunch()
         }
     }
 
@@ -141,7 +145,7 @@ class MainActivity : Activity() {
             if (!granted) {
                 Toast.makeText(this, "Avisos desactivados. Puedes activarlos en Más opciones.", Toast.LENGTH_LONG).show()
             }
-            demoAds.start()
+            showProvincePickerIfFirstLaunch()
         }
     }
 
@@ -152,6 +156,7 @@ class MainActivity : Activity() {
         menu.menu.add(0, 1, 0, if (enabled) "Desactivar avisos" else "Activar avisos")
         menu.menu.add(0, 2, 1, "Acerca de OpoAlert")
         menu.menu.add(0, 3, 2, "Privacidad y publicidad de prueba")
+        menu.menu.add(0, 4, 3, "Elegir provincias")
         menu.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 1 -> {
@@ -172,8 +177,8 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 0.9.0 · Pruebas")
-                        .setMessage("Convocatorias de empleo público del BOP de Valencia. " +
+                        .setTitle("OpoAlert 1.0.0")
+                        .setMessage("Convocatorias de empleo público de las provincias seleccionadas. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
                         .setPositiveButton("Entendido", null)
@@ -184,10 +189,56 @@ class MainActivity : Activity() {
                     demoAds.showPrivacyOptions()
                     true
                 }
+                4 -> {
+                    showProvinceChooser()
+                    true
+                }
                 else -> false
             }
         }
         menu.show()
+    }
+
+    private fun showProvincePickerIfFirstLaunch() {
+        if (ProvinceSettings.wasPickerShown(this)) {
+            demoAds.start()
+            return
+        }
+        ProvinceSettings.markPickerShown(this)
+        showProvinceChooser { demoAds.start() }
+    }
+
+    private fun updateProvinceSelector() {
+        provinceSelector.text = "Provincias: ${ProvinceSettings.display(this)} ▾"
+    }
+
+    /** Multi-choice dialog without location permission. Favorites remain saved for all provinces. */
+    private fun showProvinceChooser(onClosed: () -> Unit = {}) {
+        val options = Province.entries
+        val chosen = ProvinceSettings.selected(this).toMutableSet()
+        val checked = options.map { it in chosen }.toBooleanArray()
+        AlertDialog.Builder(this)
+            .setTitle("Provincias que quieres seguir")
+            .setMultiChoiceItems(options.map { it.label }.toTypedArray(), checked) { _, index, enabled ->
+                if (enabled) chosen.add(options[index]) else chosen.remove(options[index])
+            }
+            .setPositiveButton("Guardar") { _, _ ->
+                if (chosen.isEmpty()) {
+                    Toast.makeText(this, "Selecciona al menos una provincia", Toast.LENGTH_LONG).show()
+                } else if (ProvinceSettings.save(this, chosen)) {
+                    updateProvinceSelector()
+                    updateHeader()
+                    render()
+                    scroll.scrollTo(0, 0)
+                    refresh()
+                } else {
+                    Toast.makeText(this, "No se pudo guardar la selección", Toast.LENGTH_LONG).show()
+                }
+                onClosed()
+            }
+            .setNegativeButton("Cancelar") { _, _ -> onClosed() }
+            .setOnCancelListener { onClosed() }
+            .show()
     }
 
     private fun notificationPermissionGranted(): Boolean =
@@ -208,7 +259,10 @@ class MainActivity : Activity() {
     }
 
     private fun refresh() {
-        if (loading) return
+        if (loading) {
+            refreshPending = true
+            return
+        }
         loading = true
         progressBar.visibility = View.VISIBLE
         refreshButton.isEnabled = false
@@ -241,6 +295,10 @@ class MainActivity : Activity() {
         progressBar.visibility = View.GONE
         refreshButton.isEnabled = true
         refreshButton.alpha = 1f
+        if (refreshPending) {
+            refreshPending = false
+            refresh()
+        }
     }
 
     private fun isRecent(date: String): Boolean {
@@ -267,7 +325,9 @@ class MainActivity : Activity() {
 
     private fun updateHeader() {
         // Repository retains old cache entries; the home count reflects this 30-day view.
-        countText.text = notices.count { isRecent(it.date) }.toString()
+        val selected = ProvinceSettings.selected(this).map { it.label }.toSet()
+        countText.text = notices.count { isRecent(it.date) && it.province in selected }.toString()
+        updateProvinceSelector()
         val favorites = FavoritesStore.list(this).size
         favoritesCountText.text = "★ $favorites favorita${if (favorites == 1) "" else "s"}"
         val lastSync = Repository.lastSync(this)
@@ -283,14 +343,13 @@ class MainActivity : Activity() {
     }
 
     private fun compactSource(raw: String): String {
-        if (raw.isBlank()) return "BOP de Valencia"
+        if (raw.isBlank()) return "BOP de ${ProvinceSettings.display(this)}"
         val previous = Regex("""BOP\s+(\d+):\s*(\d+)\s+anuncios\s+en\s+(\d+)\s+paginas""", RegexOption.IGNORE_CASE)
             .find(raw)
         if (previous != null) {
             return "BOP ${previous.groupValues[1]} · ${previous.groupValues[2]} anuncios · ${previous.groupValues[3]} pág."
         }
-        return if (raw.startsWith("BOP ")) raw.substringBefore(" · Feed actualizado")
-        else "BOP de Valencia · Información guardada"
+        return raw.ifBlank { "BOP de ${ProvinceSettings.display(this)}" }
     }
 
     private fun compactHistory(raw: String): String {
@@ -367,6 +426,7 @@ class MainActivity : Activity() {
         list.removeAllViews()
         val query = SearchText.normalize(searchInput.text.toString().trim())
         val favorites = FavoritesStore.list(this)
+        val selectedProvinces = ProvinceSettings.selected(this).map { it.label }.toSet()
         val favoriteIds = favorites.map { it.id }.toHashSet()
         // Las favoritas guardadas en versiones anteriores pueden tener titulos en
         // valenciano; mostramos la ficha castellana actual cuando el feed la trae.
@@ -378,9 +438,11 @@ class MainActivity : Activity() {
                 (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
                 (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
             val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
+            // Favorites stay visible even when their province is deselected.
+            val correctProvince = selectedTab == TAB_FAVORITES || item.province in selectedProvinces
             val matches = SearchText.matchesNormalized(query,
                 item.title, NoticeText.headline(item.title), item.entity, item.id)
-            correctType && correctDate && matches
+            correctType && correctDate && correctProvince && matches
         }
         resultsText.text = if (selectedTab == TAB_FAVORITES)
             "MIS FAVORITAS · ${shown.size}" else "CONVOCATORIAS · ${shown.size}"
@@ -512,7 +574,7 @@ class MainActivity : Activity() {
             gravity = Gravity.CENTER_VERTICAL
             setPadding(0, dp(8), 0, 0)
         }
-        footer.addView(text("BOP ${item.bulletin} · Reg. ${item.id}", 10.5f, "#64748B"),
+        footer.addView(text("BOP ${item.province} ${item.bulletin} · Reg. ${item.id}", 10.5f, "#64748B"),
             LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
         footer.addView(text("Compartir ↗", 11f, "#2452A4", true).apply {
             gravity = Gravity.CENTER_VERTICAL
@@ -543,6 +605,7 @@ class MainActivity : Activity() {
 
     private fun showDetail(item: Notice) {
         val message = "${item.entity}\n\n" +
+            "Provincia: ${item.province}\n" +
             "Tipo: ${item.type}\n" +
             "Publicación: ${item.date}\n" +
             "Boletín: ${item.bulletin}\n" +
@@ -560,7 +623,7 @@ class MainActivity : Activity() {
     }
 
     private fun share(item: Notice) {
-        val message = "${NoticeText.headline(item.title)}\n${item.entity}\nBOP Valencia · ${item.date} · Registro ${item.id}\n" +
+        val message = "${NoticeText.headline(item.title)}\n${item.entity}\nBOP ${item.province} · ${item.date} · Registro ${item.id}\n" +
             "${item.url}\n\nComprueba siempre el anuncio oficial y los plazos."
         try {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {

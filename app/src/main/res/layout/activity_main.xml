@@ -32,12 +32,19 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/provinceSelector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Elegir provincias a seguir"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:includeFontPadding="false"
-                android:text="Empleo público · BOP Valencia"
-                android:textColor="#718097"
+                android:text="Provincias: Valencia ▾"
+                android:textColor="#315CC8"
                 android:textSize="11sp" />
         </LinearLayout>
 
