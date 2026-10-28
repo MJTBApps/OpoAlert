@@ -42,7 +42,7 @@ def main() -> None:
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
     assert 'versionName = "1.7.0"' in gradle
-    assert "versionCode = 19" in gradle
+    assert "versionCode = 20" in gradle
     # El bloque resumen debe permitir que el listado crezca: maximo 8dp
     # de relleno vertical y el texto de metadatos en una sola linea.
     summary = next(node for node in tree.getroot() if
@@ -99,7 +99,9 @@ def main() -> None:
     assert 'BOE(' in province and 'BOE-A-' in province
     assert 'boe.json' in province
     assert 'shown.take(displayedLimit)' in activity, "Paginación necesaria para anuncios nacionales"
-    assert 'Boletines que quieres seguir' in activity
+    assert 'setTitle("Elegir boletines")' in activity
+    assert 'SourceCatalog.groups()' in activity
+    assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
     print("OK: Android 1.7.0: BOE + provincias catalanas CIDO, favoritos y paginación")
 
