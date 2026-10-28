@@ -1,0 +1,33 @@
+name: OpoAlert - Verificar descarga publica 1.6.0 y BOP
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/comprobar-publicacion-16.yml']
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar descarga APK y JSON desde GitHub Pages
+        run: |
+          set -eu
+          BASE=https://mjtbapps.github.io/OpoAlert
+          for FILE in OpoAlert-1.6.0.apk barcelona_bop.json girona_bop.json; do
+            echo "Comprobando $FILE en Pages"
+            curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors --output /dev/null "$BASE/$FILE"
+          done
+          curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/barcelona_bop.json" --output /tmp/barcelona.json
+          curl --location --fail --silent --show-error --retry 6 --retry-delay 6 --retry-all-errors "$BASE/girona_bop.json" --output /tmp/girona.json
+          python - <<'PY'
+          import json
+          for name in ("barcelona","girona"):
+              data=json.load(open(f"/tmp/{name}.json",encoding="utf-8"))
+              assert data["coverage"]["complete"]
+              assert data["historyCoverage"]["complete"]
+              assert data["notices"]
+              print(name,len(data["notices"]),data["historyCoverage"]["rangeEnd"])
+          PY
