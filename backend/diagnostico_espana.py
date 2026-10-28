@@ -31,6 +31,37 @@ def summary_json(value, depth=0):
     if value is None:return None
     return str(value)[:140]
 
+
+def show_boe_selected_day(date="20261028"):
+    try:
+        req=Request("https://www.boe.es/datosabiertos/api/boe/sumario/"+date,headers={
+          "Accept":"application/json", "User-Agent":"OpoAlert/1.3 Public official jobs feed"
+        })
+        with urlopen(req,timeout=25) as response: payload=json.load(response)
+        summary=payload["data"]["sumario"]
+        diario=summary["diario"]
+        if isinstance(diario,dict):diario=[diario]
+        rows=[]
+        for issue in diario:
+            for section in issue.get("seccion",[]):
+                if section.get("codigo") != "2B":continue
+                depts=section.get("departamento",[])
+                if isinstance(depts,dict):depts=[depts]
+                for dep in depts:
+                    eps=dep.get("epigrafe",[])
+                    if isinstance(eps,dict):eps=[eps]
+                    if not eps: eps=[dep]
+                    for ep in eps:
+                        items=ep.get("item",[])
+                        if isinstance(items,dict):items=[items]
+                        rows.extend((dep.get("nombre"),ep.get("nombre"),i) for i in items)
+        sample=[{"department":dept,"epigraph":ep,"keys":list(item),"sample":{k:(v if isinstance(v,str) else {key: str(val)[:70] for key,val in v.items()}) for k,v in item.items()}} for dept,ep,item in rows[:4]]
+        print("BOE_2B_DETAIL="+json.dumps({"date":date,"diarios":len(diario),"count":len(rows),"samples":sample},ensure_ascii=False),flush=True)
+    except Exception as exc:
+        print("BOE_2B_ERROR="+repr(exc),flush=True)
+
+show_boe_selected_day()
+
 for name, url, accept in URLS:
     try:
         req=Request(url,headers={
