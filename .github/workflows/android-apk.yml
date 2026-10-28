@@ -1,4 +1,4 @@
-name: OpoAlert - Crear APK Android 0.8.1
+name: OpoAlert - Crear APK Android 0.8.2
 
 on:
   workflow_dispatch:
@@ -37,28 +37,28 @@ jobs:
           test -n "$SDKMANAGER"
           "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
           test -d "$ANDROID_HOME/platforms/android-35"
-      - name: Validar estructura de interfaz 0.8.1
+      - name: Validar estructura de interfaz 0.8.2
         run: python3 scripts/test_ui_080.py
       - name: Configurar Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
-      - name: Compilar APK Android
-        run: gradle --no-daemon --console=plain :app:assembleDebug
+      - name: Probar buscador y compilar APK Android
+        run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug
       - name: Verificar APK
         run: |
           test -s app/build/outputs/apk/debug/app-debug.apk
-          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-0.8.1.apk
-          unzip -t OpoAlert-0.8.1.apk > /dev/null
-          sha256sum OpoAlert-0.8.1.apk
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-0.8.2.apk
+          unzip -t OpoAlert-0.8.2.apk > /dev/null
+          sha256sum OpoAlert-0.8.2.apk
       - name: Guardar APK descargable como artefacto
         uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-Android-0.8.1
-          path: OpoAlert-0.8.1.apk
+          name: OpoAlert-Android-0.8.2
+          path: OpoAlert-0.8.2.apk
           if-no-files-found: error
           retention-days: 30
       - name: Indicar ubicacion de APK verificada
         run: |
-          echo "### OpoAlert 0.8.1" >> "$GITHUB_STEP_SUMMARY"
-          echo "APK disponible en Artefactos: OpoAlert-Android-0.8.1 (30 dias)." >> "$GITHUB_STEP_SUMMARY"
+          echo "### OpoAlert 0.8.2" >> "$GITHUB_STEP_SUMMARY"
+          echo "APK disponible en Artefactos: OpoAlert-Android-0.8.2 (30 dias)." >> "$GITHUB_STEP_SUMMARY"

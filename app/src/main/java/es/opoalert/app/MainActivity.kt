@@ -31,7 +31,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 0.8.1: the notices are the main content. The compact header only presents
+ * OpoAlert 0.8.2: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -159,7 +159,7 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 0.8.1")
+                        .setTitle("OpoAlert 0.8.2")
                         .setMessage("Convocatorias de empleo público del BOP de Valencia. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
@@ -348,7 +348,7 @@ class MainActivity : Activity() {
     private fun render(keepScroll: Boolean = false) {
         val oldScroll = if (keepScroll) scroll.scrollY else 0
         list.removeAllViews()
-        val query = searchInput.text.toString().trim()
+        val query = SearchText.normalize(searchInput.text.toString().trim())
         val favorites = FavoritesStore.list(this)
         val favoriteIds = favorites.map { it.id }.toHashSet()
         // Las favoritas guardadas en versiones anteriores pueden tener titulos en
@@ -361,9 +361,14 @@ class MainActivity : Activity() {
                 (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
                 (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
             val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
-            val matches = query.isEmpty() || item.title.contains(query, ignoreCase = true) ||
-                NoticeText.headline(item.title).contains(query, ignoreCase = true) ||
-                item.entity.contains(query, ignoreCase = true) || item.id.contains(query, ignoreCase = true)
+            // La busqueda ignora las tildes y las mayusculas, no altera el texto oficial.
+            val matches = SearchText.matchesNormalized(
+                query,
+                item.title,
+                NoticeText.headline(item.title),
+                item.entity,
+                item.id
+            )
             correctType && correctDate && matches
         }
         resultsText.text = if (selectedTab == TAB_FAVORITES)
