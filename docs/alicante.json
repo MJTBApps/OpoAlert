@@ -1,0 +1,862 @@
+{
+  "schemaVersion": 1,
+  "source": "https://sede.diputacionalicante.es/consultas.bop/",
+  "province": "Alicante",
+  "lastCheckedUTC": "2026-10-28T10:27:51.509353+00:00",
+  "coverage": {
+    "complete": true,
+    "bulletin": "205",
+    "pagesVisited": 21,
+    "announcementsRead": 815,
+    "opportunities": 78,
+    "status": "complete"
+  },
+  "historyCoverage": {
+    "complete": true,
+    "rangeStart": "2026-09-29",
+    "rangeEnd": "2026-10-28",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 815,
+    "opportunities": 78,
+    "bulletins": [
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205"
+    ],
+    "publicationDates": [
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28"
+    ],
+    "nonPublicationDates": [
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-09",
+      "2026-10-10",
+      "2026-10-11",
+      "2026-10-17",
+      "2026-10-18",
+      "2026-10-24",
+      "2026-10-25"
+    ]
+  },
+  "notices": [
+    {
+      "id": "AL-2026-8224",
+      "province": "Alicante",
+      "title": "CONVOCATORIA VARIOS PUESTOS DE TRABAJO DEL EXCMO AYUNTAMIENTO DE ALICANTE,  POR EL SISTEMA DE LIBRE DESIGNACIÓN.",
+      "entity": "AYUNTAMIENTO ALICANTE",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008224.pdf"
+    },
+    {
+      "id": "AL-2026-8223",
+      "province": "Alicante",
+      "title": "CONVOCATORIA CONCURSO DE MÉRITOS PROVISIÓN DE 1 DOTACIÓN PUESTO TRABAJO CONDUCTOR/A (106) DEL AYTO. DE ALICANTE, RESERVADO A FUNCIONARIOS DE CARRERA.",
+      "entity": "AYUNTAMIENTO ALICANTE",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008223.pdf"
+    },
+    {
+      "id": "AL-2026-8132",
+      "province": "Alicante",
+      "title": "PROCESO SELECTIVO DE OPOSICIÓN POR TURNO LIBRE PARA LA PROVISIÓN DE UNA PLAZA DE TÉCNICO DE FORMACIÓN Y DESARROLLO LOCAL. OEP 2023",
+      "entity": "AYUNTAMIENTO LA NUCÍA",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008132.pdf"
+    },
+    {
+      "id": "AL-2026-8071",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO POR TURNO LIBRE 4 PLAZAS DE VIGILANTE DE INSTALACIONES MUSEOGRÁFICAS",
+      "entity": "AYUNTAMIENTO DÉNIA",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008071.pdf"
+    },
+    {
+      "id": "AL-2026-8069",
+      "province": "Alicante",
+      "title": "PLAZA FUNCIONARIO DE CARRERA DE COORDINADOR DEPORTIVO DEL AYUNTAMIENTO DE PEGO POR CONCURSO-OPOSICIÓN LIBRE.",
+      "entity": "AYUNTAMIENTO PEGO",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008069.pdf"
+    },
+    {
+      "id": "AL-2026-7957",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO UNA PLAZA DE AYUDANTE DE COCINA (OEP 2024), MEDIANTE CONCURSO-OPOSICIÓN Y PERIODO DE PRÁCTICAS, TURNO LIBRE",
+      "entity": "AYUNTAMIENTO DÉNIA",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_007957.pdf"
+    },
+    {
+      "id": "AL-2026-7896",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO POR TURNO LIBRE CUATRO PLAZAS TRABAJADOR/A SOCIAL",
+      "entity": "AYUNTAMIENTO DÉNIA",
+      "date": "28/10/2026",
+      "bulletin": "205",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_007896.pdf"
+    },
+    {
+      "id": "AL-2026-8176",
+      "province": "Alicante",
+      "title": "BASES PARA COBERTURA TEMPORAL MEDIANTE EL SISTEMA DE COMISIÓN DE SERVICIOS DE UN PUESTO DE ADMINISTRATIVO DE ADMINISTRACIÓN GENERAL (ID 181)",
+      "entity": "AYUNTAMIENTO ORIHUELA",
+      "date": "27/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/27_204/2026_008176.pdf"
+    },
+    {
+      "id": "AL-2026-8097",
+      "province": "Alicante",
+      "title": "CONVOCATÒRIA DEL PROCÉS DE LA PROVISIÓ EN PROPIETAT DE DUES PLACES D'AGENT DE POLICIA LOCAL, UNA PEL TORN LLIURE I UNA PER MOBILITAT",
+      "entity": "AYUNTAMIENTO PEDREGUER",
+      "date": "26/10/2026",
+      "bulletin": "203",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/26_203/2026_008097.pdf"
+    },
+    {
+      "id": "AL-2026-8121",
+      "province": "Alicante",
+      "title": "ACUMULACIÓN DE UNA PLAZA DE AUXILIAR DE ADMINISTRACIÓN GENERAL OEP 2026 (Nº 52) A LA CONVOCATORIA DE TRES PLAZAS DE LA MISMA CLASE",
+      "entity": "AYUNTAMIENTO EL CAMPELLO",
+      "date": "23/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_008121.pdf"
+    },
+    {
+      "id": "AL-2026-8003",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFIQUES I CONVOCATÒRIA PROCÉS SELECTIU DE 1 PLAÇA DE TÈCNIC/A DE JOVENTUT, PEL TORN LLIURE, MITJANÇANT OPOSICIÓ.",
+      "entity": "AYUNTAMIENTO MURO DE ALCOY",
+      "date": "23/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_008003.pdf"
+    },
+    {
+      "id": "AL-2026-7876",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA DE 1 PLAZA DE ARQUITECTO/A TÉCNICO/A, (TÉCNICO MEDIO EN ARQUITECTURA) POR TURNO LIBRE",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "23/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007876.pdf"
+    },
+    {
+      "id": "AL-2026-7875",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO POR PROMOCIÓN INTERNA DE 1 PLAZA DE AUXILIAR ADMINISTRATIVO/A",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "23/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007875.pdf"
+    },
+    {
+      "id": "AL-2026-7873",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA DE 1 PLAZA DE ADMINISTRATIVO/A POR TURNO LIBRE",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "23/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007873.pdf"
+    },
+    {
+      "id": "AL-2026-7870",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO POR CONCURSO-OPOSICIÓN 3 PLAZAS DE OPERARIOS DE OBRAS Y SERVICIOS",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "23/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007870.pdf"
+    },
+    {
+      "id": "AL-2026-8092",
+      "province": "Alicante",
+      "title": "MODIFICACIÓN BASES REGULADORAS DE LA PRUEBA OBTENCIÓN CAPACITACIÓN PROFESIONAL PRESTACIÓN SERVICIO TAXI Y AMPLIACIÓN PLAZO PRESENTACIÓN INSTANCIAS",
+      "entity": "AYUNTAMIENTO TEULADA",
+      "date": "22/10/2026",
+      "bulletin": "201",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/22_201/2026_008092.pdf"
+    },
+    {
+      "id": "AL-2026-8012",
+      "province": "Alicante",
+      "title": "EDICTO AMPLIACIÓN PLAZO PRESENTACIÓN SOLICITUDES II CONCURSO ORNAMENTAL DE ALUMBRADO PÚBLICO",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "21/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/21_200/2026_008012.pdf"
+    },
+    {
+      "id": "AL-2026-8040",
+      "province": "Alicante",
+      "title": "APROBACIÓN BASES Y CONVOCATORIA PÚBLICA DESIGNACIÓN PUESTO DIRECTOR/A IDELSA",
+      "entity": "INSTITUTO DESARROLLO DE ELDA Y SERVICIOS ADMINISTRATIVOS",
+      "date": "20/10/2026",
+      "bulletin": "199",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008040.pdf"
+    },
+    {
+      "id": "AL-2026-8025",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFICAS Y CONVOCATORIA PROCESO SELECTIVO PARA PROVISIÓN EN PROPIEDAD DEL PUESTO TÉCNICO/A DE ADMINISTRACIÓN ESPECIAL CASA DE CULTURA",
+      "entity": "AYUNTAMIENTO L´ALFÀS DEL PI",
+      "date": "20/10/2026",
+      "bulletin": "199",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008025.pdf"
+    },
+    {
+      "id": "AL-2026-8018",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA UNA PLAZA DE COCINERO/A POR SISTEMA CONCURSO-OPOSICIÓN.",
+      "entity": "PATRONATO MUNICIPAL DE EDUCACIÓN INFANTIL DE ALICANTE",
+      "date": "20/10/2026",
+      "bulletin": "199",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008018.pdf"
+    },
+    {
+      "id": "AL-2026-8016",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS VARIAS PLAZAS TÉCNICO SUPERIOR EDUCACIÓN INFANTIL, SISTEMA OPOSICIÓN",
+      "entity": "PATRONATO MUNICIPAL DE EDUCACIÓN INFANTIL DE ALICANTE",
+      "date": "20/10/2026",
+      "bulletin": "199",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008016.pdf"
+    },
+    {
+      "id": "AL-2026-8000",
+      "province": "Alicante",
+      "title": "BASES PROVISIÓN EN PROPIEDAD 1 PLAZA TÉCNICO/A DE GESTIÓN DE CONTRATACIÓN, TURNO PROMOCIÓN INTERNA",
+      "entity": "AYUNTAMIENTO JÁVEA",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_008000.pdf"
+    },
+    {
+      "id": "AL-2026-7994",
+      "province": "Alicante",
+      "title": "RESULTADO DEFINITIVO DEL PROCESO SELECTIVO PARA CUBRIR DOS PLAZAS DE OPERARIO DE OBRAS Y SERVICIOS.",
+      "entity": "AYUNTAMIENTO BENEJÚZAR",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007994.pdf"
+    },
+    {
+      "id": "AL-2026-7986",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA DEL CONCURSO DE MÉRITOS PARA LA PROVISIÓN DEFINITIVA POR MOVILIDAD INTERNA DE LA PLAZA DE AGENTE INFORMADOR.",
+      "entity": "AYUNTAMIENTO BUSOT",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007986.pdf"
+    },
+    {
+      "id": "AL-2026-7723",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 1 PLAZA DE TÉCNICO/A SUPERIOR EN GESTIÓN ECONÓMICA, MEDIANTE CONCURSO-OPOSICIÓN POR TURNO LIBRE.",
+      "entity": "AYUNTAMIENTO SANTA POLA",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007723.pdf"
+    },
+    {
+      "id": "AL-2026-7709",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 8 PLAZAS DE AGENTE DE POLICÍA LOCAL, 5 EN TURNO LIBRE Y 3 EN TURNO DE MOVILIDAD.",
+      "entity": "AYUNTAMIENTO SANTA POLA",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007709.pdf"
+    },
+    {
+      "id": "AL-2026-7699",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 1 PLAZA DE TÉCNICO/A AUXILIAR DE ARCHIVO-BIBLIOTECA, MEDIANTE CONCURSO-OPOSICIÓN, TURNO LIBRE.",
+      "entity": "AYUNTAMIENTO SANTA POLA",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007699.pdf"
+    },
+    {
+      "id": "AL-2026-7677",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 1 PLAZA DE OPERARIO/A CONSERJE 3ª EDAD, MEDIANTE CONCURSO-OPOSICIÓN, TURNO LIBRE",
+      "entity": "AYUNTAMIENTO SANTA POLA",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007677.pdf"
+    },
+    {
+      "id": "AL-2026-7270",
+      "province": "Alicante",
+      "title": "APROBACIÓN BASES ESPECÍFICAS Y MODIFICACIÓN BASES CONV. 25/30, PROVISIÓN DEFINITIVA 1 PLAZA TÉCNICO/A DE PARTICIPACIÓN CIUDADANA.",
+      "entity": "AYUNTAMIENTO CALP",
+      "date": "19/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007270.pdf"
+    },
+    {
+      "id": "AL-2026-7968",
+      "province": "Alicante",
+      "title": "CONVOCATORIA BOLSA PARA COBERTURA DE VACANTES EN COMISIÓN DE SERVICIO, PLAZAS DE AGENTE DE POLICIA LOCAL",
+      "entity": "AYUNTAMIENTO FINESTRAT",
+      "date": "16/10/2026",
+      "bulletin": "197",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/16_197/2026_007968.pdf"
+    },
+    {
+      "id": "AL-2026-7811",
+      "province": "Alicante",
+      "title": "PROCESO SELECTIVO DE OPOSICIÓN, POR TURNO LIBRE, PARA LA PROVISIÓN DE UNA PLAZA DE DELINEANTE, OEP 2025.",
+      "entity": "AYUNTAMIENTO LA NUCÍA",
+      "date": "16/10/2026",
+      "bulletin": "197",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/16_197/2026_007811.pdf"
+    },
+    {
+      "id": "AL-2026-7269",
+      "province": "Alicante",
+      "title": "ACORD JGL PEL QUAL S´APROVEN LES BASES I LA CONVOCATÒRIA PER A COBRIR UNA PLAÇA DE PEÓ SOTERRADOR/OBRES",
+      "entity": "AYUNTAMIENTO GATA DE GORGOS",
+      "date": "16/10/2026",
+      "bulletin": "197",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/16_197/2026_007269.pdf"
+    },
+    {
+      "id": "AL-2026-7927",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES 2 PLAZAS DE INSPECTOR/A DE INFRACCIONES URBANÍSTICAS TURNO LIBRE.",
+      "entity": "AYUNTAMIENTO ELCHE",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007927.pdf"
+    },
+    {
+      "id": "AL-2026-7915",
+      "province": "Alicante",
+      "title": "AMPLIACIÓN DEL PLAZO HASTA EL 31 DE OCTUBRE 2026 PRESENTACIÓN SOLICITUDES CONVOCATORIA AYUDAS ASISTENCIA A GUARDERIA PARTE DEL CURSO 2025-2026",
+      "entity": "AYUNTAMIENTO ALTEA",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007915.pdf"
+    },
+    {
+      "id": "AL-2026-7914",
+      "province": "Alicante",
+      "title": "AMPLIACIÓN DEL PLAZO HASTA EL 31 OCTUBRE 2026 PRESENTACIÓN DE SOLICITUDES CONVOCATORIA DE AYUDAS MATERIAL ESCOLAR EDUCACIÓN INFANTIL CURSO 2026-2027",
+      "entity": "AYUNTAMIENTO ALTEA",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007914.pdf"
+    },
+    {
+      "id": "AL-2026-7909",
+      "province": "Alicante",
+      "title": "MODIFICACIÓN ÓRGANO TÉCNICO DE SELECCIÓN 11 PLAZAS ADMINISTRATIVA/O A.G. POR CONCURSO OPOSICIÓN LIBRE.",
+      "entity": "AYUNTAMIENTO ELCHE",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007909.pdf"
+    },
+    {
+      "id": "AL-2026-7905",
+      "province": "Alicante",
+      "title": "MODIFICACIÓN ÓRGANO TÉCNICO DE SELECCIÓN PARA LA CONSTITUCIÓN DE UNA BOLSA DE TRABAJO DE TÉCNICO/A DE ADMINISTRACIÓN GENERAL",
+      "entity": "AYUNTAMIENTO ELCHE",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007905.pdf"
+    },
+    {
+      "id": "AL-2026-7884",
+      "province": "Alicante",
+      "title": "RESOLUCIÓN CONVOCATORIA Y LAS BASES PROVISIÓN EN PROPIEDAD DE 1 PLAZA DE AGENTE DE POLICÍA LOCAL TURNO LIBRE Y CONSTITUCIÓN BOLSA DE TRABAJO TEMPORAL",
+      "entity": "AYUNTAMIENTO DAYA NUEVA",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007884.pdf"
+    },
+    {
+      "id": "AL-2026-7755",
+      "province": "Alicante",
+      "title": "AMPLIACIÓN DEL PLAZO DE RESOLUCIÓN Y NOTIFICACIÓN DE LA CONVOCATORIA DE AYUDAS DE PAGO ÚNICO A COLECTIVO VULNERABLE POR LA EDAD Y ESCASOS RECURSOS",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007755.pdf"
+    },
+    {
+      "id": "AL-2026-7732",
+      "province": "Alicante",
+      "title": "DEJAR SIN EFECTO UNA PLAZA DE AUXILIAR ADMINISTRATIVO DEL PROCESO SELECTIVO CONVOCADO.",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "15/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/15_196/2026_007732.pdf"
+    },
+    {
+      "id": "AL-2026-7817",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES PARA LA COBERTURA TEMPORAL MEDIANTE COMISIÓN DE SERVICIOS DE DETERMINADOS PUESTOS DE AGENTE DE POLICÍA LOCAL",
+      "entity": "AYUNTAMIENTO ALTEA",
+      "date": "14/10/2026",
+      "bulletin": "195",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/14_195/2026_007817.pdf"
+    },
+    {
+      "id": "AL-2026-7673",
+      "province": "Alicante",
+      "title": "DEJAR SIN EFECTO BASES ESPECÍFICAS Y CONVOCATORIA DEL PROCESO SELECTIVO PARA LA PROVISIÓN EN PROPIEDAD DE UNA PLAZA DE TÉCNICO/A DE JUVENTUD",
+      "entity": "AYUNTAMIENTO MURO DE ALCOY",
+      "date": "14/10/2026",
+      "bulletin": "195",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/14_195/2026_007673.pdf"
+    },
+    {
+      "id": "AL-2026-7589",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PARA CONSTITUIR UNA BOLSA DE TRABAJO TEMPORAL DEL PUESTO DE AGENTE DE POLICÍA LOCAL MEDIANTE COMISIÓN DE SERVICIOS",
+      "entity": "AYUNTAMIENTO SAN FULGENCIO",
+      "date": "14/10/2026",
+      "bulletin": "195",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/14_195/2026_007589.pdf"
+    },
+    {
+      "id": "AL-2026-7370",
+      "province": "Alicante",
+      "title": "RECTIFICACIÓN DE LAS BASES DEL PROCESO SELECTIVO PARA PROVISIÓN EN PROPIEDAD DE UNA PLAZA DE TAG DEL AYUNTAMIENTO DE XIXONA",
+      "entity": "AYUNTAMIENTO JIJONA",
+      "date": "14/10/2026",
+      "bulletin": "195",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/14_195/2026_007370.pdf"
+    },
+    {
+      "id": "AL-2026-7316",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA CUBRIR PLAZAS DE PROFESOR/A BANDA DE MÚSICA, TROMPETA E INGENIERO/A SUPERIOR DE TELECOMUNICACIONES",
+      "entity": "AYUNTAMIENTO ALICANTE",
+      "date": "14/10/2026",
+      "bulletin": "195",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/14_195/2026_007316.pdf"
+    },
+    {
+      "id": "AL-2026-6926",
+      "province": "Alicante",
+      "title": "ANUNCIO BOP DESISTIMIENTO DEL PROCESO SELECTIVO Y DEVOLUCIÓN DE TASAS PROCESO SELECTIVO 1 PLAZA ARCHIVERO",
+      "entity": "AYUNTAMIENTO ORIHUELA",
+      "date": "14/10/2026",
+      "bulletin": "195",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/14_195/2026_006926.pdf"
+    },
+    {
+      "id": "AL-2026-7793",
+      "province": "Alicante",
+      "title": "RECTIFICACIÓN BASES DE LA CONVOCATORIA 17 PLAZAS DE ADMINISTRATIVO ADMINISTRACIÓN GENERAL POR PROMOCIÓN INTERNA",
+      "entity": "AYUNTAMIENTO JÁVEA",
+      "date": "13/10/2026",
+      "bulletin": "194",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/13_194/2026_007793.pdf"
+    },
+    {
+      "id": "AL-2026-7781",
+      "province": "Alicante",
+      "title": "ANUNCIO CONVOCATORIA Y BASES DE UNA PLAZA DE ADMINISTRATIVO POR PROMOCIÓN INTERNA.",
+      "entity": "AYUNTAMIENTO RAFAL",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007781.pdf"
+    },
+    {
+      "id": "AL-2026-7768",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES PARA PROVISIÓN DE VARIOS PUESTOS DE JEFE/A DE DEPARTAMENTO DE LA AGENCIA LOCAL, POR LIBRE DESIGNACIÓN",
+      "entity": "AGENCIA LOCAL DE DESARROLLO ECONÓMICO Y SOCIAL ALICANTE",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007768.pdf"
+    },
+    {
+      "id": "AL-2026-7736",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PARA LA PROVISIÓN EN PROPIEDAD DE DOS PLAZAS DE AGENTE INFORMADOR MEDIANTE CONCURSO-OPOSICIÓN.",
+      "entity": "AYUNTAMIENTO BUSOT",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007736.pdf"
+    },
+    {
+      "id": "AL-2026-7735",
+      "province": "Alicante",
+      "title": "CONVOCATORIA APERTURA PLAZO PARA LA CIUDADANIA - CAMPAÑA BONO CONSUMO 2026",
+      "entity": "AYUNTAMIENTO ONIL",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007735.pdf"
+    },
+    {
+      "id": "AL-2026-7689",
+      "province": "Alicante",
+      "title": "RELACIÓN DE APROBADOS PROCESO SELECTIVO DE UNA PLAZA DE AUXILIAR ADMINISTRATIVO/A POR EL SISTEMA DE OPOSICIÓN",
+      "entity": "AYUNTAMIENTO BENIARRÉS",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007689.pdf"
+    },
+    {
+      "id": "AL-2026-7643",
+      "province": "Alicante",
+      "title": "RECTIFICACIÓN ERROR MATERIAL EN LAS BASES PARA LA PROVISIÓN DE 4 PLAZAS DE CONSERJE",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007643.pdf"
+    },
+    {
+      "id": "AL-2026-7346",
+      "province": "Alicante",
+      "title": "BASES REGULADORAS Y CONVOCATORIA PARA LA CONCESIÓN ADMINISTRATIVA DE LA EXPLOTACIÓN CONJUNTA DE LOS PUESTOS 6 Y 7 DEL MERCADO MUNICIPAL",
+      "entity": "AYUNTAMIENTO CALLOSA DE SEGURA",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007346.pdf"
+    },
+    {
+      "id": "AL-2026-7300",
+      "province": "Alicante",
+      "title": "BASES DE CONVOCATORIA PROCESO SELECTIVO PARA CUBRIR UNA PLAZA DE COMISARIO DE LA POLICÍA LOCAL, TURNO PROMOCIÓN INTERNA (OEP 2024)",
+      "entity": "AYUNTAMIENTO PETRER",
+      "date": "08/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007300.pdf"
+    },
+    {
+      "id": "AL-2026-7731",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA RELATIVA AL PROCESO DE SELECCIÓN PARA LA PROVISIÓN TEMPORAL DE 4 PUESTOS DE AGENTES DE POLICÍA LOCAL EN COMISIÓN DE SERVICIOS.",
+      "entity": "AYUNTAMIENTO ORIHUELA",
+      "date": "07/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/07_191/2026_007731.pdf"
+    },
+    {
+      "id": "AL-2026-7714",
+      "province": "Alicante",
+      "title": "MODIFICACIÓN DE BASES Y ACUMULACIÓN DE PLAZAS OFICIAL/A DE JARDINERÍA 13 CO-PIV",
+      "entity": "AYUNTAMIENTO ELCHE",
+      "date": "07/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/07_191/2026_007714.pdf"
+    },
+    {
+      "id": "AL-2026-7672",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES DEL PROCESO SELECTIVO PARA LA CONSTITUCIÓN DE UNA BOLSA DE TRABAJO DE OPERADOR DE EQUIPOS",
+      "entity": "DIPUTACIÓN PROVINCIAL ALICANTE",
+      "date": "06/10/2026",
+      "bulletin": "190",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/06_190/2026_007672.pdf"
+    },
+    {
+      "id": "AL-2026-7661",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES DE 1 PLAZA DE INSPECTOR/A DE RENTAS POR OPOSICIÓN LIBRE.",
+      "entity": "AYUNTAMIENTO ELCHE",
+      "date": "06/10/2026",
+      "bulletin": "190",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/06_190/2026_007661.pdf"
+    },
+    {
+      "id": "AL-2026-7535",
+      "province": "Alicante",
+      "title": "BASES PROVISIÓN EN PROPIEDAD 1 TÉCNICO/A ADMÓN. GENERAL ADSCRITA AL PUESTO DE JEFE/A SERVICIO JURÍDICO SECRETARÍA GENERAL, CONTRATACIÓN Y RRHH",
+      "entity": "AYUNTAMIENTO JÁVEA",
+      "date": "06/10/2026",
+      "bulletin": "190",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/06_190/2026_007535.pdf"
+    },
+    {
+      "id": "AL-2026-7551",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y LAS BASES ESPECÍFICAS. PROVISIÓN EN PROPIEDAD DE UNA (1) PLAZA DE LOCUTOR O LOCUTORA DE RADIO ALTEA, LABORAL FIJO.",
+      "entity": "AYUNTAMIENTO ALTEA",
+      "date": "05/10/2026",
+      "bulletin": "189",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/05_189/2026_007551.pdf"
+    },
+    {
+      "id": "AL-2026-7487",
+      "province": "Alicante",
+      "title": "BASES PROVISIÓN EN PROPIEDAD 1 PLAZA TÉCNICO/A DE GESTIÓN DE FIESTAS, TURNO LIBRE",
+      "entity": "AYUNTAMIENTO JÁVEA",
+      "date": "05/10/2026",
+      "bulletin": "189",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/05_189/2026_007487.pdf"
+    },
+    {
+      "id": "AL-2026-7477",
+      "province": "Alicante",
+      "title": "BASES PROVISIÓN EN PROPIEDAD 1 PLAZA TÉCNICO/A SUPERIOR DE MEDIO AMBIENTE, TURNO PROMOCIÓN INTERNA",
+      "entity": "AYUNTAMIENTO JÁVEA",
+      "date": "01/10/2026",
+      "bulletin": "187",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007477.pdf"
+    },
+    {
+      "id": "AL-2026-7352",
+      "province": "Alicante",
+      "title": "APROBACIÓN BASES ESPECÍFICAS CONVOCATORIA 26/54, BOLSA TRABAJO TEMPORAL TÉCNICO/A MEDIO/A DE GESTIÓN (TMG)",
+      "entity": "AYUNTAMIENTO CALP",
+      "date": "01/10/2026",
+      "bulletin": "187",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007352.pdf"
+    },
+    {
+      "id": "AL-2026-7298",
+      "province": "Alicante",
+      "title": "APROBACIÓN BASES ESPECÍFICAS CONVOCATORIA 26/52, PROVISIÓN DEFINITIVA 1 PLAZA TÉCNICO/A DE INTEGRACIÓN SOCIAL (CONCURSO-OPOSICIÓN / TURNO LIBRE)",
+      "entity": "AYUNTAMIENTO CALP",
+      "date": "01/10/2026",
+      "bulletin": "187",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007298.pdf"
+    },
+    {
+      "id": "AL-2026-7083",
+      "province": "Alicante",
+      "title": "BASES ESPECIFICAS PROCESO SELECTIVO PARA LA CONSTITUCIÓN DE UNA BOLSA DE EMPLEO DE PROFESOR/A DE CONSERVATORIO EN LA ESPECIALIDAD DE CORO",
+      "entity": "AYUNTAMIENTO ORIHUELA",
+      "date": "01/10/2026",
+      "bulletin": "187",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007083.pdf"
+    },
+    {
+      "id": "AL-2026-7397",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO N.º 1.19 JEFATURA DEPARTAMENTO HACIENDA Y RECAUDACIÓN",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007397.pdf"
+    },
+    {
+      "id": "AL-2026-7393",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO N.º 1.15 JEFATURA DEPARTAMENTO DE RECURSOS HUMANOS",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007393.pdf"
+    },
+    {
+      "id": "AL-2026-7391",
+      "province": "Alicante",
+      "title": "ANUNCIO BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO N.º 1.1 JEFATURA DEPARTAMENTO SECRETARÍA Y CONTRATACIÓN",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007391.pdf"
+    },
+    {
+      "id": "AL-2026-7387",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFICAS CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO Nº 1.23 JEFATURA DEL DEPARTAMENTO DE OFICINA TÉCNICA",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007387.pdf"
+    },
+    {
+      "id": "AL-2026-7377",
+      "province": "Alicante",
+      "title": "ANUNCIO BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO Nº 2.18 JEFATURA  DEPARTAMENTO SERVICIOS SOCIALES E IGUALDAD",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007377.pdf"
+    },
+    {
+      "id": "AL-2026-7376",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFICAS QUE REGIRÁN CONCURSO ORDINARIO MÉRITOS PARA PROVISIÓN DEFINITIVA PUESTO N.º 2.31 JEFATURA DEPARTAMENTO OBRAS, SERVICIOS Y LIMPIEZA",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007376.pdf"
+    },
+    {
+      "id": "AL-2026-7375",
+      "province": "Alicante",
+      "title": "BASES ESPECÍFICAS QUE REGIRÁN CONCURSO ORDINARIO DE MÉRITOS PARA LA PROVISIÓN DEFINITIVA DEL PUESTO N.º 2.43 ENCARGADO/A DE LIMPIEZA DEL AYTO DOLORES",
+      "entity": "AYUNTAMIENTO DOLORES",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007375.pdf"
+    },
+    {
+      "id": "AL-2026-7239",
+      "province": "Alicante",
+      "title": "DECLARACIÓN DESIERTA CONV. 26/17, PROVISIÓN DEFINITIVA 1 PLAZA CELADOR/A DE OBRAS (INSPECTOR/A DE OBRAS) (CONCURSO-OPOSICIÓN / PROMOCIÓN INTERNA)",
+      "entity": "AYUNTAMIENTO CALP",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007239.pdf"
+    },
+    {
+      "id": "AL-2026-7110",
+      "province": "Alicante",
+      "title": "CONVOCATORIA BOLSA DE TRABAJO DE OFICIAL ELECTRICISTA",
+      "entity": "AYUNTAMIENTO TEULADA",
+      "date": "30/09/2026",
+      "bulletin": "186",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007110.pdf"
+    },
+    {
+      "id": "AL-2026-7361",
+      "province": "Alicante",
+      "title": "CONVOCATORIA PARA LA CONSTITUCIÓN DE UNA BOLSA DE TRABAJO TEMPORAL DE AUXILIAR DEL SERVICIO DE AYUDA A DOMICILIO DEL AYUNTAMIENTO DE XIXONA",
+      "entity": "AYUNTAMIENTO JIJONA",
+      "date": "29/09/2026",
+      "bulletin": "185",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/29_185/2026_007361.pdf"
+    },
+    {
+      "id": "AL-2026-6659",
+      "province": "Alicante",
+      "title": "BOLSA DE EMPLEO TEMPORAL DE MONITOR/A DE ATLETISMO, POR CONCURSO-OPOSICIÓN",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "29/09/2026",
+      "bulletin": "185",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/29_185/2026_006659.pdf"
+    },
+    {
+      "id": "AL-2026-6656",
+      "province": "Alicante",
+      "title": "BOLSA DE EMPLEO TEMPORAL DE MONITOR/A DE FÚTBOL SALA POR CONCURSO-OPOSICIÓN",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "29/09/2026",
+      "bulletin": "185",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/29_185/2026_006656.pdf"
+    }
+  ]
+}
