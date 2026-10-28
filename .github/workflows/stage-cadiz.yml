@@ -42,6 +42,14 @@ jobs:
           git add docs/cadiz_bop.json
           if ! git diff --cached --quiet; then
             git commit -m 'OpoAlert: incorporar BOP Cadiz 30 dias verificado'
-            git pull --rebase origin feature/andalucia-cadiz-bop-20261028
-            git push origin HEAD:feature/andalucia-cadiz-bop-20261028
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/andalucia-cadiz-bop-20261028
+              git rebase origin/feature/andalucia-cadiz-bop-20261028
+              if git push origin HEAD:feature/andalucia-cadiz-bop-20261028; then
+                echo "Cadiz JSON staged"
+                break
+              fi
+              if [ "$i" -eq 5 ]; then exit 1; fi
+              sleep 3
+            done
           fi
