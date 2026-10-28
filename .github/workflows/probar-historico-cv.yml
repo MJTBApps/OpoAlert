@@ -1,0 +1,43 @@
+name: OpoAlert 1.0 - Auditar historico Alicante Castellon
+
+on:
+  push:
+    branches: [feature/comunitat-valenciana-1-0]
+    paths:
+      - 'backend/provincial_common.py'
+      - 'backend/alicante.py'
+      - 'backend/castellon.py'
+      - 'backend/province_history.py'
+      - 'backend/tests/test_provincial_10.py'
+      - 'backend/requirements.txt'
+      - '.github/workflows/probar-historico-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar entorno de lectura
+        run: |
+          python -m pip install -r backend/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Verificar extractores provinciales
+        run: python -m unittest discover -s backend/tests -p 'test_provincial_10.py' -v
+      - name: Auditar las dos provincias 30 dias sin publicar resultados parciales
+        run: python -u backend/province_history.py --days 30 --province both --output out_provincias
+      - name: Conservar resultados solo si pasan toda la auditoria
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opoalert-auditoria-provincias-30-dias
+          path: out_provincias/*.json
+          retention-days: 7
+          if-no-files-found: error
