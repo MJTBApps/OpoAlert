@@ -5,6 +5,7 @@ This probes the *public* bulletin indexes, no mass scraping. Output is a compact
 summary to design stable extractors and verify announcement identity/coverage.
 """
 import json
+from pathlib import Path
 import re
 from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
@@ -45,6 +46,9 @@ with sync_playwright() as p:
                 page.goto(url,wait_until='domcontentloaded',timeout=55000)
                 page.wait_for_timeout(3200)
                 analyze(page,name)
+                target = Path('backend/diag_sources')
+                target.mkdir(parents=True, exist_ok=True)
+                (target / f'{name}.html').write_text(page.content(), encoding='utf-8')
                 print('REQUESTS=' + json.dumps({'province':name,'urls':seen[:30]},ensure_ascii=False),flush=True)
                 page.close()
             except Exception as exc:

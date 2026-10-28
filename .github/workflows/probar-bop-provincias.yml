@@ -27,3 +27,11 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Comprobar estructura oficial sin modificar el feed actual
         run: python -u backend/probe_provinces.py
+      - name: Adjuntar HTML de paginas oficiales para revisar estructura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-bop-provincias
+          path: backend/diag_sources/*.html
+          if-no-files-found: warn
+          retention-days: 1
