@@ -76,6 +76,10 @@ class TeruelTests(unittest.TestCase):
         r={"id":"2026-3129","title":"Bases de convocatoria para una plaza de técnico municipal",
            "entity":"Ayto. de Teruel"}
         self.assertEqual(parse_detail(detail(),r,DAY),207)
+        self.assertEqual(parse_detail(detail().replace("28/10/26","28/10/2026"),r,DAY),207)
+        self.assertEqual(parse_detail(detail().replace("28/10/26","28/10/26"),r,DAY),207)
+        with self.assertRaises(ProvincialCoverageError):
+            parse_detail(detail().replace("28/10/26","27/10/26"),r,DAY)
         with self.assertRaises(ProvincialCoverageError):
             parse_detail(detail(208).replace("28/10/26","27/10/26"),r,DAY)
 
