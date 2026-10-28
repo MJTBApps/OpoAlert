@@ -20,6 +20,7 @@ SUM_RE=re.compile(r"^SU-(\d{1,4})_(\d{2})-(\d{2})-(\d{2})\.pdf$",re.I)
 PDF_RE=re.compile(r"^BOP(\d{1,4})_(\d{2})-(\d{2})-(\d{2})\.pdf$",re.I)
 ID_RE=re.compile(r"^\s*(\d{1,3})\.(\d{3})\s*\.\s*-\s*")
 PAGE_RE=re.compile(r"page=(\d{1,5})")
+DATE_STAMP_RE=re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+([A-Za-z]{3})\s+(\d{1,2})\s+\d{2}:\d{2}:\d{2}\s+(?:CET|CEST)\s+(\d{4})")
 PATH_PREFIX="/export/sites/default/.boletines_pdf/"
 OFFICIAL_HOST="www.bopcadiz.es"
 HTTP_TIMEOUT=(10,26)
@@ -133,6 +134,16 @@ def parse_issue(html:str,year:int,number:int)->dict:
     day=date(2000+int(pm.group(4)),int(pm.group(3)),int(pm.group(2)))
     if day.year!=year:
         raise ProvincialCoverageError(f"Cadiz BOP {number}: año fecha incorrecto")
+    stamp=soup.select_one("p.fecha")
+    match_day=DATE_STAMP_RE.search(stamp.get_text(" ",strip=True)) if stamp else None
+    if match_day is None:
+        raise ProvincialCoverageError(f"Cadiz BOP {number}: falta fecha del portal en cabecera")
+    try:
+        official_day=datetime.strptime(f"{match_day.group(1)} {match_day.group(2)} {match_day.group(3)}","%b %d %Y").date()
+    except ValueError as ex:
+        raise ProvincialCoverageError("Cadiz: fecha HTML invalida") from ex
+    if official_day!=day:
+        raise ProvincialCoverageError(f"Cadiz BOP {number}: fecha HTML difiere del PDF oficial")
     # Only read the article body between edition h2 and calendar h2.
     records=[]
     category=None
