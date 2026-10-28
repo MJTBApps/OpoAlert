@@ -1,0 +1,75 @@
+name: OpoAlert - Auditar y publicar BOP Tarragona
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 15 * * 1-5'
+  push:
+    branches: [main]
+    paths:
+      - 'backend/tarragona.py'
+      - 'backend/validar_tarragona.py'
+      - 'backend/tests/test_tarragona.py'
+      - '.github/workflows/revisar-tarragona.yml'
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias y tests BOP Tarragona
+        run: |
+          pip install 'beautifulsoup4>=4.12,<5'
+          python -m unittest discover -s backend/tests -p test_tarragona.py -q
+      - name: Auditar 30 dias completos del BOPT y sus PDF oficiales
+        run: python -u backend/tarragona.py --days 30 --output out_tarragona/tarragona_bop.json
+      - name: Validar 30 dias y registros sin publicar parciales
+        run: python backend/validar_tarragona.py --file out_tarragona/tarragona_bop.json --require-today
+      - name: Publicar BOPT solo si auditoria de 30 dias correcta
+        run: |
+          set -eu
+          cp out_tarragona/tarragona_bop.json docs/tarragona_bop.json
+          python backend/validar_tarragona.py --file docs/tarragona_bop.json --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/tarragona_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: actualizar BOPT Tarragona con 30 dias auditados'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-bop-tarragona
+          path: out_tarragona/*.json
+          if-no-files-found: ignore
+          retention-days: 3
+  pages:
+    needs: auditar
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deploy
+        uses: actions/deploy-pages@v4
