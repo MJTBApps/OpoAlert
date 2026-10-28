@@ -63,6 +63,25 @@ def items_under(node: dict):
         yield from items_under(ep)
 
 
+AGENCY_IN_TITLE = re.compile(
+    r"\b(?:del|de la|de los|de las)\s+"
+    r"((?:Ayuntamiento|Diputaci[oó]n(?: Provincial)?|Universidad|Cabildo|"
+    r"Consejo Insular|Consorcio|Mancomunidad|Mancomunitat|Comarca|"
+    r"Consejo Comarcal|Consell Comarcal|Entidad Local|"
+    r"Comunidad de Villa y Tierra|Entidad Sociedad P[uú]blica Municipal|"
+    r"Organismo Aut[oó]nomo)\b[^,]{2,130})",
+    re.IGNORECASE
+)
+
+
+def entity_from_title(title: str, official_department: str) -> str:
+    """Use the exact entity explicitly stated in the BOE title when available."""
+    m = AGENCY_IN_TITLE.search(title)
+    if m:
+        return re.sub(r"\s+", " ", m.group(1)).strip()
+    return official_department
+
+
 def category(title: str) -> str | None:
     """Conservative public-employment screening, including eligible merit competitions.
 
@@ -146,7 +165,7 @@ def parse_summary(payload: dict, requested: date):
                         result.append({
                             "id": identifier,
                             "title": title.strip(),
-                            "entity": name.strip(),
+                            "entity": entity_from_title(title, name.strip()),
                             "date": requested.strftime("%d/%m/%Y"),
                             "bulletin": number,
                             "province": PROVINCE,
