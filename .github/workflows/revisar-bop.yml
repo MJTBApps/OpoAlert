@@ -61,10 +61,6 @@ jobs:
           else
             echo 'El feed ya estaba actualizado.'
           fi
-      - name: Empaquetar solo contenido publico
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
       - name: Diagnosticos si falla (sin exponer publicamente)
         if: failure()
         uses: actions/upload-artifact@v4
@@ -76,21 +72,3 @@ jobs:
             backend/diagnostico_historico.json
           if-no-files-found: ignore
           retention-days: 3
-
-  publicar-pages:
-    needs: leer-y-validar
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.publicacion.outputs.page_url }}
-    steps:
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Publicar el feed
-        id: publicacion
-        uses: actions/deploy-pages@v4
