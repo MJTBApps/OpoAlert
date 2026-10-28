@@ -1,0 +1,46 @@
+name: OpoAlert - Preparar BOP Teruel auditado
+on:
+  push:
+    branches: [feature/teruel-bop-audit-20261028]
+    paths: ['.github/workflows/stage-teruel.yml']
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Recuperar exclusivamente informe con auditoria aprobada
+        uses: actions/download-artifact@v4
+        with:
+          name: teruel-bop-30-dias-auditado
+          run-id: 40724272627
+          repository: MJTBApps/OpoAlert
+          github-token: ${{ github.token }}
+          path: staging/teruel
+      - name: Validar de nuevo y preparar feed
+        run: |
+          set -eu
+          SRC="$(find staging/teruel -name 'teruel_bop.json' -type f -print -quit)"
+          test -n "$SRC"
+          python backend/validar_teruel_bop.py --file "$SRC" --require-today
+          cp "$SRC" docs/teruel_bop.json
+          python backend/validar_teruel_bop.py --file docs/teruel_bop.json --require-today
+      - name: Incorporar JSON validado al codigo sin publicarlo antes del merge
+        run: |
+          set -eu
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/teruel_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: incorporar 22 ediciones BOP Teruel auditadas'
+            git pull --rebase origin feature/teruel-bop-audit-20261028
+            git push origin HEAD:feature/teruel-bop-audit-20261028
+          fi
