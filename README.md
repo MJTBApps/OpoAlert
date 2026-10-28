@@ -1,70 +1,59 @@
-# OpoAlert 0.8 — Empleo público, BOP Valencia
+# OpoAlert 1.5 — convocatorias públicas con fuentes verificadas
 
-Aplicación Android nativa, gratuita, para consultar publicaciones de plazas,
-oposiciones y bolsas de empleo del BOP de Valencia. El historial lo recopila y
-audita automáticamente un lector Playwright que se ejecuta en GitHub Actions.
+Aplicación nativa Android que busca convocatorias de empleo público,
+bolsas y oposiciones en boletines oficiales y catálogos públicos.
+Proyecto gratuito e independiente de las Administraciones públicas.
 
-## Instalar Android
+## Descargar Android
 
-Descarga la última APK desde **Releases**:
+Última versión publicada: desde GitHub Pages, archivo de descarga
+OpoAlert-1.5.0.apk (después de comprobar la compilación del proyecto).
+Página pública: https://mjtbapps.github.io/OpoAlert/
 
-https://github.com/MJTBApps/OpoAlert/releases/tag/v0.8.0
+Las compilaciones distribuidas en esta fase están firmadas para pruebas.
+Si la firma no coincide con otra APK instalada, Android puede obligar a
+desinstalarla primero, con pérdida de favoritos locales. No se guardan
+favoritos ni alertas en un servidor.
 
-La app trae configurada su fuente pública; no es necesario indicar ninguna URL.
-En el primer inicio Android puede solicitar permiso para avisos de nuevas convocatorias.
-Puede activarse o desactivarse desde el menú de tres puntos, sin ocupar la portada.
+## Fuentes disponibles en 1.5
 
-**Aviso de instalación:** la APK descargada desde GitHub Actions es una compilación
-de prueba con firma de depuración. Si la versión anterior tiene otra firma,
-Android exigirá desinstalarla antes. Al desinstalar se pierden los favoritos
-guardados en ese teléfono. Para distribuir futuras actualizaciones sin perder
-favoritos será necesario configurar una firma privada estable.
+- BOP Valencia, Alicante y Castellón — 30 días auditados.
+- BOE, sección II.B Oposiciones y concursos — 30 días auditados.
+- CIDO — Barcelona, Girona, Lleida y Tarragona. Catálogo público de
+  procesos selectivos municipales, no lectura exhaustiva de los BOP.
+- BOP Tarragona — anuncios provinciales y PDF originales, 30 días auditados.
+  Fuente **distinta** de CIDO Tarragona; un mismo proceso puede aparecer
+  publicado en ambas.
 
-## Interfaz v0.8
+Total: 9 fuentes independientes. El archivo de catálogo mantiene las 50
+provincias, Ceuta y Melilla, pero **no promete cobertura de los boletines
+de todo el territorio español** hasta que se conecten y auditen. El BOE
+y el buscador estatal no sustituyen los boletines locales/autonómicos.
 
-- Encabezado compacto: convocatorias recientes, favoritas, última sincronización,
-  boletín y estado del histórico.
-- Actualizar mediante icono correctamente alineado.
-- Se muestran de inmediato Explorar, Favoritas, búsqueda, filtros y la lista.
-- Las tarjetas priorizan la descripción de la plaza/bolsa y el organismo;
-  el anuncio oficial completo permanece accesible al tocar la tarjeta.
-- Los anuncios de trámite identificables se señalan como `TRÁMITE`.
-- El usuario no configura la URL ni el filtro redundante de 30 días.
+En Android, toca el selector «Fuentes» para elegir uno o varios boletines.
+La búsqueda, favoritas y alertas inteligentes usan las fuentes seguidas.
+Los avisos se comprueban periódicamente según Android y la conexión.
+No se garantiza notificación instantánea.
 
-## Datos y actualizaciones
+## Seguridad y calidad
 
-El lector diario utiliza `.github/workflows/revisar-bop.yml`, con calendario
-real de publicaciones y auditoría de 30 días antes de publicar.
+- Todo anuncio conserva su enlace oficial o, en CIDO, la ficha pública
+  del proceso en el catálogo de la Diputación de Barcelona.
+- Cada fuente tiene validador de identificación, fechas, paginación,
+  contenido y URLs. No se publica un archivo parcial si falla auditoría.
+- No se inventan plazos, vacantes ni requisitos no respaldados por el
+  anuncio original.
+- OpoAlert no realiza trámites ni sustituye la consulta de las bases.
 
-Feed público: https://mjtbapps.github.io/OpoAlert/convocatorias.json
+## Código y sincronización
 
-La comprobación Android utiliza WorkManager aproximadamente cada seis horas,
-cuando hay conexión y el sistema operativo lo permite. No es un servicio de
-notificaciones instantáneas ni garantiza la hora de entrega.
+- Android Kotlin: app/src/main.
+- Backend Python: backend/.
+- Pruebas: python -m unittest discover -s backend/tests -q.
+- Pruebas UI: python scripts/test_ui_080.py.
+- APK automatizada: .github/workflows/android-apk.yml.
+- Publicación de feeds: revisar-bop.yml, revisar-provincias.yml,
+  revisar-boe.yml, revisar-cido.yml y revisar-tarragona.yml.
 
-El archivo oficial del BOP y, cuando proceda, el BOE son las fuentes que
-determinan los requisitos y los plazos de solicitud. OpoAlert es una ayuda
-para localizar anuncios, no sustituye la lectura del documento oficial.
-
-## Desarrollo
-
-- Código Android Kotlin: `app/src/main/`.
-- Extracción Python Playwright: `backend/`.
-- Pruebas del lector: `python -m unittest discover -s backend/tests -q`.
-- Comprobación de interfaz: `python scripts/test_ui_080.py`.
-- Build automatizado de la APK: `.github/workflows/android-apk.yml`.
-- Publicación del feed: `.github/workflows/revisar-bop.yml`.
-
-Este proyecto no incluye contraseñas, claves privadas ni datos personales de
-usuarios. Los favoritos se guardan localmente en el teléfono.
-
-## Idioma de los anuncios
-
-El portal BOP permite pulsar **CAS** para obtener sus titulares oficiales en
-castellano. Los lectores de portada y de historico seleccionan y comprueban
-ese idioma antes de extraer las fichas. No se reescriben ni traducen titulos
-de manera aproximada; el PDF oficial se abre con el parametro `lang=es`.
-
-Tras actualizar el repositorio es necesario que se complete la siguiente
-ejecucion verde del workflow de lectura de BOP para que los titulares del
-feed publico cambien de valenciano a castellano.
+La expansión geográfica está documentada en backend/ESPANA.md y el estado
+de las fuentes se encuentra en backend/fuentes_espana.json.
