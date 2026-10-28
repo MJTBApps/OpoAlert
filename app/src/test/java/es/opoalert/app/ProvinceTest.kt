@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -25,10 +25,12 @@ class ProvinceTest {
         assertEquals(Province.LLEIDA, Province.fromNoticeId("CIDO7-12345"))
         assertEquals(Province.TARRAGONA, Province.fromNoticeId("CIDO8-12345"))
         assertEquals(Province.TARRAGONA_BOP, Province.fromNoticeId("TA-2026-09890"))
+        assertEquals(Province.BARCELONA_BOP, Province.fromNoticeId("BA-202610159954"))
+        assertEquals(Province.GIRONA_BOP, Province.fromNoticeId("GI-2026-208-09310"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(9, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(11, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(6, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(8, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
