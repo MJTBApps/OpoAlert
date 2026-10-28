@@ -7,7 +7,8 @@ Su función es identificar territorio, comunidad autónoma, tipo de diario y est
 de conexión. **El catálogo NO significa que el lector esté operativo**.
 
 - `active`: fuente con 30 días auditados y feed validado. Actualmente BOP
-  Valencia, Alicante y Castellón.
+  Valencia, Alicante y Castellón. Después de superar su auditoría de 30 días,
+  se añade **BOE nacional, sección II.B**, como una fuente separada.
 - `pilot`: fuente en auditoría; no se ofrece a los usuarios.
 - `pending`: territorio todavía sin lector verificado.
 

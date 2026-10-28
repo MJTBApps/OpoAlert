@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catálogo de cobertura, no afirmación de que todos los territorios tengan anuncios verificados. Solo los feeds active se ofrecen a los usuarios.",
+  "note": "Catálogo de las 50 provincias, Ceuta/Melilla y las fuentes realmente auditadas. Solo fuentes active se muestran en Android; los territorios pending aún no tienen cobertura provincial.",
   "nationalSources": [
     {
       "code": "VA",
@@ -37,7 +37,7 @@
       "name": "BOE · Oposiciones y concursos",
       "portal": "https://www.boe.es/datosabiertos/api/boe/sumario/",
       "feed": "boe.json",
-      "state": "pilot"
+      "state": "active"
     }
   ],
   "communities": [

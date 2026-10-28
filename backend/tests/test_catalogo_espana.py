@@ -18,10 +18,10 @@ class CatalogTests(unittest.TestCase):
     def test_only_validated_provincial_feeds_are_active(self):
         sources=self.data["nationalSources"]
         active={x["code"] for x in sources if x["state"]=="active"}
-        self.assertEqual(active,{"VA","AL","CS"})
+        self.assertEqual(active,{"VA","AL","CS","ES"})
         boe=[x for x in sources if x["code"]=="ES"]
         self.assertEqual(len(boe),1)
-        self.assertEqual(boe[0]["state"],"pilot")
+        self.assertEqual(boe[0]["state"],"active")
         self.assertEqual(boe[0]["kind"],"boe")
 
     def test_every_community_refers_to_known_ine_codes(self):
