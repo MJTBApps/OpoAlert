@@ -27,6 +27,40 @@ PATH_PREFIX="/export/sites/default/.boletines_pdf/"
 OFFICIAL_HOST="www.bopcadiz.es"
 HTTP_TIMEOUT=(10,26)
 
+def parse_web_date(raw:str)->date:
+    english=DATE_STAMP_RE.search(raw)
+    spanish=SPANISH_DATE_RE.search(raw)
+    if english:
+        try:
+            return datetime.strptime(f"{english.group(1)} {english.group(2)} {english.group(3)}","%b %d %Y").date()
+        except ValueError as ex:
+            raise ProvincialCoverageError("Cadiz: fecha inglesa de cabecera invalida") from ex
+    if spanish:
+        return date(int(spanish.group(3)),SPANISH_MONTHS[spanish.group(2).lower()],int(spanish.group(1)))
+    raise ProvincialCoverageError(f"Cadiz: fecha HTML no reconocida {raw[:100]!r}")
+
+def calendar_dates(html:str)->dict[int,date]:
+    soup=BeautifulSoup(html,"html.parser")
+    by_number={}
+    for event in soup.select(".resumenEventos"):
+        a=event.select_one('a[href*="/boletin/Boletin-numero-"]')
+        raw_date=event.select_one(".fechaEvento")
+        if a is None or raw_date is None:
+            raise ProvincialCoverageError("Cadiz: evento de calendario sin fecha o numero")
+        m=ISSUE_RE.fullmatch(a.get("href",""))
+        if m is None:raise ProvincialCoverageError("Cadiz: URL en calendario incorrecta")
+        number,year=int(m.group(1)),int(m.group(2))
+        published=parse_web_date(raw_date.get_text(" ",strip=True))
+        if published.year!=year or number in by_number:
+            raise ProvincialCoverageError("Cadiz: calendario tiene fechas o numeros incoherentes")
+        by_number[number]=published
+    if not by_number:
+        raise ProvincialCoverageError("Cadiz: fechas de calendario no disponibles")
+    sorted_dates=[by_number[n] for n in sorted(by_number)]
+    if sorted_dates!=sorted(set(sorted_dates)):
+        raise ProvincialCoverageError("Cadiz: fechas no estan en orden o se repiten")
+    return by_number
+
 def official_session()->requests.Session:
     s=requests.Session()
     s.headers.update({"User-Agent":"Mozilla/5.0 (compatible; OpoAlert Cadiz official archive audit/1.11)",
@@ -137,16 +171,9 @@ def parse_issue(html:str,year:int,number:int)->dict:
     if day.year!=year:
         raise ProvincialCoverageError(f"Cadiz BOP {number}: año fecha incorrecto")
     stamp=soup.select_one("p.fecha")
-    published=stamp.get_text(" ",strip=True) if stamp else ""
-    english=DATE_STAMP_RE.search(published)
-    spanish=SPANISH_DATE_RE.search(published)
-    if english:
-        try:official_day=datetime.strptime(f"{english.group(1)} {english.group(2)} {english.group(3)}","%b %d %Y").date()
-        except ValueError as ex:raise ProvincialCoverageError("Cadiz: fecha HTML invalida") from ex
-    elif spanish:
-        official_day=date(int(spanish.group(3)),SPANISH_MONTHS[spanish.group(2).lower()],int(spanish.group(1)))
-    else:
-        raise ProvincialCoverageError(f"Cadiz BOP {number}: cabecera sin fecha oficial {published[:130]!r}")
+    if stamp is None:
+        raise ProvincialCoverageError(f"Cadiz BOP {number}: cabecera sin fecha")
+    official_day=parse_web_date(stamp.get_text(" ",strip=True))
     if official_day!=day:
         raise ProvincialCoverageError(f"Cadiz BOP {number}: fecha HTML difiere del PDF oficial")
     # Only read the article body between edition h2 and calendar h2.
@@ -220,15 +247,23 @@ def audit(days:int=30,today:date|None=None,scanner=scan_issue,session_factory=of
     end=today or date.today()
     start=end-timedelta(days=29)
     s=session_factory()
-    try:latest,all_issues=available_issues(get(s,HOME).text)
+    try:
+        homepage=get(s,HOME).text
+        latest,all_issues=available_issues(homepage)
+        published=calendar_dates(homepage)
     finally:s.close()
     year=end.year
-    # Annual index is ordered by BOP number, every issue must be traversed.
-    # Include 35 previous issues to prove the 30-day boundary rather than
-    # guessing whether holidays or weekends published.
-    to_check=sorted([n for n in all_issues if n>=latest-35])
-    if not to_check or len(to_check)<20:
-        raise ProvincialCoverageError("Cadiz: calendario insuficiente para 30 dias")
+    if set(published)!=set(all_issues):
+        raise ProvincialCoverageError("Cadiz: calendario y enlaces de ediciones no corresponden")
+    # Derive the entire 30-day interval from the Diputacion's dated calendar.
+    # Include its last preceding edition to verify the exact lower boundary.
+    within=sorted(n for n,d in published.items() if start<=d<=end)
+    previous=sorted(n for n,d in published.items() if d<start)
+    if not previous or len(within)<15 or within[-1]!=latest:
+        raise ProvincialCoverageError("Cadiz: calendario no cubre los 30 dias")
+    to_check=[previous[-1]]+within
+    if to_check!=list(range(to_check[0],latest+1)):
+        raise ProvincialCoverageError("Cadiz: el calendario omite ediciones intermedias")
     def checked(number):
         try:return scanner(number,year),None
         except (ProvincialCoverageError,requests.RequestException,ValueError) as ex:
@@ -242,7 +277,9 @@ def audit(days:int=30,today:date|None=None,scanner=scan_issue,session_factory=of
             errors.append(f"{number}: {error}")
             print(f"Cadiz BOP {number}: ERROR {error}",flush=True)
             continue
-        if issue is None or issue["number"]!=number or issue["count"]<len(issue["candidates"]):
+        if (issue is None or issue["number"]!=number
+            or issue["date"]!=published[number]
+            or issue["count"]<len(issue["candidates"])):
             raise ProvincialCoverageError(f"Cadiz: BOP {number} incoherente")
         all_rows.append(issue)
         print(f"Cadiz BOP {number} {issue['date']}: {issue['count']} anuncios, "
