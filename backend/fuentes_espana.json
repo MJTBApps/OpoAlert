@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catálogo de las 50 provincias, Ceuta/Melilla y las fuentes realmente auditadas. Solo fuentes active se muestran en Android; los territorios pending aún no tienen cobertura provincial.",
+  "note": "Catálogo completo de 50 provincias y Ceuta/Melilla. 'active' sólo indica al menos una fuente de empleo validada; CIDO es fuente agregada de procesos municipales y NO implica lectura exhaustiva del BOP de esa provincia. Las restantes fuentes provinciales/autonómicas siguen pendientes.",
   "nationalSources": [
     {
       "code": "VA",
@@ -38,6 +38,46 @@
       "portal": "https://www.boe.es/datosabiertos/api/boe/sumario/",
       "feed": "boe.json",
       "state": "active"
+    },
+    {
+      "code": "CB",
+      "territory": "08",
+      "kind": "catalogo_empleo",
+      "name": "CIDO · Barcelona",
+      "portal": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+      "feed": "barcelona.json",
+      "state": "active",
+      "scope": "Procesos selectivos municipales publicados en CIDO; no equivale al BOP completo"
+    },
+    {
+      "code": "CG",
+      "territory": "17",
+      "kind": "catalogo_empleo",
+      "name": "CIDO · Girona",
+      "portal": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+      "feed": "girona.json",
+      "state": "active",
+      "scope": "Procesos selectivos municipales publicados en CIDO; no equivale al BOP completo"
+    },
+    {
+      "code": "CL",
+      "territory": "25",
+      "kind": "catalogo_empleo",
+      "name": "CIDO · Lleida",
+      "portal": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+      "feed": "lleida.json",
+      "state": "active",
+      "scope": "Procesos selectivos municipales publicados en CIDO; no equivale al BOP completo"
+    },
+    {
+      "code": "CT",
+      "territory": "43",
+      "kind": "catalogo_empleo",
+      "name": "CIDO · Tarragona",
+      "portal": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+      "feed": "tarragona_cido.json",
+      "state": "active",
+      "scope": "Procesos selectivos municipales publicados en CIDO; no equivale al BOP completo"
     }
   ],
   "communities": [
@@ -455,7 +495,9 @@
       "community": "CT",
       "communityName": "Cataluña",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "coverageKind": "CIDO",
+      "bopState": "pending"
     },
     {
       "ine": "17",
@@ -463,7 +505,9 @@
       "community": "CT",
       "communityName": "Cataluña",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "coverageKind": "CIDO",
+      "bopState": "pending"
     },
     {
       "ine": "25",
@@ -471,7 +515,9 @@
       "community": "CT",
       "communityName": "Cataluña",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "coverageKind": "CIDO",
+      "bopState": "pending"
     },
     {
       "ine": "43",
@@ -479,7 +525,9 @@
       "community": "CT",
       "communityName": "Cataluña",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "coverageKind": "CIDO",
+      "bopState": "pilot"
     },
     {
       "ine": "03",

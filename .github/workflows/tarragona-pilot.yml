@@ -1,0 +1,25 @@
+name: OpoAlert - Diagnostico piloto Tarragona
+on:
+  push:
+    branches:
+      - feature/tarragona-spain-20261028
+    paths:
+      - backend/tarragona_probe.py
+      - backend/tarragona.py
+      - backend/tests/test_tarragona.py
+      - .github/workflows/tarragona-pilot.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Inspeccionar HTML del BOPT sin publicar datos
+        run: python -u backend/tarragona_probe.py

@@ -1,0 +1,37 @@
+name: OpoAlert - Piloto BOPT Tarragona 30 dias
+on:
+  push:
+    branches:
+      - feature/tarragona-spain-20261028
+    paths:
+      - backend/tarragona.py
+      - backend/validar_tarragona.py
+      - backend/tests/test_tarragona.py
+      - .github/workflows/tarragona-auditar.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 32
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar lector HTML oficial
+        run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Pruebas Tarragona antes de consultar la fuente
+        run: python -m unittest discover -s backend/tests -p test_tarragona.py -v
+      - name: Escanear 30 dias oficiales completos
+        run: python -u backend/tarragona.py --days 30 --output out_tarragona/tarragona.json
+      - name: Verificar fichero del BOPT
+        run: python backend/validar_tarragona.py --file out_tarragona/tarragona.json --require-today
+      - name: Guardar evidencia; no publicar en piloto
+        uses: actions/upload-artifact@v4
+        with:
+          name: tarragona-30-dias-auditado
+          path: out_tarragona/tarragona.json
+          if-no-files-found: ignore
+          retention-days: 7

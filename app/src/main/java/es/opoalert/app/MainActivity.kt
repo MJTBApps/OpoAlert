@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 1.3.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.4.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -230,7 +230,11 @@ class MainActivity : Activity() {
         val checked = options.map { it in chosen }.toBooleanArray()
         AlertDialog.Builder(this)
             .setTitle("Boletines que quieres seguir")
-            .setMultiChoiceItems(options.map { if (it == Province.BOE) "BOE · toda España" else "BOP · ${it.label}" }.toTypedArray(), checked) { _, index, enabled ->
+            .setMultiChoiceItems(options.map { when (it) {
+                Province.BOE -> "BOE · toda España"
+                Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA -> "CIDO · ${it.label}"
+                else -> "BOP · ${it.label}"
+            } }.toTypedArray(), checked) { _, index, enabled ->
                 if (enabled) chosen.add(options[index]) else chosen.remove(options[index])
             }
             .setPositiveButton("Guardar") { _, _ ->
@@ -638,7 +642,9 @@ class MainActivity : Activity() {
             gravity = Gravity.CENTER_VERTICAL
             setPadding(0, dp(8), 0, 0)
         }
-        footer.addView(text("BOP ${item.province} ${item.bulletin} · Reg. ${item.id}", 10.5f, "#64748B"),
+        val origin = if (item.id.startsWith("CIDO")) "CIDO · ${item.province}"
+            else if (item.id.startsWith("BOE-A-")) "BOE · España" else "BOP ${item.province} ${item.bulletin}"
+        footer.addView(text("$origin · Ref. ${item.id}", 10.5f, "#64748B"),
             LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
         footer.addView(text("Compartir ↗", 11f, "#2452A4", true).apply {
             gravity = Gravity.CENTER_VERTICAL
@@ -674,7 +680,8 @@ class MainActivity : Activity() {
     }
 
     private fun share(item: Notice) {
-        val message = "${NoticeText.headline(item.title)}\n${item.entity}\nBOP ${item.province} · ${item.date} · Registro ${item.id}\n" +
+        val origin = if (item.id.startsWith("CIDO")) "CIDO" else if (item.id.startsWith("BOE-A-")) "BOE" else "BOP"
+        val message = "${NoticeText.headline(item.title)}\n${item.entity}\n$origin ${item.province} · ${item.date} · Referencia ${item.id}\n" +
             "${item.url}\n\nComprueba siempre el anuncio oficial y los plazos."
         try {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {

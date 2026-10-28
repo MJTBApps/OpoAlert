@@ -36,6 +36,33 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/boe.json",
         "https://www.boe.es/datosabiertos/api/boe/sumario/",
         "www.boe.es", "/boe/dias/", Regex("BOE-A-\\d{4}-\\d{1,7}"),
+    ),
+
+    // CIDO es el catalogo publico de procesos selectivos de la Diputacion de
+    // Barcelona. No equivale a la lectura exhaustiva de cada BOP provincial.
+    BARCELONA(
+        "CB", "Barcelona",
+        "https://mjtbapps.github.io/OpoAlert/barcelona.json",
+        "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+        "cido.diba.cat", "/oposicions/", Regex("CIDO5-\\d+"),
+    ),
+    GIRONA(
+        "CG", "Girona",
+        "https://mjtbapps.github.io/OpoAlert/girona.json",
+        "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+        "cido.diba.cat", "/oposicions/", Regex("CIDO6-\\d+"),
+    ),
+    LLEIDA(
+        "CL", "Lleida",
+        "https://mjtbapps.github.io/OpoAlert/lleida.json",
+        "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+        "cido.diba.cat", "/oposicions/", Regex("CIDO7-\\d+"),
+    ),
+    TARRAGONA(
+        "CT", "Tarragona",
+        "https://mjtbapps.github.io/OpoAlert/tarragona_cido.json",
+        "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
+        "cido.diba.cat", "/oposicions/", Regex("CIDO8-\\d+"),
     );
 
     companion object {
@@ -44,6 +71,10 @@ enum class Province(
             id.startsWith("AL-") -> ALICANTE
             id.startsWith("CS-") -> CASTELLON
             id.startsWith("BOE-A-") -> BOE
+            id.startsWith("CIDO5-") -> BARCELONA
+            id.startsWith("CIDO6-") -> GIRONA
+            id.startsWith("CIDO7-") -> LLEIDA
+            id.startsWith("CIDO8-") -> TARRAGONA
             else -> VALENCIA
         }
     }

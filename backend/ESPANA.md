@@ -1,48 +1,48 @@
-# OpoAlert España — arquitectura y despliegue progresivo
+# OpoAlert España — cobertura real
 
-## Cobertura real (no promesas de cobertura)
+Actualización: 28 de octubre de 2026.
 
-El catálogo `backend/fuentes_espana.json` incluye **50 provincias y Ceuta/Melilla**.
-Su función es identificar territorio, comunidad autónoma, tipo de diario y estado
-de conexión. **El catálogo NO significa que el lector esté operativo**.
+El catálogo incluye 50 provincias y Ceuta/Melilla. Una fuente activa no
+equivale a cobertura exhaustiva de todos los boletines del territorio.
 
-- `active`: fuente con 30 días auditados y feed validado. Actualmente BOP
-  Valencia, Alicante y Castellón. Después de superar su auditoría de 30 días,
-  se añade **BOE nacional, sección II.B**, como una fuente separada.
-- `pilot`: fuente en auditoría; no se ofrece a los usuarios.
-- `pending`: territorio todavía sin lector verificado.
+## Fuentes verificadas
 
-La API oficial BOE `https://www.boe.es/datosabiertos/api/boe/sumario/{fecha}`
-permite consultar la sección **II.B: Oposiciones y concursos** de ámbito estatal.
-**No sustituye** a los BOP provinciales ni a los diarios oficiales de comunidades
-autónomas y ciudades autónomas.
+- Valencia, Alicante y Castellón: tres lectores de BOP provinciales, con
+  comprobación del histórico móvil de 30 días.
+- BOE nacional, sección II.B de oposiciones y concursos. No sustituye a
+  los BOP ni a los diarios oficiales de las comunidades autónomas.
+- CIDO, Diputación de Barcelona: API oficial de procesos selectivos para
+  Barcelona, Girona, Lleida y Tarragona. La descarga de 30 días y la
+  paginación completa se auditan. Es un catálogo de empleo municipal,
+  **no la lectura exhaustiva de los cuatro BOP**. La fecha es la de
+  última actualización del proceso, no necesariamente su primera convocatoria.
+- BOP Tarragona: se ha desarrollado además un lector independiente
+  de CIDO, auditado en piloto con 30 días completos; todavía no está
+  integrado como segunda fuente de Tarragona en la app.
 
-## Contrato de un lector
+## Próximas integraciones
 
-Cada lector debe emitir el esquema: `source`, `province`,
-`lastCheckedUTC`, `coverage.complete`, `historyCoverage.complete`
-(con rango diario exacto, fechas publicadas y sin publicar, números y contadores),
-y `notices` (id único, title, entity, date, bulletin, type, url, province).
-Los enlaces deben apuntar al sitio oficial y cada objeto debe validar
-identificador, fecha, boletín y documento.
+- Portal estatal administracion.gob.es: el buscador ofrece exportación XML
+  oficial. Hay que verificar territorio, fechas y enlaces antes de activar.
+- Diarios autonómicos y boletines provinciales restantes: incorporar con
+  lector y calendario oficial propio. Su estado sigue pendiente hasta la
+  auditoría real, nunca se presenta cobertura inventada.
 
-**Si una jornada falla, no publicar ningún fichero de esa fuente.**
-Conservar el feed anterior y registrar el fallo. El lector de BOE de 30 días
-se ejecuta primero en una rama sin publicación.
+## Reglas de publicación
 
-## Plan escalable
+1. Identificador estable, institución, fecha, título y enlace verificado.
+2. Auditoría de 30 días, paginación completa, contadores y calendario.
+3. Ante cualquier fallo se conserva el feed anterior, sin publicar parciales.
+4. No inventar plazos, requisitos, vacantes ni enlaces de inscripción.
+5. Distinguir BOP, BOE y catálogos agregados como CIDO.
+6. OpoAlert es independiente de las Administraciones públicas.
 
-1. Verificar BOE 30 días, publicar como fuente **de ámbito estatal separada**.
-2. Incorporar BOP cercanos (Tarragona, Albacete, Cuenca, Teruel, Murcia
-   mediante su diario autonómico), uno a uno, con su propia auditoría.
-3. Selección múltiple por comunidades y provincias únicamente para fuentes
-   activadas. Guardar favoritos de manera independiente a la selección.
-4. Aumentar la capacidad del feed con manifiesto de fuentes y descarga
-   por lotes/comunidad autónoma, manteniendo caché y notificaciones por
-   identificador estable. Evitar consultar 52 URLs en serie.
-5. Asociar publicaciones relativas al mismo proceso selectivo y distinguir
-   convocatorias nuevas de listas, subsanaciones y nombramientos.
+## Tareas programadas
 
-No inferir plazos, vacantes, grupos ni enlaces de inscripción que no se
-hayan verificado en la publicación oficial. Indicar siempre que OpoAlert
-es un proyecto independiente no gubernamental.
+- revisar-bop.yml — BOP Valencia.
+- revisar-provincias.yml — BOP Alicante y Castellón.
+- revisar-boe.yml — BOE II.B.
+- revisar-cido.yml — API CIDO, cuatro feeds de Cataluña.
+
+GitHub Actions puede retrasar ejecuciones. La app sólo consume datos
+verificados desde GitHub Pages.

@@ -98,8 +98,12 @@ object RemoteFeedReader {
         val currentBulletin = if (bulletins != null && bulletins.length() > 0)
             bulletins.optString(bulletins.length() - 1) else coverage.optString("bulletin", "?")
         val read = coverage.optInt("announcementsRead", 0)
-        val status = "${province.label}: BOP $currentBulletin · $read anuncios"
-        val historyStatus = "Histórico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}" 
+        val cido = province in setOf(Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA)
+        val status = if (cido) "${province.label}: CIDO · $read procesos" else
+            "${province.label}: ${if (province == Province.BOE) "BOE" else "BOP"} $currentBulletin · $read anuncios"
+        val historyStatus = if (cido)
+            "CIDO (actualizaciones de procesos): ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}" else
+            "Histórico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
         return RemoteFeed(records, status, historyStatus)
     }
 }
