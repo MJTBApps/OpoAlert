@@ -1,0 +1,19 @@
+name: OpoAlert - Diagnosticar fuentes Zaragoza
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/zaragoza-bop-official-20261028]
+    paths: ['backend/diag_zaragoza_sources.py', '.github/workflows/diag-zaragoza.yml']
+permissions:
+  contents: read
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diag_zaragoza_sources.py
