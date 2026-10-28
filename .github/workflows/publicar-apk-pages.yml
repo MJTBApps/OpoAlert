@@ -8,7 +8,7 @@ on:
       - '.github/workflows/publicar-apk-pages.yml'
 
 permissions:
-  actions: read
+  actions: write
   contents: write
 
 concurrency:
@@ -56,3 +56,8 @@ jobs:
         run: |
           echo "### APK OpoAlert 1.6.0 archivada" >> "$GITHUB_STEP_SUMMARY"
           echo "GitHub Pages se actualiza al detectar el commit en docs/" >> "$GITHUB_STEP_SUMMARY"
+      - name: Solicitar despliegue de Pages tras guardar APK
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-web.yml --ref main
