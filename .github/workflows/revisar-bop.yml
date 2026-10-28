@@ -6,6 +6,13 @@ on:
     # 09:43 UTC todos los dias (10:43 o 11:43 en Espana segun horario).
     # El horario de GitHub Actions es orientativo: puede retrasarse.
     - cron: '43 9 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'backend/idioma_bop.py'
+      - 'backend/bop_full.py'
+      - 'backend/history.py'
+      - '.github/workflows/revisar-bop.yml'
 
 concurrency:
   group: opoalert-feed
