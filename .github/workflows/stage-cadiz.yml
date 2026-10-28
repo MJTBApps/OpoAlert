@@ -1,0 +1,47 @@
+name: OpoAlert - Incorporar fuente auditada Cadiz
+on:
+  push:
+    branches: [feature/andalucia-cadiz-bop-20261028]
+    paths:
+      - .github/workflows/stage-cadiz.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  integrar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Descargar artifact auditado de 30 dias
+        uses: actions/download-artifact@v4
+        with:
+          repository: MJTBApps/OpoAlert
+          run-id: 40782858099
+          name: cadiz-bop-30-dias-auditado
+          github-token: ${{ github.token }}
+          path: stage/cadiz
+      - name: Verificar y preparar datos para Android
+        run: |
+          set -eu
+          f="$(find stage/cadiz -name cadiz_bop.json -type f -print -quit)"
+          test -n "$f"
+          python backend/validar_cadiz_bop.py --file "$f" --require-today
+          cp "$f" docs/cadiz_bop.json
+          python backend/validar_cadiz_bop.py --file docs/cadiz_bop.json --require-today
+      - name: Integrar solo el JSON auditado en la rama
+        run: |
+          set -eu
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/cadiz_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: incorporar BOP Cadiz 30 dias verificado'
+            git pull --rebase origin feature/andalucia-cadiz-bop-20261028
+            git push origin HEAD:feature/andalucia-cadiz-bop-20261028
+          fi
