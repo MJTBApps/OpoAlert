@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
@@ -27,6 +27,8 @@ class SourceCatalogTest {
             groups[1].territories.last().sources)
         assertEquals(3, groups[0].sourceCount)
         assertEquals(7, groups[1].sourceCount)
+        assertEquals(listOf("Huesca"), groups[2].territories.map { it.name })
+        assertEquals(1, groups[2].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
