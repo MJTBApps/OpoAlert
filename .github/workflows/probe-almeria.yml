@@ -1,0 +1,21 @@
+name: OpoAlert - Diagnosticar BOP Almeria
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/andalucia-almeria-bop-20261028]
+    paths:
+      - 'backend/probe_almeria_official.py'
+      - '.github/workflows/probe-almeria.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - run: python -u backend/probe_almeria_official.py
