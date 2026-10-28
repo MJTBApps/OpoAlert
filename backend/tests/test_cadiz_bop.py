@@ -32,6 +32,7 @@ def html():
 class CadizTests(unittest.TestCase):
     def test_date_can_be_in_spanish_or_english(self):
         self.assertEqual(parse_web_date("28 de octubre de 2026"),date(2026,10,28))
+        self.assertEqual(parse_web_date("Fecha: 28/10/2026 08:00"),date(2026,10,28))
         self.assertEqual(parse_web_date("Wed Oct 28 08:00:00 CET 2026"),date(2026,10,28))
         with self.assertRaises(ProvincialCoverageError):parse_web_date("sin fecha")
 
