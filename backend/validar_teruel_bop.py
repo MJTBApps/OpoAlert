@@ -49,8 +49,9 @@ def validate(path:Path,required_day:date|None=None)->dict:
     for item in notices:
         ident=item.get("id","")
         d=datetime.strptime(item["date"],"%d/%m/%Y").date()
-        if (not re.fullmatch(r"TE-\d{4}-\d{4}",ident)
-            or ident in ids or d.isoformat() not in number_by_day
+        if (not re.fullmatch(r"TE-\d{4}-\d{4}-[A-F0-9]{32}",ident)
+            or ident in ids or ident.rsplit("-",1)[-1]!=item.get("url","").rsplit("/",1)[-1]
+            or d.isoformat() not in number_by_day
             or item.get("bulletin")!=str(number_by_day[d.isoformat()])
             or item.get("province")!=PROVINCE
             or not str(item.get("title","")).strip()
