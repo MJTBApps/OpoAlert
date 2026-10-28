@@ -123,27 +123,20 @@ def pick_castellon(page, number:str) -> None:
             break
     if target is None:
         raise ProvincialCoverageError(f'Castellon: falta BOP {number} en el carrusel')
-    for attempt in range(26):
-        if target.is_visible() and target.get_attribute('aria-hidden')!='true' and target.get_attribute('tabindex')!='-1':
-            try:
-                target.click(timeout=4000)
-                page.wait_for_function(
-                    '(n)=>[...document.querySelectorAll("label")].some(e=>e.textContent.trim()=="Sumario BOP Nº "+n)',
-                    arg=number,timeout=18000)
-                page.wait_for_timeout(100)
-                return
-            except Exception as exc:
-                raise ProvincialCoverageError(f'Castellon: BOP {number} no se pudo seleccionar: {exc}') from exc
-        nextbtn=page.locator('a.ui-carousel-next').first
-        if not nextbtn.count() or nextbtn.get_attribute('aria-disabled')=='true':
-            # Try previous direction if we overshot the requested issue.
-            prev=page.locator('a.ui-carousel-prev').first
-            if not prev.count() or prev.get_attribute('aria-disabled')=='true':break
-            prev.click(timeout=3000)
-        else:
-            nextbtn.click(timeout=3000)
-        page.wait_for_timeout(210)
-    raise ProvincialCoverageError(f'Castellon: no se pudo hacer visible el BOP {number}')
+    # PrimeFaces mantiene los enlaces de todas las ediciones en el DOM, aunque
+    # algunos queden ocultos visualmente por la paginacion del carrusel.
+    # Activar el enlace original ejecuta su propio evento AJAX; despues se
+    # exige que el numero oficial del SUMARIO cambie y que el parser verifique
+    # la fecha exacta y TODOS los enlaces PDF. No se acepta el HTML antiguo.
+    try:
+        target.evaluate('(node) => node.click()')
+        page.wait_for_function(
+            '(n) => [...document.querySelectorAll("label")].some(e => e.textContent.trim() == "Sumario BOP Nº " + n)',
+            arg=number, timeout=18000)
+        page.wait_for_timeout(110)
+    except Exception as exc:
+        raise ProvincialCoverageError(
+            f'Castellon: no se pudo seleccionar por AJAX BOP {number}: {exc}') from exc
 
 
 def castellon_scan(page, start:date,end:date) -> tuple[list[VerifiedIssue],set[date]]:
