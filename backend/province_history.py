@@ -109,8 +109,20 @@ def parse_cs_label(label: str) -> tuple[str,date]:
 
 
 def pick_castellon(page, number:str) -> None:
-    target=page.locator(f'a[aria-label*="Nº {number}"]').first
-    if target.count()!=1:raise ProvincialCoverageError(f'Castellon: falta BOP {number} en el carrusel')
+    anchors = page.locator('.ui-carousel-item a.ui-commandlink')
+    target = None
+    for i in range(anchors.count()):
+        candidate = anchors.nth(i)
+        label = candidate.get_attribute('aria-label') or candidate.inner_text()
+        try:
+            found_number, _day = parse_cs_label(label)
+        except ProvincialCoverageError:
+            continue
+        if found_number == number:
+            target = candidate
+            break
+    if target is None:
+        raise ProvincialCoverageError(f'Castellon: falta BOP {number} en el carrusel')
     for attempt in range(26):
         if target.is_visible() and target.get_attribute('aria-hidden')!='true' and target.get_attribute('tabindex')!='-1':
             try:
@@ -140,14 +152,14 @@ def castellon_scan(page, start:date,end:date) -> tuple[list[VerifiedIssue],set[d
     anchors=page.locator('.ui-carousel-item a.ui-commandlink')
     bulletin_dates={}
     for i in range(anchors.count()):
-        label=anchors.nth(i).get_attribute('aria-label') or ''
+        label=anchors.nth(i).get_attribute('aria-label') or anchors.nth(i).inner_text()
         try:number,day=parse_cs_label(label)
         except ProvincialCoverageError:continue
         if start<=day<=end:
             if number in bulletin_dates:raise ProvincialCoverageError('Castellon: boletin repetido en carrusel')
             bulletin_dates[number]=day
     print(f'Castellon: enlaces del carrusel={anchors.count()}, dias dentro del intervalo={len(bulletin_dates)}, '
-          f'muestra={[anchors.nth(i).get_attribute("aria-label") for i in range(min(3,anchors.count()))]}', flush=True)
+          f'muestra={[(anchors.nth(i).get_attribute("aria-label") or anchors.nth(i).inner_text())[:80] for i in range(min(3,anchors.count()))]}', flush=True)
     if not bulletin_dates:
         raise ProvincialCoverageError('Castellon: no hay boletines con fecha dentro del periodo')
     if min(bulletin_dates.values())>start+timedelta(days=4):
