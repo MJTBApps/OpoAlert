@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catálogo completo de 50 provincias y Ceuta/Melilla. 'active' sólo indica al menos una fuente de empleo validada; CIDO es fuente agregada de procesos municipales y NO implica lectura exhaustiva del BOP de esa provincia. Las restantes fuentes provinciales/autonómicas siguen pendientes.",
+  "note": "Catalogo de 50 provincias y Ceuta/Melilla: solo fuentes activas auditadas. BOP Tarragona provincial y CIDO Tarragona son fuentes diferentes, con metadatos y enlaces distintos. La cobertura total nacional todavia NO esta completada.",
   "nationalSources": [
     {
       "code": "VA",
@@ -78,6 +78,16 @@
       "feed": "tarragona_cido.json",
       "state": "active",
       "scope": "Procesos selectivos municipales publicados en CIDO; no equivale al BOP completo"
+    },
+    {
+      "code": "TB",
+      "territory": "43",
+      "kind": "bop",
+      "name": "BOP Tarragona",
+      "portal": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
+      "feed": "tarragona_bop.json",
+      "state": "active",
+      "scope": "BOP provincial con historico movil de 30 dias auditado y enlaces oficiales a PDF"
     }
   ],
   "communities": [
@@ -526,8 +536,8 @@
       "communityName": "Cataluña",
       "primaryGazette": "bop",
       "state": "active",
-      "coverageKind": "CIDO",
-      "bopState": "pilot"
+      "coverageKind": "CIDO+BOP",
+      "bopState": "active"
     },
     {
       "ine": "03",
