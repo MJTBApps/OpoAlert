@@ -39,11 +39,11 @@
                 android:background="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"
-                android:contentDescription="Elegir provincias a seguir"
+                android:contentDescription="Fuentes que estás siguiendo"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:includeFontPadding="false"
-                android:text="Provincias: Valencia ▾"
+                android:text="Siguiendo: BOP Valencia"
                 android:textColor="#315CC8"
                 android:textSize="11sp" />
         </LinearLayout>
@@ -70,6 +70,32 @@
             android:scaleType="fitCenter"
             android:src="@drawable/ic_more_vert"
             android:tint="#64748B" />
+    </LinearLayout>
+
+    <!-- Acceso directo y visible al selector, independiente de la ubicación del móvil. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chooseSourcesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_toolbar_action"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Elegir boletines y provincias"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="▤  Elegir boletines"
+            android:textColor="#1D4ED8"
+            android:textSize="12sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <!-- v0.8.1: resumen en tres renglones, la lista es la protagonista. -->
