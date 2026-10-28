@@ -33,7 +33,7 @@ import java.util.Calendar
 import java.util.Locale
 
 /**
- * OpoAlert 1.7.0: the notices are the main content. The compact header only presents
+ * OpoAlert 1.8.0: the notices are the main content. The compact header only presents
  * verified source metadata; all advanced settings are off the home screen.
  */
 class MainActivity : Activity() {
@@ -183,7 +183,7 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 1.7.0")
+                        .setTitle("OpoAlert 1.8.0")
                         .setMessage("Convocatorias de empleo público de los boletines seleccionados. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
