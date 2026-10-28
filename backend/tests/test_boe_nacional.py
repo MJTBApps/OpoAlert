@@ -3,7 +3,7 @@ from datetime import date,timedelta
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from boe_nacional import parse_summary, build_history, category, official_pdf, BoeCoverageError
+from boe_nacional import parse_summary, build_history, category, official_pdf, entity_from_title, BoeCoverageError
 
 
 def fixture(day: date):
@@ -32,6 +32,23 @@ def fixture(day: date):
 class BoeSpainTests(unittest.TestCase):
     def setUp(self):
         self.day=date(2026,10,28)
+
+    def test_entity_is_the_official_municipality_not_generic_section(self):
+        self.assertEqual(
+            entity_from_title(
+                "Resolución de 23 de octubre, del Ayuntamiento de Calp (Alicante/Alacant), referente a la convocatoria para proveer una plaza.",
+                "ADMINISTRACIÓN LOCAL"
+            ),
+            "Ayuntamiento de Calp (Alicante/Alacant)"
+        )
+        self.assertEqual(
+            entity_from_title("Resolución de la Universidad de Murcia, por la que se convoca concurso", "UNIVERSIDADES"),
+            "Universidad de Murcia"
+        )
+        self.assertEqual(
+            entity_from_title("Resolución sin organismo expresado", "ADMINISTRACIÓN LOCAL"),
+            "ADMINISTRACIÓN LOCAL"
+        )
 
     def test_only_section_2b_is_read(self):
         result=parse_summary(fixture(self.day),self.day)
