@@ -70,6 +70,18 @@ enum class Province(
         "https://aplicacions.dipta.cat/bopt/web/anteriores/",
         "aplicacions.dipta.cat", "/bopt/web/anuncio/descargar-pdf/",
         Regex("TA-\\d{4}-\\d{5}"),
+    ),
+    BARCELONA_BOP(
+        "BB", "Barcelona (BOP)",
+        "https://mjtbapps.github.io/OpoAlert/barcelona_bop.json",
+        "https://bop.diba.cat/anteriors/",
+        "bop.diba.cat", "/anunci/descarrega-pdf/", Regex("BA-\\d{12}"),
+    ),
+    GIRONA_BOP(
+        "BG", "Girona (BOP)",
+        "https://mjtbapps.github.io/OpoAlert/girona_bop.json",
+        "https://www.ddgi.cat/bop/",
+        "ssl4.ddgi.cat", "/bopV1/pdf/", Regex("GI-\\d{4}-\\d{3}-\\d{5}"),
     );
 
     companion object {
@@ -83,6 +95,8 @@ enum class Province(
             id.startsWith("CIDO7-") -> LLEIDA
             id.startsWith("CIDO8-") -> TARRAGONA
             id.startsWith("TA-") -> TARRAGONA_BOP
+            id.startsWith("BA-") -> BARCELONA_BOP
+            id.startsWith("GI-") -> GIRONA_BOP
             else -> VALENCIA
         }
     }
