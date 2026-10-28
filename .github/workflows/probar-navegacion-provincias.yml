@@ -1,0 +1,36 @@
+name: OpoAlert - Probar historico provincial (desarrollo)
+
+on:
+  push:
+    branches: [feature/comunitat-valenciana-1-0]
+    paths:
+      - 'backend/probe_navigation.py'
+      - '.github/workflows/probar-navegacion-provincias.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  navegar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar Chromium
+        run: |
+          python -m pip install -r backend/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Probar filtro por fechas Alicante y carrusel Castellon
+        run: python -u backend/probe_navigation.py
+      - name: Adjuntar HTML oficial de las selecciones
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-historico-provincias
+          path: backend/diag_sources/*.html
+          retention-days: 1
+          if-no-files-found: warn
