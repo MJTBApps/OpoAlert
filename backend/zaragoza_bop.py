@@ -45,7 +45,12 @@ def pdf_url(raw:str)->str:
     if not match:
         raise ProvincialCoverageError(f"Zaragoza: enlace oficial irregular: {raw[:100]}")
     url=match.group()
-    if not safe_pdf(url) or raw.replace(url,"").strip(" \t\r\n\`´'\""):
+    clean=raw.strip()
+    if clean.startswith("<enlace>") and clean.endswith("</enlace>"):
+        clean=clean.removeprefix("<enlace>").removesuffix("</enlace>").strip()
+    else:
+        clean=clean.strip("`´ ").strip()
+    if not safe_pdf(url) or clean!=url:
         raise ProvincialCoverageError("Zaragoza: URL contiene datos no oficiales")
     return url
 
