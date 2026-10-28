@@ -36,7 +36,7 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/boe.json",
         "https://www.boe.es/datosabiertos/api/boe/sumario/",
         "www.boe.es", "/boe/dias/", Regex("BOE-A-\\d{4}-\\d{1,7}"),
-    );
+    ),
 
     // CIDO es el catalogo publico de procesos selectivos de la Diputacion de
     // Barcelona. No equivale a la lectura exhaustiva de cada BOP provincial.
@@ -63,7 +63,7 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/tarragona_cido.json",
         "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
         "cido.diba.cat", "/oposicions/", Regex("CIDO8-\\d+"),
-    ),
+    );
 
     companion object {
         fun fromLabel(label: String): Province? = entries.find { it.label == label }
