@@ -34,7 +34,7 @@ class TarragonaTests(unittest.TestCase):
     def test_one_correct_notice(self):
         total, rows = parse_index(fixture(self.day, [(365703, "Convocatòria de plaça d'administratiu")]), self.day)
         self.assertEqual(total, 1)
-        self.assertEqual(rows[0]["registry"], "2026-365703"[-10:])
+        self.assertEqual(rows[0]["registry"], "2026-36570")
 
     def test_three_pages_expected_from_total(self):
         entries = [(30000+i, "Convocatoria de plaza auxiliar") for i in range(20)]
