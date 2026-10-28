@@ -1,27 +1,67 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>OpoAlert · BOP de Valencia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OpoAlert: consulta de convocatorias de empleo público, boletines oficiales y catálogos de procesos selectivos en España.">
+  <title>OpoAlert · Empleo público en España</title>
   <style>
-    body{font:16px system-ui,sans-serif;max-width:750px;margin:4rem auto;padding:0 1.2rem;color:#10223c;background:#f8fafc}
-    article{background:#fff;padding:1.5rem;border:1px solid #dbe4f0;border-radius:18px}
-    h1{color:#1d4ed8;margin:0 0 1rem}small{color:#64748b}a{color:#1d4ed8}li{margin:.8rem 0}
+    :root{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#15213b;background:#f5f8fc}
+    *{box-sizing:border-box}body{margin:0}a{color:#204bdf}main{max-width:950px;margin:auto;padding:24px 20px 60px}
+    header{padding:54px 38px;background:linear-gradient(125deg,#102c64,#2561d0);border-radius:24px;color:white;box-shadow:0 12px 30px #18336f25}
+    h1{font-size:clamp(2.3rem,5vw,3.5rem);margin:0 0 12px;letter-spacing:-.05em}header p{font-size:1.15rem;max-width:650px;line-height:1.6;color:#e7eefa}
+    .brand{display:inline-block;font-size:.85rem;color:#d2e5ff;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+    .download{display:inline-block;margin:14px 0 4px;padding:15px 24px;border-radius:14px;background:white;color:#133c94;text-decoration:none;font-weight:800}
+    .download:hover,.download:focus{background:#e9f1ff}
+    .muted{font-size:.82rem;color:#d4e1f5;margin:8px 0 0}
+    section{margin:24px 0 0;padding:26px;background:white;border:1px solid #dce5f2;border-radius:20px}
+    h2{font-size:1.3rem;margin:0 0 14px}h3{font-size:1.03rem;margin:0 0 8px}
+    .columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .source{padding:16px;border:1px solid #e1e8f3;border-radius:14px}
+    .source p{margin:6px 0 0;color:#4a5872;font-size:.95rem;line-height:1.5}
+    .pill{font-size:.75rem;padding:4px 8px;border-radius:20px;background:#e9f0ff;color:#2150ae;font-weight:700;white-space:nowrap}
+    .section-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+    .note{line-height:1.65;color:#44526c}footer{font-size:.85rem;color:#6b7890;margin:24px 8px}
+    @media(max-width:650px){header{padding:36px 25px}.columns{grid-template-columns:1fr}section{padding:20px}}
   </style>
 </head>
-<body><article>
-  <h1>OpoAlert · convocatorias del BOP</h1>
-  <p>Este sitio publica un archivo de datos generado a partir del Boletin Oficial de la Provincia de Valencia.</p>
-  <p><a href="convocatorias.json">Abrir datos JSON para la aplicacion Android</a></p>
-  <div id="summary">Consultando la ultima actualizacion…</div>
-  <small>Proyecto independiente. Verifica siempre el texto y los plazos en el <a href="https://bop.dival.es/bop/xhtml/portal.xhtml">BOP oficial</a>.</small>
-</article>
-<script>
-  fetch('convocatorias.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
-   .then(x=>{document.getElementById('summary').textContent=
-     `${x.notices?.length ?? 0} convocatorias archivadas. Ultima consulta: ${x.lastCheckedUTC || 'desconocida'}. `+
-     (x.historyCoverage?.complete ? `Historico auditado: ${x.historyCoverage.rangeStart} a ${x.historyCoverage.rangeEnd}. ` : 'Historico sin verificar. ') +
-     (x.coverage?.complete ? 'Ultimo boletin recorrido hasta el final del paginador.' : 'Ultimo boletin sin verificar.')})
-   .catch(()=>{document.getElementById('summary').textContent='No se puede leer ahora el archivo.'});
-</script></body></html>
+<body><main>
+  <header>
+    <div class="brand">OpoAlert · Proyecto independiente</div>
+    <h1>Tu próxima convocatoria, más cerca.</h1>
+    <p>Explora plazas, oposiciones y bolsas de empleo público. Elige los boletines que quieres seguir, guarda favoritas y crea alertas personalizadas.</p>
+    <a class="download" href="OpoAlert-1.5.0.apk" download>Descargar OpoAlert 1.5 para Android</a>
+    <p class="muted">APK gratuita · Android 8 o posterior · Sin registro</p>
+  </header>
+  <section aria-labelledby="coverage">
+    <div class="section-head">
+      <h2 id="coverage">Fuentes que consulta OpoAlert</h2>
+      <span class="pill">9 fuentes</span>
+    </div>
+    <div class="columns">
+      <div class="source">
+        <h3>Boletines Oficiales Provinciales</h3>
+        <p>Valencia, Alicante, Castellón y Tarragona. Lectura verificada de los últimos 30 días y acceso a la publicación oficial.</p>
+      </div>
+      <div class="source">
+        <h3>BOE nacional</h3>
+        <p>Sección II.B «Oposiciones y concursos», con acceso al PDF del Boletín Oficial del Estado.</p>
+      </div>
+      <div class="source">
+        <h3>CIDO · Procesos selectivos municipales</h3>
+        <p>Barcelona, Girona, Lleida y Tarragona, con los datos del catálogo CIDO de la Diputación de Barcelona. Esta fuente no equivale al BOP completo.</p>
+      </div>
+      <div class="source">
+        <h3>Más territorios en preparación</h3>
+        <p>El objetivo es cubrir las 50 provincias y Ceuta/Melilla. Puedes seguir el <a href="https://github.com/MJTBApps/OpoAlert/issues/2">progreso de integración</a>; solo se activan lectores que superan las auditorías.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Transparencia y privacidad</h2>
+    <p class="note">OpoAlert no es una aplicación oficial. Para conocer plazos, requisitos e inscripción consulta siempre el boletín o la ficha oficial. No inventamos plazas ni fechas. Los favoritos y las reglas de alertas se almacenan localmente en el móvil. Las nuevas versiones APK de prueba pueden requerir desinstalar una versión previa si la firma no coincide, lo que eliminaría esos datos guardados.</p>
+    <p><a href="https://github.com/MJTBApps/OpoAlert">Consultar el código y las pruebas en GitHub</a></p>
+  </section>
+  <footer>OpoAlert · Servicio informativo independiente · Datos sujetos a actualización y disponibilidad de sus fuentes.</footer>
+</main></body>
+</html>
