@@ -179,7 +179,7 @@ def parse_detail(html:str,record:dict,day:date)->int:
     # Only the official notice pages contain the full wording and issuer.
     normalized=fold(text)
     if fold(record["title"]).rstrip(". ") not in normalized or fold(record["entity"]) not in normalized:
-        raise ProvincialCoverageError(f"Teruel {day}: titulo/emisor no coinciden {record['id']}")
+        raise ProvincialCoverageError(f"Teruel {day}: titulo/emisor no coinciden {record['id']}; titulo={record['title']!r}; entidad={record['entity']!r}; detalle={text[:850]!r}")
     number=int(m.group(3))
     if number<1 or number>366:
         raise ProvincialCoverageError(f"Teruel {day}: numero de BOP imposible {number}")
