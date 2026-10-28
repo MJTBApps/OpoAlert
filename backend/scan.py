@@ -14,14 +14,16 @@ import unicodedata
 from urllib.request import Request, urlopen
 
 SOURCE = "https://bop.dival.es/bop/xhtml/portal.xhtml"
+# VAL: «Núm. registre». CAS: «Nº registro».
+_NUMBER_LABEL = r"(?:N[uú]m\.?|N\.?\s*[º°o]\.?)"
 META = re.compile(
-    r"N[uú]m\.?\s*(?:de\s*)?regist(?:re|ro)\s*:\s*(\d{4}/\d{3,7})"
+    _NUMBER_LABEL + r"\s*(?:de\s*)?regist(?:re|ro)\s*:\s*(\d{4}/\d{3,7})"
     r".{0,110}?(?:Data|Fecha)\s+publicaci[oó]n?\s*:\s*(\d{2}/\d{2}/\d{4})"
     r".{0,100}?(?:Butllet[ií]|Bolet[ií]n|Suplement|Suplemento)\s*:\s*(\d+(?:-\d+)?)", re.I | re.S
 )
 ANNOUNCE = re.compile(r"\bAnunci(?:o)?\s+(?:de\s|del\s|d['’])", re.I)
 ENTITY = re.compile(r"(?:Ajuntament|Ayuntamiento)\s+(?:de|del|d['’])\s+(.+)$", re.I)
-HEADING = re.compile(r"(?:Butllet[ií]|Bolet[ií]n)\s+N[uú]m\.?\s*(\d+)", re.I)
+HEADING = re.compile(r"(?:Butllet[ií]|Bolet[ií]n)\s+" + _NUMBER_LABEL + r"\s*(\d+)", re.I)
 
 class TextParser(HTMLParser):
     def __init__(self):
