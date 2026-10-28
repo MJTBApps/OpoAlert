@@ -1,0 +1,35 @@
+name: OpoAlert - Piloto BOP Huesca 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-huesca-aragon-20261028]
+    paths:
+      - backend/huesca_bop.py
+      - backend/validar_huesca_bop.py
+      - backend/tests/test_huesca_bop.py
+      - .github/workflows/huesca-auditar.yml
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Verificar estructura de anuncios y PDFs
+        run: python -m unittest discover -s backend/tests -p test_huesca_bop.py -v
+      - name: Recorrer 30 dias y todos los anuncios del BOP Huesca
+        run: python -u backend/huesca_bop.py --days 30 --output out_huesca/huesca_bop.json
+      - name: Auditoria independiente de fechas, numeros y URLs
+        run: python backend/validar_huesca_bop.py --file out_huesca/huesca_bop.json --require-today
+      - name: Guardar feed validado en artefacto, NO publicar si falla
+        uses: actions/upload-artifact@v4
+        with:
+          name: huesca-bop-30-dias-auditado
+          path: out_huesca/huesca_bop.json
+          retention-days: 7
+          if-no-files-found: ignore
