@@ -1,0 +1,44 @@
+name: OpoAlert - Preparar BOP Huesca validado
+on:
+  push:
+    branches: [feature/bop-huesca-aragon-20261028]
+    paths: ['.github/workflows/stage-huesca.yml']
+permissions:
+  actions: read
+  contents: write
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Descargar unicamente feed de auditoria superada
+        uses: actions/download-artifact@v4
+        with:
+          name: huesca-bop-30-dias-auditado
+          run-id: 40694818774
+          repository: MJTBApps/OpoAlert
+          github-token: ${{ github.token }}
+          path: staging/huesca
+      - name: Validar otra vez y guardar en docs
+        run: |
+          set -eu
+          SRC="$(find staging/huesca -name 'huesca_bop.json' -type f -print -quit)"
+          test -n "$SRC"
+          python backend/validar_huesca_bop.py --file "$SRC" --require-today
+          cp "$SRC" docs/huesca_bop.json
+          python backend/validar_huesca_bop.py --file docs/huesca_bop.json --require-today
+      - name: Commit del feed auditado solo en rama
+        run: |
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/huesca_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: BOP Huesca auditado 30 dias'
+            git pull --rebase origin feature/bop-huesca-aragon-20261028
+            git push origin HEAD:feature/bop-huesca-aragon-20261028
+          fi

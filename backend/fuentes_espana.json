@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catálogo 50 provincias y Ceuta/Melilla. Solo las fuentes marcadas active se permiten si su lector supera auditoría. CIDO no equivale a BOP: Catalunya Barcelona/Girona/Tarragona con BOP, Lleida solo CIDO hasta que funcione el portal de su BOP. Resto de España pendiente.",
+  "note": "Catálogo 50 provincias y Ceuta/Melilla: 7 BOP oficiales auditados (Valencia, Alicante, Castellón, Tarragona, Barcelona, Girona y Huesca), BOE nacional y CIDO 4 provincias. El BOP Lleida no esta conectado; CIDO no equivale a BOP. No declarar cobertura total antes de integracion y prueba.",
   "nationalSources": [
     {
       "code": "VA",
@@ -108,6 +108,16 @@
       "feed": "girona_bop.json",
       "state": "active",
       "scope": "Boletín Provincial completo en intervalo móvil de 30 días, PDF original y auditoría paginada"
+    },
+    {
+      "code": "HU",
+      "territory": "22",
+      "kind": "bop",
+      "name": "BOP Huesca",
+      "portal": "https://bop.dphuesca.es/publica/consulta-de-bops/",
+      "feed": "huesca_bop.json",
+      "state": "active",
+      "scope": "BOP oficial Huesca, 30 dias auditados con paginacion, anuncios y enlaces a PDF originales"
     }
   ],
   "communities": [
@@ -349,7 +359,9 @@
       "community": "AR",
       "communityName": "Aragón",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "bopState": "active",
+      "coverageKind": "BOP"
     },
     {
       "ine": "44",

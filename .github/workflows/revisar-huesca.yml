@@ -1,0 +1,65 @@
+name: OpoAlert - Auditar y publicar BOP Huesca
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 15 * * *'
+  push:
+    branches: [main]
+    paths:
+      - backend/huesca_bop.py
+      - backend/validar_huesca_bop.py
+      - backend/tests/test_huesca_bop.py
+      - .github/workflows/revisar-huesca.yml
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar parser y calendario
+        run: |
+          pip install 'beautifulsoup4>=4.12,<5'
+          python -m unittest discover -s backend/tests -p test_huesca_bop.py -v
+      - name: Auditar todos los edictos de los 30 dias
+        run: python -u backend/huesca_bop.py --days 30 --output out_huesca/huesca_bop.json
+      - name: Validar 30 dias, secuencia y PDF
+        run: python backend/validar_huesca_bop.py --file out_huesca/huesca_bop.json --require-today
+      - name: Publicar solo si la auditoria completa ha tenido exito
+        run: |
+          set -eu
+          cp out_huesca/huesca_bop.json docs/huesca_bop.json
+          python backend/validar_huesca_bop.py --file docs/huesca_bop.json --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/huesca_bop.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: actualizar historico BOP Huesca validado'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Solicitar publicador unico de Pages
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-web.yml --ref main
+      - name: Pruebas del fallo sin sustituir feed anterior
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: huesca-diagnostico
+          path: out_huesca/*.json
+          if-no-files-found: ignore
+          retention-days: 3
