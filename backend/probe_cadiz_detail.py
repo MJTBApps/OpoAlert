@@ -6,7 +6,10 @@ URLS=["https://www.bopcadiz.es/",
  "https://www.bopcadiz.es/boletin/Boletin-numero-208-del-ano-2026/",
  "https://www.bopcadiz.es/boletin/Boletin-numero-188-del-ano-2026/",
  "https://www.bopcadiz.es/boletin/Boletin-numero-187-del-ano-2026/",
- "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf"]
+ "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf",
+ "https://www.bopcadiz.es/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf",
+ "https://www.bopcadiz.es/boletin/Boletin-numero-196-del-ano-2026/",
+ "https://www.bopcadiz.es/boletin/Boletin-numero-197-del-ano-2026/"]
 for url in URLS:
  try:
   r=requests.get(url,timeout=25,headers={"User-Agent":"Mozilla/5.0 OpoAlert"});
@@ -18,6 +21,8 @@ for url in URLS:
   print("SECTIONS",[(x.get("id"),x.get("class"),x.get_text(" ",strip=True)[:150]) for x in soup.select("main,article,section")[:35]],flush=True)
   pdf=[x for x in soup.select("a[href]") if ".pdf" in x.get("href","")]
   print("PDF_COUNT",len(pdf),flush=True)
+  if "/196-del-" in url or "/197-del-" in url:
+   print("ALL_PDF_HEADERS",[(x.get("href"),x.get_text(" ",strip=True)[:180]) for x in pdf],flush=True)
   print("PDF_FIRST",[(x.get("href"),x.get_text(" ",strip=True)[:170],x.parent.name,x.parent.get("class"),x.parent.get_text(" ",strip=True)[:230]) for x in pdf[:15]],flush=True)
   print("PDF_LAST",[(x.get("href"),x.get_text(" ",strip=True)[:120],x.parent.name,x.parent.get("class")) for x in pdf[-8:]],flush=True)
   print("DATE_MARKERS",[(x.parent.name,x.parent.get("class"),str(x.parent.parent)[:1100]) for x in soup.find_all(string=re.compile(r"(?:Wed|Tue|Mon|Fri) (?:Oct|Sep) [0-9]{2}",re.I))[:5]],flush=True)
