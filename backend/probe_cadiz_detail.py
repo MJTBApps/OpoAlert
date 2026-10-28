@@ -20,6 +20,8 @@ for url in URLS:
   print("PDF_COUNT",len(pdf),flush=True)
   print("PDF_FIRST",[(x.get("href"),x.get_text(" ",strip=True)[:170],x.parent.name,x.parent.get("class"),x.parent.get_text(" ",strip=True)[:230]) for x in pdf[:15]],flush=True)
   print("PDF_LAST",[(x.get("href"),x.get_text(" ",strip=True)[:120],x.parent.name,x.parent.get("class")) for x in pdf[-8:]],flush=True)
+  print("DATE_MARKERS",[(x.parent.name,x.parent.get("class"),str(x.parent.parent)[:1100]) for x in soup.find_all(string=re.compile(r"(?:Wed|Tue|Mon|Fri) (?:Oct|Sep) [0-9]{2}",re.I))[:5]],flush=True)
+  print("FIRST_H2_PARENTS",str(soup.find("h2").parent)[:2000] if soup.find("h2") else "-",flush=True)
   print("BODY",(soup.get_text(" ",strip=True))[:1200],flush=True)
   print("COUNT_HINTS",[(x.name,x.get("class"),x.get_text(" ",strip=True)[:120]) for x in soup.find_all(string=re.compile(r"\d+\s*(?:Pág|Anuncio|registros)",re.I))[:15] for x in [x.parent]],flush=True)
   if "208" in url:print("HTML_SNIPPET",str(pdf[2].parent.parent)[:6000] if len(pdf)>2 else "",flush=True)
