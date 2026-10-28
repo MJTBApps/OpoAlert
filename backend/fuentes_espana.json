@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-28",
-  "note": "Catalogo de 50 provincias y Ceuta/Melilla: solo fuentes activas auditadas. BOP Tarragona provincial y CIDO Tarragona son fuentes diferentes, con metadatos y enlaces distintos. La cobertura total nacional todavia NO esta completada.",
+  "note": "Catálogo 50 provincias y Ceuta/Melilla. Solo las fuentes marcadas active se permiten si su lector supera auditoría. CIDO no equivale a BOP: Catalunya Barcelona/Girona/Tarragona con BOP, Lleida solo CIDO hasta que funcione el portal de su BOP. Resto de España pendiente.",
   "nationalSources": [
     {
       "code": "VA",
@@ -88,6 +88,26 @@
       "feed": "tarragona_bop.json",
       "state": "active",
       "scope": "BOP provincial con historico movil de 30 dias auditado y enlaces oficiales a PDF"
+    },
+    {
+      "code": "BB",
+      "territory": "08",
+      "kind": "bop",
+      "name": "BOP Barcelona",
+      "portal": "https://bop.diba.cat/anteriors/",
+      "feed": "barcelona_bop.json",
+      "state": "active",
+      "scope": "Boletín Provincial completo en intervalo móvil de 30 días, PDF original y auditoría paginada"
+    },
+    {
+      "code": "BG",
+      "territory": "17",
+      "kind": "bop",
+      "name": "BOP Girona",
+      "portal": "https://www.ddgi.cat/bop/",
+      "feed": "girona_bop.json",
+      "state": "active",
+      "scope": "Boletín Provincial completo en intervalo móvil de 30 días, PDF original y auditoría paginada"
     }
   ],
   "communities": [
@@ -506,8 +526,8 @@
       "communityName": "Cataluña",
       "primaryGazette": "bop",
       "state": "active",
-      "coverageKind": "CIDO",
-      "bopState": "pending"
+      "coverageKind": "CIDO+BOP",
+      "bopState": "active"
     },
     {
       "ine": "17",
@@ -516,8 +536,8 @@
       "communityName": "Cataluña",
       "primaryGazette": "bop",
       "state": "active",
-      "coverageKind": "CIDO",
-      "bopState": "pending"
+      "coverageKind": "CIDO+BOP",
+      "bopState": "active"
     },
     {
       "ine": "25",
