@@ -24,7 +24,7 @@ from provincial_common import ProvincialCoverageError, classify, fold
 ROOT = "https://aplicacions.dipta.cat"
 SOURCE = ROOT + "/bopt/web/anteriores/"
 PDF_PREFIX = "/bopt/web/anuncio/descargar-pdf/"
-PROVINCE = "Tarragona"
+PROVINCE = "Tarragona (BOP)"
 REG = re.compile(r"\b(\d{4}-\d{5})\b")
 DETAIL_PATH = re.compile(r"/bopt/web/anuncio/(\d+)/[a-z0-9-]+\Z")
 TOTAL_MANY = re.compile(r"Se (?:encontraron|han encontrado)\s+([\d.,]+)\s+resultados", re.I)
