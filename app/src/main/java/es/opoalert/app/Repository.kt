@@ -83,7 +83,9 @@ object Repository {
             .take(2000)
         val saved = JSONArray().also { array -> merged.forEach { array.put(it.toJson()) } }
         val whenSync = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale("es", "ES")).format(Date())
-        val sources = downloaded.joinToString(" · ") { it.second.status }
+        val sources = downloaded.joinToString(" · ") { (province, feed) ->
+            "${province.code}: ${feed.notices.size}"
+        }
         val status = if (failures.isEmpty()) sources
             else "$sources · Sin datos verificados: ${failures.joinToString(", ")}" 
         val historyMessage = if (failures.isEmpty()) downloaded.first().second.historyStatus

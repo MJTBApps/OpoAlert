@@ -57,6 +57,7 @@ class MainActivity : Activity() {
     private var selectedFilter = FILTER_ALL
     private var notices: List<Notice> = emptyList()
     private var loading = false
+    private var refreshPending = false
     private lateinit var demoAds: DemoAds
 
 
@@ -258,7 +259,10 @@ class MainActivity : Activity() {
     }
 
     private fun refresh() {
-        if (loading) return
+        if (loading) {
+            refreshPending = true
+            return
+        }
         loading = true
         progressBar.visibility = View.VISIBLE
         refreshButton.isEnabled = false
@@ -291,6 +295,10 @@ class MainActivity : Activity() {
         progressBar.visibility = View.GONE
         refreshButton.isEnabled = true
         refreshButton.alpha = 1f
+        if (refreshPending) {
+            refreshPending = false
+            refresh()
+        }
     }
 
     private fun isRecent(date: String): Boolean {
