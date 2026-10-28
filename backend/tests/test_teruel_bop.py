@@ -54,7 +54,7 @@ class TeruelTests(unittest.TestCase):
         self.assertEqual(rows[0]["entity"],"Ayto. de Teruel")
         self.assertEqual(rows[0]["url"],NOTICE_PREFIX+f"{78:032X}")
         with self.assertRaises(ProvincialCoverageError):
-            parse_page(results().replace("<= 28/10/2026","<= 27/10/2026"),DAY)
+            parse_page(results().replace("28/10/2026) AND", "27/10/2026) AND"),DAY)
 
     def test_pagination_selects_xpages_link(self):
         n,rows,soup=parse_page(results(total=16),DAY)
