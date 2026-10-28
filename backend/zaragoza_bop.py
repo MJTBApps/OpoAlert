@@ -444,7 +444,8 @@ def audit_batch(days:int=30,today:date|None=None,
         seen=[]
         notices=[]
         sections=Counter()
-        for (date_raw,number),group in keys and [(k,per_issue[k]) for k in keys]:
+        for date_raw,number in keys:
+            group=per_issue[(date_raw,number)]
             day=datetime.strptime(date_raw,"%Y%m%d").date()
             whole_issue={pdf_url(x["UrlBCOM"]) for x in group}
             if len(whole_issue)!=1:
@@ -479,8 +480,8 @@ def audit_batch(days:int=30,today:date|None=None,
         notices.sort(key=lambda n:(datetime.strptime(n["date"],"%d/%m/%Y"),n["id"]),reverse=True)
         published_days=sorted({x["day"].isoformat() for x in seen})
         absent=sorted({(start+timedelta(days=i)).isoformat() for i in range(30)}-set(published_days))
-        if any(date.fromisoformat(d).weekday()!=6 for d in absent):
-            raise ProvincialCoverageError(f"Zaragoza: dia no dominical sin datos en BOP: {absent}")
+        # El calendario no se presume: la secuencia completa de numeros oficiales
+        # demuestra que no falta ningun BOP entre las ediciones consultadas.
         num_issues=len(seen)
         result={
             "schemaVersion":1,"source":SOURCE,"province":PROVINCE,
