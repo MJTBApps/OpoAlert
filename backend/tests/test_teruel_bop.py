@@ -53,6 +53,8 @@ class TeruelTests(unittest.TestCase):
         self.assertEqual(rows[0]["id"],"2026-3129")
         self.assertEqual(rows[0]["entity"],"Ayto. de Teruel")
         self.assertEqual(rows[0]["url"],NOTICE_PREFIX+f"{78:032X}")
+        singular=results().replace("Se han encontrado 1 anuncios:", "Se ha encontrado 1 anuncio:")
+        self.assertEqual(parse_page(singular,DAY)[0],1)
         with self.assertRaises(ProvincialCoverageError):
             parse_page(results().replace("28/10/2026) AND", "27/10/2026) AND"),DAY)
 
