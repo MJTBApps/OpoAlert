@@ -20,6 +20,7 @@ object Repository {
     private const val INITIALIZED = "initialized"
     private const val REMOTE_INITIALIZED = "remote_feed_initialized_v04"
     private const val FEED_URL = "remote_feed_url_v04"
+    private const val DEFAULT_FEED_URL = "https://mjtbapps.github.io/OpoAlert/convocatorias.json"
     private const val LAST_SYNC = "last_sync"
     private const val LAST_SOURCE = "last_source_v04"
     private const val LAST_HISTORY = "last_history_v04"
@@ -33,7 +34,7 @@ object Repository {
     }
 
     fun feedUrl(ctx: Context): String =
-        ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(FEED_URL, "") ?: ""
+        ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(FEED_URL, DEFAULT_FEED_URL) ?: DEFAULT_FEED_URL
 
     fun setFeedUrl(ctx: Context, address: String) {
         val normalized = address.trim()
@@ -41,7 +42,7 @@ object Repository {
             throw IllegalArgumentException("La direccion debe empezar por https://")
         }
         val prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        if (prefs.getString(FEED_URL, "") != normalized) {
+        if (prefs.getString(FEED_URL, DEFAULT_FEED_URL) != normalized) {
             prefs.edit().putString(FEED_URL, normalized)
                 .putBoolean(REMOTE_INITIALIZED, false).apply()
         }
