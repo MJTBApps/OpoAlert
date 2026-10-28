@@ -1,0 +1,21 @@
+name: OpoAlert - Diagnosticar ediciones Cadiz
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/andalucia-cadiz-bop-20261028]
+    paths:
+      - backend/probe_cadiz_detail.py
+      - .github/workflows/probe-cadiz-detail.yml
+permissions:
+  contents: read
+jobs:
+  detail:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/probe_cadiz_detail.py
