@@ -82,6 +82,13 @@ enum class Province(
         "https://mjtbapps.github.io/OpoAlert/girona_bop.json",
         "https://www.ddgi.cat/bop/",
         "ssl4.ddgi.cat", "/bopV1/pdf/", Regex("GI-\\d{4}-\\d{3}-\\d{5}"),
+    ),
+    HUESCA(
+        "HU", "Huesca",
+        "https://mjtbapps.github.io/OpoAlert/huesca_bop.json",
+        "https://bop.dphuesca.es/publica/consulta-de-bops/",
+        "bop.dphuesca.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
+        Regex("HU-\\d{4}-\\d{6}"),
     );
 
     companion object {
@@ -97,6 +104,7 @@ enum class Province(
             id.startsWith("TA-") -> TARRAGONA_BOP
             id.startsWith("BA-") -> BARCELONA_BOP
             id.startsWith("GI-") -> GIRONA_BOP
+            id.startsWith("HU-") -> HUESCA
             else -> VALENCIA
         }
     }
