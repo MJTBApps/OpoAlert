@@ -172,7 +172,7 @@ def parse_detail(html:str,record:dict,day:date)->int:
     text=" ".join(soup.get_text(" ",strip=True).split())
     m=DETAIL_RE.search(text)
     if not m or m.group(1)!=record["id"] or m.group(2)!=day.strftime("%d/%m/%y"):
-        raise ProvincialCoverageError(f"Teruel {day}: detalle no corresponde a {record['id']}")
+        raise ProvincialCoverageError(f"Teruel {day}: detalle no corresponde a {record['id']}: {text[:500]}")
     # Only the official notice pages contain the full wording and issuer.
     normalized=fold(text)
     if fold(record["title"]).rstrip(". ") not in normalized or fold(record["entity"]) not in normalized:
