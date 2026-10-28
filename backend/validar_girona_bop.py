@@ -53,7 +53,9 @@ def validate(file:Path,expected_end:date|None=None)->dict:
                 or p.scheme!="https" or p.hostname!="ssl4.ddgi.cat" or p.port not in (None,443)
                 or p.query or p.fragment or p.username or not pdf
                 or pdf.group(1)!=m.group(1) or int(pdf.group(2))!=int(m.group(2))
-                or pdf.group(3)!="".join(m.groups())
+                or (pdf.group(3)!="".join(m.groups()) and
+                    not (int(m.group(3))<10000 and pdf.group(3)==
+                         m.group(1)+m.group(2)+"1"+m.group(3)[1:]))
                 or int(m.group(2)) not in nums):
             raise ProvincialCoverageError(f"Girona: ficha o PDF no verificable {ident}")
         ids.add(ident)
