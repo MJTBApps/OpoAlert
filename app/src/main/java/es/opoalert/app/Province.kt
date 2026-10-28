@@ -89,6 +89,12 @@ enum class Province(
         "https://bop.dphuesca.es/publica/consulta-de-bops/",
         "bop.dphuesca.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
         Regex("HU-\\d{4}-\\d{6}"),
+    ),
+    TERUEL(
+        "TE", "Teruel",
+        "https://mjtbapps.github.io/OpoAlert/teruel_bop.json",
+        "https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp",
+        "bender.dpteruel.es", "/estatico/boletines/", Regex("TE-\\d{4}-\\d{4}"),
     );
 
     companion object {
@@ -105,6 +111,7 @@ enum class Province(
             id.startsWith("BA-") -> BARCELONA_BOP
             id.startsWith("GI-") -> GIRONA_BOP
             id.startsWith("HU-") -> HUESCA
+            id.startsWith("TE-") -> TERUEL
             else -> VALENCIA
         }
     }
