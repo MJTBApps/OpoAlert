@@ -50,3 +50,20 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
 
 GitHub Actions puede retrasar ejecuciones. La app sólo consume datos
 verificados desde GitHub Pages.
+
+
+## Aragón — primera fuente provincial validada (28/10/2026)
+
+- **BOP Huesca**: lector de la sede oficial `https://bop.dphuesca.es/publica/consulta-de-bops/`.
+  En la auditoría de 30 días se analizaron **22 ediciones, 544 anuncios y 22 candidatos
+  a convocatoria** (29/09/2026 al 28/10/2026). El sistema valida todas las páginas,
+  correlación de fechas y numeración de los BOP, entidad anunciadora y PDF oficial individual.
+  La exportación JSON del portal está mal formada; se consulta el HTML, no se inventan datos.
+  Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40694818774
+- **Teruel**: portal de la Diputación accesible, siguiente integración pendiente de auditoría.
+- **Zaragoza**: la URL oficial de la Diputación agotó el tiempo de espera en GitHub Actions;
+  investigar alternativa oficial antes de activar el feed.
+- **Lleida** continúa pendiente; la existencia de CIDO no equivale a BOP completo.
+
+Las provincias futuras se añaden únicamente cuando su lector y sus documentos
+oficiales superan auditoría real de 30 días. Los fallos nunca publican archivos parciales.
