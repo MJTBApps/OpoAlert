@@ -30,6 +30,10 @@ HTTP_TIMEOUT=(10,26)
 def parse_web_date(raw:str)->date:
     english=DATE_STAMP_RE.search(raw)
     spanish=SPANISH_DATE_RE.search(raw)
+    numeric=re.search(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b",raw)
+    if numeric:
+        try:return date(int(numeric.group(3)),int(numeric.group(2)),int(numeric.group(1)))
+        except ValueError as ex:raise ProvincialCoverageError("Cadiz: fecha numerica invalida") from ex
     if english:
         try:
             return datetime.strptime(f"{english.group(1)} {english.group(2)} {english.group(3)}","%b %d %Y").date()
