@@ -1,0 +1,22 @@
+name: OpoAlert - Diagnosticar navegador BOP Almeria
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/andalucia-almeria-bop-20261028]
+    paths:
+      - 'backend/probe_almeria_browser.py'
+      - '.github/workflows/probe-almeria-browser.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'playwright>=1.56,<2'
+      - run: python -m playwright install --with-deps chromium
+      - run: python -u backend/probe_almeria_browser.py
