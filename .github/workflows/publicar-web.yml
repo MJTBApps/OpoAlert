@@ -1,0 +1,36 @@
+name: OpoAlert - Publicar portada nacional y feeds
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/index.html'
+      - 'docs/tarragona_bop.json'
+      - '.github/workflows/publicar-web.yml'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: opoalert-web-publicacion
+  cancel-in-progress: true
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobar contenido minimo de la web
+        run: |
+          test -s docs/index.html
+          test -s docs/OpoAlert-1.5.0.apk
+          test -s docs/convocatorias.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - id: deploy
+        uses: actions/deploy-pages@v4
