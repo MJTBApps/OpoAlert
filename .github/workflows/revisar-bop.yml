@@ -12,6 +12,7 @@ on:
       - 'backend/idioma_bop.py'
       - 'backend/bop_full.py'
       - 'backend/history.py'
+      - 'backend/scan.py'
       - '.github/workflows/revisar-bop.yml'
 
 concurrency:
