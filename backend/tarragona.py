@@ -179,7 +179,13 @@ def build_history(days: int = 30, until: date | None = None, scanner=scan_day) -
     all_rows, published, absent = [], [], []
     for offset in range(30):
         day = start + timedelta(days=offset)
-        result = scanner(day)
+        # El BOPT declara publicacion de lunes a viernes, salvo festivos.
+        # El portal responde HTTP 500 al consultar sabados y domingos;
+        # no se interpreta ese error como un fallo de lectura.
+        if day.weekday() >= 5:
+            result = {"date": day, "total": 0, "notices": [], "pages": 0}
+        else:
+            result = scanner(day)
         if result["date"] != day or result["total"] < len(result["notices"]):
             raise ProvincialCoverageError(f"BOPT {day}: datos de auditoria incoherentes")
         all_rows.append(result)
