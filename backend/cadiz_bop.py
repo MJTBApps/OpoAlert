@@ -76,11 +76,11 @@ def official_session()->requests.Session:
 def validate_doc(url:str)->bool:
     try:
         p=urlsplit(url)
-        m=PAGE_RE.fullmatch(p.fragment)
+        m=PAGE_RE.fullmatch(p.fragment) if p.fragment else None
         return (p.scheme=="https" and p.hostname==OFFICIAL_HOST and p.port is None
             and p.username is None and p.password is None and not p.query
             and p.path.startswith(PATH_PREFIX) and PDF_RE.fullmatch(p.path.rsplit("/",1)[-1]) is not None
-            and m is not None and int(m.group(1))<=1500)
+            and (not p.fragment or (m is not None and int(m.group(1))<=1500)))
     except (TypeError,ValueError):return False
 
 def validate_full_pdf(url:str)->bool:
@@ -111,7 +111,11 @@ def check_pdf(session:requests.Session,url:str)->None:
     try:
         r=session.get(url,headers={"Range":"bytes=0-160"},stream=True,timeout=HTTP_TIMEOUT)
         try:
-            if (r.status_code not in (200,206) or r.url!=url
+            expected=urlsplit(url).path.replace("/.boletines_pdf/","/export/sites/default/.boletines_pdf/",1)
+            final=urlsplit(r.url)
+            if (r.status_code not in (200,206) or final.scheme!="https"
+                or final.hostname!=OFFICIAL_HOST or final.path!=expected
+                or final.query or final.fragment
                 or "pdf" not in r.headers.get("Content-Type","").lower()
                 or not next(r.iter_content(chunk_size=160),b"").startswith(b"%PDF-")):
                 raise ProvincialCoverageError(f"Cadiz: PDF original no disponible {url}")
@@ -201,7 +205,7 @@ def parse_issue(html:str,year:int,number:int)->dict:
             raise ProvincialCoverageError(f"Cadiz BOP {number}: anuncio sin seccion")
         full=a.get_text(" ",strip=True)
         code=ID_RE.match(full)
-        agency_cell=a.select_one("strong")
+        agency_cell=a.select_one("strong, b")
         agency=agency_cell.get_text(" ",strip=True) if agency_cell else ""
         # Keep the primary sender separately, while preserving the complete
         # official bulletin summary as title for reliable candidate screening.
