@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OpoAlert · BOP de Valencia</title>
+  <style>
+    body{font:16px system-ui,sans-serif;max-width:750px;margin:4rem auto;padding:0 1.2rem;color:#10223c;background:#f8fafc}
+    article{background:#fff;padding:1.5rem;border:1px solid #dbe4f0;border-radius:18px}
+    h1{color:#1d4ed8;margin:0 0 1rem}small{color:#64748b}a{color:#1d4ed8}li{margin:.8rem 0}
+  </style>
+</head>
+<body><article>
+  <h1>OpoAlert · convocatorias del BOP</h1>
+  <p>Este sitio publica un archivo de datos generado a partir del Boletin Oficial de la Provincia de Valencia.</p>
+  <p><a href="convocatorias.json">Abrir datos JSON para la aplicacion Android</a></p>
+  <div id="summary">Consultando la ultima actualizacion…</div>
+  <small>Proyecto independiente. Verifica siempre el texto y los plazos en el <a href="https://bop.dival.es/bop/xhtml/portal.xhtml">BOP oficial</a>.</small>
+</article>
+<script>
+  fetch('convocatorias.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
+   .then(x=>{document.getElementById('summary').textContent=
+     `${x.notices?.length ?? 0} convocatorias archivadas. Ultima consulta: ${x.lastCheckedUTC || 'desconocida'}. `+
+     (x.historyCoverage?.complete ? `Historico auditado: ${x.historyCoverage.rangeStart} a ${x.historyCoverage.rangeEnd}. ` : 'Historico sin verificar. ') +
+     (x.coverage?.complete ? 'Ultimo boletin recorrido hasta el final del paginador.' : 'Ultimo boletin sin verificar.')})
+   .catch(()=>{document.getElementById('summary').textContent='No se puede leer ahora el archivo.'});
+</script></body></html>

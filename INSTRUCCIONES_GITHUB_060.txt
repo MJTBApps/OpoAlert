@@ -1,0 +1,89 @@
+OPOALERT 0.6 - AUTOMATIZACION SIN ORDENADOR
+========================================
+
+OBJETIVO
+- GitHub Actions descarga y audita el ultimo BOP y los ultimos 30 dias.
+- Si TODO es correcto, GitHub Pages publica docs/convocatorias.json.
+- Android consulta ese archivo automaticamente cada ~6 horas (WorkManager).
+- Los favoritos continuan guardados solo en tu movil.
+
+QUE SE HA PREPARADO
+- La automatizacion de .github/workflows/revisar-bop.yml.
+- El historial REAL validado del 29/09 al 28/10/2026 con 50 convocatorias
+  como punto de partida en docs/convocatorias.json.
+- Un validador independiente: backend/validar_feed.py.
+- Pruebas automaticas y un BAT de preparacion local.
+
+A. PREPARAR TU CARPETA EN WINDOWS
+1. Haz una copia de seguridad de tu carpeta OpoAlert existente.
+2. Descomprime el parche ZIP en:
+   C:\Users\Informatica\Desktop\APP\OpoAlert
+   Acepta reemplazar los archivos indicados. No borres data ni .venv.
+3. Ejecuta COMPROBAR_Y_PREPARAR_GITHUB_060.bat.
+   Si indica CORRECTO, tu feed esta validado y preparado.
+   Si falla, NO subas un archivo potencialmente incompleto.
+
+B. SUBIR EL PROYECTO A GITHUB (METODO RECOMENDADO: GITHUB DESKTOP)
+1. Inicia sesion en GitHub: https://github.com.
+2. Instala GitHub Desktop (gratuito): https://desktop.github.com/
+3. En GitHub Desktop: File > Add local repository > elige tu carpeta
+   C:\Users\Informatica\Desktop\APP\OpoAlert.
+4. Si indica "This directory does not appear to be a Git repository",
+   pulsa "create a repository here" y confirma la creacion local.
+5. En GitHub Desktop, haz el primer Commit si aun no existe.
+6. Pulsa "Publish repository", indica nombre OpoAlert y DESMARCA
+   "Keep this code private" para publicar como repositorio publico.
+7. Si YA tenias un repositorio remoto creado anteriormente, NO crees
+   otro igual. Actualiza el proyecto existente y haz Commit / Push.
+   Si GitHub Desktop indica conflicto de nombres, no fuerces el Push;
+   consultanos antes para no sobrescribir trabajos previos.
+8. Comprueba que ves en el repositorio los directorios backend/, docs/,
+   app/ y el fichero .github/workflows/revisar-bop.yml.
+   Los directorios data/ y .venv/ NO se deben subir.
+
+C. ACTIVAR Y COMPROBAR GITHUB PAGES
+1. En GitHub, abre TU repositorio OpoAlert > Settings > Pages.
+2. En "Build and deployment" selecciona "Source: GitHub Actions".
+3. En Actions, abre "OpoAlert - Publicacion inicial del historico".
+4. Pulsa "Run workflow" > main > "Run workflow".
+   Esta primera publicacion sube las 50 convocatorias validadas de la
+   captura del 28/10/2026 SIN necesitar acceso al BOP desde GitHub.
+5. Cuando aparezca en verde, abre la URL:
+   https://TUUSUARIO.github.io/OpoAlert/convocatorias.json
+   Comprueba que muestra JSON con historial y 50 anuncios iniciales.
+6. En Actions, abre "OpoAlert - Publicar historico BOP auditado" y
+   pulsa "Run workflow" para probar la actualizacion real en GitHub.
+   La verificacion no se considera superada hasta que este trabajo
+   termine EN VERDE con 30 dias actuales y Pages se despliegue.
+7. Si el paso 6 falla por cambios del portal, el feed inicial de Pages
+   sigue publicado. El archivo mostrara la fecha de la ultima auditoria.
+
+D. CONFIGURAR TU APP ANDROID YA INSTALADA
+1. Abre OpoAlert. Pulsa "Fuente de datos".
+2. Pega la URL del paso C.6 y confirma.
+3. Pulsa refrescar. Deberia mostrar "Historico verificado".
+4. Si quieres avisos, activa el interruptor de avisos y concede permiso.
+   WorkManager revisa aproximadamente cada seis horas, pero Android puede
+   retrasarlo. Las notificaciones NO son instantaneas.
+
+E. ACTUALIZACIONES AUTOMATICAS
+- GitHub ejecuta la revision cada dia a las 09:43 UTC (10:43 invierno,
+  11:43 verano en Espana). La hora es aproximada y puede retrasarse.
+- Reconstruye SIEMPRE los ultimos 30 dias con el calendario del BOP.
+- Nunca publica un historico nuevo si falla la lectura o la validacion.
+- Si el portal cambia y el trabajo falla, la ultima version publica
+  permanece accesible; la fecha de verificacion dejara de ser reciente.
+- Puedes pulsar "Run workflow" en Actions cuando quieras comprobarlo.
+
+LIMITACIONES IMPORTANTES
+- El portal puede bloquear o retrasar el navegador de GitHub Actions;
+  el procesamiento en GitHub aun NO esta probado contra el BOP real.
+- El repositorio y los anuncios son PUBLICOS. No subas datos privados.
+- Si tu repositorio/organizacion restringe las escrituras de Actions,
+  revisa Settings > Actions > General > Workflow permissions.
+- El archivo de arranque de 50 fichas esta fechado el 28/10/2026;
+  la primera ejecucion satisfactoria actualizara los datos y metadatos.
+- Se clasifican anuncios de plazas y bolsas. Un nombramiento de tribunal o
+  una modificacion de bases no equivale necesariamente a plazo abierto.
+- Si falla Github Actions, pulsa el trabajo rojo y abre el log del paso
+  donde se ha detenido. No necesitas reinstalar Android.

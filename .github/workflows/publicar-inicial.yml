@@ -1,0 +1,35 @@
+name: OpoAlert - Publicacion inicial del historico
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  publicar-semilla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar historico guardado (sin acceder al BOP)
+        run: python backend/validar_feed.py --input docs/convocatorias.json
+      - name: Configurar Pages
+        uses: actions/configure-pages@v5
+      - name: Preparar feed inicial
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Publicar feed inicial
+        id: deploy
+        uses: actions/deploy-pages@v4

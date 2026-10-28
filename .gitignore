@@ -1,0 +1,15 @@
+.gradle/
+.idea/
+local.properties
+build/
+app/build/
+*.iml
+.venv/
+__pycache__/
+*.pyc
+backend/diagnostico_bop.*
+data/
+.gradle-dist/
+backend/diagnostico_historico.*
+*.apk
+*.bak

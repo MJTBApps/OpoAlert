@@ -1,0 +1,88 @@
+name: OpoAlert - Publicar historico BOP auditado
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:43 UTC todos los dias (10:43 o 11:43 en Espana segun horario).
+    # El horario de GitHub Actions es orientativo: puede retrasarse.
+    - cron: '43 9 * * *'
+
+concurrency:
+  group: opoalert-feed
+  cancel-in-progress: false
+
+jobs:
+  leer-y-validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - name: Obtener OpoAlert
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar lector Chromium
+        run: |
+          python -m pip install -r backend/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Ejecutar pruebas antes de consultar el BOP
+        run: python -m unittest discover -s backend/tests -q
+      - name: Leer y auditar el ultimo boletin
+        run: python -u backend/bop_full.py --output data/convocatorias.json
+      - name: Leer los 30 dias completos mediante calendario oficial
+        run: python -u backend/history.py --days 30 --window-days 5 --output data/convocatorias.json
+      - name: Validar ventanas fechas paginacion y enlaces
+        run: python backend/validar_feed.py --input data/convocatorias.json --require-today --max-age-hours 3
+      - name: Preparar archivo publico SOLO con historico auditado
+        run: python backend/publicar_feed.py --input data/convocatorias.json --output docs/convocatorias.json --require-history
+      - name: Verificar el archivo antes de publicar
+        run: python backend/validar_feed.py --input docs/convocatorias.json --require-today --max-age-hours 3
+      - name: Guardar feed confirmado en el repositorio
+        run: |
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/convocatorias.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'OpoAlert: actualizar 30 dias de BOP auditados'
+            git push origin HEAD:main
+          else
+            echo 'El feed ya estaba actualizado.'
+          fi
+      - name: Empaquetar solo contenido publico
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Diagnosticos si falla (sin exponer publicamente)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnosticos-bop
+          path: |
+            backend/diagnostico_bop.png
+            backend/diagnostico_historico.png
+            backend/diagnostico_historico.json
+          if-no-files-found: ignore
+          retention-days: 3
+
+  publicar-pages:
+    needs: leer-y-validar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacion.outputs.page_url }}
+    steps:
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Publicar el feed
+        id: publicacion
+        uses: actions/deploy-pages@v4
