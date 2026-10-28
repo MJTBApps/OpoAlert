@@ -69,16 +69,17 @@ class OfficialCastilianTests(unittest.TestCase):
             seleccionar_castellano(Page(spanish=False, has_cas_link=False))
 
     def test_read_official_castilian_notice_and_keep_id(self):
-        html = '''<div id="list_content">
+        html = '''<h1>Boletín Nº 207</h1><div id="list_content">
           <div class="ui-datagrid-column">
             <div class="sumario">Anuncio del Ayuntamiento de Xàtiva sobre la aprobación de las bases
             de la convocatoria para la constitución de una bolsa de trabajo de auxiliar administrativo.</div>
-            <div>Núm. registro: 2026/12345</div>
+            <div>Nº registro: 2026/12345</div>
             <div>Fecha publicación: 28/10/2026</div>
             <div>Boletín: 207</div>
           </div>
         </div>'''
-        rows, _heading = extract_index(html)
+        rows, heading = extract_index(html)
+        self.assertEqual(heading, '207')
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]['id'], '2026/12345')
         self.assertTrue(rows[0]['title'].startswith('Anuncio del Ayuntamiento'))
