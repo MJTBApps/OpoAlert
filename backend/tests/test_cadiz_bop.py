@@ -15,7 +15,7 @@ SUM="https://www.bopcadiz.es/.boletines_pdf/2026/10_octubre/SU-208_28-10-26.pdf"
 DOC="https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf#page=7"
 def html():
     return f"""
-    <html><h2>Boletín número 208 del año 2026</h2>
+    <html><p class="fecha">Wed Oct 28 08:00:00 CET 2026</p><h2>Boletín número 208 del año 2026</h2>
     <p><span><a href="{SUM}">Sumario PDF</a></span></p>
     <p><span><a href="{FULL}">Boletín PDF</a></span></p>
     <h3>JUNTA DE ANDALUCIA</h3>
