@@ -39,7 +39,7 @@ jobs:
       - name: Comprobar contenido minimo de la web
         run: |
           test -s docs/index.html
-          test -s docs/OpoAlert-1.6.0.apk
+          test -s docs/OpoAlert-1.7.0.apk
           test -s docs/barcelona_bop.json
           test -s docs/girona_bop.json
           test -s docs/convocatorias.json
