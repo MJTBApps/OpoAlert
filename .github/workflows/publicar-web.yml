@@ -1,6 +1,17 @@
 name: OpoAlert - Publicar portada nacional y feeds
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows:
+      - 'OpoAlert - Publicar historico BOP auditado'
+      - 'OpoAlert - Auditar y publicar BOP Alicante Castellon'
+      - 'OpoAlert España - Auditar y publicar BOE nacional'
+      - 'OpoAlert - Publicar CIDO Cataluna verificado'
+      - 'OpoAlert - Auditar y publicar BOP Tarragona'
+      - 'OpoAlert - Auditar y publicar BOP Barcelona'
+      - 'OpoAlert - Auditar y publicar BOP Girona'
+      - 'OpoAlert - Publicar APK 1.6.0 en web'
+    types: [completed]
   schedule:
     - cron: '10 20 * * *'
   push:
@@ -17,6 +28,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   publicar:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     environment:
