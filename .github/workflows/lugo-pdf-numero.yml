@@ -1,0 +1,17 @@
+name: OpoAlert - Cotejar numeracion PDF Lugo 3 octubre
+on:
+  push:
+    branches: [feature/galicia-cinco-boletines-20261029]
+    paths: [backend/lugo_pdf_numero.py, .github/workflows/lugo-pdf-numero.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  cotejar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests pypdf
+      - run: python -u backend/lugo_pdf_numero.py
