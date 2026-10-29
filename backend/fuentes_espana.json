@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026.",
+  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026. BOCM de Madrid añadido como diario autonómico independiente, sujeto a auditoría de 30 días; no sustituye al BOAM municipal.",
   "nationalSources": [
     {
       "code": "VA",
@@ -188,6 +188,16 @@
       "feed": "cordoba_bop.json",
       "state": "active",
       "scope": "Boletín oficial de Córdoba: 22 ediciones, 376 anuncios, 25 convocatorias candidatas, 30 días y PDF originales verificados"
+    },
+    {
+      "code": "MD",
+      "territory": "28",
+      "kind": "diario_autonomico",
+      "name": "BOCM · Comunidad de Madrid",
+      "portal": "https://www.bocm.es/listado-de-boletines",
+      "feed": "madrid_bocm.json",
+      "state": "active",
+      "scope": "Diario autonómico de la Comunidad de Madrid; incluye anuncios autonómicos y municipales, boletines extraordinarios y PDF oficiales. No sustituye el BOAM municipal."
     }
   ],
   "communities": [
@@ -735,7 +745,9 @@
       "community": "MD",
       "communityName": "Comunidad de Madrid",
       "primaryGazette": "diario_autonomico",
-      "state": "pending"
+      "state": "active",
+      "coverageKind": "BOCM",
+      "diaryState": "active"
     },
     {
       "ine": "30",
