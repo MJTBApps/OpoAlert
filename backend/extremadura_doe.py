@@ -11,7 +11,7 @@ from clm_common import employment,publish_audit,invalid
 
 SOURCE="https://doe.juntaex.es/"
 HOST="doe.juntaex.es"
-PDF_RE=re.compile(r"^/pdfs/doe/(\d{4})/(\d{1,4}0[oe])/(\d{8})\.pdf$",re.I)
+PDF_RE=re.compile(r"^/pdfs/doe/(\d{4})/(\d{1,4}0[oe])/([A-Z0-9]{8})\.pdf$",re.I)
 ISSUE_RE=re.compile(r"^/pdfs/doe/(\d{4})/(\d{1,4}0[oe])/\2\.pdf$",re.I)
 TLS=threading.local()
 MONTHS={1:"enero",2:"febrero",3:"marzo",4:"abril",5:"mayo",6:"junio",
@@ -97,7 +97,7 @@ def extract_issue(html,day,kind):
         pdf=pdfs[0];u=urlsplit(pdf);m=PDF_RE.fullmatch(u.path)
         if not m or u.hostname!=HOST or int(m[1])!=day.year or m[2]!=folder:
             invalid(f"DOE {day}: documento original de otro boletín {pdf}, carpeta={folder}")
-        nid=f"EX-{day.year}-{m[3]}"
+        nid=f"EX-{day.year}-{m[3].upper()}"
         if nid in seen:invalid(f"DOE: documento duplicado {nid}")
         seen.add(nid)
         agency=""
