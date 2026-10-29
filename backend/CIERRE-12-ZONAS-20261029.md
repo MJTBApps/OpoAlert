@@ -82,3 +82,10 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 **Málaga.** El sitio `www.bopmalaga.es` ha vuelto a responder HTTP 200 desde GitHub. Prueba: https://github.com/MJTBApps/OpoAlert/actions/runs/40904841573 . La auditoría estricta https://github.com/MJTBApps/OpoAlert/actions/runs/40904996219 verificó el BOP #188 de 30/09 y #189 de 01/10 (10 edictos, 2 posibles candidatas el 01/10); **se detuvo correctamente en 02/10 por pantalla oficial de verificación interactiva, no eludida**. El selector del servidor también puede devolver la portada del 29/10 aunque se solicite una fecha anterior; se coteja siempre `h2 time[datetime]`, número y enlace de PDF, y nunca se acepta respuesta de fecha incorrecta. No marcar Málaga completa, no publicar feed parcial. El PDF directo `verificacion.php` requiere validación humana según portal editor.
 
 **Resultado del segundo ciclo:** 0 nuevos territorios terminados. **APK 1.29 sigue siendo la última versión validada** (Segovia, Salamanca, La Rioja y anteriores), artifact https://github.com/MJTBApps/OpoAlert/actions/runs/40900571011/artifacts/12908917537. Siguen pendientes 10 zonas.
+
+### Auditoría Málaga con limitación de tráfico (29/10/2026)
+
+- Para respetar el portal se añadió una pausa de **5 segundos entre consultas HTTP** en `backend/malaga_bop.py` y un corte explícito ante verificación humana.
+- Ejecución: https://github.com/MJTBApps/OpoAlert/actions/runs/40905293386 . El lector pudo verificar 30/09/2026 BOP 188 (6 anuncios, 0 candidatas) y 01/10/2026 BOP 189 (10 anuncios, 2 candidatas).
+- El 02/10/2026 la web devuelve `Verificación de seguridad` incluso con pausas; se detuvo, sin intentar superar la prueba. **Málaga sigue pendiente**. El validador independiente `backend/validar_apk_malaga.py` está listo, pero no se declara ejecutado ni aprobado porque no existe `MA.json` completo.
+- No enviar tráfico masivo ni repetir auditorías indiscriminadas mientras el editor requiera verificación interactiva. Buscar feed/API oficial o autorización del editor antes de nuevo intento.
