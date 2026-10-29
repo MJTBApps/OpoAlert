@@ -67,7 +67,7 @@ def issue(num):
   for block in blocks:
    pdfs=block.select("a.item_pdf_grupo[href]")
    if len(pdfs)!=1:
-    invalid(f"BOJA {num}: disposición sin PDF original en {page}")
+    invalid(f"BOJA {num}: disposición sin PDF original en {page}; enlaces={[(a.get_text(' ',strip=True)[:70],a.get('href')) for a in block.select('a[href]')[:8]]}; texto={block.get_text(' ',strip=True)[:320]}")
    url=urljoin(page,pdfs[0]["href"]);u=urlsplit(url);m=PDF_RE.fullmatch(u.path)
    if (not m or int(m[1])!=num or not m[2].startswith(f"BOJA26-{num}-")
        or u.hostname!=HOST or u.query or u.fragment):
