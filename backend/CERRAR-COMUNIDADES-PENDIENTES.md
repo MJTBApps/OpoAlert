@@ -24,7 +24,9 @@
 | Cantabria | BOC | `boc.cantabria.es` y `boc.gobcantabria.es` sin conexión desde tres sistemas operativos. |
 | Asturias | BOPA | `miprincipado.asturias.es` y `sede.asturias.es` sin conexión desde tres sistemas operativos. |
 
-Fuentes autonómicas ya iniciadas aún pendientes: **DOGV Comunidad Valenciana** y **DOGC Cataluña**. Las páginas iniciales responden pero el portal DOGV es una SPA Angular, y el DOGC no ofrece en la primera página un índice completo de 30 días. No activar sin recuperar todas las ediciones y cotejar PDF.
+**DOGV de la Comunidad Valenciana: ya auditado y preparado para integración.** Se recuperó el calendario oficial de 21 fechas y 31 sumarios (ordinario, bis, ter y quarter), 1.057 anuncios y 268 coincidencias con PDF individual verificado. Auditoría https://github.com/MJTBApps/OpoAlert/actions/runs/40872253149, lector `backend/dogv_autonomico.py` y validador `backend/validar_apk_dogv.py`.
+
+**DOGC de Cataluña continúa pendiente**: su web pública responde y ofrece PDFs/XML de documentos individualizados, pero no se ha acreditado aún el índice oficial íntegro de 30 días. No confundir con el dataset de solo normativa.
 
 El **BOAM municipal de Madrid** es una publicación diferente del BOCM y no se marca cubierta. El BOE nacional sigue siendo fuente independiente.
 
