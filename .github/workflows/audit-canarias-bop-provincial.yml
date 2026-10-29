@@ -1,0 +1,38 @@
+name: OpoAlert - Auditar BOP Canarias ambas provincias
+on:
+  push:
+    branches: [feature/canarias-3-boletines-20261029]
+    paths: [backend/canarias_bop_provincial.py, .github/workflows/audit-canarias-bop-provincial.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  las_palmas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/canarias_bop_provincial.py --province lp --output verified/canarias_las_palmas.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: canarias-bop-las-palmas-30dias
+          path: verified/canarias_las_palmas.json
+          retention-days: 30
+          if-no-files-found: error
+  santa_cruz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/canarias_bop_provincial.py --province tf --output verified/canarias_santa_cruz.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: canarias-bop-santa-cruz-30dias
+          path: verified/canarias_santa_cruz.json
+          retention-days: 30
+          if-no-files-found: error
