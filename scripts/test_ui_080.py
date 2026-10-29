@@ -103,7 +103,7 @@ def main() -> None:
     assert 'SourceCatalog.groups()' in activity
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.12.0: BOE + provincias catalanas CIDO, favoritos y paginación")
+    print("OK: Android 1.17.0: boletines CyL y BOCYL privados, selector, favoritos y paginación")
 
 
 if __name__ == "__main__":
