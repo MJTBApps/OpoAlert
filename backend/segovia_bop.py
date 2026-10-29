@@ -116,7 +116,7 @@ def edition_pdf(row):
     found=[]
     for a in doc.select("a[href]"):
         label=" ".join(a.get_text(" ",strip=True).split())
-        if re.search(rf"(?i)\bN[ºo.]{{1,3}}\s*{row['number']}\s*\.\s*{row['day'].day}\s+{('septiembre' if row['day'].month==9 else 'octubre')}\s+2026",label):
+        if re.search(rf"(?i)\bN[ºo.]{{1,3}}\s*{row['number']}\s*\.\s*0?{row['day'].day}\s+{('septiembre' if row['day'].month==9 else 'octubre')}\s+2026",label):
             url=urljoin(row["detail"],a["href"])
             u=urlsplit(url)
             if u.scheme!="https" or u.hostname!=HOST or not URL_RE.fullmatch(u.path):
