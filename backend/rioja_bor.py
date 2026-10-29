@@ -10,6 +10,7 @@ import argparse
 import hashlib
 import re
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime
 from pathlib import Path
@@ -46,13 +47,20 @@ def validate_url(url):
     return u
 def fetch(url, pdf=False):
     validate_url(url)
-    try:
-        r=client().get(url,timeout=(10,38),stream=pdf,allow_redirects=False,
-                       headers={"Range":"bytes=0-128"} if pdf else {})
-    except requests.RequestException as ex:
-        invalid("No se pudo consultar servidor oficial: "+str(ex)[:180])
-    if r.status_code not in ((200,206) if pdf else (200,)):
-        invalid(f"HTTP {r.status_code} al consultar {url}")
+    error=None
+    for attempt in range(4):
+        try:
+            r=client().get(url,timeout=(15,45),stream=pdf,allow_redirects=False,
+                           headers={"Range":"bytes=0-128"} if pdf else {})
+            if r.status_code in ((200,206) if pdf else (200,)):
+                break
+            error=f"HTTP {r.status_code} al consultar {url}"
+            r.close()
+        except requests.RequestException as ex:
+            error=str(ex)[:190]
+        if attempt==3:
+            invalid("Sin acceso a contenido original tras 4 intentos: "+str(error))
+        time.sleep((attempt+1)*1.7)
     if pdf:
         if "pdf" not in r.headers.get("Content-Type","").lower():
             r.close()
@@ -157,7 +165,7 @@ def audit():
     total=sum(x["read"] for x in rows)
     if total<250:invalid(f"Histórico sospechosamente corto: {total} anuncios")
     originals=sorted(set(u for x in rows for u in x["pdfs"]))
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    with ThreadPoolExecutor(max_workers=2) as ex:
         list(ex.map(lambda u:fetch(u,pdf=True),originals))
     print(f"BOR: {len(originals)} PDF originales verificados, {total} anuncios",flush=True)
     issues=[{key:r[key] for key in ("day","number","read","notices")} for r in rows]
