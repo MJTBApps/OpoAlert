@@ -320,6 +320,27 @@ enum class Province(
         "www.xunta.gal", "/dog/Publicados/",
         Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
     ),
+    CANARIAS_BOC(
+        "IC", "Canarias (BOC)",
+        "https://mjtbapps.github.io/OpoAlert/canarias_boc.json",
+        "https://www.gobiernodecanarias.org/boc/archivo/2026/",
+        "sede.gobiernodecanarias.org", "/boc/boc-a-2026-",
+        Regex("IC-2026-\\d{1,8}"),
+    ),
+    LAS_PALMAS_BOP(
+        "LP", "Las Palmas (BOP)",
+        "https://mjtbapps.github.io/OpoAlert/canarias_las_palmas.json",
+        "https://www.boplaspalmas.net/nbop2/main1.php",
+        "www.boplaspalmas.net", "/boletines/2026/",
+        Regex("LP-2026\\d{4}-\\d{3}"),
+    ),
+    SANTA_CRUZ_BOP(
+        "TF", "Santa Cruz de Tenerife (BOP)",
+        "https://mjtbapps.github.io/OpoAlert/canarias_santa_cruz.json",
+        "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
+        "www.bopsantacruzdetenerife.es", "/boletines/2026/",
+        Regex("TF-2026\\d{4}-\\d{3}"),
+    ),
     BALEARES_BOIB(
         "IB", "Illes Balears (BOIB)",
         "https://mjtbapps.github.io/OpoAlert/baleares_boib.json",
@@ -401,6 +422,9 @@ enum class Province(
             id.startsWith("BJ-") -> ANDALUCIA_BOJA
             id.startsWith("DV-") -> VALENCIA_DOGV
             id.startsWith("IB-") -> BALEARES_BOIB
+            id.startsWith("IC-") -> CANARIAS_BOC
+            id.startsWith("LP-") -> LAS_PALMAS_BOP
+            id.startsWith("TF-") -> SANTA_CRUZ_BOP
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
