@@ -162,18 +162,21 @@ jobs:
         run: |
           set -eu
           cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-Extremadura-1.18.0-PRUEBA.apk
-          unzip -t OpoAlert-CYL-1.17.0-PRUEBA.apk >/dev/null
-          unzip -Z1 OpoAlert-CYL-1.17.0-PRUEBA.apk | grep 'assets/verified/MD.json'
-          unzip -Z1 OpoAlert-CYL-1.17.0-PRUEBA.apk | grep 'assets/verified/HB.json'
-          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-CYL-1.17.0-PRUEBA.apk | grep "package: name='es.opoalert.app.ext'"
-          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-CYL-1.17.0-PRUEBA.apk | grep "OpoAlert EXT"
-          unzip -Z1 OpoAlert-CYL-1.17.0-PRUEBA.apk | grep 'assets/verified/CY.json'
-          unzip -Z1 OpoAlert-CYL-1.17.0-PRUEBA.apk | grep 'assets/verified/LN.json'
-          unzip -Z1 OpoAlert-CYL-1.17.0-PRUEBA.apk | grep 'assets/verified/PL.json'
-          sha256sum OpoAlert-CYL-1.17.0-PRUEBA.apk
+          unzip -t OpoAlert-Extremadura-1.18.0-PRUEBA.apk >/dev/null
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/MD.json'
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/HB.json'
+          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep "package: name='es.opoalert.app.ext'"
+          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep "OpoAlert EXT"
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/CY.json'
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/LN.json'
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/PL.json'
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/BD.json'
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/CC.json'
+          unzip -Z1 OpoAlert-Extremadura-1.18.0-PRUEBA.apk | grep 'assets/verified/EX.json'
+          sha256sum OpoAlert-Extremadura-1.18.0-PRUEBA.apk
       - uses: actions/upload-artifact@v4
         with:
           name: OpoAlert-APK-EXTREMADURA-PRIVADA-1.18.0
-          path: OpoAlert-CYL-1.17.0-PRUEBA.apk
+          path: OpoAlert-Extremadura-1.18.0-PRUEBA.apk
           retention-days: 30
           if-no-files-found: error
