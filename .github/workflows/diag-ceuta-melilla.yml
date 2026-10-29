@@ -1,0 +1,17 @@
+name: OpoAlert - Diagnóstico oficial BOCCE y BOME
+on:
+  push:
+    branches: [feature/ceuta-melilla-20261029]
+    paths: [backend/diag_ceuta_melilla.py, .github/workflows/diag-ceuta-melilla.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diag_ceuta_melilla.py
