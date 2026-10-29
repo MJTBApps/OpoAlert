@@ -40,6 +40,21 @@ def get_index():
     except (requests.RequestException,ValueError) as ex:
         invalid("Murcia: no pudo leerse el índice oficial "+str(ex)[:180])
 
+def opening_kind(title):
+    """Keep new hiring opportunities; discard resolutions about past phases."""
+    t=" ".join(title.casefold().split())
+    rejects=(
+        "se nombra", "se procede al nombramiento", "se resuelve el",
+        "resolución definitiva de", "relación definitiva de", "relación provisional de",
+        "se aprueba la relación", "se aprueba la inclusión", "se aprueban las listas",
+        "trámite de audiencia", "se modifica la fecha", "fecha prevista para la realización",
+        "fecha de examen", "designación de tribunal", "composición del tribunal",
+        "se declara desierto", "se hace público el resultado", "publica el resultado",
+        "convocatoria de junta general", "convocatoria asamblea",
+    )
+    if any(w in t for w in rejects):return None
+    return employment(title)
+
 def parse_index(records,today):
     start=today-timedelta(days=29)
     by_issue=defaultdict(list)
@@ -73,7 +88,7 @@ def parse_index(records,today):
         key=f"MU-{today.year}-{annid}"
         if key in unique:invalid(f"Murcia: código de anuncio repetido {key}")
         unique.add(key)
-        role=employment(title)
+        role=opening_kind(title)
         if role:
             by_issue[(day,int(number))].append({"id":key,"province":PROVINCE,"title":title,
                 "entity":agency,"date":day.strftime("%d/%m/%Y"),"bulletin":str(int(number)),
@@ -85,17 +100,21 @@ def parse_index(records,today):
     if len(unique)<350 or len(by_issue)<20:
         invalid(f"Murcia: histórico sin suficiente cobertura, {len(unique)} anuncios / {len(by_issue)} ediciones")
     sequence=sorted(by_issue)
-    if len({x[1] for x in sequence})!=len(sequence):
-        invalid("Murcia: número de BORM duplicado en fechas diferentes")
-    if any(b[1]!=a[1]+1 for a,b in zip(sequence,sequence[1:])):
-        invalid("Murcia: falta algún número consecutivo del BORM")
+    main_issues=[x for x in sequence if x[1]>=150]
+    extra_issues=[x for x in sequence if x[1]<150]
+    if any(b[1]!=a[1]+1 for a,b in zip(main_issues,main_issues[1:])):
+        invalid("Murcia: falta algún número consecutivo del BORM ordinario")
+    if any(day!=date(2026,10,12) or number!=2 for day,number in extra_issues):
+        invalid(f"Murcia: edición extraordinaria no identificada {extra_issues}")
+    if len(main_issues)<20:invalid("Murcia: falta un boletín ordinario")
     issues=[]
     for day,number in sequence:
         all_items=by_issue[(day,number)]
         notices=[x for x in all_items if x is not None]
         read=sum(x is None for x in all_items)
         if read==0 or len(notices)>read:invalid("Murcia: sumario desajustado")
-        issues.append({"day":day,"number":str(number),"read":read,"notices":notices})
+        issues.append({"day":day,"number":str(number)+("E" if (day,number) in extra_issues else ""),
+            "read":read,"notices":notices})
     if issues[0]["day"]>start+timedelta(days=3) or issues[-1]["day"]!=today:
         invalid("Murcia: faltan los primeros o últimos BORM de los 30 días")
     return issues
