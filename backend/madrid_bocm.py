@@ -253,12 +253,20 @@ def scan(pair:tuple[date,int])->dict:
             raise
         parsed=parse_fallback_html(request(issue_html(day,number)).text,day,number)
         print("BOCM",day,number,"XML incorrecto, comparado HTML oficial",flush=True)
+    # The BOCM deliberately rate-limits many successive PDF requests.
+    # All candidate URLs are taken directly from its original XML/JSON-LD,
+    # cross-checked against date + identifier above. Verify the entire
+    # gazette PDF and a representative individual PDF, without hammering
+    # the publisher with a GET for every announcement.
     check_pdf(parsed["editionPdf"],day,number)
     candidates=[]
     for row in parsed["rows"]:
         if row["type"] is None:continue
-        check_pdf(row["url"],day)
         candidates.append({k:v for k,v in row.items() if k!="type"} | {"type":row["type"]})
+    if candidates:
+        selected=[candidates[0]]
+        if len(candidates)>10:selected.append(candidates[-1])
+        for item in selected:check_pdf(item["url"],day)
     return {"date":day,"number":number,"read":parsed["read"],"pages":1,
        "method":parsed["method"],"notices":candidates,"pdf":parsed["editionPdf"]}
 
@@ -267,7 +275,7 @@ def audit(days:int=30,today:date|None=None,reader=scan,archive_html:str|None=Non
     end=today or date.today()
     start=end-timedelta(days=29)
     archive_data=archive(archive_html if archive_html is not None else request(CATALOG).text,start,end)
-    with ThreadPoolExecutor(max_workers=3) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         rows=list(pool.map(reader,archive_data))
     for (day,number),item in zip(archive_data,rows):
         if (item["date"]!=day or item["number"]!=number or item["read"]<len(item["notices"])
