@@ -7,6 +7,8 @@ on:
       - app/src/main/java/es/opoalert/app/Province.kt
       - app/src/main/java/es/opoalert/app/SourceCatalog.kt
       - app/src/main/java/es/opoalert/app/RemoteFeedReader.kt
+      - app/src/test/java/es/opoalert/app/ProvinceTest.kt
+      - app/src/test/java/es/opoalert/app/SourceCatalogTest.kt
       - .github/workflows/dogc-android-smoke.yml
 permissions: {contents: read}
 jobs:
