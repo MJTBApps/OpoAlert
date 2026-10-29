@@ -3,7 +3,7 @@
 The publisher uses a Turnstile challenge to DOWNLOAD PDFs. We never bypass it.
 """
 from __future__ import annotations
-import argparse,json,re,requests,threading
+import argparse,json,re,requests,threading,time
 from urllib.parse import urljoin,urlsplit,parse_qs
 from datetime import datetime,date,timedelta
 from pathlib import Path
@@ -30,12 +30,20 @@ def request(url):
     q=urlsplit(url)
     if q.scheme!="https" or q.hostname!=HOST or q.port not in (None,443) or q.fragment or q.username:
         invalid("Málaga: enlace fuera de portal oficial")
-    try:
-        r=session().get(url,timeout=(10,25))
-    except requests.RequestException as ex:invalid("Málaga: no se pudo consultar "+url+" "+str(ex)[:130])
-    if r.status_code!=200 or urlsplit(r.url).hostname!=HOST or not r.content or len(r.content)>4_000_000:
-        invalid("Málaga: respuesta inválida de "+url)
-    return r
+    error=None
+    for attempt in range(3):
+        try:
+            r=session().get(url,timeout=(10,25))
+            if (r.status_code==200 and urlsplit(r.url).hostname==HOST
+                and r.content and len(r.content)<=4_000_000
+                and b"Verificacion necesaria" not in r.content[:2500]
+                and b"Verificaci\xc3\xb3n de seguridad" not in r.content[:2500]
+                and b"challenges.cloudflare.com" not in r.content[:2500]):
+                return r
+            error=f"HTTP {r.status_code}, {len(r.content)} bytes, respuesta de seguridad o vacia"
+        except requests.RequestException as ex:error=str(ex)[:150]
+        if attempt<2:time.sleep(1.6*(attempt+1))
+    invalid("Málaga: archivo no disponible sin verificación interactiva: "+url+" ("+str(error)+")")
 
 def day_url(day):
     return SOURCE+"?fecha="+day.strftime("%d-%m-%Y")
@@ -154,7 +162,7 @@ def audit(today=None):
     for (d,n),(d2,n2) in zip(items,items[1:]):
         if n2!=n+1:invalid(f"Málaga: salto entre BOP {n} y {n2}")
     # One session per worker, official server limits parallel traffic.
-    with ThreadPoolExecutor(max_workers=3) as pool:
+    with ThreadPoolExecutor(max_workers=1) as pool:
         issued=list(pool.map(scan,items))
     data=publish_audit(SOURCE,"Málaga",issued,today=end)
     data["historyCoverage"]["editionsPDFLinks"]=[url for row in issued for url in row["editions"]]
