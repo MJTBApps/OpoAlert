@@ -85,7 +85,7 @@ def toc_from_pdf(pdf,day,number):
                 title=" ".join(title.split()).strip(" .")
                 pending.clear()
                 page_num=int(m[2])
-                if page_num<3 or page_num>len(pdf):
+                if page_num<1 or page_num>len(pdf):
                     invalid(f"Palencia {day} BOP {number}: página {page_num}, PDF páginas {len(pdf)}, título {title[:160]}")
                 if not title:invalid("Palencia: anuncio sin título")
                 kind=employment(title)
