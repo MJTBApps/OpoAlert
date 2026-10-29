@@ -125,8 +125,11 @@ def issue(item):
   page=html_page(path)
   if ("BOIB Núm. "+str(number)) not in (page.title.get_text(" ",strip=True) if page.title else ""):
    invalid(f"BOIB {number}: página de sección ajena {path}")
-  records=page.select("ul.resolucions > li")
-  if not records:invalid(f"BOIB {number}: sección {code} sin disposiciones")
+  listed=page.select("ul.resolucions > li")
+  records=[x for x in listed if x.select_one("p.registre")]
+  pdf_count=len(page.select('a[aria-label="Exportar a PDF"]'))
+  if not records or len(records)!=pdf_count:
+   invalid(f"BOIB {number}: sección {code} contiene {len(records)} registros y {pdf_count} PDF oficiales")
   for item in records:
    paragraph=item.find("p",recursive=False)
    reg=item.select_one("p.registre")
