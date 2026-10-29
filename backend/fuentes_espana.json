@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido. La Rioja BOR auditada en la API XML oficial e incorporada como copia local privada en OpoAlert 1.27: 22 boletines, 524 anuncios, 26 candidatos. Navarra BON bloqueada por timeout, no se declara cubierta. Revisadas 12 zonas el 29/10/2026, 0 nuevas certificaciones: Jaén y Segovia tienen huecos; las otras diez no superaron acceso íntegro a diario oficial. Evidencias en backend/CIERRE-12-ZONAS-20261029.md. Segovia BOP quedó auditada: 13 ediciones 117-129, 274 anuncios, 14 candidatas, PDF originales cotejados y APK privada 1.28.",
+  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido. La Rioja BOR auditada en la API XML oficial e incorporada como copia local privada en OpoAlert 1.27: 22 boletines, 524 anuncios, 26 candidatos. Navarra BON bloqueada por timeout, no se declara cubierta. Revisadas 12 zonas el 29/10/2026, 0 nuevas certificaciones: Jaén y Segovia tienen huecos; las otras diez no superaron acceso íntegro a diario oficial. Evidencias en backend/CIERRE-12-ZONAS-20261029.md. Segovia BOP quedó auditada: 13 ediciones 117-129, 274 anuncios, 14 candidatas, PDF originales cotejados y APK privada 1.28. Salamanca verificada a 29/10/2026: 22 sumarios PDF oficiales n.º 189-210, 327 CVE y 8 convocatorias candidatas; integrada solamente en APK privada 1.29.",
   "nationalSources": [
     {
       "code": "VA",
@@ -342,6 +342,27 @@
         "issues": 13,
         "announcementsRead": 274,
         "candidates": 14,
+        "publication": "private_apk_only"
+      }
+    },
+    {
+      "code": "SA",
+      "territory": "37",
+      "kind": "bop",
+      "name": "BOP Salamanca",
+      "portal": "https://www.lasalina.es/documentacion/bop/",
+      "feed": "salamanca_bop.json",
+      "state": "private_apk_snapshot",
+      "scope": "22 boletines n.º 189-210, 327 anuncios y 8 candidatas, cada PDF oficial cotejado; instantánea 30/09–29/10/2026 en APK privada 1.29.",
+      "audit": {
+        "status": "passed_30_days",
+        "checked": "2026-10-29",
+        "issues": 22,
+        "announcementsRead": 327,
+        "candidates": 8,
+        "originalPDFs": 327,
+        "period": "2026-09-30/2026-10-29",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40900088560",
         "publication": "private_apk_only"
       }
     }
@@ -790,14 +811,19 @@
       "community": "CL",
       "communityName": "Castilla y León",
       "primaryGazette": "bop",
-      "state": "blocked_official_access",
+      "state": "private_apk_snapshot",
       "audit20261029": {
-        "status": "blocked_or_partial",
+        "status": "passed_30_days",
         "checked": "2026-10-29",
-        "summary": "Sede electrónica BOP ConnectTimeout; portal lasalina.es redirige a sede bloqueada.",
-        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
-        "publication": "none"
-      }
+        "issues": 22,
+        "announcementsRead": 327,
+        "candidates": 8,
+        "originalPDFs": 327,
+        "period": "2026-09-30/2026-10-29",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40900088560",
+        "publication": "private_apk_only"
+      },
+      "coverageKind": "BOP"
     },
     {
       "ine": "40",
