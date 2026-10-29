@@ -1,0 +1,19 @@
+name: OpoAlert - Examinar sumario XML BOCM
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/madrid-bocm-20261029]
+    paths: ['backend/diagnosticar_bocm_xml.py','.github/workflows/diagnosticar-bocm-xml.yml']
+permissions:
+  contents: read
+jobs:
+  xml:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diagnosticar_bocm_xml.py
