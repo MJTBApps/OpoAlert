@@ -60,6 +60,8 @@ def calendar():
   match=ED_RE.fullmatch(u.path)
   if not match or u.hostname!=HOST or u.query or u.fragment:continue
   label=a.get_text(" ",strip=True)
+  if not any(x in label.lower() for x in ("de septiembre de 2026","de octubre de 2026")):
+   continue
   extra,n,day=edition_day(label)
   if extra!=(match[1]=="X") or n!=int(match[2]):invalid("enlace BOME no coincide con número y tipo")
   if not START<=day<=END:continue
