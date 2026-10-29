@@ -1,0 +1,17 @@
+name: OpoAlert - Buscar diarios Huelva y Jaen
+on:
+  push:
+    branches: [feature/rematar-clm-madrid-andalucia-20261029]
+    paths: [backend/probe_hu_ja.py,.github/workflows/probe-hu-ja.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  examinar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/probe_hu_ja.py
