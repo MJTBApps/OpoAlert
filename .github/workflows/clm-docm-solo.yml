@@ -1,0 +1,24 @@
+name: OpoAlert - Auditar DOCM 30 dias (sin publicar)
+on:
+  push:
+    branches: [feature/castilla-la-mancha-completa-20261029]
+    paths: [.github/workflows/clm-docm-solo.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 23
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
+      - run: python -u backend/clm_docm.py --output auditados/castilla_mancha_docm.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: docm-auditado-local
+          path: auditados/castilla_mancha_docm.json
+          retention-days: 7
