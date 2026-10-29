@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Zamora", "Soria", "Castilla y León (BOCYL)", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Soria", "Castilla y León (BOCYL)", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -47,6 +47,7 @@ class ProvinceTest {
         assertEquals(Province.AVILA, Province.fromNoticeId("AV-2026-2162"))
         assertEquals(Province.LEON_BOP, Province.fromNoticeId("LN-2026-205001"))
         assertEquals(Province.ZAMORA_BOP, Province.fromNoticeId("ZM-202602392"))
+        assertEquals(Province.PALENCIA_BOP, Province.fromNoticeId("PL-20261009-004"))
         assertEquals(Province.SORIA_BOP, Province.fromNoticeId("SR-2026-2024"))
         assertEquals(Province.CYL_BOCYL, Province.fromNoticeId("CY-20261029-5"))
         assertEquals(Province.ALBACETE, Province.fromNoticeId("AB-2026-1001"))
@@ -63,8 +64,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(32, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(33, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(29, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(30, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
