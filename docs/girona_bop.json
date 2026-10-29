@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-10-28T15:30:22.506388+00:00",
+  "lastCheckedUTC": "2026-10-29T15:31:39.445732+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "208",
-    "pagesVisited": 22,
-    "announcementsRead": 911,
-    "opportunities": 93,
+    "pagesVisited": 21,
+    "announcementsRead": 879,
+    "opportunities": 92,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
-    "issuesRead": 22,
-    "pagesVisited": 22,
-    "announcementsRead": 911,
-    "opportunities": 93,
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-29",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 879,
+    "opportunities": 92,
     "bulletins": [
-      "187",
       "188",
       "189",
       "190",
@@ -44,7 +43,6 @@
       "208"
     ],
     "publicationDates": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
@@ -75,7 +73,8 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-29"
     ]
   },
   "notices": [
@@ -998,16 +997,6 @@
       "province": "Girona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/188/202618808306.pdf"
-    },
-    {
-      "id": "GI-2026-187-08403",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la provisió temporal de la plaça d'interventor/a",
-      "entity": "AJUNTAMENT DE CELRÀ",
-      "date": "29/09/2026",
-      "bulletin": "187",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/187/202618708403.pdf"
     }
   ]
 }
