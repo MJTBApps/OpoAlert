@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "13 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Córdoba, Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo.",
+  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026.",
   "nationalSources": [
     {
       "code": "VA",
@@ -178,6 +178,16 @@
       "feed": "sevilla_bop.json",
       "state": "active",
       "scope": "Boletín oficial de Sevilla, 30 días auditados; 21 ediciones, 621 anuncios y 44 convocatorias candidatas, PDF original"
+    },
+    {
+      "code": "CO",
+      "territory": "14",
+      "kind": "bop",
+      "name": "BOP Córdoba",
+      "portal": "https://bop.dipucordoba.es/",
+      "feed": "cordoba_bop.json",
+      "state": "active",
+      "scope": "Boletín oficial de Córdoba: 22 ediciones, 376 anuncios, 25 convocatorias candidatas, 30 días y PDF originales verificados"
     }
   ],
   "communities": [
@@ -375,7 +385,9 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "bopState": "active",
+      "coverageKind": "BOP"
     },
     {
       "ine": "18",
