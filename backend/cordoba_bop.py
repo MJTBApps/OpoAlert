@@ -69,7 +69,7 @@ def parse_issue(html:str,day:date)->dict|None:
     t=TITLE_RE.search(title)
     if t is None or t.group(1)!=day.strftime("%d-%m-%Y"):
         raise ProvincialCoverageError(f"Córdoba {day}: no coincide fecha publicada en el portal")
-    header=soup.find("h2",string=HEADER_RE)
+    header=next((x for x in soup.select("h2") if HEADER_RE.fullmatch(x.get_text(" ",strip=True))),None)
     # The official Next.js portal serves an empty page for non-publication days.
     if header is None:
         if soup.select("li.announcement") or soup.select('a[href*="/visor-pdf/"]'):
