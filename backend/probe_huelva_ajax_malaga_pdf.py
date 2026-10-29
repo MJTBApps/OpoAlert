@@ -21,7 +21,7 @@ for name,url,hd in tasks:
    for p in ["function cargarAnuncios", "new Ajax.Request", "Ajax.Updater","fetch(", "new XMLHttpRequest","servicio", "bope_web/", "consultaAnuncios", "ultBop", "cargarBoletines","obtenerAnuncios"]:
     mm=list(re.finditer(re.escape(p),merged,re.I))
     for match in mm[:4]:print("SCRIPT",p,repr(merged[max(0,match.start()-360):match.end()+1000]),flush=True)
-   print("SELECT_IDS",[(x.name,x.get("id"),x.get("class")) for x in h.select("select,input[id],div[id]")[-35:],flush=True)
+   print("SELECT_IDS",[(x.name,x.get("id"),x.get("class")) for x in h.select("select,input[id],div[id]")[-35:]],flush=True)
    print("CAL_MONTH",[(x.get("id"),x.get("class")) for x in h.select("table")[:5]],flush=True)
   else:
    print("TITLE",h.title.get_text(" ",strip=True) if h.title else "-",flush=True)
