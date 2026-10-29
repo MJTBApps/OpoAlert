@@ -1,0 +1,21 @@
+name: OpoAlert - Probar Ceuta desde Mac Windows Linux
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/ceuta-melilla-20261029]
+    paths: [backend/probe_ceuta_runners.py, .github/workflows/probe-ceuta-runners.yml]
+permissions: {contents: read}
+jobs:
+  red-oficial:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests
+      - run: python -u backend/probe_ceuta_runners.py
