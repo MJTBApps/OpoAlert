@@ -1,0 +1,24 @@
+name: OpoAlert - Auditar BORM Murcia 30 dias
+on:
+  push:
+    branches: [feature/murcia-borm-20261029]
+    paths: [backend/murcia_borm.py, .github/workflows/audit-murcia-borm.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - name: Auditar todas las ediciones y PDFs originales del BORM
+        run: python -u backend/murcia_borm.py --output verified/murcia_borm.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: murcia-borm-oficial-30dias
+          path: verified/murcia_borm.json
+          retention-days: 30
+          if-no-files-found: error
