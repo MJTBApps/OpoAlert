@@ -6,6 +6,9 @@ from io import BytesIO
 from urllib.parse import urljoin
 urls = {
 "rioja_api_documentation":"https://ias1.larioja.org/opendata/download?r=Y2Q9MzIxfGNmPTE2",
+"rioja_xml_calendar_oct":"https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=3&mes=10&anio=2026",
+"rioja_xml_calendar_sep":"https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=3&mes=9&anio=2026",
+"rioja_xml_sumario":"https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=1&fecha=2026/10/28",
 "rioja_opendata":"https://ias1.larioja.org/opendata/",
 "rioja_old_home":"https://www2.larioja.org/pls/dad_user/G04.bor_home",
 "rioja_ias1_boletin":"https://ias1.larioja.org/boletin/",
@@ -58,5 +61,5 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
  for result in pool.map(probe,urls.items()):
   key,url,status,final,mime,size,title,txt,links=result
   print("\nRESULT",key,"HTTP",status,"url",final,"mime",mime,"size",size,"title",repr(title),flush=True)
-  print("TEXT",txt[:34000 if key=="rioja_api_documentation" else 1100],flush=True)
+  print("TEXT",txt[:34000 if key=="rioja_api_documentation" else (8500 if key.startswith("rioja_xml") else 1100)],flush=True)
   if links:print("LINKS",repr(links),flush=True)
