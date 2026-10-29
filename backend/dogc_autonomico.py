@@ -35,6 +35,12 @@ DOC_RE = re.compile(r"\d{6,9}")
 NUMBER_RE = re.compile(r"\d{4,5}[A-Z]?")
 CVE_RE = re.compile(r"CVE-DOGC-[A-Z]-[A-Z0-9-]+-2026")
 EXCLUDED = (
+    "designacio dels membres", "es resol la convocatoria",
+    "es resol parcialment", "es resol el concurs", "es resol el proces",
+    "s'aproven les llistes", "llistes definitives", "llistes provisionals",
+    "aprovacio provisional de la llista", "llista d'admissions",
+    "modificacio de l'oferta publica", "rectificacio de les bases",
+    "es nomenen", "es nomena", "acta de resultats",
     "adjudicacio", "adjudicacion", "nomenament", "nombramiento", "cese",
     "cessament", "cesses", "trasllat", "traslado", "llista provisional",
     "llista definitiva", "admesos", "exclosos", "admitidos", "excluidos",
@@ -94,7 +100,7 @@ def request_json(endpoint, payload):
     fail("API DOGC sin respuesta")
 
 def norm(s):
-    return re.sub(r"\s+"," ",fold(str(s or ""))).strip()
+    return re.sub(r"\s+"," ",fold(str(s or "")).replace("’","'").replace("`","'")).strip()
 
 def valid_pdf_ref(url):
     p = urlsplit(str(url or ""))
@@ -193,17 +199,22 @@ def official_original(task):
     if not (("satisfact" in autentic) and ("autentic" in autentic) and ("integr" in autentic)):
         fail(f"documento {did}: autenticidad original no verificada")
     original_title=" ".join(str(data.get("titleDocument") or "").split())
-    if not original_title or not (norm(title)[:45] in norm(original_title)
-                                  or norm(original_title)[:45] in norm(title)):
-        fail(f"documento {did}: titulo no coincide con sumario")
+    if not original_title or len(original_title)<25:
+        fail(f"documento {did}: titulo oficial ausente")
+    # The publisher sometimes edits the display title between summary and
+    # original text. The stable documentId, DOGC number, publication date,
+    # CVE and verified full original are the authoritative one-to-one match.
+    original_kind=classify_conservative(original_title)
+    if original_kind is None:
+        return None,None
     text=BeautifulSoup(str(data.get("textDocument") or ""),"html.parser").get_text(" ",strip=True)
     if len(text)<110:
         fail(f"documento {did}: texto oficial original no recuperado")
     url=DOCUMENT_URL+"?documentId="+did
     return ({
-      "id":f"DC-2026-{did}","province":PROVINCE,"title":title,
+      "id":f"DC-2026-{did}","province":PROVINCE,"title":original_title,
       "entity":" ".join(str(meta["issuingAuthority"]).split()),"date":day.strftime("%d/%m/%Y"),
-      "bulletin":issue,"type":kind,"url":url
+      "bulletin":issue,"type":original_kind,"url":url
     }, {"id":did,"cve":meta["CVE"],"issue":issue,"date":day.isoformat(),
         "textChars":len(text),"authenticityVerified":True})
 
@@ -309,6 +320,8 @@ def audit():
         validated=list(pool.map(official_original,tasks))
     by_issue={x["number"]:x for x in all_editions}
     for notice,meta in validated:
+        if notice is None:
+            continue
         by_issue[notice["bulletin"]]["notices"].append(notice)
         originals.append(meta)
     for i in summaries:
