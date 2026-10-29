@@ -257,6 +257,34 @@ enum class Province(
         "www.borm.es", "/services/anuncio/",
         Regex("MU-\\d{4}-\\d{1,8}"),
     ),
+    ALAVA_BOTHA(
+        "AR", "Álava",
+        "https://mjtbapps.github.io/OpoAlert/alava_botha.json",
+        "https://e-s.araba.eus/BOTHA/Inicio/SGBO5001.aspx",
+        "e-s.araba.eus", "/BOTHA/Boletines/",
+        Regex("AR-2026-\\d{5}"),
+    ),
+    BIZKAIA_BOB(
+        "BI", "Bizkaia",
+        "https://mjtbapps.github.io/OpoAlert/bizkaia_bob.json",
+        "https://www.bizkaia.eus/es/bob",
+        "www.bizkaia.eus", "/lehendakaritza/Bao_bob/2026/",
+        Regex("BI-2026-[IVX]{1,5}-\\d{1,7}"),
+    ),
+    GIPUZKOA_BOG(
+        "GP", "Gipuzkoa",
+        "https://mjtbapps.github.io/OpoAlert/gipuzkoa_bog.json",
+        "https://egoitza.gipuzkoa.eus/es/bog",
+        "egoitza.gipuzkoa.eus", "/gao-bog/castell/bog/",
+        Regex("GP-2026-26\\d{5}"),
+    ),
+    PAIS_VASCO_BOPV(
+        "PV", "País Vasco (BOPV)",
+        "https://mjtbapps.github.io/OpoAlert/pais_vasco_bopv.json",
+        "https://api.euskadi.eus/bopv/administrative-acts",
+        "www.euskadi.eus", "/bopv2/datos/",
+        Regex("PV-2026-\\d{1,6}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -297,6 +325,10 @@ enum class Province(
             id.startsWith("CC-") -> CACERES_BOP
             id.startsWith("EX-") -> EXTREMADURA_DOE
             id.startsWith("MU-") -> MURCIA_BORM
+            id.startsWith("AR-") -> ALAVA_BOTHA
+            id.startsWith("BI-") -> BIZKAIA_BOB
+            id.startsWith("GP-") -> GIPUZKOA_BOG
+            id.startsWith("PV-") -> PAIS_VASCO_BOPV
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
