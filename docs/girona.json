@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-10-29T05:45:24.584601+00:00",
+  "lastCheckedUTC": "2026-10-29T07:06:42.272425+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 82,
-    "opportunities": 82,
+    "announcementsRead": 80,
+    "opportunities": 80,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 82,
-    "opportunities": 82
+    "announcementsRead": 80,
+    "opportunities": 80
   },
   "notices": [
     {
@@ -457,16 +457,6 @@
       "url": "https://cido.diba.cat/oposicions/17280871"
     },
     {
-      "id": "CIDO6-22352944",
-      "title": "1 plaça d'Operari enllumenat públic",
-      "entity": "Figueres de Serveis, SA (FISERSA)",
-      "date": "19/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22352944"
-    },
-    {
       "id": "CIDO6-15653132",
       "title": "1 plaça de Delineant",
       "entity": "Ajuntament de Figueres",
@@ -575,16 +565,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/19106869"
-    },
-    {
-      "id": "CIDO6-22297690",
-      "title": "Borsa de treball de places de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament de Maçanet de la Selva",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22297690"
     },
     {
       "id": "CIDO6-22297513",

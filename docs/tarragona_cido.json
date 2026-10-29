@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-10-29T05:45:24.584601+00:00",
+  "lastCheckedUTC": "2026-10-29T07:06:42.272425+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 80,
-    "opportunities": 80,
+    "announcementsRead": 79,
+    "opportunities": 79,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 80,
-    "opportunities": 80
+    "announcementsRead": 79,
+    "opportunities": 79
   },
   "notices": [
     {
@@ -555,16 +555,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22323082"
-    },
-    {
-      "id": "CIDO8-22322949",
-      "title": "Borsa de treball de places de Tècnic d'Administració General (TAG)",
-      "entity": "Ajuntament de la Bisbal del Penedès",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22322949"
     },
     {
       "id": "CIDO8-22315669",

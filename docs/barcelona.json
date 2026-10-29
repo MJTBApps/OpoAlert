@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-10-29T05:45:24.584601+00:00",
+  "lastCheckedUTC": "2026-10-29T07:06:42.272425+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 304,
-    "opportunities": 304,
+    "announcementsRead": 298,
+    "opportunities": 298,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 304,
-    "opportunities": 304
+    "announcementsRead": 298,
+    "opportunities": 298
   },
   "notices": [
     {
@@ -1157,16 +1157,6 @@
       "url": "https://cido.diba.cat/oposicions/22367182"
     },
     {
-      "id": "CIDO5-22365543",
-      "title": "1 plaça de Peó de jardineria",
-      "entity": "Ajuntament de Sant Pere de Torelló",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22365543"
-    },
-    {
       "id": "CIDO5-22361428",
       "title": "1 plaça de Director executiu de Protecció Civil",
       "entity": "Ajuntament del Prat de Llobregat",
@@ -1495,16 +1485,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21872765"
-    },
-    {
-      "id": "CIDO5-19109859",
-      "title": "2 places de Tècnic d'administració general",
-      "entity": "Ajuntament de Martorell",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/19109859"
     },
     {
       "id": "CIDO5-17274473",
@@ -2255,36 +2235,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22320983"
-    },
-    {
-      "id": "CIDO5-22319541",
-      "title": "Borsa de treball de places de Mestre de l'escola bressol",
-      "entity": "Ajuntament de Sant Feliu de Codines",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22319541"
-    },
-    {
-      "id": "CIDO5-22319538",
-      "title": "Borsa de treball de places de Tècnic d'educació infantil de l'escola bressol",
-      "entity": "Ajuntament de Sant Feliu de Codines",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22319538"
-    },
-    {
-      "id": "CIDO5-22319433",
-      "title": "1 plaça de Tècnic mitjà enginyer, especialista en llicències d'activitats",
-      "entity": "Ajuntament de Sabadell",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22319433"
     },
     {
       "id": "CIDO5-22318934",
@@ -3065,16 +3015,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22237838"
-    },
-    {
-      "id": "CIDO5-22249975",
-      "title": "Borsa de treball de Tècnic mitjà en habitatge",
-      "entity": "Ajuntament de Manlleu",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22249975"
     },
     {
       "id": "CIDO5-22249852",
