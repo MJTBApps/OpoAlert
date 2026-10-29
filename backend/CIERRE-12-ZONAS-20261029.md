@@ -25,7 +25,7 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 
 ## Estado efectivo
 - Fuentes nuevas verificadas en esta fase: **Segovia y Salamanca (2)**. Quedan **10** ámbitos pendientes de los 12 iniciales. Las demás fuentes con errores siguen excluidas.
-- Base que funciona y conserva La Rioja: **OpoAlert 1.27**, https://github.com/MJTBApps/OpoAlert/actions/runs/40889807797/artifacts/12904466271.
+- Base acumulativa vigente: **OpoAlert 1.29** con La Rioja, Segovia y Salamanca, https://github.com/MJTBApps/OpoAlert/actions/runs/40900571011/artifacts/12908917537. Las versiones 1.27 y 1.28 siguen archivadas.
 - Bloqueos de red y validación externa están abiertos. Recuperar acceso oficial y **repetir auditoría entera** antes de incorporar provincias y crear nueva APK.
 - La cobertura parcial procedente del BOE nacional, DOCM o BOCYL no sustituye los BOP provinciales.
 
@@ -59,4 +59,13 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 - Incluye el boletín extraordinario n.º 197 del 12 de octubre; la edición n.º 210 del 29 octubre tiene un anuncio con un PDF de 116 páginas.
 - Validación independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40900088560 ; artefacto `salamanca-bop-auditado-30dias`, ID `12908991286`.
 - Código: `backend/salamanca_bop.py` y `backend/validar_apk_salamanca.py`.
-- En Android: `Castilla y León > Salamanca`, snapshot `assets/verified/SA.json` en APK privada 1.29, sin sincronización diaria automática.
+- En Android: `Castilla y León > Salamanca`, snapshot `assets/verified/SA.json` en APK privada 1.29, compilada y validada, sin sincronización diaria automática.
+
+## APK 1.29 verificada
+
+- Compilación y tests Android: **success** en https://github.com/MJTBApps/OpoAlert/actions/runs/40900571011
+- Artifact ZIP (contiene `OpoAlert-Espana-1.29.0-PRUEBA.apk`): https://github.com/MJTBApps/OpoAlert/actions/runs/40900571011/artifacts/12908917537
+- `applicationId=es.opoalert.app.melilla`, `versionCode=42`, `versionName=1.29.0-privada`. Instalación de prueba paralela, no Play Store.
+- SHA-256 del APK: `e2ac09867a6f6f7865d8ce0425ec6be0e4ded0f1dd3eef87913ca39f2d22f891`.
+- El ZIP contiene el paquete de pruebas, y la APK verificó `assets/verified/SA.json`, `SG.json`, `RI.json` y todos los archivos privados anteriores.
+- **Restan diez** ámbitos territoriales de los doce que faltaban al empezar el 29/10/2026.
