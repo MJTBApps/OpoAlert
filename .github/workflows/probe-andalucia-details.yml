@@ -1,0 +1,19 @@
+name: OpoAlert - Comprobar 30 dias Granada Sevilla y portales andaluces
+on:
+  push:
+    branches: [feature/andalucia-resto-20261029]
+    paths: ['backend/probe_andalucia_details.py','.github/workflows/probe-andalucia-details.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  analizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/probe_andalucia_details.py
