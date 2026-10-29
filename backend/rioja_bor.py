@@ -28,6 +28,7 @@ PROVINCE="La Rioja (BOR)"
 START=date(2026,9,30)
 END=date(2026,10,29)
 HTTP=threading.local()
+PREFER_PDF=False
 REF_RE=re.compile(r"[A-Za-z0-9-]{6,90}")
 def invalid(message):
     raise ProvincialCoverageError("La Rioja BOR: "+str(message))
@@ -180,10 +181,14 @@ def verify_notice(notice):
     # The official PDF viewer is intermittently unresponsive. Do not send the user
     # to a PDF until its bytes have been positively verified. The same Government
     # XML API publishes the original full HTML body, a safe official fallback.
-    try:
-        fetch(notice["url"],pdf=True,attempts=1)
-        notice["originalFormat"]="pdf"
-    except ProvincialCoverageError:
+    if PREFER_PDF:
+        try:
+            fetch(notice["url"],pdf=True,attempts=1)
+            notice["originalFormat"]="pdf"
+        except ProvincialCoverageError:
+            notice["url"]=official
+            notice["originalFormat"]="official_xml"
+    else:
         notice["url"]=official
         notice["originalFormat"]="official_xml"
     return notice
@@ -207,5 +212,7 @@ def audit():
 if __name__=="__main__":
     a=argparse.ArgumentParser()
     a.add_argument("--output",type=Path,required=True)
+    a.add_argument("--prefer-pdf",action="store_true",help="Use PDF when reachable; XML otherwise")
     args=a.parse_args()
+    PREFER_PDF=args.prefer_pdf
     write_output(args.output,audit())
