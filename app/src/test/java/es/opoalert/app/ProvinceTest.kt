@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Soria", "Castilla y León (BOCYL)", "Badajoz", "Cáceres", "Extremadura (DOE)", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Soria", "Castilla y León (BOCYL)", "Badajoz", "Cáceres", "Extremadura (DOE)", "Región de Murcia (BORM)", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -53,6 +53,9 @@ class ProvinceTest {
         assertEquals(Province.BADAJOZ_BOP, Province.fromNoticeId("BD-2026-165015"))
         assertEquals(Province.CACERES_BOP, Province.fromNoticeId("CC-2026-4651"))
         assertEquals(Province.EXTREMADURA_DOE, Province.fromNoticeId("EX-2026-26AC0067"))
+        assertEquals(Province.MURCIA_BORM, Province.fromNoticeId("MU-2026-5121"))
+        assertTrue(Province.MURCIA_BORM.idPattern.matches("MU-2026-5121"))
+        assertTrue(Province.MURCIA_BORM.allowsOfficialPath("/services/anuncio/845803/pdf"))
         assertTrue(Province.BADAJOZ_BOP.allowsOfficialPath("/ficheros/bop/bopedictos/2026-10-29000000_4283.pdf"))
         assertTrue(Province.CACERES_BOP.allowsOfficialPath("/bop/services/anuncios/contenidoPdfIdAnuncio"))
         assertTrue(Province.EXTREMADURA_DOE.allowsOfficialPath("/pdfs/doe/2026/2090o/26050120.pdf"))
@@ -70,8 +73,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(36, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(37, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(33, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(34, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
