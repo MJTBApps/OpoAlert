@@ -17,6 +17,7 @@ from threading import local
 import re
 import ssl
 import requests
+import time
 from requests.adapters import HTTPAdapter
 from bs4 import BeautifulSoup
 from clm_common import employment, publish_audit, write_output
@@ -74,17 +75,23 @@ def request_json(endpoint, payload):
     if endpoint not in ("dogc/calendarDOGC", "dogc/summaryDOGC",
                         "dogc/documentDOGC", "suplement/summarySuplement"):
         fail("endpoint externo al API editorial")
-    url = BASE+endpoint
-    try:
-        r = session().post(url, data=payload, timeout=(10,40), allow_redirects=False)
-        if r.status_code != 200 or r.url != url or len(r.content)>3_000_000:
-            fail(f"respuesta oficial invalida {endpoint}: HTTP {r.status_code}")
-        obj = r.json()
-        if not isinstance(obj,dict) or obj.get("errorCode"):
-            fail(f"API DOGC devolvio error: {str(obj)[:200]}")
-        return obj
-    except (requests.RequestException, ValueError) as ex:
-        fail(f"API DOGC inaccesible: {endpoint}: {str(ex)[:160]}")
+    url=BASE+endpoint
+    for attempt in range(4):
+        try:
+            r=session().post(url,data=payload,timeout=(10,36),allow_redirects=False)
+            if r.status_code!=200 or r.url!=url or len(r.content)>3_000_000:
+                fail(f"respuesta oficial invalida {endpoint}: HTTP {r.status_code}")
+            obj=r.json()
+            if not isinstance(obj,dict) or obj.get("errorCode"):
+                fail(f"API DOGC devolvio error: {str(obj)[:200]}")
+            return obj
+        except (requests.Timeout,requests.ConnectionError) as ex:
+            if attempt==3:
+                fail(f"API DOGC inaccesible tras 4 intentos: {endpoint}: {str(ex)[:160]}")
+            time.sleep(1.5*(attempt+1))
+        except (requests.RequestException,ValueError) as ex:
+            fail(f"API DOGC respuesta invalida: {endpoint}: {str(ex)[:160]}")
+    fail("API DOGC sin respuesta")
 
 def norm(s):
     return re.sub(r"\s+"," ",fold(str(s or ""))).strip()
@@ -297,7 +304,8 @@ def audit():
     if len({task[0] for task in tasks})!=len(tasks):
         fail("documento candidato repetido en varios boletines")
     originals=[]
-    with ThreadPoolExecutor(max_workers=5) as pool:
+    print("DOGC_INDEXADOS:",len(all_editions),"sumarios y",sum(x["read"] for x in all_editions),"documentos. Candidatos originales a verificar:",len(tasks),flush=True)
+    with ThreadPoolExecutor(max_workers=2) as pool:
         validated=list(pool.map(official_original,tasks))
     by_issue={x["number"]:x for x in all_editions}
     for notice,meta in validated:
