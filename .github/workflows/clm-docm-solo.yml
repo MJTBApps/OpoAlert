@@ -18,7 +18,8 @@ jobs:
       - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
       - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
       - run: python -m compileall -q backend/clm_docm.py
-      - run: python -u backend/clm_docm.py --output auditados/castilla_mancha_docm.json
+      - name: Auditar DOCM 30 días con lectura secuencial
+        run: python -u backend/clm_docm.py --output auditados/castilla_mancha_docm.json
       - uses: actions/upload-artifact@v4
         with:
           name: docm-auditado-local
