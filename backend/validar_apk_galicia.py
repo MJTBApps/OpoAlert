@@ -74,7 +74,7 @@ def audit(root:Path):
             try:day=date_from_notice(row)
             except Exception as e:raise ValueError(f"{code}: fecha de aviso incorrecta") from e
             ident=row.get("id","")
-            if (not ident.startswith(code+"-2026-") or ident in ids
+            if (not ident.startswith(("PO-2026" if code=="PO" else code+"-2026-")) or ident in ids
                 or row.get("province")!=province
                 or not row.get("title","").strip() or not row.get("entity","").strip()
                 or row.get("type") not in ("Bolsa de trabajo","Plaza / oposición")
