@@ -91,6 +91,8 @@ def check_pdf(url):
   good=head.startswith(b"%PDF-");r.close()
   if not good:invalid("BOA: PDF original no recuperable")
  except requests.RequestException as e:invalid(f"BOA: PDF inaccesible: {e}")
+def comparable(value):
+ return " ".join(fold(value).split())
 def audit():
  data=read_json(download())
  other=read_xml(download(xml=True))
@@ -99,7 +101,7 @@ def audit():
  grouped=defaultdict(list)
  for ident,r in data.items():
   x=other[ident]
-  if x["date"]!=r["date"] or fold(x["title"])!=fold(r["title"]) or fold(x["agency"])!=fold(r["agency"]) or x["pdfs"]!=r["pdfs"]:
+  if x["date"]!=r["date"] or comparable(x["title"])!=comparable(r["title"]) or comparable(x["agency"])!=comparable(r["agency"]) or x["pdfs"]!=r["pdfs"]:
    invalid(f"BOA: XML difiere del JSON en {ident}; dates={x['date']==r['date']}, titles={fold(x['title'])==fold(r['title'])}, agencies={fold(x['agency'])==fold(r['agency'])}, urls={x['pdfs']==r['pdfs']}; titulo_xml={x['title'][:280]!r}, titulo_json={r['title'][:280]!r}, pdf_xml={x['pdfs']}, pdf_json={r['pdfs']}")
   day=datetime.strptime(r["date"],"%Y%m%d").date()
   grouped[(day,int(r["num"]))].append((ident,r))
