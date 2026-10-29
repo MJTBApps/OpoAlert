@@ -15,7 +15,7 @@ URL_RE=re.compile(r"https://www\.boa\.aragon\.es/cgi-bin/EBOA/BRSCGI\?CMD=VEROBJ
 def urls(value):
  if not isinstance(value,str):invalid("BOA: enlace no textual")
  found=URL_RE.findall(value)
- remainder=URL_RE.sub("",value).strip(" \r\n\t"+chr(96)+"´")
+ remainder=re.sub(r"</?enlace>", "",URL_RE.sub("",value),flags=re.I).strip(" \r\n\t"+chr(96)+"´")
  if not 1<=len(found)<=3 or remainder or len(found)!=len(set(found)):
   invalid(f"BOA: PDF irregular, {value[:135]}")
  for target in found:
