@@ -209,6 +209,7 @@ class NoticeDetailActivity : Activity() {
             "Alicante" -> "Boletín Oficial de la Provincia de Alicante"
             "Castellón" -> "Boletín Oficial de la Provincia de Castellón"
             "España (BOE)" -> "Boletín Oficial del Estado (BOE)"
+            "Madrid" -> "Boletín Oficial de la Comunidad de Madrid (BOCM)"
             "Tarragona (BOP)" -> "Boletín Oficial de la Provincia de Tarragona"
             "Barcelona (BOP)" -> "Boletín Oficial de la Provincia de Barcelona"
             "Girona (BOP)" -> "Boletín Oficial de la Provincia de Girona"
@@ -225,7 +226,7 @@ class NoticeDetailActivity : Activity() {
             "Actualización " + notice.date + "   ·   Ref. " + notice.id
         else if (notice.id.startsWith("BA-"))
             "BOP Barcelona · " + notice.date + "   ·   Registro " + notice.id
-        else (if (notice.province == Province.BOE.label) "BOE n.º " else "BOP n.º ") +
+        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; else -> "BOP n.º " }) +
             notice.bulletin + "   ·   Registro " + notice.id
         card.addView(text(reference, 11f, "#60748C").apply {
             setPadding(dp(2), dp(8), 0, 0)
@@ -274,7 +275,7 @@ class NoticeDetailActivity : Activity() {
 
     private fun share() {
         val message = NoticeText.headline(notice.title) + "\n" + notice.entity +
-            "\n" + (if (notice.id.startsWith("CIDO")) "CIDO" else if (notice.id.startsWith("BOE-A-")) "BOE" else "BOP") + " " + notice.province + " · " + notice.date +
+            "\n" + (if (notice.id.startsWith("CIDO")) "CIDO" else if (notice.id.startsWith("BOE-A-")) "BOE" else if (notice.id.startsWith("MD-")) "BOCM" else "BOP") + " " + notice.province + " · " + notice.date +
             " · Registro " + notice.id + "\n" + notice.url +
             "\n\nVerifica las bases y los plazos en el anuncio oficial."
         try {
