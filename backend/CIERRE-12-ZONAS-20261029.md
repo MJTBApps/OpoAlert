@@ -15,7 +15,7 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 | AB | Albacete | `bop.dipualba.es` ConnectTimeout. Portada de la Diputación y sede HTTP 200, sin sumarios BOP completos. |
 | CU | Cuenca | `www.dipucuenca.es` HTTP 403 (F5), inclusive ruta PDF y raíz. |
 | BU | Burgos | `bopbur.diputaciondeburgos.es` y `www.burgos.es` ConnectTimeout. |
-| SA | Salamanca | `sede.diputaciondesalamanca.gob.es/BOP/` ConnectTimeout; portada `www.lasalina.es` accesible, redirige a la sede bloqueada. |
+| SA | **Salamanca — CERRADA** | Aunque la sede BOP no responde, el espejo oficial www.lasalina.es/documentacion/bop/2026/ ofrece 22 índices PDF n.º 189–210 y los 327 originales CVE. 8 candidatas, filtradas resoluciones finales y presupuestos. Auditoría independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40900088560 . Instantánea privada para APK 1.29. |
 | SG | **Segovia — CERRADA** | El calendario oficial de septiembre y octubre permite recuperar 13 ediciones consecutivas, del BOP n.º 117 (30/09) al 129 (28/10). Se comprobaron sus 13 PDF originales y los 274 anuncios de los sumarios: 14 candidatas. La auditoría independiente está aprobada: https://github.com/MJTBApps/OpoAlert/actions/runs/40897405178 . Copia únicamente en APK privada 1.28, sin actualización diaria automática. |
 | VD | Valladolid | `bop.sede.diputaciondevalladolid.es` y web provincial ConnectTimeout. |
 | AS | Asturias | `miprincipado.asturias.es` y `sede.asturias.es` ConnectTimeout. `www.asturias.es/bopa/` da 404, no es el índice BOPA. |
@@ -24,7 +24,7 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 | CE | Ceuta | `www.ceuta.es/ceuta/bocce`, archivo anual jDownloads y `sede.ceuta.es` ConnectTimeout. Portales periodísticos no son fuente oficial íntegra. |
 
 ## Estado efectivo
-- Fuentes nuevas verificadas en esta fase: **Segovia (1)**. Quedan **11** ámbitos pendientes de los 12 iniciales. Las demás fuentes con errores siguen excluidas.
+- Fuentes nuevas verificadas en esta fase: **Segovia y Salamanca (2)**. Quedan **10** ámbitos pendientes de los 12 iniciales. Las demás fuentes con errores siguen excluidas.
 - Base que funciona y conserva La Rioja: **OpoAlert 1.27**, https://github.com/MJTBApps/OpoAlert/actions/runs/40889807797/artifacts/12904466271.
 - Bloqueos de red y validación externa están abiertos. Recuperar acceso oficial y **repetir auditoría entera** antes de incorporar provincias y crear nueva APK.
 - La cobertura parcial procedente del BOE nacional, DOCM o BOCYL no sustituye los BOP provinciales.
@@ -50,3 +50,13 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 - Dentro del ZIP: `OpoAlert-Espana-1.28.0-PRUEBA.apk`, versionCode 41, versionName 1.28.0-privada, paquete de pruebas `es.opoalert.app.melilla`.
 - SHA-256 APK: `055c89643c7b68f292f78477829772020c13c6dec6e07b4f0dc53d74e444700e`.
 - Archivo `assets/verified/SG.json` comprobado dentro de la APK junto con `RI.json` de La Rioja y demás fuentes anteriores. Ediciones, avisos y PDF corresponden al período 30/09-29/10/2026, **instantánea privada**, no sincronización automática.
+
+## Cierre adicional: Salamanca BOP (29/10/2026)
+
+- Acceso alternativo del organismo editor: https://www.lasalina.es/documentacion/bop/2026/.
+- **22 índices PDF n.º 189–210** (30 septiembre–29 octubre, incluidos), con comprobación de fechas y numeración.
+- **327 CVE** cotejados uno a uno con sus PDF originales; **8 posibles convocatorias** extraídas del índice oficial y cotejadas con el PDF correspondiente.
+- Incluye el boletín extraordinario n.º 197 del 12 de octubre; la edición n.º 210 del 29 octubre tiene un anuncio con un PDF de 116 páginas.
+- Validación independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40900088560 ; artefacto `salamanca-bop-auditado-30dias`, ID `12908991286`.
+- Código: `backend/salamanca_bop.py` y `backend/validar_apk_salamanca.py`.
+- En Android: `Castilla y León > Salamanca`, snapshot `assets/verified/SA.json` en APK privada 1.29, sin sincronización diaria automática.
