@@ -119,7 +119,7 @@ def toc_from_pdf(pdf,day,number,kind="ordinario"):
         # Se cuenta su anuncio pero no se presenta como empleo público.
         results=[("Relación de Secciones, Mesas y Locales Electorales",
             "Oficina del Censo Electoral",min(2,len(pdf)),None)]
-    if len(results)<(1 if kind=="extraordinario" else 2):invalid("Palencia: no se puede recuperar sumario original de anuncios")
+    if len(results)<(1 if kind=="extraordinario" else 2):invalid(f"Palencia: sin sumario {day} BOP{number} {kind}, {len(results)} entradas, portada {first[:280]!r}")
     return results
 
 def scan(item):
