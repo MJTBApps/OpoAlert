@@ -16,6 +16,7 @@ object SourceCatalog {
     private fun territoryOf(source: Province): Territory? = when (source) {
         Province.BOE -> null
         Province.MADRID -> Territory("Comunidad de Madrid", "Madrid")
+        Province.HUELVA_BOP -> Territory("Andalucía", "Huelva")
         Province.ALBACETE -> Territory("Castilla-La Mancha", "Albacete")
         Province.CIUDAD_REAL -> Territory("Castilla-La Mancha", "Ciudad Real")
         Province.CUENCA -> Territory("Castilla-La Mancha", "Cuenca")
@@ -50,7 +51,11 @@ object SourceCatalog {
         "Castilla-La Mancha" to listOf("Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Diario autonómico"),
     )
 
-    fun groups(sources: List<Province> = Province.entries): List<BulletinCommunity> {
+    val availableSources: List<Province> = Province.entries.filterNot {
+        it == Province.ALBACETE || it == Province.CUENCA
+    }
+
+    fun groups(sources: List<Province> = availableSources): List<BulletinCommunity> {
         val placed = sources.filter { it != Province.BOE }.groupBy { territoryOf(it)!!.community }
         return placed.map { (community, values) ->
             val places = values.groupBy { territoryOf(it)!!.province }
