@@ -146,3 +146,16 @@ La comunidad autónoma se incorpora al selector territorial con **Badajoz**, **C
 - **DOE Extremadura**, fuente https://doe.juntaex.es/: 22 ediciones (incluye la extraordinaria de 28/10), 527 anuncios y 50 candidatas. Índice oficial de 30 días, PDF completo de cada edición y PDF original de cada candidata, incluidos los documentos con identificadores alfanuméricos. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40850174258
 
 **Total:** 66 ediciones, 1.591 anuncios revisados y 129 anuncios candidatos. No equivalen a 129 plazas confirmadas; no se inventan requisitos, plazos ni enlaces de inscripción. Las instantáneas incluidas en la APK no se actualizan automáticamente, y se indica esto al usuario en el estado de la fuente. Se validan con `backend/validar_apk_ext.py` y pruebas de Android antes de distribuir la APK privada.
+
+
+## Región de Murcia — BORM auditado, APK privada 1.19 (29/10/2026)
+
+Murcia es una comunidad uniprovincial y **el BORM** es la fuente oficial que contiene tanto los anuncios de la Comunidad Autónoma como los de las entidades locales murcianas. No se duplica como BOP separado. Se incorpora al selector de la app mediante **Región de Murcia → Murcia → BORM**.
+
+- Índice oficial de datos abiertos del BORM: https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json (contiene título, administración, anunciante, fecha, NPE, PDF original y número de boletín). Portal del original: https://www.borm.es/
+- Lectura auditada: últimos 30 días, **30/09/2026–29/10/2026**; **26 ediciones, 593 anuncios y 50 coincidencias conservadoras de empleo público**. Incluye 25 BORM ordinarios (números 226–250) y el extraordinario **2 del 12/10/2026**, etiquetado internamente como 2E. Se contrasta la continuidad de los números de los boletines y el NPE con fecha, anuncio y PDF.
+- Los **50 documentos candidatos** se verificaron mediante lectura del encabezado PDF de https://www.borm.es/services/anuncio/{id}/pdf; sin inventar plazas, sedes de inscripción o plazos. Una coincidencia de texto no significa necesariamente una plaza nueva.
+- Auditoría satisfactoria: https://github.com/MJTBApps/OpoAlert/actions/runs/40853666976
+- Fuente Android: código MU, id `MU-2026-...`; instantánea local privada y versión debug aislada `es.opoalert.app.mur`, con nombre **OpoAlert Murcia** y versión **1.19.0-privada**. Conserva las fuentes verificadas previas. No se publican estos índices en GitHub Pages ni se sustituyen las APK instaladas anteriormente. Los registros incluidos son una fotografía del 29 de octubre y no se actualizan automáticamente.
+
+La compilación privada valida `backend/validar_apk_murcia.py`, los validadores anteriores de Extremadura, Castilla y León, Madrid, Huelva y Castilla-La Mancha, y los test unitarios Android.
