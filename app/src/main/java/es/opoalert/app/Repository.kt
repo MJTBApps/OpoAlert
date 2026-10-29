@@ -66,9 +66,9 @@ object Repository {
         val downloaded = mutableListOf<Pair<Province, RemoteFeed>>()
         val failures = mutableListOf<String>()
         // The Android app reads validated JSON; it never scrapes BOP HTML.
-        for (province in Province.entries.filter { it in chosen }) {
+        for (province in SourceCatalog.availableSources.filter { it in chosen }) {
             try {
-                downloaded.add(province to RemoteFeedReader.fetch(province.feedUrl, province))
+                downloaded.add(province to RemoteFeedReader.fetch(province.feedUrl, province, ctx))
             } catch (_: Exception) {
                 failures.add(province.label)
             }
