@@ -9,6 +9,7 @@ SOURCES={
  "AV":("Ávila","https://www.diputacionavila.es/boletin-oficial/2026/","www.diputacionavila.es","/bops/2026/",r"AV-\d{4}-\d{1,7}",22,226,4),
  "LN":("León","https://bop.dipuleon.es/publica/consulta-de-bops/","bop.dipuleon.es","/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",r"LN-\d{4}-\d{6}",20,531,32),
  "ZM":("Zamora","https://www.diputaciondezamora.es/opencms/servicios/BOP/busqueda-en-el-bop/","www.diputaciondezamora.es","/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/",r"ZM-\d{9}",14,225,4),
+ "PL":("Palencia","https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia","www.diputaciondepalencia.es","/system/files/bop/2026/",r"PL-\d{8}-\d{3}",14,289,7),
  "SR":("Soria","https://bop.dipsoria.es/index.php/mod.boloficial/relmenu.149","bop.dipsoria.es","/index.php/mod.documentos/mem.descargar/fichero.documentos_",r"SR-\d{4}-\d{1,6}",11,257,3),
  "CY":("Castilla y León (BOCYL)","https://bocyl.jcyl.es/","bocyl.jcyl.es","/boletines/",r"CY-\d{8}-\d{1,4}",21,869,205),
 }
@@ -43,6 +44,6 @@ def validate(root):
                 raise ValueError(f"{code}: registro o PDF original ajeno al BOP")
         total+=len(notice);allread+=expected_read
         print(f"CYL VERIFICADO {code}: {expected_issues} boletines, {expected_read} anuncios, {len(notice)} candidatas",flush=True)
-    print(f"CYL VALIDA: 5 fuentes, {allread} anuncios, {total} candidatas",flush=True)
+    print(f"CYL VALIDA: 6 fuentes, {allread} anuncios, {total} candidatas",flush=True)
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("--root",type=Path,required=True);a=p.parse_args();validate(a.root)
