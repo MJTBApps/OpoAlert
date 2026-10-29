@@ -210,9 +210,12 @@ def split_ocr(g:Gazette,text:str,day:date)->tuple[list[dict],int]:
     smatches=AL_SUMMARY.findall(summary) if g.almeria else JA_SUMMARY.findall(summary)
     expected=[int(code) for code,year in smatches if int(year)==year_suffix] if g.almeria else [
         int(code) for year,code in smatches if int(year)==day.year]
-    seen=[code for _,code in correct]
     if not expected or len(set(expected))!=len(expected):
         raise ProvincialCoverageError(f"{g.name} {day}: sumario OCR no legible o códigos duplicados")
+    # Other lines in the document may refer to unrelated resolutions like
+    # 2026/747; only codes printed in the original issue summary count.
+    correct=[(m,code) for m,code in correct if code in set(expected)]
+    seen=[code for _,code in correct]
     if set(expected)!=set(seen) or len(seen)!=len(set(seen)):
         missing=set(expected)-set(seen)
         extra=set(seen)-set(expected)
@@ -263,8 +266,7 @@ def identify(g:Gazette,fragment:str,before:str,raw_code:str)->tuple[str,str]:
     title=" ".join(heading).strip()
     if len(title)>250:title=title[:247].rsplit(" ",1)[0]+"…"
     agencies=[x.strip() for x in before.splitlines() if JA_AGENCY.match(x.strip())]
-    if not agencies:raise ProvincialCoverageError(f"{g.name}: entidad emisor no reconocida: {raw_code}")
-    return agencies[-1][:160],title
+    return (agencies[-1][:160] if agencies else ""),title
 
 def checked_pdf(g:Gazette,url:str,s:requests.Session)->None:
     if g.almeria:
