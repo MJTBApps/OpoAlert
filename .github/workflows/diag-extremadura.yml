@@ -1,0 +1,17 @@
+name: OpoAlert - Diagnosticar BOP Badajoz Caceres y DOE
+on:
+  push:
+    branches: [feature/extremadura-tres-fuentes-20261029]
+    paths: [backend/diag_extremadura.py, .github/workflows/diag-extremadura.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diag_extremadura.py
