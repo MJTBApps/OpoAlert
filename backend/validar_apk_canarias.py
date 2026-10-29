@@ -49,7 +49,9 @@ def audit(path:Path):
    raise ValueError(f"{code}: faltan boletines o extraordinarios")
   dates=h.get("publicationDates",[])
   if code=="IC":
-   if len(dates)!=21 or dates[0]!="2026-09-30" or dates[-1]!="2026-10-29":
+   if (len(dates)!=22 or dates[0]!="2026-09-30" or dates[-1]!="2026-10-29"
+       or dates!=sorted(dates) or dates.count("2026-10-22")!=2
+       or len(set(dates))!=21):
     raise ValueError("BOC: calendario autonómico incompleto")
   elif dates!=BOP_DAYS:
    raise ValueError(f"BOP {province}: calendario provincial no coincide")
