@@ -320,6 +320,13 @@ enum class Province(
         "www.xunta.gal", "/dog/Publicados/",
         Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
     ),
+    BALEARES_BOIB(
+        "IB", "Illes Balears (BOIB)",
+        "https://mjtbapps.github.io/OpoAlert/baleares_boib.json",
+        "https://www.caib.es/eboibfront/es",
+        "www.caib.es", "/eboibfront/",
+        Regex("IB-2026-\\d{1,8}"),
+    ),
     VALENCIA_DOGV(
         "DV", "Comunidad Valenciana (DOGV)",
         "https://mjtbapps.github.io/OpoAlert/valencia_dogv.json",
@@ -393,6 +400,7 @@ enum class Province(
             id.startsWith("AO-") -> ARAGON_BOA
             id.startsWith("BJ-") -> ANDALUCIA_BOJA
             id.startsWith("DV-") -> VALENCIA_DOGV
+            id.startsWith("IB-") -> BALEARES_BOIB
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
