@@ -29,6 +29,20 @@ with requests.Session() as s:
           "pdf":x.find("a",href=re.compile("high.raw")).get("href")[:180] if x.find("a",href=re.compile("high.raw")) else "",
           "id":x.get("id")} for x in soup.select("div.list-frame")[:15]]
   print("JAEN_SEARCH_RAW",repr(res.text[:1600]),flush=True)
+  # Pandora returns a JavaScript navigation rather than HTTP Location.
+  # Follow its declared public destination using the same session cookies.
+  js=re.search(r'window\.location\s*=\s*["\\'](.*?)["\\']',res.text)
+  if js:
+   dest=js.group(1).replace("\\/","/")
+   for next_name,next_url in (("index_vm",requests.compat.urljoin(res.url,dest)),
+                             ("results_vm",requests.compat.urljoin(ROOT,"results.vm"))):
+    follow=s.get(next_url,timeout=(8,30))
+    soup2=BeautifulSoup(follow.content,"html.parser")
+    results2=[{"id":c.get("id"),"text":c.get_text(" ",strip=True)[:320]} for c in soup2.select("div.list-frame")[:15]]
+    print("JAEN_FOLLOW",json.dumps({"step":next_name,"status":follow.status_code,
+       "url":follow.url,"size":len(follow.content),
+       "results":results2,"text":soup2.get_text(" ",strip=True)[:350]},ensure_ascii=True),flush=True)
+
   print("JAEN_SEARCH_ONE",json.dumps({"http":res.status_code,"url":res.url,"len":len(res.content),
     "title":soup.title.get_text(" ",strip=True) if soup.title else "",
     "count":re.search(r"Resultados:\s*[\d.]+",soup.get_text(" ",strip=True)).group(0)
