@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """A Coruña BOP official 30-day per-announcement PDF source audit."""
 from __future__ import annotations
-from datetime import date,timedelta
+from datetime import date,timedelta,datetime
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit,parse_qs,urljoin
 from bs4 import BeautifulSoup
 from clm_common import publish_audit,write_output,invalid
 from galicia_common import galicia_employment
@@ -80,16 +80,35 @@ def read_day(day):
    pdf_check(official)
    notices.append({"id":nid,"province":"A Coruña","title":title,"entity":entity,
     "date":day.strftime("%d/%m/%Y"),"bulletin":str(n),"type":kind,"url":official})
+ prevlink=next((a for a in soup.select('a[href*="cambioBoletin"]')
+               if "anterior" in a.get_text(" ",strip=True).lower()),None)
+ if not prevlink:
+  invalid(f"A Coruña {day}: no tiene navegación oficial al boletín anterior")
+ prev=parse_qs(urlsplit(urljoin(SOURCE,prevlink["href"])).query).get("fechaInput",[])
+ if len(prev)!=1:invalid("A Coruña: no se recupera fecha anterior oficial")
+ try:previous=datetime.strptime(prev[0],"%d/%m/%Y").date()
+ except ValueError:invalid("A Coruña: fecha anterior incoherente")
+ if not previous<day or (day-previous).days>6:
+  invalid(f"A Coruña: fecha anterior no consecutiva {day} / {previous}")
  print("CORUNA",day,n,len(blocks),"anuncios",len(notices),"candidatas",flush=True)
- return {"day":day,"number":str(n),"read":len(blocks),"notices":notices}
+ return ({"day":day,"number":str(n),"read":len(blocks),"notices":notices},previous)
 def audit(today=None):
  end=today or date.today();start=end-timedelta(days=29)
- days=[start+timedelta(days=i) for i in range(30)]
- with ThreadPoolExecutor(max_workers=2) as pool:issues=[x for x in pool.map(read_day,days) if x]
+ issues=[];day=end
+ for i in range(30):
+  if day<start:break
+  result=read_day(day)
+  if result is None:invalid("A Coruña: enlace anterior lleva a boletín inexistente")
+  issue,previous=result
+  issues.append(issue)
+  day=previous
+ if day>=start:invalid("A Coruña: no se pudo recorrer 30 días del archivo oficial")
+ issues.sort(key=lambda x:x["day"])
  seq=[int(x["number"]) for x in issues]
- if not 20<=len(issues)<=27 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
-  invalid(f"A Coruña: número de boletines incompleto {seq}")
- if issues[-1]["day"]!=end:invalid("A Coruña: última edición no auditada")
+ if not 19<=len(issues)<=27 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
+  invalid(f"A Coruña: numeración de boletines incompleta {seq}")
+ if issues[0]["day"]!=start or issues[-1]["day"]!=end:
+  invalid("A Coruña: faltan boletines inicial/final")
  return publish_audit(SOURCE,"A Coruña",issues,today=end)
 if __name__=="__main__":
  p=argparse.ArgumentParser();p.add_argument("--output",type=Path,required=True)
