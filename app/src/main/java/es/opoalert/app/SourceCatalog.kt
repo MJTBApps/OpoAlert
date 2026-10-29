@@ -42,6 +42,7 @@ object SourceCatalog {
         Province.LEON_BOP -> Territory("Castilla y León", "León")
         Province.PALENCIA_BOP -> Territory("Castilla y León", "Palencia")
         Province.ZAMORA_BOP -> Territory("Castilla y León", "Zamora")
+        Province.SEGOVIA_BOP -> Territory("Castilla y León", "Segovia")
         Province.SORIA_BOP -> Territory("Castilla y León", "Soria")
         Province.CYL_BOCYL -> Territory("Castilla y León", "Diario autonómico")
         Province.HUELVA_BOP -> Territory("Andalucía", "Huelva")
