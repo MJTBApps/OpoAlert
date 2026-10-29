@@ -1,0 +1,51 @@
+name: OpoAlert - Auditar Castilla-La Mancha 30 dias (solo pruebas)
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/castilla-la-mancha-completa-20261029]
+    paths: [.github/workflows/clm-auditoria-pruebas.yml]
+permissions:
+  contents: read
+jobs:
+  unitarias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
+      - run: python -m unittest discover -s backend/tests -p test_catalogo_espana.py -v
+  historico:
+    needs: unitarias
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - province: docm
+            script: clm_docm.py
+            output: castilla_mancha_docm.json
+          - province: guadalajara
+            script: clm_guadalajara.py
+            output: guadalajara_bop.json
+          - province: toledo
+            script: clm_toledo.py
+            output: toledo_bop.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - name: Auditar 30 dias del boletin oficial
+        run: python -u backend/${{ matrix.script }} --output auditados/${{ matrix.output }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clm-${{ matrix.province }}-auditado
+          path: auditados/${{ matrix.output }}
+          retention-days: 7
+          if-no-files-found: error
