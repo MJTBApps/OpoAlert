@@ -63,8 +63,12 @@ def parse(html,day,num):
     headings=h.select("h1,h2,h3")
     if not any(re.search(rf"\bBOP\s+{num}\b",x.get_text(" ",strip=True),re.I) for x in headings):
         invalid(f"Soria: número del BOP distinto de {num}")
-    if day.strftime("%d/%m/%Y") not in h.get_text(" ",strip=True):
-        invalid("Soria: fecha del BOP distinta")
+    meses={1:"enero",2:"febrero",3:"marzo",4:"abril",5:"mayo",6:"junio",
+        7:"julio",8:"agosto",9:"septiembre",10:"octubre",11:"noviembre",12:"diciembre"}
+    fecha_natural=f"{day.day} de {meses[day.month]} de {day.year}"
+    texto=h.get_text(" ",strip=True).lower()
+    if day.strftime("%d/%m/%Y") not in texto and fecha_natural not in texto:
+        invalid(f"Soria: fecha del BOP distinta {day}")
     edition=[]
     for a in h.select('a[href*="mem.descargar"]'):
         u=urljoin(SOURCE,a["href"]).replace("http://bop.dipsoria.es/","https://bop.dipsoria.es/",1)
