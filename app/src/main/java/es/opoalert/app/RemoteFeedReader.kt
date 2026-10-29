@@ -23,7 +23,8 @@ object RemoteFeedReader {
         Province.TOLEDO, Province.CLM_DOCM, Province.HUELVA_BOP,
         Province.AVILA, Province.LEON_BOP, Province.ZAMORA_BOP,
         Province.SORIA_BOP, Province.CYL_BOCYL, Province.PALENCIA_BOP,
-        Province.BADAJOZ_BOP, Province.CACERES_BOP, Province.EXTREMADURA_DOE
+        Province.BADAJOZ_BOP, Province.CACERES_BOP, Province.EXTREMADURA_DOE,
+        Province.MURCIA_BORM
     )
 
     fun fetch(address: String, province: Province = Province.VALENCIA, context: Context? = null): RemoteFeed {
