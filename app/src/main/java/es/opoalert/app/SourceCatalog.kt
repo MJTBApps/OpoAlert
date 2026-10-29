@@ -33,6 +33,7 @@ object SourceCatalog {
         Province.LAS_PALMAS_BOP -> Territory("Canarias", "Las Palmas")
         Province.SANTA_CRUZ_BOP -> Territory("Canarias", "Santa Cruz de Tenerife")
         Province.MELILLA_BOME -> Territory("Ciudad Autónoma de Melilla", "Melilla")
+        Province.RIOJA_BOR -> Territory("La Rioja", "Diario autonómico")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -67,7 +68,7 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
@@ -84,6 +85,7 @@ object SourceCatalog {
         "Illes Balears" to listOf("Todas las islas"),
         "Canarias" to listOf("Las Palmas", "Santa Cruz de Tenerife", "Diario autonómico"),
         "Ciudad Autónoma de Melilla" to listOf("Melilla"),
+        "La Rioja" to listOf("Diario autonómico"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
@@ -133,6 +135,7 @@ object SourceCatalog {
         else if (source == Province.BALEARES_BOIB) "BOIB · boletín autonómico e insular"
         else if (source == Province.CANARIAS_BOC) "BOC · diario autonómico"
         else if (source == Province.MELILLA_BOME) "BOME · boletín de la ciudad autónoma"
+        else if (source == Province.RIOJA_BOR) "BOR · diario autonómico"
         else if (source == Province.LAS_PALMAS_BOP || source == Province.SANTA_CRUZ_BOP) "BOP · boletín provincial"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
