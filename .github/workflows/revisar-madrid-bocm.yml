@@ -1,0 +1,59 @@
+name: OpoAlert - Revisar y publicar BOCM Madrid
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 17 * * *'
+  push:
+    branches: [main]
+    paths:
+      - backend/madrid_bocm.py
+      - backend/validar_madrid_bocm.py
+      - backend/tests/test_madrid_bocm.py
+      - .github/workflows/revisar-madrid-bocm.yml
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: opoalert-feed-madrid-bocm
+  cancel-in-progress: false
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 39
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -m unittest discover -s backend/tests -p test_madrid_bocm.py -v
+      - name: Recorrer treinta días, boletines extraordinarios y PDFs originales
+        run: python -u backend/madrid_bocm.py --days 30 --output out/madrid_bocm.json
+      - name: Validar independientemente el histórico completo
+        run: python backend/validar_madrid_bocm.py --file out/madrid_bocm.json --require-today
+      - name: Publicar únicamente archivo íntegro verificado
+        run: |
+          set -eu
+          cp out/madrid_bocm.json docs/madrid_bocm.json
+          python backend/validar_madrid_bocm.py --file docs/madrid_bocm.json --require-today
+          git config user.name "OpoAlert Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/madrid_bocm.json
+          if ! git diff --cached --quiet; then
+            git commit -m "OpoAlert: BOCM Madrid verificado"
+            for n in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo 'BOCM Madrid publicado'
+                break
+              fi
+              if [ "$n" -eq 5 ]; then exit 1; fi
+              sleep 4
+            done
+          fi
+      - name: Publicar cambios en GitHub Pages
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-web.yml --ref main
