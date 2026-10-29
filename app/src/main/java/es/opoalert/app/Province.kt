@@ -320,6 +320,13 @@ enum class Province(
         "www.xunta.gal", "/dog/Publicados/",
         Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
     ),
+    RIOJA_BOR(
+        "RI", "La Rioja (BOR)",
+        "https://mjtbapps.github.io/OpoAlert/rioja_bor.json",
+        "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
+        "ias1.larioja.org", "/boletin/Bor_Boletin_visor_Servlet",
+        Regex("RI-2026-[0-9a-f]{18}"),
+    ),
     MELILLA_BOME(
         "ML", "Melilla (BOME)",
         "https://mjtbapps.github.io/OpoAlert/melilla_bome.json",
@@ -433,6 +440,7 @@ enum class Province(
             id.startsWith("LP-") -> LAS_PALMAS_BOP
             id.startsWith("TF-") -> SANTA_CRUZ_BOP
             id.startsWith("ML-") -> MELILLA_BOME
+            id.startsWith("RI-") -> RIOJA_BOR
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
