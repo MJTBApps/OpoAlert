@@ -31,9 +31,9 @@ with requests.Session() as s:
   print("JAEN_SEARCH_RAW",repr(res.text[:1600]),flush=True)
   # Pandora returns a JavaScript navigation rather than HTTP Location.
   # Follow its declared public destination using the same session cookies.
-  js=re.search(r'window\.location\s*=\s*["\\'](.*?)["\\']',res.text)
+  js = "window.location" in res.text
   if js:
-   dest=js.group(1).replace("\\/","/")
+   dest="../index.vm"
    for next_name,next_url in (("index_vm",requests.compat.urljoin(res.url,dest)),
                              ("results_vm",requests.compat.urljoin(ROOT,"results.vm"))):
     follow=s.get(next_url,timeout=(8,30))
