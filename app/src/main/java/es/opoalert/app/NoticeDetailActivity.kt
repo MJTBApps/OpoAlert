@@ -215,6 +215,8 @@ class NoticeDetailActivity : Activity() {
             "Huesca" -> "Boletín Oficial de la Provincia de Huesca"
             "Teruel" -> "Boletín Oficial de la Provincia de Teruel"
             "Zaragoza" -> "Boletín Oficial de la Provincia de Zaragoza"
+            "Almería" -> "Boletín Oficial de la Provincia de Almería"
+            "Jaén" -> "Boletín Oficial de la Provincia de Jaén"
             "Cádiz" -> "Boletín Oficial de la Provincia de Cádiz"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
