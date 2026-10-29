@@ -245,6 +245,7 @@ class NoticeDetailActivity : Activity() {
             "Canarias (BOC)" -> "Boletín Oficial de Canarias (BOC)"
             "Las Palmas (BOP)" -> "Boletín Oficial de la Provincia de Las Palmas"
             "Santa Cruz de Tenerife (BOP)" -> "Boletín Oficial de la Provincia de Santa Cruz de Tenerife"
+            "Melilla (BOME)" -> "Boletín Oficial de la Ciudad Autónoma de Melilla (BOME)"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
         }
@@ -253,7 +254,7 @@ class NoticeDetailActivity : Activity() {
             "Actualización " + notice.date + "   ·   Ref. " + notice.id
         else if (notice.id.startsWith("BA-"))
             "BOP Barcelona · " + notice.date + "   ·   Registro " + notice.id
-        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; Province.CLM_DOCM.label -> "DOCM n.º "; Province.CYL_BOCYL.label -> "BOCYL n.º "; Province.EXTREMADURA_DOE.label -> "DOE n.º "; Province.MURCIA_BORM.label -> "BORM n.º "; Province.PAIS_VASCO_BOPV.label -> "BOPV n.º "; Province.ALAVA_BOTHA.label -> "BOTHA n.º "; Province.BIZKAIA_BOB.label -> "BOB n.º "; Province.GIPUZKOA_BOG.label -> "BOG n.º "; Province.GALICIA_DOG.label -> "DOG n.º "; Province.ARAGON_BOA.label -> "BOA n.º "; Province.ANDALUCIA_BOJA.label -> "BOJA n.º "; Province.VALENCIA_DOGV.label -> "DOGV n.º "; Province.BALEARES_BOIB.label -> "BOIB n.º "; Province.CANARIAS_BOC.label -> "BOC n.º "; else -> "BOP n.º " }) +
+        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; Province.CLM_DOCM.label -> "DOCM n.º "; Province.CYL_BOCYL.label -> "BOCYL n.º "; Province.EXTREMADURA_DOE.label -> "DOE n.º "; Province.MURCIA_BORM.label -> "BORM n.º "; Province.PAIS_VASCO_BOPV.label -> "BOPV n.º "; Province.ALAVA_BOTHA.label -> "BOTHA n.º "; Province.BIZKAIA_BOB.label -> "BOB n.º "; Province.GIPUZKOA_BOG.label -> "BOG n.º "; Province.GALICIA_DOG.label -> "DOG n.º "; Province.ARAGON_BOA.label -> "BOA n.º "; Province.ANDALUCIA_BOJA.label -> "BOJA n.º "; Province.VALENCIA_DOGV.label -> "DOGV n.º "; Province.BALEARES_BOIB.label -> "BOIB n.º "; Province.CANARIAS_BOC.label -> "BOC n.º "; Province.MELILLA_BOME.label -> "BOME n.º "; else -> "BOP n.º " }) +
             notice.bulletin + "   ·   Registro " + notice.id
         card.addView(text(reference, 11f, "#60748C").apply {
             setPadding(dp(2), dp(8), 0, 0)
