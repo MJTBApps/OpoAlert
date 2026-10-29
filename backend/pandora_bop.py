@@ -128,7 +128,7 @@ def issue_entry(g:Gazette,card)->dict:
 def index_page(g:Gazette,html:str,expected_total:int|None=None)->tuple[int,list[dict]]:
     soup=BeautifulSoup(html,"html.parser")
     label=soup.select_one("form#wide-sheet")
-    if label is None or not g.name.casefold() in fold(soup.title.get_text(" ",strip=True) if soup.title else ""):
+    if label is None or fold(g.name) not in fold(soup.title.get_text(" ",strip=True) if soup.title else ""):
         raise ProvincialCoverageError(f"{g.name}: índice HTML no corresponde a hemeroteca oficial")
     match=COUNT_RE.search(soup.get_text(" ",strip=True))
     if not match:raise ProvincialCoverageError(f"{g.name}: total de ediciones no encontrado")
@@ -185,7 +185,7 @@ def parse_date_header(g:Gazette,txt:str,day:date)->int:
     number=int(m.group(1))
     if not 1<=number<=366:
         raise ProvincialCoverageError(f"{g.name}: numero de BOP imposible")
-    if not re.search(r"Bolet[ií]n Oficial de la Provincia de "+g.name,txt[:3000],re.I):
+    if g.almeria and not re.search(r"Bolet[ií]n Oficial de la Provincia de "+g.name,txt[:3000],re.I):
         # Jaen's first page can have a compact header; confirmation on issue archive remains.
         raise ProvincialCoverageError(f"{g.name}: nombre de boletin oficial ausente")
     return number
