@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
@@ -43,6 +43,8 @@ class SourceCatalogTest {
         assertEquals(1, groups[8].sourceCount)
         assertEquals(listOf("Álava", "Bizkaia", "Gipuzkoa", "Diario autonómico"), groups[9].territories.map { it.name })
         assertEquals(4, groups[9].sourceCount)
+        assertEquals(listOf("A Coruña", "Lugo", "Ourense", "Pontevedra", "Diario autonómico"), groups[10].territories.map { it.name })
+        assertEquals(5, groups[10].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
@@ -58,6 +60,8 @@ class SourceCatalogTest {
         assertEquals("BOTHA · boletín territorial de Álava", SourceCatalog.sourceName(Province.ALAVA_BOTHA))
         assertEquals("BOB · boletín territorial de Bizkaia", SourceCatalog.sourceName(Province.BIZKAIA_BOB))
         assertEquals("BOG · boletín territorial de Gipuzkoa", SourceCatalog.sourceName(Province.GIPUZKOA_BOG))
+        assertEquals("DOG · diario autonómico", SourceCatalog.sourceName(Province.GALICIA_DOG))
+        assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.GALICIA_OURENSE))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
     }
