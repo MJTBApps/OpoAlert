@@ -19,14 +19,14 @@ class SourceCatalogTest {
         assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
             groups[0].territories.map { it.name })
-        assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
+        assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona", "Diario autonómico"),
             groups[1].territories.map { it.name })
         assertEquals(listOf(Province.BARCELONA_BOP, Province.BARCELONA),
             groups[1].territories.first().sources)
         assertEquals(listOf(Province.TARRAGONA_BOP, Province.TARRAGONA),
-            groups[1].territories.last().sources)
+            groups[1].territories[3].sources)
         assertEquals(4, groups[0].sourceCount)
-        assertEquals(7, groups[1].sourceCount)
+        assertEquals(8, groups[1].sourceCount)
         assertEquals(listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"), groups[2].territories.map { it.name })
         assertEquals(4, groups[2].sourceCount)
         assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Sevilla", "Diario autonómico"), groups[3].territories.map { it.name })
@@ -72,6 +72,7 @@ class SourceCatalogTest {
         assertEquals("BOA · diario autonómico", SourceCatalog.sourceName(Province.ARAGON_BOA))
         assertEquals("BOJA · diario autonómico", SourceCatalog.sourceName(Province.ANDALUCIA_BOJA))
         assertEquals("DOGV · diario autonómico", SourceCatalog.sourceName(Province.VALENCIA_DOGV))
+        assertEquals("DOGC · diario autonómico", SourceCatalog.sourceName(Province.CATALUNA_DOGC))
         assertEquals("BOIB · boletín autonómico e insular", SourceCatalog.sourceName(Province.BALEARES_BOIB))
         assertEquals("BOC · diario autonómico", SourceCatalog.sourceName(Province.CANARIAS_BOC))
         assertEquals("BOME · boletín de la ciudad autónoma", SourceCatalog.sourceName(Province.MELILLA_BOME))
