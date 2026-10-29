@@ -111,12 +111,12 @@ def text_url(g:Gazette,id_:str)->str:
 
 def issue_entry(g:Gazette,card)->dict:
     title=card.get_text(" ",strip=True)
-    matches=DATE_RE.findall(title)
+    matches=set(DATE_RE.findall(title))
     pm=PAGES_RE.search(title)
     a=card.find("a",href=re.compile(r"^high\.raw\?"))
     if len(matches)!=1 or not pm or a is None:
         raise ProvincialCoverageError(f"{g.name}: ficha de edición sin fecha/páginas/PDF")
-    day=date(*reversed([int(n) for n in matches[0]]))
+    day=date(*reversed([int(n) for n in next(iter(matches))]))
     pages=int(pm.group(1))
     if not 1<=pages<=600:raise ProvincialCoverageError(f"{g.name}: tamaño BOP inverosimil")
     url,id_=pdf_url(g,a["href"])
@@ -226,6 +226,8 @@ def split_ocr(g:Gazette,text:str,day:date)->tuple[list[dict],int]:
         agency,title=identify(g,fragment,before,match.group(0))
         kind=classify(title)
         if kind is None:continue
+        if not agency:
+            raise ProvincialCoverageError(f"{g.name} {day}: emisor de convocatoria ausente {code}")
         notices.append({"code":code,"title":title,"agency":agency,"type":kind})
     return notices,len(expected)
 
@@ -236,10 +238,10 @@ def identify(g:Gazette,fragment:str,before:str,raw_code:str)->tuple[str,str]:
         # The body begins with issuer, often followed by the ministry/office,
         # then "ANUNCIO" / "EDICTO" and the complete first paragraph.
         issuer=next((x for x in lines[:5] if AL_AGENCY.search(x)),None)
-        if issuer is None:
-            raise ProvincialCoverageError(f"{g.name}: entidad emisora ausente: {raw_code}")
-        m=AL_AGENCY.search(issuer)
-        agency=issuer[m.start():][:140]
+        agency=""
+        if issuer is not None:
+            m=AL_AGENCY.search(issuer)
+            agency=issuer[m.start():][:140]
         # Determine title only from the opening, never claim inferred deadlines.
         norm=" ".join(lines[:13])
         heading=re.search(r"\b(?:A\s*N\s*U\s*N\s*C\s*I\s*O|E\s*D\s*I\s*C\s*T\s*O|B\s*A\s*S\s*E\s*S)\b",norm,re.I)
