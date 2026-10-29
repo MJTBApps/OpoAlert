@@ -94,7 +94,7 @@ def parse_day(html,day):
             and int(m[4])==int(code[1]) and ann.hostname==HOST and ann.path=="/bop/ventana_anuncio.php"
             and len(id_values)==1 and re.fullmatch(r"\d{5,9}",id_values[0])
             and requested==[day.strftime("%Y%m%d")+"000000"] and title and agency):
-            invalid(f"Badajoz {day}: anuncio, institución o PDF no cotejables")
+            invalid(f"Badajoz {day}: anuncio/PDF incoherente: código={code[1] if code else None}, PDF={url}, urlAnuncio={ann.geturl()}, id={id_values}, fecha={requested}, título={title[:100]}, entidad={agency[:100]}")
         ident=f"BD-{day.year}-{id_values[0]}"
         if ident in seen:invalid("Badajoz: duplicado")
         seen.add(ident)
