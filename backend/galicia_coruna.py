@@ -25,7 +25,7 @@ def get_html(day):
  url=f"https://{HOST}/bopportal/cambioBoletin?fechaInput={day:%d/%m/%Y}"
  try:
   r=session().get(url,timeout=(9,32),allow_redirects=False)
-  if r.status_code in (404,410):return None
+  if r.status_code in (404,410) or (r.status_code==500 and day.weekday()>=5):return None
   if r.status_code!=200 or not 400<len(r.content)<500000:
    invalid(f"A Coruña: HTTP {r.status_code} / incompleto {day}")
   return BeautifulSoup(r.content,"html.parser")
