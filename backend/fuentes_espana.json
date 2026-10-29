@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026. BOCM de Madrid añadido como diario autonómico independiente, sujeto a auditoría de 30 días; no sustituye al BOAM municipal. Castilla-La Mancha: seis fuentes identificadas (BOP de Albacete, Ciudad Real, Cuenca, Guadalajara y Toledo más DOCM), todavía pendientes de auditoría completa; ninguna se declara activa ni publicada. Auditorías locales 29/10: Guadalajara 22/295/12; Toledo 21/541/33; Ciudad Real 22/396/26. DOCM 21 ediciones ordinarias y extraordinarias verificado parcialmente, nueva auditoría incluyendo 30/09 en curso. Sin publicar app ni feeds CLM.",
+  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido.",
   "nationalSources": [
     {
       "code": "VA",
@@ -196,8 +196,16 @@
       "name": "BOCM · Comunidad de Madrid",
       "portal": "https://www.bocm.es/listado-de-boletines",
       "feed": "madrid_bocm.json",
-      "state": "active",
-      "scope": "Diario autonómico de la Comunidad de Madrid; incluye anuncios autonómicos y municipales, boletines extraordinarios y PDF oficiales. No sustituye el BOAM municipal."
+      "state": "private_apk_snapshot",
+      "scope": "Boletín oficial con auditoría de 30 días aprobada; datos de 29/10/2026 empaquetados exclusivamente en la APK de pruebas, sin feed publicado en Pages.",
+      "audit": {
+        "status": "passed_30_days",
+        "checked": "2026-10-29",
+        "issues": 28,
+        "announcementsRead": 1907,
+        "candidates": 316,
+        "publication": "private_apk_only"
+      }
     },
     {
       "code": "AB",
@@ -206,8 +214,13 @@
       "name": "BOP Albacete",
       "portal": "https://bop.dipualba.es/",
       "feed": "albacete_bop.json",
-      "state": "pending",
-      "scope": "Portal oficial no accesible desde el entorno de auditoría; no se habilitará hasta lectura de 30 días."
+      "state": "blocked_official_portal",
+      "scope": "Portal oficial no accesible desde el entorno de auditoría; no se habilitará hasta lectura de 30 días.",
+      "audit": {
+        "status": "blocked",
+        "checked": "2026-10-29",
+        "publication": "none"
+      }
     },
     {
       "code": "CR",
@@ -216,15 +229,15 @@
       "name": "BOP Ciudad Real",
       "portal": "https://bop.dipucr.es/",
       "feed": "ciudad_real_bop.json",
-      "state": "pending",
-      "scope": "Portal oficial localizado; certificado HTTPS del portal requiere comprobación independiente.",
+      "state": "private_apk_snapshot",
+      "scope": "Boletín oficial con auditoría de 30 días aprobada; datos de 29/10/2026 empaquetados exclusivamente en la APK de pruebas, sin feed publicado en Pages.",
       "audit": {
         "status": "passed_30_days",
         "checked": "2026-10-29",
         "issues": 22,
         "announcementsRead": 396,
         "candidates": 26,
-        "publication": "not_published"
+        "publication": "private_apk_only"
       }
     },
     {
@@ -234,8 +247,13 @@
       "name": "BOP Cuenca",
       "portal": "https://www.dipucuenca.es/boletin-oficial-de-la-provincia",
       "feed": "cuenca_bop.json",
-      "state": "pending",
-      "scope": "Portal oficial bloquea solicitudes automáticas desde la infraestructura de auditoría."
+      "state": "blocked_official_portal",
+      "scope": "Portal oficial bloquea solicitudes automáticas desde la infraestructura de auditoría.",
+      "audit": {
+        "status": "blocked",
+        "checked": "2026-10-29",
+        "publication": "none"
+      }
     },
     {
       "code": "GJ",
@@ -244,15 +262,15 @@
       "name": "BOP Guadalajara",
       "portal": "https://boletin.dguadalajara.es/boletin/",
       "feed": "guadalajara_bop.json",
-      "state": "pending",
-      "scope": "Índice oficial por fecha, sumarios y PDF disponibles; auditoría 30 días pendiente.",
+      "state": "private_apk_snapshot",
+      "scope": "Boletín oficial con auditoría de 30 días aprobada; datos de 29/10/2026 empaquetados exclusivamente en la APK de pruebas, sin feed publicado en Pages.",
       "audit": {
         "status": "passed_30_days",
         "checked": "2026-10-29",
         "issues": 22,
         "announcementsRead": 295,
         "candidates": 12,
-        "publication": "not_published"
+        "publication": "private_apk_only"
       }
     },
     {
@@ -262,15 +280,15 @@
       "name": "BOP Toledo",
       "portal": "https://bop.diputoledo.es/webEbop/",
       "feed": "toledo_bop.json",
-      "state": "pending",
-      "scope": "Calendario oficial, sumarios diarios y anuncios con enlace PDF, pendiente auditoría 30 días.",
+      "state": "private_apk_snapshot",
+      "scope": "Boletín oficial con auditoría de 30 días aprobada; datos de 29/10/2026 empaquetados exclusivamente en la APK de pruebas, sin feed publicado en Pages.",
       "audit": {
         "status": "passed_30_days",
         "checked": "2026-10-29",
         "issues": 21,
         "announcementsRead": 541,
         "candidates": 33,
-        "publication": "not_published"
+        "publication": "private_apk_only"
       }
     },
     {
@@ -280,13 +298,33 @@
       "name": "DOCM Castilla-La Mancha",
       "portal": "https://docm.jccm.es/docm/",
       "feed": "castilla_mancha_docm.json",
-      "state": "pending",
-      "scope": "Diario autonómico incluido, distinto de los cinco BOP; auditoría 30 días pendiente.",
+      "state": "private_apk_snapshot",
+      "scope": "Boletín oficial con auditoría de 30 días aprobada; datos de 29/10/2026 empaquetados exclusivamente en la APK de pruebas, sin feed publicado en Pages.",
       "audit": {
-        "status": "rechecking",
+        "status": "passed_30_days",
         "checked": "2026-10-29",
-        "note": "21 boletines y 719 anuncios leídos; falta confirmar el 30 de septiembre y asegurar el extraordinario sin cortes de conexión",
-        "publication": "not_published"
+        "issues": 22,
+        "announcementsRead": 760,
+        "candidates": 31,
+        "publication": "private_apk_only"
+      }
+    },
+    {
+      "code": "HB",
+      "territory": "21",
+      "kind": "bop",
+      "name": "BOP Huelva",
+      "portal": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
+      "feed": "huelva_bop.json",
+      "state": "private_apk_snapshot",
+      "scope": "Boletín oficial con auditoría de 30 días aprobada; datos de 29/10/2026 empaquetados exclusivamente en la APK de pruebas, sin feed publicado en Pages.",
+      "audit": {
+        "status": "passed_30_days",
+        "checked": "2026-10-29",
+        "issues": 22,
+        "announcementsRead": 256,
+        "candidates": 43,
+        "publication": "private_apk_only"
       }
     }
   ],
@@ -505,7 +543,8 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "private_apk_snapshot",
+      "coverageKind": "BOP"
     },
     {
       "ine": "23",
@@ -617,7 +656,8 @@
       "community": "CM",
       "communityName": "Castilla-La Mancha",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "private_apk_snapshot",
+      "coverageKind": "BOP"
     },
     {
       "ine": "16",
@@ -633,7 +673,8 @@
       "community": "CM",
       "communityName": "Castilla-La Mancha",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "private_apk_snapshot",
+      "coverageKind": "BOP"
     },
     {
       "ine": "45",
@@ -641,7 +682,8 @@
       "community": "CM",
       "communityName": "Castilla-La Mancha",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "private_apk_snapshot",
+      "coverageKind": "BOP"
     },
     {
       "ine": "05",
@@ -835,9 +877,9 @@
       "community": "MD",
       "communityName": "Comunidad de Madrid",
       "primaryGazette": "diario_autonomico",
-      "state": "active",
+      "state": "private_apk_snapshot",
       "coverageKind": "BOCM",
-      "diaryState": "active"
+      "diaryState": "private_apk_snapshot"
     },
     {
       "ine": "30",
