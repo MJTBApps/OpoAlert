@@ -1,0 +1,16 @@
+name: OpoAlert - Estructura oficial Segovia y PDF
+on:
+  push:
+    branches: [feature/castilla-y-leon-9-provincias-20261029]
+    paths: [backend/probe_segovia_dom.py,.github/workflows/probe-segovia-dom.yml]
+permissions: {contents: read}
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/probe_segovia_dom.py
