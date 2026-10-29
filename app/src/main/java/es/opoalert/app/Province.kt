@@ -393,7 +393,8 @@ enum class Province(
 
     fun allowsOfficialPath(path: String): Boolean =
         path.startsWith(pdfPathPrefix) ||
-        (this == ALMERIA && path == "/pandora/high.raw")
+        (this == ALMERIA && path == "/pandora/high.raw") ||
+        (this == RIOJA_BOR && path == "/boletin/ExportarBoletinServlet")
 
     companion object {
         fun fromLabel(label: String): Province? = entries.find { it.label == label }
