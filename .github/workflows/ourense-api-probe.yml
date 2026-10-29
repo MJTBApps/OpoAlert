@@ -1,0 +1,17 @@
+name: OpoAlert - Comprobar API oficial BOP Ourense
+on:
+  push:
+    branches: [feature/galicia-cinco-boletines-20261029]
+    paths: [backend/ourense_api_probe.py, .github/workflows/ourense-api-probe.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests
+      - run: python -u backend/ourense_api_probe.py
