@@ -27,6 +27,7 @@ object SourceCatalog {
         Province.GALICIA_DOG -> Territory("Galicia", "Diario autonómico")
         Province.ARAGON_BOA -> Territory("Aragón", "Diario autonómico")
         Province.ANDALUCIA_BOJA -> Territory("Andalucía", "Diario autonómico")
+        Province.VALENCIA_DOGV -> Territory("Comunidad Valenciana", "Diario autonómico")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -64,7 +65,7 @@ object SourceCatalog {
     private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia")
 
     private val provinceOrder = mapOf(
-        "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón"),
+        "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
         "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"),
@@ -120,6 +121,7 @@ object SourceCatalog {
         else if (source == Province.GALICIA_DOG) "DOG · diario autonómico"
         else if (source == Province.ARAGON_BOA) "BOA · diario autonómico"
         else if (source == Province.ANDALUCIA_BOJA) "BOJA · diario autonómico"
+        else if (source == Province.VALENCIA_DOGV) "DOGV · diario autonómico"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
 }
