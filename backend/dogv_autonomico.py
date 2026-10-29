@@ -76,6 +76,22 @@ def calendar():
     if days!=sorted(days) or days[0]!=START or days[-1]!=END:
         invalid("DOGV: faltan primera/última edición")
     return days,is_bis
+def original_path_from_export(did,day,code):
+    """Retrieve original publication PDF through the Generalitat export API."""
+    url=f"https://{HOST}/dogv-portal/export/disposicion/{did}/pdf"
+    try:
+        r=req().get(url,params={"lang":"es_es"},timeout=(12,37),allow_redirects=False,
+                    headers={"Accept":"application/pdf,text/plain"})
+        if r.status_code!=200 or not 10<len(r.content)<1000:
+            invalid(f"DOGV: export oficial no disponible para {did}, HTTP {r.status_code}")
+        path=r.text.strip()
+        match=PDF_RE.fullmatch("/datos"+path)
+        if (not match or not path.startswith(f"/2026/{day:%m/%d}/pdf/")
+            or int(match[3])!=code):
+            invalid(f"DOGV: export no proporciona PDF original del registro {did}: {path[:150]}")
+        return path
+    except requests.RequestException as e:invalid(f"DOGV: export original inaccesible {e}")
+
 def inspect(day):
     first=read_json(BASE,{"date":day.isoformat(),"lang":"es_es"})
     cab=first.get("cabecera",{})
@@ -111,11 +127,14 @@ def inspect(day):
                 invalid(f"DOGV {day}: disposición incompleta o ajena al calendario {obj.get('codigoInsercion')}")
             code=int(mm[1]);ident=f"DV-2026-{code}"
             path=obj.get("urlPdf")
-            if not isinstance(path,str) or not path.startswith(f"/2026/{day:%m/%d}/pdf/"):
-                invalid(f"DOGV {day}: PDF no oficial id={obj.get('codigoInsercion')} path={path!r}")
+            # A consolidated legal version may replace the publication PDF in metadata.
+            # In that case retrieve the original from the Generalitat's export endpoint.
+            if not isinstance(path,str) or not PDF_RE.fullmatch("/datos"+path):
+                path=original_path_from_export(did,day,code)
             m=PDF_RE.fullmatch("/datos"+path)
-            if not m or int(m[3])!=code:
-                invalid(f"DOGV {day}: ruta de la disposición y código no coinciden {path}")
+            if (not m or int(m[3])!=code or int(m[1])!=day.month
+                or int(m[2])!=day.day):
+                invalid(f"DOGV {day}: PDF original incoherente con el sumario {path}")
             if ident in unique or ident in local:invalid(f"DOGV {day}: documento repetido {ident}")
             local.add(ident);unique.add(ident)
             kind=employment(title)
