@@ -210,6 +210,12 @@ class NoticeDetailActivity : Activity() {
             "Castellón" -> "Boletín Oficial de la Provincia de Castellón"
             "España (BOE)" -> "Boletín Oficial del Estado (BOE)"
             "Madrid" -> "Boletín Oficial de la Comunidad de Madrid (BOCM)"
+            "Castilla-La Mancha (DOCM)" -> "Diario Oficial de Castilla-La Mancha (DOCM)"
+            "Albacete" -> "Boletín Oficial de la Provincia de Albacete"
+            "Ciudad Real" -> "Boletín Oficial de la Provincia de Ciudad Real"
+            "Cuenca" -> "Boletín Oficial de la Provincia de Cuenca"
+            "Guadalajara" -> "Boletín Oficial de la Provincia de Guadalajara"
+            "Toledo" -> "Boletín Oficial de la Provincia de Toledo"
             "Tarragona (BOP)" -> "Boletín Oficial de la Provincia de Tarragona"
             "Barcelona (BOP)" -> "Boletín Oficial de la Provincia de Barcelona"
             "Girona (BOP)" -> "Boletín Oficial de la Provincia de Girona"
@@ -226,7 +232,7 @@ class NoticeDetailActivity : Activity() {
             "Actualización " + notice.date + "   ·   Ref. " + notice.id
         else if (notice.id.startsWith("BA-"))
             "BOP Barcelona · " + notice.date + "   ·   Registro " + notice.id
-        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; else -> "BOP n.º " }) +
+        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; Province.CLM_DOCM.label -> "DOCM n.º "; else -> "BOP n.º " }) +
             notice.bulletin + "   ·   Registro " + notice.id
         card.addView(text(reference, 11f, "#60748C").apply {
             setPadding(dp(2), dp(8), 0, 0)
@@ -275,7 +281,7 @@ class NoticeDetailActivity : Activity() {
 
     private fun share() {
         val message = NoticeText.headline(notice.title) + "\n" + notice.entity +
-            "\n" + (if (notice.id.startsWith("CIDO")) "CIDO" else if (notice.id.startsWith("BOE-A-")) "BOE" else if (notice.id.startsWith("MD-")) "BOCM" else "BOP") + " " + notice.province + " · " + notice.date +
+            "\n" + (if (notice.id.startsWith("CIDO")) "CIDO" else if (notice.id.startsWith("BOE-A-")) "BOE" else if (notice.id.startsWith("MD-")) "BOCM" else if (notice.id.startsWith("CM-")) "DOCM" else "BOP") + " " + notice.province + " · " + notice.date +
             " · Registro " + notice.id + "\n" + notice.url +
             "\n\nVerifica las bases y los plazos en el anuncio oficial."
         try {

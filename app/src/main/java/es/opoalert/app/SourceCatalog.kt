@@ -16,6 +16,12 @@ object SourceCatalog {
     private fun territoryOf(source: Province): Territory? = when (source) {
         Province.BOE -> null
         Province.MADRID -> Territory("Comunidad de Madrid", "Madrid")
+        Province.ALBACETE -> Territory("Castilla-La Mancha", "Albacete")
+        Province.CIUDAD_REAL -> Territory("Castilla-La Mancha", "Ciudad Real")
+        Province.CUENCA -> Territory("Castilla-La Mancha", "Cuenca")
+        Province.GUADALAJARA -> Territory("Castilla-La Mancha", "Guadalajara")
+        Province.TOLEDO -> Territory("Castilla-La Mancha", "Toledo")
+        Province.CLM_DOCM -> Territory("Castilla-La Mancha", "Diario autonómico")
         Province.VALENCIA -> Territory("Comunidad Valenciana", "Valencia")
         Province.ALICANTE -> Territory("Comunidad Valenciana", "Alicante")
         Province.CASTELLON -> Territory("Comunidad Valenciana", "Castellón")
@@ -33,7 +39,7 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón"),
@@ -41,6 +47,7 @@ object SourceCatalog {
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"),
         "Comunidad de Madrid" to listOf("Madrid"),
+        "Castilla-La Mancha" to listOf("Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Diario autonómico"),
     )
 
     fun groups(sources: List<Province> = Province.entries): List<BulletinCommunity> {
@@ -69,6 +76,7 @@ object SourceCatalog {
     fun sourceName(source: Province): String =
         if (source == Province.BOE) "BOE · toda España"
         else if (source == Province.MADRID) "BOCM · diario autonómico"
+        else if (source == Province.CLM_DOCM) "DOCM · diario autonómico"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
 }

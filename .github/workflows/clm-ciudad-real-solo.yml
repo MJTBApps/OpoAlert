@@ -1,0 +1,25 @@
+name: OpoAlert - Auditar Ciudad Real 30 dias (sin publicar)
+on:
+  push:
+    branches: [feature/castilla-la-mancha-completa-20261029]
+    paths: [.github/workflows/clm-ciudad-real-solo.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4 certifi cryptography
+      - run: python -m compileall -q backend/clm_common.py backend/clm_ciudad_real.py
+      - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
+      - run: python -u backend/clm_ciudad_real.py --output auditados/ciudad_real_bop.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ciudad-real-auditado-local
+          path: auditados/ciudad_real_bop.json
+          retention-days: 7

@@ -138,6 +138,48 @@ enum class Province(
         "www.bocm.es", "/boletin/CM_Orden_BOCM/",
         Regex("MD-\\d{8}-\\d{1,5}"),
     ),
+    ALBACETE(
+        "AB", "Albacete",
+        "https://mjtbapps.github.io/OpoAlert/albacete_bop.json",
+        "https://bop.dipualba.es/",
+        "bop.dipualba.es", "/servicesajax/",
+        Regex("AB-\\d{4}-\\d{1,8}"),
+    ),
+    CIUDAD_REAL(
+        "CR", "Ciudad Real",
+        "https://mjtbapps.github.io/OpoAlert/ciudad_real_bop.json",
+        "https://bop.dipucr.es/",
+        "se1.dipucr.es", "/SIGEM_BuscadorDocsWeb/getDocument.do",
+        Regex("CR-\\d{4}-\\d{1,8}"),
+    ),
+    CUENCA(
+        "CU", "Cuenca",
+        "https://mjtbapps.github.io/OpoAlert/cuenca_bop.json",
+        "https://www.dipucuenca.es/boletin-oficial-de-la-provincia",
+        "www.dipucuenca.es", "/documents/",
+        Regex("CU-\\d{4}-\\d{1,8}"),
+    ),
+    GUADALAJARA(
+        "GJ", "Guadalajara",
+        "https://mjtbapps.github.io/OpoAlert/guadalajara_bop.json",
+        "https://boletin.dguadalajara.es/boletin/",
+        "boletin.dguadalajara.es", "/boletin/",
+        Regex("GJ-\\d{4}-\\d{1,8}"),
+    ),
+    TOLEDO(
+        "TO", "Toledo",
+        "https://mjtbapps.github.io/OpoAlert/toledo_bop.json",
+        "https://bop.diputoledo.es/webEbop/",
+        "bop.diputoledo.es", "/webEbop/",
+        Regex("TO-\\d{4}-\\d{1,8}"),
+    ),
+    CLM_DOCM(
+        "CM", "Castilla-La Mancha (DOCM)",
+        "https://mjtbapps.github.io/OpoAlert/castilla_mancha_docm.json",
+        "https://docm.jccm.es/docm/",
+        "docm.jccm.es", "/docm/descargarArchivo.do",
+        Regex("CM-\\d{4}-\\d{1,8}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -168,6 +210,12 @@ enum class Province(
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
             id.startsWith("MD-") -> MADRID
+            id.startsWith("AB-") -> ALBACETE
+            id.startsWith("CR-") -> CIUDAD_REAL
+            id.startsWith("CU-") -> CUENCA
+            id.startsWith("GJ-") -> GUADALAJARA
+            id.startsWith("TO-") -> TOLEDO
+            id.startsWith("CM-") -> CLM_DOCM
             id.startsWith("CO-") -> CORDOBA
             id.startsWith("GR-") -> GRANADA
             id.startsWith("SV-") -> SEVILLA
