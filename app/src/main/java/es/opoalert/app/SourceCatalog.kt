@@ -18,6 +18,7 @@ object SourceCatalog {
         Province.MADRID -> Territory("Comunidad de Madrid", "Madrid")
         Province.AVILA -> Territory("Castilla y León", "Ávila")
         Province.LEON_BOP -> Territory("Castilla y León", "León")
+        Province.PALENCIA_BOP -> Territory("Castilla y León", "Palencia")
         Province.ZAMORA_BOP -> Territory("Castilla y León", "Zamora")
         Province.SORIA_BOP -> Territory("Castilla y León", "Soria")
         Province.CYL_BOCYL -> Territory("Castilla y León", "Diario autonómico")
