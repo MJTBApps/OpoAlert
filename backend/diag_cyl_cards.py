@@ -31,5 +31,5 @@ for name,url in checks:
   elif name=="SO":
    div=h.find("h3")
    print("H3",str(div.parent.parent)[:6000] if div else "-",flush=True)
-   print("LINKS",[(a.get_text(" ",strip=True)[:65],a.get("href")) for a in h.select("a[href]")[-15:],flush=True)
+   print("LINKS",[(a.get_text(" ",strip=True)[:65],a.get("href")) for a in h.select("a[href]")[-15:]],flush=True)
  except Exception as ex:print("ERROR",name,type(ex).__name__,str(ex)[:190],flush=True)
