@@ -106,7 +106,7 @@ def scan(day):
             invalid("Ávila 06/10: imposible confirmar número en PDF oficial")
         doc=fitz.open(stream=rr.content,filetype="pdf")
         head=doc[0].get_text()[:200]
-        if not re.match(r"6 de octubre de 2026\\s+N\\.\\s*[º°o]?\\s*193\\b",head,re.I):
+        if not re.match(r"6 de octubre de 2026\s+N\.\s*[º°o]?\s*193\b",head,re.I):
             invalid(f"Ávila 06/10: PDF no respalda corrección: {head[:100]!r}")
         x["number"]="193"
         print("AVILA ERRATA OFICIAL: HTML 103/26; PDF firmado número 193, verificado",flush=True)
