@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026. BOCM de Madrid añadido como diario autonómico independiente, sujeto a auditoría de 30 días; no sustituye al BOAM municipal. Castilla-La Mancha: seis fuentes identificadas (BOP de Albacete, Ciudad Real, Cuenca, Guadalajara y Toledo más DOCM), todavía pendientes de auditoría completa; ninguna se declara activa ni publicada.",
+  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026. BOCM de Madrid añadido como diario autonómico independiente, sujeto a auditoría de 30 días; no sustituye al BOAM municipal. Castilla-La Mancha: seis fuentes identificadas (BOP de Albacete, Ciudad Real, Cuenca, Guadalajara y Toledo más DOCM), todavía pendientes de auditoría completa; ninguna se declara activa ni publicada. Auditorías locales 29/10: Guadalajara 22/295/12; Toledo 21/541/33; Ciudad Real 22/396/26. DOCM 21 ediciones ordinarias y extraordinarias verificado parcialmente, nueva auditoría incluyendo 30/09 en curso. Sin publicar app ni feeds CLM.",
   "nationalSources": [
     {
       "code": "VA",
@@ -217,7 +217,15 @@
       "portal": "https://bop.dipucr.es/",
       "feed": "ciudad_real_bop.json",
       "state": "pending",
-      "scope": "Portal oficial localizado; certificado HTTPS del portal requiere comprobación independiente."
+      "scope": "Portal oficial localizado; certificado HTTPS del portal requiere comprobación independiente.",
+      "audit": {
+        "status": "passed_30_days",
+        "checked": "2026-10-29",
+        "issues": 22,
+        "announcementsRead": 396,
+        "candidates": 26,
+        "publication": "not_published"
+      }
     },
     {
       "code": "CU",
@@ -237,7 +245,15 @@
       "portal": "https://boletin.dguadalajara.es/boletin/",
       "feed": "guadalajara_bop.json",
       "state": "pending",
-      "scope": "Índice oficial por fecha, sumarios y PDF disponibles; auditoría 30 días pendiente."
+      "scope": "Índice oficial por fecha, sumarios y PDF disponibles; auditoría 30 días pendiente.",
+      "audit": {
+        "status": "passed_30_days",
+        "checked": "2026-10-29",
+        "issues": 22,
+        "announcementsRead": 295,
+        "candidates": 12,
+        "publication": "not_published"
+      }
     },
     {
       "code": "TO",
@@ -247,7 +263,15 @@
       "portal": "https://bop.diputoledo.es/webEbop/",
       "feed": "toledo_bop.json",
       "state": "pending",
-      "scope": "Calendario oficial, sumarios diarios y anuncios con enlace PDF, pendiente auditoría 30 días."
+      "scope": "Calendario oficial, sumarios diarios y anuncios con enlace PDF, pendiente auditoría 30 días.",
+      "audit": {
+        "status": "passed_30_days",
+        "checked": "2026-10-29",
+        "issues": 21,
+        "announcementsRead": 541,
+        "candidates": 33,
+        "publication": "not_published"
+      }
     },
     {
       "code": "CM",
@@ -257,7 +281,13 @@
       "portal": "https://docm.jccm.es/docm/",
       "feed": "castilla_mancha_docm.json",
       "state": "pending",
-      "scope": "Diario autonómico incluido, distinto de los cinco BOP; auditoría 30 días pendiente."
+      "scope": "Diario autonómico incluido, distinto de los cinco BOP; auditoría 30 días pendiente.",
+      "audit": {
+        "status": "rechecking",
+        "checked": "2026-10-29",
+        "note": "21 boletines y 719 anuncios leídos; falta confirmar el 30 de septiembre y asegurar el extraordinario sin cortes de conexión",
+        "publication": "not_published"
+      }
     }
   ],
   "communities": [
