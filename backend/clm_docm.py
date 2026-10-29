@@ -100,6 +100,13 @@ def audit(today=None):
     for day in {start,end}:
         h=get(bulletin_link(day.strftime("%Y%m%d")),HOST).text
         idx.update(calendar(h,start,end))
+    # El portal a veces conserva el calendario del mes actual al consultar
+    # el mes anterior. Verificar explícitamente la primera edición del intervalo.
+    firstkey=start.strftime("%Y%m%d")
+    if start.weekday()<5 and firstkey not in idx:
+        firstpage=get(bulletin_link(firstkey),HOST).text
+        parse_issue(firstpage,firstkey,start)
+        idx[firstkey]=start
     if len(idx)<19:invalid(f"DOCM: calendario insuficiente ({len(idx)} ediciones)")
     print("DOCM CALENDARIO",sorted(idx),flush=True)
     # Los extraordinarios tienen un sumario separado y pueden sufrir
