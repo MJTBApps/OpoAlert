@@ -111,14 +111,14 @@ def toc_from_pdf(pdf,day,number,kind="ordinario"):
                 pending.clear();continue
             pending.append(line)
             if len(pending)>4:pending=pending[-4:]
-    if kind=="extraordinario" and not results and len(pdf)>=2 and (
-        "Relación de Secciones" in first and
-        "Mesas y Locales Electorales" in first and
-        "29 de noviembre de 2026" in first):
+    if (kind=="extraordinario" and not results and
+        re.search(r"relaci[oó]n de secciones",first,re.I) and
+        re.search(r"mesas y locales electorales",first,re.I) and
+        re.search(r"oficina del censo electoral",first,re.I)):
         # El extraordinario 3 publica únicamente la relación censal.
         # Se cuenta su anuncio pero no se presenta como empleo público.
         results=[("Relación de Secciones, Mesas y Locales Electorales",
-            "Oficina del Censo Electoral",2,None)]
+            "Oficina del Censo Electoral",min(2,len(pdf)),None)]
     if len(results)<(1 if kind=="extraordinario" else 2):invalid("Palencia: no se puede recuperar sumario original de anuncios")
     return results
 
