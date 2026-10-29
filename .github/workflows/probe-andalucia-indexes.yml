@@ -1,0 +1,19 @@
+name: OpoAlert - Sumarios oficiales Almería y Jaén
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-jaen-20261029]
+    paths: ['backend/probe_andalucia_indexes.py', '.github/workflows/probe-andalucia-indexes.yml']
+permissions:
+  contents: read
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - run: python -u backend/probe_andalucia_indexes.py
