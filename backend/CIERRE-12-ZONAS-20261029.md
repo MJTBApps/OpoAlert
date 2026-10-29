@@ -89,3 +89,30 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 - Ejecución: https://github.com/MJTBApps/OpoAlert/actions/runs/40905293386 . El lector pudo verificar 30/09/2026 BOP 188 (6 anuncios, 0 candidatas) y 01/10/2026 BOP 189 (10 anuncios, 2 candidatas).
 - El 02/10/2026 la web devuelve `Verificación de seguridad` incluso con pausas; se detuvo, sin intentar superar la prueba. **Málaga sigue pendiente**. El validador independiente `backend/validar_apk_malaga.py` está listo, pero no se declara ejecutado ni aprobado porque no existe `MA.json` completo.
 - No enviar tráfico masivo ni repetir auditorías indiscriminadas mientras el editor requiera verificación interactiva. Buscar feed/API oficial o autorización del editor antes de nuevo intento.
+
+## Red oficial comprobada desde tres arquitecturas GitHub (29/10/2026)
+
+Ejecución: https://github.com/MJTBApps/OpoAlert/actions/runs/40912346085 .
+Los runners `ubuntu-22.04`, `ubuntu-24.04` y `ubuntu-24.04-arm` (arquitecturas x86 y ARM) muestran el mismo patrón:
+- **Ceuta, Burgos, Asturias (BOPA y datos abiertos), Cantabria, Valladolid, Albacete y Navarra**: `ConnectTimeout` a los servidores oficiales comprobados.
+- **Cuenca**: HTTP 403 en el acceso de boletines.
+- **Jaén**: HTTP 500 en el portal BOP principal.
+- **Málaga**: timeout en x86 y página de verificación humana en ARM.
+- **Controles Salamanca y Segovia**: responden; Salamanca devuelve cabecera `%PDF-` de un índice original. El test no es un problema general de Internet de los runners.
+
+Las investigaciones de nuevos dominios oficiales tampoco aportaron los PDF:
+- Burgos: 10 hosts institucionales y varios números, sin acceso al BOP completo. https://github.com/MJTBApps/OpoAlert/actions/runs/40912063189
+- Ceuta: portada, sede, archivo octubre y PDF oficial BOCCE n.º 6657 del 02/10 sin respuesta; `ceuta.com` no equivale al editor oficial `ceuta.es`. https://github.com/MJTBApps/OpoAlert/actions/runs/40912147384
+
+**Sin fuentes nuevas certificadas** en esta tanda: quedan diez ámbitos pendientes; la última APK validada es la **1.29**.
+
+### Diagnóstico portátil desde una red española
+
+Se ha preparado una herramienta de **solo lectura** para ejecutar desde una conexión local, con el fin de diagnosticar si el bloqueo está limitado a los rangos IP de los servidores GitHub. La ejecución local **no es prueba de 30 días** ni publica nada.
+
+- Script transparente, sin dependencias: `scripts/diagnostico_bop_local.py`
+- Documentación: `backend/DIAGNOSTICO-LOCAL-BOP.md`
+- Ejecución y pruebas de Windows: https://github.com/MJTBApps/OpoAlert/actions/runs/40912645131
+- Ejecutable ZIP portátil compilado y probado: https://github.com/MJTBApps/OpoAlert/actions/runs/40912645131/artifacts/12914671966
+- El informe se almacena solo en `Documentos/OpoAlert` del usuario y contiene exclusivamente URLs públicas, códigos HTTP y errores. No toma IP, no instala tareas ni remite datos automáticamente.
+- Si aparece una fuente accesible desde Windows local, el siguiente paso será **auditar con su propio lector** el histórico oficial y los originales; no basta con un resultado verde del diagnóstico.
