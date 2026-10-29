@@ -2,6 +2,7 @@
 """Ávila official BOP: 30-day chronological issue and per-notice PDF audit."""
 from __future__ import annotations
 import argparse,re,requests,threading
+import fitz
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin,urlsplit
 from datetime import date,datetime,timedelta
@@ -96,6 +97,19 @@ def parse(html,day):
 def scan(day):
     u=f"https://www.diputacionavila.es/boletin-oficial/2026/{day:%d-%m-%Y}.html"
     x=parse(load(u),day)
+    # El portal de la Diputación contiene una errata comprobada: el 06/10
+    # indica B.O.P. 103/26 pero el PDF original lleva N.º 193.
+    if day==date(2026,10,6) and x["number"]=="103":
+        original=f"https://www.diputacionavila.es/bops/2026/{day:%d-%m-%Y}.pdf"
+        rr=client().get(original,timeout=(12,30))
+        if rr.status_code!=200 or not rr.content.startswith(b"%PDF-"):
+            invalid("Ávila 06/10: imposible confirmar número en PDF oficial")
+        doc=fitz.open(stream=rr.content,filetype="pdf")
+        head=doc[0].get_text()[:200]
+        if not re.match(r"6 de octubre de 2026\\s+N\\.\\s*[º°o]?\\s*193\\b",head,re.I):
+            invalid(f"Ávila 06/10: PDF no respalda corrección: {head[:100]!r}")
+        x["number"]="193"
+        print("AVILA ERRATA OFICIAL: HTML 103/26; PDF firmado número 193, verificado",flush=True)
     for notice in x["notices"]:load(notice["url"],pdf=True)
     print("AVILA",day,"BOP",x["number"],"anuncios",x["read"],"candidatas",len(x["notices"]),flush=True)
     return x
