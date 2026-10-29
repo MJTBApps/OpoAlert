@@ -28,6 +28,7 @@ with requests.Session() as s:
   cards=[{"name":x.get_text(" ",strip=True)[:250],
           "pdf":x.find("a",href=re.compile("high.raw")).get("href")[:180] if x.find("a",href=re.compile("high.raw")) else "",
           "id":x.get("id")} for x in soup.select("div.list-frame")[:15]]
+  print("JAEN_SEARCH_RAW",repr(res.text[:1600]),flush=True)
   print("JAEN_SEARCH_ONE",json.dumps({"http":res.status_code,"url":res.url,"len":len(res.content),
     "title":soup.title.get_text(" ",strip=True) if soup.title else "",
     "count":re.search(r"Resultados:\s*[\d.]+",soup.get_text(" ",strip=True)).group(0)
