@@ -1,0 +1,21 @@
+name: OpoAlert - Diagnosticar portal Almería en navegador
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-jaen-20261029]
+    paths: ['backend/probe_almeria_browser.py', '.github/workflows/probe-almeria-browser.yml']
+permissions:
+  contents: read
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar cliente Playwright
+        run: pip install playwright
+      - name: Explorar UI oficial BOP Almeria
+        run: python -u backend/probe_almeria_browser.py
