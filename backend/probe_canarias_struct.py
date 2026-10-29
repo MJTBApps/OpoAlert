@@ -26,7 +26,7 @@ def probe(x):
   h=BeautifulSoup(b,"html.parser")
   tbl=h.select("table");rows=h.select("tr");td=h.select("td")
   links=[(a.get_text(" ",strip=True)[:100],a.get("href")) for a in h.select("a[href]")]
-  raw=b.decode(soup.original_encoding or "utf-8",errors="replace")
+  raw=b.decode(h.original_encoding or "utf-8",errors="replace")
   return {"name":n,"http":r.status_code,"len":len(b),"ct":r.headers.get("Content-Type"),
   "bytes":repr(b[:35]),"text":h.get_text(" ",strip=True)[:1800],"links":links[:60],
   "forms":[str(v)[:1600] for v in h.select("form")[:5]],
