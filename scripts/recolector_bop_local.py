@@ -38,7 +38,7 @@ OFFICIAL_HOSTS = {
 }
 
 BASES = {
-    "AS": ["https://miprincipado.asturias.es/ast/bopa-sumario",
+    "AS": ["https://miprincipado.asturias.es/ast/bopa-sumario?p_p_id=pa_sede_bopa_web_portlet_SedeBopaSummaryWeb&p_p_lifecycle=0&p_r_p_summaryDate=29%2F10%2F2026&p_r_p_summaryIsSearch=false",
            "https://descargas.asturias.es/asturias/opendata/LegislacionyJusticia/BOPA2019-28/dataset-sum-bopa-2026.json"],
     "CB": ["https://boc.cantabria.es/boces/",
            "https://boc.cantabria.es/boces/menu.do?dir=%2FinicioCargaInicialBoletines.do"],
