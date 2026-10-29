@@ -4,6 +4,12 @@ from concurrent.futures import ThreadPoolExecutor
 import requests,re,json
 BASE="https://www.borm.es/"
 FILES=[
+"scripts/boletines/factories/boletinFactory.js",
+"scripts/sumario/factories/sumarioFactory.js",
+"scripts/suplementos/factories/suplementoFactory.js",
+"scripts/sumarioSuplementos/factories/sumarioSuplementoFactory.js",
+"scripts/calendario/factories/calendarioFactory.js",
+"scripts/anuncio/factories/anuncioFactory.js",
 "scripts/app.js",
 "scripts/boletines/controllers/boletinController.js",
 "scripts/suplementos/controllers/suplementoController.js",
