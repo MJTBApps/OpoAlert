@@ -8,6 +8,8 @@ on:
       - .github/workflows/probe-official-alternatives-2026.yml
 permissions:
   contents: read
+env:
+  PYTHONIOENCODING: utf-8
 jobs:
   official-alternatives:
     strategy:
