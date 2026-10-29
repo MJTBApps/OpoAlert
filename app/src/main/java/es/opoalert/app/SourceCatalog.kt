@@ -20,6 +20,11 @@ object SourceCatalog {
         Province.BIZKAIA_BOB -> Territory("País Vasco", "Bizkaia")
         Province.GIPUZKOA_BOG -> Territory("País Vasco", "Gipuzkoa")
         Province.PAIS_VASCO_BOPV -> Territory("País Vasco", "Diario autonómico")
+        Province.GALICIA_CORUNA -> Territory("Galicia", "A Coruña")
+        Province.GALICIA_LUGO -> Territory("Galicia", "Lugo")
+        Province.GALICIA_OURENSE -> Territory("Galicia", "Ourense")
+        Province.GALICIA_PONTEVEDRA -> Territory("Galicia", "Pontevedra")
+        Province.GALICIA_DOG -> Territory("Galicia", "Diario autonómico")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -54,7 +59,7 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón"),
@@ -67,6 +72,7 @@ object SourceCatalog {
         "Extremadura" to listOf("Badajoz", "Cáceres", "Diario autonómico"),
         "Región de Murcia" to listOf("Murcia"),
         "País Vasco" to listOf("Álava", "Bizkaia", "Gipuzkoa", "Diario autonómico"),
+        "Galicia" to listOf("A Coruña", "Lugo", "Ourense", "Pontevedra", "Diario autonómico"),
     )
 
     val availableSources: List<Province> = Province.entries.filterNot {
@@ -107,6 +113,7 @@ object SourceCatalog {
         else if (source == Province.ALAVA_BOTHA) "BOTHA · boletín territorial de Álava"
         else if (source == Province.BIZKAIA_BOB) "BOB · boletín territorial de Bizkaia"
         else if (source == Province.GIPUZKOA_BOG) "BOG · boletín territorial de Gipuzkoa"
+        else if (source == Province.GALICIA_DOG) "DOG · diario autonómico"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
 }
