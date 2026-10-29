@@ -17,3 +17,10 @@ for item in js_files:
    spans.append(body[max(0,m.start()-350):min(len(body),m.end()+550)])
   print("SUPPLEMENT_JS",json.dumps({"src":item,"http":res.status_code,"len":len(body),"fragments":spans[:15]},ensure_ascii=False),flush=True)
  except Exception as e:print("SUPPLEMENT_ERROR",type(e).__name__,str(e)[:180],flush=True)
+
+print("SUPPLEMENT_PARAMS_EXACT_BEGIN",flush=True)
+try:
+ r=requests.get(root+"/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/fpca_sumari_suplement/js/fpca_sumari_suplement.js",timeout=(5,15))
+ m=re.search(r"function\\s+searchSuplementsAjaxCall\\s*\\(",r.text)
+ print(repr(r.text[m.start():m.start()+2400] if m else "NO MATCH")[:4000],flush=True)
+except Exception as e:print(repr(e),flush=True)
