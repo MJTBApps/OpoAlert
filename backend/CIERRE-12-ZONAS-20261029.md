@@ -16,7 +16,7 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 | CU | Cuenca | `www.dipucuenca.es` HTTP 403 (F5), inclusive ruta PDF y raíz. |
 | BU | Burgos | `bopbur.diputaciondeburgos.es` y `www.burgos.es` ConnectTimeout. |
 | SA | Salamanca | `sede.diputaciondesalamanca.gob.es/BOP/` ConnectTimeout; portada `www.lasalina.es` accesible, redirige a la sede bloqueada. |
-| SG | Segovia | `www.dipsegovia.es/bop` devuelve 12 ediciones n.º 118–129, de 02/10 a 28/10. El enlace oficial a septiembre contiene `p_r_p_startDate` y `p_r_p_endDate`, pero el servidor devuelve HTTP 403 tanto con estos parámetros como con otras consultas. Falta el n.º 117 de 30/09, así como verificar PDFs/edictos del mes completo. Pruebas: https://github.com/MJTBApps/OpoAlert/actions/runs/40893667710 y https://github.com/MJTBApps/OpoAlert/actions/runs/40893812257 . |
+| SG | **Segovia — CERRADA** | El calendario oficial de septiembre y octubre permite recuperar 13 ediciones consecutivas, del BOP n.º 117 (30/09) al 129 (28/10). Se comprobaron sus 13 PDF originales y los 274 anuncios de los sumarios: 14 candidatas. La auditoría independiente está aprobada: https://github.com/MJTBApps/OpoAlert/actions/runs/40897405178 . Copia únicamente en APK privada 1.28, sin actualización diaria automática. |
 | VD | Valladolid | `bop.sede.diputaciondevalladolid.es` y web provincial ConnectTimeout. |
 | AS | Asturias | `miprincipado.asturias.es` y `sede.asturias.es` ConnectTimeout. `www.asturias.es/bopa/` da 404, no es el índice BOPA. |
 | CB | Cantabria | `boc.cantabria.es`, `boc.gobcantabria.es` y `www.cantabria.es/web/boc` ConnectTimeout. |
@@ -24,7 +24,7 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 | CE | Ceuta | `www.ceuta.es/ceuta/bocce`, archivo anual jDownloads y `sede.ceuta.es` ConnectTimeout. Portales periodísticos no son fuente oficial íntegra. |
 
 ## Estado efectivo
-- Fuentes nuevas de estas 12 zonas incorporadas con auditoría nueva: **0**. No se genera una APK ficticia por cambios en scripts de diagnóstico.
+- Fuentes nuevas verificadas en esta fase: **Segovia (1)**. Quedan **11** ámbitos pendientes de los 12 iniciales. Las demás fuentes con errores siguen excluidas.
 - Base que funciona y conserva La Rioja: **OpoAlert 1.27**, https://github.com/MJTBApps/OpoAlert/actions/runs/40889807797/artifacts/12904466271.
 - Bloqueos de red y validación externa están abiertos. Recuperar acceso oficial y **repetir auditoría entera** antes de incorporar provincias y crear nueva APK.
 - La cobertura parcial procedente del BOE nacional, DOCM o BOCYL no sustituye los BOP provinciales.
@@ -32,6 +32,13 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 ## Acciones siguientes
 1. Reintentar las URLs oficiales, pero sólo desencadenar integración si cambia el acceso real.
 2. Consultar las sedes responsables para solicitar API, RSS oficial o descarga firmada del archivo en caso de bloqueo prolongado.
-3. Recuperar nº 117 de Segovia y nº 198, 199, 201 de Jaén; comprobar fecha, sumario y originales.
+3. Completar los números 198, 199 y 201 de Jaén. El n.º 117 de Segovia ya está recuperado y sus 13 ediciones y PDF originales verificados.
 4. En Málaga, usar enlaces a ficha/edicto oficiales sin automatizar CAPTCHA. Auditar todas las fechas, evitar declaración de PDF verificado si sólo se llega a verificación interactiva.
 5. Ejecutar validadores independientes por cada comunidad y compilación Android acumulativa cuando haya una fuente nueva certificada.
+
+## Cierre adicional: Segovia BOP (29/10/2026)
+
+- **13 boletines** entre 30/09 y 28/10, n.º 117-129, recuperados del índice oficial mediante parámetros de calendario Liferay.
+- **274 anuncios** revisados por el sumario original y **14 posibles convocatorias de empleo**; se excluyeron nombramientos y publicaciones de personas aprobadas.
+- PDF íntegro y autoría oficial verificados en cada edición; anotación de la página concreta de cada candidato. Auditoría independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40897405178 . Código `backend/segovia_bop.py` y `backend/validar_apk_segovia.py`.
+- OpoAlert 1.28: `Castilla y León > Segovia`, datos locales `assets/verified/SG.json`; no se publica como feed en GitHub Pages.
