@@ -2,7 +2,7 @@ name: OpoAlert - Recolector local oficial portable Windows
 on:
   workflow_dispatch:
   push:
-    branches: [feature/cierre-12-zonas-20261029]
+    branches: [feature/cierre-12-zonas-20261029, feature/cierre-10-recolector-navarra-20261029]
     paths:
       - scripts/recolector_bop_local.py
       - .github/workflows/recolector-bop-local-windows.yml
