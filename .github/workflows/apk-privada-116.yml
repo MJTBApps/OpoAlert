@@ -1,4 +1,4 @@
-name: OpoAlert - APK privada 1.16.0 para instalar en movil
+name: OpoAlert - APK privada 1.16.0 en paralelo
 on:
   workflow_dispatch:
   push:
@@ -87,14 +87,16 @@ jobs:
       - name: Preparar archivo para instalacion personal
         run: |
           set -eu
-          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.16.0-PRUEBA-PRIVADA.apk
-          unzip -t OpoAlert-1.16.0-PRUEBA-PRIVADA.apk >/dev/null
-          unzip -Z1 OpoAlert-1.16.0-PRUEBA-PRIVADA.apk | grep 'assets/verified/MD.json'
-          unzip -Z1 OpoAlert-1.16.0-PRUEBA-PRIVADA.apk | grep 'assets/verified/HB.json'
-          sha256sum OpoAlert-1.16.0-PRUEBA-PRIVADA.apk
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.16.0-PRUEBA-PARALELA.apk
+          unzip -t OpoAlert-1.16.0-PRUEBA-PARALELA.apk >/dev/null
+          unzip -Z1 OpoAlert-1.16.0-PRUEBA-PARALELA.apk | grep 'assets/verified/MD.json'
+          unzip -Z1 OpoAlert-1.16.0-PRUEBA-PARALELA.apk | grep 'assets/verified/HB.json'
+          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-1.16.0-PRUEBA-PARALELA.apk | grep "package: name='es.opoalert.app.prueba'"
+          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-1.16.0-PRUEBA-PARALELA.apk | grep "OpoAlert PRUEBA"
+          sha256sum OpoAlert-1.16.0-PRUEBA-PARALELA.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-APK-PRIVADA-1.16.0
-          path: OpoAlert-1.16.0-PRUEBA-PRIVADA.apk
+          name: OpoAlert-APK-PRIVADA-PARALELA-1.16.0
+          path: OpoAlert-1.16.0-PRUEBA-PARALELA.apk
           retention-days: 30
           if-no-files-found: error
