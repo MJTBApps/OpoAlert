@@ -1,0 +1,52 @@
+name: OpoAlert - Guardar Almería auditada
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-jaen-20261029]
+    paths: ['.github/workflows/stage-almeria-auditada.yml']
+permissions:
+  contents: write
+  actions: read
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - name: Recuperar únicamente artefacto de auditoría aprobada
+        uses: actions/download-artifact@v4
+        with:
+          name: almeria-bop-30-dias-auditado
+          run-id: 40824575998
+          repository: MJTBApps/OpoAlert
+          github-token: ${{ github.token }}
+          path: staged
+      - name: Validar e instalar nuevo feed Almeria
+        run: |
+          set -eu
+          SRC="$(find staged -name 'almeria_bop.json' -type f -print -quit)"
+          test -n "$SRC"
+          python backend/validar_pandora_bop.py --province almeria --file "$SRC" --require-today
+          cp "$SRC" docs/almeria_bop.json
+          python backend/validar_pandora_bop.py --province almeria --file docs/almeria_bop.json --require-today
+      - name: Incorporar datos reales al repositorio
+        run: |
+          set -eu
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/almeria_bop.json
+          git commit -m 'OpoAlert: incorporar 21 ediciones BOP Almeria auditadas'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/bop-almeria-jaen-20261029
+            git rebase origin/feature/bop-almeria-jaen-20261029
+            if git push origin HEAD:feature/bop-almeria-jaen-20261029; then
+              echo 'Archivo BOP Almeria integrado en rama'
+              break
+            fi
+            if [ "$i" -eq 5 ]; then exit 1; fi
+            sleep 3
+          done
