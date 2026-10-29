@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from clm_common import employment,publish_audit,write_output,invalid
 SOURCE="https://e-s.araba.eus/BOTHA/Inicio/SGBO5001.aspx"
 HOST="e-s.araba.eus"
-PDF_RE=re.compile(r"^/BOTHA/Boletines/2026/(\d{2,3})/2026_(\d{2,3})_(\d{5})_C\.pdf$",re.I)
+PDF_RE=re.compile(r"^/BOTHA/Boletines/(?:pdfni/)?2026/(\d{2,3})/2026_(\d{2,3})_(\d{5})_C\.pdf$",re.I)
 S=threading.local()
 def sess():
  if not hasattr(S,"s"):
