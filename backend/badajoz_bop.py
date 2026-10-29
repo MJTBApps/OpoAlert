@@ -65,7 +65,7 @@ def archive(start,end):
 def parse_day(html,day):
     h=BeautifulSoup(html,"html.parser")
     exact=f"Día {day.day} de {MONTHS[day.month]} de {day.year}"
-    if not any(exact in x.get_text(" ",strip=True) for x in h.select("h1")):
+    if not any(exact in " ".join(x.get_text(" ",strip=True).split()) for x in h.select("h1")):
         invalid(f"Badajoz: sumario no corresponde a {day}")
     numbers=[re.search(r"Boletín\s+(ordinario|extraordinario)\s+n[.º°\s]*([0-9]{1,3})",x.get_text(" ",strip=True),re.I)
         for x in h.select("h3")]
