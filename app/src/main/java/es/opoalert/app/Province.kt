@@ -110,6 +110,20 @@ enum class Province(
         "app.dipalme.org", "/bop/services/manager/edicto/",
         Regex("AM-\\d{4}-\\d{5}"),
     ),
+    GRANADA(
+        "GR", "Granada",
+        "https://mjtbapps.github.io/OpoAlert/granada_bop.json",
+        "https://bop.dipgra.es/publica/consulta-de-bops/",
+        "bop.dipgra.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
+        Regex("GR-\\d{4}-\\d{6}"),
+    ),
+    SEVILLA(
+        "SV", "Sevilla",
+        "https://mjtbapps.github.io/OpoAlert/sevilla_bop.json",
+        "https://bopsevilla.dipusevilla.es/publica/consulta-de-bops/",
+        "bopsevilla.dipusevilla.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
+        Regex("SV-\\d{4}-\\d{6}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -139,6 +153,8 @@ enum class Province(
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
+            id.startsWith("GR-") -> GRANADA
+            id.startsWith("SV-") -> SEVILLA
             id.startsWith("AM-") -> ALMERIA
             else -> VALENCIA
         }
