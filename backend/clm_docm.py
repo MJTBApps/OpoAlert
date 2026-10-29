@@ -12,7 +12,7 @@ from clm_common import invalid,get,pdf_header,record,publish_audit,write_output
 HOME="https://docm.jccm.es"
 SOURCE=HOME+"/docm/"
 HOST={"docm.jccm.es"}
-DOC_PDF=re.compile(r"/docm/descargarArchivo\.do\?ruta=(\d{4})/(\d{2})/(\d{2})/pdf/(\d{4})_(\d{1,8})\.pdf&tipo=rutaDocm$")
+DOC_PDF=re.compile(r"/docm/descargarArchivo\.do\?ruta=(\d{4})/(\d{2})/(\d{2})(?:-ext-\d+)?/pdf/(\d{4})_(\d{1,8})\.pdf&tipo=rutaDocm$")
 NID=re.compile(r"\[\s*NID\s+(\d{4})/(\d{1,8})\s*\]")
 EDITION=re.compile(r"\bN[uú]m\.\s*(\d{1,4})\b",re.I)
 DATE_RE=re.compile(r"^\d{8}(?:-ext-\d+)?$")
