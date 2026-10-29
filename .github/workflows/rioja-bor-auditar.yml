@@ -1,0 +1,32 @@
+name: OpoAlert - Auditar BOR La Rioja oficial 30 dias
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/navarra-rioja-20261029]
+    paths:
+      - 'backend/rioja_bor.py'
+      - 'backend/validar_apk_rioja.py'
+      - '.github/workflows/rioja-bor-auditar.yml'
+permissions: {contents: read}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 26
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Librerías XML seguras y requests
+        run: python -m pip install requests defusedxml beautifulsoup4
+      - name: Comprobar sintaxis del lector y validador
+        run: python -m py_compile backend/rioja_bor.py backend/validar_apk_rioja.py
+      - name: Descargar calendario, sumarios y PDF originales desde la API del Gobierno de La Rioja
+        run: python -u backend/rioja_bor.py --output out/RI.json
+      - name: Auditoría independiente y comprobación de 30 días
+        run: python backend/validar_apk_rioja.py --root out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rioja-bor-oficial-30dias
+          path: out/RI.json
+          retention-days: 30
+          if-no-files-found: error
