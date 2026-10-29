@@ -87,7 +87,11 @@ def parse_issue(html,day):
 
 def scan(day):
     parsed=parse_issue(get(issue_url(day),HOST).text,day)
-    if parsed is None:invalid(f"Toledo: {day} figura en calendario pero no tiene anuncios")
+    if parsed is None:
+        if day==date.today():
+            print("TOLEDO: el calendario señala hoy, pero aún no está publicada la edición; sin inventar anuncios",flush=True)
+            return None
+        invalid(f"Toledo: {day} figura en calendario pero no tiene anuncios")
     pdf_header(parsed["pdf"],HOST)
     print("TOLEDO",day,"boletín",parsed["number"],"anuncios",parsed["read"],
           "candidatas",len(parsed["notices"]),flush=True)
@@ -100,7 +104,7 @@ def audit(today=None):
     dates=dates_from_calendar(calendar,start,end)
     if len(dates)<18:invalid(f"Toledo: calendario no cubre 30 días: {len(dates)} ediciones")
     with ThreadPoolExecutor(max_workers=3) as pool:
-        data=list(pool.map(scan,dates))
+        data=[issue for issue in pool.map(scan,dates) if issue is not None]
     for older,newer in zip(data,data[1:]):
         if int(newer["number"])!=int(older["number"])+1:
             invalid(f"Toledo: salto en numeración oficial {older['number']} -> {newer['number']}")
