@@ -1,0 +1,50 @@
+name: OpoAlert - Auditar 30 días Almería y Jaén
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-jaen-20261029]
+    paths:
+      - backend/pandora_bop.py
+      - backend/tests/test_pandora_bop.py
+      - backend/validar_pandora_bop.py
+      - .github/workflows/andalucia-auditar.yml
+concurrency:
+  group: opoalert-andalucia-auditoria
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - run: python -m unittest discover -s backend/tests -p test_pandora_bop.py -v
+  auditar:
+    needs: probar
+    strategy:
+      fail-fast: false
+      matrix:
+        province: [almeria, jaen]
+    runs-on: ubuntu-latest
+    timeout-minutes: 26
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Auditar todas las ediciones y anuncios del ultimo mes
+        run: python -u backend/pandora_bop.py --province "${{ matrix.province }}" --days 30 --output "auditados/${{ matrix.province }}_bop.json"
+      - name: Comprobar integridad antes de integrar
+        run: python backend/validar_pandora_bop.py --province "${{ matrix.province }}" --file "auditados/${{ matrix.province }}_bop.json" --require-today
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.province }}-bop-30-dias-auditado"
+          path: "auditados/${{ matrix.province }}_bop.json"
+          retention-days: 7
+          if-no-files-found: error
