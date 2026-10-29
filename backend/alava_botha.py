@@ -64,7 +64,7 @@ def scan(pair):
  headings=[x.get_text(" ",strip=True) for x in soup.select("h2") if "Sumario del Boletin" in x.get_text(" ",strip=True)]
  if len(headings)!=1 or not re.search(rf"n[.º°]\s*{num}\b",headings[0],re.I):
   invalid(f"Álava {day}: cabecera incorrecta, {headings}")
- links=soup.select('a[id$="_panPdf"][href]')
+ links=soup.select('a[id$="_panPdf"][href$="_C.pdf"]')
  if not links:invalid(f"Álava {day}: sumario sin PDF de anuncios")
  seen=set();notices=[]
  for link in links:
