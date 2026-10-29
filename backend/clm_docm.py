@@ -53,7 +53,7 @@ def parse_issue(html,key,day):
     s=BeautifulSoup(html,"html.parser")
     body=s.get_text(" ",strip=True)
     m=EDITION.search(body)
-    if m is None or not re.search(r"\b[Aa][ñn]o\s+[A-ZXLIV]+\b",body):
+    if m is None or not re.search(r"\baño\s+[IVXLCDM]+\b",body,re.I):
         invalid(f"DOCM {key}: falta número y año de la edición")
     num=m[1]+("E" if "-ext-" in key else "")
     official_dates=re.search(r"\b(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(\d{4})",body,re.I)
