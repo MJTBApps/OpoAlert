@@ -1,4 +1,5 @@
 name: OpoAlert - Illes Balears BOIB 1.24 APK privada
+# Compilación con el orden del catálogo de provincias verificado en pruebas unitarias
 on:
   workflow_dispatch:
   push:
