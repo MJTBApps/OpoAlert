@@ -7,6 +7,7 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit
+from xml.etree import ElementTree as ET
 from clm_common import employment,publish_audit,write_output,invalid
 SOURCE="https://api.euskadi.eus/bopv/administrative-acts"
 PROVINCE="País Vasco (BOPV)"
@@ -96,12 +97,60 @@ def verify_pdf(url):
   r.close()
   if not good:invalid("BOPV: archivo PDF no auténtico")
  except requests.RequestException as e:invalid("BOPV: no se puede comprobar PDF "+str(e)[:200])
+def latest_rss(day,previous_number):
+    """Use the official RSS only for today's issue if OpenData REST is a day behind."""
+    rss="https://www.euskadi.eus/bopv2/datos/Ultimo.xml"
+    try:
+        r=session().get(rss,timeout=(12,34),allow_redirects=False)
+        if r.status_code!=200 or len(r.content)<800 or len(r.content)>600000:
+            invalid(f"BOPV: RSS incompleto, HTTP {r.status_code}")
+        root=ET.fromstring(r.content)
+        channel=root.find("channel")
+        title=(channel.findtext("title") if channel is not None else "") or ""
+        mm=re.fullmatch(r"Bolet[ií]n N[º°.]?\s*(\d+),\s*fecha\s*(\d{2}/\d{2}/\d{4})",title,re.I)
+        if not mm or mm[2]!=day.strftime("%d/%m/%Y") or int(mm[1])!=previous_number+1:
+            invalid("BOPV: RSS más reciente no coincide con el día o número oficial")
+        number=mm[1]
+        items=channel.findall("item")
+        if not 5<=len(items)<=250:invalid("BOPV: índice RSS sin todos los anuncios")
+        seen=set();notices=[]
+        for item in items:
+            caption=" ".join((item.findtext("title") or "").split())
+            link=(item.findtext("link") or "").strip()
+            item_date=(item.findtext("pubDate") or "").strip()
+            u=urlsplit(link)
+            linkmatch=re.fullmatch(r"/(?:y22-bopv|web01-bopv)/es/bopv2/datos/2026/(\d{2})/(26\d{5})a\.shtml",u.path)
+            if (not caption or len(caption)>2800 or item_date!=day.strftime("%Y-%m-%d")
+                or u.scheme!="https" or u.hostname!="www.euskadi.eus" or not linkmatch
+                or int(linkmatch[1])!=day.month or u.query or u.fragment):
+                invalid("BOPV: el RSS incluye una publicación incompleta o ajena al boletín")
+            code=linkmatch[2]
+            if code in seen:invalid("BOPV: RSS con documento duplicado")
+            seen.add(code)
+            kind=employment(caption)
+            if kind:
+                pdf=f"https://www.euskadi.eus/bopv2/datos/2026/{day:%m}/{code}a.pdf"
+                verify_pdf(pdf)
+                notices.append({"id":f"PV-2026-{int(code[2:])}","province":PROVINCE,
+                    "title":caption,"entity":"Emisor: consultar anuncio oficial (BOPV)",
+                    "date":day.strftime("%d/%m/%Y"),"bulletin":number,
+                    "type":kind,"url":pdf})
+        print("BOPV RSS",day,number,"anuncios",len(items),"candidatas",len(notices),flush=True)
+        return {"day":day,"number":number,"read":len(items),"notices":notices}
+    except (requests.RequestException,ET.ParseError) as ex:
+        invalid("BOPV: no se puede validar RSS oficial: "+str(ex)[:200])
+
 def audit(today=None):
  end=today or date.today();start=end-timedelta(days=29)
  months=sorted({(start.year,start.month),(end.year,end.month)})
  data=[]
  for y,m in months:data.extend(month_data(y,m))
  issues=read_data(data,start,end)
+ # The REST export can trail the daily BOPV by one day: verify the official RSS
+ # publication and all its metadata instead of silently omitting the new issue.
+ if issues[-1]["day"]<end:
+  if (end-issues[-1]["day"]).days!=1:invalid("BOPV: índice oficial atrasado más de un día")
+  issues.append(latest_rss(end,int(issues[-1]["number"])))
  checks=[n["url"] for issue in issues for n in issue["notices"]]
  with ThreadPoolExecutor(max_workers=5) as p:list(p.map(verify_pdf,checks))
  for x in issues:print("BOPV",x["day"],x["number"],"anuncios",x["read"],"candidatas",len(x["notices"]),flush=True)
