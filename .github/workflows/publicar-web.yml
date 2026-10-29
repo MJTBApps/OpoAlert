@@ -15,6 +15,8 @@ on:
       - 'OpoAlert - Auditar y publicar BOP Zaragoza'
       - 'OpoAlert - Publicar APK 1.11.0 en web'
       - 'OpoAlert - Revisar y publicar BOP Cadiz'
+      - 'OpoAlert - Revisar y publicar BOP Almeria'
+      - 'OpoAlert - Publicar APK 1.12.0 en web'
     types: [completed]
   schedule:
     - cron: '10 20 * * *'
@@ -47,12 +49,14 @@ jobs:
           test -s docs/OpoAlert-1.9.0.apk
           test -s docs/OpoAlert-1.10.0.apk
           test -s docs/OpoAlert-1.11.0.apk
+          test -s docs/OpoAlert-1.12.0.apk
           test -s docs/barcelona_bop.json
           test -s docs/girona_bop.json
           test -s docs/huesca_bop.json
           test -s docs/teruel_bop.json
           test -s docs/zaragoza_bop.json
           test -s docs/cadiz_bop.json
+          test -s docs/almeria_bop.json
           test -s docs/convocatorias.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
