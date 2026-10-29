@@ -6,7 +6,7 @@ Proyecto gratuito e independiente de las Administraciones públicas.
 
 ## Descargar Android
 
-Última versión para esta rama: OpoAlert 1.12.0 con BOP Almería. La descarga pública se activará solo después de superar la compilación Android y comprobar la publicación.
+Última versión publicada: [OpoAlert 1.12.0 para Android](https://mjtbapps.github.io/OpoAlert/OpoAlert-1.12.0.apk), con Almería auditada (21 ediciones, 305 anuncios, 61 candidatas).
 Página pública: https://mjtbapps.github.io/OpoAlert/
 
 Las compilaciones distribuidas en esta fase están firmadas para pruebas.
