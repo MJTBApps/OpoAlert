@@ -106,8 +106,30 @@ def parse_issue(html:str,day:date)->dict|None:
         raise ProvincialCoverageError(f"Córdoba {day}: índice de anuncios vacío o duplicado")
     return {"date":day,"number":number,"read":len(rows),"rows":rows,"summary":summary[0]}
 
+def render_streamed(day:date)->str:
+    """Next.js streams some orphaned <li> elements; use a real rendered DOM."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        browser=pw.chromium.launch(headless=True,args=["--no-sandbox"])
+        try:
+            page=browser.new_page(locale="es-ES")
+            page.goto(day_url(day),wait_until="domcontentloaded",timeout=45000)
+            page.wait_for_timeout(1800)
+            return page.content()
+        finally:
+            browser.close()
+
 def scan(day:date)->dict|None:
-    parsed=parse_issue(request(day_url(day)).text,day)
+    html=request(day_url(day)).text
+    try:
+        parsed=parse_issue(html,day)
+    except ProvincialCoverageError as ex:
+        if ("faltan título, emisor o PDF" not in str(ex)
+            and "numero BOP ausente" not in str(ex)):
+            raise
+        parsed=parse_issue(render_streamed(day),day)
+    if parsed is None and day.weekday()<5:
+        parsed=parse_issue(render_streamed(day),day)
     if parsed is None:return None
     check_pdf(parsed["summary"],day,"S")
     notices=[]
