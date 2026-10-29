@@ -17,7 +17,7 @@ HOST="dogv.gva.es"
 BASE="https://dogv.gva.es/dogv-portal/dogv"
 SOURCE=BASE
 PDF_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/2026_(\d{1,8})_es\.pdf$")
-SUM_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/sumario_2026_(\d{4,6})(?:_bis)?_es\.pdf$")
+SUM_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/sumario_2026_(\d{4,6})(?:_bis|_ter|_quarter)?_es\.pdf$")
 ID_RE=re.compile(r"2026/(\d{1,8})")
 S=threading.local()
 END=date(2026,10,29);START=END-timedelta(days=29)
@@ -91,7 +91,7 @@ def inspect(day):
         data=read_json(BASE+f"/{num}",{"ordenSumario":version,"lang":"es_es"})
         header=data.get("cabecera",{})
         if (header.get("numeroDogv")!=num or data.get("fechaSumario")!=day.strftime("%d-%m-%Y")
-            or data.get("esBis") is not (version!=1) or data.get("existeUrl") is not True):
+            or data.get("esBis") is not (version==2) or data.get("existeUrl") is not True):
             invalid(f"DOGV {day}: sumario {version} no corresponde al día")
         docs=data.get("disposiciones",[])
         if not isinstance(docs,list) or not 1<=len(docs)<=250:invalid(f"DOGV {day}: índice vacío o truncado")
@@ -123,10 +123,10 @@ def inspect(day):
                 url=validate_pdf(path,day)
                 notices.append({"id":ident,"province":"Comunidad Valenciana (DOGV)",
                     "title":title,"entity":organ,"date":day.strftime("%d/%m/%Y"),
-                    "bulletin":str(num)+("B" if version>1 else ""),
+                    "bulletin":str(num)+({1:"",2:"B",3:"T",4:"Q"}[version]),
                     "type":kind,"url":url})
         print(f"DOGV {day} n.º {num} versión {version}: {len(docs)} anuncios, {len(notices)} candidatas",flush=True)
-        editions.append({"day":day,"number":str(num)+("B" if version>1 else ""),"read":len(docs),"notices":notices})
+        editions.append({"day":day,"number":str(num)+({1:"",2:"B",3:"T",4:"Q"}[version]),"read":len(docs),"notices":notices})
     return num,editions,len(versions)
 def audit():
     days,flags=calendar()
