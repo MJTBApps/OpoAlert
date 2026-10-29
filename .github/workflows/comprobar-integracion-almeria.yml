@@ -1,0 +1,34 @@
+name: OpoAlert - Comprobar integracion BOP Almeria
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-production-20261029]
+    paths: ['.github/workflows/comprobar-integracion-almeria.yml', 'backend/**', 'docs/almeria_bop.json']
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Pruebas de lector y catalogo de provincias
+        run: |
+          python -m unittest discover -s backend/tests -p test_pandora_bop.py -v
+          python -m unittest discover -s backend/tests -p test_catalogo_espana.py -v
+      - name: Verificar JSON real publicado en repositorio
+        run: |
+          python backend/validar_pandora_bop.py --province almeria --file docs/almeria_bop.json --require-today
+          python - <<'PY'
+          import json
+          data=json.load(open('docs/almeria_bop.json',encoding='utf8'))
+          assert len(data['notices'])==61
+          assert data['coverage']['announcementsRead']==305
+          assert data['historyCoverage']['issuesRead']==21
+          assert all(n['province']=='Almería' and n['id'].startswith('AM-') for n in data['notices'])
+          print('ALMERIA: 61 anuncios auditados, 305 revisados, 21 boletines')
+          PY
