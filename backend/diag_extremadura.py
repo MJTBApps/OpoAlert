@@ -159,3 +159,9 @@ def probe_api(x):
  except Exception as e:return {"name":name,"error":repr(e)}
 with ThreadPoolExecutor(max_workers=7) as pool:
  for x in pool.map(probe_api,API):print("CC_REST",json.dumps(x,ensure_ascii=False)[:9000],flush=True)
+
+print("#### BADAJOZ HEADER SPECIAL CASES",flush=True)
+for day in ("20261021","20261012","20261029"):
+  r=requests.get("https://www.dip-badajoz.es/bop/index.php?FechaSolicitada="+day,timeout=(9,22))
+  h=BeautifulSoup(r.content,"html.parser")
+  print("BADAJOZ_HEADERS",day,"HTTP",r.status_code,"H3",[x.get_text(" ",strip=True) for x in h.select("h3") if "Boletín" in x.get_text()],"ARTICLES",len(h.select("#sumario_dinamico article")),"DETAILS",[(s.get("class"),len(s.select("article")),s.get_text(" ",strip=True)[:300]) for s in h.select("#sumario_dinamico > details")],"PDFLINKS",[(a.get_text(" ",strip=True),a.get("href","")) for a in h.select('a[href*="boletin_completo"]')],flush=True)
