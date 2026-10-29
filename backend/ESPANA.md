@@ -80,3 +80,28 @@ El BOP de Cádiz tiene portal oficial https://www.bopcadiz.es/ con índice compl
 **Jaén pendiente**, no integrado en la APK. Su hemeroteca https://bophistorico.dipujaen.es/ es accesible, pero faltan los boletines 198, 199 y 201 de octubre de 2026 en el índice consultado; el portal bop.dipujaen.es devuelve HTTP 500 en las comprobaciones. Se ha construido un lector preliminar; es imprescindible completar los huecos y validar el histórico antes de declarar cobertura.
 
 La expansión autónoma programada en ChatGPT ha quedado desactivada por petición del usuario. Los flujos periódicos de actualización de las fuentes ya publicadas de GitHub Actions son distintos de esa automatización de desarrollo.
+
+
+## Andalucía — nuevos BOP Granada y Sevilla (29/10/2026)
+
+Los índices publicados por las diputaciones de Granada y Sevilla permiten
+consultar las 30 fechas naturales y distinguir días sin boletín mediante
+numeración consecutiva y PDF oficiales de cada edición. Sus lectores verifican
+el número, la fecha, el total de anuncios y el enlace PDF original de cada
+candidata, y un validador independiente rechaza feeds parciales.
+
+- **Granada**: 22 BOP, 633 anuncios de todos los tipos y 65 candidatas.
+  Fuente: https://bop.dipgra.es/publica/consulta-de-bops/
+- **Sevilla**: 21 BOP, 622 anuncios y 44 candidatas.
+  Fuente: https://bopsevilla.dipusevilla.es/publica/consulta-de-bops/
+- **Evidencia** de las dos auditorías de 30/09 a 29/10/2026:
+  https://github.com/MJTBApps/OpoAlert/actions/runs/40832320045
+
+El filtrado de empleo es conservador; candidatos no significa vacantes
+confirmadas y se debe contrastar cada anuncio oficial.
+
+**Córdoba**, **Huelva**, **Málaga** y **Jaén** aún no están activos
+como fuentes independientes: Córdoba necesita resolver las fichas de anuncios
+desacopladas del emisor en el portal Next.js, Málaga tiene conexiones
+intermitentes desde Actions, Huelva no ofrece actualmente un archivo
+accesible por el lector y Jaén presenta huecos de numeración.
