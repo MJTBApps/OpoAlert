@@ -8,7 +8,8 @@ from urllib.parse import urljoin,urlsplit,unquote
 from bs4 import BeautifulSoup
 from clm_common import publish_audit,write_output,invalid
 from galicia_common import galicia_employment
-import requests,re,threading,argparse
+import requests,re,threading,argparse,io
+from pypdf import PdfReader
 SOURCE="https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop"
 HOST="deputacionlugo.gal"
 PDF_RE=re.compile(r"^/sites/deputacionlugo\.org/files/(?:inline-files|\d{4}-\d{2})/(\d{2}-\d{2}-\d{4})(?:%20spa)?\.pdf$",re.I)
@@ -53,6 +54,18 @@ def index():
    nums=[int(z) for z in re.findall(r"\b\d{3}\b",raw)]
    if not nums:invalid("Lugo: boletín sin código "+raw[:200])
    number=nums[0]
+   # The official Drupal listing erroneously labels Saturday 03/10 as 225.
+   # Require evidence from the first page of the original BOP PDF before correcting.
+   if day==date(2026,10,3) and number==225:
+    pdfurl="https://deputacionlugo.gal/sites/deputacionlugo.org/files/2026-10/03-10-2026%20spa.pdf"
+    pr=session().get(pdfurl,timeout=(12,48))
+    if pr.status_code!=200 or not pr.content.startswith(b"%PDF-") or len(pr.content)>8000000:
+     invalid("Lugo: no se puede validar corrección de número 03/10")
+    first=PdfReader(io.BytesIO(pr.content)).pages[0].extract_text()
+    if not re.search(r"3 DE OCTUBRE DE 2026\s+N\.?\s*[.º°]?\s*227\b",first,re.I):
+     invalid("Lugo: el original no respalda el número corregido 227")
+    number=227
+    print("LUGO PDF ORIGINAL VERIFICADO 03/10/2026: número 227 (índice HTML etiquetado 225)",flush=True)
    urlpath=urljoin(url,a["href"])
    if not re.fullmatch(r"https://deputacionlugo\.gal/gl/node/\d+",urlpath):
     invalid("Lugo: página de boletín no oficial")
