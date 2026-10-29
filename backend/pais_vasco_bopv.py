@@ -30,7 +30,7 @@ def month_data(year,month):
   if not isinstance(j,dict) or not isinstance(j.get("items"),list) or not isinstance(j.get("totalItems"),int):
    invalid("BOPV: estructura API distinta")
   if (j["totalItems"]!=len(j["items"]) or j.get("totalPages")!=1 or
-      j.get("itemsOfPage")!=500 or j.get("currentPage")!=1):
+      j.get("itemsOfPage")!=len(j["items"]) or j.get("currentPage")!=1):
    invalid(f"BOPV: índice incompleto, total {j.get('totalItems')}, recibido {len(j['items'])}")
   if len(j["items"])<150:invalid("BOPV: hemeroteca mensual inesperadamente corta")
   print("BOPV MES",month,"anuncios",len(j["items"]),flush=True)
