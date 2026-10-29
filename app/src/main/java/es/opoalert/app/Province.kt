@@ -187,6 +187,41 @@ enum class Province(
         "docm.jccm.es", "/docm/descargarArchivo.do",
         Regex("CM-\\d{4}-\\d{1,8}"),
     ),
+    AVILA(
+        "AV", "Ávila",
+        "https://mjtbapps.github.io/OpoAlert/avila_bop.json",
+        "https://www.diputacionavila.es/boletin-oficial/2026/",
+        "www.diputacionavila.es", "/bops/2026/",
+        Regex("AV-\\d{4}-\\d{1,7}"),
+    ),
+    LEON_BOP(
+        "LN", "León",
+        "https://mjtbapps.github.io/OpoAlert/leon_bop.json",
+        "https://bop.dipuleon.es/publica/consulta-de-bops/",
+        "bop.dipuleon.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
+        Regex("LN-\\d{4}-\\d{6}"),
+    ),
+    ZAMORA_BOP(
+        "ZM", "Zamora",
+        "https://mjtbapps.github.io/OpoAlert/zamora_bop.json",
+        "https://www.diputaciondezamora.es/opencms/servicios/BOP/busqueda-en-el-bop/",
+        "www.diputaciondezamora.es", "/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/",
+        Regex("ZM-\\d{9}"),
+    ),
+    SORIA_BOP(
+        "SR", "Soria",
+        "https://mjtbapps.github.io/OpoAlert/soria_bop.json",
+        "https://bop.dipsoria.es/index.php/mod.boloficial/relmenu.149",
+        "bop.dipsoria.es", "/index.php/mod.documentos/mem.descargar/fichero.documentos_",
+        Regex("SR-\\d{4}-\\d{1,6}"),
+    ),
+    CYL_BOCYL(
+        "CY", "Castilla y León (BOCYL)",
+        "https://mjtbapps.github.io/OpoAlert/castilla_leon_bocyl.json",
+        "https://bocyl.jcyl.es/",
+        "bocyl.jcyl.es", "/boletines/",
+        Regex("CY-\\d{8}-\\d{1,4}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -217,6 +252,11 @@ enum class Province(
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
             id.startsWith("HB-") -> HUELVA_BOP
+            id.startsWith("AV-") -> AVILA
+            id.startsWith("LN-") -> LEON_BOP
+            id.startsWith("ZM-") -> ZAMORA_BOP
+            id.startsWith("SR-") -> SORIA_BOP
+            id.startsWith("CY-") -> CYL_BOCYL
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
