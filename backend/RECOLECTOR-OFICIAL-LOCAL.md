@@ -33,6 +33,16 @@ La acción empaqueta `OpoAlert-Recolector-Oficial.exe` para Windows.
 
 ## Alcance
 
+- Navarra: comprueba el índice del BON y su vista mensual de septiembre, extrae
+  solamente enlaces al sumario oficial cuya fecha esté entre el 30/09 y el
+  29/10/2026 y comprueba el número del boletín retornado. También contempla
+  boletines extraordinarios si están presentes en el índice. No presupone
+  que un número ausente del listado sea un día sin publicación.
+- Málaga: si abre la portada del BOPMA, recopila por fecha los sumarios
+  oficiales del mismo periodo, comprobando que el día mostrado coincide
+  exactamente con el solicitado. Espera cinco segundos entre consultas
+  y se detiene al encontrar CAPTCHA, errores de acceso o sumario de otro
+  día. **No intenta descargar PDFs protegidos ni superar verificaciones.**
 - Examina accesos iniciales de las 10 zonas pendientes: Jaén, Málaga,
   Albacete, Cuenca, Burgos, Valladolid, Asturias, Cantabria, Navarra y Ceuta.
 - Si Asturias responde, recoge los 30 sumarios diarios oficiales del

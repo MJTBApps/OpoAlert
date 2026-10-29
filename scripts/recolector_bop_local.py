@@ -50,9 +50,12 @@ BASES = {
     "AB": ["https://bop.dipualba.es/"],
     "CU": ["https://www.dipucuenca.es/boletin-oficial-de-la-provincia"],
     "VD": ["https://bop.sede.diputaciondevalladolid.es/calendario"],
-    "NA": ["https://bon.navarra.es/es/inicio"],
+    "NA": ["https://bon.navarra.es/es/inicio",
+           "https://bon.navarra.es/es/indice-boletines",
+           "https://bon.navarra.es/es/boletines/-/boletinmes/2026/9"],
     "MA": ["https://www.bopmalaga.es/sumario.php?fecha=29-10-2026"],
-    "JA": ["https://bop.dipujaen.es/"],
+    "JA": ["https://bop.dipujaen.es/",
+           "https://bophistorico.dipujaen.es/advanced.vm?s=1&view=boletin"],
 }
 
 def safe_url(url: str) -> str | None:
@@ -128,6 +131,43 @@ class PublicPageParser(HTMLParser):
         if self.heading is not None:
             self.heading[1].append(text)
 
+MONTHS = {
+    "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
+    "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+    "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+}
+
+def verify_issue_page(name, public_text):
+    """Reject wrong-date/cached summaries before collecting evidence.
+
+    This verifies only page identity, not the completeness of a BOP edition.
+    For index and health-check pages no issue identity is expected.
+    """
+    if name.startswith("BON-"):
+        wanted = name[4:]
+        header = re.search(
+            r"\bbolet[ií]n\s+n[ººo]\s*(\d{1,4})\s*[-–]",
+            public_text[:6000], re.I)
+        if not header:
+            return "unverified_issue_identity"
+        return None if header.group(1) == wanted else "issue_identity_mismatch"
+    if name.startswith("BOPMA-"):
+        expected = date.fromisoformat(name[6:])
+        match = re.search(
+            r"\bsumario del d[ií]a\s+(\d{1,2})\s+de\s+"
+            r"([a-záéíóúñ]+)\s+de\s+(\d{4})\b", public_text[:7000], re.I)
+        if not match:
+            return "unverified_issue_identity"
+        number = MONTHS.get(match.group(2).casefold())
+        if not number:
+            return "unverified_issue_identity"
+        try:
+            actual = date(int(match.group(3)), number, int(match.group(1)))
+        except ValueError:
+            return "unverified_issue_identity"
+        return None if actual == expected else "issue_identity_mismatch"
+    return None
+
 def get_page(url, code, name):
     url = safe_url(url)
     if not url:
@@ -166,12 +206,16 @@ def get_page(url, code, name):
             elif len(visible) < 250:
                 row["status"] = "unverified_short_page"
             else:
-                row["status"] = "public_page_captured"
-                row["page"] = {
-                    "headings": parser.headings[:350],
-                    "links": parser.links[:1800],
-                    "publicText": visible[:170_000],
-                }
+                mismatch = verify_issue_page(name, visible)
+                if mismatch:
+                    row["status"] = mismatch
+                else:
+                    row["status"] = "public_page_captured"
+                    row["page"] = {
+                        "headings": parser.headings[:350],
+                        "links": parser.links[:1800],
+                        "publicText": visible[:170_000],
+                    }
         elif "xml" in content_type.lower() or "json" in content_type.lower():
             # Structured files may have publication references. Keep only a
             # bounded public excerpt, not server headers or private browser state.
@@ -202,6 +246,48 @@ def source_tasks():
             result.append((key, f"{key}-entry-{n+1}", u))
     return result
 
+def bon_issue_tasks(rows):
+    """Discover verified issue links and dates from the official BON index.
+
+    Covers the exact 30-day window, including extraordinary editions.
+    Do not generate issue URLs by guessing numbers or dates.
+    """
+    issues = {}
+    for row in rows:
+        for item in row.get("page", {}).get("links", []):
+            url = safe_url(item.get("url", ""))
+            if not url:
+                continue
+            address = urlsplit(url)
+            if (address.hostname != "bon.navarra.es" or address.query
+                or address.fragment):
+                continue
+            hit = re.fullmatch(r"/es/boletin/-/sumario/2026/(\d{1,4})", address.path)
+            if not hit:
+                continue
+            label = " ".join(item.get("text", "").lower().split())
+            when = re.search(r"\b(\d{1,2}) de (septiembre|octubre) de 2026\b", label)
+            if not when:
+                continue
+            try:
+                day = date(2026, 9 if when.group(2) == "septiembre" else 10, int(when.group(1)))
+            except ValueError:
+                continue
+            if START <= day <= END:
+                issue = int(hit.group(1))
+                if issue in issues and issues[issue] != (day, url):
+                    raise ValueError("BON: número con datos oficiales contradictorios")
+                issues[issue] = (day, url)
+    if len(issues) > 35:
+        raise ValueError("BON: más boletines que fechas posibles en la ventana")
+    return [("NA", "BON-" + str(n), issues[n][1]) for n in sorted(issues)]
+
+
+def malaga_day_url(day):
+    """Only public editorial summaries; never navigate the CAPTCHA endpoint."""
+    return "https://www.bopmalaga.es/sumario.php?fecha=" + day.strftime("%d-%m-%Y")
+
+
 def more_tasks(summaries):
     tasks = []
     reachable = {
@@ -218,6 +304,14 @@ def more_tasks(summaries):
         # later independent audits; this deliberately covers an over-range.
         for n in range(182, 213):
             tasks.append(("BU", f"BOPBUR-{n}", f"https://bopbur.diputaciondeburgos.es/bopbur-2026-{n}"))
+    if "NA" in reachable:
+        tasks.extend(bon_issue_tasks(summaries.get("NA", [])))
+    if "MA" in reachable:
+        # Only try daily summaries when the editor responds initially.
+        # The collector must stop at the first challenge or inaccessible date.
+        for i in range((END - START).days + 1):
+            day = START + timedelta(days=i)
+            tasks.append(("MA", "BOPMA-" + day.isoformat(), malaga_day_url(day)))
     return tasks
 
 def self_test():
@@ -234,7 +328,23 @@ def self_test():
     assert p.links[0]["url"] == "https://boc.cantabria.es/boces/mostrar.do?fecha=2026-10-29"
     assert len(source_tasks()) >= 10
     assert len(more_tasks({"AS": [{"status": "public_page_captured"}]})) == 30
-    print("OK: captura pública, filtrado de credenciales y calendario local")
+    bon_parser = PublicPageParser("https://bon.navarra.es/es/indice-boletines")
+    bon_parser.feed(
+        '<a href="/es/boletin/-/sumario/2026/217">Nº 217 | 29 de octubre de 2026 EXTRAORDINARIO</a>'
+        '<a href="/es/boletin/-/sumario/2026/194">Nº 194 | 30 de septiembre de 2026</a>'
+        '<a href="/es/boletin/-/sumario/2026/193">Nº 193 | 29 de septiembre de 2026</a>'
+        '<a href="https://evil.example/es/boletin/-/sumario/2026/216">Nº 216 | 29 de octubre de 2026</a>'
+    )
+    bon_rows = [{"status": "public_page_captured", "page": {"links": bon_parser.links}}]
+    assert [x[1] for x in more_tasks({"NA": bon_rows})] == ["BON-194", "BON-217"]
+    assert malaga_day_url(date(2026, 10, 2)).endswith("fecha=02-10-2026")
+    assert len(more_tasks({"MA": [{"status": "public_page_captured"}]})) == 30
+    assert verify_issue_page("BON-215", "BOLETÍN Nº 215 - 28 de octubre de 2026") is None
+    assert verify_issue_page("BON-214", "BOLETÍN Nº 215 - 28 de octubre de 2026") == "issue_identity_mismatch"
+    assert verify_issue_page("BOPMA-2026-10-02", "Sumario del día 2 de octubre de 2026") is None
+    assert verify_issue_page("BOPMA-2026-10-02", "Sumario del día 29 de octubre de 2026") == "issue_identity_mismatch"
+    assert verify_issue_page("BOPMA-2026-10-02", "Verificación necesaria") == "unverified_issue_identity"
+    print("OK: captura pública, filtrado, identidad de boletines y calendarios BOPA/BON/BOPMA")
 
 def collect(path):
     rows = []
@@ -251,14 +361,22 @@ def collect(path):
         print("Recopilando sumarios de 30 días de los boletines accesibles...", flush=True)
         # Avoid request bursts on the editor's server: sequential, limited,
         # public GET requests only. CAPTCHA is never followed.
+        blocked_sources = set()
         for key, name, url in extras:
+            if key in blocked_sources:
+                continue
             result = get_page(url, key, name)
             rows.append(result)
             print(name, result["status"], flush=True)
-            if result["status"] == "human_verification":
-                print("Detenido: el editor requiere intervención humana", flush=True)
-                break
-            time.sleep(0.4)
+            if result["status"] == "human_verification" or (
+                key == "MA" and result["status"] != "public_page_captured"
+            ):
+                blocked_sources.add(key)
+                print("Detenido", key, "- editor no accesible sin intervención humana",
+                      flush=True)
+                continue
+            # Málaga has shown traffic restrictions; never burst requests.
+            time.sleep(5.0 if key == "MA" else 0.4)
     summary = {}
     for code in BASES:
         items = [x for x in rows if x["code"] == code]
