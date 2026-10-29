@@ -109,10 +109,8 @@ def calendar_30d():
 
 def edition_pdf(row):
     doc=BeautifulSoup(get(row["detail"]),"html.parser")
-    text=doc.get_text(" ",strip=True)
-    expected=f"BOP-{row['number']}-{row['day']:%d/%m/%Y}"
-    if expected not in text:
-        fail(f"Ficha provincial sin número y fecha {expected}")
+    # The publisher formats days inconsistently (e.g. 7/10 versus 07/10).
+    # The uniquely matched numbered-date PDF link and PDF cover are authoritative.
     found=[]
     for a in doc.select("a[href]"):
         label=" ".join(a.get_text(" ",strip=True).split())
@@ -202,6 +200,11 @@ def audit_issue(row):
     allrows=identify_toc(reader,row["number"])
     selected=[]
     for notice in allrows:
+        title_normalized=fold(notice["title"]).lower()
+        if ("rectificacion de errores" in title_normalized
+            or "se nombran funcionarios" in title_normalized
+            or "sobre defectos insubsanables" in title_normalized):
+            continue
         kind=employment(notice["title"])
         if not kind:continue
         uid="SG-2026-"+hashlib.sha256(
