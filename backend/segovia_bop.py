@@ -203,7 +203,9 @@ def audit_issue(row):
         title_normalized=fold(notice["title"]).lower()
         if ("rectificacion de errores" in title_normalized
             or "se nombran funcionarios" in title_normalized
-            or "sobre defectos insubsanables" in title_normalized):
+            or "sobre defectos insubsanables" in title_normalized
+            or "relacion de personas aprobadas" in title_normalized
+            or "publicacion de la relacion de aspirantes aprobados" in title_normalized):
             continue
         kind=employment(notice["title"])
         if not kind:continue
