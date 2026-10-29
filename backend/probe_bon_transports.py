@@ -15,6 +15,10 @@ TARGETS={
 "bon_jina_article":"https://r.jina.ai/https://bon.navarra.es/es/anuncio/-/texto/2026/195/3",
 "bon_jina_no_protocol":"https://r.jina.ai/http://bon.navarra.es/es/inicio",
 "bon_google_translate":"https://bon-navarra-es.translate.goog/es/boletin/-/sumario/2026/195?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en",
+"navarra_bien":"https://boletinbien.com/navarra",
+"navarra_bien_territory":"https://boletinbien.com/navarra/navarra",
+"navarra_oficius":"https://oficius.es/empleo-ayudas-publicas/bon-boletin-oficial-de-navarra/",
+"navarra_dateas":"https://www.dateas.com/es/docs/boletin-oficial-de-navarra/2026/10/29",
 }
 def task(arg):
  key,url=arg
@@ -30,6 +34,8 @@ def task(arg):
    if "text/html" in r.headers.get("Content-Type",""):
     soup=BeautifulSoup(content,"html.parser")
     txt=soup.get_text(" ",strip=True)
+    if key.startswith("navarra_bien") or key.startswith("navarra_oficius") or key.startswith("navarra_dateas"):
+     txt+=" LINKS "+repr([(a.get_text(" ",strip=True)[:35],a.get("href","")[:160]) for a in soup.select("a[href]")[:55]])
    return key, r.status_code, r.url, len(content), r.headers.get("content-type",""), txt[:2500]
  except Exception as e:
   return key,"ERROR",type(e).__name__+":"+str(e)[:150],0,"",""
