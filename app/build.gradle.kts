@@ -16,6 +16,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Instalación paralela para probar sin desinstalar la versión habitual.
+            applicationIdSuffix = ".prueba"
+            versionNameSuffix = "-privada"
+        }
         release {
             isMinifyEnabled = false
         }
