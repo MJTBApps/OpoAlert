@@ -1,0 +1,36 @@
+name: OpoAlert - Recuperar ocho zonas desde editores oficiales
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/recuperar-8-zonas-oficiales-20261029]
+    paths:
+      - backend/recuperar_ocho_zonas.py
+      - .github/workflows/recuperar-ocho-zonas.yml
+permissions:
+  contents: read
+jobs:
+  comprobar:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar seguridad, sintaxis y permisos de origen
+        run: |
+          python -m py_compile backend/recuperar_ocho_zonas.py
+          python backend/recuperar_ocho_zonas.py --self-test
+      - name: Consultar dieciocho puntos oficiales sin asumir cobertura completa
+        run: python -u backend/recuperar_ocho_zonas.py --output out/ocho-${{ matrix.os }}.json
+      - name: Guardar informe para revisar errores
+        uses: actions/upload-artifact@v4
+        with:
+          name: accesos-oficiales-ocho-${{ matrix.os }}
+          path: out/ocho-${{ matrix.os }}.json
+          retention-days: 30
+          if-no-files-found: error
