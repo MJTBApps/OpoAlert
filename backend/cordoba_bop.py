@@ -14,7 +14,7 @@ HOME="https://bop.dipucordoba.es/"
 HOST="bop.dipucordoba.es"
 PROVINCE="Córdoba"
 HEADER_RE=re.compile(r"BOLET[IÍ]N\s+n[uú]mero\s+(\d{1,3})",re.I)
-PDF_RE=re.compile(r"^/visor-pdf/(\d{2})-(\d{2})-(\d{4})/BOP-([AS])-(\d{4})-(\d{1,7})\.pdf$")
+PDF_RE=re.compile(r"^/visor-pdf/(\d{2})-(\d{2})-(\d{4})/BOP-(A|AC|S)-(\d{4})-(\d{1,7})\.pdf$")
 TITLE_RE=re.compile(r"Boletín Oficial de la Provincia de Córdoba del día (\d{2}-\d{2}-\d{4})")
 
 def day_url(day:date)->str:
@@ -95,13 +95,16 @@ def parse_issue(html:str,day:date)->dict|None:
         agency=emitter.get_text(" ",strip=True)
         link=urljoin(HOME,a["href"])
         valid,number_id=pdf_valid(link,day)
-        if (not valid or not name or not agency or len(name)>2500 or len(agency)>250
-            or not a.get_text(" ",strip=True).endswith(f"BOP-A-{day.year}-{number_id}")):
-            raise ProvincialCoverageError(f"Córdoba {day}: anuncio no comprobado PDF={link} emisor={agency[:100]!r} titulo={name[:130]!r} enlace={a.get_text(' ',strip=True)!r} identificador={number_id!r}")
-        rows.append({"id":f"CO-{day.year}-{int(number_id)}",
+        correction,corr_id=pdf_valid(link,day,"AC")
+        code=number_id if valid else corr_id
+        series="A" if valid else "AC"
+        if (not (valid or correction) or not name or not agency or len(name)>2500 or len(agency)>250
+            or not a.get_text(" ",strip=True).endswith(f"BOP-{series}-{day.year}-{code}")):
+            raise ProvincialCoverageError(f"Córdoba {day}: anuncio no comprobado PDF={link} emisor={agency[:100]!r} titulo={name[:130]!r} enlace={a.get_text(' ',strip=True)!r} identificador={code!r}")
+        rows.append({"id":f"CO-{day.year}-{series if correction else ''}{int(code)}",
           "province":PROVINCE,"title":name,"entity":agency,
           "date":day.strftime("%d/%m/%Y"),"bulletin":str(number),
-          "type":classify(name),"url":link})
+          "type":classify(name) if valid else None,"url":link})
     if len(rows)<1 or len({x["id"] for x in rows})!=len(rows):
         raise ProvincialCoverageError(f"Córdoba {day}: índice de anuncios vacío o duplicado")
     return {"date":day,"number":number,"read":len(rows),"rows":rows,"summary":summary[0]}
