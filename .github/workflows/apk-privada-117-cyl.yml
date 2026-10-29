@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/castilla-y-leon-9-provincias-20261029]
-    paths: [.github/workflows/apk-privada-117-cyl.yml]
+    paths: [.github/workflows/apk-privada-117-cyl.yml, scripts/test_ui_080.py]
 permissions:
   contents: read
   actions: read
