@@ -71,7 +71,7 @@ def record(code,province,nid,title,agency,day,bulletin,pdf):
     return {"id":nid,"province":province,"title":title.strip(),"entity":agency.strip(),
       "date":day.strftime("%d/%m/%Y"),"bulletin":str(bulletin),"type":employment(title),"url":pdf}
 
-def publish_audit(source,province,issue_data,days=30,today=None):
+def publish_audit(source,province,issue_data,days=30,today=None,min_issues=18):
     if days!=30:invalid("histórico mínimo 30 días")
     end=today or date.today()
     start=end-timedelta(days=29)
@@ -79,7 +79,7 @@ def publish_audit(source,province,issue_data,days=30,today=None):
     issue_data=sorted(issue_data,key=lambda x:(x["day"],str(x["number"])))
     if any(x["day"]<start or x["day"]>end for x in issue_data):
         invalid("edición fuera del intervalo de 30 días")
-    if len(issue_data)<18 or (end-issue_data[-1]["day"]).days>4 or (issue_data[0]["day"]-start).days>4:
+    if len(issue_data)<min_issues or (end-issue_data[-1]["day"]).days>4 or (issue_data[0]["day"]-start).days>4:
         invalid("intervalo incompleto o boletines ausentes")
     seen=set()
     notices=[]
