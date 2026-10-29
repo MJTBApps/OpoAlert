@@ -46,7 +46,7 @@ def validate_pdf(url,day,nid):
         invalid("PDF del DOCM fuera del host oficial")
     m=DOC_PDF.fullmatch(u.path+"?"+u.query)
     if not m or date(int(m[1]),int(m[2]),int(m[3]))!=day or m[4]!=str(day.year) or int(m[5])!=nid:
-        invalid("PDF del DOCM distinto de fecha/NID")
+        invalid(f"PDF del DOCM distinto de fecha/NID: {url} esperado {day.isoformat()} NID={nid}")
     return url
 
 def parse_issue(html,key,day):
@@ -101,6 +101,7 @@ def audit(today=None):
         h=get(bulletin_link(day.strftime("%Y%m%d")),HOST).text
         idx.update(calendar(h,start,end))
     if len(idx)<19:invalid(f"DOCM: calendario insuficiente ({len(idx)} ediciones)")
+    print("DOCM CALENDARIO",sorted(idx),flush=True)
     # Los extraordinarios tienen un sumario separado y pueden sufrir
     # limitación temporal de acceso; comprobarlos al principio de la lectura.
     ordered=sorted(idx.items(),key=lambda pair:(0 if "-ext-" in pair[0] else 1,pair[1],pair[0]))
