@@ -1,0 +1,47 @@
+name: OpoAlert - Auditar 30 dias BOP Granada Sevilla
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/andalucia-resto-20261029]
+    paths:
+      - backend/andalucia_opencms_bop.py
+      - backend/validar_andalucia_opencms.py
+      - backend/tests/test_andalucia_opencms.py
+      - .github/workflows/andalucia-opencms-auditar.yml
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -m unittest discover -s backend/tests -p test_andalucia_opencms.py -v
+  auditar:
+    needs: tests
+    strategy:
+      fail-fast: false
+      matrix:
+        province: [granada, sevilla]
+    runs-on: ubuntu-latest
+    timeout-minutes: 29
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - name: Comprobar 30 dias, numeracion, anuncios y PDF originales
+        run: python -u backend/andalucia_opencms_bop.py --province "${{ matrix.province }}" --days 30 --output "auditados/${{ matrix.province }}_bop.json"
+      - name: Validacion independiente
+        run: python backend/validar_andalucia_opencms.py --province "${{ matrix.province }}" --file "auditados/${{ matrix.province }}_bop.json" --require-today
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.province }}-bop-verificado-30d"
+          path: "auditados/${{ matrix.province }}_bop.json"
+          retention-days: 7
+          if-no-files-found: error
