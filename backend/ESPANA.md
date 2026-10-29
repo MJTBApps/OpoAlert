@@ -215,3 +215,8 @@ Compilación y todas las pruebas Android superadas: https://github.com/MJTBApps/
 ## Illes Balears: fuente BOIB oficial (29/10/2026)
 
 Se ha integrado en la rama `feature/baleares-boib-20261029` el BOIB como única fuente oficial autonómica y municipal para Mallorca, Menorca, Ibiza y Formentera. Calendario y todas las secciones verificadas durante 30 días (30/09–29/10/2026): **16 ediciones n.º 123–138 (3 extraordinarias), 1.076 anuncios y 158 coincidencias de empleo con PDF original autenticado**. Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40873448718 . No se han inventado boletines provinciales separados por isla, no hay filtro de isla individual y las fuentes privadas son una instantánea no sincronizada. Detalles y límites: `backend/BALEARES.md`.
+
+
+## Canarias (29/10/2026)
+
+Se incorpora la **cobertura de las dos provincias mediante BOP y del BOC autonómico** en la rama `feature/canarias-3-boletines-20261029`. Histórico 30/09–29/10 de 2026: BOC 22 ediciones #196–217 (361 anuncios, 50 posibles convocatorias); BOP Las Palmas 13 ediciones #117–129 (375 anuncios, 35 coincidencias); BOP Santa Cruz de Tenerife 13 ediciones #117–129 (522 anuncios, 27 coincidencias). **Total 48 boletines, 1.258 anuncios, 112 coincidencias potenciales**. Ver detalles, PDF originales y límites en `backend/CANARIAS.md`. No existe filtro individual por isla y los BOP enlazan sus PDF completos, no un documento ficticio por anuncio.
