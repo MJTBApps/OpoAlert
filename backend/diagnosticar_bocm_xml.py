@@ -30,7 +30,7 @@ def one(x):
    print("HTML",repr(bs.get_text(" ",strip=True)[:1400]),"COUNT LINKS",len(titles),"LINKS",titles[:12],flush=True)
    return
   print("HEAD",repr(r.content[:420]),flush=True)
-  if not r.ok or not r.content.lstrip().startswith(b"<?xml"):return
+  if not r.ok or not r.content.lstrip().startswith(b"<sumario>"):return
   root=ET.fromstring(r.content)
   print("ROOT",root.tag,"CHILDREN",len(root),"SHAPE\n"+shape(root),flush=True)
   print("TAGS",Counter(x.tag.rsplit("}",1)[-1] for x in root.iter()).most_common(25),flush=True)
