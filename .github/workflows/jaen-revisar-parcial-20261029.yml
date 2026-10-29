@@ -40,6 +40,14 @@ jobs:
           for x in rest:
               old=results.get(x["catalogueId"],{})
               print("JAEN_PENDING_OLD",json.dumps({"date":x["date"],"id":x["catalogueId"],"status":old},ensure_ascii=False),flush=True)
-              new=check_jaen_pdf(x)
+              new=check_jaen_pdf(x,max_bytes=55_000_000)
               print("JAEN_PENDING_RETRY",json.dumps({"date":x["date"],"id":x["catalogueId"],"status":new},ensure_ascii=False),flush=True)
+              pathlib.Path("out/jaen/jaen_2026_10_15_pdf_retry.json").write_text(json.dumps({"date":x["date"],"catalogueId":x["catalogueId"],"publisherOriginalUrl":x["publisherOriginalUrl"],"pdfCheck":new,"complete30Days":False},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
           PY
+      - name: Guardar evidencia del PDF grande sin activar cobertura
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaen-original-grande-2026-10-15
+          path: out/jaen/jaen_2026_10_15_pdf_retry.json
+          retention-days: 30
+          if-no-files-found: error
