@@ -86,7 +86,7 @@ def check_pdf(s:Source,url:str,edition:bool=False)->None:
 
 def parse_page(s:Source,html:str,day:date,first_expected:int=1)->dict:
     doc=BeautifulSoup(html,"html.parser")
-    h=doc.select_one("h2")
+    h=doc.select_one("h1") if s.slug=="leon" else doc.select_one("h2")
     match=HEADER_RE.fullmatch(h.get_text(" ",strip=True)) if h else None
     if match is None or match.group(2)!=day.strftime("%d/%m/%Y"):
         raise ProvincialCoverageError(f"{s.province} {day}: cabecera de boletin incorrecta")
