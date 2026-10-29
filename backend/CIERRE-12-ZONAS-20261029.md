@@ -139,3 +139,9 @@ Se ha preparado una herramienta de **solo lectura** para ejecutar desde una cone
 - Diagnóstico de otras zonas, con dos redes (Linux/Windows), artifact JSON por sistema operativo: https://github.com/MJTBApps/OpoAlert/actions/runs/40966580613. Las portadas 200 en Albacete, Cuenca y Navarra NO acreditan índices originales completos; el resto de hosts ensayados no recuperan boletines 2026.
 - Seguimiento nocturno programado 30/10/2026, cada hora entre 00:00 y 07:00 en Europe/Madrid; usar esta sección y sus links para no repetir las descargas de 19 PDF. Enviar aviso solo por nuevo territorio COMPLETO y auditado. Informe matinal programado para las 08:00.
 - Última APK acumulativa certificada: 1.30.0, https://github.com/MJTBApps/OpoAlert/actions/runs/40965207029/artifacts/12937217739 . Sin modificaciones ni nueva APK hasta fuente añadida con auditoría independiente.
+
+
+### Otro método ensayado: catálogo oficial abierto de Navarra
+
+- La API pública del Gobierno de Navarra `https://datosabiertos.navarra.es/es/api/3/action/package_search` funciona y devuelve JSON CKAN auténtico. Búsqueda de "BON" y "diario oficial" da **cero datasets de boletín**; "boletin" devuelve solo un dataset estadístico ajeno, y "Boletín Oficial de Navarra" trae coincidencias inespecíficas (toponimia, carreteras, turismo), no sumarios originales. No existe así archivo BON completo demostrado.
+- Resultado y metadatos guardados: https://github.com/MJTBApps/OpoAlert/actions/runs/40967296319, artifact `navarra-catalogo-datos-abiertos-bon-parcial`. Se mantiene BON Navarra pendiente; no generar feed ni APK por una API de catálogo que solo prueba conectividad.
