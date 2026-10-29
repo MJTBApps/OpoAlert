@@ -25,6 +25,7 @@ object SourceCatalog {
         Province.GALICIA_OURENSE -> Territory("Galicia", "Ourense")
         Province.GALICIA_PONTEVEDRA -> Territory("Galicia", "Pontevedra")
         Province.GALICIA_DOG -> Territory("Galicia", "Diario autonómico")
+        Province.CATALUNA_DOGC -> Territory("Cataluña", "Diario autonómico")
         Province.ARAGON_BOA -> Territory("Aragón", "Diario autonómico")
         Province.ANDALUCIA_BOJA -> Territory("Andalucía", "Diario autonómico")
         Province.VALENCIA_DOGV -> Territory("Comunidad Valenciana", "Diario autonómico")
@@ -74,7 +75,7 @@ object SourceCatalog {
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
-        "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
+        "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona", "Diario autonómico"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"),
         "Comunidad de Madrid" to listOf("Madrid"),
@@ -131,6 +132,7 @@ object SourceCatalog {
         else if (source == Province.BIZKAIA_BOB) "BOB · boletín territorial de Bizkaia"
         else if (source == Province.GIPUZKOA_BOG) "BOG · boletín territorial de Gipuzkoa"
         else if (source == Province.GALICIA_DOG) "DOG · diario autonómico"
+        else if (source == Province.CATALUNA_DOGC) "DOGC · diario autonómico"
         else if (source == Province.ARAGON_BOA) "BOA · diario autonómico"
         else if (source == Province.ANDALUCIA_BOJA) "BOJA · diario autonómico"
         else if (source == Province.VALENCIA_DOGV) "DOGV · diario autonómico"
