@@ -1,0 +1,17 @@
+name: OpoAlert - Contrato API DOGV GVA
+on:
+  push:
+    branches: [feature/cierre-pendientes-20261029]
+    paths: [backend/probe_dogv_contract.py, .github/workflows/probe-dogv-contract.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 11
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests
+      - run: python -u backend/probe_dogv_contract.py
