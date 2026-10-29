@@ -765,7 +765,7 @@ class MainActivity : Activity() {
             setPadding(0, dp(8), 0, 0)
         }
         val origin = if (item.id.startsWith("CIDO")) "CIDO · ${item.province}"
-            else if (item.id.startsWith("BOE-A-")) "BOE · España" else if (item.id.startsWith("TA-")) "BOP · Tarragona ${item.bulletin}"
+            else if (item.id.startsWith("BOE-A-")) "BOE · España" else if (item.id.startsWith("MD-")) "BOCM · Madrid n.º ${item.bulletin}" else if (item.id.startsWith("TA-")) "BOP · Tarragona ${item.bulletin}"
             else if (item.id.startsWith("BA-")) "BOP · Barcelona ${item.bulletin}"
             else if (item.id.startsWith("GI-")) "BOP · Girona n.º ${item.bulletin}" else "BOP ${item.province} ${item.bulletin}"
         footer.addView(text("$origin · Ref. ${item.id}", 10.5f, "#64748B"),
@@ -804,7 +804,7 @@ class MainActivity : Activity() {
     }
 
     private fun share(item: Notice) {
-        val origin = if (item.id.startsWith("CIDO")) "CIDO" else if (item.id.startsWith("BOE-A-")) "BOE" else "BOP"
+        val origin = if (item.id.startsWith("CIDO")) "CIDO" else if (item.id.startsWith("BOE-A-")) "BOE" else if (item.id.startsWith("MD-")) "BOCM" else "BOP"
         val message = "${NoticeText.headline(item.title)}\n${item.entity}\n$origin ${item.province} · ${item.date} · Referencia ${item.id}\n" +
             "${item.url}\n\nComprueba siempre el anuncio oficial y los plazos."
         try {
