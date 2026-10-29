@@ -118,11 +118,11 @@ def parse_jaen_card(card,index_url):
             "pagesListed":int(pages[1]) if pages else None,
             "pdfFullyDownloaded":False,"dateInOriginalVerified":False}
 
-def check_jaen_pdf(entry):
+def check_jaen_pdf(entry, max_bytes=15_000_000):
     result={"date":entry["date"],"catalogueId":entry["catalogueId"]}
     try:
         meta,raw=fetch(entry["publisherOriginalUrl"],{"www.dipujaen.es"},
-                        cap=15_000_000,timeout=(8,35))
+                        cap=max_bytes,timeout=(8,45))
         valid=(meta["http"]==200 and not meta["truncated"] and
                raw.startswith(b"%PDF-") and len(raw)>800)
         page_count=None
