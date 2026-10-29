@@ -42,3 +42,11 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 - **274 anuncios** revisados por el sumario original y **14 posibles convocatorias de empleo**; se excluyeron nombramientos y publicaciones de personas aprobadas.
 - PDF íntegro y autoría oficial verificados en cada edición; anotación de la página concreta de cada candidato. Auditoría independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40897405178 . Código `backend/segovia_bop.py` y `backend/validar_apk_segovia.py`.
 - OpoAlert 1.28: `Castilla y León > Segovia`, datos locales `assets/verified/SG.json`; no se publica como feed en GitHub Pages.
+
+## APK privada OpoAlert 1.28 (verificada)
+
+- Workflow Android: https://github.com/MJTBApps/OpoAlert/actions/runs/40897857532 — **success**, todas las pruebas Kotlin y validaciones de fuentes superadas.
+- Descarga ZIP: https://github.com/MJTBApps/OpoAlert/actions/runs/40897857532/artifacts/12908441114
+- Dentro del ZIP: `OpoAlert-Espana-1.28.0-PRUEBA.apk`, versionCode 41, versionName 1.28.0-privada, paquete de pruebas `es.opoalert.app.melilla`.
+- SHA-256 APK: `055c89643c7b68f292f78477829772020c13c6dec6e07b4f0dc53d74e444700e`.
+- Archivo `assets/verified/SG.json` comprobado dentro de la APK junto con `RI.json` de La Rioja y demás fuentes anteriores. Ediciones, avisos y PDF corresponden al período 30/09-29/10/2026, **instantánea privada**, no sincronización automática.
