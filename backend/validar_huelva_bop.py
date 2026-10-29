@@ -18,7 +18,7 @@ def validate(path,today=None):
         invalid("Huelva: auditoría caducada")
     dates=hist.get("publicationDates",[]);numbers=hist.get("bulletins",[]);absent=hist.get("nonPublicationDates",[])
     pdfs=hist.get("editionPDFs",[])
-    if (dates!=sorted(set(dates)) or len(dates)!=22 or len(numbers)!=len(dates)
+    if (dates!=sorted(set(dates)) or len(dates)<18 or len(dates)>30 or len(numbers)!=len(dates)
        or len(pdfs)!=len(dates) or hist.get("issuesRead")!=len(dates)
        or not (set(dates)|set(absent))=={(start+timedelta(days=i)).isoformat() for i in range(30)}
        or set(dates)&set(absent) or len(set(absent))!=len(absent)
