@@ -243,13 +243,13 @@ object ProvinceSettings {
         val stored = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             .getString(SELECTED, Province.VALENCIA.code).orEmpty()
         val codes = stored.split(',').map { it.trim() }.toSet()
-        val selected = Province.entries.filter { it.code in codes }.toSet()
+        val selected = SourceCatalog.availableSources.filter { it.code in codes }.toSet()
         return selected.ifEmpty { setOf(Province.VALENCIA) }
     }
 
     fun save(context: Context, chosen: Set<Province>): Boolean {
         if (chosen.isEmpty()) return false
-        val value = Province.entries.filter { it in chosen }.joinToString(",") { it.code }
+        val value = SourceCatalog.availableSources.filter { it in chosen }.joinToString(",") { it.code }
         return context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             .edit().putString(SELECTED, value).commit()
     }
@@ -265,7 +265,7 @@ object ProvinceSettings {
 
     fun display(context: Context): String {
         val chosen = selected(context)
-        val locals = Province.entries.filter { it in chosen && it != Province.BOE }
+        val locals = SourceCatalog.availableSources.filter { it in chosen && it != Province.BOE }
         val localText = when (locals.size) {
             0 -> ""
             1 -> locals.first().label
