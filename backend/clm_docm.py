@@ -85,7 +85,7 @@ def parse_issue(html,key,day):
 
 def scan(info):
     key,day=info
-    html=get(bulletin_link(key),HOST).text
+    html=get(bulletin_link(key),HOST,retries=5).text
     result=parse_issue(html,key,day)
     check=result["notices"] or result["pdfs"]
     if check:pdf_header(check[0]["url"] if isinstance(check[0],dict) else check[0],HOST)
@@ -98,13 +98,13 @@ def audit(today=None):
     start=end-timedelta(days=29)
     idx={}
     for day in {start,end}:
-        h=get(bulletin_link(day.strftime("%Y%m%d")),HOST).text
+        h=get(bulletin_link(day.strftime("%Y%m%d")),HOST,retries=5).text
         idx.update(calendar(h,start,end))
     # El portal a veces conserva el calendario del mes actual al consultar
     # el mes anterior. Verificar explícitamente la primera edición del intervalo.
     firstkey=start.strftime("%Y%m%d")
     if start.weekday()<5 and firstkey not in idx:
-        firstpage=get(bulletin_link(firstkey),HOST).text
+        firstpage=get(bulletin_link(firstkey),HOST,retries=5).text
         parse_issue(firstpage,firstkey,start)
         idx[firstkey]=start
     if len(idx)<19:invalid(f"DOCM: calendario insuficiente ({len(idx)} ediciones)")
@@ -112,7 +112,7 @@ def audit(today=None):
     # Los extraordinarios tienen un sumario separado y pueden sufrir
     # limitación temporal de acceso; comprobarlos al principio de la lectura.
     ordered=sorted(idx.items(),key=lambda pair:(0 if "-ext-" in pair[0] else 1,pair[1],pair[0]))
-    with ThreadPoolExecutor(max_workers=2) as p:
+    with ThreadPoolExecutor(max_workers=1) as p:
         items=list(p.map(scan,ordered))
     return publish_audit(SOURCE,"Castilla-La Mancha (DOCM)",items,today=end)
 
