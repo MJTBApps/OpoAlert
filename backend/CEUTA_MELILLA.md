@@ -20,3 +20,12 @@
 El instalador acumulativo `OpoAlert Melilla 1.26` contiene sólo fuentes que han aprobado su validación. Preserva todas las fuentes anteriores (incluidas Canarias y Baleares). El contenido BOME es una instantánea **de 29/10/2026**, no se actualiza diariamente por sí solo.
 
 Al recuperar acceso al portal oficial de Ceuta: listar las ediciones desde el 30/09, revisar ordinarias y extraordinarias, descargar todos los PDF originales, extraer y comprobar sumarios y convocatorias, ejecutar auditoría de 30 días y solo entonces añadir un origen BOCCE a la app y generar nueva APK.
+
+## Instalador acumulativo privado — OpoAlert Melilla 1.26.0 (verificado)
+
+- Compilación y pruebas Android finalizadas correctamente: https://github.com/MJTBApps/OpoAlert/actions/runs/40879676553
+- ZIP con la APK: https://github.com/MJTBApps/OpoAlert/actions/runs/40879676553/artifacts/12900295738
+- Nombre del archivo: `OpoAlert-Melilla-1.26.0-PRUEBA.apk`; paquete independiente `es.opoalert.app.melilla`; versionCode 39; etiqueta `OpoAlert Melilla`.
+- SHA-256 APK: `041a86b268abfa977417e443265532de059f67342583b182ac7ef1f7f416ea66`.
+- Archivo `ML.json` validado independientemente y empaquetado, además de las copias anteriores `IC.json`, `LP.json`, `TF.json`, `IB.json`, `DV.json`, `BJ.json`, `AO.json` y demás fuentes. La instalación no reemplaza la aplicación habitual.
+- **Prueba adicional BOCCE desde 3 plataformas**: https://github.com/MJTBApps/OpoAlert/actions/runs/40879731571 . macOS, Windows y Linux mostraron `ConnectTimeout` en `www.ceuta.es/ceuta/bocce`, el archivo de 2026 y los enlaces directos PDF; tampoco respondieron `ceuta.es` ni `sede.ceuta.es`. Ceuta se mantiene excluida, sin fuente incompleta ni supuesta verificación de PDF.
