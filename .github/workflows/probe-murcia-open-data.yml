@@ -1,0 +1,17 @@
+name: OpoAlert - Verificar indice abierto BORM
+on:
+  push:
+    branches: [feature/murcia-borm-20261029]
+    paths: [backend/probe_murcia_open_data.py, .github/workflows/probe-murcia-open-data.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests
+      - run: python -u backend/probe_murcia_open_data.py
