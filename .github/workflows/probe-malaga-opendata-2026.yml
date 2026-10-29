@@ -1,0 +1,27 @@
+name: OpoAlert - Buscar datos oficiales Málaga 2026
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/probe_malaga_official_opendata_2026.py
+      - .github/workflows/probe-malaga-opendata-2026.yml
+permissions:
+  contents: read
+env:
+  PYTHONIOENCODING: utf-8
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install requests
+      - run: python -u backend/probe_malaga_official_opendata_2026.py
