@@ -40,11 +40,14 @@ def request(url:str,pdf:bool=False)->requests.Response:
           or re.fullmatch(r"/boletin/CM_Orden_BOCM/\d{4}/\d{2}/\d{2}/BOCM-\d{8}-\d{1,5}\.(?:PDF|json)",parts.path))):
         fail("URL no oficial o con parámetros")
     error=None
-    for n in range(3):
+    for n in range(4):
         try:
-            resp=session().get(url,timeout=(13,35),stream=pdf,allow_redirects=True,
+            # Both names are owned by the BOCM and serve the same official files.
+            # Always publish the canonical www URL; the alias is transport only.
+            target=url if n<2 else url.replace("https://www.bocm.es/","https://bocm.es/",1)
+            resp=session().get(target,timeout=(10,26),stream=pdf,allow_redirects=True,
                 headers={"Range":"bytes=0-127"} if pdf else {})
-            if resp.status_code not in ((200,206) if pdf else (200,)) or urlsplit(resp.url).hostname!="www.bocm.es":
+            if resp.status_code not in ((200,206) if pdf else (200,)) or urlsplit(resp.url).hostname not in ("www.bocm.es","bocm.es"):
                 status=resp.status_code
                 resp.close()
                 fail(f"HTTP {status} al leer {url}")
@@ -54,7 +57,7 @@ def request(url:str,pdf:bool=False)->requests.Response:
             return resp
         except (requests.RequestException,ProvincialCoverageError) as ex:
             error=ex
-            if n<2:time.sleep(0.8*(n+1))
+            if n<3:time.sleep(0.6*(n+1))
     fail(f"no se pudo acceder a {url}: {error}")
 
 def issue_html(day:date,number:int)->str:
