@@ -18,3 +18,12 @@
 Las copias de los nuevos boletines se integran sólo en la **APK privada de pruebas** y no se suben a GitHub Pages como datos actualizados automáticamente. La fecha de las fuentes debe mostrarse para no inducir a confusión. Un fallo de sección, un número discontinuo, PDF que no sea PDF o contenido falso detiene la auditoría sin publicar una cobertura ficticia.
 
 Se conserva el resto de fuentes verificadas en el instalador acumulativo, sin sustituirlo ni eliminar la aplicación habitual. El filtro de isla, los plazos exactos de inscripción y el cierre de otras provincias bloqueadas no están acreditados por esta auditoría y no se infieren.
+
+## APK privada acumulativa 1.24.0 — comprobada
+
+- Compilación GitHub Actions: https://github.com/MJTBApps/OpoAlert/actions/runs/40873873310 (**success**).
+- Descargar ZIP con APK: https://github.com/MJTBApps/OpoAlert/actions/runs/40873873310/artifacts/12896933104
+- Archivo: `OpoAlert-Baleares-1.24.0-PRUEBA.apk`; paquete `es.opoalert.app.baleares`; etiqueta `OpoAlert Baleares`.
+- SHA-256 del APK: `c46800c27a91a809b6308b4cba081d1b47e7e464f193f30523a33c84c119e67a`.
+- Compilación y todas las pruebas Android superadas; validadores independientes de BOIB, DOGV, BOA, BOJA, Galicia, Euskadi, Murcia, Extremadura, Castilla y León y fuentes anteriores aprobados.
+- Se instala **junto a la versión anterior** (no reemplaza la aplicación OpoAlert habitual), con datos de BOIB fechados al 29/10/2026 y sin actualización automática de ese boletín.
