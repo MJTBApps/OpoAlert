@@ -250,6 +250,13 @@ enum class Province(
         "doe.juntaex.es", "/pdfs/doe/",
         Regex("EX-\\d{4}-[A-Z0-9]{8}"),
     ),
+    MURCIA_BORM(
+        "MU", "Región de Murcia (BORM)",
+        "https://mjtbapps.github.io/OpoAlert/murcia_borm.json",
+        "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
+        "www.borm.es", "/services/anuncio/",
+        Regex("MU-\\d{4}-\\d{1,8}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -289,6 +296,7 @@ enum class Province(
             id.startsWith("BD-") -> BADAJOZ_BOP
             id.startsWith("CC-") -> CACERES_BOP
             id.startsWith("EX-") -> EXTREMADURA_DOE
+            id.startsWith("MU-") -> MURCIA_BORM
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
