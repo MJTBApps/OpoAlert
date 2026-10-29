@@ -86,7 +86,7 @@ def toc_from_pdf(pdf,day,number):
                 pending.clear()
                 page_num=int(m[2])
                 if page_num<3 or page_num>len(pdf):
-                    invalid("Palencia: sumario señala página fuera del documento")
+                    invalid(f"Palencia {day} BOP {number}: página {page_num}, PDF páginas {len(pdf)}, título {title[:160]}")
                 if not title:invalid("Palencia: anuncio sin título")
                 kind=employment(title)
                 results.append((title,cur_area,page_num,kind))
