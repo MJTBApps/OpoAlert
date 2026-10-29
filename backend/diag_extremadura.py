@@ -114,3 +114,15 @@ for name,u in [("BA-SEPT-30","https://www.dip-badajoz.es/bop/index.php?FechaSoli
   items=[(a.get_text(" ",strip=True),a.get("href")) for a in soup.select("a[href]") if ("FechaSolicitada=202609" in a.get("href","") or "fecha=202609" in a.get("href",""))]
   print("DIAG",name,"HTTP",r.status_code,"TITLE",soup.title.get_text(" ",strip=True) if soup.title else "", "DAY",[(x.name,x.get_text(" ",strip=True)[:140]) for x in soup.select("h1,h3,h4") if "Día" in x.get_text() or "Septiembre" in x.get_text() or "Boletín" in x.get_text()][:4],"ITEMS",items[:35],flush=True)
  except Exception as e:print("DIAG_ERR",name,repr(e),flush=True)
+
+print("#### EXTREMADURA PRECISE NEW PROBES",flush=True)
+for name in ("loadAnunciosAnunciantes","loadBopFecha","pintarUnCalendario","pintarCalendarios","mostrarUltimoBop","cargaDias","mostrarAnunciosAnunciantes","mostrarAnunciosAnunciantesPorFecha","mostrarFechaUltimoBop"):
+    m=re.search(r"function\s+"+name+r"\s*\(",js)
+    if m:print("CC_FN",name,js[m.start():m.start()+2500].replace("\n"," "),flush=True)
+for day in ("20261001","20261002","20261012","20261013","20261029"):
+  u="https://www.dip-badajoz.es/bop/index.php?FechaSolicitada="+day
+  try:
+    z=requests.get(u,timeout=15)
+    h=BeautifulSoup(z.content,"html.parser")
+    print("BA_DATE",day,z.status_code,[(t.name,t.get_text(" ",strip=True)) for t in h.select("h1,h3,h4") if "Día" in t.get_text() or "Boletín ordinario" in t.get_text() or "Boletín extraordinario" in t.get_text()][:6],flush=True)
+  except Exception as e:print("BA_ERR",day,repr(e),flush=True)
