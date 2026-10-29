@@ -16,6 +16,7 @@ jobs:
           python-version: '3.12'
       - run: pip install requests beautifulsoup4
       - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
+      - run: python -m compileall -q backend/clm_docm.py
       - run: python -u backend/clm_docm.py --output auditados/castilla_mancha_docm.json
       - uses: actions/upload-artifact@v4
         with:
