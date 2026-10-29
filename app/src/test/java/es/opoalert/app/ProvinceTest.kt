@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Cádiz", "Madrid"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Madrid", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
