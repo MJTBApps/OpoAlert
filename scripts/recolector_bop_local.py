@@ -131,6 +131,43 @@ class PublicPageParser(HTMLParser):
         if self.heading is not None:
             self.heading[1].append(text)
 
+MONTHS = {
+    "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
+    "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+    "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+}
+
+def verify_issue_page(name, public_text):
+    """Reject wrong-date/cached summaries before collecting evidence.
+
+    This verifies only page identity, not the completeness of a BOP edition.
+    For index and health-check pages no issue identity is expected.
+    """
+    if name.startswith("BON-"):
+        wanted = name[4:]
+        header = re.search(
+            r"\bbolet[ií]n\s+n[ººo]\s*(\d{1,4})\s*[-–]",
+            public_text[:6000], re.I)
+        if not header:
+            return "unverified_issue_identity"
+        return None if header.group(1) == wanted else "issue_identity_mismatch"
+    if name.startswith("BOPMA-"):
+        expected = date.fromisoformat(name[6:])
+        match = re.search(
+            r"\bsumario del d[ií]a\s+(\d{1,2})\s+de\s+"
+            r"([a-záéíóúñ]+)\s+de\s+(\d{4})\b", public_text[:7000], re.I)
+        if not match:
+            return "unverified_issue_identity"
+        number = MONTHS.get(match.group(2).casefold())
+        if not number:
+            return "unverified_issue_identity"
+        try:
+            actual = date(int(match.group(3)), number, int(match.group(1)))
+        except ValueError:
+            return "unverified_issue_identity"
+        return None if actual == expected else "issue_identity_mismatch"
+    return None
+
 def get_page(url, code, name):
     url = safe_url(url)
     if not url:
@@ -169,12 +206,16 @@ def get_page(url, code, name):
             elif len(visible) < 250:
                 row["status"] = "unverified_short_page"
             else:
-                row["status"] = "public_page_captured"
-                row["page"] = {
-                    "headings": parser.headings[:350],
-                    "links": parser.links[:1800],
-                    "publicText": visible[:170_000],
-                }
+                mismatch = verify_issue_page(name, visible)
+                if mismatch:
+                    row["status"] = mismatch
+                else:
+                    row["status"] = "public_page_captured"
+                    row["page"] = {
+                        "headings": parser.headings[:350],
+                        "links": parser.links[:1800],
+                        "publicText": visible[:170_000],
+                    }
         elif "xml" in content_type.lower() or "json" in content_type.lower():
             # Structured files may have publication references. Keep only a
             # bounded public excerpt, not server headers or private browser state.
@@ -298,7 +339,12 @@ def self_test():
     assert [x[1] for x in more_tasks({"NA": bon_rows})] == ["BON-194", "BON-217"]
     assert malaga_day_url(date(2026, 10, 2)).endswith("fecha=02-10-2026")
     assert len(more_tasks({"MA": [{"status": "public_page_captured"}]})) == 30
-    print("OK: captura pública, filtrado de credenciales y calendarios BOPA/BON/BOPMA")
+    assert verify_issue_page("BON-215", "BOLETÍN Nº 215 - 28 de octubre de 2026") is None
+    assert verify_issue_page("BON-214", "BOLETÍN Nº 215 - 28 de octubre de 2026") == "issue_identity_mismatch"
+    assert verify_issue_page("BOPMA-2026-10-02", "Sumario del día 2 de octubre de 2026") is None
+    assert verify_issue_page("BOPMA-2026-10-02", "Sumario del día 29 de octubre de 2026") == "issue_identity_mismatch"
+    assert verify_issue_page("BOPMA-2026-10-02", "Verificación necesaria") == "unverified_issue_identity"
+    print("OK: captura pública, filtrado, identidad de boletines y calendarios BOPA/BON/BOPMA")
 
 def collect(path):
     rows = []
@@ -323,7 +369,7 @@ def collect(path):
             rows.append(result)
             print(name, result["status"], flush=True)
             if result["status"] == "human_verification" or (
-                key == "MA" and result["status"] in ("http_error", "connection_error")
+                key == "MA" and result["status"] != "public_page_captured"
             ):
                 blocked_sources.add(key)
                 print("Detenido", key, "- editor no accesible sin intervención humana",
