@@ -73,7 +73,7 @@ def issue(html,day,number):
     url=urljoin(SOURCE,link["href"]) if link else ""
     u=urlsplit(url);p=ISSUE_RE.fullmatch(u.path)
     if not p or u.hostname!=HOST or int(p[1])!=day.year or p[2]!=day.strftime("%Y%m%d") or int(p[3])!=number:
-        invalid("Zamora: PDF completo no corresponde al número")
+        invalid(f"Zamora {day} BOP {number}: PDF completo incorrecto: {url}")
     blocks=h.select("#anuncio")
     if not blocks:invalid("Zamora: la edición carece de anuncios")
     rows=[];seen=set()
