@@ -1,0 +1,19 @@
+name: OpoAlert - Rutas alternativas Almería y Jaén
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-jaen-20261029]
+    paths: ['backend/probe_andalucia_alternates.py', '.github/workflows/probe-andalucia-alt.yml']
+permissions:
+  contents: read
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/probe_andalucia_alternates.py
