@@ -1,0 +1,33 @@
+name: OpoAlert - Verificar maximo BOP Jaen original
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [.github/workflows/rescate-jaen-19-20261029.yml]
+permissions:
+  contents: read
+jobs:
+  jaen-archivos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    env: {PYTHONIOENCODING: utf-8}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip -q install requests beautifulsoup4 pypdf
+      - name: Verificar parser seguro
+        run: |
+          python -m py_compile backend/rescate_nocturno_20261029.py
+          python backend/rescate_nocturno_20261029.py --self-test
+      - name: Descargar hasta los 19 originales disponibles, sin cubrir huecos inventados
+        run: python -u backend/rescate_nocturno_20261029.py --output out/rescate-jaen-maximo-19.json --max-jaen-pdfs 19
+      - name: Archivar manifest parcial con SHA256 y fechas del PDF
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jaen-ejemplares-originales-parciales-19
+          path: out/rescate-jaen-maximo-19.json
+          retention-days: 30
+          if-no-files-found: error
