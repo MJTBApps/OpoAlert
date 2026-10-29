@@ -31,7 +31,7 @@ def fetch(url,pdf=False):
         if pdf:
             sample=next(r.iter_content(100),b"")
             if not sample.startswith(b"%PDF-") or "pdf" not in r.headers.get("Content-Type","").lower():
-                invalid("Soria: el fichero oficial no es un PDF")
+                invalid(f"Soria: el fichero oficial no es PDF, {url} (HTTP {r.status_code}, tipo {r.headers.get('Content-Type')}, bytes {sample[:60]!r})")
             r.close();return ""
         if not r.content or len(r.content)>1_800_000:invalid("Soria: HTML de boletín vacío")
         return r.text
