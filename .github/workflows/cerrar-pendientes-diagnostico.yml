@@ -1,0 +1,21 @@
+name: OpoAlert - Cierre bloqueos anteriores
+on:
+  push:
+    branches: [feature/cierre-pendientes-20261029]
+    paths: [backend/cerrar_pendientes_diag.py, .github/workflows/cerrar-pendientes-diagnostico.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  diagnosticar:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/cerrar_pendientes_diag.py
