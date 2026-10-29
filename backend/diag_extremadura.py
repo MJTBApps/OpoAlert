@@ -94,3 +94,23 @@ def deep(pair):
 with ThreadPoolExecutor(max_workers=6) as pool:
   for row in pool.map(deep,CASES):
     print("DEEP",json.dumps(row,ensure_ascii=False),flush=True)
+
+print("\n#### CACERES SERVICE MAP AND STRUCTURE",flush=True)
+url="https://bop.dip-caceres.es/bop/js/consultas.js"
+response=requests.get(url,timeout=(12,28))
+js=response.text
+print("CC_API_MAP",json.dumps(sorted(set(re.findall(r"""[\"'](/bop/services/[^\"']{2,140})[\"']""",js))),ensure_ascii=False),flush=True)
+print("CC_JS_FUNCNAMES",re.findall(r"function\\s+(\\w+)\\s*\\(",js)[:140],flush=True)
+for function in ("mostrarFicheroHtml","mostrarSumario","obtenerSumario","cargaBoletin","loadBoletin","getBoletin","getBop","cargaDatosBoletin","cargaCalendario"):
+  m=re.search(r"function\\s+"+function+r"\\s*\\(",js)
+  if m: print("CC_JS_FN",function,js[m.start():m.start()+3700],flush=True)
+for marker in ("services/boletines/","services/anuncios/","fecha", "sumario.html","busqueda=numBop"):
+  hits=list(re.finditer(re.escape(marker),js,re.I))
+  print("CC_JS_MARKER",marker,len(hits),[js[max(0,x.start()-240):x.end()+260] for x in hits[:6]],flush=True)
+for name,u in [("BA-SEPT-30","https://www.dip-badajoz.es/bop/index.php?FechaSolicitada=20260930"),("BA-SEPT-CALENDAR","https://www.dip-badajoz.es/bop/index.php?FechaSolicitada=202609"),("DOE-SEPT-POST","https://doe.juntaex.es/index.php")]:
+ try:
+  r=requests.post(u,data={"messel":"9","aniosel":"2026"},timeout=(12,27)) if name=="DOE-SEPT-POST" else requests.get(u,timeout=(12,27))
+  soup=BeautifulSoup(r.content,"html.parser")
+  items=[(a.get_text(" ",strip=True),a.get("href")) for a in soup.select("a[href]") if ("FechaSolicitada=202609" in a.get("href","") or "fecha=202609" in a.get("href",""))]
+  print("DIAG",name,"HTTP",r.status_code,"TITLE",soup.title.get_text(" ",strip=True) if soup.title else "", "DAY",[(x.name,x.get_text(" ",strip=True)[:140]) for x in soup.select("h1,h3,h4") if "Día" in x.get_text() or "Septiembre" in x.get_text() or "Boletín" in x.get_text()][:4],"ITEMS",items[:35],flush=True)
+ except Exception as e:print("DIAG_ERR",name,repr(e),flush=True)
