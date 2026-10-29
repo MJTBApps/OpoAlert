@@ -18,7 +18,11 @@ class CatalogTests(unittest.TestCase):
     def test_only_validated_provincial_feeds_are_active(self):
         sources=self.data["nationalSources"]
         active={x["code"] for x in sources if x["state"]=="active"}
-        self.assertEqual(active,{"VA","AL","CS","ES","CB","CG","CL","CT","TB","BB","BG","HU","TE","ZA","CA","AM","GR","SV","CO","MD"})
+        self.assertEqual(active,{"VA","AL","CS","ES","CB","CG","CL","CT","TB","BB","BG","HU","TE","ZA","CA","AM","GR","SV","CO"})
+        private={x["code"] for x in sources if x["state"]=="private_apk_snapshot"}
+        self.assertEqual(private,{"MD","HB","CR","GJ","TO","CM"})
+        blocked={x["code"] for x in sources if x["state"]=="blocked_official_portal"}
+        self.assertEqual(blocked,{"AB","CU"})
         cido=[x for x in sources if x["kind"]=="catalogo_empleo"]
         self.assertEqual(len(cido),4)
         self.assertTrue(all("no equivale al BOP" in x["scope"] for x in cido))
