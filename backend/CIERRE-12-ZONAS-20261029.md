@@ -69,3 +69,16 @@ Script: `backend/cierre_12_probe.py`. Comprobó tres URL por zona, cabecera HTTP
 - SHA-256 del APK: `e2ac09867a6f6f7865d8ce0425ec6be0e4ded0f1dd3eef87913ca39f2d22f891`.
 - El ZIP contiene el paquete de pruebas, y la APK verificó `assets/verified/SA.json`, `SG.json`, `RI.json` y todos los archivos privados anteriores.
 - **Restan diez** ámbitos territoriales de los doce que faltaban al empezar el 29/10/2026.
+
+## Segundo ciclo de recuperación: Jaén, Málaga, Albacete y Valladolid (29/10/2026)
+
+**Albacete y Valladolid.** Diagnóstico multi-OS https://github.com/MJTBApps/OpoAlert/actions/runs/40903633597 :
+- Windows y Linux confirman `ConnectTimeout` para `bop.dipualba.es` y `bop.sede.diputaciondevalladolid.es` incluso en rutas de boletín completo; repositorios antiguos de Albacete HTTP 503 (seguridad F5), PDF alternativo 2026 HTTP 404.
+- Sedes de Diputaciones sí devuelven HTTP 200, pero carecen de sumarios BOP. La ruta `www.sede.diputaciondevalladolid.es/web/guest/ov/bop` redirige a inicio de sesión. En ausencia de la serie de 30 días no publicar.
+- El runner macOS está en cola; no suponer su resultado.
+
+**Jaén.** Se han contrastado los dos archivos oficiales de Pandora, `bophistorico.dipujaen.es` y `www.dipujaen.es/hemerotecadigital`, con idéntico total (**41.781** ejemplares), fechas e IDs en las cuatro páginas finales. https://github.com/MJTBApps/OpoAlert/actions/runs/40904626611 . **No recupera los BOP #198, #199, #201**. La petición al formulario `tools/setQuery.vm` devuelve JS a `index.vm`; al seguirlo con misma sesión se muestra índice genérico de actas, sin hallar ejemplar oficial nuevo: https://github.com/MJTBApps/OpoAlert/actions/runs/40904378182 . No declarar 30 días completos.
+
+**Málaga.** El sitio `www.bopmalaga.es` ha vuelto a responder HTTP 200 desde GitHub. Prueba: https://github.com/MJTBApps/OpoAlert/actions/runs/40904841573 . La auditoría estricta https://github.com/MJTBApps/OpoAlert/actions/runs/40904996219 verificó el BOP #188 de 30/09 y #189 de 01/10 (10 edictos, 2 posibles candidatas el 01/10); **se detuvo correctamente en 02/10 por pantalla oficial de verificación interactiva, no eludida**. El selector del servidor también puede devolver la portada del 29/10 aunque se solicite una fecha anterior; se coteja siempre `h2 time[datetime]`, número y enlace de PDF, y nunca se acepta respuesta de fecha incorrecta. No marcar Málaga completa, no publicar feed parcial. El PDF directo `verificacion.php` requiere validación humana según portal editor.
+
+**Resultado del segundo ciclo:** 0 nuevos territorios terminados. **APK 1.29 sigue siendo la última versión validada** (Segovia, Salamanca, La Rioja y anteriores), artifact https://github.com/MJTBApps/OpoAlert/actions/runs/40900571011/artifacts/12908917537. Siguen pendientes 10 zonas.
