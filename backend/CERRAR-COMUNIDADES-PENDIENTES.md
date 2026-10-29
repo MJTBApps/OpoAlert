@@ -38,3 +38,8 @@ El **BOAM municipal de Madrid** es una publicación diferente del BOCM y no se m
 - Diagnóstico DOGV / DOGC: https://github.com/MJTBApps/OpoAlert/actions/runs/40871063130
 
 **Estado:** el alcance provincial de España continúa siendo parcial. El desarrollo no avanza a comunidades nuevas hasta completar o documentar los obstáculos de las anteriores. Si cambia la conectividad del portal, repetir auditoría íntegra en vez de generar datos simulados.
+
+
+## APK acumulativa definitiva de esta fase: 1.23.0 (29/10/2026)
+
+Compilación y todas las pruebas Android superadas: https://github.com/MJTBApps/OpoAlert/actions/runs/40872386533 . Instalador privado: https://github.com/MJTBApps/OpoAlert/actions/runs/40872386533/artifacts/12897280051 (ZIP con `OpoAlert-DOGV-1.23.0-PRUEBA.apk`). Versión interna Android `1.23.0-privada`, identificador único `es.opoalert.app.dogv`, etiqueta `OpoAlert DOGV`, SHA-256 APK `bf95726c9f899053f3a983c9a3e6d782e7945ec80577892545e49bf198873919`. Contiene `AO.json`, `BJ.json`, `DV.json` además de todos los datos históricos validados que venían empaquetándose en las versiones privadas anteriores. Los archivos no se actualizan automáticamente ni se publican como feeds de producción. Las fuentes BOP provinciales inaccesibles y el DOGC siguen pendientes y no se han marcado como completos.
