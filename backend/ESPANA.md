@@ -135,3 +135,14 @@ Jaén presenta huecos de numeración.
   descargan todos durante cada auditoría.
 - **El BOAM municipal de Madrid no se da por cubierto**; es una fuente
   independiente que deberá tener su propio lector si se incorpora.
+
+
+## Extremadura — tres fuentes auditadas, APK privada 1.18 (29/10/2026)
+
+La comunidad autónoma se incorpora al selector territorial con **Badajoz**, **Cáceres** y **DOE** (diario autonómico). No se han publicado los feeds de esta fase en GitHub Pages ni se ha modificado la versión que ya estaba instalada en el móvil. Las tres instantáneas de 30 días se incluyen únicamente en la APK de pruebas, con identificador Android `es.opoalert.app.ext`.
+
+- **BOP Badajoz**, fuente https://www.dip-badajoz.es/bop/: 22 boletines ordinarios del 30/09 al 29/10 de 2026, 516 anuncios y 45 candidatas a convocatoria. Incluye la edición suplementaria del 21/10 con el mismo número de BOP y los documentos PDF con prefijos de rectificación. Se comprueba identificador, organismo, fecha, archivo PDF y continuidad de números. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40850935583
+- **BOP Cáceres**, fuente https://bop.dip-caceres.es/bop/index.html: 22 boletines, 548 anuncios y 34 candidatas. Se utilizan los servicios JSON oficiales `/bop/services/boletines/bopMesCalendario` y `/bop/services/anuncios/anunciosAnunciantes`, incluidos los históricos de septiembre y octubre, cotejando cada PDF individual y el original completo de cada edición. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40850591480
+- **DOE Extremadura**, fuente https://doe.juntaex.es/: 22 ediciones (incluye la extraordinaria de 28/10), 527 anuncios y 50 candidatas. Índice oficial de 30 días, PDF completo de cada edición y PDF original de cada candidata, incluidos los documentos con identificadores alfanuméricos. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40850174258
+
+**Total:** 66 ediciones, 1.591 anuncios revisados y 129 anuncios candidatos. No equivalen a 129 plazas confirmadas; no se inventan requisitos, plazos ni enlaces de inscripción. Las instantáneas incluidas en la APK no se actualizan automáticamente, y se indica esto al usuario en el estado de la fuente. Se validan con `backend/validar_apk_ext.py` y pruebas de Android antes de distribuir la APK privada.
