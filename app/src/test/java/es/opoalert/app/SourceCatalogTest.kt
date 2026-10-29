@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
@@ -47,6 +47,8 @@ class SourceCatalogTest {
         assertEquals(5, groups[10].sourceCount)
         assertEquals(listOf("Todas las islas"), groups[11].territories.map { it.name })
         assertEquals(1, groups[11].sourceCount)
+        assertEquals(listOf("Las Palmas", "Santa Cruz de Tenerife", "Diario autonómico"), groups[12].territories.map { it.name })
+        assertEquals(3, groups[12].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
@@ -67,6 +69,7 @@ class SourceCatalogTest {
         assertEquals("BOJA · diario autonómico", SourceCatalog.sourceName(Province.ANDALUCIA_BOJA))
         assertEquals("DOGV · diario autonómico", SourceCatalog.sourceName(Province.VALENCIA_DOGV))
         assertEquals("BOIB · boletín autonómico e insular", SourceCatalog.sourceName(Province.BALEARES_BOIB))
+        assertEquals("BOC · diario autonómico", SourceCatalog.sourceName(Province.CANARIAS_BOC))
         assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.GALICIA_OURENSE))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
