@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -43,6 +43,7 @@ class ProvinceTest {
         assertTrue(Province.CORDOBA.idPattern.matches("CO-2026-3644"))
         assertEquals(Province.SEVILLA, Province.fromNoticeId("SV-2026-210001"))
         assertTrue(Province.SEVILLA.idPattern.matches("SV-2026-210001"))
+        assertEquals(Province.HUELVA_BOP, Province.fromNoticeId("HB-2026-381433"))
         assertEquals(Province.ALBACETE, Province.fromNoticeId("AB-2026-1001"))
         assertEquals(Province.CIUDAD_REAL, Province.fromNoticeId("CR-2026-3482"))
         assertEquals(Province.CUENCA, Province.fromNoticeId("CU-2026-3320"))
@@ -57,8 +58,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(26, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(27, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(23, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(24, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
