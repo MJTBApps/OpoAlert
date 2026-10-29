@@ -285,6 +285,41 @@ enum class Province(
         "www.euskadi.eus", "/bopv2/datos/",
         Regex("PV-2026-\\d{1,6}"),
     ),
+    GALICIA_CORUNA(
+        "AC", "A Coruña",
+        "https://mjtbapps.github.io/OpoAlert/galicia_coruna.json",
+        "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
+        "bop.dacoruna.gal", "/bopportal/publicado/",
+        Regex("AC-2026-\\d{1,8}"),
+    ),
+    GALICIA_LUGO(
+        "LU", "Lugo",
+        "https://mjtbapps.github.io/OpoAlert/galicia_lugo.json",
+        "https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop",
+        "deputacionlugo.gal", "/sites/deputacionlugo.org/files/inline-files/",
+        Regex("LU-2026-\\d{2,6}"),
+    ),
+    GALICIA_OURENSE(
+        "OU", "Ourense",
+        "https://mjtbapps.github.io/OpoAlert/galicia_ourense.json",
+        "https://bop.depourense.es/portalapi/api/boletin/getFecha",
+        "bop.depourense.es", "/portalapi/api/edicto/descargar/pdf/",
+        Regex("OU-2026-\\d{3,9}"),
+    ),
+    GALICIA_PONTEVEDRA(
+        "PO", "Pontevedra",
+        "https://mjtbapps.github.io/OpoAlert/galicia_pontevedra.json",
+        "https://boppo.depo.gal/es/consulta-do-boppo",
+        "boppo.depo.gal", "/web/boppo/detalle/-/boppo/",
+        Regex("PO-2026\\d{6,8}"),
+    ),
+    GALICIA_DOG(
+        "DG", "Galicia (DOG)",
+        "https://mjtbapps.github.io/OpoAlert/galicia_dog.json",
+        "https://www.xunta.gal/diario-oficial-galicia/Welcome.do?lang=es",
+        "www.xunta.gal", "/dog/Publicados/",
+        Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -329,6 +364,11 @@ enum class Province(
             id.startsWith("BI-") -> BIZKAIA_BOB
             id.startsWith("GP-") -> GIPUZKOA_BOG
             id.startsWith("PV-") -> PAIS_VASCO_BOPV
+            id.startsWith("AC-") -> GALICIA_CORUNA
+            id.startsWith("LU-") -> GALICIA_LUGO
+            id.startsWith("OU-") -> GALICIA_OURENSE
+            id.startsWith("PO-") -> GALICIA_PONTEVEDRA
+            id.startsWith("DG-") -> GALICIA_DOG
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
