@@ -29,7 +29,10 @@ def fetch(url,pdf=False):
         if r.status_code not in ((200,206) if pdf else (200,)):
             invalid("Soria: documento no disponible HTTP "+str(r.status_code))
         if pdf:
-            sample=next(r.iter_content(100),b"")
+            sample=b""
+            for chunk in r.iter_content(256):
+                sample+=chunk
+                if len(sample)>=5:break
             if not sample.startswith(b"%PDF-") or "pdf" not in r.headers.get("Content-Type","").lower():
                 invalid(f"Soria: el fichero oficial no es PDF, {url} (HTTP {r.status_code}, tipo {r.headers.get('Content-Type')}, bytes {sample[:60]!r})")
             r.close();return ""
