@@ -70,7 +70,19 @@ def archive(host,path):
    if a.get_text(" ",strip=True)!=str(day.day):
     invalid("fecha del calendario inconsistente")
    result[day]=urljoin(url,a["href"])
- if sorted(result)!=EXPECTED_DAYS:
+ if host=="www.bopsantacruzdetenerife.es":
+  # The Tenerife "latest" calendar only links Wednesday/Friday numbers.
+  # Its Monday issues are nevertheless publicly accessible through its
+  # own official sumario.php; demand that every reconstructed issue match
+  # the independently known contiguous number #117-129 and own PDF.
+  expected_visible=[d for d in EXPECTED_DAYS if d.weekday()!=0]
+  if sorted(result)!=expected_visible:
+   invalid(f"calendario parcial Tenerife incoherente: {[str(x) for x in sorted(result)]}")
+  missing=[d for d in EXPECTED_DAYS if d not in result]
+  for day in missing:
+   result[day]=f"https://{host}/{path}/sumario.php?codigopub=1&fecha_mas_reciente={day.isoformat()}"
+  print(f"CALENDARIO TENERIFE: {len(expected_visible)} enlaces visibles y {len(missing)} boletines de lunes recuperables por consulta oficial",flush=True)
+ elif sorted(result)!=EXPECTED_DAYS:
   invalid(f"calendario oficial {host} incompleto: {[str(x) for x in sorted(result)]}")
  print(f"CALENDARIO {host}: {len(result)} ediciones (30/09 a 28/10; 29/10 sin publicación)",flush=True)
  return sorted(result.items())
