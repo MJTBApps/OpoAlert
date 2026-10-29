@@ -320,6 +320,20 @@ enum class Province(
         "www.xunta.gal", "/dog/Publicados/",
         Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
     ),
+    ARAGON_BOA(
+        "AO", "Aragón (BOA)",
+        "https://mjtbapps.github.io/OpoAlert/aragon_boa.json",
+        "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
+        "www.boa.aragon.es", "/cgi-bin/EBOA/BRSCGI",
+        Regex("AO-2026-\\d{9}"),
+    ),
+    ANDALUCIA_BOJA(
+        "BJ", "Andalucía (BOJA)",
+        "https://mjtbapps.github.io/OpoAlert/andalucia_boja.json",
+        "https://www.juntadeandalucia.es/eboja/index.html",
+        "www.juntadeandalucia.es", "/eboja/2026/",
+        Regex("BJ-2026-\\d{8}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -369,6 +383,8 @@ enum class Province(
             id.startsWith("OU-") -> GALICIA_OURENSE
             id.startsWith("PO-") -> GALICIA_PONTEVEDRA
             id.startsWith("DG-") -> GALICIA_DOG
+            id.startsWith("AO-") -> ARAGON_BOA
+            id.startsWith("BJ-") -> ANDALUCIA_BOJA
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
