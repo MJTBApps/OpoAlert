@@ -15,6 +15,7 @@ object SourceCatalog {
 
     private fun territoryOf(source: Province): Territory? = when (source) {
         Province.BOE -> null
+        Province.MADRID -> Territory("Comunidad de Madrid", "Madrid")
         Province.VALENCIA -> Territory("Comunidad Valenciana", "Valencia")
         Province.ALICANTE -> Territory("Comunidad Valenciana", "Alicante")
         Province.CASTELLON -> Territory("Comunidad Valenciana", "Castellón")
@@ -32,13 +33,14 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón"),
         "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"),
+        "Comunidad de Madrid" to listOf("Madrid"),
     )
 
     fun groups(sources: List<Province> = Province.entries): List<BulletinCommunity> {
@@ -66,6 +68,7 @@ object SourceCatalog {
 
     fun sourceName(source: Province): String =
         if (source == Province.BOE) "BOE · toda España"
+        else if (source == Province.MADRID) "BOCM · diario autonómico"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
 }
