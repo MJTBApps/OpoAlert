@@ -100,7 +100,7 @@ def audit():
  for ident,r in data.items():
   x=other[ident]
   if x["date"]!=r["date"] or fold(x["title"])!=fold(r["title"]) or fold(x["agency"])!=fold(r["agency"]) or x["pdfs"]!=r["pdfs"]:
-   invalid(f"BOA: XML difiere del JSON en {ident}")
+   invalid(f"BOA: XML difiere del JSON en {ident}; dates={x['date']==r['date']}, titles={fold(x['title'])==fold(r['title'])}, agencies={fold(x['agency'])==fold(r['agency'])}, urls={x['pdfs']==r['pdfs']}; titulo_xml={x['title'][:280]!r}, titulo_json={r['title'][:280]!r}, pdf_xml={x['pdfs']}, pdf_json={r['pdfs']}")
   day=datetime.strptime(r["date"],"%Y%m%d").date()
   grouped[(day,int(r["num"]))].append((ident,r))
  keys=sorted(grouped)
