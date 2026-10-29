@@ -383,6 +383,13 @@ enum class Province(
         "dogv.gva.es", "/datos/2026/",
         Regex("DV-2026-\\d{1,8}"),
     ),
+    CATALUNA_DOGC(
+        "DC", "Cataluña (DOGC)",
+        "https://mjtbapps.github.io/OpoAlert/cataluna_dogc.json",
+        "https://portaldogc.gencat.cat/eadop-rest/api/dogc/summaryDOGC",
+        "dogc.gencat.cat", "/ca/document-del-dogc/",
+        Regex("DC-2026-\\d{6,9}"),
+    ),
     ARAGON_BOA(
         "AO", "Aragón (BOA)",
         "https://mjtbapps.github.io/OpoAlert/aragon_boa.json",
@@ -449,6 +456,7 @@ enum class Province(
             id.startsWith("OU-") -> GALICIA_OURENSE
             id.startsWith("PO-") -> GALICIA_PONTEVEDRA
             id.startsWith("DG-") -> GALICIA_DOG
+            id.startsWith("DC-") -> CATALUNA_DOGC
             id.startsWith("AO-") -> ARAGON_BOA
             id.startsWith("BJ-") -> ANDALUCIA_BOJA
             id.startsWith("DV-") -> VALENCIA_DOGV
