@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
@@ -33,6 +33,8 @@ class SourceCatalogTest {
         assertEquals(5, groups[3].sourceCount)
         assertEquals(listOf("Madrid"), groups[4].territories.map { it.name })
         assertEquals(1, groups[4].sourceCount)
+        assertEquals(listOf("Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
+        assertEquals(6, groups[5].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
@@ -40,6 +42,7 @@ class SourceCatalogTest {
         assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.VALENCIA))
         assertEquals("CIDO · procesos selectivos", SourceCatalog.sourceName(Province.LLEIDA))
         assertEquals("BOCM · diario autonómico", SourceCatalog.sourceName(Province.MADRID))
+        assertEquals("DOCM · diario autonómico", SourceCatalog.sourceName(Province.CLM_DOCM))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
     }
