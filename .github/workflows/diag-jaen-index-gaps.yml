@@ -1,0 +1,19 @@
+name: OpoAlert - Diagnosticar huecos hemeroteca Jaén
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/bop-almeria-jaen-20261029]
+    paths: ['backend/diag_jaen_index_gaps.py', '.github/workflows/diag-jaen-index-gaps.yml']
+permissions:
+  contents: read
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diag_jaen_index_gaps.py
