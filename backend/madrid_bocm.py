@@ -5,7 +5,7 @@ Scans the complete issue catalogue, including multiple/extraordinary issues on
 one date, and verifies the original PDF for all employment candidates.
 """
 from __future__ import annotations
-import argparse,json,re,time,xml.etree.ElementTree as ET
+import argparse,json,re,time,threading,xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
@@ -17,6 +17,12 @@ from provincial_common import ProvincialCoverageError,classify
 HOME="https://www.bocm.es"
 CATALOG=HOME+"/listado-de-boletines"
 PROVINCE="Madrid"
+_THREAD=threading.local()
+def session():
+    if not hasattr(_THREAD,"http"):
+        _THREAD.http=requests.Session()
+        _THREAD.http.headers.update({"User-Agent":"Mozilla/5.0 (compatible; OpoAlert Madrid verified index)","Accept-Language":"es"})
+    return _THREAD.http
 ISSUE_LINK=re.compile(r"^/boletin/bocm-(\d{8})-(\d{1,3})$",re.I)
 NOTICE_ID=re.compile(r"^BOCM-(\d{8})-(\d{1,5})$")
 PDF_PATTERN=re.compile(r"^/boletin/CM_Orden_BOCM/(\d{4})/(\d{2})/(\d{2})/BOCM-(\d{8})-(\d{1,5})\.PDF$",re.I)
@@ -36,10 +42,9 @@ def request(url:str,pdf:bool=False)->requests.Response:
     error=None
     for n in range(3):
         try:
-            resp=requests.get(url,timeout=(10,33),stream=pdf,allow_redirects=True,
-                headers={"User-Agent":"Mozilla/5.0 (compatible; OpoAlert Madrid verified index)",
-                         "Accept-Language":"es"})
-            if resp.status_code!=200 or urlsplit(resp.url).hostname!="www.bocm.es":
+            resp=session().get(url,timeout=(13,35),stream=pdf,allow_redirects=True,
+                headers={"Range":"bytes=0-127"} if pdf else {})
+            if resp.status_code not in ((200,206) if pdf else (200,)) or urlsplit(resp.url).hostname!="www.bocm.es":
                 status=resp.status_code
                 resp.close()
                 fail(f"HTTP {status} al leer {url}")
