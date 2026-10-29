@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/cierre-12-zonas-20261029]
-    paths: [backend/salamanca_bop.py, .github/workflows/cierre-salamanca-audit.yml]
+    paths: [backend/salamanca_bop.py, backend/validar_apk_salamanca.py, .github/workflows/cierre-salamanca-audit.yml]
 permissions: {contents: read}
 jobs:
   auditar:
@@ -17,6 +17,8 @@ jobs:
       - run: python -m py_compile backend/salamanca_bop.py
       - name: Validar 22 boletines y todos los PDF originales
         run: python -u backend/salamanca_bop.py --output out/SA.json
+      - name: Verificar de forma independiente sumarios y CVE oficiales
+        run: python backend/validar_apk_salamanca.py --root out
       - uses: actions/upload-artifact@v4
         with:
           name: salamanca-bop-auditado-30dias
