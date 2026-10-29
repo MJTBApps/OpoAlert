@@ -116,3 +116,19 @@ Jaén presenta huecos de numeración.
   en los casos afectados. Las correcciones oficiales BOP-AC no se publican
   como plazas nuevas. Se comprueban sumario oficial y PDF individual.
 - Auditoría independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40833433731
+
+
+## Madrid — BOCM como fuente autonómica (29/10/2026)
+
+- Fuente: https://www.bocm.es/listado-de-boletines
+- Madrid es una comunidad autónoma uniprovincial, por lo que se integra el
+  **BOCM** y no se inventa un BOP provincial. Contiene anuncios de la
+  Administración autonómica, ayuntamientos y otros organismos.
+- Se auditan los 30 días mediante el índice oficial, incluidos boletines
+  extraordinarios (p.ej. 258 y 259 del 28/10/2026).
+- El portal puede devolver el XML del boletín 258 al solicitar el 259. El
+  lector rechaza esa inconsistencia y contrasta la edición extraordinaria
+  mediante HTML oficial y metadatos JSON-LD del anuncio; comprueba el PDF
+  de edición y los PDF originales de candidatas.
+- **El BOAM municipal de Madrid no se da por cubierto**; es una fuente
+  independiente que deberá tener su propio lector si se incorpora.
