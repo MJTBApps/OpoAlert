@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Strict common output for Castilla-La Mancha bulletins; fail closed."""
 from __future__ import annotations
-import json,re,requests,time
+import json,re,requests,time,threading
 from pathlib import Path
 from datetime import date,datetime,timedelta,timezone
 from urllib.parse import urlsplit
 from provincial_common import ProvincialCoverageError,fold,classify
+_HTTP_THREADS=threading.local()
+def http_session():
+    if not hasattr(_HTTP_THREADS,"client"):
+        _HTTP_THREADS.client=requests.Session()
+        _HTTP_THREADS.client.headers.update({"User-Agent":"Mozilla/5.0 (compatible; OpoAlert research crawler)","Accept-Language":"es"})
+    return _HTTP_THREADS.client
 
 def invalid(message):
     raise ProvincialCoverageError("Castilla-La Mancha: "+str(message))
@@ -18,8 +24,7 @@ def get(url,allowed,stream=False,timeout=(12,28)):
     error=None
     for i in range(3):
         try:
-            r=requests.get(url,timeout=timeout,stream=stream,allow_redirects=True,
-                headers={"User-Agent":"Mozilla/5.0 (compatible; OpoAlert research crawler)","Accept-Language":"es"})
+            r=http_session().get(url,timeout=timeout,stream=stream,allow_redirects=True)
             final=urlsplit(r.url)
             if r.status_code!=200 or final.hostname not in allowed:
                 n=r.status_code;r.close()
