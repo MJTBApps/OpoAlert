@@ -1,0 +1,19 @@
+name: OpoAlert - Investigar RSS XML y calendario BOCM
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/madrid-bocm-20261029]
+    paths: [backend/diagnosticar_bocm_rss.py, .github/workflows/diagnosticar-bocm-rss.yml]
+permissions:
+  contents: read
+jobs:
+  rss:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diagnosticar_bocm_rss.py
