@@ -33,13 +33,23 @@ def request(url):
     error=None
     for attempt in range(3):
         try:
+            last=getattr(_thread,"last_read_monotonic",None)
+            if last is not None:
+                pause=5.0-(time.monotonic()-last)
+                if pause>0:time.sleep(pause)
             r=session().get(url,timeout=(10,25))
+            _thread.last_read_monotonic=time.monotonic()
             if (r.status_code==200 and urlsplit(r.url).hostname==HOST
                 and r.content and len(r.content)<=4_000_000
                 and b"Verificacion necesaria" not in r.content[:2500]
                 and b"Verificaci\xc3\xb3n de seguridad" not in r.content[:2500]
                 and b"<title>Verificacion necesaria</title>" not in r.content[:2500]):
                 return r
+            if r.status_code==200 and (
+              b"Verificacion necesaria" in r.content[:2500]
+              or b"Verificaci\xc3\xb3n de seguridad" in r.content[:2500]
+              or b"<title>Verificacion necesaria</title>" in r.content[:2500]):
+                invalid("Málaga: verificación humana requerida por el portal; no se automatiza: "+url)
             error=f"HTTP {r.status_code}, {len(r.content)} bytes, respuesta de seguridad o vacia"
         except requests.RequestException as ex:error=str(ex)[:150]
         if attempt<2:time.sleep(1.6*(attempt+1))
