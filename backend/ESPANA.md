@@ -220,3 +220,8 @@ Se ha integrado en la rama `feature/baleares-boib-20261029` el BOIB como única 
 ## Canarias (29/10/2026)
 
 Se incorpora la **cobertura de las dos provincias mediante BOP y del BOC autonómico** en la rama `feature/canarias-3-boletines-20261029`. Histórico 30/09–29/10 de 2026: BOC 22 ediciones #196–217 (361 anuncios, 50 posibles convocatorias); BOP Las Palmas 13 ediciones #117–129 (375 anuncios, 35 coincidencias); BOP Santa Cruz de Tenerife 13 ediciones #117–129 (522 anuncios, 27 coincidencias). **Total 48 boletines, 1.258 anuncios, 112 coincidencias potenciales**. Ver detalles, PDF originales y límites en `backend/CANARIAS.md`. No existe filtro individual por isla y los BOP enlazan sus PDF completos, no un documento ficticio por anuncio.
+
+
+## Melilla y Ceuta (29/10/2026)
+
+**Melilla (BOME) auditado completo**, 14 boletines (8 ordinarios y 6 extraordinarios), 133 artículos/PDF originales y 16 coincidencias de empleo, período 30/09–29/10/2026. Auditoría https://github.com/MJTBApps/OpoAlert/actions/runs/40879256732 . **Ceuta (BOCCE) pendiente y excluida de la cobertura completa**: su portal oficial `www.ceuta.es` no responde desde el sistema de auditoría y no es aceptable sustituirlo por resúmenes periodísticos no oficiales. Véase `backend/CEUTA_MELILLA.md`. La siguiente APK privada incluirá Melilla pero no atribuirá cobertura inexistente a Ceuta.
