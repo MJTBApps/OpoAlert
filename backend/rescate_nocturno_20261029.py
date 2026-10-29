@@ -12,6 +12,7 @@ import concurrent.futures
 from datetime import date, datetime, timedelta, timezone
 from io import BytesIO
 import json
+import hashlib
 from pathlib import Path
 import re
 import time
@@ -143,8 +144,9 @@ def check_jaen_pdf(entry):
         matching_date=any(x.casefold() in excerpt.casefold() for x in date_variants)
         result.update({"http":meta["http"],"pdfValidated":bool(valid),
           "firstPageMatchesDate":bool(valid and matching_date),
-          "pagesParsed":page_count,"bytes":len(raw),
-          "firstPageSample":excerpt[:230]})
+          "pagesParsed":page_count,"bytes":len(raw),"sha256":hashlib.sha256(raw).hexdigest() if valid else None,
+          "firstPageSample":excerpt[:230],
+          "issueHeaderFound":re.findall(r"(?:N[úu]mero|N[úu]m[.]?)\s*:?[ ]*(\d{1,3})",excerpt,re.I)[:3]})
     except Exception as ex:
         result["error"]=type(ex).__name__+": "+str(ex)[:180]
     return result
@@ -189,7 +191,7 @@ def jaen_partial(max_pdfs):
         result["indexCount"]=total
         result["indexedDates"]=len(by_day)
         for record in result["indexedIssues"][:max_pdfs]:
-            time.sleep(1)
+            time.sleep(2.0)
             pdf=check_jaen_pdf(record)
             result["pdfChecks"].append(pdf)
             if pdf.get("pdfValidated"):
@@ -223,7 +225,7 @@ def main():
     tasks=[(url,code) for code,urls in CHECKS.items() for url in urls]
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         probes=list(pool.map(lambda p:check(*p),tasks))
-    ja=jaen_partial(max(0,min(args.max_jaen_pdfs,12)))
+    ja=jaen_partial(max(0,min(args.max_jaen_pdfs,24)))
     summary={code:{"probed":sum(x["territory"]==code for x in probes),
                    "http200":sum(x["territory"]==code and x.get("http")==200 for x in probes),
                    "verified30Days":False} for code in CHECKS}
