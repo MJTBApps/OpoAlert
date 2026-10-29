@@ -110,7 +110,8 @@ def audit():
     or any(b[1]!=a[1]+1 for a,b in zip(keys,keys[1:]))):
   invalid(f"BOA: números ordinarios no continuos {keys}")
  checks=[];issues=[]
- for (day,num),rows in keys:
+ for day,num in keys:
+  rows=grouped[(day,num)]
   notices=[]
   for ident,r in rows:
    kind=employment(r["title"])
