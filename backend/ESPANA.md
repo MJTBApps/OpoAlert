@@ -210,3 +210,8 @@ Estas **3 fuentes suman 73 sumarios, 3.270 anuncios y 781 coincidencias potencia
 ## APK acumulativa definitiva de esta fase: 1.23.0 (29/10/2026)
 
 Compilación y todas las pruebas Android superadas: https://github.com/MJTBApps/OpoAlert/actions/runs/40872386533 . Instalador privado: https://github.com/MJTBApps/OpoAlert/actions/runs/40872386533/artifacts/12897280051 (ZIP con `OpoAlert-DOGV-1.23.0-PRUEBA.apk`). Versión interna Android `1.23.0-privada`, identificador único `es.opoalert.app.dogv`, etiqueta `OpoAlert DOGV`, SHA-256 APK `bf95726c9f899053f3a983c9a3e6d782e7945ec80577892545e49bf198873919`. Contiene `AO.json`, `BJ.json`, `DV.json` además de todos los datos históricos validados que venían empaquetándose en las versiones privadas anteriores. Los archivos no se actualizan automáticamente ni se publican como feeds de producción. Las fuentes BOP provinciales inaccesibles y el DOGC siguen pendientes y no se han marcado como completos.
+
+
+## Illes Balears: fuente BOIB oficial (29/10/2026)
+
+Se ha integrado en la rama `feature/baleares-boib-20261029` el BOIB como única fuente oficial autonómica y municipal para Mallorca, Menorca, Ibiza y Formentera. Calendario y todas las secciones verificadas durante 30 días (30/09–29/10/2026): **16 ediciones n.º 123–138 (3 extraordinarias), 1.076 anuncios y 158 coincidencias de empleo con PDF original autenticado**. Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40873448718 . No se han inventado boletines provinciales separados por isla, no hay filtro de isla individual y las fuentes privadas son una instantánea no sincronizada. Detalles y límites: `backend/BALEARES.md`.
