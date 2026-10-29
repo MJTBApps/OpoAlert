@@ -31,7 +31,8 @@ object RemoteFeedReader {
         Province.GALICIA_PONTEVEDRA, Province.GALICIA_DOG,
         Province.ARAGON_BOA, Province.ANDALUCIA_BOJA, Province.VALENCIA_DOGV,
         Province.BALEARES_BOIB,
-        Province.CANARIAS_BOC, Province.LAS_PALMAS_BOP, Province.SANTA_CRUZ_BOP
+        Province.CANARIAS_BOC, Province.LAS_PALMAS_BOP, Province.SANTA_CRUZ_BOP,
+        Province.MELILLA_BOME
     )
 
     fun fetch(address: String, province: Province = Province.VALENCIA, context: Context? = null): RemoteFeed {
@@ -139,7 +140,7 @@ object RemoteFeedReader {
         val read = coverage.optInt("announcementsRead", 0)
         val cido = province in setOf(Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA)
         val status = if (cido) "${province.label}: CIDO · $read procesos" else
-            "${province.label}: ${when (province) { Province.BOE -> "BOE"; Province.MADRID -> "BOCM"; Province.CLM_DOCM -> "DOCM"; Province.CYL_BOCYL -> "BOCYL"; Province.EXTREMADURA_DOE -> "DOE"; Province.MURCIA_BORM -> "BORM"; Province.PAIS_VASCO_BOPV -> "BOPV"; Province.ALAVA_BOTHA -> "BOTHA"; Province.BIZKAIA_BOB -> "BOB"; Province.GIPUZKOA_BOG -> "BOG"; Province.GALICIA_DOG -> "DOG"; Province.ARAGON_BOA -> "BOA"; Province.ANDALUCIA_BOJA -> "BOJA"; Province.VALENCIA_DOGV -> "DOGV"; Province.BALEARES_BOIB -> "BOIB"; Province.CANARIAS_BOC -> "BOC"; else -> "BOP" }} $currentBulletin · $read anuncios"
+            "${province.label}: ${when (province) { Province.BOE -> "BOE"; Province.MADRID -> "BOCM"; Province.CLM_DOCM -> "DOCM"; Province.CYL_BOCYL -> "BOCYL"; Province.EXTREMADURA_DOE -> "DOE"; Province.MURCIA_BORM -> "BORM"; Province.PAIS_VASCO_BOPV -> "BOPV"; Province.ALAVA_BOTHA -> "BOTHA"; Province.BIZKAIA_BOB -> "BOB"; Province.GIPUZKOA_BOG -> "BOG"; Province.GALICIA_DOG -> "DOG"; Province.ARAGON_BOA -> "BOA"; Province.ANDALUCIA_BOJA -> "BOJA"; Province.VALENCIA_DOGV -> "DOGV"; Province.BALEARES_BOIB -> "BOIB"; Province.CANARIAS_BOC -> "BOC"; Province.MELILLA_BOME -> "BOME"; else -> "BOP" }} $currentBulletin · $read anuncios"
         val historyStatus = if (cido)
             "CIDO (actualizaciones de procesos): ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}" else
             "Histórico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
