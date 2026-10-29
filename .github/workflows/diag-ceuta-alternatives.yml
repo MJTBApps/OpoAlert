@@ -1,0 +1,17 @@
+name: OpoAlert - Verificar alternativas descarga BOCCE
+on:
+  push:
+    branches: [feature/ceuta-melilla-20261029]
+    paths: [backend/diag_ceuta_alternatives.py, .github/workflows/diag-ceuta-alternatives.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 11
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diag_ceuta_alternatives.py
