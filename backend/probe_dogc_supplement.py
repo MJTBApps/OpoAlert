@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+"""Inspect DOGC supplementary issue API official JS, no activation."""
+import requests,re,json
+from bs4 import BeautifulSoup
+root="https://dogc.gencat.cat"
+u=root+"/ca/sumari-del-suplement/?numDOGC=9782SN"
+r=requests.get(u,timeout=(6,20))
+h=BeautifulSoup(r.content,"html.parser")
+print("SUPPLEMENT_HTML",json.dumps({"http":r.status_code,"size":len(r.content),"title":h.title.get_text(" ",strip=True) if h.title else "","inputs":{x.get("id"):x.get("value") for x in h.select('input[type=hidden][id]') if re.search("supp|supl|uri|protocol|host|num|language|locale",x.get("id",""),re.I)},"scripts":[x.get("src") for x in h.select("script[src]") if re.search("supl|sumari",x.get("src",""),re.I)]},ensure_ascii=False),flush=True)
+js_files=[x.get("src") for x in h.select("script[src]") if re.search("supl|sumari",x.get("src",""),re.I)]
+for item in js_files:
+ try:
+  res=requests.get(requests.compat.urljoin(root,item),timeout=(5,18))
+  body=res.text
+  spans=[]
+  for m in re.finditer("summarySuplement|uriSumari|type: 'post'|type: 'POST'|numDOGC|numSuplement|data: inputParameters",body,re.I):
+   spans.append(body[max(0,m.start()-350):min(len(body),m.end()+550)])
+  print("SUPPLEMENT_JS",json.dumps({"src":item,"http":res.status_code,"len":len(body),"fragments":spans[:15]},ensure_ascii=False),flush=True)
+ except Exception as e:print("SUPPLEMENT_ERROR",type(e).__name__,str(e)[:180],flush=True)
