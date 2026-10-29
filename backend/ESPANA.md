@@ -129,6 +129,9 @@ Jaén presenta huecos de numeración.
 - El portal puede devolver el XML del boletín 258 al solicitar el 259. El
   lector rechaza esa inconsistencia y contrasta la edición extraordinaria
   mediante HTML oficial y metadatos JSON-LD del anuncio; comprueba el PDF
-  de edición y los PDF originales de candidatas.
+  completo de cada edición y una muestra de PDF individuales por edición.
+  Todos los enlaces individuales proceden del sumario oficial, se verifican
+  estructuralmente y no se inventan, aunque por límites de acceso no se
+  descargan todos durante cada auditoría.
 - **El BOAM municipal de Madrid no se da por cubierto**; es una fuente
   independiente que deberá tener su propio lector si se incorpora.
