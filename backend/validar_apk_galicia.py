@@ -81,7 +81,7 @@ def audit(root:Path):
                 or day.isoformat() not in dates or str(row.get("bulletin")) not in bulletins
                 or u.scheme!="https" or u.hostname!=host or u.port not in (None,443)
                 or u.query or u.fragment or u.username or not valid_pdf(code,u,row)):
-                raise ValueError(f"{code}: anuncio o PDF original sin validar: {ident}")
+                raise ValueError(f"{code}: anuncio/PDF sin validar: {ident}, url={u.geturl()[:400]}, fecha={day}, bulletin={row.get('bulletin')}, title={row.get('title','')[:90]}, pdf_valid={valid_pdf(code,u,row)}, hostname={u.hostname}, type={row.get('type')}, fecha_en_indice={day.isoformat() in dates}")
             ids.add(ident)
         print(f"GALICIA VALIDADA {code}: {issue_count} boletines, {ann_count} anuncios, {opp_count} candidatas",flush=True)
         total_issues+=issue_count;total_announcements+=ann_count;total_opportunities+=opp_count
