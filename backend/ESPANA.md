@@ -100,8 +100,19 @@ candidata, y un validador independiente rechaza feeds parciales.
 El filtrado de empleo es conservador; candidatos no significa vacantes
 confirmadas y se debe contrastar cada anuncio oficial.
 
-**Córdoba**, **Huelva**, **Málaga** y **Jaén** aún no están activos
-como fuentes independientes: Córdoba necesita resolver las fichas de anuncios
-desacopladas del emisor en el portal Next.js, Málaga tiene conexiones
-intermitentes desde Actions, Huelva no ofrece actualmente un archivo
-accesible por el lector y Jaén presenta huecos de numeración.
+**Huelva**, **Málaga** y **Jaén** aún no están activos
+como fuentes independientes: Málaga tiene conexiones intermitentes desde
+Actions, Huelva todavía requiere una auditoría completa de su archivo y
+Jaén presenta huecos de numeración.
+
+## Córdoba — 22 boletines y PDFs verificados (29/10/2026)
+
+- Portal de la Diputación: https://bop.dipucordoba.es/
+- Intervalo auditado: 30/09/2026 a 29/10/2026, 22 boletines con números
+  consecutivos, **376 anuncios completos y 25 candidatas a convocatoria**.
+- Lectura de sumario y anuncios por fecha. En el portal Next.js los
+  fragmentos de HTML inicial pueden contener anuncios desconectados del
+  organismo emisor; se utiliza Chromium para recuperar el DOM hidratado solo
+  en los casos afectados. Las correcciones oficiales BOP-AC no se publican
+  como plazas nuevas. Se comprueban sumario oficial y PDF individual.
+- Auditoría independiente: https://github.com/MJTBApps/OpoAlert/actions/runs/40833433731

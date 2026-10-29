@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Granada", "Sevilla", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -39,6 +39,8 @@ class ProvinceTest {
         assertTrue(Province.ALMERIA.idPattern.matches("AM-2026-02765"))
         assertEquals(Province.GRANADA, Province.fromNoticeId("GR-2026-210001"))
         assertTrue(Province.GRANADA.idPattern.matches("GR-2026-210001"))
+        assertEquals(Province.CORDOBA, Province.fromNoticeId("CO-2026-3644"))
+        assertTrue(Province.CORDOBA.idPattern.matches("CO-2026-3644"))
         assertEquals(Province.SEVILLA, Province.fromNoticeId("SV-2026-210001"))
         assertTrue(Province.SEVILLA.idPattern.matches("SV-2026-210001"))
         assertTrue(Province.ALMERIA.allowsOfficialPath("/bop/services/manager/edicto/2026/2765/anuncio.pdf"))
@@ -46,8 +48,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(18, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(19, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(15, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(16, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }

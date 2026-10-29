@@ -18,6 +18,8 @@ on:
       - 'OpoAlert - Revisar y publicar BOP Almeria'
       - 'OpoAlert - Revisar y publicar BOP Granada Sevilla'
       - 'OpoAlert - Publicar APK 1.13.0 en web'
+      - 'OpoAlert - Revisar y publicar BOP Cordoba'
+      - 'OpoAlert - Publicar APK 1.14.0 en web'
       - 'OpoAlert - Publicar APK 1.12.0 en web'
     types: [completed]
   schedule:

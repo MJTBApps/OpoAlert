@@ -26,6 +26,7 @@ object SourceCatalog {
         Province.ZARAGOZA -> Territory("Aragón", "Zaragoza")
         Province.ALMERIA -> Territory("Andalucía", "Almería")
         Province.CADIZ -> Territory("Andalucía", "Cádiz")
+        Province.CORDOBA -> Territory("Andalucía", "Córdoba")
         Province.GRANADA -> Territory("Andalucía", "Granada")
         Province.SEVILLA -> Territory("Andalucía", "Sevilla")
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")

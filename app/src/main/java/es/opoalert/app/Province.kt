@@ -110,6 +110,13 @@ enum class Province(
         "app.dipalme.org", "/bop/services/manager/edicto/",
         Regex("AM-\\d{4}-\\d{5}"),
     ),
+    CORDOBA(
+        "CO", "Córdoba",
+        "https://mjtbapps.github.io/OpoAlert/cordoba_bop.json",
+        "https://bop.dipucordoba.es/",
+        "bop.dipucordoba.es", "/visor-pdf/",
+        Regex("CO-\\d{4}-\\d{1,7}"),
+    ),
     GRANADA(
         "GR", "Granada",
         "https://mjtbapps.github.io/OpoAlert/granada_bop.json",
@@ -153,6 +160,7 @@ enum class Province(
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
+            id.startsWith("CO-") -> CORDOBA
             id.startsWith("GR-") -> GRANADA
             id.startsWith("SV-") -> SEVILLA
             id.startsWith("AM-") -> ALMERIA
