@@ -1,0 +1,100 @@
+name: OpoAlert - APK privada 1.16.0 para instalar en movil
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/rematar-clm-madrid-andalucia-20261029]
+    paths: [.github/workflows/apk-privada-116.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 36
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - uses: actions/download-artifact@v4
+        with:
+          name: madrid-bocm-verificado-solo-prueba
+          repository: MJTBApps/OpoAlert
+          run-id: 40841935151
+          github-token: ${{ github.token }}
+          path: verified/madrid
+      - uses: actions/download-artifact@v4
+        with:
+          name: huelva-bop-30dias
+          repository: MJTBApps/OpoAlert
+          run-id: 40842937607
+          github-token: ${{ github.token }}
+          path: verified/huelva
+      - uses: actions/download-artifact@v4
+        with:
+          name: ciudad-real-auditado-local
+          repository: MJTBApps/OpoAlert
+          run-id: 40839994664
+          github-token: ${{ github.token }}
+          path: verified/ciudad_real
+      - uses: actions/download-artifact@v4
+        with:
+          name: clm-guadalajara-auditado
+          repository: MJTBApps/OpoAlert
+          run-id: 40839179580
+          github-token: ${{ github.token }}
+          path: verified/guadalajara
+      - uses: actions/download-artifact@v4
+        with:
+          name: toledo-auditado-local
+          repository: MJTBApps/OpoAlert
+          run-id: 40839339286
+          github-token: ${{ github.token }}
+          path: verified/toledo
+      - uses: actions/download-artifact@v4
+        with:
+          name: docm-auditado-local
+          repository: MJTBApps/OpoAlert
+          run-id: 40840362204
+          github-token: ${{ github.token }}
+          path: verified/docm
+      - name: Empaquetar solo copias oficiales verificadas en APK local
+        run: |
+          set -eu
+          mkdir -p app/src/main/assets/verified
+          cp verified/madrid/madrid_bocm.json app/src/main/assets/verified/MD.json
+          cp verified/huelva/huelva_bop.json app/src/main/assets/verified/HB.json
+          cp verified/ciudad_real/ciudad_real_bop.json app/src/main/assets/verified/CR.json
+          cp verified/guadalajara/guadalajara_bop.json app/src/main/assets/verified/GJ.json
+          cp verified/toledo/toledo_bop.json app/src/main/assets/verified/TO.json
+          cp verified/docm/castilla_mancha_docm.json app/src/main/assets/verified/CM.json
+          python backend/validar_apk_privada.py --root app/src/main/assets/verified
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Preparar SDK de Android
+        run: |
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f -print -quit)"
+          test -n "$SDKMANAGER"
+          "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Verificar selector, favoritos, alertas y fichas
+        run: python scripts/test_ui_080.py
+      - name: Compilar y ejecutar todas las pruebas Android
+        run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug
+      - name: Preparar archivo para instalacion personal
+        run: |
+          set -eu
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.16.0-PRUEBA-PRIVADA.apk
+          unzip -t OpoAlert-1.16.0-PRUEBA-PRIVADA.apk >/dev/null
+          unzip -Z1 OpoAlert-1.16.0-PRUEBA-PRIVADA.apk | grep 'assets/verified/MD.json'
+          unzip -Z1 OpoAlert-1.16.0-PRUEBA-PRIVADA.apk | grep 'assets/verified/HB.json'
+          sha256sum OpoAlert-1.16.0-PRUEBA-PRIVADA.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-APK-PRIVADA-1.16.0
+          path: OpoAlert-1.16.0-PRUEBA-PRIVADA.apk
+          retention-days: 30
+          if-no-files-found: error
