@@ -320,6 +320,13 @@ enum class Province(
         "www.xunta.gal", "/dog/Publicados/",
         Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
     ),
+    VALENCIA_DOGV(
+        "DV", "Comunidad Valenciana (DOGV)",
+        "https://mjtbapps.github.io/OpoAlert/valencia_dogv.json",
+        "https://dogv.gva.es/dogv-portal/dogv",
+        "dogv.gva.es", "/datos/2026/",
+        Regex("DV-2026-\\d{1,8}"),
+    ),
     ARAGON_BOA(
         "AO", "Aragón (BOA)",
         "https://mjtbapps.github.io/OpoAlert/aragon_boa.json",
@@ -385,6 +392,7 @@ enum class Province(
             id.startsWith("DG-") -> GALICIA_DOG
             id.startsWith("AO-") -> ARAGON_BOA
             id.startsWith("BJ-") -> ANDALUCIA_BOJA
+            id.startsWith("DV-") -> VALENCIA_DOGV
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
