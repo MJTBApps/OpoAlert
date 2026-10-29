@@ -53,7 +53,7 @@ def archive(html,start,end):
             links.append((d,int(m[1]),u))
     links=sorted(set(links))
     if len(links)<12 or (links[0][0]-start).days>4 or (end-links[-1][0]).days>4:
-        invalid("Soria: no se cubre 30 días de BOP")
+        invalid(f"Soria: índice insuficiente: {len(links)} ediciones; primera {links[0][0] if links else None}; última {links[-1][0] if links else None}")
     if any(b[1]!=a[1]+1 for a,b in zip(links,links[1:])):
         invalid("Soria: falta número de boletín en archivo oficial")
     return links
