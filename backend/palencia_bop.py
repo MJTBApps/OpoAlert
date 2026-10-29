@@ -63,9 +63,11 @@ def index_pages(start,end):
         invalid("Palencia: numeración ordinaria con saltos")
     return ordered
 
-def toc_from_pdf(pdf,day,number):
+def toc_from_pdf(pdf,day,number,kind="ordinario"):
     first=pdf[0].get_text()
-    if (day.year!=2026 or not re.search(rf"\bN[úu]m\.\s*{number}\b",first,re.I)
+    number_ok=bool(re.search(rf"\bN[úu]m\.\s*{number}\b",first,re.I)
+       or (kind=="extraordinario" and re.search(rf"Boletín\s+Extraordinario\s+N[º°o]\s*{number}\b",first,re.I)))
+    if (day.year!=2026 or not number_ok
         or day.strftime("%Y") not in first or "Sumario" not in first):
         invalid(f"Palencia {day}: el PDF no corresponde a su fecha y número BOP {number}, portada={first[:550]!r}")
     results=[];cur_area="Boletín Oficial de la Provincia de Palencia"
@@ -109,7 +111,7 @@ def toc_from_pdf(pdf,day,number):
                 pending.clear();continue
             pending.append(line)
             if len(pending)>4:pending=pending[-4:]
-    if len(results)<2:invalid("Palencia: no se puede recuperar sumario original de anuncios")
+    if len(results)<(1 if kind=="extraordinario" else 2):invalid("Palencia: no se puede recuperar sumario original de anuncios")
     return results
 
 def scan(item):
@@ -118,7 +120,7 @@ def scan(item):
     try:pdf=fitz.open(stream=content,filetype="pdf")
     except Exception:invalid("Palencia: PDF original corrupto")
     with pdf:
-        data=toc_from_pdf(pdf,day,num)
+        data=toc_from_pdf(pdf,day,num,kind)
         notices=[]
         for index,(title,agency,page,role) in enumerate(data,1):
             if role is None:continue
