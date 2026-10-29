@@ -48,3 +48,20 @@ with requests.Session() as s:
      print("SEPT_30_DETAIL",res.status_code,detail_url,len(res.content),dh.get_text(" ",strip=True)[-2800:],flush=True)
      print("SEPT_30_PDF_LINKS",[(x.get_text(" ",strip=True)[:80],urljoin(detail_url,x.get("href",""))) for x in dh.select('a[href*="/documents/"]')][:50],flush=True)
   except Exception as ex:print("SEPT_ERROR",repr(ex),flush=True)
+
+ candidates={
+ "plain-date":"https://www.dipsegovia.es/bop?p_r_p_startDate=01%2F09%2F2026&p_r_p_endDate=30%2F09%2F2026",
+ "plain-reversed":"https://www.dipsegovia.es/bop?p_r_p_endDate=30%2F09%2F2026&p_r_p_startDate=01%2F09%2F2026",
+ "start-only":"https://www.dipsegovia.es/bop?p_r_p_startDate=01%2F09%2F2026",
+ "month-alone":"https://www.dipsegovia.es/bop?month=09&year=2026",
+ "prev-month":"https://www.dipsegovia.es/bop?date=2026-09-30",
+ "url-2026-09":"https://www.dipsegovia.es/bop/2026/09",
+ "article-117":"https://www.dipsegovia.es/bop?number=117",
+ }
+ for name,link in candidates.items():
+  try:
+   z=s.get(link,timeout=(7,15));doc=BeautifulSoup(z.content,"html.parser")
+   cards=doc.select("div.card.card-box")
+   titles=[c.get_text(" ",strip=True)[:70] for c in cards]
+   print("URL_TRY",name,z.status_code,len(z.content),"count",len(cards),"first",titles[:2],"last",titles[-3:],"head",repr(z.text[:130]),flush=True)
+  except Exception as ex:print("URL_TRY_ERR",name,str(ex)[:210],flush=True)
