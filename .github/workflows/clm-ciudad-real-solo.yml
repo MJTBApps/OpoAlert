@@ -16,6 +16,7 @@ jobs:
           python-version: '3.12'
       - run: pip install requests beautifulsoup4 certifi cryptography
       - run: python -m compileall -q backend/clm_common.py backend/clm_ciudad_real.py
+      - run: python -m unittest discover -s backend/tests -p test_clm_sources.py -v
       - run: python -u backend/clm_ciudad_real.py --output auditados/ciudad_real_bop.json
       - uses: actions/upload-artifact@v4
         with:
