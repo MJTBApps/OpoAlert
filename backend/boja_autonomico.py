@@ -13,7 +13,7 @@ import argparse,re,requests,threading
 SOURCE="https://www.juntadeandalucia.es/eboja/index.html"
 HOST="www.juntadeandalucia.es"
 PDF_RE=re.compile(r"^/eboja/2026/(\d{3})/(BOJA26-\d{3}-[A-Za-z0-9-]+_([0-9]{8})\.pdf)$")
-SECTION_RE=re.compile(r"^/eboja/2026/(\d{3})/s(\d{2})\.html$")
+SECTION_RE=re.compile(r"^/eboja/2026/(\d{3})/s(\d{2})(?:\.html)?$")
 ISSUE_RE=re.compile(r"Bolet[ií]n n[uú]mero\s+(\d{1,3})\s+de\s+(\d{2}/\d{2}/2026)",re.I)
 L=threading.local()
 def session():
@@ -56,7 +56,7 @@ def issue(num):
   target=urljoin(base,a.get("href",""));u=urlsplit(target)
   m=SECTION_RE.fullmatch(u.path)
   if m and int(m[1])==num and u.hostname==HOST and not u.query and not u.fragment:
-   sections.add(target)
+   sections.add(f"{base}s{m[2]}.html")
  if not 3<=len(sections)<=13:
   invalid(f"BOJA {num}: índice no permite verificar todas las secciones; encontradas {len(sections)}, enlaces ejemplo {[a.get('href') for a in index.select('a[href*=\"s5\"]')[:12]]}")
  docs=[];seen=set()
