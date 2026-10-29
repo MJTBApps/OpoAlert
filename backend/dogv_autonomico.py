@@ -86,10 +86,18 @@ def original_path_from_export(did,day,code):
             invalid(f"DOGV: export oficial no disponible para {did}, HTTP {r.status_code}")
         path=r.text.strip()
         match=PDF_RE.fullmatch("/datos"+path)
-        if (not match or not path.startswith(f"/2026/{day:%m/%d}/pdf/")
-            or int(match[3])!=code):
-            invalid(f"DOGV: export no proporciona PDF original del registro {did}: {path[:150]}")
-        return path
+        if match and path.startswith(f"/2026/{day:%m/%d}/pdf/") and int(match[3])==code:
+            return path
+        # Some legal texts have already been consolidated in the public
+        # metadata and export. The official original publication follows the
+        # stable DOGV filename convention. Demand a real signed PDF response.
+        consolidated=re.fullmatch(r"/consolidacion/2026/2026_(\d{1,8})_(\d{8})_es\.pdf",path)
+        if consolidated and int(consolidated[1])==code:
+            original=f"/2026/{day:%m/%d}/pdf/2026_{code}_es.pdf"
+            validate_pdf(original,day)
+            print(f"DOGV ORIGINAL VERIFICADO: fecha {day}, inserción {code}; metadatos consolidados",flush=True)
+            return original
+        invalid(f"DOGV: export no permite acreditar PDF original del registro {did}: {path[:150]}")
     except requests.RequestException as e:invalid(f"DOGV: export original inaccesible {e}")
 
 def inspect(day):
