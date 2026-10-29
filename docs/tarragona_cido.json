@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-10-28T22:53:45.265589+00:00",
+  "lastCheckedUTC": "2026-10-29T05:45:24.584601+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 81,
-    "opportunities": 81,
+    "announcementsRead": 80,
+    "opportunities": 80,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-29",
     "publicationDates": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-02",
       "2026-10-03",
@@ -48,12 +47,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-29"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 81,
-    "opportunities": 81
+    "announcementsRead": 80,
+    "opportunities": 80
   },
   "notices": [
     {
@@ -855,16 +855,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22249961"
-    },
-    {
-      "id": "CIDO8-22250511",
-      "title": "Borsa de treball de places de Inspector de zona blava",
-      "entity": "Ajuntament de Valls - Valls, Infraestructures, Aparcaments i Serveis, SAM",
-      "date": "29/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22250511"
     }
   ]
 }

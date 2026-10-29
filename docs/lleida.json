@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-10-28T22:53:45.265589+00:00",
+  "lastCheckedUTC": "2026-10-29T05:45:24.584601+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 69,
-    "opportunities": 69,
+    "announcementsRead": 64,
+    "opportunities": 64,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-29",
     "publicationDates": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
@@ -48,12 +47,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-29"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 69,
-    "opportunities": 69
+    "announcementsRead": 64,
+    "opportunities": 64
   },
   "notices": [
     {
@@ -695,56 +695,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22089022"
-    },
-    {
-      "id": "CIDO7-22228200",
-      "title": "1 plaça de Tècnic d'educació infantil",
-      "entity": "Ajuntament d'Ivars d'Urgell",
-      "date": "29/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22228200"
-    },
-    {
-      "id": "CIDO7-21397056",
-      "title": "2 places d'Operari de cementiri",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "29/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21397056"
-    },
-    {
-      "id": "CIDO7-20874851",
-      "title": "1 plaça d'Oficial - Jardineria",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "29/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20874851"
-    },
-    {
-      "id": "CIDO7-16413021",
-      "title": "5 places d'Operari de Jardineria",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "29/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16413021"
-    },
-    {
-      "id": "CIDO7-16412993",
-      "title": "5 places d'Operari de la brigada d'obres",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "29/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16412993"
     }
   ]
 }
