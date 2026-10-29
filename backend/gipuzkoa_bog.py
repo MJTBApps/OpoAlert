@@ -53,6 +53,10 @@ def read_day(day):
     if not matched or matched[1]!=day.strftime("%d-%m-%Y"):
         invalid(f"Gipuzkoa {day}: cabecera oficial incorrecta")
     num=int(matched[2])
+    # The portal serves a placeholder page for weekends/non-publication days.
+    no_ads=root.select("ul.anuncios > li")
+    if not no_ads and not root.select('a[href$=".pdf"]') and len(html)<6500:
+        return None
     sumario=root.select_one('a[href$=".pdf"]')
     if not sumario or not urljoin(url,sumario["href"]).endswith(f"/ib{day:%y%m%d}.pdf"):
         invalid(f"Gipuzkoa {day}: falta PDF índice")
