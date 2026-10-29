@@ -25,6 +25,8 @@ object SourceCatalog {
         Province.GALICIA_OURENSE -> Territory("Galicia", "Ourense")
         Province.GALICIA_PONTEVEDRA -> Territory("Galicia", "Pontevedra")
         Province.GALICIA_DOG -> Territory("Galicia", "Diario autonómico")
+        Province.ARAGON_BOA -> Territory("Aragón", "Diario autonómico")
+        Province.ANDALUCIA_BOJA -> Territory("Andalucía", "Diario autonómico")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -73,6 +75,8 @@ object SourceCatalog {
         "Región de Murcia" to listOf("Murcia"),
         "País Vasco" to listOf("Álava", "Bizkaia", "Gipuzkoa", "Diario autonómico"),
         "Galicia" to listOf("A Coruña", "Lugo", "Ourense", "Pontevedra", "Diario autonómico"),
+        "Aragón" to listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"),
+        "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
 
     val availableSources: List<Province> = Province.entries.filterNot {
@@ -114,6 +118,8 @@ object SourceCatalog {
         else if (source == Province.BIZKAIA_BOB) "BOB · boletín territorial de Bizkaia"
         else if (source == Province.GIPUZKOA_BOG) "BOG · boletín territorial de Gipuzkoa"
         else if (source == Province.GALICIA_DOG) "DOG · diario autonómico"
+        else if (source == Province.ARAGON_BOA) "BOA · diario autonómico"
+        else if (source == Province.ANDALUCIA_BOJA) "BOJA · diario autonómico"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
 }
