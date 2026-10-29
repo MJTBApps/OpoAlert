@@ -1,0 +1,17 @@
+name: OpoAlert - Analizar sumarios oficiales Euskadi
+on:
+  push:
+    branches: [feature/pais-vasco-cantabria-asturias-20261029]
+    paths: [backend/deep_pais_vasco.py, .github/workflows/deep-pais-vasco.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  investigar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/deep_pais_vasco.py
