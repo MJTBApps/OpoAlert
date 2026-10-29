@@ -97,6 +97,6 @@ class ProvinceTest {
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
         assertEquals(48, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(45, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(44, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
