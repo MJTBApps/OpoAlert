@@ -48,7 +48,7 @@ def archive(html,start,end):
         try:d=datetime.strptime(dt.get_text(" ",strip=True),"%d/%m/%Y").date()
         except ValueError:continue
         u=urljoin(SOURCE,a["href"]);parsed=urlsplit(u)
-        if parsed.hostname!=HOST or not _DETAIL.fullmatch(parsed.path):invalid("Soria: enlace de detalle no oficial")
+        if parsed.hostname!=HOST or not _DETAIL.fullmatch(parsed.path):invalid(f"Soria: enlace de detalle no oficial: {u}")
         if start<=d<=end:
             links.append((d,int(m[1]),u))
     links=sorted(set(links))
