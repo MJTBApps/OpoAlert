@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido.",
+  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido. La Rioja BOR auditada en la API XML oficial e incorporada como copia local privada en OpoAlert 1.27: 22 boletines, 524 anuncios, 26 candidatos. Navarra BON bloqueada por timeout, no se declara cubierta.",
   "nationalSources": [
     {
       "code": "VA",
@@ -895,7 +895,9 @@
       "community": "NC",
       "communityName": "Comunidad Foral de Navarra",
       "primaryGazette": "diario_autonomico",
-      "state": "pending"
+      "state": "blocked_official_portal_timeout",
+      "diaryPortal": "https://bon.navarra.es/es/inicio",
+      "diaryBlocker": "Todos los accesos oficiales BON y www.navarra.es agotaron tiempo desde varios runners; agregadores privados no acreditan 30 días y enlaces originales. No integrar contenido no verificado."
     },
     {
       "ine": "01",
@@ -927,7 +929,11 @@
       "community": "RI",
       "communityName": "La Rioja",
       "primaryGazette": "diario_autonomico",
-      "state": "pending"
+      "state": "private_apk_snapshot",
+      "coverageKind": "BOR (XML oficial)",
+      "diaryState": "private_apk_snapshot",
+      "diaryPortal": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
+      "diaryNote": "22 boletines 188-209, 524 anuncios y 26 candidatas, 30/09-29/10/2026; cada anuncio cotejado con texto íntegro oficial XML; el visor PDF es intermitente. Sólo APK privada, no feed diario publicado."
     },
     {
       "ine": "51",

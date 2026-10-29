@@ -1,0 +1,17 @@
+name: OpoAlert - Verificar visores PDF y XML BOR
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/navarra-rioja-20261029]
+    paths: [backend/probe_bor_pdf_xml.py, .github/workflows/probe-bor-pdf-xml.yml]
+permissions: {contents: read}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install requests
+      - run: python -u backend/probe_bor_pdf_xml.py

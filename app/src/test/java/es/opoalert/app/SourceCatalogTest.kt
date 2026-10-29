@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
@@ -51,6 +51,8 @@ class SourceCatalogTest {
         assertEquals(3, groups[12].sourceCount)
         assertEquals(listOf("Melilla"), groups[13].territories.map { it.name })
         assertEquals(1, groups[13].sourceCount)
+        assertEquals(listOf("Diario autonómico"), groups[14].territories.map { it.name })
+        assertEquals(1, groups[14].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
@@ -73,6 +75,7 @@ class SourceCatalogTest {
         assertEquals("BOIB · boletín autonómico e insular", SourceCatalog.sourceName(Province.BALEARES_BOIB))
         assertEquals("BOC · diario autonómico", SourceCatalog.sourceName(Province.CANARIAS_BOC))
         assertEquals("BOME · boletín de la ciudad autónoma", SourceCatalog.sourceName(Province.MELILLA_BOME))
+        assertEquals("BOR · diario autonómico", SourceCatalog.sourceName(Province.RIOJA_BOR))
         assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.GALICIA_OURENSE))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
