@@ -73,7 +73,8 @@ def parse_day(html,day):
     numbers=[re.search(r"Boletín\s+(ordinario|extraordinario)\s+n[.º°\s]*([0-9]{1,3})",x.get_text(" ",strip=True),re.I)
         for x in h.select("h3")]
     issues=[m for m in numbers if m]
-    if len(issues)!=1:invalid(f"Badajoz {day}: número de boletines ambiguo: {[(h3.get_text(chr(32),strip=True)) for h3 in h.select(chr(104)+chr(51))]}, matches={len(issues)}")
+    if not issues or len({int(m[2]) for m in issues})!=1:
+        invalid(f"Badajoz {day}: boletín ordinario y suplemento no coinciden: {[(x.get_text(chr(32),strip=True)) for x in h.select(chr(104)+chr(51))]}")
     number=issues[0][2]
     root=h.select_one("#sumario_dinamico")
     if root is None:invalid("Badajoz: falta sumario oficial")
