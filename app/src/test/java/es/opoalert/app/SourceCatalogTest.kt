@@ -9,7 +9,7 @@ class SourceCatalogTest {
     @Test fun everyNonNationalSourceAppearsOnce() {
         val all = SourceCatalog.groups()
         val sources = all.flatMap { it.territories }.flatMap { it.sources }
-        assertEquals(Province.entries.size - 1, sources.size)
+        assertEquals(SourceCatalog.availableSources.size - 1, sources.size)
         assertEquals(sources.size, sources.toSet().size)
         assertFalse(Province.BOE in sources)
     }
@@ -29,12 +29,12 @@ class SourceCatalogTest {
         assertEquals(7, groups[1].sourceCount)
         assertEquals(listOf("Huesca", "Teruel", "Zaragoza"), groups[2].territories.map { it.name })
         assertEquals(3, groups[2].sourceCount)
-        assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Sevilla"), groups[3].territories.map { it.name })
-        assertEquals(5, groups[3].sourceCount)
+        assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Sevilla"), groups[3].territories.map { it.name })
+        assertEquals(6, groups[3].sourceCount)
         assertEquals(listOf("Madrid"), groups[4].territories.map { it.name })
         assertEquals(1, groups[4].sourceCount)
-        assertEquals(listOf("Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
-        assertEquals(6, groups[5].sourceCount)
+        assertEquals(listOf("Ciudad Real", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
+        assertEquals(4, groups[5].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
