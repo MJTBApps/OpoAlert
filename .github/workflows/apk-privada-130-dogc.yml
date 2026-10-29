@@ -2,6 +2,9 @@ name: OpoAlert - DOGC Cataluña 1.30 APK privada
 # Compilación con el orden del catálogo de provincias verificado en pruebas unitarias
 on:
   workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [.github/workflows/apk-privada-130-dogc.yml]
 permissions:
   contents: read
   actions: read
@@ -269,7 +272,7 @@ jobs:
         with:
           name: cataluna-dogc-oficial-30dias
           repository: MJTBApps/OpoAlert
-          run-id: 0 # Actualizar únicamente tras auditoría DOGC certificada
+          run-id: 40964593861
           github-token: ${{ github.token }}
           path: verified/dogc
       - name: Empaquetar solo copias oficiales verificadas en APK local
