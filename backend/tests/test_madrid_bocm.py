@@ -51,7 +51,7 @@ class MadridTests(unittest.TestCase):
         html='''<h2>BOCM Nº 259</h2><h3>PRESIDENCIA DE LA COMUNIDAD</h3>
         <a href="https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/28/BOCM-20261028-37.PDF">pdf</a>'''
         class Resp:
-            def json(self):return {"legislationIdentifier":"BOCM-20261028-37","name":"Declaración luto oficial"}
+            def json(self):return {"legislationIdentifier":"BOCM-20261028-37","name":"Declaración luto oficial","isPartOf":{"name":"BOCM - Nº 259"},"datePublished":"2026/10/28","legislationResponsible":{"name":"PRESIDENCIA DE LA COMUNIDAD"}}
         res=parse_fallback_html(html,D,259,lambda url:Resp())
         self.assertEqual(res["read"],1)
         self.assertEqual(res["method"],"html")
