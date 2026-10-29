@@ -18,7 +18,7 @@ android {
     buildTypes {
         debug {
             // Instalación paralela para probar sin desinstalar la versión habitual.
-            applicationIdSuffix = ".norte"
+            applicationIdSuffix = ".euskadi"
             versionNameSuffix = "-privada"
         }
         release {
