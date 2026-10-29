@@ -221,11 +221,11 @@ def bon_issue_tasks(rows):
             if (address.hostname != "bon.navarra.es" or address.query
                 or address.fragment):
                 continue
-            hit = re.fullmatch(r"/es/boletin/-/sumario/2026/(\\d{1,4})", address.path)
+            hit = re.fullmatch(r"/es/boletin/-/sumario/2026/(\d{1,4})", address.path)
             if not hit:
                 continue
             label = " ".join(item.get("text", "").lower().split())
-            when = re.search(r"\\b(\\d{1,2}) de (septiembre|octubre) de 2026\\b", label)
+            when = re.search(r"\b(\d{1,2}) de (septiembre|octubre) de 2026\b", label)
             if not when:
                 continue
             try:
