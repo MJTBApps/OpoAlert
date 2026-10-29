@@ -37,6 +37,9 @@ class ProvinceTest {
         assertTrue(Province.CADIZ.idPattern.matches("CA-2026-354710"))
         assertEquals(Province.ALMERIA, Province.fromNoticeId("AM-2026-02765"))
         assertTrue(Province.ALMERIA.idPattern.matches("AM-2026-02765"))
+        assertTrue(Province.ALMERIA.allowsOfficialPath("/bop/services/manager/edicto/2026/2765/anuncio.pdf"))
+        assertTrue(Province.ALMERIA.allowsOfficialPath("/pandora/high.raw"))
+        assertFalse(Province.ALMERIA.allowsOfficialPath("/private/untrusted.pdf"))
         assertEquals(Province.JAEN, Province.fromNoticeId("JA-2026-04560"))
         assertTrue(Province.JAEN.idPattern.matches("JA-2026-04560"))
     }
