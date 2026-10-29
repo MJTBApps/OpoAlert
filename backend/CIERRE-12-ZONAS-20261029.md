@@ -116,3 +116,14 @@ Se ha preparado una herramienta de **solo lectura** para ejecutar desde una cone
 - Ejecutable ZIP portátil compilado y probado: https://github.com/MJTBApps/OpoAlert/actions/runs/40912645131/artifacts/12914671966
 - El informe se almacena solo en `Documentos/OpoAlert` del usuario y contiene exclusivamente URLs públicas, códigos HTTP y errores. No toma IP, no instala tareas ni remite datos automáticamente.
 - Si aparece una fuente accesible desde Windows local, el siguiente paso será **auditar con su propio lector** el histórico oficial y los originales; no basta con un resultado verde del diagnóstico.
+
+
+## Cataluña DOGC autonómico y APK privada 1.30 (29/10/2026)
+
+- DOGC completo 30/09–29/10/2026: 23 números principales #9761–9783, 3 anexos, 20 suplementos oficiales, 46 sumarios, 2.111 documentos y 499 candidatos conservadores de empleo. No equivalen a 499 plazas abiertas.
+- Fuente oficial: API del propio DOGC (calendarDOGC, summaryDOGC, documentDOGC, summarySuplement), TLS 1.2 con cadena CA validada, sumarios exhaustivos y textos originales autenticados con CVE. No se afirma que todos los PDF estén descargados.
+- Auditoría con validador independiente y resultado success: https://github.com/MJTBApps/OpoAlert/actions/runs/40964593861 ; artifact cataluna-dogc-oficial-30dias (ID 12938075943).
+- Nueva fuente independiente CATALUNA_DOGC, código DC, en Cataluña > Diario autonómico. El BOP provincial de Lleida continúa sin cobertura íntegra.
+- APK privada 1.30.0 acumulativa con todas las fuentes anteriores y DC.json: https://github.com/MJTBApps/OpoAlert/actions/runs/40965207029/artifacts/12937217739 ; Android y validadores success en https://github.com/MJTBApps/OpoAlert/actions/runs/40965207029
+- Paquete es.opoalert.app.melilla; versionCode 43; versionName 1.30.0-privada. SHA-256 APK: 9c40dcd665851c7f23ec4bab5886da11505113feabf2e4239b740a6974f3a9ab.
+- No se publica feed nuevo ni se declara cubierta ninguna de las diez zonas pendientes originales (Jaén, Málaga, Albacete, Cuenca, Burgos, Valladolid, Asturias, Cantabria, Navarra y Ceuta). La copia DOGC es una instantánea privada, no sincronización automática.
