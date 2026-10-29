@@ -126,3 +126,36 @@ for day in ("20261001","20261002","20261012","20261013","20261029"):
     h=BeautifulSoup(z.content,"html.parser")
     print("BA_DATE",day,z.status_code,[(t.name,t.get_text(" ",strip=True)) for t in h.select("h1,h3,h4") if "Día" in t.get_text() or "Boletín ordinario" in t.get_text() or "Boletín extraordinario" in t.get_text()][:6],flush=True)
   except Exception as e:print("BA_ERR",day,repr(e),flush=True)
+
+print("#### CACERES REST CONTRACTS",flush=True)
+API=[
+ ("MONTH-OCT","https://bop.dip-caceres.es/bop/services/boletines/bopMes",{"mes":10,"anio":2026}),
+ ("MONTH-SEP","https://bop.dip-caceres.es/bop/services/boletines/bopMes",{"mes":9,"anio":2026}),
+ ("MONTH-CALENDAR","https://bop.dip-caceres.es/bop/services/boletines/bopMesCalendario",{"mes":10,"anio":2026}),
+ ("ISSUE","https://bop.dip-caceres.es/bop/services/anuncios/anunciosAnunciantes",{"idBoletin":6163}),
+ ("ISSUE-LAST","https://bop.dip-caceres.es/bop/services/boletines/ultimoBop",{}),
+ ("SAMPLE-ANN","https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio",{"csv":"BOP-2026-4651"}),
+ ("SAMPLE-BOP","https://bop.dip-caceres.es/bop/services/boletines/contenidoPdfIdBolentin",{"idBoletin":6163}),
+]
+def probe_api(x):
+ name,u,params=x
+ try:
+  r=requests.get(u,params=params,timeout=(11,30),stream=True)
+  if "pdf" in r.headers.get("Content-Type","").lower():
+   raw=next(r.iter_content(140),b"")
+   v={"name":name,"status":r.status_code,"pdf":repr(raw[:40]),"type":r.headers.get("Content-Type")}
+   r.close()
+   return v
+  body=r.content
+  try:
+   j=r.json()
+   data=j.get("data") if isinstance(j,dict) else None
+   return {"name":name,"status":r.status_code,"total":j.get("total") if isinstance(j,dict) else None,
+       "keys":list(j) if isinstance(j,dict) else None,"dataType":type(data).__name__,
+       "dataCount":len(data) if isinstance(data,list) else None,
+       "first":data[:2] if isinstance(data,list) else data,
+       "last":data[-1] if isinstance(data,list) and data else None}
+  except ValueError:return {"name":name,"status":r.status_code,"type":r.headers.get("Content-Type"),"bytes":repr(body[:200])}
+ except Exception as e:return {"name":name,"error":repr(e)}
+with ThreadPoolExecutor(max_workers=7) as pool:
+ for x in pool.map(probe_api,API):print("CC_REST",json.dumps(x,ensure_ascii=False)[:9000],flush=True)
