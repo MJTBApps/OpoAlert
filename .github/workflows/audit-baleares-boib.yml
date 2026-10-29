@@ -1,0 +1,23 @@
+name: OpoAlert - Auditar BOIB Baleares 30 dias
+on:
+  push:
+    branches: [feature/baleares-boib-20261029]
+    paths: [backend/baleares_boib.py, .github/workflows/audit-baleares-boib.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/baleares_boib.py --output verified/baleares_boib.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: baleares-boib-oficial-30dias
+          path: verified/baleares_boib.json
+          retention-days: 30
+          if-no-files-found: error
