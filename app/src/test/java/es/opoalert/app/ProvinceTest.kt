@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Zamora", "Soria", "Castilla y León (BOCYL)", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -44,6 +44,11 @@ class ProvinceTest {
         assertEquals(Province.SEVILLA, Province.fromNoticeId("SV-2026-210001"))
         assertTrue(Province.SEVILLA.idPattern.matches("SV-2026-210001"))
         assertEquals(Province.HUELVA_BOP, Province.fromNoticeId("HB-2026-381433"))
+        assertEquals(Province.AVILA, Province.fromNoticeId("AV-2026-2162"))
+        assertEquals(Province.LEON_BOP, Province.fromNoticeId("LN-2026-205001"))
+        assertEquals(Province.ZAMORA_BOP, Province.fromNoticeId("ZM-202602392"))
+        assertEquals(Province.SORIA_BOP, Province.fromNoticeId("SR-2026-2024"))
+        assertEquals(Province.CYL_BOCYL, Province.fromNoticeId("CY-20261029-5"))
         assertEquals(Province.ALBACETE, Province.fromNoticeId("AB-2026-1001"))
         assertEquals(Province.CIUDAD_REAL, Province.fromNoticeId("CR-2026-3482"))
         assertEquals(Province.CUENCA, Province.fromNoticeId("CU-2026-3320"))
@@ -58,8 +63,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(27, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(32, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(24, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(29, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
