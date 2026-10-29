@@ -97,7 +97,7 @@ def parse_issue(html:str,day:date)->dict|None:
         valid,number_id=pdf_valid(link,day)
         if (not valid or not name or not agency or len(name)>2500 or len(agency)>250
             or not a.get_text(" ",strip=True).endswith(f"BOP-A-{day.year}-{number_id}")):
-            raise ProvincialCoverageError(f"Córdoba {day}: anuncio no comprobado")
+            raise ProvincialCoverageError(f"Córdoba {day}: anuncio no comprobado PDF={link} emisor={agency[:100]!r} titulo={name[:130]!r} enlace={a.get_text(' ',strip=True)!r} identificador={number_id!r}")
         rows.append({"id":f"CO-{day.year}-{int(number_id)}",
           "province":PROVINCE,"title":name,"entity":agency,
           "date":day.strftime("%d/%m/%Y"),"bulletin":str(number),
