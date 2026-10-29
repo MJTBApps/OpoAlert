@@ -1,0 +1,17 @@
+name: OpoAlert - Identificar avisos BOJA y Segovia
+on:
+  push:
+    branches: [feature/cierre-pendientes-20261029]
+    paths: [backend/cierre_probe_profundo.py, .github/workflows/cierre-probe-profundo.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/cierre_probe_profundo.py
