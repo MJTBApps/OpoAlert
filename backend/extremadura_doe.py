@@ -96,7 +96,7 @@ def extract_issue(html,day,kind):
         if len(pdfs)!=1 or not title:invalid("DOE: anuncio sin PDF y texto individual")
         pdf=pdfs[0];u=urlsplit(pdf);m=PDF_RE.fullmatch(u.path)
         if not m or u.hostname!=HOST or int(m[1])!=day.year or m[2]!=folder:
-            invalid(f"DOE {day}: documento original de otro boletín")
+            invalid(f"DOE {day}: documento original de otro boletín {pdf}, carpeta={folder}")
         nid=f"EX-{day.year}-{m[3]}"
         if nid in seen:invalid(f"DOE: documento duplicado {nid}")
         seen.add(nid)
