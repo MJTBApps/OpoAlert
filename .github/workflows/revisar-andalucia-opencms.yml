@@ -1,0 +1,61 @@
+name: OpoAlert - Revisar y publicar BOP Granada Sevilla
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 17 * * *'
+  push:
+    branches: [main]
+    paths:
+      - backend/andalucia_opencms_bop.py
+      - backend/validar_andalucia_opencms.py
+      - backend/tests/test_andalucia_opencms.py
+      - .github/workflows/revisar-andalucia-opencms.yml
+permissions:
+  contents: write
+  actions: write
+jobs:
+  auditar:
+    strategy:
+      fail-fast: false
+      matrix:
+        province: [granada, sevilla]
+    runs-on: ubuntu-latest
+    timeout-minutes: 29
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Verificar lector y fecha
+        run: python -m unittest discover -s backend/tests -p test_andalucia_opencms.py -v
+      - name: Auditar BOP y los PDF oficiales de 30 dias
+        run: python -u backend/andalucia_opencms_bop.py --province "${{ matrix.province }}" --days 30 --output "out/${{ matrix.province }}_bop.json"
+      - name: Validar periodo y metadatos independientemente
+        run: python backend/validar_andalucia_opencms.py --province "${{ matrix.province }}" --file "out/${{ matrix.province }}_bop.json" --require-today
+      - name: Publicar exclusivamente datos verificados
+        run: |
+          set -eu
+          cp "out/${{ matrix.province }}_bop.json" "docs/${{ matrix.province }}_bop.json"
+          python backend/validar_andalucia_opencms.py --province "${{ matrix.province }}" --file "docs/${{ matrix.province }}_bop.json" --require-today
+          git config user.name 'OpoAlert Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "docs/${{ matrix.province }}_bop.json"
+          if ! git diff --cached --quiet; then
+            git commit -m "OpoAlert: actualizar BOP ${{ matrix.province }} auditado"
+            for i in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo 'Datos andaluces validados y guardados'
+                break
+              fi
+              if [ "$i" -eq 5 ]; then exit 1; fi
+              sleep 4
+            done
+          fi
+      - name: Actualizar GitHub Pages
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publicar-web.yml --ref main
