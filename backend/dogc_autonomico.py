@@ -254,7 +254,7 @@ def collect_supplement(meta):
     if not isinstance(body,dict) or body.get("numSuplement")!=supplement:
         fail("suplemento de notificaciones ausente o cambiado")
     s=norm(body.get("dateSuplement"))
-    m=re.search(r"\\b(\\d{1,2})\\s+d['e]\\s*(setembre|octubre)\\s+de\\s+2026\\b",s)
+    m=re.search(r"\b(\d{1,2})\s+d['e]\s*(setembre|octubre)\s+de\s+2026\b",s)
     if not m or int(m[1])!=date_value.day or (9 if m[2]=="setembre" else 10)!=date_value.month:
         fail("fecha del suplemento no corresponde al DOGC oficial")
     linked=response.get("dogcRelacionats")
