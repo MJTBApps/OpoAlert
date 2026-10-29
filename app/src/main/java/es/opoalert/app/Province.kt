@@ -215,6 +215,13 @@ enum class Province(
         "www.diputaciondezamora.es", "/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/",
         Regex("ZM-\\d{9}"),
     ),
+    SALAMANCA_BOP(
+        "SA", "Salamanca",
+        "https://mjtbapps.github.io/OpoAlert/salamanca_bop.json",
+        "https://www.lasalina.es/documentacion/bop/",
+        "www.lasalina.es", "/documentacion/bop/2026/",
+        Regex("SA-2026[0-9]{4}-[0-9]{3}"),
+    ),
     SEGOVIA_BOP(
         "SG", "Segovia",
         "https://mjtbapps.github.io/OpoAlert/segovia_bop.json",
@@ -425,6 +432,7 @@ enum class Province(
             id.startsWith("LN-") -> LEON_BOP
             id.startsWith("ZM-") -> ZAMORA_BOP
             id.startsWith("PL-") -> PALENCIA_BOP
+            id.startsWith("SA-") -> SALAMANCA_BOP
             id.startsWith("SG-") -> SEGOVIA_BOP
             id.startsWith("SR-") -> SORIA_BOP
             id.startsWith("CY-") -> CYL_BOCYL
