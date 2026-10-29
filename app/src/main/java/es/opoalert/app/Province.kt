@@ -131,6 +131,13 @@ enum class Province(
         "bopsevilla.dipusevilla.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
         Regex("SV-\\d{4}-\\d{6}"),
     ),
+    MADRID(
+        "MD", "Madrid",
+        "https://mjtbapps.github.io/OpoAlert/madrid_bocm.json",
+        "https://www.bocm.es/listado-de-boletines",
+        "www.bocm.es", "/boletin/CM_Orden_BOCM/",
+        Regex("MD-\\d{8}-\\d{1,5}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -160,6 +167,7 @@ enum class Province(
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
+            id.startsWith("MD-") -> MADRID
             id.startsWith("CO-") -> CORDOBA
             id.startsWith("GR-") -> GRANADA
             id.startsWith("SV-") -> SEVILLA
