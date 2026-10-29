@@ -76,6 +76,8 @@ def parse(html,day):
             idtxt=item.get_text(" ",strip=True)
             nm=re.search(r"n[ºo°]\s*(\d{1,7})\s*/\s*(\d{2})",idtxt,re.I)
             if not nm or int(nm[2])!=day.year%100:invalid("Ávila: anuncio sin número propio")
+            if re.fullmatch(r"/bops/2026/\d{2}-\d{2}-2026\.pdf",u.path,re.I):
+                continue  # PDF del boletín completo, no es anuncio individual
             if (u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443)
                 or not re.fullmatch(r"/bops/2026/\d{2}-\d{2}-2026/[^/]+\.pdf",u.path,re.I)
                 or f"/{day:%d-%m-%Y}/" not in u.path):
