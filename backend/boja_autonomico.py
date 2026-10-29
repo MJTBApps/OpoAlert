@@ -66,14 +66,19 @@ def issue(num):
   blocks=h.select("div.item.punteado_izquierda")
   for block in blocks:
    pdfs=block.select("a.item_pdf_grupo[href]")
-   if len(pdfs)!=1:
-    invalid(f"BOJA {num}: disposición sin PDF original en {page}; enlaces={[(a.get_text(' ',strip=True)[:70],a.get('href')) for a in block.select('a[href]')[:8]]}; texto={block.get_text(' ',strip=True)[:320]}")
-   url=urljoin(page,pdfs[0]["href"]);u=urlsplit(url);m=PDF_RE.fullmatch(u.path)
-   if (not m or int(m[1])!=num or not m[2].startswith(f"BOJA26-{num}-")
-       or u.hostname!=HOST or u.query or u.fragment):
-    invalid(f"BOJA {num}: PDF individual de otra edición: {url}")
-   cv=m[3]
-   if cv in seen:invalid(f"BOJA {num}: documento repetido {cv}")
+   if not 1<=len(pdfs)<=5:
+    invalid(f"BOJA {num}: disposición sin PDF original verificable en {page}")
+   files=[];cves=set()
+   for pdf in pdfs:
+    original=urljoin(page,pdf["href"]);parts=urlsplit(original);match=PDF_RE.fullmatch(parts.path)
+    if (not match or int(match[1])!=num or not match[2].startswith(f"BOJA26-{num}-")
+        or parts.hostname!=HOST or parts.query or parts.fragment):
+     invalid(f"BOJA {num}: PDF individual de otra edición: {original}")
+    files.append(original);cves.add(match[3])
+   if len(cves)!=1 or len(set(files))!=len(files):
+    invalid(f"BOJA {num}: documentos en varias partes no coinciden en CVE")
+   cv=cves.pop();url=files[0]
+   if cv in seen:invalid(f"BOJA {num}: disposición repetida {cv}")
    seen.add(cv)
    title=block.get_text(" ",strip=True).split("PDF oficial auténtico")[0].strip()
    if not title or len(title)>2800:invalid(f"BOJA {num}: título incorrecto")
@@ -83,7 +88,7 @@ def issue(num):
     agency="Organismo anunciante: consultar disposición oficial (BOJA)"
    typ=employment(title)
    if typ:
-    http(url,pdf=True)
+    for original in files:http(original,pdf=True)
     docs.append({"id":f"BJ-2026-{cv}","province":"Andalucía (BOJA)",
      "title":title,"entity":agency,"date":day.strftime("%d/%m/%Y"),
      "bulletin":str(num),"type":typ,"url":url})
