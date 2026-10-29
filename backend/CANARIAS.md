@@ -28,3 +28,12 @@ La interfaz agrupa la comunidad **Canarias** con las opciones **Las Palmas**, **
 - `.github/workflows/audit-canarias-boc.yml`
 - `.github/workflows/audit-canarias-bop-provincial.yml`
 - `.github/workflows/apk-privada-125-canarias.yml`
+
+## APK privada acumulativa 1.25.0 — FINAL
+
+- Workflow con compilación Gradle y todas las pruebas Android **superadas**: https://github.com/MJTBApps/OpoAlert/actions/runs/40877069079
+- Instalador dentro del ZIP: https://github.com/MJTBApps/OpoAlert/actions/runs/40877069079/artifacts/12898124310
+- APK: `OpoAlert-Canarias-1.25.0-PRUEBA.apk`; package ID `es.opoalert.app.canarias`; etiqueta `OpoAlert Canarias`; versionCode 38.
+- SHA-256 APK: `1b464f17fcf57a074e3a9cb24d1f988026a94f8a8d0189d1ac8a37c9c75924f9`.
+- La compilación validó y empaquetó `IC.json`, `LP.json`, `TF.json`, así como `IB.json`, `DV.json`, `BJ.json`, `AO.json` y todas las copias previas verificadas. Los tests de UI, fuentes y Android finalizaron con éxito.
+- La APK se instala en paralelo sin modificar OpoAlert habitual. Los datos nuevos son copias de fecha 29/10/2026; **no hay actualización diaria automática** para los tres diarios canarios.
