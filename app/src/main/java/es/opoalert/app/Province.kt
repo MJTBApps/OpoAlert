@@ -103,6 +103,20 @@ enum class Province(
         "www.boa.aragon.es", "/cgi-bin/EBOA/BRSCGI",
         Regex("ZA-\\d{9}"),
     ),
+    ALMERIA(
+        "AM", "Almería",
+        "https://mjtbapps.github.io/OpoAlert/almeria_bop.json",
+        "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
+        "app.dipalme.org", "/bop/services/manager/edicto/",
+        Regex("AM-\\d{4}-\\d{5}"),
+    ),
+    JAEN(
+        "JA", "Jaén",
+        "https://mjtbapps.github.io/OpoAlert/jaen_bop.json",
+        "https://bophistorico.dipujaen.es/results.vm?q=parent:0000395018&view=boletin",
+        "bophistorico.dipujaen.es", "/high.raw",
+        Regex("JA-\\d{4}-\\d{5}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -128,6 +142,8 @@ enum class Province(
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
+            id.startsWith("AM-") -> ALMERIA
+            id.startsWith("JA-") -> JAEN
             else -> VALENCIA
         }
     }
