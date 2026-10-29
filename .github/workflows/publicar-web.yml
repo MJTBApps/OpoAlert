@@ -63,6 +63,7 @@ jobs:
           test -s docs/zaragoza_bop.json
           test -s docs/cadiz_bop.json
           test -s docs/almeria_bop.json
+          test -s docs/madrid_bocm.json
           test -s docs/convocatorias.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
