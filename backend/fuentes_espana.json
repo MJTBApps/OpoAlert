@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026. BOCM de Madrid añadido como diario autonómico independiente, sujeto a auditoría de 30 días; no sustituye al BOAM municipal.",
+  "note": "14 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Granada (22 ediciones, 633 anuncios y 65 candidatas) y Sevilla (21 ediciones, 621 anuncios y 44 candidatas) superaron auditoría independiente de 30 días. Jaén pendiente por ausencia de BOP 198, 199 y 201; Málaga y Huelva aún sin auditoría completa; Lleida sin BOP directo. Córdoba: 22 ediciones, 376 anuncios y 25 candidatas, auditadas el 29/10/2026. BOCM de Madrid añadido como diario autonómico independiente, sujeto a auditoría de 30 días; no sustituye al BOAM municipal. Castilla-La Mancha: seis fuentes identificadas (BOP de Albacete, Ciudad Real, Cuenca, Guadalajara y Toledo más DOCM), todavía pendientes de auditoría completa; ninguna se declara activa ni publicada.",
   "nationalSources": [
     {
       "code": "VA",
@@ -198,6 +198,66 @@
       "feed": "madrid_bocm.json",
       "state": "active",
       "scope": "Diario autonómico de la Comunidad de Madrid; incluye anuncios autonómicos y municipales, boletines extraordinarios y PDF oficiales. No sustituye el BOAM municipal."
+    },
+    {
+      "code": "AB",
+      "territory": "02",
+      "kind": "bop",
+      "name": "BOP Albacete",
+      "portal": "https://bop.dipualba.es/",
+      "feed": "albacete_bop.json",
+      "state": "pending",
+      "scope": "Portal oficial no accesible desde el entorno de auditoría; no se habilitará hasta lectura de 30 días."
+    },
+    {
+      "code": "CR",
+      "territory": "13",
+      "kind": "bop",
+      "name": "BOP Ciudad Real",
+      "portal": "https://bop.dipucr.es/",
+      "feed": "ciudad_real_bop.json",
+      "state": "pending",
+      "scope": "Portal oficial localizado; certificado HTTPS del portal requiere comprobación independiente."
+    },
+    {
+      "code": "CU",
+      "territory": "16",
+      "kind": "bop",
+      "name": "BOP Cuenca",
+      "portal": "https://www.dipucuenca.es/boletin-oficial-de-la-provincia",
+      "feed": "cuenca_bop.json",
+      "state": "pending",
+      "scope": "Portal oficial bloquea solicitudes automáticas desde la infraestructura de auditoría."
+    },
+    {
+      "code": "GJ",
+      "territory": "19",
+      "kind": "bop",
+      "name": "BOP Guadalajara",
+      "portal": "https://boletin.dguadalajara.es/boletin/",
+      "feed": "guadalajara_bop.json",
+      "state": "pending",
+      "scope": "Índice oficial por fecha, sumarios y PDF disponibles; auditoría 30 días pendiente."
+    },
+    {
+      "code": "TO",
+      "territory": "45",
+      "kind": "bop",
+      "name": "BOP Toledo",
+      "portal": "https://bop.diputoledo.es/webEbop/",
+      "feed": "toledo_bop.json",
+      "state": "pending",
+      "scope": "Calendario oficial, sumarios diarios y anuncios con enlace PDF, pendiente auditoría 30 días."
+    },
+    {
+      "code": "CM",
+      "territory": null,
+      "kind": "diario_autonomico",
+      "name": "DOCM Castilla-La Mancha",
+      "portal": "https://docm.jccm.es/docm/",
+      "feed": "castilla_mancha_docm.json",
+      "state": "pending",
+      "scope": "Diario autonómico incluido, distinto de los cinco BOP; auditoría 30 días pendiente."
     }
   ],
   "communities": [
