@@ -120,6 +120,23 @@ def exact_doc_id(raw:str,day:date)->int:
     if not (1<=num<=99999):fail("número de anuncio imposible")
     return num
 
+def classify_bocm(title:str)->str|None:
+    """BOCM town notices use generic headings ('Ofertas de empleo. Proceso selectivo')."""
+    from provincial_common import fold
+    t=" ".join(fold(title).split())
+    if any(x in t for x in ("se resuelve la convocatoria", "se resuelve el concurso",
+        "resolucion definitiva", "nombramiento", "lista definitiva",
+        "lista provisional", "admitid", "excluid", "tribunal calificador",
+        "correccion de errores", "cese y nombramiento")):
+        return None
+    regular=classify(title)
+    if regular:return regular
+    if "ofertas de empleo" in t or "oferta de empleo" in t:
+        if any(x in t for x in ("bolsa", "bolsas")):return "Bolsa de trabajo"
+        if any(x in t for x in ("proceso selectivo", "convocatoria", "bases", "plazas","oposiciones")):
+            return "Plaza / oposición"
+    return None
+
 def nearest_entity(node,parent_map:dict)->str:
     current=node
     while current in parent_map:
@@ -160,6 +177,9 @@ def parse_xml(raw:bytes,day:date,number:int)->dict:
         n=exact_doc_id(key,day)
         title=" ".join((notice.findtext("titulo") or "").split())
         agency=nearest_entity(notice,parent_map)
+        if (not agency or agency.startswith("III. ADMINISTRACIÓN LOCAL")) and title.startswith("–"):
+            match=re.match(r"^–\s*([^\.]{3,125})\.",title)
+            if match:agency=match.group(1).strip()
         pdf=(notice.findtext("url_pdf") or "").strip()
         if (not pdf_ok(pdf,day) or
             pdf.rsplit("/",1)[-1]!=f"{key}.PDF" or
@@ -167,7 +187,7 @@ def parse_xml(raw:bytes,day:date,number:int)->dict:
             fail(f"anuncio incompleto en número {number}: {key}, emisor={agency!r}")
         rows.append({"id":"MD-"+day.strftime("%Y%m%d")+"-"+str(n),"province":PROVINCE,
             "title":title,"entity":agency,"date":day.strftime("%d/%m/%Y"),
-            "bulletin":str(number),"type":classify(title),"url":pdf})
+            "bulletin":str(number),"type":classify_bocm(title),"url":pdf})
     if len(rows)<1 or len({r["id"] for r in rows})!=len(rows):
         fail(f"XML vacío o anuncios duplicados en BOCM {number}")
     return {"date":day,"number":number,"read":len(rows),"rows":rows,
@@ -197,21 +217,18 @@ def parse_fallback_html(html:str,day:date,number:int,fetch_json=request)->dict:
         title=" ".join(payload["name"].split())
         # In a fallback, the official section heading is a grounded grouping,
         # never guessed as a specific legal entity.
-        agency=(payload.get("legislationResponsibleAuthority") or
-                payload.get("legislationJurisdiction") or "").strip() if isinstance(
-                payload.get("legislationResponsibleAuthority") or
-                payload.get("legislationJurisdiction") or "",str) else ""
-        if not agency:
-            headers=[x.get_text(" ",strip=True) for x in soup.select("h2,h3,h4")
-                     if x.get_text(" ",strip=True) and
-                     any(w in x.get_text(" ",strip=True).upper() for w in
-                       ("CONSEJERÍA","AYUNTAMIENTO","PRESIDENCIA","ADMINISTRACIÓN"))]
-            agency=headers[-1] if headers else ""
-        if not agency:fail(f"no se identifica sección oficial en ficha {raw}")
+        parent=payload.get("isPartOf") or {}
+        if not isinstance(parent,dict) or parent.get("name")!=f"BOCM - Nº {number}":
+            fail(f"ficha {raw} no pertenece al extraordinario {number}")
+        if payload.get("datePublished")!=day.strftime("%Y/%m/%d"):
+            fail(f"ficha {raw} de otra fecha")
+        authority=payload.get("legislationResponsible") or {}
+        agency=(authority.get("name") or "").strip() if isinstance(authority,dict) else ""
+        if not agency:fail(f"autoridad oficial no identificada en ficha {raw}")
         if len(title)>2800 or len(agency)>400:fail("registro de respaldo demasiado largo")
         rows.append({"id":f"MD-{day:%Y%m%d}-{n}","province":PROVINCE,
             "title":title,"entity":agency,"date":day.strftime("%d/%m/%Y"),
-            "bulletin":str(number),"type":classify(title),"url":pdf})
+            "bulletin":str(number),"type":classify_bocm(title),"url":pdf})
     if len(set(r["id"] for r in rows))!=len(rows):fail("HTML duplicó avisos")
     return {"date":day,"number":number,"read":len(rows),"rows":rows,
       "editionPdf":issue_pdf(day,number),"method":"html"}
