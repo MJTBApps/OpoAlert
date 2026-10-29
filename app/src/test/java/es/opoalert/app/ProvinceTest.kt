@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Soria", "Castilla y León (BOCYL)", "Badajoz", "Cáceres", "Extremadura (DOE)", "Región de Murcia (BORM)", "Álava", "Bizkaia", "Gipuzkoa", "País Vasco (BOPV)", "A Coruña", "Lugo", "Ourense", "Pontevedra", "Galicia (DOG)", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Soria", "Castilla y León (BOCYL)", "Badajoz", "Cáceres", "Extremadura (DOE)", "Región de Murcia (BORM)", "Álava", "Bizkaia", "Gipuzkoa", "País Vasco (BOPV)", "A Coruña", "Lugo", "Ourense", "Pontevedra", "Galicia (DOG)", "Aragón (BOA)", "Andalucía (BOJA)", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -63,6 +63,10 @@ class ProvinceTest {
         assertEquals(Province.GALICIA_OURENSE, Province.fromNoticeId("OU-2026-353091"))
         assertEquals(Province.GALICIA_PONTEVEDRA, Province.fromNoticeId("PO-2026074979"))
         assertEquals(Province.GALICIA_DOG, Province.fromNoticeId("DG-2026-AnuncioG0597-231026-0002"))
+        assertEquals(Province.ARAGON_BOA, Province.fromNoticeId("AO-2026-007962097"))
+        assertEquals(Province.ANDALUCIA_BOJA, Province.fromNoticeId("BJ-2026-00344769"))
+        assertTrue(Province.ARAGON_BOA.allowsOfficialPath("/cgi-bin/EBOA/BRSCGI"))
+        assertTrue(Province.ANDALUCIA_BOJA.allowsOfficialPath("/eboja/2026/210/BOJA26-210-00150-12345-01_00344769.pdf"))
         assertTrue(Province.GALICIA_CORUNA.allowsOfficialPath("/bopportal/publicado/2026/10/29/2026_0000006951.pdf"))
         assertTrue(Province.GALICIA_LUGO.allowsOfficialPath("/sites/deputacionlugo.org/files/inline-files/29-10-2026.pdf"))
         assertTrue(Province.GALICIA_OURENSE.allowsOfficialPath("/portalapi/api/edicto/descargar/pdf/353091/idioma/gl"))
@@ -91,8 +95,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(46, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(48, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(43, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(45, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
