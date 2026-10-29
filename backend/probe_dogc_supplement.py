@@ -24,3 +24,9 @@ try:
  m=re.search(r"function\\s+searchSuplementsAjaxCall\\s*\\(",r.text)
  print(repr(r.text[m.start():m.start()+2400] if m else "NO MATCH")[:4000],flush=True)
 except Exception as e:print(repr(e),flush=True)
+
+try:
+ x=requests.get(root+'/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/fpca_sumari_suplement/js/fpca_sumari_suplement.js',timeout=18).text
+ i=x.find('function searchSuplementsAjaxCall')
+ print('SUPPLEMENT_CALL_EXACT',repr(x[i:i+3200]),flush=True)
+except Exception as e:print('SUPPLEMENT_CALL_ERROR',repr(e),flush=True)
