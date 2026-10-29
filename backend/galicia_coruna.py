@@ -24,11 +24,13 @@ def session():
 def get_html(day):
  url=f"https://{HOST}/bopportal/cambioBoletin?fechaInput={day:%d/%m/%Y}"
  try:
-  r=session().get(url,timeout=(9,32),allow_redirects=False)
-  if r.status_code in (404,410) or (r.status_code==500 and day.weekday()>=5):return None
-  if r.status_code!=200 or not 400<len(r.content)<500000:
-   invalid(f"A Coruña: HTTP {r.status_code} / incompleto {day}")
-  return BeautifulSoup(r.content,"html.parser")
+  for attempt in range(5):
+   r=session().get(url,timeout=(9,32),allow_redirects=False)
+   if r.status_code in (404,410) or (r.status_code==500 and day.weekday()>=5):return None
+   if r.status_code==200 and 400<len(r.content)<500000:
+    return BeautifulSoup(r.content,"html.parser")
+   if attempt<4:time.sleep(0.7*(attempt+1))
+  invalid(f"A Coruña: HTTP {r.status_code} / incompleto {day} tras cinco intentos")
  except requests.RequestException as e:invalid(f"A Coruña {day}: fallo de acceso a sede {e}")
 def pdf_check(url):
  u=urlsplit(url)
@@ -83,7 +85,7 @@ def read_day(day):
 def audit(today=None):
  end=today or date.today();start=end-timedelta(days=29)
  days=[start+timedelta(days=i) for i in range(30)]
- with ThreadPoolExecutor(max_workers=5) as pool:issues=[x for x in pool.map(read_day,days) if x]
+ with ThreadPoolExecutor(max_workers=2) as pool:issues=[x for x in pool.map(read_day,days) if x]
  seq=[int(x["number"]) for x in issues]
  if not 20<=len(issues)<=27 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
   invalid(f"A Coruña: número de boletines incompleto {seq}")
