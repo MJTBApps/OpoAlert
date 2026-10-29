@@ -168,7 +168,8 @@ def classify(title):
     kind=employment(title)
     if kind is None:return None
     s=fold(title)
-    if any(w in s for w in ("contrato de arrendamiento","elecciones a","levantamiento de actas",
+    if any(w in s for w in ("presupuesto general","modificacion presupuestaria","plantilla de personal",
+       "resolucion del proceso selectivo","contrato de arrendamiento","elecciones a","levantamiento de actas",
        "puesta al cobro","convocatoria de junta","junta general ordinaria","plazas de aparcamiento",
        "convocatoria de subvenciones","relacion de aprobados","listas de aprobados")):
         return None
