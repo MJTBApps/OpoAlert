@@ -11,7 +11,7 @@ from clm_common import employment,publish_audit,invalid
 
 SOURCE="https://www.dip-badajoz.es/bop/"
 HOST="www.dip-badajoz.es"
-PDF_RE=re.compile(r"^/ficheros/bop/bopedictos/(\\d{4})-(\\d{2})-(\\d{2})000000_(\\d{1,8})\\.pdf$",re.I)
+PDF_RE=re.compile(r"^/ficheros/bop/bopedictos/(\d{4})-(\d{2})-(\d{2})000000_(\d{1,8})\.pdf$",re.I)
 TLS=threading.local()
 MONTHS={1:"enero",2:"febrero",3:"marzo",4:"abril",5:"mayo",6:"junio",
     7:"julio",8:"agosto",9:"septiembre",10:"octubre",11:"noviembre",12:"diciembre"}
@@ -52,7 +52,7 @@ def archive(start,end):
             u=urlsplit(urljoin(base,a["href"]))
             if u.hostname!=HOST or u.path!="/bop/index.php":continue
             d=parse_qs(u.query).get("FechaSolicitada",[])
-            if len(d)!=1 or not re.fullmatch(r"\\d{8}",d[0]):continue
+            if len(d)!=1 or not re.fullmatch(r"\d{8}",d[0]):continue
             try: day=datetime.strptime(d[0],"%Y%m%d").date()
             except ValueError:continue
             if (day.year,day.month)==(year,month) and start<=day<=end:
@@ -67,7 +67,7 @@ def parse_day(html,day):
     exact=f"Día {day.day} de {MONTHS[day.month]} de {day.year}"
     if not any(exact in x.get_text(" ",strip=True) for x in h.select("h1")):
         invalid(f"Badajoz: sumario no corresponde a {day}")
-    numbers=[re.search(r"Boletín\\s+(ordinario|extraordinario)\\s+n[.º°\\s]*([0-9]{1,3})",x.get_text(" ",strip=True),re.I)
+    numbers=[re.search(r"Boletín\s+(ordinario|extraordinario)\s+n[.º°\s]*([0-9]{1,3})",x.get_text(" ",strip=True),re.I)
         for x in h.select("h3")]
     issues=[m for m in numbers if m]
     if len(issues)!=1:invalid("Badajoz: número de boletines del día ambiguo")
@@ -82,7 +82,7 @@ def parse_day(html,day):
         pdf=article.select_one('a[href*="/ficheros/bop/bopedictos/"]')
         link=article.select_one('a[href*="ventana_anuncio.php?id_anuncio="]')
         if not dt or not pdf or not link:invalid("Badajoz: artículo incompleto")
-        code=re.fullmatch(r"\\[\\s*(\\d{1,8})\\s*\\]",dt.get_text(" ",strip=True))
+        code=re.fullmatch(r"\[\s*(\d{1,8})\s*\]",dt.get_text(" ",strip=True))
         url=urljoin(SOURCE,pdf["href"]);p=urlsplit(url);m=PDF_RE.fullmatch(p.path)
         ann=urlsplit(urljoin(SOURCE,link["href"]))
         id_values=parse_qs(ann.query).get("id_anuncio",[])
@@ -92,7 +92,7 @@ def parse_day(html,day):
         agency=" ".join(agency_tag.get_text(" ",strip=True).split()) if agency_tag else ""
         if not (code and m and int(m[1])==day.year and int(m[2])==day.month and int(m[3])==day.day
             and int(m[4])==int(code[1]) and ann.hostname==HOST and ann.path=="/bop/ventana_anuncio.php"
-            and len(id_values)==1 and re.fullmatch(r"\\d{5,9}",id_values[0])
+            and len(id_values)==1 and re.fullmatch(r"\d{5,9}",id_values[0])
             and requested==[day.strftime("%Y%m%d")+"000000"] and title and agency):
             invalid(f"Badajoz {day}: anuncio, institución o PDF no cotejables")
         ident=f"BD-{day.year}-{id_values[0]}"
@@ -120,6 +120,6 @@ def audit(today=None):
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("--output",type=Path,required=True)
     a=p.parse_args();v=audit();a.output.parent.mkdir(parents=True,exist_ok=True)
-    a.output.write_text(json.dumps(v,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    a.output.write_text(json.dumps(v,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"BADAJOZ AUDITADO: {v['historyCoverage']['issuesRead']} boletines, "
           f"{v['coverage']['announcementsRead']} anuncios y {len(v['notices'])} candidatas",flush=True)
