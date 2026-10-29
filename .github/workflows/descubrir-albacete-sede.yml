@@ -1,0 +1,21 @@
+name: OpoAlert - Buscar BOP Albacete desde sede accesible
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/recuperar-8-zonas-oficiales-20261029]
+    paths:
+      - backend/discover_albacete_sede.py
+      - .github/workflows/descubrir-albacete-sede.yml
+permissions: {contents: read}
+jobs:
+  explorar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile backend/discover_albacete_sede.py
+      - run: python backend/discover_albacete_sede.py --self-test
+      - run: python -u backend/discover_albacete_sede.py
