@@ -384,6 +384,7 @@ jobs:
           unzip -Z1 OpoAlert-Espana-1.30.0-PRUEBA.apk | grep 'assets/verified/SG.json'
           unzip -Z1 OpoAlert-Espana-1.30.0-PRUEBA.apk | grep 'assets/verified/SA.json'
           unzip -Z1 OpoAlert-Espana-1.30.0-PRUEBA.apk | grep 'assets/verified/DC.json'
+          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-Espana-1.30.0-PRUEBA.apk | grep "versionCode='43' versionName='1.30.0-privada'"
           sha256sum OpoAlert-Espana-1.30.0-PRUEBA.apk
       - uses: actions/upload-artifact@v4
         with:
