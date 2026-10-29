@@ -125,6 +125,10 @@ enum class Province(
         Regex("CA-\\d{4}-\\d{4,7}"),
     );
 
+    fun allowsOfficialPath(path: String): Boolean =
+        path.startsWith(pdfPathPrefix) ||
+        (this == ALMERIA && path == "/pandora/high.raw")
+
     companion object {
         fun fromLabel(label: String): Province? = entries.find { it.label == label }
         fun fromNoticeId(id: String): Province = when {
