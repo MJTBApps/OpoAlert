@@ -1,7 +1,7 @@
 {
   "country": "ES",
-  "updated": "2026-10-28",
-  "note": "Catálogo territorial de España: 10 BOP provinciales auditados (Valencia, Alicante, Castellón, Tarragona, Barcelona, Girona, Huesca, Teruel, Zaragoza y Cádiz), BOE nacional y 4 fuentes CIDO. BOP Lleida sigue sin cobertura directa. La publicación de nuevos BOP exige auditoría de los últimos 30 días, PDF original y validación independiente.",
+  "updated": "2026-10-29",
+  "note": "11 boletines provinciales oficiales auditados, BOE y cuatro fuentes CIDO. Almería incorporada mediante archivo oficial y 30 días validados (21 ediciones, 305 anuncios, 61 candidatas). Jaén pendiente: su hemeroteca no muestra BOP 198, 199 ni 201 y no debe declararse cubierta. BOP Lleida sigue pendiente.",
   "nationalSources": [
     {
       "code": "VA",
@@ -138,6 +138,16 @@
       "feed": "zaragoza_bop.json",
       "state": "active",
       "scope": "Boletin provincial de Zaragoza completo a través de Open Data oficial Gobierno de Aragón; todas las secciones y 30 dias auditados; PDF original"
+    },
+    {
+      "code": "AM",
+      "territory": "04",
+      "kind": "bop",
+      "name": "BOP Almería",
+      "portal": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
+      "feed": "almeria_bop.json",
+      "state": "active",
+      "scope": "21 boletines oficiales y 305 edictos auditados durante 30 días, con OCR original contrastado y PDF individual o de edición"
     },
     {
       "code": "CA",
@@ -325,7 +335,9 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "active",
+      "bopState": "active",
+      "coverageKind": "BOP"
     },
     {
       "ine": "11",

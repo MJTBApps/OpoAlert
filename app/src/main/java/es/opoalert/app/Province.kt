@@ -103,6 +103,13 @@ enum class Province(
         "www.boa.aragon.es", "/cgi-bin/EBOA/BRSCGI",
         Regex("ZA-\\d{9}"),
     ),
+    ALMERIA(
+        "AM", "Almería",
+        "https://mjtbapps.github.io/OpoAlert/almeria_bop.json",
+        "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
+        "app.dipalme.org", "/bop/services/manager/edicto/",
+        Regex("AM-\\d{4}-\\d{5}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -110,6 +117,10 @@ enum class Province(
         "www.bopcadiz.es", "/export/sites/default/.boletines_pdf/",
         Regex("CA-\\d{4}-\\d{4,7}"),
     );
+
+    fun allowsOfficialPath(path: String): Boolean =
+        path.startsWith(pdfPathPrefix) ||
+        (this == ALMERIA && path == "/pandora/high.raw")
 
     companion object {
         fun fromLabel(label: String): Province? = entries.find { it.label == label }
@@ -128,6 +139,7 @@ enum class Province(
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
+            id.startsWith("AM-") -> ALMERIA
             else -> VALENCIA
         }
     }

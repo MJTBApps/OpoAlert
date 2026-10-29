@@ -1,6 +1,6 @@
 # OpoAlert España — cobertura real
 
-Actualización: 28 de octubre de 2026.
+Actualización: 29 de octubre de 2026.
 
 El catálogo incluye 50 provincias y Ceuta/Melilla. Una fuente activa no
 equivale a cobertura exhaustiva de todos los boletines del territorio.
@@ -72,3 +72,11 @@ oficiales superan auditoría real de 30 días. Los fallos nunca publican archivo
 ## Andalucía — BOP Cádiz incorporado (28/10/2026)
 
 El BOP de Cádiz tiene portal oficial https://www.bopcadiz.es/ con índice completo por edición y enlace a los PDFs originales. El lector valida el calendario oficial, la correlación entre fecha HTML y PDF, los 30 días y las ediciones consecutivas, con organismo emisor, código de anuncio y enlace PDF con número de página cuando consta. **Auditoría superada: 21 boletines (188–208), 359 anuncios y 41 candidatos** del 29/09/2026 al 28/10/2026. Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40782858099. Almería dispone de un buscador ZK que se ha podido consultar con Playwright y aún requiere lector de histórico validado. Córdoba, Granada, Huelva, Jaén, Málaga y Sevilla pendientes de incorporación.
+
+## Andalucía — Almería y Jaén (29/10/2026)
+
+**Almería**, validada: 21 ediciones (BOP 189–209), 305 edictos y 61 candidatas en el intervalo 30/09–29/10/2026. Fuente oficial https://app.dipalme.org/pandora/ y PDFs individuales en app.dipalme.org/bop/services/manager/edicto/. El lector comprueba 30 días, correlación de sumario y anuncios del texto íntegro OCR facilitado por la Diputación, numeración consecutiva y PDFs. Evidencia: https://github.com/MJTBApps/OpoAlert/actions/runs/40824575998.
+
+**Jaén pendiente**, no integrado en la APK. Su hemeroteca https://bophistorico.dipujaen.es/ es accesible, pero faltan los boletines 198, 199 y 201 de octubre de 2026 en el índice consultado; el portal bop.dipujaen.es devuelve HTTP 500 en las comprobaciones. Se ha construido un lector preliminar; es imprescindible completar los huecos y validar el histórico antes de declarar cobertura.
+
+La expansión autónoma programada en ChatGPT ha quedado desactivada por petición del usuario. Los flujos periódicos de actualización de las fuentes ya publicadas de GitHub Actions son distintos de esa automatización de desarrollo.

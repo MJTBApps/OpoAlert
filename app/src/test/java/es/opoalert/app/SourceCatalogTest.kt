@@ -29,8 +29,8 @@ class SourceCatalogTest {
         assertEquals(7, groups[1].sourceCount)
         assertEquals(listOf("Huesca", "Teruel", "Zaragoza"), groups[2].territories.map { it.name })
         assertEquals(3, groups[2].sourceCount)
-        assertEquals(listOf("Cádiz"), groups[3].territories.map { it.name })
-        assertEquals(1, groups[3].sourceCount)
+        assertEquals(listOf("Almería", "Cádiz"), groups[3].territories.map { it.name })
+        assertEquals(2, groups[3].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {

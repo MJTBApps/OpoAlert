@@ -24,6 +24,7 @@ object SourceCatalog {
         Province.HUESCA -> Territory("Aragón", "Huesca")
         Province.TERUEL -> Territory("Aragón", "Teruel")
         Province.ZARAGOZA -> Territory("Aragón", "Zaragoza")
+        Province.ALMERIA -> Territory("Andalucía", "Almería")
         Province.CADIZ -> Territory("Andalucía", "Cádiz")
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }

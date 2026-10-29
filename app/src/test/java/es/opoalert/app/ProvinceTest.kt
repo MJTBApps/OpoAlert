@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -35,10 +35,15 @@ class ProvinceTest {
         assertTrue(Province.ZARAGOZA.idPattern.matches("ZA-000344663"))
         assertEquals(Province.CADIZ, Province.fromNoticeId("CA-2026-354710"))
         assertTrue(Province.CADIZ.idPattern.matches("CA-2026-354710"))
+        assertEquals(Province.ALMERIA, Province.fromNoticeId("AM-2026-02765"))
+        assertTrue(Province.ALMERIA.idPattern.matches("AM-2026-02765"))
+        assertTrue(Province.ALMERIA.allowsOfficialPath("/bop/services/manager/edicto/2026/2765/anuncio.pdf"))
+        assertTrue(Province.ALMERIA.allowsOfficialPath("/pandora/high.raw"))
+        assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(15, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(16, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(12, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(13, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }
