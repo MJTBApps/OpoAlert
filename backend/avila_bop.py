@@ -60,6 +60,7 @@ def parse(html,day):
     m=re.search(r"B\.?\s*O\.?\s*P\.?\s*(\d{1,3})\s*/\s*(\d{2})",body,re.I)
     if not m or int(m[2])!=day.year%100:invalid("Ávila: número del BOP ausente")
     number=m[1]
+    print("AVILA_NUM",day,number,"TEXT",body[body.find("B.O.P.")-80:body.find("B.O.P.")+65],flush=True)
     notices=[];all_ids=set()
     lists=soup.select("div.listado")
     if not lists:invalid("Ávila: faltan bloques de anuncios")
@@ -78,7 +79,7 @@ def parse(html,day):
             if (u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443)
                 or not re.fullmatch(r"/bops/2026/\d{2}-\d{2}-2026/[^/]+\.pdf",u.path,re.I)
                 or f"/{day:%d-%m-%Y}/" not in u.path):
-                invalid("Ávila: PDF de otro boletín")
+                invalid(f"Ávila: PDF de otro boletín día {day} URL {u.geturl()}")
             id=f"AV-{day.year}-{int(nm[1])}"
             if id in all_ids:invalid("Ávila: anuncio duplicado")
             all_ids.add(id)
