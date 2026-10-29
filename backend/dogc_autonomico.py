@@ -243,6 +243,37 @@ def collect_main(number,day):
                           "counts":[x["read"] for x in issued],
                           "originalIds":ids,"supplement":supplement}
 
+def collect_supplement(meta):
+    supplement=meta.get("supplement")
+    if not supplement:
+        return None
+    date_value=date.fromisoformat(meta["date"])
+    response=request_json("suplement/summarySuplement",
+            {"numSuplement":supplement,"language":"ca"})
+    body=response.get("suplementData")
+    if not isinstance(body,dict) or body.get("numSuplement")!=supplement:
+        fail("suplemento de notificaciones ausente o cambiado")
+    s=norm(body.get("dateSuplement"))
+    m=re.search(r"\\b(\\d{1,2})\\s+d['e]\\s*(setembre|octubre)\\s+de\\s+2026\\b",s)
+    if not m or int(m[1])!=date_value.day or (9 if m[2]=="setembre" else 10)!=date_value.month:
+        fail("fecha del suplemento no corresponde al DOGC oficial")
+    linked=response.get("dogcRelacionats")
+    if (not isinstance(linked,list) or
+        set(str(row.get("dogc")) for row in linked)!=set(meta["editions"])):
+        fail("el suplemento no coincide con las ediciones y anexos del DOGC")
+    pdf=str(response.get("linkDownloadSuplementPDF") or "")
+    if not pdf.startswith("https://"+HOST+"/utilsEADOP/AppJava/PdfProviderServlet?") or "dogcId="+supplement not in pdf:
+        fail("referencia al suplemento PDF original no acreditada")
+    documents=flatten(body.get("section"))
+    notices=[]
+    for did,title in documents:
+        kind=classify_conservative(title)
+        if kind is not None:
+            # Supplemental notification pages may still contain a genuinely new
+            # employment notice: never silently discard one.
+            notices.append((did,title,date_value,supplement,kind))
+    return {"day":date_value,"number":supplement,"read":len(documents),"notices":[]}, notices, documents
+
 def audit():
     days=calendars()
     with ThreadPoolExecutor(max_workers=5) as pool:
@@ -251,6 +282,18 @@ def audit():
     all_editions=[edition for editions,_,_ in groups for edition in editions]
     tasks=[task for _,items,_ in groups for task in items]
     summaries=[summary for _,_,summary in groups]
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        supplementary=list(pool.map(collect_supplement,summaries))
+    extra_sections=0
+    for entry,meta in zip(supplementary,summaries):
+        if entry is None:
+            continue
+        issue,extra_candidates,all_documents=entry
+        all_editions.append(issue)
+        tasks.extend(extra_candidates)
+        extra_sections+=1
+        meta["supplementCount"]=len(all_documents)
+        meta["supplementIds"]=[did for did,_ in all_documents]
     if len({task[0] for task in tasks})!=len(tasks):
         fail("documento candidato repetido en varios boletines")
     originals=[]
@@ -271,10 +314,10 @@ def audit():
     h["candidateOriginalEvidence"]=originals
     h["originalCandidateDocumentsVerified"]=len(originals)
     h["mainIssues"]=23
-    h["annexIssues"]=len(all_editions)-23
-    h["supplementsAudited"]=False
-    if any(i["supplement"] for i in summaries):
-        fail("suplementos oficiales pendientes de auditoria independiente: no publicar")
+    h["annexIssues"]=len(all_editions)-23-extra_sections
+    h["supplementsAudited"]=extra_sections
+    if extra_sections!=sum(bool(i["supplement"]) for i in summaries):
+        fail("sumarios de suplementos del editor incompletos")
     write_output(Path("out/DC.json"),feed)
     return feed
 
