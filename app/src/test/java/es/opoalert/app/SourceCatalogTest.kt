@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
@@ -39,6 +39,8 @@ class SourceCatalogTest {
         assertEquals(6, groups[6].sourceCount)
         assertEquals(listOf("Badajoz", "Cáceres", "Diario autonómico"), groups[7].territories.map { it.name })
         assertEquals(3, groups[7].sourceCount)
+        assertEquals(listOf("Murcia"), groups[8].territories.map { it.name })
+        assertEquals(1, groups[8].sourceCount)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
@@ -49,6 +51,7 @@ class SourceCatalogTest {
         assertEquals("DOCM · diario autonómico", SourceCatalog.sourceName(Province.CLM_DOCM))
         assertEquals("BOCYL · diario autonómico", SourceCatalog.sourceName(Province.CYL_BOCYL))
         assertEquals("DOE · diario autonómico", SourceCatalog.sourceName(Province.EXTREMADURA_DOE))
+        assertEquals("BORM · boletín autonómico y provincial", SourceCatalog.sourceName(Province.MURCIA_BORM))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
     }
