@@ -67,7 +67,7 @@ def toc_from_pdf(pdf,day,number):
     first=pdf[0].get_text()
     if (day.year!=2026 or not re.search(rf"\bN[úu]m\.\s*{number}\b",first,re.I)
         or day.strftime("%Y") not in first or "Sumario" not in first):
-        invalid(f"Palencia {day}: el PDF no corresponde a su fecha y número BOP {number}")
+        invalid(f"Palencia {day}: el PDF no corresponde a su fecha y número BOP {number}, portada={first[:550]!r}")
     results=[];cur_area="Boletín Oficial de la Provincia de Palencia"
     pending=[]
     for k in range(min(4,len(pdf))):
