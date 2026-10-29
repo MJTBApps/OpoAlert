@@ -3,7 +3,7 @@
 
 Uses the documented OPEN DATA API, not the inaccessible public search portal.
 Technical specification: https://ias1.larioja.org/opendata/download?r=Y2Q9MzIxfGNmPTE2
-Never emits a completed feed if calendar, sumaries or original PDFs disagree.
+Never emits a completed feed if calendar, official article XML, or source identity disagree.
 """
 from __future__ import annotations
 import argparse
@@ -45,12 +45,12 @@ def validate_url(url):
     if u.path not in ("/boletin/ExportarBoletinServlet","/boletin/Bor_Boletin_visor_Servlet"):
         invalid("Ruta no corresponde a API BOR")
     return u
-def fetch(url, pdf=False):
+def fetch(url, pdf=False, attempts=4):
     validate_url(url)
     error=None
-    for attempt in range(4):
+    for attempt in range(attempts):
         try:
-            r=client().get(url,timeout=(15,45),stream=pdf,allow_redirects=False,
+            r=client().get(url,timeout=((7,18) if pdf else (12,35)),stream=pdf,allow_redirects=False,
                            headers={"Range":"bytes=0-128"} if pdf else {})
             if r.status_code in ((200,206) if pdf else (200,)):
                 break
@@ -58,8 +58,8 @@ def fetch(url, pdf=False):
             r.close()
         except requests.RequestException as ex:
             error=str(ex)[:190]
-        if attempt==3:
-            invalid("Sin acceso a contenido original tras 4 intentos: "+str(error))
+        if attempt==attempts-1:
+            invalid(f"Sin acceso a contenido original tras {attempts} intentos: "+str(error))
         time.sleep((attempt+1)*1.7)
     if pdf:
         if "pdf" not in r.headers.get("Content-Type","").lower():
@@ -156,18 +156,52 @@ def issue(item):
                                           "officialHtml":api_url(tipo=2,fecha=day.strftime("%Y/%m/%d"),referencia=htmlref)})
     if not 1<=count<=500:invalid(f"BOR {number} vacío o truncado: {count}")
     print(f"BOR {day} n.º {number}: {count} anuncios, {len(found)} candidatas",flush=True)
-    return {"day":day,"number":str(number),"read":count,"notices":found,
-            "pdfs":[pdf_url(edition_pdf)]+[x["url"] for x in found]}
+    return {"day":day,"number":str(number),"read":count,"notices":found,"editionPdf":pdf_url(edition_pdf)}
+def verify_notice(notice):
+    """Verify full source article XML; choose PDF only if its bytes are accessible."""
+    official=notice["officialHtml"]
+    root=fetch(official)
+    articles=root.findall("./anuncio")
+    if len(articles)!=1:invalid("La API no devolvió un anuncio único "+notice["id"])
+    heading=articles[0].find("./cabecera")
+    body=articles[0].find("./contenido[@tipo='html']")
+    if heading is None or body is None:invalid("Falta cabecera o texto íntegro del anuncio "+notice["id"])
+    try:
+        got_day=datetime.strptime(heading.findtext("fecha",""),"%d-%m-%Y").date()
+        got_num=int(heading.findtext("numero_bor",""))
+    except ValueError as ex:invalid("Identidad de anuncio ilegible "+str(ex))
+    want_day=datetime.strptime(notice["date"],"%d/%m/%Y").date()
+    title=" ".join(heading.findtext("titulo","").split())
+    agency=" ".join(heading.findtext("organo","").split())
+    if (got_day!=want_day or got_num!=int(notice["bulletin"])
+        or title!=notice["title"] or agency!=notice["entity"]
+        or len((body.text or "").strip())<80):
+        invalid("Texto original del anuncio no concuerda con el sumario "+notice["id"])
+    # The official PDF viewer is intermittently unresponsive. Do not send the user
+    # to a PDF until its bytes have been positively verified. The same Government
+    # XML API publishes the original full HTML body, a safe official fallback.
+    try:
+        fetch(notice["url"],pdf=True,attempts=1)
+        notice["originalFormat"]="pdf"
+    except ProvincialCoverageError:
+        notice["url"]=official
+        notice["originalFormat"]="official_xml"
+    return notice
+
 def audit():
     calendar_items=calendar()
     with ThreadPoolExecutor(max_workers=5) as ex:
         rows=list(ex.map(issue,calendar_items))
     total=sum(x["read"] for x in rows)
     if total<250:invalid(f"Histórico sospechosamente corto: {total} anuncios")
-    originals=sorted(set(u for x in rows for u in x["pdfs"]))
-    with ThreadPoolExecutor(max_workers=2) as ex:
-        list(ex.map(lambda u:fetch(u,pdf=True),originals))
-    print(f"BOR: {len(originals)} PDF originales verificados, {total} anuncios",flush=True)
+    notices=[n for row in rows for n in row["notices"]]
+    if not notices:invalid("No se encontraron convocatorias candidatas")
+    with ThreadPoolExecutor(max_workers=3) as ex:
+        list(ex.map(verify_notice,notices))
+    pdfs=sum(n["originalFormat"]=="pdf" for n in notices)
+    xmls=sum(n["originalFormat"]=="official_xml" for n in notices)
+    print(f"BOR: {total} sumarios oficiales, {len(notices)} textos íntegros cotejados, "
+          f"{pdfs} PDF originales accesibles, {xmls} XML originales como alternativa",flush=True)
     issues=[{key:r[key] for key in ("day","number","read","notices")} for r in rows]
     return publish_audit(SOURCE,PROVINCE,issues,today=END,min_issues=20)
 if __name__=="__main__":
