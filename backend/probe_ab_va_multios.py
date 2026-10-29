@@ -51,4 +51,4 @@ def probe(item):
 print("RUNNER",platform.platform(),flush=True)
 with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
  for x in pool.map(probe,URLS.items()):
-  print("AB_VA_ALT",json.dumps(x,ensure_ascii=False)[:5500],flush=True)
+  print("AB_VA_ALT",json.dumps(x,ensure_ascii=True)[:5500],flush=True)
