@@ -1,0 +1,33 @@
+name: OpoAlert - Recolector local oficial portable Windows
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - scripts/recolector_bop_local.py
+      - .github/workflows/recolector-bop-local-windows.yml
+permissions: {contents: read}
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prueba local sin Internet ni datos personales
+        run: python scripts/recolector_bop_local.py --self-test
+      - name: Crear EXE portable con Python incorporado
+        run: |
+          python -m pip install pyinstaller
+          python -m PyInstaller --clean --onefile --name OpoAlert-Recolector-Oficial scripts/recolector_bop_local.py
+      - name: Validar ejecutable empaquetado
+        run: .\dist\OpoAlert-Recolector-Oficial.exe --self-test
+      - name: Publicar recolector
+        uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-Recolector-Oficial-Windows
+          path: dist/OpoAlert-Recolector-Oficial.exe
+          retention-days: 30
+          if-no-files-found: error
