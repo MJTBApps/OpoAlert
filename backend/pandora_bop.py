@@ -192,7 +192,7 @@ def parse_date_header(g:Gazette,txt:str,day:date)->int:
 
 def split_ocr(g:Gazette,text:str,day:date)->tuple[list[dict],int]:
     """Match original publication IDs in official sumario and full body, 1:1."""
-    if len(text)<1500 or len(text)>2_500_000:
+    if len(text)<200 or len(text)>2_500_000:
         raise ProvincialCoverageError(f"{g.name} {day}: OCR vacío o demasiado grande")
     line_regex=AL_BODY if g.almeria else JA_BODY
     matches=list(line_regex.finditer(text))
