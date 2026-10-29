@@ -2,7 +2,7 @@ name: OpoAlert - Auditar Huelva BOP 30 dias
 on:
   push:
     branches: [feature/rematar-clm-madrid-andalucia-20261029]
-    paths: [backend/huelva_bop.py,backend/tests/test_huelva_bop.py,.github/workflows/audit-huelva.yml]
+    paths: [backend/huelva_bop.py,backend/tests/test_huelva_bop.py,backend/validar_huelva_bop.py,.github/workflows/audit-huelva.yml]
   workflow_dispatch:
 permissions: {contents: read}
 jobs:
@@ -16,6 +16,7 @@ jobs:
       - run: pip install requests beautifulsoup4
       - run: python -m unittest discover -s backend/tests -p test_huelva_bop.py -v
       - run: python -u backend/huelva_bop.py --output verified/huelva_bop.json
+      - run: python backend/validar_huelva_bop.py --file verified/huelva_bop.json --require-today
       - uses: actions/upload-artifact@v4
         with:
           name: huelva-bop-30dias
