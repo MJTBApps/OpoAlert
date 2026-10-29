@@ -229,6 +229,27 @@ enum class Province(
         "bocyl.jcyl.es", "/boletines/",
         Regex("CY-\\d{8}-\\d{1,4}"),
     ),
+    BADAJOZ_BOP(
+        "BD", "Badajoz",
+        "https://mjtbapps.github.io/OpoAlert/badajoz_bop.json",
+        "https://www.dip-badajoz.es/bop/",
+        "www.dip-badajoz.es", "/ficheros/bop/bopedictos/",
+        Regex("BD-\\d{4}-\\d{5,9}"),
+    ),
+    CACERES_BOP(
+        "CC", "Cáceres",
+        "https://mjtbapps.github.io/OpoAlert/caceres_bop.json",
+        "https://bop.dip-caceres.es/bop/index.html",
+        "bop.dip-caceres.es", "/bop/services/anuncios/contenidoPdfIdAnuncio",
+        Regex("CC-\\d{4}-\\d{1,7}"),
+    ),
+    EXTREMADURA_DOE(
+        "EX", "Extremadura (DOE)",
+        "https://mjtbapps.github.io/OpoAlert/extremadura_doe.json",
+        "https://doe.juntaex.es/",
+        "doe.juntaex.es", "/pdfs/doe/",
+        Regex("EX-\\d{4}-[A-Z0-9]{8}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -265,6 +286,9 @@ enum class Province(
             id.startsWith("PL-") -> PALENCIA_BOP
             id.startsWith("SR-") -> SORIA_BOP
             id.startsWith("CY-") -> CYL_BOCYL
+            id.startsWith("BD-") -> BADAJOZ_BOP
+            id.startsWith("CC-") -> CACERES_BOP
+            id.startsWith("EX-") -> EXTREMADURA_DOE
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
