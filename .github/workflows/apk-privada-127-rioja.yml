@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/navarra-rioja-20261029]
-    paths: [.github/workflows/apk-privada-127-rioja.yml, backend/validar_apk_rioja.py, scripts/test_ui_080.py, app/build.gradle.kts, app/src/main/java/es/opoalert/app/Province.kt]
+    paths: [.github/workflows/apk-privada-127-rioja.yml, backend/validar_apk_rioja.py, scripts/test_ui_080.py, app/build.gradle.kts, app/src/main/java/es/opoalert/app/Province.kt, 'app/src/test/**', app/src/main/java/es/opoalert/app/SourceCatalog.kt, app/src/main/java/es/opoalert/app/RemoteFeedReader.kt]
 permissions:
   contents: read
   actions: read
