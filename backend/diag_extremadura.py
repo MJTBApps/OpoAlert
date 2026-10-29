@@ -100,9 +100,9 @@ url="https://bop.dip-caceres.es/bop/js/consultas.js"
 response=requests.get(url,timeout=(12,28))
 js=response.text
 print("CC_API_MAP",json.dumps(sorted(set(re.findall(r"""[\"'](/bop/services/[^\"']{2,140})[\"']""",js))),ensure_ascii=False),flush=True)
-print("CC_JS_FUNCNAMES",re.findall(r"function\\s+(\\w+)\\s*\\(",js)[:140],flush=True)
+print("CC_JS_FUNCNAMES",re.findall(r"function\s+(\w+)\s*\(",js)[:140],flush=True)
 for function in ("mostrarFicheroHtml","mostrarSumario","obtenerSumario","cargaBoletin","loadBoletin","getBoletin","getBop","cargaDatosBoletin","cargaCalendario"):
-  m=re.search(r"function\\s+"+function+r"\\s*\\(",js)
+  m=re.search(r"function\s+"+function+r"\s*\(",js)
   if m: print("CC_JS_FN",function,js[m.start():m.start()+3700],flush=True)
 for marker in ("services/boletines/","services/anuncios/","fecha", "sumario.html","busqueda=numBop"):
   hits=list(re.finditer(re.escape(marker),js,re.I))
