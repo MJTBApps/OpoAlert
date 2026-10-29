@@ -179,7 +179,7 @@ class AlertsActivity : Activity() {
             setPadding(0, dp(13), 0, dp(4))
         })
         val initial = existing?.provinces ?: ProvinceSettings.selected(this)
-        val checks = Province.entries.map { province ->
+        val checks = SourceCatalog.availableSources.map { province ->
             CheckBox(this).apply {
                 text = province.label
                 textSize = 14f
@@ -199,7 +199,7 @@ class AlertsActivity : Activity() {
             .create()
         dialog.setOnShowListener {
             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
-                val selected = Province.entries.filterIndexed { i, _ -> checks[i].isChecked }.toSet()
+                val selected = SourceCatalog.availableSources.filterIndexed { i, _ -> checks[i].isChecked }.toSet()
                 try {
                     AlertRuleStore.upsert(this, existing?.id, input.text.toString(), selected)
                     dialog.dismiss()

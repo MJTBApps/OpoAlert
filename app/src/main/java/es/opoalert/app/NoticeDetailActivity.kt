@@ -216,6 +216,7 @@ class NoticeDetailActivity : Activity() {
             "Cuenca" -> "Boletín Oficial de la Provincia de Cuenca"
             "Guadalajara" -> "Boletín Oficial de la Provincia de Guadalajara"
             "Toledo" -> "Boletín Oficial de la Provincia de Toledo"
+            "Huelva" -> "Boletín Oficial de la Provincia de Huelva"
             "Tarragona (BOP)" -> "Boletín Oficial de la Provincia de Tarragona"
             "Barcelona (BOP)" -> "Boletín Oficial de la Provincia de Barcelona"
             "Girona (BOP)" -> "Boletín Oficial de la Provincia de Girona"

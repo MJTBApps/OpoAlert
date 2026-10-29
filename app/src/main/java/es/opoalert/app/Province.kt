@@ -131,6 +131,13 @@ enum class Province(
         "bopsevilla.dipusevilla.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
         Regex("SV-\\d{4}-\\d{6}"),
     ),
+    HUELVA_BOP(
+        "HB", "Huelva",
+        "https://mjtbapps.github.io/OpoAlert/huelva_bop.json",
+        "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
+        "s2.diphuelva.es", "/portalweb/bope/anuncios/",
+        Regex("HB-\\d{4}-\\d{1,8}"),
+    ),
     MADRID(
         "MD", "Madrid",
         "https://mjtbapps.github.io/OpoAlert/madrid_bocm.json",
@@ -209,6 +216,7 @@ enum class Province(
             id.startsWith("TE-") -> TERUEL
             id.startsWith("ZA-") -> ZARAGOZA
             id.startsWith("CA-") -> CADIZ
+            id.startsWith("HB-") -> HUELVA_BOP
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
             id.startsWith("CR-") -> CIUDAD_REAL
@@ -235,13 +243,13 @@ object ProvinceSettings {
         val stored = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             .getString(SELECTED, Province.VALENCIA.code).orEmpty()
         val codes = stored.split(',').map { it.trim() }.toSet()
-        val selected = Province.entries.filter { it.code in codes }.toSet()
+        val selected = SourceCatalog.availableSources.filter { it.code in codes }.toSet()
         return selected.ifEmpty { setOf(Province.VALENCIA) }
     }
 
     fun save(context: Context, chosen: Set<Province>): Boolean {
         if (chosen.isEmpty()) return false
-        val value = Province.entries.filter { it in chosen }.joinToString(",") { it.code }
+        val value = SourceCatalog.availableSources.filter { it in chosen }.joinToString(",") { it.code }
         return context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             .edit().putString(SELECTED, value).commit()
     }
@@ -257,7 +265,7 @@ object ProvinceSettings {
 
     fun display(context: Context): String {
         val chosen = selected(context)
-        val locals = Province.entries.filter { it in chosen && it != Province.BOE }
+        val locals = SourceCatalog.availableSources.filter { it in chosen && it != Province.BOE }
         val localText = when (locals.size) {
             0 -> ""
             1 -> locals.first().label
