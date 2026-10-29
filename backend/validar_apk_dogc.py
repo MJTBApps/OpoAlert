@@ -65,7 +65,7 @@ def validate(root:Path):
         if not has_supplement:sid=[]
         if names[0]!=group["main"] or any(not n.startswith(group["main"]) or not NUMBER.fullmatch(n) for n in names):
             bad("numero de edición o anexo no reconocido")
-        if any(not isinstance(v,int) or not 1<=v<=350 for v in counts) or not 1<=len(sid)<=350:
+        if any(not isinstance(v,int) or not 1<=v<=350 for v in counts) or (has_supplement and not 1<=len(sid)<=350):
             bad("sumario vacío o contador imposible")
         if len(set(ids+sid))!=len(ids)+len(sid):
             bad("publicaciones repetidas entre ediciones del mismo día")
