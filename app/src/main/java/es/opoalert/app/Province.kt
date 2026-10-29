@@ -201,6 +201,13 @@ enum class Province(
         "bop.dipuleon.es", "/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/",
         Regex("LN-\\d{4}-\\d{6}"),
     ),
+    PALENCIA_BOP(
+        "PL", "Palencia",
+        "https://mjtbapps.github.io/OpoAlert/palencia_bop.json",
+        "https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia",
+        "www.diputaciondepalencia.es", "/system/files/bop/2026/",
+        Regex("PL-\\d{8}-\\d{3}"),
+    ),
     ZAMORA_BOP(
         "ZM", "Zamora",
         "https://mjtbapps.github.io/OpoAlert/zamora_bop.json",
@@ -255,6 +262,7 @@ enum class Province(
             id.startsWith("AV-") -> AVILA
             id.startsWith("LN-") -> LEON_BOP
             id.startsWith("ZM-") -> ZAMORA_BOP
+            id.startsWith("PL-") -> PALENCIA_BOP
             id.startsWith("SR-") -> SORIA_BOP
             id.startsWith("CY-") -> CYL_BOCYL
             id.startsWith("MD-") -> MADRID
