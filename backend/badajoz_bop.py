@@ -11,7 +11,7 @@ from clm_common import employment,publish_audit,invalid
 
 SOURCE="https://www.dip-badajoz.es/bop/"
 HOST="www.dip-badajoz.es"
-PDF_RE=re.compile(r"^/ficheros/bop/bopedictos/(\d{4})-(\d{2})-(\d{2})000000_([Rr]?\d{1,8})\.pdf$",re.I)
+PDF_RE=re.compile(r"^/ficheros/bop/bopedictos/(\d{4})-(\d{2})-(\d{2})(000000|150000)_([Rr]?\d{1,8})\.pdf$",re.I)
 TLS=threading.local()
 MONTHS={1:"enero",2:"febrero",3:"marzo",4:"abril",5:"mayo",6:"junio",
     7:"julio",8:"agosto",9:"septiembre",10:"octubre",11:"noviembre",12:"diciembre"}
@@ -73,7 +73,7 @@ def parse_day(html,day):
     numbers=[re.search(r"Boletín\s+(ordinario|extraordinario)\s+n[.º°\s]*([0-9]{1,3})",x.get_text(" ",strip=True),re.I)
         for x in h.select("h3")]
     issues=[m for m in numbers if m]
-    if len(issues)!=1:invalid("Badajoz: número de boletines del día ambiguo")
+    if len(issues)!=1:invalid(f"Badajoz {day}: número de boletines ambiguo: {[(h3.get_text(chr(32),strip=True)) for h3 in h.select(chr(104)+chr(51))]}, matches={len(issues)}")
     number=issues[0][2]
     root=h.select_one("#sumario_dinamico")
     if root is None:invalid("Badajoz: falta sumario oficial")
@@ -94,9 +94,9 @@ def parse_day(html,day):
         agency_tag=article.find_previous("p",class_="nivel3")
         agency=" ".join(agency_tag.get_text(" ",strip=True).split()) if agency_tag else ""
         if not (code and m and int(m[1])==day.year and int(m[2])==day.month and int(m[3])==day.day
-            and normalize_code(m[4])==normalize_code(code[1]) and ann.hostname==HOST and ann.path=="/bop/ventana_anuncio.php"
+            and normalize_code(m[5])==normalize_code(code[1]) and ann.hostname==HOST and ann.path=="/bop/ventana_anuncio.php"
             and len(id_values)==1 and re.fullmatch(r"\d{5,9}",id_values[0])
-            and requested==[day.strftime("%Y%m%d")+"000000"] and title and agency):
+            and requested==[day.strftime("%Y%m%d")+m[4]] and title and agency):
             invalid(f"Badajoz {day}: anuncio/PDF incoherente: código={code[1] if code else None}, PDF={url}, urlAnuncio={ann.geturl()}, id={id_values}, fecha={requested}, título={title[:100]}, entidad={agency[:100]}")
         ident=f"BD-{day.year}-{id_values[0]}"
         if ident in seen:invalid("Badajoz: duplicado")
