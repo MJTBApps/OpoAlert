@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """BOPPO Pontevedra official daily notices, 30 days with original PDFs."""
 from __future__ import annotations
-from datetime import date,timedelta
+from datetime import date,timedelta,datetime
 from pathlib import Path
 from urllib.parse import urlsplit,urljoin
 from bs4 import BeautifulSoup
@@ -71,7 +71,8 @@ def read_day(day):
   pdf=urljoin("https://"+HOST,pdf_tag["href"]);u=urlsplit(pdf)
   mt=PDF_RE.fullmatch(u.path)
   if (not mt or u.hostname!=HOST or u.query or u.fragment or int(mt[1])!=day.month or
-      int(mt[2])!=day.day or int(mt[4])!=int(day.strftime("%Y%m%d")) or mt[3]!=mt[5]):
+      int(mt[2])!=day.day or mt[3]!=mt[5] or
+      abs((datetime.strptime(mt[4],"%Y%m%d").date()-day).days)>10):
    invalid(f"Pontevedra {day}: PDF no corresponde al anuncio {pdf}")
   ident=mt[3];noticeid="PO-"+ident
   if noticeid in seen:invalid(f"Pontevedra {day}: documento duplicado")
