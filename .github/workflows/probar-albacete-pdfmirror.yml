@@ -1,0 +1,19 @@
+name: OpoAlert - Probar PDF directos oficiales BOP Albacete
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/recuperar-8-zonas-oficiales-20261029]
+    paths:
+      - backend/probe_albacete_pdfmirror.py
+      - .github/workflows/probar-albacete-pdfmirror.yml
+permissions: {contents: read}
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m py_compile backend/probe_albacete_pdfmirror.py
+      - run: python -u backend/probe_albacete_pdfmirror.py
