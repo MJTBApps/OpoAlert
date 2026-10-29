@@ -16,13 +16,13 @@ def http_session():
 def invalid(message):
     raise ProvincialCoverageError("Castilla-La Mancha: "+str(message))
 
-def get(url,allowed,stream=False,timeout=(12,28),verify=True):
+def get(url,allowed,stream=False,timeout=(12,28),verify=True,retries=3):
     u=urlsplit(url)
     if (u.scheme!="https" or u.hostname not in allowed or u.username or u.password
         or u.fragment or (u.port not in (None,443) and not (u.hostname=="se1.dipucr.es" and u.port==4443))):
         invalid("URL fuera de la fuente oficial: "+url[:200])
     error=None
-    for i in range(3):
+    for i in range(retries):
         try:
             r=http_session().get(url,timeout=timeout,stream=stream,allow_redirects=True,verify=verify)
             final=urlsplit(r.url)
@@ -34,7 +34,7 @@ def get(url,allowed,stream=False,timeout=(12,28),verify=True):
             return r
         except (requests.RequestException,ProvincialCoverageError) as ex:
             error=ex
-            if i<2:time.sleep(.7*(i+1))
+            if i<retries-1:time.sleep(.7*(i+1))
     invalid(f"sin acceso seguro a {url}: {error}")
 
 def pdf_header(url,allowed):
