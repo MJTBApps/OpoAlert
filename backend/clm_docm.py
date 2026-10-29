@@ -101,8 +101,11 @@ def audit(today=None):
         h=get(bulletin_link(day.strftime("%Y%m%d")),HOST).text
         idx.update(calendar(h,start,end))
     if len(idx)<19:invalid(f"DOCM: calendario insuficiente ({len(idx)} ediciones)")
-    with ThreadPoolExecutor(max_workers=3) as p:
-        items=list(p.map(scan,sorted(idx.items(),key=lambda pair:(pair[1],pair[0]))))
+    # Los extraordinarios tienen un sumario separado y pueden sufrir
+    # limitación temporal de acceso; comprobarlos al principio de la lectura.
+    ordered=sorted(idx.items(),key=lambda pair:(0 if "-ext-" in pair[0] else 1,pair[1],pair[0]))
+    with ThreadPoolExecutor(max_workers=2) as p:
+        items=list(p.map(scan,ordered))
     return publish_audit(SOURCE,"Castilla-La Mancha (DOCM)",items,today=end)
 
 if __name__=="__main__":
