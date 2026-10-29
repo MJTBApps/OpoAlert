@@ -92,7 +92,7 @@ candidata, y un validador independiente rechaza feeds parciales.
 
 - **Granada**: 22 BOP, 633 anuncios de todos los tipos y 65 candidatas.
   Fuente: https://bop.dipgra.es/publica/consulta-de-bops/
-- **Sevilla**: 21 BOP, 622 anuncios y 44 candidatas.
+- **Sevilla**: 21 BOP, 621 anuncios y 44 candidatas.
   Fuente: https://bopsevilla.dipusevilla.es/publica/consulta-de-bops/
 - **Evidencia** de las dos auditorías de 30/09 a 29/10/2026:
   https://github.com/MJTBApps/OpoAlert/actions/runs/40832320045
