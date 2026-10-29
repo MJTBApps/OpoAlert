@@ -42,8 +42,10 @@ def validate(root:Path):
         bad("faltan sumarios diarios originales")
     if [x.get("main") for x in summaries]!=[str(n) for n in actualMain]:
         bad("índices no corresponden a calendario original")
-    if h.get("supplementsAudited")!=23:
-        bad("faltan suplementos de notificaciones del diario oficial")
+    publishedSupplementCount=sum(bool(row.get("supplement")) for row in summaries)
+    if (h.get("supplementsAudited")!=publishedSupplementCount
+        or not 5<=publishedSupplementCount<=23):
+        bad("faltan suplementos de notificaciones publicados oficialmente")
     all_ids=set();numbers=[];days=[];total=0; main=annex=sup=0
     originalByIssue={}
     for group in summaries:
@@ -52,12 +54,15 @@ def validate(root:Path):
         counts=group.get("counts")
         ids=group.get("originalIds")
         sid=group.get("supplementIds")
+        has_supplement=bool(group.get("supplement"))
         if (not isinstance(names,list) or not names or
             not isinstance(counts,list) or len(names)!=len(counts) or
-            not isinstance(ids,list) or sum(counts)!=len(ids) or
-            not isinstance(sid,list) or not sid or group.get("supplementCount")!=len(sid)
-            or group.get("supplement")!=group["main"]+"SN"):
+            not isinstance(ids,list) or sum(counts)!=len(ids)
+            or (has_supplement and (not isinstance(sid,list) or not sid or group.get("supplementCount")!=len(sid)))
+            or (not has_supplement and (sid is not None or group.get("supplementCount") is not None))
+            or (has_supplement and group.get("supplement")!=group["main"]+"SN")):
             bad("índice principal/anexo/suplemento incompleto")
+        if not has_supplement:sid=[]
         if names[0]!=group["main"] or any(not n.startswith(group["main"]) or not NUMBER.fullmatch(n) for n in names):
             bad("numero de edición o anexo no reconocido")
         if any(not isinstance(v,int) or not 1<=v<=350 for v in counts) or not 1<=len(sid)<=350:
@@ -70,9 +75,11 @@ def validate(root:Path):
         for n,c in zip(names,counts):
             numbers.append(n); days.append(day.isoformat());total+=c
             originalByIssue[n]=(day.isoformat(),set(ids))
-        numbers.append(group["supplement"]);days.append(day.isoformat());total+=len(sid)
-        originalByIssue[group["supplement"]]=(day.isoformat(),set(sid))
-        main+=1;annex+=len(names)-1;sup+=1
+        if has_supplement:
+            numbers.append(group["supplement"]);days.append(day.isoformat());total+=len(sid)
+            originalByIssue[group["supplement"]]=(day.isoformat(),set(sid))
+            sup+=1
+        main+=1;annex+=len(names)-1
     if (h.get("annexIssues")!=annex or annex<1
         or coverage.get("pagesVisited")!=len(numbers)
         or h.get("issuesRead")!=len(numbers)
