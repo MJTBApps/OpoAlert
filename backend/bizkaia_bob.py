@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Bizkaia BOB official daily HTML bulletin index and signed PDFs (30 days)."""
 from __future__ import annotations
-import argparse,re,requests,threading
+import argparse,re,requests,threading,time
 from datetime import date,timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
@@ -42,8 +42,12 @@ def issue_url(day,n):
 def read_day(item):
  day,n=item
  url=issue_url(day,n)
- soup=BeautifulSoup(request(url),"html.parser")
- title=next((x.get_text(" ",strip=True) for x in soup.select("h1") if "Boletín" in x.get_text(" ",strip=True)),None)
+ soup=None;title=None
+ for attempt in range(3):
+  soup=BeautifulSoup(request(url),"html.parser")
+  title=next((x.get_text(" ",strip=True) for x in soup.select("h1") if "Boletín" in x.get_text(" ",strip=True)),None)
+  if title==f"Boletín {n}":break
+  time.sleep(0.5*(attempt+1))
  if title!=f"Boletín {n}":invalid(f"Bizkaia {day}: cabecera no coincide con BOB {n}, encontrada={title}")
  pdfs=[a for a in soup.select("a[href]") if PDF_RE.fullmatch(urlsplit(a["href"]).path)]
  expected=next((x.get_text(" ",strip=True) for x in soup.select("h2") if re.search(r"\d+\s+anuncios",x.get_text(" ",strip=True),re.I)),None)
