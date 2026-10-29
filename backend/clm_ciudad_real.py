@@ -75,9 +75,15 @@ def parse_issue(html,day):
     if match is None:invalid("Ciudad Real: número BOP no identificado")
     number=int(match[1])
     if not 1<=number<=366:invalid("Ciudad Real: número BOP imposible")
-    date_h=soup.select_one("#boletin h2")
-    if not date_h or day.strftime("%d-%m-%Y") not in date_h.get_text(" ",strip=True):
-        invalid("Ciudad Real: la edición no corresponde a la fecha solicitada")
+    # El <h2> del portal puede indicar el último boletín global, aunque se
+    # consulte una edición histórica. Validar la fecha del título del BOP.
+    mdate=re.search(r"\b(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(\d{4})",title,re.I)
+    months=("enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre")
+    if not mdate:
+        invalid("Ciudad Real: fecha del título oficial ausente")
+    observed=date(int(mdate[3]),months.index(mdate[2].lower())+1,int(mdate[1]))
+    if observed!=day:
+        invalid(f"Ciudad Real: edición de {observed} solicitada para {day}")
     all_rows=[]
     agency=""
     for node in soup.select("#boletin h3.admons, #boletin p.clasificaciones, #boletin ul.anuncios"):
