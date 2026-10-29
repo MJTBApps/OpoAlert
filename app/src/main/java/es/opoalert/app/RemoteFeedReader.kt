@@ -20,7 +20,9 @@ object RemoteFeedReader {
      */
     private val bundled = setOf(
         Province.MADRID, Province.CIUDAD_REAL, Province.GUADALAJARA,
-        Province.TOLEDO, Province.CLM_DOCM, Province.HUELVA_BOP
+        Province.TOLEDO, Province.CLM_DOCM, Province.HUELVA_BOP,
+        Province.AVILA, Province.LEON_BOP, Province.ZAMORA_BOP,
+        Province.SORIA_BOP, Province.CYL_BOCYL
     )
 
     fun fetch(address: String, province: Province = Province.VALENCIA, context: Context? = null): RemoteFeed {
