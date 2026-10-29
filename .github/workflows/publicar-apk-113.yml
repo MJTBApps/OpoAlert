@@ -4,7 +4,7 @@ on:
     workflows: ['OpoAlert - Compilar APK Android 1.13.0']
     types: [completed]
 permissions:
-  actions: read
+  actions: write
   contents: write
 concurrency:
   group: opoalert-publicar-apk-113
