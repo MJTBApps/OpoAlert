@@ -1,0 +1,19 @@
+name: OpoAlert - Alternativas oficiales BON BOR
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/navarra-rioja-20261029]
+    paths:
+      - 'backend/probe_navarra_rioja_alternatives.py'
+      - '.github/workflows/probe-navarra-rioja-alternatives.yml'
+permissions: {contents: read}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install requests beautifulsoup4 pypdf
+      - run: python -u backend/probe_navarra_rioja_alternatives.py
