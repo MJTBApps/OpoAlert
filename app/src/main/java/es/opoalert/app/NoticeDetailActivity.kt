@@ -294,7 +294,7 @@ class NoticeDetailActivity : Activity() {
         val link = Uri.parse(notice.url)
         if (link.scheme != "https" ||
             link.host != province.pdfHost ||
-            !link.path.orEmpty().startsWith(province.pdfPathPrefix)) {
+            !province.allowsOfficialPath(link.path.orEmpty())) {
             Toast.makeText(this, "El enlace oficial no se ha podido verificar.", Toast.LENGTH_LONG).show()
             return
         }
