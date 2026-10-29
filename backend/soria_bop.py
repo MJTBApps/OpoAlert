@@ -11,7 +11,7 @@ from clm_common import employment,invalid
 
 HOST="bop.dipsoria.es"
 SOURCE="https://bop.dipsoria.es/index.php/mod.boloficial/relmenu.149"
-_DETAIL=re.compile(r"^/index\.php/mod\.boloficial/mem\.detalle/id\.(\d+)/relcategoria\.(\d+)$")
+_DETAIL=re.compile(r"^/index\.php/mod\.boloficial/mem\.detalle/id\.(\d+)/relcategoria\.(\d+)(?:/relmenu\.\d+)?$")
 _DOC=re.compile(r"^/index\.php/mod\.documentos/mem\.descargar/fichero\.documentos_(\d{1,6})_([a-f0-9]{8})%232E%23pdf$",re.I)
 _ISSUE=re.compile(r"^/index\.php/mod\.documentos/mem\.descargar/fichero\.documentos_BOPSoria_(\d{1,3})_([a-f0-9]{8})%232E%23pdf$",re.I)
 _T=threading.local()
