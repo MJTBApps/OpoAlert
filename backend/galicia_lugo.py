@@ -96,8 +96,8 @@ def read_day(it):
  seen=set();notices=[]
  for a,u,text in links:
   if (u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443)
-      or u.query or not re.fullmatch(r"/sites/deputacionlugo\.org/files/inline-files/\d{2}-\d{2}-2026\.pdf",unquote(u.path))
-      or not unquote(u.path).endswith(f"/{day:%d-%m-%Y}.pdf")):
+      or u.query or not re.fullmatch(r"/sites/deputacionlugo\.org/files/inline-files/\d{2}-\d{2}-2026(?:_\d{1,3})?\.pdf",unquote(u.path))
+      or not re.fullmatch(rf"/sites/deputacionlugo\.org/files/inline-files/{day:%d-%m-%Y}(?:_\d{{1,3}})?\.pdf",unquote(u.path))):
    invalid(f"Lugo {day}: PDF ajeno a la edición {u.geturl()}")
   mm=REC_RE.search(text)
   if not mm:
