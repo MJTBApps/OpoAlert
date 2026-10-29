@@ -34,7 +34,7 @@ def probe(item):
    content=b""
    for part in r.iter_content(8192):
     content+=part
-    if len(content)>240000:break
+    if len(content)>(5000000 if key=='rioja_api_documentation' else 240000):break
    mime=r.headers.get("Content-Type","")
    title=""
    text=""
@@ -44,7 +44,7 @@ def probe(item):
      from pypdf import PdfReader
      reader=PdfReader(BytesIO(content))
      title="PDF pages="+str(len(reader.pages))
-     text=" ".join((x.extract_text() or "") for x in reader.pages[:7])[:20000]
+     text=" ".join((x.extract_text() or "") for x in reader.pages[:20])[:40000]
     except Exception as e: text="PDF PARSE ERROR: "+repr(e)
    elif "xml" in mime or content.lstrip().startswith(b"<?xml"):text=content.decode("utf-8","replace")[:7000]
    else:
@@ -58,5 +58,5 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
  for result in pool.map(probe,urls.items()):
   key,url,status,final,mime,size,title,txt,links=result
   print("\nRESULT",key,"HTTP",status,"url",final,"mime",mime,"size",size,"title",repr(title),flush=True)
-  print("TEXT",txt[:12000 if key=="rioja_api_documentation" else 1100],flush=True)
+  print("TEXT",txt[:34000 if key=="rioja_api_documentation" else 1100],flush=True)
   if links:print("LINKS",repr(links),flush=True)
