@@ -49,3 +49,48 @@ def inspect(case):
     except Exception as e:print("ERROR",name,type(e).__name__,str(e)[:400],flush=True)
 with ThreadPoolExecutor(max_workers=6) as pool:
     list(pool.map(inspect,URLS))
+
+print("\n#### DEEP DIAGNOSTICS",flush=True)
+CASES=[
+  ("BA-28","https://www.dip-badajoz.es/bop/index.php?FechaSolicitada=20261028"),
+  ("BA-SEPT","https://www.dip-badajoz.es/bop/index.php?FechaSolicitada=202609"),
+  ("CC-script","https://bop.dip-caceres.es/bop/js/consultas.js"),
+  ("CC-index-html","https://bop.dip-caceres.es/bop/index.html"),
+  ("CC-sumario-html","https://bop.dip-caceres.es/bop/sumario.html?busqueda=numBop&id=6163"),
+  ("CC-notice-html","https://bop.dip-caceres.es/bop/anuncio.html?csv=BOP-2026-4651"),
+  ("DOE-29-full","https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20261029&t=o"),
+  ("DOE-extra","https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20261028&t=e"),
+  ("DOE-sept","https://doe.juntaex.es/ultimosdoe/mostrardoe.php?fecha=20260930&t=o"),
+]
+def deep(pair):
+  name,url=pair
+  try:
+    r=requests.get(url,timeout=(11,30),headers={"User-Agent":"Mozilla/5.0","Accept-Language":"es"})
+    out={"name":name,"status":r.status_code,"length":len(r.content),"url":r.url}
+    raw=r.text
+    if name=="CC-script":
+      out["script"]=raw[:14500]
+    else:
+      soup=BeautifulSoup(raw,"html.parser")
+      if name.startswith("BA"):
+        main=soup.select_one("#sumario_dinamico") or soup.select_one("main")
+        out["mainHTML"]=str(main)[:9000]
+        out["dayLinks"]=[(x.get_text(" ",strip=True),x.get("href")) for x in soup.select('a[href*="FechaSolicitada"]') if re.fullmatch(r"\\d{1,2}",x.get_text(" ",strip=True))][:35]
+        a=next((a for a in soup.select('a[href*="ventana_anuncio.php"]') if "id_anuncio" in a.get("href","")),None)
+        out["noticeAncestor"]=str(a.parent.parent.parent)[:4000] if a else ""
+      elif name.startswith("CC"):
+        out["firstTags"]=str(soup.body)[:6000]
+        out["tailTags"]=str(soup.body)[-4700:]
+        out["matches"]=[(w,[m.start() for m in list(re.finditer(w,raw,re.I))[:5]]) for w in ("BOP-2026","document.write","getSumario","ajax","calendar","sumario","pdf")]
+        out["scripts"]=[str(s)[-1600:] for s in soup.select("script") if not s.get("src")][-6:]
+      elif name.startswith("DOE"):
+        elements=soup.select("div.justificado")
+        out["justificadoCount"]=len(elements)
+        out["justificadoExamples"]=[str(el)[:2800] for el in elements[:3]]
+        out["headerText"]=soup.get_text(" ",strip=True)[-5500:-4000]
+        out["firstPdf"]=[(a.get("href"),a.parent.parent.get_text(" ",strip=True)[:300]) for a in soup.select('a[href$=".pdf"]')[:5]]
+    return out
+  except Exception as e:return {"name":name,"error":repr(e)}
+with ThreadPoolExecutor(max_workers=6) as pool:
+  for row in pool.map(deep,CASES):
+    print("DEEP",json.dumps(row,ensure_ascii=False),flush=True)
