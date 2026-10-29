@@ -22,7 +22,7 @@ object RemoteFeedReader {
         Province.MADRID, Province.CIUDAD_REAL, Province.GUADALAJARA,
         Province.TOLEDO, Province.CLM_DOCM, Province.HUELVA_BOP,
         Province.AVILA, Province.LEON_BOP, Province.ZAMORA_BOP,
-        Province.SORIA_BOP, Province.SEGOVIA_BOP, Province.CYL_BOCYL, Province.PALENCIA_BOP,
+        Province.SORIA_BOP, Province.SALAMANCA_BOP, Province.SEGOVIA_BOP, Province.CYL_BOCYL, Province.PALENCIA_BOP,
         Province.BADAJOZ_BOP, Province.CACERES_BOP, Province.EXTREMADURA_DOE,
         Province.MURCIA_BORM,
         Province.ALAVA_BOTHA, Province.BIZKAIA_BOB,
