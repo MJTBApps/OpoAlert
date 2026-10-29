@@ -89,7 +89,7 @@ def issue(html,day,number):
         v=urlsplit(pdf);pm=DOC_RE.fullmatch(v.path)
         if (not ref or not title or not agency or not pm or v.hostname!=HOST
             or int(pm[1])!=day.year or int(pm[2])!=number or pm[3]!=ref[1] or ref[1] in seen):
-            invalid(f"Zamora: anuncio o PDF mal identificado {day}: {text[:180]}")
+            invalid(f"Zamora: anuncio o PDF mal identificado {day}: {text[:260]}, URL={pdf}")
         seen.add(ref[1])
         kind=employment(title)
         if kind:
