@@ -38,7 +38,7 @@ def request(url):
                 and r.content and len(r.content)<=4_000_000
                 and b"Verificacion necesaria" not in r.content[:2500]
                 and b"Verificaci\xc3\xb3n de seguridad" not in r.content[:2500]
-                and b"challenges.cloudflare.com" not in r.content[:2500]):
+                and b"<title>Verificacion necesaria</title>" not in r.content[:2500]):
                 return r
             error=f"HTTP {r.status_code}, {len(r.content)} bytes, respuesta de seguridad o vacia"
         except requests.RequestException as ex:error=str(ex)[:150]
