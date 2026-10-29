@@ -1,0 +1,17 @@
+name: OpoAlert - Calendario provincial 13 ediciones
+on:
+  push:
+    branches: [feature/canarias-3-boletines-20261029]
+    paths: [backend/check_canarias_dates.py, .github/workflows/check-canarias-dates.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/check_canarias_dates.py
