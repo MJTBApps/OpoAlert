@@ -30,7 +30,7 @@ for n,u in S:
    print("LI_COUNTS",len(rows),"HTML_FIRST",str(rows[0])[:5100] if rows else "-",flush=True)
    print("LINKS_PDF",[(a.get_text(" ",strip=True)[:55],urljoin(z.url,a["href"])) for a in h.select("a[href]") if ".pdf" in a["href"].lower()][:7],flush=True)
   elif n=="PA-day":
-   print("ROWS",[(x.name,x.get("class"),str(x)[:3600]) for x in h.select("article,.field--name-body,.field,section")[-7:],flush=True)
+   print("ROWS",[(x.name,x.get("class"),str(x)[:3600]) for x in h.select("article,.field--name-body,.field,section")[-7:]],flush=True)
    print("PDF",[(a.get_text(" ",strip=True)[:65],urljoin(z.url,a["href"])) for a in h.select("a[href]") if ".pdf" in a["href"].lower()][:12],flush=True)
   elif n=="SG-day":
    print("TEXT",repr(h.get_text(" ",strip=True)[-1600:]),flush=True)
