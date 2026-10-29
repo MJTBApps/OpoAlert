@@ -1,0 +1,19 @@
+name: OpoAlert - Explorar portales BOP Huelva Malaga
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/andalucia-resto-20261029]
+    paths: ['backend/diag_huelva_malaga_real.py','.github/workflows/diag-huelva-malaga-real.yml']
+permissions:
+  contents: read
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests beautifulsoup4
+      - run: python -u backend/diag_huelva_malaga_real.py
