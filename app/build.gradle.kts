@@ -11,14 +11,14 @@ android {
         applicationId = "es.opoalert.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 33
-        versionName = "1.20.0"
+        versionCode = 34
+        versionName = "1.21.0"
     }
 
     buildTypes {
         debug {
             // Instalación paralela para probar sin desinstalar la versión habitual.
-            applicationIdSuffix = ".euskadi"
+            applicationIdSuffix = ".galicia"
             versionNameSuffix = "-privada"
         }
         release {
