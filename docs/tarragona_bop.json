@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-10-28T15:56:57.985881+00:00",
+  "lastCheckedUTC": "2026-10-29T15:58:28.926442+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-10-28",
-    "pagesVisited": 65,
-    "announcementsRead": 1020,
-    "opportunities": 105,
+    "bulletin": "2026-10-29",
+    "pagesVisited": 66,
+    "announcementsRead": 1032,
+    "opportunities": 106,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-29",
     "publicationDates": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
@@ -37,7 +36,8 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -50,7 +50,6 @@
       "2026-10-25"
     ],
     "bulletins": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
@@ -71,14 +70,55 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "issuesRead": 22,
-    "pagesVisited": 65,
-    "announcementsRead": 1020,
-    "opportunities": 105
+    "pagesVisited": 66,
+    "announcementsRead": 1032,
+    "opportunities": 106
   },
   "notices": [
+    {
+      "id": "TA-2026-10094",
+      "title": "Borsa de treball de peó de brigada. Bases i convocatòria.",
+      "entity": "AJUNTAMENT CONSTANTÍ",
+      "date": "29/10/2026",
+      "bulletin": "29/10/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365903"
+    },
+    {
+      "id": "TA-2026-10074",
+      "title": "Plaça d'administratiu/iva (1). Bases i convocatòria.",
+      "entity": "AJUNTAMENT PALLARESOS, ELS",
+      "date": "29/10/2026",
+      "bulletin": "29/10/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365890"
+    },
+    {
+      "id": "TA-2026-10073",
+      "title": "Plaça d'administratiu/iva (4). Bases i convocatòria. Promoció interna.",
+      "entity": "AJUNTAMENT PALLARESOS, ELS",
+      "date": "29/10/2026",
+      "bulletin": "29/10/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365871"
+    },
+    {
+      "id": "TA-2026-09971",
+      "title": "Plaça de tècnic/a mitjà/ana bibliotecari/ària (1). Bases i convocatòria.",
+      "entity": "AJUNTAMENT REUS",
+      "date": "29/10/2026",
+      "bulletin": "29/10/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365794"
+    },
     {
       "id": "TA-2026-10039",
       "title": "Lloc de treball d'oficial/a de 1a (1). Bases i convocatòria.",
@@ -1098,36 +1138,6 @@
       "province": "Tarragona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364695"
-    },
-    {
-      "id": "TA-2026-08970",
-      "title": "Plaça de tècnic/a d'administració general (1). Bases i convocatòria. Promoció interna.",
-      "entity": "CONSELL COMARCAL BAIX EBRE",
-      "date": "29/09/2026",
-      "bulletin": "29/09/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364729"
-    },
-    {
-      "id": "TA-2026-08963",
-      "title": "Plaça d'auxiliar d'equipaments (1). Bases i convocatòria. Promoció interna vertical.",
-      "entity": "CONSELL COMARCAL BAIX EBRE",
-      "date": "29/09/2026",
-      "bulletin": "29/09/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364760"
-    },
-    {
-      "id": "TA-2026-08698",
-      "title": "Plaça d'auxiliar tècnic/a de festes i festivals B (1). Bases i convocatòria.",
-      "entity": "INSTITUT MUNICIPAL REUS CULTURA - REUS",
-      "date": "29/09/2026",
-      "bulletin": "29/09/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364423"
     }
   ]
 }
