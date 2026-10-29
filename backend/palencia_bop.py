@@ -90,8 +90,8 @@ def toc_from_pdf(pdf,day,number,kind="ordinario"):
                 if page_num<1 or page_num>len(pdf):
                     invalid(f"Palencia {day} BOP {number}: página {page_num}, PDF páginas {len(pdf)}, título {title[:160]}")
                 if not title:invalid("Palencia: anuncio sin título")
-                kind=employment(title)
-                results.append((title,cur_area,page_num,kind))
+                role=employment(title)
+                results.append((title,cur_area,page_num,role))
                 continue
             if line.isupper() and len(line)<110 and not re.search(r"^[0-9]+",line):
                 if any(z in line for z in ("DIPUTACIÓN","AYUNTAMIENTO","JUNTA","ADMINISTRACIÓN","CONSEJERÍA","ENTIDADES LOCALES")):
