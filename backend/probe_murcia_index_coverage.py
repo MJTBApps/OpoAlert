@@ -14,7 +14,13 @@ r=s.get(INDEX,timeout=(12,90))
 r.raise_for_status()
 v=r.json()
 rows=[x for x in v if isinstance(x,list) and len(x)==21 and START<=date.fromisoformat(x[4][:10])<=END]
-calendar=s.get(BORM+"services/boletin/fechas",timeout=(12,35)).json()
+calendar=[]
+try:
+ rr=s.get(BORM+"services/boletin/fechas",timeout=(10,25))
+ print("MURCIA_CALENDAR_HTTP",rr.status_code,"URL",rr.url[:150],"TYPE",rr.headers.get("Content-Type"),flush=True)
+ maybe=rr.json()
+ if isinstance(maybe,list): calendar=maybe
+except Exception as e:print("MURCIA_CALENDAR_UNAVAILABLE",str(e)[:250],flush=True)
 caldates={datetime.fromtimestamp(int(ms)/1000,ZoneInfo("Europe/Madrid")).date() for ms in calendar}
 iss=defaultdict(list)
 for x in rows:iss[(x[4][:10],str(x[3]),x[0])].append(x)
@@ -24,7 +30,7 @@ print("MURCIA_RANGE","total_2026",len(v),"rows_30days",len(rows),"dates",len(set
 for key,items in sorted(iss.items()):print("MURCIA_ISSUE",key,"announcements",len(items),"candidates",sum(bool(employment(x[5])) for x in items),flush=True)
 indexdates={date.fromisoformat(x[4][:10]) for x in rows}
 seldates={d for d in caldates if START<=d<=END}
-print("MURCIA_CALENDAR","count",len(calendar),"max",max(caldates),"range",len(seldates),
+print("MURCIA_CALENDAR","count",len(calendar),"max",max(caldates) if caldates else None,"range",len(seldates),
       "missing_from_index",sorted(seldates-indexdates),
       "unlisted_in_calendar",sorted(indexdates-seldates),flush=True)
 print("MURCIA_ALL_SOURCE_TYPES",Counter(x[0] for x in v))
