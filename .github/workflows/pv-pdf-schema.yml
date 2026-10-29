@@ -1,0 +1,17 @@
+name: OpoAlert - PDF oficiales API BOPV
+on:
+  push:
+    branches: [feature/pais-vasco-cantabria-asturias-20261029]
+    paths: [backend/pv_pdf_schema.py, .github/workflows/pv-pdf-schema.yml]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install requests
+      - run: python -u backend/pv_pdf_schema.py
