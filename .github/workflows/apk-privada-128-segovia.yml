@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/cierre-12-zonas-20261029]
-    paths: [.github/workflows/apk-privada-128-segovia.yml, backend/validar_apk_segovia.py, app/build.gradle.kts, app/src/main/java/es/opoalert/app/Province.kt, 'app/src/test/**', app/src/main/java/es/opoalert/app/SourceCatalog.kt, app/src/main/java/es/opoalert/app/RemoteFeedReader.kt]
+    paths: [.github/workflows/apk-privada-128-segovia.yml, backend/validar_apk_segovia.py, scripts/test_ui_080.py, app/build.gradle.kts, app/src/main/java/es/opoalert/app/Province.kt, 'app/src/test/**', app/src/main/java/es/opoalert/app/SourceCatalog.kt, app/src/main/java/es/opoalert/app/RemoteFeedReader.kt]
 permissions:
   contents: read
   actions: read
