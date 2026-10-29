@@ -28,7 +28,8 @@ object RemoteFeedReader {
         Province.ALAVA_BOTHA, Province.BIZKAIA_BOB,
         Province.GIPUZKOA_BOG, Province.PAIS_VASCO_BOPV,
         Province.GALICIA_CORUNA, Province.GALICIA_LUGO, Province.GALICIA_OURENSE,
-        Province.GALICIA_PONTEVEDRA, Province.GALICIA_DOG
+        Province.GALICIA_PONTEVEDRA, Province.GALICIA_DOG,
+        Province.ARAGON_BOA, Province.ANDALUCIA_BOJA
     )
 
     fun fetch(address: String, province: Province = Province.VALENCIA, context: Context? = null): RemoteFeed {
@@ -136,7 +137,7 @@ object RemoteFeedReader {
         val read = coverage.optInt("announcementsRead", 0)
         val cido = province in setOf(Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA)
         val status = if (cido) "${province.label}: CIDO · $read procesos" else
-            "${province.label}: ${when (province) { Province.BOE -> "BOE"; Province.MADRID -> "BOCM"; Province.CLM_DOCM -> "DOCM"; Province.CYL_BOCYL -> "BOCYL"; Province.EXTREMADURA_DOE -> "DOE"; Province.MURCIA_BORM -> "BORM"; Province.PAIS_VASCO_BOPV -> "BOPV"; Province.ALAVA_BOTHA -> "BOTHA"; Province.BIZKAIA_BOB -> "BOB"; Province.GIPUZKOA_BOG -> "BOG"; Province.GALICIA_DOG -> "DOG"; else -> "BOP" }} $currentBulletin · $read anuncios"
+            "${province.label}: ${when (province) { Province.BOE -> "BOE"; Province.MADRID -> "BOCM"; Province.CLM_DOCM -> "DOCM"; Province.CYL_BOCYL -> "BOCYL"; Province.EXTREMADURA_DOE -> "DOE"; Province.MURCIA_BORM -> "BORM"; Province.PAIS_VASCO_BOPV -> "BOPV"; Province.ALAVA_BOTHA -> "BOTHA"; Province.BIZKAIA_BOB -> "BOB"; Province.GIPUZKOA_BOG -> "BOG"; Province.GALICIA_DOG -> "DOG"; Province.ARAGON_BOA -> "BOA"; Province.ANDALUCIA_BOJA -> "BOJA"; else -> "BOP" }} $currentBulletin · $read anuncios"
         val historyStatus = if (cido)
             "CIDO (actualizaciones de procesos): ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}" else
             "Histórico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
