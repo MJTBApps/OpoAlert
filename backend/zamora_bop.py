@@ -13,7 +13,7 @@ HOST="www.diputaciondezamora.es"
 SOURCE="https://www.diputaciondezamora.es/opencms/servicios/BOP/busqueda-en-el-bop/"
 INDEX_RE=re.compile(r"^/opencms/servicios/BOP/indice-bop/([0-9a-f-]{36})/$")
 DOC_RE=re.compile(r"^/opencms/export/sites/dipu-zamora/servicios/BOP/\.Archivos/documentos/BOP/anuncios/(\d{4})/(\d{1,3})/(\d{9})\.pdf$",re.I)
-ISSUE_RE=re.compile(r"^/opencms/export/sites/dipu-zamora/servicios/BOP/\.Archivos/documentos/BOP/(\d{4})/(\d{8})-(\d{1,3})\.pdf$",re.I)
+ISSUE_RE=re.compile(r"^/opencms/export/sites/dipu-zamora/servicios/BOP/\.Archivos/documentos/BOP/(\d{4})/(\d{8})-(\d{1,3})(?:-extraordinario)?\.pdf$",re.I)
 TLS=threading.local()
 def client():
     if not hasattr(TLS,"s"):
