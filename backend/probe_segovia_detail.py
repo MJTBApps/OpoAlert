@@ -13,7 +13,7 @@ if a:
  r=requests.get(url,timeout=(10,23))
  soup=BeautifulSoup(r.content,"html.parser")
  print("RESPONSE",r.status_code,len(r.content),r.url,"TITLE",soup.title.get_text(" ",strip=True) if soup.title else "-",flush=True)
- print("H",[(x.name,x.get_text(" ",strip=True)[:80]) for x in soup.select("h1,h2,h3,h4")[-20:],flush=True)
+ print("H",[(x.name,x.get_text(" ",strip=True)[:80]) for x in soup.select("h1,h2,h3,h4")[-20:]],flush=True)
  print("TEXT",repr(soup.get_text(" ",strip=True)[-3000:]),flush=True)
  print("PDF",[(x.get_text(" ",strip=True)[:130],urljoin(r.url,x["href"])[:350]) for x in soup.select("a[href]") if ".pdf" in x["href"].lower() or "descargar" in x.get_text(" ",strip=True).lower()][-35:],flush=True)
  print("IFRAME",[(x.get("src"),x.get("id")) for x in soup.select("iframe")[:8]],flush=True)
