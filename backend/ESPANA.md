@@ -159,3 +159,21 @@ Murcia es una comunidad uniprovincial y **el BORM** es la fuente oficial que con
 - Fuente Android: código MU, id `MU-2026-...`; instantánea local privada y versión debug aislada `es.opoalert.app.mur`, con nombre **OpoAlert Murcia** y versión **1.19.0-privada**. Conserva las fuentes verificadas previas. No se publican estos índices en GitHub Pages ni se sustituyen las APK instaladas anteriormente. Los registros incluidos son una fotografía del 29 de octubre y no se actualizan automáticamente.
 
 La compilación privada valida `backend/validar_apk_murcia.py`, los validadores anteriores de Extremadura, Castilla y León, Madrid, Huelva y Castilla-La Mancha, y los test unitarios Android.
+
+
+## Auditoría del norte: País Vasco, Cantabria y Asturias (29/10/2026)
+
+**País Vasco: las cuatro fuentes oficiales cubiertas (30/09/2026 a 29/10/2026).** Se han verificado los sumarios de cada boletín, identidad de organismos/anuncios, numeración y PDF original para cada posible convocatoria:
+
+- Álava: BOTHA (https://e-s.araba.eus/BOTHA/Inicio/SGBO5001.aspx) 13 boletines del n.º 112 al 124, **301 anuncios, 13 posibles convocatorias**, incluidas carpetas de PDF alternas `pdfni`. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40865396955
+- Bizkaia: BOB (https://www.bizkaia.eus/es/bob) 22 ediciones del n.º 187 al 208, **700 anuncios, 55 posibles convocatorias**. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40865184369
+- Gipuzkoa: BOG (https://egoitza.gipuzkoa.eus/es/bog) 22 ediciones del n.º 186 al 207, **737 anuncios, 32 posibles convocatorias**, descartando las páginas de sábado/domingo sin publicación. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40865028129
+- País Vasco: BOPV (https://api.euskadi.eus/bopv/administrative-acts) 21 ediciones del n.º 187 al 207, **341 anuncios, 33 posibles convocatorias**. Los datos abiertos de la API solo alcanzaban al 28/10; se recuperó la edición del 29/10 (18 anuncios, seis candidatas) del RSS oficial https://www.euskadi.eus/bopv2/datos/Ultimo.xml con verificación de títulos, enlaces y PDF. Los seis registros del día 29 usan en `entity` el aviso transparente «Emisor: consultar anuncio oficial (BOPV)», porque el RSS no identifica inequívocamente al órgano emisor. Auditoría: https://github.com/MJTBApps/OpoAlert/actions/runs/40865761806
+
+**Total País Vasco**: 78 ediciones, 2.079 anuncios y 133 coincidencias potenciales de empleo público. «Posible convocatoria» no significa 133 plazas nuevas y no se calculan fechas ni requisitos que no estén en el anuncio. Las cuatro instantáneas se empaquetan únicamente en la APK privada 1.20 «OpoAlert Euskadi», conservando los datos verificados anteriores. `applicationIdSuffix=.euskadi` evita sobrescribir la versión habitual y las de prueba. Las instantáneas no se actualizan automáticamente.
+
+**Cantabria (BOC): bloqueada, NO auditada ni incorporada.** Fuente oficial https://boc.cantabria.es/boces/. Tanto el host canónico como los alternativos `boc.gobcantabria.es`, `www.cantabria.es` y `sede.cantabria.es` dieron tiempos de espera de conexión desde GitHub Actions, sin recuperar sumarios ni PDF. Comprobación de conectividad documentada en https://github.com/MJTBApps/OpoAlert/actions/runs/40865502697. No hay JSON verificado de 30 días ni feeds publicados.
+
+**Asturias (BOPA): bloqueada, NO auditada ni incorporada.** Fuente oficial https://miprincipado.asturias.es/bopa/; también fallaron `sede.asturias.es` y `descargas.asturias.es` por conexión agotada. `www.asturias.es/bopa/` devolvió 404 y no constituye una fuente sustitutiva. Comprobación: https://github.com/MJTBApps/OpoAlert/actions/runs/40865502697. No hay datos de 30 días verificados ni fuente publicada. Evitar presentar títulos de motores de búsqueda o terceros como un feed oficial completo.
+
+**Pendiente para terminar Cantabria y Asturias**: disponer de acceso HTTP verificable desde el entorno de auditoría a los sitios oficiales, recuperar los 30 días, validar todos los PDF de posibles convocatorias, añadir lectores y fuentes solo tras superar las pruebas, y emitir nueva APK privada sin cambiar la anterior. Los scripts de diagnóstico son `backend/diag_norte_2026.py` y `backend/diag_norte_alt.py`. No confundir el trabajo preparado con una fuente validada.
