@@ -215,6 +215,7 @@ class NoticeDetailActivity : Activity() {
             "Huesca" -> "Boletín Oficial de la Provincia de Huesca"
             "Teruel" -> "Boletín Oficial de la Provincia de Teruel"
             "Zaragoza" -> "Boletín Oficial de la Provincia de Zaragoza"
+            "Almería" -> "Boletín Oficial de la Provincia de Almería"
             "Cádiz" -> "Boletín Oficial de la Provincia de Cádiz"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
@@ -292,7 +293,7 @@ class NoticeDetailActivity : Activity() {
         val link = Uri.parse(notice.url)
         if (link.scheme != "https" ||
             link.host != province.pdfHost ||
-            !link.path.orEmpty().startsWith(province.pdfPathPrefix)) {
+            !province.allowsOfficialPath(link.path.orEmpty())) {
             Toast.makeText(this, "El enlace oficial no se ha podido verificar.", Toast.LENGTH_LONG).show()
             return
         }

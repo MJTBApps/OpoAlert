@@ -85,7 +85,7 @@ object RemoteFeedReader {
                 notice.province != province.label ||
                 docUrl.protocol.lowercase() != "https" ||
                 docUrl.host != province.pdfHost ||
-                !docUrl.path.startsWith(province.pdfPathPrefix) ||
+                !province.allowsOfficialPath(docUrl.path) ||
                 docUrl.userInfo != null) {
                 throw IOException("${province.label}: anuncio o enlace no validado")
             }
