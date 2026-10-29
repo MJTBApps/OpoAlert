@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-29",
-  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido. La Rioja BOR auditada en la API XML oficial e incorporada como copia local privada en OpoAlert 1.27: 22 boletines, 524 anuncios, 26 candidatos. Navarra BON bloqueada por timeout, no se declara cubierta.",
+  "note": "19 fuentes activas originales, además de seis fuentes auditadas de 30 días incluidas únicamente como instantánea en la APK privada 1.16 (Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales, Jaén devuelve error 500 y Málaga exige verificación interactiva para parte del histórico/PDF. No hay nuevas fuentes publicadas en GitHub Pages ni tiendas. BOAM de la capital no incluido. La Rioja BOR auditada en la API XML oficial e incorporada como copia local privada en OpoAlert 1.27: 22 boletines, 524 anuncios, 26 candidatos. Navarra BON bloqueada por timeout, no se declara cubierta. Revisadas 12 zonas el 29/10/2026, 0 nuevas certificaciones: Jaén y Segovia tienen huecos; las otras diez no superaron acceso íntegro a diario oficial. Evidencias en backend/CIERRE-12-ZONAS-20261029.md.",
   "nationalSources": [
     {
       "code": "VA",
@@ -552,7 +552,14 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "partial_official_history",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "BOP Jaén: hemeroteca oficial 19 ediciones; faltan #198, #199, #201. Portal nuevo HTTP 500.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40894034212",
+        "publication": "none"
+      }
     },
     {
       "ine": "29",
@@ -560,7 +567,14 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "BOP Málaga: sumarios no accesibles desde Linux; PDF exige verificación interactiva, auditoría macOS solicitada.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40894056829",
+        "publication": "none"
+      }
     },
     {
       "ine": "41",
@@ -608,7 +622,14 @@
       "community": "AS",
       "communityName": "Principado de Asturias",
       "primaryGazette": "diario_autonomico",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "miprincipado.asturias.es y sede.asturias.es ConnectTimeout; www.asturias.es/bopa/ HTTP 404.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "07",
@@ -640,7 +661,14 @@
       "community": "CB",
       "communityName": "Cantabria",
       "primaryGazette": "diario_autonomico",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "boc.cantabria.es y boc.gobcantabria.es ConnectTimeout.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "02",
@@ -648,7 +676,14 @@
       "community": "CM",
       "communityName": "Castilla-La Mancha",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "bop.dipualba.es ConnectTimeout desde GitHub; otros portales institucionales no equivalen al índice del BOP.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "13",
@@ -665,7 +700,14 @@
       "community": "CM",
       "communityName": "Castilla-La Mancha",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "www.dipucuenca.es devuelve HTTP 403 F5 incluso en enlaces de documentos y raíz.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "19",
@@ -699,7 +741,14 @@
       "community": "CL",
       "communityName": "Castilla y León",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "bopbur.diputaciondeburgos.es ConnectTimeout.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "24",
@@ -723,7 +772,14 @@
       "community": "CL",
       "communityName": "Castilla y León",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "Sede electrónica BOP ConnectTimeout; portal lasalina.es redirige a sede bloqueada.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "40",
@@ -731,7 +787,14 @@
       "community": "CL",
       "communityName": "Castilla y León",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "partial_official_history",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "12 ediciones 02/10-28/10 (118-129) disponibles. Falta 30/09 n.º 117; búsquedas oficiales de septiembre HTTP 403.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893812257",
+        "publication": "none"
+      }
     },
     {
       "ine": "42",
@@ -747,7 +810,14 @@
       "community": "CL",
       "communityName": "Castilla y León",
       "primaryGazette": "bop",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "bop.sede.diputaciondevalladolid.es ConnectTimeout.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "49",
@@ -895,9 +965,16 @@
       "community": "NC",
       "communityName": "Comunidad Foral de Navarra",
       "primaryGazette": "diario_autonomico",
-      "state": "blocked_official_portal_timeout",
+      "state": "blocked_official_access",
       "diaryPortal": "https://bon.navarra.es/es/inicio",
-      "diaryBlocker": "Todos los accesos oficiales BON y www.navarra.es agotaron tiempo desde varios runners; agregadores privados no acreditan 30 días y enlaces originales. No integrar contenido no verificado."
+      "diaryBlocker": "Todos los accesos oficiales BON y www.navarra.es agotaron tiempo desde varios runners; agregadores privados no acreditan 30 días y enlaces originales. No integrar contenido no verificado.",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "bon.navarra.es ConnectTimeout; Lexnavarra no sustituye los anuncios BON.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "01",
@@ -941,7 +1018,14 @@
       "community": "CE",
       "communityName": "Ciudad Autónoma de Ceuta",
       "primaryGazette": "boletin_ciudad",
-      "state": "pending"
+      "state": "blocked_official_access",
+      "audit20261029": {
+        "status": "blocked_or_partial",
+        "checked": "2026-10-29",
+        "summary": "ceuta.es y sede.ceuta.es ConnectTimeout; no se pueden verificar BOCCE y PDF.",
+        "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40893492509",
+        "publication": "none"
+      }
     },
     {
       "ine": "52",
