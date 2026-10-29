@@ -229,6 +229,10 @@ class NoticeDetailActivity : Activity() {
             "Cáceres" -> "Boletín Oficial de la Provincia de Cáceres"
             "Extremadura (DOE)" -> "Diario Oficial de Extremadura (DOE)"
             "Región de Murcia (BORM)" -> "Boletín Oficial de la Región de Murcia (BORM)"
+            "Álava" -> "Boletín Oficial del Territorio Histórico de Álava (BOTHA)"
+            "Bizkaia" -> "Boletín Oficial de Bizkaia (BOB)"
+            "Gipuzkoa" -> "Boletín Oficial de Gipuzkoa (BOG)"
+            "País Vasco (BOPV)" -> "Boletín Oficial del País Vasco (BOPV)"
             "Barcelona", "Girona", "Lleida", "Tarragona" -> "CIDO · Diputació de Barcelona (procesos selectivos)"
             else -> "Boletín Oficial Provincial"
         }
@@ -237,7 +241,7 @@ class NoticeDetailActivity : Activity() {
             "Actualización " + notice.date + "   ·   Ref. " + notice.id
         else if (notice.id.startsWith("BA-"))
             "BOP Barcelona · " + notice.date + "   ·   Registro " + notice.id
-        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; Province.CLM_DOCM.label -> "DOCM n.º "; Province.CYL_BOCYL.label -> "BOCYL n.º "; Province.EXTREMADURA_DOE.label -> "DOE n.º "; Province.MURCIA_BORM.label -> "BORM n.º "; else -> "BOP n.º " }) +
+        else (when (notice.province) { Province.BOE.label -> "BOE n.º "; Province.MADRID.label -> "BOCM n.º "; Province.CLM_DOCM.label -> "DOCM n.º "; Province.CYL_BOCYL.label -> "BOCYL n.º "; Province.EXTREMADURA_DOE.label -> "DOE n.º "; Province.MURCIA_BORM.label -> "BORM n.º "; Province.PAIS_VASCO_BOPV.label -> "BOPV n.º "; Province.ALAVA_BOTHA.label -> "BOTHA n.º "; Province.BIZKAIA_BOB.label -> "BOB n.º "; Province.GIPUZKOA_BOG.label -> "BOG n.º "; else -> "BOP n.º " }) +
             notice.bulletin + "   ·   Registro " + notice.id
         card.addView(text(reference, 11f, "#60748C").apply {
             setPadding(dp(2), dp(8), 0, 0)
