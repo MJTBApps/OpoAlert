@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/cierre-12-zonas-20261029]
-    paths: [backend/segovia_bop.py, .github/workflows/cierre-segovia-audit.yml]
+    paths: [backend/segovia_bop.py, backend/validar_apk_segovia.py, .github/workflows/cierre-segovia-audit.yml]
 permissions: {contents: read}
 jobs:
   auditar:
@@ -17,6 +17,8 @@ jobs:
       - run: python -m py_compile backend/segovia_bop.py
       - name: Auditar calendario, sumarios y PDF íntegros
         run: python -u backend/segovia_bop.py --output out/SG.json
+      - name: Validar independientemente las 13 ediciones y documentos
+        run: python backend/validar_apk_segovia.py --root out
       - uses: actions/upload-artifact@v4
         with:
           name: segovia-bop-auditado-30dias
