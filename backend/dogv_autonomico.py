@@ -112,7 +112,7 @@ def inspect(day):
             code=int(mm[1]);ident=f"DV-2026-{code}"
             path=obj.get("urlPdf")
             if not isinstance(path,str) or not path.startswith(f"/2026/{day:%m/%d}/pdf/"):
-                invalid(f"DOGV {day}: PDF no oficial")
+                invalid(f"DOGV {day}: PDF no oficial id={obj.get('codigoInsercion')} path={path!r}")
             m=PDF_RE.fullmatch("/datos"+path)
             if not m or int(m[3])!=code:
                 invalid(f"DOGV {day}: ruta de la disposición y código no coinciden {path}")
