@@ -59,7 +59,7 @@ JA_AGENCY=re.compile(
 AL_AGENCY=re.compile(
     r"(?:AYUNTAMIENTO|DIPUTACI[ÓO]N|MANCOMUNIDAD|CONSORCIO|"
     r"JUNTA DE ANDALUC[ÍI]A|ENTIDAD LOCAL|UNIVERSIDAD|"
-    r"C[ÁA]MARA OFICIAL|COMUNIDAD DE REGANTES|TRIBUNAL|MINISTERIO)\b",re.I)
+    r"C[ÁA]MARA OFICIAL|COMUNIDAD DE REGANTES|TRIBUNAL|MINISTERIO|GESTI[ÓO]N DE AGUAS|EMPRESA MUNICIPAL|SOCIEDAD P[ÚU]BLICA)\b",re.I)
 
 def archive_url(g:Gazette)->str:
     return f"https://{g.host}{g.folder}results.vm?q=parent:{g.archive_id}&view={g.view}"
@@ -227,6 +227,8 @@ def split_ocr(g:Gazette,text:str,day:date)->tuple[list[dict],int]:
         fragment=text[match.end():end]
         before=text[max(0,match.start()-850):match.start()]
         agency,title=identify(g,fragment,before,match.group(0))
+        if any(x in fold(title) for x in ("anulacion de la convocatoria","anulacion del proceso","cancelacion de la convocatoria","desistimiento de la convocatoria")):
+            continue
         kind=classify(title)
         if kind is None:continue
         if not agency:
