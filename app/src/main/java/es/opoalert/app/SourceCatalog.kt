@@ -28,6 +28,7 @@ object SourceCatalog {
         Province.ARAGON_BOA -> Territory("Aragón", "Diario autonómico")
         Province.ANDALUCIA_BOJA -> Territory("Andalucía", "Diario autonómico")
         Province.VALENCIA_DOGV -> Territory("Comunidad Valenciana", "Diario autonómico")
+        Province.BALEARES_BOIB -> Territory("Illes Balears", "Todas las islas")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -62,7 +63,7 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
@@ -76,6 +77,7 @@ object SourceCatalog {
         "Región de Murcia" to listOf("Murcia"),
         "País Vasco" to listOf("Álava", "Bizkaia", "Gipuzkoa", "Diario autonómico"),
         "Galicia" to listOf("A Coruña", "Lugo", "Ourense", "Pontevedra", "Diario autonómico"),
+        "Illes Balears" to listOf("Todas las islas"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
@@ -122,6 +124,7 @@ object SourceCatalog {
         else if (source == Province.ARAGON_BOA) "BOA · diario autonómico"
         else if (source == Province.ANDALUCIA_BOJA) "BOJA · diario autonómico"
         else if (source == Province.VALENCIA_DOGV) "DOGV · diario autonómico"
+        else if (source == Province.BALEARES_BOIB) "BOIB · boletín autonómico e insular"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
 }
