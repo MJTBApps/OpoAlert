@@ -36,6 +36,15 @@ class MadridTests(unittest.TestCase):
         self.assertTrue(pdf_ok(x["rows"][0]["url"],D))
         self.assertFalse(pdf_ok(x["rows"][0]["url"],D-timedelta(days=1)))
         with self.assertRaises(ProvincialCoverageError):parse_xml(xml(),D,259)
+    def test_municipal_notice_with_generic_title_and_missing_org(self):
+        source=xml().decode()
+        source=source.replace('organismo nombre="Ayuntamiento de Getafe"','organismo')
+        source=source.replace("Bases de la convocatoria para cubrir una plaza de Administrativo",
+                              "– San Agustín del Guadalix. Ofertas de empleo. Proceso selectivo")
+        p=parse_xml(source.encode(),D,258)
+        self.assertEqual(p["rows"][0]["entity"],"San Agustín del Guadalix")
+        self.assertEqual(p["rows"][0]["type"],"Plaza / oposición")
+
     def test_archive_two_editions_same_day(self):
         html='''<a href="/boletin/bocm-20260930-233">Boletín Nº 233 del 30 Septiembre con CVE: BOCM-20260930</a>'''
         for i in range(26):
