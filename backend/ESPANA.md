@@ -41,10 +41,8 @@ Auditoría real de 30 días (01/10–30/10/2026), validada con las reglas de
 | BOP Jaén | JA | `jaen_bop.py` | 23 | 554 | 26 |
 | BOP Lleida | LE | `lleida_bop.py` | 22 | 984 | 69 |
 
-- **Cuenca** (`cuenca_bop.py`, CU): lector auditado (13 ediciones, 250
-  anuncios, 13 candidatas), pero no se activa hasta que la app 1.38.0 esté
-  publicada: la web oficial cambió a `https://www.dipucuenca.es/boletin1` y
-  las APK anteriores rechazarían el feed.
+- **Cuenca** (`cuenca_bop.py`, CU): 13 ediciones, 250 anuncios, 13 candidatas;
+  activa desde casa. Web oficial actual: `https://www.dipucuenca.es/boletin1`.
 - **Burgos**: el servidor solo admite TLS 1.0; el lector usa un adaptador
   propio con verificación de certificado y nombre de host activadas.
 - **Jaén**: el portal devuelve HTTP 429 sin pausa entre peticiones; el

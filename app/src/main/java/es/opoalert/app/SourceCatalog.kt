@@ -114,9 +114,7 @@ object SourceCatalog {
      * (backend/feeds_diarios.py). Se ocultan hasta que su lector funcione
      * cada día; nunca se muestran datos congelados.
      */
-    val pendingDailyFeed: Set<Province> = setOf(
-        Province.CUENCA,
-    )
+    val pendingDailyFeed: Set<Province> = setOf()
 
     private const val PREFS = "opoalert_store"
     private const val ACTIVE = "active_sources_v1"

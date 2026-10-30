@@ -71,11 +71,12 @@ SOURCES={
     "BU":("burgos_bop.py",[],"burgos_bop.json"),
     "JA":("jaen_bop.py",[],"jaen_bop.json"),
     "LE":("lleida_bop.py",[],"lleida_bop.json"),
+    "CU":("cuenca_bop.py",[],"cuenca_bop.json"),
 }
 # Portales que no responden a los servidores de GitHub pero sí desde una
 # conexión española: se leen con el ejecutor propio de casa
 # (revisar-espana-casa.yml, ver EJECUTOR_CASA.md).
-HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE"}
+HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE","CU"}
 # Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
 HOME_BACKUP={"RI","CC"}
 TYPES=("Bolsa de trabajo","Plaza / oposición")

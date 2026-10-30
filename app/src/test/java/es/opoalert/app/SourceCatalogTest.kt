@@ -34,7 +34,7 @@ class SourceCatalogTest {
         assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Sevilla", "Diario autonómico"), groups[3].territories.map { it.name })
         assertEquals(8, groups[3].sourceCount)
         assertEquals(listOf("Madrid"), groups[4].territories.map { it.name })
-        assertEquals(listOf("Albacete", "Ciudad Real", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
+        assertEquals(listOf("Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
         assertEquals(listOf("Ávila", "Burgos", "León", "Palencia", "Salamanca", "Segovia", "Soria", "Valladolid", "Zamora", "Diario autonómico"), groups[6].territories.map { it.name })
         assertEquals(10, groups[6].sourceCount)
         assertEquals(listOf("Badajoz", "Cáceres", "Diario autonómico"), groups[7].territories.map { it.name })

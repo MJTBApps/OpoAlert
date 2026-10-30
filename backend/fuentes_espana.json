@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-30",
-  "note": "Fuentes activas: las 19 originales más las que publican feed diario desde backend/feeds_diarios.py. Las que no responden a GitHub (Navarra, Asturias, Ceuta, Albacete, Cantabria, Valladolid, Burgos, Jaén y BOP Lleida) se leen desde el ejecutor de casa. Cuenca, lista a la espera de la app 1.38.0; Málaga pendiente (verificación anti-robots).",
+  "note": "Fuentes activas: las 19 originales más las que publican feed diario desde backend/feeds_diarios.py. Las que no responden a GitHub (Navarra, Asturias, Ceuta, Albacete, Cantabria, Valladolid, Burgos, Jaén, BOP Lleida y Cuenca) se leen desde el ejecutor de casa. Málaga pendiente (verificación anti-robots).",
   "nationalSources": [
     {
       "code": "VA",
@@ -250,15 +250,15 @@
       "name": "BOP Cuenca",
       "portal": "https://www.dipucuenca.es/boletin1",
       "feed": "cuenca_bop.json",
-      "state": "reader_ready",
-      "scope": "Lector auditado desde casa el 30/10/2026 (13 ediciones, 250 anuncios, 13 candidatas). Se activará cuando esté publicada la app 1.38.0, que corrige la web oficial de la fuente.",
+      "state": "active",
+      "scope": "Boletín oficial con feed diario: auditoría de los últimos 30 días cuatro veces al día desde el ejecutor de casa (feeds_diarios.HOME_ONLY), porque el portal no responde a GitHub.",
       "audit": {
-        "status": "reader_ready",
+        "status": "daily_30_days",
         "checked": "2026-10-30",
         "issues": 13,
         "announcementsRead": 250,
         "candidates": 13,
-        "publication": "none"
+        "publication": "home_runner"
       }
     },
     {
