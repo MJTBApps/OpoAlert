@@ -100,7 +100,19 @@ def discover_bon(index,end):
  if len(nums)<18 or nums!=list(range(nums[0],nums[-1]+1)):
   raise ValueError("BON: faltan números o el calendario editorial es incompleto")
  return entries
-def run_bon(rows,end,limit):
+def save_bon_checkpoint(path, output, failures):
+ # Atomic local-only ZIP; survives interruption without fake coverage claims.
+ path.parent.mkdir(parents=True,exist_ok=True)
+ temp=path.with_name(path.stem+".tmp.zip")
+ payload={"source":"BON Navarra","complete30Days":False,
+          "editor":"bon.navarra.es","issues":output,
+          "failures":failures,"generatedUTC":datetime.now(timezone.utc).isoformat()}
+ with ZipFile(temp,"w",ZIP_DEFLATED,compresslevel=6) as z:
+  z.writestr("bon_navarra_avance.json",json.dumps(payload,ensure_ascii=False,indent=2))
+  z.writestr("LEER.txt","Evidencias locales parciales: no equivalen a cobertura completa de Navarra.\n")
+ temp.replace(path)
+
+def run_bon(rows,end,limit,checkpoint=None,max_fallos=3):
  byname={x.get("name"):x for x in rows if x.get("code")=="NA"}
  index=byname.get("NA-entry-2")
  if index is None:raise ValueError("BON: falta índice principal")
@@ -128,10 +140,19 @@ def run_bon(rows,end,limit):
  print("BON_SNAPSHOT",len(output["issues"]),"ediciones",
        sum(x["documentsInSumario"] for x in output["issues"]),"anuncios de índice",
        len(output["originalCandidates"]),"candidatos",flush=True)
+ output["originalsAttempted"]=0
+ output["originalsVerified"]=0
+ if checkpoint:
+  save_bon_checkpoint(checkpoint,output,failures)
+  print("BON_GUARDADO_PARCIAL",str(checkpoint),flush=True)
+ consecutive_fails=0
  for position,item in enumerate(output["originalCandidates"]):
   if position>=limit:
    failures.append({"error":f"Límite prudente {limit}; restantes sin verificar"})
    break
+  print("BON_COMPROBANDO",position+1,"/",len(output["originalCandidates"]),
+        "boletín",item["bulletin"],"anuncio",item["id"],flush=True)
+  started=time.monotonic()
   result=get_page(item["url"],"NA",f"BON-ORIGINAL-{item['bulletin']}-{item['id']}")
   text=result.get("page",{}).get("publicText","")
   source=fold(item["title"])
@@ -143,8 +164,22 @@ def run_bon(rows,end,limit):
                "status":result.get("status"),
                "originalTextExcerpt":text[:40000] if verified else text[:900],
                "originalPageHeadings":result.get("page",{}).get("headings",[])[:25]})
-  if position%15==0:print("BON_ORIGINALES",position+1,"/",len(output["originalCandidates"]),
-       "verificados",sum(x.get("originalVerified") for x in output["originalCandidates"]),flush=True)
+  output["originalsAttempted"]=position+1
+  output["originalsVerified"]=sum(x.get("originalVerified") for x in output["originalCandidates"])
+  consecutive_fails=0 if verified else consecutive_fails+1
+  print("BON_ORIGINALES",position+1,"/",len(output["originalCandidates"]),
+       "verificados",output["originalsVerified"],
+       "último",("OK" if verified else str(result.get("status","error"))),
+       "duración",round(time.monotonic()-started,1),"s",flush=True)
+  if checkpoint:
+   save_bon_checkpoint(checkpoint,output,failures)
+  if consecutive_fails>=max_fallos:
+   failures.append({"error":"Se detiene la descarga por "+str(max_fallos)+" fallos consecutivos del editor oficial",
+                    "lastBulletin":item["bulletin"],"lastArticle":item["id"],
+                    "originalsAttempted":position+1})
+   if checkpoint:save_bon_checkpoint(checkpoint,output,failures)
+   print("BON_DETENIDO: origen no responde de forma fiable; avance parcial guardado, NO se declara cobertura",flush=True)
+   break
   time.sleep(0.35)
  output["issuesMissing"]=failures
  output["originalsVerified"]=sum(x.get("originalVerified") for x in output["originalCandidates"])
@@ -229,6 +264,8 @@ def main():
  p.add_argument("--output",type=Path)
  p.add_argument("--self-test",action="store_true")
  p.add_argument("--max-bon-originales",type=int,default=180)
+ p.add_argument("--max-fallos-consecutivos",type=int,default=3)
+ p.add_argument("--solo-navarra",action="store_true")
  p.add_argument("--no-jaen-daily",action="store_true")
  args=p.parse_args()
  if args.self_test:
@@ -239,7 +276,15 @@ def main():
   assert classify("Convocatoria de subvenciones para ayudas a empresas") is None
   assert parse_es_date("30 de octubre de 2026")==date(2026,10,30)
   assert safe_url("https://bon.navarra.es/es/anuncio/-/texto/2026/218/0")
-  print("OK: filtros de plazas y fechas, URL oficial y controles fail-closed",flush=True)
+  from tempfile import TemporaryDirectory
+  with TemporaryDirectory() as d:
+   q=Path(d)/"avance.zip"
+   save_bon_checkpoint(q,{"originalCandidates":[{"originalVerified":False}]},[])
+   with ZipFile(q) as check:
+    assert check.namelist()==["bon_navarra_avance.json","LEER.txt"]
+    assert json.loads(check.read("bon_navarra_avance.json"))["complete30Days"] is False
+  assert args.max_fallos_consecutivos>0
+  print("OK: filtros, fechas, checkpoint local y controles fail-closed",flush=True)
   return
  folder=Path.home()/"Documents"/"OpoAlert"
  files=sorted(folder.glob("OpoAlert_evidencias_oficiales_*.zip"),key=lambda x:x.stat().st_mtime,reverse=True)
@@ -253,9 +298,13 @@ def main():
      "requestedPeriod":[str(end-timedelta(days=29)),str(end)],
      "complete30Days":False,"readOnly":True,"officialPublisherOnly":True,
      "sources":{},"failures":{}}
- for code,task in (("NA",lambda:run_bon(rows,end,args.max_bon_originales)),
-                   ("AS",lambda:run_asturias(rows,end)),
-                   ("JA",lambda:run_jaen(rows,end,not args.no_jaen_daily))):
+ checkpoint=folder/("OpoAlert_avance_navarra_"+datetime.now().strftime("%Y%m%d_%H%M%S")+".zip")
+ tasks=(("NA",lambda:run_bon(rows,end,args.max_bon_originales,checkpoint,
+                 max(1,args.max_fallos_consecutivos))),
+        ("AS",lambda:run_asturias(rows,end)),
+        ("JA",lambda:run_jaen(rows,end,not args.no_jaen_daily)))
+ for code,task in tasks:
+  if args.solo_navarra and code!="NA":continue
   try:out["sources"][code]=task()
   except Exception as e:
    out["failures"][code]=type(e).__name__+": "+str(e)[:350]
