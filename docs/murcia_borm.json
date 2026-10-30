@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-10-30T12:09:24.589373+00:00",
+  "lastCheckedUTC": "2026-10-30T16:09:13.712707+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "251",
     "pagesVisited": 26,
     "announcementsRead": 582,
-    "opportunities": 51
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
@@ -79,7 +79,7 @@
     ],
     "issuesRead": 26,
     "announcementsRead": 582,
-    "opportunities": 51
+    "opportunities": 50
   },
   "notices": [
     {
@@ -431,16 +431,6 @@
       "bulletin": "236",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845596/pdf"
-    },
-    {
-      "id": "MU-2026-4894",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Rector de la Universidad de Murcia R-1302/2026 de 6 de octubre, por la que se modifica la Resolución de este Rectorado R-1085/2026 de 13 de agosto, por las que se declaran aprobadas las listas de personas aspirantes admitidas y excluidas de las pruebas selectivas para la provisión de treinta y seis plazas de la Escala Administrativa de esta Universidad.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "10/10/2026",
-      "bulletin": "235",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845576/pdf"
     },
     {
       "id": "MU-2026-4890",
