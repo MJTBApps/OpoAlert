@@ -246,7 +246,7 @@ def main():
  source=args.input or (files[0] if files else None)
  if source is None:raise SystemExit("No se encontró el ZIP inicial en Documentos/OpoAlert")
  original=load_evidence(source)
- end=date.today()
+ end=date.fromisoformat(original["requestedPeriod"][1])
  rows=original["results"]
  out={"generatedUTC":datetime.now(timezone.utc).isoformat(),
      "baseEvidenceSHA256":hashlib.sha256(source.read_bytes()).hexdigest(),
