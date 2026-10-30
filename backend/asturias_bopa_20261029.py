@@ -149,8 +149,9 @@ def verify_original(task):
     roman=ROMAN_MONTH[date.fromisoformat(day).month]
     d=date.fromisoformat(day)
     header=re.search(fr"num[.]\s*(\d{2,4})\s+de\s+{d.day}-{roman}-{d.year}\b",top)
-    if header is None or not re.search(r"\bcod[.]\s*"+re.escape(code)+r"\b",top):
-        fail(f"fecha y CVE del PDF original no corresponden al sumario oficial: {code} ({top[:170]})")
+    code_ok=bool(re.search(r"\bcod[.]\s*"+re.escape(code)+r"\b",top))
+    if header is None or not code_ok:
+        fail(f"fecha y CVE del PDF original no corresponden al sumario oficial: {code}; dia={day}, roman={roman}, cabecera={bool(header)}, codigo={code_ok}, texto={top[:200]!r}")
     actual_number=int(header[1])
     number_matches=actual_number==int(n)
     # The publisher's own 13/10 issue #198 contains mixed *PDF header*
