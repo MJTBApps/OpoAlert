@@ -166,7 +166,8 @@ def run_bon(rows,end,limit,checkpoint=None,max_fallos=3):
                "originalPageHeadings":result.get("page",{}).get("headings",[])[:25]})
   output["originalsAttempted"]=position+1
   output["originalsVerified"]=sum(x.get("originalVerified") for x in output["originalCandidates"])
-  consecutive_fails=0 if verified else consecutive_fails+1
+  connection_failed=result.get("status") in ("connection_error","http_error","human_verification","unverified_redirect")
+  consecutive_fails=consecutive_fails+1 if connection_failed else 0
   print("BON_ORIGINALES",position+1,"/",len(output["originalCandidates"]),
        "verificados",output["originalsVerified"],
        "último",("OK" if verified else str(result.get("status","error"))),
