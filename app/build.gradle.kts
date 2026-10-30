@@ -15,7 +15,26 @@ android {
         versionName = "1.36.0"
     }
 
+    // Firma fija de OpoAlert: sin ella cada compilación sale con una firma distinta
+    // y Android obliga a desinstalar (y perder favoritos) en cada actualización.
+    // La clave no está en el repositorio: en GitHub llega por secretos y en local
+    // por las variables OPOALERT_KEYSTORE y OPOALERT_KEY_PASSWORD.
+    val keystore = System.getenv("OPOALERT_KEYSTORE")?.let { file(it) }?.takeIf { it.exists() }
+    signingConfigs {
+        if (keystore != null) {
+            create("opoalert") {
+                storeFile = keystore
+                storePassword = System.getenv("OPOALERT_KEY_PASSWORD")
+                keyAlias = "opoalert"
+                keyPassword = System.getenv("OPOALERT_KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
+        debug {
+            signingConfigs.findByName("opoalert")?.let { signingConfig = it }
+        }
         release {
             isMinifyEnabled = false
         }
