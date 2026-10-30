@@ -37,6 +37,7 @@ object SourceCatalog {
         Province.RIOJA_BOR -> Territory("La Rioja", "Diario autonómico")
         Province.NAVARRA_BON -> Territory("Comunidad Foral de Navarra", "Navarra")
         Province.ASTURIAS_BOPA -> Territory("Principado de Asturias", "Asturias")
+        Province.CEUTA_BOCCE -> Territory("Ciudad Autónoma de Ceuta", "Ceuta")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -73,7 +74,7 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias", "Ciudad Autónoma de Ceuta")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
@@ -93,6 +94,7 @@ object SourceCatalog {
         "La Rioja" to listOf("Diario autonómico"),
         "Comunidad Foral de Navarra" to listOf("Navarra"),
         "Principado de Asturias" to listOf("Asturias"),
+        "Ciudad Autónoma de Ceuta" to listOf("Ceuta"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
@@ -146,6 +148,7 @@ object SourceCatalog {
         else if (source == Province.RIOJA_BOR) "BOR · diario autonómico"
         else if (source == Province.NAVARRA_BON) "BON · boletín de Navarra"
         else if (source == Province.ASTURIAS_BOPA) "BOPA · diario autonómico"
+        else if (source == Province.CEUTA_BOCCE) "BOCCE · boletín de la ciudad autónoma"
         else if (source == Province.LAS_PALMAS_BOP || source == Province.SANTA_CRUZ_BOP) "BOP · boletín provincial"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"
