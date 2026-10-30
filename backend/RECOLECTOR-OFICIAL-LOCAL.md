@@ -58,3 +58,15 @@ o `OpoAlert-Recolector-Oficial.exe --self-test`, sin acceso a Internet.
 
 La herramienta se entrega sin suscripción externa y funciona sin instalar
 Python en Windows, al incluirlo en el ejecutable privado generado.
+
+
+## Nuevo recolector focalizado v3 — Cantabria, Ceuta, Valladolid y Lleida
+
+Con la APK privada **1.32.0** ya están cerrados los históricos de Navarra y Asturias. Los cuatro editores siguientes responden desde algunas conexiones españolas, pero todavía no proporcionan íntegramente sus archivos a las redes de GitHub.
+
+- **Descarga**: ZIP `https://github.com/MJTBApps/OpoAlert/actions/runs/41030273387/artifacts/12965367049` (tests Linux/Windows `success`); contiene `OpoAlert-Recolector-4Fuentes-v3.exe`. No descarga ni cambia la APK.
+- **Uso sin instalar Python**: descomprimir el ZIP en el ordenador personal, abrir el EXE y conservar el archivo `OpoAlert_pendientes_oficiales_v3_*.zip` que genera en `Documentos/OpoAlert`; el archivo se guarda durante la exploración para no perder todo el avance si un servidor se bloquea. Si el ejecutable sin firmar provoca advertencias de seguridad, no desactivar SmartScreen; puede ejecutarse el código abierto con Python o inspeccionar primero el origen.
+- **Alcance**: `CB` = Cantabria, `CE` = Ceuta, `VD` = Valladolid, `CL` = BOP provincial Lleida. El programa parte de las portadas y archivos originales, examina enlaces públicos de octubre y septiembre, metadatos de formularios sin valores sensibles y firma/código SHA-256 de PDF originales cuando la descarga es completa. No abre cuentas, no usa cookies, no ejecuta JS ni elude CAPTCHA.
+- **Salida**: ZIP local con `evidencias_pendientes_v3.json`, los 4 estados de la red, índices encontrados, enlaces del propio editor y formularios/sources de scripts públicos. Nunca significa cobertura de 30 días sin validación posterior. No se envía automáticamente; para analizarlo hay que subirlo al chat.
+- **Opciones** (si se abre desde PowerShell o CMD): `--sources CB,CE,VD,CL` (por defecto); `--sources CE` para Ceuta; `--max-pages 75` (límite prudente); `--self-test` (sin Internet).
+- **Pruebas**: `.github/workflows/recolector-pendientes-oficiales-v3.yml` comprueba sintaxis, URLs institucionales, exclusión de tokens, metadatos públicos, ZIP parcial y empaquetado Windows.
