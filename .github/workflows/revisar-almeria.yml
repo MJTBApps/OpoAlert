@@ -2,7 +2,9 @@ name: OpoAlert - Revisar y publicar BOP Almeria
 on:
   workflow_dispatch:
   schedule:
-    - cron: '25 17 * * *'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '55 6 * * *'
+    - cron: '55 14 * * *'
   push:
     branches: [main]
     paths:

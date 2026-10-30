@@ -2,7 +2,9 @@ name: OpoAlert - Auditar y publicar BOP Tarragona
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 15 * * 1-5'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '30 6 * * 1-5'
+    - cron: '30 14 * * 1-5'
   push:
     branches: [main]
     paths:

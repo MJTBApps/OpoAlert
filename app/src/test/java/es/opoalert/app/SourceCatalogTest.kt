@@ -47,6 +47,13 @@ class SourceCatalogTest {
         assertEquals(4, groups[10].sourceCount)
     }
 
+    @Test fun activeSourcesListFromTheWebIsValidated() {
+        val codes = SourceCatalog.parseActive("""{"active":["ES","VA","MD","RI","IB","ZZ"]}""")
+        assertEquals(setOf("ES", "VA", "MD", "RI", "IB"), codes)  // ZZ no existe en la app
+        assertEquals(null, SourceCatalog.parseActive("""{"active":["ES","VA"]}"""))  // casi vacía: dañada
+        assertEquals(null, SourceCatalog.parseActive("no es json"))
+    }
+
     @Test fun sourcesWithoutDailyFeedAreHidden() {
         val shown = SourceCatalog.groups().flatMap { it.territories }.flatMap { it.sources }
         for (pending in SourceCatalog.pendingDailyFeed) {

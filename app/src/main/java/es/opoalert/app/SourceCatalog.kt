@@ -1,5 +1,10 @@
 package es.opoalert.app
 
+import android.content.Context
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
+
 /** Solo se ofrecen fuentes que ya tienen un lector y feed auditados. */
 data class BulletinTerritory(val name: String, val sources: List<Province>)
 data class BulletinCommunity(val name: String, val territories: List<BulletinTerritory>) {
@@ -113,7 +118,55 @@ object SourceCatalog {
         Province.NAVARRA_BON, Province.ASTURIAS_BOPA, Province.CEUTA_BOCCE,
     )
 
-    val availableSources: List<Province> = Province.entries.filterNot { it in pendingDailyFeed }
+    private const val PREFS = "opoalert_store"
+    private const val ACTIVE = "active_sources_v1"
+    private const val ACTIVE_URL = "https://mjtbapps.github.io/OpoAlert/fuentes_activas.json"
+
+    /**
+     * Fuentes con feed publicado según la web (fuentes_activas.json). Así una
+     * fuente nueva aparece sin instalar otra APK. Mientras no se conoce, se usa
+     * la lista de la propia APK (pendingDailyFeed).
+     */
+    @Volatile private var remoteActive: Set<String>? = null
+
+    val availableSources: List<Province>
+        get() = remoteActive?.let { codes -> Province.entries.filter { it.code in codes } }
+            ?: Province.entries.filterNot { it in pendingDailyFeed }
+
+    fun load(context: Context) {
+        if (remoteActive != null) return
+        val stored = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(ACTIVE, null) ?: return
+        remoteActive = parseActive(stored)
+    }
+
+    /** Descarga la lista de fuentes activas; sin conexión se conserva la anterior. */
+    fun refreshActive(context: Context) {
+        val connection = URL(ACTIVE_URL).openConnection() as HttpURLConnection
+        try {
+            connection.connectTimeout = 12000
+            connection.readTimeout = 15000
+            connection.setRequestProperty("Accept", "application/json")
+            if (connection.responseCode !in 200..299) return
+            val text = connection.inputStream.use { stream ->
+                stream.readBytes().takeIf { it.size < 100_000 }?.toString(Charsets.UTF_8)
+            } ?: return
+            val codes = parseActive(text) ?: return
+            remoteActive = codes
+            context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putString(ACTIVE, text).apply()
+        } catch (_: Exception) {
+        } finally {
+            connection.disconnect()
+        }
+    }
+
+    /** Solo códigos conocidos por esta APK; una lista casi vacía se considera dañada. */
+    fun parseActive(text: String): Set<String>? = try {
+        val array = JSONObject(text).optJSONArray("active")
+        val known = Province.entries.map { it.code }.toSet()
+        val codes = if (array == null) emptySet()
+            else (0 until array.length()).map { array.optString(it) }.filter { it in known }.toSet()
+        codes.takeIf { it.size >= 5 }
+    } catch (_: Exception) { null }
 
     fun groups(sources: List<Province> = availableSources): List<BulletinCommunity> {
         val placed = sources.filter { it != Province.BOE }.groupBy { territoryOf(it)!!.community }

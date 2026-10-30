@@ -514,6 +514,7 @@ object ProvinceSettings {
     private const val INITIAL_PICKER_SHOWN = "province_picker_seen_v1"
 
     fun selected(context: Context): Set<Province> {
+        SourceCatalog.load(context)
         val stored = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             .getString(SELECTED, Province.VALENCIA.code).orEmpty()
         val codes = stored.split(',').map { it.trim() }.toSet()

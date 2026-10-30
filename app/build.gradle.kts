@@ -11,8 +11,8 @@ android {
         applicationId = "es.opoalert.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 48
-        versionName = "1.35.0"
+        versionCode = 49
+        versionName = "1.36.0"
     }
 
     buildTypes {
@@ -35,6 +35,8 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.9.1")
     implementation("androidx.core:core-ktx:1.15.0")
     testImplementation("junit:junit:4.13.2")
+    // org.json de Android está vacío en las pruebas locales.
+    testImplementation("org.json:json:20240303")
     implementation("com.google.android.gms:play-services-ads:25.5.0")
     implementation("com.google.android.ump:user-messaging-platform:4.0.0")
 }

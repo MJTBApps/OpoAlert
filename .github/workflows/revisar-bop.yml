@@ -3,9 +3,9 @@ name: OpoAlert - Publicar historico BOP auditado
 on:
   workflow_dispatch:
   schedule:
-    # 09:43 UTC todos los dias (10:43 o 11:43 en Espana segun horario).
-    # El horario de GitHub Actions es orientativo: puede retrasarse.
-    - cron: '43 9 * * *'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '5 6 * * *'
+    - cron: '5 14 * * *'
   push:
     branches: [main]
     paths:

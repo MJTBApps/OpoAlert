@@ -5,7 +5,9 @@ name: OpoAlert - Revisar y publicar boletines de España
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 17 * * *'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '0 6 * * *'
+    - cron: '0 14 * * *'
   push:
     branches: [main, 'integracion/**']
     paths:

@@ -2,7 +2,9 @@ name: OpoAlert - Auditar y publicar BOP Huesca
 on:
   workflow_dispatch:
   schedule:
-    - cron: '35 15 * * *'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '35 6 * * *'
+    - cron: '35 14 * * *'
   push:
     branches: [main]
     paths:

@@ -12,6 +12,7 @@ Uso:
   python backend/feeds_diarios.py run MD --out out       # lector + validación
   python backend/feeds_diarios.py validate MD out/madrid_bocm.json
   python backend/feeds_diarios.py publish out --docs docs
+  python backend/feeds_diarios.py manifest --docs docs   # fuentes_activas.json para la app
 """
 from __future__ import annotations
 import argparse,collections,json,os,re,subprocess,sys,shutil
@@ -196,6 +197,19 @@ def publish(out,docs):
     for r in rejected:print("RECHAZADO",r)
     return done,rejected
 
+def manifest(docs):
+    """docs/fuentes_activas.json: fuentes con feed publicado. La app lo lee
+    para mostrar las fuentes nuevas sin tener que instalar otra APK."""
+    docs=Path(docs);rules=app_rules();active=[]
+    for code,rule in sorted(rules.items()):
+        if (docs/Path(rule["feed"]).name).exists():active.append(code)
+    out=docs/"fuentes_activas.json"
+    out.write_text(json.dumps({"schemaVersion":1,
+        "updatedUTC":datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "active":active},ensure_ascii=False,indent=1)+"\n",encoding="utf-8")
+    print(f"MANIFIESTO {len(active)} fuentes activas: {' '.join(active)}")
+    return active
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
     sub=ap.add_subparsers(dest="cmd",required=True)
@@ -203,9 +217,11 @@ def main():
     r=sub.add_parser("run");r.add_argument("code",choices=sorted(SOURCES));r.add_argument("--out",required=True);r.add_argument("--docs")
     v=sub.add_parser("validate");v.add_argument("code",choices=sorted(SOURCES));v.add_argument("file");v.add_argument("--previous")
     p=sub.add_parser("publish");p.add_argument("out");p.add_argument("--docs",default=str(ROOT/"docs"))
+    m=sub.add_parser("manifest");m.add_argument("--docs",default=str(ROOT/"docs"))
     a=ap.parse_args()
     try:
         if a.cmd=="matrix":print(json.dumps(sorted(SOURCES)))
+        elif a.cmd=="manifest":manifest(a.docs)
         elif a.cmd=="run":run(a.code,a.out,a.docs)
         elif a.cmd=="validate":print(json.dumps(validate(a.code,a.file,a.previous),ensure_ascii=False))
         elif a.cmd=="publish":

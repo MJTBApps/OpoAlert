@@ -2,8 +2,9 @@ name: OpoAlert - Publicar CIDO Cataluna verificado
 on:
   workflow_dispatch:
   schedule:
-    # Turno posterior a BOE y BOP valencianos; UTC.
-    - cron: '35 12 * * *'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '15 6 * * *'
+    - cron: '15 14 * * *'
   push:
     branches: [main]
     paths:

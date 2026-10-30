@@ -3,8 +3,9 @@ name: OpoAlert España - Auditar y publicar BOE nacional
 on:
   workflow_dispatch:
   schedule:
-    # Tras los tres BOP valencianos, para repartir las consultas a portales.
-    - cron: '20 11 * * *'
+    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
+    - cron: '0 7 * * *'
+    - cron: '0 15 * * *'
   push:
     branches: [main]
     paths:
