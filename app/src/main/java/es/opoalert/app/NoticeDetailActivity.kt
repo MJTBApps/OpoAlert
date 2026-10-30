@@ -58,6 +58,7 @@ class NoticeDetailActivity : Activity() {
             setPadding(dp(18), dp(8), dp(18), dp(25))
         }
         addHero(content)
+        addOfficialButton(content)
         addMetrics(content)
         addSummary(content)
         addOfficialSource(content)
@@ -262,6 +263,17 @@ class NoticeDetailActivity : Activity() {
         content.addView(card)
     }
 
+    /** El documento oficial es lo que se viene a buscar: justo debajo del título. */
+    private fun addOfficialButton(content: LinearLayout) {
+        content.addView(action(when {
+            notice.id.startsWith("CIDO") -> "▤   Ver convocatoria en CIDO"
+            notice.province == "Teruel" -> "▤   Ver anuncio oficial"
+            notice.province == Province.RIOJA_BOR.label && notice.url.contains("ExportarBoletinServlet") -> "▤   Ver anuncio oficial"
+            else -> "▤   Ver PDF oficial"
+        }, "#FE4559", "#FFFFFF") { openOfficial() },
+            LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(16) })
+    }
+
     private fun addActions(content: LinearLayout) {
         content.addView(action("↗   Compartir convocatoria", "#E2F1FF", "#0877C9") { share() },
             LinearLayout.LayoutParams(-1, dp(52)).apply { topMargin = dp(19) })
@@ -271,13 +283,6 @@ class NoticeDetailActivity : Activity() {
         content.addView(favoriteAction, LinearLayout.LayoutParams(-1, dp(52)).apply {
             topMargin = dp(9)
         })
-        content.addView(action(when {
-            notice.id.startsWith("CIDO") -> "▤   Ver convocatoria en CIDO"
-            notice.province == "Teruel" -> "▤   Ver anuncio oficial"
-            notice.province == Province.RIOJA_BOR.label && notice.url.contains("ExportarBoletinServlet") -> "▤   Ver anuncio oficial"
-            else -> "▤   Ver PDF oficial"
-        }, "#FE4559", "#FFFFFF") { openOfficial() },
-            LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(9) })
         content.addView(text(
             "OpoAlert no es una aplicación oficial. Las bases, requisitos y plazos válidos son los publicados por la Administración competente.",
             10.5f, "#8190A5"

@@ -8,8 +8,25 @@ class NoticeDetailsTest {
     @Test fun readsOnlyExplicitNumberOfPlaces() {
         assertEquals(5, NoticeDetails.placesInTitle("Convocatoria de 5 plazas de Policía Local"))
         assertEquals(4, NoticeDetails.placesInTitle("Se convocan 4 places de administratiu"))
-        assertNull(NoticeDetails.placesInTitle("Convocatoria de cinco plazas de bombero"))
+        assertNull(NoticeDetails.placesInTitle("Bolsa de auxiliar administrativo plazas"))
         assertNull(NoticeDetails.placesInTitle("Bolsa de auxiliar administrativo"))
+    }
+
+    @Test fun readsPlacesWrittenInWords() {
+        assertEquals(5, NoticeDetails.placesInTitle("Convocatoria de cinco plazas de bombero"))
+        assertEquals(4, NoticeDetails.placesInTitle(
+            "Cuatro plazas de profesorado de orquesta, instrumento viola, una reservada para el turno de discapacidad"
+        ))
+        assertEquals(1, NoticeDetails.placesInTitle("Bases para proveer una plaza de auxiliar administrativo"))
+        assertEquals(3, NoticeDetails.placesInTitle("Convocatòria de tres places d'agent de la policia local"))
+        assertEquals(2, NoticeDetails.placesInTitle("Procés selectiu de dues places de tècnic"))
+        assertEquals(1, NoticeDetails.placesInTitle("Bases d'una plaça d'administratiu"))
+    }
+
+    @Test fun ignoresWordsThatAreNotNumbers() {
+        assertNull(NoticeDetails.placesInTitle("Convocatoria de las plazas vacantes de bombero"))
+        assertNull(NoticeDetails.placesInTitle("Creación de bolsa para diversas plazas"))
+        assertNull(NoticeDetails.placesInTitle("Convocatoria de dos plazas y tres plazas de conserje"))
     }
 
     @Test fun doesNotInventAmbiguousPlacesOrProcedures() {
