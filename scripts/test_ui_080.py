@@ -84,7 +84,7 @@ def main() -> None:
     assert 'android:exported="false"' in manifest
     assert (KOTLIN / "AlertRuleStore.kt").exists()
     assert (KOTLIN / "AlertsActivity.kt").exists()
-    assert 'TAB_ALERTS to "♧ Alertas"' in activity, "Alertas debe ser tercera pestaña"
+    assert 'TAB_ALERTS to "🔔 Alertas"' in activity, "Alertas debe ser tercera pestaña"
     assert 'NoticeDetailActivity::class.java' in activity
     assert 'android:name=".NoticeDetailActivity"' in manifest
     assert "R.id.alertsButton" not in activity

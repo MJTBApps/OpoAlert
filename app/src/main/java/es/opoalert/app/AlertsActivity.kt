@@ -96,7 +96,8 @@ class AlertsActivity : Activity() {
     private fun render() {
         list.removeAllViews()
         val rules = AlertRuleStore.list(this)
-        count.text = rules.count { it.enabled }.toString() + " activas"
+        val active = rules.count { it.enabled }
+        count.text = if (active == 1) "1 activa" else "$active activas"
         if (rules.isEmpty()) {
             val empty = LinearLayout(this).apply {
                 orientation = LinearLayout.VERTICAL
@@ -179,7 +180,16 @@ class AlertsActivity : Activity() {
             setPadding(0, dp(13), 0, dp(4))
         })
         val initial = existing?.provinces ?: ProvinceSettings.selected(this)
-        val checks = SourceCatalog.availableSources.map { province ->
+        // Primero los boletines que ya sigues o que usa la alerta; el resto, debajo.
+        val followed = ProvinceSettings.selected(this) + initial
+        val (mine, others) = SourceCatalog.availableSources.partition { it in followed }
+        val sources = mine + others
+        val checks = sources.mapIndexed { index, province ->
+            if (index == mine.size && mine.isNotEmpty() && others.isNotEmpty()) {
+                content.addView(text("Otros boletines", 12f, "#64748B", true).apply {
+                    setPadding(0, dp(12), 0, dp(2))
+                })
+            }
             CheckBox(this).apply {
                 text = province.label
                 textSize = 14f
@@ -199,7 +209,7 @@ class AlertsActivity : Activity() {
             .create()
         dialog.setOnShowListener {
             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
-                val selected = SourceCatalog.availableSources.filterIndexed { i, _ -> checks[i].isChecked }.toSet()
+                val selected = sources.filterIndexed { i, _ -> checks[i].isChecked }.toSet()
                 try {
                     AlertRuleStore.upsert(this, existing?.id, input.text.toString(), selected)
                     dialog.dismiss()

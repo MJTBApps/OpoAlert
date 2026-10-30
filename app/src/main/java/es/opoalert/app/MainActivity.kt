@@ -480,15 +480,8 @@ class MainActivity : Activity() {
             "Act. ${match.groupValues[1]}/${match.groupValues[2]} ${match.groupValues[3]}"
     }
 
-    private fun compactSource(raw: String): String {
-        if (raw.isBlank()) return "Fuentes: ${ProvinceSettings.display(this)}"
-        val previous = Regex("""BOP\s+(\d+):\s*(\d+)\s+anuncios\s+en\s+(\d+)\s+paginas""", RegexOption.IGNORE_CASE)
-            .find(raw)
-        if (previous != null) {
-            return "BOP ${previous.groupValues[1]} · ${previous.groupValues[2]} anuncios · ${previous.groupValues[3]} pág."
-        }
-        return raw.ifBlank { "Fuentes: ${ProvinceSettings.display(this)}" }
-    }
+    private fun compactSource(raw: String): String =
+        if (raw.isBlank()) "Fuentes: ${ProvinceSettings.display(this)}" else SyncSummary.describe(raw)
 
     private fun compactHistory(raw: String): String {
         if (!raw.contains("verificado", ignoreCase = true)) return "Histórico pendiente de comprobar"
@@ -509,7 +502,7 @@ class MainActivity : Activity() {
         val choices = listOf(
             TAB_ALL to "Explorar",
             TAB_FAVORITES to "★ Favoritas",
-            TAB_ALERTS to "♧ Alertas"
+            TAB_ALERTS to "🔔 Alertas"
         )
         for ((index, choice) in choices.withIndex()) {
             val (tab, label) = choice
