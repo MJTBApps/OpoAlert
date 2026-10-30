@@ -14,7 +14,8 @@ HOST="bop.dacoruna.gal"
 PDF_RE=re.compile(r"^/bopportal/publicado/2026/(\d{2})/(\d{2})/2026_(\d{10})\.pdf$")
 MONTHS={"xaneiro":1,"febreiro":2,"marzo":3,"abril":4,"maio":5,"xuño":6,
 "xullo":7,"agosto":8,"setembro":9,"outubro":10,"novembro":11,"decembro":12,
-"enero":1,"febrero":2,"marzo":3,"mayo":5,"junio":6,"julio":7,"septiembre":9,"octubre":10,"diciembre":12}
+"enero":1,"febrero":2,"mayo":5,"junio":6,"julio":7,"septiembre":9,"octubre":10,
+"noviembre":11,"diciembre":12}
 HEAD=re.compile(r"Sumario d[oe]l? Bolet[ií]n N[º°.]*\s*(\d+)\s*-\s*[\wáéíóú]+,\s*(\d{1,2}) de (\w+) de (\d{4})",re.I)
 S=threading.local()
 def session():
@@ -95,9 +96,15 @@ def read_day(day):
 def audit(today=None):
  end=today or date.today();start=end-timedelta(days=29)
  issues=[];day=end
+ # Fines de semana y festivos no hay BOP: empezar por la última edición publicada.
+ result=read_day(day)
+ while result is None:
+  day-=timedelta(days=1)
+  if (end-day).days>3:invalid("A Coruña: sin boletín en los últimos cuatro días")
+  result=read_day(day)
  for i in range(30):
   if day<start:break
-  result=read_day(day)
+  if i:result=read_day(day)
   if result is None:invalid("A Coruña: enlace anterior lleva a boletín inexistente")
   issue,previous=result
   issues.append(issue)
@@ -107,7 +114,7 @@ def audit(today=None):
  seq=[int(x["number"]) for x in issues]
  if not 19<=len(issues)<=27 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
   invalid(f"A Coruña: numeración de boletines incompleta {seq}")
- if issues[0]["day"]!=start or issues[-1]["day"]!=end:
+ if (issues[0]["day"]-start).days>3 or (end-issues[-1]["day"]).days>3:
   invalid("A Coruña: faltan boletines inicial/final")
  return publish_audit(SOURCE,"A Coruña",issues,today=end)
 if __name__=="__main__":

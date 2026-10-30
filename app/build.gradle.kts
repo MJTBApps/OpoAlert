@@ -11,16 +11,11 @@ android {
         applicationId = "es.opoalert.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 46
-        versionName = "1.33.0"
+        versionCode = 47
+        versionName = "1.34.0"
     }
 
     buildTypes {
-        debug {
-            // Instalación paralela para probar sin desinstalar la versión habitual.
-            applicationIdSuffix = ".melilla"
-            versionNameSuffix = "-privada"
-        }
         release {
             isMinifyEnabled = false
         }

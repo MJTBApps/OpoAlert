@@ -99,9 +99,21 @@ object SourceCatalog {
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
 
-    val availableSources: List<Province> = Province.entries.filterNot {
-        it == Province.ALBACETE || it == Province.CUENCA
-    }
+    /**
+     * Fuentes que todavía no publican un feed diario en GitHub Pages
+     * (backend/feeds_diarios.py). Se ocultan hasta que su lector funcione
+     * cada día; nunca se muestran datos congelados.
+     */
+    val pendingDailyFeed: Set<Province> = setOf(
+        Province.ALBACETE, Province.CUENCA,
+        Province.SALAMANCA_BOP, Province.SEGOVIA_BOP, Province.ALAVA_BOTHA, Province.GALICIA_LUGO,
+        Province.RIOJA_BOR, Province.MELILLA_BOME, Province.CANARIAS_BOC, Province.LAS_PALMAS_BOP,
+        Province.SANTA_CRUZ_BOP, Province.BALEARES_BOIB, Province.ANDALUCIA_BOJA,
+        Province.CATALUNA_DOGC, Province.ARAGON_BOA,
+        Province.NAVARRA_BON, Province.ASTURIAS_BOPA, Province.CEUTA_BOCCE,
+    )
+
+    val availableSources: List<Province> = Province.entries.filterNot { it in pendingDailyFeed }
 
     fun groups(sources: List<Province> = availableSources): List<BulletinCommunity> {
         val placed = sources.filter { it != Province.BOE }.groupBy { territoryOf(it)!!.community }

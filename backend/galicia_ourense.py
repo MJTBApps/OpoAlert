@@ -92,8 +92,8 @@ def read_day(day):
         records.append({"day":day,"number":number,"read":len(docs),"notices":notices})
     return records
 
-def audit():
-    end=date(2026,10,29);start=end-timedelta(days=29)
+def audit(today=None):
+    end=today or date.today();start=end-timedelta(days=29)
     days=[start+timedelta(days=i) for i in range(30)]
     with ThreadPoolExecutor(max_workers=5) as pool:
         rows=list(pool.map(read_day,days))
@@ -101,7 +101,7 @@ def audit():
     ordinarias=[x for x in editions if not x["number"].endswith("E")]
     numbers=[int(x["number"]) for x in ordinarias]
     if (len(editions)<20 or len(editions)>28 or
-        ordinarias[0]["day"]!=start or ordinarias[-1]["day"]!=end or
+        (ordinarias[0]["day"]-start).days>3 or (end-ordinarias[-1]["day"]).days>3 or
         any(b!=a+1 for a,b in zip(numbers,numbers[1:]))):
         invalid(f"Ourense: BOP ordinarios no cubren 30 días: {numbers}")
     return publish_audit(SOURCE,"Ourense",editions,today=end)

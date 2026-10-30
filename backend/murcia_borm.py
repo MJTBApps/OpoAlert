@@ -95,7 +95,7 @@ def parse_index(records,today):
                 "type":role,"url":pdf})
         # Count every official publication, not just candidate notices.
         by_issue[(day,int(number))].append(None)
-    if not year_all or max(year_all)<today:
+    if not year_all or (today-max(year_all)).days>3:
         invalid(f"Murcia: índice público no llega al día auditado {today}")
     if len(unique)<350 or len(by_issue)<20:
         invalid(f"Murcia: histórico sin suficiente cobertura, {len(unique)} anuncios / {len(by_issue)} ediciones")
@@ -104,8 +104,9 @@ def parse_index(records,today):
     extra_issues=[x for x in sequence if x[1]<150]
     if any(b[1]!=a[1]+1 for a,b in zip(main_issues,main_issues[1:])):
         invalid("Murcia: falta algún número consecutivo del BORM ordinario")
-    if any(day!=date(2026,10,12) or number!=2 for day,number in extra_issues):
-        invalid(f"Murcia: edición extraordinaria no identificada {extra_issues}")
+    # Las ediciones extraordinarias llevan numeración propia (1, 2...) y son pocas al mes.
+    if len(extra_issues)>6 or len({n for _,n in extra_issues})!=len(extra_issues):
+        invalid(f"Murcia: ediciones extraordinarias no identificadas {extra_issues}")
     if len(main_issues)<20:invalid("Murcia: falta un boletín ordinario")
     issues=[]
     for day,number in sequence:
@@ -115,7 +116,7 @@ def parse_index(records,today):
         if read==0 or len(notices)>read:invalid("Murcia: sumario desajustado")
         issues.append({"day":day,"number":str(number)+("E" if (day,number) in extra_issues else ""),
             "read":read,"notices":notices})
-    if issues[0]["day"]>start+timedelta(days=3) or issues[-1]["day"]!=today:
+    if issues[0]["day"]>start+timedelta(days=3) or (today-issues[-1]["day"]).days>3:
         invalid("Murcia: faltan los primeros o últimos BORM de los 30 días")
     return issues
 

@@ -14,48 +14,7 @@ data class RemoteFeed(
 )
 
 object RemoteFeedReader {
-    /**
-     * Fuentes auditadas empaquetadas en la APK privada de pruebas;
-     * no se publican en GitHub Pages.
-     */
-    private val bundled = setOf(
-        Province.MADRID, Province.CIUDAD_REAL, Province.GUADALAJARA,
-        Province.TOLEDO, Province.CLM_DOCM, Province.HUELVA_BOP,
-        Province.AVILA, Province.LEON_BOP, Province.ZAMORA_BOP,
-        Province.SORIA_BOP, Province.SALAMANCA_BOP, Province.SEGOVIA_BOP, Province.CYL_BOCYL, Province.PALENCIA_BOP,
-        Province.BADAJOZ_BOP, Province.CACERES_BOP, Province.EXTREMADURA_DOE,
-        Province.MURCIA_BORM,
-        Province.ALAVA_BOTHA, Province.BIZKAIA_BOB,
-        Province.GIPUZKOA_BOG, Province.PAIS_VASCO_BOPV,
-        Province.GALICIA_CORUNA, Province.GALICIA_LUGO, Province.GALICIA_OURENSE,
-        Province.GALICIA_PONTEVEDRA, Province.GALICIA_DOG,
-        Province.ARAGON_BOA, Province.ANDALUCIA_BOJA, Province.VALENCIA_DOGV,
-        Province.CATALUNA_DOGC,
-        Province.BALEARES_BOIB,
-        Province.CANARIAS_BOC, Province.LAS_PALMAS_BOP, Province.SANTA_CRUZ_BOP,
-        Province.MELILLA_BOME, Province.RIOJA_BOR, Province.NAVARRA_BON,
-        Province.ASTURIAS_BOPA, Province.CEUTA_BOCCE
-    )
-
     fun fetch(address: String, province: Province = Province.VALENCIA, context: Context? = null): RemoteFeed {
-        if (province in bundled) {
-            if (context == null) throw IOException("Copia verificada local no disponible")
-            val name = "verified/${province.code}.json"
-            val bytes = try {
-                context.assets.open(name).use { input -> input.readBytes() }
-            } catch (ex: Exception) {
-                throw IOException("Falta copia privada verificada para ${province.label}", ex)
-            }
-            if (bytes.isEmpty() || bytes.size > 5_000_000) {
-                throw IOException("Copia local de ${province.label} inválida")
-            }
-            val parsed = parse(String(bytes, Charsets.UTF_8), province)
-            return parsed.copy(
-                status = parsed.status + " · instantánea privada",
-                historyStatus = parsed.historyStatus +
-                    " · Datos del 29/10/2026 incluidos en la APK de prueba. No se actualizan automáticamente."
-            )
-        }
         // URLs are never taken from user input: only our audited Github Pages files.
         if (address != province.feedUrl) throw IOException("Fuente provincial no autorizada")
         val url = URL(address)

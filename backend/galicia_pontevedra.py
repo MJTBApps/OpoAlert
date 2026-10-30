@@ -8,11 +8,13 @@ from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 from clm_common import publish_audit,write_output,invalid
 from galicia_common import galicia_employment
-import argparse,requests,re,threading
+import argparse,requests,re,threading,time
 SOURCE="https://boppo.depo.gal/es/consulta-do-boppo"
 HOST="boppo.depo.gal"
 PDF_RE=re.compile(r"^/web/boppo/detalle/-/boppo/2026/(\d{2})/(\d{2})/(2026\d{6,8})/an\.bop\.PONTEVEDRA\.(2026\d{4})\.(2026\d{6,8})\.pdf$",re.I)
-MONTHS={"septiembre":9,"setembro":9,"octubre":10,"outubro":10}
+MONTHS={"enero":1,"xaneiro":1,"febrero":2,"febreiro":2,"marzo":3,"abril":4,"mayo":5,"maio":5,
+"junio":6,"xuño":6,"julio":7,"xullo":7,"agosto":8,"septiembre":9,"setembro":9,"octubre":10,"outubro":10,
+"noviembre":11,"novembro":11,"diciembre":12,"decembro":12}
 S=threading.local()
 def client():
  if not hasattr(S,"c"):
@@ -40,6 +42,13 @@ def request(url,pdf=False):
   return BeautifulSoup(r.content,"html.parser")
  except requests.RequestException as e:invalid("Pontevedra: error de sede "+str(e)[:190])
 def read_day(day):
+ # El portal sirve a veces la página de otra fecha: reintentar antes de rendirse.
+ for attempt in range(4):
+  try:return read_day_once(day)
+  except Exception as ex:
+   if "fecha impresa no coincide" not in str(ex) or attempt==3:raise
+   time.sleep(2*(attempt+1))
+def read_day_once(day):
  url=f"https://{HOST}/detalle/-/boppo/{day:%Y/%m/%d}"
  soup=request(url)
  headers=[h.get_text(" ",strip=True) for h in soup.select("h2") if h.get_text(" ",strip=True).startswith("BOPPO número")]
@@ -55,8 +64,9 @@ def read_day(day):
  text=soup.get_text(" ",strip=True)
  pos=text.find(headers[0])
  sub=text[pos:pos+180]
- date_match=re.search(r"\b(\d{1,2}) de (setembro|septiembre|outubro|octubre) de 2026\b",sub,re.I)
- if (not date_match or int(date_match[1])!=day.day or MONTHS[date_match[2].lower()]!=day.month):
+ date_match=re.search(r"\b(\d{1,2}) de (\w+) de (\d{4})\b",sub,re.I)
+ if (not date_match or int(date_match[1])!=day.day or MONTHS.get(date_match[2].lower())!=day.month
+     or int(date_match[3])!=day.year):
   invalid(f"Pontevedra {day}: fecha impresa no coincide: {sub[:130]}")
  items=soup.select("ul.listadoSumario > li")
  if not items:invalid("Pontevedra: edición sin anuncios")
@@ -84,14 +94,14 @@ def read_day(day):
       "date":day.strftime("%d/%m/%Y"),"bulletin":str(num),"type":kind,"url":pdf})
  print("PONTEVEDRA",day,num,len(items),"anuncios",len(notices),"candidatas",flush=True)
  return {"day":day,"number":str(num),"read":len(items),"notices":notices}
-def audit():
- end=date(2026,10,29);start=end-timedelta(days=29)
- with ThreadPoolExecutor(max_workers=4) as pool:
+def audit(today=None):
+ end=today or date.today();start=end-timedelta(days=29)
+ with ThreadPoolExecutor(max_workers=2) as pool:
   items=[x for x in pool.map(read_day,[start+timedelta(days=i) for i in range(30)]) if x]
  seq=[int(x["number"]) for x in items]
  if not 19<=len(items)<=25 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
   invalid(f"Pontevedra: número de boletines incompleto: {seq}")
- if items[0]["day"]!=start or items[-1]["day"]!=end:
+ if (items[0]["day"]-start).days>3 or (end-items[-1]["day"]).days>3:
   invalid("Pontevedra: fechas inicial/final sin validar")
  return publish_audit(SOURCE,"Pontevedra",items,today=end)
 if __name__=="__main__":

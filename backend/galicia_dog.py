@@ -81,8 +81,8 @@ def read_day(day):
  num=nums.pop()
  print("DOG GALICIA",day,num,"anuncios",found,"candidatas",len(notices),flush=True)
  return {"day":day,"number":str(num),"read":found,"notices":notices}
-def audit():
- end=date(2026,10,29);start=end-timedelta(days=29)
+def audit(today=None):
+ end=today or date.today();start=end-timedelta(days=29)
  # A Xunta publicará un DOG en días inhábiles de manera excepcional; comprobar cada fecha
  # desde el HTML de la Xunta, no inferir únicamente días laborables.
  days=[start+timedelta(days=i) for i in range(30)]
@@ -90,7 +90,7 @@ def audit():
  nums=[int(x["number"]) for x in issues]
  if len(issues)<18 or any(b!=a+1 for a,b in zip(nums,nums[1:])):
   invalid(f"DOG: falta alguna edición {nums}")
- if issues[0]["day"]!=start or issues[-1]["day"]!=end:
+ if (issues[0]["day"]-start).days>3 or (end-issues[-1]["day"]).days>3:
   invalid("DOG: extremos del periodo incompletos")
  return publish_audit(SOURCE,"Galicia (DOG)",issues,today=end)
 if __name__=="__main__":

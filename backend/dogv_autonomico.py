@@ -20,7 +20,7 @@ PDF_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/2026_(\d{1,8})_es\.pdf$")
 SUM_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/sumario_2026_(\d{4,6})(?:_bis|_ter|_quarter)?_es\.pdf$")
 ID_RE=re.compile(r"2026/(\d{1,8})")
 S=threading.local()
-END=date(2026,10,29);START=END-timedelta(days=29)
+END=date.today();START=END-timedelta(days=29)
 def req():
     if not hasattr(S,"s"):
         r=requests.Session()
@@ -73,7 +73,7 @@ def calendar():
         except Exception as e:invalid("DOGV: fecha del calendario mal formada")
         if day<START or day>END or day in is_bis:invalid("DOGV: calendario duplicado o externo")
         days.append(day);is_bis[day]=row["esBis"]
-    if days!=sorted(days) or days[0]!=START or days[-1]!=END:
+    if days!=sorted(days) or (days[0]-START).days>3 or (END-days[-1]).days>3:
         invalid("DOGV: faltan primera/última edición")
     return days,is_bis
 def original_path_from_export(did,day,code):
