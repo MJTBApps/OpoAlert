@@ -110,7 +110,7 @@ object SourceCatalog {
      * cada día; nunca se muestran datos congelados.
      */
     val pendingDailyFeed: Set<Province> = setOf(
-        Province.ALBACETE, Province.CUENCA,
+        Province.CUENCA,
     )
 
     private const val PREFS = "opoalert_store"
