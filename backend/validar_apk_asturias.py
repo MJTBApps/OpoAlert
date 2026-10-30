@@ -86,7 +86,7 @@ def validate(root:Path):
     for p in evidence:
         code=p.get("id")
         if (not isinstance(code,str) or not re.fullmatch(r"2026-\d{5}",code)
-            or code in original_by_id or not p.get("publisherNumberAndDateVerified")
+            or code in original_by_id or not p.get("publisherDateAndCVEVerified")
             or p.get("day")!=ids.get(code[5:],{}).get("day")
             or p.get("bulletin")!=ids.get(code[5:],{}).get("number")
             or not re.fullmatch(r"[0-9a-f]{64}",str(p.get("sha256","")))
@@ -95,7 +95,20 @@ def validate(root:Path):
             invalid("documento PDF original no verificable contra boletín")
         if p.get("url")!=f"https://www.asturias.es/bopa/{p['day'].replace('-','/')}/{code}.pdf":
             invalid("PDF ajeno a origen o fecha")
+        number_ok=p.get("pdfHeaderIssueNumber")==int(p["bulletin"])
+        anomaly=(p["day"]=="2026-10-13" and p["bulletin"]=="198"
+                 and p.get("pdfHeaderIssueNumber")==197)
+        if (not number_ok and not anomaly or p.get("publisherIssueNumberMatched") is not number_ok
+            or p.get("documentedEditorialNumberAnomaly") is not (not number_ok and anomaly)):
+            invalid("discrepancia de numero BOPA no autorizada por fuente original")
         original_by_id[code]=p
+    actualAnomalies=[{"day":x["day"],"code":x["id"],
+                      "sumarioNumber":x["bulletin"],
+                      "originalPdfHeaderNumber":x["pdfHeaderIssueNumber"],
+                      "sha256":x["sha256"]} for x in evidence
+                     if x.get("documentedEditorialNumberAnomaly")]
+    if h.get("pdfHeaderEditorialDiscrepancies")!=actualAnomalies:
+        invalid("erratas de numero BOPA no documentadas con huella SHA256")
     for e in indexed:
         rep="2026-"+e["ids"].split(",")[0]
         if rep not in original_by_id:
