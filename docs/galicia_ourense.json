@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 1,
+  "province": "Ourense",
+  "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
+  "lastCheckedUTC": "2026-10-30T11:03:03.931867+00:00",
+  "coverage": {
+    "complete": true,
+    "status": "complete",
+    "bulletin": "209",
+    "pagesVisited": 22,
+    "announcementsRead": 270,
+    "opportunities": 52
+  },
+  "historyCoverage": {
+    "complete": true,
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
+    "bulletins": [
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206",
+      "207",
+      "208",
+      "209"
+    ],
+    "publicationDates": [
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-09",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30"
+    ],
+    "nonPublicationDates": [
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-10",
+      "2026-10-11",
+      "2026-10-17",
+      "2026-10-18",
+      "2026-10-24",
+      "2026-10-25"
+    ],
+    "issuesRead": 22,
+    "announcementsRead": 270,
+    "opportunities": 52
+  },
+  "notices": [
+    {
+      "id": "OU-2026-352942",
+      "province": "Ourense",
+      "title": "ANUNCIO BOLSA DE EMPLEO DE AUXILIAR A DOMICILIO",
+      "entity": "CONCELLO DE RIBADAVIA",
+      "date": "30/10/2026",
+      "bulletin": "209",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352942/idioma/gl"
+    },
+    {
+      "id": "OU-2026-353012",
+      "province": "Ourense",
+      "title": "Convocatoria y bases reguladoras del proceso selectivo para la contratación laboral temporal de un/a chófer municipal, mediante concurso-oposición, para la cobertura temporal de un puesto vacante, y constitución de una bolsa de empleo.",
+      "entity": "CONCELLO DE RAIRIZ DE VEIGA",
+      "date": "26/10/2026",
+      "bulletin": "205",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353012/idioma/gl"
+    },
+    {
+      "id": "OU-2026-353050",
+      "province": "Ourense",
+      "title": "BOLSA DE EMPLEO PARA LA SELECCIÓN MEDIANTE CONCURSO DE MÉRITOS DE 1 TRABAJADOR COMO LIMPIADOR/SUBALTERNO DE LOS COLEGIOS E INSTALACIONES DEPENDIENTES DEL CPI VIRGEN DE LOS REMEDIOS EN EL AYUNTAMIENTO DE O CASTRO DE CALDELAS",
+      "entity": "CONCELLO DE CASTRO CALDELAS",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353050/idioma/gl"
+    },
+    {
+      "id": "OU-2026-353008",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo dunha (1) praza de TÉCNICO/A SUPERIOR DE ADMINISTRACIÓN FINANCEIRA E TRIBUTARIA, praza incluída na oferta ordinaria de emprego público do ano 2025, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo A1, concurso-oposición. EXP: 2026/22S/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353008/idioma/gl"
+    },
+    {
+      "id": "OU-2026-353007",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo dunha (1) praza de TÉCNICO/A SUPERIOR EN SISTEMAS E TECNOLOXÍAS DA INFORMACIÓN, praza incluída na oferta ordinaria de emprego público do ano 2025, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo A1, concurso-oposición. EXP: 2026/23Q/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353007/idioma/gl"
+    },
+    {
+      "id": "OU-2026-353004",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo dunha (1) praza de TÉCNICO/A SUPERIOR EN DESENVOLVEMENTO LOCAL E FONDOS EUROPEOS praza incluída na oferta ordinaria de emprego público do ano 2025, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo A1, concurso-oposición. EXP: 2026/24V/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353004/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352998",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (15) prazas de ADMINISTRATIVO/A DE ADMINISTRACIÓN XERAL, prazas incluídas na oferta ordinaria de emprego público do ano 2025, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo C1, concurso-oposición. EXP: 2026/25H/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352998/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352996",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo dunha (1) praza de TÉCNICO/A AUXILIAR INFORMÁTICO/A praza incluída na oferta ordinaria de emprego público do ano 2025, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo C1, concurso-oposición. EXP: 2026/26L/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352996/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352993",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo dunha (1) praza de AUXILIAR INFORMÁTICO/A praza incluída na oferta ordinaria de emprego público do ano 2025, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/27C/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352993/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352992",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (2) prazas de OFICIAIS DE OBRAS E SERVIZOS, prazas incluídas na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C1, concurso-oposición. EXP: 2026/28K/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352992/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352991",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (1) praza de CHOFER/ESA ESPECIALISTA, praza incluída na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/29E/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352991/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352990",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (4) prazas de AXUDANTES/AS DE OBRAS E SERVIZOS, (unha (1) desas prazas reservada a persoas con discapacidade xeral), prazas incluídas na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/30T/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352990/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352989",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (1) praza de ALBANEL/A, praza incluída na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/31R/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352989/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352987",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (3) prazas de CHOFER/ESA OPERARIO/A DO LIXO, prazas incluídas na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/32W/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352987/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352986",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (2) prazas de AUXILIARES DE SERVIZOS, (unha (1) desas prazas reservadas para persoas con discapacidade xeral), prazas incluídas na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/33A/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352986/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352985",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (2) prazas de CONDUTORES/AS DE MAQUINARIA DE OBRAS PÚBLICAS E VEHÍCULOS ESPECIAIS, prazas incluídas na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/34G/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352985/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352984",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (1) praza de CONDUTOR/A ESPECIALLISTA DE EXPLOTACIÓNS AGROPECUARIAS, praza incluída na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/35M/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352984/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352983",
+      "province": "Ourense",
+      "title": "Aprobación das bases reguladoras do proceso selectivo de (1) praza de OFICIAL/A DE TALLER-MECÁNICO/A, praza incluída na oferta ordinaria de emprego público do ano 2025, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2026/36Y/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "23/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352983/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352826",
+      "province": "Ourense",
+      "title": "BASES PARA LA PROVISIÓN DE DOS PLAZAS DE AUXILIAR DE AYUDA A DOMICILIO EN RÉGIMEN DE PERSONAL LABORAL FIJO, INCLUIDAS EN LA OFERTA DE EMPLEO PÚBLICO DEL AYUNTAMIENTO DE A MEZQUITA, CORRESPONDIENTE AL ANO 2026.",
+      "entity": "CONCELLO DA MEZQUITA",
+      "date": "21/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352826/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352864",
+      "province": "Ourense",
+      "title": "Provisión de dúas (2) prazas de TÉCNICO/A DE ADMINISTRACIÓN XERAL, prazas incluídas na oferta de emprego público do ano 2024, funcionario/a. EXP: 2025/428W/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352864/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352863",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de ARQUITECTO/A TÉCNICO/A, praza incluída na oferta de emprego público do ano 2024, funcionario/a. EXP: 2025/429A/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352863/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352862",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de TÉCNICO/A ESPECIALISTA DE SISTEMAS E TECNOLOXÍAS DA INFORMACIÓN, praza incluída na oferta de emprego público do ano 2024, funcionario/a. EXP: 2025/430G/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352862/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352861",
+      "province": "Ourense",
+      "title": "Provisión de dúas (2) prazas de TÉCNICO/A SUPERIOR EN EDUCACIÓN E CONTROL AMBIENTAL, prazas incluídas na oferta de emprego público do ano 2024, funcionario/a. EXP: 2025/431M/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352861/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352860",
+      "province": "Ourense",
+      "title": "Provisión de (2) prazas de TÉCNICO/A AUXILIAR EN MEDIO AMBIENTE, prazas incluídas na oferta de emprego público do ano 2024 da Deputación de Ourense, funcionario/a, correspondentes ás prazas da taxa xeral do 120% de reposición de efectivos, subgrupo C1, oposición libre. EXP: 2025/432Y/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352860/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352859",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de DELINEANTE, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, funcionario/a, correspondente ás prazas da taxa xeral do 120% de reposición de efectivos, subgrupo C1, oposición libre. EXP:2025/433F/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352859/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352857",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de OFICIAL/A DE OBRAS E SERVIZOS, praza incluída na oferta de emprego público do ano 2024 da Deputación de Ourense, funcionario/a, correspondente ás prazas da taxa xeral do 120% de reposición de efectivos, subgrupo C1, oposición libre. EXP: 2025/434P/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352857/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352856",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de CONDUTOR/A DE MAQUINARIA DE OBRAS PÚBLICAS E VEHÍCULOS ESPECIAIS, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/435D/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352856/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352855",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de OFICIAL/A DE TALLER-MECÁNICO/A, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/436X/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352855/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352854",
+      "province": "Ourense",
+      "title": "Provisión de cinco (5) prazas de CHOFERES ESPECIALISTAS, prazas incluidas na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/437B/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352854/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352853",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de AXUDANTE/A DE OBRAS E SERVIZOS, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/438N/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352853/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352852",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de CHAPISTA, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/439J/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352852/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352851",
+      "province": "Ourense",
+      "title": "Provisión de dúas (2) prazas de MONITOR/A DEPORTIVO/A, prazas incluidas na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/440Z/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352851/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352847",
+      "province": "Ourense",
+      "title": "Provisión de dúas (2) prazas de OPERARIO/A SEN CUALIFICAR, prazas incluidas na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/442Q/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352847/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352844",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de AXUDANTE/A SOLDADOR/A, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/443V/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352844/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352843",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de OPERARIO/A LIMPADOR/A, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/444H/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352843/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352842",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de PEÓN/PEOA AGRÍCOLA, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/445L/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352842/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352841",
+      "province": "Ourense",
+      "title": "Provisión de tres (3) prazas de LEGOEIRO/A, prazas incluidas na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo. EXP: 2025/446C/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352841/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352840",
+      "province": "Ourense",
+      "title": "Provisión de catro (4) prazas de ADMINISTRATIVO/A DE ADMINISTRACIÓN XERAL, prazas incluídas na oferta de emprego público do ano 2024, funcionario/a, correspondentes ás prazas de promoción interna, subgrupo C1, concurso-oposición. EXP: 2025/447K/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352840/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352839",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de OFICIAL/A DE OBRAS E SERVIZOS, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C1, concurso-oposición. EXP: 2025/448E/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352839/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352838",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de CHOFER ESPECIALISTA, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2025/449T/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352838/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352837",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de AXUDANTE/A DE OBRAS E SERVIZOS, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2, concurso-oposición. EXP: 2025/450R/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352837/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352836",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de ALBANEL, praza incluida na oferta de emprego público do ano 2024 da Deputación de Ourense, persoal laboral fixo, correspondente ás prazas de promoción interna, subgrupo C2. EXP: 2025/451W/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352836/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352835",
+      "province": "Ourense",
+      "title": "Provisión dunha (1) praza de AUXILIAR DE ADMINISTRACIÓN XERAL, praza incluída na oferta de emprego público do ano 2021, funcionario/a, correspondentes ás prazas da taxa xeral do 100% de reposición de efectivos, subgrupo C2. EXP: 2024/23T/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352835/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352834",
+      "province": "Ourense",
+      "title": "Provisión de dúas (2) prazas de PORTEIRO/A (unha das prazas está reservada para persoas con discapacidade psíquica), prazas incluidas na oferta de emprego público do ano 2024 da Deputación de Ourense. EXP: 2025/441S/OPE",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352834/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352908",
+      "province": "Ourense",
+      "title": "Anuncio de la convocatoria de una edición del Curso de formación para bomberos/as y personal de los GES: Curso de actualización en el rescate vital en accidentes de tráfico (AF-58-2026). EXP: 2026/15433S",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "15/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352908/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352743",
+      "province": "Ourense",
+      "title": "Resolución de 2 de septiembre de 2026 de la Dirección General de la Academia Galega de Seguridad Pública, de la Consellería de Presidencia, Justicia y Deportes, por la que se anuncia la convocatoria del proceso selectivo de acceso por promoción interna (código de procedimiento PR461F) y el proceso de provisión por movilidad (código de procedimiento PR461J) en los cuerpos de Policía Local de Galicia, escala ejecutiva, categoría de inspector.",
+      "entity": "ACADEMIA GALEGA DE SEGURIDADE PUBLICA",
+      "date": "15/10/2026",
+      "bulletin": "198",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352743/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352886",
+      "province": "Ourense",
+      "title": "CONVOCATORIA DE APERTURA Y ACTUALIZACIÓN DE LA BOLSA DE EMPLEO",
+      "entity": "CONCELLO DE MANZANEDA",
+      "date": "13/10/2026",
+      "bulletin": "196",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352886/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352878",
+      "province": "Ourense",
+      "title": "Convocatoria e bases generales y específicas reguladoras del proceso selectivo para la cobertura en propiedad de una plaza de administrativo/a y una de auxiliar administrativo/a",
+      "entity": "CONCELLO DE VILARDEVÓS",
+      "date": "13/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352878/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352873",
+      "province": "Ourense",
+      "title": "Anuncio de aprobación de las bases reguladoras para la selección, por el turno de promoción interna, de una plaza vacante de funcionario de carrera de la escala de administración general subescala administrativa, incluida en la oferta de empleo público del año 2026",
+      "entity": "CONCELLO DO BARCO DE VALDEORRAS",
+      "date": "13/10/2026",
+      "bulletin": "196",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352873/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352848",
+      "province": "Ourense",
+      "title": "APROBACIÓN DE LA OFERTA DE EMPLEO PÚBLICO PARA EL AÑO 2026 DEL AYUNTAMIENTO DE TOÉN (EXP. 877/2026)",
+      "entity": "CONCELLO DE TOÉN",
+      "date": "08/10/2026",
+      "bulletin": "193",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352848/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352774",
+      "province": "Ourense",
+      "title": "Anuncio oferta de empleo público 2026",
+      "entity": "MANCOMUNIDADE DO RIBEIRO",
+      "date": "08/10/2026",
+      "bulletin": "193",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352774/idioma/gl"
+    },
+    {
+      "id": "OU-2026-352660",
+      "province": "Ourense",
+      "title": "Oferta de Empleo Público para el año 2026",
+      "entity": "CONCELLO DE PIÑOR",
+      "date": "06/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352660/idioma/gl"
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 1,
+  "province": "País Vasco (BOPV)",
+  "source": "https://api.euskadi.eus/bopv/administrative-acts",
+  "lastCheckedUTC": "2026-10-30T11:03:39.869844+00:00",
+  "coverage": {
+    "complete": true,
+    "status": "complete",
+    "bulletin": "208",
+    "pagesVisited": 21,
+    "announcementsRead": 347,
+    "opportunities": 48
+  },
+  "historyCoverage": {
+    "complete": true,
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
+    "bulletins": [
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "193",
+      "194",
+      "195",
+      "196",
+      "197",
+      "198",
+      "199",
+      "200",
+      "201",
+      "202",
+      "203",
+      "204",
+      "205",
+      "206",
+      "207",
+      "208"
+    ],
+    "publicationDates": [
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-09",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30"
+    ],
+    "nonPublicationDates": [
+      "2026-10-03",
+      "2026-10-04",
+      "2026-10-10",
+      "2026-10-11",
+      "2026-10-12",
+      "2026-10-17",
+      "2026-10-18",
+      "2026-10-24",
+      "2026-10-25"
+    ],
+    "issuesRead": 21,
+    "announcementsRead": 347,
+    "opportunities": 48
+  },
+  "notices": [
+    {
+      "id": "PV-2026-4588",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO relativo a la convocatoria para la provisión, por el sistema de libre designación, del puesto de jefe/a de servicio de relación con los contribuyentes, código 1109.001, de la Dirección de Hacienda.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604588a.pdf"
+    },
+    {
+      "id": "PV-2026-4586",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1688/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de farmacéutico/a (puesto funcional de facultativo/a especialista técnico/a farmacia hospitalaria) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604586a.pdf"
+    },
+    {
+      "id": "PV-2026-4585",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1687/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de radiofísico/a hospitalario/a (puesto funcional de facultativo/a especialista médico/a-técnico/a radiofísica hospitalaria) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604585a.pdf"
+    },
+    {
+      "id": "PV-2026-4584",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1686/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de microbiólogo/a-parasitólogo/a (puesto funcional de facultativo/a especialista médico/a-técnico/a microbiología y parasitología) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604584a.pdf"
+    },
+    {
+      "id": "PV-2026-4583",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1685/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de inmunólogo/a (puesto funcional de facultativo/a especialista médico/a - técnico/a inmunología) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604583a.pdf"
+    },
+    {
+      "id": "PV-2026-4582",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1684/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a urgencias hospitalarias) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604582a.pdf"
+    },
+    {
+      "id": "PV-2026-4581",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1683/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a pediatra-EAP) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604581a.pdf"
+    },
+    {
+      "id": "PV-2026-4580",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1682/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a medicina del trabajo) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604580a.pdf"
+    },
+    {
+      "id": "PV-2026-4579",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1681/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a hospitalización a domicilio) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604579a.pdf"
+    },
+    {
+      "id": "PV-2026-4578",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1680/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a enfermedades infecciosas) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604578a.pdf"
+    },
+    {
+      "id": "PV-2026-4577",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1679/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a de familia-EAP) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604577a.pdf"
+    },
+    {
+      "id": "PV-2026-4576",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1678/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en la categoría de médico/a (puesto funcional de facultativo/a especialista médico/a cuidados paliativos) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604576a.pdf"
+    },
+    {
+      "id": "PV-2026-4575",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1677/2026, de 1 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases específicas que han de regir los procesos selectivos para la adquisición del vínculo estatutario fijo en la categoría de médico/a (varios puestos funcionales) del grupo profesional de facultativos/as médicos/as y técnicos/as con destino en las organizaciones de servicios sanitarios de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604575a.pdf"
+    },
+    {
+      "id": "PV-2026-4574",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 28 de septiembre de 2026, de la consejera de Justicia y Derechos Humanos, por la que se convoca concurso específico en razón de puesto y/o idioma, para la cobertura de los puestos singularizados de los Cuerpos de Gestión Procesal y Administrativa, Tramitación Procesal y Administrativa y Auxilio Judicial de los partidos judiciales de Amurrio, Azpeitia, Balmaseda, Bergara, Durango, Gernika-Lumo, Getxo, Irun, Tolosa, Eibar y Barakaldo, así como del Instituto Vasco de Medicina Legal, de Secretaría de Gobierno y de Oficina Fiscal de Vitoria-Gasteiz y Donostia / San Sebastián, y Juzgados de Paz del partido judicial de Bilbao.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604574a.pdf"
+    },
+    {
+      "id": "PV-2026-4573",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 27 de octubre de 2026, de la directora del Instituto Vasco de Administración Pública, por la que se modifica la Resolución de 24 de agosto de 2026, en relación con la fecha y hora de realización de la prueba del proceso selectivo de acceso al puesto de médico/médica de Alto Rendimiento reservado a personal laboral del Convenio Colectivos laborales al servicio de la Administración de la Comunidad Autónoma de Euskadi.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604573a.pdf"
+    },
+    {
+      "id": "PV-2026-4572",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 20 de octubre de 2026, de la consejera de Gobernanza, Administración Digital y Autogobierno, por la que se nombran los miembros del tribunal del proceso selectivo de la Escala de Ayudantes en Ejecución Penal de la Administración penitenciaria de la Comunidad Autónoma de Euskadi.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604572a.pdf"
+    },
+    {
+      "id": "PV-2026-4571",
+      "province": "País Vasco (BOPV)",
+      "title": "ACUERDO de 20 de octubre de 2026, de la Mesa del Parlamento Vasco, por el que se establece la convocatoria pública para la creación de la bolsa de trabajo para la cobertura temporal de necesidades de técnica o técnico de Protocolo del Parlamento Vasco.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604571a.pdf"
+    },
+    {
+      "id": "PV-2026-4570",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor agregado de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV 06-07-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604570a.pdf"
+    },
+    {
+      "id": "PV-2026-4569",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 16 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor agregado de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV 06-07-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "30/10/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604569a.pdf"
+    },
+    {
+      "id": "PV-2026-4563",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 13 de octubre de 2026, del consejero de Ciencia, Universidades e Innovación, por la que se aprueban las bases reguladoras de las ayudas destinadas a la realización de estancias de movilidad por parte del personal investigador doctor y su convocatoria para el año 2027.",
+      "entity": "Ciencia, Universidades e Innovación",
+      "date": "29/10/2026",
+      "bulletin": "207",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604563a.pdf"
+    },
+    {
+      "id": "PV-2026-4558",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 15 de octubre de 2026, del consejero de Salud, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo de la Dirección de Atención Sociosanitaria.",
+      "entity": "Salud",
+      "date": "29/10/2026",
+      "bulletin": "207",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604558a.pdf"
+    },
+    {
+      "id": "PV-2026-4540",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 15 de octubre de 2026, del director de Gestión de Personal, por la que se anuncia el sorteo de la letra que determinará el orden alfabético en el proceso de gestión de candidatas y candidatos a sustituciones durante el curso escolar 2027-2028 así como en cualquier otro proceso selectivo que pueda convocarse a lo largo de dicho curso escolar.",
+      "entity": "Educación",
+      "date": "28/10/2026",
+      "bulletin": "206",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604540a.pdf"
+    },
+    {
+      "id": "PV-2026-4525",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 14 de octubre de 2026, del director de Gestión de Personal, por la que se establece el plazo para la formalización de los correspondientes contratos laborales por las personas seleccionadas que reúnen los requisitos exigidos en la convocatoria, y por la que se da publicidad a la quinta lista complementaria de personas seleccionadas en el proceso excepcional de estabilización de empleo para la cobertura, con carácter fijo, de plazas pertenecientes a las categorías laborales del personal laboral educativo del Departamento de Educación.",
+      "entity": "Educación",
+      "date": "28/10/2026",
+      "bulletin": "206",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604525a.pdf"
+    },
+    {
+      "id": "PV-2026-4487",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 13 de octubre de 2026, del consejero de Ciencia, Universidades e Innovación, por la que se aprueban las bases reguladoras de las ayudas para estancias en centros distintos al de aplicación del Programa Predoctoral de Formación de Personal Investigador, y su convocatoria para el año 2027.",
+      "entity": "Ciencia, Universidades e Innovación",
+      "date": "26/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604487a.pdf"
+    },
+    {
+      "id": "PV-2026-4480",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 4836/2026, de 25 de septiembre, del director gerente de la Organización Sanitaria Integrada Araba, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, de un puesto de secretario/a de Dirección en la Dirección de Atención Integrada de la Organización Sanitaria Integrada Araba de Osakidetza-Servicio vasco de Salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "26/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604480a.pdf"
+    },
+    {
+      "id": "PV-2026-4476",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 5 de octubre de 2026, del consejero de Vivienda y Agenda Urbana, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo de la Dirección de Planificación Territorial.",
+      "entity": "Vivienda y Agenda Urbana",
+      "date": "26/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604476a.pdf"
+    },
+    {
+      "id": "PV-2026-4473",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 13 de octubre de 2026, del director de Gestión de Personal, por la que se da publicidad a la octava lista complementaria de personas seleccionadas en los procesos excepcionales de estabilización de empleo para la cobertura, con carácter fijo, de plazas pertenecientes a las categorías laborales de cocina y de personal de limpieza adscritas al Departamento de Educación, por reunir los requisitos exigidos en la convocatoria, y por la que se establece el plazo para la formalización de los correspondientes contratos laborales.",
+      "entity": "Educación",
+      "date": "26/10/2026",
+      "bulletin": "204",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604473a.pdf"
+    },
+    {
+      "id": "PV-2026-4428",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 7419/2026, de 25 de septiembre, de la directora gerente de la Organización Sanitaria Integrada Donostialdea, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Servicio de Medicina Nuclear.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "22/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604428a.pdf"
+    },
+    {
+      "id": "PV-2026-4427",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 7418/2026, de 25 de septiembre, de la directora gerente de la Organización Sanitaria Integrada Donostialdea, por la que se convoca concurso para la provisión del puesto de trabajo de jefe/a de Servicio de Anatomía Patológica.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "22/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604427a.pdf"
+    },
+    {
+      "id": "PV-2026-4422",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 6 de octubre de 2026, de la consejera de Justicia y Derechos Humanos, por la que se resuelve definitivamente el concurso específico para la cobertura de puestos singularizados como consecuencia de la implantación de las Oficinas Judiciales, la Oficina General del Registro Civil, y las Oficinas de Justicia en el municipio y sus agrupaciones, del partido judicial de Vitoria-Gasteiz.",
+      "entity": "Justicia y Derechos Humanos",
+      "date": "22/10/2026",
+      "bulletin": "202",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604422a.pdf"
+    },
+    {
+      "id": "PV-2026-4386",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1533/2026, de 18 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de coordinador/a de docencia de medicina familiar y comunitaria, en la Unidad Docente de Medicina Familiar y Comunitaria, de la Subdirección de Atención Primaria, de la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud, en Gipuzkoa.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "20/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604386a.pdf"
+    },
+    {
+      "id": "PV-2026-4384",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 2 de octubre de 2026, del vicepresidente segundo del Gobierno y consejero de Economía, Trabajo y Empleo, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «secretario/a de alto cargo» de la Dirección de Economía Social del Departamento de Economía, Trabajo y Empleo.",
+      "entity": "Economía, Trabajo y Empleo",
+      "date": "20/10/2026",
+      "bulletin": "200",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604384a.pdf"
+    },
+    {
+      "id": "PV-2026-4359",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 2642/2026, de 27 de agosto, de la directora gerente de la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces, por la que se convoca la provisión, mediante concurso, de un puesto de jefe/a de Servicio Sanitario de Cirugía Cardiovascular en la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "19/10/2026",
+      "bulletin": "199",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604359a.pdf"
+    },
+    {
+      "id": "PV-2026-4358",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 2641/2026, de 27 de agosto, de la directora gerente de la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces, por la que se convoca la provisión, mediante concurso, de un puesto de jefe/a de Servicio Sanitario de Oftalmología en la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "19/10/2026",
+      "bulletin": "199",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604358a.pdf"
+    },
+    {
+      "id": "PV-2026-4283",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 5 de octubre de 2026, de la vicepresidenta primera del Gobierno y consejera de Cultura y Política Lingüística, por la que se declara desierta la convocatoria para la provisión, por el sistema de libre designación, de un puesto de trabajo vacante en el Departamento de Cultura y Política Lingüística.",
+      "entity": "Cultura y Política Lingüística",
+      "date": "15/10/2026",
+      "bulletin": "197",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604283a.pdf"
+    },
+    {
+      "id": "PV-2026-4260",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 22 de septiembre de 2026, del director general de la Agencia Vasca del Agua, por la que se convoca proceso selectivo para la provisión, como personal laboral indefinido, mediante contrato de relevo, de 2 puestos de administrativo/a general de la Agencia Vasca del Agua, y la creación de la bolsa de trabajo.",
+      "entity": "Agencia Vasca del Agua",
+      "date": "14/10/2026",
+      "bulletin": "196",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604260a.pdf"
+    },
+    {
+      "id": "PV-2026-4203",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1350/2026, de 15 de mayo, de la directora gerente de la Red de Salud Mental de Bizkaia, por la que se convoca concurso para la provisión de un puesto de trabajo de jefe/a de Servicio Sanitario del Hospital de Zaldibar, en la Red de Salud Mental de Bizkaia de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "13/10/2026",
+      "bulletin": "195",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604203a.pdf"
+    },
+    {
+      "id": "PV-2026-4160",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1527/2026, de 15 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Sección Corporativa (Expedientes), en el Servicio de Compra Integrada y Catálogo, en la Subdirección de Análisis Económico y Logística Corporativa, de la Dirección de Estrategia Económica y Transformación, de la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "08/10/2026",
+      "bulletin": "193",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604160a.pdf"
+    },
+    {
+      "id": "PV-2026-4159",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1524/2026, de 15 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se declara desierta la convocatoria realizada mediante la Resolución 582/2026, de 8 de abril, por la que se anuncia convocatoria pública para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Servicio Corporativo responsable de Seguridad y Enlace en la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "08/10/2026",
+      "bulletin": "193",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604159a.pdf"
+    },
+    {
+      "id": "PV-2026-4158",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 2295/2026, de 13 de agosto, de la directora gerente de la Organización Sanitaria Integrada Barrualde-Galdakao, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Servicio Sanitario de Hematología y Hemoterapia.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "08/10/2026",
+      "bulletin": "193",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604158a.pdf"
+    },
+    {
+      "id": "PV-2026-4157",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1477/2026, de 19 de mayo, de la directora gerente de la Organización Sanitaria Integrada Barrualde-Galdakao, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Sección Sanitaria de Medicina Física y Rehabilitación.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "08/10/2026",
+      "bulletin": "193",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604157a.pdf"
+    },
+    {
+      "id": "PV-2026-4141",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1778/2026, de 24 de julio, de la directora gerente de la Red de Salud Mental de Bizkaia, por la que se hace pública la convocatoria para la provisión, mediante el sistema de concurso, de un puesto de jefe/a de Servicio Sanitario de la Unidad de Gestión Sanitaria en la Red de Salud Mental de Bizkaia de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "07/10/2026",
+      "bulletin": "192",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604141a.pdf"
+    },
+    {
+      "id": "PV-2026-4124",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1523/2026, de 15 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se declara desierta la convocatoria realizada mediante la Resolución 1039/2026, de 1 de julio, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Sección Corporativa de Administración y Registro de Personal en la Subdirección de Planificación y Gestión de Personas de la Dirección de Personas y Talento de la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Osakidetza-Servicio vasco de salud",
+      "date": "06/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604124a.pdf"
+    },
+    {
+      "id": "PV-2026-4122",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 22 de septiembre de 2026, de la consejera de Movilidad Sostenible, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo de la Viceconsejería de Infraestructuras y Movilidad Sostenible.",
+      "entity": "Movilidad Sostenible",
+      "date": "06/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604122a.pdf"
+    },
+    {
+      "id": "PV-2026-4120",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 16 de septiembre de 2026, del secretario general de Coordinación y Proyectos Estratégicos, por la que se anuncia la convocatoria pública para la provisión por el sistema de libre designación del puesto de trabajo de técnica/o especialista de Acción Exterior (código 511291, dotación 3), en la Dirección de Acción Exterior y Organismos Multilaterales.",
+      "entity": "Lehendakaritza",
+      "date": "06/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604120a.pdf"
+    },
+    {
+      "id": "PV-2026-4119",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 16 de septiembre de 2026, del secretario general de Coordinación y Proyectos Estratégicos, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de técnica/o especialista de Acción Exterior (código 511291, dotación 6), en la Dirección de Asuntos Europeos.",
+      "entity": "Lehendakaritza",
+      "date": "06/10/2026",
+      "bulletin": "191",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604119a.pdf"
+    },
+    {
+      "id": "PV-2026-4106",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 2 de septiembre de 2026, del consejero de Ciencia, Universidades e Innovación, por la que se nombran los miembros vocales de los comités asesores específicos previstos en la Orden de 9 de junio de 2026, por la que se procede a la aprobación de las bases reguladoras y a la convocatoria del programa de ayudas nuevas y renovaciones para el Programa Predoctoral de Formación de Personal Investigador no Doctor, correspondiente al curso 2026-2027 y en la Orden de 9 de junio de 2026, por la que se regulan y convocan las ayudas nuevas y renovaciones para el Programa Posdoctoral, de Perfeccionamiento de Personal Investigador Doctor, para el periodo 2026-2029.",
+      "entity": "Ciencia, Universidades e Innovación",
+      "date": "05/10/2026",
+      "bulletin": "190",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604106a.pdf"
+    },
+    {
+      "id": "PV-2026-4066",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 11 de septiembre de 2026, de la consejera de Gobernanza, Administración Digital y Autogobierno, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de responsable Gestión e Investigación para el Sistema Interno de Información de Infracciones normativas y de protección de las personas informantes en el marco del sector público de la Comunidad Autónoma de Euskadi.",
+      "entity": "Gobernanza, Administración Digital y Autogobierno",
+      "date": "01/10/2026",
+      "bulletin": "188",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604066a.pdf"
+    }
+  ]
+}
