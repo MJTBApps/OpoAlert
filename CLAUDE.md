@@ -5,7 +5,8 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
 - Repositorio **público**: `https://github.com/MJTBApps/OpoAlert` (rama `main`).
 - Web y descargas: `https://mjtbapps.github.io/OpoAlert/` (GitHub Pages desde `docs/`).
 - Se trabaja con **GitHub Desktop** en `C:\Users\PC-02\Desktop\APP\OpoAlert`. No hay `git` en el PATH; el de GitHub Desktop está en `%LOCALAPPDATA%\GitHubDesktop\app-*\resources\app\git\cmd\git.exe`.
-- El proyecto se desarrolla también con ChatGPT. Este archivo es la referencia común: si cambian las reglas, actualízalo.
+- Desde el 30/10/2026 el proyecto se desarrolla **solo con Claude**: ChatGPT dejó unas 25 ramas `feature/*` sin unir y unos 200 workflows de pruebas sueltas. Su trabajo útil ya está en `main`; no hay que retomar esas ramas. Si cambian las reglas, actualiza este archivo.
+- Claude no puede hacer push desde la línea de comandos: hace los commits en local y el usuario pulsa «Push origin» en GitHub Desktop.
 
 ## Cómo funciona
 
@@ -85,11 +86,10 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 ## Estado (30/10/2026)
 
-- `main` publica la **1.14.0** con 19 fuentes. La rama `integracion/espana-20261030` prepara la **1.34.0**: une el trabajo de las ramas `feature/*` de ChatGPT (APK privada 1.33) y pasa **24 fuentes nuevas** a feed diario (Madrid, Huelva, Castilla-La Mancha, Castilla y León, Extremadura, Murcia, Bizkaia, Gipuzkoa, BOPV, Galicia salvo Lugo, DOGV).
+- `main` publica la **1.34.0** (desde el 30/10/2026): las 19 fuentes de siempre más **24 con feed diario** (Madrid, Huelva, Castilla-La Mancha, Castilla y León salvo Salamanca y Segovia, Extremadura, Murcia, Bizkaia, Gipuzkoa, BOPV, Galicia salvo Lugo, DOGV). Cáceres y León fallaron el primer día por lentitud de sus portales.
 - **Ocultas hasta tener lector diario** (`pendingDailyFeed`): sus lectores tienen las fechas del 30/09–29/10 fijas o dependen de recoger datos desde un PC en España: Salamanca, Segovia, Álava, Lugo, La Rioja, Melilla, Canarias (BOC y dos BOP), Baleares, BOJA, DOGC, BOA, Navarra, Asturias y Ceuta, además de Albacete y Cuenca.
 - Sin lector: Jaén (huecos en la hemeroteca), Málaga (verificación anti-robots en los PDF: no eludirla), Burgos, Valladolid, Cantabria y BOP Lleida. Muchos de estos portales **no responden desde GitHub Actions pero sí desde este PC** (IP española).
 - **Cambio de año**: muchos lectores y patrones de `Province.kt` llevan `2026` fijo (rutas de PDF, identificadores). Hay que generalizarlo antes del 1/1/2027.
-- La expansión autónoma programada desde ChatGPT está **desactivada** por decisión del usuario.
 - Por limpiar: unos 200 workflows `probe-*`, `diag-*`, `audit-*`, `apk-privada-*` de investigación; `README.md` desactualizado; `INSTRUCCIONES_GITHUB_060.txt` con la ruta antigua `C:\Users\Informatica\...`.
 
 ## Antes de dar un cambio por terminado
