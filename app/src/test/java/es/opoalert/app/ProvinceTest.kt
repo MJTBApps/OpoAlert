@@ -78,6 +78,8 @@ class ProvinceTest {
         assertEquals(Province.NAVARRA_BON, Province.fromNoticeId("NA-2026-216-15"))
         assertEquals(Province.ASTURIAS_BOPA, Province.fromNoticeId("AS-2026-08847"))
         assertEquals(Province.CEUTA_BOCCE, Province.fromNoticeId("CE-2026-681"))
+        assertTrue(Province.CEUTA_BOCCE.idPattern.matches("CE-2027-E012"))
+        assertTrue(Province.CEUTA_BOCCE.idPattern.matches("CE-2026-1034"))
         assertTrue(Province.CEUTA_BOCCE.allowsOfficialPath("/ceuta/component/jdownloads/finish/1982-octubre/23281-bocce-6658-06-10-2026"))
         assertFalse(Province.CEUTA_BOCCE.allowsOfficialPath("/ceuta/admin"))
         assertTrue(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/2026/10/29/2026-08847.pdf"))

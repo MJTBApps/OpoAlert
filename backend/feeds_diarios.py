@@ -63,11 +63,13 @@ SOURCES={
     "DC":("dogc_autonomico.py",[],"cataluna_dogc.json"),
     "AO":("boa_autonomico.py",[],"aragon_boa.json"),
     "NA":("navarra_bon.py",[],"navarra_bon.json"),
+    "AS":("asturias_bopa.py",[],"asturias_bopa.json"),
+    "CE":("ceuta_bocce.py",[],"ceuta_bocce.json"),
 }
 # Portales que no responden a los servidores de GitHub pero sí desde una
 # conexión española: se leen con el ejecutor propio de casa
 # (revisar-espana-casa.yml, ver EJECUTOR_CASA.md).
-HOME_ONLY={"NA"}
+HOME_ONLY={"NA","AS","CE"}
 # Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
 HOME_BACKUP={"RI","CC"}
 TYPES=("Bolsa de trabajo","Plaza / oposición")

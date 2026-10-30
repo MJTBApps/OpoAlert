@@ -419,12 +419,13 @@ enum class Province(
         "www.asturias.es", "/bopa/2",
         Regex("AS-\\d{4}-\\d{5}"),
     ),
+    // Id CE-AAAA-[E]NNN: E = edicto de un boletín extraordinario (numeración propia).
     CEUTA_BOCCE(
         "CE", "Ceuta (BOCCE)",
         "https://mjtbapps.github.io/OpoAlert/ceuta_bocce.json",
         "https://www.ceuta.es/ceuta/bocce",
         "www.ceuta.es", "/ceuta/component/jdownloads/finish/",
-        Regex("CE-\\d{4}-\\d{3}"),
+        Regex("CE-\\d{4}-E?\\d{3,4}"),
     ),
     CADIZ(
         "CA", "Cádiz",
