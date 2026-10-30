@@ -34,6 +34,14 @@ SUPPLEMENT_DATE="2026-10-23"
 SUPPLEMENT_NO="206S1"
 SUPPLEMENT_CODE="2026-08829"
 SUPPLEMENT_SHA="8956a3b3fd6d11f2ce5031afb295910abbb32d9aba0c326ab3bc93ce7a4f950e"
+# Two ORIGINAL PDF header typos demonstrated by the publisher's 53-PDF survey.
+# Never generalize to other editions or other original documents.
+KNOWN_EDITORIAL_HEADER_ANOMALIES={
+    ("2026-08061","2026-10-13",198,197):
+      "1f85f35ef7d84ac0a011548effb98ec157492fa29462e3b204e4768bb298c8ea",
+    ("2026-08160","2026-10-15",200,199):
+      "1968d147cb6d32ad4d64758ac6d9b88f8ed73e04c859e79d6efc3db67821a4c0",
+}
 ROMAN_MONTH={9:"ix",10:"x"}
 
 def fail(reason):
@@ -154,11 +162,11 @@ def verify_original(task):
         fail(f"fecha y CVE del PDF original no corresponden al sumario oficial: {code}; dia={day}, roman={roman}, cabecera={bool(header)}, codigo={code_ok}, texto={top[:200]!r}")
     actual_number=int(header[1])
     number_matches=actual_number==int(n)
-    # The publisher's own 13/10 issue #198 contains mixed *PDF header*
-    # numbers 197 and 198 (confirmed originals 08032/08237 vs 08042/08061).
-    # Require the EXACT date/CVE and a strictly bounded, documented exception;
-    # never silently rewrite the source's authoritative issue #198.
-    documented_anomaly=(day=="2026-10-13" and int(n)==198 and actual_number==197)
+    # Exactly two publisher-origin typographical anomalies have been independently
+    # verified; require exact document ID, date, expected/actual issue AND SHA256.
+    original_sha=hashlib.sha256(data).hexdigest()
+    anomaly_key=(code,day,int(n),actual_number)
+    documented_anomaly=(KNOWN_EDITORIAL_HEADER_ANOMALIES.get(anomaly_key)==original_sha)
     if not number_matches and not documented_anomaly:
         fail(f"numero de cabecera no coincide con sumario BOPA: {code}, esperado {n}, PDF {actual_number}")
     ratio=None
