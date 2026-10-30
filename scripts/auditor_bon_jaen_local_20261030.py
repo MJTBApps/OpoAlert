@@ -11,7 +11,7 @@ import argparse
 from datetime import date,datetime,timedelta,timezone
 import hashlib,json,re,sys,time,unicodedata
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit,parse_qs
 from urllib.request import Request,urlopen
 from zipfile import ZipFile,ZIP_DEFLATED
 from recolector_bop_local import get_page,safe_url
@@ -222,35 +222,82 @@ def run_asturias(rows,end):
  return {"publisher":"miprincipado.asturias.es","issues":found,
       "unexpectedDefaultPages":false_pages,"consecutiveRealIssues":complete,
       "incomplete":True}
+def parse_jaen_digital(row,expected_date,url):
+ """Require official issue headline AND date-bound full PDF and summary URL."""
+ if row.get("status")!="public_page_captured" or row.get("http")!=200:
+  raise ValueError("La edición no está publicada o no se capturó")
+ if row.get("finalOfficialUrl")!=url:
+  raise ValueError("La página redirige a un día distinto")
+ content=row.get("page",{})
+ txt=content.get("publicText","")
+ # Publisher can render 'Nº', 'N�', or 'N°' depending on HTML encoding.
+ pat=(r"Bolet[ií]n\s+N[\sº°o\ufffd]*:?\s*(?P<num>\d{2,4})\s+"
+      r"(?:Lunes|Martes|Mi[eé]rcoles|Jueves|Viernes|S[aá]bado|Domingo)\s*,\s*"
+      r"(?P<day>\d{1,2})\s+de\s+(?P<month>septiembre|octubre)\s+de\s+2026")
+ match=re.search(pat,txt,re.I)
+ if not match:raise ValueError("No aparece la cabecera con número y fecha del BOP")
+ if parse_es_date(match["day"]+" de "+match["month"]+" de 2026")!=expected_date:
+  raise ValueError("La fecha de la edición no coincide con la solicitada")
+ number=int(match["num"])
+ original_pdf=None
+ sumario_pdf=None
+ edicts=[]
+ for a in content.get("links",[]):
+  u=a.get("url","")
+  p=urlsplit(u)
+  if p.scheme!="https" or p.hostname!="bop.dipujaen.es" or p.path!="/descargarws.dip":continue
+  q=parse_qs(p.query)
+  if (q.get("fechaBoletin")!=[expected_date.isoformat()] or
+      q.get("ejercicioBop")!=["2026"] or
+      q.get("boletinSuplemento")!=["0"]):continue
+  kind=q.get("tipo",[""])[0]
+  if kind in ("bopCompleto","bopSumario"):
+   if q.get("numeroBoletin")!=[str(number)]:
+    raise ValueError("PDF del sumario/edición con número distinto")
+   if kind=="bopCompleto":original_pdf=u
+   else:sumario_pdf=u
+  elif kind=="bop":
+   edi=q.get("numeroEdicto",[""])[0]
+   if not re.fullmatch(r"\d{1,7}",edi) or q.get("anioExpedienteEdicto")!=["2026"]:
+    raise ValueError("Anuncio con identificador original no verificable")
+   edicts.append({"id":f"JA-2026-{edi}","url":u,
+        "listedText":a.get("text","")[:160]})
+ if not original_pdf or not sumario_pdf:
+  raise ValueError("Edición sin enlaces originales completos y sumario")
+ if len(edicts)<1 or len({e["id"] for e in edicts})!=len(edicts):
+  raise ValueError("La lista de edictos está vacía o repetida")
+ return {"date":expected_date.isoformat(),"number":number,"sourcePage":url,
+       "officialCompletePdf":original_pdf,"officialSummaryPdf":sumario_pdf,
+       "edictCount":len(edicts),"edicts":edicts,
+       "indexText":txt,"issueAndOriginalLinksVerified":True,
+       "originalPdfContentsVerified":False}
+
 def run_jaen(rows,end,check_days):
- output={"publisher":"bop.dipujaen.es","issues":[],"noIssueOrMismatch":[],"incomplete":True}
+ output={"publisher":"bop.dipujaen.es","issues":[],"noIssueOrMismatch":[],
+         "incomplete":True,"publisherOriginalsLinkedOnly":True}
  cached={x.get("officialUrl"):x for x in rows if x.get("code")=="JA"}
  start=end-timedelta(days=29)
  for d in (start+timedelta(days=i) for i in range(30)):
   url=JAEN_BASE+d.strftime("%d-%m-%Y")
   row=cached.get(url)
   if row is None and check_days:
+   print("JAEN_COMPROBANDO",d.isoformat(),flush=True)
    row=get_page(url,"JA",f"JAEN-{d.isoformat()}")
   if row is None:continue
-  text=row.get("page",{}).get("publicText","")
-  m=re.search(r"Bolet[ií]n\s+N[ºO][:\s]*([0-9]{2,4})\s+"
-       r"(?:Lunes|Martes|Mi[eé]rcoles|Jueves|Viernes|S[aá]bado|Domingo)\s*,\s*"
-       r"(\d{1,2})\s+de\s+(septiembre|octubre)\s+de\s+2026",text,re.I)
-  if row.get("status")!="public_page_captured" or not m:
-   output["noIssueOrMismatch"].append({"date":d.isoformat(),"status":row.get("status"),
-         "reason":"no valid issue heading"})
-  elif parse_es_date(m[2]+" de "+m[3]+" de 2026")!=d:
-   output["noIssueOrMismatch"].append({"date":d.isoformat(),"reason":"stale/other issue header"})
-  else:
-   output["issues"].append({"date":d.isoformat(),"number":int(m[1]),"sourcePage":url,
-              "officialPdfLinks":[a["url"] for a in row.get("page",{}).get("links",[])
-                  if "bop.dipujaen.es" in a.get("url","") and ".pdf" in a.get("url","").lower()][:250],
-              "indexTextHead":text[:150]})
+  try:
+   data=parse_jaen_digital(row,d,url)
+   output["issues"].append(data)
+   print("JAEN_EDICION",data["number"],data["date"],
+         data["edictCount"],"originales enlazados",flush=True)
+  except Exception as ex:
+   output["noIssueOrMismatch"].append({"date":d.isoformat(),
+      "status":row.get("status"),"reason":str(ex)[:170]})
   if check_days:time.sleep(0.3)
  output["issueNumbersRecovered"]=[x["number"] for x in output["issues"]]
  output["focusNumbersRecovered"]=sorted(set(output["issueNumbersRecovered"]) & {198,199,201})
- print("JAEN_RESULT",len(output["issues"]),"fechas originales",
-       "rescatados",output["focusNumbersRecovered"],flush=True)
+ print("JAEN_RESULT",len(output["issues"]),"ediciones con índice y PDF oficial",
+       "números 198,199,201 recuperados",output["focusNumbersRecovered"],
+       "editorial full PDFs descargados",0,flush=True)
  return output
 def save(out,data):
  out.parent.mkdir(parents=True,exist_ok=True)
@@ -267,6 +314,7 @@ def main():
  p.add_argument("--max-bon-originales",type=int,default=180)
  p.add_argument("--max-fallos-consecutivos",type=int,default=3)
  p.add_argument("--solo-navarra",action="store_true")
+ p.add_argument("--solo-jaen",action="store_true")
  p.add_argument("--no-jaen-daily",action="store_true")
  args=p.parse_args()
  if args.self_test:
@@ -276,6 +324,19 @@ def main():
   assert classify("Oposición de 4 plazas. Lista definitiva de admitidos") is None
   assert classify("Convocatoria de subvenciones para ayudas a empresas") is None
   assert parse_es_date("30 de octubre de 2026")==date(2026,10,30)
+  from types import SimpleNamespace
+  example_date=date(2026,10,8)
+  first="https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-08&ejercicioBop=2026&numeroBoletin=198&boletinSuplemento=0"
+  test_page={"status":"public_page_captured","http":200,
+    "finalOfficialUrl":"https://bop.dipujaen.es/bop/08-10-2026",
+    "page":{"publicText":"Boletín N�: 198 Jueves, 8 de octubre de 2026",
+    "links":[{"url":first+"&tipo=bopCompleto","text":"Boletín Completo"},
+             {"url":first+"&tipo=bopSumario","text":"Sumario"},
+             {"url":"https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-08&ejercicioBop=2026&boletinSuplemento=0&tipo=bop&anioExpedienteEdicto=2026&numeroEdicto=4845","text":"Edicto"}]}}
+  assert parse_jaen_digital(test_page,example_date,"https://bop.dipujaen.es/bop/08-10-2026")["number"]==198
+  try:parse_jaen_digital(test_page,date(2026,10,9),"https://bop.dipujaen.es/bop/08-10-2026")
+  except ValueError:pass
+  else:raise AssertionError("No se detectó la fecha de Jaén incorrecta")
   assert safe_url("https://bon.navarra.es/es/anuncio/-/texto/2026/218/0")
   from tempfile import TemporaryDirectory
   with TemporaryDirectory() as d:
@@ -306,6 +367,7 @@ def main():
         ("JA",lambda:run_jaen(rows,end,not args.no_jaen_daily)))
  for code,task in tasks:
   if args.solo_navarra and code!="NA":continue
+  if args.solo_jaen and code!="JA":continue
   try:out["sources"][code]=task()
   except Exception as e:
    out["failures"][code]=type(e).__name__+": "+str(e)[:350]
