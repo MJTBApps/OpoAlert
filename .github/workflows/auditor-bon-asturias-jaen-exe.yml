@@ -1,4 +1,4 @@
-name: OpoAlert - Auditor BON Asturias Jaen v2.1 Windows
+name: OpoAlert - Auditor original Jaen v2.2 Windows
 on:
   workflow_dispatch:
   push:
@@ -21,12 +21,12 @@ jobs:
           python scripts/auditor_bon_jaen_local_20261030.py --self-test
           python -m pip install pyinstaller
       - name: Compilar auditor portátil
-        run: python -m PyInstaller --onefile --clean --paths scripts --name OpoAlert-Auditor-Oficial-v2_1 scripts/auditor_bon_jaen_local_20261030.py
+        run: python -m PyInstaller --onefile --clean --paths scripts --name OpoAlert-Auditor-Oficial-v2_2 scripts/auditor_bon_jaen_local_20261030.py
       - name: Comprobar EXE
-        run: .\dist\OpoAlert-Auditor-Oficial-v2_1.exe --self-test
+        run: .\dist\OpoAlert-Auditor-Oficial-v2_2.exe --self-test
       - uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-Auditor-Oficial-v2_1-Windows
-          path: dist/OpoAlert-Auditor-Oficial-v2_1.exe
+          name: OpoAlert-Auditor-Oficial-v2_2-Windows
+          path: dist/OpoAlert-Auditor-Oficial-v2_2.exe
           retention-days: 30
           if-no-files-found: error
