@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cáceres BOP: official REST calendar, complete entries and signed original PDFs."""
 from __future__ import annotations
-import argparse,json,re,requests,threading
+import argparse,json,re,requests,threading,time
 from pathlib import Path
 from datetime import date,datetime,timedelta,timezone
 from concurrent.futures import ThreadPoolExecutor
@@ -26,7 +26,14 @@ def load(service,params,pdf=False):
     u=urlsplit(url)
     if u.scheme!="https" or u.hostname!=HOST:invalid("Cáceres: no se usará un tercero")
     try:
-        response=session().get(url,timeout=(12,30),stream=pdf,allow_redirects=False)
+        # La sede corta conexiones si recibe muchas seguidas: tres intentos con espera.
+        for attempt in range(3):
+            try:
+                response=session().get(url,timeout=(12,30),stream=pdf,allow_redirects=False)
+                break
+            except requests.ConnectionError:
+                if attempt==2:raise
+                time.sleep(4*(attempt+1))
         if response.status_code not in ((200,206) if pdf else (200,)):
             invalid(f"Cáceres: HTTP {response.status_code} en {service}")
         if pdf:
@@ -111,7 +118,7 @@ def scan(item):
 def audit(today=None):
     end=today or date.today();start=end-timedelta(days=29)
     entries=archive(start,end)
-    with ThreadPoolExecutor(max_workers=5) as pool:issue_data=list(pool.map(scan,entries))
+    with ThreadPoolExecutor(max_workers=2) as pool:issue_data=list(pool.map(scan,entries))
     nums=[int(x["number"]) for x in issue_data]
     if any(b!=a+1 for a,b in zip(nums,nums[1:])):
         invalid("Cáceres: no están todos los números de boletín")

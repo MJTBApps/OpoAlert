@@ -33,7 +33,7 @@ jobs:
   auditar:
     needs: fuentes
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 40
     strategy:
       fail-fast: false
       max-parallel: 6
@@ -49,10 +49,12 @@ jobs:
       - run: pip install requests beautifulsoup4 certifi cryptography pymupdf pypdf defusedxml tzdata
       - name: Auditar 30 días y validar con las reglas de la app
         # Los portales fallan a veces de forma puntual: un reintento a los 2 minutos.
+        # Cada intento tiene un máximo de 15 minutos para que un portal lento no
+        # retrase la publicación del resto.
         run: |
-          python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out || {
+          timeout 15m python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out || {
             echo 'Reintento dentro de 2 minutos'; sleep 120
-            python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out
+            timeout 15m python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out
           }
       - uses: actions/upload-artifact@v4
         with:
