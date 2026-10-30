@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bopcadiz.es/",
   "province": "Cádiz",
-  "lastCheckedUTC": "2026-10-29T17:30:39.386139+00:00",
+  "lastCheckedUTC": "2026-10-30T12:06:44.386499+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "announcementsRead": 365,
-    "opportunities": 39,
+    "bulletin": "210",
+    "announcementsRead": 378,
+    "opportunities": 38,
     "pagesVisited": 21
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "issuesRead": 21,
-    "announcementsRead": 365,
-    "opportunities": 39,
+    "announcementsRead": 378,
+    "opportunities": 38,
     "pagesVisited": 21,
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -40,10 +39,10 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-05",
@@ -63,7 +62,8 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -87,6 +87,26 @@
     ]
   },
   "notices": [
+    {
+      "id": "CA-2026-358936",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de Benalup-Casas Viejas. Bases y convocatoria para cubrir 2 plazas de Agentes de Cuerpo de la Policía Local del municipio",
+      "entity": "Ayuntamiento de Benalup-Casas Viejas",
+      "date": "30/10/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP210_30-10-26.pdf#page=29"
+    },
+    {
+      "id": "CA-2026-358235",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de Benalup-Casas Viejas. Bases para la cobertura de 1 plaza de Administrativo/a de Tesorería y Contabilidad vacante en el ayuntamiento",
+      "entity": "Ayuntamiento de Benalup-Casas Viejas",
+      "date": "30/10/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP210_30-10-26.pdf#page=25"
+    },
     {
       "id": "CA-2026-354710",
       "province": "Cádiz",
@@ -446,36 +466,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP190_01-10-26.pdf#page=3"
-    },
-    {
-      "id": "CA-2026-324111",
-      "province": "Cádiz",
-      "title": "Área de Vicepresidencia 2ª, Transición Ecológica y Desarrollo Urbano Sostenible. Empresa Provincial de Vivienda y Suelo de Cádiz, S.A. Bases de la convocatoria para la selección del puesto de Licenciado/a en Derecho o equivalente, mediante contrato de interinidad por sustitución",
-      "entity": "Área de Vicepresidencia 2ª, Transición Ecológica y Desarrollo Urbano Sostenible",
-      "date": "30/09/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/09_septiembre/BOP189_30-09-26.pdf#page=2"
-    },
-    {
-      "id": "CA-2026-310102",
-      "province": "Cádiz",
-      "title": "Área de Función Pública y Recursos Humanos. Declarar desierta la convocatoria para la provisión del puesto de Jefe/a de Servicio de Función Interventora, Servicio de Intervención General, Economía y Hacienda",
-      "entity": "Área de Función Pública y Recursos Humanos",
-      "date": "30/09/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/09_septiembre/BOP189_30-09-26.pdf#page=1"
-    },
-    {
-      "id": "CA-2026-310081",
-      "province": "Cádiz",
-      "title": "Ayuntamiento de Olvera. Bases de selección para la provisión, mediante promoción interna y concurso-oposición, de 1 plaza de Administrativo/a, en régimen de personal funcionario del ayuntamiento",
-      "entity": "Ayuntamiento de Olvera",
-      "date": "30/09/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/09_septiembre/BOP189_30-09-26.pdf#page=2"
     }
   ]
 }
