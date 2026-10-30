@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-10-29T15:31:39.445732+00:00",
+  "lastCheckedUTC": "2026-10-30T15:28:30.155750+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "208",
+    "bulletin": "209",
     "pagesVisited": 21,
-    "announcementsRead": 879,
-    "opportunities": 92,
+    "announcementsRead": 890,
+    "opportunities": 89,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 879,
-    "opportunities": 92,
+    "announcementsRead": 890,
+    "opportunities": 89,
     "bulletins": [
-      "188",
       "189",
       "190",
       "191",
@@ -40,10 +39,10 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "publicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-05",
@@ -63,7 +62,8 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -78,6 +78,26 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-209-09383",
+      "title": "Aprovació inicial del pressupost general, les bases d'execució i la plantilla de personal per a l'exercici 2027",
+      "entity": "AJUNTAMENT DE PORTBOU",
+      "date": "30/10/2026",
+      "bulletin": "209",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909383.pdf"
+    },
+    {
+      "id": "GI-2026-209-09144",
+      "title": "Convocatòria del procés selectiu amb caràcter d'urgència per a la constitució d'una borsa de treball per cobrir necessitats temporals de la brigada d'obres i serveis (subgrup AP), mitjançant concurs oposició i pel torn lliure",
+      "entity": "AJUNTAMENT DE PORTBOU",
+      "date": "30/10/2026",
+      "bulletin": "209",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909144.pdf"
+    },
     {
       "id": "GI-2026-208-09325",
       "title": "Convocatòria del procés selectiu per a la cobertura del lloc de treball de secretari/a interventor/a, de forma provisional i en comissió de serveis",
@@ -947,56 +967,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/189/202618908324.pdf"
-    },
-    {
-      "id": "GI-2026-188-08417",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la creació d'una borsa de treball de tècnic/a mig de via pública",
-      "entity": "AJUNTAMENT DE LA BISBAL D'EMPORDÀ",
-      "date": "30/09/2026",
-      "bulletin": "188",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/188/202618808417.pdf"
-    },
-    {
-      "id": "GI-2026-188-08414",
-      "title": "Estimació del recurs de reposició contra les bases reguladores del procés de selecció per a la creació d'una borsa de treball d'educadors/es socials i esmena de les bases",
-      "entity": "AJUNTAMENT DE LA BISBAL D'EMPORDÀ",
-      "date": "30/09/2026",
-      "bulletin": "188",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/188/202618808414.pdf"
-    },
-    {
-      "id": "GI-2026-188-08309",
-      "title": "Esmena de les bases del procés de selecció d'un/a tècnic/a d'administració general Jurídic i constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE LA BISBAL D'EMPORDÀ",
-      "date": "30/09/2026",
-      "bulletin": "188",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/188/202618808309.pdf"
-    },
-    {
-      "id": "GI-2026-188-08307",
-      "title": "Aprovació de les bases específiques i la convocatòria del procés de selecció, mitjançant el sistema de concurs oposició lliure, per a la constitució d'una borsa de treball de tècnic/a mig dinamitzador/a, en règim de personal laboral, grup A2, nivell 24, per a la cobertura provisional de vacants, substitucions o altres situacions temporals (X2026001578)",
-      "entity": "AJUNTAMENT DE VILOBÍ D'ONYAR",
-      "date": "30/09/2026",
-      "bulletin": "188",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/188/202618808307.pdf"
-    },
-    {
-      "id": "GI-2026-188-08306",
-      "title": "Aprovació de les bases específiques i la convocatòria del procés de selecció, per oposició lliure, per a l'ampliació de la borsa de treball de guàrdia municipal (C2), per a la cobertura provisional de vacants, substitucions o altres situacions temporals (X2026001786)",
-      "entity": "AJUNTAMENT DE VILOBÍ D'ONYAR",
-      "date": "30/09/2026",
-      "bulletin": "188",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/188/202618808306.pdf"
     }
   ]
 }

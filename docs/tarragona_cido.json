@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-10-30T11:00:13.744710+00:00",
+  "lastCheckedUTC": "2026-10-30T13:37:00.321466+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 82,
-    "opportunities": 82,
+    "announcementsRead": 83,
+    "opportunities": 83,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 82,
-    "opportunities": 82
+    "announcementsRead": 83,
+    "opportunities": 83
   },
   "notices": [
     {
@@ -245,6 +245,16 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16615670"
+    },
+    {
+      "id": "CIDO8-119114",
+      "title": "Borsa de treball de places de Professor de música per a l'Escola de Música Municipal",
+      "entity": "Ajuntament de Salou",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/119114"
     },
     {
       "id": "CIDO8-22396855",
