@@ -26,6 +26,7 @@ object Repository {
     private const val LAST_SOURCE = "last_source_v04"
     private const val LAST_HISTORY = "last_history_v04"
     private const val ALERTS = "alerts"
+    private const val SEEN = "seen_notice_ids_v1"
 
     fun alertsEnabled(ctx: Context): Boolean =
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getBoolean(ALERTS, false)
@@ -65,7 +66,11 @@ object Repository {
         val rulesAtSyncStart = AlertRuleStore.list(ctx)
         val prefs = ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val old = cached(ctx)
-        val oldIds = old.map { it.id }.toHashSet()
+        // Los anuncios ya vistos no salen de la caché de 2000 (que solo sirve
+        // para la lista): con muchas fuentes, los feeds suman más anuncios y
+        // los que salían de la caché volvían a contar como nuevos cada hora.
+        val storedSeen = prefs.getString(SEEN, null)?.let { SeenIds.parse(it) }
+        val seen = (storedSeen.orEmpty() + old.map { it.id }).toHashSet()
         val downloaded = mutableListOf<Pair<Province, RemoteFeed>>()
         val failures = mutableListOf<String>()
         // The Android app reads validated JSON; it never scrapes BOP HTML.
@@ -83,7 +88,9 @@ object Repository {
         val newOnes = downloaded.flatMap { (province, feed) ->
             val initialized = prefs.getBoolean(INITIALIZED_PREFIX + province.code,
                 province == Province.VALENCIA && prefs.getBoolean(REMOTE_INITIALIZED, false))
-            if (initialized) feed.notices.filter { it.id !in oldIds } else emptyList()
+            // Primera revisión con este registro: solo se rellena, sin avisos.
+            if (initialized && storedSeen != null) feed.notices.filter { it.id !in seen }
+            else emptyList()
         }
         val merged = (fresh + old).distinctBy { it.id }
             .sortedWith(compareByDescending<Notice> { dateKey(it.date) }.thenByDescending { it.id })
@@ -103,6 +110,7 @@ object Repository {
             .putString(LAST_SOURCE, status)
             .putString(LAST_HISTORY, historyMessage)
             .putBoolean(REMOTE_INITIALIZED, true)
+            .putString(SEEN, SeenIds.encode(SeenIds.merge(fresh.map { it.id }, storedSeen.orEmpty())))
         for ((province, _) in downloaded) {
             editor.putBoolean(INITIALIZED_PREFIX + province.code, true)
         }
@@ -115,4 +123,20 @@ object Repository {
         val parts = date.split('/')
         return if (parts.size == 3) "${parts[2]}${parts[1]}${parts[0]}" else date
     }
+}
+
+/** Identificadores de anuncios ya vistos, los más recientes primero. */
+object SeenIds {
+    /** Cubre de sobra los feeds de 30 días de todas las fuentes (unos 5000 anuncios). */
+    const val MAX = 15000
+
+    fun merge(fresh: List<String>, previous: List<String>): List<String> =
+        (fresh + previous).distinct().take(MAX)
+
+    fun encode(ids: List<String>): String = JSONArray(ids).toString()
+
+    fun parse(raw: String): List<String> = try {
+        val array = JSONArray(raw)
+        (0 until array.length()).map { array.optString(it) }.filter { it.isNotEmpty() }
+    } catch (_: Exception) { emptyList() }
 }

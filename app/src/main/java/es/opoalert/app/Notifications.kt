@@ -10,6 +10,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import androidx.core.app.TaskStackBuilder
 import androidx.core.content.ContextCompat
 
 object Notifications {
@@ -41,7 +42,13 @@ object Notifications {
         val intent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
         }
-        val pending = PendingIntent.getActivity(
+        // Con un solo anuncio, el aviso abre su ficha; «atrás» vuelve a la lista.
+        val pending = if (matching.size == 1) {
+            val detail = Intent(context, NoticeDetailActivity::class.java)
+                .putExtra(NoticeDetailActivity.EXTRA_NOTICE, matching.first().toJson().toString())
+            TaskStackBuilder.create(context).addNextIntent(intent).addNextIntent(detail)
+                .getPendingIntent(1, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
+        } else PendingIntent.getActivity(
             context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
         val title = if (matching.size == 1) "Nueva convocatoria para tus alertas"
