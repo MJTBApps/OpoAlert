@@ -148,9 +148,18 @@ def verify_original(task):
     top=fold(first[:900])
     roman=ROMAN_MONTH[date.fromisoformat(day).month]
     d=date.fromisoformat(day)
-    pat=fr"num[.]\s*{n}\s+de\s+{d.day}-{roman}-{d.year}\b"
-    if (not re.search(pat,top) or not re.search(r"\bcod[.]\s*"+re.escape(code)+r"\b",top)):
-        fail(f"identidad/número/fecha del original no coincide: {code}")
+    header=re.search(fr"num[.]\s*(\d{2,4})\s+de\s+{d.day}-{roman}-{d.year}\b",top)
+    if header is None or not re.search(r"\bcod[.]\s*"+re.escape(code)+r"\b",top):
+        fail(f"fecha y CVE del PDF original no corresponden al sumario oficial: {code} ({top[:170]})")
+    actual_number=int(header[1])
+    number_matches=actual_number==int(n)
+    # The publisher's own 13/10 issue #198 contains mixed *PDF header*
+    # numbers 197 and 198 (confirmed originals 08032/08237 vs 08042/08061).
+    # Require the EXACT date/CVE and a strictly bounded, documented exception;
+    # never silently rewrite the source's authoritative issue #198.
+    documented_anomaly=(day=="2026-10-13" and int(n)==198 and actual_number==197)
+    if not number_matches and not documented_anomaly:
+        fail(f"numero de cabecera no coincide con sumario BOPA: {code}, esperado {n}, PDF {actual_number}")
     ratio=None
     if title:
         words=[w for w in re.findall(r"[a-z0-9]{4,}",fold(title)) if w not in
@@ -163,7 +172,9 @@ def verify_original(task):
     return {"id":code,"day":day,"bulletin":str(n),
         "url":url,"sha256":hashlib.sha256(data).hexdigest(),
         "bytes":len(data),"pages":pages,
-        "publisherNumberAndDateVerified":True,"originalTitleMatched":bool(title),
+        "publisherDateAndCVEVerified":True,"publisherIssueNumberMatched":number_matches,
+        "pdfHeaderIssueNumber":actual_number,"documentedEditorialNumberAnomaly":documented_anomaly,
+        "originalTitleMatched":bool(title),
         "titleTokenMatch":round(ratio,3) if ratio is not None else None}
 
 def audit():
@@ -184,7 +195,7 @@ def audit():
     bycode={x["id"]:x for x in validated}
     for issue in manifest["issues"]:
         code="2026-"+issue["ids"].split(",")[0]
-        if code not in bycode or not bycode[code]["publisherNumberAndDateVerified"]:
+        if code not in bycode or not bycode[code]["publisherDateAndCVEVerified"]:
             fail("sin original del día "+issue["d"])
         print("ASTURIAS_EDICION",issue["n"],issue["d"],len(issue["ids"].split(",")),code,flush=True)
     for cand in candidates:
@@ -223,6 +234,9 @@ def audit():
       "pages":pages,"title":"Decreto 79/2026, cese de Director General de Agenda 2030",
       "classifiedAsEmployment":False}
     h["verifiedOriginalSamples"]=sorted(validated,key=lambda x:(x["day"],x["id"]))
+    h["pdfHeaderEditorialDiscrepancies"]=[{"day":x["day"],"code":x["id"],
+        "sumarioNumber":x["bulletin"],"originalPdfHeaderNumber":x["pdfHeaderIssueNumber"],
+        "sha256":x["sha256"]} for x in validated if x["documentedEditorialNumberAnomaly"]]
     h["verifiedIssueRepresentatives"]=22
     h["verifiedCandidateOriginals"]=32
     h["indexedOriginalUrlsVerifiedFromPublisherIndex"]=917
