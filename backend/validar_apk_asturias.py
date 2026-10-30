@@ -18,6 +18,12 @@ END=date(2026,10,29)
 START=END-timedelta(days=29)
 MANIFEST_SHA="91fbec5def3cd9316bb3b206da3e51b6f8a26de6bad358e2fd17d6daa6062f22"
 SUPPLEMENT_SHA="8956a3b3fd6d11f2ce5031afb295910abbb32d9aba0c326ab3bc93ce7a4f950e"
+KNOWN_HEADER_ANOMALIES={
+    ("2026-08061","2026-10-13","198",197):
+      "1f85f35ef7d84ac0a011548effb98ec157492fa29462e3b204e4768bb298c8ea",
+    ("2026-08160","2026-10-15","200",199):
+      "1968d147cb6d32ad4d64758ac6d9b88f8ed73e04c859e79d6efc3db67821a4c0",
+}
 LINK_RE=re.compile(r"https://www[.]asturias[.]es/bopa/2026/(\d{2})/(\d{2})/(2026-\d{5})[.]pdf")
 def invalid(s):raise ValueError("BOPA auditoría independiente: "+str(s))
 
@@ -96,8 +102,8 @@ def validate(root:Path):
         if p.get("url")!=f"https://www.asturias.es/bopa/{p['day'].replace('-','/')}/{code}.pdf":
             invalid("PDF ajeno a origen o fecha")
         number_ok=p.get("pdfHeaderIssueNumber")==int(p["bulletin"])
-        anomaly=(p["day"]=="2026-10-13" and p["bulletin"]=="198"
-                 and p.get("pdfHeaderIssueNumber")==197)
+        anomaly=(KNOWN_HEADER_ANOMALIES.get((
+                code,p.get("day"),p.get("bulletin"),p.get("pdfHeaderIssueNumber")))==p.get("sha256"))
         if (not number_ok and not anomaly or p.get("publisherIssueNumberMatched") is not number_ok
             or p.get("documentedEditorialNumberAnomaly") is not (not number_ok and anomaly)):
             invalid("discrepancia de numero BOPA no autorizada por fuente original")
