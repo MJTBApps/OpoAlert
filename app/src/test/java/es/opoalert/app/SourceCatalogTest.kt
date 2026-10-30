@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona", "Diario autonómico"),
@@ -53,6 +53,8 @@ class SourceCatalogTest {
         assertEquals(1, groups[13].sourceCount)
         assertEquals(listOf("Diario autonómico"), groups[14].territories.map { it.name })
         assertEquals(1, groups[14].sourceCount)
+        assertEquals(listOf("Navarra"), groups[15].territories.map { it.name })
+        assertEquals(listOf(Province.NAVARRA_BON), groups[15].territories.first().sources)
     }
 
     @Test fun labelsKeepBopAndCidoApart() {
@@ -77,6 +79,7 @@ class SourceCatalogTest {
         assertEquals("BOC · diario autonómico", SourceCatalog.sourceName(Province.CANARIAS_BOC))
         assertEquals("BOME · boletín de la ciudad autónoma", SourceCatalog.sourceName(Province.MELILLA_BOME))
         assertEquals("BOR · diario autonómico", SourceCatalog.sourceName(Province.RIOJA_BOR))
+        assertEquals("BON · boletín de Navarra", SourceCatalog.sourceName(Province.NAVARRA_BON))
         assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.GALICIA_OURENSE))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
