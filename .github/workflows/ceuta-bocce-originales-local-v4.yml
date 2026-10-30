@@ -1,0 +1,40 @@
+name: OpoAlert - Ceuta BOCCE originales v4 Windows
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - scripts/ceuta_bocce_originales_local_v4.py
+      - .github/workflows/ceuta-bocce-originales-local-v4.yml
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  linux-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip -q install pypdf
+      - run: python -m py_compile scripts/ceuta_bocce_originales_local_v4.py
+      - run: python scripts/ceuta_bocce_originales_local_v4.py --self-test
+  windows-portable:
+    runs-on: windows-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install pypdf pyinstaller
+      - run: python scripts/ceuta_bocce_originales_local_v4.py --self-test
+      - name: Compilar comprobador BOCCE portátil sin Python local
+        run: python -m PyInstaller --onefile --clean --name OpoAlert-Ceuta-BOCCE-v4 scripts/ceuta_bocce_originales_local_v4.py
+      - name: Ejecutable autocontenido prueba de seguridad
+        run: .\dist\OpoAlert-Ceuta-BOCCE-v4.exe --self-test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-Ceuta-BOCCE-v4-Windows
+          path: dist/OpoAlert-Ceuta-BOCCE-v4.exe
+          retention-days: 30
+          if-no-files-found: error
