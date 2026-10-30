@@ -418,6 +418,13 @@ enum class Province(
         "www.asturias.es", "/bopa/2026/",
         Regex("AS-2026-\\d{5}"),
     ),
+    CEUTA_BOCCE(
+        "CE", "Ceuta (BOCCE)",
+        "https://mjtbapps.github.io/OpoAlert/ceuta_bocce.json",
+        "https://www.ceuta.es/ceuta/bocce",
+        "www.ceuta.es", "/ceuta/component/jdownloads/finish/",
+        Regex("CE-2026-\\d{3}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -481,6 +488,7 @@ enum class Province(
             id.startsWith("ML-") -> MELILLA_BOME
             id.startsWith("NA-") -> NAVARRA_BON
             id.startsWith("AS-") -> ASTURIAS_BOPA
+            id.startsWith("CE-") -> CEUTA_BOCCE
             id.startsWith("RI-") -> RIOJA_BOR
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
