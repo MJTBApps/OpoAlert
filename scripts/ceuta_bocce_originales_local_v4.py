@@ -36,8 +36,10 @@ def fold(s):
 def official(url):
  try:
   p=urlsplit(url)
+  segments=unquote(p.path).split("/")
   return bool(p.scheme=="https" and p.hostname==HOST and p.username is None and
     p.password is None and p.port in (None,443) and p.path.startswith("/ceuta/component/jdownloads/") and
+    not any(s in (".","..") for s in segments) and
     "/login" not in p.path.lower())
  except ValueError:return False
 
