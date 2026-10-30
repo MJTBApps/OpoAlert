@@ -148,7 +148,7 @@ def verify_original(task):
     top=fold(first[:900])
     roman=ROMAN_MONTH[date.fromisoformat(day).month]
     d=date.fromisoformat(day)
-    header=re.search(fr"num[.]\s*(\d{2,4})\s+de\s+{d.day}-{roman}-{d.year}\b",top)
+    header=re.search(fr"num[.]\s*(\d{{2,4}})\s+de\s+{d.day}-{roman}-{d.year}\b",top)
     code_ok=bool(re.search(r"\bcod[.]\s*"+re.escape(code)+r"\b",top))
     if header is None or not code_ok:
         fail(f"fecha y CVE del PDF original no corresponden al sumario oficial: {code}; dia={day}, roman={roman}, cabecera={bool(header)}, codigo={code_ok}, texto={top[:200]!r}")
