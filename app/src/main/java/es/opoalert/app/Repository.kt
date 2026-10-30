@@ -58,6 +58,7 @@ object Repository {
     fun sync(ctx: Context): SyncResult {
         SourceCatalog.load(ctx)
         SourceCatalog.refreshActive(ctx)
+        AppUpdate.refresh(ctx)
         val chosen = ProvinceSettings.selected(ctx)
         // Regla de tiempo: las alertas creadas mientras se descarga el feed
         // no deben recibir avisos retroactivos del mismo ciclo.

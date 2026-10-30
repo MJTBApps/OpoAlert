@@ -2,9 +2,12 @@ name: OpoAlert - Revisar y publicar BOP Cadiz
 on:
   workflow_dispatch:
   schedule:
-    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
-    - cron: '50 6 * * *'
-    - cron: '50 14 * * *'
+    # Cuatro veces al día: 6:30, 9:30, 12:30 y 16:30 en invierno (UTC+1);
+    # una hora más tarde en verano. Escalonado para no coincidir con otras fuentes.
+    - cron: '20 6 * * *'
+    - cron: '20 9 * * *'
+    - cron: '20 12 * * *'
+    - cron: '20 16 * * *'
   push:
     branches: [main]
     paths:

@@ -8,7 +8,7 @@ GitHub Pages. Nunca se publica un archivo parcial: si algo falla, se conserva
 el feed anterior.
 
 Uso:
-  python backend/feeds_diarios.py matrix                 # códigos para GitHub Actions
+  python backend/feeds_diarios.py matrix [--where casa]  # códigos para GitHub Actions o el PC de casa
   python backend/feeds_diarios.py run MD --out out       # lector + validación
   python backend/feeds_diarios.py validate MD out/madrid_bocm.json
   python backend/feeds_diarios.py publish out --docs docs
@@ -62,7 +62,14 @@ SOURCES={
     "SG":("segovia_bop.py",[],"segovia_bop.json"),
     "DC":("dogc_autonomico.py",[],"cataluna_dogc.json"),
     "AO":("boa_autonomico.py",[],"aragon_boa.json"),
+    "NA":("navarra_bon.py",[],"navarra_bon.json"),
 }
+# Portales que no responden a los servidores de GitHub pero sí desde una
+# conexión española: se leen con el ejecutor propio de casa
+# (revisar-espana-casa.yml, ver EJECUTOR_CASA.md).
+HOME_ONLY={"NA"}
+# Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
+HOME_BACKUP={"RI","CC"}
 TYPES=("Bolsa de trabajo","Plaza / oposición")
 # Sedes oficiales que sirven sus documentos en un puerto propio.
 OFFICIAL_PORTS={"se1.dipucr.es":4443}
@@ -221,19 +228,29 @@ def manifest(docs):
         "updatedUTC":datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "active":active},ensure_ascii=False,indent=1)+"\n",encoding="utf-8")
     print(f"MANIFIESTO {len(active)} fuentes activas: {' '.join(active)}")
+    # version.json: la APK más reciente publicada; la app avisa de que hay una nueva.
+    versions=[tuple(map(int,m.groups())) for p in docs.glob("OpoAlert-*.apk")
+              if (m:=re.fullmatch(r"OpoAlert-(\d+)\.(\d+)\.(\d+)\.apk",p.name))]
+    if versions:
+        latest=".".join(map(str,max(versions)))
+        (docs/"version.json").write_text(json.dumps({"schemaVersion":1,"latestVersion":latest,
+            "apk":f"OpoAlert-{latest}.apk"},ensure_ascii=False,indent=1)+"\n",encoding="utf-8")
+        print(f"VERSIÓN publicada: {latest}")
     return active
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
     sub=ap.add_subparsers(dest="cmd",required=True)
-    sub.add_parser("matrix")
+    mx=sub.add_parser("matrix");mx.add_argument("--where",choices=("github","casa"),default="github")
     r=sub.add_parser("run");r.add_argument("code",choices=sorted(SOURCES));r.add_argument("--out",required=True);r.add_argument("--docs")
     v=sub.add_parser("validate");v.add_argument("code",choices=sorted(SOURCES));v.add_argument("file");v.add_argument("--previous")
     p=sub.add_parser("publish");p.add_argument("out");p.add_argument("--docs",default=str(ROOT/"docs"))
     m=sub.add_parser("manifest");m.add_argument("--docs",default=str(ROOT/"docs"))
     a=ap.parse_args()
     try:
-        if a.cmd=="matrix":print(json.dumps(sorted(SOURCES)))
+        if a.cmd=="matrix":
+            codes=(set(SOURCES)-HOME_ONLY) if a.where=="github" else (HOME_ONLY|HOME_BACKUP)&set(SOURCES)
+            print(json.dumps(sorted(codes)))
         elif a.cmd=="manifest":manifest(a.docs)
         elif a.cmd=="run":run(a.code,a.out,a.docs)
         elif a.cmd=="validate":print(json.dumps(validate(a.code,a.file,a.previous),ensure_ascii=False))

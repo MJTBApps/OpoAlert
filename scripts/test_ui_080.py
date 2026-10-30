@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.36.0"' in gradle
-    assert "versionCode = 49" in gradle
+    assert 'versionName = "1.37.0"' in gradle
+    assert "versionCode = 50" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -107,7 +107,7 @@ def main() -> None:
     assert 'SourceCatalog.groups()' in activity
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.36.0: fuentes activas leídas de la web, válidas tras el cambio de año")
+    print("OK: Android 1.37.0: comprueba novedades cada hora, fuentes activas desde la web")
 
 
 if __name__ == "__main__":

@@ -1,13 +1,16 @@
 name: OpoAlert - Revisar y publicar boletines de España
-# Una ejecución diaria para todas las fuentes de backend/feeds_diarios.py.
+# Cuatro ejecuciones diarias para todas las fuentes de backend/feeds_diarios.py.
 # Cada fuente se audita en su propio trabajo: si un portal falla, su feed
 # anterior se conserva y el resto se publica igualmente.
 on:
   workflow_dispatch:
   schedule:
-    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
-    - cron: '0 6 * * *'
-    - cron: '0 14 * * *'
+    # Cuatro veces al día: 6:30, 9:30, 12:30 y 16:30 en invierno (UTC+1);
+    # una hora más tarde en verano. Escalonado para no coincidir con otras fuentes.
+    - cron: '30 5 * * *'
+    - cron: '30 8 * * *'
+    - cron: '30 11 * * *'
+    - cron: '30 15 * * *'
   push:
     branches: [main, 'integracion/**']
     paths:

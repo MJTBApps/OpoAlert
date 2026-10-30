@@ -24,13 +24,17 @@ on:
       - 'OpoAlert - Publicar APK 1.34.0 en web'
       - 'OpoAlert - Publicar APK 1.35.0 en web'
       - 'OpoAlert - Publicar APK 1.36.0 en web'
+      - 'OpoAlert - Publicar APK 1.37.0 en web'
       - 'OpoAlert - Publicar APK 1.14.0 en web'
       - 'OpoAlert - Publicar APK 1.12.0 en web'
     types: [completed]
   schedule:
-    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
-    - cron: '40 7 * * *'
-    - cron: '40 15 * * *'
+    # Cuatro veces al día: 6:30, 9:30, 12:30 y 16:30 en invierno (UTC+1);
+    # una hora más tarde en verano. Escalonado para no coincidir con otras fuentes.
+    - cron: '55 6 * * *'
+    - cron: '55 9 * * *'
+    - cron: '55 12 * * *'
+    - cron: '55 16 * * *'
   push:
     branches: [main]
     paths:

@@ -111,7 +111,7 @@ object SourceCatalog {
      */
     val pendingDailyFeed: Set<Province> = setOf(
         Province.ALBACETE, Province.CUENCA,
-        Province.NAVARRA_BON, Province.ASTURIAS_BOPA, Province.CEUTA_BOCCE,
+        Province.ASTURIAS_BOPA, Province.CEUTA_BOCCE,
     )
 
     private const val PREFS = "opoalert_store"

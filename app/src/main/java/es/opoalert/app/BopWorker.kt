@@ -24,11 +24,14 @@ class BopWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, p
             val constraints = Constraints.Builder()
                 .setRequiredNetworkType(NetworkType.CONNECTED)
                 .build()
-            val request = PeriodicWorkRequestBuilder<BopWorker>(6, TimeUnit.HOURS)
+            // Cada hora: los feeds se publican cuatro veces al día y así las
+            // novedades llegan al móvil poco después. UPDATE aplica el intervalo
+            // también a las instalaciones que tenían el antiguo de 6 horas.
+            val request = PeriodicWorkRequestBuilder<BopWorker>(1, TimeUnit.HOURS)
                 .setConstraints(constraints)
                 .build()
             WorkManager.getInstance(context).enqueueUniquePeriodicWork(
-                "opoalert_bop_scan", ExistingPeriodicWorkPolicy.KEEP, request
+                "opoalert_bop_scan", ExistingPeriodicWorkPolicy.UPDATE, request
             )
         }
     }

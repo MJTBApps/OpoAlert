@@ -415,6 +415,7 @@ class MainActivity : Activity() {
                     render(keepScroll = true)
                     Notifications.show(this, result.alertMatches)
                     finishRefresh()
+                    offerUpdate()
                 }
             } catch (error: Exception) {
                 runOnUiThread {
@@ -669,8 +670,30 @@ class MainActivity : Activity() {
         super.onPause()
     }
 
+    private var updateOffered = false
+
+    /** Aviso de versión nueva publicada en la web (una vez por sesión y versión). */
+    private fun offerUpdate() {
+        if (updateOffered || isFinishing) return
+        val version = AppUpdate.pending(this) ?: return
+        updateOffered = true
+        AlertDialog.Builder(this)
+            .setTitle("Hay una versión nueva de OpoAlert")
+            .setMessage("Versión $version disponible. Se instala encima de la actual y conservas tus favoritos y alertas.")
+            .setPositiveButton("Descargar") { _, _ ->
+                try {
+                    startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(AppUpdate.apkUrl(version))))
+                } catch (_: ActivityNotFoundException) {
+                    Toast.makeText(this, "No hay navegador para descargar la actualización", Toast.LENGTH_LONG).show()
+                }
+            }
+            .setNegativeButton("Más tarde") { _, _ -> AppUpdate.dismiss(this, version) }
+            .show()
+    }
+
     override fun onResume() {
         super.onResume()
+        offerUpdate()
         if (::demoAds.isInitialized) demoAds.resume()
         if (::tabsRow.isInitialized) {
             // Las favoritas pueden haber cambiado desde la nueva ficha a pantalla completa.

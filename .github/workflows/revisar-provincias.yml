@@ -3,9 +3,12 @@ name: OpoAlert - Auditar y publicar BOP Alicante Castellon
 on:
   workflow_dispatch:
   schedule:
-    # Dos veces al día: mañana y tarde (UTC; en España +1 h en invierno, +2 h en verano).
-    - cron: '10 6 * * *'
-    - cron: '10 14 * * *'
+    # Cuatro veces al día: 6:30, 9:30, 12:30 y 16:30 en invierno (UTC+1);
+    # una hora más tarde en verano. Escalonado para no coincidir con otras fuentes.
+    - cron: '40 5 * * *'
+    - cron: '40 8 * * *'
+    - cron: '40 11 * * *'
+    - cron: '40 15 * * *'
   push:
     branches: [main]
     paths:
