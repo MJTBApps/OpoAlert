@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-10-29T07:13:06.347530+00:00",
+  "lastCheckedUTC": "2026-10-29T13:38:37.289790+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -34,7 +34,8 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -47,8 +48,7 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25",
-      "2026-10-29"
+      "2026-10-25"
     ],
     "bulletins": [],
     "issuesRead": 0,
@@ -56,6 +56,16 @@
     "opportunities": 64
   },
   "notices": [
+    {
+      "id": "CIDO7-22335055",
+      "title": "1 plaça d'Operari del servei de neteja",
+      "entity": "Ajuntament d'Artesa de Segre",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22335055"
+    },
     {
       "id": "CIDO7-22394926",
       "title": "1 plaça de Secretari intervenció",
@@ -385,16 +395,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22346326"
-    },
-    {
-      "id": "CIDO7-22335055",
-      "title": "1 plaça de Netejador de dependències municipals",
-      "entity": "Ajuntament d'Artesa de Segre",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22335055"
     },
     {
       "id": "CIDO7-22290699",

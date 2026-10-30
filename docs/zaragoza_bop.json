@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-10-28T17:48:01.093115+00:00",
+  "lastCheckedUTC": "2026-10-29T17:51:18.639281+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "249",
+    "bulletin": "250",
     "pagesVisited": 2,
-    "announcementsRead": 750,
+    "announcementsRead": 751,
     "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
+    "rangeStart": "2026-09-30",
+    "rangeEnd": "2026-10-29",
     "issuesRead": 26,
     "pagesVisited": 2,
-    "announcementsRead": 750,
+    "announcementsRead": 751,
     "opportunities": 58,
     "bulletins": [
-      "224",
       "225",
       "226",
       "227",
@@ -45,10 +44,10 @@
       "246",
       "247",
       "248",
-      "249"
+      "249",
+      "250"
     ],
     "publicationDates": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
@@ -73,10 +72,10 @@
       "2026-10-24",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "issuePublicationDates": [
-      "2026-09-29",
       "2026-09-30",
       "2026-10-01",
       "2026-10-02",
@@ -101,7 +100,8 @@
       "2026-10-24",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -110,10 +110,10 @@
       "2026-10-25"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 42,
-      "SECCIÓN QUINTA": 113,
-      "SECCIÓN SEXTA": 560,
       "SECCIÓN PRIMERA": 5,
+      "SECCIÓN TERCERA": 41,
+      "SECCIÓN QUINTA": 116,
+      "SECCIÓN SEXTA": 559,
       "SECCIÓN SEPTIMA": 2,
       "PARTE NO OFICIAL": 4,
       "SECCIÓN SEGUNDA": 6,
@@ -123,6 +123,16 @@
     "documentsVerified": 84
   },
   "notices": [
+    {
+      "id": "ZA-000344714",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
+      "entity": "AYUNTAMIENTO DE NAVARDUN",
+      "date": "29/10/2026",
+      "bulletin": "250",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472458250505"
+    },
     {
       "id": "ZA-000344690",
       "province": "Zaragoza",
@@ -692,16 +702,6 @@
       "bulletin": "225",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468170190202"
-    },
-    {
-      "id": "ZA-000343953",
-      "province": "Zaragoza",
-      "title": "Habiéndose aprobado por resolución de Alcaldía número 2026-0254, de fecha 22 de septiembre de 2026, las bases para la creación de una bolsa de trabajo para la categoría de operario de servicios múltiples del…",
-      "entity": "AYUNTAMIENTO DE ALPARTIR",
-      "date": "29/09/2026",
-      "bulletin": "224",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468018970404"
     }
   ]
 }
