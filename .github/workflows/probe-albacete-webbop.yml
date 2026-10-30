@@ -1,0 +1,22 @@
+name: OpoAlert - Albacete WebBop archivo alternativo
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/probe_albacete_webbop_2026.py
+      - .github/workflows/probe-albacete-webbop.yml
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env: {PYTHONIOENCODING: utf-8}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip -q install requests beautifulsoup4
+      - run: python -u backend/probe_albacete_webbop_2026.py

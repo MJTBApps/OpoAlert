@@ -1,0 +1,37 @@
+name: OpoAlert - Asturias BOPA 30 días y suplemento auditoría
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/asturias_bopa_20261029.py
+      - backend/validar_apk_asturias.py
+      - backend/snapshots/AS_index_20261029.json.gz.b64
+      - .github/workflows/asturias-bopa-30dias-auditar.yml
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Preparar auditor y validar sintaxis de ambos programas
+        run: |
+          python -m pip install requests pypdf
+          python -m py_compile backend/asturias_bopa_20261029.py backend/validar_apk_asturias.py
+      - name: Auditar indices oficiales, un PDF por número, 32 originales y suplemento
+        run: |
+          mkdir -p out
+          python -u backend/asturias_bopa_20261029.py --output out/AS.json
+      - name: Auditar por segunda vez con validador independiente
+        run: python -u backend/validar_apk_asturias.py --root out
+      - name: Archivar SOLO contenido que haya superado ambas auditorias
+        uses: actions/upload-artifact@v4
+        with:
+          name: asturias-bopa-originales-30dias
+          path: out/AS.json
+          retention-days: 30
+          if-no-files-found: error

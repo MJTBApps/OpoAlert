@@ -1,0 +1,27 @@
+name: OpoAlert - Auditar Salamanca BOP 30 días PDF oficiales
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [backend/salamanca_bop.py, backend/validar_apk_salamanca.py, .github/workflows/cierre-salamanca-audit.yml]
+permissions: {contents: read}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install requests beautifulsoup4 pypdf
+      - run: python -m py_compile backend/salamanca_bop.py
+      - name: Validar 22 boletines y todos los PDF originales
+        run: python -u backend/salamanca_bop.py --output out/SA.json
+      - name: Verificar de forma independiente sumarios y CVE oficiales
+        run: python backend/validar_apk_salamanca.py --root out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: salamanca-bop-auditado-30dias
+          path: out/SA.json
+          retention-days: 30
+          if-no-files-found: error

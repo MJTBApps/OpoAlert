@@ -1,0 +1,20 @@
+name: OpoAlert - Asturias BOPA suplemento 23 octubre
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/probe_bopa_supplement_oct23.py
+      - .github/workflows/probe-bopa-supplement-oct23.yml
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  suplemento:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip -q install requests pypdf
+      - run: python -u backend/probe_bopa_supplement_oct23.py

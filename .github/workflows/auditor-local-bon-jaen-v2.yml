@@ -1,0 +1,23 @@
+name: OpoAlert - Auditor local BON Asturias Jaen v2
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - scripts/auditor_bon_jaen_local_20261030.py
+      - .github/workflows/auditor-local-bon-jaen-v2.yml
+permissions:
+  contents: read
+jobs:
+  tests:
+    strategy:
+      matrix: {os: [ubuntu-latest, windows-latest]}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 8
+    env: {PYTHONIOENCODING: utf-8}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m py_compile scripts/auditor_bon_jaen_local_20261030.py
+      - run: python scripts/auditor_bon_jaen_local_20261030.py --self-test

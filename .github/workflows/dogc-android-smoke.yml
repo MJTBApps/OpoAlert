@@ -1,0 +1,32 @@
+name: OpoAlert - DOGC Android compile preflight
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - app/src/main/java/es/opoalert/app/Province.kt
+      - app/src/main/java/es/opoalert/app/SourceCatalog.kt
+      - app/src/main/java/es/opoalert/app/RemoteFeedReader.kt
+      - app/src/test/java/es/opoalert/app/ProvinceTest.kt
+      - app/src/test/java/es/opoalert/app/SourceCatalogTest.kt
+      - .github/workflows/dogc-android-smoke.yml
+permissions: {contents: read}
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '17'}
+      - name: Preparar Android SDK
+        run: |
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f -print -quit)"
+          test -n "$SDKMANAGER"
+          "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '8.11.1'}
+      - name: Prueba de selector y pantallas existentes
+        run: python scripts/test_ui_080.py
+      - name: Comprobar Kotlin sin empaquetar ninguna APK para usuario
+        run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug

@@ -25,6 +25,7 @@ object SourceCatalog {
         Province.GALICIA_OURENSE -> Territory("Galicia", "Ourense")
         Province.GALICIA_PONTEVEDRA -> Territory("Galicia", "Pontevedra")
         Province.GALICIA_DOG -> Territory("Galicia", "Diario autonómico")
+        Province.CATALUNA_DOGC -> Territory("Cataluña", "Diario autonómico")
         Province.ARAGON_BOA -> Territory("Aragón", "Diario autonómico")
         Province.ANDALUCIA_BOJA -> Territory("Andalucía", "Diario autonómico")
         Province.VALENCIA_DOGV -> Territory("Comunidad Valenciana", "Diario autonómico")
@@ -34,6 +35,9 @@ object SourceCatalog {
         Province.SANTA_CRUZ_BOP -> Territory("Canarias", "Santa Cruz de Tenerife")
         Province.MELILLA_BOME -> Territory("Ciudad Autónoma de Melilla", "Melilla")
         Province.RIOJA_BOR -> Territory("La Rioja", "Diario autonómico")
+        Province.NAVARRA_BON -> Territory("Comunidad Foral de Navarra", "Navarra")
+        Province.ASTURIAS_BOPA -> Territory("Principado de Asturias", "Asturias")
+        Province.CEUTA_BOCCE -> Territory("Ciudad Autónoma de Ceuta", "Ceuta")
         Province.BADAJOZ_BOP -> Territory("Extremadura", "Badajoz")
         Province.CACERES_BOP -> Territory("Extremadura", "Cáceres")
         Province.EXTREMADURA_DOE -> Territory("Extremadura", "Diario autonómico")
@@ -42,6 +46,8 @@ object SourceCatalog {
         Province.LEON_BOP -> Territory("Castilla y León", "León")
         Province.PALENCIA_BOP -> Territory("Castilla y León", "Palencia")
         Province.ZAMORA_BOP -> Territory("Castilla y León", "Zamora")
+        Province.SALAMANCA_BOP -> Territory("Castilla y León", "Salamanca")
+        Province.SEGOVIA_BOP -> Territory("Castilla y León", "Segovia")
         Province.SORIA_BOP -> Territory("Castilla y León", "Soria")
         Province.CYL_BOCYL -> Territory("Castilla y León", "Diario autonómico")
         Province.HUELVA_BOP -> Territory("Andalucía", "Huelva")
@@ -68,11 +74,11 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias", "Ciudad Autónoma de Ceuta")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
-        "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
+        "Cataluña" to listOf("Barcelona", "Girona", "Lleida", "Tarragona", "Diario autonómico"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla"),
         "Comunidad de Madrid" to listOf("Madrid"),
@@ -86,6 +92,9 @@ object SourceCatalog {
         "Canarias" to listOf("Las Palmas", "Santa Cruz de Tenerife", "Diario autonómico"),
         "Ciudad Autónoma de Melilla" to listOf("Melilla"),
         "La Rioja" to listOf("Diario autonómico"),
+        "Comunidad Foral de Navarra" to listOf("Navarra"),
+        "Principado de Asturias" to listOf("Asturias"),
+        "Ciudad Autónoma de Ceuta" to listOf("Ceuta"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
@@ -129,6 +138,7 @@ object SourceCatalog {
         else if (source == Province.BIZKAIA_BOB) "BOB · boletín territorial de Bizkaia"
         else if (source == Province.GIPUZKOA_BOG) "BOG · boletín territorial de Gipuzkoa"
         else if (source == Province.GALICIA_DOG) "DOG · diario autonómico"
+        else if (source == Province.CATALUNA_DOGC) "DOGC · diario autonómico"
         else if (source == Province.ARAGON_BOA) "BOA · diario autonómico"
         else if (source == Province.ANDALUCIA_BOJA) "BOJA · diario autonómico"
         else if (source == Province.VALENCIA_DOGV) "DOGV · diario autonómico"
@@ -136,6 +146,9 @@ object SourceCatalog {
         else if (source == Province.CANARIAS_BOC) "BOC · diario autonómico"
         else if (source == Province.MELILLA_BOME) "BOME · boletín de la ciudad autónoma"
         else if (source == Province.RIOJA_BOR) "BOR · diario autonómico"
+        else if (source == Province.NAVARRA_BON) "BON · boletín de Navarra"
+        else if (source == Province.ASTURIAS_BOPA) "BOPA · diario autonómico"
+        else if (source == Province.CEUTA_BOCCE) "BOCCE · boletín de la ciudad autónoma"
         else if (source == Province.LAS_PALMAS_BOP || source == Province.SANTA_CRUZ_BOP) "BOP · boletín provincial"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"

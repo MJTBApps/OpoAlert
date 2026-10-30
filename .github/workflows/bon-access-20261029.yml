@@ -1,0 +1,61 @@
+name: OpoAlert - Comprobar acceso BON oficial (Navarra)
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - '.github/workflows/bon-access-20261029.yml'
+permissions:
+  contents: read
+jobs:
+  probar-bon:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test official BON homepage, dated sumarios and original notice
+        shell: bash
+        run: |
+          python -m pip -q install requests beautifulsoup4
+          python - <<'PY'
+          import requests, json, platform, concurrent.futures, re, sys
+          from bs4 import BeautifulSoup
+          urls={
+             "home":"https://bon.navarra.es/es/inicio",
+             "issue195":"https://bon.navarra.es/es/inicio/-/sumario/2026/195",
+             "issue195_alt":"https://bon.navarra.es/es/boletin/-/sumario/2026/195",
+             "issue209":"https://bon.navarra.es/es/inicio/-/sumario/2026/209",
+             "text158":"https://bon.navarra.es/es/inicio/-/texto/2026/158/114",
+             "navarra_www":"https://www.navarra.es/es/inicio"
+          }
+          def check(pair):
+            key,url=pair
+            try:
+              r=requests.get(url,timeout=(5,12),stream=True,headers={"User-Agent":"Mozilla/5.0 (OpoAlert official BON read-only audit)","Accept-Language":"es-ES"})
+              b=b""
+              for chunk in r.iter_content(8192):
+                b+=chunk
+                if len(b)>150000: break
+              r.close()
+              soup=BeautifulSoup(b,"html.parser")
+              title=soup.title.get_text(" ",strip=True)[:100] if soup.title else ""
+              text=soup.get_text(" ",strip=True)[:350]
+              return {"url_name":key,"status":r.status_code,"final":r.url,"size":len(b),"title":title,"text":text,"notice_links":len([a for a in soup.select("a[href]") if "/-/texto/" in a.get("href","")])}
+            except Exception as exc:
+              return {"url_name":key,"error":type(exc).__name__ + ": "+str(exc)[:160]}
+          print("OS",platform.platform(),flush=True)
+          with concurrent.futures.ThreadPoolExecutor(max_workers=6) as p:
+            rows=list(p.map(check,urls.items()))
+          for x in rows: print("BON_PROBE",json.dumps(x,ensure_ascii=False),flush=True)
+          passed={x["url_name"] for x in rows if x.get("status")==200 and x.get("size",0)>1000 and "bon.navarra.es" in x.get("final","") and "Navarra" in (x.get("title","")+x.get("text",""))}
+          access={"home": "home" in passed, "dated_sumario":bool({"issue195","issue195_alt","issue209"} & passed),"original_document": "text158" in passed}
+          print("BON_OFFICIAL_ACCESS",json.dumps(access),flush=True)
+          print("WARNING: 30-day coverage NOT audited; no Navarra feed or APK may be activated based on this probe alone",flush=True)
+          if not all(access.values()): sys.exit("BON_GATE_BLOCKED: official documents not reachable")
+          PY

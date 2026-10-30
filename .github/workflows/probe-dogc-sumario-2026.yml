@@ -1,0 +1,21 @@
+name: OpoAlert - DOGC sumario real 2026
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/probe_dogc_sumario_2026.py
+      - .github/workflows/probe-dogc-sumario-2026.yml
+permissions: {contents: read}
+env:
+  PYTHONIOENCODING: utf-8
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip -q install requests beautifulsoup4
+      - run: python -u backend/probe_dogc_sumario_2026.py

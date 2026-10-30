@@ -1,0 +1,38 @@
+name: OpoAlert - Ceuta BOCCE 30dias validacion oficial
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/snapshots/CE_20261029.json.gz.b64
+      - backend/ceuta_bocce_20261029.py
+      - backend/validar_apk_ceuta.py
+      - .github/workflows/ceuta-bocce-30dias-auditar.yml
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Sintaxis auditores independiente y productor
+        run: python -m py_compile backend/ceuta_bocce_20261029.py backend/validar_apk_ceuta.py
+      - name: Construir snapshot privado desde prueba SHA256 de originales BOCCE
+        run: |
+          python -u backend/ceuta_bocce_20261029.py --output out/CE.json
+      - name: Verificar 8+7 boletines, 211 páginas y 3 convocatorias con auditor independiente
+        run: python -u backend/validar_apk_ceuta.py --root out
+      - name: Asegurar que CE no se publica en feeds Github Pages
+        run: |
+          test ! -e docs/ceuta_bocce.json
+          test ! -e ceuta_bocce.json
+      - name: Conservar solo prueba histórica verificada de Ceuta
+        uses: actions/upload-artifact@v4
+        with:
+          name: ceuta-bocce-oficiales-30dias
+          path: out/CE.json
+          retention-days: 30
+          if-no-files-found: error

@@ -1,0 +1,27 @@
+name: OpoAlert - Auditar Segovia BOP 30 días oficiales
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [backend/segovia_bop.py, backend/validar_apk_segovia.py, .github/workflows/cierre-segovia-audit.yml]
+permissions: {contents: read}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install requests beautifulsoup4 pypdf
+      - run: python -m py_compile backend/segovia_bop.py
+      - name: Auditar calendario, sumarios y PDF íntegros
+        run: python -u backend/segovia_bop.py --output out/SG.json
+      - name: Validar independientemente las 13 ediciones y documentos
+        run: python backend/validar_apk_segovia.py --root out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: segovia-bop-auditado-30dias
+          path: out/SG.json
+          retention-days: 30
+          if-no-files-found: error

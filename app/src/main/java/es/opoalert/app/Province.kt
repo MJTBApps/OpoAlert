@@ -215,6 +215,20 @@ enum class Province(
         "www.diputaciondezamora.es", "/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/",
         Regex("ZM-\\d{9}"),
     ),
+    SALAMANCA_BOP(
+        "SA", "Salamanca",
+        "https://mjtbapps.github.io/OpoAlert/salamanca_bop.json",
+        "https://www.lasalina.es/documentacion/bop/",
+        "www.lasalina.es", "/documentacion/bop/2026/",
+        Regex("SA-2026[0-9]{4}-[0-9]{3}"),
+    ),
+    SEGOVIA_BOP(
+        "SG", "Segovia",
+        "https://mjtbapps.github.io/OpoAlert/segovia_bop.json",
+        "https://www.dipsegovia.es/bop",
+        "www.dipsegovia.es", "/documents/39512/",
+        Regex("SG-2026-[0-9a-f]{18}"),
+    ),
     SORIA_BOP(
         "SR", "Soria",
         "https://mjtbapps.github.io/OpoAlert/soria_bop.json",
@@ -320,6 +334,13 @@ enum class Province(
         "www.xunta.gal", "/dog/Publicados/",
         Regex("DG-2026-Anuncio[A-Za-z0-9-]+"),
     ),
+    NAVARRA_BON(
+        "NA", "Navarra",
+        "https://mjtbapps.github.io/OpoAlert/navarra_bon.json",
+        "https://bon.navarra.es/es/indice-boletines",
+        "bon.navarra.es", "/es/anuncio/-/texto/2026/",
+        Regex("NA-2026-\\d{3}-\\d{1,4}"),
+    ),
     RIOJA_BOR(
         "RI", "La Rioja (BOR)",
         "https://mjtbapps.github.io/OpoAlert/rioja_bor.json",
@@ -369,6 +390,13 @@ enum class Province(
         "dogv.gva.es", "/datos/2026/",
         Regex("DV-2026-\\d{1,8}"),
     ),
+    CATALUNA_DOGC(
+        "DC", "Cataluña (DOGC)",
+        "https://mjtbapps.github.io/OpoAlert/cataluna_dogc.json",
+        "https://portaldogc.gencat.cat/eadop-rest/api/dogc/summaryDOGC",
+        "dogc.gencat.cat", "/ca/document-del-dogc/",
+        Regex("DC-2026-\\d{6,9}"),
+    ),
     ARAGON_BOA(
         "AO", "Aragón (BOA)",
         "https://mjtbapps.github.io/OpoAlert/aragon_boa.json",
@@ -382,6 +410,20 @@ enum class Province(
         "https://www.juntadeandalucia.es/eboja/index.html",
         "www.juntadeandalucia.es", "/eboja/2026/",
         Regex("BJ-2026-\\d{8}"),
+    ),
+    ASTURIAS_BOPA(
+        "AS", "Asturias (BOPA)",
+        "https://mjtbapps.github.io/OpoAlert/asturias_bopa.json",
+        "https://miprincipado.asturias.es/ast/bopa-sumario",
+        "www.asturias.es", "/bopa/2026/",
+        Regex("AS-2026-\\d{5}"),
+    ),
+    CEUTA_BOCCE(
+        "CE", "Ceuta (BOCCE)",
+        "https://mjtbapps.github.io/OpoAlert/ceuta_bocce.json",
+        "https://www.ceuta.es/ceuta/bocce",
+        "www.ceuta.es", "/ceuta/component/jdownloads/finish/",
+        Regex("CE-2026-\\d{3}"),
     ),
     CADIZ(
         "CA", "Cádiz",
@@ -418,6 +460,8 @@ enum class Province(
             id.startsWith("LN-") -> LEON_BOP
             id.startsWith("ZM-") -> ZAMORA_BOP
             id.startsWith("PL-") -> PALENCIA_BOP
+            id.startsWith("SA-") -> SALAMANCA_BOP
+            id.startsWith("SG-") -> SEGOVIA_BOP
             id.startsWith("SR-") -> SORIA_BOP
             id.startsWith("CY-") -> CYL_BOCYL
             id.startsWith("BD-") -> BADAJOZ_BOP
@@ -433,6 +477,7 @@ enum class Province(
             id.startsWith("OU-") -> GALICIA_OURENSE
             id.startsWith("PO-") -> GALICIA_PONTEVEDRA
             id.startsWith("DG-") -> GALICIA_DOG
+            id.startsWith("DC-") -> CATALUNA_DOGC
             id.startsWith("AO-") -> ARAGON_BOA
             id.startsWith("BJ-") -> ANDALUCIA_BOJA
             id.startsWith("DV-") -> VALENCIA_DOGV
@@ -441,6 +486,9 @@ enum class Province(
             id.startsWith("LP-") -> LAS_PALMAS_BOP
             id.startsWith("TF-") -> SANTA_CRUZ_BOP
             id.startsWith("ML-") -> MELILLA_BOME
+            id.startsWith("NA-") -> NAVARRA_BON
+            id.startsWith("AS-") -> ASTURIAS_BOPA
+            id.startsWith("CE-") -> CEUTA_BOCCE
             id.startsWith("RI-") -> RIOJA_BOR
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE

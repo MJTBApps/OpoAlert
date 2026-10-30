@@ -1,0 +1,18 @@
+name: OpoAlert - DOGC suplementos estructura
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [backend/probe_dogc_supp_shape.py, .github/workflows/probe-dogc-supp-shape.yml]
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip -q install requests
+      - run: python -u backend/probe_dogc_supp_shape.py

@@ -1,0 +1,37 @@
+name: OpoAlert - DOGC oficial 30 dias auditoria estricta
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - backend/dogc_autonomico.py
+      - backend/validar_apk_dogc.py
+      - .github/workflows/dogc-30dias-auditar.yml
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Dependencias y compilacion Python
+        run: |
+          python -m pip install requests beautifulsoup4
+          python -m py_compile backend/dogc_autonomico.py backend/validar_apk_dogc.py
+      - name: Descargar y cotejar todos los sumarios, anexos, suplementos y candidatos originales
+        run: |
+          mkdir -p out
+          python -u backend/dogc_autonomico.py --output out/DC.json
+      - name: Validar de forma independiente la integridad de los 30 dias
+        run: python -u backend/validar_apk_dogc.py --root out
+      - name: Archivar solo evidencia validada
+        uses: actions/upload-artifact@v4
+        with:
+          name: cataluna-dogc-oficial-30dias
+          path: out/DC.json
+          retention-days: 30
+          if-no-files-found: error

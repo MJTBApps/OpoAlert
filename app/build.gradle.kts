@@ -11,8 +11,8 @@ android {
         applicationId = "es.opoalert.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 40
-        versionName = "1.27.0"
+        versionCode = 46
+        versionName = "1.33.0"
     }
 
     buildTypes {

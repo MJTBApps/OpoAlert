@@ -1,0 +1,53 @@
+name: OpoAlert - Revisar edicion restante Jaen
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [.github/workflows/jaen-revisar-parcial-20261029.yml]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    env: {PYTHONIOENCODING: utf-8}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: jaen-ejemplares-originales-parciales-19
+          repository: MJTBApps/OpoAlert
+          run-id: 40966786425
+          github-token: ${{ github.token }}
+          path: out/jaen
+      - name: Inspeccionar faltantes y recuperar solo la descarga pendiente
+        run: |
+          python -m pip -q install requests beautifulsoup4 pypdf
+          python - <<'PY'
+          import json, pathlib, sys
+          sys.path.insert(0, "backend")
+          from rescate_nocturno_20261029 import check_jaen_pdf
+          data=json.loads(next(pathlib.Path("out/jaen").glob("*.json")).read_text(encoding="utf-8"))
+          issues=data["Jaen"]["indexedIssues"]
+          results={x["catalogueId"]:x for x in data["Jaen"]["pdfChecks"]}
+          all_verified=[x for x in issues if results.get(x["catalogueId"],{}).get("pdfValidated") and results.get(x["catalogueId"],{}).get("firstPageMatchesDate")]
+          rest=[x for x in issues if x["catalogueId"] not in {v["catalogueId"] for v in all_verified}]
+          print("JAEN_EVIDENCE",json.dumps({"indexDates":len(issues),"originalFullAndDated":len(all_verified),"remaining":len(rest),"missingNumber":[198,199,201]},ensure_ascii=False),flush=True)
+          for x in rest:
+              old=results.get(x["catalogueId"],{})
+              print("JAEN_PENDING_OLD",json.dumps({"date":x["date"],"id":x["catalogueId"],"status":old},ensure_ascii=False),flush=True)
+              new=check_jaen_pdf(x,max_bytes=55_000_000)
+              print("JAEN_PENDING_RETRY",json.dumps({"date":x["date"],"id":x["catalogueId"],"status":new},ensure_ascii=False),flush=True)
+              pathlib.Path("out/jaen/jaen_2026_10_15_pdf_retry.json").write_text(json.dumps({"date":x["date"],"catalogueId":x["catalogueId"],"publisherOriginalUrl":x["publisherOriginalUrl"],"pdfCheck":new,"complete30Days":False},indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          PY
+      - name: Guardar evidencia del PDF grande sin activar cobertura
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaen-original-grande-2026-10-15
+          path: out/jaen/jaen_2026_10_15_pdf_retry.json
+          retention-days: 30
+          if-no-files-found: error

@@ -22,7 +22,7 @@ object RemoteFeedReader {
         Province.MADRID, Province.CIUDAD_REAL, Province.GUADALAJARA,
         Province.TOLEDO, Province.CLM_DOCM, Province.HUELVA_BOP,
         Province.AVILA, Province.LEON_BOP, Province.ZAMORA_BOP,
-        Province.SORIA_BOP, Province.CYL_BOCYL, Province.PALENCIA_BOP,
+        Province.SORIA_BOP, Province.SALAMANCA_BOP, Province.SEGOVIA_BOP, Province.CYL_BOCYL, Province.PALENCIA_BOP,
         Province.BADAJOZ_BOP, Province.CACERES_BOP, Province.EXTREMADURA_DOE,
         Province.MURCIA_BORM,
         Province.ALAVA_BOTHA, Province.BIZKAIA_BOB,
@@ -30,9 +30,11 @@ object RemoteFeedReader {
         Province.GALICIA_CORUNA, Province.GALICIA_LUGO, Province.GALICIA_OURENSE,
         Province.GALICIA_PONTEVEDRA, Province.GALICIA_DOG,
         Province.ARAGON_BOA, Province.ANDALUCIA_BOJA, Province.VALENCIA_DOGV,
+        Province.CATALUNA_DOGC,
         Province.BALEARES_BOIB,
         Province.CANARIAS_BOC, Province.LAS_PALMAS_BOP, Province.SANTA_CRUZ_BOP,
-        Province.MELILLA_BOME, Province.RIOJA_BOR
+        Province.MELILLA_BOME, Province.RIOJA_BOR, Province.NAVARRA_BON,
+        Province.ASTURIAS_BOPA, Province.CEUTA_BOCCE
     )
 
     fun fetch(address: String, province: Province = Province.VALENCIA, context: Context? = null): RemoteFeed {
@@ -139,8 +141,9 @@ object RemoteFeedReader {
             bulletins.optString(bulletins.length() - 1) else coverage.optString("bulletin", "?")
         val read = coverage.optInt("announcementsRead", 0)
         val cido = province in setOf(Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA)
+        val readLabel = if (province == Province.CEUTA_BOCCE) "$read convocatorias" else "$read anuncios"
         val status = if (cido) "${province.label}: CIDO · $read procesos" else
-            "${province.label}: ${when (province) { Province.BOE -> "BOE"; Province.MADRID -> "BOCM"; Province.CLM_DOCM -> "DOCM"; Province.CYL_BOCYL -> "BOCYL"; Province.EXTREMADURA_DOE -> "DOE"; Province.MURCIA_BORM -> "BORM"; Province.PAIS_VASCO_BOPV -> "BOPV"; Province.ALAVA_BOTHA -> "BOTHA"; Province.BIZKAIA_BOB -> "BOB"; Province.GIPUZKOA_BOG -> "BOG"; Province.GALICIA_DOG -> "DOG"; Province.ARAGON_BOA -> "BOA"; Province.ANDALUCIA_BOJA -> "BOJA"; Province.VALENCIA_DOGV -> "DOGV"; Province.BALEARES_BOIB -> "BOIB"; Province.CANARIAS_BOC -> "BOC"; Province.MELILLA_BOME -> "BOME"; Province.RIOJA_BOR -> "BOR"; else -> "BOP" }} $currentBulletin · $read anuncios"
+            "${province.label}: ${when (province) { Province.BOE -> "BOE"; Province.MADRID -> "BOCM"; Province.CLM_DOCM -> "DOCM"; Province.CYL_BOCYL -> "BOCYL"; Province.EXTREMADURA_DOE -> "DOE"; Province.MURCIA_BORM -> "BORM"; Province.PAIS_VASCO_BOPV -> "BOPV"; Province.ALAVA_BOTHA -> "BOTHA"; Province.BIZKAIA_BOB -> "BOB"; Province.GIPUZKOA_BOG -> "BOG"; Province.GALICIA_DOG -> "DOG"; Province.ARAGON_BOA -> "BOA"; Province.ANDALUCIA_BOJA -> "BOJA"; Province.VALENCIA_DOGV -> "DOGV"; Province.CATALUNA_DOGC -> "DOGC"; Province.BALEARES_BOIB -> "BOIB"; Province.CANARIAS_BOC -> "BOC"; Province.MELILLA_BOME -> "BOME"; Province.RIOJA_BOR -> "BOR"; Province.NAVARRA_BON -> "BON"; Province.ASTURIAS_BOPA -> "BOPA"; Province.CEUTA_BOCCE -> "BOCCE"; else -> "BOP" }} $currentBulletin · $readLabel"
         val historyStatus = if (cido)
             "CIDO (actualizaciones de procesos): ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}" else
             "Histórico verificado: ${history.optString("rangeStart")} a ${history.optString("rangeEnd")}"
