@@ -26,7 +26,7 @@ class CatalogTests(unittest.TestCase):
         private={x["code"] for x in sources if x["state"]=="private_apk_snapshot"}
         self.assertEqual(private,set())
         blocked={x["code"] for x in sources if x["state"]=="blocked_official_portal"}
-        self.assertEqual(blocked,{"AB","CU"})
+        self.assertEqual(blocked,set())
         cido=[x for x in sources if x["kind"]=="catalogo_empleo"]
         self.assertEqual(len(cido),4)
         self.assertTrue(all("no equivale al BOP" in x["scope"] for x in cido))

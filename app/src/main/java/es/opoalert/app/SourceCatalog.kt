@@ -67,7 +67,11 @@ object SourceCatalog {
         Province.CASTELLON -> Territory("Comunidad Valenciana", "Castellón")
         Province.BARCELONA, Province.BARCELONA_BOP -> Territory("Cataluña", "Barcelona")
         Province.GIRONA, Province.GIRONA_BOP -> Territory("Cataluña", "Girona")
-        Province.LLEIDA -> Territory("Cataluña", "Lleida")
+        Province.LLEIDA, Province.LLEIDA_BOP -> Territory("Cataluña", "Lleida")
+        Province.CANTABRIA_BOC -> Territory("Cantabria", "Cantabria")
+        Province.VALLADOLID_BOP -> Territory("Castilla y León", "Valladolid")
+        Province.BURGOS_BOP -> Territory("Castilla y León", "Burgos")
+        Province.JAEN_BOP -> Territory("Andalucía", "Jaén")
         Province.HUESCA -> Territory("Aragón", "Huesca")
         Province.TERUEL -> Territory("Aragón", "Teruel")
         Province.ZARAGOZA -> Territory("Aragón", "Zaragoza")
@@ -79,7 +83,7 @@ object SourceCatalog {
         Province.TARRAGONA, Province.TARRAGONA_BOP -> Territory("Cataluña", "Tarragona")
     }
 
-    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias", "Ciudad Autónoma de Ceuta")
+    private val communityOrder = listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias", "Ciudad Autónoma de Ceuta", "Cantabria")
 
     private val provinceOrder = mapOf(
         "Comunidad Valenciana" to listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
@@ -100,6 +104,7 @@ object SourceCatalog {
         "Comunidad Foral de Navarra" to listOf("Navarra"),
         "Principado de Asturias" to listOf("Asturias"),
         "Ciudad Autónoma de Ceuta" to listOf("Ceuta"),
+        "Cantabria" to listOf("Cantabria"),
         "Aragón" to listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"),
         "Andalucía" to listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Málaga", "Sevilla", "Diario autonómico"),
     )
@@ -209,6 +214,7 @@ object SourceCatalog {
         else if (source == Province.NAVARRA_BON) "BON · boletín de Navarra"
         else if (source == Province.ASTURIAS_BOPA) "BOPA · diario autonómico"
         else if (source == Province.CEUTA_BOCCE) "BOCCE · boletín de la ciudad autónoma"
+        else if (source == Province.CANTABRIA_BOC) "BOC · boletín de Cantabria"
         else if (source == Province.LAS_PALMAS_BOP || source == Province.SANTA_CRUZ_BOP) "BOP · boletín provincial"
         else if (isCido(source)) "CIDO · procesos selectivos"
         else "BOP · boletín provincial"

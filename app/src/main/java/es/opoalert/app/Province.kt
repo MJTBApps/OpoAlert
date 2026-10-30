@@ -162,7 +162,7 @@ enum class Province(
     CUENCA(
         "CU", "Cuenca",
         "https://mjtbapps.github.io/OpoAlert/cuenca_bop.json",
-        "https://www.dipucuenca.es/boletin-oficial-de-la-provincia",
+        "https://www.dipucuenca.es/boletin1",
         "www.dipucuenca.es", "/documents/",
         Regex("CU-\\d{4}-\\d{1,8}"),
     ),
@@ -427,6 +427,41 @@ enum class Province(
         "www.ceuta.es", "/ceuta/component/jdownloads/finish/",
         Regex("CE-\\d{4}-E?\\d{3,4}"),
     ),
+    CANTABRIA_BOC(
+        "CN", "Cantabria (BOC)",
+        "https://mjtbapps.github.io/OpoAlert/cantabria_boc.json",
+        "https://boc.cantabria.es/boces/",
+        "boc.cantabria.es", "/boces/verAnuncioAction.do",
+        Regex("CN-\\d{4}-\\d{1,6}"),
+    ),
+    VALLADOLID_BOP(
+        "VD", "Valladolid",
+        "https://mjtbapps.github.io/OpoAlert/valladolid_bop.json",
+        "https://bop.sede.diputaciondevalladolid.es/",
+        "bop.sede.diputaciondevalladolid.es", "/boletines/",
+        Regex("VD-\\d{4}-\\d{1,6}"),
+    ),
+    BURGOS_BOP(
+        "BU", "Burgos",
+        "https://mjtbapps.github.io/OpoAlert/burgos_bop.json",
+        "https://bopbur.diputaciondeburgos.es/",
+        "bopbur.diputaciondeburgos.es", "/sites/default/files/private/publicado/",
+        Regex("BU-\\d{4}-\\d{6,10}"),
+    ),
+    JAEN_BOP(
+        "JA", "Jaén",
+        "https://mjtbapps.github.io/OpoAlert/jaen_bop.json",
+        "https://bop.dipujaen.es/",
+        "bop.dipujaen.es", "/descargarws.dip",
+        Regex("JA-\\d{4}-\\d{1,6}"),
+    ),
+    LLEIDA_BOP(
+        "LE", "Lleida (BOP)",
+        "https://mjtbapps.github.io/OpoAlert/lleida_bop.json",
+        "https://ebop.diputaciolleida.cat/bop/",
+        "ebop.diputaciolleida.cat", "/aplicacions/bop/bopV1/fitxers/pdf/",
+        Regex("LE-\\d{7,14}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -503,6 +538,11 @@ enum class Province(
             id.startsWith("GR-") -> GRANADA
             id.startsWith("SV-") -> SEVILLA
             id.startsWith("AM-") -> ALMERIA
+            id.startsWith("CN-") -> CANTABRIA_BOC
+            id.startsWith("VD-") -> VALLADOLID_BOP
+            id.startsWith("BU-") -> BURGOS_BOP
+            id.startsWith("JA-") -> JAEN_BOP
+            id.startsWith("LE-") -> LLEIDA_BOP
             else -> VALENCIA
         }
     }

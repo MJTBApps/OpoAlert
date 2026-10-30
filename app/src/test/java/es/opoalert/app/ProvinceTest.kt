@@ -82,6 +82,19 @@ class ProvinceTest {
         assertTrue(Province.CEUTA_BOCCE.idPattern.matches("CE-2026-1034"))
         assertTrue(Province.CEUTA_BOCCE.allowsOfficialPath("/ceuta/component/jdownloads/finish/1982-octubre/23281-bocce-6658-06-10-2026"))
         assertFalse(Province.CEUTA_BOCCE.allowsOfficialPath("/ceuta/admin"))
+        // Fuentes leídas desde el ejecutor de casa (1.38.0).
+        assertEquals(Province.CANTABRIA_BOC, Province.fromNoticeId("CN-2026-8113"))
+        assertTrue(Province.CANTABRIA_BOC.allowsOfficialPath("/boces/verAnuncioAction.do"))
+        assertEquals(Province.VALLADOLID_BOP, Province.fromNoticeId("VD-2026-3134"))
+        assertTrue(Province.VALLADOLID_BOP.allowsOfficialPath("/boletines/2026/octubre/28/BOPVA-A-2026-03134.pdf"))
+        assertEquals(Province.BURGOS_BOP, Province.fromNoticeId("BU-2026-202604609"))
+        assertTrue(Province.BURGOS_BOP.idPattern.matches("BU-2026-202506272"))
+        assertTrue(Province.BURGOS_BOP.allowsOfficialPath("/sites/default/files/private/publicado/bopbur-2026-206/bopbur-2026-206-anuncio-202604609.pdf"))
+        assertEquals(Province.JAEN_BOP, Province.fromNoticeId("JA-2026-5073"))
+        assertTrue(Province.JAEN_BOP.allowsOfficialPath("/descargarws.dip"))
+        assertEquals(Province.LLEIDA_BOP, Province.fromNoticeId("LE-202620809071"))
+        assertTrue(Province.LLEIDA_BOP.idPattern.matches("LE-20265035"))  // BOP 5 de enero
+        assertEquals(Province.LLEIDA, Province.fromNoticeId("CIDO7-123"))  // el CIDO sigue aparte
         assertTrue(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/2026/10/29/2026-08847.pdf"))
         assertFalse(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/not-original"))
         // Cambio de año: identificadores y rutas oficiales de 2027 siguen siendo válidos.
@@ -138,8 +151,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(61, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(66, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(57, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(62, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }

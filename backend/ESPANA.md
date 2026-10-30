@@ -1,6 +1,6 @@
 # OpoAlert España — cobertura real
 
-Actualización: 29 de octubre de 2026.
+Actualización: 30 de octubre de 2026.
 
 El catálogo incluye 50 provincias y Ceuta/Melilla. Una fuente activa no
 equivale a cobertura exhaustiva de todos los boletines del territorio.
@@ -19,8 +19,37 @@ equivale a cobertura exhaustiva de todos los boletines del territorio.
 - BOP Tarragona, Barcelona y Girona: tres lectores independientes de CIDO,
   con 30 días auditados, acceso a los PDF originales y publicación automática.
   Se seleccionan como BOP provinciales, diferenciados de sus catálogos CIDO.
-- BOP Lleida: pendiente; el portal eBOP no respondió a las pruebas técnicas,
-  por lo que no puede darse por cubierto. CIDO sí proporciona procesos selectivos.
+- BOP Lleida: lector propio del eBOP (`lleida_bop.py`, código LE), distinto
+  del CIDO de Lleida. Se lee desde el ejecutor de casa.
+
+## Fuentes leídas desde el ejecutor de casa (30/10/2026)
+
+Sus portales no responden a GitHub Actions pero sí desde una conexión
+española. `feeds_diarios.HOME_ONLY` las lee en `revisar-espana-casa.yml`.
+Auditoría real de 30 días (01/10–30/10/2026), validada con las reglas de
+`Province.kt`:
+
+| Fuente | Código | Lector | Ediciones | Anuncios | Candidatas |
+|---|---|---|---|---|---|
+| Navarra (BON) | NA | `navarra_bon.py` | 24 | 1201 | 47 |
+| Asturias (BOPA) | AS | `asturias_bopa.py` | 23 | 944 | 64 |
+| Ceuta (BOCCE) | CE | `ceuta_bocce.py` | 16 | 69 | 3 |
+| BOP Albacete | AB | `albacete_bop.py` | 13 | 224 | 16 |
+| Cantabria (BOC) | CN | `cantabria_boc.py` | 32 | 927 | 31 |
+| BOP Valladolid | VD | `valladolid_bop.py` | 22 | 333 | 21 |
+| BOP Burgos | BU | `burgos_bop.py` | 22 | 583 | 15 |
+| BOP Jaén | JA | `jaen_bop.py` | 23 | 554 | 26 |
+| BOP Lleida | LE | `lleida_bop.py` | 22 | 984 | 69 |
+
+- **Cuenca** (`cuenca_bop.py`, CU): lector auditado (13 ediciones, 250
+  anuncios, 13 candidatas), pero no se activa hasta que la app 1.38.0 esté
+  publicada: la web oficial cambió a `https://www.dipucuenca.es/boletin1` y
+  las APK anteriores rechazarían el feed.
+- **Burgos**: el servidor solo admite TLS 1.0; el lector usa un adaptador
+  propio con verificación de certificado y nombre de host activadas.
+- **Jaén**: el portal devuelve HTTP 429 sin pausa entre peticiones; el
+  lector espera 0,6 s. Tarda unos 2 minutos.
+- **Málaga** sigue fuera: verificación anti-robots en los PDF (no se elude).
 
 ## Próximas integraciones
 

@@ -66,11 +66,16 @@ SOURCES={
     "AS":("asturias_bopa.py",[],"asturias_bopa.json"),
     "CE":("ceuta_bocce.py",[],"ceuta_bocce.json"),
     "AB":("albacete_bop.py",[],"albacete_bop.json"),
+    "CN":("cantabria_boc.py",[],"cantabria_boc.json"),
+    "VD":("valladolid_bop.py",[],"valladolid_bop.json"),
+    "BU":("burgos_bop.py",[],"burgos_bop.json"),
+    "JA":("jaen_bop.py",[],"jaen_bop.json"),
+    "LE":("lleida_bop.py",[],"lleida_bop.json"),
 }
 # Portales que no responden a los servidores de GitHub pero sí desde una
 # conexión española: se leen con el ejecutor propio de casa
 # (revisar-espana-casa.yml, ver EJECUTOR_CASA.md).
-HOME_ONLY={"NA","AS","CE","AB"}
+HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE"}
 # Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
 HOME_BACKUP={"RI","CC"}
 TYPES=("Bolsa de trabajo","Plaza / oposición")

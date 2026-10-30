@@ -16,7 +16,7 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias", "Ciudad Autónoma de Ceuta"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja", "Comunidad Foral de Navarra", "Principado de Asturias", "Ciudad Autónoma de Ceuta", "Cantabria"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
             groups[0].territories.map { it.name })
         assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona", "Diario autonómico"),
@@ -26,15 +26,17 @@ class SourceCatalogTest {
         assertEquals(listOf(Province.TARRAGONA_BOP, Province.TARRAGONA),
             groups[1].territories[3].sources)
         assertEquals(4, groups[0].sourceCount)
-        assertEquals(8, groups[1].sourceCount)
+        assertEquals(listOf(Province.LLEIDA_BOP, Province.LLEIDA),
+            groups[1].territories[2].sources)
+        assertEquals(9, groups[1].sourceCount)
         assertEquals(listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"), groups[2].territories.map { it.name })
         assertEquals(4, groups[2].sourceCount)
-        assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Sevilla", "Diario autonómico"), groups[3].territories.map { it.name })
-        assertEquals(7, groups[3].sourceCount)
+        assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Jaén", "Sevilla", "Diario autonómico"), groups[3].territories.map { it.name })
+        assertEquals(8, groups[3].sourceCount)
         assertEquals(listOf("Madrid"), groups[4].territories.map { it.name })
-        assertEquals(listOf("Ciudad Real", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
-        assertEquals(listOf("Ávila", "León", "Palencia", "Salamanca", "Segovia", "Soria", "Zamora", "Diario autonómico"), groups[6].territories.map { it.name })
-        assertEquals(8, groups[6].sourceCount)
+        assertEquals(listOf("Albacete", "Ciudad Real", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
+        assertEquals(listOf("Ávila", "Burgos", "León", "Palencia", "Salamanca", "Segovia", "Soria", "Valladolid", "Zamora", "Diario autonómico"), groups[6].territories.map { it.name })
+        assertEquals(10, groups[6].sourceCount)
         assertEquals(listOf("Badajoz", "Cáceres", "Diario autonómico"), groups[7].territories.map { it.name })
         assertEquals(listOf("Murcia"), groups[8].territories.map { it.name })
         assertEquals(listOf("Álava", "Bizkaia", "Gipuzkoa", "Diario autonómico"), groups[9].territories.map { it.name })
@@ -44,6 +46,7 @@ class SourceCatalogTest {
         assertEquals(listOf("Melilla"), groups[13].territories.map { it.name })
         assertEquals(listOf("Diario autonómico"), groups[14].territories.map { it.name })
         assertEquals(listOf(Province.NAVARRA_BON), groups[15].territories.first().sources)
+        assertEquals(listOf(Province.CANTABRIA_BOC), groups[18].territories.first().sources)
     }
 
     @Test fun activeSourcesListFromTheWebIsValidated() {
@@ -88,6 +91,8 @@ class SourceCatalogTest {
         assertEquals("BON · boletín de Navarra", SourceCatalog.sourceName(Province.NAVARRA_BON))
         assertEquals("BOPA · diario autonómico", SourceCatalog.sourceName(Province.ASTURIAS_BOPA))
         assertEquals("BOCCE · boletín de la ciudad autónoma", SourceCatalog.sourceName(Province.CEUTA_BOCCE))
+        assertEquals("BOC · boletín de Cantabria", SourceCatalog.sourceName(Province.CANTABRIA_BOC))
+        assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.LLEIDA_BOP))
         assertEquals("BOP · boletín provincial", SourceCatalog.sourceName(Province.GALICIA_OURENSE))
         assertTrue(SourceCatalog.isCido(Province.BARCELONA))
         assertFalse(SourceCatalog.isCido(Province.BARCELONA_BOP))
