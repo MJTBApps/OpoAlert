@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Boletín oficial con un aviso: lo que hace OpoAlert. Todo dentro de la zona segura (radio 33). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Sombra suave del boletín -->
+    <path android:fillColor="#331E3A8A"
+        android:pathData="M38,30h28a4,4 0,0 1,4 4v42a4,4 0,0 1,-4 4h-28a4,4 0,0 1,-4 -4v-42a4,4 0,0 1,4 -4z" />
+    <!-- Boletín -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M37,28h28a3,3 0,0 1,3 3v42a3,3 0,0 1,-3 3h-28a3,3 0,0 1,-3 -3v-42a3,3 0,0 1,3 -3z" />
+    <!-- Cabecera del boletín -->
+    <path android:fillColor="#1D4ED8"
+        android:pathData="M39,33h24a1.5,1.5 0,0 1,1.5 1.5v3a1.5,1.5 0,0 1,-1.5 1.5h-24a1.5,1.5 0,0 1,-1.5 -1.5v-3a1.5,1.5 0,0 1,1.5 -1.5z" />
+    <!-- Líneas de texto -->
+    <path android:fillColor="#BFDBFE"
+        android:pathData="M39,44h24v2.6h-24z M39,50h24v2.6h-24z M39,56h17v2.6h-17z M39,62h12v2.6h-12z" />
+    <!-- Aro blanco que separa el aviso del boletín -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M66,56a14,14 0,1 1,-0.01 0z" />
+    <!-- Aviso -->
+    <path android:fillColor="#F59E0B"
+        android:pathData="M66,58a12,12 0,1 1,-0.01 0z" />
+    <!-- Campana -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M66,62.5c-3.8,0 -6.3,2.9 -6.3,6.4v3.7c0,1.6 -0.8,2.8 -2.2,3.9h17c-1.4,-1.1 -2.2,-2.3 -2.2,-3.9v-3.7c0,-3.5 -2.5,-6.4 -6.3,-6.4z M63.7,77.6h4.6c-0.4,1.5 -1.2,2.3 -2.3,2.3s-1.9,-0.8 -2.3,-2.3z" />
+</vector>

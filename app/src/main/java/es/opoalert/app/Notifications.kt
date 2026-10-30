@@ -63,7 +63,7 @@ object Notifications {
             inbox.setSummaryText("+ " + (matching.size - lines.size) + " anuncios más")
         }
         val notification = NotificationCompat.Builder(context, CHANNEL)
-            .setSmallIcon(R.drawable.ic_opoalert)
+            .setSmallIcon(R.drawable.ic_notification)
             .setContentTitle(title)
             .setContentText(body)
             .setStyle(inbox)
