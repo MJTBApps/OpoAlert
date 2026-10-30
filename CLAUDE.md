@@ -4,9 +4,11 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
 
 - Repositorio **público**: `https://github.com/MJTBApps/OpoAlert` (rama `main`).
 - Web y descargas: `https://mjtbapps.github.io/OpoAlert/` (GitHub Pages desde `docs/`).
-- Se trabaja con **GitHub Desktop** en `C:\Users\PC-02\Desktop\APP\OpoAlert`. No hay `git` en el PATH; el de GitHub Desktop está en `%LOCALAPPDATA%\GitHubDesktop\app-*\resources\app\git\cmd\git.exe`.
+- Se trabaja en dos equipos:
+  - **iMac de casa** (macOS 13, Intel x64): `/Users/jordi/Desktop/APP/OpoAlert`. Aquí `git` funciona en la terminal (Xcode Command Line Tools). Python 3.12 de python.org; entorno `~/opoalert-venv` (el mismo que usa el ejecutor de casa). En Mac Intel, `pip install` con `--only-binary=:all:` (las últimas `cryptography` y `pymupdf` ya no traen paquete para Intel y no compilan).
+  - **PC Windows**: GitHub Desktop en `C:\Users\PC-02\Desktop\APP\OpoAlert`. No hay `git` en el PATH; el de GitHub Desktop está en `%LOCALAPPDATA%\GitHubDesktop\app-*\resources\app\git\cmd\git.exe`. Lo que sigue sobre `.venv\`, `.bat` y Temurin se refiere a este PC.
 - Desde el 30/10/2026 el proyecto se desarrolla **solo con Claude**: ChatGPT dejó unas 25 ramas `feature/*` sin unir y unos 200 workflows de pruebas sueltas. Su trabajo útil ya está en `main`; no hay que retomar esas ramas. Si cambian las reglas, actualiza este archivo.
-- Claude no puede hacer push desde la línea de comandos: hace los commits en local y el usuario pulsa «Push origin» en GitHub Desktop.
+- Claude no hace push: hace los commits en local y el usuario pulsa «Push origin» en GitHub Desktop.
 
 ## Cómo funciona
 
@@ -88,7 +90,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 - App **1.36.0** (30/10/2026): las 19 fuentes de siempre más **39 con feed diario** en `feeds_diarios.SOURCES`. La app lee de la web `fuentes_activas.json` (lo genera `publicar-web.yml`), así que **una fuente nueva aparece sin instalar otra APK**.
 - **Cuatro actualizaciones al día** para todas las fuentes: 6:30, 9:30, 12:30 y 16:30 en invierno (una hora más en verano), escalonadas 5 minutos. La app 1.37.0 consulta cada hora y avisa de APK nuevas (`version.json`, generado por `feeds_diarios.py manifest` desde las APK de `docs/`).
-- **Ejecutor de casa** (`revisar-espana-casa.yml`, guía `EJECUTOR_CASA.md`, etiqueta `opoalert-casa`): lee los portales que no responden a GitHub. `feeds_diarios.HOME_ONLY` = Navarra, Asturias y Ceuta; `HOME_BACKUP` = La Rioja y Cáceres (también se leen en GitHub). Hasta que el usuario instale el ejecutor en el Mac de casa, las fuentes solo-casa no se publican y la app no las muestra (no salen en `fuentes_activas.json`).
+- **Ejecutor de casa** (`revisar-espana-casa.yml`, guía `EJECUTOR_CASA.md`, etiqueta `opoalert-casa`): lee los portales que no responden a GitHub. `feeds_diarios.HOME_ONLY` = Navarra, Asturias y Ceuta; `HOME_BACKUP` = La Rioja y Cáceres (también se leen en GitHub). **Instalado el 30/10/2026 en el iMac** (`iMac-de-Jordi`, carpeta `~/actions-runner`, servicio launchd del usuario, `.env` con `OPOALERT_PYTHON=~/opoalert-venv/bin/python`); primera ejecución en verde y Navarra, Asturias y Ceuta publicadas. El servicio arranca al iniciar sesión: tras un corte de luz no funciona hasta que alguien entre en el iMac (el inicio de sesión automático lo decide el usuario). Si el iMac está apagado, esas fuentes no se actualizan y la app conserva el último feed.
 - Ceuta: ids `CE-AAAA-NNN` (ordinarios) y `CE-AAAA-ENNN` (extraordinarios); `announcementsRead` = edictos leídos de los PDF.
 - **Ocultas** (`pendingDailyFeed`): Albacete y Cuenca (portal bloqueado). Sin lector: Jaén, Málaga, Burgos, Valladolid, Cantabria, BOP Lleida.
 - Repositorio: en Settings → Actions está activado «Require approval for all external contributors» (protege el ejecutor de casa).
