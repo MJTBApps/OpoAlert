@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-10-30T12:07:45.136933+00:00",
+  "lastCheckedUTC": "2026-10-30T16:06:26.814707+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "10483",
-    "pagesVisited": 31,
-    "announcementsRead": 1058,
-    "opportunities": 273
+    "bulletin": "10483B",
+    "pagesVisited": 32,
+    "announcementsRead": 1060,
+    "opportunities": 258
   },
   "historyCoverage": {
     "complete": true,
@@ -46,7 +46,8 @@
       "10480B",
       "10481",
       "10482",
-      "10483"
+      "10483",
+      "10483B"
     ],
     "publicationDates": [
       "2026-10-01",
@@ -79,6 +80,7 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
+      "2026-10-30",
       "2026-10-30"
     ],
     "nonPublicationDates": [
@@ -92,9 +94,9 @@
       "2026-10-18",
       "2026-10-24"
     ],
-    "issuesRead": 31,
-    "announcementsRead": 1058,
-    "opportunities": 273
+    "issuesRead": 32,
+    "announcementsRead": 1060,
+    "opportunities": 258
   },
   "notices": [
     {
@@ -548,16 +550,6 @@
       "url": "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33041_es.pdf"
     },
     {
-      "id": "DV-2026-31467",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, del Rectorado, por la que se publican las listas provisionales de personas admitidas y excluidas, y el órgano técnico de selección de las pruebas selectivas de acceso al grupo A, subgrupo A2, sector administración especial, ayudante de archivos, biblioteca y museos en el Área de Biblioteca y Documentación Científica, por el sistema de concurso-oposición (código: 2026/P/FC/C/11).",
-      "entity": "Universitat Politècnica de València",
-      "date": "28/10/2026",
-      "bulletin": "10481",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/28/pdf/2026_31467_es.pdf"
-    },
-    {
       "id": "DV-2026-31404",
       "province": "Comunidad Valenciana (DOGV)",
       "title": "ANUNCIO de la convocatoria para cubrir en propiedad dos plazas de oficial u oficiala de primera polivalente, por turno libre, cuyo proceso selectivo será concurso-oposición.",
@@ -636,56 +628,6 @@
       "bulletin": "10480",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32906_es.pdf"
-    },
-    {
-      "id": "DV-2026-32903",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo en el puesto de trabajo número 59, técnico medio o técnica media de gestión administrativa, correspondiente a la oferta de empleo público de 2023, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "27/10/2026",
-      "bulletin": "10480",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32903_es.pdf"
-    },
-    {
-      "id": "DV-2026-32902",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo en el puesto de trabajo número 79, administrativo o administrativa de gestión, correspondiente a la oferta de empleo público de 2024, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "27/10/2026",
-      "bulletin": "10480",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32902_es.pdf"
-    },
-    {
-      "id": "DV-2026-32895",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo en los puestos de trabajo números 84 y 266, administrativo o administrativa de gestión, correspondientes a la oferta de empleo público de 2022, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "27/10/2026",
-      "bulletin": "10480",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32895_es.pdf"
-    },
-    {
-      "id": "DV-2026-32886",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo en el puesto de trabajo número 179, auxiliar de gestión, correspondiente a la oferta de empleo público de 2024, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "27/10/2026",
-      "bulletin": "10480",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32886_es.pdf"
-    },
-    {
-      "id": "DV-2026-32885",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo en el puesto de trabajo número 263, especialista de informática, correspondiente a la oferta de empleo público de 2022, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "27/10/2026",
-      "bulletin": "10480",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32885_es.pdf"
     },
     {
       "id": "DV-2026-32842",
@@ -958,26 +900,6 @@
       "url": "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32768_es.pdf"
     },
     {
-      "id": "DV-2026-32602",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 18 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo en el puesto de trabajo número 54, técnico medio o técnica media de gestión cultural, correspondiente a la oferta de empleo público de 2022, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "23/10/2026",
-      "bulletin": "10477",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32602_es.pdf"
-    },
-    {
-      "id": "DV-2026-32582",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 18 de octubre de 2026, de la Dirección General, por la que se da publicidad a la relación definitiva de personas admitidas y excluidas en el proceso de selección para el ingreso como personal laboral fijo del Institut Valencià de Cultura en el puesto de trabajo número 47, técnico o técnica superiores de administración, correspondiente a la oferta de empleo público del IVC de 2023, y se establece la fecha, hora y lugar de realización del primer ejercicio de la fase de oposición.",
-      "entity": "Institut Valencià de Cultura",
-      "date": "23/10/2026",
-      "bulletin": "10477",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32582_es.pdf"
-    },
-    {
       "id": "DV-2026-32542",
       "province": "Comunidad Valenciana (DOGV)",
       "title": "RESOLUCIÓN de 14 de octubre de 2026, de la Subsecretaría, por la que se modifica la composición de determinados órganos técnicos de selección designados por la Resolución de 17 de abril de 2026, encargados de la ejecución de los procesos selectivos convocados por la Resolución de 21 de enero de 2026, de la Dirección General del Institut Valencià de Cultura, mediante la cual se convoca la constitución de bolsas extraordinarias de empleo temporal para la cobertura de diversos puestos de trabajo en la citada entidad.",
@@ -1128,16 +1050,6 @@
       "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32363_es.pdf"
     },
     {
-      "id": "DV-2026-32303",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO del listado definitivo de personas admitidas en la bolsa de trabajo de personal de ingeniería de la edificación/arquitectura técnica, grupo A, subgrupo A2.",
-      "entity": "Ayuntamiento de Xirivella",
-      "date": "22/10/2026",
-      "bulletin": "10476",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32303_es.pdf"
-    },
-    {
       "id": "DV-2026-30706",
       "province": "Comunidad Valenciana (DOGV)",
       "title": "ANUNCIO de la aprobación de las bases de la convocatoria de una plaza de técnico o técnica medios de administración general, grupo A2.",
@@ -1206,16 +1118,6 @@
       "bulletin": "10475",
       "type": "Bolsa de trabajo",
       "url": "https://dogv.gva.es/datos/2026/10/21/pdf/2026_32688_es.pdf"
-    },
-    {
-      "id": "DV-2026-32243",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 14 de octubre de 2026, del órgano técnico de selección, por la que se publica el listado provisional de personas admitidas y excluidas para el ingreso como personal fijo en el puesto de trabajo del Institut Valencià d'Art Modern (IVAM) de naturaleza laboral, número 73, conservador o conservadora, correspondiente al turno de promoción interna de la oferta de empleo pública del IVAM de 2026, convocatoria 8/2026, convocada por la Resolución de fecha 24 de julio de 2026, de la Gerencia.",
-      "entity": "Institut Valencià d'Art Modern",
-      "date": "21/10/2026",
-      "bulletin": "10475",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/21/pdf/2026_32243_es.pdf"
     },
     {
       "id": "DV-2026-32180",
@@ -1458,16 +1360,6 @@
       "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32101_es.pdf"
     },
     {
-      "id": "DV-2026-32075",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, del órgano técnico de selección, por la que se publica el listado provisional de personas admitidas y excluidas para el ingreso como personal fijo en el puesto de trabajo de naturaleza laboral, número 63, correspondiente al turno libre de la oferta de empleo público de 2026. Convocatoria 7/2026.",
-      "entity": "Institut Valencià d'Art Modern",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32075_es.pdf"
-    },
-    {
       "id": "DV-2026-32071",
       "province": "Comunidad Valenciana (DOGV)",
       "title": "RESOLUCIÓN de 23 de septiembre de 2026, por la que se publica, con carácter definitivo, el nombre de la persona aspirante que ha superado el proceso selectivo para el ingreso en la escala superior de informática (referencia PI-05/26), por el sistema general de promoción interna.",
@@ -1568,16 +1460,6 @@
       "url": "https://dogv.gva.es/datos/2026/10/19/pdf/2026_31983_es.pdf"
     },
     {
-      "id": "DV-2026-31942",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, del órgano técnico de selección, por la que se publica el listado provisional de personas admitidas y excluidas para el ingreso como personal fijo en el puesto de trabajo del Institut Valencià d'Art Modern de naturaleza laboral número 25, ayudante de mantenimiento, correspondiente al turno libre de la oferta de empleo público de 2026. Convocatoria 6/2026.",
-      "entity": "Institut Valencià d'Art Modern",
-      "date": "19/10/2026",
-      "bulletin": "10473",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/19/pdf/2026_31942_es.pdf"
-    },
-    {
       "id": "DV-2026-31903",
       "province": "Comunidad Valenciana (DOGV)",
       "title": "ANUNCIO de la resolución de Alcaldía por la que se deja sin efecto la convocatoria del proceso selectivo para la provisión en propiedad de una plaza de técnico o técnica de juventud.",
@@ -1598,16 +1480,6 @@
       "url": "https://dogv.gva.es/datos/2026/10/19/pdf/2026_31863_es.pdf"
     },
     {
-      "id": "DV-2026-32302",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 14 de octubre de 2026, de la Dirección General de Función Pública, por la que se publican las listas provisionales de personas admitidas y excluidas para las pruebas selectivas de acceso al cuerpo superior de Administración, A1-01, convocatoria 1/26, turno libre.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_32302_es.pdf"
-    },
-    {
       "id": "DV-2026-32222",
       "province": "Comunidad Valenciana (DOGV)",
       "title": "ANUNCIO del extracto de la convocatoria del proceso selectivo para cubrir una plaza de personal de limpieza por concurso-oposición, turno libre.",
@@ -1616,16 +1488,6 @@
       "bulletin": "10472",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_32222_es.pdf"
-    },
-    {
-      "id": "DV-2026-31741",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, del órgano técnico de selección, por la que se publica el listado provisional de personas admitidas y excluidas para el ingreso como personal fijo, de naturaleza laboral, números 13 y 15 administrativa o administrativo, correspondiente al turno libre de la oferta de empleo público de 2026. Convocatoria 5/2026.",
-      "entity": "Institut Valencià d'Art Modern",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_31741_es.pdf"
     },
     {
       "id": "DV-2026-31721",
@@ -2086,16 +1948,6 @@
       "bulletin": "10470",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/14/pdf/2026_31423_es.pdf"
-    },
-    {
-      "id": "DV-2026-31223",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, por la que se publican las listas definitivas de personas admitidas y excluidas y se convoca a la realización del primer ejercicio del proceso selectivo para el ingreso en la escala media de instrumentación e infraestructuras científico-técnicas (referencia B02/26), por el sistema general de acceso libre.",
-      "entity": "Universidad de Alicante",
-      "date": "14/10/2026",
-      "bulletin": "10470",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/14/pdf/2026_31223_es.pdf"
     },
     {
       "id": "DV-2026-28843",

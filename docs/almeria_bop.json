@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-10-29T18:08:15.577962+00:00",
+  "lastCheckedUTC": "2026-10-30T16:05:05.957427+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 706,
-    "announcementsRead": 305,
-    "opportunities": 61
+    "bulletin": "211",
+    "pagesVisited": 746,
+    "announcementsRead": 314,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
-    "issuesRead": 21,
-    "pagesVisited": 706,
-    "announcementsRead": 305,
-    "opportunities": 61,
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
+    "issuesRead": 22,
+    "pagesVisited": 746,
+    "announcementsRead": 314,
+    "opportunities": 62,
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -40,10 +39,11 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-05",
@@ -63,7 +63,9 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -73,14 +75,12 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25",
-      "2026-10-29"
+      "2026-10-25"
     ],
-    "originalPdfPagesRead": 706,
+    "originalPdfPagesRead": 746,
     "archiveIndexPagesRead": 3,
-    "archiveTotalIssues": 48184,
+    "archiveTotalIssues": 48186,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392762&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F9%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392763&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+1%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392764&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+2%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392765&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+5%2F10%2F2026.pdf",
@@ -100,10 +100,32 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392779&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+23%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392780&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+26%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392781&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+27%2F10%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392782&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+28%2F10%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392782&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+28%2F10%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392783&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+29%2F10%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392784&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F10%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-02973",
+      "province": "Almería",
+      "title": "Documento firmado electrónicamente. Verificable en https://ov.dipalme.org/csv?id=Z7UtALya7QJ25SmQZdvIRw== . Expediente nº: 31/2026 Procedimiento: Convocatoria de Plazas por Promoción Interna mediante Concurso-Oposición…",
+      "entity": "AYUNTAMIENTO DE TIJOLA",
+      "date": "30/10/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2973/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-02950",
+      "province": "Almería",
+      "title": "Expediente nº: 76/2026 Procedimiento: Convocatoria y pruebas de selección por concurso-oposición de 1 plaza de Monitor/a de Deportes a Jornada Completa y 1 plaza de Monitor/a de Deportes a Tiempo Parcial, como personal…",
+      "entity": "AYUNTAMIENTO DE TIJOLA",
+      "date": "29/10/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf"
+    },
     {
       "id": "AM-2026-02940",
       "province": "Almería",
@@ -703,16 +725,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2526/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02608",
-      "province": "Almería",
-      "title": "De conformidad con lo establecido en las bases de la convocatoria de oposición para la provisión en propiedad de seis plazas de auxiliar de administración general, se ha dictado resolución de la Presidencia núm. 2.303/2026,…",
-      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
-      "date": "30/09/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2608/anuncio.pdf"
     }
   ]
 }
