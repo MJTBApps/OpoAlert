@@ -6,7 +6,7 @@ from pathlib import Path
 from datetime import date,datetime,timedelta,timezone
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlencode,urlsplit,parse_qs
-from clm_common import employment,publish_audit,invalid
+from clm_common import employment,publish_audit,invalid,numbering_ok
 
 SOURCE="https://bop.dip-caceres.es/bop/index.html"
 API="https://bop.dip-caceres.es/bop/services/"
@@ -72,7 +72,7 @@ def archive(start,end):
     if (len(entries)<18 or (days[0]-start).days>4 or (end-days[-1]).days>4
         or len(set(days))!=len(days)):
         invalid("Cáceres: edición histórica ausente o fechas duplicadas")
-    if any(b[1]!=a[1]+1 for a,b in zip(entries,entries[1:])):
+    if not numbering_ok(entries):
         invalid("Cáceres: falta un código de edición en el intervalo")
     return entries
 def parse_day(rows,day,id_bop):
@@ -119,8 +119,7 @@ def audit(today=None):
     end=today or date.today();start=end-timedelta(days=29)
     entries=archive(start,end)
     with ThreadPoolExecutor(max_workers=2) as pool:issue_data=list(pool.map(scan,entries))
-    nums=[int(x["number"]) for x in issue_data]
-    if any(b!=a+1 for a,b in zip(nums,nums[1:])):
+    if not numbering_ok([(x["day"],int(x["number"])) for x in issue_data]):
         invalid("Cáceres: no están todos los números de boletín")
     return publish_audit(SOURCE,"Cáceres",issue_data,today=end)
 if __name__=="__main__":

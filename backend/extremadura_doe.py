@@ -7,7 +7,7 @@ from datetime import date,datetime,timedelta
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit,urljoin,parse_qs
 from bs4 import BeautifulSoup
-from clm_common import employment,publish_audit,invalid
+from clm_common import employment,publish_audit,invalid,numbering_ok
 
 SOURCE="https://doe.juntaex.es/"
 HOST="doe.juntaex.es"
@@ -129,8 +129,8 @@ def audit(today=None):
     end=today or date.today();start=end-timedelta(days=29)
     sources=calendar(start,end)
     with ThreadPoolExecutor(max_workers=5) as pool:issues=list(pool.map(scan,sources))
-    ords=[int(x["number"][:-1]) for x in issues if x["number"].endswith("O")]
-    if any(b!=a+1 for a,b in zip(ords,ords[1:])):
+    ords=[(x["day"],int(x["number"][:-1])) for x in issues if x["number"].endswith("O")]
+    if not numbering_ok(ords):
         invalid("DOE: numeración ordinaria no consecutiva")
     return publish_audit(SOURCE,"Extremadura (DOE)",issues,today=end)
 if __name__=="__main__":

@@ -7,7 +7,7 @@ from datetime import date,datetime,timedelta
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit,urljoin,parse_qs
 from bs4 import BeautifulSoup
-from clm_common import employment,publish_audit,invalid
+from clm_common import employment,publish_audit,invalid,numbering_ok
 
 SOURCE="https://www.dip-badajoz.es/bop/"
 HOST="www.dip-badajoz.es"
@@ -117,8 +117,7 @@ def audit(today=None):
     days=archive(start,end)
     with ThreadPoolExecutor(max_workers=5) as pool:
         issues=list(pool.map(scan,days))
-    numbers=[int(x["number"]) for x in issues]
-    if any(b!=a+1 for a,b in zip(numbers,numbers[1:])):
+    if not numbering_ok([(x["day"],int(x["number"])) for x in issues]):
         invalid("Badajoz: números de boletín discontinuos o extraordinarios omitidos")
     return publish_audit(SOURCE,"Badajoz",issues,today=end)
 if __name__=="__main__":

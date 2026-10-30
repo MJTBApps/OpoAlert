@@ -101,7 +101,10 @@ def validate(code,path,previous=None,today=None):
     try:
         start=date.fromisoformat(hist["rangeStart"]);end=date.fromisoformat(hist["rangeEnd"])
     except Exception:fail(code,"periodo de fechas ausente")
-    if (end-start).days!=29:fail(code,f"el periodo no es de 30 días: {start}–{end}")
+    # 30 días; en enero, las fuentes cuyo archivo oficial empieza cada año de cero
+    # cubren del 1 de enero a hoy.
+    if not ((end-start).days==29 or (start==date(end.year,1,1) and (end-start).days<29)):
+        fail(code,f"el periodo no es de 30 días: {start}–{end}")
     if not 0<=(today-end).days<=1:fail(code,f"el periodo termina el {end}, no hoy ({today})")
     dates=hist.get("publicationDates");numbers=hist.get("bulletins")
     if not isinstance(dates,list) or not isinstance(numbers,list) or not dates or len(dates)!=len(numbers):
@@ -112,7 +115,9 @@ def validate(code,path,previous=None,today=None):
     if (days[0]-start).days>4 or (end-days[-1]).days>4:fail(code,"faltan ediciones al principio o al final")
     if len(set(zip(dates,map(str,numbers))))!=len(dates):fail(code,"edición duplicada")
     issues=len(dates)
-    if cov.get("pagesVisited")!=issues or hist.get("issuesRead")!=issues:fail(code,"contador de ediciones incoherente")
+    # pagesVisited puede incluir páginas de control (p. ej. el boletín anterior a la ventana).
+    if not isinstance(cov.get("pagesVisited"),int) or cov["pagesVisited"]<issues or hist.get("issuesRead")!=issues:
+        fail(code,"contador de ediciones incoherente")
     read=cov.get("announcementsRead")
     if not isinstance(read,int) or read<issues or hist.get("announcementsRead")!=read:
         fail(code,"contador de anuncios incoherente")

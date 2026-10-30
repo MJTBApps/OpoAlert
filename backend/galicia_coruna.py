@@ -6,12 +6,12 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit,parse_qs,urljoin
 from bs4 import BeautifulSoup
-from clm_common import publish_audit,write_output,invalid
+from clm_common import publish_audit,write_output,invalid,numbering_ok
 from galicia_common import galicia_employment
 import requests,re,threading,argparse,time
 SOURCE="https://bop.dacoruna.gal/bopportal/ultimoBoletin"
 HOST="bop.dacoruna.gal"
-PDF_RE=re.compile(r"^/bopportal/publicado/2026/(\d{2})/(\d{2})/2026_(\d{10})\.pdf$")
+PDF_RE=re.compile(r"^/bopportal/publicado/(\d{4})/(\d{2})/(\d{2})/(\d{4})_(\d{10})\.pdf$")
 MONTHS={"xaneiro":1,"febreiro":2,"marzo":3,"abril":4,"maio":5,"xuño":6,
 "xullo":7,"agosto":8,"setembro":9,"outubro":10,"novembro":11,"decembro":12,
 "enero":1,"febrero":2,"mayo":5,"junio":6,"julio":7,"septiembre":9,"octubre":10,
@@ -67,15 +67,18 @@ def read_day(day):
   p=b.select_one("p.resumenSumario")
   anchors=p.select('a[title="Ver texto completo"]') if p else []
   if len(anchors)<2:invalid(f"A Coruña {day}: anuncio sin código o título")
-  idmatch=re.fullmatch(r"2026/(\d{1,8})",anchors[0].get_text(" ",strip=True))
+  idmatch=re.fullmatch(r"(\d{4})/(\d{1,8})",anchors[0].get_text(" ",strip=True))
   title=" ".join(anchors[1].get_text(" ",strip=True).split())
   heading=next((x for x in reversed(b.find_all(re.compile(r"^h[2-5]$"))) if x.get_text(" ",strip=True)),None)
-  entity=" ".join(heading.get_text(" ",strip=True).split()) if heading else ""
-  if not idmatch or not title or not entity:invalid(f"A Coruña {day}: título/emisor/código inválido")
-  k=int(idmatch[1]);nid=f"AC-2026-{k}"
+  # Algunos anuncios de particulares (comunidades de usuarios...) no llevan
+  # encabezado de organismo: no se inventa, se remite al anuncio oficial.
+  entity=" ".join(heading.get_text(" ",strip=True).split()) if heading else "Emisor: consultar anuncio oficial (BOP A Coruña)"
+  if not idmatch or not title:invalid(f"A Coruña {day}: título o código inválido")
+  # El código lleva el año de registro: en enero puede ser el del año anterior.
+  year,k=int(idmatch[1]),int(idmatch[2]);nid=f"AC-{year}-{k}"
   if nid in seen:invalid(f"A Coruña {day}: código duplicado {nid}")
   seen.add(nid)
-  official=f"https://{HOST}/bopportal/publicado/{day:%Y/%m/%d}/2026_{k:010d}.pdf"
+  official=f"https://{HOST}/bopportal/publicado/{day:%Y/%m/%d}/{year}_{k:010d}.pdf"
   kind=galicia_employment(title)
   if kind:
    pdf_check(official)
@@ -112,7 +115,7 @@ def audit(today=None):
  if day>=start:invalid("A Coruña: no se pudo recorrer 30 días del archivo oficial")
  issues.sort(key=lambda x:x["day"])
  seq=[int(x["number"]) for x in issues]
- if not 19<=len(issues)<=27 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
+ if not 19<=len(issues)<=27 or not numbering_ok([(x["day"],n) for x,n in zip(issues,seq)]):
   invalid(f"A Coruña: numeración de boletines incompleta {seq}")
  if (issues[0]["day"]-start).days>3 or (end-issues[-1]["day"]).days>3:
   invalid("A Coruña: faltan boletines inicial/final")

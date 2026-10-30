@@ -6,6 +6,7 @@ from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
 from provincial_common import ProvincialCoverageError
 from andalucia_opencms_bop import SOURCES,home,pdf_url_ok
+from clm_common import numbering_ok
 
 def validate(path:Path,province:str,today:date|None=None)->dict:
     if province not in SOURCES:raise ProvincialCoverageError("Provincia no admitida")
@@ -40,7 +41,7 @@ def validate(path:Path,province:str,today:date|None=None)->dict:
         raise ProvincialCoverageError(f"{s.province}: historial o PDF faltantes")
     for x in pdfs:
         if not pdf_url_ok(s,x,True):raise ProvincialCoverageError(f"{s.province}: PDF de boletin no oficial")
-    if any(int(b)!=int(a)+1 for a,b in zip(numbers,numbers[1:])):
+    if not numbering_ok([(date.fromisoformat(d),int(n)) for d,n in zip(published,numbers)]):
         raise ProvincialCoverageError(f"{s.province}: saltos en la numeracion")
     if cov.get("bulletin")!=numbers[-1]:
         raise ProvincialCoverageError(f"{s.province}: ultimo numero inconsistente")

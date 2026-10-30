@@ -6,12 +6,12 @@ from pathlib import Path
 from urllib.parse import urlsplit,urljoin
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
-from clm_common import publish_audit,write_output,invalid
+from clm_common import publish_audit,write_output,invalid,numbering_ok
 from galicia_common import galicia_employment
 import argparse,requests,re,threading,time
 SOURCE="https://boppo.depo.gal/es/consulta-do-boppo"
 HOST="boppo.depo.gal"
-PDF_RE=re.compile(r"^/web/boppo/detalle/-/boppo/2026/(\d{2})/(\d{2})/(2026\d{6,8})/an\.bop\.PONTEVEDRA\.(2026\d{4})\.(2026\d{6,8})\.pdf$",re.I)
+PDF_RE=re.compile(r"^/web/boppo/detalle/-/boppo/(\d{4})/(\d{2})/(\d{2})/(\d{10,12})/an\.bop\.PONTEVEDRA\.(\d{8})\.(\d{10,12})\.pdf$",re.I)
 MONTHS={"enero":1,"xaneiro":1,"febrero":2,"febreiro":2,"marzo":3,"abril":4,"mayo":5,"maio":5,
 "junio":6,"xuño":6,"julio":7,"xullo":7,"agosto":8,"septiembre":9,"setembro":9,"octubre":10,"outubro":10,
 "noviembre":11,"novembro":11,"diciembre":12,"decembro":12}
@@ -80,11 +80,11 @@ def read_day_once(day):
   if not title or not agency or not pdf_tag:invalid(f"Pontevedra {day}: anuncio no identificable")
   pdf=urljoin("https://"+HOST,pdf_tag["href"]);u=urlsplit(pdf)
   mt=PDF_RE.fullmatch(u.path)
-  if (not mt or u.hostname!=HOST or u.query or u.fragment or int(mt[1])!=day.month or
-      int(mt[2])!=day.day or mt[3]!=mt[5] or
-      abs((datetime.strptime(mt[4],"%Y%m%d").date()-day).days)>10):
+  if (not mt or u.hostname!=HOST or u.query or u.fragment or int(mt[1])!=day.year or
+      int(mt[2])!=day.month or int(mt[3])!=day.day or mt[4]!=mt[6] or
+      abs((datetime.strptime(mt[5],"%Y%m%d").date()-day).days)>10):
    invalid(f"Pontevedra {day}: PDF no corresponde al anuncio {pdf}")
-  ident=mt[3];noticeid="PO-"+ident
+  ident=mt[4];noticeid="PO-"+ident
   if noticeid in seen:invalid(f"Pontevedra {day}: documento duplicado")
   seen.add(noticeid)
   kind=galicia_employment(title)
@@ -99,7 +99,7 @@ def audit(today=None):
  with ThreadPoolExecutor(max_workers=2) as pool:
   items=[x for x in pool.map(read_day,[start+timedelta(days=i) for i in range(30)]) if x]
  seq=[int(x["number"]) for x in items]
- if not 19<=len(items)<=25 or any(b!=a+1 for a,b in zip(seq,seq[1:])):
+ if not 16<=len(items)<=25 or not numbering_ok([(x["day"],n) for x,n in zip(items,seq)]):
   invalid(f"Pontevedra: número de boletines incompleto: {seq}")
  if (items[0]["day"]-start).days>3 or (end-items[-1]["day"]).days>3:
   invalid("Pontevedra: fechas inicial/final sin validar")

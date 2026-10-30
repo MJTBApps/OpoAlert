@@ -7,7 +7,7 @@ from datetime import date,datetime,timedelta,timezone
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin,urlsplit
 from bs4 import BeautifulSoup
-from clm_common import employment,invalid
+from clm_common import employment,invalid,numbering_ok
 
 HOST="www.diputaciondezamora.es"
 SOURCE="https://www.diputaciondezamora.es/opencms/servicios/BOP/busqueda-en-el-bop/"
@@ -112,7 +112,9 @@ def audit(today=None):
     if len(current)<12:invalid("Zamora: faltan días de publicación de las últimas cuatro semanas")
     if (end-current[0][0]).days>4 or (current[-1][0]-start).days>4:
         invalid("Zamora: no se cubren los límites del periodo")
-    if any(n1!=n2+1 or day1<day2 for (day1,n1,_),(day2,n2,_) in zip(current,current[1:])):
+    # La lista va de la más reciente a la más antigua.
+    if (any(day1<day2 for (day1,_,_),(day2,_,_) in zip(current,current[1:]))
+        or not numbering_ok([(d,n) for d,n,_ in reversed(current)])):
         invalid("Zamora: faltan números BOP en la lista")
     with ThreadPoolExecutor(max_workers=4) as pool:
         data=list(pool.map(scan,current))

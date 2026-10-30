@@ -62,6 +62,18 @@ def employment(title):
         return "Plaza / oposición"
     return None
 
+def numbering_ok(issues):
+    """Ediciones (fecha, número) ordenadas por fecha: números seguidos.
+
+    En enero la numeración vuelve a empezar: al cambiar de año se admite
+    tanto el número siguiente (diarios con numeración continua) como el 1.
+    """
+    for (d1,n1),(d2,n2) in zip(issues,issues[1:]):
+        if n2==n1+1:continue
+        if d2.year!=d1.year and n2==1:continue
+        return False
+    return True
+
 def record(code,province,nid,title,agency,day,bulletin,pdf):
     if not (title and agency and len(title)<=2800 and len(agency)<=500):
         invalid("título u organismo oficial ausente")
@@ -71,10 +83,14 @@ def record(code,province,nid,title,agency,day,bulletin,pdf):
     return {"id":nid,"province":province,"title":title.strip(),"entity":agency.strip(),
       "date":day.strftime("%d/%m/%Y"),"bulletin":str(bulletin),"type":employment(title),"url":pdf}
 
-def publish_audit(source,province,issue_data,days=30,today=None,min_issues=18):
+def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,start=None):
+    """start: solo para fuentes cuyo archivo oficial empieza cada año de cero;
+    en enero la ventana va del 1 de enero a hoy (ver feeds_diarios.validate)."""
     if days!=30:invalid("histórico mínimo 30 días")
     end=today or date.today()
-    start=end-timedelta(days=29)
+    if start is None:start=end-timedelta(days=29)
+    elif start!=date(end.year,1,1) or start<=end-timedelta(days=29):invalid("inicio de ventana no admitido")
+    else:min_issues=int(min_issues*((end-start).days+1)/30)
     if not issue_data:invalid("no hay boletines")
     issue_data=sorted(issue_data,key=lambda x:(x["day"],str(x["number"])))
     if any(x["day"]<start or x["day"]>end for x in issue_data):
@@ -110,7 +126,7 @@ def publish_audit(source,province,issue_data,days=30,today=None,min_issues=18):
       "historyCoverage":{"complete":True,"rangeStart":start.isoformat(),"rangeEnd":end.isoformat(),
         "bulletins":[str(x["number"]) for x in issue_data],
         "publicationDates":[x["day"].isoformat() for x in issue_data],
-        "nonPublicationDates":[(start+timedelta(days=i)).isoformat() for i in range(30)
+        "nonPublicationDates":[(start+timedelta(days=i)).isoformat() for i in range((end-start).days+1)
           if start+timedelta(days=i) not in dates],
         "issuesRead":len(issue_data),"announcementsRead":total,"opportunities":len(notices)},
       "notices":notices

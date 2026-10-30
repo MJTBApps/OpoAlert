@@ -196,7 +196,9 @@ def audit(s:Source,days:int=30,today:date|None=None,reader=scan)->dict:
         if (data["date"]!=day or data["read"]<len(data["notices"])
             or data["pages"]<1 or not pdf_url_ok(s,data["pdf"],True)):
             raise ProvincialCoverageError(f"{s.province} {day}: datos inconsistentes")
-        if issues and data["number"]!=issues[-1]["number"]+1:
+        # En enero la numeración vuelve a empezar en 1.
+        if issues and data["number"]!=issues[-1]["number"]+1 and not (
+            data["date"].year!=issues[-1]["date"].year and data["number"]==1):
             raise ProvincialCoverageError(f"{s.province}: salto de numero entre BOP "
                f"{issues[-1]['number']} y {data['number']}")
         if issues and (day-issues[-1]["date"]).days>5:

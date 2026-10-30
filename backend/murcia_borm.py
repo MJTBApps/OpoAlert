@@ -10,7 +10,7 @@ from datetime import date,datetime,timedelta
 from urllib.parse import urlsplit
 from pathlib import Path
 import argparse,json,re,requests,time,threading
-from clm_common import employment,publish_audit,write_output,invalid
+from clm_common import employment,publish_audit,write_output,invalid,numbering_ok
 
 SOURCE="https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json"
 ORIGINAL="https://www.borm.es/"
@@ -55,8 +55,39 @@ def opening_kind(title):
     if any(w in t for w in rejects):return None
     return employment(title)
 
-def parse_index(records,today):
+def index_start(records,today):
+    """Primer día de la ventana que el índice oficial permite auditar.
+
+    El índice abierto solo trae el año en curso: en enero la ventana de 30
+    días empieza el 1 de enero en lugar de inventar o arrastrar diciembre.
+    """
     start=today-timedelta(days=29)
+    if start.year<today.year and not any(isinstance(r[4],str) and r[4][:4]==str(start.year) for r in records):
+        return date(today.year,1,1)
+    return start
+
+def split_extraordinary(sequence):
+    """Separa ordinarios y extraordinarios: el índice los marca a todos como BOLETIN.
+
+    Los ordinarios de un año siguen la numeración del día anterior; un número
+    muy por debajo del último ordinario de ese año es un extraordinario
+    (llevan su propia serie: 1, 2...).
+    """
+    main,extra=[],[]
+    for day,number in sequence:
+        last=next((n for d,n in reversed(main) if d.year==day.year),None)
+        if last is not None and number<last-5:extra.append((day,number))
+        else:main.append((day,number))
+    # El primer día de la ventana puede ser un extraordinario: si el siguiente
+    # ordinario del mismo año lleva un número muy superior, moverlo.
+    if len(main)>1 and main[0][0].year==main[1][0].year and main[1][1]>main[0][1]+5:
+        extra.insert(0,main.pop(0))
+    return main,sorted(extra)
+
+def parse_index(records,today):
+    start=index_start(records,today)
+    # En enero la ventana es más corta: los mínimos se ajustan a sus días.
+    share=((today-start).days+1)/30
     by_issue=defaultdict(list)
     unique=set()
     year_all=[]
@@ -65,7 +96,7 @@ def parse_index(records,today):
             invalid("Murcia: fecha de índice no válida")
         try:day=datetime.strptime(row[4],"%Y-%m-%d %H:%M:%S").date()
         except ValueError:invalid("Murcia: fecha de boletín mal formada")
-        if day.year==today.year:year_all.append(day)
+        if day<=today:year_all.append(day)
         if day<start or day>today:continue
         kind,annid,digital,number,rawdate,title,administration,section,apartado,entity=row[:10]
         npe,pdf,html=row[16],row[18],row[17]
@@ -85,7 +116,7 @@ def parse_index(records,today):
             or p.username or p.query or p.fragment or not PDF_RE.fullmatch(p.path)
             or original!=str(pdf) or str(html)!=notice_url):
             invalid(f"Murcia {day}: documento oficial o NPE incoherente ({str(npe)[:70]})")
-        key=f"MU-{today.year}-{annid}"
+        key=f"MU-{day.year}-{annid}"
         if key in unique:invalid(f"Murcia: código de anuncio repetido {key}")
         unique.add(key)
         role=opening_kind(title)
@@ -97,17 +128,16 @@ def parse_index(records,today):
         by_issue[(day,int(number))].append(None)
     if not year_all or (today-max(year_all)).days>3:
         invalid(f"Murcia: índice público no llega al día auditado {today}")
-    if len(unique)<350 or len(by_issue)<20:
+    if len(unique)<250*share or len(by_issue)<17*share:
         invalid(f"Murcia: histórico sin suficiente cobertura, {len(unique)} anuncios / {len(by_issue)} ediciones")
     sequence=sorted(by_issue)
-    main_issues=[x for x in sequence if x[1]>=150]
-    extra_issues=[x for x in sequence if x[1]<150]
-    if any(b[1]!=a[1]+1 for a,b in zip(main_issues,main_issues[1:])):
+    main_issues,extra_issues=split_extraordinary(sequence)
+    if not numbering_ok(main_issues):
         invalid("Murcia: falta algún número consecutivo del BORM ordinario")
     # Las ediciones extraordinarias llevan numeración propia (1, 2...) y son pocas al mes.
     if len(extra_issues)>6 or len({n for _,n in extra_issues})!=len(extra_issues):
         invalid(f"Murcia: ediciones extraordinarias no identificadas {extra_issues}")
-    if len(main_issues)<20:invalid("Murcia: falta un boletín ordinario")
+    if len(main_issues)<17*share:invalid("Murcia: falta un boletín ordinario")
     issues=[]
     for day,number in sequence:
         all_items=by_issue[(day,number)]
@@ -140,7 +170,8 @@ def assert_pdf(url):
 
 def audit(today=None,verify_pdf=True):
     end=today or date.today()
-    issues=parse_index(get_index(),end)
+    records=get_index()
+    issues=parse_index(records,end)
     for i,issue in enumerate(issues,1):
         for note in issue["notices"]:
             if verify_pdf:
@@ -149,7 +180,9 @@ def audit(today=None,verify_pdf=True):
                 time.sleep(0.12)
         print(f"MURCIA BORM {issue['day']} n.º {issue['number']}: "
               f"{issue['read']} anuncios, {len(issue['notices'])} candidatas (edición {i}/{len(issues)})",flush=True)
-    return publish_audit(SOURCE,PROVINCE,issues,today=end)
+    start=index_start(records,end)
+    return publish_audit(SOURCE,PROVINCE,issues,today=end,
+                         start=start if start!=end-timedelta(days=29) else None)
 
 if __name__=="__main__":
     p=argparse.ArgumentParser()

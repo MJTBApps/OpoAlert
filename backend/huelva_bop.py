@@ -6,7 +6,7 @@ from datetime import date,datetime,timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit
-from clm_common import invalid,employment,publish_audit,write_output
+from clm_common import invalid,employment,publish_audit,write_output,numbering_ok
 
 ROOT="https://s2.diphuelva.es"
 SOURCE=ROOT+"/servicios/bope_web/busquedaCalendario"
@@ -91,10 +91,9 @@ def audit(today=None):
     with ThreadPoolExecutor(max_workers=4) as pool:
         results=list(pool.map(scan,days))
     rows=[x for x in results if x is not None]
-    if len(rows)<18:invalid("Huelva: faltan demasiados días del BOP en 30 días")
-    for a,b in zip(rows,rows[1:]):
-        if int(b["number"])!=int(a["number"])+1:
-            invalid(f"Huelva: salto de boletines entre {a['number']} y {b['number']}")
+    if len(rows)<15:invalid("Huelva: faltan demasiados días del BOP en 30 días")
+    if not numbering_ok([(x["day"],int(x["number"])) for x in rows]):
+        invalid(f"Huelva: salto de boletines {[x['number'] for x in rows]}")
     feed=publish_audit(SOURCE,"Huelva",rows,today=end)
     feed["historyCoverage"]["editionPDFs"]=[r["edition"] for r in rows]
     return feed

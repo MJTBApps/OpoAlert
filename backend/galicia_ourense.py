@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urlsplit
 import requests,threading,re,argparse
-from clm_common import publish_audit,write_output,invalid
+from clm_common import publish_audit,write_output,invalid,numbering_ok
 from galicia_common import galicia_employment
 
 SOURCE="https://bop.depourense.es/portalapi/api/boletin/getFecha"
@@ -83,7 +83,7 @@ def read_day(day):
             if kind:
                 pdf=f"https://{HOST}/portalapi/api/edicto/descargar/pdf/{ident}/idioma/gl"
                 pdf_check(pdf)
-                notices.append({"id":f"OU-2026-{ident}","province":"Ourense",
+                notices.append({"id":f"OU-{day.year}-{ident}","province":"Ourense",
                   "title":title,"entity":agency,"date":day.strftime("%d/%m/%Y"),
                   "bulletin":str(meta["numeroBop"])+("E" if meta["excepcional"]=="S" else ""),
                   "type":kind,"url":pdf})
@@ -100,9 +100,9 @@ def audit(today=None):
     editions=[issue for group in rows for issue in group]
     ordinarias=[x for x in editions if not x["number"].endswith("E")]
     numbers=[int(x["number"]) for x in ordinarias]
-    if (len(editions)<20 or len(editions)>28 or
+    if (len(editions)<17 or len(editions)>28 or
         (ordinarias[0]["day"]-start).days>3 or (end-ordinarias[-1]["day"]).days>3 or
-        any(b!=a+1 for a,b in zip(numbers,numbers[1:]))):
+        not numbering_ok([(x["day"],n) for x,n in zip(ordinarias,numbers)])):
         invalid(f"Ourense: BOP ordinarios no cubren 30 días: {numbers}")
     return publish_audit(SOURCE,"Ourense",editions,today=end)
 

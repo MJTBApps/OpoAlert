@@ -13,6 +13,7 @@ from urllib.parse import urljoin,urlsplit
 import requests
 from bs4 import BeautifulSoup
 from provincial_common import ProvincialCoverageError,classify
+from clm_common import numbering_ok
 
 HOME="https://www.bocm.es"
 CATALOG=HOME+"/listado-de-boletines"
@@ -63,11 +64,13 @@ def request(url:str,pdf:bool=False)->requests.Response:
 def issue_html(day:date,number:int)->str:
     return f"{HOME}/boletin-completo/BOCM-{day:%Y%m%d}/{number}"
 
+# El número va siempre con tres cifras (BOCM-20260102001.xml, 00100.PDF):
+# sin relleno, los boletines 1 a 99 de cada año no se encontrarían.
 def issue_xml(day:date,number:int)->str:
-    return f"{HOME}/boletin/CM_Boletin_BOCM/{day:%Y/%m/%d}/BOCM-{day:%Y%m%d}{number}.xml"
+    return f"{HOME}/boletin/CM_Boletin_BOCM/{day:%Y/%m/%d}/BOCM-{day:%Y%m%d}{number:03d}.xml"
 
 def issue_pdf(day:date,number:int)->str:
-    return f"{HOME}/boletin/CM_Boletin_BOCM/{day:%Y/%m/%d}/{number}00.PDF"
+    return f"{HOME}/boletin/CM_Boletin_BOCM/{day:%Y/%m/%d}/{number:03d}00.PDF"
 
 def pdf_ok(url:str,day:date,number:int|None=None)->bool:
     u=urlsplit(url)
@@ -112,12 +115,11 @@ def archive(html:str,start:date,end:date)->list[tuple[date,int]]:
             key=(d,number)
             found[key]=found.get(key,0)+1
     data=sorted(found)
-    if len(data)<20 or any(v>2 for v in found.values()):
+    if len(data)<17 or any(v>2 for v in found.values()):
         fail("catálogo no cubre 30 días o tiene duplicaciones")
     if (end-data[-1][0]).days>4 or (data[0][0]-start).days>4:
         fail("faltan boletines al inicio o fin de los 30 días")
-    numbers=[n for _,n in data]
-    if any(b!=a+1 for a,b in zip(numbers,numbers[1:])):
+    if not numbering_ok(data):
         fail("faltan números de BOCM en el calendario oficial")
     return data
 

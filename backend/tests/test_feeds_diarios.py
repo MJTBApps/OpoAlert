@@ -59,9 +59,39 @@ class FeedsDiariosTest(unittest.TestCase):
             with self.assertRaises(fd.FeedError):fd.validate("MD",self.write(tmp,bad),today=today)
             with self.assertRaises(fd.FeedError):
                 fd.validate("MD",self.write(tmp,feed(today-timedelta(days=5))),today=today)
+            # Periodo corto: solo si empieza el 1 de enero del mismo año.
+            short=feed(today);short["historyCoverage"]["rangeStart"]=(today-timedelta(days=10)).isoformat()
+            if today-timedelta(days=10)!=date(today.year,1,1):
+                with self.assertRaises(fd.FeedError):fd.validate("MD",self.write(tmp,short),today=today)
             old=feed(today);old["coverage"]["announcementsRead"]*=3
             prev=self.write(tmp,old,"prev.json")
             with self.assertRaises(fd.FeedError):fd.validate("MD",ok,previous=prev,today=today)
+
+def numbering_ok_main(main):
+    from clm_common import numbering_ok
+    return numbering_ok(main)
+
+class NumberingTest(unittest.TestCase):
+    def test_new_year_restarts_numbering(self):
+        from clm_common import numbering_ok
+        d=date
+        self.assertTrue(numbering_ok([(d(2026,12,30),248),(d(2026,12,31),249),(d(2027,1,4),1),(d(2027,1,5),2)]))
+        self.assertTrue(numbering_ok([(d(2026,12,31),10560),(d(2027,1,4),10561)]))
+        self.assertFalse(numbering_ok([(d(2026,12,30),248),(d(2026,12,31),250)]))
+        self.assertFalse(numbering_ok([(d(2026,12,31),249),(d(2027,1,4),2)]))
+        self.assertFalse(numbering_ok([(d(2027,1,4),1),(d(2027,1,5),1)]))
+
+    def test_murcia_extraordinary_split_across_years(self):
+        from murcia_borm import split_extraordinary
+        d=date
+        seq=[(d(2026,12,30),299),(d(2026,12,31),300),(d(2027,1,2),1),(d(2027,1,4),2),(d(2027,1,5),3)]
+        main,extra=split_extraordinary(seq)
+        self.assertEqual(extra,[])
+        self.assertTrue(numbering_ok_main(main))
+        seq=[(d(2026,10,9),235),(d(2026,10,12),2),(d(2026,10,13),236)]
+        main,extra=split_extraordinary(seq)
+        self.assertEqual(extra,[(d(2026,10,12),2)])
+        self.assertEqual([n for _,n in main],[235,236])
 
 if __name__=="__main__":
     unittest.main()

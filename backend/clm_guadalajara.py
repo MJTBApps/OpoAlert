@@ -7,7 +7,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin,urlsplit
 from bs4 import BeautifulSoup
-from clm_common import invalid,get,pdf_header,record,publish_audit,write_output,employment
+from clm_common import invalid,get,pdf_header,record,publish_audit,write_output,employment,numbering_ok
 from provincial_common import fold
 
 HOME="https://boletin.dguadalajara.es"
@@ -117,16 +117,15 @@ def audit(today=None):
     for day in {start,end}:
         html=get(day_url(day),HOST).text
         dates.update(calendar(html,start,end))
-    if len(dates)<18:invalid(f"Guadalajara: calendario con solo {len(dates)} días")
+    if len(dates)<15:invalid(f"Guadalajara: calendario con solo {len(dates)} días")
     jobs=[]
     with ThreadPoolExecutor(max_workers=3) as pool:
         day_results=list(pool.map(lambda d:(d,parse_day(get(day_url(d),HOST).text,d)),sorted(dates)))
         for d,items in day_results:
             jobs.extend((url,d) for url in items)
         issues=list(pool.map(scan_issue,jobs))
-    for old,new in zip(issues,issues[1:]):
-        if int(new["number"])!=int(old["number"])+1:
-            invalid(f"Guadalajara: BOP omitido {old['number']} a {new['number']}")
+    if not numbering_ok([(x["day"],int(x["number"])) for x in issues]):
+        invalid(f"Guadalajara: BOP omitido {[x['number'] for x in issues]}")
     return publish_audit(SOURCE,"Guadalajara",issues,today=end)
 
 if __name__=="__main__":

@@ -12,13 +12,13 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import date,datetime,timedelta
 from pathlib import Path
 from urllib.parse import urlsplit
-from clm_common import employment,publish_audit,write_output,invalid
+from clm_common import employment,publish_audit,write_output,invalid,numbering_ok
 HOST="dogv.gva.es"
 BASE="https://dogv.gva.es/dogv-portal/dogv"
 SOURCE=BASE
-PDF_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/2026_(\d{1,8})_es\.pdf$")
-SUM_RE=re.compile(r"^/datos/2026/(\d{2})/(\d{2})/pdf/sumario_2026_(\d{4,6})(?:_bis|_ter|_quarter)?_es\.pdf$")
-ID_RE=re.compile(r"2026/(\d{1,8})")
+PDF_RE=re.compile(r"^/datos/(\d{4})/(\d{2})/(\d{2})/pdf/(\d{4})_(\d{1,8})_es\.pdf$")
+SUM_RE=re.compile(r"^/datos/(\d{4})/(\d{2})/(\d{2})/pdf/sumario_(\d{4})_(\d{4,6})(?:_bis|_ter|_quarter)?_es\.pdf$")
+ID_RE=re.compile(r"(\d{4})/(\d{1,8})")
 S=threading.local()
 END=date.today();START=END-timedelta(days=29)
 def req():
@@ -39,13 +39,14 @@ def read_json(url,params=None):
         return r.json()
     except (requests.RequestException,ValueError) as e:invalid("DOGV: error de API oficial "+str(e)[:200])
 def validate_pdf(path,day,num=None):
-    if not isinstance(path,str) or not path.startswith(f"/2026/{day:%m/%d}/pdf/"):
+    if not isinstance(path,str) or not path.startswith(f"/{day:%Y/%m/%d}/pdf/"):
         invalid(f"DOGV: ruta PDF ajena a la edición {day}: {path}")
     url=f"https://{HOST}/datos"+path
     parts=urlsplit(url)
     if parts.hostname!=HOST or parts.query or parts.fragment:invalid("DOGV: PDF externo")
     m=SUM_RE.fullmatch(parts.path) if num is not None else PDF_RE.fullmatch(parts.path)
-    if not m or int(m[1])!=day.month or int(m[2])!=day.day or (num is not None and int(m[3])!=num):
+    if (not m or int(m[1])!=day.year or int(m[2])!=day.month or int(m[3])!=day.day
+        or (num is not None and int(m[5])!=num)):
         invalid("DOGV: PDF fuera del sumario o edición")
     try:
         response=req().get(url,timeout=(10,36),stream=True,allow_redirects=False,
@@ -86,14 +87,14 @@ def original_path_from_export(did,day,code):
             invalid(f"DOGV: export oficial no disponible para {did}, HTTP {r.status_code}")
         path=r.text.strip()
         match=PDF_RE.fullmatch("/datos"+path)
-        if match and path.startswith(f"/2026/{day:%m/%d}/pdf/") and int(match[3])==code:
+        if match and path.startswith(f"/{day:%Y/%m/%d}/pdf/") and int(match[5])==code:
             return path
         # Some legal texts have already been consolidated in the public
         # metadata and export. The official original publication follows the
         # stable DOGV filename convention. Demand a real signed PDF response.
-        consolidated=re.fullmatch(r"/consolidacion/2026/2026_(\d{1,8})_(\d{8})_es\.pdf",path)
-        if consolidated and int(consolidated[1])==code:
-            original=f"/2026/{day:%m/%d}/pdf/2026_{code}_es.pdf"
+        consolidated=re.fullmatch(r"/consolidacion/(\d{4})/(\d{4})_(\d{1,8})_(\d{8})_es\.pdf",path)
+        if consolidated and int(consolidated[3])==code:
+            original=f"/{day:%Y/%m/%d}/pdf/{consolidated[2]}_{code}_es.pdf"
             validate_pdf(original,day)
             print(f"DOGV ORIGINAL VERIFICADO: fecha {day}, inserción {code}; metadatos consolidados",flush=True)
             return original
@@ -133,15 +134,16 @@ def inspect(day):
                 or obj.get("fechaPublicacion")!=day.strftime("%d/%m/%Y")
                 or not isinstance(section,dict) or not section.get("descripcion")):
                 invalid(f"DOGV {day}: disposición incompleta o ajena al calendario {obj.get('codigoInsercion')}")
-            code=int(mm[1]);ident=f"DV-2026-{code}"
+            # El código lleva el año de inserción: en enero puede ser el anterior.
+            code=int(mm[2]);ident=f"DV-{mm[1]}-{code}"
             path=obj.get("urlPdf")
             # A consolidated legal version may replace the publication PDF in metadata.
             # In that case retrieve the original from the Generalitat's export endpoint.
             if not isinstance(path,str) or not PDF_RE.fullmatch("/datos"+path):
                 path=original_path_from_export(did,day,code)
             m=PDF_RE.fullmatch("/datos"+path)
-            if (not m or int(m[3])!=code or int(m[1])!=day.month
-                or int(m[2])!=day.day):
+            if (not m or int(m[5])!=code or m[4]!=mm[1] or int(m[1])!=day.year
+                or int(m[2])!=day.month or int(m[3])!=day.day):
                 invalid(f"DOGV {day}: PDF original incoherente con el sumario {path}")
             if ident in unique or ident in local:invalid(f"DOGV {day}: documento repetido {ident}")
             local.add(ident);unique.add(ident)
@@ -155,12 +157,14 @@ def inspect(day):
         print(f"DOGV {day} n.º {num} versión {version}: {len(docs)} anuncios, {len(notices)} candidatas",flush=True)
         editions.append({"day":day,"number":str(num)+({1:"",2:"B",3:"T",4:"Q"}[version]),"read":len(docs),"notices":notices})
     return num,editions,len(versions)
-def audit():
+def audit(today=None):
+    global END,START
+    if today:END=today;START=END-timedelta(days=29)
     days,flags=calendar()
     with ThreadPoolExecutor(max_workers=5) as pool:
         batches=list(pool.map(inspect,days))
     nums=[r[0] for r in batches]
-    if len(set(nums))!=len(nums) or any(b!=a+1 for a,b in zip(nums,nums[1:])):
+    if len(set(nums))!=len(nums) or not numbering_ok(list(zip(days,nums))):
         invalid(f"DOGV: boletines incompletos o discontinuos {nums}")
     for day,(number,items,count) in zip(days,batches):
         if (count>1)!=flags[day]:invalid(f"DOGV {day}: calendario oficial discrepa de versiones bis")

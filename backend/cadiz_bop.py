@@ -265,13 +265,19 @@ def audit(days:int=30,today:date|None=None,scanner=scan_issue,session_factory=of
     year=end.year
     if set(published)!=set(all_issues):
         raise ProvincialCoverageError("Cadiz: calendario y enlaces de ediciones no corresponden")
+    # La portada solo muestra el año en curso: en enero la ventana empieza el
+    # 1 de enero y el límite inferior lo prueba el BOP número 1.
+    year_start=start.year<end.year and not any(d.year<end.year for d in published.values())
+    if year_start:start=date(end.year,1,1)
+    minimum=max(1,15*((end-start).days+1)//30)
     # Derive the entire 30-day interval from the Diputacion's dated calendar.
     # Include its last preceding edition to verify the exact lower boundary.
     within=sorted(n for n,d in published.items() if start<=d<=end)
     previous=sorted(n for n,d in published.items() if d<start)
-    if not previous or len(within)<15 or within[-1]!=latest:
+    if ((not previous and not (year_start and within and within[0]==1))
+        or len(within)<minimum or within[-1]!=latest):
         raise ProvincialCoverageError("Cadiz: calendario no cubre los 30 dias")
-    to_check=[previous[-1]]+within
+    to_check=previous[-1:]+within
     if to_check!=list(range(to_check[0],latest+1)):
         raise ProvincialCoverageError("Cadiz: el calendario omite ediciones intermedias")
     def checked(number):
@@ -298,10 +304,10 @@ def audit(days:int=30,today:date|None=None,scanner=scan_issue,session_factory=of
         raise ProvincialCoverageError("Cadiz: BOPs sin verificar: "+" | ".join(errors))
     if not all_rows or all_rows[-1]["number"]!=latest:
         raise ProvincialCoverageError("Cadiz: no coincide con ultima edicion")
-    if not any(x["date"]<start for x in all_rows):
+    if not year_start and not any(x["date"]<start for x in all_rows):
         raise ProvincialCoverageError("Cadiz: no se ha probado el limite anterior de 30 dias")
     chosen=[x for x in all_rows if start<=x["date"]<=end]
-    if len(chosen)<15 or chosen[-1]["number"]!=latest:
+    if len(chosen)<minimum or chosen[-1]["number"]!=latest:
         raise ProvincialCoverageError("Cadiz: faltan boletines en los ultimos 30 dias")
     if any(a["date"]>=b["date"] for a,b in zip(chosen,chosen[1:])):
         raise ProvincialCoverageError("Cadiz: boletines en fecha incorrecta o duplicada")
@@ -316,7 +322,7 @@ def audit(days:int=30,today:date|None=None,scanner=scan_issue,session_factory=of
     found.sort(key=lambda r:(datetime.strptime(r["date"],"%d/%m/%Y"),r["id"]),reverse=True)
     total=sum(x["count"] for x in chosen)
     pubdays={x["date"].isoformat() for x in chosen}
-    absent=[(start+timedelta(days=i)).isoformat() for i in range(30)
+    absent=[(start+timedelta(days=i)).isoformat() for i in range((end-start).days+1)
             if (start+timedelta(days=i)).isoformat() not in pubdays]
     return {"schemaVersion":1,"source":HOME,"province":PROVINCE,
       "lastCheckedUTC":datetime.now(timezone.utc).isoformat(),

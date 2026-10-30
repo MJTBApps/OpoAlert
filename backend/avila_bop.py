@@ -8,10 +8,13 @@ from urllib.parse import urljoin,urlsplit
 from datetime import date,datetime,timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from clm_common import employment,publish_audit,invalid,write_output
+from clm_common import employment,publish_audit,invalid,write_output,numbering_ok
 
 HOST="www.diputacionavila.es"
-SOURCE="https://www.diputacionavila.es/boletin-oficial/2026/"
+# Fuente estable (la app la compara); el archivo se publica en una página por año.
+SOURCE="https://www.diputacionavila.es/boletin-oficial/"
+def year_index(year):
+    return f"{SOURCE}{year}/"
 _THREAD=threading.local()
 def client():
     if not hasattr(_THREAD,"http"):
@@ -38,15 +41,16 @@ def load(url,pdf=False):
         return r.text
     except requests.RequestException as ex:invalid("Ávila: conexión oficial fallida "+str(ex)[:170])
 
-def issues(html,start,end):
-    s=BeautifulSoup(html,"html.parser")
+def issues(start,end):
     found=set()
-    for a in s.select("a[href]"):
-        u=urlsplit(urljoin(SOURCE,a["href"]))
-        match=re.fullmatch(r"/boletin-oficial/2026/(\d{2})-(\d{2})-(2026)\.html",u.path)
-        if not match or u.hostname!=HOST:continue
-        day=date(int(match[3]),int(match[2]),int(match[1]))
-        if start<=day<=end:found.add(day)
+    for year in sorted({start.year,end.year}):
+        s=BeautifulSoup(load(year_index(year)),"html.parser")
+        for a in s.select("a[href]"):
+            u=urlsplit(urljoin(year_index(year),a["href"]))
+            match=re.fullmatch(r"/boletin-oficial/(\d{4})/(\d{2})-(\d{2})-(\d{4})\.html",u.path)
+            if not match or u.hostname!=HOST or match[1]!=match[4]:continue
+            day=date(int(match[4]),int(match[3]),int(match[2]))
+            if start<=day<=end:found.add(day)
     ordered=sorted(found)
     if len(ordered)<18 or (ordered[0]-start).days>4 or (end-ordered[-1]).days>4:
         invalid("Ávila: índice insuficiente para 30 días")
@@ -72,30 +76,34 @@ def parse(html,day):
         for item in block.select("li"):
             a=item.find("a",href=True)
             if not a:invalid("Ávila: anuncio sin PDF")
-            u=urlsplit(urljoin(SOURCE,a["href"]))
+            u=urlsplit(urljoin(year_index(day.year),a["href"]))
             title=" ".join(a.get_text(" ",strip=True).split())
             idtxt=item.get_text(" ",strip=True)
             nm=re.search(r"n[ºo°]\s*(\d{1,7})\s*/\s*(\d{2})",idtxt,re.I)
-            if not nm or int(nm[2])!=day.year%100:invalid("Ávila: anuncio sin número propio")
-            if re.fullmatch(r"/bops/2026/\d{2}-\d{2}-2026\.pdf",u.path,re.I):
-                continue  # PDF del boletín completo, no es anuncio individual
+            # En enero se publican anuncios registrados el año anterior (nº 2741/25).
+            if not nm or int(nm[2]) not in (day.year%100,(day.year-1)%100):
+                invalid("Ávila: anuncio sin número propio")
+            # Algunos días el anuncio solo enlaza al PDF del boletín completo,
+            # que también es el documento oficial.
+            whole=f"/bops/{day.year}/{day:%d-%m-%Y}.pdf"
             if (u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443)
-                or not re.fullmatch(r"/bops/2026/\d{2}-\d{2}-2026/[^/]+\.pdf",u.path,re.I)
-                or f"/{day:%d-%m-%Y}/" not in u.path):
+                or not (u.path.lower()==whole.lower() or
+                        (re.fullmatch(rf"/bops/{day.year}/\d{{2}}-\d{{2}}-{day.year}/[^/]+\.pdf",u.path,re.I)
+                         and f"/{day:%d-%m-%Y}/" in u.path))):
                 invalid(f"Ávila: PDF de otro boletín día {day} URL {u.geturl()}")
-            id=f"AV-{day.year}-{int(nm[1])}"
+            id=f"AV-{2000+int(nm[2])}-{int(nm[1])}"
             if id in all_ids:invalid("Ávila: anuncio duplicado")
             all_ids.add(id)
             kind=employment(title)
             if kind:
                 notices.append({"id":id,"province":"Ávila","title":title,"entity":agency,
                   "date":day.strftime("%d/%m/%Y"),"bulletin":number,
-                  "type":kind,"url":urljoin(SOURCE,a["href"])})
+                  "type":kind,"url":urljoin(year_index(day.year),a["href"])})
     if not all_ids:invalid("Ávila: sin anuncios")
     return {"day":day,"number":number,"read":len(all_ids),"notices":notices}
 
 def scan(day):
-    u=f"https://www.diputacionavila.es/boletin-oficial/2026/{day:%d-%m-%Y}.html"
+    u=f"{year_index(day.year)}{day:%d-%m-%Y}.html"
     x=parse(load(u),day)
     # El portal de la Diputación contiene una errata comprobada: el 06/10
     # indica B.O.P. 103/26 pero el PDF original lleva N.º 193.
@@ -116,11 +124,10 @@ def scan(day):
 
 def audit(today=None):
     end=today or date.today();start=end-timedelta(days=29)
-    days=issues(load(SOURCE),start,end)
+    days=issues(start,end)
     with ThreadPoolExecutor(max_workers=5) as pool:
         rows=list(pool.map(scan,days))
-    numbers=[int(x["number"]) for x in rows]
-    if any(b!=a+1 for a,b in zip(numbers,numbers[1:])):
+    if not numbering_ok([(x["day"],int(x["number"])) for x in rows]):
         invalid("Ávila: faltan ediciones ordinarias o extraordinarias")
     return publish_audit(SOURCE,"Ávila",rows,today=end)
 

@@ -12,7 +12,7 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin,urlsplit
 from bs4 import BeautifulSoup
-from clm_common import employment,invalid
+from clm_common import employment,invalid,numbering_ok
 
 SOURCE="https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia"
 HOST="www.diputaciondepalencia.es"
@@ -58,8 +58,8 @@ def index_pages(start,end):
     ordered=sorted(rows.items())
     if len(ordered)<12 or (ordered[0][0][0]-start).days>3 or (end-ordered[-1][0][0]).days>3:
         invalid("Palencia: faltan ediciones del último mes")
-    ords=[n for (day,n,kind),url in ordered if kind=="ordinario"]
-    if any(b!=a+1 for a,b in zip(ords,ords[1:])):
+    ords=[(day,n) for (day,n,kind),url in ordered if kind=="ordinario"]
+    if not numbering_ok(ords):
         invalid("Palencia: numeración ordinaria con saltos")
     return ordered
 
@@ -67,7 +67,7 @@ def toc_from_pdf(pdf,day,number,kind="ordinario"):
     first=pdf[0].get_text()
     number_ok=bool(re.search(rf"\bN[úu]m\.\s*{number}\b",first,re.I)
        or (kind=="extraordinario" and re.search(rf"Boletín\s+Extraordinario\s+N[º°o]\s*{number}\b",first,re.I)))
-    if (day.year!=2026 or not number_ok
+    if (not number_ok
         or day.strftime("%Y") not in first or "Sumario" not in first):
         invalid(f"Palencia {day}: el PDF no corresponde a su fecha y número BOP {number}, portada={first[:550]!r}")
     results=[];cur_area="Boletín Oficial de la Provincia de Palencia"

@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from clm_common import employment,publish_audit,write_output,invalid
 SOURCE="https://www.bizkaia.eus/es/bob"
 HOST="www.bizkaia.eus"
-PDF_RE=re.compile(r"^/lehendakaritza/Bao_bob/2026/(\d{2})/(\d{2})/([IVX]{1,5}-\d{1,7})_cas\.pdf$",re.I)
+PDF_RE=re.compile(r"^/lehendakaritza/Bao_bob/(\d{4})/(\d{2})/(\d{2})/([IVX]{1,5}-\d{1,7})_cas\.pdf$",re.I)
 S=threading.local()
 def session():
  if not hasattr(S,"r"):
@@ -65,15 +65,15 @@ def read_day(item,allow_missing=False):
  issues=set();notices=[]
  for a in pdfs:
   link=urlsplit(a["href"]);mm=PDF_RE.fullmatch(link.path)
-  if (link.hostname!=HOST or not mm or int(mm[1])!=day.month or int(mm[2])!=day.day
-      or link.query or link.fragment):invalid("Bizkaia: enlace PDF ajeno al BOB del día")
+  if (link.hostname!=HOST or not mm or int(mm[1])!=day.year or int(mm[2])!=day.month
+      or int(mm[3])!=day.day or link.query or link.fragment):invalid("Bizkaia: enlace PDF ajeno al BOB del día")
   row=a.find_parent("li",class_="row")
   p=row.select_one('p[id^="emisorResumen"]') if row else None
   title=" ".join(p.get_text(" ",strip=True).split()) if p else ""
   heading=row.find_previous(["h4","h3"]) if row else None
   agency=" ".join(heading.get_text(" ",strip=True).split()) if heading else ""
   if not title or not agency:invalid(f"Bizkaia {day}: anuncio sin título o emisor")
-  nid=f"BI-2026-{mm[3].upper()}"
+  nid=f"BI-{day.year}-{mm[4].upper()}"
   if nid in issues:invalid("Bizkaia: anuncio duplicado")
   issues.add(nid)
   kind=employment(title)
@@ -85,22 +85,49 @@ def read_day(item,allow_missing=False):
     "type":kind,"url":pdf})
  print("BIZKAIA",day,n,"anuncios",len(issues),"candidatas",len(notices),flush=True)
  return {"day":day,"number":str(n),"read":len(issues),"notices":notices}
+def has_issue(day,n):
+ soup=BeautifulSoup(request(issue_url(day,n)),"html.parser")
+ return any(x.get_text(" ",strip=True)==f"Boletín {n}" for x in soup.select("h1"))
+def find_number(day):
+ """Número del BOB de un día: la sede deja la página vacía si el número no es el suyo.
+
+ Se parte de los días laborables transcurridos del año (cota superior: los
+ festivos no tienen BOB) y se baja hasta encontrarlo. None si ese día no hubo BOB.
+ """
+ guess=sum(1 for i in range(day.timetuple().tm_yday) if (date(day.year,1,1)+timedelta(days=i)).weekday()<5)
+ for n in range(guess,max(guess-25,0),-1):
+  if has_issue(day,n):return n
+ return None
 def audit(today=None):
  end=today or date.today();start=end-timedelta(days=29)
- last_day,n=latest_issue()
+ if today is None:
+  last_day,n=latest_issue()
+ else:
+  # Prueba con una fecha pasada: localizar el último BOB hasta ese día.
+  last_day=end;n=None
+  while n is None and (end-last_day).days<=4:
+   n=find_number(last_day) if last_day.weekday()<5 else None
+   if n is None:last_day-=timedelta(days=1)
+  if n is None:invalid("Bizkaia: no se localiza el último boletín del periodo")
  if last_day>end or (end-last_day).days>4:invalid(f"Bizkaia: último boletín {n} del {last_day} fuera del periodo")
  # Recorrer hacia atrás los días laborables: cada BOB tiene el número anterior.
  # Un día laborable sin boletín (festivo) no consume número; se admiten pocos.
- items=[];holidays=[];day=last_day
+ # Al pasar al año anterior la numeración no sigue: se localiza de nuevo.
+ items=[];holidays=[];day=last_day;year=last_day.year
  while day>=start:
   if day.weekday()<5:
+   if day.year!=year:
+    found=find_number(day)
+    if found is None:
+     holidays.append(day);day-=timedelta(days=1);continue
+    n=found;year=day.year
    item=read_day((day,n),allow_missing=bool(items))
    if item is None:holidays.append(day)
    else:
     items.append(item);n-=1
   day-=timedelta(days=1)
- if len(holidays)>3:invalid(f"Bizkaia: demasiados días laborables sin boletín {holidays}")
- if not 18<=len(items)<=23:invalid("Bizkaia: calendario laboral incoherente")
+ if len(holidays)>5:invalid(f"Bizkaia: demasiados días laborables sin boletín {holidays}")
+ if not 16<=len(items)<=23:invalid("Bizkaia: calendario laboral incoherente")
  return publish_audit(SOURCE,"Bizkaia",items,today=end)
 if __name__=="__main__":
  p=argparse.ArgumentParser();p.add_argument("--output",type=Path,required=True)

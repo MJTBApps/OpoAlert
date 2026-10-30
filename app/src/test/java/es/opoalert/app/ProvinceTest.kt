@@ -82,6 +82,13 @@ class ProvinceTest {
         assertFalse(Province.CEUTA_BOCCE.allowsOfficialPath("/ceuta/admin"))
         assertTrue(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/2026/10/29/2026-08847.pdf"))
         assertFalse(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/not-original"))
+        // Cambio de año: identificadores y rutas oficiales de 2027 siguen siendo válidos.
+        assertTrue(Province.GIPUZKOA_BOG.idPattern.matches("GP-2027-2700012"))
+        assertTrue(Province.GALICIA_DOG.idPattern.matches("DG-2027-AnuncioG0597-040127-0001"))
+        assertTrue(Province.VALENCIA_DOGV.allowsOfficialPath("/datos/2027/01/04/pdf/2026_12345_es.pdf"))
+        assertTrue(Province.AVILA.allowsOfficialPath("/bops/2027/04-01-2027/04-01-2027_000127.pdf"))
+        assertTrue(Province.BIZKAIA_BOB.allowsOfficialPath("/lehendakaritza/Bao_bob/2027/01/04/I-1_cas.pdf"))
+        assertTrue(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/2027/01/04/2027-00001.pdf"))
         assertTrue(Province.NAVARRA_BON.allowsOfficialPath("/es/anuncio/-/texto/2026/216/15"))
         assertEquals(Province.RIOJA_BOR, Province.fromNoticeId("RI-2026-0123456789abcdefab"))
         assertTrue(Province.RIOJA_BOR.idPattern.matches("RI-2026-0123456789abcdefab"))

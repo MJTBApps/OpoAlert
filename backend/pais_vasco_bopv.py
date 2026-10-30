@@ -8,11 +8,11 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit
 from xml.etree import ElementTree as ET
-from clm_common import employment,publish_audit,write_output,invalid
+from clm_common import employment,publish_audit,write_output,invalid,numbering_ok
 SOURCE="https://api.euskadi.eus/bopv/administrative-acts"
 PROVINCE="País Vasco (BOPV)"
-PDF_RE=re.compile(r"^/bopv2/datos/2026/(\d{2})/(26\d{5})a\.pdf$",re.I)
-ID_RE=re.compile(r"^2026/(\d{1,2})/(\d{1,6})$")
+PDF_RE=re.compile(r"^/bopv2/datos/(\d{4})/(\d{2})/(\d{7})a\.pdf$",re.I)
+ID_RE=re.compile(r"^(\d{4})/(\d{1,2})/(\d{1,6})$")
 LOCAL=ZoneInfo("Europe/Madrid")
 S=threading.local()
 def session():
@@ -48,8 +48,8 @@ def read_data(records,start,end):
   try:day=datetime.fromisoformat(row["publishDate"].replace("Z","+00:00")).astimezone(LOCAL).date()
   except Exception:invalid("BOPV: marca temporal incorrecta")
   if day<start or day>end:continue
-  month=int(match[1]);num=int(match[2])
-  if int(match[1])!=day.month or not (1<=num<=999999):
+  month=int(match[2]);num=int(match[3])
+  if int(match[1])!=day.year or month!=day.month or not (1<=num<=999999):
    invalid(f"BOPV: número fuera del mes {ident} {day}")
   number=str(row.get("numBulletin",""))
   if not number.isdigit() or int(number)>366 or int(number)<1:
@@ -63,8 +63,8 @@ def read_data(records,start,end):
   if len(originals)!=1:invalid(f"BOPV: PDF no identificado {ident}")
   url=originals[0];u=urlsplit(url);pm=PDF_RE.fullmatch(u.path)
   if (u.scheme!="https" or u.hostname!="www.euskadi.eus" or u.port not in (None,443)
-      or u.username or u.fragment or u.query or not pm or int(pm[1])!=day.month
-      or int(pm[2][-5:])!=num):
+      or u.username or u.fragment or u.query or not pm or int(pm[1])!=day.year
+      or int(pm[2])!=day.month or int(pm[3][-5:])!=num):
    invalid(f"BOPV: PDF no pertenece al anuncio {ident}: {url}")
   if ident in seen:invalid(f"BOPV: documento duplicado {ident}")
   seen.add(ident)
@@ -73,13 +73,13 @@ def read_data(records,start,end):
   grouped[key]["read"]+=1
   kind=employment(title)
   if kind:
-   grouped[key]["notices"].append({"id":f"PV-2026-{num}","province":PROVINCE,"title":title,
+   grouped[key]["notices"].append({"id":f"PV-{day.year}-{num}","province":PROVINCE,"title":title,
     "entity":agency,"date":day.strftime("%d/%m/%Y"),"bulletin":number,
     "type":kind,"url":url})
  if not grouped:invalid("BOPV: sin boletines en 30 días")
  issues=[grouped[k] for k in sorted(grouped)]
  nums=[int(x["number"]) for x in issues]
- if len(issues)<18 or any(b!=a+1 for a,b in zip(nums,nums[1:])):
+ if len(issues)<18 or not numbering_ok([(x["day"],int(x["number"])) for x in issues]):
   invalid(f"BOPV: numeración ordinaria discontinua {nums}")
  return issues
 def verify_pdf(url):
@@ -108,7 +108,8 @@ def latest_rss(day,previous_number):
         channel=root.find("channel")
         title=(channel.findtext("title") if channel is not None else "") or ""
         mm=re.fullmatch(r"Bolet[ií]n N[º°.]?\s*(\d+),\s*fecha\s*(\d{2}/\d{2}/\d{4})",title,re.I)
-        if not mm or mm[2]!=day.strftime("%d/%m/%Y") or int(mm[1])!=previous_number+1:
+        # En enero la numeración vuelve a empezar en 1.
+        if not mm or mm[2]!=day.strftime("%d/%m/%Y") or int(mm[1]) not in (previous_number+1,1):
             invalid("BOPV: RSS más reciente no coincide con el día o número oficial")
         number=mm[1]
         items=channel.findall("item")
@@ -119,19 +120,19 @@ def latest_rss(day,previous_number):
             link=(item.findtext("link") or "").strip()
             item_date=(item.findtext("pubDate") or "").strip()
             u=urlsplit(link)
-            linkmatch=re.fullmatch(r"/(?:y22-bopv|web01-bopv)/es/bopv2/datos/2026/(\d{2})/(26\d{5})a\.shtml",u.path)
+            linkmatch=re.fullmatch(r"/(?:y22-bopv|web01-bopv)/es/bopv2/datos/(\d{4})/(\d{2})/(\d{7})a\.shtml",u.path)
             if (not caption or len(caption)>2800 or item_date!=day.strftime("%Y-%m-%d")
                 or u.scheme!="https" or u.hostname!="www.euskadi.eus" or not linkmatch
-                or int(linkmatch[1])!=day.month or u.query or u.fragment):
+                or int(linkmatch[1])!=day.year or int(linkmatch[2])!=day.month or u.query or u.fragment):
                 invalid("BOPV: el RSS incluye una publicación incompleta o ajena al boletín")
-            code=linkmatch[2]
+            code=linkmatch[3]
             if code in seen:invalid("BOPV: RSS con documento duplicado")
             seen.add(code)
             kind=employment(caption)
             if kind:
-                pdf=f"https://www.euskadi.eus/bopv2/datos/2026/{day:%m}/{code}a.pdf"
+                pdf=f"https://www.euskadi.eus/bopv2/datos/{day:%Y/%m}/{code}a.pdf"
                 verify_pdf(pdf)
-                notices.append({"id":f"PV-2026-{int(code[2:])}","province":PROVINCE,
+                notices.append({"id":f"PV-{day.year}-{int(code[2:])}","province":PROVINCE,
                     "title":caption,"entity":"Emisor: consultar anuncio oficial (BOPV)",
                     "date":day.strftime("%d/%m/%Y"),"bulletin":number,
                     "type":kind,"url":pdf})

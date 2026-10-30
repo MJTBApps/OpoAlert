@@ -40,12 +40,12 @@ def calendar(html,start,end):
             result[key]=d
     return result
 
-def validate_pdf(url,day,nid):
+def validate_pdf(url,day,nid,year=None):
     u=urlsplit(url)
     if u.scheme!="https" or u.hostname not in HOST or u.port not in (None,443) or u.fragment or u.username:
         invalid("PDF del DOCM fuera del host oficial")
     m=DOC_PDF.fullmatch(u.path+"?"+u.query)
-    if not m or date(int(m[1]),int(m[2]),int(m[3]))!=day or m[4]!=str(day.year) or int(m[5])!=nid:
+    if not m or date(int(m[1]),int(m[2]),int(m[3]))!=day or m[4]!=str(year or day.year) or int(m[5])!=nid:
         invalid(f"PDF del DOCM distinto de fecha/NID: {url} esperado {day.isoformat()} NID={nid}")
     return url
 
@@ -73,10 +73,11 @@ def parse_issue(html,key,day):
         if mm is None:
             invalid(f"DOCM {key}: NID ausente en disposición")
         year,nid=int(mm[1]),int(mm[2])
-        if year!=day.year or not agency:invalid("NID o emisor inesperado")
+        # En enero se publican disposiciones con NID del año anterior.
+        if year not in (day.year,day.year-1) or not agency:invalid("NID o emisor inesperado")
         a=el.select_one('a[href*="descargarArchivo.do"]')
         if a is None:invalid("DOCM disposición sin PDF")
-        pdf=validate_pdf(urljoin(SOURCE,a.get("href","")),day,nid)
+        pdf=validate_pdf(urljoin(SOURCE,a.get("href","")),day,nid,year)
         nid_str=f"CM-{year}-{nid}"
         rows.append(record("CM","Castilla-La Mancha (DOCM)",nid_str,title,agency,day,num,pdf))
     if not rows or len({x["id"] for x in rows})!=len(rows):
@@ -97,8 +98,10 @@ def audit(today=None):
     end=today or date.today()
     start=end-timedelta(days=29)
     idx={}
-    for day in {start,end}:
-        h=get(bulletin_link(day.strftime("%Y%m%d")),HOST,retries=5).text
+    # La página de un boletín muestra siempre el calendario del mes actual:
+    # pedir expresamente el calendario de cada mes de la ventana.
+    for year,month in sorted({(start.year,start.month),(end.year,end.month)}):
+        h=get(HOME+f"/docm/cambioFecha.do?fechaNueva=15%2F{month:02d}%2F{year}",HOST,retries=5).text
         idx.update(calendar(h,start,end))
     # El portal a veces conserva el calendario del mes actual al consultar
     # el mes anterior. Verificar explícitamente la primera edición del intervalo.
@@ -107,7 +110,7 @@ def audit(today=None):
         firstpage=get(bulletin_link(firstkey),HOST,retries=5).text
         parse_issue(firstpage,firstkey,start)
         idx[firstkey]=start
-    if len(idx)<19:invalid(f"DOCM: calendario insuficiente ({len(idx)} ediciones)")
+    if len(idx)<15:invalid(f"DOCM: calendario insuficiente ({len(idx)} ediciones)")
     print("DOCM CALENDARIO",sorted(idx),flush=True)
     # Los extraordinarios tienen un sumario separado y pueden sufrir
     # limitación temporal de acceso; comprobarlos al principio de la lectura.

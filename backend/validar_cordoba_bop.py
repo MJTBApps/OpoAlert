@@ -6,6 +6,7 @@ from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
 from provincial_common import ProvincialCoverageError
 from cordoba_bop import HOME,PROVINCE,pdf_valid
+from clm_common import numbering_ok
 def validate(path:Path,today:date|None=None)->dict:
  data=json.loads(path.read_text(encoding="utf-8"))
  cov=data.get("coverage",{})
@@ -32,7 +33,7 @@ def validate(path:Path,today:date|None=None)->dict:
   or len(set(pdfs))!=len(pdfs) or hist.get("issuesRead")!=len(dates)
   or (end-date.fromisoformat(dates[-1])).days>4):
   raise ProvincialCoverageError("Cordoba: faltan boletines o fechas")
- if any(int(b)!=int(a)+1 for a,b in zip(nums,nums[1:])):
+ if not numbering_ok([(date.fromisoformat(d),int(n)) for d,n in zip(dates,nums)]):
   raise ProvincialCoverageError("Cordoba: salto de número BOP")
  if cov.get("bulletin")!=nums[-1]:
   raise ProvincialCoverageError("Cordoba: ultimo BOP diferente")

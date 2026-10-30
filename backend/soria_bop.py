@@ -7,7 +7,7 @@ from datetime import date,datetime,timedelta,timezone
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin,urlsplit
-from clm_common import employment,invalid
+from clm_common import employment,invalid,numbering_ok
 
 HOST="bop.dipsoria.es"
 SOURCE="https://bop.dipsoria.es/index.php/mod.boloficial/relmenu.149"
@@ -57,7 +57,7 @@ def archive(html,start,end):
     links=sorted(set(links))
     if len(links)<10 or (links[0][0]-start).days>4 or (end-links[-1][0]).days>4:
         invalid(f"Soria: índice insuficiente: {len(links)} ediciones; primera {links[0][0] if links else None}; última {links[-1][0] if links else None}")
-    if any(b[1]!=a[1]+1 for a,b in zip(links,links[1:])):
+    if not numbering_ok([(d,n) for d,n,_ in links]):
         invalid("Soria: falta número de boletín en archivo oficial")
     return links
 

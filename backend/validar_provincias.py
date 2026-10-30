@@ -13,6 +13,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from provincial_common import ProvincialCoverageError
+from clm_common import numbering_ok
 
 SOURCES = {
     'Alicante': ('https://sede.diputacionalicante.es/consultas.bop/', 'www.dip-alicante.es', '/bop2/pdftotal/', 'AL-'),
@@ -49,8 +50,9 @@ def validate(path: Path, expected_province: str, expected_end: date | None = Non
     issues = history.get('bulletins', [])
     if len(issues) != len(pub) or len(issues) != history.get('issuesRead'):
         raise ProvincialCoverageError(f'{expected_province}: falta boletin para dia de publicacion')
-    nums = sorted(int(x) for x in issues)
-    if nums != list(range(nums[0],nums[-1]+1)):
+    # Ediciones por fecha; en enero la numeración vuelve a empezar en 1.
+    pairs = sorted(zip((date.fromisoformat(d) for d in history.get('publicationDates', [])), (int(x) for x in issues)))
+    if not numbering_ok(pairs):
         raise ProvincialCoverageError(f'{expected_province}: boletines no consecutivos')
     notices = data.get('notices')
     if not isinstance(notices, list):

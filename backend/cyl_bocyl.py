@@ -7,7 +7,7 @@ from urllib.parse import urlsplit,urljoin,parse_qs
 from datetime import date,datetime,timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from clm_common import employment,publish_audit,invalid,write_output
+from clm_common import employment,publish_audit,invalid,write_output,numbering_ok
 
 HOST="bocyl.jcyl.es"
 SOURCE="https://bocyl.jcyl.es/"
@@ -111,8 +111,7 @@ def audit(today=None):
         invalid("BOCYL: faltan días o número de boletines")
     with ThreadPoolExecutor(max_workers=4) as pool:
         issues=list(pool.map(scan,ordered))
-    nums=[int(x["number"]) for x in issues]
-    if any(b!=a+1 for a,b in zip(nums,nums[1:])):
+    if not numbering_ok([(x["day"],int(x["number"])) for x in issues]):
         invalid("BOCYL: salto de ediciones o extraordinarios no incluidos")
     return publish_audit(SOURCE,"Castilla y León (BOCYL)",issues,today=end)
 

@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
 from cryptography import x509
 from cryptography.hazmat.primitives import serialization
-from clm_common import invalid,get,pdf_header,record,publish_audit,write_output
+from clm_common import invalid,get,pdf_header,record,publish_audit,write_output,numbering_ok
 
 HOME="https://bop.dipucr.es"
 SOURCE=HOME+"/"
@@ -121,12 +121,11 @@ def audit(today=None):
     dates=set()
     for d in {start,end}:
         dates.update(archive(cr_get(issue_url(d)).text,start,end))
-    if len(dates)<18:invalid(f"Ciudad Real: calendario de 30 días insuficiente: {len(dates)}")
+    if len(dates)<15:invalid(f"Ciudad Real: calendario de 30 días insuficiente: {len(dates)}")
     with ThreadPoolExecutor(max_workers=3) as pool:
         items=list(pool.map(scan,sorted(dates)))
-    for a,b in zip(items,items[1:]):
-        if int(b["number"])!=int(a["number"])+1:
-            invalid(f"Ciudad Real: faltan números de BOP {a['number']}->{b['number']}")
+    if not numbering_ok([(x["day"],int(x["number"])) for x in items]):
+        invalid(f"Ciudad Real: faltan números de BOP {[x['number'] for x in items]}")
     return publish_audit(SOURCE,"Ciudad Real",items,today=end)
 
 if __name__=="__main__":

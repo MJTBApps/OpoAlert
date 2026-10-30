@@ -7,11 +7,11 @@ from urllib.parse import urlsplit,urljoin
 from pathlib import Path
 from bs4 import BeautifulSoup
 import argparse,requests,re,threading
-from clm_common import employment,publish_audit,write_output,invalid
+from clm_common import employment,publish_audit,write_output,invalid,numbering_ok
 
 SOURCE="https://egoitza.gipuzkoa.eus/es/bog"
 HOST="egoitza.gipuzkoa.eus"
-PDF_RE=re.compile(r"^/gao-bog/castell/bog/(2026)/(\d{2})/(\d{2})/c(26\d{5})\.pdf$",re.I)
+PDF_RE=re.compile(r"^/gao-bog/castell/bog/(\d{4})/(\d{2})/(\d{2})/c(\d{7})\.pdf$",re.I)
 S=threading.local()
 def session():
     if not hasattr(S,"req"):
@@ -75,7 +75,7 @@ def read_day(day):
         if not (title and organ and m and int(m[1])==day.year and int(m[2])==day.month
             and int(m[3])==day.day and urlsplit(pdf).hostname==HOST):
             invalid(f"Gipuzkoa {day}: anuncio sin título, organismo o PDF verificable: {title[:65]}, agency={organ[:65]}, PDF={pdf[:170]}")
-        ident=f"GP-2026-{m[4]}"
+        ident=f"GP-{day.year}-{m[4]}"
         if ident in seen:invalid("Gipuzkoa: anuncio duplicado "+ident)
         seen.add(ident)
         kind=employment(title)
@@ -91,7 +91,7 @@ def audit(today=None):
     days=[start+timedelta(days=x) for x in range(30)]
     with ThreadPoolExecutor(max_workers=5) as pool:issues=[i for i in pool.map(read_day,days) if i]
     nums=[int(x["number"]) for x in issues]
-    if len(issues)<19 or len(issues)>27 or any(b!=a+1 for a,b in zip(nums,nums[1:])):
+    if len(issues)<19 or len(issues)>27 or not numbering_ok([(x["day"],int(x["number"])) for x in issues]):
         invalid(f"Gipuzkoa: boletines no consecutivos, encontrados {nums}")
     return publish_audit(SOURCE,"Gipuzkoa",issues,today=end)
 if __name__=="__main__":

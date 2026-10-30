@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import parse_qs,urlsplit,urljoin,quote
 from bs4 import BeautifulSoup
-from clm_common import invalid,get,pdf_header,record,publish_audit,write_output
+from clm_common import invalid,get,pdf_header,record,publish_audit,write_output,numbering_ok
 
 HOME="https://bop.diputoledo.es"
 SOURCE=HOME+"/webEbop/"
@@ -55,7 +55,7 @@ def parse_issue(html,day):
     u=urlsplit(urljoin(SOURCE,a["href"]))
     q=parse_qs(u.query)
     if (u.hostname not in HOST or u.path!="/webEbop/DocGet" or
-        q.get("insert_year")!=[str(day.year)] or
+        q.get("insert_year",[""])[0] not in (str(day.year-1),str(day.year),str(day.year+1)) or
         q.get("publication_date")!=[day.strftime("%d%m%Y")] or
         q.get("anexo")!=["0"]):
         invalid("Toledo: PDF de edición de otro día")
@@ -73,13 +73,17 @@ def parse_issue(html,day):
         query=parse_qs(doc_url.query)
         inserted=query.get("insert_number",[""])[0]
         if not inserted.isdigit():invalid("Toledo: identificador de inserción ausente")
+        # Alrededor de año nuevo hay inserciones registradas el año anterior
+        # o, a final de diciembre, ya con el año siguiente.
+        year=query.get("insert_year",[""])[0]
+        if year not in (str(day.year-1),str(day.year),str(day.year+1)):invalid("Toledo: año de inserción inesperado")
         title_item=next((x for x in node.select("li") if "Resumen/Asunto" in x.get_text(" ",strip=True)),None)
         if title_item is None:invalid("Toledo: resumen original ausente")
         title=title_item.get_text(" ",strip=True).replace("Resumen/Asunto :","").strip()
         if not agency:
             invalid("Toledo: ayuntamiento/organismo no identificado")
-        pdf=official_document(link["href"],day.year,int(inserted))
-        items.append(record("TO","Toledo",f"TO-{day.year}-{int(inserted)}",title,agency,day,number,pdf))
+        pdf=official_document(link["href"],int(year),int(inserted))
+        items.append(record("TO","Toledo",f"TO-{year}-{int(inserted)}",title,agency,day,number,pdf))
     if not items or len({x["id"] for x in items})!=len(items):
         invalid("Toledo: sin anuncios o duplicados")
     return {"day":day,"number":number,"read":len(items),
@@ -100,14 +104,14 @@ def scan(day):
 def audit(today=None):
     end=today or date.today()
     start=end-timedelta(days=29)
-    calendar=get(SOURCE+"ebopCalendar.jsp",HOST).text
-    dates=dates_from_calendar(calendar,start,end)
-    if len(dates)<18:invalid(f"Toledo: calendario no cubre 30 días: {len(dates)} ediciones")
+    # El calendario oficial es anual: pedir cada año de la ventana.
+    dates=sorted({d for year in {start.year,end.year}
+                  for d in dates_from_calendar(get(SOURCE+f"ebopCalendar.jsp?calendar_year={year}",HOST).text,start,end)})
+    if len(dates)<15:invalid(f"Toledo: calendario no cubre 30 días: {len(dates)} ediciones")
     with ThreadPoolExecutor(max_workers=3) as pool:
         data=[issue for issue in pool.map(scan,dates) if issue is not None]
-    for older,newer in zip(data,data[1:]):
-        if int(newer["number"])!=int(older["number"])+1:
-            invalid(f"Toledo: salto en numeración oficial {older['number']} -> {newer['number']}")
+    if not numbering_ok([(x["day"],int(x["number"])) for x in data]):
+        invalid(f"Toledo: salto en numeración oficial {[x['number'] for x in data]}")
     return publish_audit(SOURCE,"Toledo",data,today=end)
 
 if __name__=="__main__":

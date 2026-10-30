@@ -1,4 +1,4 @@
-name: OpoAlert - Compilar APK Android 1.34.0
+name: OpoAlert - Compilar APK Android 1.35.0
 
 on:
   workflow_dispatch:
@@ -39,21 +39,21 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
-      - name: Comprobar pantalla selector, favoritos, ficha y navegacion OpoAlert 1.34.0
+      - name: Comprobar pantalla selector, favoritos, ficha y navegacion OpoAlert 1.35.0
         run: python3 scripts/test_ui_080.py
       - name: Tests Kotlin y compilar APK
         run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug
       - name: Verificar APK Android
         run: |
           test -s app/build/outputs/apk/debug/app-debug.apk
-          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.34.0.apk
-          unzip -t OpoAlert-1.34.0.apk >/dev/null
-          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-1.34.0.apk | grep "package: name='es.opoalert.app' versionCode='47' versionName='1.34.0'"
-          sha256sum OpoAlert-1.34.0.apk
+          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.35.0.apk
+          unzip -t OpoAlert-1.35.0.apk >/dev/null
+          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-1.35.0.apk | grep "package: name='es.opoalert.app' versionCode='48' versionName='1.35.0'"
+          sha256sum OpoAlert-1.35.0.apk
       - name: Descargar APK desde GitHub Actions
         uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-Android-1.34.0
-          path: OpoAlert-1.34.0.apk
+          name: OpoAlert-Android-1.35.0
+          path: OpoAlert-1.35.0.apk
           if-no-files-found: error
           retention-days: 30

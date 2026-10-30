@@ -6,15 +6,15 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit,urljoin
-from clm_common import publish_audit,write_output,invalid
+from clm_common import publish_audit,write_output,invalid,numbering_ok
 from galicia_common import galicia_employment
 import argparse,requests,threading,re
 SOURCE="https://www.xunta.gal/diario-oficial-galicia/Welcome.do?lang=es"
 HOST="www.xunta.gal"
-PDF_RE=re.compile(r"^/dog/Publicados/2026/(\d{8})/(Anuncio[A-Za-z0-9-]+)_es\.pdf$")
+PDF_RE=re.compile(r"^/dog/Publicados/(\d{4})/(\d{8})/(Anuncio[A-Za-z0-9-]+)_es\.pdf$")
 S=threading.local()
 MONTH={"enero":1,"febrero":2,"marzo":3,"abril":4,"mayo":5,"junio":6,"julio":7,"agosto":8,"septiembre":9,"octubre":10,"noviembre":11,"diciembre":12}
-DATE_RE=re.compile(r"(\d{1,2}) de (\w+) de (2026)",re.I)
+DATE_RE=re.compile(r"(\d{1,2}) de (\w+) de (\d{4})",re.I)
 def ses():
  if not hasattr(S,"q"):
   r=requests.Session();r.headers.update({"User-Agent":"Mozilla/5.0","Accept-Language":"es-ES,es;q=0.9"});S.q=r
@@ -61,20 +61,20 @@ def read_day(day):
    title=" ".join(a.get_text(" ",strip=True).split())
    u=urlsplit(urljoin(f"https://{HOST}",a.get("href","")))
    path=u.path
-   im=re.fullmatch(r"/dog/Publicados/2026/(\d{8})/(Anuncio[A-Za-z0-9-]+)_es\.html",path)
-   if not im or im[1]!=day.strftime("%Y%m%d") or u.hostname!=HOST:
+   im=re.fullmatch(r"/dog/Publicados/(\d{4})/(\d{8})/(Anuncio[A-Za-z0-9-]+)_es\.html",path)
+   if not im or im[1]!=str(day.year) or im[2]!=day.strftime("%Y%m%d") or u.hostname!=HOST:
     invalid(f"DOG {day}: página anuncio no oficial {u.geturl()}")
-   ident=im[2]
+   ident=im[3]
    if ident in ids:invalid(f"DOG: anuncio duplicado {ident}")
    ids.add(ident);found+=1
    org=li.find_previous("p",class_="dog-toc-organismo")
    agency=" ".join(org.get_text(" ",strip=True).split()) if org else "Organismo emisor: consultar DOG"
    if not title or len(title)>2800 or len(agency)>500:invalid("DOG: título o emisor no válido")
-   pdf=f"https://{HOST}/dog/Publicados/2026/{day:%Y%m%d}/{ident}_es.pdf"
+   pdf=f"https://{HOST}/dog/Publicados/{day:%Y/%Y%m%d}/{ident}_es.pdf"
    kind=galicia_employment(title)
    if kind:
     get(pdf,pdf=True)
-    notices.append({"id":f"DG-2026-{ident}","province":"Galicia (DOG)","title":title,
+    notices.append({"id":f"DG-{day.year}-{ident}","province":"Galicia (DOG)","title":title,
      "entity":agency,"date":day.strftime("%d/%m/%Y"),"bulletin":str(int(mm[1])),
      "type":kind,"url":pdf})
  if len(nums)!=1 or not found:invalid(f"DOG {day}: diario sin anuncios o números inconsistentes")
@@ -88,7 +88,7 @@ def audit(today=None):
  days=[start+timedelta(days=i) for i in range(30)]
  with ThreadPoolExecutor(max_workers=5) as p:issues=[x for x in p.map(read_day,days) if x]
  nums=[int(x["number"]) for x in issues]
- if len(issues)<18 or any(b!=a+1 for a,b in zip(nums,nums[1:])):
+ if len(issues)<18 or not numbering_ok([(x["day"],n) for x,n in zip(issues,nums)]):
   invalid(f"DOG: falta alguna edición {nums}")
  if (issues[0]["day"]-start).days>3 or (end-issues[-1]["day"]).days>3:
   invalid("DOG: extremos del periodo incompletos")

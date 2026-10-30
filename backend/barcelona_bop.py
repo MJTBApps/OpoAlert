@@ -35,18 +35,36 @@ DETAIL_REG_RE=re.compile(r"N[uú]mero de Registre\s*:\s*(\d{12})",re.I)
 
 # Official 2026 Catalonia/Barcelona holiday calendar, including local days:
 # https://guia.barcelona.cat/.../festes-estatals-i-autonomiques-a-catalunya-i-locals-a-barcelona-al-2025_99400735671.html
-# Restrict to verified year; never infer unknown 2027 public holidays.
-HOLIDAYS_2026={
- date(2026,1,1),date(2026,1,6),date(2026,4,3),date(2026,4,6),
- date(2026,5,1),date(2026,5,25),date(2026,6,24),date(2026,8,15),
- date(2026,9,11),date(2026,9,24),date(2026,10,12),date(2026,12,8),
- date(2026,12,25),date(2026,12,26),
+# Restrict to verified years; never infer unknown public holidays.
+HOLIDAYS={
+ 2026:{
+  date(2026,1,1),date(2026,1,6),date(2026,4,3),date(2026,4,6),
+  date(2026,5,1),date(2026,5,25),date(2026,6,24),date(2026,8,15),
+  date(2026,9,11),date(2026,9,24),date(2026,10,12),date(2026,12,8),
+  date(2026,12,25),date(2026,12,26),
+ },
+ # Festes laborals de Catalunya 2027: Ordre EMT/52/2026, de 25 de març
+ # (DOGC núm. 9637, 1/4/2026), article 1. Las dos fiestas locales de
+ # Barcelona se fijan en otra orden que aún no se ha publicado.
+ 2027:{
+  date(2027,1,1),date(2027,1,6),date(2027,3,26),date(2027,3,29),
+  date(2027,5,1),date(2027,6,24),date(2027,9,11),date(2027,10,12),
+  date(2027,11,1),date(2027,12,6),date(2027,12,8),date(2027,12,25),
+ },
 }
+# Desde esta fecha hacen falta las fiestas locales de Barcelona del año
+# (en 2026 fueron Segunda Pascua y la Mercè): añadirlas a HOLIDAYS cuando
+# se publique su orden y borrar la entrada de aquí.
+LOCAL_HOLIDAYS_PENDING_FROM={2027:date(2027,5,1)}
 
 
 def publishes(day: date) -> bool:
-    if day.year!=2026:raise ProvincialCoverageError("BOPB: calendario festivo no verificado para este año")
-    return day.weekday()<5 and day not in HOLIDAYS_2026
+    if day.year not in HOLIDAYS:
+        raise ProvincialCoverageError(f"BOPB: calendario festivo de {day.year} no verificado")
+    pending=LOCAL_HOLIDAYS_PENDING_FROM.get(day.year)
+    if pending and day>=pending:
+        raise ProvincialCoverageError(f"BOPB: faltan las fiestas locales de Barcelona de {day.year}")
+    return day.weekday()<5 and day not in HOLIDAYS[day.year]
 
 
 def official(url:str,path:str="/") -> bool:

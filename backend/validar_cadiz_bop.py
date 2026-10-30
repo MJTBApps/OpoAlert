@@ -18,14 +18,19 @@ def validate(path:Path,required_end:date|None=None)->dict:
         raise ProvincialCoverageError("Cadiz: auditoria incompleta")
     start=date.fromisoformat(history["rangeStart"])
     end=date.fromisoformat(history["rangeEnd"])
-    if (end-start).days!=29 or (required_end is not None and end!=required_end):
+    # 30 días; en enero la portada solo tiene el año en curso y la ventana
+    # empieza el 1 de enero con el BOP número 1.
+    year_start=start==date(end.year,1,1) and (end-start).days<29
+    if ((end-start).days!=29 and not (year_start and history.get("bulletins",[None])[0]=="1")
+        or (required_end is not None and end!=required_end)):
         raise ProvincialCoverageError("Cadiz: no constan 30 dias exactos")
+    days=(end-start).days+1
     pub=history.get("publicationDates",[])
     absent=history.get("nonPublicationDates",[])
-    if (not isinstance(pub,list) or len(pub)<15 or pub!=sorted(set(pub))
+    if (not isinstance(pub,list) or len(pub)<max(1,15*days//30) or pub!=sorted(set(pub))
         or not isinstance(absent,list) or len(absent)!=len(set(absent))
         or set(pub)&set(absent) or set(pub)|set(absent)!={
-            (start+timedelta(days=i)).isoformat() for i in range(30)}):
+            (start+timedelta(days=i)).isoformat() for i in range(days)}):
         raise ProvincialCoverageError("Cadiz: faltan fechas del intervalo")
     nums=history.get("bulletins",[])
     if (len(nums)!=len(pub) or history.get("issuesRead")!=len(pub)
