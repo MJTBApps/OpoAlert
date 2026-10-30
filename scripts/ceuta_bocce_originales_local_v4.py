@@ -168,7 +168,7 @@ def pdf_detail(row):
   numero=row["number"]
   # Editor often prints BOCCE 6.664 (dot separator) rather than 6664.
   expected_digits=re.sub(r"\D","",numero)
-  numbers=[re.sub(r"\D","",m[0]) for m in re.finditer(r"\b\d[\d.]*",head[:700])]
+  numbers=[re.sub(r"\D","",m[0]) for m in re.finditer(r"(?<!\d)\d[\d.]*",head[:700])]
   num_ok=bool(expected_digits and expected_digits in numbers)
   if not day_ok or not num_ok:
    raise ValueError("La portada del PDF no coincide con fecha o numeración del editor")
@@ -221,7 +221,7 @@ def main():
   assert PUBLIC_SLUG.search("Detalles de Descarga BOCCE_Extra51_28-10-2026 Datos").groups()==("Extra51","28-10-2026")
   assert PUBLIC_SLUG.search("Detalles de Descarga BOCCE_6664_27-10-2026 Datos").groups()==("6664","27-10-2026")
   head=fold("BOCCE Nº6.664 martes, 27 de octubre de 2026")
-  assert "6664" in [re.sub(r"\D","",m[0]) for m in re.finditer(r"\b\d[\d.]*",head)]
+  assert "6664" in [re.sub(r"\D","",m[0]) for m in re.finditer(r"(?<!\d)\d[\d.]*",head)]
   with __import__("tempfile").TemporaryDirectory() as d:
    p=Path(d)/"tmp.zip";save(p,{"audit30DaysComplete":False,"sources":[]})
    with ZipFile(p) as z:assert not json.loads(z.read("ceuta_bocce_originales_v4.json"))["audit30DaysComplete"]
