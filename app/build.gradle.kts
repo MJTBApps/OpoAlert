@@ -11,8 +11,8 @@ android {
         applicationId = "es.opoalert.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 51
-        versionName = "1.38.0"
+        versionCode = 52
+        versionName = "1.39.0"
     }
 
     // Firma fija de OpoAlert: sin ella cada compilación sale con una firma distinta
