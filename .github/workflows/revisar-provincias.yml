@@ -47,7 +47,9 @@ jobs:
           python -m pip install -r backend/requirements.txt
           python -m playwright install --with-deps chromium
       - name: Pruebas de los extractores antes de consultar el BOP
-        run: python -m unittest discover -s backend/tests -q
+        # Solo las de Alicante y Castellón: un fallo en otra fuente no debe parar estos feeds.
+        working-directory: backend/tests
+        run: python -m unittest -q test_provincial_10
       - name: Leer los 30 dias de Alicante y Castellon
         run: python -u backend/province_history.py --days 30 --province both --output out_provincias
       - name: Comprobar 30 dias y todos los enlaces originales

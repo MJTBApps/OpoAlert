@@ -43,7 +43,9 @@ jobs:
           python -m pip install -r backend/requirements.txt
           python -m playwright install --with-deps chromium
       - name: Ejecutar pruebas antes de consultar el BOP
-        run: python -m unittest discover -s backend/tests -q
+        # Solo las del BOP de Valencia: un fallo en otra fuente no debe parar este feed.
+        working-directory: backend/tests
+        run: python -m unittest -q test_bop_full test_datagrid_real_050 test_historico_049 test_history test_originales_048 test_history_ajax_045 test_calendar_047 test_history_click_043 test_history_calendar_042 test_history_click_044 test_publication_calendar_052 test_history_dates_041 test_validar_feed_060 test_idioma_bop_081 test_scan
       - name: Leer y auditar el ultimo boletin
         run: python -u backend/bop_full.py --output data/convocatorias.json
       - name: Leer los 30 dias completos mediante calendario oficial
