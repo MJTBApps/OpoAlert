@@ -22,3 +22,13 @@ for c in m["candidates"]:
   "issueCheck":issue_ok,"codeCheck":code_ok,"titleRatio":ratio,
   "issuePattern":pat,"headerFirst":top[:600],
   "originalTitle":c["title"][:250]},ensure_ascii=True),flush=True)
+
+
+# Verify whether the 13 October "num. 197" is a single-PDF editorial typo
+# or an issue-wide mismatch. These are original links from the publisher.
+for code in ("2026-08237","2026-08032","2026-08042"):
+ raw,pages,head=read_pdf(pdf_url("2026-10-13",code))
+ print("ASTURIAS_OCT13_CONTROL",json.dumps({
+  "code":code,"pages":pages,"sha256":__import__("hashlib").sha256(raw).hexdigest(),
+  "header":fold(head[:350]),"hasCode":code in head
+ },ensure_ascii=True),flush=True)
