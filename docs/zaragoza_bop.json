@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-10-29T17:51:18.639281+00:00",
+  "lastCheckedUTC": "2026-10-30T16:05:24.480019+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "250",
+    "bulletin": "251",
     "pagesVisited": 2,
-    "announcementsRead": 751,
-    "opportunities": 58
+    "announcementsRead": 775,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "issuesRead": 26,
     "pagesVisited": 2,
-    "announcementsRead": 751,
-    "opportunities": 58,
+    "announcementsRead": 775,
+    "opportunities": 60,
     "bulletins": [
-      "225",
       "226",
       "227",
       "228",
@@ -45,10 +44,10 @@
       "247",
       "248",
       "249",
-      "250"
+      "250",
+      "251"
     ],
     "publicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-03",
@@ -73,10 +72,10 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "issuePublicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-03",
@@ -101,7 +100,8 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -110,19 +110,59 @@
       "2026-10-25"
     ],
     "sectionsRead": {
-      "SECCIÓN PRIMERA": 5,
-      "SECCIÓN TERCERA": 41,
-      "SECCIÓN QUINTA": 116,
-      "SECCIÓN SEXTA": 559,
+      "SECCIÓN TERCERA": 42,
+      "SECCIÓN QUINTA": 107,
+      "SECCIÓN SEXTA": 588,
       "SECCIÓN SEPTIMA": 2,
-      "PARTE NO OFICIAL": 4,
-      "SECCIÓN SEGUNDA": 6,
+      "PARTE NO OFICIAL": 6,
+      "SECCIÓN SEGUNDA": 8,
       "SECCIÓN CUARTA": 2,
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
+      "SECCIÓN PRIMERA": 4
     },
-    "documentsVerified": 84
+    "documentsVerified": 86
   },
   "notices": [
+    {
+      "id": "ZA-000344750",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a la aprobación definitiva del presupuesto general para el",
+      "entity": "AYUNTAMIENTO DE EMBID DE ARIZA",
+      "date": "30/10/2026",
+      "bulletin": "251",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472780190808"
+    },
+    {
+      "id": "ZA-000344736",
+      "province": "Zaragoza",
+      "title": "Aprobado inicialmente en sesión ordinaria de Pleno de este Ayuntamiento, de fecha 26 de octubre de 2026, el presupuesto general, bases de ejecución y la plantilla de personal funcionario, laboral y eventual…",
+      "entity": "AYUNTAMIENTO DE ALCONCHEL DE ARIZA",
+      "date": "30/10/2026",
+      "bulletin": "251",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472766050505"
+    },
+    {
+      "id": "ZA-000344729",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a señalamiento de fecha, lugar y hora de realización del primer ejercicio del proceso selectivo convocado para la provisión, por el turno de promoción interna y sistema selectivo de concurso-oposición, de una plaza de ingeniero/a industrial.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "30/10/2026",
+      "bulletin": "251",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472759980303"
+    },
+    {
+      "id": "ZA-000344725",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a la aprobación de las bases específicas que han de regir el proceso selectivo para la cobertura, por oposición en turno libre, de una plaza de oficial 1.º Almacén.",
+      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
+      "date": "30/10/2026",
+      "bulletin": "251",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472755940202"
+    },
     {
       "id": "ZA-000344714",
       "province": "Zaragoza",
@@ -682,26 +722,6 @@
       "bulletin": "226",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468366630202"
-    },
-    {
-      "id": "ZA-000344000",
-      "province": "Zaragoza",
-      "title": "No habiéndose presentado reclamación alguna a la aprobación inicial de la modificación de créditos número 16/2026 del presupuesto general para el ejercicio 2026, durante el plazo de información de quince días,…",
-      "entity": "AYUNTAMIENTO DE TARAZONA",
-      "date": "30/09/2026",
-      "bulletin": "225",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468197460606"
-    },
-    {
-      "id": "ZA-000343973",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a la apertura del plazo para la presentación de solicitudes de ayudas de estudios a los empleados de la Diputación Provincial de Zaragoza correspondiente al curso académico 2025-2026.",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
-      "date": "30/09/2026",
-      "bulletin": "225",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468170190202"
     }
   ]
 }
