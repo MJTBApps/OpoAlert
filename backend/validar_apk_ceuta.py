@@ -113,8 +113,8 @@ def verify(root):
  by_article={}
  for item in jobs:
   article=item.get("publisherArticle")
-  if not re.fullmatch(r"CE-2026-\d{3}",item.get("id","")) or
-      article not in JOB_SPECS or item["id"]!="CE-2026-"+article:
+  if (not re.fullmatch(r"CE-2026-\d{3}",item.get("id","")) or
+      article not in JOB_SPECS or item["id"]!="CE-2026-"+article):
    invalid("ID de anuncio no autorizado por publicación oficial")
   count,job,page=JOB_SPECS[article]
   if (item.get("province")!=PROVINCE or item.get("date")!="06/10/2026"
