@@ -1,0 +1,41 @@
+name: OpoAlert - Recolector cuatro fuentes v3 Windows
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths:
+      - scripts/recolector_pendientes_oficiales_v3.py
+      - .github/workflows/recolector-pendientes-oficiales-v3.yml
+permissions: {contents: read}
+env: {PYTHONIOENCODING: utf-8}
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m py_compile scripts/recolector_pendientes_oficiales_v3.py
+      - run: python scripts/recolector_pendientes_oficiales_v3.py --self-test
+  portable:
+    runs-on: windows-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Comprobar filtros oficiales y datos personales
+        run: python scripts/recolector_pendientes_oficiales_v3.py --self-test
+      - name: Preparar PyInstaller
+        run: python -m pip install pyinstaller
+      - name: Empaquetar sin Python del usuario
+        run: python -m PyInstaller --onefile --clean --paths scripts --name OpoAlert-Recolector-4Fuentes-v3 scripts/recolector_pendientes_oficiales_v3.py
+      - name: Verificar el ejecutable completo
+        run: .\dist\OpoAlert-Recolector-4Fuentes-v3.exe --self-test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-Recolector-4Fuentes-v3-Windows
+          path: dist/OpoAlert-Recolector-4Fuentes-v3.exe
+          retention-days: 30
+          if-no-files-found: error
