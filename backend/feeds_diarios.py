@@ -14,7 +14,7 @@ Uso:
   python backend/feeds_diarios.py publish out --docs docs
 """
 from __future__ import annotations
-import argparse,json,re,subprocess,sys,shutil
+import argparse,collections,json,os,re,subprocess,sys,shutil
 from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -60,6 +60,12 @@ class FeedError(Exception):pass
 
 def fail(code,message):
     raise FeedError(f"{code}: {message}")
+
+def annotate(title,text):
+    """En GitHub Actions, el motivo del fallo como anotación visible sin iniciar sesión."""
+    if os.environ.get("GITHUB_ACTIONS")=="true":
+        body=text.replace("%","%25").replace("\r","").replace("\n","%0A")
+        print(f"::error title={title}::{body}",flush=True)
 
 def app_rules():
     """Reglas de cada fuente tal como las aplica Android (Province.kt)."""
@@ -148,9 +154,17 @@ def run(code,out,docs=None):
     target=out/feed
     cmd=[sys.executable,"-u",str(ROOT/"backend"/script),*extra,"--output",str(target)]
     print("$"," ".join(cmd),flush=True)
-    rc=subprocess.call(cmd,cwd=ROOT)
+    tail=collections.deque(maxlen=12)
+    with subprocess.Popen(cmd,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,
+                          text=True,encoding="utf-8",errors="replace",
+                          env={**os.environ,"PYTHONIOENCODING":"utf-8"}) as proc:
+        for line in proc.stdout:
+            print(line,end="",flush=True)
+            tail.append(line.rstrip()[:400])
+    rc=proc.returncode
     if rc!=0 or not target.exists():
         target.unlink(missing_ok=True)
+        annotate(f"Lector {code}","\n".join(tail))
         fail(code,f"el lector terminó con error ({rc}); se conserva el feed anterior")
     try:
         result=validate(code,target,previous=Path(docs or ROOT/"docs")/feed)
@@ -193,6 +207,7 @@ def main():
             done,rejected=publish(a.out,a.docs)
             if not done and rejected:sys.exit(1)
     except FeedError as ex:
+        annotate("Feed rechazado",str(ex))
         print("ERROR",ex,file=sys.stderr);sys.exit(1)
 
 if __name__=="__main__":
