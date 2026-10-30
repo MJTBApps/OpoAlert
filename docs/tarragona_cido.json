@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-10-29T13:38:37.289790+00:00",
+  "lastCheckedUTC": "2026-10-30T11:00:13.744710+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 84,
-    "opportunities": 84,
+    "announcementsRead": 82,
+    "opportunities": 82,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "publicationDates": [
-      "2026-09-30",
       "2026-10-02",
       "2026-10-03",
       "2026-10-05",
@@ -37,7 +36,8 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-01",
@@ -52,10 +52,120 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 84,
-    "opportunities": 84
+    "announcementsRead": 82,
+    "opportunities": 82
   },
   "notices": [
+    {
+      "id": "CIDO8-22410612",
+      "title": "Borsa de treball de places d'Oficial 2a de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410612"
+    },
+    {
+      "id": "CIDO8-22410609",
+      "title": "Borsa de treball de places de Peó especialista de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410609"
+    },
+    {
+      "id": "CIDO8-22410606",
+      "title": "Borsa de treball de places de Peó de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410606"
+    },
+    {
+      "id": "CIDO8-22410603",
+      "title": "Borsa de treball de places de Personal de neteja",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410603"
+    },
+    {
+      "id": "CIDO8-22410596",
+      "title": "Borsa de treball de places d'Oficial 1a de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410596"
+    },
+    {
+      "id": "CIDO8-22410522",
+      "title": "Borsa de treball de places de Coordinador del Pla Educatiu d'Entorn",
+      "entity": "Ajuntament de Tortosa",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410522"
+    },
+    {
+      "id": "CIDO8-20654971",
+      "title": "1 plaça d'Operari de serveis varis - Peó de brigada",
+      "entity": "Ajuntament d'Altafulla",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/20654971"
+    },
+    {
+      "id": "CIDO8-19800340",
+      "title": "1 plaça d'Oficial 1a paleta",
+      "entity": "Ajuntament del Morell",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19800340"
+    },
+    {
+      "id": "CIDO8-18155706",
+      "title": "1 plaça d'Oficial 1a electricista",
+      "entity": "Ajuntament del Morell",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18155706"
+    },
+    {
+      "id": "CIDO8-16758438",
+      "title": "1 plaça de Vigilant municipal",
+      "entity": "Ajuntament de la Selva del Camp",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16758438"
+    },
+    {
+      "id": "CIDO8-22410322",
+      "title": "Borsa de treball de places d'Administratiu",
+      "entity": "Ajuntament de Deltebre",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410322"
+    },
     {
       "id": "CIDO8-22402389",
       "title": "Borsa de treball de places de Peó de brigada",
@@ -115,26 +225,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21039381"
-    },
-    {
-      "id": "CIDO8-19800340",
-      "title": "1 plaça d'Oficial 1a paleta",
-      "entity": "Ajuntament del Morell",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19800340"
-    },
-    {
-      "id": "CIDO8-18155706",
-      "title": "1 plaça d'Oficial 1a electricista",
-      "entity": "Ajuntament del Morell",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18155706"
     },
     {
       "id": "CIDO8-18012546",
@@ -225,16 +315,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22025969"
-    },
-    {
-      "id": "CIDO8-16758438",
-      "title": "1 plaça de Vigilant municipal",
-      "entity": "Ajuntament de la Selva del Camp",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16758438"
     },
     {
       "id": "CIDO8-22382736",
@@ -417,26 +497,6 @@
       "url": "https://cido.diba.cat/oposicions/16533267"
     },
     {
-      "id": "CIDO8-22347324",
-      "title": "Borsa de treball de places de Personal de manteniment (ampliació)",
-      "entity": "Ajuntament de Reus - Reus Transport Públics, SA",
-      "date": "19/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22347324"
-    },
-    {
-      "id": "CIDO8-22347318",
-      "title": "Borsa de treball de places de Conductor-perceptor (ampliació)",
-      "entity": "Ajuntament de Reus - Reus Transport Públics, SA",
-      "date": "19/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22347318"
-    },
-    {
       "id": "CIDO8-22337724",
       "title": "1 plaça de Tècnic auxiliar de biblioteca",
       "entity": "Ajuntament del Morell",
@@ -537,16 +597,6 @@
       "url": "https://cido.diba.cat/oposicions/22335041"
     },
     {
-      "id": "CIDO8-22329739",
-      "title": "Borsa de treball de places de Tècnic superior d'administració de sistemes informàtics en xarxa",
-      "entity": "Consell Comarcal del Baix Ebre",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22329739"
-    },
-    {
       "id": "CIDO8-22320387",
       "title": "Borsa de treball de places de Peó d'obra",
       "entity": "Ajuntament de Roquetes",
@@ -645,16 +695,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21472634"
-    },
-    {
-      "id": "CIDO8-16616274",
-      "title": "1 plaça d'Auxiliar tècnic de Festes i Festivals B",
-      "entity": "Ajuntament de Reus - Institut Municipal Reus Cultura",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16616274"
     },
     {
       "id": "CIDO8-21845182",
@@ -835,66 +875,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/20654966"
-    },
-    {
-      "id": "CIDO8-22252581",
-      "title": "1 plaça de Tècnic mitjà",
-      "entity": "Ajuntament de la Canonja",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22252581"
-    },
-    {
-      "id": "CIDO8-22252578",
-      "title": "1 plaça de Tècnic mitjà",
-      "entity": "Ajuntament de la Canonja",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22252578"
-    },
-    {
-      "id": "CIDO8-22252574",
-      "title": "1 plaça d'Auxiliar administratiu de gestió",
-      "entity": "Ajuntament de la Canonja",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22252574"
-    },
-    {
-      "id": "CIDO8-22252567",
-      "title": "1 plaça de Vigilant",
-      "entity": "Ajuntament de la Canonja",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22252567"
-    },
-    {
-      "id": "CIDO8-22249965",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Llorenç del Penedès",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22249965"
-    },
-    {
-      "id": "CIDO8-22249961",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament de Llorenç del Penedès",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22249961"
     }
   ]
 }

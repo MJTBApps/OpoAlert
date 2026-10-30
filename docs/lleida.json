@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-10-29T13:38:37.289790+00:00",
+  "lastCheckedUTC": "2026-10-30T11:00:13.744710+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 64,
-    "opportunities": 64,
+    "announcementsRead": 60,
+    "opportunities": 60,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "publicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-06",
@@ -35,7 +34,8 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -52,10 +52,40 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 64,
-    "opportunities": 64
+    "announcementsRead": 60,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "CIDO7-22410438",
+      "title": "Borsa de treball de places d'Educador de l'escola bressol municipal (ampliació)",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410438"
+    },
+    {
+      "id": "CIDO7-22374729",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Vilagrassa",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22374729"
+    },
+    {
+      "id": "CIDO7-22199121",
+      "title": "1 plaça d'Agutzil-peó de serveis generals i neteja viària",
+      "entity": "Ajuntament de Sant Esteve de la Sarga",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22199121"
+    },
     {
       "id": "CIDO7-22335055",
       "title": "1 plaça d'Operari del servei de neteja",
@@ -127,16 +157,6 @@
       "url": "https://cido.diba.cat/oposicions/22382165"
     },
     {
-      "id": "CIDO7-22374729",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Vilagrassa",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22374729"
-    },
-    {
       "id": "CIDO7-22298118",
       "title": "Borsa de treball de places d'Auxiliar de Promoció i Difusió",
       "entity": "Ajuntament de Cervera",
@@ -195,16 +215,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22345843"
-    },
-    {
-      "id": "CIDO7-22199121",
-      "title": "1 plaça d'Agutzil-peó de serveis generals i neteja viària",
-      "entity": "Ajuntament de Sant Esteve de la Sarga",
-      "date": "27/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22199121"
     },
     {
       "id": "CIDO7-22382149",
@@ -527,16 +537,6 @@
       "url": "https://cido.diba.cat/oposicions/22266977"
     },
     {
-      "id": "CIDO7-22266883",
-      "title": "1 plaça de Vigilant municipal",
-      "entity": "Ajuntament de Ponts",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22266883"
-    },
-    {
       "id": "CIDO7-22299819",
       "title": "1 plaça de Professor de violoncel",
       "entity": "Ajuntament de Ponts",
@@ -617,16 +617,6 @@
       "url": "https://cido.diba.cat/oposicions/20933577"
     },
     {
-      "id": "CIDO7-20655234",
-      "title": "1 plaça de Mestre de la Llar d'infants",
-      "entity": "Ajuntament de Corbins",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20655234"
-    },
-    {
       "id": "CIDO7-22257537",
       "title": "1 plaça de Personal de neteja",
       "entity": "Ajuntament de Maldà",
@@ -665,36 +655,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/19309473"
-    },
-    {
-      "id": "CIDO7-22089052",
-      "title": "1 plaça de Professor de música de grau superior, especialitat violoncel",
-      "entity": "Ajuntament de Solsona",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22089052"
-    },
-    {
-      "id": "CIDO7-22089046",
-      "title": "1 plaça d'Encarregat d'equipament cultural",
-      "entity": "Ajuntament de Solsona",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22089046"
-    },
-    {
-      "id": "CIDO7-22089022",
-      "title": "1 plaça de Tècnic superior",
-      "entity": "Ajuntament de Solsona",
-      "date": "30/09/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22089022"
     }
   ]
 }
