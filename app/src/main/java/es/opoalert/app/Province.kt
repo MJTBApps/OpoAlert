@@ -411,6 +411,13 @@ enum class Province(
         "www.juntadeandalucia.es", "/eboja/2026/",
         Regex("BJ-2026-\\d{8}"),
     ),
+    ASTURIAS_BOPA(
+        "AS", "Asturias (BOPA)",
+        "https://mjtbapps.github.io/OpoAlert/asturias_bopa.json",
+        "https://miprincipado.asturias.es/ast/bopa-sumario",
+        "www.asturias.es", "/bopa/2026/",
+        Regex("AS-2026-\\d{5}"),
+    ),
     CADIZ(
         "CA", "Cádiz",
         "https://mjtbapps.github.io/OpoAlert/cadiz_bop.json",
@@ -473,6 +480,7 @@ enum class Province(
             id.startsWith("TF-") -> SANTA_CRUZ_BOP
             id.startsWith("ML-") -> MELILLA_BOME
             id.startsWith("NA-") -> NAVARRA_BON
+            id.startsWith("AS-") -> ASTURIAS_BOPA
             id.startsWith("RI-") -> RIOJA_BOR
             id.startsWith("MD-") -> MADRID
             id.startsWith("AB-") -> ALBACETE
