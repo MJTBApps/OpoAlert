@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-10-29T18:19:45.682213+00:00",
+  "lastCheckedUTC": "2026-10-30T12:07:30.707491+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 22,
     "announcementsRead": 376,
-    "opportunities": 25
+    "opportunities": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-30",
-    "rangeEnd": "2026-10-29",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "issuesRead": 22,
     "pagesVisited": 22,
     "announcementsRead": 376,
-    "opportunities": 25,
+    "opportunities": 27,
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -41,10 +40,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-05",
@@ -65,7 +64,8 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -78,7 +78,6 @@
       "2026-10-25"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/30-09-2026/BOP-S-2026-189.pdf",
       "https://bop.dipucordoba.es/visor-pdf/01-10-2026/BOP-S-2026-190.pdf",
       "https://bop.dipucordoba.es/visor-pdf/02-10-2026/BOP-S-2026-191.pdf",
       "https://bop.dipucordoba.es/visor-pdf/05-10-2026/BOP-S-2026-192.pdf",
@@ -99,10 +98,31 @@
       "https://bop.dipucordoba.es/visor-pdf/26-10-2026/BOP-S-2026-207.pdf",
       "https://bop.dipucordoba.es/visor-pdf/27-10-2026/BOP-S-2026-208.pdf",
       "https://bop.dipucordoba.es/visor-pdf/28-10-2026/BOP-S-2026-209.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/29-10-2026/BOP-S-2026-210.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/29-10-2026/BOP-S-2026-210.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/30-10-2026/BOP-S-2026-211.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3632",
+      "province": "Córdoba",
+      "title": "Resolución por la que se aprueban las Bases del proceso selectivo para la provisión como funcionario/a de carrera, de una plaza de Técnico/a Superior de Administración General, mediante oposición libre, de esta Corporación, según la Oferta de Empleo Público 2025",
+      "entity": "Ayuntamiento de Hornachuelos",
+      "date": "30/10/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/30-10-2026/BOP-A-2026-3632.pdf"
+    },
+    {
+      "id": "CO-2026-3631",
+      "province": "Córdoba",
+      "title": "Resolución por la que se aprueban las Bases que han de regir el procedimiento de selección, para la creación de una Bolsa de Empleo de \"Encargado de Jardinería\" de esta Corporación",
+      "entity": "Ayuntamiento de Hornachuelos",
+      "date": "30/10/2026",
+      "bulletin": "211",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipucordoba.es/visor-pdf/30-10-2026/BOP-A-2026-3631.pdf"
+    },
     {
       "id": "CO-2026-3624",
       "province": "Córdoba",
