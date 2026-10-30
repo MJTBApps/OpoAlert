@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-10-28T10:35:24.745749+00:00",
+  "lastCheckedUTC": "2026-10-30T18:59:39.757383+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "130",
+    "bulletin": "131",
     "pagesVisited": 14,
-    "announcementsRead": 425,
-    "opportunities": 18,
+    "announcementsRead": 445,
+    "opportunities": 19,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "issuesRead": 14,
     "pagesVisited": 14,
-    "announcementsRead": 425,
-    "opportunities": 18,
+    "announcementsRead": 445,
+    "opportunities": 19,
     "bulletins": [
-      "117",
       "118",
       "119",
       "120",
@@ -33,10 +32,10 @@
       "127",
       "128",
       "129",
-      "130"
+      "130",
+      "131"
     ],
     "publicationDates": [
-      "2026-09-29",
       "2026-10-01",
       "2026-10-03",
       "2026-10-06",
@@ -49,10 +48,10 @@
       "2026-10-20",
       "2026-10-22",
       "2026-10-24",
-      "2026-10-27"
+      "2026-10-27",
+      "2026-10-29"
     ],
     "nonPublicationDates": [
-      "2026-09-30",
       "2026-10-02",
       "2026-10-04",
       "2026-10-05",
@@ -67,10 +66,21 @@
       "2026-10-23",
       "2026-10-25",
       "2026-10-26",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-30"
     ]
   },
   "notices": [
+    {
+      "id": "CS-168714",
+      "province": "Castellón",
+      "title": "Extracto bases selección para la constitución de una bolsa de trabajo de peón/a de cementerio",
+      "entity": "AJUNTAMENT DE BORRIANA/BURRIANA",
+      "date": "29/10/2026",
+      "bulletin": "131",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168714&idioma=es"
+    },
     {
       "id": "CS-168429",
       "province": "Castellón",

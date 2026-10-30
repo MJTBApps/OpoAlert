@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-10-28T10:35:12.519694+00:00",
+  "lastCheckedUTC": "2026-10-30T18:59:27.423994+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "205",
+    "bulletin": "207",
     "pagesVisited": 21,
-    "announcementsRead": 815,
-    "opportunities": 78,
+    "announcementsRead": 835,
+    "opportunities": 69,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-09-29",
-    "rangeEnd": "2026-10-28",
+    "rangeStart": "2026-10-01",
+    "rangeEnd": "2026-10-30",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 815,
-    "opportunities": 78,
+    "announcementsRead": 835,
+    "opportunities": 69,
     "bulletins": [
-      "185",
-      "186",
       "187",
       "188",
       "189",
@@ -40,11 +38,11 @@
       "202",
       "203",
       "204",
-      "205"
+      "205",
+      "206",
+      "207"
     ],
     "publicationDates": [
-      "2026-09-29",
-      "2026-09-30",
       "2026-10-01",
       "2026-10-02",
       "2026-10-05",
@@ -63,7 +61,9 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
-      "2026-10-28"
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30"
     ],
     "nonPublicationDates": [
       "2026-10-03",
@@ -78,6 +78,36 @@
     ]
   },
   "notices": [
+    {
+      "id": "AL-2026-8299",
+      "province": "Alicante",
+      "title": "AMPLIACIÓN DE 3 PLAZAS A LA CONVOCATORIA DE 13 PLAZAS DE AUXILIAR DE ADMINISTRACIÓN GENERAL",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "29/10/2026",
+      "bulletin": "206",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008299.pdf"
+    },
+    {
+      "id": "AL-2026-8298",
+      "province": "Alicante",
+      "title": "AMPLIACIÓN 1 PLAZA A LA CONVOCATORIA DE 4 PLAZAS DE PSICÓLOGO/A",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "29/10/2026",
+      "bulletin": "206",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008298.pdf"
+    },
+    {
+      "id": "AL-2026-8296",
+      "province": "Alicante",
+      "title": "AMPLIACIÓN DE 1 PLAZA DE ADMINISTRATIVO POR PROMOCIÓN INTERNA A LA CONVOCATORIA DE 16 PLAZAS.",
+      "entity": "AYUNTAMIENTO TORREVIEJA",
+      "date": "29/10/2026",
+      "bulletin": "206",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008296.pdf"
+    },
     {
       "id": "AL-2026-8224",
       "province": "Alicante",
@@ -737,126 +767,6 @@
       "bulletin": "187",
       "type": "Bolsa de trabajo",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007083.pdf"
-    },
-    {
-      "id": "AL-2026-7397",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO N.º 1.19 JEFATURA DEPARTAMENTO HACIENDA Y RECAUDACIÓN",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007397.pdf"
-    },
-    {
-      "id": "AL-2026-7393",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO N.º 1.15 JEFATURA DEPARTAMENTO DE RECURSOS HUMANOS",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007393.pdf"
-    },
-    {
-      "id": "AL-2026-7391",
-      "province": "Alicante",
-      "title": "ANUNCIO BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO N.º 1.1 JEFATURA DEPARTAMENTO SECRETARÍA Y CONTRATACIÓN",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007391.pdf"
-    },
-    {
-      "id": "AL-2026-7387",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFICAS CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO Nº 1.23 JEFATURA DEL DEPARTAMENTO DE OFICINA TÉCNICA",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007387.pdf"
-    },
-    {
-      "id": "AL-2026-7377",
-      "province": "Alicante",
-      "title": "ANUNCIO BASES ESPECÍFICAS REGIRÁN CONCURSO ORDINARIO MÉRITOS PROVISIÓN DEFINITIVA PUESTO Nº 2.18 JEFATURA  DEPARTAMENTO SERVICIOS SOCIALES E IGUALDAD",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007377.pdf"
-    },
-    {
-      "id": "AL-2026-7376",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFICAS QUE REGIRÁN CONCURSO ORDINARIO MÉRITOS PARA PROVISIÓN DEFINITIVA PUESTO N.º 2.31 JEFATURA DEPARTAMENTO OBRAS, SERVICIOS Y LIMPIEZA",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007376.pdf"
-    },
-    {
-      "id": "AL-2026-7375",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFICAS QUE REGIRÁN CONCURSO ORDINARIO DE MÉRITOS PARA LA PROVISIÓN DEFINITIVA DEL PUESTO N.º 2.43 ENCARGADO/A DE LIMPIEZA DEL AYTO DOLORES",
-      "entity": "AYUNTAMIENTO DOLORES",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007375.pdf"
-    },
-    {
-      "id": "AL-2026-7239",
-      "province": "Alicante",
-      "title": "DECLARACIÓN DESIERTA CONV. 26/17, PROVISIÓN DEFINITIVA 1 PLAZA CELADOR/A DE OBRAS (INSPECTOR/A DE OBRAS) (CONCURSO-OPOSICIÓN / PROMOCIÓN INTERNA)",
-      "entity": "AYUNTAMIENTO CALP",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007239.pdf"
-    },
-    {
-      "id": "AL-2026-7110",
-      "province": "Alicante",
-      "title": "CONVOCATORIA BOLSA DE TRABAJO DE OFICIAL ELECTRICISTA",
-      "entity": "AYUNTAMIENTO TEULADA",
-      "date": "30/09/2026",
-      "bulletin": "186",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/30_186/2026_007110.pdf"
-    },
-    {
-      "id": "AL-2026-7361",
-      "province": "Alicante",
-      "title": "CONVOCATORIA PARA LA CONSTITUCIÓN DE UNA BOLSA DE TRABAJO TEMPORAL DE AUXILIAR DEL SERVICIO DE AYUDA A DOMICILIO DEL AYUNTAMIENTO DE XIXONA",
-      "entity": "AYUNTAMIENTO JIJONA",
-      "date": "29/09/2026",
-      "bulletin": "185",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/29_185/2026_007361.pdf"
-    },
-    {
-      "id": "AL-2026-6659",
-      "province": "Alicante",
-      "title": "BOLSA DE EMPLEO TEMPORAL DE MONITOR/A DE ATLETISMO, POR CONCURSO-OPOSICIÓN",
-      "entity": "AYUNTAMIENTO TORREVIEJA",
-      "date": "29/09/2026",
-      "bulletin": "185",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/29_185/2026_006659.pdf"
-    },
-    {
-      "id": "AL-2026-6656",
-      "province": "Alicante",
-      "title": "BOLSA DE EMPLEO TEMPORAL DE MONITOR/A DE FÚTBOL SALA POR CONCURSO-OPOSICIÓN",
-      "entity": "AYUNTAMIENTO TORREVIEJA",
-      "date": "29/09/2026",
-      "bulletin": "185",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/09/29_185/2026_006656.pdf"
     }
   ]
 }
