@@ -1,0 +1,30 @@
+name: OpoAlert - Auditor BON Asturias Jaen portable Windows
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-12-zonas-20261029]
+    paths: [.github/workflows/auditor-bon-asturias-jaen-exe.yml]
+permissions: {contents: read}
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 18
+    env: {PYTHONIOENCODING: utf-8}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Pruebas de seguridad y análisis sin navegador
+        run: |
+          python scripts/auditor_bon_jaen_local_20261030.py --self-test
+          python -m pip install pyinstaller
+      - name: Compilar auditor portátil
+        run: python -m PyInstaller --onefile --clean --paths scripts --name OpoAlert-Auditor-Oficial-v2 scripts/auditor_bon_jaen_local_20261030.py
+      - name: Comprobar EXE
+        run: .\dist\OpoAlert-Auditor-Oficial-v2.exe --self-test
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OpoAlert-Auditor-Oficial-v2-Windows
+          path: dist/OpoAlert-Auditor-Oficial-v2.exe
+          retention-days: 30
+          if-no-files-found: error
