@@ -16,35 +16,33 @@ class SourceCatalogTest {
 
     @Test fun communitiesAndProvincesAreGroupedInsteadOfFlatList() {
         val groups = SourceCatalog.groups()
-        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia"), groups.map { it.name })
+        assertEquals(listOf("Comunidad Valenciana", "Cataluña", "Aragón", "Andalucía", "Comunidad de Madrid", "Castilla-La Mancha", "Castilla y León", "Extremadura", "Región de Murcia", "País Vasco", "Galicia", "Illes Balears", "Canarias", "Ciudad Autónoma de Melilla", "La Rioja"), groups.map { it.name })
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "Diario autonómico"),
             groups[0].territories.map { it.name })
-        assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona"),
+        assertEquals(listOf("Barcelona", "Girona", "Lleida", "Tarragona", "Diario autonómico"),
             groups[1].territories.map { it.name })
         assertEquals(listOf(Province.BARCELONA_BOP, Province.BARCELONA),
             groups[1].territories.first().sources)
         assertEquals(listOf(Province.TARRAGONA_BOP, Province.TARRAGONA),
             groups[1].territories[3].sources)
         assertEquals(4, groups[0].sourceCount)
-        assertEquals(7, groups[1].sourceCount)
-        assertEquals(listOf("Huesca", "Teruel", "Zaragoza"), groups[2].territories.map { it.name })
-        assertEquals(3, groups[2].sourceCount)
-        assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Sevilla"), groups[3].territories.map { it.name })
-        assertEquals(6, groups[3].sourceCount)
+        assertEquals(8, groups[1].sourceCount)
+        assertEquals(listOf("Huesca", "Teruel", "Zaragoza", "Diario autonómico"), groups[2].territories.map { it.name })
+        assertEquals(4, groups[2].sourceCount)
+        assertEquals(listOf("Almería", "Cádiz", "Córdoba", "Granada", "Huelva", "Sevilla", "Diario autonómico"), groups[3].territories.map { it.name })
+        assertEquals(7, groups[3].sourceCount)
         assertEquals(listOf("Madrid"), groups[4].territories.map { it.name })
-        assertEquals(1, groups[4].sourceCount)
         assertEquals(listOf("Ciudad Real", "Guadalajara", "Toledo", "Diario autonómico"), groups[5].territories.map { it.name })
-        assertEquals(4, groups[5].sourceCount)
-        assertEquals(listOf("Ávila", "León", "Palencia", "Soria", "Zamora", "Diario autonómico"), groups[6].territories.map { it.name })
-        assertEquals(6, groups[6].sourceCount)
+        assertEquals(listOf("Ávila", "León", "Palencia", "Salamanca", "Segovia", "Soria", "Zamora", "Diario autonómico"), groups[6].territories.map { it.name })
+        assertEquals(8, groups[6].sourceCount)
         assertEquals(listOf("Badajoz", "Cáceres", "Diario autonómico"), groups[7].territories.map { it.name })
-        assertEquals(3, groups[7].sourceCount)
         assertEquals(listOf("Murcia"), groups[8].territories.map { it.name })
-        assertEquals(1, groups[8].sourceCount)
-        assertEquals(listOf("Bizkaia", "Gipuzkoa", "Diario autonómico"), groups[9].territories.map { it.name })
-        assertEquals(3, groups[9].sourceCount)
-        assertEquals(listOf("A Coruña", "Ourense", "Pontevedra", "Diario autonómico"), groups[10].territories.map { it.name })
-        assertEquals(4, groups[10].sourceCount)
+        assertEquals(listOf("Álava", "Bizkaia", "Gipuzkoa", "Diario autonómico"), groups[9].territories.map { it.name })
+        assertEquals(listOf("A Coruña", "Lugo", "Ourense", "Pontevedra", "Diario autonómico"), groups[10].territories.map { it.name })
+        assertEquals(listOf("Todas las islas"), groups[11].territories.map { it.name })
+        assertEquals(listOf("Las Palmas", "Santa Cruz de Tenerife", "Diario autonómico"), groups[12].territories.map { it.name })
+        assertEquals(listOf("Melilla"), groups[13].territories.map { it.name })
+        assertEquals(listOf("Diario autonómico"), groups[14].territories.map { it.name })
     }
 
     @Test fun activeSourcesListFromTheWebIsValidated() {

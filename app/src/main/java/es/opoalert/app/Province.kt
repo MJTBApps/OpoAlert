@@ -351,14 +351,14 @@ enum class Province(
     MELILLA_BOME(
         "ML", "Melilla (BOME)",
         "https://mjtbapps.github.io/OpoAlert/melilla_bome.json",
-        "https://bomemelilla.es/bomes/2026",
+        "https://bomemelilla.es/",
         "bomemelilla.es", "/bome/descargar/BOME-",
         Regex("ML-\\d{4}-(?:A|AX)-\\d{1,8}"),
     ),
     CANARIAS_BOC(
         "IC", "Canarias (BOC)",
         "https://mjtbapps.github.io/OpoAlert/canarias_boc.json",
-        "https://www.gobiernodecanarias.org/boc/archivo/2026/",
+        "https://www.gobiernodecanarias.org/boc/archivo/",
         "sede.gobiernodecanarias.org", "/boc/boc-a-",
         Regex("IC-\\d{4}-\\d{1,8}"),
     ),

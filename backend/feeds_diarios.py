@@ -49,6 +49,19 @@ SOURCES={
     "OU":("galicia_ourense.py",[],"galicia_ourense.json"),
     "DG":("galicia_dog.py",[],"galicia_dog.json"),
     "DV":("dogv_autonomico.py",[],"valencia_dogv.json"),
+    "AR":("alava_botha.py",[],"alava_botha.json"),
+    "LU":("galicia_lugo.py",[],"galicia_lugo.json"),
+    "IC":("canarias_boc.py",[],"canarias_boc.json"),
+    "LP":("canarias_bop_provincial.py",["--province","lp"],"canarias_las_palmas.json"),
+    "TF":("canarias_bop_provincial.py",["--province","tf"],"canarias_santa_cruz.json"),
+    "RI":("rioja_bor.py",[],"rioja_bor.json"),
+    "ML":("melilla_bome.py",[],"melilla_bome.json"),
+    "IB":("baleares_boib.py",[],"baleares_boib.json"),
+    "BJ":("boja_autonomico.py",[],"andalucia_boja.json"),
+    "SA":("salamanca_bop.py",[],"salamanca_bop.json"),
+    "SG":("segovia_bop.py",[],"segovia_bop.json"),
+    "DC":("dogc_autonomico.py",[],"cataluna_dogc.json"),
+    "AO":("boa_autonomico.py",[],"aragon_boa.json"),
 }
 TYPES=("Bolsa de trabajo","Plaza / oposición")
 # Sedes oficiales que sirven sus documentos en un puerto propio.

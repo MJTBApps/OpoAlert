@@ -20,7 +20,7 @@ import requests
 import time
 from requests.adapters import HTTPAdapter
 from bs4 import BeautifulSoup
-from clm_common import employment, publish_audit, write_output
+from clm_common import employment, numbering_ok, publish_audit, write_output
 from provincial_common import ProvincialCoverageError, fold
 
 SOURCE = "https://portaldogc.gencat.cat/eadop-rest/api/dogc/summaryDOGC"
@@ -28,12 +28,39 @@ BASE = "https://portaldogc.gencat.cat/eadop-rest/api/"
 DOCUMENT_URL = "https://dogc.gencat.cat/ca/document-del-dogc/"
 HOST = "portaldogc.gencat.cat"
 PROVINCE = "Cataluña (DOGC)"
-END = date(2026, 10, 29)
-START = END - timedelta(days=29)
+DAYS = 30
+# Fines de semana y festivos: la primera y la última edición pueden caer hasta
+# 3 días dentro de la ventana (p. ej. 25-26/12 + fin de semana).
+EDGE_DAYS = 3
+# Diario de lunes a viernes: unas 21-22 ediciones en 30 días, 15 con la Navidad.
+MIN_MAIN_ISSUES = 15
+MAX_WORKERS = 3
 _thread = local()
 DOC_RE = re.compile(r"\d{6,9}")
 NUMBER_RE = re.compile(r"\d{4,5}[A-Z]?")
-CVE_RE = re.compile(r"CVE-DOGC-[A-Z]-[A-Z0-9-]+-2026")
+CVE_RE = re.compile(r"CVE-DOGC-[A-Z]-[A-Z0-9-]+-(\d{4})")
+MONTHS_CA = {"gener":1, "febrer":2, "marc":3, "abril":4, "maig":5, "juny":6,
+             "juliol":7, "agost":8, "setembre":9, "octubre":10, "novembre":11,
+             "desembre":12}
+SUPPLEMENT_DATE_RE = re.compile(
+    r"\b(\d{1,2})\s+d['e]\s*(" + "|".join(MONTHS_CA) + r")\s+de\s+(\d{4})\b")
+
+def window(today=None):
+    end = today or date.today()
+    return end - timedelta(days=DAYS - 1), end
+
+def months_between(start, end):
+    """(año, mes) de cada mes que toca la ventana, en orden."""
+    out = []
+    y, m = start.year, start.month
+    while (y, m) <= (end.year, end.month):
+        out.append((y, m))
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return out
+
+def days_in_month(y, m):
+    nxt = date(y + 1, 1, 1) if m == 12 else date(y, m + 1, 1)
+    return (nxt - date(y, m, 1)).days
 EXCLUDED = (
     "designacio dels membres", "es resol la convocatoria",
     "es resol parcialment", "es resol el concurs", "es resol el proces",
@@ -86,7 +113,8 @@ def request_json(endpoint, payload):
         try:
             r=session().post(url,data=payload,timeout=(10,36),allow_redirects=False)
             if r.status_code!=200 or r.url!=url or len(r.content)>3_000_000:
-                fail(f"respuesta oficial invalida {endpoint}: HTTP {r.status_code}")
+                # p. ej. suplementos de más de 90 días: HTTP 500 con errorCode 3
+                fail(f"respuesta oficial invalida {endpoint} {payload}: HTTP {r.status_code} {r.text[:160]!r}")
             obj=r.json()
             if not isinstance(obj,dict) or obj.get("errorCode"):
                 fail(f"API DOGC devolvio error: {str(obj)[:200]}")
@@ -134,32 +162,51 @@ def classify_conservative(title):
         return "Plaza / oposición"
     return None
 
-def calendars():
+def parse_calendar(rows,year,month):
+    """Calendario mensual oficial -> {fecha: número principal o None}."""
+    if not isinstance(rows,list) or len(rows)!=days_in_month(year,month):
+        fail(f"calendario mensual oficial truncado {month:02d}/{year}")
     records={}
-    for month in (9,10):
-        d=request_json("dogc/calendarDOGC",
-            {"month":str(month),"year":"2026","language":"ca"})
-        rows=d.get("calendar")
-        if not isinstance(rows,list) or len(rows)!=(30 if month==9 else 31):
-            fail("calendario mensual oficial truncado")
-        for entry in rows:
-            if not isinstance(entry,dict) or not isinstance(entry.get("hasDOGC"),bool):
-                fail("estructura de calendario inesperada")
-            try:day=datetime.strptime(entry["date"],"%d/%m/%Y").date()
-            except Exception:fail("calendario con fecha no valida")
-            if day.year!=2026 or day.month!=month or day in records:
-                fail("fecha repetida o fuera del calendario")
-            numbers=re.findall(r"(?:numDOGC=)(\d{4,5})",str(entry.get("linkDOGC",""))) if entry["hasDOGC"] else []
-            if (entry["hasDOGC"] and len(numbers)!=1) or (not entry["hasDOGC"] and numbers):
-                fail("calendario sin identificador de diario")
-            records[day]=(numbers[0] if entry["hasDOGC"] else None)
-    selected=[(START+timedelta(days=i),records[START+timedelta(days=i)]) for i in range(30)]
-    dates=[day for day,n in selected if n is not None]
-    nums=[int(n) for _,n in selected if n is not None]
-    if (not dates or dates[0]!=START or dates[-1]!=END or len(dates)!=23
-        or nums!=list(range(9761,9784))):
-        fail("calendario DOGC 30 dias incompleto o numeros no consecutivos")
+    for entry in rows:
+        if not isinstance(entry,dict) or not isinstance(entry.get("hasDOGC"),bool):
+            fail("estructura de calendario inesperada")
+        try:day=datetime.strptime(str(entry.get("date")),"%d/%m/%Y").date()
+        except Exception:fail("calendario con fecha no valida")
+        if day.year!=year or day.month!=month or day in records:
+            fail("fecha repetida o fuera del calendario")
+        numbers=re.findall(r"(?:numDOGC=)(\d{4,5})",str(entry.get("linkDOGC",""))) if entry["hasDOGC"] else []
+        if (entry["hasDOGC"] and len(numbers)!=1) or (not entry["hasDOGC"] and numbers):
+            fail("calendario sin identificador de diario")
+        records[day]=(numbers[0] if entry["hasDOGC"] else None)
+    return records
+
+def select_window(records,start,end):
+    """Comprueba la ventana de 30 días del calendario y la devuelve."""
+    selected=[]
+    for i in range((end-start).days+1):
+        day=start+timedelta(days=i)
+        if day not in records:
+            fail(f"el calendario oficial no incluye el {day.isoformat()}")
+        selected.append((day,records[day]))
+    published=[(day,int(n)) for day,n in selected if n is not None]
+    if len(published)<MIN_MAIN_ISSUES:
+        fail(f"calendario DOGC con solo {len(published)} diarios en 30 dias")
+    if ((published[0][0]-start).days>EDGE_DAYS
+        or (end-published[-1][0]).days>EDGE_DAYS):
+        fail("faltan diarios al principio o al final de la ventana")
+    if not numbering_ok(published):
+        fail("numeros de diario no consecutivos: "+",".join(str(n) for _,n in published))
     return selected
+
+def calendars(start=None,end=None):
+    if start is None or end is None:
+        start,end=window()
+    records={}
+    for year,month in months_between(start,end):
+        d=request_json("dogc/calendarDOGC",
+            {"month":str(month),"year":str(year),"language":"ca"})
+        records.update(parse_calendar(d.get("calendar"),year,month))
+    return select_window(records,start,end)
 
 def flatten(node):
     """Read every original summary document even when grouped into subheaders."""
@@ -189,10 +236,11 @@ def official_original(task):
     verification=data.get("authenticityIntegrity")
     if not isinstance(meta,dict) or not isinstance(verification,dict):
         fail(f"documento {did}: metadatos/autenticidad ausentes")
+    cve=CVE_RE.fullmatch(str(meta.get("CVE") or ""))
     if (str(meta.get("numDOGC"))!=issue
         or meta.get("dateDOGC")!=day.strftime("%d/%m/%Y")
         or not str(meta.get("issuingAuthority") or "").strip()
-        or not CVE_RE.fullmatch(str(meta.get("CVE") or ""))
+        or not cve or not day.year-1<=int(cve[1])<=day.year+1
         or meta.get("tipusDiari") not in ("DOGC",None)):
         fail(f"documento {did}: fecha/numero/CVE/editor no coinciden")
     autentic=norm(verification.get("result"))
@@ -212,7 +260,7 @@ def official_original(task):
         fail(f"documento {did}: texto oficial original no recuperado")
     url=DOCUMENT_URL+"?documentId="+did
     return ({
-      "id":f"DC-2026-{did}","province":PROVINCE,"title":original_title,
+      "id":f"DC-{day.year}-{did}","province":PROVINCE,"title":original_title,
       "entity":" ".join(str(meta["issuingAuthority"]).split()),"date":day.strftime("%d/%m/%Y"),
       "bulletin":issue,"type":original_kind,"url":url
     }, {"id":did,"cve":meta["CVE"],"issue":issue,"date":day.isoformat(),
@@ -261,6 +309,12 @@ def collect_main(number,day):
                           "counts":[x["read"] for x in issued],
                           "originalIds":ids,"supplement":supplement}
 
+def supplement_date_ok(text,day):
+    """«29 d'octubre de AAAA» (en catalán) debe ser el día del DOGC."""
+    m=SUPPLEMENT_DATE_RE.search(norm(text))
+    return bool(m and int(m[1])==day.day and MONTHS_CA[m[2]]==day.month
+                and int(m[3])==day.year)
+
 def collect_supplement(meta):
     supplement=meta.get("supplement")
     if not supplement:
@@ -271,9 +325,7 @@ def collect_supplement(meta):
     body=response.get("suplementData")
     if not isinstance(body,dict) or body.get("numSuplement")!=supplement:
         fail("suplemento de notificaciones ausente o cambiado")
-    s=norm(body.get("dateSuplement"))
-    m=re.search(r"\b(\d{1,2})\s+d['e]\s*(setembre|octubre)\s+de\s+2026\b",s)
-    if not m or int(m[1])!=date_value.day or (9 if m[2]=="setembre" else 10)!=date_value.month:
+    if not supplement_date_ok(body.get("dateSuplement"),date_value):
         fail("fecha del suplemento no corresponde al DOGC oficial")
     linked=response.get("dogcRelacionats")
     if (not isinstance(linked,list) or
@@ -292,15 +344,17 @@ def collect_supplement(meta):
             notices.append((did,title,date_value,supplement,kind))
     return {"day":date_value,"number":supplement,"read":len(documents),"notices":[]}, notices, documents
 
-def audit():
-    days=calendars()
-    with ThreadPoolExecutor(max_workers=5) as pool:
+def audit(today=None):
+    start,end=window(today)
+    days=calendars(start,end)
+    main_issues=sum(1 for _,n in days if n is not None)
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         groups=list(pool.map(lambda item:collect_main(item[1],item[0]),[
             item for item in days if item[1] is not None]))
     all_editions=[edition for editions,_,_ in groups for edition in editions]
     tasks=[task for _,items,_ in groups for task in items]
     summaries=[summary for _,_,summary in groups]
-    with ThreadPoolExecutor(max_workers=5) as pool:
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
         supplementary=list(pool.map(collect_supplement,summaries))
     extra_sections=0
     for entry,meta in zip(supplementary,summaries):
@@ -328,24 +382,22 @@ def audit():
         print("DOGC",i["date"],"/".join(i["editions"]),
               "anuncios",sum(i["counts"]),
               "candidatas",sum(len(by_issue[k]["notices"]) for k in i["editions"]),flush=True)
-    feed=publish_audit(SOURCE,PROVINCE,all_editions,today=END,min_issues=23)
+    if extra_sections!=sum(bool(i["supplement"]) for i in summaries):
+        fail("sumarios de suplementos del editor incompletos")
+    feed=publish_audit(SOURCE,PROVINCE,all_editions,today=end,min_issues=MIN_MAIN_ISSUES)
     h=feed["historyCoverage"]
     h["calendarEvidence"]=[{"date":d.isoformat(),"mainBulletin":n} for d,n in days]
     h["sumariosVerificados"]=summaries
     h["candidateOriginalEvidence"]=originals
     h["originalCandidateDocumentsVerified"]=len(originals)
-    h["mainIssues"]=23
-    h["annexIssues"]=len(all_editions)-23-extra_sections
+    h["mainIssues"]=main_issues
+    h["annexIssues"]=len(all_editions)-main_issues-extra_sections
     h["supplementsAudited"]=extra_sections
-    if extra_sections!=sum(bool(i["supplement"]) for i in summaries):
-        fail("sumarios de suplementos del editor incompletos")
-    write_output(Path("out/DC.json"),feed)
     return feed
 
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--output",type=Path,required=True)
     args=ap.parse_args()
-    value=audit()
-    # Only written once a complete validated, internally consistent feed exists.
-    if args.output!=Path("out/DC.json"):write_output(args.output,value)
+    # Solo se escribe cuando existe un feed completo y coherente.
+    write_output(args.output,audit())

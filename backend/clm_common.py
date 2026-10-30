@@ -47,7 +47,8 @@ def pdf_header(url,allowed):
 
 def employment(title):
     t=" ".join(fold(title).split())
-    if any(w in t for w in ("lista definitiva","lista provisional","admitidos","excluidos",
+    if any(w in t for w in ("lista definitiva","lista provisional","listado definitivo","listado provisional",
+        "admitidos","excluidos","admitidas","excluidas",
         "tribunal calificador","nombramiento","correccion de errores","resultados",
         "resolucion definitiva","concurso de traslados","juez de paz",
         "jueza de paz","subvencion","licitacion","beca","aprobacion del presupuesto")):

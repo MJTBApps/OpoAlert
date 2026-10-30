@@ -1,16 +1,31 @@
 #!/usr/bin/env python3
 """Validate the autonomous BOA from independent official XML and JSON exports."""
 from __future__ import annotations
-import argparse,html,json,re,requests,xml.etree.ElementTree as ET
+import argparse,html,json,re,requests,time,xml.etree.ElementTree as ET
 from urllib.parse import urlsplit,parse_qs
 from datetime import date,datetime,timedelta
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from clm_common import employment,publish_audit,write_output,invalid
+from clm_common import employment,numbering_ok,publish_audit,write_output,invalid
 from provincial_common import fold
 from zaragoza_bop import BASE,SOURCE
-END=date(2026,10,29);START=END-timedelta(days=29)
+PROVINCE="Aragón (BOA)"
+DAYS=30
+# Fines de semana y festivos: la primera y la última edición pueden caer
+# hasta 3 días dentro de la ventana.
+EDGE_DAYS=3
+# Diario de lunes a viernes: unas 21 ediciones en 30 días, 15 con la Navidad.
+MIN_ISSUES=15
+# Unos 25-40 anuncios por edición: por debajo, exportación incompleta.
+MIN_ROWS=150
+MAX_WORKERS=3
+def window(today=None):
+ end=today or date.today()
+ return end-timedelta(days=DAYS-1),end
+# Número ordinario («211») o extraordinario («2 Extraordinario», con su propia
+# numeración, que también empieza en 1 cada enero).
+NUM_RE=re.compile(r"([1-9]\d{0,3})( Extraordinario)?")
 URL_RE=re.compile(r"https://www\.boa\.aragon\.es/cgi-bin/EBOA/BRSCGI\?CMD=VEROBJ&MLKOB=\d{9,18}")
 def urls(value):
  if not isinstance(value,str):invalid("BOA: enlace no textual")
@@ -23,18 +38,27 @@ def urls(value):
   if u.hostname!="www.boa.aragon.es" or set(parse_qs(u.query))!={"CMD","MLKOB"}:
    invalid("BOA: enlace ajeno al BOA")
  return found
-def download(xml=False):
+def download(start,end,xml=False):
  q=dict(BASE)
  q.update({"BASE":"BOLE","SECC-C":"","OUTPUTMODE":"XML" if xml else "JSON",
            "SEC":"OPENDATABOAXML" if xml else "OPENDATABOAJSON",
-           "@PUBL-GE":START.strftime("%Y%m%d"),"@PUBL-LE":END.strftime("%Y%m%d")})
- try:
-  r=requests.get(SOURCE,params=q,timeout=(12,80),headers={"User-Agent":"Mozilla/5.0"})
-  if r.status_code!=200 or not 12000<len(r.content)<25000000:
-   invalid(f"BOA: exportación incompleta HTTP {r.status_code}")
-  return r.content
- except requests.RequestException as e:invalid(f"BOA: API no responde: {e}")
-def read_json(raw):
+           "@PUBL-GE":start.strftime("%Y%m%d"),"@PUBL-LE":end.strftime("%Y%m%d")})
+ for attempt in range(3):
+  try:
+   r=requests.get(SOURCE,params=q,timeout=(12,80),headers={"User-Agent":"Mozilla/5.0"})
+   if r.status_code!=200 or not 12000<len(r.content)<25000000:
+    invalid(f"BOA: exportación incompleta HTTP {r.status_code}")
+   return r.content
+  except requests.RequestException as e:
+   if attempt==2:invalid(f"BOA: API no responde: {e}")
+   time.sleep(3*(attempt+1))
+def in_window(value,start,end):
+ """Fecha AAAAMMDD de publicación dentro de la ventana."""
+ if not re.fullmatch(r"\d{8}",value):return False
+ try:day=datetime.strptime(value,"%Y%m%d").date()
+ except ValueError:return False
+ return start<=day<=end
+def read_json(raw,start,end):
  try:
   s=raw.decode("ISO-8859-1")
   try:items=json.loads(s)
@@ -45,7 +69,7 @@ def read_json(raw):
    items=json.loads(repaired)
    print("BOA: escapado excepcional JSON cotejado íntegramente con XML",flush=True)
  except (ValueError,UnicodeError) as e:invalid(f"BOA: JSON no es válido: {e}")
- if not isinstance(items,list) or not 350<=len(items)<10000:
+ if not isinstance(items,list) or not MIN_ROWS<=len(items)<10000:
   invalid(f"BOA: exportación JSON incompleta: {len(items)}")
  out={};counts=set()
  for i,r in enumerate(items,1):
@@ -55,8 +79,8 @@ def read_json(raw):
   agency=str(r.get("Emisor") or "").strip();body=str(r.get("Texto") or "").strip()
   num=str(r.get("Numeroboletin",""))
   if (not order or int(order[1])!=i or not re.fullmatch(r"\d{9}",ident)
-      or ident in out or not re.fullmatch(r"2026(?:0930|10(?:0[1-9]|[12]\d))",dt)
-      or not num.isdigit() or not title or not agency or not body
+      or ident in out or not in_window(dt,start,end)
+      or not NUM_RE.fullmatch(num) or not title or not agency or not body
       or not str(r.get("Seccion","")).strip()):
    invalid(f"BOA: fila JSON corrupta {i}, doc={ident}, fecha={dt}")
   counts.add(int(order[2]))
@@ -64,7 +88,7 @@ def read_json(raw):
               "pdfs":urls(r.get("UrlPdf",""))}
  if counts!={len(items)}:invalid("BOA: exportación JSON truncada")
  return out
-def read_xml(raw):
+def read_xml(raw,start,end):
  try:root=ET.fromstring(raw)
  except ET.ParseError as e:invalid(f"BOA: XML no válido: {e}")
  if root.tag!="documento":invalid("BOA: respuesta no es XML de datos abiertos")
@@ -73,6 +97,8 @@ def read_xml(raw):
   ident=(reg.findtext("docn") or "").strip()
   if not re.fullmatch(r"\d{9}",ident) or ident in out:
    invalid("BOA: XML con código duplicado")
+  if not in_window((reg.findtext("fecha") or "").strip(),start,end):
+   invalid(f"BOA: XML con fecha fuera de la ventana en {ident}")
   out[ident]={"date":(reg.findtext("fecha") or "").strip(),
               "title":html.unescape(reg.findtext("titulo") or "").strip(),
               "agency":(reg.findtext("emisor") or "").strip(),
@@ -80,22 +106,38 @@ def read_xml(raw):
  return out
 def check_pdf(url):
  if urls(url)!=[url]:invalid("BOA: documento PDF no oficial")
- try:
-  r=requests.get(url,timeout=(10,35),stream=True,allow_redirects=False,
-                 headers={"Range":"bytes=0-120"})
-  if r.status_code not in (200,206):invalid(f"BOA: PDF HTTP {r.status_code}")
-  head=b""
-  for chunk in r.iter_content(140):
-   head+=chunk
-   if len(head)>=5:break
-  good=head.startswith(b"%PDF-");r.close()
-  if not good:invalid("BOA: PDF original no recuperable")
- except requests.RequestException as e:invalid(f"BOA: PDF inaccesible: {e}")
+ for attempt in range(3):
+  try:
+   r=requests.get(url,timeout=(10,35),stream=True,allow_redirects=False,
+                  headers={"Range":"bytes=0-120"})
+   if r.status_code not in (200,206):invalid(f"BOA: PDF HTTP {r.status_code}")
+   head=b""
+   for chunk in r.iter_content(140):
+    head+=chunk
+    if len(head)>=5:break
+   good=head.startswith(b"%PDF-");r.close()
+   if not good:invalid("BOA: PDF original no recuperable")
+   return
+  except requests.RequestException as e:
+   if attempt==2:invalid(f"BOA: PDF inaccesible: {e}")
+   time.sleep(1.5*(attempt+1))
 def comparable(value):
  return " ".join(fold(value).split())
-def audit():
- data=read_json(download())
- other=read_xml(download(xml=True))
+def check_issues(keys,start,end):
+ """(fecha, número) de las ediciones, ordenadas: ventana y numeración completas.
+
+ Los ordinarios deben cubrir la ventana sin huecos; los extraordinarios llevan
+ su propia serie, que tampoco puede tener huecos entre los leídos."""
+ ordinary=[(d,int(n)) for d,n in keys if NUM_RE.fullmatch(n)[2] is None]
+ extra=[(d,int(NUM_RE.fullmatch(n)[1])) for d,n in keys if NUM_RE.fullmatch(n)[2]]
+ if (len(ordinary)<MIN_ISSUES or (ordinary[0][0]-start).days>EDGE_DAYS
+    or (end-ordinary[-1][0]).days>EDGE_DAYS or not numbering_ok(ordinary)
+    or not numbering_ok(extra)):
+  invalid(f"BOA: números no continuos o ediciones ausentes {[(d.isoformat(),n) for d,n in keys]}")
+def audit(today=None):
+ start,end=window(today)
+ data=read_json(download(start,end),start,end)
+ other=read_xml(download(start,end,xml=True),start,end)
  if set(data)!=set(other):
   invalid(f"BOA: diferente número de anuncios JSON/XML: {len(data)}/{len(other)}")
  grouped=defaultdict(list)
@@ -104,11 +146,10 @@ def audit():
   if x["date"]!=r["date"] or comparable(x["title"])!=comparable(r["title"]) or comparable(x["agency"])!=comparable(r["agency"]) or x["pdfs"]!=r["pdfs"]:
    invalid(f"BOA: XML difiere del JSON en {ident}; dates={x['date']==r['date']}, titles={fold(x['title'])==fold(r['title'])}, agencies={fold(x['agency'])==fold(r['agency'])}, urls={x['pdfs']==r['pdfs']}; titulo_xml={x['title'][:280]!r}, titulo_json={r['title'][:280]!r}, pdf_xml={x['pdfs']}, pdf_json={r['pdfs']}")
   day=datetime.strptime(r["date"],"%Y%m%d").date()
-  grouped[(day,int(r["num"]))].append((ident,r))
- keys=sorted(grouped)
- if (len(keys)!=21 or keys[0]!=(START,190) or keys[-1]!=(END,210)
-    or any(b[1]!=a[1]+1 for a,b in zip(keys,keys[1:]))):
-  invalid(f"BOA: números ordinarios no continuos {keys}")
+  grouped[(day,r["num"])].append((ident,r))
+ # Por fecha y, en el mismo día, el ordinario antes que el extraordinario.
+ keys=sorted(grouped,key=lambda k:(k[0],NUM_RE.fullmatch(k[1])[2] is not None,int(NUM_RE.fullmatch(k[1])[1])))
+ check_issues(keys,start,end)
  checks=[];issues=[]
  for day,num in keys:
   rows=grouped[(day,num)]
@@ -118,14 +159,14 @@ def audit():
    if kind:
     target=r["pdfs"][0]
     checks.append(target)
-    notices.append({"id":f"AO-2026-{ident}","province":"Aragón (BOA)",
+    notices.append({"id":f"AO-{day.year}-{ident}","province":PROVINCE,
       "title":r["title"][:2800],"entity":r["agency"][:500],
       "date":day.strftime("%d/%m/%Y"),"bulletin":str(num),"type":kind,"url":target})
   print(f"BOA {day}: n.º {num}, {len(rows)} anuncios, {len(notices)} candidatas",flush=True)
   issues.append({"day":day,"number":str(num),"read":len(rows),"notices":notices})
  if not checks:invalid("BOA: sin anuncios de empleo público")
- with ThreadPoolExecutor(max_workers=6) as pool:list(pool.map(check_pdf,sorted(set(checks))))
- return publish_audit(SOURCE,"Aragón (BOA)",issues,today=END)
+ with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:list(pool.map(check_pdf,sorted(set(checks))))
+ return publish_audit(SOURCE,PROVINCE,issues,today=end,min_issues=MIN_ISSUES)
 if __name__=="__main__":
  p=argparse.ArgumentParser();p.add_argument("--output",required=True,type=Path)
  args=p.parse_args();write_output(args.output,audit())

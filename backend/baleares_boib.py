@@ -1,33 +1,43 @@
 #!/usr/bin/env python3
-"""Official BOIB 30-day audit for all Balearic islands, including extraordinary issues.
+"""BOIB (Illes Balears): auditoría diaria de los últimos 30 días, extraordinarios incluidos.
 
-The BOIB is the shared journal for the Balearic administration, island councils,
-municipal governments and public bodies. The official calendar shows every issue
-including extraordinary issues; each issue's section pages list original
-individual disposiciones. Do not infer island by ambiguous municipality names.
+El BOIB es el diario común de la administración autonómica, consejos insulares,
+ayuntamientos y organismos públicos de las Illes Balears. El calendario mensual
+oficial muestra todas las ediciones (las extraordinarias con «*E»); cada sección
+de cada edición lista sus edictos con el PDF original. Ventana: hoy-29 … hoy.
+Si algo no cuadra, el lector falla: nunca se publican datos parciales.
 """
 from __future__ import annotations
-import argparse,re,threading,requests
+import argparse,re,threading,time,requests
 from urllib.parse import urljoin,urlsplit
-from datetime import date,datetime
+from datetime import date,timedelta
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
-from clm_common import employment,publish_audit,write_output
+from clm_common import employment,numbering_ok,publish_audit,write_output
 from provincial_common import ProvincialCoverageError
 HOST="www.caib.es"
 ROOT=f"https://{HOST}/eboibfront/es"
 SOURCE=ROOT
 PROVINCE="Illes Balears (BOIB)"
-END=date(2026,10,29)
-BEGIN=date(2026,9,30)
-MONTH_URL=ROOT+"/2026/mes/9"
-ISSUE_RE=re.compile(r"^/eboibfront/es/2026/(\d{5})/?$")
-SECTION_RE=re.compile(r"^/eboibfront/es/2026/(\d{5})/seccion-[a-z-]+/(\d{3})$")
-NUM_RE=re.compile(r"BOIB\s+N[úu]m\.\s*(\d{1,3})\s*-\s*(\d{1,2})\s*/\s*(Octubre|Septiembre)\s*/\s*2026",re.I)
+WORKERS=3
+MIN_ISSUES=10        # 3 ediciones por semana (mar/jue/sáb) más extraordinarias; Navidad incluida
+MIN_READ_PER_ISSUE=20 # media mínima de edictos por edición ordinaria (lo normal: 30-150)
+MONTHS={"enero":1,"febrero":2,"marzo":3,"abril":4,"mayo":5,"junio":6,"julio":7,
+        "agosto":8,"septiembre":9,"octubre":10,"noviembre":11,"diciembre":12}
+ISSUE_RE=re.compile(r"^/eboibfront/es/(\d{4})/(\d{4,6})/?$")
+SECTION_RE=re.compile(r"^/eboibfront/es/(\d{4})/(\d{4,6})/seccion-[a-z-]+/(\d{3})$")
+NUM_RE=re.compile(r"BOIB\s+N[úu]m\.\s*(\d{1,3})\s*-\s*(\d{1,2})\s*/\s*([A-Za-zÁÉÍÓÚáéíóú]+)\s*/\s*(\d{4})",re.I)
 REG_RE=re.compile(r"N[úu]mero de (?:registro|edicto)\s+(\d{1,8})",re.I)
-PDF_OLD_RE=re.compile(r"^/eboibfront/pdf/es/2026/(\d{1,3})/(\d{5,9})$")
+PDF_OLD_RE=re.compile(r"^/eboibfront/pdf/es/(\d{4})/(\d{1,3})/(\d{5,9})$")
 PDF_ELI_RE=re.compile(r"^/eboibfront/eli/[a-zA-Z0-9_()/.+-]+/dof/spa/pdf$")
+# Notificaciones (edictos con datos personales): PDF oficial con clave opaca.
+PDF_NOT_RE=re.compile(r"^/eboibfront/pdf/es/not/[A-Za-z0-9_=-]{16,120}$")
+# Los edictos se numeran por año de registro (el contador vuelve a 1 a primeros
+# de enero). En enero y febrero aún salen edictos registrados el año anterior,
+# con números altos: el contador del año nuevo no llega a esta cifra hasta la
+# primavera, y los del año anterior que se publican en enero ya la superan.
+PREVIOUS_YEAR_EDICT_FROM=8000
 SESSION=threading.local()
 def invalid(msg):
  raise ProvincialCoverageError("Illes Balears BOIB: "+str(msg))
@@ -43,31 +53,44 @@ def check_url(url):
      or u.fragment or u.port not in (None,443) or not u.path.startswith("/eboibfront/")):
   invalid("URL fuera de la sede oficial "+str(url)[:160])
  return u
+def fetch(url,**kw):
+ """GET con dos reintentos moderados ante errores de red, 429, 5xx o
+ redirecciones esporádicas (el portal a veces responde 302 a un PDF que
+ un instante después sirve con 200). Nunca se siguen redirecciones."""
+ last=None
+ for attempt in range(3):
+  try:
+   r=client().get(url,allow_redirects=False,**kw)
+   if r.status_code<300 or 400<=r.status_code<500 and r.status_code!=429:return r
+   last=f"HTTP {r.status_code}";r.close()
+  except requests.RequestException as e:last=str(e)[:170]
+  time.sleep(2+3*attempt)
+ invalid(f"sin acceso a la sede oficial ({last}): {url}")
 def html_page(url):
  check_url(url)
- try:
-  r=client().get(url,timeout=(12,42),allow_redirects=False)
-  if (r.status_code!=200 or urlsplit(r.url).hostname!=HOST
-      or not 9000<=len(r.content)<2500000):
-   invalid(f"índice incompleto HTTP {r.status_code}: {url}")
-  soup=BeautifulSoup(r.content,"html.parser")
-  if not soup.select_one("h1") or "Boletín Oficial de las Illes Balears" not in soup.select_one("h1").get_text(" ",strip=True):
-   invalid(f"no es BOIB oficial: {url}")
-  return soup
- except requests.RequestException as e:invalid(f"sin acceso a índice oficial: {e}")
-def validate_pdf_url(url,number):
+ r=fetch(url,timeout=(12,42))
+ if (r.status_code!=200 or urlsplit(r.url).hostname!=HOST
+     or not 9000<=len(r.content)<2500000):
+  invalid(f"índice incompleto HTTP {r.status_code}: {url}")
+ soup=BeautifulSoup(r.content,"html.parser")
+ if not soup.select_one("h1") or "Boletín Oficial de las Illes Balears" not in soup.select_one("h1").get_text(" ",strip=True):
+  invalid(f"no es BOIB oficial: {url}")
+ return soup
+def validate_pdf_url(url,number,day):
  u=check_url(url)
  match=PDF_OLD_RE.fullmatch(u.path)
  if match:
-  if int(match[1])!=number or u.query:
+  # La ruta lleva el año del documento: en los primeros boletines del año
+  # aparecen documentos del año anterior (p. ej. /pdf/es/2025/2/… en el BOIB 2/2026).
+  years={day.year,day.year-1} if day.month<=2 else {day.year}
+  if int(match[1]) not in years or int(match[2])!=number or u.query:
    invalid("PDF de otro boletín "+url)
   return
- if not PDF_ELI_RE.fullmatch(u.path) or u.query:
+ if not (PDF_ELI_RE.fullmatch(u.path) or PDF_NOT_RE.fullmatch(u.path)) or u.query:
   invalid("versión PDF ELI no oficial "+url)
 def check_pdf(url):
+ r=fetch(url,timeout=(10,43),stream=True,headers={"Range":"bytes=0-127"})
  try:
-  r=client().get(url,timeout=(10,43),stream=True,allow_redirects=False,
-                 headers={"Range":"bytes=0-127"})
   if (r.status_code not in (200,206) or
       "pdf" not in r.headers.get("Content-Type","").lower()):
    invalid(f"PDF no disponible / HTTP {r.status_code}: {url}")
@@ -75,39 +98,57 @@ def check_pdf(url):
   for piece in r.iter_content(130):
    first+=piece
    if len(first)>=5:break
-  r.close()
-  if not first.startswith(b"%PDF-"):invalid("archivo no es PDF original "+url)
  except requests.RequestException as e:invalid("error verificando PDF "+str(e)[:170])
-def parse_calendar():
- html=html_page(MONTH_URL)
+ finally:r.close()
+ if not first.startswith(b"%PDF-"):invalid("archivo no es PDF original "+url)
+def months_between(start,end):
+ y,m=start.year,start.month
+ while (y,m)<=(end.year,end.month):
+  yield y,m
+  y,m=(y+1,1) if m==12 else (y,m+1)
+def parse_month(year,month):
+ """Ediciones del calendario oficial de un mes: {id: (fecha, extraordinaria)}."""
+ url=f"{ROOT}/{year}/mes/{month-1}"   # el portal numera los meses desde 0
+ html=html_page(url)
  result={}
  for a in html.select("a[href]"):
-  u=urlsplit(urljoin(MONTH_URL,a.get("href","")))
+  u=urlsplit(urljoin(url,a.get("href","")))
   m=ISSUE_RE.fullmatch(u.path)
   text=a.get_text(" ",strip=True)
-  if not m or not re.fullmatch(r"\d{1,2}(?:\*E)?",text):
+  if not m or u.query or not re.fullmatch(r"\d{1,2}(?:\*E)?",text):
    continue
-  day=date(2026,10,int(text.split("*")[0]))
-  uid=int(m[1])
+  if int(m[1])!=year:invalid(f"el calendario de {month}/{year} enlaza una edición de {m[1]}")
+  try:day=date(year,month,int(text.split("*")[0]))
+  except ValueError:invalid(f"día inexistente en el calendario de {month}/{year}: {text}")
+  uid=int(m[2])
   if uid in result:invalid(f"calendario contiene edición duplicada {uid}")
   result[uid]=(day,text.endswith("*E"))
- if len(result)!=16:invalid(f"el calendario oficial de octubre tiene {len(result)} ediciones, esperadas 16")
- if min(d for d,_ in result.values())!=date(2026,10,1) or max(d for d,_ in result.values())!=END:
-  invalid("faltan fechas iniciales o finales del mes")
- if sum(1 for _,extra in result.values() if extra)!=3:
-  invalid("no aparecen las 3 ediciones extraordinarias oficiales de octubre")
- if min(result)<12000 or max(result)>12400:invalid("IDs de ediciones fuera de rango 2026")
- return sorted(result.items(),key=lambda x:(x[1][0],x[0]))
+ return result
+def parse_calendar(start,end):
+ items={}
+ for y,m in months_between(start,end):
+  month=parse_month(y,m)
+  if not month:invalid(f"calendario de {m}/{y} sin ediciones")
+  for uid,value in month.items():
+   if uid in items:invalid(f"edición {uid} repetida en dos meses")
+   items[uid]=value
+ inside={uid:(d,e) for uid,(d,e) in items.items() if start<=d<=end}
+ if not inside:invalid(f"el calendario no tiene ediciones entre {start} y {end}")
+ return sorted(inside.items(),key=lambda x:(x[1][0],x[0]))
+def edict_year(day,entry):
+ return day.year-1 if day.month<=2 and entry>=PREVIOUS_YEAR_EDICT_FROM else day.year
 def issue(item):
  uid,(day,extra)=item
- indexurl=f"{ROOT}/2026/{uid}/"
+ indexurl=f"{ROOT}/{day.year}/{uid}/"
  h=html_page(indexurl)
  title=h.title.get_text(" ",strip=True) if h.title else ""
  m=NUM_RE.search(title)
- if not m:invalid(f"número/fecha de BOIB ausente en {uid}: {title[:150]}")
+ if not m or m[3].lower() not in MONTHS:invalid(f"número/fecha de BOIB ausente en {uid}: {title[:150]}")
  number=int(m[1])
- if date(2026,10 if m[3].lower()=="octubre" else 9,int(m[2]))!=day:
-  invalid(f"fecha del calendario y del BOIB {number} no coincide")
+ try:official=date(int(m[4]),MONTHS[m[3].lower()],int(m[2]))
+ except ValueError:invalid(f"fecha imposible en el BOIB {uid}: {title[:150]}")
+ if official!=day:
+  invalid(f"fecha del calendario ({day}) y del BOIB {number} ({official}) no coinciden")
  intro=h.get_text(" ",strip=True)[:650]
  if ("Extraordinario" in intro)!=extra:
   invalid(f"estado de edición extraordinaria no coincide, BOIB {number}")
@@ -115,15 +156,18 @@ def issue(item):
  for a in h.select('a[href*="/seccion-"]'):
   target=urljoin(indexurl,a.get("href",""));p=urlsplit(target)
   match=SECTION_RE.fullmatch(p.path)
-  if not match or int(match[1])!=uid or p.hostname!=HOST or p.query or p.fragment:
+  if (not match or int(match[1])!=day.year or int(match[2])!=uid or p.hostname!=HOST
+      or p.query or p.fragment):
    continue
-  sections[match[2]]=target
+  sections[match[3]]=target
  if not 1<=len(sections)<=5:
   invalid(f"BOIB {number}: índice sin listado completo de secciones: {sections}")
  count=0;found=[];seen=set()
  for code,path in sorted(sections.items()):
   page=html_page(path)
-  if ("BOIB Núm. "+str(number)) not in (page.title.get_text(" ",strip=True) if page.title else ""):
+  ptitle=page.title.get_text(" ",strip=True) if page.title else ""
+  pm=NUM_RE.search(ptitle)
+  if not pm or int(pm[1])!=number or int(pm[4])!=day.year:
    invalid(f"BOIB {number}: página de sección ajena {path}")
   listed=page.select("ul.resolucions > li")
   records=[x for x in listed if x.select_one("p.registre")]
@@ -143,33 +187,43 @@ def issue(item):
        or not code_match or len(pdfs)!=1):
     invalid(f"BOIB {number}: anuncio sin título, registro, emisor o PDF {str(item)[:500]}")
    entry=int(code_match[1])
-   if entry in seen:
+   key=(edict_year(day,entry),entry)
+   if key in seen:
     invalid(f"BOIB {number}: número edicto duplicado {entry}")
-   seen.add(entry);count+=1
+   seen.add(key);count+=1
    target=urljoin(path,pdfs[0]["href"])
-   validate_pdf_url(target,number)
+   validate_pdf_url(target,number,day)
    kind=employment(title)
    if kind:
-    found.append({"id":f"IB-2026-{entry}","province":PROVINCE,
+    found.append({"id":f"IB-{key[0]}-{entry}","province":PROVINCE,
        "title":title,"entity":label,"date":day.strftime("%d/%m/%Y"),
        "bulletin":str(number),"type":kind,"url":target})
  print(f"BALEARES BOIB {day} n.º {number} {'EXTRA' if extra else 'ordinario'}: {count} anuncios, {len(found)} candidatas, {len(sections)} secciones",flush=True)
  if count<1:invalid(f"BOIB {number}: boletín vacío")
- return {"day":day,"number":str(number),"read":count,"notices":found}
-def audit():
- items=parse_calendar()
- with ThreadPoolExecutor(max_workers=5) as pool:
+ return {"day":day,"number":str(number),"read":count,"notices":found,"extra":extra}
+def audit(today=None):
+ end=today or date.today()
+ start=end-timedelta(days=29)
+ items=parse_calendar(start,end)
+ with ThreadPoolExecutor(max_workers=WORKERS) as pool:
   issues=list(pool.map(issue,items))
- nums=[int(x["number"]) for x in issues]
- if nums!=list(range(123,139)):
-  invalid(f"BOIB: ediciones discontinuas dentro del calendario: {nums}")
- if sum(x["read"] for x in issues)<350:invalid("BOIB: volumen de avisos anormalmente bajo")
+ issues.sort(key=lambda x:(x["day"],int(x["number"])))
+ # Ordinarias y extraordinarias comparten numeración; en enero vuelve a 1.
+ seq=[(x["day"],int(x["number"])) for x in issues]
+ if not numbering_ok(seq):
+  invalid(f"BOIB: ediciones discontinuas dentro del calendario: {[n for _,n in seq]}")
+ ordinary=sum(not x["extra"] for x in issues)
+ if ordinary<MIN_ISSUES:
+  invalid(f"BOIB: solo {ordinary} ediciones ordinarias en 30 días")
+ if sum(x["read"] for x in issues)<MIN_READ_PER_ISSUE*ordinary:
+  invalid("BOIB: volumen de avisos anormalmente bajo")
  candidates=[n["url"] for x in issues for n in x["notices"]]
  if not candidates:invalid("BOIB: no se identificaron convocatorias")
- with ThreadPoolExecutor(max_workers=6) as pool:
+ with ThreadPoolExecutor(max_workers=WORKERS) as pool:
   list(pool.map(check_pdf,sorted(set(candidates))))
  print(f"BALEARES PDF VERIFICADOS: {len(set(candidates))} originales",flush=True)
- return publish_audit(SOURCE,PROVINCE,issues,today=END,min_issues=16)
+ for x in issues:x.pop("extra")
+ return publish_audit(SOURCE,PROVINCE,issues,today=end,min_issues=MIN_ISSUES)
 if __name__=="__main__":
  p=argparse.ArgumentParser()
  p.add_argument("--output",type=Path,required=True)

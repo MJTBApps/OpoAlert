@@ -14,22 +14,28 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import requests
 from pypdf import PdfReader
-from clm_common import employment,publish_audit,write_output
+from clm_common import employment,numbering_ok,publish_audit,write_output
 from provincial_common import ProvincialCoverageError,fold
 
-START=date(2026,9,30)
-END=date(2026,10,29)
 SOURCE="https://www.lasalina.es/documentacion/bop/"
 PROVINCE="Salamanca"
 HOST="www.lasalina.es"
-CVE_RE=re.compile(r"\bBOP-SA-(\d{8})\s*-\s*(\d{3})\b",re.I)
+PATH_RE=re.compile(r"^/documentacion/bop/(\d{4})/(\d{8})/BOP-SA-\2-\d{3}\.pdf$")
+MONTHS=("enero","febrero","marzo","abril","mayo","junio","julio","agosto",
+        "septiembre","octubre","noviembre","diciembre")
+WORKERS=3
+# Diario de lunes a viernes: unas 21-22 ediciones en 30 días; en Navidad, menos.
+MIN_ISSUES=15
+CONTROL_DAYS=7
+# The publisher occasionally prints a 4-digit number (BOP-SA-20251230-0025).
+CVE_RE=re.compile(r"\bBOP-SA-(\d{8})\s*-\s*(0?\d{3})\b",re.I)
 ISSUE_RE=re.compile(r"N\.\s*[ºo]\s*(\d{1,3})\s*[•·]\s*(?:lunes|martes|miercoles|miércoles|jueves|viernes|sabado|sábado|domingo)",re.I)
 threadlocal=threading.local()
 
 def bad(msg):raise ProvincialCoverageError("BOP Salamanca: "+str(msg))
 def pdf_url(day,n):
     d=day.strftime("%Y%m%d")
-    return f"{SOURCE}2026/{d}/BOP-SA-{d}-{n:03}.pdf"
+    return f"{SOURCE}{day.year}/{d}/BOP-SA-{d}-{n:03}.pdf"
 def session():
     if not hasattr(threadlocal,"client"):
         threadlocal.client=requests.Session()
@@ -37,7 +43,7 @@ def session():
     return threadlocal.client
 def official_url(url):
     u=urlsplit(url)
-    if u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443) or u.username or u.password or u.fragment or u.query or not u.path.startswith("/documentacion/bop/2026/"):
+    if u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443) or u.username or u.password or u.fragment or u.query or not PATH_RE.fullmatch(u.path):
         bad("Enlace fuera de dominio/ruta oficial: "+url[:150])
 def read_pdf(url,allow404=False,header_only=False,limit=25_000_000):
     official_url(url)
@@ -79,8 +85,8 @@ def toc_lines(data,day):
     m=ISSUE_RE.search(fold(text))
     if m is None:bad("N.º y fecha de boletín ilegibles: "+day.isoformat())
     number=int(m[1])
-    month=("septiembre" if day.month==9 else "octubre")
-    if not re.search(rf"(?i)\b0?{day.day}\s+de\s+{month}\s+de\s+2026",fold(text)):
+    month=MONTHS[day.month-1]
+    if not re.search(rf"(?i)\b0?{day.day}\s+de\s+{month}\s+de\s+{day.year}\b",fold(text)):
         bad("Fecha publicada no coincide con PDF original "+day.isoformat())
     return text,number,len(pdf.pages)
 
@@ -88,7 +94,13 @@ def extract_entry_info(text,day):
     # Every official sumario contains one numbered CVE per announcement.
     raw=[(int(d),int(n)) for d,n in CVE_RE.findall(text)]
     expected_day=int(day.strftime("%Y%m%d"))
-    if any(d!=expected_day for d,n in raw):bad("Sumario mezcla fechas CVE de boletines")
+    # The sumario sometimes misprints the date part of one CVE (e.g. 18/12/2025
+    # lists BOP-SA-20251216-010 for its entry 10). Such an entry is accepted only
+    # if its number fills its place in the sequence and, later, the original PDF
+    # of this day with that number carries the correct CVE (issue_content).
+    foreign={n for d,n in raw if d!=expected_day}
+    if 0 in foreign or len(foreign)>3:bad("Sumario mezcla fechas CVE de boletines")
+    if foreign&{n for d,n in raw if d==expected_day}:bad("Sumario con CVE repetido en dos fechas")
     nums=list(dict.fromkeys(n for d,n in raw if n>0))
     if not nums or nums!=list(range(1,max(nums)+1)):
         bad("Sumario con secuencia de CVE incompleta o desordenada: "+str(nums[:60]))
@@ -120,14 +132,14 @@ def parse_titles(toc,day):
             continue
         mm=CVE_RE.search(s)
         if mm is not None:
-            if mm[1]!=daystr:bad("CVE de otro día")
             idx=int(mm[2])
             if idx==0:continue
             title=" ".join(pending[-16:]).strip(" .-")
             if len(title)<8:
                 title="Anuncio original del BOP de Salamanca"
             if len(title)>1300:title=title[:1300].rsplit(" ",1)[0]
-            rows.append({"index":idx,"title":title,"entity":entity,"section":group})
+            rows.append({"index":idx,"title":title,"entity":entity,"section":group,
+                         "misprintedCve":mm[1]!=daystr or len(mm[2])!=3})
             pending=[]
             continue
         # Publisher indicates governing entity using a leading dash, and an
@@ -192,8 +204,15 @@ def issue_content(issue):
     day=issue["day"];number=issue["number"]
     rows=issue["rows"]
     # Link to every indexed PDF must exist and advertise PDF content.
-    with ThreadPoolExecutor(max_workers=5) as e:
-        list(e.map(lambda a:read_pdf(pdf_url(day,a["index"]),header_only=True),rows))
+    # Sequential here: the caller already runs up to WORKERS issues at once.
+    for a in rows:
+        if a["misprintedCve"]:
+            # Misprinted date in the sumario: the original PDF must prove the right CVE.
+            extract_original_metadata(read_pdf(pdf_url(day,a["index"])),day,number,a["index"])
+            print(f"BOPSA_CVE_ERRATA {day} entrada {a['index']}: CVE mal impreso en el sumario; "
+                  "PDF original verificado",flush=True)
+        else:
+            read_pdf(pdf_url(day,a["index"]),header_only=True)
     print(f"BOPSA_LINKS {day} {len(rows)} PDF individuales originales accesibles",flush=True)
     candidates=[]
     for item in rows:
@@ -213,22 +232,44 @@ def issue_content(issue):
     return {"day":day,"number":str(number),"read":len(rows),"notices":candidates,
        "summaryPdf":issue["summaryPdf"],"summaryPages":issue["summaryPages"]}
 
-def audit():
-    days=[START+timedelta(days=i) for i in range(30)]
-    with ThreadPoolExecutor(max_workers=5) as pool:
+def control_issue(start):
+    """Last edition before the window: proves the first one in it is the next number."""
+    for i in range(1,CONTROL_DAYS+1):
+        day=start-timedelta(days=i)
+        index=read_pdf(pdf_url(day,0),allow404=True)
+        if index is not None:
+            text,number,_=toc_lines(index,day)
+            return day,number
+    bad(f"Sin boletín de control en los {CONTROL_DAYS} días previos a {start}")
+
+def check_calendar(pub,control,start,end):
+    """Every published day in the window is present and numbers run on (reset in January)."""
+    if len(pub)<MIN_ISSUES:bad(f"Histórico 30 días incompleto: {len(pub)} boletines")
+    # publish_audit admits up to 4 days at each end (e.g. Holy Thursday/Good Friday
+    # before a weekend); the control edition proves nothing is missing at the start.
+    if (pub[0]["day"]-start).days>4 or (end-pub[-1]["day"]).days>4:
+        bad(f"Primer o último boletín demasiado lejos de la ventana: {pub[0]['day']}–{pub[-1]['day']}")
+    seq=[control]+[(x["day"],x["number"]) for x in pub]
+    if not numbering_ok(seq):
+        bad("Números del BOP no son consecutivos: "+str([f"{d:%d/%m}:{n}" for d,n in seq]))
+
+def audit(today=None):
+    end=today or date.today()
+    start=end-timedelta(days=29)
+    days=[start+timedelta(days=i) for i in range(30)]
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         all_days=list(pool.map(probe_date,days))
     pub=sorted((x for x in all_days if x is not None),key=lambda x:x["day"])
-    if len(pub)!=22 or pub[0]["day"]!=START or pub[-1]["day"]!=END:
-        bad(f"Histórico 30 días incompleto: {len(pub)} boletines")
-    n=[x["number"] for x in pub]
-    if n!=list(range(189,211)):bad(f"Números del BOP no son consecutivos: {n}")
-    if [x["day"] for x in pub]!=[d for d in days if d.weekday()<5]:
-        bad("Ediciones extraordinarias o días ausentes; se requiere revisión especial")
-    print("BOPSA_CALENDAR 22 sumarios originales entre 30/09 y 29/10, nº 189–210",flush=True)
-    with ThreadPoolExecutor(max_workers=3) as pool:
+    if not pub:bad(f"Ningún boletín entre {start} y {end}")
+    control=control_issue(start)
+    check_calendar(pub,control,start,end)
+    print(f"BOPSA_CALENDAR {len(pub)} sumarios originales entre {start} y {end}, "
+          f"nº {pub[0]['number']}–{pub[-1]['number']} (control {control[0]} nº {control[1]})",flush=True)
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         issues=list(pool.map(issue_content,pub))
-    if sum(x["read"] for x in issues)<200:bad("Suma de edictos insuficiente")
-    feed=publish_audit(SOURCE,PROVINCE,issues,today=END,min_issues=22)
+    total=sum(x["read"] for x in issues)
+    if total<3*len(issues):bad(f"Suma de edictos insuficiente: {total}")
+    feed=publish_audit(SOURCE,PROVINCE,issues,today=end,min_issues=MIN_ISSUES)
     h=feed["historyCoverage"]
     h["summaryPDFs"]=[x["summaryPdf"] for x in issues]
     h["CVECounts"]=[x["read"] for x in issues]
@@ -239,5 +280,6 @@ def audit():
 if __name__=="__main__":
     ap=argparse.ArgumentParser()
     ap.add_argument("--output",type=Path,required=True)
+    ap.add_argument("--today",type=date.fromisoformat,default=None,help="fin de la ventana (pruebas)")
     args=ap.parse_args()
-    write_output(args.output,audit())
+    write_output(args.output,audit(args.today))

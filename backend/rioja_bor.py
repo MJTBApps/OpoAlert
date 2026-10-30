@@ -4,6 +4,10 @@
 Uses the documented OPEN DATA API, not the inaccessible public search portal.
 Technical specification: https://ias1.larioja.org/opendata/download?r=Y2Q9MzIxfGNmPTE2
 Never emits a completed feed if calendar, official article XML, or source identity disagree.
+
+La ventana son los 30 días que acaban hoy (o `audit(today=...)`). El calendario
+oficial es mensual: se piden los meses que toca la ventana, también los del año
+anterior en enero. La numeración del BOR vuelve a 1 cada enero.
 """
 from __future__ import annotations
 import argparse
@@ -12,12 +16,12 @@ import re
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urlencode, urlsplit, parse_qs
+from urllib.parse import urlencode, urlsplit
 import requests
 from defusedxml import ElementTree as ET
-from clm_common import employment, publish_audit, write_output
+from clm_common import employment, publish_audit, write_output, numbering_ok
 from provincial_common import ProvincialCoverageError
 
 HOST="ias1.larioja.org"
@@ -25,10 +29,13 @@ API="https://ias1.larioja.org/boletin/ExportarBoletinServlet"
 PDF="https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet"
 SOURCE=API
 PROVINCE="La Rioja (BOR)"
-START=date(2026,9,30)
-END=date(2026,10,29)
+DAYS=30
+# Diario de lunes a viernes: unas 21 ediciones en 30 días, unas 17 en Navidad.
+MIN_ISSUES=15
+# Unos 15-25 anuncios por edición; en Navidad bastante menos.
+MIN_ANNOUNCEMENTS=120
+WORKERS=3
 HTTP=threading.local()
-PREFER_PDF=False
 REF_RE=re.compile(r"[A-Za-z0-9-]{6,90}")
 def invalid(message):
     raise ProvincialCoverageError("La Rioja BOR: "+str(message))
@@ -46,12 +53,12 @@ def validate_url(url):
     if u.path not in ("/boletin/ExportarBoletinServlet","/boletin/Bor_Boletin_visor_Servlet"):
         invalid("Ruta no corresponde a API BOR")
     return u
-def fetch(url, pdf=False, attempts=4):
+def fetch(url, pdf=False, attempts=3):
     validate_url(url)
     error=None
     for attempt in range(attempts):
         try:
-            r=client().get(url,timeout=((7,18) if pdf else (12,35)),stream=pdf,allow_redirects=False,
+            r=client().get(url,timeout=((8,30) if pdf else (12,35)),stream=pdf,allow_redirects=False,
                            headers={"Range":"bytes=0-128"} if pdf else {})
             if r.status_code in ((200,206) if pdf else (200,)):
                 break
@@ -61,18 +68,18 @@ def fetch(url, pdf=False, attempts=4):
             error=str(ex)[:190]
         if attempt==attempts-1:
             invalid(f"Sin acceso a contenido original tras {attempts} intentos: "+str(error))
-        time.sleep((attempt+1)*1.7)
+        time.sleep((attempt+1)*2)
     if pdf:
         if "pdf" not in r.headers.get("Content-Type","").lower():
             r.close()
-            invalid("La fuente no ha devuelto PDF, quizá autenticación o error")
+            invalid("La fuente no ha devuelto PDF, quizá autenticación o error: "+url)
         b=b""
         try:
             for block in r.iter_content(200):
                 b+=block
                 if len(b)>=5:break
         finally:r.close()
-        if not b.startswith(b"%PDF-"):invalid("El documento original no es un PDF")
+        if not b.startswith(b"%PDF-"):invalid("El documento original no es un PDF: "+url)
         return None
     if "xml" not in r.headers.get("Content-Type","").lower():
         invalid("La API oficial no ha devuelto XML")
@@ -88,30 +95,43 @@ def api_url(**args):
 def pdf_url(ref):
     if not REF_RE.fullmatch(ref):invalid("Referencia de PDF mal formada: "+repr(ref))
     return PDF+"?"+urlencode({"referencia":ref})
-def calendar():
-    seen={}
-    for month in (9,10):
-        root=fetch(api_url(tipo=3,mes=month,anio=2026))
-        rows=root.findall("./day")
-        if len(rows)<18:invalid(f"Mes {month}: calendario insuficiente ({len(rows)})")
-        for row in rows:
-            try:d=datetime.strptime(row.attrib["value"],"%d/%m/%Y").date()
-            except (KeyError,ValueError) as e:invalid(f"Fecha inválida del calendario: {e}")
-            if d.year!=2026 or d.month!=month:invalid("Fecha oficial de otro mes en calendario")
-            n=row.attrib.get("numero","")
-            if not re.fullmatch(r"\d{1,4}",n):invalid("Número ilegible en calendario")
-            if START<=d<=END:
-                key=(d,int(n))
-                if key in seen:invalid("Boletín repetido en calendario oficial")
-                seen[key]=None
-    items=sorted(seen)
-    numbers=[n for _,n in items]
-    dates=[d for d,_ in items]
-    if not 20<=len(items)<=35 or dates[0]!=START or dates[-1]!=END:
-        invalid(f"Histórico 30 días incompleto: {len(items)} boletines {dates[:1]}-{dates[-1:]}")
-    if numbers!=list(range(numbers[0],numbers[-1]+1)):
+def window(end):
+    return end-timedelta(days=DAYS-1),end
+def months(start,end):
+    """(año, mes) de cada mes que toca la ventana, en orden."""
+    out=[];y,m=start.year,start.month
+    while (y,m)<=(end.year,end.month):
+        out.append((y,m))
+        y,m=(y+1,1) if m==12 else (y,m+1)
+    return out
+def parse_month(root,year,month):
+    rows=[]
+    for row in root.findall("./day"):
+        try:d=datetime.strptime(row.attrib["value"],"%d/%m/%Y").date()
+        except (KeyError,ValueError) as e:invalid(f"Fecha inválida del calendario: {e}")
+        if (d.year,d.month)!=(year,month):invalid(f"Fecha {d} de otro mes en el calendario {month}/{year}")
+        n=row.attrib.get("numero","")
+        if not re.fullmatch(r"\d{1,4}",n):invalid("Número ilegible en calendario")
+        rows.append((d,int(n)))
+    return rows
+def calendar(end):
+    start,end=window(end)
+    rows=[]
+    for year,month in months(start,end):
+        rows+=parse_month(fetch(api_url(tipo=3,mes=month,anio=year)),year,month)
+    rows=sorted(r for r in rows if r[0]<=end)
+    if len({(d.year,n) for d,n in rows})!=len(rows):
+        invalid("Boletín repetido en el calendario oficial")
+    # Numeración seguida en los meses completos pedidos (no solo en la ventana):
+    # así se detecta también un hueco justo antes del primer día de la ventana.
+    if not numbering_ok(rows):
         invalid("Huecos o repeticiones en numeración oficial de boletines")
-    print(f"BOR: calendario 30 días, {len(items)} ediciones {numbers[0]}-{numbers[-1]}",flush=True)
+    items=[r for r in rows if start<=r[0]<=end]
+    if len(items)<MIN_ISSUES:
+        invalid(f"Histórico 30 días incompleto: {len(items)} boletines")
+    if (items[0][0]-start).days>3 or (end-items[-1][0]).days>3:
+        invalid(f"Faltan boletines al principio o al final: {items[0][0]}–{items[-1][0]} para {start}–{end}")
+    print(f"BOR: calendario {start}–{end}, {len(items)} ediciones {items[0][1]}-{items[-1][1]}",flush=True)
     return items
 def content_ref(element,kind):
     matches=[(x.text or "").strip() for x in element.findall("./contenido") if x.attrib.get("tipo")==kind]
@@ -130,8 +150,8 @@ def issue(item):
         n=int(header.findtext("numero",""))
         year=int(header.findtext("anio",""))
     except ValueError as ex:invalid("Cabecera corrupta: "+str(ex))
-    if (actual,n,year)!=(day,number,2026):
-        invalid(f"Sumario devuelto para otra fecha/número {(actual,n,year)} != {(day,number,2026)}")
+    if (actual,n,year)!=(day,number,day.year):
+        invalid(f"Sumario devuelto para otra fecha/número {(actual,n,year)} != {(day,number,day.year)}")
     edition_pdf=content_ref(header,"pdf")
     found=[];count=0;seen=set()
     for roman in boletin.findall("./anuncios/romano"):
@@ -150,7 +170,7 @@ def issue(item):
                         count+=1
                         kind=employment(title)
                         if kind:
-                            uid="RI-2026-"+hashlib.sha256(pdfref.encode("ascii")).hexdigest()[:18]
+                            uid=f"RI-{day.year}-"+hashlib.sha256(pdfref.encode("ascii")).hexdigest()[:18]
                             found.append({"id":uid,"province":PROVINCE,"title":title,"entity":agency,
                                           "date":day.strftime("%d/%m/%Y"),"bulletin":str(number),
                                           "type":kind,"url":pdf_url(pdfref),
@@ -159,9 +179,12 @@ def issue(item):
     print(f"BOR {day} n.º {number}: {count} anuncios, {len(found)} candidatas",flush=True)
     return {"day":day,"number":str(number),"read":count,"notices":found,"editionPdf":pdf_url(edition_pdf)}
 def verify_notice(notice):
-    """Verify full source article XML; choose PDF only if its bytes are accessible."""
-    official=notice["officialHtml"]
-    root=fetch(official)
+    """Coteja el texto íntegro del anuncio (XML oficial) y comprueba que el PDF original abre.
+
+    La app solo admite enlaces al visor de PDF del BOR: si el PDF no responde,
+    el lector falla y se conserva el feed anterior.
+    """
+    root=fetch(notice["officialHtml"])
     articles=root.findall("./anuncio")
     if len(articles)!=1:invalid("La API no devolvió un anuncio único "+notice["id"])
     heading=articles[0].find("./cabecera")
@@ -178,41 +201,27 @@ def verify_notice(notice):
         or title!=notice["title"] or agency!=notice["entity"]
         or len((body.text or "").strip())<80):
         invalid("Texto original del anuncio no concuerda con el sumario "+notice["id"])
-    # The official PDF viewer is intermittently unresponsive. Do not send the user
-    # to a PDF until its bytes have been positively verified. The same Government
-    # XML API publishes the original full HTML body, a safe official fallback.
-    if PREFER_PDF:
-        try:
-            fetch(notice["url"],pdf=True,attempts=1)
-            notice["originalFormat"]="pdf"
-        except ProvincialCoverageError:
-            notice["url"]=official
-            notice["originalFormat"]="official_xml"
-    else:
-        notice["url"]=official
-        notice["originalFormat"]="official_xml"
+    fetch(notice["url"],pdf=True)
+    notice["originalFormat"]="pdf"
     return notice
 
-def audit():
-    calendar_items=calendar()
-    with ThreadPoolExecutor(max_workers=5) as ex:
+def audit(today=None):
+    end=today or date.today()
+    calendar_items=calendar(end)
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
         rows=list(ex.map(issue,calendar_items))
     total=sum(x["read"] for x in rows)
-    if total<250:invalid(f"Histórico sospechosamente corto: {total} anuncios")
+    if total<MIN_ANNOUNCEMENTS:invalid(f"Histórico sospechosamente corto: {total} anuncios")
     notices=[n for row in rows for n in row["notices"]]
     if not notices:invalid("No se encontraron convocatorias candidatas")
-    with ThreadPoolExecutor(max_workers=3) as ex:
+    with ThreadPoolExecutor(max_workers=WORKERS) as ex:
         list(ex.map(verify_notice,notices))
-    pdfs=sum(n["originalFormat"]=="pdf" for n in notices)
-    xmls=sum(n["originalFormat"]=="official_xml" for n in notices)
-    print(f"BOR: {total} sumarios oficiales, {len(notices)} textos íntegros cotejados, "
-          f"{pdfs} PDF originales accesibles, {xmls} XML originales como alternativa",flush=True)
+    print(f"BOR: {total} anuncios en los sumarios oficiales, {len(notices)} textos íntegros cotejados "
+          f"y {len(notices)} PDF originales comprobados",flush=True)
     issues=[{key:r[key] for key in ("day","number","read","notices")} for r in rows]
-    return publish_audit(SOURCE,PROVINCE,issues,today=END,min_issues=20)
+    return publish_audit(SOURCE,PROVINCE,issues,today=end,min_issues=MIN_ISSUES)
 if __name__=="__main__":
     a=argparse.ArgumentParser()
     a.add_argument("--output",type=Path,required=True)
-    a.add_argument("--prefer-pdf",action="store_true",help="Use PDF when reachable; XML otherwise")
     args=a.parse_args()
-    PREFER_PDF=args.prefer_pdf
     write_output(args.output,audit())

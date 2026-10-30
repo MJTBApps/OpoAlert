@@ -24,7 +24,7 @@ class CatalogTests(unittest.TestCase):
         daily={x["code"] for x in sources}&set(feeds_diarios.SOURCES)
         self.assertEqual(active,legacy|daily)
         private={x["code"] for x in sources if x["state"]=="private_apk_snapshot"}
-        self.assertEqual(private,{"SG","SA"})
+        self.assertEqual(private,set())
         blocked={x["code"] for x in sources if x["state"]=="blocked_official_portal"}
         self.assertEqual(blocked,{"AB","CU"})
         cido=[x for x in sources if x["kind"]=="catalogo_empleo"]

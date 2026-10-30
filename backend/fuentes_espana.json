@@ -1,7 +1,7 @@
 {
   "country": "ES",
   "updated": "2026-10-30",
-  "note": "Fuentes activas: las 19 originales más las que publican feed diario desde backend/feeds_diarios.py (incluidas Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Segovia y Salamanca siguen solo como instantánea de 30 días hasta que su lector funcione a diario. Albacete y Cuenca bloqueadas por servidores provinciales; Jaén y Málaga pendientes.",
+  "note": "Fuentes activas: las 19 originales más las que publican feed diario desde backend/feeds_diarios.py (incluidas Madrid, Huelva, Ciudad Real, Guadalajara, Toledo y DOCM). Albacete y Cuenca bloqueadas por servidores provinciales; Jaén y Málaga pendientes.",
   "nationalSources": [
     {
       "code": "VA",
@@ -334,11 +334,11 @@
       "name": "BOP Segovia",
       "portal": "https://www.dipsegovia.es/bop",
       "feed": "segovia_bop.json",
-      "state": "private_apk_snapshot",
-      "scope": "30 días auditados a 29/10/2026, 13 ediciones consecutivas n.º 117-129, 274 anuncios, 14 candidatas, PDF originales completos; sólo APK privada, no alimentación diaria.",
+      "state": "active",
+      "scope": "Boletín oficial con feed diario en GitHub Pages: auditoría de los últimos 30 días cada día (backend/feeds_diarios.py).",
       "audit": {
-        "status": "passed_30_days",
-        "checked": "2026-10-29",
+        "status": "daily_30_days",
+        "checked": "2026-10-30",
         "issues": 13,
         "announcementsRead": 274,
         "candidates": 14,
@@ -352,11 +352,11 @@
       "name": "BOP Salamanca",
       "portal": "https://www.lasalina.es/documentacion/bop/",
       "feed": "salamanca_bop.json",
-      "state": "private_apk_snapshot",
-      "scope": "22 boletines n.º 189-210, 327 anuncios y 8 candidatas, cada PDF oficial cotejado; instantánea 30/09–29/10/2026 en APK privada 1.29.",
+      "state": "active",
+      "scope": "Boletín oficial con feed diario en GitHub Pages: auditoría de los últimos 30 días cada día (backend/feeds_diarios.py).",
       "audit": {
-        "status": "passed_30_days",
-        "checked": "2026-10-29",
+        "status": "daily_30_days",
+        "checked": "2026-10-30",
         "issues": 22,
         "announcementsRead": 327,
         "candidates": 8,
