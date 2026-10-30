@@ -32,3 +32,12 @@ Archivo interior `evidencias_pendientes_v3.json`, generado mediante `scripts/rec
 **No crear fuente nueva, no generar APK 1.33, ni marcar ninguna de estas cuatro como cerrada con este ZIP.**
 
 El siguiente paso es obtener originales por 30 días en cada editor y ejecutar un validador independiente. Para Ceuta existe el scanner local v4; comprobar su run de GitHub antes de facilitar ejecutable.
+
+
+## Auditor local Ceuta v4 verificado
+
+- **Workflow GitHub Actions confirmado `success`**: https://github.com/MJTBApps/OpoAlert/actions/runs/41032538936, tests Python Linux y executable Python incluido en Windows con `--self-test` superados.
+- ZIP artefacto: https://github.com/MJTBApps/OpoAlert/actions/runs/41032538936/artifacts/12966127101, contiene `OpoAlert-Ceuta-BOCCE-v4.exe`, tamaño ~10 MB.
+- Funcionamiento: detectar IDs oficiales de publicación vistos en el ZIP v3, consultar un máximo limitado de IDs de fichas públicas `viewdownload`, incluir octubre y septiembre, recuperar sus enlaces reales `finish` a PDF, calcular SHA256, verificar cabecera fecha/número, extraer páginas y fragmentos de posibles anuncios de empleo y guardar checkpoints ZIP locales.
+- Ejecutar solamente en ordenador personal autorizado y con conexión en la que funcione el editor `www.ceuta.es`. Reutiliza automáticamente el ZIP anterior `OpoAlert_pendientes_oficiales_v3_*.zip` desde `Documentos/OpoAlert`; guarda `OpoAlert_Ceuta_BOCCE_originales_v4_*.zip` en la misma carpeta. No se requiere repetir las cuatro fuentes ni instalar Python.
+- **El éxito de GitHub certifica las pruebas del programa y su empaquetado, NO que las ediciones de Ceuta estén recuperadas.** Falta que el programa descargue los originales desde la conexión española y validar el histórico y los extraordinarios independientemente antes de crear APK 1.33.
