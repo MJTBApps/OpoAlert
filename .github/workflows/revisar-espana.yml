@@ -48,7 +48,12 @@ jobs:
           cache-dependency-path: backend/requirements.txt
       - run: pip install requests beautifulsoup4 certifi cryptography pymupdf pypdf defusedxml tzdata
       - name: Auditar 30 días y validar con las reglas de la app
-        run: python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out
+        # Los portales fallan a veces de forma puntual: un reintento a los 2 minutos.
+        run: |
+          python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out || {
+            echo 'Reintento dentro de 2 minutos'; sleep 120
+            python -u backend/feeds_diarios.py run ${{ matrix.code }} --out out
+          }
       - uses: actions/upload-artifact@v4
         with:
           name: feed-${{ matrix.code }}

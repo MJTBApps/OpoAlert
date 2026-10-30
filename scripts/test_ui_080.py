@@ -44,6 +44,7 @@ def main() -> None:
     assert 'versionName = "1.34.0"' in gradle
     assert "versionCode = 47" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
+    assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
     assert "assets" not in reader, "Todas las fuentes se leen de GitHub Pages, sin copias congeladas"
     # El bloque resumen debe permitir que el listado crezca: maximo 8dp
