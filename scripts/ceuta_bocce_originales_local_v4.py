@@ -166,9 +166,10 @@ def pdf_detail(row):
   day_ok=(str(when.day) in head[:260] and str(when.year) in head[:400]
       and ("octubre" in head[:500] or "septiembre" in head[:500]))
   numero=row["number"]
-  numeric=re.search(r"\d{1,3}",numero)
-  # Official header should show issue number, but extraordinary formats vary.
-  num_ok=bool(numeric and re.search(r"\b"+re.escape(numeric[0])+r"\b",head[:800]))
+  # Editor often prints BOCCE 6.664 (dot separator) rather than 6664.
+  expected_digits=re.sub(r"\D","",numero)
+  numbers=[re.sub(r"\D","",m[0]) for m in re.finditer(r"\b\d[\d.]*",head[:700])]
+  num_ok=bool(expected_digits and expected_digits in numbers)
   if not day_ok or not num_ok:
    raise ValueError("La portada del PDF no coincide con fecha o numeración del editor")
   employment=[]
@@ -177,6 +178,8 @@ def pdf_detail(row):
    try:
     content=page.extract_text() or ""
     f=fold(content)
+    if not f.strip():
+     failed_pages.append({"page":i+1,"error":"pdf_page_without_extractable_text"})
     found=[kw for kw in EMPLOYMENT if kw in f]
     if found:
      for kw in found[:3]:
@@ -217,6 +220,8 @@ def main():
   assert not official("https://evil.example.com/ceuta/component/jdownloads/viewdownload/1982/23304")
   assert PUBLIC_SLUG.search("Detalles de Descarga BOCCE_Extra51_28-10-2026 Datos").groups()==("Extra51","28-10-2026")
   assert PUBLIC_SLUG.search("Detalles de Descarga BOCCE_6664_27-10-2026 Datos").groups()==("6664","27-10-2026")
+  head=fold("BOCCE Nº6.664 martes, 27 de octubre de 2026")
+  assert "6664" in [re.sub(r"\D","",m[0]) for m in re.finditer(r"\b\d[\d.]*",head)]
   with __import__("tempfile").TemporaryDirectory() as d:
    p=Path(d)/"tmp.zip";save(p,{"audit30DaysComplete":False,"sources":[]})
    with ZipFile(p) as z:assert not json.loads(z.read("ceuta_bocce_originales_v4.json"))["audit30DaysComplete"]
