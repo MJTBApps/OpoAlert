@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-10-30T23:36:34.527109+00:00",
+  "lastCheckedUTC": "2026-10-31T06:03:05.567485+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "210",
-    "pagesVisited": 22,
-    "announcementsRead": 398,
-    "opportunities": 25
+    "pagesVisited": 21,
+    "announcementsRead": 369,
+    "opportunities": 21
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -40,7 +39,6 @@
       "210"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -71,11 +69,12 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 398,
-    "opportunities": 25
+    "issuesRead": 21,
+    "announcementsRead": 369,
+    "opportunities": 21
   },
   "notices": [
     {
@@ -287,46 +286,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7799939"
-    },
-    {
-      "id": "CR-2026-3149",
-      "province": "Ciudad Real",
-      "title": "Corrección en anuncio publicado en el BOP número 188, relativo a las bases de la convocatoria para proveer una plaza de Técnico Superior de Educación Infantil.",
-      "entity": "VILLARTA DE SAN JUAN",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7797079"
-    },
-    {
-      "id": "CR-2026-3146",
-      "province": "Ciudad Real",
-      "title": "Bases de la convocatoria para la provisión de una plaza de Técnico/a Informático/a como personal laboral fijo a jornada completa, mediante concurso-oposición.",
-      "entity": "MANZANARES",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7797076"
-    },
-    {
-      "id": "CR-2026-3145",
-      "province": "Ciudad Real",
-      "title": "Modificación de las bases reguladoras del proceso selectivo para la provisión de una plaza de Coordinador/a RRHH, funcionario/a de carrera. OEP 2023.",
-      "entity": "LA SOLANA",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7797075"
-    },
-    {
-      "id": "CR-2026-3132",
-      "province": "Ciudad Real",
-      "title": "Corrección en anuncio publicado en el BOP número 178, relativo al modelo de solicitud (Anexo I) del proceso selectivo de una plaza de Policía Local por el sistema de movilidad, mediante concurso de méritos.",
-      "entity": "ALCÁZAR DE SAN JUAN",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7797062"
     }
   ]
 }

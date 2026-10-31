@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-10-30T23:40:01.087437+00:00",
+  "lastCheckedUTC": "2026-10-31T06:07:48.806495+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "251",
+    "bulletin": "252",
     "pagesVisited": 26,
-    "announcementsRead": 582,
+    "announcementsRead": 585,
     "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "227",
       "228",
       "229",
       "230",
@@ -41,10 +40,10 @@
       "248",
       "249",
       "250",
-      "251"
+      "251",
+      "252"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-05",
@@ -69,7 +68,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -78,7 +78,7 @@
       "2026-10-25"
     ],
     "issuesRead": 26,
-    "announcementsRead": 582,
+    "announcementsRead": 585,
     "opportunities": 50
   },
   "notices": [

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-10-30T23:38:18.369793+00:00",
+  "lastCheckedUTC": "2026-10-31T06:05:43.635872+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 22,
-    "announcementsRead": 370,
-    "opportunities": 50
+    "pagesVisited": 21,
+    "announcementsRead": 354,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -40,7 +39,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -72,11 +70,12 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 370,
-    "opportunities": 50
+    "issuesRead": 21,
+    "announcementsRead": 354,
+    "opportunities": 47
   },
   "notices": [
     {
@@ -548,36 +547,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-198-3400.pdf"
-    },
-    {
-      "id": "IC-2026-3391",
-      "province": "Canarias (BOC)",
-      "title": "RESOLUCIÓN de 21 de septiembre de 2026, por la que se convoca concurso público, por el procedimiento ordinario, para la provisión de plazas de personal docente e investigador contratado, en régimen de derecho laboral, en la figura de Profesor y Profesora Permanente Laboral.",
-      "entity": "Universidad de La Laguna",
-      "date": "01/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-197-3391.pdf"
-    },
-    {
-      "id": "IC-2026-3386",
-      "province": "Canarias (BOC)",
-      "title": "ORDEN de 21 de septiembre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 12031, denominado Jefe/a del Servicio de Asesoramiento Técnico Jurídico, adscrito a la Unidad de Apoyo a la Viceconsejería de Educación de esta Consejería, efectuada por Resolución de 24 de julio de 2026, del Secretario General Técnico.",
-      "entity": "Consejería de Educación, Formación Profesional, Actividad Física y Deportes",
-      "date": "01/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-197-3386.pdf"
-    },
-    {
-      "id": "IC-2026-3385",
-      "province": "Canarias (BOC)",
-      "title": "ORDEN de 21 de septiembre de 2026 por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 15288, denominado Secretario/a Territorial, adscrito a la Secretaría General Técnica de esta Consejería, efectuada por Resolución de 9 de julio de 2026, del Secretario General Técnico.",
-      "entity": "Consejería de Educación, Formación Profesional, Actividad Física y Deportes",
-      "date": "01/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-197-3385.pdf"
     }
   ]
 }

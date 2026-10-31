@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Illes Balears (BOIB)",
   "source": "https://www.caib.es/eboibfront/es",
-  "lastCheckedUTC": "2026-10-30T23:38:11.078311+00:00",
+  "lastCheckedUTC": "2026-10-31T06:06:26.056820+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "138",
-    "pagesVisited": 16,
-    "announcementsRead": 1076,
-    "opportunities": 156
+    "pagesVisited": 14,
+    "announcementsRead": 976,
+    "opportunities": 134
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "123",
-      "124",
       "125",
       "126",
       "127",
@@ -34,8 +32,6 @@
       "138"
     ],
     "publicationDates": [
-      "2026-10-01",
-      "2026-10-01",
       "2026-10-03",
       "2026-10-06",
       "2026-10-08",
@@ -66,11 +62,12 @@
       "2026-10-25",
       "2026-10-26",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
-    "issuesRead": 16,
-    "announcementsRead": 1076,
-    "opportunities": 156
+    "issuesRead": 14,
+    "announcementsRead": 976,
+    "opportunities": 134
   },
   "notices": [
     {
@@ -1412,226 +1409,6 @@
       "bulletin": "125",
       "type": "Plaza / oposición",
       "url": "https://www.caib.es/eboibfront/pdf/es/2026/125/1229542"
-    },
-    {
-      "id": "IB-2026-9829",
-      "province": "Illes Balears (BOIB)",
-      "title": "Departamento de Selección y Provisión de Recursos Humanos. Servicio de Selección. Subsanación de la versión castellana de la convocatoria y de las bases de las pruebas selectivas, por el sistema de concurso-oposición, por el turno libre, para la cobertura de 4 plazas de técnico/a animador/a sociocultural",
-      "entity": "AYUNTAMIENTO DE PALMA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229536"
-    },
-    {
-      "id": "IB-2026-9826",
-      "province": "Illes Balears (BOIB)",
-      "title": "Departamento de Selección y Provisión de Recursos Humanos. Servicio de Selección. Convocatoria y bases específicas del proceso selectivo mediante el sistema de concurso oposición, por el turno libre, para cubrir 20 plazas de educador/a social (OPE 2023, 2025 y 2026)",
-      "entity": "AYUNTAMIENTO DE PALMA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229530"
-    },
-    {
-      "id": "IB-2026-9817",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del director general del Servicio de Salud de las Islas Baleares por la que se aprueba la convocatoria para proveer, por el sistema de libre designación, el puesto de trabajo de jefe/jefa del Servicio de Prevención de Riesgos Laborales de la plantilla orgánica autorizada de los Servicios Corporativos del Servicio de Salud de las Islas Baleares",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA SERVICIO DE SALUD DE LAS ILLES BALEARS",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229512"
-    },
-    {
-      "id": "IB-2026-9813",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del Consejero Ejecutivo de Hacienda, Innovación y Función Pública por la cual se anula el primer ejercicio del proceso selectivo para cubrir las plazas vacantes de personal funcionario de Administración Especial, categoría de Trabajador/a Social, por el turno libre, correspondiente a la oferta de empleo público de 2025, y se convoca de nuevo a las personas aspirantes a la realización del primer ejercicio",
-      "entity": "CONSEJO INSULAR DE MALLORCA DEPARTAMENTO DE HACIENDA, INNOVACIÓN Y FUNCIÓN PÚBLICA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229504"
-    },
-    {
-      "id": "IB-2026-9795",
-      "province": "Illes Balears (BOIB)",
-      "title": "Decreto de constitución de la bolsa de personal de limpieza",
-      "entity": "AYUNTAMIENTO DE LLOSETA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229468"
-    },
-    {
-      "id": "IB-2026-9789",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases reguladoras del proceso selectivo para la creación de una bolsa de subalterno/a, funcionario interino, por el sistema de oposición",
-      "entity": "AYUNTAMIENTO DE CAPDEPERA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229456"
-    },
-    {
-      "id": "IB-2026-9788",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del director gerente de la Fundación Instituto de Investigación Sanitaria de las Illes Balears por la que se convoca un proceso selectivo para cubrir una plaza de técnico o técnica medio de apoyo a la investigación, del grupo profesional B, para el proyecto «Identificación de estrategias para la optimización del aporte de compuestos bioactivos promotores de la salud metabólica a través de la lactancia materna (OptiBioLac)». Código de expediente: 2026-52-NAUIB",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA FUNDACIÓ INSTITUT D'INVESTIGACIÓ SANITÀRIA ILLES BALEARS (IDISBA)",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229454"
-    },
-    {
-      "id": "IB-2026-9786",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases específicas que deben regir la convocatoria del procedimiento selectivo para proveer un puesto de trabajo de policía tutor del Ayuntamiento de Campos",
-      "entity": "AYUNTAMIENTO DE CAMPOS",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229450"
-    },
-    {
-      "id": "IB-2026-9783",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases que deben regir el proceso de selección para proveer interinamente, mediante el sistema de concurso oposición, el puesto de trabajo de tesorería del Ajuntament de Ciutadella y la constitución de una bolsa de trabajo",
-      "entity": "AYUNTAMIENTO DE CIUTADELLA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229444"
-    },
-    {
-      "id": "IB-2026-9780",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases que deben regir la convocatoria para la cobertura de un puesto de peón de brigada como personal laboral fijo de la Empresa Municipal de Serveis d'Alcúdia, SAU (EMSA), mediante el sistema de concurso-oposición primero. objeto de la convocatoria",
-      "entity": "AYUNTAMIENTO DE ALCÚDIA EMPRESA MUNICIPAL DE SERVICIOS ALCÚDIA SA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229438"
-    },
-    {
-      "id": "IB-2026-9776",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases específicas de la convocatoria mediante concurso-oposición de 1 de plaza de personal ingeniero técnico de telecomunicaciones. OPE 23-0311",
-      "entity": "AYUNTAMIENTO DE PALMA SOCIEDAD MUNICIPAL DE APARCAMIENTOS Y PROYECTOS",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229429"
-    },
-    {
-      "id": "IB-2026-9774",
-      "province": "Illes Balears (BOIB)",
-      "title": "Adjudicación definitiva del concurso para la provisión del puesto de trabajo: agente de la policía Local - Servicio de atención a la ciudadanía. Resolución de Alcaldía de 23/09/26",
-      "entity": "AYUNTAMIENTO DE SANT JOSEP DE SA TALAIA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229426"
-    },
-    {
-      "id": "IB-2026-9765",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del director general del Servicio de Salud de las Islas Baleares por la que aprueba la convocatoria para proveer, por el sistema de encargo temporal de funciones, el puesto de trabajo de jefe/a de Servicio de Protección de Datos de la plantilla orgánica autorizada de los servicios corporativos del Servicio de Salud de las Islas Baleares",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA SERVICIO DE SALUD DE LAS ILLES BALEARS",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229408"
-    },
-    {
-      "id": "IB-2026-9755",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la consejera de Presidencia, Coordinación de la Acción de Gobierno y Cooperación Local por la cual se modifica la Resolución, de 30 de julio de 2026, que aprueba la relación de personas aspirantes que han superado las pruebas selectivas de la fase de oposición y adjudicación de plazas del proceso unificado para cubrir las plazas de la categoría de policía de los municipios de Capdepera, Ciutadella, Llucmajor, Maó, Muro, Palma, Porreres, sa Pobla, Sant Llorenç des Cardassar, Santa Eulària des Riu, Santanyí y Sóller",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ESCUELA BALEAR DE ADMINISTRACIÓN PÚBLICA (EBAP)",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229387"
-    },
-    {
-      "id": "IB-2026-9754",
-      "province": "Illes Balears (BOIB)",
-      "title": "Contratación de personal laboral fijo para la provisión definitiva de dieciocho plazas de auxiliar de enfermería, correspondientes a las ofertas de ocupación pública de los años 2019, 2020, 2021, 2022, 2023 y 2024, por turno libre, mediante el sistema de concurso oposición, con dos plazas reservadas a personas con discapacidad, mediante el sistema de concurso oposición",
-      "entity": "CONSEJO INSULAR DE EIVISSA",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229386"
-    },
-    {
-      "id": "IB-2026-9749",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de Alcaldía 274/2026 de fecha 24 de setiembre de 2026, por la cual se aprueban las bases y la convocatoria para crear una bolsa de trabajo de técnicos de educación infantil",
-      "entity": "AYUNTAMIENTO DE MANCOR DE LA VALL",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229376"
-    },
-    {
-      "id": "IB-2026-9748",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del director gerente del Hospital de Manacor por la que se convoca la provisión, por el sistema de concurso, del puesto de trabajo de jefe/jefa de grupo del Servicio de Informática de la plantilla orgánica autorizada del Hospital de Manacor, del Servicio de Salud de las Islas Baleares",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA SERVICIO DE SALUD DE LAS ILLES BALEARS",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229374"
-    },
-    {
-      "id": "IB-2026-9746",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases específicas que han de regir los procesos selectivos para cubrir las plazas vacantes de personal funcionario correspondiente a la oferta pública del ayuntamiento de Calvià de los ejercicios 2024 y 2025",
-      "entity": "AYUNTAMIENTO DE CALVIÀ",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229370"
-    },
-    {
-      "id": "IB-2026-9745",
-      "province": "Illes Balears (BOIB)",
-      "title": "Aprobación y publicación de las bases por la convocatoria de un procedimiento extraordinario de selección de personal funcionario interino para la creación de una bolsa de operario/aria de deportes",
-      "entity": "AYUNTAMIENTO DE CALVIÀ",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229367"
-    },
-    {
-      "id": "IB-2026-9743",
-      "province": "Illes Balears (BOIB)",
-      "title": "Aprobación y publicación de las bases por la convocatoria de un procedimiento extraordinario de selección de personal funcionario interino para la creación de una bolsa de técnico/a de gestión de la plataforma de la administración electrónica",
-      "entity": "AYUNTAMIENTO DE CALVIÀ",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229363"
-    },
-    {
-      "id": "IB-2026-9741",
-      "province": "Illes Balears (BOIB)",
-      "title": "Designación del tribunal de selección del proceso selectivo correspondiente a la convocatoria del concurso-oposición para cubrir 1 plaza de subinspector/a de policía local - Promoción Interna - OPO 24",
-      "entity": "AYUNTAMIENTO DE CALVIÀ",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229360"
-    },
-    {
-      "id": "IB-2026-9733",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del consejero de Educación y Universidades, de día 1 de octubre de 2026, por la cual se abre la convocatoria anual para solicitar la consolidación personal parcial del complemento retributivo específico por el ejercicio del cargo de director en los centros docentes públicos de las Illes Balears",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA CONSEJERÍA DE EDUCACIÓN Y UNIVERSIDADES",
-      "date": "01/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/123/1229344"
     }
   ]
 }

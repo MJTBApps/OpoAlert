@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-10-30T23:41:00.220058+00:00",
+  "lastCheckedUTC": "2026-10-31T06:08:53.832513+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 22,
-    "announcementsRead": 327,
-    "opportunities": 8
+    "pagesVisited": 21,
+    "announcementsRead": 306,
+    "opportunities": 3
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -40,7 +39,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -71,13 +69,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 327,
-    "opportunities": 8,
+    "issuesRead": 21,
+    "announcementsRead": 306,
+    "opportunities": 3,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261001/BOP-SA-20261001-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261002/BOP-SA-20261002-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261005/BOP-SA-20261005-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261006/BOP-SA-20261006-000.pdf",
@@ -101,7 +99,6 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261030/BOP-SA-20261030-000.pdf"
     ],
     "CVECounts": [
-      21,
       22,
       16,
       25,
@@ -124,7 +121,7 @@
       1,
       13
     ],
-    "originalPDFsChecked": 327
+    "originalPDFsChecked": 306
   },
   "notices": [
     {
@@ -156,56 +153,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://www.lasalina.es/documentacion/bop/2026/20261019/BOP-SA-20261019-010.pdf"
-    },
-    {
-      "id": "SA-20261001-018",
-      "province": "Salamanca",
-      "title": "Anuncio. Convocatoria y bases específi cas que han de regir el proceso selectivo para proveer, mediante pro- moción interna, de cuatro plazas de Ofi cial de Limpieza, Personal Laboral Fijo - Subgrupo de Titulación IV Área de Obras y Servicios",
-      "entity": "Ayuntamiento de Villamayor",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261001/BOP-SA-20261001-018.pdf"
-    },
-    {
-      "id": "SA-20261001-017",
-      "province": "Salamanca",
-      "title": "Anuncio. Convocatoria y bases específi cas que han de regir el proceso selectivo para proveer, mediante pro- moción interna, una plaza de Encargado de Jardinería Personal Laboral/Funcionario de Carrera- Subgrupo de Titulación III",
-      "entity": "Ayuntamiento de Villamayor",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261001/BOP-SA-20261001-017.pdf"
-    },
-    {
-      "id": "SA-20261001-016",
-      "province": "Salamanca",
-      "title": "Anuncio. Convocatoria y bases específi cas que han de regir el proceso selectivo para proveer, mediante pro- moción interna, de una plaza de Técnico Medio de Biblioteca (Técnico de Gestión), Funcionario de Carrera- Subgrupo de Titulación A2",
-      "entity": "Ayuntamiento de Villamayor",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261001/BOP-SA-20261001-016.pdf"
-    },
-    {
-      "id": "SA-20261001-015",
-      "province": "Salamanca",
-      "title": "Anuncio. Convocatoria y específi cas que han de regir el proceso selectivo para proveer, mediante promoción interna, una plaza de Encargado de Mantenimiento Personal Laboral/Funcionario de Carrera- Subgrupo de Titulación III",
-      "entity": "Ayuntamiento de Villamayor",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261001/BOP-SA-20261001-015.pdf"
-    },
-    {
-      "id": "SA-20261001-010",
-      "province": "Salamanca",
-      "title": "Anuncio de convocatoria, bases y programa para la selección, mediante el sistema de concurso-oposición, por turno libre, de una plaza de Administrativo/a, como personal laboral fi jo con contrato de relevo del Ayuntamien- to de Peñaranda de Bracamonte (Salamanca). Expte 144/2026",
-      "entity": "Ayuntamiento de Peñaranda de Bracamonte",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261001/BOP-SA-20261001-010.pdf"
     }
   ]
 }

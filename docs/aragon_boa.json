@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-10-30T23:36:33.519972+00:00",
+  "lastCheckedUTC": "2026-10-31T06:02:58.040576+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 21,
-    "announcementsRead": 752,
-    "opportunities": 120
+    "pagesVisited": 20,
+    "announcementsRead": 716,
+    "opportunities": 114
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -39,7 +38,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -70,11 +68,12 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 752,
-    "opportunities": 120
+    "issuesRead": 20,
+    "announcementsRead": 716,
+    "opportunities": 114
   },
   "notices": [
     {
@@ -1216,66 +1215,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468498250303"
-    },
-    {
-      "id": "AO-2026-007961465",
-      "province": "Aragón (BOA)",
-      "title": "ANUNCIO de la Real Academia de Medicina de Zaragoza, relativo a convocatoria de plazas de Académicos de Número.",
-      "entity": "REAL ACADEMIA DE MEDICINA DE ZARAGOZA",
-      "date": "01/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468360300808"
-    },
-    {
-      "id": "AO-2026-007961440",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 27 de agosto de 2026, del Alcalde-Presidente del Ayuntamiento de Zuera, por la que se aprueban las bases y se convocan las pruebas selectivas para la provisión mediante concurso-oposición, en turno libre, de una plaza vacante en la plantilla, como personal funcionario/a de carrera, con denominación Auxiliar Administrativo/a, subgrupo C2, nivel 16, y creación de bolsa de trabajo.",
-      "entity": "AYUNTAMIENTO DE ZUERA",
-      "date": "01/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468310800404"
-    },
-    {
-      "id": "AO-2026-007961439",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 24 de septiembre de 2026, del Director General de la Función Pública, por la que se nombra personal funcionario en prácticas del Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala Auxiliar Administrativa, Auxiliares Administrativos (Código de convocatoria 240080).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "01/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468308780404"
-    },
-    {
-      "id": "AO-2026-007961438",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 17 de septiembre de 2026, del Director General de la Función Pública, por la que se modifica la composición de la Comisión Permanente de Selección en las pruebas selectivas para ingreso en el Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica de Gestión, Técnicos de Gestión General. (Código de convocatoria 250095).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "01/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468306760404"
-    },
-    {
-      "id": "AO-2026-007961437",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 17 de septiembre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de la persona que ha superado las fases de concurso y oposición del proceso selectivo para la estabilización de empleo temporal, para ingreso en el Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica Sanitaria, Enfermería. (Código de convocatoria 230008).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "01/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468304740404"
-    },
-    {
-      "id": "AO-2026-007961434",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 16 de septiembre de 2026, del Director General de la Función Pública, por la que se resuelve la convocatoria para la provisión, por el sistema de libre designación, de un puesto vacante en el Departamento de Educación, Ciencia y Universidades.",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "01/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468298680303"
     }
   ]
 }
