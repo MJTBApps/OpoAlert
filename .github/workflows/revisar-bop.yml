@@ -63,7 +63,16 @@ jobs:
           git add docs/convocatorias.json
           if ! git diff --cached --quiet; then
             git commit -m 'OpoAlert: actualizar 30 dias de BOP auditados'
-            git push origin HEAD:main
+            for i in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "BOP Valencia actualizado"
+                break
+              fi
+              if [ "$i" -eq 5 ]; then exit 1; fi
+              sleep 4
+            done
           else
             echo 'El feed ya estaba actualizado.'
           fi
