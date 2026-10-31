@@ -8,7 +8,6 @@ import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
-import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ScrollView
@@ -179,39 +178,23 @@ class AlertsActivity : Activity() {
         content.addView(text("Boletines para esta alerta", 13f, "#34435B", true).apply {
             setPadding(0, dp(13), 0, dp(4))
         })
-        val initial = existing?.provinces ?: ProvinceSettings.selected(this)
-        // Primero los boletines que ya sigues o que usa la alerta; el resto, debajo.
-        val followed = ProvinceSettings.selected(this) + initial
-        val (mine, others) = SourceCatalog.availableSources.partition { it in followed }
-        val sources = mine + others
-        val checks = sources.mapIndexed { index, province ->
-            if (index == mine.size && mine.isNotEmpty() && others.isNotEmpty()) {
-                content.addView(text("Otros boletines", 12f, "#64748B", true).apply {
-                    setPadding(0, dp(12), 0, dp(2))
-                })
-            }
-            CheckBox(this).apply {
-                text = province.label
-                textSize = 14f
-                isChecked = province in initial
-                setTextColor(Color.parseColor("#17243C"))
-            }.also { content.addView(it) }
-        }
+        // Misma lista por comunidades que «Elegir boletines».
+        val selected = (existing?.provinces ?: ProvinceSettings.selected(this)).toMutableSet()
+        content.addView(SourcePicker.build(this, selected))
         content.addView(text(
             "Solo recibirás avisos de los boletines que también hayas seleccionado en Explorar.",
             11f, "#64748B"
         ).apply { setPadding(0, dp(12), 0, 0) })
         val dialog = AlertDialog.Builder(this)
             .setTitle(if (existing == null) "Nueva alerta" else "Editar alerta")
-            .setView(content)
+            .setView(SourcePicker.scrolling(this, content))
             .setPositiveButton("Guardar", null)
             .setNegativeButton("Cancelar", null)
             .create()
         dialog.setOnShowListener {
             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
-                val selected = sources.filterIndexed { i, _ -> checks[i].isChecked }.toSet()
                 try {
-                    AlertRuleStore.upsert(this, existing?.id, input.text.toString(), selected)
+                    AlertRuleStore.upsert(this, existing?.id, input.text.toString(), selected.toSet())
                     dialog.dismiss()
                     render()
                 } catch (error: IllegalArgumentException) {

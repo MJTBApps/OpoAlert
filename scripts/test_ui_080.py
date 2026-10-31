@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.43.0"' in gradle
-    assert "versionCode = 56" in gradle
+    assert 'versionName = "1.44.0"' in gradle
+    assert "versionCode = 57" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -121,10 +121,15 @@ def main() -> None:
     assert 'boe.json' in province
     assert 'shown.take(displayedLimit)' in activity, "Paginación necesaria para anuncios nacionales"
     assert 'setTitle("Elegir boletines")' in activity
-    assert 'SourceCatalog.groups()' in activity
+    picker = (KOTLIN / "SourcePicker.kt").read_text(encoding="utf-8")
+    assert 'SourceCatalog.groups()' in picker
+    assert 'SourcePicker.build(this, selected)' in activity
+    alerts = (KOTLIN / "AlertsActivity.kt").read_text(encoding="utf-8")
+    assert 'SourcePicker.build(this, selected)' in alerts, "Alertas: mismo selector por comunidades"
+    assert 'SourcePicker.scrolling(this, content)' in alerts, "El editor de alertas debe poder desplazarse"
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.43.0: visor de PDF con zoom continuo")
+    print("OK: Android 1.44.0: alertas con selector por comunidades")
 
 
 if __name__ == "__main__":

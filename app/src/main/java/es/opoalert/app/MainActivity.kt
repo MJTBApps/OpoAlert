@@ -274,100 +274,7 @@ class MainActivity : Activity() {
             setTextColor(Color.parseColor("#53627C"))
             setPadding(dp(3), dp(1), dp(3), dp(10))
         })
-        val national = android.widget.CheckBox(this).apply {
-            text = "BOE · Toda España"
-            textSize = 14f
-            typeface = Typeface.DEFAULT_BOLD
-            setTextColor(Color.parseColor("#183B85"))
-            isChecked = Province.BOE in selected
-            setOnCheckedChangeListener { _, checked ->
-                if (checked) selected.add(Province.BOE) else selected.remove(Province.BOE)
-            }
-        }
-        container.addView(national)
-
-        // Los mapas se recrean por apertura; Cancelar no guarda ningun cambio.
-        for (community in SourceCatalog.groups()) {
-            val groupSources = community.territories.flatMap { it.sources }
-            val section = LinearLayout(this).apply {
-                orientation = LinearLayout.VERTICAL
-                setPadding(0, dp(6), 0, dp(3))
-            }
-            val head = LinearLayout(this).apply {
-                orientation = LinearLayout.HORIZONTAL
-                gravity = Gravity.CENTER_VERTICAL
-                background = rounded("#EDF3FF", 12)
-                setPadding(dp(9), dp(5), dp(7), dp(5))
-            }
-            val expandedInitially = groupSources.any { it in selected }
-            val title = TextView(this).apply {
-                textSize = 14f
-                typeface = Typeface.DEFAULT_BOLD
-                setTextColor(Color.parseColor("#17439B"))
-                setPadding(dp(4), dp(7), dp(3), dp(7))
-                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
-            }
-            val allButton = TextView(this).apply {
-                text = "Todas"
-                textSize = 11f
-                typeface = Typeface.DEFAULT_BOLD
-                setTextColor(Color.parseColor("#2155BB"))
-                gravity = Gravity.CENTER
-                setPadding(dp(10), dp(10), dp(9), dp(10))
-                contentDescription = "Seleccionar o desmarcar todas las fuentes de ${community.name}"
-            }
-            val inside = LinearLayout(this).apply {
-                orientation = LinearLayout.VERTICAL
-                visibility = if (expandedInitially) View.VISIBLE else View.GONE
-                setPadding(dp(15), dp(6), dp(1), dp(4))
-            }
-            fun updateTitle() {
-                val amount = groupSources.count { it in selected }
-                title.text = "${if (inside.visibility == View.VISIBLE) "▾" else "▸"} ${community.name}  ·  $amount/${groupSources.size}"
-                allButton.text = if (amount == groupSources.size) "Ninguna" else "Todas"
-            }
-            val checks = linkedMapOf<Province, android.widget.CheckBox>()
-            for (territory in community.territories) {
-                inside.addView(TextView(this).apply {
-                    text = territory.name
-                    textSize = 13f
-                    typeface = Typeface.DEFAULT_BOLD
-                    setTextColor(Color.parseColor("#334763"))
-                    setPadding(dp(5), dp(7), 0, dp(2))
-                })
-                for (source in territory.sources) {
-                    val option = android.widget.CheckBox(this).apply {
-                        text = SourceCatalog.sourceName(source)
-                        textSize = 13f
-                        setTextColor(Color.parseColor("#263A57"))
-                        isChecked = source in selected
-                        setPadding(dp(5), 0, dp(3), 0)
-                        setOnCheckedChangeListener { _, checked ->
-                            if (checked) selected.add(source) else selected.remove(source)
-                            updateTitle()
-                        }
-                    }
-                    checks[source] = option
-                    inside.addView(option)
-                }
-            }
-            title.setOnClickListener {
-                inside.visibility = if (inside.visibility == View.VISIBLE) View.GONE else View.VISIBLE
-                updateTitle()
-            }
-            allButton.setOnClickListener {
-                val enable = groupSources.any { it !in selected }
-                checks.values.forEach { it.isChecked = enable }
-                if (inside.visibility == View.GONE) inside.visibility = View.VISIBLE
-                updateTitle()
-            }
-            updateTitle()
-            head.addView(title)
-            head.addView(allButton)
-            section.addView(head)
-            section.addView(inside)
-            container.addView(section)
-        }
+        container.addView(SourcePicker.build(this, selected))
 
         container.addView(TextView(this).apply {
             text = "CIDO es un catálogo de procesos selectivos y no sustituye al BOP. " +
@@ -376,13 +283,7 @@ class MainActivity : Activity() {
             setTextColor(Color.parseColor("#67758C"))
             setPadding(dp(3), dp(12), dp(3), dp(6))
         })
-        val viewport = ScrollView(this).apply {
-            addView(container)
-            layoutParams = ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                minOf(dp(485), (resources.displayMetrics.heightPixels * 0.61f).toInt())
-            )
-        }
+        val viewport = SourcePicker.scrolling(this, container)
         val dialog = AlertDialog.Builder(this)
             .setTitle("Elegir boletines")
             .setView(viewport)
