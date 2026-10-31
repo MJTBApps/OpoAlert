@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-10-30T18:59:03.164271+00:00",
+  "lastCheckedUTC": "2026-10-31T07:19:17.795568+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 746,
-    "announcementsRead": 314,
-    "opportunities": 62
+    "pagesVisited": 724,
+    "announcementsRead": 306,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
-    "issuesRead": 22,
-    "pagesVisited": 746,
-    "announcementsRead": 314,
-    "opportunities": 62,
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
+    "issuesRead": 21,
+    "pagesVisited": 724,
+    "announcementsRead": 306,
+    "opportunities": 61,
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -44,7 +43,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -75,13 +73,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "originalPdfPagesRead": 746,
-    "archiveIndexPagesRead": 3,
+    "originalPdfPagesRead": 724,
+    "archiveIndexPagesRead": 2,
     "archiveTotalIssues": 48186,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392763&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+1%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392764&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+2%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392765&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+5%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392766&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+6%2F10%2F2026.pdf",
@@ -715,16 +713,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2537/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02526",
-      "province": "Almería",
-      "title": "BASES PARA PROVEER POR CONCURSO OPOSICIÓN UNA PLAZA DE INGENIERO DE CAMINOS CANALES Y PUERTOS DE LA PLANTILLA DE FUNCIONARIOS, VACANTE EN LA PLANTILLA DE PERSONAL FUNCIONARIO BASE PRIMERA. OBJETO DE LA CONVOCATORIA. Es…",
-      "entity": "AYUNTAMIENTO DE EL EJIDO",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2526/anuncio.pdf"
     }
   ]
 }
