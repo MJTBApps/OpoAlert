@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
@@ -14,19 +13,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.ParcelFileDescriptor
-import android.util.LruCache
 import android.view.Gravity
-import android.view.MotionEvent
-import android.view.ScaleGestureDetector
-import android.view.View
-import android.view.ViewGroup
-import android.widget.AbsListView
-import android.widget.BaseAdapter
 import android.widget.FrameLayout
-import android.widget.HorizontalScrollView
-import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.ListView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
@@ -46,7 +35,6 @@ class PdfViewerActivity : Activity() {
         const val EXTRA_URL = "es.opoalert.app.pdf_url"
         const val EXTRA_TITLE = "es.opoalert.app.pdf_title"
         private const val MAX_BYTES = 60L * 1024 * 1024
-        private const val MAX_ZOOM = 4f
 
         fun open(context: Context, url: String, title: String) {
             context.startActivity(Intent(context, PdfViewerActivity::class.java)
@@ -71,13 +59,8 @@ class PdfViewerActivity : Activity() {
     private var renderer: PdfRenderer? = null
     private var descriptor: ParcelFileDescriptor? = null
     private var pageRatios: List<Float> = emptyList()
-    private var list: ListView? = null
-    private var zoom = 1f
+    private var document: PdfDocumentView? = null
     private var closed = false
-    private val cache = object : LruCache<String, Bitmap>((Runtime.getRuntime().maxMemory() / 8).toInt()) {
-        override fun sizeOf(key: String, value: Bitmap) = value.byteCount
-    }
-    private lateinit var scaleDetector: ScaleGestureDetector
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -87,18 +70,6 @@ class PdfViewerActivity : Activity() {
             return
         }
         file = File(File(cacheDir, "pdf").apply { mkdirs() }, "anuncio.pdf")
-        scaleDetector = ScaleGestureDetector(this, object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
-            private var start = 1f
-            override fun onScaleBegin(detector: ScaleGestureDetector): Boolean {
-                start = zoom
-                return true
-            }
-            override fun onScale(detector: ScaleGestureDetector): Boolean {
-                start *= detector.scaleFactor
-                return true
-            }
-            override fun onScaleEnd(detector: ScaleGestureDetector) = setZoom(start)
-        })
         setContentView(createPage(intent.getStringExtra(EXTRA_TITLE).orEmpty()))
         showMessage("Cargando el PDF oficial…", loading = true)
         worker.execute { download() }
@@ -106,19 +77,14 @@ class PdfViewerActivity : Activity() {
 
     override fun onDestroy() {
         closed = true
+        document?.release()
         worker.execute {
             try { renderer?.close() } catch (_: Exception) {}
             try { descriptor?.close() } catch (_: Exception) {}
             file.delete()
         }
         worker.shutdown()
-        cache.evictAll()
         super.onDestroy()
-    }
-
-    override fun dispatchTouchEvent(event: MotionEvent): Boolean {
-        if (renderer != null) scaleDetector.onTouchEvent(event)
-        return super.dispatchTouchEvent(event)
     }
 
     private fun createPage(title: String): LinearLayout {
@@ -143,8 +109,8 @@ class PdfViewerActivity : Activity() {
         pageLabel = text("PDF oficial", 11f, "#697C95")
         heading.addView(pageLabel)
         bar.addView(heading, LinearLayout.LayoutParams(0, -2, 1f))
-        bar.addView(button("−", 24f, "Reducir") { setZoom(zoom / 1.5f) }, LinearLayout.LayoutParams(dp(40), dp(40)))
-        bar.addView(button("+", 22f, "Ampliar") { setZoom(zoom * 1.5f) },
+        bar.addView(button("−", 24f, "Reducir") { document?.zoomBy(1 / 1.5f) }, LinearLayout.LayoutParams(dp(40), dp(40)))
+        bar.addView(button("+", 22f, "Ampliar") { document?.zoomBy(1.5f) },
             LinearLayout.LayoutParams(dp(40), dp(40)).apply { marginStart = dp(6) })
         bar.addView(button("⇱", 20f, "Abrir en otra aplicación") { openOutside() },
             LinearLayout.LayoutParams(dp(40), dp(40)).apply { marginStart = dp(6) })
@@ -233,91 +199,15 @@ class PdfViewerActivity : Activity() {
     }
 
     private fun showPages() {
+        val pdf = renderer ?: return
         val total = pageRatios.size
         val first = startPage(url).coerceAtMost(total)
-        val pages = ListView(this).apply {
-            divider = null
-            dividerHeight = 0
-            setBackgroundColor(Color.parseColor("#E9EEF5"))
-            adapter = PageAdapter()
-            setOnScrollListener(object : AbsListView.OnScrollListener {
-                override fun onScrollStateChanged(view: AbsListView, state: Int) {}
-                override fun onScroll(view: AbsListView, firstVisible: Int, visible: Int, count: Int) {
-                    pageLabel.text = "Página " + (firstVisible + 1) + " de " + total
-                }
-            })
-        }
-        list = pages
-        val horizontal = HorizontalScrollView(this).apply { isFillViewport = true }
-        horizontal.addView(pages, FrameLayout.LayoutParams(pagesWidth(), -1))
+        val view = PdfDocumentView(this, pdf, pageRatios, worker, first)
+        view.onPageChanged = { page, count -> pageLabel.text = "Página $page de $count" }
+        document = view
         body.removeAllViews()
-        body.addView(horizontal, FrameLayout.LayoutParams(-1, -1))
+        body.addView(view, FrameLayout.LayoutParams(-1, -1))
         pageLabel.text = "Página $first de $total"
-        if (first > 1) pages.setSelection(first - 1)
-    }
-
-    private fun pagesWidth(): Int = (body.width.takeIf { it > 0 } ?: resources.displayMetrics.widthPixels).let {
-        (it * zoom).toInt()
-    }
-
-    private fun setZoom(value: Float) {
-        val next = value.coerceIn(1f, MAX_ZOOM)
-        if (renderer == null || kotlin.math.abs(next - zoom) < 0.05f) return
-        zoom = next
-        val pages = list ?: return
-        val position = pages.firstVisiblePosition
-        pages.layoutParams = pages.layoutParams.apply { width = pagesWidth() }
-        cache.evictAll()
-        (pages.adapter as BaseAdapter).notifyDataSetChanged()
-        pages.setSelection(position)
-    }
-
-    private inner class PageAdapter : BaseAdapter() {
-        override fun getCount() = pageRatios.size
-        override fun getItem(position: Int) = position
-        override fun getItemId(position: Int) = position.toLong()
-
-        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-            // Cada página con un pequeño margen gris alrededor.
-            val image = (convertView as? ImageView) ?: ImageView(this@PdfViewerActivity).apply {
-                scaleType = ImageView.ScaleType.FIT_XY
-                setPadding(dp(6), dp(5), dp(6), dp(5))
-            }
-            val width = pagesWidth() - dp(12)
-            image.layoutParams = AbsListView.LayoutParams(-1, (width * pageRatios[position]).toInt() + dp(10))
-            image.contentDescription = "Página " + (position + 1)
-            val key = position.toString() + "@" + zoom
-            image.tag = key
-            val ready = cache.get(key)
-            image.setImageBitmap(ready)
-            if (ready == null) render(position, width, key, image)
-            return image
-        }
-    }
-
-    private fun render(position: Int, width: Int, key: String, target: ImageView) {
-        // Más de 2.000 px de ancho no se nota en pantalla y gasta mucha memoria.
-        val pixels = width.coerceAtMost(2000).coerceAtLeast(1)
-        worker.execute {
-            val pdf = renderer ?: return@execute
-            if (closed || target.tag != key) return@execute
-            val bitmap = try {
-                pdf.openPage(position).use { page ->
-                    Bitmap.createBitmap(pixels, (pixels * page.height.toFloat() / page.width).toInt().coerceAtLeast(1),
-                        Bitmap.Config.ARGB_8888).also {
-                        it.eraseColor(Color.WHITE)
-                        page.render(it, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
-                    }
-                }
-            } catch (_: Exception) {
-                return@execute
-            }
-            main.post {
-                if (closed) return@post
-                cache.put(key, bitmap)
-                if (target.tag == key) target.setImageBitmap(bitmap)
-            }
-        }
     }
 
     private fun openOutside() {
