@@ -59,6 +59,28 @@ equal(OfficialDocument.startPage("https://www.bopcadiz.es/x/BOP210_30-10-26.pdf#
 equal(OfficialDocument.startPage("https://www.boe.es/boe/dias/2026/10/31/pdfs/BOE-A-2026-22836.pdf"), 1, "sin página")
 equal(OfficialDocument.looksLikePdf(Data("%PDF-1.7".utf8)), true, "PDF")
 equal(OfficialDocument.looksLikePdf(Data("<!DOCTYPE html>".utf8)), false, "HTML no es PDF")
+// Nuevas desde la última visita.
+do {
+    let defaults = UserDefaults(suiteName: "opoalert-checks-visitas")!
+    defaults.removePersistentDomain(forName: "opoalert-checks-visitas")
+    let visits = VisitTracker(defaults: defaults)
+    func aviso(_ id: String, _ province: String = "Valencia") -> Notice {
+        Notice(id: id, title: "t", entity: "e", date: "31/10/2026", bulletin: "1", type: "Bolsa de trabajo", url: "https://x", province: province)
+    }
+    let t0 = Date(timeIntervalSince1970: 2_000_000_000)
+    visits.startVisit(now: t0)
+    equal(visits.newIds([aviso("a")]), [], "primera vez: nada es nuevo")
+    visits.remember([aviso("a")], now: t0)
+    visits.startVisit(now: t0.addingTimeInterval(60))           // abrir una ficha y volver
+    equal(visits.newIds([aviso("a"), aviso("b")]), [], "misma visita: aún no hay visita anterior con datos")
+    visits.remember([aviso("a")], now: t0.addingTimeInterval(120))
+    visits.startVisit(now: t0.addingTimeInterval(3600))         // una hora después: otra visita
+    equal(visits.newIds([aviso("a"), aviso("b"), aviso("c", "Alicante")]), ["b"], "nueva desde la última visita; Alicante recién añadida no")
+    visits.remember([aviso("a"), aviso("b")], now: t0.addingTimeInterval(3700))
+    visits.startVisit(now: t0.addingTimeInterval(3800))         // vuelve enseguida: sigue siendo nueva
+    equal(visits.newIds([aviso("a"), aviso("b")]), ["b"], "las marcas duran toda la visita")
+    defaults.removePersistentDomain(forName: "opoalert-checks-visitas")
+}
 let plazoURL = "https://www.boe.es/boe/dias/2026/10/31/pdfs/BOE-A-2026-22836.pdf"
 func plazos(_ item: String) -> Data { Data(#"{"schemaVersion":1,"items":{"\#(plazoURL)":\#(item)},"none":[]}"#.utf8) }
 equal(Deadlines.parse(plazos(#"{"days":20,"kind":"hábiles","page":1,"text":"El plazo de presentación será de veinte días hábiles."}"#), noticeURL: plazoURL)?.label,

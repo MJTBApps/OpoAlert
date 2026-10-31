@@ -26,7 +26,10 @@ struct NoticeListView: View {
             }
             Section {
                 Picker("Tipo", selection: $filter) {
-                    ForEach(NoticeFilter.allCases) { Text($0.rawValue).tag($0) }
+                    ForEach(NoticeFilter.allCases) { option in
+                        let count = model.freshIds.count
+                        Text(option == .fresh && count > 0 ? "\(option.rawValue) · \(count)" : option.rawValue).tag(option)
+                    }
                 }
                 .pickerStyle(.segmented)
                 .listRowBackground(Color.clear)
@@ -103,6 +106,7 @@ struct NoticeListView: View {
             return model.isRefreshing ? "Consultando los boletines…"
                 : "Todavía no hay convocatorias. Desliza hacia abajo para consultar los boletines."
         }
+        if filter == .fresh { return "No hay convocatorias nuevas desde tu última visita." }
         return "No hay convocatorias que coincidan con tu búsqueda."
     }
 }

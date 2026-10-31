@@ -470,12 +470,12 @@ class MainActivity : Activity() {
         }
     }
 
-    private fun buildFilters() {
+    private fun buildFilters(fresh: Int = freshIds().size) {
         filterRow.removeAllViews()
-        for (filter in listOf(FILTER_ALL, FILTER_POOLS, FILTER_POSITIONS)) {
+        for (filter in listOf(FILTER_ALL, FILTER_NEW, FILTER_POOLS, FILTER_POSITIONS)) {
             val selected = selectedFilter == filter
             val chip = TextView(this).apply {
-                text = filter
+                text = if (filter == FILTER_NEW && fresh > 0) "$filter · $fresh" else filter
                 textSize = 12.5f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
                 setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
@@ -487,7 +487,6 @@ class MainActivity : Activity() {
                 isFocusable = true
                 setOnClickListener {
                     selectedFilter = filter
-                    buildFilters()
                     render()
                     scroll.scrollTo(0, 0)
                 }
@@ -511,8 +510,11 @@ class MainActivity : Activity() {
         val latestById = notices.associateBy { it.id }
         val from = if (selectedTab == TAB_FAVORITES)
             favorites.map { latestById[it.id] ?: it } else notices
+        val fresh = freshIds()
+        buildFilters(fresh.size)  // el número de nuevas cambia al actualizar
         val shown = from.filter { item ->
             val correctType = selectedFilter == FILTER_ALL ||
+                (selectedFilter == FILTER_NEW && item.id in fresh) ||
                 (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
                 (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
             val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
@@ -528,6 +530,8 @@ class MainActivity : Activity() {
             val message = when {
                 selectedTab == TAB_FAVORITES && favorites.isEmpty() ->
                     "Aún no tienes favoritas. Toca la estrella de una convocatoria para guardarla aquí."
+                selectedFilter == FILTER_NEW ->
+                    "No hay convocatorias nuevas desde tu última visita."
                 from.isEmpty() -> "Todavía no hay convocatorias. Pulsa actualizar para consultar los boletines."
                 else -> "No hay convocatorias que coincidan con tu búsqueda."
             }
@@ -537,7 +541,7 @@ class MainActivity : Activity() {
             })
         } else {
             for ((index, item) in shown.take(displayedLimit).withIndex()) {
-                addCard(item, item.id in favoriteIds)
+                addCard(item, item.id in favoriteIds, item.id in fresh)
                 if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == 3) {
                     addBannerIfAvailable(index / DemoAds.LIST_AD_EVERY)
                 }
@@ -597,6 +601,16 @@ class MainActivity : Activity() {
         super.onPause()
     }
 
+    override fun onStart() {
+        super.onStart()
+        VisitStore.startVisit(this)
+    }
+
+    override fun onStop() {
+        VisitStore.remember(this, notices)
+        super.onStop()
+    }
+
     private var updateOffered = false
 
     /** Aviso de versión nueva publicada en la web (una vez por sesión y versión). */
@@ -649,7 +663,13 @@ class MainActivity : Activity() {
         super.onDestroy()
     }
 
-    private fun addCard(item: Notice, favorite: Boolean) {
+    /** Convocatorias que no estaban en tu última visita (solo de los boletines que sigues). */
+    private fun freshIds(): Set<String> {
+        val followed = ProvinceSettings.selected(this).map { it.label }.toSet()
+        return VisitStore.newIds(this, notices.filter { it.province in followed && isRecent(it.date) })
+    }
+
+    private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false) {
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(11), dp(14), dp(12))
@@ -672,6 +692,15 @@ class MainActivity : Activity() {
             background = rounded(if (isPool) "#D9F5EB" else "#E4EDFF", 8)
         }
         top.addView(tag)
+        if (fresh) {
+            top.addView(text("NUEVA", 9f, "#FFFFFF", true).apply {
+                setPadding(dp(8), dp(5), dp(8), dp(5))
+                background = rounded("#FE4559", 8)
+                contentDescription = "Nueva desde tu última visita"
+            }, LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { marginStart = dp(5) })
+        }
         if (NoticeText.isProcedureUpdate(item.title)) {
             val procedure = text("TRÁMITE", 9f, "#A16207", true).apply {
                 setPadding(dp(8), dp(5), dp(8), dp(5))
@@ -802,6 +831,7 @@ class MainActivity : Activity() {
         private const val TAB_ALERTS = "alerts"
         const val EXTRA_OPEN_TAB = "es.opoalert.app.open_tab"
         private const val FILTER_ALL = "Todas"
+        private const val FILTER_NEW = "Nuevas"
         private const val FILTER_POOLS = "Bolsas"
         private const val FILTER_POSITIONS = "Plazas"
         private const val UI_PREFS = "opoalert_ui"

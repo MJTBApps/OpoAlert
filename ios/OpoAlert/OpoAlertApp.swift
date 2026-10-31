@@ -17,8 +17,14 @@ struct OpoAlertApp: App {
                 .task { await model.refresh() }
         }
         .onChange(of: scenePhase) { phase in
-            if phase == .background { BackgroundRefresh.schedule() }
-            if phase == .active, !model.isRefreshing { Task { await model.refresh() } }
+            if phase == .background {
+                model.endVisit()
+                BackgroundRefresh.schedule()
+            }
+            if phase == .active {
+                model.startVisit()
+                if !model.isRefreshing { Task { await model.refresh() } }
+            }
         }
     }
 }

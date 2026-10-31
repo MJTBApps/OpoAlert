@@ -221,14 +221,22 @@
         android:textColorHint="#94A3B8"
         android:textSize="13sp" />
 
-    <LinearLayout
-        android:id="@+id/filterRow"
+    <!-- Desplazable: con «Nuevas · N» los cuatro filtros pueden no caber en pantallas estrechas. -->
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="18dp"
         android:layout_marginTop="7dp"
-        android:orientation="horizontal" />
+        android:clipToPadding="false"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/filterRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"

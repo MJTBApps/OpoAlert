@@ -18,44 +18,8 @@ struct SourcePickerView: View {
                     Text("Elige qué boletines quieres consultar. Puedes seguir varias provincias.")
                         .font(.subheadline)
                         .foregroundStyle(Palette.slate)
-                    Toggle(isOn: binding(Source.boe.code)) {
-                        VStack(alignment: .leading) {
-                            Text("BOE").font(.body.weight(.semibold))
-                            Text("Toda España").font(.caption).foregroundStyle(Palette.slate)
-                        }
-                    }
                 }
-                ForEach(groups) { community in
-                    Section {
-                        DisclosureGroup(isExpanded: expandedBinding(community.name)) {
-                            let all = Set(community.sources.map(\.code))
-                            Toggle("Todas", isOn: Binding(
-                                get: { all.isSubset(of: chosen) },
-                                set: { on in if on { chosen.formUnion(all) } else { chosen.subtract(all) } }
-                            ))
-                            .font(.subheadline.weight(.semibold))
-                            ForEach(community.territories) { territory in
-                                ForEach(territory.sources) { source in
-                                    Toggle(isOn: binding(source.code)) {
-                                        VStack(alignment: .leading) {
-                                            Text(territory.name)
-                                            Text(source.name).font(.caption).foregroundStyle(Palette.slate)
-                                        }
-                                    }
-                                }
-                            }
-                        } label: {
-                            let count = community.sources.filter { chosen.contains($0.code) }.count
-                            HStack {
-                                Text(community.name).font(.body.weight(.semibold))
-                                Spacer()
-                                Text("\(count)/\(community.sources.count)")
-                                    .font(.caption)
-                                    .foregroundStyle(count > 0 ? Palette.blue : Palette.slate)
-                            }
-                        }
-                    }
-                }
+                SourceSections(chosen: $chosen, expanded: $expanded, groups: groups)
                 Section {
                     Text("CIDO es un catálogo de procesos selectivos y no sustituye al BOP. Solo se muestran boletines con lectura auditada de los últimos 30 días.")
                         .font(.caption)
@@ -81,9 +45,64 @@ struct SourcePickerView: View {
         .interactiveDismissDisabled(firstLaunch)
         .onAppear {
             chosen = model.selected
-            expanded = Set(groups.filter { $0.sources.contains { chosen.contains($0.code) } }.map(\.name))
+            expanded = SourceSections.initiallyExpanded(groups, chosen: chosen)
         }
         .onDisappear { model.closePicker() }
+    }
+}
+
+/// BOE y cada comunidad con sus provincias y boletines (con «Todas»). La usan
+/// «Elegir boletines» y el editor de alertas, como `SourcePicker.kt` en Android.
+struct SourceSections: View {
+    @Binding var chosen: Set<String>
+    @Binding var expanded: Set<String>
+    let groups: [BulletinCommunity]
+
+    var body: some View {
+        Section {
+            Toggle(isOn: binding(Source.boe.code)) {
+                VStack(alignment: .leading) {
+                    Text("BOE").font(.body.weight(.semibold))
+                    Text("Toda España").font(.caption).foregroundStyle(Palette.slate)
+                }
+            }
+        }
+        ForEach(groups) { community in
+            Section {
+                DisclosureGroup(isExpanded: expandedBinding(community.name)) {
+                    let all = Set(community.sources.map(\.code))
+                    Toggle("Todas", isOn: Binding(
+                        get: { all.isSubset(of: chosen) },
+                        set: { on in if on { chosen.formUnion(all) } else { chosen.subtract(all) } }
+                    ))
+                    .font(.subheadline.weight(.semibold))
+                    ForEach(community.territories) { territory in
+                        ForEach(territory.sources) { source in
+                            Toggle(isOn: binding(source.code)) {
+                                VStack(alignment: .leading) {
+                                    Text(territory.name)
+                                    Text(source.name).font(.caption).foregroundStyle(Palette.slate)
+                                }
+                            }
+                        }
+                    }
+                } label: {
+                    let count = community.sources.filter { chosen.contains($0.code) }.count
+                    HStack {
+                        Text(community.name).font(.body.weight(.semibold))
+                        Spacer()
+                        Text("\(count)/\(community.sources.count)")
+                            .font(.caption)
+                            .foregroundStyle(count > 0 ? Palette.blue : Palette.slate)
+                    }
+                }
+            }
+        }
+    }
+
+    /// Comunidades desplegadas al abrir: las que tienen algo marcado.
+    static func initiallyExpanded(_ groups: [BulletinCommunity], chosen: Set<String>) -> Set<String> {
+        Set(groups.filter { $0.sources.contains { chosen.contains($0.code) } }.map(\.name))
     }
 
     private func binding(_ code: String) -> Binding<Bool> {

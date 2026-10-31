@@ -13,6 +13,10 @@ struct NoticeRow: View {
                 NoticeTag(text: notice.isPool ? "BOLSA" : "PLAZA",
                     color: notice.isPool ? Palette.poolText : Palette.blue,
                     fill: notice.isPool ? Palette.poolFill : Palette.positionFill)
+                if model.freshIds.contains(notice.id) {
+                    NoticeTag(text: "NUEVA", color: .white, fill: Color(hex: 0xFE4559))
+                        .accessibilityLabel("Nueva desde tu última visita")
+                }
                 if notice.isProcedureUpdate {
                     NoticeTag(text: "TRÁMITE", color: Palette.procedureText, fill: Palette.procedureFill)
                 }

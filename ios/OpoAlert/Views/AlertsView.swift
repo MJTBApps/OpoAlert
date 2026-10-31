@@ -84,12 +84,11 @@ struct AlertEditView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var phrase = ""
     @State private var sources: Set<String> = []
+    @State private var expanded: Set<String> = []
     @State private var error: String?
 
     var body: some View {
-        // Primero las fuentes que se siguen; después las demás.
-        let followed = model.available.filter { draft.followed.contains($0.code) }
-        let others = model.available.filter { !draft.followed.contains($0.code) }
+        let groups = SourceCatalog.groups(model.available)
         NavigationStack {
             Form {
                 Section {
@@ -100,10 +99,8 @@ struct AlertEditView: View {
                 } footer: {
                     Text("Avisa cuando el anuncio contiene todas las palabras, en cualquier orden.")
                 }
-                Section("Boletines que sigues") { sourceToggles(followed) }
-                if !others.isEmpty {
-                    Section("Otros boletines") { sourceToggles(others) }
-                }
+                // Misma lista por comunidades que «Elegir boletines».
+                SourceSections(chosen: $sources, expanded: $expanded, groups: groups)
                 if let error {
                     Text(error).foregroundStyle(.red)
                 }
@@ -127,16 +124,7 @@ struct AlertEditView: View {
         .onAppear {
             phrase = draft.rule?.phrase ?? ""
             sources = draft.rule?.sources ?? draft.followed
-        }
-    }
-
-    @ViewBuilder
-    private func sourceToggles(_ list: [Source]) -> some View {
-        ForEach(list) { source in
-            Toggle(source.label, isOn: Binding(
-                get: { sources.contains(source.code) },
-                set: { on in if on { sources.insert(source.code) } else { sources.remove(source.code) } }
-            ))
+            expanded = SourceSections.initiallyExpanded(groups, chosen: sources)
         }
     }
 }

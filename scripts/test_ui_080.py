@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.45.0"' in gradle
-    assert "versionCode = 58" in gradle
+    assert 'versionName = "1.46.0"' in gradle
+    assert "versionCode = 59" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -113,6 +113,10 @@ def main() -> None:
     assert "renderDetails" in document, "Al soltar el zoom el texto se vuelve a dibujar nítido"
     assert "addDeadline(content)" in detail and "DeadlineStore.find(" in detail, "Plazo copiado del anuncio en la ficha"
     assert "no calcula la fecha" in detail, "Avisar de que no se calcula ninguna fecha"
+    assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
+    assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
+    ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
+    assert 'MARKETING_VERSION: "1.46.0"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -131,7 +135,7 @@ def main() -> None:
     assert 'SourcePicker.scrolling(this, content)' in alerts, "El editor de alertas debe poder desplazarse"
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.45.0: plazo del anuncio en la ficha")
+    print("OK: Android 1.46.0: nuevas desde tu última visita")
 
 
 if __name__ == "__main__":

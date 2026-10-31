@@ -3,12 +3,12 @@ import OpoAlertCore
 import SwiftUI
 
 enum NoticeFilter: String, CaseIterable, Identifiable {
-    case all = "Todas", pools = "Bolsas", positions = "Plazas"
+    case all = "Todas", fresh = "Nuevas", pools = "Bolsas", positions = "Plazas"
     var id: String { rawValue }
 
     func accepts(_ notice: Notice) -> Bool {
         switch self {
-        case .all: return true
+        case .all, .fresh: return true  // «Nuevas» lo filtra el modelo, que sabe cuáles son
         case .pools: return notice.isPool
         case .positions: return notice.isPosition
         }
@@ -35,6 +35,9 @@ final class AppModel: ObservableObject {
     /// Ficha abierta desde un aviso.
     @Published var openedNotice: Notice?
     @Published var tab: AppTab = .explore
+    /// Convocatorias que no estaban en la última visita.
+    @Published private(set) var freshIds: Set<String> = []
+    private let visits = VisitTracker()
 
     init(store: Store = Store()) {
         self.store = store
@@ -51,7 +54,20 @@ final class AppModel: ObservableObject {
         lastSync = store.lastSync
         lastSource = store.lastSource
         lastHistory = store.lastHistory
+        let labels = selectedLabels
+        freshIds = visits.newIds(notices.filter { labels.contains($0.province) && NoticeDates.isRecent($0.date) })
     }
+
+    // MARK: Visitas
+
+    /// Al volver a la app: si pasaron más de 15 minutos, empieza otra visita.
+    func startVisit() {
+        visits.startVisit()
+        reload()
+    }
+
+    /// Al salir: lo cargado deja de ser nuevo en la próxima visita.
+    func endVisit() { visits.remember(notices) }
 
     // MARK: Revisión
 
@@ -96,7 +112,7 @@ final class AppModel: ObservableObject {
     private func filtered(_ list: [Notice], query: String, filter: NoticeFilter) -> [Notice] {
         let normalized = SearchText.normalize(query.trimmingCharacters(in: .whitespacesAndNewlines))
         return list.filter { notice in
-            filter.accepts(notice) &&
+            filter.accepts(notice) && (filter != .fresh || freshIds.contains(notice.id)) &&
                 SearchText.matchesNormalized(normalized, notice.title, notice.headline, notice.entity, notice.id)
         }
     }
