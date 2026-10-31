@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Algunos boletines (BOP Alicante, BOP Girona, BOB Bizkaia, BOCCE Ceuta, BOP Segovia)
+  usan certificados de la raíz pública «Sectigo Public Server Authentication Root R46»,
+  que Chrome sí reconoce pero muchos Android aún no traen. Se añade como raíz de
+  confianza adicional (SHA-256 7B:B6:47:A6:...:F2:5A:06, la misma de la lista de
+  Mozilla) para poder abrir sus PDF dentro de la app. La verificación del
+  certificado y del nombre del servidor sigue activada. Solo HTTPS.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="@raw/sectigo_r46" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.41.0"' in gradle
-    assert "versionCode = 54" in gradle
+    assert 'versionName = "1.42.0"' in gradle
+    assert "versionCode = 55" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -108,6 +108,10 @@ def main() -> None:
     viewer = (KOTLIN / "PdfViewerActivity.kt").read_text(encoding="utf-8")
     assert "cacheDir" in viewer and "file.delete()" in viewer, "No se guarda en Descargas"
     assert "looksLikePdf" in viewer and "openOutside()" in viewer
+    assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
+    security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
+    assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
+    assert 'cleartextTrafficPermitted="false"' in security, "Solo HTTPS"
     assert "Sede electrónica" not in detail, "No inventar enlace de sede"
     province = (KOTLIN / "Province.kt").read_text(encoding="utf-8")
     assert 'BOE(' in province and 'BOE-A-' in province
@@ -117,7 +121,7 @@ def main() -> None:
     assert 'SourceCatalog.groups()' in activity
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.41.0: visor de PDF y ficha simplificada")
+    print("OK: Android 1.42.0: visor de PDF y raíz Sectigo R46")
 
 
 if __name__ == "__main__":
