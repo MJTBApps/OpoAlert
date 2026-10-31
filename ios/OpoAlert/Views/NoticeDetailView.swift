@@ -9,6 +9,7 @@ struct NoticeDetailView: View {
     @Environment(\.openURL) private var openURL
     @State private var linkRejected = false
     @State private var pdfLink: PdfLink?
+    @State private var deadline: Deadline?
 
     private var source: Source { Source.of(notice) }
 
@@ -47,6 +48,10 @@ struct NoticeDetailView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Color(hex: 0xFE4559))
+
+                if let deadline {
+                    DeadlineCard(deadline: deadline) { openOfficial(page: deadline.page) }
+                }
 
                 Text("Resumen del anuncio")
                     .font(.headline)
@@ -109,6 +114,7 @@ struct NoticeDetailView: View {
                 .accessibilityLabel(favorite ? "Quitar de favoritas" : "Guardar en favoritas")
             }
         }
+        .task { deadline = await Deadlines.fetch(for: notice) }
         .sheet(item: $pdfLink) { link in
             PdfViewerView(url: link.url, title: source.shortName)
         }
@@ -134,17 +140,58 @@ struct NoticeDetailView: View {
     }
 
     /// Solo se abre si el enlace es HTTPS al dominio y la ruta oficiales de la fuente.
-    private func openOfficial() {
+    private func openOfficial(page: Int? = nil) {
         guard source.isOfficialLink(notice.url), let url = URL(string: notice.url) else {
             linkRejected = true
             return
         }
         // El PDF se ve dentro de la app; si no fuera un PDF, el visor lo abre fuera.
-        if OfficialDocument.isPdf(notice) { pdfLink = PdfLink(url: url) } else { openURL(url) }
+        if OfficialDocument.isPdf(notice) {
+            let address = page.map { notice.url.contains("#") ? notice.url : notice.url + "#page=\($0)" } ?? notice.url
+            pdfLink = PdfLink(url: URL(string: address) ?? url)
+        } else {
+            openURL(url)
+        }
     }
 }
 
 private struct PdfLink: Identifiable {
     let url: URL
     var id: String { url.absoluteString }
+}
+
+/// Plazo copiado del anuncio. Solo los días y la frase literal: no se calcula ninguna fecha.
+private struct DeadlineCard: View {
+    let deadline: Deadline
+    let openPage: () -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label("PLAZO DE PRESENTACIÓN", systemImage: "timer")
+                .font(.caption.bold())
+                .foregroundStyle(Color(hex: 0xB45309))
+            Text(deadline.label)
+                .font(.title2.bold())
+                .foregroundStyle(Color(hex: 0x13223C))
+            Text("Según el anuncio:")
+                .font(.caption.bold())
+                .foregroundStyle(Color(hex: 0x7A5A2B))
+            Text("«\(deadline.text)»")
+                .font(.subheadline.italic())
+                .foregroundStyle(Color(hex: 0x4A3B22))
+                .textSelection(.enabled)
+            Button(action: openPage) {
+                Label("Ver en el PDF (pág. \(deadline.page))", systemImage: "doc.text.magnifyingglass")
+                    .font(.subheadline.bold())
+            }
+            .tint(Color(hex: 0xC2410C))
+            Text("OpoAlert no calcula la fecha: el plazo puede empezar con otra publicación (por ejemplo, el extracto en el BOE). Compruébalo siempre en el anuncio oficial.")
+                .font(.caption2)
+                .foregroundStyle(Color(hex: 0x8A6D3B))
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(hex: 0xFFF7E8), in: RoundedRectangle(cornerRadius: 16))
+        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(hex: 0xF5D9A8)))
+    }
 }

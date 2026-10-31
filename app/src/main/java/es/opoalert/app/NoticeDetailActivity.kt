@@ -58,6 +58,7 @@ class NoticeDetailActivity : Activity() {
         }
         addHero(content)
         addOfficialButton(content)
+        addDeadline(content)
         addSummary(content)
         addOfficialSource(content)
         addActions(content)
@@ -249,6 +250,48 @@ class NoticeDetailActivity : Activity() {
             LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(16); bottomMargin = dp(14) })
     }
 
+    /**
+     * Plazo de presentación copiado del anuncio (lo lee `backend/plazos.py`). Solo los días
+     * y la frase literal: no se calcula ninguna fecha, porque el plazo suele empezar con
+     * otra publicación (el extracto en el BOE) y los festivos cambian en cada municipio.
+     */
+    private fun addDeadline(content: LinearLayout) {
+        if (!officialIsPdf() || NoticeText.isProcedureUpdate(notice.title)) return
+        val province = Province.fromLabel(notice.province) ?: Province.fromNoticeId(notice.id)
+        val card = column().apply {
+            visibility = View.GONE
+            background = rounded("#FFF7E8", 16, "#F5D9A8")
+            setPadding(dp(16), dp(14), dp(16), dp(14))
+        }
+        content.addView(card, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(6) })
+        Thread {
+            val deadline = DeadlineStore.find(applicationContext, province, notice.url)
+            runOnUiThread {
+                if (deadline == null || isFinishing || isDestroyed) return@runOnUiThread
+                card.addView(text("⏱  PLAZO DE PRESENTACIÓN", 11f, "#B45309", true))
+                card.addView(text(deadline.label, 22f, "#13223C", true).apply { setPadding(0, dp(7), 0, dp(8)) })
+                card.addView(text("Según el anuncio:", 11.5f, "#7A5A2B", true))
+                card.addView(text("«" + deadline.text + "»", 13f, "#4A3B22").apply {
+                    setTypeface(typeface, Typeface.ITALIC)
+                    setLineSpacing(dp(2).toFloat(), 1f)
+                    setPadding(0, dp(4), 0, dp(10))
+                })
+                card.addView(text("▤  Ver en el PDF (pág. " + deadline.page + ")", 14f, "#C2410C", true).apply {
+                    isClickable = true
+                    isFocusable = true
+                    setPadding(0, dp(4), 0, dp(8))
+                    setOnClickListener { openOfficial(deadline.page) }
+                })
+                card.addView(text(
+                    "OpoAlert no calcula la fecha: el plazo puede empezar con otra publicación (por ejemplo, " +
+                        "el extracto en el BOE). Compruébalo siempre en el anuncio oficial.",
+                    10.5f, "#8A6D3B"
+                ))
+                card.visibility = View.VISIBLE
+            }
+        }.start()
+    }
+
     /** Enlaces que son páginas web (fichas) y no PDF: se abren en el navegador. */
     private fun officialIsPdf(): Boolean = !(
         notice.id.startsWith("CIDO") ||
@@ -307,7 +350,7 @@ class NoticeDetailActivity : Activity() {
         }
     }
 
-    private fun openOfficial() {
+    private fun openOfficial(page: Int? = null) {
         val province = Province.fromLabel(notice.province) ?: Province.fromNoticeId(notice.id)
         val link = Uri.parse(notice.url)
         if (link.scheme != "https" ||
@@ -318,7 +361,8 @@ class NoticeDetailActivity : Activity() {
         }
         // El PDF se ve dentro de la app; si no fuera un PDF, el visor lo abre fuera.
         if (officialIsPdf()) {
-            PdfViewerActivity.open(this, notice.url, NoticeText.headline(notice.title))
+            val address = if (page != null && !notice.url.contains('#')) notice.url + "#page=" + page else notice.url
+            PdfViewerActivity.open(this, address, NoticeText.headline(notice.title))
             return
         }
         try {

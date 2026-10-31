@@ -59,6 +59,18 @@ equal(OfficialDocument.startPage("https://www.bopcadiz.es/x/BOP210_30-10-26.pdf#
 equal(OfficialDocument.startPage("https://www.boe.es/boe/dias/2026/10/31/pdfs/BOE-A-2026-22836.pdf"), 1, "sin página")
 equal(OfficialDocument.looksLikePdf(Data("%PDF-1.7".utf8)), true, "PDF")
 equal(OfficialDocument.looksLikePdf(Data("<!DOCTYPE html>".utf8)), false, "HTML no es PDF")
+let plazoURL = "https://www.boe.es/boe/dias/2026/10/31/pdfs/BOE-A-2026-22836.pdf"
+func plazos(_ item: String) -> Data { Data(#"{"schemaVersion":1,"items":{"\#(plazoURL)":\#(item)},"none":[]}"#.utf8) }
+equal(Deadlines.parse(plazos(#"{"days":20,"kind":"hábiles","page":1,"text":"El plazo de presentación será de veinte días hábiles."}"#), noticeURL: plazoURL)?.label,
+      "20 días hábiles", "plazo del anuncio")
+equal(Deadlines.parse(plazos(#"{"days":20,"kind":"lectivos","page":1,"text":"El plazo de presentación será de veinte días lectivos."}"#), noticeURL: plazoURL),
+      nil, "tipo de días no válido")
+equal(Deadlines.parse(plazos(#"{"days":20,"kind":"hábiles","page":1,"text":"corto"}"#), noticeURL: plazoURL), nil, "cita demasiado corta")
+equal(Deadlines.parse(plazos(#"{"days":20,"kind":"hábiles","page":1,"text":"El plazo de presentación será de veinte días hábiles."}"#), noticeURL: plazoURL + "x"),
+      nil, "otro anuncio")
+equal(Deadlines.url(for: Source.of(Notice(id: "BOE-A-2026-1", title: "t", entity: "e", date: "31/10/2026", bulletin: "1",
+                                          type: "Plaza / oposición", url: plazoURL, province: "España (BOE)")))?.absoluteString,
+      "https://mjtbapps.github.io/OpoAlert/plazos/boe.json", "un archivo por fuente")
 
 // MARK: Títulos
 

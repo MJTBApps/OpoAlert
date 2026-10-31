@@ -10,7 +10,8 @@ auditados de GitHub Pages que la app Android. El backend no cambia.
 - **Ficha**: «Ver PDF oficial» arriba (el PDF se ve dentro de la app con PDFKit
   y se abre en la página del anuncio si el enlace trae `#page=N`), etiqueta con
   el número de plazas solo si el título lo dice, grupo y datos de la publicación.
-  No se muestra ningún plazo (nunca se inventa). El enlace solo se abre si es
+  El plazo de presentación sale copiado del anuncio (días y frase literal, de
+  `docs/plazos/`); nunca se calcula una fecha. El enlace solo se abre si es
   HTTPS al dominio y la ruta oficiales.
 - **Favoritas**: se guarda la ficha completa en el móvil.
 - **Alertas**: hasta 20, por palabras (sin importar tildes ni orden) y por
