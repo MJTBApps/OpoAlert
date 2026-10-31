@@ -27,7 +27,7 @@ object Notifications {
     }
 
     fun show(context: Context, notices: List<Notice>) {
-        if (notices.isEmpty() || !Repository.alertsEnabled(context)) return
+        if (notices.isEmpty() || !Repository.alertsEnabled(context) || !Premium.alertsUnlocked(context)) return
         // Segunda comprobacion: si el usuario pausa o elimina una regla durante
         // la sincronizacion, no debe llegar una notificacion de ella.
         val matching = SmartAlertMatcher.matching(

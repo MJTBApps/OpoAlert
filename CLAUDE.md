@@ -24,7 +24,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - `MainActivity.kt` (pantalla principal), `NoticeDetailActivity.kt` (ficha), `AlertsActivity.kt` + `AlertRule*.kt` (alertas), `RemoteFeedReader.kt` / `Repository.kt` (lectura de feeds), `BopWorker.kt` + `Notifications.kt` (avisos), `FavoritesStore.kt`.
   - `DemoAds.kt` — anuncios AdMob **solo de demostración**, con consentimiento UMP. No generan ingresos.
   - Pruebas: `app/src/test/java/es/opoalert/app/`.
-  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 52 / 1.39.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
+  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 53 / 1.40.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
 - **Backend**: `backend/`
   - Lectores: `bop_full.py` + `history.py` (Valencia), `alicante.py`, `castellon.py`, `province_history.py`, `boe_nacional.py`, `cido_cataluna.py`, `tarragona.py`, `barcelona_bop.py`, `girona_bop.py`, `huesca_bop.py`, `teruel_bop.py`, `zaragoza_bop.py`, `cadiz_bop.py`, `pandora_bop.py` (Almería), `andalucia_opencms_bop.py` (Granada y Sevilla), `cordoba_bop.py`.
   - Validadores: `validar_*.py`, uno por fuente; `validar_feed.py` para el feed de Valencia.
@@ -89,7 +89,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 ## Estado (30/10/2026)
 
-- App **1.39.0** (31/10/2026: icono nuevo, alertas corregidas y mejoras de pantalla). La **1.38.0** (30/10/2026): las 19 fuentes de siempre más **46 con feed diario** en `feeds_diarios.SOURCES`. La 1.38 añade a `Province.kt` Cantabria (CN), Valladolid (VD), Burgos (BU), Jaén (JA) y BOP Lleida (LE), y corrige la web de Cuenca. Las fuentes que la APK no conoce no se muestran aunque estén en `fuentes_activas.json`. La app lee de la web `fuentes_activas.json` (lo genera `publicar-web.yml`), así que **una fuente nueva aparece sin instalar otra APK**.
+- App **1.40.0** (31/10/2026): anuncio de apertura y anuncios en la lista (identificadores de PRUEBA de Google), estructura de Premium y ficha con «Ver PDF oficial» arriba. Detalle y pasos pendientes en `PLAN_MONETIZACION_IOS.md`. La 1.39.0 (31/10/2026): icono nuevo, alertas corregidas y mejoras de pantalla. La **1.38.0** (30/10/2026): las 19 fuentes de siempre más **46 con feed diario** en `feeds_diarios.SOURCES`. La 1.38 añade a `Province.kt` Cantabria (CN), Valladolid (VD), Burgos (BU), Jaén (JA) y BOP Lleida (LE), y corrige la web de Cuenca. Las fuentes que la APK no conoce no se muestran aunque estén en `fuentes_activas.json`. La app lee de la web `fuentes_activas.json` (lo genera `publicar-web.yml`), así que **una fuente nueva aparece sin instalar otra APK**.
 - **Cuatro actualizaciones al día** para todas las fuentes: 6:30, 9:30, 12:30 y 16:30 en invierno (una hora más en verano), escalonadas 5 minutos. La app 1.37.0 consulta cada hora y avisa de APK nuevas (`version.json`, generado por `feeds_diarios.py manifest` desde las APK de `docs/`).
 - `revisar-bop.yml` y `revisar-provincias.yml` pasan solo las pruebas de sus lectores (desde el 31/10/2026; antes pasaban toda la batería, fallaron el 29 y el 30/10 y los feeds de Valencia, Alicante y Castellón se quedaron en el 28/10).
 - **Ejecutor de casa** (`revisar-espana-casa.yml`, guía `EJECUTOR_CASA.md`, etiqueta `opoalert-casa`): lee los portales que no responden a GitHub. `feeds_diarios.HOME_ONLY` = Navarra, Asturias, Ceuta, Albacete, Cantabria, Valladolid, Burgos, Jaén, BOP Lleida y Cuenca (las siete últimas desde el 30/10/2026); `HOME_BACKUP` = La Rioja y Cáceres (también se leen en GitHub). **Instalado el 30/10/2026 en el iMac** (`iMac-de-Jordi`, carpeta `~/actions-runner`, servicio launchd del usuario, `.env` con `OPOALERT_PYTHON=~/opoalert-venv/bin/python`); primera ejecución en verde y Navarra, Asturias y Ceuta publicadas. El servicio arranca al iniciar sesión; el iMac tiene activado el inicio de sesión automático, el reposo desactivado con corriente y el arranque tras corte de luz (`pmset autorestart 1`). Si el iMac está apagado, esas fuentes no se actualizan y la app conserva el último feed.
@@ -110,11 +110,12 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 - Probar avisos sin esperar: la imagen admite `adb root`. Quitar anuncios de `entries` y de `seen_notice_ids_v1` en `shared_prefs/opoalert_store.xml` (`run-as es.opoalert.app`), cerrar la app con `am kill` (no `force-stop`, que borra los trabajos programados), adelantar el reloj (`settings put global auto_time 0`; `date @...`) y `cmd jobscheduler run -f es.opoalert.app <n.º>`. WorkManager no adelanta un trabajo periódico antes de su hora. Al acabar, `settings put global auto_time 1`.
 - El aro claro alrededor del icono en el escritorio es de las apps sugeridas del lanzador de Pixel, no del icono.
 
-## Hoja de ruta (idea del usuario, no empezar sin acordarlo)
+## Publicidad, Premium e iOS
 
-1. Anuncios para monetizar: uno al abrir la app (~5 s) y anuncios intercalados en la lista. Hoy `DemoAds.kt` solo tiene AdMob de demostración.
-2. Versión premium: sin anuncios y con las alertas desbloqueadas.
-3. Después, versión iOS.
+Ver `PLAN_MONETIZACION_IOS.md`. Resumen:
+- `DemoAds.kt`: anuncio de apertura (solo al arrancar, nunca la primera vez, máx. uno por hora, se descarta si tarda más de 5 s) y un banner cada 8 convocatorias (máx. 5). Identificadores de PRUEBA hasta que el usuario cree la cuenta de AdMob. **En España no se sirve ningún anuncio hasta publicar el mensaje del RGPD en AdMob** (el gestor UMP no tiene formulario que mostrar). Para verlos en el emulador, compilación temporal con `ConsentDebugSettings` y `DEBUG_GEOGRAPHY_OTHER` (no subirla nunca).
+- `Premium.kt`: sin anuncios y alertas desbloqueadas. `BILLING_READY = false` hasta tener Google Play Billing (exige publicar en Google Play); mientras, las alertas son gratis. Las compilaciones de prueba tienen «Activar (pruebas)» en el menú.
+- iOS: este iMac (2017, macOS 13) no puede usar Xcode 26, obligatorio para el App Store desde el 28/04/2026. Usar ejecutores macOS de GitHub Actions o un Mac con Apple Silicon.
 
 ## Antes de dar un cambio por terminado
 

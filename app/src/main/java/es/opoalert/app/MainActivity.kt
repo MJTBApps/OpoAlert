@@ -61,10 +61,12 @@ class MainActivity : Activity() {
     private var loading = false
     private var refreshPending = false
     private lateinit var demoAds: DemoAds
+    private var coldStart = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        coldStart = savedInstanceState == null
         setContentView(R.layout.activity_main)
         list = findViewById(R.id.listContainer)
         countText = findViewById(R.id.countText)
@@ -160,9 +162,10 @@ class MainActivity : Activity() {
         val enabled = Repository.alertsEnabled(this) && notificationPermissionGranted()
         menu.menu.add(0, 1, 0, if (enabled) "Desactivar avisos" else "Activar avisos")
         menu.menu.add(0, 2, 1, "Acerca de OpoAlert")
-        menu.menu.add(0, 3, 2, "Privacidad y publicidad de prueba")
+        menu.menu.add(0, 3, 2, "Privacidad y publicidad")
         menu.menu.add(0, 4, 3, "Elegir boletines")
         menu.menu.add(0, 5, 4, "Mis alertas personalizadas")
+        menu.menu.add(0, 6, 5, if (Premium.isActive(this)) "OpoAlert Premium ✓" else "OpoAlert Premium")
         menu.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 1 -> {
@@ -183,7 +186,7 @@ class MainActivity : Activity() {
                 }
                 2 -> {
                     AlertDialog.Builder(this)
-                        .setTitle("OpoAlert 1.8.0")
+                        .setTitle("OpoAlert " + packageManager.getPackageInfo(packageName, 0).versionName)
                         .setMessage("Convocatorias de empleo público de los boletines seleccionados. " +
                             "Las novedades se consultan automáticamente. " +
                             "Comprueba siempre el anuncio y los plazos oficiales antes de presentar una solicitud.")
@@ -203,10 +206,37 @@ class MainActivity : Activity() {
                     openAlerts()
                     true
                 }
+                6 -> {
+                    showPremium()
+                    true
+                }
                 else -> false
             }
         }
         menu.show()
+    }
+
+    private fun showPremium() {
+        val active = Premium.isActive(this)
+        val message = (if (active) "Tienes OpoAlert Premium activo.\n\n" else "") +
+            "• Sin publicidad: ni al abrir la app ni entre las convocatorias.\n" +
+            "• Alertas personalizadas con aviso de las convocatorias nuevas.\n\n" +
+            if (Premium.BILLING_READY) "" else "La suscripción estará disponible cuando OpoAlert se publique en Google Play. " +
+                "Mientras tanto, las alertas son gratuitas."
+        val dialog = AlertDialog.Builder(this)
+            .setTitle("OpoAlert Premium")
+            .setMessage(message)
+            .setPositiveButton("Entendido", null)
+        if (Premium.canSimulate(this)) {
+            dialog.setNeutralButton(if (active) "Desactivar (pruebas)" else "Activar (pruebas)") { _, _ ->
+                Premium.setActive(this, !active)
+                if (!active) demoAds.destroy()
+                Toast.makeText(this, if (active) "Premium desactivado" else "Premium activado: sin anuncios",
+                    Toast.LENGTH_SHORT).show()
+                render(keepScroll = true)
+            }
+        }
+        dialog.show()
     }
 
     private fun openAlerts() {
@@ -215,7 +245,8 @@ class MainActivity : Activity() {
 
     private fun showProvincePickerIfFirstLaunch() {
         if (ProvinceSettings.wasPickerShown(this)) {
-            demoAds.start()
+            // Anuncio de apertura solo al arrancar la app, no al volver de otra pantalla.
+            demoAds.start(openAd = coldStart)
             return
         }
         ProvinceSettings.markPickerShown(this)
@@ -606,7 +637,9 @@ class MainActivity : Activity() {
         } else {
             for ((index, item) in shown.take(displayedLimit).withIndex()) {
                 addCard(item, item.id in favoriteIds)
-                if (selectedTab == TAB_ALL && index == 3) addDemoBannerIfAvailable()
+                if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == 3) {
+                    addBannerIfAvailable(index / DemoAds.LIST_AD_EVERY)
+                }
             }
             if (shown.size > displayedLimit) {
                 val pending = shown.size - displayedLimit
@@ -634,13 +667,13 @@ class MainActivity : Activity() {
         if (keepScroll) scroll.post { scroll.scrollTo(0, oldScroll) }
     }
 
-    private fun addDemoBannerIfAvailable() {
-        val ad = demoAds.availableBanner() ?: return
+    private fun addBannerIfAvailable(slot: Int) {
+        val ad = demoAds.bannerFor(slot) ?: return
         val block = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(6), dp(10), dp(6), dp(18))
         }
-        block.addView(text("PUBLICIDAD · ANUNCIO DE PRUEBA", 10f, "#64748B").apply {
+        block.addView(text("PUBLICIDAD", 10f, "#64748B").apply {
             gravity = Gravity.CENTER
             setPadding(0, 0, 0, dp(8))
         })

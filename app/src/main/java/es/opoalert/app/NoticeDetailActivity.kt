@@ -271,7 +271,7 @@ class NoticeDetailActivity : Activity() {
             notice.province == Province.RIOJA_BOR.label && notice.url.contains("ExportarBoletinServlet") -> "▤   Ver anuncio oficial"
             else -> "▤   Ver PDF oficial"
         }, "#FE4559", "#FFFFFF") { openOfficial() },
-            LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(16) })
+            LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(16); bottomMargin = dp(14) })
     }
 
     private fun addActions(content: LinearLayout) {
