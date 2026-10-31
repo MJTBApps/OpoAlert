@@ -8,6 +8,7 @@ struct NoticeDetailView: View {
     @EnvironmentObject private var model: AppModel
     @Environment(\.openURL) private var openURL
     @State private var linkRejected = false
+    @State private var pdfLink: PdfLink?
 
     private var source: Source { Source.of(notice) }
 
@@ -18,6 +19,11 @@ struct NoticeDetailView: View {
                 HStack(spacing: 6) {
                     NoticeTag(text: badge, color: notice.isPool ? Palette.poolText : Palette.blue,
                         fill: notice.isPool ? Palette.poolFill : Palette.positionFill)
+                    // Solo lo que dice el título: si no da una cifra clara, no se muestra.
+                    if let places = NoticeDetails.placesInTitle(notice.title) {
+                        NoticeTag(text: places == 1 ? "1 plaza" : "\(places) plazas",
+                                  color: Color(hex: 0xB4530A), fill: Color(hex: 0xFFF0E5))
+                    }
                     if let group = NoticeDetails.groupInTitle(notice.title) {
                         NoticeTag(text: "Grupo \(group)", color: Color(hex: 0x28517E), fill: Color(hex: 0xE8EEF7))
                     }
@@ -41,15 +47,6 @@ struct NoticeDetailView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Color(hex: 0xFE4559))
-
-                HStack(spacing: 10) {
-                    Metric(label: "PLAZAS", value: NoticeDetails.placesInTitle(notice.title).map { String($0) } ?? "Ver bases",
-                           systemImage: "person.2")
-                    Metric(label: "PLAZO", value: NoticeDetails.deadlineLabel(), systemImage: "calendar")
-                }
-                Text("Plazas y plazos: consulta siempre las bases y, en su caso, la publicación de apertura del plazo.")
-                    .font(.caption)
-                    .foregroundStyle(Palette.slate)
 
                 Text("Resumen del anuncio")
                     .font(.headline)
@@ -112,6 +109,9 @@ struct NoticeDetailView: View {
                 .accessibilityLabel(favorite ? "Quitar de favoritas" : "Guardar en favoritas")
             }
         }
+        .sheet(item: $pdfLink) { link in
+            PdfViewerView(url: link.url, title: source.shortName)
+        }
         .alert("El enlace oficial no se ha podido verificar.", isPresented: $linkRejected) {
             Button("Aceptar", role: .cancel) {}
         }
@@ -123,9 +123,8 @@ struct NoticeDetailView: View {
     }
 
     private var officialLabel: String {
-        if notice.id.hasPrefix("CIDO") { return "Ver convocatoria en CIDO" }
-        if notice.province == "Teruel" || notice.url.contains("ExportarBoletinServlet") { return "Ver anuncio oficial" }
-        return "Ver PDF oficial"
+        if OfficialDocument.isPdf(notice) { return "Ver PDF oficial" }
+        return notice.id.hasPrefix("CIDO") ? "Ver convocatoria en CIDO" : "Ver anuncio oficial"
     }
 
     private var reference: String {
@@ -140,26 +139,12 @@ struct NoticeDetailView: View {
             linkRejected = true
             return
         }
-        openURL(url)
+        // El PDF se ve dentro de la app; si no fuera un PDF, el visor lo abre fuera.
+        if OfficialDocument.isPdf(notice) { pdfLink = PdfLink(url: url) } else { openURL(url) }
     }
 }
 
-private struct Metric: View {
-    let label: String
-    let value: String
-    let systemImage: String
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Label(label, systemImage: systemImage)
-                .font(.caption2.bold())
-                .foregroundStyle(Palette.slate)
-            Text(value)
-                .font(value.count > 10 ? .headline : .title2.bold())
-                .foregroundStyle(Palette.navy)
-        }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.white, in: RoundedRectangle(cornerRadius: 14))
-    }
+private struct PdfLink: Identifiable {
+    let url: URL
+    var id: String { url.absoluteString }
 }

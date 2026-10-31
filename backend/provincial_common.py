@@ -31,11 +31,20 @@ def fold(text: str) -> str:
     return "".join(c for c in decomposed if unicodedata.category(c) != "Mn")
 
 
+NOT_A_JOB_PLACE = re.compile(
+    r"\b(?:plaza de toros|placa de bous|plazas? de abastos"
+    r"|plazas? de (?:garaje|aparcamiento)|places? de (?:garatge|aparcament))\b")
+
+
 def classify(title: str) -> str | None:
     """Conservative title-only screening, no invented deadlines or positions."""
     t = fold(title)
     t = re.sub(r"\s+", " ", t)
+    # «Plaza» que no es un puesto de trabajo no cuenta como plaza
+    # (pero «conserje de plaza de toros» sigue siendo una plaza).
+    t = NOT_A_JOB_PLACE.sub(" ", t)
     excluded = (
+        "demanial", "venta ambulante", "venda ambulant", "puestos de venta", "puesto de venta",
         "subvencion", "subvencio", "licitacion", "licitacio", "beca", "ayuda econ",
         "nombramiento", "nomenament", "admitid", "admes", "excluid", "exclos",
         "lista provisional", "lista definitiva", "llista provisional", "llista definitiva",

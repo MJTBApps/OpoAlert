@@ -64,7 +64,9 @@ public enum NoticeText {
 /// Solo datos escritos en el encabezado oficial (`NoticeDetails.kt`).
 /// OpoAlert NO calcula plazos de solicitud ni presume fechas de cierre.
 public enum NoticeDetails {
-    private static let places = #"(?i)(?<![\p{L}\d])(\d{1,3}|[\p{L}]+)\s+(?:plazas?|pla[çc]a|places)\b"#
+    // Cifra o número con letra (castellano, catalán y gallego) antes de «plaza(s)»,
+    // «plaça/places» o «praza(s)»; si sigue una cifra entre paréntesis, vale esa.
+    private static let places = #"(?i)(?<![\p{L}\d])(\d{1,3}|[\p{L}]+)(?:\s*\((\d{1,3})\))?\s+(?:plazas?|pla[çc]a|places|prazas?)\b"#
     private static let words: [String: Int] = [
         "una": 1, "un": 1, "uno": 1, "dos": 2, "dues": 2, "tres": 3, "cuatro": 4, "quatre": 4,
         "cinco": 5, "cinc": 5, "seis": 6, "sis": 6, "siete": 7, "set": 7, "ocho": 8, "vuit": 8,
@@ -73,6 +75,7 @@ public enum NoticeDetails {
         "quinze": 15, "dieciséis": 16, "dieciseis": 16, "setze": 16, "diecisiete": 17,
         "disset": 17, "dieciocho": 18, "divuit": 18, "diecinueve": 19, "dinou": 19,
         "veinte": 20, "vint": 20,
+        "unha": 1, "dunha": 1, "dúas": 2, "duas": 2, "catro": 4, "sete": 7, "oito": 8, "dez": 10,
     ]
     private static let group = #"(?i)\b(?:subgrupo|grupo|subgrup|grup)\s*:?\s*(A1|A2|C1|C2|B|E)\b"#
 
@@ -81,7 +84,11 @@ public enum NoticeDetails {
         var found: [Int] = []
         for match in Patterns.matches(places, title) {
             let value = match[1]
-            guard let number = Int(value) ?? words[value.lowercased()] else { continue }
+            let word = Int(value) ?? words[value.lowercased()]
+            let inBrackets = Int(match[2])
+            // «dos (3) plazas»: si no coinciden, no se sabe cuántas son.
+            let number = (inBrackets != nil && word != nil && word != inBrackets) ? -1 : (inBrackets ?? word)
+            guard let number else { continue }
             if !found.contains(number) { found.append(number) }
         }
         guard found.count == 1, let only = found.first, only > 0 else { return nil }
@@ -92,8 +99,6 @@ public enum NoticeDetails {
         Patterns.matches(group, title).first.map { $0[1].uppercased() }
     }
 
-    /// Los datos oficiales no incluyen un plazo de solicitudes verificado.
-    public static func deadlineLabel() -> String { "Consultar bases" }
 }
 
 /// Búsqueda sin tildes ni mayúsculas, conservando la ñ (`SearchText.kt`).

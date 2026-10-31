@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.40.0"' in gradle
-    assert "versionCode = 53" in gradle
+    assert 'versionName = "1.41.0"' in gradle
+    assert "versionCode = 54" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -98,11 +98,16 @@ def main() -> None:
     assert "Compartir convocatoria" in detail
     assert "FavoritesStore.toggle" in detail
     assert "NoticeDetails.placesInTitle" in detail
-    assert "NoticeDetails.deadlineLabel" in detail
+    assert "NoticeDetails.deadlineLabel" not in detail, "Sin recuadro de plazo: confundía"
     assert "bottomTabs()" not in detail, "La ficha no debe mostrar una barra inferior"
     assert "private fun nav(" not in detail
     assert "Volver al listado" in detail, "Mantener la flecha para volver"
     assert "link.host != province.pdfHost" in detail
+    assert "PdfViewerActivity.open(" in detail, "El PDF oficial se ve dentro de la app"
+    assert 'android:name=".PdfViewerActivity"' in manifest
+    viewer = (KOTLIN / "PdfViewerActivity.kt").read_text(encoding="utf-8")
+    assert "cacheDir" in viewer and "file.delete()" in viewer, "No se guarda en Descargas"
+    assert "looksLikePdf" in viewer and "openOutside()" in viewer
     assert "Sede electrónica" not in detail, "No inventar enlace de sede"
     province = (KOTLIN / "Province.kt").read_text(encoding="utf-8")
     assert 'BOE(' in province and 'BOE-A-' in province
@@ -112,7 +117,7 @@ def main() -> None:
     assert 'SourceCatalog.groups()' in activity
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.40.0: publicidad, Premium y ficha mejorada")
+    print("OK: Android 1.41.0: visor de PDF y ficha simplificada")
 
 
 if __name__ == "__main__":

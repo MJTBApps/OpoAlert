@@ -21,6 +21,15 @@ class BopTests(unittest.TestCase):
         self.assertIsNone(classify('Relació definitiva de persones admeses al procés selectiu per a una plaça'))
         self.assertIsNone(classify('Convocatòria pública per a jutge de pau substitut'))
 
+    def test_plaza_that_is_not_a_job(self):
+        # BOP Valencia 2026/13399 (29/10/2026): se coló como «Plaza / oposición».
+        self.assertIsNone(classify('Anuncio de la Diputación Provincial de Valencia sobre la exposición al público '
+                                   'de las bases reguladoras para el otorgamiento de una autorización demanial para '
+                                   'la utilización temporal de la plaza de toros de titularidad provincial.'))
+        self.assertIsNone(classify('Bases de la convocatòria per a l’adjudicació de places d’aparcament municipals'))
+        self.assertEqual(classify('Convocatoria y bases de una plaza de conserje de la plaza de toros'),
+                         'Plaza / oposición')
+
     def test_accept_spanish_and_valencian(self):
         self.assertEqual(classify('Aprobación de las bases de la convocatoria de una plaza de administrativo'), 'Plaza / oposición')
         self.assertEqual(classify('Convocatòria per a constitució d’una borsa de treball de personal auxiliar'), 'Bolsa de trabajo')

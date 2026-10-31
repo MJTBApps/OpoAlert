@@ -7,9 +7,11 @@ auditados de GitHub Pages que la app Android. El backend no cambia.
 
 - **Explorar**: convocatorias de los últimos 30 días de los boletines que sigues,
   con búsqueda sin tildes, filtro Todas / Bolsas / Plazas y paginación.
-- **Ficha**: «Ver PDF oficial» arriba, plazas solo si el título las dice, grupo,
-  «Consultar bases» como plazo (nunca se inventa) y datos de la publicación.
-  El enlace solo se abre si es HTTPS al dominio y la ruta oficiales.
+- **Ficha**: «Ver PDF oficial» arriba (el PDF se ve dentro de la app con PDFKit
+  y se abre en la página del anuncio si el enlace trae `#page=N`), etiqueta con
+  el número de plazas solo si el título lo dice, grupo y datos de la publicación.
+  No se muestra ningún plazo (nunca se inventa). El enlace solo se abre si es
+  HTTPS al dominio y la ruta oficiales.
 - **Favoritas**: se guarda la ficha completa en el móvil.
 - **Alertas**: hasta 20, por palabras (sin importar tildes ni orden) y por
   boletín. Avisos locales cuando iOS deja revisar en segundo plano

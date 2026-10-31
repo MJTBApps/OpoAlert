@@ -20,6 +20,9 @@
             android:name=".NoticeDetailActivity"
             android:exported="false" />
         <activity
+            android:name=".PdfViewerActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlertsActivity"
             android:exported="false" />
         <activity

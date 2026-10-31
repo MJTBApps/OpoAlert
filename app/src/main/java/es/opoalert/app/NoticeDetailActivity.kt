@@ -8,7 +8,6 @@ import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
 import android.net.Uri
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
@@ -59,7 +58,6 @@ class NoticeDetailActivity : Activity() {
         }
         addHero(content)
         addOfficialButton(content)
-        addMetrics(content)
         addSummary(content)
         addOfficialSource(content)
         addActions(content)
@@ -132,6 +130,14 @@ class NoticeDetailActivity : Activity() {
             setPadding(dp(11), dp(7), dp(11), dp(7))
             background = rounded(badgeBackground, 10)
         })
+        // Solo lo que dice el título: si no da una cifra clara, no se muestra.
+        val places = NoticeDetails.placesInTitle(notice.title)
+        if (places != null) {
+            badgeRow.addView(text(if (places == 1) "1 plaza" else "$places plazas", 11f, "#B4530A", true).apply {
+                setPadding(dp(9), dp(7), dp(9), dp(7))
+                background = rounded("#FFF0E5", 10)
+            }, LinearLayout.LayoutParams(-2, -2).apply { marginStart = dp(8) })
+        }
         val group = NoticeDetails.groupInTitle(notice.title)
         if (group != null) {
             badgeRow.addView(text("Grupo " + group, 11f, "#28517E", true).apply {
@@ -152,35 +158,6 @@ class NoticeDetailActivity : Activity() {
             setPadding(0, dp(8), 0, dp(16))
         })
     }
-
-    private fun addMetrics(content: LinearLayout) {
-        val row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
-        val explicitPlaces = NoticeDetails.placesInTitle(notice.title)
-        row.addView(metric("♟  PLAZAS", explicitPlaces?.toString() ?: "Ver bases",
-            "#FFF0E5", "#EA771D", "#13223C"),
-            LinearLayout.LayoutParams(0, dp(108), 1f).apply { marginEnd = dp(10) })
-        row.addView(metric("▦  PLAZO", NoticeDetails.deadlineLabel(),
-            "#E4F8EC", "#199B58", "#13223C"),
-            LinearLayout.LayoutParams(0, dp(108), 1f))
-        content.addView(row)
-        content.addView(text(
-            "Plazas y plazos: consulta siempre las bases y, en su caso, la publicación de apertura del plazo.",
-            10.5f, "#758399"
-        ).apply { setPadding(dp(2), dp(8), dp(1), dp(5)) })
-    }
-
-    private fun metric(label: String, value: String, bg: String, labelColor: String, valueColor: String): LinearLayout =
-        column().apply {
-            gravity = Gravity.CENTER_VERTICAL
-            background = rounded(bg, 17)
-            setPadding(dp(14), dp(13), dp(9), dp(12))
-            addView(text(label, 11f, labelColor, true))
-            addView(text(value, if (value.length > 10) 15f else 24f, valueColor, true).apply {
-                setPadding(0, dp(8), 0, 0)
-                maxLines = 2
-                ellipsize = TextUtils.TruncateAt.END
-            })
-        }
 
     private fun addSummary(content: LinearLayout) {
         content.addView(text("Resumen del anuncio", 18f, "#11213D", true).apply {
@@ -265,14 +242,21 @@ class NoticeDetailActivity : Activity() {
 
     /** El documento oficial es lo que se viene a buscar: justo debajo del título. */
     private fun addOfficialButton(content: LinearLayout) {
-        content.addView(action(when {
+        content.addView(action(if (officialIsPdf()) "▤   Ver PDF oficial" else when {
             notice.id.startsWith("CIDO") -> "▤   Ver convocatoria en CIDO"
-            notice.province == "Teruel" -> "▤   Ver anuncio oficial"
-            notice.province == Province.RIOJA_BOR.label && notice.url.contains("ExportarBoletinServlet") -> "▤   Ver anuncio oficial"
-            else -> "▤   Ver PDF oficial"
+            else -> "▤   Ver anuncio oficial"
         }, "#FE4559", "#FFFFFF") { openOfficial() },
             LinearLayout.LayoutParams(-1, dp(54)).apply { topMargin = dp(16); bottomMargin = dp(14) })
     }
+
+    /** Enlaces que son páginas web (fichas) y no PDF: se abren en el navegador. */
+    private fun officialIsPdf(): Boolean = !(
+        notice.id.startsWith("CIDO") ||
+            notice.province == "Teruel" ||
+            (notice.province == Province.RIOJA_BOR.label && notice.url.contains("ExportarBoletinServlet")) ||
+            notice.url.contains("dogc.gencat.cat/") ||
+            notice.url.contains("bon.navarra.es/")
+        )
 
     private fun addActions(content: LinearLayout) {
         content.addView(action("↗   Compartir convocatoria", "#E2F1FF", "#0877C9") { share() },
@@ -330,6 +314,11 @@ class NoticeDetailActivity : Activity() {
             link.host != province.pdfHost ||
             !province.allowsOfficialPath(link.path.orEmpty())) {
             Toast.makeText(this, "El enlace oficial no se ha podido verificar.", Toast.LENGTH_LONG).show()
+            return
+        }
+        // El PDF se ve dentro de la app; si no fuera un PDF, el visor lo abre fuera.
+        if (officialIsPdf()) {
+            PdfViewerActivity.open(this, notice.url, NoticeText.headline(notice.title))
             return
         }
         try {

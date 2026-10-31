@@ -42,7 +42,11 @@ class NoticeDetailsTest {
         assertNull(NoticeDetails.groupInTitle("Oferta de empleo 2026"))
     }
 
-    @Test fun neverGuessesApplicationDeadline() {
-        assertEquals("Consultar bases", NoticeDetails.deadlineLabel())
+    @Test fun readsNumberInBracketsAndGalician() {
+        assertEquals(2, NoticeDetails.placesInTitle(
+            "Convocatoria para la selección, mediante oposición, de dos (2) plazas de Técnico/a de Administración General"))
+        assertEquals(1, NoticeDetails.placesInTitle("Provisión dunha (1) praza de axudante de obras e servizos"))
+        assertEquals(3, NoticeDetails.placesInTitle("Bases para tres prazas de auxiliar administrativo"))
+        assertNull(NoticeDetails.placesInTitle("Convocatoria de dos (3) plazas de conserje"))
     }
 }

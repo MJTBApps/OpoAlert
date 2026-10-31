@@ -5,8 +5,12 @@ package es.opoalert.app
  * OpoAlert NO calcula plazos de solicitud ni presume fechas de cierre.
  */
 object NoticeDetails {
-    // Cifra o número escrito con letra (castellano y catalán) justo antes de «plaza(s)»/«plaça/places».
-    private val places = Regex("""(?iu)(?<![\p{L}\d])(\d{1,3}|[\p{L}]+)\s+(?:plazas?|pla[çc]a|places)\b""")
+    // Cifra o número escrito con letra (castellano, catalán y gallego) justo antes de
+    // «plaza(s)», «plaça/places» o «praza(s)»; si sigue una cifra entre paréntesis
+    // («dos (2) plazas»), vale esa.
+    private val places = Regex(
+        """(?iu)(?<![\p{L}\d])(\d{1,3}|[\p{L}]+)(?:\s*\((\d{1,3})\))?\s+(?:plazas?|pla[çc]a|places|prazas?)\b"""
+    )
     private val words = mapOf(
         "una" to 1, "un" to 1, "uno" to 1, "dos" to 2, "dues" to 2, "tres" to 3, "cuatro" to 4, "quatre" to 4,
         "cinco" to 5, "cinc" to 5, "seis" to 6, "sis" to 6, "siete" to 7, "set" to 7, "ocho" to 8, "vuit" to 8,
@@ -15,22 +19,23 @@ object NoticeDetails {
         "quinze" to 15, "dieciséis" to 16, "dieciseis" to 16, "setze" to 16, "diecisiete" to 17,
         "disset" to 17, "dieciocho" to 18, "divuit" to 18, "diecinueve" to 19, "dinou" to 19,
         "veinte" to 20, "vint" to 20,
+        "unha" to 1, "dunha" to 1, "dúas" to 2, "duas" to 2, "catro" to 4, "sete" to 7, "oito" to 8, "dez" to 10,
     )
     private val group = Regex("""(?iu)\b(?:subgrupo|grupo|subgrup|grup)\s*:?\s*(A1|A2|C1|C2|B|E)\b""")
 
     fun placesInTitle(title: String): Int? {
         if (NoticeText.isProcedureUpdate(title)) return null
-        val explicit = places.findAll(title).mapNotNull { match ->
+        val explicit = places.findAll(title).map { match ->
             val value = match.groupValues[1]
-            value.toIntOrNull() ?: words[value.lowercase(java.util.Locale.ROOT)]
-        }.distinct().toList()
+            val number = value.toIntOrNull() ?: words[value.lowercase(java.util.Locale.ROOT)]
+            val inBrackets = match.groupValues[2].toIntOrNull()
+            // «dos (3) plazas»: si no coinciden, no se sabe cuántas son.
+            if (inBrackets != null && number != null && number != inBrackets) -1 else inBrackets ?: number
+        }.filterNotNull().distinct().toList()
         return explicit.singleOrNull()?.takeIf { it > 0 }
     }
 
     fun groupInTitle(title: String): String? =
         group.find(title)?.groupValues?.get(1)?.uppercase(java.util.Locale.ROOT)
 
-    // Los datos oficiales actuales no incluyen un plazo de solicitudes verificado.
-    // El cómputo puede depender de una publicación posterior en BOE/DOGV.
-    fun deadlineLabel(): String = "Consultar bases"
 }

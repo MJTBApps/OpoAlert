@@ -54,9 +54,17 @@ def fold(value):
     normalized = unicodedata.normalize("NFD", value.lower())
     return "".join(ch for ch in normalized if unicodedata.category(ch) != "Mn")
 
+# «Plaza» que no es un puesto de trabajo: no cuenta como plaza, pero el anuncio
+# sigue siendo candidato si habla de otra (p. ej. «conserje de plaza de toros»).
+NOT_A_JOB_PLACE = re.compile(
+    r"\b(?:plaza de toros|placa de bous|plaza mayor|placa major|plazas? de abastos"
+    r"|plazas? de (?:garaje|aparcamiento)|places? de (?:garatge|aparcament))\b")
+
+
 def classify(title):
-    t = fold(title)
-    forbidden = ["subvencio", "nomenament", "nombramiento", "admes", "admitid",
+    t = NOT_A_JOB_PLACE.sub(" ", fold(title))
+    forbidden = ["demanial", "venta ambulante", "venda ambulant", "puestos de venta",
+                 "puesto de venta", "subvencio", "nomenament", "nombramiento", "admes", "admitid",
                  "excluid", "exclos", "relacio definitiva", "relacion definitiva",
                  "relacio provisional", "relacion provisional", "resultat", "resultado",
                  "llista definitiva", "lista definitiva", "cessio de la borsa",

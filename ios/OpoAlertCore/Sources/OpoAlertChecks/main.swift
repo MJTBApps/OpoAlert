@@ -51,7 +51,14 @@ equal(NoticeDetails.placesInTitle("Modificación de las bases de 5 plazas de Pol
 equal(NoticeDetails.groupInTitle("Convocatoria de Grupo C1 de administrativos"), "C1", "grupo")
 equal(NoticeDetails.groupInTitle("Subgrupo A2, turno libre"), "A2", "subgrupo")
 equal(NoticeDetails.groupInTitle("Oferta de empleo 2026"), nil, "sin grupo")
-equal(NoticeDetails.deadlineLabel(), "Consultar bases", "nunca inventa plazos")
+equal(NoticeDetails.placesInTitle("Selección de dos (2) plazas de Técnico/a de Administración General"), 2, "paréntesis")
+equal(NoticeDetails.placesInTitle("Provisión dunha (1) praza de axudante de obras e servizos"), 1, "gallego")
+equal(NoticeDetails.placesInTitle("Bases para tres prazas de auxiliar administrativo"), 3, "prazas")
+equal(NoticeDetails.placesInTitle("Convocatoria de dos (3) plazas de conserje"), nil, "paréntesis contradictorio")
+equal(OfficialDocument.startPage("https://www.bopcadiz.es/x/BOP210_30-10-26.pdf#page=29"), 29, "página del anuncio")
+equal(OfficialDocument.startPage("https://www.boe.es/boe/dias/2026/10/31/pdfs/BOE-A-2026-22836.pdf"), 1, "sin página")
+equal(OfficialDocument.looksLikePdf(Data("%PDF-1.7".utf8)), true, "PDF")
+equal(OfficialDocument.looksLikePdf(Data("<!DOCTYPE html>".utf8)), false, "HTML no es PDF")
 
 // MARK: Títulos
 

@@ -53,6 +53,10 @@ class ProvincialTests(unittest.TestCase):
             ('CONVOCATORIA DE SUBVENCIONES CULTURALES',None),
             ('Lista Provisional aspirantes oposición',None),
             ('ANUNCIO NOMBRAMIENTO FUNCIONARIOS DE CARRERA',None),
+            ('Bases reguladoras para la utilización temporal de la plaza de toros',None),
+            ('Bases reguladoras y convocatoria de autorizaciones para la venta ambulante',None),
+            ('Modificación de las bases de los puestos de venta de la feria',None),
+            ('Convocatoria de una plaza de conserje de plaza de toros','Plaza / oposición'),
         ):
             with self.subTest(title=title):self.assertEqual(classify(title),expected)
     def test_carousel_dates_and_numbering(self):
