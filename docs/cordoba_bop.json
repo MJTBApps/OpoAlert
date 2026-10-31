@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-10-30T18:58:42.987018+00:00",
+  "lastCheckedUTC": "2026-10-31T07:34:28.814585+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 22,
-    "announcementsRead": 376,
-    "opportunities": 27
+    "pagesVisited": 21,
+    "announcementsRead": 364,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
-    "issuesRead": 22,
-    "pagesVisited": 22,
-    "announcementsRead": 376,
-    "opportunities": 27,
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 364,
+    "opportunities": 24,
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -44,7 +43,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -75,10 +73,10 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/01-10-2026/BOP-S-2026-190.pdf",
       "https://bop.dipucordoba.es/visor-pdf/02-10-2026/BOP-S-2026-191.pdf",
       "https://bop.dipucordoba.es/visor-pdf/05-10-2026/BOP-S-2026-192.pdf",
       "https://bop.dipucordoba.es/visor-pdf/06-10-2026/BOP-S-2026-193.pdf",
@@ -342,36 +340,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://bop.dipucordoba.es/visor-pdf/05-10-2026/BOP-A-2026-3296.pdf"
-    },
-    {
-      "id": "CO-2026-3261",
-      "province": "Córdoba",
-      "title": "Acuerdo por el que se hace público la Convocatoria para la realización del primer ejercicio de la fase de oposición y normas para su desarrollo, del proceso selectivo para la provisión de dos plazas de Peón de Servicios Múltiples de esta Corporación",
-      "entity": "Ayuntamiento de Moriles",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/01-10-2026/BOP-A-2026-3261.pdf"
-    },
-    {
-      "id": "CO-2026-3252",
-      "province": "Córdoba",
-      "title": "Acuerdo de 22 de septiembre de 2026, de la Junta de Gobierno, por el que se aprueban las Bases de la Convocatoria para la provisión de una plaza de Delineante, mediante promoción interna, personal funcionario (OEP 2023)",
-      "entity": "Diputación de Córdoba",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/01-10-2026/BOP-A-2026-3252.pdf"
-    },
-    {
-      "id": "CO-2026-3203",
-      "province": "Córdoba",
-      "title": "Resolución por la que se publica rectificación error material en el anuncio 3065, publicado en el Boletín Oficial de la Provincia de Córdoba, número 178, de 15 de septiembre de 2026, relativo a bases de la convocatoria para cubrir en propiedad una plaza de Policía Local",
-      "entity": "Ayuntamiento de Nueva Carteya",
-      "date": "01/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/01-10-2026/BOP-A-2026-3203.pdf"
     }
   ]
 }
