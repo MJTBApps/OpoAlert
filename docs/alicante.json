@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-10-30T23:36:39.459234+00:00",
+  "lastCheckedUTC": "2026-10-31T06:13:53.406596+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "207",
-    "pagesVisited": 21,
-    "announcementsRead": 835,
-    "opportunities": 69,
+    "pagesVisited": 20,
+    "announcementsRead": 794,
+    "opportunities": 65,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 835,
-    "opportunities": 69,
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 794,
+    "opportunities": 65,
     "bulletins": [
-      "187",
       "188",
       "189",
       "190",
@@ -43,7 +42,6 @@
       "207"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -74,7 +72,8 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ]
   },
   "notices": [
@@ -727,46 +726,6 @@
       "bulletin": "189",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/05_189/2026_007487.pdf"
-    },
-    {
-      "id": "AL-2026-7477",
-      "province": "Alicante",
-      "title": "BASES PROVISIÓN EN PROPIEDAD 1 PLAZA TÉCNICO/A SUPERIOR DE MEDIO AMBIENTE, TURNO PROMOCIÓN INTERNA",
-      "entity": "AYUNTAMIENTO JÁVEA",
-      "date": "01/10/2026",
-      "bulletin": "187",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007477.pdf"
-    },
-    {
-      "id": "AL-2026-7352",
-      "province": "Alicante",
-      "title": "APROBACIÓN BASES ESPECÍFICAS CONVOCATORIA 26/54, BOLSA TRABAJO TEMPORAL TÉCNICO/A MEDIO/A DE GESTIÓN (TMG)",
-      "entity": "AYUNTAMIENTO CALP",
-      "date": "01/10/2026",
-      "bulletin": "187",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007352.pdf"
-    },
-    {
-      "id": "AL-2026-7298",
-      "province": "Alicante",
-      "title": "APROBACIÓN BASES ESPECÍFICAS CONVOCATORIA 26/52, PROVISIÓN DEFINITIVA 1 PLAZA TÉCNICO/A DE INTEGRACIÓN SOCIAL (CONCURSO-OPOSICIÓN / TURNO LIBRE)",
-      "entity": "AYUNTAMIENTO CALP",
-      "date": "01/10/2026",
-      "bulletin": "187",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007298.pdf"
-    },
-    {
-      "id": "AL-2026-7083",
-      "province": "Alicante",
-      "title": "BASES ESPECIFICAS PROCESO SELECTIVO PARA LA CONSTITUCIÓN DE UNA BOLSA DE EMPLEO DE PROFESOR/A DE CONSERVATORIO EN LA ESPECIALIDAD DE CORO",
-      "entity": "AYUNTAMIENTO ORIHUELA",
-      "date": "01/10/2026",
-      "bulletin": "187",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/01_187/2026_007083.pdf"
     }
   ]
 }
