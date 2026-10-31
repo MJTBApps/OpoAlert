@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-10-30T21:29:59.062921+00:00",
+  "lastCheckedUTC": "2026-10-31T06:38:11.323956+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 24,
-    "announcementsRead": 1201,
-    "opportunities": 47
+    "pagesVisited": 23,
+    "announcementsRead": 1127,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -42,7 +41,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -74,11 +72,12 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "issuesRead": 24,
-    "announcementsRead": 1201,
-    "opportunities": 47
+    "issuesRead": 23,
+    "announcementsRead": 1127,
+    "opportunities": 44
   },
   "notices": [
     {
@@ -520,36 +519,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/197/1"
-    },
-    {
-      "id": "NA-2026-195-4",
-      "province": "Navarra",
-      "title": "RESOLUCIÓN 2333/2026, de 17 de septiembre de la gerente de la Universidad Pública de Navarra, por la que se aprueban las convocatorias de pruebas selectivas para la constitución de listas de aspirantes al desempeño, mediante contratación temporal en régimen administrativo, y mediante la situación de servicios especiales en formación, del puesto de trabajo de gestor/a económico/a, nivel B, para cubrir las necesidades que se produzcan en la Universidad Pública de Navarra.",
-      "entity": "Comunidad Foral de Navarra",
-      "date": "01/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/195/4"
-    },
-    {
-      "id": "NA-2026-195-21",
-      "province": "Navarra",
-      "title": "Constitución, a través de pruebas selectivas, de una relación de aspirantes al desempeño, mediante contratación temporal, del puesto de trabajo de auxiliar de funcionamiento de instalaciones municipales con perfil euskera B2, en orden a la cobertura de las necesidades que se produzcan",
-      "entity": "PAMPLONA",
-      "date": "01/10/2026",
-      "bulletin": "195",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/195/21"
-    },
-    {
-      "id": "NA-2026-195-19",
-      "province": "Navarra",
-      "title": "Oposición de dos plazas de empleado de servicios múltiples en régimen laboral fijo",
-      "entity": "FUNES",
-      "date": "01/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/195/19"
     }
   ]
 }
