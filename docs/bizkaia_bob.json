@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-10-30T23:36:02.887441+00:00",
+  "lastCheckedUTC": "2026-10-31T16:02:41.297549+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "209",
-    "pagesVisited": 22,
-    "announcementsRead": 701,
-    "opportunities": 49
+    "pagesVisited": 21,
+    "announcementsRead": 671,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "bulletins": [
-      "188",
       "189",
       "190",
       "191",
@@ -40,7 +39,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-05",
       "2026-10-06",
@@ -71,11 +69,12 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 701,
-    "opportunities": 49
+    "issuesRead": 21,
+    "announcementsRead": 671,
+    "opportunities": 47
   },
   "notices": [
     {
@@ -547,26 +546,6 @@
       "bulletin": "189",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/02/II-5040_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5027",
-      "province": "Bizkaia",
-      "title": "Contratación de personal laboral fijo. Proceso de estabilización de empleo temporal. Monitor/a Socorrista Piscina. Patronato Municipal de Deportes (Concurso).",
-      "entity": "Patronato Municipal de Deportes (Gernika-Lumo)",
-      "date": "01/10/2026",
-      "bulletin": "188",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/01/II-5027_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5025",
-      "province": "Bizkaia",
-      "title": "Contratación de personal laboral fijo. Proceso de estabilización de empleo temporal. Monitor/a Socorrista piscina. Patronato Municipal de Deportes (Concurso).",
-      "entity": "Ayuntamiento de Zeanuri",
-      "date": "01/10/2026",
-      "bulletin": "188",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/01/II-5025_cas.pdf"
     }
   ]
 }
