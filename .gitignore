@@ -13,3 +13,7 @@ data/
 backend/diagnostico_historico.*
 *.apk
 *.bak
+ios/*.xcodeproj/
+ios/OpoAlert/Info.plist
+ios/build/
+ios/OpoAlertCore/.build/

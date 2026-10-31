@@ -118,6 +118,15 @@ Ver `PLAN_MONETIZACION_IOS.md`. Resumen:
 - `Premium.kt`: sin anuncios y alertas desbloqueadas. `BILLING_READY = false` hasta tener Google Play Billing (exige publicar en Google Play); mientras, las alertas son gratis. Las compilaciones de prueba tienen «Activar (pruebas)» en el menú.
 - iOS: este iMac (2017, macOS 13) no puede usar Xcode 26, obligatorio para el App Store desde el 28/04/2026. Usar ejecutores macOS de GitHub Actions o un Mac con Apple Silicon.
 
+## App iOS (`ios/`, desde el 31/10/2026)
+
+- SwiftUI, iOS 16+, bundle `es.opoalert.app`, versión 1.0.0. Mismas funciones que Android, sin anuncios ni Premium. Guía: `ios/README.md`.
+- `ios/OpoAlertCore/`: paquete Swift con la lógica (equivale a `Province.kt`, `RemoteFeedReader.kt`, `Repository.kt`…). Mismas claves de guardado que Android (`selected_provinces_v1`, `favorites_v2`, `keyword_alert_rules_v1`, `seen_notice_ids_v1`…).
+- **`Fuentes.generated.swift` se genera desde Android** con `python scripts/generar_fuentes_ios.py`. Al cambiar `Province.kt`, `SourceCatalog.kt`, las siglas de `RemoteFeedReader.kt` o los nombres de `NoticeDetailActivity.kt`, regenerarlo: `backend/tests/test_fuentes_ios.py` y `ios-app.yml` fallan si no está al día.
+- Comprobaciones: `OpoAlertChecks` (pruebas de Android portadas, revisión simulada y validación de todos los `docs/*.json`). En el iMac, SwiftPM no funciona sin Xcode: compilar con `swiftc` como dice `ios/README.md`. Las pantallas solo se compilan en `ios-app.yml` (macOS de GitHub), que guarda capturas del simulador en el artefacto `capturas-ios`.
+- `ios/project.yml` es para XcodeGen; el `.xcodeproj` y el `Info.plist` se generan (están en `.gitignore`).
+- Icono: `scripts/generar_icono_ios.swift` dibuja el mismo diseño que el de Android.
+
 ## Antes de dar un cambio por terminado
 
 1. Pasar las pruebas de Python (y `scripts/test_ui_080.py` si se toca la app).

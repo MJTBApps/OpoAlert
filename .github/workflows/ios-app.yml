@@ -1,0 +1,98 @@
+name: OpoAlert - Compilar app iOS
+
+# El iMac de casa (macOS 13) no admite Xcode 26: la app iOS se compila aquí,
+# en los ejecutores macOS de GitHub (gratuitos en un repositorio público).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, 'integracion/**']
+    paths:
+      - 'ios/**'
+      - 'scripts/generar_fuentes_ios.py'
+      - 'app/src/main/java/es/opoalert/app/Province.kt'
+      - 'app/src/main/java/es/opoalert/app/SourceCatalog.kt'
+      - '.github/workflows/ios-app.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: opoalert-build-ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compilar:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Elegir el Xcode mas reciente
+        run: |
+          ls -d /Applications/Xcode*.app
+          XCODE="$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+          case "$(xcodebuild -version | head -1)" in
+            "Xcode 2"[6-9]*|"Xcode 3"*) ;;
+            *) echo "::warning::Para subir al App Store hace falta Xcode 26 o posterior";;
+          esac
+
+      - name: Fuentes de iOS al dia con Android
+        run: python3 scripts/generar_fuentes_ios.py --check
+
+      - name: Comprobar el nucleo y todos los feeds publicados
+        working-directory: ios/OpoAlertCore
+        run: swift run OpoAlertChecks "$GITHUB_WORKSPACE/docs"
+
+      - name: Generar el proyecto de Xcode
+        working-directory: ios
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Compilar para el simulador
+        working-directory: ios
+        run: |
+          set -o pipefail
+          xcodebuild -project OpoAlert.xcodeproj -scheme OpoAlert -configuration Debug \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -n 80
+
+      - name: Capturas en el simulador
+        continue-on-error: true
+        working-directory: ios
+        run: |
+          set -eu
+          DEVICE="$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          devices = json.load(sys.stdin)["devices"]
+          runtimes = sorted((r for r in devices if "iOS" in r), key=lambda r: [int(x) for x in r.split("iOS-")[-1].split("-")])
+          phones = [d for d in devices[runtimes[-1]] if d["name"].startswith("iPhone")]
+          print(phones[0]["udid"])')"
+          xcrun simctl boot "$DEVICE"
+          xcrun simctl bootstatus "$DEVICE" -b
+          APP=build/Build/Products/Debug-iphonesimulator/OpoAlert.app
+          xcrun simctl install "$DEVICE" "$APP"
+          mkdir -p capturas
+          # 1. Primer arranque: selector de boletines.
+          xcrun simctl launch "$DEVICE" es.opoalert.app
+          sleep 20
+          xcrun simctl io "$DEVICE" screenshot capturas/1-elegir-boletines.png
+          # 2. Con Valencia, Alicante, Castellón y el BOE ya elegidos: lista de convocatorias.
+          xcrun simctl terminate "$DEVICE" es.opoalert.app
+          xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app selected_provinces_v1 -string "VA,AL,CS,ES"
+          xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app province_picker_seen_v1 -bool YES
+          xcrun simctl launch "$DEVICE" es.opoalert.app
+          sleep 30
+          xcrun simctl io "$DEVICE" screenshot capturas/2-explorar.png
+
+      - name: Guardar capturas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: capturas-ios
+          path: ios/capturas/
+          if-no-files-found: ignore
+          retention-days: 14

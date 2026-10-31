@@ -51,7 +51,19 @@ app instalada desde Google Play, no con la APK de GitHub Pages:
 5. Ficha de Play Store: política de privacidad, clasificación de contenido y
    formulario de seguridad de los datos (declarar AdMob).
 
-## 3. Versión iOS — estudio
+## 3. Versión iOS — primera versión hecha (31/10/2026), sin publicar
+
+Está en `ios/` (detalles en `ios/README.md`): app nativa en SwiftUI con las
+mismas funciones que Android (explorar, ficha, favoritas, alertas con avisos en
+segundo plano y elegir boletines), sin publicidad ni Premium todavía. Las reglas
+de cada fuente se generan desde Android y las comprobaciones validan todos los
+feeds de `docs/` con ellas. Se compila en GitHub Actions (`ios-app.yml`), que
+guarda capturas del simulador.
+
+**Pendiente:** verla funcionando en un iPhone (TestFlight, que exige la cuenta
+de Apple), anuncios (Google Mobile Ads para iOS) y Premium (StoreKit 2).
+
+### Estudio previo
 
 **Este iMac no puede compilar para el App Store.** Es un iMac de 2017
 (iMac18,3), cuyo último macOS es Ventura 13. Desde el 28/04/2026 Apple exige
