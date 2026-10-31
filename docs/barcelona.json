@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-10-30T22:51:25.791375+00:00",
+  "lastCheckedUTC": "2026-10-31T06:19:01.569945+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 311,
-    "opportunities": 311,
+    "announcementsRead": 309,
+    "opportunities": 309,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-05",
@@ -48,12 +47,13 @@
       "2026-10-04",
       "2026-10-11",
       "2026-10-18",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 311,
-    "opportunities": 311
+    "announcementsRead": 309,
+    "opportunities": 309
   },
   "notices": [
     {
@@ -3145,26 +3145,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16706175"
-    },
-    {
-      "id": "CIDO5-22243541",
-      "title": "Borsa de treball de places de Vigilant",
-      "entity": "Ajuntament de Calaf",
-      "date": "01/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22243541"
-    },
-    {
-      "id": "CIDO5-22237838",
-      "title": "1 plaça de Secretari-interventor",
-      "entity": "Ajuntament de Vallbona d'Anoia",
-      "date": "01/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22237838"
     }
   ]
 }

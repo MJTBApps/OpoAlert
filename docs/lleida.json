@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-10-30T22:51:25.791375+00:00",
+  "lastCheckedUTC": "2026-10-31T06:19:01.569945+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 60,
-    "opportunities": 60,
+    "announcementsRead": 56,
+    "opportunities": 56,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-06",
       "2026-10-07",
@@ -48,12 +47,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 60,
-    "opportunities": 60
+    "announcementsRead": 56,
+    "opportunities": 56
   },
   "notices": [
     {
@@ -615,46 +615,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/20933577"
-    },
-    {
-      "id": "CIDO7-22257537",
-      "title": "1 plaça de Personal de neteja",
-      "entity": "Ajuntament de Maldà",
-      "date": "01/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22257537"
-    },
-    {
-      "id": "CIDO7-21942474",
-      "title": "2 places de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament de Mollerussa",
-      "date": "01/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21942474"
-    },
-    {
-      "id": "CIDO7-19313484",
-      "title": "3 places de Tècnic d'auxiliar de geriatria",
-      "entity": "Ajuntament de Maldà",
-      "date": "01/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19313484"
-    },
-    {
-      "id": "CIDO7-19309473",
-      "title": "2 places de Cuiner",
-      "entity": "Ajuntament de Maldà",
-      "date": "01/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19309473"
     }
   ]
 }
