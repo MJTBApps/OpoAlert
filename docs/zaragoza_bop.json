@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-10-30T18:59:14.774231+00:00",
+  "lastCheckedUTC": "2026-10-31T06:58:18.498575+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "251",
+    "bulletin": "252",
     "pagesVisited": 2,
-    "announcementsRead": 775,
-    "opportunities": 60
+    "announcementsRead": 753,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-02",
+    "rangeEnd": "2026-10-31",
     "issuesRead": 26,
     "pagesVisited": 2,
-    "announcementsRead": 775,
-    "opportunities": 60,
+    "announcementsRead": 753,
+    "opportunities": 59,
     "bulletins": [
-      "226",
       "227",
       "228",
       "229",
@@ -45,10 +44,10 @@
       "248",
       "249",
       "250",
-      "251"
+      "251",
+      "252"
     ],
     "publicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-05",
@@ -73,10 +72,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
     "issuePublicationDates": [
-      "2026-10-01",
       "2026-10-02",
       "2026-10-03",
       "2026-10-05",
@@ -101,7 +100,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -110,19 +110,39 @@
       "2026-10-25"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 42,
       "SECCIÓN QUINTA": 107,
-      "SECCIÓN SEXTA": 588,
+      "SECCIÓN SEXTA": 570,
       "SECCIÓN SEPTIMA": 2,
+      "SECCIÓN TERCERA": 38,
       "PARTE NO OFICIAL": 6,
       "SECCIÓN SEGUNDA": 8,
       "SECCIÓN CUARTA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4
     },
-    "documentsVerified": 86
+    "documentsVerified": 85
   },
   "notices": [
+    {
+      "id": "ZA-000344782",
+      "province": "Zaragoza",
+      "title": "Por resolución de Alcaldía núm. 2026-0792, de fecha 26 de octubre de 2026, de este Ayuntamiento de Villamayor de Gállego, se aprobó la oferta de empleo público correspondiente a las plaza que a continuación se…",
+      "entity": "AYUNTAMIENTO DE VILLAMAYOR DE GÁLLEGO",
+      "date": "31/10/2026",
+      "bulletin": "252",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472900510202"
+    },
+    {
+      "id": "ZA-000344780",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE BAGÜÉS",
+      "date": "31/10/2026",
+      "bulletin": "252",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472898490202"
+    },
     {
       "id": "ZA-000344750",
       "province": "Zaragoza",
@@ -692,36 +712,6 @@
       "bulletin": "227",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468558220202"
-    },
-    {
-      "id": "ZA-000344027",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
-      "entity": "AYUNTAMIENTO DE VILLANUEVA DE HUERVA",
-      "date": "01/10/2026",
-      "bulletin": "226",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468386830606"
-    },
-    {
-      "id": "ZA-000344014",
-      "province": "Zaragoza",
-      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
-      "entity": "AYUNTAMIENTO DE EMBID DE ARIZA",
-      "date": "01/10/2026",
-      "bulletin": "226",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468373700404"
-    },
-    {
-      "id": "ZA-000344007",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a bases de la convocatoria para la provisión, mediante concurso general de méritos, del puesto de trabajo de coordinador técnico de la Universidad Popular del Patronato Municipal de Educación y Bibliotecas.",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE CULTURA, EDUCACIÓN Y TURISMO. SERVICIO ADMINISTRATIVO DE CULTURA Y EDUCACIÓN",
-      "date": "01/10/2026",
-      "bulletin": "226",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468366630202"
     }
   ]
 }
