@@ -8,7 +8,7 @@ from provincial_common import ProvincialCoverageError
 MONTHS=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
 DAYS=["lunes","martes","miércoles","jueves","viernes","sábado","domingo"]
 
-def html(day,number,prev,items,supplement=False):
+def html(day,number,prev,items,supplement=False,pdfs=True):
  """Sumario sintético con la misma estructura que miPrincipado."""
  h1=f"Boletín Nº {number} del {DAYS[day.weekday()]} {day.day:02d} de {MONTHS[day.month-1]} de {day.year}"
  p=prev.strftime("%d%%2F%m%%2F%Y")
@@ -16,7 +16,7 @@ def html(day,number,prev,items,supplement=False):
       if supplement else "")
  body="".join(f'''<h4>{sec}</h4><h5>{h5}</h5><h6>{h6}</h6>{f'<p class="subAuthor">{sub}</p>' if sub else ""}
  <dl><dt>{title}&nbsp;<strong>[Cód. {code}]</strong></dt><dd><a href="https://miprincipado.asturias.es/x">Texto</a>
- <span class="pdfResultadoBopa"><a href="/bopa/{day:%Y/%m/%d}/{code}.pdf">PDF</a></span></dd></dl>'''
+ <span class="pdfResultadoBopa">{f'<a href="/bopa/{day:%Y/%m/%d}/{code}.pdf">PDF</a>' if pdfs else '<a></a>'}</span></dd></dl>'''
    for sec,h5,h6,sub,title,code in items)
  return f'''<html><body><div id="p_p_id_{A.PORTLET}_"><div class="portlet-body">
  <a class="btn" href="https://miprincipado.asturias.es/ast/bopa-sumario?p_r_p_summaryDate={p}&amp;p_r_p_summaryLastBopa=false"><span>Boletín del día anterior </span></a>
@@ -32,15 +32,15 @@ def workdays(first,last):
   d+=timedelta(days=1)
 
 def fake_portal(editions):
- """editions: [(fecha, número)] en orden; días sin boletín muestran el último."""
+ """editions: [(fecha, número)] en orden; días sin boletín muestran el último, sin PDF (como el portal)."""
  by={d:n for d,n in editions}
  days=sorted(by)
- def page(d):
+ def page(d,requested,pdfs=True):
   i=days.index(d);prev=days[i-1] if i else d-timedelta(days=1)
-  return A.parse_summary(html(d,by[d],prev,[item(f"{d.year}-{d.toordinal()%100000:05d}")]))
- latest=page(days[-1])
+  return A.parse_summary(html(d,by[d],prev,[item(f"{d.year}-{d.toordinal()%100000:05d}")],pdfs=pdfs),requested)
+ latest=page(days[-1],None,pdfs=False)
  def loader(d):
-  return page(d) if d in by else latest
+  return page(d,d) if d in by else page(days[-1],d,pdfs=False)
  return loader,latest
 
 class ParseTest(unittest.TestCase):
@@ -51,7 +51,7 @@ class ParseTest(unittest.TestCase):
    item("2026-08408","Resolución por la que se convoca.",h5="AUTORIDADES Y PERSONAL",h6="CONSEJERÍA DE SALUD",
         sub="SERVICIO DE SALUD DEL PRINCIPADO DE ASTURIAS (SESPA)"),
    item("2026-08800",h6="DE EL FRANCO"),
-   item("2026-08801",h5="COGERSA, S. A. U.",h6="")],supplement=True))
+   item("2026-08801",h5="COGERSA, S. A. U.",h6="")],supplement=True),d)
   self.assertEqual((p["number"],p["day"],p["previous"]),(206,d,date(2026,10,22)))
   self.assertEqual([x["code"] for x in p["items"]],["2026-08565","2026-08408","2026-08800","2026-08801"])
   self.assertEqual(p["items"][0]["entity"],"Presidencia del Principado de Asturias")
@@ -64,7 +64,19 @@ class ParseTest(unittest.TestCase):
  def test_pdf_of_other_day_fails(self):
   d=date(2026,10,23)
   bad=html(d,206,date(2026,10,22),[item("2026-08565")]).replace("/bopa/2026/10/23/2026-08565","/bopa/2026/10/22/2026-08565")
-  with self.assertRaises(ProvincialCoverageError):A.parse_summary(bad)
+  with self.assertRaises(ProvincialCoverageError):A.parse_summary(bad,d)
+
+ def test_missing_pdf_fails(self):
+  d=date(2026,10,30)
+  with self.assertRaises(ProvincialCoverageError):
+   A.parse_summary(html(d,211,date(2026,10,29),[item("2026-08622")],pdfs=False),d)
+
+ def test_other_bulletin_gives_only_number_and_date(self):
+  # Sábado 31/10/2026: el portal muestra el n.º 211 del viernes sin enlaces a PDF.
+  page=html(date(2026,10,30),211,date(2026,10,29),[item("2026-08622")],pdfs=False)
+  for requested in (None,date(2026,10,31)):
+   p=A.parse_summary(page,requested)
+   self.assertEqual((p["number"],p["day"],p["items"]),(211,date(2026,10,30),None))
 
  def test_unknown_page_fails(self):
   with self.assertRaises(ProvincialCoverageError):

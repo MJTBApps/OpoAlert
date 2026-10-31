@@ -224,6 +224,11 @@ def parse_summary(html, requested=None):
             if previous not in (None, prev):
                 invalid("dos boletines anteriores distintos")
             previous = prev
+    if requested != day:
+        # Último boletín o día sin BOPA: el portal muestra otro boletín y le pone
+        # la fecha pedida a los enlaces, así que salen sin PDF. Solo valen el
+        # número y la fecha; el boletín se lee completo pidiéndolo por su fecha.
+        return {"number": number, "day": day, "previous": previous, "items": None, "supplements": []}
     body = root.find(id="bopa-boletin")
     supplements = []
     for a in root.find_all("a", href=True):
