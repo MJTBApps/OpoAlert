@@ -250,7 +250,7 @@ def manifest(docs):
 def main():
     ap=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
     sub=ap.add_subparsers(dest="cmd",required=True)
-    mx=sub.add_parser("matrix");mx.add_argument("--where",choices=("github","casa"),default="github")
+    mx=sub.add_parser("matrix");mx.add_argument("--where",choices=("github","casa","respaldo"),default="github")
     r=sub.add_parser("run");r.add_argument("code",choices=sorted(SOURCES));r.add_argument("--out",required=True);r.add_argument("--docs")
     v=sub.add_parser("validate");v.add_argument("code",choices=sorted(SOURCES));v.add_argument("file");v.add_argument("--previous")
     p=sub.add_parser("publish");p.add_argument("out");p.add_argument("--docs",default=str(ROOT/"docs"))
@@ -258,7 +258,9 @@ def main():
     a=ap.parse_args()
     try:
         if a.cmd=="matrix":
-            codes=(set(SOURCES)-HOME_ONLY) if a.where=="github" else (HOME_ONLY|HOME_BACKUP)&set(SOURCES)
+            # «respaldo»: las que se leen en casa y GitHub solo intenta (su fallo no marca error).
+            codes=((set(SOURCES)-HOME_ONLY) if a.where=="github" else
+                   HOME_BACKUP&set(SOURCES) if a.where=="respaldo" else (HOME_ONLY|HOME_BACKUP)&set(SOURCES))
             print(json.dumps(sorted(codes)))
         elif a.cmd=="manifest":manifest(a.docs)
         elif a.cmd=="run":run(a.code,a.out,a.docs)

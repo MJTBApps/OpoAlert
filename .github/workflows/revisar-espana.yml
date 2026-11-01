@@ -27,18 +27,24 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       codes: ${{ steps.lista.outputs.codes }}
+      respaldo: ${{ steps.lista.outputs.respaldo }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - id: lista
-        run: echo "codes=$(python backend/feeds_diarios.py matrix)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "codes=$(python backend/feeds_diarios.py matrix)" >> "$GITHUB_OUTPUT"
+          echo "respaldo=$(python backend/feeds_diarios.py matrix --where respaldo)" >> "$GITHUB_OUTPUT"
 
   auditar:
     needs: fuentes
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    # La Rioja y Cáceres (HOME_BACKUP) se leen también desde casa y sus portales suelen
+    # cortar a GitHub: se intentan, pero su fallo no marca la ejecución como fallida.
+    continue-on-error: ${{ contains(fromJSON(needs.fuentes.outputs.respaldo), matrix.code) }}
     strategy:
       fail-fast: false
       max-parallel: 6

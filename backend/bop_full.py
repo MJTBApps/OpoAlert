@@ -236,7 +236,9 @@ def scan_browser(page: Any, max_pages: int = 80, polite_delay: float = 0.45,
                 break
             next_button.click(timeout=12000)
             # Esperamos a que CAMBIEN los registros, no solamente a que responda la red.
-            for _retry in range(22):
+            # Hasta 24 s: desde GitHub el portal a veces tarda más de 9 s (1/11/2026). No se
+            # vuelve a pulsar «Siguiente», porque un segundo clic podría saltarse una página.
+            for _retry in range(60):
                 page.wait_for_timeout(400)
                 try:
                     new_entries, _ = (_index_for_range(page.content(), date_range) if date_range is not None else _index_for_issue(page.content(), issue))
