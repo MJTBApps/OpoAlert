@@ -86,7 +86,7 @@ porque la app los busca así:
    - Nombre: **OpoAlert Premium**
 2. **Plan base** → Añadir plan base
    - ID: **`anual`** · Tipo: **Renovación automática** · Período: **1 año**
-   - Precio: **5,99 €** en España (Google calcula el resto de países si los activas)
+   - Precio: **3,99 €** en España, IVA incluido (Google calcula el resto de países si los activas)
    - Período de gracia y suspensión: deja los valores por defecto.
    - **Activar** el plan base.
 3. **Oferta de prueba** → Añadir oferta (dentro del plan `anual`)
