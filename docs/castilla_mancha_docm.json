@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-10-31T16:04:52.264942+00:00",
+  "lastCheckedUTC": "2026-11-01T06:09:52.761976+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "209",
-    "pagesVisited": 21,
-    "announcementsRead": 758,
-    "opportunities": 29
+    "pagesVisited": 20,
+    "announcementsRead": 725,
+    "opportunities": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -39,7 +38,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -71,11 +69,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 758,
-    "opportunities": 29
+    "issuesRead": 20,
+    "announcementsRead": 725,
+    "opportunities": 27
   },
   "notices": [
     {
@@ -347,26 +346,6 @@
       "bulletin": "191",
       "type": "Bolsa de trabajo",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/05/pdf/2026_7028.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7008",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Universidades. Resolución de 24/09/2026 , de la Universidad de Castilla-La Mancha, por la que se publica la composición de las bolsas de trabajo correspondientes a las Escalas de Administración Especial: Laboratorio, Técnico Auxiliar, Especialidad: Mecánica y Laboratorio, Personal de Oficios, Especialidad: Tecnología y Sistemas de la Información, tras la finalización de los procesos selectivos convocados por Resoluciones de 04/12/2025 (DOCM10/12/2025; BOE 23/12/2025). [NID 2026/7008]",
-      "entity": "Universidad de Castilla-La Mancha",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "type": "Bolsa de trabajo",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/02/pdf/2026_7008.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7007",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Universidades. Resolución de 24/09/2026 , de la Universidad de Castilla-La Mancha, por la que se procede a nombrar funcionarios de carrera de las Escalas de Administración Especial, tras la superación de pruebas selectivas, por el sistema general de acceso libre, convocadas por Resolución de 04/12/2025 (DOCM 10/12/2025; BOE 23/12/2025). [NID 2026/7007]",
-      "entity": "Universidad de Castilla-La Mancha",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/02/pdf/2026_7007.pdf&tipo=rutaDocm"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-10-31T16:02:36.699973+00:00",
+  "lastCheckedUTC": "2026-11-01T06:07:08.114771+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "208",
-    "pagesVisited": 20,
-    "announcementsRead": 612,
-    "opportunities": 50
+    "pagesVisited": 19,
+    "announcementsRead": 585,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -38,7 +37,6 @@
       "208"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-08",
@@ -69,11 +67,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 612,
-    "opportunities": 50
+    "issuesRead": 19,
+    "announcementsRead": 585,
+    "opportunities": 47
   },
   "notices": [
     {
@@ -545,36 +544,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/05/2026_0000006365.pdf"
-    },
-    {
-      "id": "AC-2026-6384",
-      "province": "A Coruña",
-      "title": "Aprobación das bases para a selección do alumnado traballador e persoal directivo, e docente, para o programa de formación-emprego talento mozo destinado a persoas mozas incluídas no ficheiro do SNGX, denominado \"Proxecto UrbArte\"",
-      "entity": "Promoción Económica, Emprego e Comercio",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/02/2026_0000006384.pdf"
-    },
-    {
-      "id": "AC-2026-6342",
-      "province": "A Coruña",
-      "title": "Resolución do 2 de setembro de 2026 da Dirección Xeral da Academia Galega de Seguridade Pública, pola que se anuncia a convocatoria do proceso selectivo de acceso por promoción interna e mobilidade inspector de policía local",
-      "entity": "Servizo de formación en Seguridade Pública",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/02/2026_0000006342.pdf"
-    },
-    {
-      "id": "AC-2026-6333",
-      "province": "A Coruña",
-      "title": "Relación de persoas que superaron o proceso selectivo de operario grupo e polideportivo",
-      "entity": "Cedeira",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/02/2026_0000006333.pdf"
     }
   ]
 }

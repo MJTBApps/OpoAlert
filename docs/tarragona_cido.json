@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-10-31T16:12:41.429241+00:00",
+  "lastCheckedUTC": "2026-11-01T06:23:34.844679+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 83,
-    "opportunities": 83,
+    "announcementsRead": 81,
+    "opportunities": 81,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "publicationDates": [
-      "2026-10-02",
       "2026-10-03",
       "2026-10-05",
       "2026-10-06",
@@ -48,12 +47,13 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 83,
-    "opportunities": 83
+    "announcementsRead": 81,
+    "opportunities": 81
   },
   "notices": [
     {
@@ -865,26 +865,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/12723564"
-    },
-    {
-      "id": "CIDO8-20842915",
-      "title": "1 plaça d'Oficial de primera (encarregat)",
-      "entity": "Ajuntament de Barberà de la Conca",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20842915"
-    },
-    {
-      "id": "CIDO8-20654966",
-      "title": "1 plaça d'Agent de la Policia Local",
-      "entity": "Ajuntament d'Altafulla",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20654966"
     }
   ]
 }

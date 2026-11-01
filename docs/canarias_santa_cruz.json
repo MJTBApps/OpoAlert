@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-10-31T16:09:56.750232+00:00",
+  "lastCheckedUTC": "2026-11-01T06:13:49.750703+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "130",
-    "pagesVisited": 13,
-    "announcementsRead": 534,
-    "opportunities": 25
+    "pagesVisited": 12,
+    "announcementsRead": 485,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "118",
       "119",
       "120",
       "121",
@@ -31,7 +30,6 @@
       "130"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-07",
       "2026-10-09",
@@ -62,11 +60,12 @@
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 534,
-    "opportunities": 25
+    "issuesRead": 12,
+    "announcementsRead": 485,
+    "opportunities": 24
   },
   "notices": [
     {
@@ -308,16 +307,6 @@
       "bulletin": "119",
       "type": "Plaza / oposición",
       "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/5-10-26/5-10-26.pdf"
-    },
-    {
-      "id": "TF-20261002-045",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a las Bases reguladoras y convocatoria de adjudicación de autorizaciones para la venta ambulante o no sedentaria durante la Feria de Artesanía de Navidad Tegueste 2026, que se celebrará los días 4, 5 y 6 de diciembre de 2026 en la Plaza de San Marcos",
-      "entity": "AYUNTAMIENTO DE VILLA DE TEGUESTE",
-      "date": "02/10/2026",
-      "bulletin": "118",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/2-10-26/2-10-26.pdf"
     }
   ]
 }

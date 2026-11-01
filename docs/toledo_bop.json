@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-10-31T16:09:58.908004+00:00",
+  "lastCheckedUTC": "2026-11-01T06:13:56.686617+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "209",
-    "pagesVisited": 21,
-    "announcementsRead": 540,
-    "opportunities": 26
+    "pagesVisited": 20,
+    "announcementsRead": 504,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -39,7 +38,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -70,11 +68,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 540,
-    "opportunities": 26
+    "issuesRead": 20,
+    "announcementsRead": 504,
+    "opportunities": 24
   },
   "notices": [
     {
@@ -316,26 +315,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094456;0&insert_number=4465&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4517",
-      "province": "Toledo",
-      "title": "Corrección error material en la resolución nº 8626 de fecha 21 de septiembre de 2026 relativa a la convocatoria del proceso selectivo para la cobertura de una plaza de Técnico de Prevención de Riesgos Laborales del Ayuntamiento de Toledo",
-      "entity": "AYUNTAMIENTO DE TOLEDO",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094498;0&insert_number=4517&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4516",
-      "province": "Toledo",
-      "title": "RESOLUCIÓN DE ADSCRIPCIÓN EN EL PUESTO DE TRABAJO - PROCESO SELECTIVO PARA COBERTURA DE DOS PLAZAS VACANTES DE POLICÍA LOCAL POR SISTEMA DE MOVILIDAD DEL AYUNTAMIENTO DE QUINTANAR DE LA ORDEN.",
-      "entity": "AYUNTAMIENTO DE QUINTANAR DE LA ORDEN",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094496;0&insert_number=4516&insert_year=2026"
     }
   ]
 }

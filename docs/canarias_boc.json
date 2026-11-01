@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-10-31T16:05:36.505881+00:00",
+  "lastCheckedUTC": "2026-11-01T06:11:02.838011+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 354,
-    "opportunities": 47
+    "pagesVisited": 20,
+    "announcementsRead": 336,
+    "opportunities": 46
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -71,11 +69,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 354,
-    "opportunities": 47
+    "issuesRead": 20,
+    "announcementsRead": 336,
+    "opportunities": 46
   },
   "notices": [
     {
@@ -537,16 +536,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-199-3418.pdf"
-    },
-    {
-      "id": "IC-2026-3400",
-      "province": "Canarias (BOC)",
-      "title": "ORDEN de 22 de septiembre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 10629110, denominado Secretaria/o de Alto Cargo, adscrito al Gabinete de la Secretaría General Técnica de este Departamento, efectuada por Resolución de 6 de julio de 2026, de la Secretaria General Técnica.",
-      "entity": "Consejería de Hacienda y Relaciones con la Unión Europea",
-      "date": "02/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-198-3400.pdf"
     }
   ]
 }

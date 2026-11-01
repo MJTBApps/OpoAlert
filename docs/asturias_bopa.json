@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-10-31T16:15:49.711711+00:00",
+  "lastCheckedUTC": "2026-11-01T06:28:09.367989+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 22,
-    "announcementsRead": 917,
-    "opportunities": 62
+    "pagesVisited": 21,
+    "announcementsRead": 875,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -40,7 +39,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -72,11 +70,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 917,
-    "opportunities": 62
+    "issuesRead": 21,
+    "announcementsRead": 875,
+    "opportunities": 58
   },
   "notices": [
     {
@@ -658,46 +657,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/05/2026-07856.pdf"
-    },
-    {
-      "id": "AS-2026-07963",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria y bases para la provisión de diversos puestos de trabajo.",
-      "entity": "Cogersa, S. A. U.",
-      "date": "02/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/02/2026-07963.pdf"
-    },
-    {
-      "id": "AS-2026-07910",
-      "province": "Asturias (BOPA)",
-      "title": "Extracto de la Resolución de 24 de septiembre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria agosto extra 6).",
-      "entity": "Universidad de Oviedo",
-      "date": "02/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/02/2026-07910.pdf"
-    },
-    {
-      "id": "AS-2026-07908",
-      "province": "Asturias (BOPA)",
-      "title": "Extracto de la Resolución de 24 de septiembre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria agosto extra 4-2026).",
-      "entity": "Universidad de Oviedo",
-      "date": "02/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/02/2026-07908.pdf"
-    },
-    {
-      "id": "AS-2026-07901",
-      "province": "Asturias (BOPA)",
-      "title": "Extracto de la Resolución de 24 de septiembre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y técnico de apoyo, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria septiembre extra 7).",
-      "entity": "Universidad de Oviedo",
-      "date": "02/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/02/2026-07901.pdf"
     }
   ]
 }

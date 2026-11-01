@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-10-31T16:27:31.472641+00:00",
+  "lastCheckedUTC": "2026-11-01T06:37:36.474697+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 22,
-    "announcementsRead": 532,
-    "opportunities": 26,
+    "pagesVisited": 21,
+    "announcementsRead": 496,
+    "opportunities": 25,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 26
+    "pdfLinksVerified": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -42,7 +41,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -73,15 +71,16 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 532,
-    "opportunities": 26,
+    "issuesRead": 21,
+    "announcementsRead": 496,
+    "opportunities": 25,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "191",
-      "date": "2026-10-01"
+      "number": "192",
+      "date": "2026-10-02"
     }
   },
   "notices": [
@@ -334,16 +333,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-05&numeroEdicto=4390&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4598",
-      "province": "Jaén",
-      "title": "Aprobación de las Bases y la convocatoria para cubrir la plaza de Auxiliar Administrativo, por turno libre, mediante oposición.",
-      "entity": "AYUNTAMIENTO DE SEGURA DE LA SIERRA (JAÉN)",
-      "date": "02/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-02&numeroEdicto=4598&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

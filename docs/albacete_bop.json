@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-10-31T16:17:08.495740+00:00",
+  "lastCheckedUTC": "2026-11-01T06:28:23.955463+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "127",
-    "pagesVisited": 13,
-    "announcementsRead": 224,
-    "opportunities": 16
+    "pagesVisited": 12,
+    "announcementsRead": 208,
+    "opportunities": 15
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "115",
       "116",
       "117",
       "118",
@@ -31,7 +30,6 @@
       "127"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-07",
       "2026-10-09",
@@ -62,11 +60,12 @@
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 224,
-    "opportunities": 16
+    "issuesRead": 12,
+    "announcementsRead": 208,
+    "opportunities": 15
   },
   "notices": [
     {
@@ -218,16 +217,6 @@
       "bulletin": "116",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299294"
-    },
-    {
-      "id": "AB-2026-299273",
-      "province": "Albacete",
-      "title": "Aprobación definitiva de las bases generales por las que se regirán los procesos selectivos que convoque el Ayuntamiento para la selección de personal funcionario de carrera y personal laboral fijo",
-      "entity": "Ayuntamiento de Hellín",
-      "date": "02/10/2026",
-      "bulletin": "115",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299273"
     }
   ]
 }

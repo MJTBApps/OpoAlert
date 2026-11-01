@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cuenca",
   "source": "https://www.dipucuenca.es/boletin1",
-  "lastCheckedUTC": "2026-10-31T16:24:09.503136+00:00",
+  "lastCheckedUTC": "2026-11-01T06:35:15.090684+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "125",
-    "pagesVisited": 13,
-    "announcementsRead": 250,
-    "opportunities": 13
+    "pagesVisited": 12,
+    "announcementsRead": 224,
+    "opportunities": 10
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "113",
       "114",
       "115",
       "116",
@@ -31,7 +30,6 @@
       "125"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-07",
       "2026-10-09",
@@ -62,11 +60,12 @@
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 250,
-    "opportunities": 13
+    "issuesRead": 12,
+    "announcementsRead": 224,
+    "opportunities": 10
   },
   "notices": [
     {
@@ -168,36 +167,6 @@
       "bulletin": "114",
       "type": "Bolsa de trabajo",
       "url": "https://www.dipucuenca.es/documents/34525/2169224/13.pdf/ed9de8e8-bfec-06cf-14cb-832a53637cdc"
-    },
-    {
-      "id": "CU-2026-2323",
-      "province": "Cuenca",
-      "title": "Modificación del tribunal proceso selectivo 7 plazas auxiliar administrativo turno libre.",
-      "entity": "Servicio de Personal",
-      "date": "02/10/2026",
-      "bulletin": "113",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipucuenca.es/documents/34525/2168187/2.pdf/a72be521-348f-0790-c11f-e2c36a7ea416"
-    },
-    {
-      "id": "CU-2026-2320",
-      "province": "Cuenca",
-      "title": "Bases convocatoria 6 plazas policía local del Ayuntamiento por oposición libre.",
-      "entity": "Ayuntamiento de Tarancón",
-      "date": "02/10/2026",
-      "bulletin": "113",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipucuenca.es/documents/34525/2168187/6.pdf/0dddaf26-c2df-fc57-6bf3-b85882654385"
-    },
-    {
-      "id": "CU-2026-2308",
-      "province": "Cuenca",
-      "title": "Convocatoria y bases por concurso de 1 bolsa de trabajo servicio de auxiliar ayuda a domicilio.",
-      "entity": "Ayuntamiento de Campos del Paraíso",
-      "date": "02/10/2026",
-      "bulletin": "113",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dipucuenca.es/documents/34525/2168187/12.pdf/feebae0e-0c27-17be-4595-c2b5867211bb"
     }
   ]
 }

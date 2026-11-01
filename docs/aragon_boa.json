@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-10-31T16:03:04.736630+00:00",
+  "lastCheckedUTC": "2026-11-01T06:07:44.850912+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 20,
-    "announcementsRead": 716,
-    "opportunities": 114
+    "pagesVisited": 19,
+    "announcementsRead": 685,
+    "opportunities": 110
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -38,7 +37,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -69,11 +67,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 716,
-    "opportunities": 114
+    "issuesRead": 19,
+    "announcementsRead": 685,
+    "opportunities": 110
   },
   "notices": [
     {
@@ -1175,46 +1174,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468711170303"
-    },
-    {
-      "id": "AO-2026-007961473",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 17 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se convoca proceso selectivo para el acceso a la condición de personal estatutario fijo en plazas básicas de la categoría de Facultativo Especialista de Área de Inmunología en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "02/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468508350404"
-    },
-    {
-      "id": "AO-2026-007961472",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 17 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se convoca proceso selectivo para el acceso a la condición de personal estatutario fijo en plazas básicas de la categoría de Facultativo Especialista de Área de Inmunología en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por el turno de promoción interna.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "02/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468506330404"
-    },
-    {
-      "id": "AO-2026-007961470",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 21 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Servicio de Medicina Preventiva y Salud Pública en el Hospital Clínico Universitario \"Lozano Blesa\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "02/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468502290404"
-    },
-    {
-      "id": "AO-2026-007961468",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 17 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de la Unidad de Cuidados Postquirúrgico y Reanimación del Servicio de Anestesiología y Reanimación en el Hospital Universitario \"Miguel Servet\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "02/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468498250303"
     }
   ]
 }

@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-10-31T16:45:23.431978+00:00",
+  "lastCheckedUTC": "2026-11-01T07:03:40.071241+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "252",
     "pagesVisited": 2,
-    "announcementsRead": 753,
-    "opportunities": 59
+    "announcementsRead": 710,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
-    "issuesRead": 26,
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
+    "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 753,
-    "opportunities": 59,
+    "announcementsRead": 710,
+    "opportunities": 56,
     "bulletins": [
-      "227",
       "228",
       "229",
       "230",
@@ -48,7 +47,6 @@
       "252"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-03",
       "2026-10-05",
       "2026-10-06",
@@ -76,7 +74,6 @@
       "2026-10-31"
     ],
     "issuePublicationDates": [
-      "2026-10-02",
       "2026-10-03",
       "2026-10-05",
       "2026-10-06",
@@ -107,20 +104,21 @@
       "2026-10-04",
       "2026-10-11",
       "2026-10-18",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-11-01"
     ],
     "sectionsRead": {
-      "SECCIÓN QUINTA": 107,
-      "SECCIÓN SEXTA": 570,
-      "SECCIÓN SEPTIMA": 2,
+      "SECCIÓN QUINTA": 98,
       "SECCIÓN TERCERA": 38,
+      "SECCIÓN SEXTA": 537,
       "PARTE NO OFICIAL": 6,
       "SECCIÓN SEGUNDA": 8,
       "SECCIÓN CUARTA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
-      "SECCIÓN PRIMERA": 4
+      "SECCIÓN PRIMERA": 4,
+      "SECCIÓN SEPTIMA": 1
     },
-    "documentsVerified": 85
+    "documentsVerified": 81
   },
   "notices": [
     {
@@ -682,36 +680,6 @@
       "bulletin": "229",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468816090303"
-    },
-    {
-      "id": "ZA-000344056",
-      "province": "Zaragoza",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026 del Ayuntamiento de Pastriz por la que se convoca oposición libre para la provisión de una plaza de operario de servicios múltiples de la plantilla de personal laboral.…",
-      "entity": "AYUNTAMIENTO DE PASTRIZ",
-      "date": "02/10/2026",
-      "bulletin": "227",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468582460606"
-    },
-    {
-      "id": "ZA-000344045",
-      "province": "Zaragoza",
-      "title": "Resolución de Alcaldía núm. 2026-0116 del Ayuntamiento de Castiliscar por la que se aprueban las bases reguladoras para la contratación con carácter laboral temporal de un operario/a de servicios múltiples en…",
-      "entity": "AYUNTAMIENTO DE CASTILISCAR",
-      "date": "02/10/2026",
-      "bulletin": "227",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468571350505"
-    },
-    {
-      "id": "ZA-000344032",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a acuerdo del Gobierno de Zaragoza por el que se amplía el plazo para la presentación de solicitudes a la convocatoria de ayudas para creadores de contenido de Zaragoza Joven, mediante procedimiento de concurrencia competitiva, y curso 2026-2027.",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE POLÍTICAS SOCIALES",
-      "date": "02/10/2026",
-      "bulletin": "227",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468558220202"
     }
   ]
 }

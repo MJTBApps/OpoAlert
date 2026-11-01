@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-10-31T16:12:41.429241+00:00",
+  "lastCheckedUTC": "2026-11-01T06:23:34.844679+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 66,
-    "opportunities": 66,
+    "announcementsRead": 63,
+    "opportunities": 63,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-08",
@@ -48,12 +47,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 66,
-    "opportunities": 66
+    "announcementsRead": 63,
+    "opportunities": 63
   },
   "notices": [
     {
@@ -685,36 +685,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22229757"
-    },
-    {
-      "id": "CIDO6-22264360",
-      "title": "1 plaça d'Administratiu de secretaria",
-      "entity": "Ajuntament de Campdevànol",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22264360"
-    },
-    {
-      "id": "CIDO6-22229821",
-      "title": "Borsa de treball de places d'Oficial de primera-cap de brigada",
-      "entity": "Ajuntament del Far d'Empordà",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22229821"
-    },
-    {
-      "id": "CIDO6-17559616",
-      "title": "1 plaça d'Oficial de brigada",
-      "entity": "Ajuntament de Sant Joan les Fonts",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/17559616"
     }
   ]
 }

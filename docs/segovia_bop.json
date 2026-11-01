@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Segovia",
   "source": "https://www.dipsegovia.es/bop",
-  "lastCheckedUTC": "2026-10-31T16:09:29.990059+00:00",
+  "lastCheckedUTC": "2026-11-01T06:13:26.562099+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "130",
-    "pagesVisited": 13,
-    "announcementsRead": 271,
-    "opportunities": 15
+    "pagesVisited": 12,
+    "announcementsRead": 244,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "118",
       "119",
       "120",
       "121",
@@ -31,7 +30,6 @@
       "130"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-07",
       "2026-10-09",
@@ -62,13 +60,13 @@
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 271,
-    "opportunities": 15,
+    "issuesRead": 12,
+    "announcementsRead": 244,
+    "opportunities": 13,
     "editionPDFs": [
-      "https://www.dipsegovia.es/documents/39512/f6221f60-a2d3-4510-7c84-a82129259a01",
       "https://www.dipsegovia.es/documents/39512/68d1f642-caa8-cd60-238c-a87451456bce",
       "https://www.dipsegovia.es/documents/39512/a828d9f2-7916-e978-7bd8-bd6c0e93522d",
       "https://www.dipsegovia.es/documents/39512/49a2bbdb-7331-a950-7c0c-58313047b73f",
@@ -82,9 +80,8 @@
       "https://www.dipsegovia.es/documents/39512/de568f33-0970-6e5a-59ce-739a904cc74c",
       "https://www.dipsegovia.es/documents/39512/33ca685d-e089-9744-673b-51b1b301b73b"
     ],
-    "originalPdfPagesRead": 476,
+    "originalPdfPagesRead": 438,
     "editionArticleCounts": [
-      27,
       15,
       27,
       29,
@@ -242,28 +239,6 @@
       "type": "Plaza / oposición",
       "url": "https://www.dipsegovia.es/documents/39512/a828d9f2-7916-e978-7bd8-bd6c0e93522d",
       "pageInPdf": 12
-    },
-    {
-      "id": "SG-2026-d65c92dd55a193285a",
-      "province": "Segovia",
-      "title": "Convocatoria y bases que han de regir el proceso selectivo para la cobertura con carácter interino, por sustitución transitoria del titular, de una plaza de Auxiliar Administrativo (Subgrupo C2) mediante concurso",
-      "entity": "Ayuntamiento de Samboal",
-      "date": "02/10/2026",
-      "bulletin": "118",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipsegovia.es/documents/39512/f6221f60-a2d3-4510-7c84-a82129259a01",
-      "pageInPdf": 27
-    },
-    {
-      "id": "SG-2026-8bc69f7fea1f28760a",
-      "province": "Segovia",
-      "title": "Bases específicas y convocatoria que regirán el proceso selectivo para la elaboración de una bolsa de trabajo de la categoría profesional de Arquitecto/a en el Ayuntamiento",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "02/10/2026",
-      "bulletin": "118",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dipsegovia.es/documents/39512/f6221f60-a2d3-4510-7c84-a82129259a01",
-      "pageInPdf": 7
     }
   ]
 }

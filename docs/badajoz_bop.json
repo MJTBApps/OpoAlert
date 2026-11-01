@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-10-31T16:02:27.594370+00:00",
+  "lastCheckedUTC": "2026-11-01T06:07:09.575648+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "209",
-    "pagesVisited": 21,
-    "announcementsRead": 477,
-    "opportunities": 45
+    "pagesVisited": 20,
+    "announcementsRead": 450,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -39,7 +38,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -70,11 +68,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 477,
-    "opportunities": 45
+    "issuesRead": 20,
+    "announcementsRead": 450,
+    "opportunities": 42
   },
   "notices": [
     {
@@ -496,36 +495,6 @@
       "bulletin": "190",
       "type": "Bolsa de trabajo",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-05000000_3817.pdf"
-    },
-    {
-      "id": "BD-2026-164578",
-      "province": "Badajoz",
-      "title": "Decreto de modificación de bases de la convocatoria para cubrir, con carácter de personal laboral fijo, mediante el sistema de oposición libre, una plaza de Profesor/a de Pintura para el Consorcio de la Escuela de Artes y Oficios \"Adelardo Covarsí\"",
-      "entity": "Ayuntamiento de Badajoz",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-02000000_3849.pdf"
-    },
-    {
-      "id": "BD-2026-164575",
-      "province": "Badajoz",
-      "title": "Bases de convocatoria para la provisión interina del puesto de Secretaría-Intervención",
-      "entity": "Ayuntamiento de Villarta de los Montes",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-02000000_3846.pdf"
-    },
-    {
-      "id": "BD-2026-164573",
-      "province": "Badajoz",
-      "title": "Bases de convocatoria para la selección de una plaza de Técnico/a Administrativo General como funcionario de carrera, por promoción interna cruzada",
-      "entity": "Ayuntamiento de Aceuchal",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-02000000_3844.pdf"
     }
   ]
 }
