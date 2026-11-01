@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-10-31T16:03:12.484956+00:00",
+  "lastCheckedUTC": "2026-11-01T16:03:41.118414+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "210",
-    "pagesVisited": 21,
-    "announcementsRead": 369,
-    "opportunities": 21
+    "pagesVisited": 20,
+    "announcementsRead": 350,
+    "opportunities": 20
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -39,7 +38,6 @@
       "210"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -70,11 +68,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 369,
-    "opportunities": 21
+    "issuesRead": 20,
+    "announcementsRead": 350,
+    "opportunities": 20
   },
   "notices": [
     {
@@ -276,16 +275,6 @@
       "bulletin": "194",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7809368"
-    },
-    {
-      "id": "CR-2026-3161",
-      "province": "Ciudad Real",
-      "title": "Aprobación inicial del presupuesto general, plantilla de personal y bases de ejecución del presupuesto para el ejercicio 2027.",
-      "entity": "SAN LORENZO DE CALATRAVA",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7799939"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-10-31T16:19:49.134626+00:00",
+  "lastCheckedUTC": "2026-11-01T16:19:04.381640+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "209",
-    "pagesVisited": 21,
-    "announcementsRead": 553,
-    "opportunities": 33
+    "pagesVisited": 20,
+    "announcementsRead": 495,
+    "opportunities": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -39,7 +38,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -70,11 +68,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 553,
-    "opportunities": 33
+    "issuesRead": 20,
+    "announcementsRead": 495,
+    "opportunities": 32
   },
   "notices": [
     {
@@ -396,16 +395,6 @@
       "bulletin": "191",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4646"
-    },
-    {
-      "id": "CC-2026-4602",
-      "province": "Cáceres",
-      "title": "Bases que han de regir la Convocatoria y el Proceso de Selección para una plaza de Agente de Empleo y Desarrollo Local.",
-      "entity": "Mancomunidad Comarca de Trujillo",
-      "date": "02/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4602"
     }
   ]
 }

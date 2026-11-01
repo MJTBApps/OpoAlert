@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-10-30T23:40:04.504863+00:00",
+  "lastCheckedUTC": "2026-11-01T16:08:19.032056+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "210",
-    "pagesVisited": 22,
-    "announcementsRead": 427,
-    "opportunities": 25
+    "pagesVisited": 20,
+    "announcementsRead": 390,
+    "opportunities": 23
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "189",
-      "190",
       "191",
       "192",
       "193",
@@ -40,8 +38,6 @@
       "210"
     ],
     "publicationDates": [
-      "2026-10-01",
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -71,11 +67,13 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
-      "2026-10-25"
+      "2026-10-25",
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 427,
-    "opportunities": 25
+    "issuesRead": 20,
+    "announcementsRead": 390,
+    "opportunities": 23
   },
   "notices": [
     {
@@ -307,26 +305,6 @@
       "bulletin": "191",
       "type": "Bolsa de trabajo",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/05/2026070750/an.bop.PONTEVEDRA.20261005.2026070750.pdf"
-    },
-    {
-      "id": "PO-2026071170",
-      "province": "Pontevedra",
-      "title": "RESOLUCIÓN POLA QUE SE DECLARAN DESERTOS VARIOS PROCESOS SELECTIVOS CORRESPONDENTES Á CONVOCATORIA CPI2026M DA DEPUTACIÓN PROVINCIAL DE PONTEVEDRA",
-      "entity": "Deputación Provincial",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/02/2026071170/an.bop.PONTEVEDRA.20261002.2026071170.pdf"
-    },
-    {
-      "id": "PO-2026070432",
-      "province": "Pontevedra",
-      "title": "PROCESO SELECTIVO PARA O ACCESO MEDIANTE CONCURSO-OPOSICIÓN Á PRAZA DE FUNCIONARIO DE CARREIRA DE OFICIAL DE OBRAS E SERVIZOS, DA ESCALA DE ADMINISTRACIÓN ESPECIAL, SUBESCALA SERVIZOS ESPECIAIS, GRUPO AP",
-      "entity": "Pazos de Borbén",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/01/2026070432/an.bop.PONTEVEDRA.20261001.2026070432.pdf"
     }
   ]
 }
