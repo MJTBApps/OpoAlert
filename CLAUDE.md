@@ -24,7 +24,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - `MainActivity.kt` (pantalla principal), `NoticeDetailActivity.kt` (ficha), `AlertsActivity.kt` + `AlertRule*.kt` (alertas), `RemoteFeedReader.kt` / `Repository.kt` (lectura de feeds), `BopWorker.kt` + `Notifications.kt` (avisos), `FavoritesStore.kt`.
   - `DemoAds.kt` — anuncios AdMob **solo de demostración**, con consentimiento UMP. No generan ingresos.
   - Pruebas: `app/src/test/java/es/opoalert/app/`.
-  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 60 / 1.47.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
+  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 61 / 1.48.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
 - **Backend**: `backend/`
   - Lectores: `bop_full.py` + `history.py` (Valencia), `alicante.py`, `castellon.py`, `province_history.py`, `boe_nacional.py`, `cido_cataluna.py`, `tarragona.py`, `barcelona_bop.py`, `girona_bop.py`, `huesca_bop.py`, `teruel_bop.py`, `zaragoza_bop.py`, `cadiz_bop.py`, `pandora_bop.py` (Almería), `andalucia_opencms_bop.py` (Granada y Sevilla), `cordoba_bop.py`.
   - Validadores: `validar_*.py`, uno por fuente; `validar_feed.py` para el feed de Valencia.
@@ -123,6 +123,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 - Dos canales (`productFlavors` en `app/build.gradle.kts`): **web** (la APK de GitHub Pages, firmada en Actions con `OPOALERT_KEYSTORE_B64`, con aviso de versiones nuevas y anuncios de PRUEBA) y **play** (AAB para Google Play: sin autoactualización, que Play prohíbe, y con los anuncios reales). `BuildConfig.SELF_UPDATE`, `ADMOB_BANNER`, `ADMOB_OPEN_AD` y el `admobAppId` del manifiesto salen del canal.
 - Datos privados de Play en el iMac, **fuera del repositorio**: `~/OpoAlert-claves/` (clave de subida `opoalert-play-subida.jks` y `play.properties` con contraseñas e identificadores reales de AdMob). Hay que tener copia de seguridad. `bundlePlayRelease` se niega a compilar si faltan datos o si los identificadores son de prueba.
 - `targetSdk`/`compileSdk` = 36 (Google Play lo exige desde el 31/08/2026). Desde Android 15 la app se dibuja bajo las barras del sistema: `SystemBars.fit(this)` tras cada `setContentView`.
+- Premium (1.48.0): `PlayBilling.kt` (Google Play Billing 8, suscripción **`opoalert_premium`** con plan anual y prueba gratuita; se confirma la compra y se comprueba al abrir la app) y `PremiumDialog.kt` (menú y pantalla de alertas). `BuildConfig.BILLING` = true solo en Play: allí las alertas son de pago; en la web, gratis. Comprobación solo en el móvil (sin servidor propio).
 - Política de privacidad: `docs/privacidad.html` (https://mjtbapps.github.io/OpoAlert/privacidad.html).
 
 ## Publicidad, Premium e iOS

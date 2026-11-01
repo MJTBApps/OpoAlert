@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.47.0"' in gradle
-    assert "versionCode = 60" in gradle
+    assert 'versionName = "1.48.0"' in gradle
+    assert "versionCode = 61" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -81,7 +81,12 @@ def main() -> None:
     assert "AppOpenAd.load(" in ads and "OPEN_AD_TIMEOUT_MS" in ads, "Anuncio de apertura con espera máxima"
     assert "Premium.showsAds(activity)" in ads, "Premium quita la publicidad"
     premium = (KOTLIN / "Premium.kt").read_text(encoding="utf-8")
-    assert "const val BILLING_READY = false" in premium, "Sin pago, las alertas siguen gratis"
+    assert "BuildConfig.BILLING" in premium, "Las alertas son de pago solo donde hay Google Play Billing"
+    assert '"BILLING", "false"' in gradle_text and '"BILLING", "true"' in gradle_text, "Web gratis, Play con pago"
+    billing = (KOTLIN / "PlayBilling.kt").read_text(encoding="utf-8")
+    assert 'PRODUCT_ID = "opoalert_premium"' in billing and "acknowledgePurchase" in billing, "Suscripción confirmada"
+    alerts_screen = (KOTLIN / "AlertsActivity.kt").read_text(encoding="utf-8")
+    assert "PremiumDialog.show(" in alerts_screen and "premiumCard" in alerts_screen, "Alertas: invitar a Premium"
     manifest = (ROOT / "app/src/main/AndroidManifest.xml").read_text(encoding="utf-8")
     assert "${admobAppId}" in manifest, "El identificador de AdMob sale del canal"
     assert "AlertsActivity::class.java" in activity
@@ -125,7 +130,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.47.0"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.48.0"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -144,7 +149,7 @@ def main() -> None:
     assert 'SourcePicker.scrolling(this, content)' in alerts, "El editor de alertas debe poder desplazarse"
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.47.0: preparada para Google Play")
+    print("OK: Android 1.48.0: Premium con Google Play")
 
 
 if __name__ == "__main__":

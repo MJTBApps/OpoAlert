@@ -23,6 +23,7 @@ class AlertsActivity : Activity() {
     private lateinit var list: LinearLayout
     private lateinit var count: TextView
     private lateinit var addButton: TextView
+    private lateinit var premiumCard: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,7 +70,9 @@ class AlertsActivity : Activity() {
             isClickable = true
             isFocusable = true
             setOnClickListener {
-                if (AlertRuleStore.list(this@AlertsActivity).size >= AlertRuleStore.MAX_RULES)
+                if (!Premium.alertsUnlocked(this@AlertsActivity))
+                    PremiumDialog.show(this@AlertsActivity) { render() }
+                else if (AlertRuleStore.list(this@AlertsActivity).size >= AlertRuleStore.MAX_RULES)
                     Toast.makeText(this@AlertsActivity, "Puedes guardar hasta 20 alertas.", Toast.LENGTH_LONG).show()
                 else editRule(null)
             }
@@ -77,6 +80,21 @@ class AlertsActivity : Activity() {
         body.addView(addButton, LinearLayout.LayoutParams(-1, dp(48)).apply {
             bottomMargin = dp(15)
         })
+        premiumCard = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            background = rounded("#FFF7E8", 15, "#F5D9A8")
+            setPadding(dp(16), dp(14), dp(16), dp(14))
+            isClickable = true
+            isFocusable = true
+            setOnClickListener { PremiumDialog.show(this@AlertsActivity) { render() } }
+            addView(text("★  Las alertas son de OpoAlert Premium", 15f, "#7A4A00", true))
+            addView(text(
+                "Te avisamos en cuanto sale una convocatoria de tu puesto y provincia, y sin publicidad. " +
+                    "Toca aquí para ver el precio y la prueba gratuita.",
+                13f, "#7A5A2B"
+            ).apply { setPadding(0, dp(6), 0, 0) })
+        }
+        body.addView(premiumCard, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(15) })
 
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         body.addView(list)
@@ -94,6 +112,7 @@ class AlertsActivity : Activity() {
     }
 
     private fun render() {
+        premiumCard.visibility = if (Premium.alertsUnlocked(this)) android.view.View.GONE else android.view.View.VISIBLE
         list.removeAllViews()
         val rules = AlertRuleStore.list(this)
         val active = rules.count { it.enabled }

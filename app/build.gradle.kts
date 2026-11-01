@@ -28,8 +28,8 @@ android {
         minSdk = 26
         // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
         targetSdk = 36
-        versionCode = 60
-        versionName = "1.47.0"
+        versionCode = 61
+        versionName = "1.48.0"
     }
 
     // Firma fija de OpoAlert: sin ella cada compilación sale con una firma distinta
@@ -68,6 +68,8 @@ android {
         create("web") {
             dimension = "canal"
             buildConfigField("boolean", "SELF_UPDATE", "true")
+            // Sin Google Play no hay cobro: las alertas son gratis en esta versión.
+            buildConfigField("boolean", "BILLING", "false")
             buildConfigField("String", "ADMOB_BANNER", "\"$testBanner\"")
             buildConfigField("String", "ADMOB_OPEN_AD", "\"$testOpenAd\"")
             manifestPlaceholders["admobAppId"] = testAdmobApp
@@ -76,6 +78,8 @@ android {
             dimension = "canal"
             // Google Play no permite que la app se actualice fuera de la tienda.
             buildConfigField("boolean", "SELF_UPDATE", "false")
+            // Premium se paga con Google Play Billing (suscripción opoalert_premium).
+            buildConfigField("boolean", "BILLING", "true")
             buildConfigField("String", "ADMOB_BANNER", "\"${playProperties.getProperty("admobBanner", testBanner)}\"")
             buildConfigField("String", "ADMOB_OPEN_AD", "\"${playProperties.getProperty("admobOpenAd", testOpenAd)}\"")
             manifestPlaceholders["admobAppId"] = playProperties.getProperty("admobAppId", testAdmobApp)
@@ -110,6 +114,7 @@ dependencies {
     testImplementation("org.json:json:20240303")
     implementation("com.google.android.gms:play-services-ads:25.5.0")
     implementation("com.google.android.ump:user-messaging-platform:4.0.0")
+    implementation("com.android.billingclient:billing-ktx:8.0.0")
 }
 
 // Nunca se sube a Google Play una versión con anuncios de prueba ni sin firmar.

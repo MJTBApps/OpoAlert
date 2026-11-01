@@ -218,26 +218,13 @@ class MainActivity : Activity() {
     }
 
     private fun showPremium() {
-        val active = Premium.isActive(this)
-        val message = (if (active) "Tienes OpoAlert Premium activo.\n\n" else "") +
-            "• Sin publicidad: ni al abrir la app ni entre las convocatorias.\n" +
-            "• Alertas personalizadas con aviso de las convocatorias nuevas.\n\n" +
-            if (Premium.BILLING_READY) "" else "La suscripción estará disponible cuando OpoAlert se publique en Google Play. " +
-                "Mientras tanto, las alertas son gratuitas."
-        val dialog = AlertDialog.Builder(this)
-            .setTitle("OpoAlert Premium")
-            .setMessage(message)
-            .setPositiveButton("Entendido", null)
-        if (Premium.canSimulate(this)) {
-            dialog.setNeutralButton(if (active) "Desactivar (pruebas)" else "Activar (pruebas)") { _, _ ->
-                Premium.setActive(this, !active)
-                if (!active) demoAds.destroy()
-                Toast.makeText(this, if (active) "Premium desactivado" else "Premium activado: sin anuncios",
-                    Toast.LENGTH_SHORT).show()
-                render(keepScroll = true)
-            }
-        }
-        dialog.show()
+        PremiumDialog.show(this) { premiumChanged() }
+    }
+
+    /** Al activarse Premium se quitan los anuncios; al caducar vuelven en la próxima apertura. */
+    private fun premiumChanged() {
+        if (Premium.isActive(this)) demoAds.destroy()
+        render(keepScroll = true)
     }
 
     private fun openAlerts() {
@@ -636,6 +623,8 @@ class MainActivity : Activity() {
     override fun onResume() {
         super.onResume()
         offerUpdate()
+        // Versión de Google Play: comprobar si la suscripción sigue activa (renovada o cancelada).
+        PlayBilling.refresh(this) { premiumChanged() }
         if (::demoAds.isInitialized) demoAds.resume()
         if (::tabsRow.isInitialized) {
             // Las favoritas pueden haber cambiado desde la nueva ficha a pantalla completa.

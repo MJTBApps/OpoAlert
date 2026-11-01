@@ -6,13 +6,13 @@ import android.content.pm.ApplicationInfo
 /**
  * OpoAlert Premium: sin publicidad y con las alertas desbloqueadas.
  *
- * Todavía no hay pago: Google Play Billing solo funciona con la app publicada en
- * Google Play. Mientras BILLING_READY sea false, las alertas siguen siendo gratis
- * para todos y Premium solo se puede activar en compilaciones de prueba.
+ * El pago es con Google Play Billing (PlayBilling.kt) y solo existe en la versión de
+ * Google Play. En la versión web no hay cobro: las alertas son gratis y Premium solo
+ * se puede activar en compilaciones de prueba.
  */
 object Premium {
-    /** Pasar a true cuando la compra funcione en Google Play: entonces las alertas pasan a Premium. */
-    const val BILLING_READY = false
+    /** Con pago (versión de Google Play) las alertas son de Premium; sin pago, gratis. */
+    val BILLING_READY: Boolean get() = BuildConfig.BILLING
 
     private const val PREFS = "opoalert_store"
     private const val ACTIVE = "premium_active_v1"
