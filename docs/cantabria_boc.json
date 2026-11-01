@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-10-31T16:22:44.563794+00:00",
+  "lastCheckedUTC": "2026-11-01T06:34:51.551282+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "209",
-    "pagesVisited": 31,
-    "announcementsRead": 877,
-    "opportunities": 20,
+    "pagesVisited": 30,
+    "announcementsRead": 828,
+    "opportunities": 19,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "190",
       "191",
       "Ext. 19",
       "Ext. 20",
@@ -50,7 +49,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-05",
       "2026-10-05",
@@ -90,13 +88,13 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 31,
-    "announcementsRead": 877,
-    "opportunities": 20,
+    "issuesRead": 30,
+    "announcementsRead": 828,
+    "opportunities": 19,
     "regularBulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -131,7 +129,6 @@
       "Ext. 29"
     ],
     "officialIssueIds": [
-      46885,
       46925,
       46967,
       46985,
@@ -354,16 +351,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441248"
-    },
-    {
-      "id": "CN-2026-7565",
-      "province": "Cantabria (BOC)",
-      "title": "Bases específicas y convocatoria del procedimiento de selección para el nombramiento, como funcionario/a interino/a, por el procedimiento de concurso-oposición, turno libre, de una (1) plaza de Coordinador/a Lanzadera de Empleo y Emprendimiento Solidario. Expediente 2026/1924.",
-      "entity": "Ayuntamiento de Reinosa",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441055"
     }
   ]
 }
