@@ -119,8 +119,16 @@ def audit(today=None):
     end=today or date.today()
     start=end-timedelta(days=29)
     dates=set()
-    for d in {start,end}:
-        dates.update(archive(cr_get(issue_url(d)).text,start,end))
+    # El calendario sale en la página de cada boletín; los días sin boletín (fines de
+    # semana y festivos) no lo traen. Para cada mes de la ventana se usa el último día
+    # que sí lo tenga (un mes que empieza en fin de semana puede no tener ninguno aún).
+    for year,month in sorted({(start.year,start.month),(end.year,end.month)}):
+        days=[d for d in (start+timedelta(days=i) for i in range(30)) if (d.year,d.month)==(year,month)]
+        for d in list(reversed(days))[:7]:
+            found=archive(cr_get(issue_url(d)).text,start,end)
+            if found:
+                dates.update(found)
+                break
     if len(dates)<15:invalid(f"Ciudad Real: calendario de 30 días insuficiente: {len(dates)}")
     with ThreadPoolExecutor(max_workers=3) as pool:
         items=list(pool.map(scan,sorted(dates)))

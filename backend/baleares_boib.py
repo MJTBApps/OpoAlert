@@ -128,7 +128,8 @@ def parse_calendar(start,end):
  items={}
  for y,m in months_between(start,end):
   month=parse_month(y,m)
-  if not month:invalid(f"calendario de {m}/{y} sin ediciones")
+  # Los primeros días del mes (fin de semana o festivo) el calendario aún puede estar vacío.
+  if not month and not ((y,m)==(end.year,end.month) and end.day<=3):invalid(f"calendario de {m}/{y} sin ediciones")
   for uid,value in month.items():
    if uid in items:invalid(f"edición {uid} repetida en dos meses")
    items[uid]=value

@@ -15,6 +15,7 @@ from concurrent.futures import ThreadPoolExecutor
 from math import ceil
 from pathlib import Path
 import re
+import time
 from urllib.parse import urlsplit
 import requests
 from bs4 import BeautifulSoup
@@ -247,10 +248,14 @@ def audit(days:int=30,today:date|None=None,scanner=scan,session_factory=official
     dates=[start+timedelta(days=i) for i in range(days)]
     # Dos conexiones independientes como maximo, con sesiones HTTP por fecha.
     def checked(day:date):
-        try:
-            return scanner(day),None
-        except ProvincialCoverageError as ex:
-            return None,str(ex)
+        for attempt in range(3):
+            try:
+                return scanner(day),None
+            except ProvincialCoverageError as ex:
+                # Respuesta pasajera del portal (sobre todo desde GitHub): otra sesión.
+                if "no confirmo filtro" not in str(ex) or attempt==2:
+                    return None,str(ex)
+                time.sleep(3*(attempt+1))
     with ThreadPoolExecutor(max_workers=2) as pool:
         results=list(pool.map(checked,dates))
     for day,(result,error) in zip(dates,results):

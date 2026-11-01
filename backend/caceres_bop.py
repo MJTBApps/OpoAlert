@@ -59,7 +59,10 @@ def archive(start,end):
     items={}
     for year,month in sorted({(start.year,start.month),(end.year,end.month)}):
         data=load("boletines/bopMesCalendario",{"mes":month,"anio":year})
-        if len(data)<15:invalid(f"Cáceres: calendario {year}-{month} incompleto ({len(data)})")
+        # El mes en curso aún no tiene todos sus boletines (el día 1 puede no tener ninguno):
+        # la cobertura de los 30 días se comprueba después con todas las ediciones.
+        if (year,month)!=(end.year,end.month) and len(data)<15:
+            invalid(f"Cáceres: calendario {year}-{month} incompleto ({len(data)})")
         for row in data:
             try:day=date(year,month,int(row["diaBop"]));bid=int(row["idBoletin"])
             except (ValueError,KeyError,TypeError) as ex:invalid("Cáceres: fecha/id inválido "+str(ex))

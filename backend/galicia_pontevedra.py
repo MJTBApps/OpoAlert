@@ -46,7 +46,12 @@ def read_day(day):
  for attempt in range(4):
   try:return read_day_once(day)
   except Exception as ex:
-   if "fecha impresa no coincide" not in str(ex) or attempt==3:raise
+   if "fecha impresa no coincide" not in str(ex):raise
+   if attempt==3:
+    # El BOPPO no sale en fin de semana: ese día el portal puede mostrar un boletín
+    # antiguo. Entre semana sí es un error (la numeración se comprueba igualmente).
+    if day.weekday()>=5:return None
+    raise
    time.sleep(2*(attempt+1))
 def read_day_once(day):
  url=f"https://{HOST}/detalle/-/boppo/{day:%Y/%m/%d}"
@@ -55,6 +60,9 @@ def read_day_once(day):
  if not headers:
   text=soup.get_text(" ",strip=True)
   if "publicación que solicita non se puido encontrar" in text or "publicación que solicita no se pudo encontrar" in text:
+   return None
+  # Desde el 31/10/2026 los días sin boletín muestran un marcador «BOPPO núm. 1 … de 2000».
+  if re.search(r"BOPPO núm\. 1 \.\w+ \d{1,2} de \w+ de 2000", text):
    return None
   invalid(f"Pontevedra {day}: no se puede acreditar la edición")
  if len(headers)!=1:invalid("Pontevedra: encabezado duplicado")

@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlsplit
 from xml.etree import ElementTree as ET
 from clm_common import employment,publish_audit,write_output,invalid,numbering_ok
+from provincial_common import ProvincialCoverageError
 SOURCE="https://api.euskadi.eus/bopv/administrative-acts"
 PROVINCE="País Vasco (BOPV)"
 PDF_RE=re.compile(r"^/bopv2/datos/(\d{4})/(\d{2})/(\d{7})a\.pdf$",re.I)
@@ -21,19 +22,24 @@ def session():
   q.headers.update({"User-Agent":"Mozilla/5.0 (compatible; OpoAlert official bulletin reader)","Accept-Language":"es-ES,es;q=0.9"})
   S.client=q
  return S.client
-def month_data(year,month):
+def month_data(year,month,current=False):
  url=f"{SOURCE}/{year}/{month}?itemsOfPage=500&currentPage=1&lang=SPANISH"
  try:
   r=session().get(url,timeout=(15,70),allow_redirects=False)
-  if r.status_code!=200 or r.url!=url or len(r.content)<180 or len(r.content)>15_000_000:
+  if r.status_code!=200 or r.url!=url or (len(r.content)<180 and not current) or len(r.content)>15_000_000:
    invalid(f"BOPV: HTTP {r.status_code} o respuesta inválida para {month}")
   j=r.json()
+  # Mes en curso sin boletines todavía: la API no trae «items».
+  if current and isinstance(j,dict) and j.get("totalItems")==0 and j.get("totalPages")==0:
+   print("BOPV MES",month,"sin boletines todavía",flush=True)
+   return []
   if not isinstance(j,dict) or not isinstance(j.get("items"),list) or not isinstance(j.get("totalItems"),int):
    invalid("BOPV: estructura API distinta")
   if (j["totalItems"]!=len(j["items"]) or j.get("totalPages")!=1 or
       j.get("itemsOfPage")!=len(j["items"]) or j.get("currentPage")!=1):
    invalid(f"BOPV: índice incompleto, total {j.get('totalItems')}, recibido {len(j['items'])}")
-  if len(j["items"])<150:invalid("BOPV: hemeroteca mensual inesperadamente corta")
+  # Solo los meses completos; el mes en curso tiene los boletines publicados hasta hoy.
+  if len(j["items"])<150 and not current:invalid("BOPV: hemeroteca mensual inesperadamente corta")
   print("BOPV MES",month,"anuncios",len(j["items"]),flush=True)
   return j["items"]
  except (requests.RequestException,ValueError) as e:invalid(f"BOPV: error de API oficial {e}")
@@ -145,13 +151,18 @@ def audit(today=None):
  end=today or date.today();start=end-timedelta(days=29)
  months=sorted({(start.year,start.month),(end.year,end.month)})
  data=[]
- for y,m in months:data.extend(month_data(y,m))
+ for y,m in months:data.extend(month_data(y,m,(y,m)==(end.year,end.month)))
  issues=read_data(data,start,end)
  # The REST export can trail the daily BOPV by one day: verify the official RSS
  # publication and all its metadata instead of silently omitting the new issue.
  if issues[-1]["day"]<end:
-  if (end-issues[-1]["day"]).days!=1:invalid("BOPV: índice oficial atrasado más de un día")
-  issues.append(latest_rss(end,int(issues[-1]["number"])))
+  gap=(end-issues[-1]["day"]).days
+  if gap>3:invalid("BOPV: índice oficial atrasado más de tres días")
+  # Fines de semana y festivos no hay BOPV: solo se exige el RSS de hoy en día laborable.
+  if end.weekday()<5:
+   try:issues.append(latest_rss(end,int(issues[-1]["number"])))
+   except ProvincialCoverageError:
+    if gap==1:raise
  checks=[n["url"] for issue in issues for n in issue["notices"]]
  with ThreadPoolExecutor(max_workers=5) as p:list(p.map(verify_pdf,checks))
  for x in issues:print("BOPV",x["day"],x["number"],"anuncios",x["read"],"candidatas",len(x["notices"]),flush=True)

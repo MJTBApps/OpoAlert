@@ -59,7 +59,9 @@ def calendar(start,end):
             if (day.year,day.month)!=(year,month):continue
             matching+=1
             if start<=day<=end:editions.add((day,t[0]))
-        if matching<18:invalid(f"DOE: calendario {year}-{month} sin todas sus ediciones ({matching})")
+        # Solo los meses completos deben tener todas sus ediciones; el mes en curso, las que haya.
+        if (year,month)!=(end.year,end.month) and matching<18:
+            invalid(f"DOE: calendario {year}-{month} sin todas sus ediciones ({matching})")
     ordered=sorted(editions)
     ords=[day for day,t in ordered if t=="o"]
     if len(ords)<18 or (ords[0]-start).days>3 or (end-ords[-1]).days>3:

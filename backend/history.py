@@ -472,6 +472,11 @@ def official_published_days(page, first: date, last: date) -> list[date]:
     first_month = (first.year, first.month)
     last_month = (last.year, last.month)
     current_month = _visible_calendar_month(panel)
+    previous_month = (last.year - 1, 12) if last.month == 1 else (last.year, last.month - 1)
+    if current_month < last_month and last.day <= 3 and current_month == previous_month:
+        # Primeros días del mes sin boletín todavía (fin de semana o festivo): el
+        # calendario sigue en el mes anterior y el nuevo mes no tiene ediciones.
+        last_month = current_month
     if current_month < last_month:
         raise CoverageError('El calendario oficial no alcanza el ultimo mes pedido')
     collected = set()

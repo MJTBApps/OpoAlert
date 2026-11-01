@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Soria official BOP over 30 days, individual PDF verified for each candidate."""
 from __future__ import annotations
-import argparse,re,json,requests,threading
+import argparse,re,json,requests,threading,time
 from pathlib import Path
 from datetime import date,datetime,timedelta,timezone
 from concurrent.futures import ThreadPoolExecutor
@@ -25,7 +25,11 @@ def fetch(url,pdf=False):
     if u.scheme!="https" or u.hostname!=HOST or u.port not in (None,443) or u.username or u.query or u.fragment:
         invalid("Soria: URL ajena al BOP")
     try:
-        r=client().get(url,timeout=(11,26),stream=pdf,headers={"Range":"bytes=0-95"} if pdf else {})
+        # El servidor devuelve 503 de vez en cuando con muchas peticiones seguidas: se reintenta.
+        for attempt in range(4):
+            r=client().get(url,timeout=(11,26),stream=pdf,headers={"Range":"bytes=0-95"} if pdf else {})
+            if r.status_code not in (429,500,502,503,504) or attempt==3:break
+            r.close();time.sleep(2*(attempt+1))
         if r.status_code not in ((200,206) if pdf else (200,)):
             invalid("Soria: documento no disponible HTTP "+str(r.status_code))
         if pdf:
