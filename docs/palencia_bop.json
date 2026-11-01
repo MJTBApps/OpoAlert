@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Palencia",
   "source": "https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia",
-  "lastCheckedUTC": "2026-10-31T16:07:02.011502+00:00",
+  "lastCheckedUTC": "2026-11-01T06:12:20.930620+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "130",
-    "pagesVisited": 14,
-    "announcementsRead": 292,
-    "opportunities": 8
+    "pagesVisited": 13,
+    "announcementsRead": 267,
+    "opportunities": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
-    "issuesRead": 14,
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
+    "issuesRead": 13,
     "bulletins": [
-      "118",
       "119",
       "120",
       "121",
@@ -33,7 +32,6 @@
       "130"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-07",
       "2026-10-09",
@@ -49,7 +47,6 @@
       "2026-10-30"
     ],
     "editionTypes": [
-      "ordinario",
       "ordinario",
       "ordinario",
       "ordinario",
@@ -80,10 +77,10 @@
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
     "editionPDFs": [
-      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261002-bop-118-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261005-bop-119-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261009-bop-121-Ordinario.pdf",
@@ -98,8 +95,8 @@
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261028-bop-129-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261030-bop-130-Ordinario.pdf"
     ],
-    "announcementsRead": 292,
-    "opportunities": 8,
+    "announcementsRead": 267,
+    "opportunities": 6,
     "pdfScope": "El PDF completo firmado es el único documento publicado por edición; el enlace identifica también la página del anuncio."
   },
   "notices": [
@@ -162,26 +159,6 @@
       "bulletin": "119",
       "type": "Plaza / oposición",
       "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261005-bop-119-Ordinario.pdf#page=23"
-    },
-    {
-      "id": "PL-20261002-010",
-      "province": "Palencia",
-      "title": "Bases específicas de la bolsa de empleo de Encargado/a de Unidad de Gestión de Instalaciones",
-      "entity": "Patronato Municipal de Deportes",
-      "date": "02/10/2026",
-      "bulletin": "118",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261002-bop-118-Ordinario.pdf#page=41"
-    },
-    {
-      "id": "PL-20261002-005",
-      "province": "Palencia",
-      "title": "Bases de la convocatoria del proceso selectivo para el ingreso como personal funcionario de carrera en la categoría de Agente de Igualdad, turno libre, por el sistema de oposición",
-      "entity": "Servicio de Personal",
-      "date": "02/10/2026",
-      "bulletin": "118",
-      "type": "Plaza / oposición",
-      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261002-bop-118-Ordinario.pdf#page=16"
     }
   ]
 }
