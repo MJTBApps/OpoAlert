@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-10-31T17:00:45.694334+00:00",
+  "lastCheckedUTC": "2026-11-01T07:26:20.090958+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 724,
-    "announcementsRead": 306,
-    "opportunities": 61
+    "pagesVisited": 702,
+    "announcementsRead": 295,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
-    "issuesRead": 21,
-    "pagesVisited": 724,
-    "announcementsRead": 306,
-    "opportunities": 61,
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
+    "issuesRead": 20,
+    "pagesVisited": 702,
+    "announcementsRead": 295,
+    "opportunities": 59,
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -43,7 +42,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -74,13 +72,13 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "originalPdfPagesRead": 724,
+    "originalPdfPagesRead": 702,
     "archiveIndexPagesRead": 2,
     "archiveTotalIssues": 48186,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392764&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+2%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392765&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+5%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392766&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+6%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392767&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+7%2F10%2F2026.pdf",
@@ -693,26 +691,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2539/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02660",
-      "province": "Almería",
-      "title": "Exp: 2026/13827L Asunto: Provisión de dos plazas de Auxiliar Administrativo, personal laboral fijo, OEP 2023 y OEP 2025, mediante oposición por turno libre. Por Decreto número 2026000433 de la Vicepresidencia del Patronato…",
-      "entity": "AYUNTAMIENTO DE ALMERIA",
-      "date": "02/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2660/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02537",
-      "province": "Almería",
-      "title": "BASES PARA PROVEER POR CONCURSO OPOSICION DIEZ PLAZAS DE ADMINISTRATIVO DE LA PLANTILLA DE PERSONAL FUNCIONARIO MEDIANTE TURNO RESTRINGIDO DE PROMOCION INTERNA. Documento firmado electrónicamente. Verificable en…",
-      "entity": "AYUNTAMIENTO DE EL EJIDO",
-      "date": "02/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2537/anuncio.pdf"
     }
   ]
 }
