@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Extremadura (DOE)",
   "source": "https://doe.juntaex.es/",
-  "lastCheckedUTC": "2026-10-31T16:04:12.544567+00:00",
+  "lastCheckedUTC": "2026-11-01T11:57:25.613953+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "210O",
-    "pagesVisited": 21,
-    "announcementsRead": 518,
-    "opportunities": 48
+    "pagesVisited": 20,
+    "announcementsRead": 477,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "bulletins": [
-      "191O",
       "192O",
       "193O",
       "194O",
@@ -39,7 +38,6 @@
       "210O"
     ],
     "publicationDates": [
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -71,11 +69,12 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 518,
-    "opportunities": 48
+    "issuesRead": 20,
+    "announcementsRead": 477,
+    "opportunities": 47
   },
   "notices": [
     {
@@ -547,16 +546,6 @@
       "bulletin": "193O",
       "type": "Plaza / oposición",
       "url": "https://doe.juntaex.es/pdfs/doe/2026/1930o/26062486.pdf"
-    },
-    {
-      "id": "EX-2026-26062467",
-      "province": "Extremadura (DOE)",
-      "title": "Concurso.- Resolución de 24 de septiembre de 2026, de la Consejera, por la que se abre un plazo extraordinario de presentación de solicitudes en el concurso de puestos de trabajo vacantes singularizados de personal funcionario de la Administración de la Comunidad Autónoma de Extremadura, convocado por Orden de 3 de diciembre de 2025, restringido exclusivamente al puesto de trabajo identificado con código 42956110, denominado \"Jefatura de Sección de Coordinación Técnica de Caza\", dependiente de la Consejería de Agricultura, Ganadería y Medio Natural.",
-      "entity": "CONSEJERÍA DE HACIENDA, ADMINISTRACIÓN PÚBLICA Y DIÁLOGO SOCIAL",
-      "date": "02/10/2026",
-      "bulletin": "191O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/1910o/26062467.pdf"
     }
   ]
 }
