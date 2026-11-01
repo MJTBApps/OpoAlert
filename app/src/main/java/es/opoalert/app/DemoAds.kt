@@ -117,7 +117,8 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
             AlertDialog.Builder(activity)
                 .setTitle("Privacidad y publicidad")
                 .setMessage("OpoAlert muestra un anuncio al abrir la app y algunos entre las convocatorias. " +
-                    "Por ahora son anuncios de prueba de Google y no generan ingresos. " +
+                    (if (BANNER_ID.startsWith("ca-app-pub-3940256099942544"))
+                        "Por ahora son anuncios de prueba de Google y no generan ingresos. " else "") +
                     "Si no das tu consentimiento, la app funciona igual sin publicidad. " +
                     "Con OpoAlert Premium no hay anuncios. OpoAlert es una aplicación independiente.")
                 .setPositiveButton("Entendido", null)
@@ -134,9 +135,9 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         const val LIST_AD_EVERY = 8
         const val MAX_LIST_ADS = 5
 
-        // Identificadores de PRUEBA de Google, no de la cuenta del usuario.
-        private const val BANNER_ID = "ca-app-pub-3940256099942544/9214589741"
-        private const val OPEN_AD_ID = "ca-app-pub-3940256099942544/9257395921"
+        // De PRUEBA en la versión web; los reales de AdMob en la de Google Play (build.gradle.kts).
+        private val BANNER_ID = BuildConfig.ADMOB_BANNER
+        private val OPEN_AD_ID = BuildConfig.ADMOB_OPEN_AD
 
         private const val PREFS = "opoalert_ui"
         private const val LAST_OPEN_AD = "last_app_open_ad"

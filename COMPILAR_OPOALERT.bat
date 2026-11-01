@@ -29,14 +29,14 @@ if not exist "local.properties" (
 
 echo.
 echo Compilando OpoAlert...
-call "%~dp0gradlew.bat" assembleDebug
+call "%~dp0gradlew.bat" assembleWebDebug
 if errorlevel 1 goto :error
 
 echo.
 echo ==========================================
 echo            APK GENERADO
  echo ==========================================
-echo app\build\outputs\apk\debug\app-debug.apk
+echo app\build\outputs\apk\web\debug\app-web-debug.apk
 echo.
 pause
 exit /b 0

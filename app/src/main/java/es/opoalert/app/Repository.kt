@@ -59,7 +59,8 @@ object Repository {
     fun sync(ctx: Context): SyncResult {
         SourceCatalog.load(ctx)
         SourceCatalog.refreshActive(ctx)
-        AppUpdate.refresh(ctx)
+        // La versión de Google Play se actualiza solo por la tienda.
+        if (BuildConfig.SELF_UPDATE) AppUpdate.refresh(ctx)
         val chosen = ProvinceSettings.selected(ctx)
         // Regla de tiempo: las alertas creadas mientras se descarga el feed
         // no deben recibir avisos retroactivos del mismo ciclo.

@@ -24,7 +24,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - `MainActivity.kt` (pantalla principal), `NoticeDetailActivity.kt` (ficha), `AlertsActivity.kt` + `AlertRule*.kt` (alertas), `RemoteFeedReader.kt` / `Repository.kt` (lectura de feeds), `BopWorker.kt` + `Notifications.kt` (avisos), `FavoritesStore.kt`.
   - `DemoAds.kt` — anuncios AdMob **solo de demostración**, con consentimiento UMP. No generan ingresos.
   - Pruebas: `app/src/test/java/es/opoalert/app/`.
-  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 59 / 1.46.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
+  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 60 / 1.47.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
 - **Backend**: `backend/`
   - Lectores: `bop_full.py` + `history.py` (Valencia), `alicante.py`, `castellon.py`, `province_history.py`, `boe_nacional.py`, `cido_cataluna.py`, `tarragona.py`, `barcelona_bop.py`, `girona_bop.py`, `huesca_bop.py`, `teruel_bop.py`, `zaragoza_bop.py`, `cadiz_bop.py`, `pandora_bop.py` (Almería), `andalucia_opencms_bop.py` (Granada y Sevilla), `cordoba_bop.py`.
   - Validadores: `validar_*.py`, uno por fuente; `validar_feed.py` para el feed de Valencia.
@@ -48,10 +48,10 @@ Dependencias: `pip install -r backend/requirements.txt` (Playwright y BeautifulS
 
 **Normalmente lo compila GitHub Actions** (`android-apk.yml`: Java 17, Gradle 8.11.1, SDK 35) al subir cambios de `app/` a `main`. El APK queda como artefacto y `publicar-apk-1XX.yml` lo copia a `docs/`.
 
-En local: `COMPILAR_OPOALERT.bat`, o `gradlew.bat assembleDebug` desde la raíz. `gradlew.bat` descarga Gradle 8.11.1 en `.gradle-dist/`. El APK sale en `app\build\outputs\apk\debug\app-debug.apk`.
-- El .bat busca Java 17 Temurin. En este PC solo hay **Temurin 21** (`C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot`): fija `JAVA_HOME` a ese y llama a `gradlew.bat` con la ruta completa. Con Java 21 compila y pasa `:app:testDebugUnitTest` (comprobado el 30/10/2026).
+En local: `COMPILAR_OPOALERT.bat`, o `gradlew.bat assembleWebDebug` desde la raíz. `gradlew.bat` descarga Gradle 8.11.1 en `.gradle-dist/`. El APK sale en `app\build\outputs\apk\web\debug\app-web-debug.apk`.
+- El .bat busca Java 17 Temurin. En este PC solo hay **Temurin 21** (`C:\Program Files\Eclipse Adoptium\jdk-21.0.12.101-hotspot`): fija `JAVA_HOME` a ese y llama a `gradlew.bat` con la ruta completa. Con Java 21 compila y pasa `:app:testWebDebugUnitTest` (comprobado el 30/10/2026; antes de los canales se llamaba `testDebugUnitTest`).
 - SDK de Android: `%LOCALAPPDATA%\Android\Sdk` (lo escribe en `local.properties` si falta).
-- **En el iMac** (desde el 30/10/2026): Temurin 17 x64 en `/Library/Java/JavaVirtualMachines/temurin-17.jdk`, SDK en `~/Library/Android/sdk` (cmdline-tools, `platforms;android-35`, `build-tools;35.0.0`, licencias aceptadas por el usuario). Compilar y probar: `JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home sh gradlew --no-daemon :app:testDebugUnitTest assembleDebug` (`gradlew` no tiene permiso de ejecución: llamarlo con `sh`).
+- **En el iMac** (desde el 30/10/2026): Temurin 17 x64 en `/Library/Java/JavaVirtualMachines/temurin-17.jdk`, SDK en `~/Library/Android/sdk` (cmdline-tools, `platforms;android-36`, `build-tools;36.0.0`, licencias aceptadas por el usuario). Compilar y probar: `JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home sh gradlew --no-daemon :app:testWebDebugUnitTest :app:assembleWebDebug` (`gradlew` no tiene permiso de ejecución: llamarlo con `sh`).
 - No actualizar el Android Gradle Plugin (8.9.2) ni Kotlin (2.2.20) sin motivo.
 
 ## Reglas de publicación (respetarlas siempre)
@@ -114,9 +114,16 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 ## Probar la app en el emulador (iMac)
 
 - Emulador y imagen `system-images;android-34;google_apis;x86_64` en `~/Library/Android/sdk`; dispositivo `opoalert` (Pixel 6). Arrancar sin ventana: `~/Library/Android/sdk/emulator/emulator -avd opoalert -no-window -no-audio -gpu swiftshader_indirect` y esperar a `adb shell getprop sys.boot_completed` = 1. Va lento: el primer arranque puede dar «System UI isn't responding» (pulsar «Wait»).
-- Instalar: `adb install -r app/build/outputs/apk/debug/app-debug.apk`; capturas con `adb exec-out screencap -p`; elementos con `adb shell uiautomator dump`.
+- Instalar: `adb install -r app/build/outputs/apk/web/debug/app-web-debug.apk`; emulador Android 16: `opoalert16` (`system-images;android-36;google_apis;x86_64`); capturas con `adb exec-out screencap -p`; elementos con `adb shell uiautomator dump`.
 - Probar avisos sin esperar: la imagen admite `adb root`. Quitar anuncios de `entries` y de `seen_notice_ids_v1` en `shared_prefs/opoalert_store.xml` (`run-as es.opoalert.app`), cerrar la app con `am kill` (no `force-stop`, que borra los trabajos programados), adelantar el reloj (`settings put global auto_time 0`; `date @...`) y `cmd jobscheduler run -f es.opoalert.app <n.º>`. WorkManager no adelanta un trabajo periódico antes de su hora. Al acabar, `settings put global auto_time 1`.
 - El aro claro alrededor del icono en el escritorio es de las apps sugeridas del lanzador de Pixel, no del icono.
+
+## Google Play (desde el 01/11/2026)
+
+- Dos canales (`productFlavors` en `app/build.gradle.kts`): **web** (la APK de GitHub Pages, firmada en Actions con `OPOALERT_KEYSTORE_B64`, con aviso de versiones nuevas y anuncios de PRUEBA) y **play** (AAB para Google Play: sin autoactualización, que Play prohíbe, y con los anuncios reales). `BuildConfig.SELF_UPDATE`, `ADMOB_BANNER`, `ADMOB_OPEN_AD` y el `admobAppId` del manifiesto salen del canal.
+- Datos privados de Play en el iMac, **fuera del repositorio**: `~/OpoAlert-claves/` (clave de subida `opoalert-play-subida.jks` y `play.properties` con contraseñas e identificadores reales de AdMob). Hay que tener copia de seguridad. `bundlePlayRelease` se niega a compilar si faltan datos o si los identificadores son de prueba.
+- `targetSdk`/`compileSdk` = 36 (Google Play lo exige desde el 31/08/2026). Desde Android 15 la app se dibuja bajo las barras del sistema: `SystemBars.fit(this)` tras cada `setContentView`.
+- Política de privacidad: `docs/privacidad.html` (https://mjtbapps.github.io/OpoAlert/privacidad.html).
 
 ## Publicidad, Premium e iOS
 

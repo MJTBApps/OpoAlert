@@ -71,6 +71,7 @@ class PdfViewerActivity : Activity() {
         }
         file = File(File(cacheDir, "pdf").apply { mkdirs() }, "anuncio.pdf")
         setContentView(createPage(intent.getStringExtra(EXTRA_TITLE).orEmpty()))
+        SystemBars.fit(this)
         showMessage("Cargando el PDF oficial…", loading = true)
         worker.execute { download() }
     }

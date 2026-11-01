@@ -41,6 +41,7 @@ class NoticeDetailActivity : Activity() {
             return
         }
         setContentView(createPage())
+        SystemBars.fit(this)
         updateFavoriteState()
     }
 

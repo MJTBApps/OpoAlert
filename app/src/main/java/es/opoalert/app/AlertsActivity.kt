@@ -89,6 +89,7 @@ class AlertsActivity : Activity() {
         scroll.addView(body)
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
         setContentView(root)
+        SystemBars.fit(this)
         render()
     }
 

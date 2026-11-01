@@ -13,10 +13,11 @@
         android:theme="@style/Theme.OpoAlert"
         android:networkSecurityConfig="@xml/network_security_config"
         android:usesCleartextTraffic="false">
-        <!-- ID oficial de ejemplo Google AdMob, SOLO pruebas. -->
+        <!-- AdMob: de prueba en la versión web; el real de la versión de Play sale de
+             ~/OpoAlert-claves/play.properties (ver app/build.gradle.kts). -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="${admobAppId}" />
         <activity
             android:name=".NoticeDetailActivity"
             android:exported="false" />

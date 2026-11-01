@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.46.0"' in gradle
-    assert "versionCode = 59" in gradle
+    assert 'versionName = "1.47.0"' in gradle
+    assert "versionCode = 60" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -66,7 +66,16 @@ def main() -> None:
     assert "demoAds.start(openAd = coldStart)" in activity, "Anuncio de apertura solo al arrancar"
     assert "DemoAds(this)" in activity
     ads = (KOTLIN / "DemoAds.kt").read_text(encoding="utf-8")
-    assert "ca-app-pub-3940256099942544/9214589741" in ads
+    assert "BuildConfig.ADMOB_BANNER" in ads and "BuildConfig.ADMOB_OPEN_AD" in ads, "Identificadores por canal"
+    gradle_text = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
+    assert 'create("web")' in gradle_text and 'create("play")' in gradle_text, "Canales web y Google Play"
+    assert "ca-app-pub-3940256099942544/9214589741" in gradle_text, "La web usa anuncios de prueba"
+    assert "no puede llevar identificadores de PRUEBA" in gradle_text, "Play nunca con anuncios de prueba"
+    assert "targetSdk = 36" in gradle_text, "Google Play exige API 36"
+    assert '"SELF_UPDATE", "false"' in gradle_text, "Play no se autoactualiza"
+    assert "BuildConfig.SELF_UPDATE" in activity and "BuildConfig.SELF_UPDATE" in repository
+    for screen in ("MainActivity.kt", "NoticeDetailActivity.kt", "AlertsActivity.kt", "PdfViewerActivity.kt"):
+        assert "SystemBars.fit(this)" in (KOTLIN / screen).read_text(encoding="utf-8"), screen + ": barras del sistema"
     assert "canRequestAds()" in ads
     assert "loadAndShowConsentFormIfRequired" in ads
     assert "AppOpenAd.load(" in ads and "OPEN_AD_TIMEOUT_MS" in ads, "Anuncio de apertura con espera máxima"
@@ -74,7 +83,7 @@ def main() -> None:
     premium = (KOTLIN / "Premium.kt").read_text(encoding="utf-8")
     assert "const val BILLING_READY = false" in premium, "Sin pago, las alertas siguen gratis"
     manifest = (ROOT / "app/src/main/AndroidManifest.xml").read_text(encoding="utf-8")
-    assert "ca-app-pub-3940256099942544~3347511713" in manifest
+    assert "${admobAppId}" in manifest, "El identificador de AdMob sale del canal"
     assert "AlertsActivity::class.java" in activity
     assert "Notifications.show(this, result.alertMatches)" in activity
     assert "AlertRuleStore.list(ctx)" in repository
@@ -116,7 +125,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.46.0"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.47.0"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -135,7 +144,7 @@ def main() -> None:
     assert 'SourcePicker.scrolling(this, content)' in alerts, "El editor de alertas debe poder desplazarse"
     assert 'chooseSourcesButton.setOnClickListener' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.46.0: nuevas desde tu última visita")
+    print("OK: Android 1.47.0: preparada para Google Play")
 
 
 if __name__ == "__main__":

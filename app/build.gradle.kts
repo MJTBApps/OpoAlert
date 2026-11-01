@@ -1,18 +1,35 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
+// Datos privados de la versión de Google Play: clave de subida e identificadores
+// reales de AdMob. Nunca en el repositorio (es público): están en el iMac, en
+// ~/OpoAlert-claves/play.properties (o en la ruta de OPOALERT_PLAY_PROPERTIES).
+val playProperties = Properties().apply {
+    val path = System.getenv("OPOALERT_PLAY_PROPERTIES")
+        ?: (System.getProperty("user.home") + "/OpoAlert-claves/play.properties")
+    file(path).takeIf { it.exists() }?.inputStream()?.use { load(it) }
+}
+
+// Identificadores de PRUEBA de Google: los usan la versión web y las pruebas.
+val testAdmobApp = "ca-app-pub-3940256099942544~3347511713"
+val testBanner = "ca-app-pub-3940256099942544/9214589741"
+val testOpenAd = "ca-app-pub-3940256099942544/9257395921"
+
 android {
     namespace = "es.opoalert.app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "es.opoalert.app"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 59
-        versionName = "1.46.0"
+        // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
+        targetSdk = 36
+        versionCode = 60
+        versionName = "1.47.0"
     }
 
     // Firma fija de OpoAlert: sin ella cada compilación sale con una firma distinta
@@ -29,6 +46,40 @@ android {
                 keyPassword = System.getenv("OPOALERT_KEY_PASSWORD")
             }
         }
+        // Clave de SUBIDA a Google Play (Google firma la app final con la suya).
+        playProperties.getProperty("storeFile")?.let { path ->
+            create("play") {
+                storeFile = file(path)
+                storePassword = playProperties.getProperty("storePassword")
+                keyAlias = playProperties.getProperty("keyAlias")
+                keyPassword = playProperties.getProperty("keyPassword")
+            }
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    // Dos canales: «web» (la APK de GitHub Pages, con aviso de versiones nuevas) y
+    // «play» (Google Play: se actualiza por la tienda y lleva los anuncios reales).
+    flavorDimensions += "canal"
+    productFlavors {
+        create("web") {
+            dimension = "canal"
+            buildConfigField("boolean", "SELF_UPDATE", "true")
+            buildConfigField("String", "ADMOB_BANNER", "\"$testBanner\"")
+            buildConfigField("String", "ADMOB_OPEN_AD", "\"$testOpenAd\"")
+            manifestPlaceholders["admobAppId"] = testAdmobApp
+        }
+        create("play") {
+            dimension = "canal"
+            // Google Play no permite que la app se actualice fuera de la tienda.
+            buildConfigField("boolean", "SELF_UPDATE", "false")
+            buildConfigField("String", "ADMOB_BANNER", "\"${playProperties.getProperty("admobBanner", testBanner)}\"")
+            buildConfigField("String", "ADMOB_OPEN_AD", "\"${playProperties.getProperty("admobOpenAd", testOpenAd)}\"")
+            manifestPlaceholders["admobAppId"] = playProperties.getProperty("admobAppId", testAdmobApp)
+        }
     }
 
     buildTypes {
@@ -37,6 +88,7 @@ android {
         }
         release {
             isMinifyEnabled = false
+            signingConfigs.findByName("play")?.let { signingConfig = it }
         }
     }
 
@@ -58,4 +110,16 @@ dependencies {
     testImplementation("org.json:json:20240303")
     implementation("com.google.android.gms:play-services-ads:25.5.0")
     implementation("com.google.android.ump:user-messaging-platform:4.0.0")
+}
+
+// Nunca se sube a Google Play una versión con anuncios de prueba ni sin firmar.
+tasks.matching { it.name == "bundlePlayRelease" || it.name == "assemblePlayRelease" }.configureEach {
+    doFirst {
+        val missing = listOf("storeFile", "admobAppId", "admobBanner", "admobOpenAd")
+            .filter { playProperties.getProperty(it).isNullOrBlank() }
+        check(missing.isEmpty()) { "Faltan datos en ~/OpoAlert-claves/play.properties: $missing" }
+        check(listOf("admobAppId", "admobBanner", "admobOpenAd").none {
+            playProperties.getProperty(it).startsWith("ca-app-pub-3940256099942544")
+        }) { "La versión de Google Play no puede llevar identificadores de PRUEBA de AdMob" }
+    }
 }

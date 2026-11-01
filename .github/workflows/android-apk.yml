@@ -1,4 +1,4 @@
-name: OpoAlert - Compilar APK Android 1.46.0
+name: OpoAlert - Compilar APK Android 1.47.0
 
 on:
   workflow_dispatch:
@@ -34,12 +34,12 @@ jobs:
         run: |
           SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -name sdkmanager -type f -print -quit)"
           test -n "$SDKMANAGER"
-          "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
+          "$SDKMANAGER" --install "platforms;android-36" "build-tools;36.0.0"
       - name: Gradle 8.11.1
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
-      - name: Comprobar pantalla selector, favoritos, ficha y navegacion OpoAlert 1.46.0
+      - name: Comprobar pantalla selector, favoritos, ficha y navegacion OpoAlert 1.47.0
         run: python3 scripts/test_ui_080.py
       - name: Firma fija de OpoAlert (secretos del repositorio)
         env:
@@ -54,21 +54,21 @@ jobs:
       - name: Tests Kotlin y compilar APK
         env:
           OPOALERT_KEY_PASSWORD: ${{ secrets.OPOALERT_KEY_PASSWORD }}
-        run: gradle --no-daemon --console=plain :app:testDebugUnitTest :app:assembleDebug
+        run: gradle --no-daemon --console=plain :app:testWebDebugUnitTest :app:assembleWebDebug
       - name: Verificar APK Android
         run: |
-          test -s app/build/outputs/apk/debug/app-debug.apk
-          cp app/build/outputs/apk/debug/app-debug.apk OpoAlert-1.46.0.apk
-          unzip -t OpoAlert-1.46.0.apk >/dev/null
+          test -s app/build/outputs/apk/web/debug/app-web-debug.apk
+          cp app/build/outputs/apk/web/debug/app-web-debug.apk OpoAlert-1.47.0.apk
+          unzip -t OpoAlert-1.47.0.apk >/dev/null
           # La firma debe ser siempre la de OpoAlert para que el móvil acepte la actualización.
-          $ANDROID_HOME/build-tools/35.0.0/apksigner verify --print-certs OpoAlert-1.46.0.apk \
+          $ANDROID_HOME/build-tools/36.0.0/apksigner verify --print-certs OpoAlert-1.47.0.apk \
             | grep -i "SHA-256 digest: 0c549105e420ffdf8ae9861cfe0893883bf46b6ace1634e21010b25b3d8b7a3b"
-          $ANDROID_HOME/build-tools/35.0.0/aapt dump badging OpoAlert-1.46.0.apk | grep "package: name='es.opoalert.app' versionCode='59' versionName='1.46.0'"
-          sha256sum OpoAlert-1.46.0.apk
+          $ANDROID_HOME/build-tools/36.0.0/aapt dump badging OpoAlert-1.47.0.apk | grep "package: name='es.opoalert.app' versionCode='60' versionName='1.47.0'"
+          sha256sum OpoAlert-1.47.0.apk
       - name: Descargar APK desde GitHub Actions
         uses: actions/upload-artifact@v4
         with:
-          name: OpoAlert-Android-1.46.0
-          path: OpoAlert-1.46.0.apk
+          name: OpoAlert-Android-1.47.0
+          path: OpoAlert-1.47.0.apk
           if-no-files-found: error
           retention-days: 30

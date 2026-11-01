@@ -68,6 +68,7 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         coldStart = savedInstanceState == null
         setContentView(R.layout.activity_main)
+        SystemBars.fit(this)
         list = findViewById(R.id.listContainer)
         countText = findViewById(R.id.countText)
         favoritesCountText = findViewById(R.id.favoritesCountText)
@@ -615,7 +616,7 @@ class MainActivity : Activity() {
 
     /** Aviso de versión nueva publicada en la web (una vez por sesión y versión). */
     private fun offerUpdate() {
-        if (updateOffered || isFinishing) return
+        if (!BuildConfig.SELF_UPDATE || updateOffered || isFinishing) return
         val version = AppUpdate.pending(this) ?: return
         updateOffered = true
         AlertDialog.Builder(this)
