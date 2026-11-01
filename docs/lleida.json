@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-10-31T16:12:41.429241+00:00",
+  "lastCheckedUTC": "2026-11-01T06:23:34.844679+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 56,
-    "opportunities": 56,
+    "announcementsRead": 54,
+    "opportunities": 54,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-02",
-    "rangeEnd": "2026-10-31",
+    "rangeStart": "2026-10-03",
+    "rangeEnd": "2026-11-01",
     "publicationDates": [
-      "2026-10-02",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -48,12 +47,13 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 56,
-    "opportunities": 56
+    "announcementsRead": 54,
+    "opportunities": 54
   },
   "notices": [
     {
@@ -595,26 +595,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22228195"
-    },
-    {
-      "id": "CIDO7-22228215",
-      "title": "1 plaça d'Interventor",
-      "entity": "Ajuntament de Mollerussa",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22228215"
-    },
-    {
-      "id": "CIDO7-20933577",
-      "title": "1 plaça d'Arquitecte",
-      "entity": "Ajuntament d'Agramunt",
-      "date": "02/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20933577"
     }
   ]
 }
