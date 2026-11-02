@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-02T09:39:15.541580+00:00",
+  "lastCheckedUTC": "2026-11-02T12:38:35.775953+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 301,
-    "opportunities": 301,
+    "announcementsRead": 303,
+    "opportunities": 303,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,20 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 301,
-    "opportunities": 301
+    "announcementsRead": 303,
+    "opportunities": 303
   },
   "notices": [
+    {
+      "id": "CIDO5-22421046",
+      "title": "1 plaça de Cap del Departament de Gestió Econòmica",
+      "entity": "Ajuntament de Barcelona - Institut Municipal d'Urbanisme",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421046"
+    },
     {
       "id": "CIDO5-22419741",
       "title": "1 plaça de Secretari interventor",
@@ -105,6 +115,36 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22418634"
+    },
+    {
+      "id": "CIDO5-22402222",
+      "title": "Borsa de treball de places d'Auxiliar administratiu",
+      "entity": "Ajuntament de Torrelles de Llobregat",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22402222"
+    },
+    {
+      "id": "CIDO5-22361428",
+      "title": "1 plaça de Director executiu de Protecció Civil",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22361428"
+    },
+    {
+      "id": "CIDO5-22159574",
+      "title": "1 plaça d'Agent de la Policia Local",
+      "entity": "Ajuntament de Sant Antoni de Vilamajor",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22159574"
     },
     {
       "id": "CIDO5-21898204",
@@ -185,6 +225,16 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16484959"
+    },
+    {
+      "id": "CIDO5-22420924",
+      "title": "30 places d'Agent cívic. Plan Local d'Ocupació 2025-2027",
+      "entity": "Ajuntament de Badalona - Institut Municipal de Promoció de l'Ocupació (IMPO)",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420924"
     },
     {
       "id": "CIDO5-22412736",
@@ -415,16 +465,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22412460"
-    },
-    {
-      "id": "CIDO5-22402222",
-      "title": "Borsa de treball de places d'Auxiliar administratiu",
-      "entity": "Ajuntament de Torrelles de Llobregat",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22402222"
     },
     {
       "id": "CIDO5-22402164",
@@ -1297,16 +1337,6 @@
       "url": "https://cido.diba.cat/oposicions/22320018"
     },
     {
-      "id": "CIDO5-22159574",
-      "title": "1 plaça d'Agent de la Policia Local",
-      "entity": "Ajuntament de Sant Antoni de Vilamajor",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22159574"
-    },
-    {
       "id": "CIDO5-19213597",
       "title": "1 plaça de Tècnic mitjà especialista - Tècnic d'esports, joventut i participació ciutadana",
       "entity": "Ajuntament de Collbató",
@@ -1515,16 +1545,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22367182"
-    },
-    {
-      "id": "CIDO5-22361428",
-      "title": "1 plaça de Director executiu de Protecció Civil",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22361428"
     },
     {
       "id": "CIDO5-22361404",

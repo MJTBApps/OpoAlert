@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-02T09:39:15.541580+00:00",
+  "lastCheckedUTC": "2026-11-02T12:38:35.775953+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -125,6 +125,16 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22420021"
+    },
+    {
+      "id": "CIDO7-22382021",
+      "title": "Borsa de treball de places d'Arxiver municipal",
+      "entity": "Ajuntament de la Seu d'Urgell",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22382021"
     },
     {
       "id": "CIDO7-19313484",
@@ -325,16 +335,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22382050"
-    },
-    {
-      "id": "CIDO7-22382021",
-      "title": "Borsa de treball de places d'Arxiver municipal",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22382021"
     },
     {
       "id": "CIDO7-22266838",

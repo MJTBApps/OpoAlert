@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-02T09:39:15.541580+00:00",
+  "lastCheckedUTC": "2026-11-02T12:38:35.775953+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 81,
-    "opportunities": 81,
+    "announcementsRead": 97,
+    "opportunities": 97,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,30 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 81,
-    "opportunities": 81
+    "announcementsRead": 97,
+    "opportunities": 97
   },
   "notices": [
+    {
+      "id": "CIDO8-22420652",
+      "title": "Borsa de treball de places d'Operari de neteja d'edificis municipals",
+      "entity": "Ajuntament de Garcia",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22420652"
+    },
+    {
+      "id": "CIDO8-22420606",
+      "title": "1 plaça de Vigilant municipal",
+      "entity": "Ajuntament de l'Espluga de Francolí",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420606"
+    },
     {
       "id": "CIDO8-22420343",
       "title": "1 plaça d'Auxiliar administratiu de la divisió d'habitatge",
@@ -75,6 +95,26 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22329601"
+    },
+    {
+      "id": "CIDO8-21638596",
+      "title": "1 plaça d'Operari de jardineria",
+      "entity": "Ajuntament de Mont-roig del Camp - Entitat Pública Empresarial de Serveis i Obres (Nostreserveis)",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21638596"
+    },
+    {
+      "id": "CIDO8-21039079",
+      "title": "1 plaça d'Administratiu per a l'àrea d'esports",
+      "entity": "Ajuntament de Mont-roig del Camp - Entitat Pública Empresarial de Serveis i Obres (Nostreserveis)",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21039079"
     },
     {
       "id": "CIDO8-20367290",
@@ -195,6 +235,126 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16758438"
+    },
+    {
+      "id": "CIDO8-22421580",
+      "title": "1 plaça d'Agent de la Guàrdia Urbana",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421580"
+    },
+    {
+      "id": "CIDO8-22421577",
+      "title": "4 places de Tècnic d'administració especial",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421577"
+    },
+    {
+      "id": "CIDO8-22421574",
+      "title": "9 places d'Educador social",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421574"
+    },
+    {
+      "id": "CIDO8-22421571",
+      "title": "1 plaça de Tècnic mitjà - joventut",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421571"
+    },
+    {
+      "id": "CIDO8-22421568",
+      "title": "1 plaça de Tècnic mitjà - promoció econòmica",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421568"
+    },
+    {
+      "id": "CIDO8-22421565",
+      "title": "1 plaça de Tècnic mitjà - medi ambient",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421565"
+    },
+    {
+      "id": "CIDO8-22421562",
+      "title": "1 plaça de Tècnic superior - empresa i ocupació",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421562"
+    },
+    {
+      "id": "CIDO8-22421559",
+      "title": "1 plaça de Tècnic superior - salut pública",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421559"
+    },
+    {
+      "id": "CIDO8-22421556",
+      "title": "1 plaça de Tècnic superior - Reg. Relacions ciutadanes",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421556"
+    },
+    {
+      "id": "CIDO8-22421553",
+      "title": "2 places de Tècnic superior - benestar social",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421553"
+    },
+    {
+      "id": "CIDO8-22421550",
+      "title": "7 places de Tècnic especialista comeses especials - integrador social",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421550"
+    },
+    {
+      "id": "CIDO8-22421539",
+      "title": "1 plaça de Tècnic especialista de comeses especials - tècnic auxiliar dinamitzador",
+      "entity": "Ajuntament de Reus",
+      "date": "29/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421539"
     },
     {
       "id": "CIDO8-22410322",

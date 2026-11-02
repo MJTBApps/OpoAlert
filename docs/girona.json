@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-02T09:39:15.541580+00:00",
+  "lastCheckedUTC": "2026-11-02T12:38:35.775953+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -34,7 +34,6 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31",
       "2026-11-02"
     ],
     "nonPublicationDates": [
@@ -48,6 +47,7 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-25",
+      "2026-10-31",
       "2026-11-01"
     ],
     "bulletins": [],
@@ -87,6 +87,16 @@
       "url": "https://cido.diba.cat/oposicions/22419816"
     },
     {
+      "id": "CIDO6-22381776",
+      "title": "Borsa de treball de places d'Oficial paleta de l'Àrea de Manteniment i Activitats",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22381776"
+    },
+    {
       "id": "CIDO6-21293434",
       "title": "1 plaça d'Operari de menjador d'escoles bressol",
       "entity": "Ajuntament de Celrà",
@@ -100,11 +110,31 @@
       "id": "CIDO6-20894244",
       "title": "1 plaça d'Auxiliar administratiu",
       "entity": "Ajuntament de Corçà",
-      "date": "31/10/2026",
+      "date": "02/11/2026",
       "bulletin": "CIDO",
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/20894244"
+    },
+    {
+      "id": "CIDO6-20858650",
+      "title": "1 plaça d'Oficial 1a - Jardineria",
+      "entity": "Ajuntament de Palamós i Sant Joan",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/20858650"
+    },
+    {
+      "id": "CIDO6-20799043",
+      "title": "1 plaça de Coordinador de neteja",
+      "entity": "Ajuntament de Ribes de Freser",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/20799043"
     },
     {
       "id": "CIDO6-22410335",
@@ -227,16 +257,6 @@
       "url": "https://cido.diba.cat/oposicions/21744935"
     },
     {
-      "id": "CIDO6-20858650",
-      "title": "1 plaça d'Oficial 1a - Jardineria",
-      "entity": "Ajuntament de Palamós i Sant Joan",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20858650"
-    },
-    {
       "id": "CIDO6-19319033",
       "title": "2 places d'Educador de la Llar d'Infants",
       "entity": "Ajuntament de Tossa de Mar",
@@ -287,16 +307,6 @@
       "url": "https://cido.diba.cat/oposicions/22329399"
     },
     {
-      "id": "CIDO6-22381776",
-      "title": "Borsa de treball de places d'Oficial paleta de l'Àrea de Manteniment i Activitats",
-      "entity": "Ajuntament de Torroella de Montgrí",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22381776"
-    },
-    {
       "id": "CIDO6-21254712",
       "title": "3 places d'Agent de la Policia Local",
       "entity": "Ajuntament de Calonge i Sant Antoni",
@@ -305,16 +315,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21254712"
-    },
-    {
-      "id": "CIDO6-20799043",
-      "title": "1 plaça de Coordinador de neteja",
-      "entity": "Ajuntament de Ribes de Freser",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/20799043"
     },
     {
       "id": "CIDO6-15541398",
