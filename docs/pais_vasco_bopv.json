@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-02T06:30:12.903168+00:00",
+  "lastCheckedUTC": "2026-11-02T16:36:41.511462+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "208",
-    "pagesVisited": 19,
-    "announcementsRead": 322,
-    "opportunities": 43
+    "bulletin": "209",
+    "pagesVisited": 20,
+    "announcementsRead": 342,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
@@ -34,7 +34,8 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -55,7 +56,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -67,14 +69,53 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-02"
+      "2026-11-01"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 322,
-    "opportunities": 43
+    "issuesRead": 20,
+    "announcementsRead": 342,
+    "opportunities": 47
   },
   "notices": [
+    {
+      "id": "PV-2026-4605",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO relativo a la convocatoria del proceso selectivo para la contratación de personal laboral al servicio del Instituto Foral de la Juventud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604605a.pdf"
+    },
+    {
+      "id": "PV-2026-4604",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1775/2026, de 23 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se convoca concurso para la provisión del puesto de jefe/a de Servicio Sanitario en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604604a.pdf"
+    },
+    {
+      "id": "PV-2026-4602",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO de 27 de octubre de 2026, del director general de Lanbide-Servicio Público Vasco de Empleo, por el que se da publicidad a la aprobación de las bases generales para la constitución de bolsas de trabajo de personal laboral temporal en Lanbide-Servicio Público Vasco de Empleo.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604602a.pdf"
+    },
+    {
+      "id": "PV-2026-4601",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 13 de enero de 2026 (BOE y BOPV de 22-01-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604601a.pdf"
+    },
     {
       "id": "PV-2026-4586",
       "province": "País Vasco (BOPV)",

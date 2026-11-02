@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-02T06:42:36.630403+00:00",
+  "lastCheckedUTC": "2026-11-02T16:39:40.405911+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 52,
-    "opportunities": 52,
+    "announcementsRead": 60,
+    "opportunities": 60,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -32,7 +32,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -47,15 +48,104 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-02"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 52,
-    "opportunities": 52
+    "announcementsRead": 60,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "CIDO7-22420072",
+      "title": "1 plaça de Tècnic d'esports",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420072"
+    },
+    {
+      "id": "CIDO7-22420068",
+      "title": "2 places de Socorrista aquàtic",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420068"
+    },
+    {
+      "id": "CIDO7-22420064",
+      "title": "1 plaça de Tècnic de suport àmbit urbanisme i serveis tècnics",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420064"
+    },
+    {
+      "id": "CIDO7-22420052",
+      "title": "1 plaça de Responsable de la biblioteca",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420052"
+    },
+    {
+      "id": "CIDO7-22420041",
+      "title": "2 places d'Oficial 2a de la brigada municipal",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420041"
+    },
+    {
+      "id": "CIDO7-22420026",
+      "title": "1 plaça d'Administratiu de suport de les oficines municipals",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420026"
+    },
+    {
+      "id": "CIDO7-22420021",
+      "title": "1 plaça de Vigilant municipal",
+      "entity": "Ajuntament de Bellver de Cerdanya",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420021"
+    },
+    {
+      "id": "CIDO7-22382021",
+      "title": "Borsa de treball de places d'Arxiver municipal",
+      "entity": "Ajuntament de la Seu d'Urgell",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22382021"
+    },
+    {
+      "id": "CIDO7-19313484",
+      "title": "3 places de Tècnic d'auxiliar de geriatria",
+      "entity": "Ajuntament de Maldà",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19313484"
+    },
     {
       "id": "CIDO7-22410438",
       "title": "Borsa de treball de places d'Educador de l'escola bressol municipal (ampliació)",
@@ -245,16 +335,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22382050"
-    },
-    {
-      "id": "CIDO7-22382021",
-      "title": "Borsa de treball de places d'Arxiver municipal",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22382021"
     },
     {
       "id": "CIDO7-22266838",

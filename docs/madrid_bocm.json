@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-02T06:43:16.860907+00:00",
+  "lastCheckedUTC": "2026-11-02T16:47:34.375767+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "262",
-    "pagesVisited": 26,
-    "announcementsRead": 1715,
+    "bulletin": "263",
+    "pagesVisited": 27,
+    "announcementsRead": 1739,
     "opportunities": 285
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-04",
     "rangeEnd": "2026-11-02",
-    "issuesRead": 26,
-    "pagesVisited": 26,
-    "announcementsRead": 1715,
+    "issuesRead": 27,
+    "pagesVisited": 27,
+    "announcementsRead": 1739,
     "opportunities": 285,
     "bulletins": [
       "237",
@@ -45,7 +45,8 @@
       "259",
       "260",
       "261",
-      "262"
+      "262",
+      "263"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -73,15 +74,15 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
       "2026-10-04",
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01",
-      "2026-11-02"
+      "2026-11-01"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/05/23700.PDF",
@@ -109,7 +110,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/28/25900.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/29/26000.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/30/26100.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/31/26200.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/31/26200.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/02/26300.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -135,6 +137,7 @@
       "xml",
       "xml",
       "html",
+      "xml",
       "xml",
       "xml",
       "xml"

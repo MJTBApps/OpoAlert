@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-01T17:52:56.848266+00:00",
+  "lastCheckedUTC": "2026-11-02T16:35:11.338671+00:00",
   "coverage": {
-    "bulletin": "209",
+    "bulletin": "210",
     "pagesVisited": 3,
-    "announcementsRead": 55,
+    "announcementsRead": 57,
     "opportunities": 3,
     "complete": true,
     "status": "paginator_last_page",
@@ -13,6 +13,33 @@
   },
   "countNewBulletin": 3,
   "notices": [
+    {
+      "id": "2026/13142",
+      "title": "Anuncio del Ayuntamiento de Utiel sobre la aprobación de las bases específicas del proceso de selección para la cobertura definitiva de una plaza de oficial/a de fontanería por turno de diversidad funcional.",
+      "entity": "Ayuntamiento de Utiel",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es"
+    },
+    {
+      "id": "2026/13136",
+      "title": "Anuncio del Ayuntamiento de Utiel sobre la aprobación de las bases específicas del proceso de selección para la cobertura definitiva de una plaza de dinamizador/a de juventud.",
+      "entity": "Ayuntamiento de Utiel",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13136&lang=es"
+    },
+    {
+      "id": "2026/13135",
+      "title": "Anuncio del Ayuntamiento de Utiel sobre la aprobación de las bases específicas del proceso de selección para la cobertura definitiva de una plaza de técnico/a auxiliar de servicios sociales por turno de diversidad funcional.",
+      "entity": "Ayuntamiento de Utiel",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13135&lang=es"
+    },
     {
       "id": "2026/13435",
       "title": "Anuncio de la Diputación Provincial de Valencia sobre la convocatoria de la oposición libre para la selección de una plaza de técnico/a medio/a de archivo y biblioteca, incluida en la oferta de empleo público del año 2025. Convocatoria 10/25.",
@@ -530,11 +557,11 @@
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
-    "pagesVisited": 49,
-    "announcementsRead": 1144,
-    "opportunities": 57,
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
+    "pagesVisited": 51,
+    "announcementsRead": 1201,
+    "opportunities": 60,
     "bulletins": [
       "191",
       "192",
@@ -554,154 +581,155 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-01T17:52:56.848277+00:00",
+    "verifiedUTC": "2026-11-02T16:35:11.338688+00:00",
     "chunks": [
       {
         "start": "2026-10-05",
-        "end": "2026-10-07",
-        "requestedStart": "2026-10-03",
-        "requestedEnd": "2026-10-07",
+        "end": "2026-10-08",
+        "requestedStart": "2026-10-04",
+        "requestedEnd": "2026-10-08",
         "publishedDates": [
           "2026-10-05",
           "2026-10-06",
-          "2026-10-07"
+          "2026-10-07",
+          "2026-10-08"
         ],
         "nonPublicationDates": [
-          "2026-10-03",
           "2026-10-04"
         ],
-        "pagesVisited": 8,
-        "announcementsRead": 176,
+        "pagesVisited": 10,
+        "announcementsRead": 235,
         "bulletins": [
           "191",
           "192",
-          "193"
+          "193",
+          "194"
         ],
-        "opportunities": 5,
+        "opportunities": 7,
         "complete": true
       },
       {
-        "start": "2026-10-08",
-        "end": "2026-10-12",
-        "requestedStart": "2026-10-08",
-        "requestedEnd": "2026-10-12",
+        "start": "2026-10-12",
+        "end": "2026-10-13",
+        "requestedStart": "2026-10-09",
+        "requestedEnd": "2026-10-13",
         "publishedDates": [
-          "2026-10-08",
-          "2026-10-12"
+          "2026-10-12",
+          "2026-10-13"
         ],
         "nonPublicationDates": [
           "2026-10-09",
           "2026-10-10",
           "2026-10-11"
         ],
-        "pagesVisited": 3,
-        "announcementsRead": 60,
+        "pagesVisited": 4,
+        "announcementsRead": 78,
         "bulletins": [
-          "194",
-          "195"
+          "195",
+          "196"
         ],
-        "opportunities": 2,
+        "opportunities": 4,
         "complete": true
       },
       {
-        "start": "2026-10-13",
+        "start": "2026-10-14",
         "end": "2026-10-16",
-        "requestedStart": "2026-10-13",
-        "requestedEnd": "2026-10-17",
+        "requestedStart": "2026-10-14",
+        "requestedEnd": "2026-10-18",
         "publishedDates": [
-          "2026-10-13",
           "2026-10-14",
           "2026-10-15",
           "2026-10-16"
         ],
         "nonPublicationDates": [
-          "2026-10-17"
+          "2026-10-17",
+          "2026-10-18"
         ],
-        "pagesVisited": 13,
-        "announcementsRead": 312,
+        "pagesVisited": 10,
+        "announcementsRead": 235,
         "bulletins": [
-          "196",
           "197",
           "198",
           "199"
         ],
-        "opportunities": 16,
+        "opportunities": 12,
         "complete": true
       },
       {
         "start": "2026-10-19",
-        "end": "2026-10-22",
-        "requestedStart": "2026-10-18",
-        "requestedEnd": "2026-10-22",
+        "end": "2026-10-23",
+        "requestedStart": "2026-10-19",
+        "requestedEnd": "2026-10-23",
         "publishedDates": [
           "2026-10-19",
           "2026-10-20",
           "2026-10-21",
-          "2026-10-22"
+          "2026-10-22",
+          "2026-10-23"
         ],
-        "nonPublicationDates": [
-          "2026-10-18"
-        ],
-        "pagesVisited": 11,
-        "announcementsRead": 262,
+        "nonPublicationDates": [],
+        "pagesVisited": 13,
+        "announcementsRead": 320,
         "bulletins": [
           "200",
           "201",
           "202",
-          "203"
+          "203",
+          "204"
         ],
-        "opportunities": 9,
+        "opportunities": 15,
         "complete": true
       },
       {
-        "start": "2026-10-23",
-        "end": "2026-10-27",
-        "requestedStart": "2026-10-23",
-        "requestedEnd": "2026-10-27",
+        "start": "2026-10-26",
+        "end": "2026-10-28",
+        "requestedStart": "2026-10-24",
+        "requestedEnd": "2026-10-28",
         "publishedDates": [
-          "2026-10-23",
           "2026-10-26",
-          "2026-10-27"
+          "2026-10-27",
+          "2026-10-28"
         ],
         "nonPublicationDates": [
           "2026-10-24",
           "2026-10-25"
         ],
         "pagesVisited": 7,
-        "announcementsRead": 172,
+        "announcementsRead": 170,
         "bulletins": [
-          "204",
           "205",
-          "206"
+          "206",
+          "207"
         ],
         "opportunities": 13,
         "complete": true
       },
       {
-        "start": "2026-10-28",
-        "end": "2026-10-30",
-        "requestedStart": "2026-10-28",
-        "requestedEnd": "2026-11-01",
+        "start": "2026-10-29",
+        "end": "2026-11-02",
+        "requestedStart": "2026-10-29",
+        "requestedEnd": "2026-11-02",
         "publishedDates": [
-          "2026-10-28",
           "2026-10-29",
-          "2026-10-30"
+          "2026-10-30",
+          "2026-11-02"
         ],
         "nonPublicationDates": [
           "2026-10-31",
           "2026-11-01"
         ],
         "pagesVisited": 7,
-        "announcementsRead": 162,
+        "announcementsRead": 163,
         "bulletins": [
-          "207",
           "208",
-          "209"
+          "209",
+          "210"
         ],
-        "opportunities": 12,
+        "opportunities": 9,
         "complete": true
       }
     ]
