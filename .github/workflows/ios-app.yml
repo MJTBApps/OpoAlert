@@ -22,8 +22,9 @@ concurrency:
 
 jobs:
   compilar:
-    # macos-26 trae Xcode 26 de serie; el 2/11/2026 la cola de macos-15 se cancelaba por falta de Macs.
-    runs-on: macos-26
+    # El 2/11/2026 las colas de Mac arm64 (macos-15 y macos-26) se cancelaban por falta de Macs;
+    # los Mac Intel también traen Xcode 26 (el paso siguiente lo comprueba).
+    runs-on: macos-15-intel
     timeout-minutes: 45
     steps:
       - name: Descargar codigo
