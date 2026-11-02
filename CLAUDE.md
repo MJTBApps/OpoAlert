@@ -141,6 +141,7 @@ Ver `PLAN_MONETIZACION_IOS.md`. Resumen:
 - Comprobaciones: `OpoAlertChecks` (pruebas de Android portadas, revisión simulada y validación de todos los `docs/*.json`). En el iMac, SwiftPM no funciona sin Xcode: compilar con `swiftc` como dice `ios/README.md`. Las pantallas solo se compilan en `ios-app.yml` (macOS de GitHub), que guarda capturas del simulador en el artefacto `capturas-ios`.
 - `ios/project.yml` es para XcodeGen; el `.xcodeproj` y el `Info.plist` se generan (están en `.gitignore`).
 - Icono: `scripts/generar_icono_ios.swift` dibuja el mismo diseño que el de Android.
+- **Anuncios y Premium en iOS** (desde el 02/11/2026): `Ads.swift` (AdMob 12 + UMP 3 por Swift Package Manager; consentimiento RGPD, aviso de seguimiento de Apple, anuncio de apertura y banner cada 8 convocatorias, mismas reglas que Android) y `Premium.swift` (StoreKit 2, suscripción `opoalert_premium`, pantalla `PremiumView`; las alertas son de Premium). Identificadores de AdMob de PRUEBA en `ios/project.yml` (`ADMOB_*`); los reales están en `~/OpoAlert-claves/ios.properties` y solo se pasarán al compilar la versión del App Store.
 
 ## Antes de dar un cambio por terminado
 

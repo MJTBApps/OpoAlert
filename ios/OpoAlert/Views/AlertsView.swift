@@ -5,15 +5,31 @@ import SwiftUI
 struct AlertsView: View {
     @EnvironmentObject private var model: AppModel
     @State private var editing: AlertDraft?
+    @State private var showPremium = false
+    @ObservedObject private var premium = PremiumStore.shared
 
     var body: some View {
         List {
+            if !premium.isActive {
+                Section {
+                    Button { showPremium = true } label: {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Label("Las alertas son de OpoAlert Premium", systemImage: "star.fill")
+                                .font(.headline).foregroundStyle(Color(hex: 0x7A4A00))
+                            Text("Te avisamos en cuanto sale una convocatoria de tu puesto y provincia, y sin publicidad. Toca aquí para ver el precio y la prueba gratuita.")
+                                .font(.subheadline).foregroundStyle(Color(hex: 0x7A5A2B))
+                        }
+                    }
+                    .buttonStyle(.plain)
+                    .listRowBackground(Color(hex: 0xFFF7E8))
+                }
+            }
             Section {
                 Text("Recibe avisos únicamente cuando aparezcan anuncios nuevos que coincidan con tus puestos o palabras clave. Las tildes y mayúsculas no importan.")
                     .font(.subheadline)
                     .foregroundStyle(Color(hex: 0x45546C))
                 Button {
-                    editing = AlertDraft(rule: nil, followed: model.selected)
+                    if premium.isActive { editing = AlertDraft(rule: nil, followed: model.selected) } else { showPremium = true }
                 } label: {
                     Label("Crear nueva alerta", systemImage: "plus")
                         .font(.headline)
@@ -60,6 +76,7 @@ struct AlertsView: View {
         }
         .navigationTitle("Mis alertas")
         .sheet(item: $editing) { AlertEditView(draft: $0) }
+        .sheet(isPresented: $showPremium) { PremiumView() }
     }
 
     private var activeText: String {

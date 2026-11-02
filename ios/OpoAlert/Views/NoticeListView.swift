@@ -11,6 +11,9 @@ struct NoticeListView: View {
     @State private var filter = NoticeFilter.all
     @State private var limit = AppModel.pageSize
     @State private var showAbout = false
+    @State private var showPremium = false
+    @ObservedObject private var ads = Ads.shared
+    @ObservedObject private var premium = PremiumStore.shared
 
     private var shown: [Notice] {
         mode == .explore ? model.explore(query: query, filter: filter)
@@ -45,11 +48,20 @@ struct NoticeListView: View {
                         .padding(.vertical, 30)
                         .listRowBackground(Color.clear)
                 } else {
-                    ForEach(shown.prefix(limit)) { notice in
+                    ForEach(Array(shown.prefix(limit).enumerated()), id: \.element.id) { index, notice in
                         NoticeRow(notice: notice)
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
                             .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
+                        // Un anuncio cada 8 convocatorias, como mucho 5 (sin anuncios con Premium).
+                        if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == 3
+                            && index / Ads.listAdEvery < Ads.maxListAds {
+                            BannerAdView(adUnitID: ads.bannerID)
+                                .frame(width: 320, height: 50)
+                                .frame(maxWidth: .infinity)
+                                .listRowSeparator(.hidden)
+                                .listRowBackground(Color.clear)
+                        }
                     }
                     if shown.count > limit {
                         Button {
@@ -88,6 +100,12 @@ struct NoticeListView: View {
                 Menu {
                     Button { Task { await model.refresh() } } label: { Label("Actualizar", systemImage: "arrow.clockwise") }
                     Button { model.showSourcePicker = true } label: { Label("Elegir boletines", systemImage: "list.bullet") }
+                    Button { showPremium = true } label: {
+                        Label(premium.isActive ? "OpoAlert Premium ✓" : "OpoAlert Premium", systemImage: "star.circle")
+                    }
+                    if ads.privacyOptionsRequired {
+                        Button { ads.showPrivacyOptions() } label: { Label("Privacidad y publicidad", systemImage: "hand.raised") }
+                    }
                     Button { showAbout = true } label: { Label("Acerca de OpoAlert", systemImage: "info.circle") }
                 } label: {
                     if model.isRefreshing { ProgressView() } else { Image(systemName: "ellipsis.circle") }
@@ -96,6 +114,7 @@ struct NoticeListView: View {
             }
         }
         .sheet(isPresented: $showAbout) { AboutView() }
+        .sheet(isPresented: $showPremium) { PremiumView() }
     }
 
     private var emptyMessage: String {

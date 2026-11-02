@@ -20,7 +20,7 @@ auditados de GitHub Pages que la app Android. El backend no cambia.
 - **Elegir boletines**: BOE y comunidades con sus provincias, como en Android.
   La lista de fuentes activas se lee de `fuentes_activas.json`.
 
-Sin publicidad ni Premium de momento (ver `PLAN_MONETIZACION_IOS.md`).
+Con publicidad de AdMob (`Ads.swift`) y OpoAlert Premium con la compra de Apple (`Premium.swift`), como en Android.
 
 ## Estructura
 

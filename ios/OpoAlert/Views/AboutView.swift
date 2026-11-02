@@ -22,7 +22,8 @@ struct AboutView: View {
                     Text("«Candidata» no significa plaza confirmada: el filtrado es conservador. Las bases, requisitos y plazos válidos son los del anuncio oficial, que siempre se enlaza.")
                 }
                 Section("Privacidad") {
-                    Text("Tus favoritas, alertas y boletines se guardan solo en este móvil. OpoAlert no tiene cuentas ni envía tus datos: solo descarga los listados públicos de mjtbapps.github.io.")
+                    Text("Tus favoritas, alertas y boletines se guardan solo en este móvil. OpoAlert no tiene cuentas. La versión gratuita muestra anuncios de Google (AdMob), que pueden usar datos del dispositivo según el consentimiento que des.")
+                    Link("Política de privacidad", destination: URL(string: "https://mjtbapps.github.io/OpoAlert/privacidad.html")!)
                 }
                 Section {
                     Link("Web y código abierto", destination: URL(string: "https://mjtbapps.github.io/OpoAlert/")!)

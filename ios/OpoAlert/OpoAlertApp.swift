@@ -14,7 +14,11 @@ struct OpoAlertApp: App {
                 .environmentObject(model)
                 .tint(Palette.blue)
                 .onAppear { delegate.attach(model) }
-                .task { await model.refresh() }
+                .task {
+                    PremiumStore.shared.start()
+                    Ads.shared.start(premium: PremiumStore.isActiveStored)
+                    await model.refresh()
+                }
         }
         .onChange(of: scenePhase) { phase in
             if phase == .background {

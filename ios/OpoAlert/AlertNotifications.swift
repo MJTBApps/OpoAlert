@@ -16,7 +16,8 @@ enum AlertNotifications {
 
     /// Un aviso por revisión: con una sola convocatoria abre su ficha; con varias, la lista.
     static func show(_ matching: [Notice]) async {
-        guard !matching.isEmpty else { return }
+        // Las alertas son de OpoAlert Premium.
+        guard !matching.isEmpty, PremiumStore.isActiveStored else { return }
         let center = UNUserNotificationCenter.current()
         let settings = await center.notificationSettings()
         guard settings.authorizationStatus == .authorized || settings.authorizationStatus == .provisional else { return }
