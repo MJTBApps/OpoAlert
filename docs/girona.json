@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-02T06:42:36.630403+00:00",
+  "lastCheckedUTC": "2026-11-02T09:39:15.541580+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 62,
-    "opportunities": 62,
+    "announcementsRead": 65,
+    "opportunities": 65,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -47,15 +48,54 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01",
-      "2026-11-02"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 62,
-    "opportunities": 62
+    "announcementsRead": 65,
+    "opportunities": 65
   },
   "notices": [
+    {
+      "id": "CIDO6-22419919",
+      "title": "1 plaça d'Arquitecte tècnic",
+      "entity": "Ajuntament de Santa Coloma de Farners",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22419919"
+    },
+    {
+      "id": "CIDO6-22419833",
+      "title": "1 plaça d'Enginyer tècnic",
+      "entity": "Ajuntament de Santa Coloma de Farners",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22419833"
+    },
+    {
+      "id": "CIDO6-22419816",
+      "title": "Borsa de treball de places de Secretari interventor",
+      "entity": "Ajuntament de Maçanet de Cabrenys",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22419816"
+    },
+    {
+      "id": "CIDO6-21293434",
+      "title": "1 plaça d'Operari de menjador d'escoles bressol",
+      "entity": "Ajuntament de Celrà",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21293434"
+    },
     {
       "id": "CIDO6-20894244",
       "title": "1 plaça d'Auxiliar administratiu",
@@ -185,16 +225,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21744935"
-    },
-    {
-      "id": "CIDO6-21293434",
-      "title": "1 plaça d'Operari de menjador d'escoles bressol",
-      "entity": "Ajuntament de Celrà",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21293434"
     },
     {
       "id": "CIDO6-20858650",

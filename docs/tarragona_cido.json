@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-02T06:42:36.630403+00:00",
+  "lastCheckedUTC": "2026-11-02T09:39:15.541580+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 79,
-    "opportunities": 79,
+    "announcementsRead": 81,
+    "opportunities": 81,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -47,15 +48,54 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-02"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 79,
-    "opportunities": 79
+    "announcementsRead": 81,
+    "opportunities": 81
   },
   "notices": [
+    {
+      "id": "CIDO8-22420343",
+      "title": "1 plaça d'Auxiliar administratiu de la divisió d'habitatge",
+      "entity": "Ajuntament de Reus - Reus Desenvolupament Econòmic, SA",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22420343"
+    },
+    {
+      "id": "CIDO8-22329601",
+      "title": "6 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22329601"
+    },
+    {
+      "id": "CIDO8-20367290",
+      "title": "1 plaça de Tècnic auxiliar de biblioteca",
+      "entity": "Ajuntament de Castellvell del Camp",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/20367290"
+    },
+    {
+      "id": "CIDO8-17959571",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Valls - Patronat Municipal d'Esports",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17959571"
+    },
     {
       "id": "CIDO8-22410612",
       "title": "Borsa de treball de places d'Oficial 2a de la brigada d'obres i serveis",
@@ -537,16 +577,6 @@
       "url": "https://cido.diba.cat/oposicions/22329607"
     },
     {
-      "id": "CIDO8-22329601",
-      "title": "6 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "19/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22329601"
-    },
-    {
       "id": "CIDO8-22257696",
       "title": "1 plaça de Tècnic de contractació",
       "entity": "Ajuntament de la Bisbal del Penedès",
@@ -725,16 +755,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21789069"
-    },
-    {
-      "id": "CIDO8-20367290",
-      "title": "1 plaça de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament de Castellvell del Camp",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20367290"
     },
     {
       "id": "CIDO8-19400955",
