@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-01T16:28:10.163664+00:00",
+  "lastCheckedUTC": "2026-11-02T07:05:14.440863+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "208",
-    "pagesVisited": 21,
-    "announcementsRead": 870,
-    "opportunities": 60
+    "bulletin": "209",
+    "pagesVisited": 22,
+    "announcementsRead": 916,
+    "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "189",
       "190",
@@ -35,7 +35,8 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-10",
       "2026-10-11",
@@ -71,11 +72,41 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 870,
-    "opportunities": 60
+    "issuesRead": 21,
+    "announcementsRead": 916,
+    "opportunities": 63
   },
   "notices": [
+    {
+      "id": "LE-202620909111",
+      "province": "Lleida (BOP)",
+      "title": "Anunci de la convocatòria i les bases que han de regir el procés de selecció, mitjançant concurs oposició, per a la constitució d’una borsa de treball de personal funcionari interí per cobrir les vacants i substitucions de les places de secretaria intervenció del Servei d’Assistència Tècnica del Consell Comarcal de les Garrigues, així com possibles necessitats de personal.",
+      "entity": "CONSELL COMARCAL DE LES GARRIGUES (BORGES BLANQUES, LES)",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/209/202620909111.pdf"
+    },
+    {
+      "id": "LE-202620909093",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria i bases reguladores del procés selectiu mitjançant concurs oposició per a la cobertura definitiva d’una plaça de tècnic/a d’ensenyament A2 del Consell Comarcal del Segrià, codi F-AG31 (exp. 10341/2026)",
+      "entity": "CONSELL COMARCAL DEL SEGRIÀ",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/209/202620909093.pdf"
+    },
+    {
+      "id": "LE-202620908999",
+      "province": "Lleida (BOP)",
+      "title": "Bases i convocatòria d’un lloc de treball de coordinador/a tècnic/a del servei d’ajuda a domicili (SAD)",
+      "entity": "INICIATIVES ALT URGELL SA (SEU D'URGELL, LA)",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/209/202620908999.pdf"
+    },
     {
       "id": "LE-202620809071",
       "province": "Lleida (BOP)",
