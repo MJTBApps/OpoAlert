@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-01T17:56:10.470466+00:00",
+  "lastCheckedUTC": "2026-11-02T06:31:24.000689+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "130",
-    "pagesVisited": 12,
-    "announcementsRead": 485,
-    "opportunities": 24
+    "bulletin": "131",
+    "pagesVisited": 13,
+    "announcementsRead": 519,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "119",
       "120",
@@ -27,7 +27,8 @@
       "127",
       "128",
       "129",
-      "130"
+      "130",
+      "131"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -41,10 +42,10 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-06",
       "2026-10-08",
@@ -63,11 +64,21 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 485,
-    "opportunities": 24
+    "issuesRead": 13,
+    "announcementsRead": 519,
+    "opportunities": 25
   },
   "notices": [
+    {
+      "id": "TF-20261102-004",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a Recurso Potestativo de Reposición interpuesto por D.ª J. M. G., en la convocatoria pública para la cobertura, con carácter fijo, de ciento ochenta y cuatro (184) plazas de Técnico/a Especialista en Cuidados Auxiliares de Enfermería, Grupo C1, de las cuales ochenta y seis (86) serán provistas por el turno de acceso libre, incluyendo una (1) plaza reservada a personas con discapacidad, y noventa y ocho (98) serán provistas por el turno de promoción interna, mediante el sistema de concurso-oposición, vacantes en la plantilla de Personal Laboral del Organismo Autónomo Instituto Insular de Atención Social y Sociosanitaria e incluidas en la Oferta de Empleo Público del año 2024",
+      "entity": "INSTITUTO INSULAR DE ATENCIÓN SOCIAL Y SOCIOSANITARIA (IASS)",
+      "date": "02/11/2026",
+      "bulletin": "131",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/2-11-26/2-11-26.pdf"
+    },
     {
       "id": "TF-20261030-022",
       "province": "Santa Cruz de Tenerife (BOP)",

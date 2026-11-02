@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-01T17:53:38.425322+00:00",
+  "lastCheckedUTC": "2026-11-02T06:29:27.250050+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 20,
-    "announcementsRead": 249,
-    "opportunities": 52
+    "bulletin": "210",
+    "pagesVisited": 21,
+    "announcementsRead": 259,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "190",
       "191",
@@ -35,7 +35,8 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-10",
       "2026-10-11",
@@ -71,11 +72,21 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 249,
-    "opportunities": 52
+    "issuesRead": 21,
+    "announcementsRead": 259,
+    "opportunities": 53
   },
   "notices": [
+    {
+      "id": "OU-2026-353118",
+      "province": "Ourense",
+      "title": "BOLSA DE EMPLEO PARA CUBRIR BAJAS, VACACIONES, SUSTITUCIONES Y VACANTES DE TRABAJADOR/A SOCIAL",
+      "entity": "CONCELLO DE CASTRO CALDELAS",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353118/idioma/gl"
+    },
     {
       "id": "OU-2026-352942",
       "province": "Ourense",

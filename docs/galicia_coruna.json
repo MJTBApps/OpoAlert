@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-01T17:49:14.379093+00:00",
+  "lastCheckedUTC": "2026-11-02T06:25:56.302816+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "208",
-    "pagesVisited": 19,
-    "announcementsRead": 585,
-    "opportunities": 47
+    "bulletin": "209",
+    "pagesVisited": 20,
+    "announcementsRead": 623,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "190",
       "191",
@@ -34,7 +34,8 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -55,10 +56,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-07",
       "2026-10-10",
@@ -70,11 +71,41 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 585,
-    "opportunities": 47
+    "issuesRead": 20,
+    "announcementsRead": 623,
+    "opportunities": 50
   },
   "notices": [
+    {
+      "id": "AC-2026-7099",
+      "province": "A Coruña",
+      "title": "Relación de aspirantes que aprobaron procesos selectivos para a cobertura de varias prazas e declaración de varias convocatorias desertas",
+      "entity": "Servizo de Recursos Humanos. Sección de Planificación de Recursos Humanos",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000007099.pdf"
+    },
+    {
+      "id": "AC-2026-7018",
+      "province": "A Coruña",
+      "title": "Modificación do decreto núm. 1010/2026, do 19 de outubro de 2026 P.S. convocatoria para selección dun auxiliar administrativo/a notificador/a grupo: C, subgrupo: C2 quenda libre: concurso-oposición; clasificación: administración xeral/auxiliar",
+      "entity": "Cee",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000007018.pdf"
+    },
+    {
+      "id": "AC-2026-6765",
+      "province": "A Coruña",
+      "title": "Anuncio bases bolsa porteiro conserxe",
+      "entity": "Muros",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000006765.pdf"
+    },
     {
       "id": "AC-2026-6973",
       "province": "A Coruña",
