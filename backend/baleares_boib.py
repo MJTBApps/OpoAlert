@@ -89,7 +89,12 @@ def validate_pdf_url(url,number,day):
  if not (PDF_ELI_RE.fullmatch(u.path) or PDF_NOT_RE.fullmatch(u.path)) or u.query:
   invalid("versión PDF ELI no oficial "+url)
 def check_pdf(url):
- r=fetch(url,timeout=(10,43),stream=True,headers={"Range":"bytes=0-127"})
+ # El portal devuelve a veces una página en lugar del PDF (02/11/2026): hasta tres intentos.
+ for attempt in range(3):
+  r=fetch(url,timeout=(10,43),stream=True,headers={"Range":"bytes=0-127"})
+  if r.status_code in (200,206) and "pdf" in r.headers.get("Content-Type","").lower():break
+  r.close()
+  if attempt<2:time.sleep(4*(attempt+1))
  try:
   if (r.status_code not in (200,206) or
       "pdf" not in r.headers.get("Content-Type","").lower()):

@@ -101,6 +101,7 @@ class FakePanel:
         if self.month == (2026,10): return SOURCE
         if self.month == (2026,9):
             return ('<table class="ui-datepicker-calendar"><tr>'
+                    '<td class="ui-datepicker-unselectable ui-state-disabled"><span class="ui-state-default">27</span></td>'
                     '<td><a class="ui-state-default">28</a></td>'
                     '<td><a class="ui-state-default">29</a></td>'
                     '<td><a class="ui-state-default">30</a></td>'
@@ -125,5 +126,15 @@ class CalendarTraversalTests(unittest.TestCase):
         self.assertIn(date(2026,10,2),days)
         self.assertNotIn(date(2026,10,3),days)
         self.assertNotIn(date(2026,10,9),days)
+
+    def test_calendario_sin_dias_deshabilitados_no_se_acepta(self):
+        # 02/11/2026: recién cargado, el calendario mostraba todos los días habilitados.
+        from unittest.mock import patch
+        page=FakePage()
+        page.panel.inner_html=lambda: ('<table class="ui-datepicker-calendar"><tr>'
+            + ''.join(f'<td><a class="ui-state-default">{d}</a></td>' for d in range(1,32)) + '</tr></table>')
+        with patch('history._visible_calendar_month', lambda p:p.month):
+            with self.assertRaisesRegex(CoverageError,'no ha marcado los dias sin boletin'):
+                official_published_days(page,date(2026,10,4),date(2026,10,27))
 
 if __name__ == '__main__': unittest.main()

@@ -125,7 +125,8 @@ def audit(today=None):
     for year,month in sorted({(start.year,start.month),(end.year,end.month)}):
         days=[d for d in (start+timedelta(days=i) for i in range(30)) if (d.year,d.month)==(year,month)]
         for d in list(reversed(days))[:7]:
-            found=archive(cr_get(issue_url(d)).text,start,end)
+            # Un día sin boletín puede mostrar el calendario de otro mes: solo vale el de este.
+            found=[x for x in archive(cr_get(issue_url(d)).text,start,end) if (x.year,x.month)==(year,month)]
             if found:
                 dates.update(found)
                 break

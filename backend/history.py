@@ -458,6 +458,21 @@ def published_days_in_month(html_fragment: str, year: int, month: int) -> set[da
     return days
 
 
+def _wait_calendar_loaded(page, panel):
+    """Espera a que el calendario marque los días sin boletín.
+
+    Recién cargado, el calendario puede pintar todos los días como habilitados
+    hasta que llega la lista de ediciones (02/11/2026 leyó 29 días seguidos, con
+    domingos). Todo mes tiene días sin boletín: si no aparece ninguno, no se sigue.
+    """
+    for _retry in range(40):
+        html = panel.inner_html()
+        if 'ui-state-disabled' in html or 'ui-datepicker-unselectable' in html:
+            return
+        page.wait_for_timeout(500)
+    raise CoverageError('El calendario oficial no ha marcado los dias sin boletin')
+
+
 def official_published_days(page, first: date, last: date) -> list[date]:
     """Visita meses del calendario DE EDICIONES, no el filtro de busqueda.
 
@@ -471,6 +486,7 @@ def official_published_days(page, first: date, last: date) -> list[date]:
         raise CoverageError('No se encuentra el calendario oficial de ediciones BOP')
     first_month = (first.year, first.month)
     last_month = (last.year, last.month)
+    _wait_calendar_loaded(page, panel)
     current_month = _visible_calendar_month(panel)
     previous_month = (last.year - 1, 12) if last.month == 1 else (last.year, last.month - 1)
     if current_month < last_month and last.day <= 3 and current_month == previous_month:
@@ -485,6 +501,7 @@ def official_published_days(page, first: date, last: date) -> list[date]:
     for _ in range(9):
         current_month = _visible_calendar_month(panel)
         if first_month <= current_month <= last_month:
+            _wait_calendar_loaded(page, panel)
             current_days = published_days_in_month(
                 panel.inner_html(), *current_month)
             collected.update(d for d in current_days if first <= d <= last)
