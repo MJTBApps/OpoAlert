@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-01T16:09:57.062211+00:00",
+  "lastCheckedUTC": "2026-11-02T06:34:45.731560+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "132",
-    "pagesVisited": 14,
-    "announcementsRead": 457,
-    "opportunities": 22,
+    "pagesVisited": 13,
+    "announcementsRead": 410,
+    "opportunities": 21,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
-    "issuesRead": 14,
-    "pagesVisited": 14,
-    "announcementsRead": 457,
-    "opportunities": 22,
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
+    "issuesRead": 13,
+    "pagesVisited": 13,
+    "announcementsRead": 410,
+    "opportunities": 21,
     "bulletins": [
-      "119",
       "120",
       "121",
       "122",
@@ -36,7 +35,6 @@
       "132"
     ],
     "publicationDates": [
-      "2026-10-03",
       "2026-10-06",
       "2026-10-08",
       "2026-10-10",
@@ -67,7 +65,8 @@
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-02"
     ]
   },
   "notices": [
@@ -280,16 +279,6 @@
       "bulletin": "120",
       "type": "Plaza / oposición",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168167&idioma=es"
-    },
-    {
-      "id": "CS-168270",
-      "province": "Castellón",
-      "title": "Extracto Bases y Convocatoria cobertura en propiedad 2 plazas Agente Policía Local. PL21  PL25",
-      "entity": "AJUNTAMENT D'ALCALÀ DE XIVERT",
-      "date": "03/10/2026",
-      "bulletin": "119",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168270&idioma=es"
     }
   ]
 }
