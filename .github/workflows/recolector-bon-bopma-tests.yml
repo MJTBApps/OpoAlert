@@ -1,0 +1,20 @@
+name: OpoAlert - Pruebas recolector local BON BOPMA
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/cierre-10-recolector-navarra-20261029]
+    paths:
+      - scripts/recolector_bop_local.py
+      - .github/workflows/recolector-bon-bopma-tests.yml
+permissions: {contents: read}
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile scripts/recolector_bop_local.py
+      - run: python scripts/recolector_bop_local.py --self-test
