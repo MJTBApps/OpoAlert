@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-01T17:54:06.671543+00:00",
+  "lastCheckedUTC": "2026-11-02T06:30:25.519395+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "252",
+    "bulletin": "253",
     "pagesVisited": 25,
-    "announcementsRead": 566,
-    "opportunities": 48
+    "announcementsRead": 559,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
-      "229",
       "230",
       "231",
       "232",
@@ -40,10 +39,10 @@
       "249",
       "250",
       "251",
-      "252"
+      "252",
+      "253"
     ],
     "publicationDates": [
-      "2026-10-03",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -67,7 +66,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
       "2026-10-04",
@@ -77,10 +77,40 @@
       "2026-11-01"
     ],
     "issuesRead": 25,
-    "announcementsRead": 566,
-    "opportunities": 48
+    "announcementsRead": 559,
+    "opportunities": 50
   },
   "notices": [
+    {
+      "id": "MU-2026-5335",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1358/2026) de 19 de octubre, de la Universidad de Murcia por la que se convocan concursos de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "02/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846017/pdf"
+    },
+    {
+      "id": "MU-2026-5334",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1357/2026) de 19 de octubre, de la Universidad de Murcia, por la que se convocan concursos de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "02/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846016/pdf"
+    },
+    {
+      "id": "MU-2026-5333",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1354/2026) de 19 de octubre, de la Universidad de Murcia, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "02/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846015/pdf"
+    },
     {
       "id": "MU-2026-5304",
       "province": "Región de Murcia (BORM)",
@@ -550,16 +580,6 @@
       "bulletin": "230",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845477/pdf"
-    },
-    {
-      "id": "MU-2026-4793",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio bases del proceso selectivo concurso-oposición promoción interna de una plaza de Administrativo.",
-      "entity": "Totana",
-      "date": "03/10/2026",
-      "bulletin": "229",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845475/pdf"
     }
   ]
 }

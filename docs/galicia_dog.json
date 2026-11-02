@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Galicia (DOG)",
   "source": "https://www.xunta.gal/diario-oficial-galicia/Welcome.do?lang=es",
-  "lastCheckedUTC": "2026-11-01T17:50:35.571294+00:00",
+  "lastCheckedUTC": "2026-11-02T06:27:07.699361+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "208",
-    "pagesVisited": 20,
-    "announcementsRead": 517,
-    "opportunities": 136
+    "bulletin": "209",
+    "pagesVisited": 21,
+    "announcementsRead": 531,
+    "opportunities": 142
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "189",
       "190",
@@ -35,7 +35,8 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-10",
       "2026-10-11",
@@ -71,11 +72,71 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 517,
-    "opportunities": 136
+    "issuesRead": 21,
+    "announcementsRead": 531,
+    "opportunities": 142
   },
   "notices": [
+    {
+      "id": "DG-2026-AnuncioG2017-221026-0001",
+      "province": "Galicia (DOG)",
+      "title": "ANUNCIO de 20 de octubre de 2026 por el que se da publicidad a la resolución de la misma fecha por la que se convoca un concurso público para la elaboración de bolsas de empleo para profesorado sustituto.",
+      "entity": "Universidad de A Coruña",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG2017-221026-0001_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG2017-211026-0001",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026 por la que se convoca un concurso de acceso a plazas de profesorado titular de universidad.",
+      "entity": "Universidad de A Coruña",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG2017-211026-0001_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0597-301026-0003",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 30 de octubre de 2026 por la que se modifica la Resolución de 28 de octubre de 2026 por la que se convocan para la elección de destino definitivo a las personas aspirantes que superaron los procesos selectivos para el ingreso, por el turno de promoción interna, en el cuerpo facultativo superior, subgrupo A1, escala de ingenieros/as, especialidades de ingeniería industrial, ingeniería de minas e ingeniería de montes, en el cuerpo facultativo de grado medio, subgrupo A2, escala de ingenieros/as técnicos/as, especialidades de ingeniería técnica agrícola e ingeniería técnica forestal, y en el cuerpo de gestión, subgrupo A2, escala de inspectores e inspectoras de consumo.",
+      "entity": "Consellería de Hacienda y Administración Pública",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0597-301026-0003_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0597-301026-0002",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 30 de octubre de 2026 por la que se modifica la Resolución de 28 de octubre de 2026 por la que se convocan para la elección de destino definitivo a las personas aspirantes que superaron los procesos selectivos para el ingreso en el cuerpo facultativo superior, subgrupo A1, escala de inspección urbanística, especialidad jurídica, en el cuerpo de gestión, subgrupo A2, escala de inspección turística, en el cuerpo facultativo de grado medio, subgrupo A2, escala de subinspección urbanística, en el cuerpo de técnicos de carácter facultativo, grupo B, escala técnica de delineantes y escala de agentes técnicos facultativos, especialidad de animación sociocultural, y en el cuerpo administrativo, subgrupo C1, escala de agentes de inspección, especialidades movilidad y vigilancia de carreteras.",
+      "entity": "Consellería de Hacienda y Administración Pública",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0597-301026-0002_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0003-231026-0002",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026, de la Gerencia del Área Sanitaria de Santiago de Compostela y Barbanza, por la que se resuelve la convocatoria para la provisión de diversas plazas de coordinador/a técnico/a superior sanitario de dicha área sanitaria, convocada por la Resolución de 12 de mayo de 2026 (Diario Oficial de Galicia número 94, de 22 de mayo).",
+      "entity": "Servicio Gallego de Salud",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0003-231026-0002_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0003-231026-0001",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026, de la Gerencia del Área Sanitaria de Santiago de Compostela y Barbanza, por la que se resuelve la convocatoria para la provisión de diversas plazas de supervisor/a de unidad de dicha área sanitaria, convocada por la Resolución de 12 de mayo de 2026 (Diario Oficial de Galicia número 96, de 26 de mayo).",
+      "entity": "Servicio Gallego de Salud",
+      "date": "02/11/2026",
+      "bulletin": "209",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0003-231026-0001_es.pdf"
+    },
     {
       "id": "DG-2026-AnuncioG2018-191026-0001",
       "province": "Galicia (DOG)",

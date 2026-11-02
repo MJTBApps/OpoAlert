@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-01T16:13:27.916249+00:00",
+  "lastCheckedUTC": "2026-11-02T06:42:36.630403+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 54,
-    "opportunities": 54,
+    "announcementsRead": 52,
+    "opportunities": 52,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "publicationDates": [
       "2026-10-06",
       "2026-10-07",
@@ -26,7 +26,6 @@
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -36,7 +35,6 @@
       "2026-10-30"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-05",
       "2026-10-10",
@@ -45,15 +43,17 @@
       "2026-10-15",
       "2026-10-17",
       "2026-10-18",
+      "2026-10-21",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-02"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 54,
-    "opportunities": 54
+    "announcementsRead": 52,
+    "opportunities": 52
   },
   "notices": [
     {
@@ -427,16 +427,6 @@
       "url": "https://cido.diba.cat/oposicions/22290661"
     },
     {
-      "id": "CIDO7-22360083",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament d'Albatàrrec",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22360083"
-    },
-    {
       "id": "CIDO7-22345789",
       "title": "1 plaça de Secretari de classe tercera",
       "entity": "Ajuntament de Ribera d'Urgellet",
@@ -455,16 +445,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22345819"
-    },
-    {
-      "id": "CIDO7-22335102",
-      "title": "1 plaça de Tècnic d'urbanisme i comerç",
-      "entity": "Ajuntament de Tremp",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22335102"
     },
     {
       "id": "CIDO7-22335079",

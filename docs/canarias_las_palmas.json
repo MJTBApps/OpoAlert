@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-01T17:52:26.898130+00:00",
+  "lastCheckedUTC": "2026-11-02T06:28:45.135004+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "130",
-    "pagesVisited": 12,
-    "announcementsRead": 356,
-    "opportunities": 31
+    "bulletin": "131",
+    "pagesVisited": 13,
+    "announcementsRead": 374,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "119",
       "120",
@@ -27,7 +27,8 @@
       "127",
       "128",
       "129",
-      "130"
+      "130",
+      "131"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -41,10 +42,10 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-06",
       "2026-10-08",
@@ -63,11 +64,31 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 356,
-    "opportunities": 31
+    "issuesRead": 13,
+    "announcementsRead": 374,
+    "opportunities": 33
   },
   "notices": [
+    {
+      "id": "LP-20261102-017",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases que han de regir la convocatoria para para cubrir 2 plazas de Auxiliar Administrativo de Administración General",
+      "entity": "ILUSTRE AYUNTAMIENTO DE TEROR",
+      "date": "02/11/2026",
+      "bulletin": "131",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/2-11-26/2-11-26.pdf"
+    },
+    {
+      "id": "LP-20261102-001",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases específicas de la convocatoria por el turno libre para cubrir 1 plaza de Médico de empresa",
+      "entity": "EXCMO. CABILDO INSULAR DE GRAN CANARIA",
+      "date": "02/11/2026",
+      "bulletin": "131",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/2-11-26/2-11-26.pdf"
+    },
     {
       "id": "LP-20261030-046",
       "province": "Las Palmas (BOP)",

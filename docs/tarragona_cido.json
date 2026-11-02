@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-01T16:13:27.916249+00:00",
+  "lastCheckedUTC": "2026-11-02T06:42:36.630403+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 81,
-    "opportunities": 81,
+    "announcementsRead": 79,
+    "opportunities": 79,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "publicationDates": [
-      "2026-10-03",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -48,12 +47,13 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-02"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 81,
-    "opportunities": 81
+    "announcementsRead": 79,
+    "opportunities": 79
   },
   "notices": [
     {
@@ -457,16 +457,6 @@
       "url": "https://cido.diba.cat/oposicions/22360043"
     },
     {
-      "id": "CIDO8-22257743",
-      "title": "Borsa de treball de places de Tècnic mitjà en Treball social",
-      "entity": "Ajuntament de Tortosa",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22257743"
-    },
-    {
       "id": "CIDO8-22358167",
       "title": "Borsa de treball de places de Vigilant (ampliació)",
       "entity": "Ajuntament de Reus - Reus Mobilitat i Serveis, SA (AMERSAM)",
@@ -855,16 +845,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22267108"
-    },
-    {
-      "id": "CIDO8-12723564",
-      "title": "1 plaça de Tècnic de medi ambient",
-      "entity": "Ajuntament de Montblanc",
-      "date": "03/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/12723564"
     }
   ]
 }

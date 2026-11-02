@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-01T16:31:12.982655+00:00",
+  "lastCheckedUTC": "2026-11-02T07:07:23.013424+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
-    "pagesVisited": 20,
-    "announcementsRead": 495,
-    "opportunities": 34
+    "bulletin": "211",
+    "pagesVisited": 21,
+    "announcementsRead": 524,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "191",
       "192",
@@ -35,7 +35,8 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-10",
       "2026-10-11",
@@ -71,11 +72,23 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 495,
-    "opportunities": 34
+    "issuesRead": 21,
+    "announcementsRead": 524,
+    "opportunities": 35
   },
   "notices": [
+    {
+      "id": "RI-2026-a85f157f44f4fccb6b",
+      "province": "La Rioja (BOR)",
+      "title": "Bases reguladoras para la concesión de varias autorizaciones para la instalación y explotación de la actividad de churrería en distintos puestos ubicados en la vía pública. Temporada 2026-2030",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "02/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43029700-1-PDF-580540",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F02&referencia=42965116-3-HTML-580540-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-fc215b17f246b2237f",
       "province": "La Rioja (BOR)",

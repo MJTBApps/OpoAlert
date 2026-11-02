@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-01T17:49:23.504627+00:00",
+  "lastCheckedUTC": "2026-11-02T06:26:07.167063+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 20,
-    "announcementsRead": 644,
-    "opportunities": 43
+    "bulletin": "210",
+    "pagesVisited": 21,
+    "announcementsRead": 689,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "bulletins": [
       "190",
       "191",
@@ -35,7 +35,8 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-10",
       "2026-10-11",
@@ -71,11 +72,21 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 644,
-    "opportunities": 43
+    "issuesRead": 21,
+    "announcementsRead": 689,
+    "opportunities": 44
   },
   "notices": [
+    {
+      "id": "BI-2026-II-5661",
+      "province": "Bizkaia",
+      "title": "Anuncio relativo a la modificación de las bases reguladoras del proceso excepcional de estabilización para la provisión en propiedad, en régimen funcionarial, de cinco (5) plazas de Agente de la Policía Local y al levantamiento de la suspensión de plazas afectadas por procedimientos judiciales.",
+      "entity": "Ayuntamiento de Durango",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/02/II-5661_cas.pdf"
+    },
     {
       "id": "BI-2026-II-5562",
       "province": "Bizkaia",
