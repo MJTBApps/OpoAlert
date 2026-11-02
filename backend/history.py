@@ -458,19 +458,26 @@ def published_days_in_month(html_fragment: str, year: int, month: int) -> set[da
     return days
 
 
+def _disabled_days_in_month(html: str) -> int:
+    """Días del mes sin boletín: celdas del mes con <span> en lugar de enlace."""
+    cells = re.findall(r'<td([^>]*)>\s*<(a|span)\b', html)
+    return sum(1 for classes, tag in cells if 'other-month' not in classes and tag == 'span')
+
+
 def _wait_calendar_loaded(page, panel):
     """Espera a que el calendario marque los días sin boletín.
 
-    Recién cargado, el calendario puede pintar todos los días como habilitados
-    hasta que llega la lista de ediciones (02/11/2026 leyó 29 días seguidos, con
-    domingos). Todo mes tiene días sin boletín: si no aparece ninguno, no se sigue.
+    Los días sin boletín vienen como <span> y los días con boletín como enlace.
+    El 02/11/2026 el portal sirvió a GitHub durante horas un calendario con todos
+    los días enlazados (domingos incluidos). Todo mes tiene días sin boletín: si
+    no aparece ninguno, el calendario no es fiable y no se sigue.
     """
     for _retry in range(40):
-        html = panel.inner_html()
-        if 'ui-state-disabled' in html or 'ui-datepicker-unselectable' in html:
+        if _disabled_days_in_month(panel.inner_html()) > 0:
             return
         page.wait_for_timeout(500)
-    raise CoverageError('El calendario oficial no ha marcado los dias sin boletin')
+    raise CoverageError('El calendario oficial no ha marcado los dias sin boletin '
+                        '(todos los dias aparecen con boletin)')
 
 
 def official_published_days(page, first: date, last: date) -> list[date]:

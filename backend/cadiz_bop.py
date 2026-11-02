@@ -5,6 +5,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date,datetime,timedelta,timezone
 import json
+import time
 from pathlib import Path
 import re
 from urllib.parse import urljoin,urlsplit,parse_qs
@@ -108,8 +109,15 @@ def get(session:requests.Session,url:str)->requests.Response:
 def check_pdf(session:requests.Session,url:str)->None:
     if not validate_full_pdf(url):
         raise ProvincialCoverageError("Cadiz: URL PDF ajena a sede oficial")
+    # El servidor tarda a veces más de lo normal en responder (02/11/2026): tres intentos.
+    for attempt in range(3):
+        try:
+            r=session.get(url,headers={"Range":"bytes=0-160"},stream=True,timeout=HTTP_TIMEOUT)
+            break
+        except requests.RequestException as ex:
+            if attempt==2:raise ProvincialCoverageError(f"Cadiz: fallo PDF original {url}: {ex}") from ex
+            time.sleep(5*(attempt+1))
     try:
-        r=session.get(url,headers={"Range":"bytes=0-160"},stream=True,timeout=HTTP_TIMEOUT)
         try:
             expected=urlsplit(url).path.replace("/.boletines_pdf/","/export/sites/default/.boletines_pdf/",1)
             final=urlsplit(r.url)
