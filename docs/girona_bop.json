@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-10-30T15:28:30.155750+00:00",
+  "lastCheckedUTC": "2026-11-02T06:56:46.755034+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "209",
-    "pagesVisited": 21,
-    "announcementsRead": 890,
-    "opportunities": 89,
+    "bulletin": "210",
+    "pagesVisited": 20,
+    "announcementsRead": 863,
+    "opportunities": 84,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-01",
-    "rangeEnd": "2026-10-30",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 890,
-    "opportunities": 89,
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 863,
+    "opportunities": 84,
     "bulletins": [
-      "189",
-      "190",
       "191",
       "192",
       "193",
@@ -40,11 +38,10 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
-      "2026-10-01",
-      "2026-10-02",
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
@@ -63,10 +60,10 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-10",
       "2026-10-11",
@@ -74,10 +71,62 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-31",
+      "2026-11-01"
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-210-09329",
+      "title": "Aprovació de les bases reguladores i la convocatòria del procés de selecció d'un/a tècnic/a de medi ambient (A1), per ocupar un lloc de treball de cap de l'Àrea de Territori i Sostenibilitat de la corporació, en règim funcionarial d'interinitat i constitució d'una borsa de treball",
+      "entity": "CONSELL COMARCAL DE RIPOLLÈS",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009329.pdf"
+    },
+    {
+      "id": "GI-2026-210-09311",
+      "title": "Aprovació de les bases i la convocatòria del concurs oposició lliure per a la constitució d'una borsa de treball per a la provisió temporal del lloc de treball de secretaria intervenció, com a funcionari interí",
+      "entity": "AJUNTAMENT DE MAÇANET DE CABRENYS",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009311.pdf"
+    },
+    {
+      "id": "GI-2026-210-09206",
+      "title": "Aprovació de les bases reguladores i la convocatòria del procés selectiu, mitjançant concurs oposició, per a la creació de vuit borses de treball",
+      "entity": "CONSELL COMARCAL DE L'ALT EMPORDÀ",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009206.pdf"
+    },
+    {
+      "id": "GI-2026-210-09180",
+      "title": "Aprovació de la nova convocatòria del procés selectiu, com a funcionari interí per programa, d'un/una arquitecte/a tècnic/a (A2) i la constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE SANTA COLOMA DE FARNERS",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009180.pdf"
+    },
+    {
+      "id": "GI-2026-210-09179",
+      "title": "Aprovació de la nova convocatòria del procés selectiu, com a funcionari interí per programa, d'un/una enginyer/a tècnic/a (A2) i la constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE SANTA COLOMA DE FARNERS",
+      "date": "02/11/2026",
+      "bulletin": "210",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009179.pdf"
+    },
     {
       "id": "GI-2026-209-09383",
       "title": "Aprovació inicial del pressupost general, les bases d'execució i la plantilla de personal per a l'exercici 2027",
@@ -867,106 +916,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/192/202619208620.pdf"
-    },
-    {
-      "id": "GI-2026-190-08510",
-      "title": "Aprovació de les bases i la convocatòria per a la cobertura definitiva d'una plaça vacant a la plantilla, corresponent al subgrup C1, de règim laboral i lloc de treball d'administratiu/va, que s'adscriurà al lloc de treball SI-15 administratiu/va mitjançant un procediment de promoció interna vertical i pel sistema de concurs oposició",
-      "entity": "AJUNTAMENT DE CELRÀ",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/190/202619008510.pdf"
-    },
-    {
-      "id": "GI-2026-190-08509",
-      "title": "Aprovació de les bases i la convocatòria per a la cobertura temporal d'una plaça de responsable neteja d'edificis i comandes, de règim laboral (subgrup C2), lloc de treball SMT-14 i constitució d'una borsa de treball, pel sistema de concurs oposició",
-      "entity": "AJUNTAMENT DE CELRÀ",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/190/202619008509.pdf"
-    },
-    {
-      "id": "GI-2026-190-08505",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu per sistema de concurs oposició lliure per a la provisió d'una plaça d'administratiu de secretaria, grup C, subgrup C1, en règim de funcionari de carrera i creació de borsa de treball",
-      "entity": "AJUNTAMENT DE CAMPDEVÀNOL",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/190/202619008505.pdf"
-    },
-    {
-      "id": "GI-2026-190-08432",
-      "title": "Esmena de les bases reguladores i la convocatòria per a la constitució d'una borsa de treball per a la contractació laboral temporal d'un/a oficial de primera - cap de brigada",
-      "entity": "AJUNTAMENT DEL FAR D'EMPORDÀ",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/190/202619008432.pdf"
-    },
-    {
-      "id": "GI-2026-190-08431",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la creació d'una borsa de treball per cobrir suplències temporals d'educadors/es de l'escola bressol El Cau de les Goges de Sant Julià de Ramis",
-      "entity": "AJUNTAMENT DE SANT JULIÀ DE RAMIS",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/190/202619008431.pdf"
-    },
-    {
-      "id": "GI-2026-190-08361",
-      "title": "Aprovació de la convocatòria de concurs interadministratiu per ocupar una plaça de tècnic/a de grau mitjà de serveis econòmics",
-      "entity": "DIPUTACIÓ DE GIRONA",
-      "date": "02/10/2026",
-      "bulletin": "190",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/190/202619008361.pdf"
-    },
-    {
-      "id": "GI-2026-189-08404",
-      "title": "Aprovació de les bases específiques i la convocatòria del procés selectiu per a la provisió definitiva d'una plaça d'enginyer/a",
-      "entity": "CONSELL COMARCAL DEL PLA DE L'ESTANY",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/189/202618908404.pdf"
-    },
-    {
-      "id": "GI-2026-189-08370",
-      "title": "Aprovació de les bases i la convocatòria que han de regir el procés de selecció, mitjançant concurs oposició lliure, d'una plaça del subgrup C2, auxiliar administratiu/va de l'OAC, en règim de funcionari de carrera, i la constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE SANT PERE PESCADOR",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/189/202618908370.pdf"
-    },
-    {
-      "id": "GI-2026-189-08366",
-      "title": "Modificació de l'error material detectat a l'annex del temari de les bases i la convocatòria de dues places de tècnic/a especialista en esdeveniments (grup C1), en règim de funcionari/a de carrera",
-      "entity": "AJUNTAMENT DE PALAFRUGELL",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/189/202618908366.pdf"
-    },
-    {
-      "id": "GI-2026-189-08324",
-      "title": "Aprovació de les bases reguladores per a la provisió, pel sistema de concurs de mèrits, del lloc de treball de tècnic/a de serveis al ciutadà/na (A2)",
-      "entity": "AJUNTAMENT DE SANTA COLOMA DE FARNERS",
-      "date": "01/10/2026",
-      "bulletin": "189",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/189/202618908324.pdf"
     }
   ]
 }
