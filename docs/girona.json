@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-01T16:13:27.916249+00:00",
+  "lastCheckedUTC": "2026-11-02T06:42:36.630403+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 63,
-    "opportunities": 63,
+    "announcementsRead": 62,
+    "opportunities": 62,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-03",
-    "rangeEnd": "2026-11-01",
+    "rangeStart": "2026-10-04",
+    "rangeEnd": "2026-11-02",
     "publicationDates": [
       "2026-10-05",
       "2026-10-06",
@@ -33,10 +33,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
     "nonPublicationDates": [
-      "2026-10-03",
       "2026-10-04",
       "2026-10-07",
       "2026-10-10",
@@ -47,15 +47,25 @@
       "2026-10-17",
       "2026-10-18",
       "2026-10-25",
-      "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-02"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 63,
-    "opportunities": 63
+    "announcementsRead": 62,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "CIDO6-20894244",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Corçà",
+      "date": "31/10/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/20894244"
+    },
     {
       "id": "CIDO6-22410335",
       "title": "Borsa de treball de places de Peó de la brigada d'obres i serveis",
@@ -267,16 +277,6 @@
       "url": "https://cido.diba.cat/oposicions/21254712"
     },
     {
-      "id": "CIDO6-20894244",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Corçà",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20894244"
-    },
-    {
       "id": "CIDO6-20799043",
       "title": "1 plaça de Coordinador de neteja",
       "entity": "Ajuntament de Ribes de Freser",
@@ -385,16 +385,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22366864"
-    },
-    {
-      "id": "CIDO6-22365279",
-      "title": "Borsa de treball de places d'Auxiliar administratiu",
-      "entity": "Ajuntament de Porqueres",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22365279"
     },
     {
       "id": "CIDO6-22360096",
