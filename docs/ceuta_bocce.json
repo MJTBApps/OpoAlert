@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-02T16:49:11.609318+00:00",
+  "lastCheckedUTC": "2026-11-03T06:44:17.782204+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6665",
-    "pagesVisited": 15,
-    "announcementsRead": 58,
+    "bulletin": "6666",
+    "pagesVisited": 16,
+    "announcementsRead": 64,
     "opportunities": 3,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 15,
-    "pdfPagesRead": 210
+    "originalFullPdfIssues": 16,
+    "pdfPagesRead": 223
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "6658",
       "6659",
@@ -33,7 +33,8 @@
       "6663",
       "6664",
       "EXTRA51",
-      "6665"
+      "6665",
+      "6666"
     ],
     "publicationDates": [
       "2026-10-06",
@@ -50,10 +51,10 @@
       "2026-10-23",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-05",
       "2026-10-07",
       "2026-10-08",
@@ -71,8 +72,8 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 58,
+    "issuesRead": 16,
+    "announcementsRead": 64,
     "opportunities": 3,
     "regularBulletins": [
       "6658",
@@ -82,7 +83,8 @@
       "6662",
       "6663",
       "6664",
-      "6665"
+      "6665",
+      "6666"
     ],
     "extraordinaryBulletins": [
       "EXTRA45",
@@ -272,6 +274,18 @@
         "edicts": [
           716,
           727
+        ]
+      },
+      {
+        "number": "6666",
+        "date": "2026-11-03",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23310-bocce-6666-03-11-2026?Itemid=534",
+        "sha256": "0e4be14f9bfaaa9dc143cc38f6d62dc25a1eb3d7134b15e25bc03368f5d30236",
+        "bytes": 626724,
+        "pages": 13,
+        "edicts": [
+          728,
+          733
         ]
       }
     ]

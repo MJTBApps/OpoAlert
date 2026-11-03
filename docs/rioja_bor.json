@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-02T17:01:22.752049+00:00",
+  "lastCheckedUTC": "2026-11-03T06:53:25.286120+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
-    "pagesVisited": 21,
-    "announcementsRead": 524,
-    "opportunities": 35
+    "bulletin": "212",
+    "pagesVisited": 22,
+    "announcementsRead": 557,
+    "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "191",
       "192",
@@ -36,7 +36,8 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -59,10 +60,10 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -72,11 +73,47 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 524,
-    "opportunities": 35
+    "issuesRead": 22,
+    "announcementsRead": 557,
+    "opportunities": 38
   },
   "notices": [
+    {
+      "id": "RI-2026-eefedcafa3e2f773cf",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO ESPECIALISTA EN INCENDIOS: aprobación de las bases de la convocatoria para cubrir, mediante personal funcionario de carrera, una plaza (Turno Libre)",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43062929-1-PDF-580597",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F03&referencia=43030391-4-HTML-580597-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-a2ba045338564dec11",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO SUPERIOR (Fondos Europeos): aprobación de las bases de la convocatoria para cubrir, mediante personal funcionario de carrera, una plaza (Turno Libre)",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43062820-1-PDF-580599",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F03&referencia=43030917-4-HTML-580599-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-32e425ab314804fe18",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO GRADO MEDIO (Fondos Europeos): aprobación de las bases de la convocatoria para cubrir, mediante personal funcionario de carrera, dos plazas (Turno Libre)",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43063125-1-PDF-580601",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F03&referencia=43030785-6-HTML-580601-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-a85f157f44f4fccb6b",
       "province": "La Rioja (BOR)",

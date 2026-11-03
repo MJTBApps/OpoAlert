@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-02T17:02:59.379067+00:00",
+  "lastCheckedUTC": "2026-11-03T06:54:47.315290+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 20,
-    "announcementsRead": 305,
-    "opportunities": 21
+    "bulletin": "210",
+    "pagesVisited": 21,
+    "announcementsRead": 317,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "190",
       "191",
@@ -35,7 +35,8 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -71,11 +72,21 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 305,
-    "opportunities": 21
+    "issuesRead": 21,
+    "announcementsRead": 317,
+    "opportunities": 22
   },
   "notices": [
+    {
+      "id": "VD-2026-3174",
+      "province": "Valladolid",
+      "title": "Convocatoria para la provisión, mediante promoción interna, de 9 plazas de Oficial/a del Servicio de la Policía Municipal en la plantilla del Ayuntamiento de Valladolid.",
+      "entity": "AYUNTAMIENTO DE VALLADOLID",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/noviembre/03/BOPVA-A-2026-03174.pdf"
+    },
     {
       "id": "VD-2026-3159",
       "province": "Valladolid",

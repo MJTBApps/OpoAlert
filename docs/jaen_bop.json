@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-02T16:55:54.397722+00:00",
+  "lastCheckedUTC": "2026-11-03T06:49:49.806603+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 496,
-    "opportunities": 25,
+    "bulletin": "214",
+    "pagesVisited": 22,
+    "announcementsRead": 541,
+    "opportunities": 28,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 25
+    "pdfLinksVerified": 28
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "193",
       "194",
@@ -38,7 +38,8 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -61,10 +62,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-11",
       "2026-10-17",
       "2026-10-18",
@@ -74,9 +75,9 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 496,
-    "opportunities": 25,
+    "issuesRead": 22,
+    "announcementsRead": 541,
+    "opportunities": 28,
     "daysRequested": 30,
     "previousBulletin": {
       "number": "192",
@@ -84,6 +85,36 @@
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5137",
+      "province": "Jaén",
+      "title": "Aprobación de las bases y la convocatoria para cubrir la plaza de Técnico/a de Contabilidad y Recaudación/a para el Ayuntamiento de Siles, por turno libre, mediante oposición.",
+      "entity": "AYUNTAMIENTO DE SILES (JAÉN)",
+      "date": "03/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-03&numeroEdicto=5137&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5134",
+      "province": "Jaén",
+      "title": "Aprobación de las bases y la convocatoria para cubrir la plaza de Educador/a Escuela Infantil para el Ayuntamiento de Siles, por turno libre, mediante concurso-oposición.",
+      "entity": "AYUNTAMIENTO DE SILES (JAÉN)",
+      "date": "03/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-03&numeroEdicto=5134&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-4879",
+      "province": "Jaén",
+      "title": "Bases para la convocatoria de una plaza de Sepulturero/a como personal laboral fijo del Ayuntamiento de Mengíbar.",
+      "entity": "AYUNTAMIENTO DE MENGÍBAR (JAÉN)",
+      "date": "03/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-03&numeroEdicto=4879&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5115",
       "province": "Jaén",

@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-02T16:47:05.891720+00:00",
+  "lastCheckedUTC": "2026-11-03T06:42:29.495607+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "207",
-    "pagesVisited": 23,
-    "announcementsRead": 550,
-    "opportunities": 15,
+    "bulletin": "208",
+    "pagesVisited": 24,
+    "announcementsRead": 570,
+    "opportunities": 17,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 6
+    "pdfChecked": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "189",
       "190",
@@ -37,7 +37,8 @@
       "204",
       "205",
       "206",
-      "207"
+      "207",
+      "208"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -59,10 +60,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -73,9 +74,9 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 550,
-    "opportunities": 15,
+    "issuesRead": 21,
+    "announcementsRead": 570,
+    "opportunities": 17,
     "regularBulletins": [
       "189",
       "190",
@@ -95,7 +96,8 @@
       "204",
       "205",
       "206",
-      "207"
+      "207",
+      "208"
     ],
     "extraordinaryBulletins": [
       "Extraordinario 1"
@@ -120,10 +122,33 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-204",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-205",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-206",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-207"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-207",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-208"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202604657",
+      "province": "Burgos",
+      "title": "Bases de la convocatoria para cubrir en propiedad cinco plazas vacantes de oficial de Policía Local, por promoción interna, mediante el sistema de concurso-oposición",
+      "entity": "Ayuntamiento de Miranda de Ebro",
+      "date": "03/11/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-208/bopbur-2026-208-anuncio-202604657.pdf",
+      "publisherArticle": "202604657"
+    },
+    {
+      "id": "BU-2026-202604656",
+      "province": "Burgos",
+      "title": "Bases de la convocatoria para cubrir en propiedad dos plazas vacantes de psicólogo, mediante el sistema de oposición libre",
+      "entity": "Ayuntamiento de Miranda de Ebro",
+      "date": "03/11/2026",
+      "bulletin": "208",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-208/bopbur-2026-208-anuncio-202604656.pdf",
+      "publisherArticle": "202604656"
+    },
     {
       "id": "BU-2026-202604609",
       "province": "Burgos",

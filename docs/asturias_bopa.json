@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-02T16:43:22.054732+00:00",
+  "lastCheckedUTC": "2026-11-03T06:41:53.023173+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
-    "pagesVisited": 21,
-    "announcementsRead": 875,
-    "opportunities": 58
+    "bulletin": "212",
+    "pagesVisited": 22,
+    "announcementsRead": 934,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "192",
       "193",
@@ -36,7 +36,8 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -59,10 +60,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -73,11 +74,51 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 875,
-    "opportunities": 58
+    "issuesRead": 22,
+    "announcementsRead": 934,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "AS-2026-08769",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases y convocatoria para la selección de desempleados/as dentro de los planes de empleo en el marco de los itinerarios integrados de activación en el ámbito local 2026-2027.",
+      "entity": "Ayuntamiento de Villaviciosa",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/03/2026-08769.pdf"
+    },
+    {
+      "id": "AS-2026-08731",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases y convocatoria para la selección de desempleados/as dentro del programa de contratos formativos para la obtención de la práctica profesional adecuada al nivel de estudios.",
+      "entity": "Ayuntamiento de Villaviciosa",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/03/2026-08731.pdf"
+    },
+    {
+      "id": "AS-2026-08692",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Convocatoria y bases para la selección de una plaza de Trabajador/a Social, personal laboral fijo, incluida en la oferta de empleo público del año 2023.",
+      "entity": "Ayuntamiento de Las Regueras",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/03/2026-08692.pdf"
+    },
+    {
+      "id": "AS-2026-08669",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Emplazamiento a posibles interesados/as en el procedimiento de Impugnación de Actos de la Administración 95/2026 relativo al proceso selectivo para la provisión de una plaza de Oficial Albañil, concurso-oposición libre (Oferta de Empleo Público del año 2018).",
+      "entity": "Ayuntamiento de Carreño",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/03/2026-08669.pdf"
+    },
     {
       "id": "AS-2026-08819",
       "province": "Asturias (BOPA)",
