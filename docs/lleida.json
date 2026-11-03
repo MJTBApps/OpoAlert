@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-03T09:33:02.829577+00:00",
+  "lastCheckedUTC": "2026-11-03T16:30:01.835097+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 58,
-    "opportunities": 58,
+    "announcementsRead": 60,
+    "opportunities": 60,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -29,9 +29,9 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
       "2026-10-05",
@@ -46,16 +46,46 @@
       "2026-10-21",
       "2026-10-24",
       "2026-10-25",
+      "2026-10-29",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-03"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 58,
-    "opportunities": 58
+    "announcementsRead": 60,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "CIDO7-22429430",
+      "title": "Borsa de treball de places d'Operari de neteja d'edificis i instal·lacions municipals (reobertura)",
+      "entity": "Ajuntament de Cervera",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429430"
+    },
+    {
+      "id": "CIDO7-22335055",
+      "title": "1 plaça d'Operari del servei de neteja",
+      "entity": "Ajuntament d'Artesa de Segre",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22335055"
+    },
+    {
+      "id": "CIDO7-21845159",
+      "title": "Borsa de treball de places de Professor de l'escola municipal de música - conservatori (diferents especialitats)",
+      "entity": "Ajuntament de Cervera",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21845159"
+    },
     {
       "id": "CIDO7-22420072",
       "title": "1 plaça de Tècnic d'esports",
@@ -175,16 +205,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22199121"
-    },
-    {
-      "id": "CIDO7-22335055",
-      "title": "1 plaça d'Operari del servei de neteja",
-      "entity": "Ajuntament d'Artesa de Segre",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22335055"
     },
     {
       "id": "CIDO7-22394926",

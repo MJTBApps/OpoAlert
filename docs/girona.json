@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-03T09:33:02.829577+00:00",
+  "lastCheckedUTC": "2026-11-03T16:30:01.835097+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 65,
-    "opportunities": 65,
+    "announcementsRead": 68,
+    "opportunities": 68,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
       "2026-10-07",
@@ -47,15 +48,64 @@
       "2026-10-18",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-03"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 65,
-    "opportunities": 65
+    "announcementsRead": 68,
+    "opportunities": 68
   },
   "notices": [
+    {
+      "id": "CIDO6-22428753",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Sant Pau de Segúries",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22428753"
+    },
+    {
+      "id": "CIDO6-21589781",
+      "title": "1 plaça de Tècnic superior econòmic",
+      "entity": "Ajuntament de l'Escala",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21589781"
+    },
+    {
+      "id": "CIDO6-20806477",
+      "title": "5 places d'Administratiu",
+      "entity": "Ajuntament de Puigcerdà",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/20806477"
+    },
+    {
+      "id": "CIDO6-20534820",
+      "title": "1 plaça d'Administratiu d'administració general",
+      "entity": "Ajuntament de Bàscara",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/20534820"
+    },
+    {
+      "id": "CIDO6-16732228",
+      "title": "1 plaça de Tècnic mitjà de l'oficina cultural de la Coma Cros",
+      "entity": "Ajuntament de Salt",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16732228"
+    },
     {
       "id": "CIDO6-22419919",
       "title": "1 plaça d'Arquitecte tècnic",
@@ -185,16 +235,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21654739"
-    },
-    {
-      "id": "CIDO6-20806477",
-      "title": "5 places d'Administratiu",
-      "entity": "Ajuntament de Puigcerdà",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20806477"
     },
     {
       "id": "CIDO6-22410418",
@@ -345,16 +385,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22374077"
-    },
-    {
-      "id": "CIDO6-21589781",
-      "title": "1 plaça de Tècnic superior econòmic",
-      "entity": "Ajuntament de l'Escala",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21589781"
     },
     {
       "id": "CIDO6-16760007",

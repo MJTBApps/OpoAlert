@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-03T09:33:02.829577+00:00",
+  "lastCheckedUTC": "2026-11-03T16:30:01.835097+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 94,
-    "opportunities": 94,
+    "announcementsRead": 101,
+    "opportunities": 101,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -47,15 +48,104 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-03"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 94,
-    "opportunities": 94
+    "announcementsRead": 101,
+    "opportunities": 101
   },
   "notices": [
+    {
+      "id": "CIDO8-22429765",
+      "title": "Borsa de treball de places de Monitor de lleure (ampliació)",
+      "entity": "Ajuntament de Flix",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429765"
+    },
+    {
+      "id": "CIDO8-22429734",
+      "title": "Borsa de treball de places de Monitor de lleure especialment qualificat (ampliació)",
+      "entity": "Ajuntament de Flix",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429734"
+    },
+    {
+      "id": "CIDO8-22429731",
+      "title": "Borsa de treball de places de Coordinador de campus (ampliació)",
+      "entity": "Ajuntament de Flix",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429731"
+    },
+    {
+      "id": "CIDO8-22429725",
+      "title": "Borsa de treball de places de Director de lleure (ampliació)",
+      "entity": "Ajuntament de Flix",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429725"
+    },
+    {
+      "id": "CIDO8-22429715",
+      "title": "Borsa de treball de places d'Oficial de la brigada municipal",
+      "entity": "Ajuntament de Flix",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429715"
+    },
+    {
+      "id": "CIDO8-22396855",
+      "title": "1 plaça de Cap de la Unitat d'Activitats",
+      "entity": "Ajuntament de Cambrils",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22396855"
+    },
+    {
+      "id": "CIDO8-21078364",
+      "title": "1 plaça d'Auxiliar administratiu de gestió de l'Escola de Música Municipal",
+      "entity": "Ajuntament d'Alcover",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21078364"
+    },
+    {
+      "id": "CIDO8-16511262",
+      "title": "1 plaça de Monitor de menjador",
+      "entity": "Ajuntament de Duesaigües",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16511262"
+    },
+    {
+      "id": "CIDO8-22426522",
+      "title": "1 plaça de Director casa d'oficis",
+      "entity": "Ajuntament d'Amposta",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22426522"
+    },
     {
       "id": "CIDO8-22426193",
       "title": "1 plaça d'Agent dinamitzador i suport a la borsa de treball",
@@ -467,16 +557,6 @@
       "url": "https://cido.diba.cat/oposicions/119114"
     },
     {
-      "id": "CIDO8-22396855",
-      "title": "1 plaça de Cap de la Unitat d'Activitats",
-      "entity": "Ajuntament de Cambrils",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22396855"
-    },
-    {
       "id": "CIDO8-22396781",
       "title": "1 plaça d'Oficial 1a",
       "entity": "Ajuntament de Sant Jaume d'Enveja",
@@ -595,16 +675,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21967002"
-    },
-    {
-      "id": "CIDO8-21078364",
-      "title": "1 plaça d'Auxiliar administratiu de gestió de l'Escola de Música Municipal",
-      "entity": "Ajuntament d'Alcover",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21078364"
     },
     {
       "id": "CIDO8-20995800",
