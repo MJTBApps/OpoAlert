@@ -72,6 +72,7 @@ android {
             buildConfigField("boolean", "BILLING", "false")
             buildConfigField("String", "ADMOB_BANNER", "\"$testBanner\"")
             buildConfigField("String", "ADMOB_OPEN_AD", "\"$testOpenAd\"")
+            buildConfigField("String", "REVIEW_CODE_SHA256", "\"\"")
             manifestPlaceholders["admobAppId"] = testAdmobApp
         }
         create("play") {
@@ -82,6 +83,9 @@ android {
             buildConfigField("boolean", "BILLING", "true")
             buildConfigField("String", "ADMOB_BANNER", "\"${playProperties.getProperty("admobBanner", testBanner)}\"")
             buildConfigField("String", "ADMOB_OPEN_AD", "\"${playProperties.getProperty("admobOpenAd", testOpenAd)}\"")
+            // Código para los revisores de Google Play: en la app solo va su huella SHA-256.
+            buildConfigField("String", "REVIEW_CODE_SHA256",
+                "\"${playProperties.getProperty("reviewCodeSha256", "")}\"")
             manifestPlaceholders["admobAppId"] = playProperties.getProperty("admobAppId", testAdmobApp)
         }
     }
@@ -120,7 +124,7 @@ dependencies {
 // Nunca se sube a Google Play una versión con anuncios de prueba ni sin firmar.
 tasks.matching { it.name == "bundlePlayRelease" || it.name == "assemblePlayRelease" }.configureEach {
     doFirst {
-        val missing = listOf("storeFile", "admobAppId", "admobBanner", "admobOpenAd")
+        val missing = listOf("storeFile", "admobAppId", "admobBanner", "admobOpenAd", "reviewCodeSha256")
             .filter { playProperties.getProperty(it).isNullOrBlank() }
         check(missing.isEmpty()) { "Faltan datos en ~/OpoAlert-claves/play.properties: $missing" }
         check(listOf("admobAppId", "admobBanner", "admobOpenAd").none {

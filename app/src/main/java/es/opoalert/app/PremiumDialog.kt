@@ -5,6 +5,8 @@ import android.app.AlertDialog
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import android.text.InputType
+import android.widget.EditText
 import android.widget.Toast
 
 /** Pantalla de OpoAlert Premium: qué incluye, precio de Google Play y botón de compra. */
@@ -51,14 +53,45 @@ object PremiumDialog {
                     }
                 }
                 .setNegativeButton("Ahora no", null)
-                .setNeutralButton("Ya soy Premium") { _, _ ->
-                    PlayBilling.refresh(activity) {
-                        changed()
-                        Toast.makeText(activity, "Suscripción recuperada", Toast.LENGTH_SHORT).show()
-                    }
-                }
+                .setNeutralButton("Ya soy Premium") { _, _ -> showRestoreOptions(activity, changed) }
                 .show()
         }
+    }
+
+    private fun showRestoreOptions(activity: Activity, changed: () -> Unit) {
+        val restore = {
+            PlayBilling.refresh(activity) {
+                changed()
+                Toast.makeText(activity, "Suscripción recuperada", Toast.LENGTH_SHORT).show()
+            }
+        }
+        if (!Premium.acceptsReviewCode) return restore()
+        AlertDialog.Builder(activity)
+            .setTitle("Ya soy Premium")
+            .setItems(arrayOf("Recuperar mi suscripción de Google Play", "Tengo un código")) { _, which ->
+                if (which == 0) restore() else askReviewCode(activity, changed)
+            }
+            .show()
+    }
+
+    private fun askReviewCode(activity: Activity, changed: () -> Unit) {
+        val input = EditText(activity).apply {
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS
+            hint = "XXXXX-XXXXX-XXXXX-XXXXX"
+        }
+        AlertDialog.Builder(activity)
+            .setTitle("Código de OpoAlert Premium")
+            .setView(input)
+            .setPositiveButton("Activar") { _, _ ->
+                if (Premium.redeemReviewCode(activity, input.text.toString())) {
+                    Toast.makeText(activity, "Premium activado", Toast.LENGTH_SHORT).show()
+                    changed()
+                } else {
+                    Toast.makeText(activity, "El código no es válido", Toast.LENGTH_LONG).show()
+                }
+            }
+            .setNegativeButton("Cancelar", null)
+            .show()
     }
 
     /** Versión web (sin Google Play): Premium no se vende; en pruebas se puede simular. */
