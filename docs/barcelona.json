@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-02T16:39:40.405911+00:00",
+  "lastCheckedUTC": "2026-11-03T06:38:05.872682+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 303,
-    "opportunities": 303,
+    "announcementsRead": 297,
+    "opportunities": 297,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "publicationDates": [
       "2026-10-05",
       "2026-10-06",
@@ -44,16 +44,16 @@
       "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-03"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 303,
-    "opportunities": 303
+    "announcementsRead": 297,
+    "opportunities": 297
   },
   "notices": [
     {
@@ -1047,16 +1047,6 @@
       "url": "https://cido.diba.cat/oposicions/15673536"
     },
     {
-      "id": "CIDO5-22390541",
-      "title": "1 plaça d'Educador social. Programa Escolta jove",
-      "entity": "Ajuntament de Navarcles",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22390541"
-    },
-    {
       "id": "CIDO5-22380925",
       "title": "Borsa de treball de places d'Enginyer tècnic",
       "entity": "Ajuntament de Sant Celoni",
@@ -1927,16 +1917,6 @@
       "url": "https://cido.diba.cat/oposicions/22344769"
     },
     {
-      "id": "CIDO5-22334692",
-      "title": "Borsa de treball de places de Treballador social",
-      "entity": "Ajuntament de Mollet del Vallès",
-      "date": "19/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22334692"
-    },
-    {
       "id": "CIDO5-22239964",
       "title": "1 plaça de Peó de manteniment de jardins, edificis municipals i via pública. Pla Local d'ocupació 2025",
       "entity": "Ajuntament de Premià de Dalt",
@@ -2627,26 +2607,6 @@
       "url": "https://cido.diba.cat/oposicions/21589761"
     },
     {
-      "id": "CIDO5-22313881",
-      "title": "5 places de Peó dels serveis de manteniment de la ciutat. Programa Treball i Formació ACOL 2026",
-      "entity": "Ajuntament de Vic",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22313881"
-    },
-    {
-      "id": "CIDO5-22313865",
-      "title": "2 places de Peó muntador de fires i de manteniment del recinte firal. Programa Treball i Formació ACOL 2026",
-      "entity": "Ajuntament de Vic",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22313865"
-    },
-    {
       "id": "CIDO5-22307522",
       "title": "1 plaça de Tècnic de distribució",
       "entity": "Ajuntament de Terrassa - Terrassa Cicle de l'Aigua, EPEL",
@@ -2675,16 +2635,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22307330"
-    },
-    {
-      "id": "CIDO5-22306967",
-      "title": "2 places de Conserge. Programa Treball i Formació ACOL 2026",
-      "entity": "Ajuntament de Vic",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22306967"
     },
     {
       "id": "CIDO5-22306394",
@@ -2885,16 +2835,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21689851"
-    },
-    {
-      "id": "CIDO5-20806440",
-      "title": "2 places d'Enginyer tècnic",
-      "entity": "Ajuntament de Santa Eulàlia de Ronçana",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20806440"
     },
     {
       "id": "CIDO5-22284718",

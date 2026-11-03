@@ -2,29 +2,27 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-02T16:39:40.405911+00:00",
+  "lastCheckedUTC": "2026-11-03T06:38:05.872682+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 60,
-    "opportunities": 60,
+    "announcementsRead": 58,
+    "opportunities": 58,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "publicationDates": [
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
-      "2026-10-13",
       "2026-10-14",
       "2026-10-16",
-      "2026-10-19",
       "2026-10-20",
       "2026-10-22",
       "2026-10-23",
@@ -36,24 +34,26 @@
       "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-05",
       "2026-10-10",
       "2026-10-11",
       "2026-10-12",
+      "2026-10-13",
       "2026-10-15",
       "2026-10-17",
       "2026-10-18",
+      "2026-10-19",
       "2026-10-21",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-03"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 60,
-    "opportunities": 60
+    "announcementsRead": 58,
+    "opportunities": 58
   },
   "notices": [
     {
@@ -517,16 +517,6 @@
       "url": "https://cido.diba.cat/oposicions/22345789"
     },
     {
-      "id": "CIDO7-22345819",
-      "title": "Borsa de treball de places d'Oficial de cementiri",
-      "entity": "Ajuntament de Tàrrega",
-      "date": "19/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22345819"
-    },
-    {
       "id": "CIDO7-22335079",
       "title": "Borsa de treball de places d'Administratiu",
       "entity": "Ajuntament de les Borges Blanques",
@@ -575,16 +565,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22297728"
-    },
-    {
-      "id": "CIDO7-20763646",
-      "title": "1 plaça de Mediador sociocultural",
-      "entity": "Consell Comarcal de la Noguera",
-      "date": "13/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20763646"
     },
     {
       "id": "CIDO7-22266977",

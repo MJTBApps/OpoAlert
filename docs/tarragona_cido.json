@@ -2,27 +2,26 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-02T16:39:40.405911+00:00",
+  "lastCheckedUTC": "2026-11-03T06:38:05.872682+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 97,
-    "opportunities": 97,
+    "announcementsRead": 93,
+    "opportunities": 93,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "publicationDates": [
       "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -39,21 +38,22 @@
       "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-12",
+      "2026-10-13",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-03"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 97,
-    "opportunities": 97
+    "announcementsRead": 93,
+    "opportunities": 93
   },
   "notices": [
     {
@@ -557,16 +557,6 @@
       "url": "https://cido.diba.cat/oposicions/22382397"
     },
     {
-      "id": "CIDO8-22382305",
-      "title": "Borsa de treball de places de Personal de brigada de manteniment d'edificis, instal·lacions i serveis municipals i jardineria",
-      "entity": "Ajuntament dels Pallaresos",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22382305"
-    },
-    {
       "id": "CIDO8-16887342",
       "title": "2 places de Tècnic mitjà",
       "entity": "Ajuntament de Cambrils",
@@ -807,16 +797,6 @@
       "url": "https://cido.diba.cat/oposicions/22320354"
     },
     {
-      "id": "CIDO8-22315849",
-      "title": "21 places d'Operari de neteja viària",
-      "entity": "Ajuntament de Mont-roig del Camp - Entitat Pública Empresarial de Serveis i Obres (Nostreserveis)",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22315849"
-    },
-    {
       "id": "CIDO8-21523806",
       "title": "Borsa de treball de places d'Agent cívic de l'Àrea #DeltebreTerritori (complementària)",
       "entity": "Ajuntament de Deltebre",
@@ -867,16 +847,6 @@
       "url": "https://cido.diba.cat/oposicions/22315669"
     },
     {
-      "id": "CIDO8-22315472",
-      "title": "Borsa de treball de places d'Enginyer municipal",
-      "entity": "Ajuntament de Roquetes",
-      "date": "13/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22315472"
-    },
-    {
       "id": "CIDO8-21472634",
       "title": "Borsa de treball de places de Professor d'adults en l'àmbit de la comunicació",
       "entity": "Ajuntament de Salou",
@@ -895,16 +865,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21845182"
-    },
-    {
-      "id": "CIDO8-22230746",
-      "title": "3 places de Vigilant municipal",
-      "entity": "Ajuntament dels Pallaresos",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22230746"
     },
     {
       "id": "CIDO8-21789069",
