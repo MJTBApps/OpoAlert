@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-02T16:55:05.738951+00:00",
+  "lastCheckedUTC": "2026-11-03T06:49:29.594916+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "210",
-    "pagesVisited": 20,
-    "announcementsRead": 863,
-    "opportunities": 84,
+    "bulletin": "211",
+    "pagesVisited": 21,
+    "announcementsRead": 933,
+    "opportunities": 89,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
-    "issuesRead": 20,
-    "pagesVisited": 20,
-    "announcementsRead": 863,
-    "opportunities": 84,
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 933,
+    "opportunities": 89,
     "bulletins": [
       "191",
       "192",
@@ -39,7 +39,8 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -61,10 +62,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -77,6 +78,56 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-211-09407",
+      "title": "Aprovació inicial del pressupost general del Consell Comarcal de l'Alt Empordà, les bases d'execució del pressupost i la plantilla de personal per a l'exercici 2027",
+      "entity": "CONSELL COMARCAL DE L'ALT EMPORDÀ",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109407.pdf"
+    },
+    {
+      "id": "GI-2026-211-09371",
+      "title": "Aprovació de les bases i la convocatòria que han de regir el procés selectiu per a la cobertura definitiva d'una plaça de caporal/a de la Policia Municipal pel sistema de concurs oposició per promoció interna",
+      "entity": "AJUNTAMENT D'OLOT",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109371.pdf"
+    },
+    {
+      "id": "GI-2026-211-09368",
+      "title": "Aprovació de les bases reguladores i la convocatòria del procés selectiu per a la provisió d'una plaça d'oficial 1a neteja per al Centre Ocupacional i Especial de Treball Tramuntana i constitució d'una borsa de treball temporal",
+      "entity": "CONSELL COMARCAL DEL BAIX EMPORDÀ",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109368.pdf"
+    },
+    {
+      "id": "GI-2026-211-09340",
+      "title": "Aprovació de les bases i la convocatòria del concurs oposició lliure d'una plaça vacant de tècnic/a mijà/na de l'oficina cultural de la Coma Cros i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE SALT",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109340.pdf"
+    },
+    {
+      "id": "GI-2026-211-09242",
+      "title": "Esmena d'error material de les bases i la convocatòria del procés selectiu per a la cobertura d'una plaça de tècnic superior econòmic (A1)",
+      "entity": "AJUNTAMENT DE L'ESCALA",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109242.pdf"
+    },
     {
       "id": "GI-2026-210-09329",
       "title": "Aprovació de les bases reguladores i la convocatòria del procés de selecció d'un/a tècnic/a de medi ambient (A1), per ocupar un lloc de treball de cap de l'Àrea de Territori i Sostenibilitat de la corporació, en règim funcionarial d'interinitat i constitució d'una borsa de treball",
