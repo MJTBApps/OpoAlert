@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-02T16:47:34.375767+00:00",
+  "lastCheckedUTC": "2026-11-03T06:28:59.473854+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
@@ -13,8 +13,8 @@
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "issuesRead": 27,
     "pagesVisited": 27,
     "announcementsRead": 1739,
@@ -78,11 +78,11 @@
       "2026-11-02"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-03"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/05/23700.PDF",
@@ -131,7 +131,7 @@
       "xml",
       "xml",
       "xml",
-      "xml",
+      "html",
       "xml",
       "html",
       "xml",

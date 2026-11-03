@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-02T17:04:18.372608+00:00",
+  "lastCheckedUTC": "2026-11-03T06:18:20.333027+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 20,
-    "announcementsRead": 450,
-    "opportunities": 42
+    "bulletin": "210",
+    "pagesVisited": 21,
+    "announcementsRead": 459,
+    "opportunities": 45
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "190",
       "191",
@@ -35,7 +35,8 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -71,11 +72,41 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 450,
-    "opportunities": 42
+    "issuesRead": 21,
+    "announcementsRead": 459,
+    "opportunities": 45
   },
   "notices": [
+    {
+      "id": "BD-2026-165050",
+      "province": "Badajoz",
+      "title": "Bases reguladoras y convocatoria del proceso de selección para la constitución de una bolsa de trabajo para la provisión temporal, como funcionario/a interino/a, de la plaza de Arquitecto/a",
+      "entity": "Ayuntamiento de La Garrovilla",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-03000000_4317.pdf"
+    },
+    {
+      "id": "BD-2026-165049",
+      "province": "Badajoz",
+      "title": "Decreto de contratación para la realización del periodo de prácticas de la convocatoria de cinco plazas de Monitor/a Deportivo/a de la FMD del Ayuntamiento de Badajoz",
+      "entity": "Ayuntamiento de Badajoz",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-03000000_4316.pdf"
+    },
+    {
+      "id": "BD-2026-165046",
+      "province": "Badajoz",
+      "title": "Bases para la provisión, en sustitución, de una plaza de Maestro/a de Educación Infantil, por concurso-oposición, con destino a la escuela municipal de educación infantil de Alconera",
+      "entity": "Ayuntamiento de Alconera",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-03000000_4313.pdf"
+    },
     {
       "id": "BD-2026-165038",
       "province": "Badajoz",

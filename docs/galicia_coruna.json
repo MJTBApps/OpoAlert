@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-02T17:04:22.374837+00:00",
+  "lastCheckedUTC": "2026-11-03T06:18:18.325141+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 20,
-    "announcementsRead": 623,
-    "opportunities": 50
+    "bulletin": "210",
+    "pagesVisited": 21,
+    "announcementsRead": 668,
+    "opportunities": 54
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "190",
       "191",
@@ -35,7 +35,8 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-07",
       "2026-10-10",
       "2026-10-11",
@@ -71,11 +72,51 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 623,
-    "opportunities": 50
+    "issuesRead": 21,
+    "announcementsRead": 668,
+    "opportunities": 54
   },
   "notices": [
+    {
+      "id": "AC-2026-7086",
+      "province": "A Coruña",
+      "title": "Anuncio da convocatoria e das bases do proceso selectivo para a formación dunha bolsa de emprego para a cobertura temporal de prazas de arquitecto/a técnico/a",
+      "entity": "Ribeira",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007086.pdf"
+    },
+    {
+      "id": "AC-2026-7085",
+      "province": "A Coruña",
+      "title": "Anuncio da convocatoria e das bases do proceso selectivo para a formación dunha bolsa de emprego para a cobertura temporal de prazas de electricista/fontaneiro/a",
+      "entity": "Ribeira",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007085.pdf"
+    },
+    {
+      "id": "AC-2026-7053",
+      "province": "A Coruña",
+      "title": "Resolución da Presidencia da Entidade Pública Empresarial Aguas de Ames EPEL de creación da bolsa de emprego temporal para o posto de oficial de 1ª de servizos. Expediente GD. 9085/2026",
+      "entity": "Entidade Pública Empresarial Augas de Ames EPEL",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007053.pdf"
+    },
+    {
+      "id": "AC-2026-7052",
+      "province": "A Coruña",
+      "title": "Anuncio de interposición de recurso de alzada contra resolución do tribunal avaliador no proceso selectivo para a provisión en propiedade dunha praza de dinamizador/a do MUGART, en desenvolvemento da OPE 2024",
+      "entity": "Ribeira",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007052.pdf"
+    },
     {
       "id": "AC-2026-7099",
       "province": "A Coruña",

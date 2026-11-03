@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-02T17:07:22.904418+00:00",
+  "lastCheckedUTC": "2026-11-03T06:21:53.925399+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
-    "pagesVisited": 20,
-    "announcementsRead": 226,
-    "opportunities": 34
+    "bulletin": "211",
+    "pagesVisited": 21,
+    "announcementsRead": 257,
+    "opportunities": 36
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "191",
       "192",
@@ -35,7 +35,8 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -71,9 +72,9 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 226,
-    "opportunities": 34,
+    "issuesRead": 21,
+    "announcementsRead": 257,
+    "opportunities": 36,
     "editionPDFs": [
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_191_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_192_2026.pdf",
@@ -94,10 +95,31 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_208_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_211_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-383964",
+      "province": "Huelva",
+      "title": "Resolución de aprobación de las Bases y convocatoria para la provisión de una plaza de Operario Jardinería",
+      "entity": "Ayuntamiento de Lucena del Puerto",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_383964_BOP-211_2026.pdf"
+    },
+    {
+      "id": "HB-2026-381890",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases generales de la convocatoria para cubrir como funcionario de carrera una plaza de Técnico de Deporte, Natación y Socorrismo Acuático mediante concurso oposición",
+      "entity": "Ayuntamiento de Almonaster la Real",
+      "date": "03/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381890_BOP-211_2026.pdf"
+    },
     {
       "id": "HB-2026-383955",
       "province": "Huelva",

@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-02T17:09:30.359352+00:00",
+  "lastCheckedUTC": "2026-11-03T06:24:23.108445+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "253",
-    "pagesVisited": 25,
-    "announcementsRead": 559,
-    "opportunities": 50
+    "bulletin": "254",
+    "pagesVisited": 26,
+    "announcementsRead": 587,
+    "opportunities": 57
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "230",
       "231",
@@ -40,7 +40,8 @@
       "250",
       "251",
       "252",
-      "253"
+      "253",
+      "254"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -67,20 +68,90 @@
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
       "2026-11-01"
     ],
-    "issuesRead": 25,
-    "announcementsRead": 559,
-    "opportunities": 50
+    "issuesRead": 26,
+    "announcementsRead": 587,
+    "opportunities": 57
   },
   "notices": [
+    {
+      "id": "MU-2026-5377",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de bases de selección de un Agente de Emergencias/Auxiliar Técnico de Emergencias.",
+      "entity": "Blanca",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846059/pdf"
+    },
+    {
+      "id": "MU-2026-5364",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Director General de Recursos Humanos del Servicio Murciano de Salud por la que se acuerda el emplazamiento de las personas interesadas en el procedimiento abreviado n.º 282/2025, seguido ante el Juzgado de lo Contencioso-Administrativo n.º 2 de Murcia, interpuesto por D.ª Ana Josefa Hurtado Gil, relativo a la bolsa de trabajo ordinaria de Técnico Auxiliar no Sanitario, opción Auxiliar Administrativo, correspondiente al periodo de presentación de instancias y méritos de 31 de octubre de 2023.",
+      "entity": "Consejería de Salud - Servicio Murciano de Salud",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.borm.es/services/anuncio/846046/pdf"
+    },
+    {
+      "id": "MU-2026-5359",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Rector de la Universidad de Murcia (R-1416/2026) de 29 de octubre, por la que se convoca concurso público para la provisión de plazas de Profesorado Asociado de Ciencias de la Salud.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846041/pdf"
+    },
+    {
+      "id": "MU-2026-5358",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Rector de la Universidad de Murcia (R-1415/2026) de 29 de octubre, por la que se convoca concurso público de méritos para la constitución de bolsas de empleo, para la contratación de personal docente de sustitución de profesorado que ocupe plaza vinculada y de Profesorado Asociado en Ciencias de la Salud.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.borm.es/services/anuncio/846040/pdf"
+    },
+    {
+      "id": "MU-2026-5357",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Rector de la Universidad de Murcia (R-1414/2026) de 29 de octubre, por la que se convoca concurso público para la provisión de plazas de Profesorado Asociado de Ciencias de la Salud.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846039/pdf"
+    },
+    {
+      "id": "MU-2026-5356",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1365/2026) de 20 de octubre de 2026, de la Universidad de Murcia, por la que se convocan concursos de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846038/pdf"
+    },
+    {
+      "id": "MU-2026-5355",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1364/2026) de 20 de octubre, de la Universidad de Murcia por la que se convocan concursos de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "03/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846037/pdf"
+    },
     {
       "id": "MU-2026-5335",
       "province": "Región de Murcia (BORM)",

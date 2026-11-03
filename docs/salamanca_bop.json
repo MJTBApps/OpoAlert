@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-02T17:10:48.184618+00:00",
+  "lastCheckedUTC": "2026-11-03T06:26:03.015745+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
-    "pagesVisited": 20,
-    "announcementsRead": 284,
+    "bulletin": "212",
+    "pagesVisited": 21,
+    "announcementsRead": 298,
     "opportunities": 3
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
     "bulletins": [
       "192",
       "193",
@@ -35,7 +35,8 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,10 +58,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -71,8 +72,8 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 284,
+    "issuesRead": 21,
+    "announcementsRead": 298,
     "opportunities": 3,
     "summaryPDFs": [
       "https://www.lasalina.es/documentacion/bop/2026/20261005/BOP-SA-20261005-000.pdf",
@@ -94,7 +95,8 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261027/BOP-SA-20261027-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261028/BOP-SA-20261028-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261029/BOP-SA-20261029-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261030/BOP-SA-20261030-000.pdf"
+      "https://www.lasalina.es/documentacion/bop/2026/20261030/BOP-SA-20261030-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261103/BOP-SA-20261103-000.pdf"
     ],
     "CVECounts": [
       16,
@@ -116,9 +118,10 @@
       18,
       15,
       1,
-      13
+      13,
+      14
     ],
-    "originalPDFsChecked": 284
+    "originalPDFsChecked": 298
   },
   "notices": [
     {
