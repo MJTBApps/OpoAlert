@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-03T07:16:15.254607+00:00",
+  "lastCheckedUTC": "2026-11-03T09:26:32.707245+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "209",
-    "pagesVisited": 20,
-    "announcementsRead": 504,
-    "opportunities": 24
+    "bulletin": "210",
+    "pagesVisited": 21,
+    "announcementsRead": 526,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "206",
       "207",
       "208",
-      "209"
+      "209",
+      "210"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -57,7 +58,8 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,33 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02",
-      "2026-11-03"
+      "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 504,
-    "opportunities": 24
+    "issuesRead": 21,
+    "announcementsRead": 526,
+    "opportunities": 26
   },
   "notices": [
+    {
+      "id": "TO-2026-5027",
+      "province": "Toledo",
+      "title": "Convocatoria y bases del proceso selectivo para la contratación laboral temporal de once personas desempleadas (PEONES) en el marco del Programa de apoyo activo al empleo en Castilla-La Mancha 2026",
+      "entity": "AYUNTAMIENTO DE VILLALUENGA DE LA SAGRA",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Plaza / oposición",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26105010;0&insert_number=5027&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-4977",
+      "province": "Toledo",
+      "title": "Convocatoria bolsa auxiliar administrativo",
+      "entity": "AYUNTAMIENTO DE PEPINO",
+      "date": "03/11/2026",
+      "bulletin": "210",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104753;0&insert_number=4977&insert_year=2026"
+    },
     {
       "id": "TO-2026-4944",
       "province": "Toledo",
