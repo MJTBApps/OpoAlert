@@ -321,6 +321,9 @@ def _search_diagnostic(page, first: date, last: date, status: str):
                 'state':status, 'diagnosticError':str(exc)[:180]}
 
 
+WINDOW_ATTEMPTS = 3
+
+
 def search_date_range(page, first: date, last: date):
     """Busca y ESPERA la confirmacion AJAX real del BOP, no un tiempo fijo.
 
@@ -728,41 +731,46 @@ def run():
                                    'status': 'no_issues_in_official_calendar'})
                     continue
                 active_window = (start, end)
-                if number > 1:
-                    # Restablece estado del formulario y paginador entre periodos.
-                    page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
-                    page.locator('body').wait_for(timeout=15000)
-                    page.wait_for_timeout(1000)
-                    seleccionar_castellano(page)
-                try:
-                    request_info = search_date_range(page, start, end)
-                except CoverageError as exc:
-                    # A primera hora el calendario ya marca el boletín de hoy, pero el
-                    # buscador aún rechaza la fecha («Value is not valid», 03/11/2026).
-                    # Se lee hasta el boletín anterior; el de hoy entra en la siguiente ronda.
-                    earlier = [d for d in window['publishedDates'] if d < end]
-                    if (end != last or not earlier or
-                            'rechazo un campo' not in str(exc)):
-                        raise
-                    print(f'El buscador aun no admite {end}: se lee hasta {earlier[-1]}.',
-                          flush=True)
-                    window['publishedDates'] = earlier
-                    absent = absent + [end]
-                    end = earlier[-1]
-                    active_window = (start, end)
-                    page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
-                    page.locator('body').wait_for(timeout=15000)
-                    page.wait_for_timeout(1000)
-                    seleccionar_castellano(page)
-                    request_info = search_date_range(page, start, end)
-                if not request_info.get('serverConfirmed'):
-                    raise CoverageError('No se ha comprobado respuesta del servidor')
-                declared_total = _paginator_total(page)
-                found, audit = scan_browser(page, max_pages=args.max_pages,
-                                            date_range=(start, end), polite_delay=0.5)
-                issues = verify_window(found, audit, start, end,
-                                       declared_total, baseline_issue,
-                                       expected_published_dates=window['publishedDates'])
+                # El portal falla a veces en una sola ventana (calendario que no marca
+                # la fecha, «Value is not valid», un par de anuncios perdidos al paginar;
+                # 2 y 3/11/2026). Cada ventana se reintenta con la portada recargada.
+                for attempt in range(1, WINDOW_ATTEMPTS + 1):
+                    if number > 1 or attempt > 1:
+                        # Restablece estado del formulario y paginador entre periodos.
+                        page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
+                        page.locator('body').wait_for(timeout=15000)
+                        page.wait_for_timeout(1000)
+                        seleccionar_castellano(page)
+                    try:
+                        request_info = search_date_range(page, start, end)
+                        if not request_info.get('serverConfirmed'):
+                            raise CoverageError('No se ha comprobado respuesta del servidor')
+                        declared_total = _paginator_total(page)
+                        found, audit = scan_browser(page, max_pages=args.max_pages,
+                                                    date_range=(start, end), polite_delay=0.5)
+                        issues = verify_window(found, audit, start, end,
+                                               declared_total, baseline_issue,
+                                               expected_published_dates=window['publishedDates'])
+                        break
+                    except CoverageError as exc:
+                        # A primera hora el calendario ya marca el boletín de hoy, pero el
+                        # buscador aún rechaza la fecha («Value is not valid», 03/11/2026).
+                        # Tras dos rechazos se lee hasta el boletín anterior; el de hoy
+                        # entra en la siguiente ronda.
+                        earlier = [d for d in window['publishedDates'] if d < end]
+                        if (2 <= attempt < WINDOW_ATTEMPTS and end == last and earlier and
+                                'rechazo un campo' in str(exc)):
+                            print(f'El buscador aun no admite {end}: se lee hasta {earlier[-1]}.',
+                                  flush=True)
+                            window['publishedDates'] = earlier
+                            absent = absent + [end]
+                            end = earlier[-1]
+                            active_window = (start, end)
+                            continue
+                        if attempt == WINDOW_ATTEMPTS:
+                            raise
+                        print(f'Intento {attempt} fallido ({str(exc)[:160]}); se repite.',
+                              flush=True)
                 print(f'OK intervalo: {audit.pagesVisited} paginas, '
                       f'{audit.announcementsRead} anuncios, '
                       f'{len(found)} candidatas, {len(issues)} boletines', flush=True)
