@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-02T17:12:24.299483+00:00",
+  "lastCheckedUTC": "2026-11-03T07:17:31.084544+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "252",
+    "bulletin": "253",
     "pagesVisited": 2,
-    "announcementsRead": 708,
-    "opportunities": 56
+    "announcementsRead": 740,
+    "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
-    "issuesRead": 24,
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
+    "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 708,
-    "opportunities": 56,
+    "announcementsRead": 740,
+    "opportunities": 63,
     "bulletins": [
       "229",
       "230",
@@ -43,7 +43,8 @@
       "249",
       "250",
       "251",
-      "252"
+      "252",
+      "253"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -69,7 +70,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-03"
     ],
     "issuePublicationDates": [
       "2026-10-05",
@@ -95,10 +97,10 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
@@ -106,19 +108,89 @@
       "2026-11-02"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 38,
-      "SECCIÓN QUINTA": 96,
-      "SECCIÓN SEXTA": 537,
+      "SECCIÓN TERCERA": 41,
+      "SECCIÓN QUINTA": 97,
+      "SECCIÓN SEXTA": 564,
       "PARTE NO OFICIAL": 6,
       "SECCIÓN SEGUNDA": 8,
       "SECCIÓN CUARTA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
-      "SECCIÓN SEPTIMA": 1
+      "SECCIÓN SEPTIMA": 2
     },
-    "documentsVerified": 80
+    "documentsVerified": 87
   },
   "notices": [
+    {
+      "id": "ZA-000344812",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "MANCOMUNIDAD INTERMUNICIPAL VILLAFELICHE-MONTÓN",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473021960707"
+    },
+    {
+      "id": "ZA-000344811",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a acuerdo del Consejo Comarcal de la Comarca del Aranda, adoptado en sesión ordinaria del día 27 de octubre de 2026, por el que se aprueba inicialmente el presupuesto comarcal para el…",
+      "entity": "COMARCA DEL ARANDA",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473020950707"
+    },
+    {
+      "id": "ZA-000344802",
+      "province": "Zaragoza",
+      "title": "Aprobado definitivamente el presupuesto general del Ayuntamiento para 2026, y comprensivo aquel del presupuesto general de este Ayuntamiento, bases de ejecución y plantilla de personal funcionario y laboral,…",
+      "entity": "AYUNTAMIENTO DE POZUELO DE ARAGÓN",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473011860505"
+    },
+    {
+      "id": "ZA-000344798",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2026.",
+      "entity": "AYUNTAMIENTO DE LUESMA",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473007820505"
+    },
+    {
+      "id": "ZA-000344793",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a las bases reguladoras para la bolsa de trabajo de monitor/a de tiempo libre. Primera. - Objeto de la convocatoria y características del puesto. Es objeto de las presentes bases la…",
+      "entity": "AYUNTAMIENTO DE EL BURGO DE EBRO",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473002770404"
+    },
+    {
+      "id": "ZA-000344788",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2026.",
+      "entity": "AYUNTAMIENTO DE AÑÓN DE MONCAYO",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472997720303"
+    },
+    {
+      "id": "ZA-000344783",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a convocatoria y bases que han de regir el proceso selectivo para la cobertura por provisión, en comisión de servicios, de una plaza de trabajador/a social municipios.",
+      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
+      "date": "03/11/2026",
+      "bulletin": "253",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472992670202"
+    },
     {
       "id": "ZA-000344782",
       "province": "Zaragoza",
