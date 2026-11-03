@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-02T17:22:53.089136+00:00",
+  "lastCheckedUTC": "2026-11-03T07:37:05.348155+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
-    "pagesVisited": 702,
-    "announcementsRead": 295,
-    "opportunities": 59
+    "bulletin": "212",
+    "pagesVisited": 744,
+    "announcementsRead": 315,
+    "opportunities": 65
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
-    "issuesRead": 20,
-    "pagesVisited": 702,
-    "announcementsRead": 295,
-    "opportunities": 59,
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
+    "issuesRead": 21,
+    "pagesVisited": 744,
+    "announcementsRead": 315,
+    "opportunities": 65,
     "bulletins": [
       "192",
       "193",
@@ -39,7 +39,8 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
       "2026-10-05",
@@ -61,10 +62,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -75,9 +76,9 @@
       "2026-11-01",
       "2026-11-02"
     ],
-    "originalPdfPagesRead": 702,
+    "originalPdfPagesRead": 744,
     "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48186,
+    "archiveTotalIssues": 48187,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392765&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+5%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392766&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+6%2F10%2F2026.pdf",
@@ -98,10 +99,71 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392781&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+27%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392782&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+28%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392783&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+29%2F10%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392784&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F10%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392784&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F10%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392785&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+3%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03007",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso oposición para la provisión en propiedad de una plaza de cocinero/a, se ha dictado resolución de la Presidencia núm. 2.740/2026, de 30 de octubre,…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3007/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-02990",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso oposición para la provisión en propiedad de una plaza de portero/a, se ha dictado resolución de la Presidencia núm. 2.697/2026, de 28 de octubre,…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2990/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-02989",
+      "province": "Almería",
+      "title": "Documento firmado electrónicamente. Verificable en https://ov.dipalme.org/csv?id=8pAym5ItbmHOrLJxxE9BOA== . BASES PARA PROVEER POR CONCURSO OPOSICION UNA PLAZA DE AGENTE VERIFICADOR DE LA PLANTILLA DE FUNCIONARIOS, VACANTE…",
+      "entity": "AYUNTAMIENTO DE EL EJIDO",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2989/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-02988",
+      "province": "Almería",
+      "title": "Documento firmado electrónicamente. Verificable en https://ov.dipalme.org/csv?id=8pAym5ItbmHOrLJxxE9BOA== . BASES PARA PROVEER POR CONCURSO OPOSICION UNA PLAZA DE TÉCNICO SUPERIOR ADMINISTRACIÓN ESPECIAL BIENESTAR SOCIAL DE…",
+      "entity": "AYUNTAMIENTO DE EL EJIDO",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2988/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-02987",
+      "province": "Almería",
+      "title": "Documento firmado electrónicamente. Verificable en https://ov.dipalme.org/csv?id=8pAym5ItbmHOrLJxxE9BOA== . BASES PARA PROVEER UNA PLAZA DE OFICAL DE LA PLANTILLA DE FUNCIONARIOS, VACANTE EN LA PLANTILLA DE PERSONAL…",
+      "entity": "AYUNTAMIENTO DE EL EJIDO",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2987/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-02956",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso oposición para la provisión en propiedad de tres plazas de agente de recaudación, se ha dictado resolución de la Presidencia núm. 2.637/2026, de…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "03/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2956/anuncio.pdf"
+    },
     {
       "id": "AM-2026-02973",
       "province": "Almería",
