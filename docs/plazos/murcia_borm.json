@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-02T17:15:01+00:00",
+ "updatedUTC": "2026-11-03T07:25:40+00:00",
  "items": {
   "https://www.borm.es/services/anuncio/845966/pdf": {
    "days": 15,
@@ -25,6 +25,12 @@
    "kind": "hábiles",
    "text": "3.3 El plazo de presentación de solicitudes será de quince días hábiles, contados a partir del día siguiente a la publicación de la convocatoria en el Boletín Oficial del Estado.",
    "page": 3
+  },
+  "https://www.borm.es/services/anuncio/846059/pdf": {
+   "days": 10,
+   "kind": "naturales",
+   "text": "El plazo de presentación de solicitudes será de 10 días naturales a contar desde el día siguiente a la publicación del anuncio de convocatoria en el BORM.",
+   "page": 1
   }
  },
  "none": [
@@ -73,7 +79,13 @@
   "https://www.borm.es/services/anuncio/845905/pdf",
   "https://www.borm.es/services/anuncio/845906/pdf",
   "https://www.borm.es/services/anuncio/845907/pdf",
-  "https://www.borm.es/services/anuncio/845986/pdf"
+  "https://www.borm.es/services/anuncio/845986/pdf",
+  "https://www.borm.es/services/anuncio/846037/pdf",
+  "https://www.borm.es/services/anuncio/846038/pdf",
+  "https://www.borm.es/services/anuncio/846039/pdf",
+  "https://www.borm.es/services/anuncio/846040/pdf",
+  "https://www.borm.es/services/anuncio/846041/pdf",
+  "https://www.borm.es/services/anuncio/846046/pdf"
  ],
  "tries": {}
 }
