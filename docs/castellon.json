@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-02T16:37:06.624032+00:00",
+  "lastCheckedUTC": "2026-11-03T06:29:56.156832+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "132",
-    "pagesVisited": 13,
-    "announcementsRead": 410,
-    "opportunities": 21,
+    "bulletin": "133",
+    "pagesVisited": 14,
+    "announcementsRead": 444,
+    "opportunities": 24,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-04",
-    "rangeEnd": "2026-11-02",
-    "issuesRead": 13,
-    "pagesVisited": 13,
-    "announcementsRead": 410,
-    "opportunities": 21,
+    "rangeStart": "2026-10-05",
+    "rangeEnd": "2026-11-03",
+    "issuesRead": 14,
+    "pagesVisited": 14,
+    "announcementsRead": 444,
+    "opportunities": 24,
     "bulletins": [
       "120",
       "121",
@@ -32,7 +32,8 @@
       "129",
       "130",
       "131",
-      "132"
+      "132",
+      "133"
     ],
     "publicationDates": [
       "2026-10-06",
@@ -47,10 +48,10 @@
       "2026-10-24",
       "2026-10-27",
       "2026-10-29",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
-      "2026-10-04",
       "2026-10-05",
       "2026-10-07",
       "2026-10-09",
@@ -70,6 +71,36 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-168821",
+      "province": "Castellón",
+      "title": "Bases y la convocatoria para cubrir la plaza de informador turístico de este Ayuntamiento, mediante sistema de concurso-oposición.",
+      "entity": "AJUNTAMENT DE CULLA",
+      "date": "03/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168821&idioma=es"
+    },
+    {
+      "id": "CS-168789",
+      "province": "Castellón",
+      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 14E/2022 DOS PLAZAS DE TÉCNICO/A AUXILIAR DE ADMINISTRACIÓN ESPECIAL DEPORTES (TAAE). SELECCIÓN Y BOLSA DE TRABAJO.",
+      "entity": "AJUNTAMENT DE VILA-REAL",
+      "date": "03/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168789&idioma=es"
+    },
+    {
+      "id": "CS-168587",
+      "province": "Castellón",
+      "title": "aprobación bases y convocatoria de pruebas selectivas plaza de Auxiliar de Admon General",
+      "entity": "AJUNTAMENT DE VALL D'ALBA",
+      "date": "03/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168587&idioma=es"
+    },
     {
       "id": "CS-168790",
       "province": "Castellón",
