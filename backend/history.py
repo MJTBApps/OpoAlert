@@ -734,7 +734,27 @@ def run():
                     page.locator('body').wait_for(timeout=15000)
                     page.wait_for_timeout(1000)
                     seleccionar_castellano(page)
-                request_info = search_date_range(page, start, end)
+                try:
+                    request_info = search_date_range(page, start, end)
+                except CoverageError as exc:
+                    # A primera hora el calendario ya marca el boletín de hoy, pero el
+                    # buscador aún rechaza la fecha («Value is not valid», 03/11/2026).
+                    # Se lee hasta el boletín anterior; el de hoy entra en la siguiente ronda.
+                    earlier = [d for d in window['publishedDates'] if d < end]
+                    if (end != last or not earlier or
+                            'rechazo un campo' not in str(exc)):
+                        raise
+                    print(f'El buscador aun no admite {end}: se lee hasta {earlier[-1]}.',
+                          flush=True)
+                    window['publishedDates'] = earlier
+                    absent = absent + [end]
+                    end = earlier[-1]
+                    active_window = (start, end)
+                    page.goto(SOURCE, wait_until='domcontentloaded', timeout=60000)
+                    page.locator('body').wait_for(timeout=15000)
+                    page.wait_for_timeout(1000)
+                    seleccionar_castellano(page)
+                    request_info = search_date_range(page, start, end)
                 if not request_info.get('serverConfirmed'):
                     raise CoverageError('No se ha comprobado respuesta del servidor')
                 declared_total = _paginator_total(page)

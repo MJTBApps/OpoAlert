@@ -103,7 +103,7 @@ def verify_pdf(url):
   r.close()
   if not good:invalid("BOPV: archivo PDF no auténtico")
  except requests.RequestException as e:invalid("BOPV: no se puede comprobar PDF "+str(e)[:200])
-def latest_rss(day,previous_number):
+def latest_rss(day,previous_number,previous=None):
     """Use the official RSS only for today's issue if OpenData REST is a day behind."""
     rss="https://www.euskadi.eus/bopv2/datos/Ultimo.xml"
     try:
@@ -114,6 +114,10 @@ def latest_rss(day,previous_number):
         channel=root.find("channel")
         title=(channel.findtext("title") if channel is not None else "") or ""
         mm=re.fullmatch(r"Bolet[ií]n N[º°.]?\s*(\d+),\s*fecha\s*(\d{2}/\d{2}/\d{4})",title,re.I)
+        # Primera hora de la mañana: el RSS aún muestra el boletín anterior. El de hoy
+        # se leerá en la siguiente ronda (la ventana admite que falte el último día).
+        if mm and previous is not None and mm[2]==previous.strftime("%d/%m/%Y") and int(mm[1])==previous_number:
+            return None
         # En enero la numeración vuelve a empezar en 1.
         if not mm or mm[2]!=day.strftime("%d/%m/%Y") or int(mm[1]) not in (previous_number+1,1):
             invalid("BOPV: RSS más reciente no coincide con el día o número oficial")
@@ -160,7 +164,9 @@ def audit(today=None):
   if gap>3:invalid("BOPV: índice oficial atrasado más de tres días")
   # Fines de semana y festivos no hay BOPV: solo se exige el RSS de hoy en día laborable.
   if end.weekday()<5:
-   try:issues.append(latest_rss(end,int(issues[-1]["number"])))
+   try:
+    latest=latest_rss(end,int(issues[-1]["number"]),issues[-1]["day"])
+    if latest:issues.append(latest)
    except ProvincialCoverageError:
     if gap==1:raise
  checks=[n["url"] for issue in issues for n in issue["notices"]]
