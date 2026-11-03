@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-03T06:38:05.872682+00:00",
+  "lastCheckedUTC": "2026-11-03T09:33:02.829577+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 93,
-    "opportunities": 93,
+    "announcementsRead": 94,
+    "opportunities": 94,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,20 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 93,
-    "opportunities": 93
+    "announcementsRead": 94,
+    "opportunities": 94
   },
   "notices": [
+    {
+      "id": "CIDO8-22426193",
+      "title": "1 plaça d'Agent dinamitzador i suport a la borsa de treball",
+      "entity": "Ajuntament d'Amposta",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22426193"
+    },
     {
       "id": "CIDO8-22420652",
       "title": "Borsa de treball de places d'Operari de neteja d'edificis municipals",

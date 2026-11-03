@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-03T06:38:05.872682+00:00",
+  "lastCheckedUTC": "2026-11-03T09:33:02.829577+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 297,
-    "opportunities": 297,
+    "announcementsRead": 302,
+    "opportunities": 302,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -41,21 +41,71 @@
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-03"
     ],
     "nonPublicationDates": [
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01",
-      "2026-11-03"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 297,
-    "opportunities": 297
+    "announcementsRead": 302,
+    "opportunities": 302
   },
   "notices": [
+    {
+      "id": "CIDO5-22426210",
+      "title": "2 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de Sant Quirze del Vallès",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22426210"
+    },
+    {
+      "id": "CIDO5-22426064",
+      "title": "1 plaça de Cap de desenvolupament de negoci i ingressos",
+      "entity": "Ajuntament de Barcelona - Informació i Comunicació de Barcelona, SA",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22426064"
+    },
+    {
+      "id": "CIDO5-22425988",
+      "title": "1 plaça de Gerent",
+      "entity": "Ajuntament de Badalona - Badalona Cultura, SL",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22425988"
+    },
+    {
+      "id": "CIDO5-15538479",
+      "title": "1 plaça de Tècnic mitjà de Comunicació",
+      "entity": "Ajuntament de Sant Pere de Ribes",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/15538479"
+    },
+    {
+      "id": "CIDO5-22426477",
+      "title": "Borsa de treball de places de Tècnic del grup A",
+      "entity": "Ajuntament de Granollers",
+      "date": "02/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22426477"
+    },
     {
       "id": "CIDO5-22421046",
       "title": "1 plaça de Cap del Departament de Gestió Econòmica",
