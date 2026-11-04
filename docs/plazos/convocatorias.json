@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-03T17:08:03+00:00",
+ "updatedUTC": "2026-11-04T07:29:41+00:00",
  "items": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": {
    "days": 10,
@@ -200,12 +200,6 @@
    "text": "Las instancias se presentarán por registro electrónico del Ayuntamiento (ubicado en su sede electrónica), en el plazo de 20 días hábiles, a contar desde el siguiente al de la publicación de la convocatoria en el Boletín Oficial del Estado.",
    "page": 4
   },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F11935&lang=es": {
-   "days": 10,
-   "kind": "hábiles",
-   "text": "Establecer un plazo de 10 días hábiles para la presentación de solicitudes, a contar desde el día siguiente al de la publicación de la convocatoria en el Boletín Oficial del Estado.",
-   "page": 1
-  },
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es": {
    "days": 10,
    "kind": "hábiles",
@@ -223,12 +217,17 @@
    "kind": "naturales",
    "text": "Bases: VER ANEXO El plazo de presentación de solicitudes será de 10 días naturales a partir del día siguiente a la publicación de las presentes bases en el Boletín Oficial de la Provincia de Valencia (BOP).",
    "page": 1
+  },
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13324&lang=es": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de 20 días hábiles contados desde el siguiente a aquel en que aparezca publicado el extracto de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 1
   }
  },
  "none": [
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12033&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12091&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12096&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12131&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12172&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12264&lang=es",
@@ -250,7 +249,10 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13079&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13080&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13135&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13136&lang=es"
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13136&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13269&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13314&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13727&lang=es"
  ],
  "tries": {}
 }
