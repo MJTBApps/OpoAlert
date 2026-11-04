@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-03T16:25:09.733674+00:00",
+  "lastCheckedUTC": "2026-11-04T06:22:46.374678+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 21,
-    "announcementsRead": 459,
-    "opportunities": 45
+    "announcementsRead": 446,
+    "opportunities": 46
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -36,10 +35,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -59,7 +58,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,40 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 459,
-    "opportunities": 45
+    "announcementsRead": 446,
+    "opportunities": 46
   },
   "notices": [
+    {
+      "id": "BD-2026-165074",
+      "province": "Badajoz",
+      "title": "Decreto de contratación para la realización del periodo de prácticas de la convocatoria de cinco plazas de Operario/a Básico/a de Instalaciones de la FMD del Ayuntamiento",
+      "entity": "Ayuntamiento de Badajoz",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-04000000_4341.pdf"
+    },
+    {
+      "id": "BD-2026-165056",
+      "province": "Badajoz",
+      "title": "Rectificación de la aprobación definitiva del presupuesto general, bases de ejecución y plantilla de personal para el ejercicio 2026",
+      "entity": "Ayuntamiento de Cabeza del Buey",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-04000000_4323.pdf"
+    },
+    {
+      "id": "BD-2026-165053",
+      "province": "Badajoz",
+      "title": "Decreto por el que se procede a la corrección de error en la convocatoria de cinco plazas de Arquitecto/a Técnico/a, de la Diputación de Badajoz",
+      "entity": "Diputación de Badajoz",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-04000000_4320.pdf"
+    },
     {
       "id": "BD-2026-165050",
       "province": "Badajoz",
@@ -506,26 +536,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-06000000_3903.pdf"
-    },
-    {
-      "id": "BD-2026-164583",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la selección en régimen de personal laboral temporal de un puesto de Encargado/a de Obras",
-      "entity": "Ayuntamiento de Ahillones",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-05000000_3854.pdf"
-    },
-    {
-      "id": "BD-2026-164545",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión en régimen de interinidad y constitución de bolsa de trabajo de la plaza de Auxiliar de Biblioteca, mediante el sistema de concurso-oposición",
-      "entity": "Ayuntamiento de Hornachos",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-05000000_3817.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-03T16:30:00.429750+00:00",
+  "lastCheckedUTC": "2026-11-04T06:27:27.768418+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 22,
-    "announcementsRead": 424,
+    "announcementsRead": 437,
     "opportunities": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -37,10 +36,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -61,7 +60,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,30 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 424,
+    "announcementsRead": 437,
     "opportunities": 27
   },
   "notices": [
+    {
+      "id": "PO-2026076530",
+      "province": "Pontevedra",
+      "title": "CONFIGURACION LISTA DE RESERVA PARA A SELECCIÓN INTERINA DE PRAZAS /POSTOS DE LIMPADOR/A",
+      "entity": "Vilaboa",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/04/2026076530/an.bop.PONTEVEDRA.20261104.2026076530.pdf"
+    },
+    {
+      "id": "PO-2026076529",
+      "province": "Pontevedra",
+      "title": "CONVOCATORIA DO PROCESO SELECTIVO PARA CREAR UNHA BOLSA DE TRABALLO PARA O POSTO DE OPERARIO/A DE SERVIZOS VARIOS-CONSERXE",
+      "entity": "Portas",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Bolsa de trabajo",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/04/2026076529/an.bop.PONTEVEDRA.20261104.2026076529.pdf"
+    },
     {
       "id": "PO-2026076101",
       "province": "Pontevedra",
@@ -327,26 +347,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/06/2026071649/an.bop.PONTEVEDRA.20261006.2026071649.pdf"
-    },
-    {
-      "id": "PO-2026071151",
-      "province": "Pontevedra",
-      "title": "BASES REGULADORAS DA CONVOCATORIA PÚBLICA PARA A PROVISIÓN DEFINITIVA DO POSTO DE TRABALLO DE XEFATURA DO SERVIZO DA OFICINA DE SUPERVISIÓN DE PROXECTOS (OSPIO). EXPTE. 49526/220",
-      "entity": "Vigo",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/05/2026071151/an.bop.PONTEVEDRA.20261005.2026071151.pdf"
-    },
-    {
-      "id": "PO-2026070750",
-      "province": "Pontevedra",
-      "title": "CONVOCATORIA DO PROCESO SELECTIVO DA BOLSA DE EMPREGO DE CONSERXE – OPERARIO DE MANTEMENTO.",
-      "entity": "Mos",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/05/2026070750/an.bop.PONTEVEDRA.20261005.2026070750.pdf"
     }
   ]
 }

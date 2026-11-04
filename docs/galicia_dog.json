@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Galicia (DOG)",
   "source": "https://www.xunta.gal/diario-oficial-galicia/Welcome.do?lang=es",
-  "lastCheckedUTC": "2026-11-03T16:26:27.894126+00:00",
+  "lastCheckedUTC": "2026-11-04T06:24:18.615536+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 22,
-    "announcementsRead": 559,
-    "opportunities": 148
+    "announcementsRead": 530,
+    "opportunities": 136
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -37,10 +36,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -61,7 +60,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,8 +74,8 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 559,
-    "opportunities": 148
+    "announcementsRead": 530,
+    "opportunities": 136
   },
   "notices": [
     {
@@ -1437,126 +1437,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://www.xunta.gal/dog/Publicados/2026/20261006/AnuncioG0003-290926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioL416-300926-0001",
-      "province": "Galicia (DOG)",
-      "title": "ANUNCIO de la oferta de empleo público para 2026.",
-      "entity": "Ayuntamiento de Chantada",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioL416-300926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioL136-150926-0002",
-      "province": "Galicia (DOG)",
-      "title": "ANUNCIO de convocatoria de cinco plazas de personal auxiliar administrativo.",
-      "entity": "Ayuntamiento de Ferrol",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioL136-150926-0002_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioL136-150926-0001",
-      "province": "Galicia (DOG)",
-      "title": "ANUNCIO de convocatoria del proceso selectivo de una plaza de personal educador social.",
-      "entity": "Ayuntamiento de Ferrol",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioL136-150926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG2017-250926-0001",
-      "province": "Galicia (DOG)",
-      "title": "ANUNCIO de 25 de septiembre de 2026 por el que se da publicidad a la resolución de la misma fecha por la que se convoca un concurso público para la elaboración de una bolsa de empleo para profesorado sustituto.",
-      "entity": "Universidad de A Coruña",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG2017-250926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG1547-300926-0001",
-      "province": "Galicia (DOG)",
-      "title": "ANUNCIO por el que se convoca el proceso selectivo para cubrir dos plazas de personal.",
-      "entity": "Fundación Pública Gallega Centro Tecnológico de Supercomputación de Galicia",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG1547-300926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG0766-290926-0001",
-      "province": "Galicia (DOG)",
-      "title": "ORDEN de 28 de septiembre de 2026 por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, de un puesto de trabajo vacante en esta consellería (código del puesto CU.C99.50.201.15001.001).",
-      "entity": "Consellería de Cultura, Lengua y Juventud",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG0766-290926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG0762-250926-0001",
-      "province": "Galicia (DOG)",
-      "title": "RESOLUCIÓN de 25 de septiembre de 2026 por la que se establecen las bases reguladoras del procedimiento de asignación del concierto social para la reserva y ocupación de plazas en servicios de atención residencial para personas dependientes con discapacidad intelectual para el período 2026-2030, y se procede a su convocatoria (código de procedimiento BS632J).",
-      "entity": "Consellería de Política Social e Igualdad",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG0762-250926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG0597-280926-0001",
-      "province": "Galicia (DOG)",
-      "title": "RESOLUCIÓN de 9 de septiembre de 2026, del tribunal designado para calificar el proceso selectivo para el ingreso, mediante el sistema de oposición, por el turno de acceso libre y promoción interna, en el cuerpo facultativo superior de Administración especial de la Administración general de la Comunidad Autónoma de Galicia, subgrupo A1, escala de profesores numerarios de institutos politécnicos marítimo-pesqueros, especialidad de pesca marítima, por la que se da publicidad a diversos acuerdos.",
-      "entity": "Consellería de Hacienda y Administración Pública",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG0597-280926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG0597-021026-0001",
-      "province": "Galicia (DOG)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026 por la que se modifica la Resolución de 24 de septiembre de 2026 por la que se convoca para la elección de destino definitivo a las personas aspirantes que superaron los procesos selectivos para el ingreso en el cuerpo de ayudantes de carácter facultativo de Administración especial de la Administración general de la Comunidad Autónoma de Galicia, subgrupo C1, escalas técnicas de mantenimiento de servicios, de recursos naturales y forestales, especialidades de capataz, mecánico naval, patrón de embarcación y guía intérprete de patrimonio natural, de cocina, de conducción y de análisis de laboratorio; en el cuerpo de auxiliares de carácter técnico, escalas de guardias de recursos naturales, de auxiliar de cocina, de auxiliar de mantenimiento, de auxiliar de laboratorio, de auxiliar de conducción y de auxiliar de recursos naturales y forestales, especialidades de oficial y de marinero vigilante, y en agrupación profesional, escala de personal de limpieza y recursos naturales y forestales, especialidad de limpieza y cocina, de recursos naturales y forestales y de mantenimiento.",
-      "entity": "Consellería de Hacienda y Administración Pública",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG0597-021026-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioG0003-220926-0001",
-      "province": "Galicia (DOG)",
-      "title": "RESOLUCIÓN de 18 de septiembre de 2026, de la Dirección General de Recursos Humanos, por la que se nombra como personal estatutario fijo y se adjudica destino definitivo a las personas aspirantes seleccionadas en el concurso-oposición para el ingreso en la categoría de técnico/a superior en laboratorio de diagnóstico clínico, convocado por la Resolución de 19 de abril de 2024.",
-      "entity": "Servicio Gallego de Salud",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioG0003-220926-0001_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioC3K1-280926-0003",
-      "province": "Galicia (DOG)",
-      "title": "ORDEN de 23 de septiembre de 2026 por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, de un puesto de trabajo vacante en el Servicio Gallego de Salud (código del puesto SAS040000015770001).",
-      "entity": "Consellería de Sanidad",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioC3K1-280926-0003_es.pdf"
-    },
-    {
-      "id": "DG-2026-AnuncioC3K1-280926-0002",
-      "province": "Galicia (DOG)",
-      "title": "ORDEN de 23 de septiembre de 2026 por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, de un puesto de trabajo vacante en esta consellería (código del puesto SANAC030000015770001).",
-      "entity": "Consellería de Sanidad",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.xunta.gal/dog/Publicados/2026/20261005/AnuncioC3K1-280926-0002_es.pdf"
     }
   ]
 }

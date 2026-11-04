@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-03T16:28:06.428067+00:00",
+  "lastCheckedUTC": "2026-11-04T06:26:04.767651+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
+    "bulletin": "220",
     "pagesVisited": 21,
-    "announcementsRead": 356,
-    "opportunities": 46
+    "announcementsRead": 359,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -36,10 +35,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -59,7 +58,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,20 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 356,
-    "opportunities": 46
+    "announcementsRead": 359,
+    "opportunities": 42
   },
   "notices": [
+    {
+      "id": "IC-2026-3778",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de Personal y Formación del Profesorado.- Resolución de 26 de octubre de 2026, por la que se convoca concurso general de traslados para el personal funcionario docente, dependiente de la Comunidad Autónoma de Canarias, de los Cuerpos de Catedráticos y Profesores de Enseñanza Secundaria, de Escuelas Oficiales de Idiomas, de Música y Artes Escénicas, de Artes Plásticas y Diseño, del Cuerpo, a extinguir, de Profesores Técnicos de Formación Profesional, Profesores Especialistas en Sectores Singulares de la Formación Profesional, de Maestros de Taller de Artes Plásticas y Diseño y de Maestros.",
+      "entity": "Consejería de Educación, Formación Profesional, Actividad Física y Deportes",
+      "date": "04/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-220-3778.pdf"
+    },
     {
       "id": "IC-2026-3737",
       "province": "Canarias (BOC)",
@@ -487,56 +497,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-200-3437.pdf"
-    },
-    {
-      "id": "IC-2026-3436",
-      "province": "Canarias (BOC)",
-      "title": "ANUNCIO de 23 de septiembre de 2026, relativo a la convocatoria, por el procedimiento de concurso de méritos, de dos plazas de Administrativo, Grupo C1, de este Ayuntamiento.",
-      "entity": "Ayuntamiento de Garafía (La Palma)",
-      "date": "05/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-199-3436.pdf"
-    },
-    {
-      "id": "IC-2026-3421",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 23 de septiembre de 2025, por la que se acuerda el cese de la suspensión del procedimiento respecto de determinados aspirantes seleccionados, y la formalización de contrato de trabajo de personal laboral fijo, en las pruebas selectivas para el ingreso, por el sistema general de acceso libre, en la categoría profesional de Auxiliar de Servicios Complementarios (Grupo IV), en ejecución del Anexo II del Decreto 115/2022, de 20 de mayo, por el que se aprueba la Oferta Extraordinaria de Empleo Público para la estabilización del empleo temporal e indefinido no fijo de larga duración en el ámbito de la Administración General de la Comunidad Autónoma de Canarias, convocadas por Resolución de 21 de diciembre de 2022, se les adjudica puesto de trabajo y se les confiere plazo para la toma de posesión.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "05/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-199-3421.pdf"
-    },
-    {
-      "id": "IC-2026-3420",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 23 de septiembre de 2026, por la que se acuerda el cese de la suspensión del procedimiento respecto de determinados aspirantes seleccionados, y la formalización de contrato de trabajo de personal laboral fijo, en las pruebas selectivas para el ingreso, por el sistema general de acceso libre, en la categoría profesional de Auxiliar Administrativo y Auxiliares (Grupo IV), en ejecución del Anexo II del Decreto 115/2022, de 20 de mayo, por el que se aprueba la Oferta Extraordinaria de Empleo Público para la estabilización del empleo temporal e indefinido no fijo de larga duración en el ámbito de la Administración General de la Comunidad Autónoma de Canarias, convocadas por Resolución de 21 de diciembre de 2022, se les adjudica puesto de trabajo y se les confiere plazo para la toma de posesión.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "05/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-199-3420.pdf"
-    },
-    {
-      "id": "IC-2026-3419",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 23 de septiembre de 2026, por la que se nombra personal funcionario de carrera a las personas aspirantes que integran la lista adicional de las pruebas selectivas para ingresar, por el sistema general de acceso libre, en la Agrupación Profesional de Subalternos (Grupo E), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas mediante Resolución de 2 de diciembre de 2022, en ejecución de la Oferta de Empleo Público de la Administración General de la Comunidad Autónoma de Canarias para el año 2019, en aplicación de lo previsto en la disposición transitoria quinta de la Ley 2/2025, de 26 de junio, y se les adjudica puesto de trabajo.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "05/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-199-3419.pdf"
-    },
-    {
-      "id": "IC-2026-3418",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 23 de septiembre de 2026, por la que se nombra personal funcionario de carrera a las personas aspirantes seleccionadas de las pruebas selectivas para ingresar, por el sistema general de acceso libre, al Cuerpo Administrativo (Grupo C, Subgrupo C1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas mediante Resolución de 2 de diciembre de 2022, en ejecución de la Oferta de Empleo Público de la Administración General de la Comunidad Autónoma de Canarias para el año 2019, en aplicación de lo previsto en la disposición transitoria quinta de la Ley 2/2025, de 26 de junio, y se les adjudica puesto de trabajo.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "05/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-199-3418.pdf"
     }
   ]
 }

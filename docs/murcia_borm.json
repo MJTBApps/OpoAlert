@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-03T16:29:58.669093+00:00",
+  "lastCheckedUTC": "2026-11-04T06:27:39.920753+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "254",
+    "bulletin": "255",
     "pagesVisited": 26,
     "announcementsRead": 587,
-    "opportunities": 57
+    "opportunities": 54
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "230",
       "231",
       "232",
       "233",
@@ -41,10 +40,10 @@
       "251",
       "252",
       "253",
-      "254"
+      "254",
+      "255"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -69,7 +68,8 @@
       "2026-10-30",
       "2026-10-31",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -79,9 +79,19 @@
     ],
     "issuesRead": 26,
     "announcementsRead": 587,
-    "opportunities": 57
+    "opportunities": 54
   },
   "notices": [
+    {
+      "id": "MU-2026-5400",
+      "province": "Región de Murcia (BORM)",
+      "title": "Acuerdo de Junta de Gobierno Local del Ayuntamiento de Lorca, de fecha 23 de octubre de 2026, sobre aprobación de bases de la convocatoria de oposición para proveer interinamente dos plazas de Inspector/a de Estadística.",
+      "entity": "Lorca",
+      "date": "04/11/2026",
+      "bulletin": "255",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846082/pdf"
+    },
     {
       "id": "MU-2026-5377",
       "province": "Región de Murcia (BORM)",
@@ -611,46 +621,6 @@
       "bulletin": "231",
       "type": "Bolsa de trabajo",
       "url": "https://www.borm.es/services/anuncio/845498/pdf"
-    },
-    {
-      "id": "MU-2026-4798",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1255/2026 de 28 de septiembre, referente a la convocatoria para proveer una plaza de Investigador/a Licenciado/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "05/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845480/pdf"
-    },
-    {
-      "id": "MU-2026-4797",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1254/2026 de 28 de septiembre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "05/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845479/pdf"
-    },
-    {
-      "id": "MU-2026-4796",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 25 de septiembre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se modifica la Orden de 15 de julio de 2026 de la misma Consejería, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna sobre el mismo puesto de trabajo, 7 plazas del Cuerpo de Técnicos Especialistas, opción Conducción de la Administración Pública Regional (código CFX40P25-5).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "05/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845478/pdf"
-    },
-    {
-      "id": "MU-2026-4795",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 25 de septiembre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se modifica la Orden de 15 de julio de 2026 de la misma Consejería, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna sobre el mismo puesto de trabajo, 28 plazas del Cuerpo de Técnicos Especialistas, opción Seguridad de la Administración Pública Regional (código CFX34P25-8).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "05/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845477/pdf"
     }
   ]
 }

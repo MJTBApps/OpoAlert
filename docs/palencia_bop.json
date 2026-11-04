@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Palencia",
   "source": "https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia",
-  "lastCheckedUTC": "2026-11-03T16:29:32.069894+00:00",
+  "lastCheckedUTC": "2026-11-04T06:27:11.112483+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "131",
-    "pagesVisited": 14,
-    "announcementsRead": 282,
-    "opportunities": 7
+    "pagesVisited": 13,
+    "announcementsRead": 256,
+    "opportunities": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
-    "issuesRead": 14,
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
+    "issuesRead": 13,
     "bulletins": [
-      "119",
       "120",
       "121",
       "3",
@@ -33,7 +32,6 @@
       "131"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-07",
       "2026-10-09",
       "2026-10-12",
@@ -49,7 +47,6 @@
       "2026-11-03"
     ],
     "editionTypes": [
-      "ordinario",
       "ordinario",
       "ordinario",
       "extraordinario",
@@ -80,10 +77,10 @@
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-04"
     ],
     "editionPDFs": [
-      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261005-bop-119-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261009-bop-121-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261012-bop-3-Extraordinario.pdf",
@@ -98,8 +95,8 @@
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261030-bop-130-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261103-bop-131-Ordinario.pdf"
     ],
-    "announcementsRead": 282,
-    "opportunities": 7,
+    "announcementsRead": 256,
+    "opportunities": 6,
     "pdfScope": "El PDF completo firmado es el único documento publicado por edición; el enlace identifica también la página del anuncio."
   },
   "notices": [
@@ -162,16 +159,6 @@
       "bulletin": "120",
       "type": "Plaza / oposición",
       "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf#page=4"
-    },
-    {
-      "id": "PL-20261005-014",
-      "province": "Palencia",
-      "title": "Declarar desierta la convocatoria para la provisión del puesto de trabajo de Adjunto/a Jefe/a de Servicio de Contratación y Patrimonio",
-      "entity": "Palencia",
-      "date": "05/10/2026",
-      "bulletin": "119",
-      "type": "Plaza / oposición",
-      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261005-bop-119-Ordinario.pdf#page=23"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Segovia",
   "source": "https://www.dipsegovia.es/bop",
-  "lastCheckedUTC": "2026-11-03T16:30:28.748766+00:00",
+  "lastCheckedUTC": "2026-11-04T06:28:13.244880+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "131",
+    "bulletin": "132",
     "pagesVisited": 13,
-    "announcementsRead": 259,
-    "opportunities": 13
+    "announcementsRead": 263,
+    "opportunities": 15
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "119",
       "120",
       "121",
       "122",
@@ -28,10 +27,10 @@
       "128",
       "129",
       "130",
-      "131"
+      "131",
+      "132"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-07",
       "2026-10-09",
       "2026-10-12",
@@ -43,7 +42,8 @@
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-06",
@@ -65,10 +65,9 @@
       "2026-11-03"
     ],
     "issuesRead": 13,
-    "announcementsRead": 259,
-    "opportunities": 13,
+    "announcementsRead": 263,
+    "opportunities": 15,
     "editionPDFs": [
-      "https://www.dipsegovia.es/documents/39512/68d1f642-caa8-cd60-238c-a87451456bce",
       "https://www.dipsegovia.es/documents/39512/a828d9f2-7916-e978-7bd8-bd6c0e93522d",
       "https://www.dipsegovia.es/documents/39512/49a2bbdb-7331-a950-7c0c-58313047b73f",
       "https://www.dipsegovia.es/documents/39512/f0625a03-0fde-2b10-c913-6477673d8f3d",
@@ -80,11 +79,11 @@
       "https://www.dipsegovia.es/documents/39512/c199de1b-8423-f910-df6f-8a5802c9c602",
       "https://www.dipsegovia.es/documents/39512/de568f33-0970-6e5a-59ce-739a904cc74c",
       "https://www.dipsegovia.es/documents/39512/33ca685d-e089-9744-673b-51b1b301b73b",
-      "https://www.dipsegovia.es/documents/39512/f127098c-2671-4599-746d-21752be1ae2e"
+      "https://www.dipsegovia.es/documents/39512/f127098c-2671-4599-746d-21752be1ae2e",
+      "https://www.dipsegovia.es/documents/39512/ea79c617-295f-ac89-8cf9-382869f06ebd"
     ],
-    "originalPdfPagesRead": 457,
+    "originalPdfPagesRead": 489,
     "editionArticleCounts": [
-      15,
       27,
       29,
       14,
@@ -96,10 +95,33 @@
       22,
       16,
       25,
-      15
+      15,
+      19
     ]
   },
   "notices": [
+    {
+      "id": "SG-2026-caab95d4f8de54482b",
+      "province": "Segovia",
+      "title": "Bases que han de regir la convocatoria y proceso de selección para la contratación como personal laboral fijo, mediante concurso-oposición libre, de una plaza de Operario de Servicios Múltiples, incluida en la Oferta de Empleo Público del año 2026",
+      "entity": "Ayuntamiento de Prádena",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.dipsegovia.es/documents/39512/ea79c617-295f-ac89-8cf9-382869f06ebd",
+      "pageInPdf": 35
+    },
+    {
+      "id": "SG-2026-118af1aa9eac82aa36",
+      "province": "Segovia",
+      "title": "Bases que han de regir la convocatoria y proceso de selección para la contratación como personal laboral fijo, mediante concurso-oposición libre, de una plaza de Auxiliar Administrativo, incluida en la Oferta de Empleo Público del año 2026",
+      "entity": "Ayuntamiento de Prádena",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.dipsegovia.es/documents/39512/ea79c617-295f-ac89-8cf9-382869f06ebd",
+      "pageInPdf": 20
+    },
     {
       "id": "SG-2026-6208b370f42b7ca056",
       "province": "Segovia",

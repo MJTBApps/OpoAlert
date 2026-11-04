@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-03T16:25:04.839984+00:00",
+  "lastCheckedUTC": "2026-11-04T06:22:58.719732+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 21,
-    "announcementsRead": 668,
-    "opportunities": 54
+    "announcementsRead": 672,
+    "opportunities": 55
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -36,10 +35,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-08",
       "2026-10-09",
@@ -59,7 +58,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-07",
@@ -73,10 +73,40 @@
       "2026-11-01"
     ],
     "issuesRead": 21,
-    "announcementsRead": 668,
-    "opportunities": 54
+    "announcementsRead": 672,
+    "opportunities": 55
   },
   "notices": [
+    {
+      "id": "AC-2026-7171",
+      "province": "A Coruña",
+      "title": "Ampliación do prazo para presentación de documentación xustificativa das bolsas para material escolar concedidas da convocatoria de bolsas para a adquisición de material escolar 2026-2027",
+      "entity": "Área de Servizos Sociais",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/04/2026_0000007171.pdf"
+    },
+    {
+      "id": "AC-2026-7093",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases de selección para cubrir, por persoal funcionario de carreira, unha praza de técnico/a de persoal",
+      "entity": "Persoal",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/04/2026_0000007093.pdf"
+    },
+    {
+      "id": "AC-2026-7089",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases de selección reguladoras do proceso de contratación de seis traballadoras, como persoal laboral, ao abeiro da subvención concedida pola Consellería de política social e igualdade da Xunta de Galicia, anualidade 2026",
+      "entity": "Promoción Económica, Emprego e Comercio",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/04/2026_0000007089.pdf"
+    },
     {
       "id": "AC-2026-7086",
       "province": "A Coruña",
@@ -596,26 +626,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/06/2026_0000006389.pdf"
-    },
-    {
-      "id": "AC-2026-6374",
-      "province": "A Coruña",
-      "title": "Bases para a provisión do posto de traballo administrativa/o de servizos económicos, código do posto: 04.00.00.03, mediante comisión de servizos",
-      "entity": "Neda",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/05/2026_0000006374.pdf"
-    },
-    {
-      "id": "AC-2026-6365",
-      "province": "A Coruña",
-      "title": "Bases reguladoras do proceso selectivo para a provisión, en réxime laboral temporal, dun posto de auxiliar administrativo vinculado á subvencións destinadas á contratación de persoas mozas inscritas no sistema nacional de Garantía Xuvenil",
-      "entity": "Laracha, A",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/05/2026_0000006365.pdf"
     }
   ]
 }

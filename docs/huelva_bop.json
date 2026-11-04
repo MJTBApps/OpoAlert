@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-03T16:27:35.901937+00:00",
+  "lastCheckedUTC": "2026-11-04T06:25:38.764557+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 21,
-    "announcementsRead": 257,
-    "opportunities": 36
+    "announcementsRead": 255,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -36,10 +35,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -59,7 +58,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,9 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 257,
-    "opportunities": 36,
+    "announcementsRead": 255,
+    "opportunities": 37,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_191_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_192_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_193_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_194_2026.pdf",
@@ -96,10 +95,51 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_208_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_211_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_211_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_212_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-384583",
+      "province": "Huelva",
+      "title": "Resolución de aprobación de las Bases específicas que han de regir las convocatorias para la provisión de dos puestos de trabajo de Jefatura de Servicio mediante el procedimiento de libre designación",
+      "entity": "Diputación Provincial de Huelva",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_384583_BOP-212_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382436",
+      "province": "Huelva",
+      "title": "Resolución de aprobación de la rectificación de las Bases de la convocatoria para la provisión como funcionario de carrera de una plaza de Administrativo Tesorería por promoción interna",
+      "entity": "Ayuntamiento de Beas",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382436_BOP-212_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382424",
+      "province": "Huelva",
+      "title": "Resolución por la que se deja sin efecto la convocatoria para la provisión temporal de una plaza de Limpiador de Edificios Municipales a jornada parcial",
+      "entity": "Ayuntamiento de Beas",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382424_BOP-212_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382415",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases reguladoras del proceso de selección para la provisión de una plaza de Arquitecto Técnico en régimen de personal funcionario interino",
+      "entity": "Ayuntamiento de Beas",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382415_BOP-212_2026.pdf"
+    },
     {
       "id": "HB-2026-383964",
       "province": "Huelva",
@@ -429,36 +469,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_376707_BOP-192_2026.pdf"
-    },
-    {
-      "id": "HB-2026-379920",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la creación de una Bolsa de empleo de Médico",
-      "entity": "Diputación Provincial de Huelva",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_379920_BOP-191_2026.pdf"
-    },
-    {
-      "id": "HB-2026-379917",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la creación de una Bolsa de empleo de Técnico Medio de Gestión de Bibliotecas",
-      "entity": "Diputación Provincial de Huelva",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_379917_BOP-191_2026.pdf"
-    },
-    {
-      "id": "HB-2026-378233",
-      "province": "Huelva",
-      "title": "Bases de la convocatoria para la provisión de dos plazas de Policía Local mediante el sistema de oposición",
-      "entity": "Ayuntamiento de Palos de la Frontera",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_378233_BOP-191_2026.pdf"
     }
   ]
 }

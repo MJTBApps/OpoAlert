@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-03T16:29:59.074748+00:00",
+  "lastCheckedUTC": "2026-11-04T06:27:39.835096+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "210",
-    "pagesVisited": 21,
-    "announcementsRead": 358,
-    "opportunities": 46
+    "pagesVisited": 20,
+    "announcementsRead": 333,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -39,7 +38,6 @@
       "210"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -70,28 +68,19 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-04"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 358,
-    "opportunities": 46
+    "issuesRead": 20,
+    "announcementsRead": 333,
+    "opportunities": 44
   },
   "notices": [
-    {
-      "id": "PV-2026-4639",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo al acuerdo del presidente del Consejo de Administración de Osatek, por el que se anuncia convocatoria pública para la provisión del puesto de trabajo de director/a gerente de Osatek, S.A.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "03/11/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604639a.pdf"
-    },
     {
       "id": "PV-2026-4618",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 21 de octubre de 2026, del consejero de Hacienda y Finanzas, por la que se resuelve la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a de alto cargo en la Dirección de Gabinete y Comunicación del Departamento de Hacienda y Finanzas.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Hacienda y Finanzas",
       "date": "03/11/2026",
       "bulletin": "210",
       "type": "Plaza / oposición",
@@ -526,16 +515,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604119a.pdf"
-    },
-    {
-      "id": "PV-2026-4106",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 2 de septiembre de 2026, del consejero de Ciencia, Universidades e Innovación, por la que se nombran los miembros vocales de los comités asesores específicos previstos en la Orden de 9 de junio de 2026, por la que se procede a la aprobación de las bases reguladoras y a la convocatoria del programa de ayudas nuevas y renovaciones para el Programa Predoctoral de Formación de Personal Investigador no Doctor, correspondiente al curso 2026-2027 y en la Orden de 9 de junio de 2026, por la que se regulan y convocan las ayudas nuevas y renovaciones para el Programa Posdoctoral, de Perfeccionamiento de Personal Investigador Doctor, para el periodo 2026-2029.",
-      "entity": "Ciencia, Universidades e Innovación",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604106a.pdf"
     }
   ]
 }
