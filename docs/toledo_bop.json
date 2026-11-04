@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-04T10:00:01.933102+00:00",
+  "lastCheckedUTC": "2026-11-04T12:15:34.977529+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
-    "pagesVisited": 20,
-    "announcementsRead": 505,
-    "opportunities": 26
+    "bulletin": "211",
+    "pagesVisited": 21,
+    "announcementsRead": 539,
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
       "2026-10-06",
@@ -57,7 +58,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,43 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02",
-      "2026-11-04"
+      "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 505,
-    "opportunities": 26
+    "issuesRead": 21,
+    "announcementsRead": 539,
+    "opportunities": 29
   },
   "notices": [
+    {
+      "id": "TO-2026-5054",
+      "province": "Toledo",
+      "title": "CONVOCATORIA Y BASES BOLSA SERVICIO AYUDA A DOMICILIO",
+      "entity": "AYUNTAMIENTO DE BURGUILLOS DE TOLEDO",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26105036;0&insert_number=5054&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5035",
+      "province": "Toledo",
+      "title": "AMPLIACION DE LA CONVOCATORIA PARA LA CONSTITUCION DE UNA BOLSA DE TRABAJO DE MONITORES DE ACTIVIDADES DEPORTIVAS DEL AYUNTAMIENTO DE MORA.",
+      "entity": "AYUNTAMIENTO DE MORA",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26105018;0&insert_number=5035&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5034",
+      "province": "Toledo",
+      "title": "BASES DE LA CONVOCATORIA PARA LA CONSTITUCION DE UNA BOLSA DE TRABAJO DE PROFESOR ESCUELA DE MUSICA-ESPECIALIDAD GUITARRA DEL AYUNTAMIENTO DE MORA.",
+      "entity": "AYUNTAMIENTO DE MORA",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26105017;0&insert_number=5034&insert_year=2026"
+    },
     {
       "id": "TO-2026-5027",
       "province": "Toledo",
