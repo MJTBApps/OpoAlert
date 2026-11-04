@@ -29,6 +29,9 @@ permissions:
 jobs:
   auditar-y-preparar:
     runs-on: ubuntu-latest
+    # Si una fuente falla, el feed anterior sigue publicado: no es una avería.
+    # salud-feeds.yml avisa solo si algún feed se queda sin actualizar.
+    continue-on-error: true
     timeout-minutes: 30
     permissions:
       contents: write
@@ -65,8 +68,14 @@ jobs:
           git add docs/alicante.json docs/castellon.json
           if ! git diff --cached --quiet; then
             git commit -m 'OpoAlert: actualizar boletines auditados de Alicante y Castellon'
-            git pull --rebase origin main
-            git push origin HEAD:main
+            # Otros bots publican a la vez: reintentar en vez de fallar.
+            for i in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then break; fi
+              if [ "$i" -eq 5 ]; then exit 1; fi
+              sleep $((i * 5))
+            done
           fi
       - name: Diagnosticos si algo falla
         if: failure()

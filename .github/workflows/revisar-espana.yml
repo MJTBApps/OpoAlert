@@ -44,7 +44,9 @@ jobs:
     timeout-minutes: 40
     # La Rioja y Cáceres (HOME_BACKUP) se leen también desde casa y sus portales suelen
     # cortar a GitHub: se intentan, pero su fallo no marca la ejecución como fallida.
-    continue-on-error: ${{ contains(fromJSON(needs.fuentes.outputs.respaldo), matrix.code) }}
+    # Si una fuente falla, el feed anterior sigue publicado: no es una avería.
+    # salud-feeds.yml avisa solo si algún feed se queda sin actualizar.
+    continue-on-error: true
     strategy:
       fail-fast: false
       max-parallel: 6

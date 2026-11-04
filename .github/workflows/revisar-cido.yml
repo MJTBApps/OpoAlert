@@ -26,6 +26,9 @@ permissions:
 jobs:
   auditar-y-publicar:
     runs-on: ubuntu-latest
+    # Si una fuente falla, el feed anterior sigue publicado: no es una avería.
+    # salud-feeds.yml avisa solo si algún feed se queda sin actualizar.
+    continue-on-error: true
     timeout-minutes: 20
     permissions:
       contents: write
@@ -59,8 +62,14 @@ jobs:
           git add docs/barcelona.json docs/girona.json docs/lleida.json docs/tarragona_cido.json
           if ! git diff --cached --quiet; then
             git commit -m 'OpoAlert: refrescar CIDO auditado Barcelona Girona Lleida Tarragona'
-            git pull --rebase origin main
-            git push origin HEAD:main
+            # Otros bots publican a la vez: reintentar en vez de fallar.
+            for i in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then break; fi
+              if [ "$i" -eq 5 ]; then exit 1; fi
+              sleep $((i * 5))
+            done
           fi
       - name: Diagnostico sin sustituir feeds en caso de error
         if: failure()

@@ -33,6 +33,9 @@ jobs:
     needs: fuentes
     if: needs.fuentes.outputs.codes != '[]'
     runs-on: [self-hosted, opoalert-casa]
+    # Si una fuente falla, el feed anterior sigue publicado: no es una avería.
+    # salud-feeds.yml avisa solo si algún feed se queda sin actualizar.
+    continue-on-error: true
     timeout-minutes: 40
     strategy:
       fail-fast: false

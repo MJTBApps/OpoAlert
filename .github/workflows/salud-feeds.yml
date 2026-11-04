@@ -1,0 +1,25 @@
+name: OpoAlert - Salud de los feeds
+# Único aviso que importa: algún feed de la app lleva más de 30 horas laborables
+# sin actualizarse. Los fallos sueltos de cada lector no marcan error (se conserva
+# el feed anterior y la ronda siguiente lo vuelve a intentar).
+on:
+  workflow_dispatch:
+  schedule:
+    # Tras cada una de las cuatro rondas del día.
+    - cron: '15 7 * * *'
+    - cron: '15 10 * * *'
+    - cron: '15 13 * * *'
+    - cron: '15 17 * * *'
+permissions:
+  contents: read
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar que ningún feed se ha quedado viejo
+        run: python backend/salud_feeds.py
