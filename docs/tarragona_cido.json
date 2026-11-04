@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-04T06:42:35.207500+00:00",
+  "lastCheckedUTC": "2026-11-04T09:37:42.181161+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 94,
-    "opportunities": 94,
+    "announcementsRead": 95,
+    "opportunities": 95,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 94,
-    "opportunities": 94
+    "announcementsRead": 95,
+    "opportunities": 95
   },
   "notices": [
     {
@@ -325,6 +325,16 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18155706"
+    },
+    {
+      "id": "CIDO8-17988011",
+      "title": "Borsa de treball de places de Tècnic superior professor, especialitat contrabaix a l'Escola Municipal de Música Pau Casals",
+      "entity": "Ajuntament del Vendrell",
+      "date": "30/10/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17988011"
     },
     {
       "id": "CIDO8-16758438",
