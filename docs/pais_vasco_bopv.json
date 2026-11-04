@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-04T06:27:39.835096+00:00",
+  "lastCheckedUTC": "2026-11-04T07:40:30.953986+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
-    "pagesVisited": 20,
-    "announcementsRead": 333,
-    "opportunities": 44
+    "bulletin": "211",
+    "pagesVisited": 21,
+    "announcementsRead": 357,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
       "2026-10-06",
@@ -57,7 +58,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,43 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-04"
+      "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 333,
-    "opportunities": 44
+    "issuesRead": 21,
+    "announcementsRead": 357,
+    "opportunities": 47
   },
   "notices": [
+    {
+      "id": "PV-2026-4648",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1777/2026, de 23 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se convoca concurso para la provisión de un puesto de jefe/a de Servicio Sanitario en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604648a.pdf"
+    },
+    {
+      "id": "PV-2026-4647",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1776/2026, de 23 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se convoca concurso para la provisión de un puesto de jefe/a de Sección Sanitaria, en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604647a.pdf"
+    },
+    {
+      "id": "PV-2026-4646",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1700/2026, de 23 de octubre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Servicio Corporativo, en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604646a.pdf"
+    },
     {
       "id": "PV-2026-4618",
       "province": "País Vasco (BOPV)",

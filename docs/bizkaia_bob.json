@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-03T16:25:10.174394+00:00",
+  "lastCheckedUTC": "2026-11-04T07:35:31.898178+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 22,
-    "announcementsRead": 719,
-    "opportunities": 46
+    "announcementsRead": 726,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -37,10 +36,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -61,7 +60,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,30 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 719,
-    "opportunities": 46
+    "announcementsRead": 726,
+    "opportunities": 47
   },
   "notices": [
+    {
+      "id": "BI-2026-II-5657",
+      "province": "Bizkaia",
+      "title": "Convocatoria para la provisión mediante el sistema de concurso-oposición libre de una (1) plaza técnico/a de Behargintza, vacante en la plantilla de personal del Ayuntamiento de Leioa.",
+      "entity": "Ayuntamiento de Larrabetzu",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/04/II-5657_cas.pdf"
+    },
+    {
+      "id": "BI-2026-I-1240",
+      "province": "Bizkaia",
+      "title": "ORDEN FORAL 6172/2026, de 26 de octubre, del diputado foral de Administración Pública y Relaciones Institucionales, por la que se corrige la Orden Foral 5336/2026, de 16 de septiembre, por la que se aprueban las listas provisionales de admisiones y exclusiones de la convocatoria de Técnica o Técnico en Arqueología en la escala de Administración Especial, subescala Técnica, clase: técnicas y técnicos superiores, así como se designan personas integrantes del tribunal encargado del proceso selectivo.",
+      "entity": "Administración Foral del Territorio Histórico de Bizkaia",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/04/I-1240_cas.pdf"
+    },
     {
       "id": "BI-2026-II-5597",
       "province": "Bizkaia",
@@ -527,16 +547,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/06/II-5100_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5187",
-      "province": "Bizkaia",
-      "title": "Adjudicación, por el procedimiento de concurso específico, del puesto de Asesor/a Jurídico/a Responsable de las Unidades de Servicio de Atención Ciudadana y de Contratación-Responsabilidad Patrimonial del Ayuntamiento de Erandio (código RPT 8012-1).",
-      "entity": "Ayuntamiento de Durango",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/05/II-5187_cas.pdf"
     }
   ]
 }

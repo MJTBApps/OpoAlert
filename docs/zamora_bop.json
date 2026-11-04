@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "source": "https://www.diputaciondezamora.es/opencms/servicios/BOP/busqueda-en-el-bop/",
   "province": "Zamora",
-  "lastCheckedUTC": "2026-11-03T16:31:11.318896+00:00",
+  "lastCheckedUTC": "2026-11-04T07:41:43.090636+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "128",
+    "bulletin": "129",
     "pagesVisited": 13,
-    "announcementsRead": 205,
-    "opportunities": 4
+    "announcementsRead": 212,
+    "opportunities": 3
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "issuesRead": 13,
     "bulletins": [
-      "116",
       "117",
       "118",
       "119",
@@ -29,10 +28,10 @@
       "125",
       "126",
       "127",
-      "128"
+      "128",
+      "129"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-07",
       "2026-10-09",
       "2026-10-12",
@@ -44,7 +43,8 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-06",
@@ -66,7 +66,6 @@
       "2026-11-03"
     ],
     "editionPDFs": [
-      "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261005-116.pdf",
       "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261007-117.pdf",
       "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261009-118.pdf",
       "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261012-119-extraordinario.pdf",
@@ -78,10 +77,11 @@
       "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261023-125.pdf",
       "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261026-126.pdf",
       "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261028-127.pdf",
-      "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261030-128.pdf"
+      "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261030-128.pdf",
+      "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/2026/20261104-129.pdf"
     ],
-    "announcementsRead": 205,
-    "opportunities": 4
+    "announcementsRead": 212,
+    "opportunities": 3
   },
   "notices": [
     {
@@ -113,16 +113,6 @@
       "bulletin": "121",
       "type": "Plaza / oposición",
       "url": "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/121/202602379.pdf"
-    },
-    {
-      "id": "ZM-202602313",
-      "province": "Zamora",
-      "title": "Convocatoria de bolsa de trabajo para la cobertura de puestos vacantes en el Consorcio Centro de Idiomas de Zamora para la impartición de la asignatura de inglés.",
-      "entity": "Consorcio Centro de Idiomas de Zamora",
-      "date": "05/10/2026",
-      "bulletin": "116",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/116/202602313.pdf"
     }
   ]
 }

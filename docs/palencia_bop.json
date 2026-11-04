@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "province": "Palencia",
   "source": "https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia",
-  "lastCheckedUTC": "2026-11-04T06:27:11.112483+00:00",
+  "lastCheckedUTC": "2026-11-04T07:39:51.405608+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "131",
-    "pagesVisited": 13,
-    "announcementsRead": 256,
-    "opportunities": 6
+    "bulletin": "132",
+    "pagesVisited": 14,
+    "announcementsRead": 275,
+    "opportunities": 10
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-06",
     "rangeEnd": "2026-11-04",
-    "issuesRead": 13,
+    "issuesRead": 14,
     "bulletins": [
       "120",
       "121",
@@ -29,7 +29,8 @@
       "128",
       "129",
       "130",
-      "131"
+      "131",
+      "132"
     ],
     "publicationDates": [
       "2026-10-07",
@@ -44,12 +45,14 @@
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "editionTypes": [
       "ordinario",
       "ordinario",
       "extraordinario",
+      "ordinario",
       "ordinario",
       "ordinario",
       "ordinario",
@@ -77,8 +80,7 @@
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02",
-      "2026-11-04"
+      "2026-11-02"
     ],
     "editionPDFs": [
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf",
@@ -93,13 +95,54 @@
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261026-bop-128-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261028-bop-129-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261030-bop-130-Ordinario.pdf",
-      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261103-bop-131-Ordinario.pdf"
+      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261103-bop-131-Ordinario.pdf",
+      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261104-bop-132-Ordinario.pdf"
     ],
-    "announcementsRead": 256,
-    "opportunities": 6,
+    "announcementsRead": 275,
+    "opportunities": 10,
     "pdfScope": "El PDF completo firmado es el único documento publicado por edición; el enlace identifica también la página del anuncio."
   },
   "notices": [
+    {
+      "id": "PL-20261104-014",
+      "province": "Palencia",
+      "title": "Modificación de las Bases para la selección de dos plazas de Administrativo de la Administración General, como personal funcionario",
+      "entity": "Villamuriel de Cerrato",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261104-bop-132-Ordinario.pdf#page=47"
+    },
+    {
+      "id": "PL-20261104-006",
+      "province": "Palencia",
+      "title": "Bases generales de la Convocatoria para proveer por el sistema de oposición libre de una plaza de Oficial de Segunda de Servicios Múltiples y Mantenimiento de edificios",
+      "entity": "Dueñas",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261104-bop-132-Ordinario.pdf#page=32"
+    },
+    {
+      "id": "PL-20261104-005",
+      "province": "Palencia",
+      "title": "Convocatoria para el proceso selectivo, por el sistema de oposición libre, de una plaza de Administrativo de Instalaciones, vacante en la plantilla de personal laboral",
+      "entity": "Patronato Municipal de Deportes",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261104-bop-132-Ordinario.pdf#page=20"
+    },
+    {
+      "id": "PL-20261104-004",
+      "province": "Palencia",
+      "title": "Convocatoria de concurso oposición libre, para la selección de una plaza de Encargado de Unidad de Gestión de Ingresos/Personal, vacante en la plantilla de personal laboral",
+      "entity": "Patronato Municipal de Deportes",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261104-bop-132-Ordinario.pdf#page=6"
+    },
     {
       "id": "PL-20261103-001",
       "province": "Palencia",
