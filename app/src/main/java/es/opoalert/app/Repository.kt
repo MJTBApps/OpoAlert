@@ -35,6 +35,17 @@ object Repository {
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putBoolean(ALERTS, enabled).apply()
     }
 
+    /**
+     * Boletines que se descargan y vigilan: los elegidos para la lista y los de las
+     * alertas activas. Antes solo se vigilaban los elegidos, y una alerta de un
+     * boletín no elegido no avisaba nunca, sin decir nada (04/11/2026).
+     */
+    fun watched(chosen: Set<Province>, rules: List<AlertRule>): Set<Province> =
+        chosen + rules.filter { it.enabled }.flatMap { it.provinces }
+
+    fun watched(ctx: Context): Set<Province> =
+        watched(ProvinceSettings.selected(ctx), AlertRuleStore.list(ctx))
+
     fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL
     fun lastSync(ctx: Context): String =
         ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString(LAST_SYNC, "") ?: ""
@@ -75,7 +86,8 @@ object Repository {
         val downloaded = mutableListOf<Pair<Province, RemoteFeed>>()
         val failures = mutableListOf<String>()
         // The Android app reads validated JSON; it never scrapes BOP HTML.
-        for (province in SourceCatalog.availableSources.filter { it in chosen }) {
+        val watched = watched(chosen, rulesAtSyncStart)
+        for (province in SourceCatalog.availableSources.filter { it in watched }) {
             try {
                 downloaded.add(province to RemoteFeedReader.fetch(province.feedUrl, province, ctx))
             } catch (_: Exception) {
@@ -116,7 +128,7 @@ object Repository {
             editor.putBoolean(INITIALIZED_PREFIX + province.code, true)
         }
         if (!editor.commit()) throw IOException("No se han podido guardar los datos")
-        val alertMatches = SmartAlertMatcher.matching(newOnes, rulesAtSyncStart, chosen)
+        val alertMatches = SmartAlertMatcher.matching(newOnes, rulesAtSyncStart, watched)
         return SyncResult(merged, newOnes, fresh.size, status, historyMessage, alertMatches)
     }
 

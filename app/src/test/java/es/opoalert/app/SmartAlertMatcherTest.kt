@@ -71,4 +71,29 @@ class SmartAlertMatcherTest {
         assertTrue(SmartAlertMatcher.matches(ruleCs, notice, setOf(Province.CASTELLON)))
         assertFalse(SmartAlertMatcher.matches(ruleCs, notice, onlyValencia))
     }
+
+    /** BOP de Valencia del 04/11/2026: alerta «administración» y 21 plazas de TAG. */
+    @Test fun matchesRealValenciaNotice() {
+        val tag = adminVal.copy(
+            id = "2026/13727",
+            title = "Anuncio de la Diputación Provincial de Valencia sobre la información de " +
+                "emplazamiento ... contra las bases del procedimiento selectivo de 21 plazas " +
+                "de técnico administración general de la OPE 2023, 2024, 2025 y 2026",
+            entity = "la Diputación Provincial de Valencia", date = "04/11/2026",
+        )
+        val rule = AlertRule("v", "administración", onlyValencia)
+        assertEquals(listOf(tag), SmartAlertMatcher.matching(listOf(tag), listOf(rule), onlyValencia))
+        assertTrue(SmartAlertMatcher.matches(rule.copy(phrase = "Administracion"), tag, onlyValencia))
+    }
+
+    /** Las alertas vigilan también boletines que no están en «Elegir boletines». */
+    @Test fun watchedIncludesActiveAlertSources() {
+        val rules = listOf(
+            AlertRule("a", "policia", setOf(Province.ALICANTE)),
+            AlertRule("c", "bombero", setOf(Province.CASTELLON), enabled = false),
+        )
+        assertEquals(setOf(Province.VALENCIA, Province.ALICANTE), Repository.watched(onlyValencia, rules))
+        val watched = Repository.watched(onlyValencia, rules)
+        assertEquals(listOf(policeAl), SmartAlertMatcher.matching(listOf(policeAl), rules, watched))
+    }
 }

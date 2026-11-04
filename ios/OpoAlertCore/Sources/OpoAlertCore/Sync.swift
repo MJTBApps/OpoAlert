@@ -48,7 +48,8 @@ public struct Synchronizer: Sendable {
         // Los ya vistos no dependen de la caché de 2000, que solo sirve para la lista.
         let storedSeen = store.seen
         let seen = Set((storedSeen ?? []) + old.map(\.id))
-        let sources = store.availableSources.filter { chosen.contains($0.code) }
+        let watched = SmartAlertMatcher.watched(chosen: chosen, rules: rulesAtStart)
+        let sources = store.availableSources.filter { watched.contains($0.code) }
 
         var results: [String: Result<RemoteFeed, Error>] = [:]
         await withTaskGroup(of: (String, Result<RemoteFeed, Error>).self) { group in
@@ -96,7 +97,7 @@ public struct Synchronizer: Sendable {
         store.saveSync(entries: merged, lastSync: formatter.string(from: now), source: status, history: history,
                        seen: SeenIds.merge(fresh.map(\.id), storedSeen ?? []),
                        initialized: downloaded.map(\.0.code))
-        let matches = SmartAlertMatcher.matching(newOnes, rules: rulesAtStart, followed: chosen)
+        let matches = SmartAlertMatcher.matching(newOnes, rules: rulesAtStart, followed: watched)
         return SyncResult(all: merged, newOnes: newOnes, scanned: fresh.count, sourceMessage: status,
                           historyMessage: history, alertMatches: matches)
     }

@@ -33,6 +33,12 @@ public enum SmartAlertMatcher {
     }
 
     /// Una misma convocatoria genera como máximo un aviso aunque coincida con varias alertas.
+    /// Fuentes que se descargan y vigilan: las elegidas para la lista y las de las alertas
+    /// activas. Antes una alerta de una fuente no elegida no avisaba nunca (04/11/2026).
+    public static func watched(chosen: Set<String>, rules: [AlertRule]) -> Set<String> {
+        chosen.union(rules.filter(\.enabled).flatMap(\.sources))
+    }
+
     public static func matching(_ newNotices: [Notice], rules: [AlertRule], followed: Set<String>) -> [Notice] {
         guard rules.contains(where: \.enabled), !followed.isEmpty else { return [] }
         var seen = Set<String>()

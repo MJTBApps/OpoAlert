@@ -31,7 +31,7 @@ object Notifications {
         // Segunda comprobacion: si el usuario pausa o elimina una regla durante
         // la sincronizacion, no debe llegar una notificacion de ella.
         val matching = SmartAlertMatcher.matching(
-            notices, AlertRuleStore.list(context), ProvinceSettings.selected(context)
+            notices, AlertRuleStore.list(context), Repository.watched(context)
         )
         if (matching.isEmpty()) return
         if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(

@@ -2,10 +2,12 @@ package es.opoalert.app
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
+import android.provider.Settings
 import android.view.Gravity
 import android.view.View
 import android.widget.EditText
@@ -14,6 +16,7 @@ import android.widget.ScrollView
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.app.NotificationManagerCompat
 
 /**
  * Gestión de alertas: sin registro, sin permisos de ubicación y sin ocupar
@@ -111,10 +114,17 @@ class AlertsActivity : Activity() {
         render()
     }
 
+    override fun onResume() {
+        super.onResume()
+        // Al volver de los ajustes de notificaciones de Android.
+        if (::list.isInitialized) render()
+    }
+
     private fun render() {
         premiumCard.visibility = if (Premium.alertsUnlocked(this)) android.view.View.GONE else android.view.View.VISIBLE
         list.removeAllViews()
         val rules = AlertRuleStore.list(this)
+        if (rules.any { it.enabled }) addNotificationsWarning()
         val active = rules.count { it.enabled }
         count.text = if (active == 1) "1 activa" else "$active activas"
         if (rules.isEmpty()) {
@@ -252,6 +262,38 @@ class AlertsActivity : Activity() {
             isFocusable = true
             setOnClickListener { callback() }
         }
+
+    /**
+     * Con los avisos apagados (en el menú de la app o en Android) las alertas no
+     * pueden avisar; antes no se decía en ningún sitio.
+     */
+    private fun addNotificationsWarning() {
+        val system = NotificationManagerCompat.from(this).areNotificationsEnabled()
+        if (system && Repository.alertsEnabled(this)) return
+        val card = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(dp(15), dp(13), dp(15), dp(13))
+            background = rounded("#FFF4E5", 14, "#F5C98B")
+            isClickable = true
+        }
+        card.addView(text("Los avisos están desactivados", 15f, "#7A4A00", true))
+        card.addView(text(
+            if (system) "Tus alertas no pueden avisarte. Pulsa aquí para activar los avisos."
+            else "Android tiene bloqueadas las notificaciones de OpoAlert. Pulsa aquí para permitirlas.",
+            13f, "#7A4A00"
+        ).apply { setPadding(0, dp(5), 0, 0) })
+        card.setOnClickListener {
+            if (system) {
+                Repository.setAlertsEnabled(this, true)
+                Toast.makeText(this, "Avisos activados", Toast.LENGTH_SHORT).show()
+                render()
+            } else {
+                startActivity(Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS)
+                    .putExtra(Settings.EXTRA_APP_PACKAGE, packageName))
+            }
+        }
+        list.addView(card, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(12) })
+    }
 
     private fun text(value: String, size: Float, color: String, bold: Boolean = false): TextView =
         TextView(this).apply {
