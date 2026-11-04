@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-04T07:39:13.602015+00:00",
+  "lastCheckedUTC": "2026-11-04T09:29:55.439619+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "264",
-    "pagesVisited": 27,
-    "announcementsRead": 1752,
-    "opportunities": 283
+    "bulletin": "265",
+    "pagesVisited": 28,
+    "announcementsRead": 1852,
+    "opportunities": 290
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-06",
     "rangeEnd": "2026-11-04",
-    "issuesRead": 27,
-    "pagesVisited": 27,
-    "announcementsRead": 1752,
-    "opportunities": 283,
+    "issuesRead": 28,
+    "pagesVisited": 28,
+    "announcementsRead": 1852,
+    "opportunities": 290,
     "bulletins": [
       "238",
       "239",
@@ -46,7 +46,8 @@
       "261",
       "262",
       "263",
-      "264"
+      "264",
+      "265"
     ],
     "publicationDates": [
       "2026-10-06",
@@ -75,14 +76,14 @@
       "2026-10-30",
       "2026-10-31",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01",
-      "2026-11-04"
+      "2026-11-01"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/06/23800.PDF",
@@ -111,7 +112,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/30/26100.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/31/26200.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/02/26300.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/03/26400.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/03/26400.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/04/26500.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -140,10 +142,81 @@
       "xml",
       "xml",
       "xml",
+      "xml",
       "xml"
     ]
   },
   "notices": [
+    {
+      "id": "MD-20261104-89",
+      "province": "Madrid",
+      "title": "– Rivas-Vaciamadrid. Ofertas de empleo. Proceso selectivo",
+      "entity": "Rivas-Vaciamadrid",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-89.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261104-88",
+      "province": "Madrid",
+      "title": "– Rivas-Vaciamadrid. Ofertas de empleo. Proceso selectivo",
+      "entity": "Rivas-Vaciamadrid",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-88.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261104-74",
+      "province": "Madrid",
+      "title": "– Fuenlabrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "Fuenlabrada",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-74.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261104-72",
+      "province": "Madrid",
+      "title": "– El Molar. Ofertas de empleo. Proceso selectivo",
+      "entity": "El Molar",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-72.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261104-33",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Anuncio de 26 de octubre de 2026, por el que se convocan las bases del procedimiento de selección para cubrir un puesto indefinido en la Fundación de la Universidad Autónoma de Madrid",
+      "entity": "UNIVERSIDAD AUTÓNOMA DE MADRID",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-33.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261104-32",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 3612/2026, de 28 de octubre, de la Consejería de Familia, Juventud y Asuntos Sociales, por la que se deja sin efecto parcialmente la Orden 3264/2026, de 7 de octubre, de la Consejería de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de cuatro puestos de carrera de naturaleza laboral en la citada Consejería, por el sistema de Libre Designación",
+      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-32.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261104-11",
+      "province": "Madrid",
+      "title": "Concurso de traslados – Resolución de 19 de octubre de 2026, de la Dirección General de Recursos Humanos, por la que se convoca concurso de traslados de ámbito estatal para funcionarios de los Cuerpos de Inspectores de Educación",
+      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
+      "date": "04/11/2026",
+      "bulletin": "265",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-11.PDF",
+      "type": "Plaza / oposición"
+    },
     {
       "id": "MD-20261103-79",
       "province": "Madrid",

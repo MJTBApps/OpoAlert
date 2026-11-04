@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-04T06:26:07.123409+00:00",
+  "lastCheckedUTC": "2026-11-04T09:29:25.684614+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "131",
-    "pagesVisited": 12,
-    "announcementsRead": 359,
-    "opportunities": 33
+    "bulletin": "132",
+    "pagesVisited": 13,
+    "announcementsRead": 421,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
@@ -27,7 +27,8 @@
       "128",
       "129",
       "130",
-      "131"
+      "131",
+      "132"
     ],
     "publicationDates": [
       "2026-10-07",
@@ -41,7 +42,8 @@
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-06",
@@ -60,14 +62,33 @@
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-03",
-      "2026-11-04"
+      "2026-11-03"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 359,
-    "opportunities": 33
+    "issuesRead": 13,
+    "announcementsRead": 421,
+    "opportunities": 35
   },
   "notices": [
+    {
+      "id": "LP-20261104-028",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases específicas para la convocatoria de plaza de Letrado",
+      "entity": "ILUSTRE AYUNTAMIENTO DE MOGÁN",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/4-11-26/4-11-26.pdf"
+    },
+    {
+      "id": "LP-20261104-027",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases específicas para la convocatoria de plaza de Técnico de Administración General",
+      "entity": "ILUSTRE AYUNTAMIENTO DE MOGÁN",
+      "date": "04/11/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/4-11-26/4-11-26.pdf"
+    },
     {
       "id": "LP-20261102-017",
       "province": "Las Palmas (BOP)",
