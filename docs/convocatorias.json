@@ -1,18 +1,54 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-03T09:30:46.291811+00:00",
+  "lastCheckedUTC": "2026-11-04T06:38:54.976288+00:00",
   "coverage": {
-    "bulletin": "211",
-    "pagesVisited": 4,
-    "announcementsRead": 81,
-    "opportunities": 2,
+    "bulletin": "212",
+    "pagesVisited": 3,
+    "announcementsRead": 55,
+    "opportunities": 4,
     "complete": true,
     "status": "paginator_last_page",
     "details": "Se alcanzo la ultima pagina del paginador visible."
   },
-  "countNewBulletin": 2,
+  "countNewBulletin": 4,
   "notices": [
+    {
+      "id": "2026/13727",
+      "title": "Anuncio de la Diputación Provincial de Valencia sobre la información de emplazamiento a las personas interesadas en el procedimiento abreviado número 462/2026 de la Sección de lo Contencioso Administrativo de Tribunal de Instancia de Valencia plaza número 10, contra las bases del procedimiento selectivo de 21 plazas de técnico administración general de la OPE 2023, 2024, 2025 y 2026, publicadas en el BOP número 147 de 04/08/2026.",
+      "entity": "la Diputación Provincial de Valencia",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13727&lang=es"
+    },
+    {
+      "id": "2026/13324",
+      "title": "Anuncio del Ayuntamiento de Massalfassar sobre la aprobación de las bases y la convocatoria para proveer en propiedad dos plazas de administrativo/a (C1), mediante concurso-oposición y constitución de bolsa de trabajo.",
+      "entity": "Ayuntamiento de Massalfassar",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13324&lang=es"
+    },
+    {
+      "id": "2026/13314",
+      "title": "Anuncio del Ayuntamiento de Picassent sobre la aprobación de las bases específicas reguladoras del proceso de selección de una plaza de funcionario/a de carrera, técnico/a medio/a de administración especial, gestión cultural.",
+      "entity": "Ayuntamiento de Picassent",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13314&lang=es"
+    },
+    {
+      "id": "2026/13269",
+      "title": "Anuncio del Ayuntamiento de València sobre la rectificación del temario de la convocatoria para proveer en propiedad 15 plazas de ingeniero/a industrial.",
+      "entity": "Ayuntamiento de València",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13269&lang=es"
+    },
     {
       "id": "2026/13254",
       "title": "Anuncio del Ayuntamiento de Beniparrell sobre la aprobación de las bases de la convocatoria para la bolsa de empleo de peón/a de brigada y servicios varios.",
@@ -552,36 +588,17 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12011&lang=es"
-    },
-    {
-      "id": "2026/12096",
-      "title": "Anuncio de la Diputación Provincial de Valencia sobre la bolsa de trabajo derivada del concurso oposición libre para la selección de tres plazas de profesor/a de primaria (maestro/a con la especialidad de educación infantil). Convocatoria 46/23.",
-      "entity": "la Diputación Provincial de Valencia",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12096&lang=es"
-    },
-    {
-      "id": "2026/11935",
-      "title": "Anuncio del Ayuntamiento de Massanassa sobre la aprobación de las bases de la convocatoria del procedimiento selectivo para la cobertura en propiedad de una plaza de técnico/a de archivo.",
-      "entity": "Ayuntamiento de Massanassa",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F11935&lang=es"
     }
   ],
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
-    "pagesVisited": 54,
-    "announcementsRead": 1282,
-    "opportunities": 62,
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
+    "pagesVisited": 56,
+    "announcementsRead": 1284,
+    "opportunities": 64,
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -601,143 +618,143 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-03T09:30:46.291826+00:00",
+    "verifiedUTC": "2026-11-04T06:38:54.976302+00:00",
     "chunks": [
       {
-        "start": "2026-10-05",
+        "start": "2026-10-06",
         "end": "2026-10-08",
-        "requestedStart": "2026-10-05",
-        "requestedEnd": "2026-10-09",
+        "requestedStart": "2026-10-06",
+        "requestedEnd": "2026-10-10",
         "publishedDates": [
-          "2026-10-05",
           "2026-10-06",
           "2026-10-07",
           "2026-10-08"
         ],
         "nonPublicationDates": [
-          "2026-10-09"
+          "2026-10-09",
+          "2026-10-10"
         ],
-        "pagesVisited": 10,
-        "announcementsRead": 235,
+        "pagesVisited": 8,
+        "announcementsRead": 182,
         "bulletins": [
-          "191",
           "192",
           "193",
           "194"
-        ],
-        "opportunities": 7,
-        "complete": true
-      },
-      {
-        "start": "2026-10-12",
-        "end": "2026-10-14",
-        "requestedStart": "2026-10-10",
-        "requestedEnd": "2026-10-14",
-        "publishedDates": [
-          "2026-10-12",
-          "2026-10-13",
-          "2026-10-14"
-        ],
-        "nonPublicationDates": [
-          "2026-10-10",
-          "2026-10-11"
-        ],
-        "pagesVisited": 7,
-        "announcementsRead": 154,
-        "bulletins": [
-          "195",
-          "196",
-          "197"
         ],
         "opportunities": 5,
         "complete": true
       },
       {
-        "start": "2026-10-15",
-        "end": "2026-10-19",
-        "requestedStart": "2026-10-15",
-        "requestedEnd": "2026-10-19",
+        "start": "2026-10-12",
+        "end": "2026-10-15",
+        "requestedStart": "2026-10-11",
+        "requestedEnd": "2026-10-15",
         "publishedDates": [
-          "2026-10-15",
-          "2026-10-16",
-          "2026-10-19"
+          "2026-10-12",
+          "2026-10-13",
+          "2026-10-14",
+          "2026-10-15"
         ],
         "nonPublicationDates": [
-          "2026-10-17",
-          "2026-10-18"
+          "2026-10-11"
         ],
-        "pagesVisited": 10,
-        "announcementsRead": 247,
+        "pagesVisited": 11,
+        "announcementsRead": 252,
         "bulletins": [
-          "198",
-          "199",
-          "200"
-        ],
-        "opportunities": 14,
-        "complete": true
-      },
-      {
-        "start": "2026-10-20",
-        "end": "2026-10-23",
-        "requestedStart": "2026-10-20",
-        "requestedEnd": "2026-10-24",
-        "publishedDates": [
-          "2026-10-20",
-          "2026-10-21",
-          "2026-10-22",
-          "2026-10-23"
-        ],
-        "nonPublicationDates": [
-          "2026-10-24"
-        ],
-        "pagesVisited": 10,
-        "announcementsRead": 232,
-        "bulletins": [
-          "201",
-          "202",
-          "203",
-          "204"
+          "195",
+          "196",
+          "197",
+          "198"
         ],
         "opportunities": 12,
         "complete": true
       },
       {
+        "start": "2026-10-16",
+        "end": "2026-10-20",
+        "requestedStart": "2026-10-16",
+        "requestedEnd": "2026-10-20",
+        "publishedDates": [
+          "2026-10-16",
+          "2026-10-19",
+          "2026-10-20"
+        ],
+        "nonPublicationDates": [
+          "2026-10-17",
+          "2026-10-18"
+        ],
+        "pagesVisited": 11,
+        "announcementsRead": 253,
+        "bulletins": [
+          "199",
+          "200",
+          "201"
+        ],
+        "opportunities": 8,
+        "complete": true
+      },
+      {
+        "start": "2026-10-21",
+        "end": "2026-10-23",
+        "requestedStart": "2026-10-21",
+        "requestedEnd": "2026-10-25",
+        "publishedDates": [
+          "2026-10-21",
+          "2026-10-22",
+          "2026-10-23"
+        ],
+        "nonPublicationDates": [
+          "2026-10-24",
+          "2026-10-25"
+        ],
+        "pagesVisited": 6,
+        "announcementsRead": 128,
+        "bulletins": [
+          "202",
+          "203",
+          "204"
+        ],
+        "opportunities": 11,
+        "complete": true
+      },
+      {
         "start": "2026-10-26",
-        "end": "2026-10-29",
-        "requestedStart": "2026-10-25",
-        "requestedEnd": "2026-10-29",
+        "end": "2026-10-30",
+        "requestedStart": "2026-10-26",
+        "requestedEnd": "2026-10-30",
         "publishedDates": [
           "2026-10-26",
           "2026-10-27",
           "2026-10-28",
-          "2026-10-29"
+          "2026-10-29",
+          "2026-10-30"
         ],
-        "nonPublicationDates": [
-          "2026-10-25"
-        ],
-        "pagesVisited": 9,
-        "announcementsRead": 221,
+        "nonPublicationDates": [],
+        "pagesVisited": 12,
+        "announcementsRead": 276,
         "bulletins": [
           "205",
           "206",
           "207",
-          "208"
+          "208",
+          "209"
         ],
-        "opportunities": 16,
+        "opportunities": 19,
         "complete": true
       },
       {
-        "start": "2026-10-30",
-        "end": "2026-11-03",
-        "requestedStart": "2026-10-30",
-        "requestedEnd": "2026-11-03",
+        "start": "2026-11-02",
+        "end": "2026-11-04",
+        "requestedStart": "2026-10-31",
+        "requestedEnd": "2026-11-04",
         "publishedDates": [
-          "2026-10-30",
           "2026-11-02",
-          "2026-11-03"
+          "2026-11-03",
+          "2026-11-04"
         ],
         "nonPublicationDates": [
           "2026-10-31",
@@ -746,11 +763,11 @@
         "pagesVisited": 8,
         "announcementsRead": 193,
         "bulletins": [
-          "209",
           "210",
-          "211"
+          "211",
+          "212"
         ],
-        "opportunities": 8,
+        "opportunities": 9,
         "complete": true
       }
     ]
