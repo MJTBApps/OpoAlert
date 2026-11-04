@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-03T17:05:16.890913+00:00",
+  "lastCheckedUTC": "2026-11-04T07:23:57.982854+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "253",
+    "bulletin": "254",
     "pagesVisited": 2,
-    "announcementsRead": 740,
+    "announcementsRead": 745,
     "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 740,
+    "announcementsRead": 745,
     "opportunities": 63,
     "bulletins": [
-      "229",
       "230",
       "231",
       "232",
@@ -44,10 +43,10 @@
       "250",
       "251",
       "252",
-      "253"
+      "253",
+      "254"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -71,10 +70,10 @@
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "issuePublicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -98,7 +97,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -108,19 +108,59 @@
       "2026-11-02"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 41,
+      "SECCIÓN TERCERA": 39,
       "SECCIÓN QUINTA": 97,
-      "SECCIÓN SEXTA": 564,
-      "PARTE NO OFICIAL": 6,
+      "SECCIÓN SEXTA": 572,
       "SECCIÓN SEGUNDA": 8,
       "SECCIÓN CUARTA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
-      "SECCIÓN SEPTIMA": 2
+      "SECCIÓN SEPTIMA": 2,
+      "PARTE NO OFICIAL": 5
     },
     "documentsVerified": 87
   },
   "notices": [
+    {
+      "id": "ZA-000344840",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a aprobación inicial del presupuesto para el ejercicio 2027.",
+      "entity": "COMARCA DE VALDEJALÓN",
+      "date": "04/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473196440707"
+    },
+    {
+      "id": "ZA-000344834",
+      "province": "Zaragoza",
+      "title": "Por esta Alcaldía-Presidencia se ha adoptado resolución núm. 2026-1841, de fecha 28 de octubre de 2026, con el siguiente contenido: «Iniciado expediente de aprobación de bases y convocatoria para la provisión…",
+      "entity": "AYUNTAMIENTO DE TARAZONA",
+      "date": "04/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473190380606"
+    },
+    {
+      "id": "ZA-000344833",
+      "province": "Zaragoza",
+      "title": "Por esta Alcaldía-Presidencia se ha adoptado resolución núm. 2026-1837, de fecha 28 de octubre de 2026 con el siguiente contenido: «Iniciado expediente de aprobación de bases y convocatoria para la provisión…",
+      "entity": "AYUNTAMIENTO DE TARAZONA",
+      "date": "04/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473189370606"
+    },
+    {
+      "id": "ZA-000344827",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE PERDIGUERA",
+      "date": "04/11/2026",
+      "bulletin": "254",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473183310404"
+    },
     {
       "id": "ZA-000344812",
       "province": "Zaragoza",
@@ -710,46 +750,6 @@
       "bulletin": "230",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469014810505"
-    },
-    {
-      "id": "ZA-000344093",
-      "province": "Zaragoza",
-      "title": "Visto que el Consejo de la Comarca de Campo de Borja con fecha 21 de mayo de 2026 acordó la aprobación del acuerdo regulador de las condiciones de trabajo del personal funcionario de la Comarca de Campo de…",
-      "entity": "COMARCA DE CAMPO DE BORJA",
-      "date": "05/10/2026",
-      "bulletin": "229",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468831240808"
-    },
-    {
-      "id": "ZA-000344092",
-      "province": "Zaragoza",
-      "title": "ANUNCIO relativo a resolución del Ayuntamiento de Utebo por la que se hacen públicas las bases de la convocatoria para proveer por funcionario de carrera, dos plazas de peón de mantenimiento, escala de…",
-      "entity": "AYUNTAMIENTO DE UTEBO",
-      "date": "05/10/2026",
-      "bulletin": "229",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468830230707"
-    },
-    {
-      "id": "ZA-000344089",
-      "province": "Zaragoza",
-      "title": "El Pleno del Ayuntamiento de Murero, en sesión ordinaria celebrada el 10 de septiembre de 2026, aprobó inicialmente el presupuesto para el ejercicio 2027, así como las bases de ejecución del presupuesto,…",
-      "entity": "AYUNTAMIENTO DE MURERO",
-      "date": "05/10/2026",
-      "bulletin": "229",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468827200707"
-    },
-    {
-      "id": "ZA-000344078",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a la adjudicación de la plaza de técnico/a jurídico/a en Contratación Pública.",
-      "entity": "SOCIEDAD MUNICIPAL ZARAGOZA VIVIENDA, S.L.U.",
-      "date": "05/10/2026",
-      "bulletin": "229",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1468816090303"
     }
   ]
 }
