@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-04T09:37:42.181161+00:00",
+  "lastCheckedUTC": "2026-11-04T16:34:47.839347+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 65,
-    "opportunities": 65,
+    "announcementsRead": 70,
+    "opportunities": 70,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,50 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 65,
-    "opportunities": 65
+    "announcementsRead": 70,
+    "opportunities": 70
   },
   "notices": [
+    {
+      "id": "CIDO6-22436511",
+      "title": "Borsa de treball de places de Tècnic d'educació infantil per a la llar d'infants municipal",
+      "entity": "Ajuntament de Mont-ras",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22436511"
+    },
+    {
+      "id": "CIDO6-22436297",
+      "title": "Borsa de treball de places de Mestre d'Educació Infantil",
+      "entity": "Ajuntament de Girona",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22436297"
+    },
+    {
+      "id": "CIDO6-22436186",
+      "title": "Borsa de treball de places d'Inspector urbanístic",
+      "entity": "Ajuntament de Girona",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22436186"
+    },
+    {
+      "id": "CIDO6-22436172",
+      "title": "Borsa de treball de places d'Arquitecte Tècnic",
+      "entity": "Ajuntament de Girona",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22436172"
+    },
     {
       "id": "CIDO6-22436042",
       "title": "Borsa de treball de places de Conserge",
@@ -75,6 +115,16 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22435630"
+    },
+    {
+      "id": "CIDO6-21398728",
+      "title": "2 places de Conserge - mantenidor",
+      "entity": "Ajuntament de Girona",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21398728"
     },
     {
       "id": "CIDO6-22428753",
@@ -115,6 +165,16 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20534820"
+    },
+    {
+      "id": "CIDO6-19106869",
+      "title": "Borsa de treball de places d'Auxiliar administratiu",
+      "entity": "Ajuntament d'Olot",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19106869"
     },
     {
       "id": "CIDO6-16732228",
@@ -605,16 +665,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22306531"
-    },
-    {
-      "id": "CIDO6-19106869",
-      "title": "Borsa de treball de places d'Auxiliar administratiu",
-      "entity": "Ajuntament d'Olot",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19106869"
     },
     {
       "id": "CIDO6-22297513",

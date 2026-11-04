@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-04T09:37:42.181161+00:00",
+  "lastCheckedUTC": "2026-11-04T16:34:47.839347+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 308,
-    "opportunities": 308,
+    "announcementsRead": 310,
+    "opportunities": 310,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,30 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 308,
-    "opportunities": 308
+    "announcementsRead": 310,
+    "opportunities": 310
   },
   "notices": [
+    {
+      "id": "CIDO5-22438265",
+      "title": "Borsa de treball de places d'Encarregat de vigilància i manteniment de zones esportives",
+      "entity": "Ajuntament de Palafolls",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22438265"
+    },
+    {
+      "id": "CIDO5-22436894",
+      "title": "1 plaça d'Operari maquinista de la brigada municipal",
+      "entity": "Ajuntament de Mediona",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22436894"
+    },
     {
       "id": "CIDO5-22433976",
       "title": "Borsa de treball de places de Tècnic d'Empresa i Comerç",
@@ -137,6 +157,16 @@
       "url": "https://cido.diba.cat/oposicions/22433606"
     },
     {
+      "id": "CIDO5-22375675",
+      "title": "1 plaça de Cap d'Oficina de Sancions",
+      "entity": "Ajuntament de l'Hospitalet de Llobregat",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22375675"
+    },
+    {
       "id": "CIDO5-22293829",
       "title": "1 plaça de Tècnic superior - Tècnic d'Arxiu",
       "entity": "Ajuntament de Mollet del Vallès",
@@ -155,6 +185,16 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22101089"
+    },
+    {
+      "id": "CIDO5-21898204",
+      "title": "1 plaça d'Inspector de la Guàrdia Urbana",
+      "entity": "Ajuntament de Manresa",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21898204"
     },
     {
       "id": "CIDO5-16723226",
@@ -347,6 +387,16 @@
       "url": "https://cido.diba.cat/oposicions/22387323"
     },
     {
+      "id": "CIDO5-22368333",
+      "title": "2 places de Tècnic mitjà",
+      "entity": "Ajuntament de Torelló",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22368333"
+    },
+    {
       "id": "CIDO5-22276767",
       "title": "1 plaça d'Educador social a l'ABSS",
       "entity": "Mancomunitat de Municipis de la Comarca del Lluçanès",
@@ -375,6 +425,16 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21769318"
+    },
+    {
+      "id": "CIDO5-21681843",
+      "title": "3 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de Torelló",
+      "date": "03/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21681843"
     },
     {
       "id": "CIDO5-18685396",
@@ -525,16 +585,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22159574"
-    },
-    {
-      "id": "CIDO5-21898204",
-      "title": "1 plaça d'Inspector de la Guàrdia Urbana",
-      "entity": "Ajuntament de Manresa",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21898204"
     },
     {
       "id": "CIDO5-21511044",
@@ -847,16 +897,6 @@
       "url": "https://cido.diba.cat/oposicions/22402164"
     },
     {
-      "id": "CIDO5-22368333",
-      "title": "1 plaça de Tècnic mitjà",
-      "entity": "Ajuntament de Torelló",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22368333"
-    },
-    {
       "id": "CIDO5-22365729",
       "title": "1 plaça de Tècnic mitjà - Tècnic de mobilitat",
       "entity": "Ajuntament de Gavà",
@@ -895,16 +935,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22066986"
-    },
-    {
-      "id": "CIDO5-21681843",
-      "title": "3 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de Torelló",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21681843"
     },
     {
       "id": "CIDO5-21645600",
@@ -1005,16 +1035,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22394148"
-    },
-    {
-      "id": "CIDO5-22375675",
-      "title": "1 plaça de Cap d'Oficina de Sancions",
-      "entity": "Ajuntament de l'Hospitalet de Llobregat",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22375675"
     },
     {
       "id": "CIDO5-22358226",
