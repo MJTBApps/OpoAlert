@@ -1,19 +1,18 @@
 {
   "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
   "province": "España (BOE)",
-  "lastCheckedUTC": "2026-11-03T17:23:28Z",
+  "lastCheckedUTC": "2026-11-04T07:48:36Z",
   "coverage": {
     "complete": true,
-    "bulletin": "273",
-    "announcementsRead": 862,
-    "opportunities": 711
+    "bulletin": "274",
+    "announcementsRead": 837,
+    "opportunities": 693
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -38,7 +37,8 @@
       "2026-10-30",
       "2026-10-31",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -47,7 +47,6 @@
       "2026-11-01"
     ],
     "bulletins": [
-      "247",
       "248",
       "249",
       "250",
@@ -73,13 +72,264 @@
       "270",
       "271",
       "272",
-      "273"
+      "273",
+      "274"
     ],
     "issuesRead": 27,
-    "announcementsRead": 862,
-    "opportunities": 711
+    "announcementsRead": 837,
+    "opportunities": 693
   },
   "notices": [
+    {
+      "id": "BOE-A-2026-23153",
+      "title": "Resolución de 29 de octubre de 2026, de la Diputación Provincial de Valencia/València, referente a la convocatoria para proveer puesto de trabajo por el sistema de concurso.",
+      "entity": "Diputación Provincial de Valencia/València",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23153.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23152",
+      "title": "Resolución de 29 de octubre de 2026, de la Dirección General de Profesionales de la Educación, de la Consejería de Educación, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD DE CASTILLA Y LEÓN",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23152.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23151",
+      "title": "Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos, de la Consejería de Educación, Ciencia y Universidades, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD DE MADRID",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23151.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23150",
+      "title": "Resolución de 26 de octubre de 2026, de la Dirección General de Personal Docente y Centros Concertados, de la Consejería de Educación y Universidades, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a los cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE LAS ILLES BALEARS",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23150.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23149",
+      "title": "Resolución de 28 de octubre de 2026, de la Dirección General de Personal Docente, de la Consejería de Educación y Formación Profesional, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE EXTREMADURA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23149.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23148",
+      "title": "Resolución 252/2026, de 20 de octubre, de la Dirección del Servicio de Selección y Provisión de Personal Docente, del Departamento de Educación, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD FORAL DE NAVARRA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23148.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23147",
+      "title": "Resolución de 26 de octubre de 2026, de la Dirección General de Personal y Formación del Profesorado, de la Consejería de Educación, Formación Profesional, Actividad Física y Deportes, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANARIAS",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23147.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23146",
+      "title": "Resolución de 9 de octubre de 2026, de la Consejería de Educación, Cultura y Deportes, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CASTILLA-LA MANCHA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23146.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23145",
+      "title": "Resolución de 28 de octubre de 2026, de la Dirección General de Personal, del Departamento de Educación, Ciencia y Universidades, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ARAGÓN",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23145.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23144",
+      "title": "Resolución de 28 de octubre de 2026, de la Dirección General de Personal Docente, de la Conselleria de Educación, Cultura y Universidades, por la que se publica la convocatoria de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNITAT VALENCIANA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23144.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23143",
+      "title": "Resolución de 26 de octubre de 2026, de la Consejería de Educación y Formación Profesional, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE LA REGIÓN DE MURCIA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23143.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23142",
+      "title": "Resolución de 27 de octubre de 2026, de la Dirección General de Gestión Educativa, de la Consejería de Educación y Empleo, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE LA RIOJA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23142.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23141",
+      "title": "Resolución de 26 de octubre de 2026, de la Consejería de Educación, Formación Profesional y Universidades, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANTABRIA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23141.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23140",
+      "title": "Resolución de 26 de octubre de 2026, de la Consejería de Educación, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PRINCIPADO DE ASTURIAS",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23140.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23139",
+      "title": "Resolución de 29 de octubre de 2026, de la Dirección General del Profesorado y Gestión de Recursos Humanos, de la Consejería de Educación, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ANDALUCÍA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23139.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23138",
+      "title": "Resolución de 20 de octubre de 2026, de la Dirección General de Centros y Recursos Humanos, de la Conselleria de Educación, Ciencia, Universidades y Formación Profesional, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE GALICIA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23138.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23137",
+      "title": "Resolución de 28 de octubre de 2026, de la Dirección General de Profesorado y Personal de Centros Públicos, del Departamento de Educación y Formación Profesional, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CATALUÑA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23137.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23136",
+      "title": "Resolución de 8 de octubre de 2026, de la Dirección de Gestión de Personal, del Departamento de Educación, por la que se publica la convocatoria de concursos de traslados de ámbito estatal correspondiente a cuerpos de funcionarios docentes.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23136.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23135",
+      "title": "Resolución de 22 de octubre de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+      "entity": "COMISIÓN NACIONAL DE LOS MERCADOS Y LA COMPETENCIA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23135.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23133",
+      "title": "Resolución de 26 de octubre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación en el Instituto Nacional de las Artes Escénicas y de la Música.",
+      "entity": "MINISTERIO DE CULTURA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23133.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23132",
+      "title": "Resolución de 26 de octubre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+      "entity": "MINISTERIO DE TRABAJO Y ECONOMÍA SOCIAL",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23132.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23131",
+      "title": "Resolución de 30 de octubre de 2026, de la Subsecretaría, por la que se convoca concurso de traslados entre personal funcionario de los Cuerpos de Inspectores al Servicio de la Administración Educativa e Inspectores de Educación, para la provisión de plazas en el ámbito de gestión territorial del Ministerio de Educación, Formación Profesional y Deportes.",
+      "entity": "MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23131.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23130",
+      "title": "Resolución de 30 de octubre de 2026, de la Subsecretaría, por la que se convoca concurso de traslados de personal funcionario docente de los Cuerpos de Catedráticos y Profesores de Enseñanza Secundaria, Cuerpo, a extinguir, de Profesores Técnicos de Formación Profesional, Cuerpos de Catedráticos y Profesores de Escuelas Oficiales de Idiomas, Cuerpos de Profesores de Música y Artes Escénicas, Cuerpos de Catedráticos, de Profesores y de Maestros de Taller de Artes Plásticas y Diseño, Cuerpo de Profesores Especialistas en Sectores Singulares de la Formación Profesional y Cuerpo de Maestros, para la provisión de plazas en el ámbito de gestión territorial del Ministerio de Educación, Formación Profesional y Deportes.",
+      "entity": "MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23130.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23129",
+      "title": "Resolución 430/38444/2026, de 28 de octubre, de la Subsecretaría, por la que se convoca concurso específico para la provisión de puestos de trabajo.",
+      "entity": "MINISTERIO DE DEFENSA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23129.pdf"
+    },
+    {
+      "id": "BOE-A-2026-23128",
+      "title": "Resolución 430/38445/2026, de 28 de octubre, de la Subsecretaría, por la que se publica la relación de personas aprobadas en el proceso selectivo, por el sistema general de acceso libre, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Titulado/a Especialista en Ciencias de la Salud, y de Titulado/a Sanitario, en la Red Sanitaria Militar, convocado por Resolución 430/38528/2025, de 9 de diciembre.",
+      "entity": "MINISTERIO DE DEFENSA",
+      "date": "04/11/2026",
+      "bulletin": "274",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/04/pdfs/BOE-A-2026-23128.pdf"
+    },
     {
       "id": "BOE-A-2026-23062",
       "title": "Resolución de 27 de octubre de 2026, de la Universidad de Granada, por la que se convoca proceso selectivo para ingreso, por el sistema general de acceso libre, en la Escala de Gestión de Comunicación.",
@@ -6759,436 +7009,6 @@
       "province": "España (BOE)",
       "type": "Plaza / oposición",
       "url": "https://www.boe.es/boe/dias/2026/10/06/pdfs/BOE-A-2026-20762.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20659",
-      "title": "Resolución de 25 de septiembre de 2026, de la Universidad de Extremadura, por la que se convocan pruebas selectivas para ingreso, por el sistema general de acceso libre, en la Escala de Gestión de Prevención de Riesgos Laborales.",
-      "entity": "Universidad de Extremadura",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20659.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20658",
-      "title": "Resolución de 25 de septiembre de 2026, de la Universidad de Extremadura, por la que se convocan pruebas selectivas para ingreso, por el sistema general de acceso libre, en la Escala de Técnicos Auxiliares de Archivos y Bibliotecas.",
-      "entity": "Universidad de Extremadura",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20658.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20657",
-      "title": "Resolución de 25 de septiembre de 2026, de la Universidad de Extremadura, por la que se convocan pruebas selectivas para ingreso, por el sistema general de acceso libre, en la Escala de Técnicos Auxiliares de Servicios.",
-      "entity": "Universidad de Extremadura",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20657.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20656",
-      "title": "Resolución de 24 de septiembre de 2026, de la Universidad Miguel Hernández de Elche, referente a la convocatoria para proveer plazas de la Escala Auxiliar de Bibliotecas.",
-      "entity": "Universidad Miguel Hernández de Elche",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20656.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20655",
-      "title": "Resolución de 1 de octubre de 2026, del Ayuntamiento de Massanassa (Valencia/València), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Massanassa (Valencia/València)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20655.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20654",
-      "title": "Resolución de 1 de octubre de 2026, del Ayuntamiento de Juneda (Lleida), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Juneda (Lleida)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20654.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20653",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Lanjarón (Granada), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Lanjarón (Granada)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20653.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20652",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Córdoba, Instituto Municipal de Deportes de Córdoba, referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Córdoba",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20652.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20651",
-      "title": "Resolución de 30 de septiembre de 2026, de la Mancomunidad de Concellos Santa Águeda (Ourense), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Mancomunidad de Concellos Santa Águeda (Ourense)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20651.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20650",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Guillena (Sevilla), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Guillena (Sevilla)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20650.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20649",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Ourense, referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Ourense",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20649.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20648",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Manzanilla (Huelva), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Manzanilla (Huelva)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20648.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20647",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Trebujena (Cádiz), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Trebujena (Cádiz)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20647.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20646",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Aliaga (Teruel), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Aliaga (Teruel)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20646.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20645",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Bailén (Jaén), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Bailén (Jaén)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20645.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20644",
-      "title": "Resolución de 29 de septiembre de 2026, del Ayuntamiento de Sant Antoni de Portmany (Illes Balears), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Sant Antoni de Portmany (Illes Balears)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20644.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20643",
-      "title": "Resolución de 29 de septiembre de 2026, del Ayuntamiento de La Vilavella (Castellón/Castelló), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de La Vilavella (Castellón/Castelló)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20643.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20642",
-      "title": "Resolución de 29 de septiembre de 2026, del Ayuntamiento de Leioa (Bizkaia), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Leioa (Bizkaia)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20642.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20641",
-      "title": "Resolución de 29 de septiembre de 2026, del Ayuntamiento de Calahorra (La Rioja), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Calahorra (La Rioja)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20641.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20640",
-      "title": "Resolución de 29 de septiembre de 2026, del Consejo Insular de Formentera (Illes Balears), referente a la convocatoria para proveer una plaza.",
-      "entity": "Consejo Insular de Formentera (Illes Balears)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20640.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20639",
-      "title": "Resolución de 28 de septiembre de 2026, del Ayuntamiento de Bèlgida (Valencia/València), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Bèlgida (Valencia/València)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20639.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20638",
-      "title": "Resolución de 28 de septiembre de 2026, del Ayuntamiento de Langreo (Asturias), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Langreo (Asturias)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20638.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20637",
-      "title": "Resolución de 25 de septiembre de 2026, del Ayuntamiento de Abadiño (Bizkaia), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Abadiño (Bizkaia)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20637.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20636",
-      "title": "Resolución de 25 de septiembre de 2026, del Ayuntamiento de Alberic (Valencia/València), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Alberic (Valencia/València)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20636.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20635",
-      "title": "Resolución de 25 de septiembre de 2026, del Ayuntamiento de Guadassuar (Valencia/València), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Guadassuar (Valencia/València)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20635.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20634",
-      "title": "Resolución de 24 de septiembre de 2026, del Ayuntamiento de Sant Joan d'Alacant (Alicante/Alacant), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Sant Joan d'Alacant (Alicante/Alacant)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20634.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20633",
-      "title": "Resolución de 24 de septiembre de 2026, de la Diputación Provincial de Guadalajara, referente a la convocatoria para proveer una plaza.",
-      "entity": "Diputación Provincial de Guadalajara",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20633.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20632",
-      "title": "Resolución de 24 de septiembre de 2026, del Ayuntamiento de Sa Pobla (Illes Balears), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Sa Pobla (Illes Balears)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20632.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20631",
-      "title": "Resolución de 11 de septiembre de 2026, de la Comunidad de Villa y Tierra de Pedraza (Segovia), referente a la convocatoria para proveer una plaza.",
-      "entity": "Comunidad de Villa y Tierra de Pedraza (Segovia)",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20631.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20630",
-      "title": "Resolución de 30 de septiembre de 2026, del Ayuntamiento de Toledo, referente a la convocatoria para proveer puesto de trabajo por el sistema de concurso.",
-      "entity": "Ayuntamiento de Toledo",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20630.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20629",
-      "title": "Resolución de 25 de septiembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación, en el Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas.",
-      "entity": "MINISTERIO DE CIENCIA, INNOVACIÓN Y UNIVERSIDADES",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20629.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20628",
-      "title": "Resolución de 25 de septiembre de 2026, del Instituto Nacional de Gestión Sanitaria, por la que se convoca proceso selectivo, por concurso-oposición, por el sistema general de acceso libre, para acceso a la condición de personal estatutario fijo en plazas de la categoría de Técnico/a Superior en Imagen para el Diagnóstico y Medicina Nuclear.",
-      "entity": "MINISTERIO DE SANIDAD",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20628.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20627",
-      "title": "Resolución de 25 de septiembre de 2026, del Instituto Nacional de Gestión Sanitaria, por la que se convoca proceso selectivo, por concurso-oposición, por el sistema general de acceso libre, para acceso a la condición de personal estatutario fijo en plazas de la categoría de Técnico/a Superior en Laboratorio de Diagnóstico Clínico y Biomédico.",
-      "entity": "MINISTERIO DE SANIDAD",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20627.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20626",
-      "title": "Resolución de 25 de septiembre de 2026, del Instituto Nacional de Gestión Sanitaria, por la que se convoca proceso selectivo, por concurso-oposición, por el sistema general de acceso libre, para acceso a la condición de personal estatutario fijo en plazas de la categoría de Fisioterapeuta.",
-      "entity": "MINISTERIO DE SANIDAD",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20626.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20625",
-      "title": "Resolución de 25 de septiembre de 2026, del Instituto Nacional de Gestión Sanitaria, por la que se convoca proceso selectivo, por concurso-oposición, por el sistema general de acceso libre y promoción interna, para acceso a la condición de personal estatutario fijo en plazas de la categoría de Enfermero/a.",
-      "entity": "MINISTERIO DE SANIDAD",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20625.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20622",
-      "title": "Resolución de 28 de septiembre de 2026, de la Subsecretaría, por la que se modifica el número de plazas de los programas específicos del proceso selectivo para ingreso, por el sistema general de acceso libre, en la Escala de Técnicos Facultativos Superiores de Organismos Autónomos del Ministerio de Agricultura, Pesca y Alimentación, convocado por Resolución de 29 de diciembre de 2025.",
-      "entity": "MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20622.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20616",
-      "title": "Resolución de 28 de septiembre de 2026, de la Presidencia del Consejo Superior de Deportes, por la que se publica la relación de personas que han superado el proceso selectivo para ingreso, por el sistema general de acceso libre, como personal laboral fijo fuera de convenio, en la categoría de Médico Especialista en Cardiología, convocado por Resolución de 26 de diciembre de 2025.",
-      "entity": "MINISTERIO DE EDUCACIÓN, FORMACIÓN PROFESIONAL Y DEPORTES",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20616.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20615",
-      "title": "Resolución de 28 de septiembre de 2026, de la Dirección de la Agencia Estatal de Seguridad Aérea, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-      "entity": "MINISTERIO DE TRANSPORTES Y MOVILIDAD SOSTENIBLE",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20615.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20614",
-      "title": "Resolución 452/38402/2026, de 25 de septiembre, de la Subsecretaría, por la que se convoca proceso de selección para el ingreso en los centros docentes militares de formación para la adquisición de la condición de reservista voluntario de las Fuerzas Armadas.",
-      "entity": "MINISTERIO DE DEFENSA",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20614.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20612",
-      "title": "Resolución de 24 de septiembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación en la Abogacía General del Estado.",
-      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20612.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20610",
-      "title": "Orden PJC/1031/2026, de 30 de septiembre, por la que se modifica la Orden PJC/930/2026, de 2 de septiembre, por la que se nombran los Tribunales calificadores n.º 2 y n.º 3 del proceso selectivo para ingreso, por el sistema general de acceso libre y promoción interna, en el Cuerpo de Letrados de la Administración de Justicia, convocado por Orden PJC/144/2026, de 24 de febrero.",
-      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20610.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20609",
-      "title": "Resolución de 25 de septiembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-      "entity": "MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20609.pdf"
-    },
-    {
-      "id": "BOE-A-2026-20608",
-      "title": "Resolución de 24 de septiembre de 2026, de la Presidencia del Tribunal Constitucional, por la que se convoca concurso para la provisión de puestos de trabajo.",
-      "entity": "TRIBUNAL CONSTITUCIONAL",
-      "date": "05/10/2026",
-      "bulletin": "247",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/05/pdfs/BOE-A-2026-20608.pdf"
     }
   ]
 }
