@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-03T16:29:20.664204+00:00",
+  "lastCheckedUTC": "2026-11-04T06:34:14.203862+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "209",
-    "pagesVisited": 21,
-    "announcementsRead": 845,
-    "opportunities": 71,
+    "pagesVisited": 20,
+    "announcementsRead": 794,
+    "opportunities": 69,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 845,
-    "opportunities": 71,
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 794,
+    "opportunities": 69,
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -43,7 +42,6 @@
       "209"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -74,7 +72,8 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-04"
     ]
   },
   "notices": [
@@ -767,26 +766,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/06_190/2026_007535.pdf"
-    },
-    {
-      "id": "AL-2026-7551",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y LAS BASES ESPECÍFICAS. PROVISIÓN EN PROPIEDAD DE UNA (1) PLAZA DE LOCUTOR O LOCUTORA DE RADIO ALTEA, LABORAL FIJO.",
-      "entity": "AYUNTAMIENTO ALTEA",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/05_189/2026_007551.pdf"
-    },
-    {
-      "id": "AL-2026-7487",
-      "province": "Alicante",
-      "title": "BASES PROVISIÓN EN PROPIEDAD 1 PLAZA TÉCNICO/A DE GESTIÓN DE FIESTAS, TURNO LIBRE",
-      "entity": "AYUNTAMIENTO JÁVEA",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/05_189/2026_007487.pdf"
     }
   ]
 }
