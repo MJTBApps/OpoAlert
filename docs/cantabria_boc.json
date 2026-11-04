@@ -2,28 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-03T16:38:32.724086+00:00",
+  "lastCheckedUTC": "2026-11-04T09:49:08.920294+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
-    "pagesVisited": 32,
-    "announcementsRead": 897,
+    "bulletin": "212",
+    "pagesVisited": 26,
+    "announcementsRead": 860,
     "opportunities": 19,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "191",
-      "Ext. 19",
-      "Ext. 20",
-      "Ext. 21",
-      "Ext. 22",
-      "Ext. 23",
-      "Ext. 24",
       "192",
       "193",
       "194",
@@ -48,16 +41,10 @@
       "Ext. 29",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-05",
-      "2026-10-05",
-      "2026-10-05",
-      "2026-10-05",
-      "2026-10-05",
-      "2026-10-05",
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -82,7 +69,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -93,11 +81,10 @@
       "2026-10-31",
       "2026-11-01"
     ],
-    "issuesRead": 32,
-    "announcementsRead": 897,
+    "issuesRead": 26,
+    "announcementsRead": 860,
     "opportunities": 19,
     "regularBulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -117,15 +104,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "extraordinaryBulletins": [
-      "Ext. 19",
-      "Ext. 20",
-      "Ext. 21",
-      "Ext. 22",
-      "Ext. 23",
-      "Ext. 24",
       "Ext. 25",
       "Ext. 26",
       "Ext. 27",
@@ -133,13 +115,6 @@
       "Ext. 29"
     ],
     "officialIssueIds": [
-      46925,
-      46967,
-      46985,
-      46986,
-      47006,
-      47007,
-      46987,
       46945,
       46966,
       47005,
@@ -164,10 +139,21 @@
       47425,
       47365,
       47385,
-      47405
+      47405,
+      47445
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-8283",
+      "province": "Cantabria (BOC)",
+      "title": "Acuerdo de la Junta de Gobierno Local de 16 de octubre de 2026, reunida en sesión extraordinaria, de declaración de aspirante que ha superado el proceso selectivo para la provisión, como funcionaria de carrera, mediante el sistema selectivo de oposición, de una plaza de Conserje, por el turno libre. Expediente 2025/1438.",
+      "entity": "Ayuntamiento de Laredo",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442177"
+    },
     {
       "id": "CN-2026-8418",
       "province": "Cantabria (BOC)",
@@ -347,16 +333,6 @@
       "bulletin": "193",
       "type": "Bolsa de trabajo",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441395"
-    },
-    {
-      "id": "CN-2026-7683",
-      "province": "Cantabria (BOC)",
-      "title": "Convocatoria para la selección de personal investigador en formación mediante contrato predoctoral con cargo a proyectos/contratos de investigación. Convocatoria 15/2026.",
-      "entity": "Universidad de Cantabria",
-      "date": "05/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441248"
     }
   ]
 }

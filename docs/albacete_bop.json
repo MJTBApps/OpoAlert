@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-03T16:33:17.695288+00:00",
+  "lastCheckedUTC": "2026-11-04T09:42:01.004857+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "127",
+    "bulletin": "128",
     "pagesVisited": 12,
-    "announcementsRead": 208,
-    "opportunities": 15
+    "announcementsRead": 221,
+    "opportunities": 14
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "116",
       "117",
       "118",
       "119",
@@ -27,10 +26,10 @@
       "124",
       "125",
       "126",
-      "127"
+      "127",
+      "128"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-07",
       "2026-10-09",
       "2026-10-12",
@@ -41,7 +40,8 @@
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-06",
@@ -64,10 +64,20 @@
       "2026-11-03"
     ],
     "issuesRead": 12,
-    "announcementsRead": 208,
-    "opportunities": 15
+    "announcementsRead": 221,
+    "opportunities": 14
   },
   "notices": [
+    {
+      "id": "AB-2026-299716",
+      "province": "Albacete",
+      "title": "Nueva convocatoria bolsa de interinos del puesto de Secretaría-Intervención",
+      "entity": "Ayuntamiento de La Herrera",
+      "date": "04/11/2026",
+      "bulletin": "128",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299716"
+    },
     {
       "id": "AB-2026-299645",
       "province": "Albacete",
@@ -197,26 +207,6 @@
       "bulletin": "117",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299321"
-    },
-    {
-      "id": "AB-2026-299297",
-      "province": "Albacete",
-      "title": "Bases que regirán la convocatoria para la cobertura de una plaza de personal funcionario de Auxiliar de Administración General, por el sistema de concurso-oposición libre y constitución de una bolsa de trabajo",
-      "entity": "Ayuntamiento de La Gineta",
-      "date": "05/10/2026",
-      "bulletin": "116",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299297"
-    },
-    {
-      "id": "AB-2026-299294",
-      "province": "Albacete",
-      "title": "Bases que han de regir las pruebas selectivas para la provisión de una plaza de Trabajador/a Social Centro de la Mujer, mediante concurso-oposición, vacante en la plantilla de personal laboral e incluida en la Oferta de Empleo Público del ejercicio 2024, así como la confección de una bolsa de trabajo",
-      "entity": "Ayuntamiento de Almansa",
-      "date": "05/10/2026",
-      "bulletin": "116",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299294"
     }
   ]
 }
