@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-03T16:30:01.835097+00:00",
+  "lastCheckedUTC": "2026-11-04T06:42:35.207500+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 310,
-    "opportunities": 310,
+    "announcementsRead": 299,
+    "opportunities": 299,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -48,12 +47,13 @@
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-04"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 310,
-    "opportunities": 310
+    "announcementsRead": 299,
+    "opportunities": 299
   },
   "notices": [
     {
@@ -735,16 +735,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16596329"
-    },
-    {
-      "id": "CIDO5-22412460",
-      "title": "1 plaça de Tècnic d'Educació Infantil (TEI) a la llar d'infants El Patinet",
-      "entity": "Ajuntament de Sant Llorenç Savall",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22412460"
     },
     {
       "id": "CIDO5-22402164",
@@ -1937,16 +1927,6 @@
       "url": "https://cido.diba.cat/oposicions/22314736"
     },
     {
-      "id": "CIDO5-22276550",
-      "title": "1 plaça de Sergent de la policia local",
-      "entity": "Ajuntament de Santpedor",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22276550"
-    },
-    {
       "id": "CIDO5-21872844",
       "title": "2 places d'Oficial 2a manteniment general",
       "entity": "Ajuntament de Vilafranca del Penedès",
@@ -2607,86 +2587,6 @@
       "url": "https://cido.diba.cat/oposicions/22320983"
     },
     {
-      "id": "CIDO5-22318934",
-      "title": "1 plaça d'Auxiliar administratiu. Pla Local d'Ocupació 2026",
-      "entity": "Ajuntament de Cànoves i Samalús",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22318934"
-    },
-    {
-      "id": "CIDO5-22229280",
-      "title": "1 plaça d'Educador d'escola bressol",
-      "entity": "Ajuntament de Sant Adrià de Besòs",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22229280"
-    },
-    {
-      "id": "CIDO5-22121617",
-      "title": "1 plaça de Tècnic especialista cadastre",
-      "entity": "Ajuntament de Mataró",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22121617"
-    },
-    {
-      "id": "CIDO5-22121604",
-      "title": "1 plaça de Tècnic Auxiliar Inspector",
-      "entity": "Ajuntament de Mataró",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22121604"
-    },
-    {
-      "id": "CIDO5-22121554",
-      "title": "1 plaça de Tècnic Especialista Manteniment",
-      "entity": "Ajuntament de Mataró",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22121554"
-    },
-    {
-      "id": "CIDO5-22121499",
-      "title": "1 plaça d'Oficial 1a Lampisteria",
-      "entity": "Ajuntament de Mataró",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22121499"
-    },
-    {
-      "id": "CIDO5-21380921",
-      "title": "1 plaça de Tècnic Especialista d'Esports",
-      "entity": "Ajuntament de Mataró",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21380921"
-    },
-    {
-      "id": "CIDO5-21380895",
-      "title": "9 places d'Administratiu",
-      "entity": "Ajuntament de Mataró",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21380895"
-    },
-    {
       "id": "CIDO5-21347633",
       "title": "5 places de Treballador social",
       "entity": "Ajuntament de Cornellà de Llobregat",
@@ -3145,16 +3045,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16708775"
-    },
-    {
-      "id": "CIDO5-22276673",
-      "title": "1 plaça de Tècnic d'administració general (TAG)",
-      "entity": "Mancomunitat de Municipis de la Comarca del Lluçanès",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22276673"
     }
   ]
 }

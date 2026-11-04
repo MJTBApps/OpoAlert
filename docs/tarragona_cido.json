@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-03T16:30:01.835097+00:00",
+  "lastCheckedUTC": "2026-11-04T06:42:35.207500+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 101,
-    "opportunities": 101,
+    "announcementsRead": 94,
+    "opportunities": 94,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -48,12 +47,13 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-04"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 101,
-    "opportunities": 101
+    "announcementsRead": 94,
+    "opportunities": 94
   },
   "notices": [
     {
@@ -995,76 +995,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/20794234"
-    },
-    {
-      "id": "CIDO8-22267175",
-      "title": "1 plaça de DUI",
-      "entity": "Ajuntament del Vendrell - Hospital-Asil del Santíssim Salvador",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267175"
-    },
-    {
-      "id": "CIDO8-22267172",
-      "title": "2 places d'Auxiliar de geriatria",
-      "entity": "Ajuntament del Vendrell - Hospital-Asil del Santíssim Salvador",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267172"
-    },
-    {
-      "id": "CIDO8-22267146",
-      "title": "1 plaça de Tècnic mitjà",
-      "entity": "Ajuntament del Vendrell - Hospital-Asil del Santíssim Salvador",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267146"
-    },
-    {
-      "id": "CIDO8-22267128",
-      "title": "1 plaça de Conserge",
-      "entity": "Ajuntament del Vendrell",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267128"
-    },
-    {
-      "id": "CIDO8-22267125",
-      "title": "1 plaça d'Auxiliar de serveis joventut",
-      "entity": "Ajuntament del Vendrell",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267125"
-    },
-    {
-      "id": "CIDO8-22267116",
-      "title": "1 plaça de Tècnic lingüístic",
-      "entity": "Ajuntament del Vendrell",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267116"
-    },
-    {
-      "id": "CIDO8-22267108",
-      "title": "1 plaça d'Inspector de la Policia Local",
-      "entity": "Ajuntament del Vendrell",
-      "date": "05/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267108"
     }
   ]
 }
