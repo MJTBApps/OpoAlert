@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-03T16:35:12.391993+00:00",
+  "lastCheckedUTC": "2026-11-04T06:52:15.544870+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "208",
+    "bulletin": "209",
     "pagesVisited": 24,
-    "announcementsRead": 570,
-    "opportunities": 17,
+    "announcementsRead": 553,
+    "opportunities": 18,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 7
+    "pdfChecked": 8
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -38,10 +37,10 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -61,7 +60,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -75,10 +75,9 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 570,
-    "opportunities": 17,
+    "announcementsRead": 553,
+    "opportunities": 18,
     "regularBulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -97,13 +96,13 @@
       "205",
       "206",
       "207",
-      "208"
+      "208",
+      "209"
     ],
     "extraordinaryBulletins": [
       "Extraordinario 1"
     ],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-189",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-190",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-191",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-192",
@@ -123,10 +122,22 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-205",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-206",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-207",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-208"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-208",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-209"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202604665",
+      "province": "Burgos",
+      "title": "Bases de selección para la ampliación de la bolsa de empleo en la categoría de operario/a de instalaciones deportivas municipales",
+      "entity": "Ayuntamiento de Briviesca",
+      "date": "04/11/2026",
+      "bulletin": "209",
+      "type": "Bolsa de trabajo",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-209/bopbur-2026-209-anuncio-202604665.pdf",
+      "publisherArticle": "202604665"
+    },
     {
       "id": "BU-2026-202604657",
       "province": "Burgos",

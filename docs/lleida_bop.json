@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-03T16:44:01.896556+00:00",
+  "lastCheckedUTC": "2026-11-04T07:07:14.417777+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 23,
-    "announcementsRead": 968,
+    "announcementsRead": 963,
     "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "189",
       "190",
       "191",
       "192",
@@ -37,10 +36,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -61,7 +60,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,30 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 968,
+    "announcementsRead": 963,
     "opportunities": 63
   },
   "notices": [
+    {
+      "id": "LE-202621109182",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria borsa Secretaria - Intervenció",
+      "entity": "AJUNTAMENT DE TORRES DE SEGRE (TORRES DE SEGRE)",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/211/202621109182.pdf"
+    },
+    {
+      "id": "LE-202621109156",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria i bases del procés de promoció interna vertical, a través de procés de funcionarització, d’una plaça de Tècnic/a Superior de Serveis Econòmics (A1), mitjançant concurs-oposició",
+      "entity": "AJUNTAMENT DE LA VALL DE BOÍ (VALL DE BOÍ, LA)",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/211/202621109156.pdf"
+    },
     {
       "id": "LE-202620909111",
       "province": "Lleida (BOP)",
@@ -687,26 +707,6 @@
       "bulletin": "190",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/190/202619008133.pdf"
-    },
-    {
-      "id": "LE-202618908240",
-      "province": "Lleida (BOP)",
-      "title": "Anunci d'aprovació de les bases i la convocatòria, pel sistema de concurs-oposició, i mitjançant procediment d’urgència, per la selecció d’una plaça de Tècnic/a auxiliar de música, especialitat bateria, grup de classificació C1, en règim de personal laboral temporal, des del 13 d’octubre de 2026 fins al 18 de desembre de 2026. Expedient 1403/2026",
-      "entity": "AJUNTAMENT D'ALMACELLES (ALMACELLES)",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/189/202618908240.pdf"
-    },
-    {
-      "id": "LE-202618908045",
-      "province": "Lleida (BOP)",
-      "title": "BASES REGULADORES DEL PROCÉS SELECTIU PER ACCEDIR EN RÈGIM DE PERSONAL LABORAL FIX, A UNA PLAÇA D’ADMINISTRATIU/VA, GRUP PROFESSIONAL C1, ADSCRITA A SERVEIS INFORMÀTICS",
-      "entity": "CONSELL COMARCAL DEL PLA D'URGELL (MOLLERUSSA)",
-      "date": "05/10/2026",
-      "bulletin": "189",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/189/202618908045.pdf"
     }
   ]
 }

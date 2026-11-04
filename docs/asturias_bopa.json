@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-03T16:33:48.599527+00:00",
+  "lastCheckedUTC": "2026-11-04T06:47:27.656917+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 22,
-    "announcementsRead": 934,
-    "opportunities": 62
+    "announcementsRead": 940,
+    "opportunities": 68
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -37,10 +36,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -61,7 +60,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -75,10 +75,80 @@
       "2026-11-02"
     ],
     "issuesRead": 22,
-    "announcementsRead": 934,
-    "opportunities": 62
+    "announcementsRead": 940,
+    "opportunities": 68
   },
   "notices": [
+    {
+      "id": "AS-2026-08925",
+      "province": "Asturias (BOPA)",
+      "title": "Extracto de la Resolución de 26 de octubre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria octubre extra 7-2026).",
+      "entity": "Universidad de Oviedo",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08925.pdf"
+    },
+    {
+      "id": "AS-2026-08924",
+      "province": "Asturias (BOPA)",
+      "title": "Extracto de la Resolución de 27 de octubre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria octubre extra 5-2026).",
+      "entity": "Universidad de Oviedo",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08924.pdf"
+    },
+    {
+      "id": "AS-2026-08922",
+      "province": "Asturias (BOPA)",
+      "title": "Extracto de la Resolución de 27 de octubre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria octubre extra 4-2026).",
+      "entity": "Universidad de Oviedo",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08922.pdf"
+    },
+    {
+      "id": "AS-2026-08864",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases del proceso selectivo para la cobertura en propiedad de siete plazas pertenecientes a la Escala de Administración General, Subescala Administrativa, por el turno de promoción interna, mediante concurso-oposición, incluidas en la Oferta de Empleo Público del Ayuntamiento de Corvera de Asturias del año 2025.",
+      "entity": "Ayuntamiento de Corvera de Asturias",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08864.pdf"
+    },
+    {
+      "id": "AS-2026-08788",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Declaración como desierta la subasta pública para la enajenación de bien patrimonial de titularidad municipal y apertura de plazo de tres meses para presentar proposiciones.",
+      "entity": "Ayuntamiento de Cudillero",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08788.pdf"
+    },
+    {
+      "id": "AS-2026-08772",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases para la provisión, por el sistema de concurso específico de méritos, del puesto de Coordinador/a de Informática del Ayuntamiento de Villaviciosa.",
+      "entity": "Ayuntamiento de Villaviciosa",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08772.pdf"
+    },
+    {
+      "id": "AS-2026-08748",
+      "province": "Asturias (BOPA)",
+      "title": "Edicto. Caducidad de la convocatoria para la provisión de una plaza de Técnico/a de Juventud del Ayuntamiento de Oviedo (declarada desierta en la oferta de empleo extraordinaria para la estabilización del empleo temporal).",
+      "entity": "Ayuntamiento de Oviedo",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/04/2026-08748.pdf"
+    },
     {
       "id": "AS-2026-08769",
       "province": "Asturias (BOPA)",
@@ -688,16 +758,6 @@
       "bulletin": "194",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/07/2026-07950.pdf"
-    },
-    {
-      "id": "AS-2026-07856",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases reguladoras que regirán el proceso selectivo de las personas a contratar dentro de los contratos formativos para la adquisición de la práctica profesional adecuada al nivel de estudios 2026.",
-      "entity": "Ayuntamiento de Soto del Barco",
-      "date": "05/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/05/2026-07856.pdf"
     }
   ]
 }

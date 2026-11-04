@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-03T16:48:39.269389+00:00",
+  "lastCheckedUTC": "2026-11-04T07:11:47.953385+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 21,
-    "announcementsRead": 317,
+    "announcementsRead": 314,
     "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -36,10 +35,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -59,7 +58,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,20 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 317,
+    "announcementsRead": 314,
     "opportunities": 22
   },
   "notices": [
+    {
+      "id": "VD-2026-3185",
+      "province": "Valladolid",
+      "title": "Acuerdo de la Junta de Gobierno del Ayuntamiento de Cigales, de fecha 22 de octubre de 2026, por el que se aprueban las bases y convocatoria de las pruebas de selección de personal laboral fijo, mediante sistema de concurso-oposición, por turno libre, de tres plazas de Peón de Servicios Múltiples.",
+      "entity": "AYUNTAMIENTO DE CIGALES",
+      "date": "04/11/2026",
+      "bulletin": "211",
+      "type": "Plaza / oposición",
+      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/noviembre/04/BOPVA-A-2026-03185.pdf"
+    },
     {
       "id": "VD-2026-3174",
       "province": "Valladolid",
@@ -286,16 +296,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/08/BOPVA-A-2026-02922.pdf"
-    },
-    {
-      "id": "VD-2026-2869",
-      "province": "Valladolid",
-      "title": "Convocatoria y bases para la provisión de una plaza de Conductor de Camión de Recogida de RSU.",
-      "entity": "MANCOMUNIDAD CAMPOS GÓTICOS",
-      "date": "05/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/05/BOPVA-A-2026-02869.pdf"
     }
   ]
 }
