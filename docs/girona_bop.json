@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-03T09:40:40.747026+00:00",
+  "lastCheckedUTC": "2026-11-04T06:56:30.767709+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 21,
-    "announcementsRead": 933,
-    "opportunities": 89,
+    "announcementsRead": 952,
+    "opportunities": 95,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 933,
-    "opportunities": 89,
+    "announcementsRead": 952,
+    "opportunities": 95,
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -40,10 +39,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -63,7 +62,8 @@
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -78,6 +78,66 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-212-09460",
+      "title": "Aprovació de les bases del procés selectiu per a la creació d'una borsa de treball de la categoria de conserge (grup C2)",
+      "entity": "AJUNTAMENT DE CADAQUÉS",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209460.pdf"
+    },
+    {
+      "id": "GI-2026-212-09289",
+      "title": "Aprovació de les bases reguladores i la convocatòria permanent del procés de selecció per a la constitució d'una borsa de treball de tècnic/a d'educació infantil de l'Ajuntament de Mont-ras",
+      "entity": "AJUNTAMENT DE MONT-RAS",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209289.pdf"
+    },
+    {
+      "id": "GI-2026-212-09277",
+      "title": "Aprovació de les bases i la convocatòria per a la constitució d'una borsa de treball per cobrir necessitats temporals, urgents i inajornables del lloc de treball de conserge mantenidor de l'Ajuntament de Blanes",
+      "entity": "AJUNTAMENT DE BLANES",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209277.pdf"
+    },
+    {
+      "id": "GI-2026-212-09269",
+      "title": "Aprovació de la convocatòria del procés selectiu, per oposició lliure, per cobrir dues places de funcionari/ària de carrera, escala d'administració especial, sotsescala tècnica auxiliar, conserge mantenidor/a en el servei d'Educació. OPO 2026",
+      "entity": "AJUNTAMENT DE GIRONA",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209269.pdf"
+    },
+    {
+      "id": "GI-2026-212-09268",
+      "title": "Aprovació de la convocatòria del procés selectiu per a la creació d'una borsa de treball de mestres d'educació infantil",
+      "entity": "AJUNTAMENT DE GIRONA",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209268.pdf"
+    },
+    {
+      "id": "GI-2026-212-09266",
+      "title": "Aprovació de la convocatòria del procés selectiu per a la creació d'una borsa de treball per prestar serveis d'arquitecte/a tècnic/a i inspector/a urbanística",
+      "entity": "AJUNTAMENT DE GIRONA",
+      "date": "04/11/2026",
+      "bulletin": "212",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209266.pdf"
+    },
     {
       "id": "GI-2026-211-09407",
       "title": "Aprovació inicial del pressupost general del Consell Comarcal de l'Alt Empordà, les bases d'execució del pressupost i la plantilla de personal per a l'exercici 2027",
