@@ -59,7 +59,10 @@ permissions:
   id-token: write
 concurrency:
   group: opoalert-pages-unico
-  cancel-in-progress: true
+  # No cancelar la publicación en curso: cancelar el workflow no para el despliegue
+  # de Pages y el siguiente fallaba con «in progress deployment» (04/11/2026).
+  # Las que esperan se sustituyen por la más reciente, que ya lleva todos los feeds.
+  cancel-in-progress: false
 jobs:
   publicar:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
@@ -67,7 +70,7 @@ jobs:
     timeout-minutes: 12
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Comprobar contenido minimo de la web
@@ -94,4 +97,11 @@ jobs:
         with:
           path: docs
       - id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      # Si aún quedaba un despliegue de Pages en curso, esperar y volver a intentarlo.
+      - if: steps.deploy.outcome == 'failure'
+        run: sleep 90
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
