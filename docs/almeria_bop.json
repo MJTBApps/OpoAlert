@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-03T17:22:31.573739+00:00",
+  "lastCheckedUTC": "2026-11-04T07:40:09.550757+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 744,
-    "announcementsRead": 315,
-    "opportunities": 65
+    "announcementsRead": 316,
+    "opportunities": 64
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "issuesRead": 21,
     "pagesVisited": 744,
-    "announcementsRead": 315,
-    "opportunities": 65,
+    "announcementsRead": 316,
+    "opportunities": 64,
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -40,10 +39,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -63,7 +62,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -78,9 +78,8 @@
     ],
     "originalPdfPagesRead": 744,
     "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48187,
+    "archiveTotalIssues": 48188,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392765&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+5%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392766&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+6%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392767&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+7%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392768&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+8%2F10%2F2026.pdf",
@@ -100,10 +99,21 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392782&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+28%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392783&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+29%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392784&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F10%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392785&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+3%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392785&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+3%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392786&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+4%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-02992",
+      "province": "Almería",
+      "title": "RESOLUCIÓN DE ALCALDÍA N.º 2026-0074 DE FECHA 28/10/2026, DE LA ENTIDAD AYUNTAMIENTO DE HUÉCIJA POR LA QUE SE APRUEBAN LAS BASES PARA LA CONSTITUCIÓN DE UNA BOLSA DE TRABAJO, MEDIANTE EL SISTEMA DE CONCURSO-OPOSICIÓN.…",
+      "entity": "AYUNTAMIENTO DE HUECIJA",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Bolsa de trabajo",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2992/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03007",
       "province": "Almería",
@@ -733,26 +743,6 @@
       "bulletin": "194",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2582/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02701",
-      "province": "Almería",
-      "title": "Número de expediente: 1049/2026 Asunto del expediente: CONVOCATORIA PARA CUBRIR 8 PLAZAS DE AUXILIAR ADMINISTRATIVO VACANTES EN LA PLANTILLA DE PERSONAL FUNCIONARIO Doña Inés Rocío Parra Moreno, Segunda Teniente de Alcaldía…",
-      "entity": "AYUNTAMIENTO DE HUÉRCAL-OVERA",
-      "date": "05/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2701/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02539",
-      "province": "Almería",
-      "title": "Expediente n°: 1339/2026 Habiéndose aprobado por acuerdo de la Junta de Gobierno Local de fecha 09/09/2026 las Bases y la Convocatoria para cubrir la plaza de Promotor cultural y deportivo, Grupo C1, del Ayuntamiento de…",
-      "entity": "AYUNTAMIENTO DE PECHINA",
-      "date": "05/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2539/anuncio.pdf"
     }
   ]
 }
