@@ -142,7 +142,8 @@ def validate(code,path,previous=None,today=None):
     try:days=[date.fromisoformat(d) for d in dates]
     except Exception:fail(code,"fecha de edición ilegible")
     if days!=sorted(days) or days[0]<start or days[-1]>end:fail(code,"ediciones fuera de orden o del periodo")
-    if (days[0]-start).days>4 or (end-days[-1]).days>4:fail(code,"faltan ediciones al principio o al final")
+    gap=MAX_EDITION_GAP.get(code,4)
+    if (days[0]-start).days>gap or (end-days[-1]).days>gap:fail(code,"faltan ediciones al principio o al final")
     if len(set(zip(dates,map(str,numbers))))!=len(dates):fail(code,"edición duplicada")
     issues=len(dates)
     # pagesVisited puede incluir páginas de control (p. ej. el boletín anterior a la ventana).
@@ -175,6 +176,12 @@ def validate(code,path,previous=None,today=None):
         try:
             old=json.loads(Path(previous).read_text(encoding="utf-8"))
             old_read=old["coverage"]["announcementsRead"];old_issues=old["historyCoverage"]["issuesRead"]
+            # Solo cuentan las ediciones anteriores que siguen dentro de la ventana nueva:
+            # un día con varios extraordinarios que sale de la ventana no es una lectura
+            # incompleta (Cantabria, 6 extraordinarios el 05/10/2026).
+            old_dates=old["historyCoverage"].get("publicationDates")
+            if isinstance(old_dates,list) and len(old_dates)==old_issues:
+                old_issues=sum(1 for d in old_dates if str(d)>=str(start))
         except Exception:old_read=old_issues=None
         if old_read and read<MIN_RATIO_VS_PREVIOUS*old_read:
             fail(code,f"solo {read} anuncios frente a {old_read} en el feed anterior: lectura incompleta")
@@ -182,6 +189,11 @@ def validate(code,path,previous=None,today=None):
             fail(code,f"solo {issues} ediciones frente a {old_issues} en el feed anterior")
     return {"code":code,"label":rule["label"],"issues":issues,"read":read,"notices":len(notices),
             "range":f"{start}–{end}"}
+
+# Días máximos entre un extremo del periodo y la edición más cercana (por defecto 4).
+# Cuenca sale lunes, miércoles y viernes: con un lunes festivo y el miércoles aún sin
+# colgar a primera hora, la última edición tiene 5 días (04/11/2026).
+MAX_EDITION_GAP={"CU":6}
 
 def run(code,out,docs=None):
     script,extra,feed=SOURCES[code]

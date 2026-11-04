@@ -84,9 +84,10 @@ def record(code,province,nid,title,agency,day,bulletin,pdf):
     return {"id":nid,"province":province,"title":title.strip(),"entity":agency.strip(),
       "date":day.strftime("%d/%m/%Y"),"bulletin":str(bulletin),"type":employment(title),"url":pdf}
 
-def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,start=None):
+def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,start=None,max_gap=4):
     """start: solo para fuentes cuyo archivo oficial empieza cada año de cero;
-    en enero la ventana va del 1 de enero a hoy (ver feeds_diarios.validate)."""
+    en enero la ventana va del 1 de enero a hoy (ver feeds_diarios.validate).
+    max_gap: días máximos entre los extremos de la ventana y la primera o última edición."""
     if days!=30:invalid("histórico mínimo 30 días")
     end=today or date.today()
     if start is None:start=end-timedelta(days=29)
@@ -96,7 +97,7 @@ def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,st
     issue_data=sorted(issue_data,key=lambda x:(x["day"],str(x["number"])))
     if any(x["day"]<start or x["day"]>end for x in issue_data):
         invalid("edición fuera del intervalo de 30 días")
-    if len(issue_data)<min_issues or (end-issue_data[-1]["day"]).days>4 or (issue_data[0]["day"]-start).days>4:
+    if len(issue_data)<min_issues or (end-issue_data[-1]["day"]).days>max_gap or (issue_data[0]["day"]-start).days>max_gap:
         invalid("intervalo incompleto o boletines ausentes")
     seen=set()
     notices=[]

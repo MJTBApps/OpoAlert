@@ -177,9 +177,20 @@ def audit(days:int=30,today:date|None=None,reader=scan,fetch_home=fetch)->dict:
         raise ProvincialCoverageError(f"Huesca: el ultimo numero en portada es {last}")
     issues=[]
     absent=[]
+    pending_today=False
     for n in range(days):
         day=start+timedelta(days=n)
-        edition=reader(day)
+        try:
+            edition=reader(day)
+        except ProvincialCoverageError as exc:
+            # A primera hora la ficha de hoy ya existe pero aún sin número
+            # («BOP núm. del 04/11/2026»): se lee hasta el anterior; el de hoy entra
+            # en la siguiente ronda.
+            if day!=end or not re.search(r"n[uú]m\.\s+del\b",str(exc),re.I):raise
+            pending_today=True
+            absent.append(day.isoformat())
+            print("Huesca",day,"BOP de hoy aún sin numerar; entra en la siguiente ronda",flush=True)
+            continue
         if edition is None:
             absent.append(day.isoformat())
             print("Huesca",day,"sin BOP",flush=True)
@@ -196,7 +207,7 @@ def audit(days:int=30,today:date|None=None,reader=scan,fetch_home=fetch)->dict:
         issues.append(edition)
         print(f"Huesca {day}: BOP {edition['number']}, {edition['read']} anuncios, "
               f"{edition['pages']} paginas, {len(edition['notices'])} candidatas",flush=True)
-    if len(issues)<15 or issues[-1]["date"]!=last or (issues[0]["date"]-start).days>4:
+    if len(issues)<15 or (issues[-1]["date"]!=last and not (pending_today and last==end)) or (issues[0]["date"]-start).days>4:
         raise ProvincialCoverageError("Huesca: ediciones insuficientes, no se publica parcial")
     notices=[x for issue in issues for x in issue["notices"]]
     if len(notices)!=len({x["id"] for x in notices}):

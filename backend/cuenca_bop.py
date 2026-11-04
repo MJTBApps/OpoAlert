@@ -258,7 +258,9 @@ def audit(today=None):
     with ThreadPoolExecutor(max_workers=3) as pool:
         issues=list(pool.map(scan_issue,listing))
     # Lunes, miércoles y viernes: unas 12-13 ediciones en 30 días (menos con festivos).
-    return publish_audit(SOURCE,"Cuenca",issues,today=end,min_issues=10)
+    # Con un lunes festivo y el miércoles aún sin colgar a primera hora, la última
+    # edición es del viernes anterior: 5 días (30/10 → 04/11/2026).
+    return publish_audit(SOURCE,"Cuenca",issues,today=end,min_issues=10,max_gap=6)
 
 if __name__=="__main__":
     a=argparse.ArgumentParser()

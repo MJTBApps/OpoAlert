@@ -12,7 +12,7 @@ from clm_common import employment,invalid,numbering_ok
 HOST="bop.dipsoria.es"
 SOURCE="https://bop.dipsoria.es/index.php/mod.boloficial/relmenu.149"
 _DETAIL=re.compile(r"^/index\.php/mod\.boloficial/mem\.detalle/id\.(\d+)/relcategoria\.(\d+)(?:/relmenu\.\d+)?$")
-_DOC=re.compile(r"^/index\.php/mod\.documentos/mem\.descargar/fichero\.documentos_(\d{1,6})_([a-f0-9]{8})%232E%23pdf$",re.I)
+_DOC=re.compile(r"^/index\.php/mod\.documentos/mem\.descargar/fichero\.documentos_(\d{1,4}[a-z]?)_([a-f0-9]{8})%232E%23pdf$",re.I)
 _ISSUE=re.compile(r"^/index\.php/mod\.documentos/mem\.descargar/fichero\.documentos_BOPSoria_(\d{1,3})_([a-f0-9]{8})%232E%23pdf$",re.I)
 _T=threading.local()
 def client():
@@ -109,11 +109,19 @@ def parse(html,day,num):
                 current_entity="Ayuntamiento de "+mm[1].strip().title()
         kind=employment(text)
         if kind is not None:
-            result.append({"id":f"SR-{day.year}-{int(marker)}","province":"Soria",
+            result.append({"id":f"SR-{day.year}-{notice_number(marker)}","province":"Soria",
                "title":text,"entity":current_entity,"date":day.strftime("%d/%m/%Y"),
                "bulletin":str(num),"type":kind,"url":url})
     if total==0:invalid("Soria: índice sin anuncios")
     return {"day":day,"number":str(num),"read":total,"notices":result,"pdf":edition[0]}
+
+def notice_number(marker):
+    """Número del identificador. Algunos anuncios llevan letra («2087a», «2087b»,
+    04/11/2026); la app solo admite cifras, así que la letra pasa a dos cifras al final
+    (2087a → 208701), que no coinciden con los números normales (hasta 4 cifras)."""
+    m=re.fullmatch(r"(\d{1,4})([a-z]?)",marker,re.I)
+    if not m:invalid("Soria: número de anuncio no reconocido")
+    return int(m[1]) if not m[2] else int(m[1])*100+ord(m[2].lower())-96
 
 def one(row):
     day,num,url=row
