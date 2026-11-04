@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-03T17:28:41.206462+00:00",
+  "lastCheckedUTC": "2026-11-04T07:55:28.256312+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 21,
-    "announcementsRead": 368,
-    "opportunities": 25
+    "announcementsRead": 367,
+    "opportunities": 28
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 368,
-    "opportunities": 25,
+    "announcementsRead": 367,
+    "opportunities": 28,
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -40,10 +39,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -63,7 +62,8 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -77,7 +77,6 @@
       "2026-11-02"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/05-10-2026/BOP-S-2026-192.pdf",
       "https://bop.dipucordoba.es/visor-pdf/06-10-2026/BOP-S-2026-193.pdf",
       "https://bop.dipucordoba.es/visor-pdf/07-10-2026/BOP-S-2026-194.pdf",
       "https://bop.dipucordoba.es/visor-pdf/08-10-2026/BOP-S-2026-195.pdf",
@@ -97,10 +96,51 @@
       "https://bop.dipucordoba.es/visor-pdf/28-10-2026/BOP-S-2026-209.pdf",
       "https://bop.dipucordoba.es/visor-pdf/29-10-2026/BOP-S-2026-210.pdf",
       "https://bop.dipucordoba.es/visor-pdf/30-10-2026/BOP-S-2026-211.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/03-11-2026/BOP-S-2026-212.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/03-11-2026/BOP-S-2026-212.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-S-2026-213.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3702",
+      "province": "Córdoba",
+      "title": "Anuncio por el que se procede a la rectificación de errores materiales en las Bases de la Convocatoria para la cobertura de 1 plaza de Titulado/a de Grado Medio en Prevención de Riesgos Laborales, mediante el sistema de concurso-oposición y acceso libre, publicadas en el Boletín Oficial de la Provincia de Córdoba, número 207, de 26 de octubre de 2026",
+      "entity": "Empresa Municipal de Aguas de Córdoba, S A (EMACSA). Córdoba",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-A-2026-3702.pdf"
+    },
+    {
+      "id": "CO-2026-3701",
+      "province": "Córdoba",
+      "title": "Anuncio por el que se procede a la rectificación de error material en las Bases de la Convocatoria para la cobertura de 2 plazas Auxiliar Técnico de Logística, mediante el sistema de concurso-oposición y acceso libre, publicadas en el Boletín Oficial de la Provincia de Córdoba, número 207, de 26 de octubre de 2026",
+      "entity": "Empresa Municipal de Aguas de Córdoba, S A (EMACSA). Córdoba",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-A-2026-3701.pdf"
+    },
+    {
+      "id": "CO-2026-3672",
+      "province": "Córdoba",
+      "title": "Resolución de 28 de octubre de 2026, de la Alcaldía, por la que se aprueba la modificación de las Bases reguladoras del proceso selectivo para la provisión, por el sistema de concurso-oposición, de cinco plazas de Administrativo/a, reservadas para promoción interna",
+      "entity": "Ayuntamiento de Lucena",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-A-2026-3672.pdf"
+    },
+    {
+      "id": "CO-2026-3598",
+      "province": "Córdoba",
+      "title": "Acuerdo de 20 de octubre de 2026, de la Junta de Gobierno Local, por el que se aprueban las Bases Generales para la selección de personal laboral fijo, de tres plazas de Limpiador/a, por el sistema de concurso-oposición, y constitución bolsa de trabajo",
+      "entity": "Ayuntamiento de Benamejí",
+      "date": "04/11/2026",
+      "bulletin": "213",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-A-2026-3598.pdf"
+    },
     {
       "id": "CO-2026-3656",
       "province": "Córdoba",
@@ -340,16 +380,6 @@
       "bulletin": "193",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipucordoba.es/visor-pdf/06-10-2026/BOP-A-2026-3312.pdf"
-    },
-    {
-      "id": "CO-2026-3296",
-      "province": "Córdoba",
-      "title": "Resolución por la que se procede a la corrección de las Bases que han de regir el proceso selectivo para la provisión de una plaza de Técnico Auxiliar de Informática, personal funcionario, por el sistema de concurso-oposición, turno libre, publicadas en el Boletín Oficial de la Provincia, número 174, de 9 de septiembre de 2026",
-      "entity": "Ayuntamiento de Cabra",
-      "date": "05/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/05-10-2026/BOP-A-2026-3296.pdf"
     }
   ]
 }
