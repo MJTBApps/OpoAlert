@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-11-03T16:53:24.431721+00:00",
+  "lastCheckedUTC": "2026-11-04T07:05:50.153666+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-11-03",
-    "pagesVisited": 65,
-    "announcementsRead": 1010,
-    "opportunities": 108,
+    "bulletin": "2026-11-04",
+    "pagesVisited": 64,
+    "announcementsRead": 995,
+    "opportunities": 109,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-05",
-    "rangeEnd": "2026-11-03",
+    "rangeStart": "2026-10-06",
+    "rangeEnd": "2026-11-04",
     "publicationDates": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -37,7 +36,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -50,7 +50,6 @@
       "2026-11-01"
     ],
     "bulletins": [
-      "2026-10-05",
       "2026-10-06",
       "2026-10-07",
       "2026-10-08",
@@ -71,14 +70,45 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-04"
     ],
     "issuesRead": 22,
-    "pagesVisited": 65,
-    "announcementsRead": 1010,
-    "opportunities": 108
+    "pagesVisited": 64,
+    "announcementsRead": 995,
+    "opportunities": 109
   },
   "notices": [
+    {
+      "id": "TA-2026-10317",
+      "title": "Borsa de treball d'enginyer/a tècnic/a municipal. Bases i convocatòria.",
+      "entity": "AJUNTAMENT AMPOLLA, L'",
+      "date": "04/11/2026",
+      "bulletin": "04/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366137"
+    },
+    {
+      "id": "TA-2026-10015",
+      "title": "Plaça d'operari/ària, brigada de jardineria (1). Bases i convocatòria.",
+      "entity": "ENTITAT PÚBLICA EMPRESARIAL SERVEIS I OBRES - NOSTRESERVEIS",
+      "date": "04/11/2026",
+      "bulletin": "04/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365793"
+    },
+    {
+      "id": "TA-2026-10014",
+      "title": "Plaça d'administratiu/iva (1). Bases i convocatòria.",
+      "entity": "ENTITAT PÚBLICA EMPRESARIAL SERVEIS I OBRES - NOSTRESERVEIS",
+      "date": "04/11/2026",
+      "bulletin": "04/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365796"
+    },
     {
       "id": "TA-2026-10231",
       "title": "Ampliació de borsa de treball de director/a de lleure, coordinador/a campus, monitor/a de lleure especialment qualificat i monitors/es de lleure. Bases i convocatòria.",
@@ -1138,26 +1168,6 @@
       "province": "Tarragona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364905"
-    },
-    {
-      "id": "TA-2026-09189",
-      "title": "Borsa de treball de netejador/a dels espais municipals. Bases i convocatòria.",
-      "entity": "FLIX GESTIÓ D'INICIATIVES ECONOMIQUES S.A.M.",
-      "date": "05/10/2026",
-      "bulletin": "05/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364990"
-    },
-    {
-      "id": "TA-2026-09036",
-      "title": "Lloc de treball de cap de l'àrea de governació i règim intern (1). Bases i convocatòria. Mobilitat interadministrativa.",
-      "entity": "AJUNTAMENT VILA-SECA",
-      "date": "05/10/2026",
-      "bulletin": "05/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364819"
     }
   ]
 }
