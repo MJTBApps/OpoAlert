@@ -34,6 +34,8 @@ final class AppModel: ObservableObject {
     @Published var showSourcePicker = false
     /// Pantalla de Premium abierta desde fuera de la lista (capturas del App Store).
     @Published var showPremium = false
+    /// Aviso «¿Te avisamos cuando salga algo así?» tras guardar favoritas.
+    @Published var showPremiumNudge = false
     /// Ficha abierta desde un aviso.
     @Published var openedNotice: Notice?
     @Published var tab: AppTab = .explore
@@ -141,6 +143,19 @@ final class AppModel: ObservableObject {
     func toggleFavorite(_ notice: Notice) {
         store.toggleFavorite(notice)
         favorites = store.favorites
+        if isFavorite(notice) { nudgePremiumIfNeeded() }
+    }
+
+    /// Recordatorio de Premium tras guardar favoritas (`PremiumNudge`).
+    private func nudgePremiumIfNeeded() {
+        let defaults = UserDefaults.standard
+        let shown = defaults.integer(forKey: PremiumNudge.shownKey)
+        let last = defaults.object(forKey: PremiumNudge.lastKey) as? Date
+        guard !CaptureMode.isOn, PremiumNudge.shouldShow(favorites: favorites.count, shown: shown, lastShown: last,
+                                                         now: Date(), locked: !PremiumStore.isActiveStored) else { return }
+        defaults.set(shown + 1, forKey: PremiumNudge.shownKey)
+        defaults.set(Date(), forKey: PremiumNudge.lastKey)
+        showPremiumNudge = true
     }
 
     // MARK: Fuentes

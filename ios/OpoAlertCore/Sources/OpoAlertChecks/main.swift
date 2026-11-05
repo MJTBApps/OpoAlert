@@ -179,6 +179,16 @@ let hits = SmartAlertMatcher.hits([policeAL, adminVA, policeAL],
     rules: [role, AlertRule(id: "b", phrase: "agente", sources: both), with(role, phrase: "bases", enabled: false)], followed: both)
 equal(hits[policeAL.id] ?? [], ["policia local", "agente"], "filtro Alertas: frases de las alertas que la encuentran")
 check(hits[adminVA.id] == nil && hits.count == 1, "filtro Alertas: solo las que coinciden con alertas activas")
+let day: TimeInterval = 24 * 60 * 60
+let now = Date(timeIntervalSince1970: 100 * day)
+check(!PremiumNudge.shouldShow(favorites: 2, shown: 0, lastShown: nil, now: now, locked: true), "Premium: no antes de 3 favoritas")
+check(PremiumNudge.shouldShow(favorites: 3, shown: 0, lastShown: nil, now: now, locked: true), "Premium: a la tercera favorita")
+check(!PremiumNudge.shouldShow(favorites: 3, shown: 0, lastShown: nil, now: now, locked: false), "Premium: nunca con Premium")
+check(!PremiumNudge.shouldShow(favorites: 10, shown: 1, lastShown: now.addingTimeInterval(-13 * day), now: now, locked: true),
+      "Premium: segunda vez tras dos semanas")
+check(PremiumNudge.shouldShow(favorites: 10, shown: 1, lastShown: now.addingTimeInterval(-14 * day), now: now, locked: true),
+      "Premium: segunda vez a la décima")
+check(!PremiumNudge.shouldShow(favorites: 50, shown: 2, lastShown: nil, now: now, locked: true), "Premium: como mucho dos veces")
 equal(SeenIds.merge(["c", "a"], ["a", "b"]), ["c", "a", "b"], "vistos: recientes primero y sin repetir")
 
 // MARK: Feed de ejemplo

@@ -44,6 +44,12 @@ struct RootView: View {
             SourcePickerView(firstLaunch: !model.store.pickerShown)
         }
         .sheet(isPresented: $model.showPremium) { PremiumView() }
+        .alert(PremiumNudge.title, isPresented: $model.showPremiumNudge) {
+            Button("Ver Premium") { model.showPremium = true }
+            Button("Ahora no", role: .cancel) {}
+        } message: {
+            Text(PremiumNudge.message)
+        }
         .sheet(item: $model.openedNotice) { notice in
             NavigationStack {
                 NoticeDetailView(notice: notice)

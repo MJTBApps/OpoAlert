@@ -28,8 +28,8 @@ android {
         minSdk = 26
         // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
         targetSdk = 36
-        versionCode = 64
-        versionName = "1.51.0"
+        versionCode = 65
+        versionName = "1.52.0"
     }
 
     // Firma fija de OpoAlert: sin ella cada compilación sale con una firma distinta

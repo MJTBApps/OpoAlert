@@ -24,7 +24,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - `MainActivity.kt` (pantalla principal), `NoticeDetailActivity.kt` (ficha), `AlertsActivity.kt` + `AlertRule*.kt` (alertas), `RemoteFeedReader.kt` / `Repository.kt` (lectura de feeds), `BopWorker.kt` + `Notifications.kt` (avisos), `FavoritesStore.kt`.
   - `DemoAds.kt` — anuncios AdMob **solo de demostración**, con consentimiento UMP. No generan ingresos.
   - Pruebas: `app/src/test/java/es/opoalert/app/`.
-  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 64 / 1.51.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
+  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 65 / 1.52.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
 - **Backend**: `backend/`
   - Lectores: `bop_full.py` + `history.py` (Valencia), `alicante.py`, `castellon.py`, `province_history.py`, `boe_nacional.py`, `cido_cataluna.py`, `tarragona.py`, `barcelona_bop.py`, `girona_bop.py`, `huesca_bop.py`, `teruel_bop.py`, `zaragoza_bop.py`, `cadiz_bop.py`, `pandora_bop.py` (Almería), `andalucia_opencms_bop.py` (Granada y Sevilla), `cordoba_bop.py`.
   - Validadores: `validar_*.py`, uno por fuente; `validar_feed.py` para el feed de Valencia.
@@ -91,6 +91,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 ## Estado (30/10/2026)
 
+- App **1.52.0** (05/11/2026): recordatorio de Premium al guardar favoritas (`PremiumNudge.kt` / `PremiumNudge` en `Alerts.swift`): a la 3.ª y, si sigue sin Premium, a la 10.ª tras dos semanas; máximo dos veces y nunca con Premium ni en la web. La pantalla de Premium dice que la suscripción ayuda a mantener el proyecto. Las favoritas siguen gratis. iOS sube a TestFlight con `ios-testflight.yml` (manual, clave API de Administración) y las capturas de la ficha con `ios-capturas.yml`.
 - App **1.51.0** (05/11/2026): filtro **«Alertas · N»** en la lista (Android e iOS) con las convocatorias de 30 días que encuentran tus alertas activas, también de boletines no elegidos, y la frase de la alerta en la tarjeta (`SmartAlertMatcher.hits`). Es de Premium, como las alertas. Tocar un aviso de varias convocatorias abre la lista con ese filtro (`MainActivity.EXTRA_OPEN_FILTER`; iOS `AppModel.requestedFilter`).
 - App **1.50.0** (05/11/2026): las notificaciones de alertas usan el canal `alertas_convocatorias` de **importancia alta** (sonido y ventana emergente; el antiguo `bop_new_jobs`, de importancia normal, se borra porque Android no deja subirla). `BatteryCheck.kt`: al guardar la primera alerta se explica una vez que hay que quitar la restricción de batería y se abre la pantalla de la app en Ajustes; «Mis alertas» avisa si Android la tiene restringida u optimizada. No se usa `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` (Google Play lo limita).
 - App **1.49.0** (04/11/2026): las alertas vigilan también los boletines que no están en «Elegir boletines» (`Repository.watched` / `SmartAlertMatcher.watched` en iOS): antes no avisaban nunca y sin decir nada. «Mis alertas» avisa si las notificaciones están desactivadas.

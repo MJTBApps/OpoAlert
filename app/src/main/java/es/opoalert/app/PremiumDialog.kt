@@ -13,7 +13,8 @@ import android.widget.Toast
 object PremiumDialog {
     private const val BENEFITS =
         "• Sin publicidad: ni al abrir la app ni entre las convocatorias.\n" +
-            "• Alertas personalizadas: te avisamos cuando sale una convocatoria de tu puesto y provincia.\n\n"
+            "• Alertas personalizadas: te avisamos cuando sale una convocatoria de tu puesto y provincia.\n" +
+            "• Con tu suscripción ayudas a mantener OpoAlert, un proyecto independiente, y a seguir añadiendo boletines.\n\n"
 
     /** [changed] se llama si cambia el estado (para quitar anuncios o refrescar la pantalla). */
     fun show(activity: Activity, changed: () -> Unit) {

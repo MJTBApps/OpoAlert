@@ -127,6 +127,8 @@ struct PremiumView: View {
                     Label("Sin publicidad: ni al abrir la app ni entre las convocatorias.", systemImage: "nosign")
                     Label("Alertas personalizadas: te avisamos cuando sale una convocatoria de tu puesto y provincia.",
                           systemImage: "bell.badge")
+                    Label("Con tu suscripción ayudas a mantener OpoAlert, un proyecto independiente, y a seguir añadiendo boletines.",
+                          systemImage: "heart")
                 }
                 if premium.isActive {
                     Section {

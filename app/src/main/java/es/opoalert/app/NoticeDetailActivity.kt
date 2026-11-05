@@ -330,6 +330,7 @@ class NoticeDetailActivity : Activity() {
             Toast.makeText(this,
                 if (saved) "Guardada en favoritas" else "Eliminada de favoritas",
                 Toast.LENGTH_SHORT).show()
+            if (saved) PremiumNudge.afterSaving(this) {}
         } catch (_: Exception) {
             Toast.makeText(this, "No se pudo guardar el cambio", Toast.LENGTH_LONG).show()
         }

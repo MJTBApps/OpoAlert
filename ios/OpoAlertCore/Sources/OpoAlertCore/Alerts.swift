@@ -75,3 +75,29 @@ public enum SeenIds {
         return Array((fresh + previous).filter { seen.insert($0).inserted }.prefix(max))
     }
 }
+
+/// Recordatorio de Premium al guardar favoritas, como `PremiumNudge.kt` en Android:
+/// al guardar la tercera y, si sigue sin Premium, a partir de la décima y dos semanas
+/// después. Como mucho dos veces y nunca con Premium.
+public enum PremiumNudge {
+    public static let firstAt = 3
+    public static let secondAt = 10
+    public static let maxTimes = 2
+    public static let gap: TimeInterval = 14 * 24 * 60 * 60
+    public static let shownKey = "premium_nudge_shown_v1"
+    public static let lastKey = "premium_nudge_last_v1"
+
+    public static let title = "¿Te avisamos cuando salga algo así?"
+    public static let message =
+        "Con OpoAlert Premium creas alertas por puesto y provincia, y te avisamos en cuanto se " +
+        "publique una convocatoria que te interese. Además, quitas la publicidad.\n\n" +
+        "Puedes probarlo gratis. Con tu suscripción ayudas a mantener OpoAlert, un proyecto " +
+        "independiente, y a seguir añadiendo boletines."
+
+    public static func shouldShow(favorites: Int, shown: Int, lastShown: Date?, now: Date, locked: Bool) -> Bool {
+        guard locked, shown < maxTimes else { return false }
+        if shown == 0 { return favorites >= firstAt }
+        guard let lastShown else { return favorites >= secondAt }
+        return favorites >= secondAt && now.timeIntervalSince(lastShown) >= gap
+    }
+}

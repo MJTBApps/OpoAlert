@@ -806,6 +806,7 @@ class MainActivity : Activity() {
             updateHeader()
             buildTabs()
             render(keepScroll = true)
+            if (saved) PremiumNudge.afterSaving(this) { premiumChanged() }
         } catch (_: Exception) {
             Toast.makeText(this, "No se pudo guardar el cambio", Toast.LENGTH_LONG).show()
         }
