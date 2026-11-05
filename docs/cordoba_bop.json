@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-04T17:28:49.305028+00:00",
+  "lastCheckedUTC": "2026-11-05T07:56:19.522900+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
+    "bulletin": "214",
     "pagesVisited": 21,
-    "announcementsRead": 367,
-    "opportunities": 28
+    "announcementsRead": 360,
+    "opportunities": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 367,
-    "opportunities": 28,
+    "announcementsRead": 360,
+    "opportunities": 27,
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -40,10 +39,10 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -63,7 +62,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -77,7 +77,6 @@
       "2026-11-02"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/06-10-2026/BOP-S-2026-193.pdf",
       "https://bop.dipucordoba.es/visor-pdf/07-10-2026/BOP-S-2026-194.pdf",
       "https://bop.dipucordoba.es/visor-pdf/08-10-2026/BOP-S-2026-195.pdf",
       "https://bop.dipucordoba.es/visor-pdf/09-10-2026/BOP-S-2026-196.pdf",
@@ -97,10 +96,21 @@
       "https://bop.dipucordoba.es/visor-pdf/29-10-2026/BOP-S-2026-210.pdf",
       "https://bop.dipucordoba.es/visor-pdf/30-10-2026/BOP-S-2026-211.pdf",
       "https://bop.dipucordoba.es/visor-pdf/03-11-2026/BOP-S-2026-212.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-S-2026-213.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-S-2026-213.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/05-11-2026/BOP-S-2026-214.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3619",
+      "province": "Córdoba",
+      "title": "Resolución por la que se publica rectificación errores materiales en las Bases de la Convocatoria para la selección, por concurso de méritos, de una plaza de Gestor/a Deportivo/a, personal laboral fijo, correspondiente al turno de promoción interna vertical. (OPE 2025)",
+      "entity": "Ayuntamiento de Villa del Río",
+      "date": "05/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/05-11-2026/BOP-A-2026-3619.pdf"
+    },
     {
       "id": "CO-2026-3702",
       "province": "Córdoba",
@@ -360,26 +370,6 @@
       "bulletin": "194",
       "type": "Plaza / oposición",
       "url": "https://bop.dipucordoba.es/visor-pdf/07-10-2026/BOP-A-2026-3342.pdf"
-    },
-    {
-      "id": "CO-2026-3335",
-      "province": "Córdoba",
-      "title": "Convocatoria y bases para la constitución de una bolsa de trabajo, mediante concurso-oposición, para la provisión, con carácter interino, del puesto de Secretaría del Excmo. Ayuntamiento de la Carlota",
-      "entity": "Ayuntamiento de La Carlota",
-      "date": "06/10/2026",
-      "bulletin": "193",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipucordoba.es/visor-pdf/06-10-2026/BOP-A-2026-3335.pdf"
-    },
-    {
-      "id": "CO-2026-3312",
-      "province": "Córdoba",
-      "title": "Bases de la convocatoria para la constitución de una bolsa de empleo de Peones de Mantenimiento y Limpieza por concurso (Personal Laboral Temporal)",
-      "entity": "Ayuntamiento de Luque",
-      "date": "06/10/2026",
-      "bulletin": "193",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipucordoba.es/visor-pdf/06-10-2026/BOP-A-2026-3312.pdf"
     }
   ]
 }
