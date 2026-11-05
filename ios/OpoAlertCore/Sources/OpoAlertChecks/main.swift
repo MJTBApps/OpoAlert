@@ -175,6 +175,10 @@ equal(once.map(\.id), [policeAL.id], "un aviso por convocatoria")
 check(SmartAlertMatcher.matching([policeAL], rules: [], followed: both).isEmpty, "sin alertas no hay avisos")
 check(SmartAlertMatcher.watched(chosen: ["VA"], rules: [role, with(role, sources: ["CS"], enabled: false)]) == Set(["VA"]).union(role.sources),
       "las alertas activas vigilan sus fuentes aunque no estén elegidas")
+let hits = SmartAlertMatcher.hits([policeAL, adminVA, policeAL],
+    rules: [role, AlertRule(id: "b", phrase: "agente", sources: both), with(role, phrase: "bases", enabled: false)], followed: both)
+equal(hits[policeAL.id] ?? [], ["policia local", "agente"], "filtro Alertas: frases de las alertas que la encuentran")
+check(hits[adminVA.id] == nil && hits.count == 1, "filtro Alertas: solo las que coinciden con alertas activas")
 equal(SeenIds.merge(["c", "a"], ["a", "b"]), ["c", "a", "b"], "vistos: recientes primero y sin repetir")
 
 // MARK: Feed de ejemplo

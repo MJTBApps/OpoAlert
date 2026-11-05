@@ -32,6 +32,23 @@ public enum SmartAlertMatcher {
         return terms.allSatisfy { haystack.contains($0) }
     }
 
+    /// Para el filtro «Alertas» de la lista: cada convocatoria que encuentra alguna
+    /// alerta activa, con las frases de esas alertas (como `hits` en Android).
+    public static func hits(_ notices: [Notice], rules: [AlertRule], followed: Set<String>) -> [String: [String]] {
+        let active = rules.filter(\.enabled)
+        guard !active.isEmpty, !followed.isEmpty else { return [:] }
+        var result: [String: [String]] = [:]
+        for notice in notices where result[notice.id] == nil {
+            var phrases: [String] = []
+            for rule in active where matches(rule, notice, followed: followed) {
+                let phrase = rule.phrase.trimmingCharacters(in: .whitespacesAndNewlines)
+                if !phrases.contains(phrase) { phrases.append(phrase) }
+            }
+            if !phrases.isEmpty { result[notice.id] = phrases }
+        }
+        return result
+    }
+
     /// Una misma convocatoria genera como máximo un aviso aunque coincida con varias alertas.
     /// Fuentes que se descargan y vigilan: las elegidas para la lista y las de las alertas
     /// activas. Antes una alerta de una fuente no elegida no avisaba nunca (04/11/2026).

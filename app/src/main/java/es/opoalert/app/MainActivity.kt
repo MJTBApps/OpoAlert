@@ -88,7 +88,8 @@ class MainActivity : Activity() {
 
         selectedTab = savedInstanceState?.getString("selectedTab")
             ?: intent.getStringExtra(EXTRA_OPEN_TAB) ?: TAB_ALL
-        selectedFilter = savedInstanceState?.getString("selectedFilter") ?: FILTER_ALL
+        selectedFilter = savedInstanceState?.getString("selectedFilter")
+            ?: intent.getStringExtra(EXTRA_OPEN_FILTER)?.takeIf { it == FILTER_ALERTS } ?: FILTER_ALL
 
         demoAds = DemoAds(this) {
             if (!isFinishing && !isDestroyed) render(keepScroll = true)
@@ -458,12 +459,18 @@ class MainActivity : Activity() {
         }
     }
 
-    private fun buildFilters(fresh: Int = freshIds().size) {
+    private fun buildFilters(fresh: Int = freshIds().size, alerts: Int = alertHits().size) {
         filterRow.removeAllViews()
-        for (filter in listOf(FILTER_ALL, FILTER_NEW, FILTER_POOLS, FILTER_POSITIONS)) {
+        val locked = !Premium.alertsUnlocked(this)
+        for (filter in listOf(FILTER_ALL, FILTER_NEW, FILTER_ALERTS, FILTER_POOLS, FILTER_POSITIONS)) {
             val selected = selectedFilter == filter
             val chip = TextView(this).apply {
-                text = if (filter == FILTER_NEW && fresh > 0) "$filter · $fresh" else filter
+                text = when {
+                    filter == FILTER_NEW && fresh > 0 -> "$filter · $fresh"
+                    filter == FILTER_ALERTS && locked -> "$filter · Premium"
+                    filter == FILTER_ALERTS && alerts > 0 -> "$filter · $alerts"
+                    else -> filter
+                }
                 textSize = 12.5f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
                 setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
@@ -474,6 +481,11 @@ class MainActivity : Activity() {
                 isClickable = true
                 isFocusable = true
                 setOnClickListener {
+                    // Las convocatorias de las alertas van con las alertas: son de Premium.
+                    if (filter == FILTER_ALERTS && !Premium.alertsUnlocked(this@MainActivity)) {
+                        PremiumDialog.show(this@MainActivity) { premiumChanged() }
+                        return@setOnClickListener
+                    }
                     selectedFilter = filter
                     render()
                     scroll.scrollTo(0, 0)
@@ -499,15 +511,20 @@ class MainActivity : Activity() {
         val from = if (selectedTab == TAB_FAVORITES)
             favorites.map { latestById[it.id] ?: it } else notices
         val fresh = freshIds()
-        buildFilters(fresh.size)  // el número de nuevas cambia al actualizar
+        if (selectedFilter == FILTER_ALERTS && !Premium.alertsUnlocked(this)) selectedFilter = FILTER_ALL
+        val alerts = alertHits()
+        buildFilters(fresh.size, alerts.size)  // los números cambian al actualizar
         val shown = from.filter { item ->
             val correctType = selectedFilter == FILTER_ALL ||
                 (selectedFilter == FILTER_NEW && item.id in fresh) ||
+                (selectedFilter == FILTER_ALERTS && item.id in alerts) ||
                 (selectedFilter == FILTER_POOLS && item.type.startsWith("Bolsa")) ||
                 (selectedFilter == FILTER_POSITIONS && item.type.startsWith("Plaza"))
             val correctDate = selectedTab == TAB_FAVORITES || isRecent(item.date)
             // Favorites stay visible even when their province is deselected.
-            val correctProvince = selectedTab == TAB_FAVORITES || item.province in selectedProvinces
+            // Las alertas también vigilan boletines que no están en «Elegir boletines».
+            val correctProvince = selectedTab == TAB_FAVORITES || selectedFilter == FILTER_ALERTS ||
+                item.province in selectedProvinces
             val matches = SearchText.matchesNormalized(query,
                 item.title, NoticeText.headline(item.title), item.entity, item.id)
             correctType && correctDate && correctProvince && matches
@@ -520,6 +537,10 @@ class MainActivity : Activity() {
                     "Aún no tienes favoritas. Toca la estrella de una convocatoria para guardarla aquí."
                 selectedFilter == FILTER_NEW ->
                     "No hay convocatorias nuevas desde tu última visita."
+                selectedFilter == FILTER_ALERTS && AlertRuleStore.list(this).none { it.enabled } ->
+                    "Aún no tienes alertas activas. Créalas en «Mis alertas» y aquí verás las convocatorias que encuentren."
+                selectedFilter == FILTER_ALERTS ->
+                    "Ninguna convocatoria de los últimos 30 días coincide con tus alertas."
                 from.isEmpty() -> "Todavía no hay convocatorias. Pulsa actualizar para consultar los boletines."
                 else -> "No hay convocatorias que coincidan con tu búsqueda."
             }
@@ -529,7 +550,7 @@ class MainActivity : Activity() {
             })
         } else {
             for ((index, item) in shown.take(displayedLimit).withIndex()) {
-                addCard(item, item.id in favoriteIds, item.id in fresh)
+                addCard(item, item.id in favoriteIds, item.id in fresh, alerts[item.id].orEmpty())
                 if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == 3) {
                     addBannerIfAvailable(index / DemoAds.LIST_AD_EVERY)
                 }
@@ -641,6 +662,11 @@ class MainActivity : Activity() {
             TAB_ALL -> selectedTab = TAB_ALL
             TAB_FAVORITES -> selectedTab = TAB_FAVORITES
         }
+        if (intent.getStringExtra(EXTRA_OPEN_FILTER) == FILTER_ALERTS) {
+            selectedTab = TAB_ALL
+            selectedFilter = FILTER_ALERTS
+            if (::searchInput.isInitialized) searchInput.setText("")
+        }
         if (::tabsRow.isInitialized) {
             buildTabs()
             render()
@@ -659,7 +685,15 @@ class MainActivity : Activity() {
         return VisitStore.newIds(this, notices.filter { it.province in followed && isRecent(it.date) })
     }
 
-    private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false) {
+    /** Convocatorias que encuentran tus alertas activas (solo con Premium o sin cobro). */
+    private fun alertHits(): Map<String, List<String>> {
+        if (!Premium.alertsUnlocked(this)) return emptyMap()
+        return SmartAlertMatcher.hits(
+            notices.filter { isRecent(it.date) }, AlertRuleStore.list(this), Repository.watched(this)
+        )
+    }
+
+    private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false, alerts: List<String> = emptyList()) {
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(11), dp(14), dp(12))
@@ -727,6 +761,17 @@ class MainActivity : Activity() {
             ellipsize = TextUtils.TruncateAt.END
             setPadding(0, dp(6), 0, 0)
         })
+        if (alerts.isNotEmpty()) {
+            card.addView(text("🔔 Alerta: " + alerts.joinToString(" · "), 11.5f, "#7C3AED", true).apply {
+                maxLines = 1
+                ellipsize = TextUtils.TruncateAt.END
+                setPadding(dp(8), dp(4), dp(8), dp(4))
+                background = rounded("#F1EAFE", 8)
+                contentDescription = "Encontrada por tus alertas: " + alerts.joinToString(", ")
+            }, LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(7) })
+        }
 
         val footer = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
@@ -820,6 +865,8 @@ class MainActivity : Activity() {
         private const val TAB_FAVORITES = "favorites"
         private const val TAB_ALERTS = "alerts"
         const val EXTRA_OPEN_TAB = "es.opoalert.app.open_tab"
+        const val EXTRA_OPEN_FILTER = "es.opoalert.app.open_filter"
+        const val FILTER_ALERTS = "Alertas"
         private const val FILTER_ALL = "Todas"
         private const val FILTER_NEW = "Nuevas"
         private const val FILTER_POOLS = "Bolsas"

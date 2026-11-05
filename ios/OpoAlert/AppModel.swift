@@ -3,12 +3,12 @@ import OpoAlertCore
 import SwiftUI
 
 enum NoticeFilter: String, CaseIterable, Identifiable {
-    case all = "Todas", fresh = "Nuevas", pools = "Bolsas", positions = "Plazas"
+    case all = "Todas", fresh = "Nuevas", alerts = "Alertas", pools = "Bolsas", positions = "Plazas"
     var id: String { rawValue }
 
     func accepts(_ notice: Notice) -> Bool {
         switch self {
-        case .all, .fresh: return true  // «Nuevas» lo filtra el modelo, que sabe cuáles son
+        case .all, .fresh, .alerts: return true  // «Nuevas» y «Alertas» los filtra el modelo
         case .pools: return notice.isPool
         case .positions: return notice.isPosition
         }
@@ -37,6 +37,10 @@ final class AppModel: ObservableObject {
     @Published var tab: AppTab = .explore
     /// Convocatorias que no estaban en la última visita.
     @Published private(set) var freshIds: Set<String> = []
+    /// Convocatorias que encuentran las alertas activas, con las frases de esas alertas.
+    @Published private(set) var alertHits: [String: [String]] = [:]
+    /// Filtro que pide un aviso con varias convocatorias («Alertas»).
+    @Published var requestedFilter: NoticeFilter?
     private let visits = VisitTracker()
 
     init(store: Store = Store()) {
@@ -56,6 +60,12 @@ final class AppModel: ObservableObject {
         lastHistory = store.lastHistory
         let labels = selectedLabels
         freshIds = visits.newIds(notices.filter { labels.contains($0.province) && NoticeDates.isRecent($0.date) })
+        updateAlertHits()
+    }
+
+    private func updateAlertHits() {
+        alertHits = SmartAlertMatcher.hits(notices.filter { NoticeDates.isRecent($0.date) }, rules: rules,
+                                           followed: SmartAlertMatcher.watched(chosen: selected, rules: rules))
     }
 
     // MARK: Visitas
@@ -98,6 +108,10 @@ final class AppModel: ObservableObject {
     }
 
     func explore(query: String, filter: NoticeFilter) -> [Notice] {
+        // Las alertas también vigilan fuentes que no están en «Elegir boletines».
+        if filter == .alerts {
+            return filtered(notices.filter { alertHits[$0.id] != nil }, query: query, filter: filter)
+        }
         let labels = selectedLabels
         return filtered(notices.filter { labels.contains($0.province) && NoticeDates.isRecent($0.date) },
                         query: query, filter: filter)
@@ -113,6 +127,7 @@ final class AppModel: ObservableObject {
         let normalized = SearchText.normalize(query.trimmingCharacters(in: .whitespacesAndNewlines))
         return list.filter { notice in
             filter.accepts(notice) && (filter != .fresh || freshIds.contains(notice.id)) &&
+                (filter != .alerts || alertHits[notice.id] != nil) &&
                 SearchText.matchesNormalized(normalized, notice.title, notice.headline, notice.entity, notice.id)
         }
     }
@@ -148,17 +163,20 @@ final class AppModel: ObservableObject {
     func saveRule(id: String?, phrase: String, sources: Set<String>) throws {
         try store.upsertRule(id: id, input: phrase, sources: sources)
         rules = store.rules
+        updateAlertHits()
         Task { await AlertNotifications.requestPermission() }
     }
 
     func enableRule(_ rule: AlertRule, _ enabled: Bool) {
         store.enableRule(rule.id, enabled)
         rules = store.rules
+        updateAlertHits()
     }
 
     func removeRule(_ rule: AlertRule) {
         store.removeRule(rule.id)
         rules = store.rules
+        updateAlertHits()
     }
 }
 

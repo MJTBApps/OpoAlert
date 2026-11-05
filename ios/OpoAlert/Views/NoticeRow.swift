@@ -5,6 +5,7 @@ import SwiftUI
 struct NoticeRow: View {
     let notice: Notice
     @EnvironmentObject private var model: AppModel
+    @ObservedObject private var premium = PremiumStore.shared
 
     var body: some View {
         let favorite = model.isFavorite(notice)
@@ -46,6 +47,16 @@ struct NoticeRow: View {
                         .font(.footnote)
                         .foregroundStyle(Palette.slate)
                         .lineLimit(2)
+                    if premium.isActive, let phrases = model.alertHits[notice.id] {
+                        Label("Alerta: " + phrases.joined(separator: " · "), systemImage: "bell.fill")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Color(hex: 0x7C3AED))
+                            .lineLimit(1)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color(hex: 0xF1EAFE), in: RoundedRectangle(cornerRadius: 8))
+                            .accessibilityLabel("Encontrada por tus alertas: " + phrases.joined(separator: ", "))
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }

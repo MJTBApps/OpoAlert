@@ -6,6 +6,7 @@ import UserNotifications
 /// Avisos locales: se generan en el propio móvil, sin servidor ni cuenta.
 enum AlertNotifications {
     static let noticeKey = "notice"
+    static let filterKey = "filter"
 
     static func requestPermission() async {
         let center = UNUserNotificationCenter.current()
@@ -14,7 +15,8 @@ enum AlertNotifications {
         _ = try? await center.requestAuthorization(options: [.alert, .sound, .badge])
     }
 
-    /// Un aviso por revisión: con una sola convocatoria abre su ficha; con varias, la lista.
+    /// Un aviso por revisión: con una sola convocatoria abre su ficha; con varias, la lista
+    /// con el filtro «Alertas».
     static func show(_ matching: [Notice]) async {
         // Las alertas son de OpoAlert Premium.
         guard !matching.isEmpty, PremiumStore.isActiveStored else { return }
@@ -30,6 +32,8 @@ enum AlertNotifications {
         content.sound = .default
         if matching.count == 1, let data = try? JSONEncoder().encode(matching[0]) {
             content.userInfo = [noticeKey: data]
+        } else {
+            content.userInfo = [filterKey: NoticeFilter.alerts.rawValue]
         }
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
         try? await center.add(request)

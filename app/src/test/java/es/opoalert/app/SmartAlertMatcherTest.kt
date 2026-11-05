@@ -96,4 +96,17 @@ class SmartAlertMatcherTest {
         val watched = Repository.watched(onlyValencia, rules)
         assertEquals(listOf(policeAl), SmartAlertMatcher.matching(listOf(policeAl), rules, watched))
     }
+
+    @Test fun hitsListsEachNoticeWithTheAlertsThatFindIt() {
+        val admin = AlertRule("b", "auxiliar administrativo", valenciaAndAlicante)
+        val alsoPolice = AlertRule("c", "agente", valenciaAndAlicante)
+        val paused = AlertRule("d", "bases", valenciaAndAlicante, enabled = false)
+        val hits = SmartAlertMatcher.hits(
+            listOf(policeAl, adminVal, policeAl), listOf(role, admin, alsoPolice, paused), valenciaAndAlicante
+        )
+        assertEquals(listOf("policia local", "agente"), hits[policeAl.id])
+        assertEquals(listOf("auxiliar administrativo"), hits[adminVal.id])
+        assertEquals(2, hits.size)
+        assertTrue(SmartAlertMatcher.hits(listOf(policeAl), listOf(paused), valenciaAndAlicante).isEmpty())
+    }
 }

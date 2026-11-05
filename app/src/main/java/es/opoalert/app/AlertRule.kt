@@ -27,6 +27,25 @@ object SmartAlertMatcher {
         return terms.all { haystack.contains(it) }
     }
 
+    /**
+     * Para el filtro «Alertas» de la lista: cada convocatoria que coincide con
+     * alguna alerta activa, con las frases de las alertas que la encuentran.
+     */
+    fun hits(
+        notices: List<Notice>, rules: List<AlertRule>, followed: Set<Province>
+    ): Map<String, List<String>> {
+        val active = rules.filter { it.enabled }
+        if (active.isEmpty() || followed.isEmpty()) return emptyMap()
+        val result = LinkedHashMap<String, List<String>>()
+        for (notice in notices) {
+            if (notice.id in result) continue
+            val phrases = active.filter { matches(it, notice, followed) }
+                .map { it.phrase.trim() }.distinct()
+            if (phrases.isNotEmpty()) result[notice.id] = phrases
+        }
+        return result
+    }
+
     /** Una misma convocatoria genera, como máximo, un aviso aunque coincida con varias alertas. */
     fun matching(
         newNotices: List<Notice>, rules: List<AlertRule>, followed: Set<Province>

@@ -30,8 +30,7 @@ struct NoticeListView: View {
             Section {
                 Picker("Tipo", selection: $filter) {
                     ForEach(NoticeFilter.allCases) { option in
-                        let count = model.freshIds.count
-                        Text(option == .fresh && count > 0 ? "\(option.rawValue) · \(count)" : option.rawValue).tag(option)
+                        Text(label(option)).tag(option)
                     }
                 }
                 .pickerStyle(.segmented)
@@ -93,6 +92,15 @@ struct NoticeListView: View {
         .searchable(text: $query, prompt: "Buscar puesto, organismo o referencia")
         .refreshable { await model.refresh() }
         .onChange(of: query) { _ in limit = AppModel.pageSize }
+        .onChange(of: filter) { option in
+            // Las convocatorias de las alertas van con las alertas: son de Premium.
+            if option == .alerts && !premium.isActive {
+                filter = .all
+                showPremium = true
+            }
+        }
+        .onAppear(perform: applyRequestedFilter)
+        .onChange(of: model.requestedFilter) { _ in applyRequestedFilter() }
         .onChange(of: filter) { _ in limit = AppModel.pageSize }
         .navigationDestination(for: Notice.self) { NoticeDetailView(notice: $0) }
         .toolbar {
@@ -117,6 +125,19 @@ struct NoticeListView: View {
         .sheet(isPresented: $showPremium) { PremiumView() }
     }
 
+    private func label(_ option: NoticeFilter) -> String {
+        let count = option == .fresh ? model.freshIds.count : option == .alerts && premium.isActive ? model.alertHits.count : 0
+        return count > 0 ? "\(option.rawValue) · \(count)" : option.rawValue
+    }
+
+    /// Un aviso con varias convocatorias abre la lista con el filtro «Alertas».
+    private func applyRequestedFilter() {
+        guard mode == .explore, let requested = model.requestedFilter else { return }
+        model.requestedFilter = nil
+        query = ""
+        filter = requested
+    }
+
     private var emptyMessage: String {
         if mode == .favorites && model.favorites.isEmpty {
             return "Aún no tienes favoritas. Toca la estrella de una convocatoria para guardarla aquí."
@@ -126,6 +147,10 @@ struct NoticeListView: View {
                 : "Todavía no hay convocatorias. Desliza hacia abajo para consultar los boletines."
         }
         if filter == .fresh { return "No hay convocatorias nuevas desde tu última visita." }
+        if filter == .alerts && !model.rules.contains(where: \.enabled) {
+            return "Aún no tienes alertas activas. Créalas en «Alertas» y aquí verás las convocatorias que encuentren."
+        }
+        if filter == .alerts { return "Ninguna convocatoria de los últimos 30 días coincide con tus alertas." }
         return "No hay convocatorias que coincidan con tu búsqueda."
     }
 }
