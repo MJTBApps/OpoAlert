@@ -89,12 +89,12 @@ jobs:
             echo "::warning::Sin los secretos ADMOB_IOS_*: esta compilación lleva los anuncios de PRUEBA de Google (vale para TestFlight, no para el App Store)"
           fi
           # Número de compilación: uno más en cada ejecución (App Store Connect no admite repetidos).
+          # Se archiva sin firmar: firmar aquí pide un perfil de desarrollo, y ese perfil
+          # exige un iPhone registrado (fallo del 05/11/2026). La firma de distribución
+          # la hace el paso siguiente.
           xcodebuild -project OpoAlert.xcodeproj -scheme OpoAlert -configuration Release \
             -destination 'generic/platform=iOS' -archivePath build/OpoAlert.xcarchive \
-            -allowProvisioningUpdates \
-            -authenticationKeyPath "$RUNNER_TEMP/asc/AuthKey_$ASC_KEY_ID.p8" \
-            -authenticationKeyID "$ASC_KEY_ID" -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
-            DEVELOPMENT_TEAM="$TEAM_ID" CODE_SIGN_STYLE=Automatic \
+            DEVELOPMENT_TEAM="$TEAM_ID" CODE_SIGN_STYLE=Automatic CODE_SIGNING_ALLOWED=NO \
             CURRENT_PROJECT_VERSION="${{ github.run_number }}" "${ADMOB[@]}" \
             archive | tail -n 80
 
