@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-04T17:06:21+00:00",
+ "updatedUTC": "2026-11-05T07:31:36+00:00",
  "items": {
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354": {
    "days": 20,
@@ -67,6 +67,12 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de 10 días hábiles, contados desde el siguiente a la publicación del anuncio de las bases y la convocatoria en el Boletín Oficial de la Provincia.",
    "page": 4
+  },
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864886": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "Plazo de presentación de solicitudes y documentación a aportar.- Las solicitudes se presentarán en el plazo de veinte días hábiles, contados a partir del siguiente al de la publicación de la con - vocatoria en el Boletín Oficial del Estado.",
+   "page": 5
   }
  },
  "none": [
@@ -80,7 +86,8 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835215",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864889"
  ],
  "tries": {}
 }
