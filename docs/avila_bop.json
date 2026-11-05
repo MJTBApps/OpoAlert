@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Ávila",
   "source": "https://www.diputacionavila.es/boletin-oficial/",
-  "lastCheckedUTC": "2026-11-05T06:24:15.863760+00:00",
+  "lastCheckedUTC": "2026-11-05T09:29:57.111554+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
-    "pagesVisited": 20,
-    "announcementsRead": 212,
-    "opportunities": 5
+    "bulletin": "214",
+    "pagesVisited": 21,
+    "announcementsRead": 217,
+    "opportunities": 7
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
       "2026-10-07",
@@ -57,7 +58,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,33 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02",
-      "2026-11-05"
+      "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 212,
-    "opportunities": 5
+    "issuesRead": 21,
+    "announcementsRead": 217,
+    "opportunities": 7
   },
   "notices": [
+    {
+      "id": "AV-2026-2184",
+      "province": "Ávila",
+      "title": "ACUERDO DE LA COMISIÓN PARITARIA POR EL QUE SE APRUEBA LA REGULACIÓN DE LA CONVOCATORIA DE AYUDAS DE ESTUDIOS PARA EL PERSONAL AL SERVICIO DE LA EXCMA. DIPUTACIÓN PROVINCIAL DE ÁVILA, CORRESPONDIENTE AL CURSO ACADÉMICO 2025/2026",
+      "entity": "DIPUTACIÓN DE ÁVILA.- RECURSOS HUMANOS, RÉGIMEN INTERIOR , ORGANIZACIÓN Y TRANSPARENCIA",
+      "date": "05/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputacionavila.es/bops/2026/05-11-2026/05-11-2026_218426.pdf"
+    },
+    {
+      "id": "AV-2026-1798",
+      "province": "Ávila",
+      "title": "APROBACIÓN DE LAS BASES Y LA CONVOCATORIA POR CONCURSO-OPOSICIÓN PARA CUBRIR UNA PLAZA DE ADMINISTRATIVO ESPECIALIZADO EN BASE DE DATOS",
+      "entity": "MANCOMUNIDAD DE SERVICIOS DEL ALTO TIETAR",
+      "date": "05/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputacionavila.es/bops/2026/05-11-2026/05-11-2026_179826.pdf"
+    },
     {
       "id": "AV-2026-2146",
       "province": "Ávila",
