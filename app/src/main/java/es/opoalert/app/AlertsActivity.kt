@@ -124,7 +124,10 @@ class AlertsActivity : Activity() {
         premiumCard.visibility = if (Premium.alertsUnlocked(this)) android.view.View.GONE else android.view.View.VISIBLE
         list.removeAllViews()
         val rules = AlertRuleStore.list(this)
-        if (rules.any { it.enabled }) addNotificationsWarning()
+        if (rules.any { it.enabled }) {
+            addNotificationsWarning()
+            addBatteryWarning()
+        }
         val active = rules.count { it.enabled }
         count.text = if (active == 1) "1 activa" else "$active activas"
         if (rules.isEmpty()) {
@@ -212,7 +215,7 @@ class AlertsActivity : Activity() {
         val selected = (existing?.provinces ?: ProvinceSettings.selected(this)).toMutableSet()
         content.addView(SourcePicker.build(this, selected))
         content.addView(text(
-            "Solo recibirás avisos de los boletines que también hayas seleccionado en Explorar.",
+            "Recibirás avisos de estos boletines aunque no los tengas elegidos en Explorar.",
             11f, "#64748B"
         ).apply { setPadding(0, dp(12), 0, 0) })
         val dialog = AlertDialog.Builder(this)
@@ -227,6 +230,7 @@ class AlertsActivity : Activity() {
                     AlertRuleStore.upsert(this, existing?.id, input.text.toString(), selected.toSet())
                     dialog.dismiss()
                     render()
+                    if (existing == null) BatteryCheck.askOnce(this)
                 } catch (error: IllegalArgumentException) {
                     Toast.makeText(this, error.message ?: "Revisa los datos.", Toast.LENGTH_LONG).show()
                 } catch (error: Exception) {
@@ -267,6 +271,35 @@ class AlertsActivity : Activity() {
      * Con los avisos apagados (en el menú de la app o en Android) las alertas no
      * pueden avisar; antes no se decía en ningún sitio.
      */
+    /** Si Android limita la batería de OpoAlert, los avisos llegan tarde o solo al abrir la app. */
+    private fun addBatteryWarning() {
+        if (!BatteryCheck.shouldWarn(this)) return
+        val restricted = BatteryCheck.restricted(this)
+        val card = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(dp(15), dp(13), dp(15), dp(13))
+            background = rounded("#FFF4E5", 14, "#F5C98B")
+            isClickable = true
+        }
+        card.addView(text(
+            if (restricted) "Android tiene restringida la batería" else "Los avisos pueden llegar tarde",
+            15f, "#7A4A00", true
+        ))
+        card.addView(text(
+            "Para que las alertas avisen sin abrir la app, pulsa aquí, entra en «Batería» " +
+                "y elige «Sin restricciones».",
+            13f, "#7A4A00"
+        ).apply { setPadding(0, dp(5), 0, 0) })
+        card.setOnClickListener { BatteryCheck.openSettings(this) }
+        if (!restricted) {
+            card.addView(action("No volver a mostrar") {
+                BatteryCheck.dismiss(this)
+                render()
+            }.apply { setTextColor(Color.parseColor("#7A4A00")); gravity = Gravity.END or Gravity.CENTER_VERTICAL })
+        }
+        list.addView(card, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(12) })
+    }
+
     private fun addNotificationsWarning() {
         val system = NotificationManagerCompat.from(this).areNotificationsEnabled()
         if (system && Repository.alertsEnabled(this)) return

@@ -14,15 +14,20 @@ import androidx.core.app.TaskStackBuilder
 import androidx.core.content.ContextCompat
 
 object Notifications {
-    const val CHANNEL = "bop_new_jobs"
+    // Canal de importancia alta (sonido y ventana emergente). Android no deja subir
+    // la importancia de un canal ya creado, así que el antiguo (normal: sin ventana
+    // y, en algunas marcas, sin sonido) se sustituye por uno nuevo (1.50.0).
+    const val CHANNEL = "alertas_convocatorias"
+    private const val OLD_CHANNEL = "bop_new_jobs"
 
     fun createChannel(context: Context) {
         val channel = NotificationChannel(
-            CHANNEL, "Nuevas convocatorias", NotificationManager.IMPORTANCE_DEFAULT
+            CHANNEL, "Alertas de convocatorias", NotificationManager.IMPORTANCE_HIGH
         ).apply {
-            description = "Avisos de nuevos anuncios que coincidan con tus alertas y provincias"
+            description = "Avisos de nuevos anuncios que coincidan con tus alertas"
         }
         val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        manager.deleteNotificationChannel(OLD_CHANNEL)
         manager.createNotificationChannel(channel)
     }
 
@@ -69,7 +74,7 @@ object Notifications {
             .setStyle(inbox)
             .setAutoCancel(true)
             .setContentIntent(pending)
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setPriority(NotificationCompat.PRIORITY_HIGH)
             .build()
         NotificationManagerCompat.from(context).notify(1001, notification)
     }
