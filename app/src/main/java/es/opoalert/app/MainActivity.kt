@@ -512,6 +512,9 @@ class MainActivity : Activity() {
             favorites.map { latestById[it.id] ?: it } else notices
         val fresh = freshIds()
         if (selectedFilter == FILTER_ALERTS && !Premium.alertsUnlocked(this)) selectedFilter = FILTER_ALL
+        // Favoritas: solo las que has marcado, sin filtros (como en iOS).
+        if (selectedTab == TAB_FAVORITES) selectedFilter = FILTER_ALL
+        (filterRow.parent as View).visibility = if (selectedTab == TAB_FAVORITES) View.GONE else View.VISIBLE
         val alerts = alertHits()
         buildFilters(fresh.size, alerts.size)  // los números cambian al actualizar
         val shown = from.filter { item ->
