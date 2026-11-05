@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-05T09:38:41.851872+00:00",
+  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 299,
-    "opportunities": 299,
+    "announcementsRead": 304,
+    "opportunities": 304,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,40 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 299,
-    "opportunities": 299
+    "announcementsRead": 304,
+    "opportunities": 304
   },
   "notices": [
+    {
+      "id": "CIDO5-22445867",
+      "title": "1 plaça de Tècnic de gestió",
+      "entity": "Ajuntament de Rubí",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22445867"
+    },
+    {
+      "id": "CIDO5-22444921",
+      "title": "1 plaça de Tècnic Arquitecte - Grup 2",
+      "entity": "Ajuntament de Barcelona - Foment de Ciutat, SA",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22444921"
+    },
+    {
+      "id": "CIDO5-22444917",
+      "title": "1 plaça de Tècnic Superior de Projectes - Grup 2",
+      "entity": "Ajuntament de Barcelona - Foment de Ciutat, SA",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22444917"
+    },
     {
       "id": "CIDO5-22442985",
       "title": "2 places d'Agent de civisme. Pla local d'ocupació 2025",
@@ -117,6 +147,26 @@
       "url": "https://cido.diba.cat/oposicions/22442616"
     },
     {
+      "id": "CIDO5-22436894",
+      "title": "1 plaça d'Operari maquinista de la brigada municipal",
+      "entity": "Ajuntament de Mediona",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22436894"
+    },
+    {
+      "id": "CIDO5-22394454",
+      "title": "5 places d'Agent de la guàrdia urbana",
+      "entity": "Ajuntament de Vic",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22394454"
+    },
+    {
       "id": "CIDO5-22367455",
       "title": "1 plaça de Tècnic superior economista",
       "entity": "Ajuntament de Sant Antoni de Vilamajor",
@@ -127,6 +177,36 @@
       "url": "https://cido.diba.cat/oposicions/22367455"
     },
     {
+      "id": "CIDO5-17031958",
+      "title": "1 plaça d'Enginyer",
+      "entity": "Ajuntament del Masnou",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/17031958"
+    },
+    {
+      "id": "CIDO5-16772071",
+      "title": "2 places de Treballador social",
+      "entity": "Ajuntament de la Garriga",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/16772071"
+    },
+    {
+      "id": "CIDO5-22444481",
+      "title": "1 plaça de Tècnic de seguretat per a l'Anella",
+      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22444481"
+    },
+    {
       "id": "CIDO5-22438265",
       "title": "Borsa de treball de places d'Encarregat de vigilància i manteniment de zones esportives",
       "entity": "Ajuntament de Palafolls",
@@ -135,16 +215,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22438265"
-    },
-    {
-      "id": "CIDO5-22436894",
-      "title": "1 plaça d'Operari maquinista de la brigada municipal",
-      "entity": "Ajuntament de Mediona",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22436894"
     },
     {
       "id": "CIDO5-22433976",
@@ -927,16 +997,6 @@
       "url": "https://cido.diba.cat/oposicions/16773097"
     },
     {
-      "id": "CIDO5-16772071",
-      "title": "2 places de Treballador social",
-      "entity": "Ajuntament de la Garriga",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16772071"
-    },
-    {
       "id": "CIDO5-16723111",
       "title": "1 plaça de Tècnic superior especialista informàtica",
       "entity": "Ajuntament de Viladecans",
@@ -1085,16 +1145,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22394590"
-    },
-    {
-      "id": "CIDO5-22394454",
-      "title": "5 places d'Agent de la guàrdia urbana",
-      "entity": "Ajuntament de Vic",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22394454"
     },
     {
       "id": "CIDO5-22394148",

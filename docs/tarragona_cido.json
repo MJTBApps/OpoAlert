@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-05T09:38:41.851872+00:00",
+  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 88,
-    "opportunities": 88,
+    "announcementsRead": 90,
+    "opportunities": 90,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -47,15 +48,44 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-05"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 88,
-    "opportunities": 88
+    "announcementsRead": 90,
+    "opportunities": 90
   },
   "notices": [
+    {
+      "id": "CIDO8-22445973",
+      "title": "Borsa de treball de places de Guàrdia municipal",
+      "entity": "Ajuntament de l'Aldea",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22445973"
+    },
+    {
+      "id": "CIDO8-21837947",
+      "title": "1 plaça d'Oficial 1a Neteja",
+      "entity": "Ajuntament d'Ascó",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21837947"
+    },
+    {
+      "id": "CIDO8-18012546",
+      "title": "1 plaça de Tècnic mitjà bibliotecari",
+      "entity": "Ajuntament de Reus",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18012546"
+    },
     {
       "id": "CIDO8-22437739",
       "title": "Borsa de treball de places d'Enginyer tècnic municipal",
@@ -565,16 +595,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21039381"
-    },
-    {
-      "id": "CIDO8-18012546",
-      "title": "1 plaça de Tècnic mitjà bibliotecari",
-      "entity": "Ajuntament de Reus",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18012546"
     },
     {
       "id": "CIDO8-16615670",
