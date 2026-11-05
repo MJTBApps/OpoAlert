@@ -130,7 +130,8 @@ struct NoticeListView: View {
     }
 
     private func label(_ option: NoticeFilter) -> String {
-        let count = option == .fresh ? model.freshIds.count : option == .alerts && premium.isActive ? model.alertHits.count : 0
+        // «Alertas» sin número: en la barra no cabe.
+        let count = option == .fresh ? model.freshIds.count : 0
         return count > 0 ? "\(option.rawValue) · \(count)" : option.rawValue
     }
 

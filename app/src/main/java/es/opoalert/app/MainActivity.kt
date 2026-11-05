@@ -461,14 +461,11 @@ class MainActivity : Activity() {
 
     private fun buildFilters(fresh: Int = freshIds().size, alerts: Int = alertHits().size) {
         filterRow.removeAllViews()
-        val locked = !Premium.alertsUnlocked(this)
         for (filter in listOf(FILTER_ALL, FILTER_NEW, FILTER_ALERTS, FILTER_POOLS, FILTER_POSITIONS)) {
             val selected = selectedFilter == filter
             val chip = TextView(this).apply {
                 text = when {
                     filter == FILTER_NEW && fresh > 0 -> "$filter · $fresh"
-                    filter == FILTER_ALERTS && locked -> "$filter · Premium"
-                    filter == FILTER_ALERTS && alerts > 0 -> "$filter · $alerts"
                     else -> filter
                 }
                 textSize = 12.5f
