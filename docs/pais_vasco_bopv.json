@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-05T06:30:11.559122+00:00",
+  "lastCheckedUTC": "2026-11-05T09:34:13.496636+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
-    "pagesVisited": 20,
-    "announcementsRead": 331,
-    "opportunities": 43
+    "bulletin": "212",
+    "pagesVisited": 21,
+    "announcementsRead": 357,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
       "2026-10-07",
@@ -57,7 +58,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,23 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-05"
+      "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 331,
-    "opportunities": 43
+    "issuesRead": 21,
+    "announcementsRead": 357,
+    "opportunities": 44
   },
   "notices": [
+    {
+      "id": "PV-2026-4666",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 26 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604666a.pdf"
+    },
     {
       "id": "PV-2026-4648",
       "province": "País Vasco (BOPV)",

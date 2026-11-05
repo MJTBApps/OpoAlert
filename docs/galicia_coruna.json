@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-04T12:10:48.064499+00:00",
+  "lastCheckedUTC": "2026-11-05T09:30:10.202077+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 21,
-    "announcementsRead": 672,
-    "opportunities": 55
+    "announcementsRead": 670,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -36,10 +35,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -59,7 +58,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-07",
@@ -73,10 +73,30 @@
       "2026-11-01"
     ],
     "issuesRead": 21,
-    "announcementsRead": 672,
-    "opportunities": 55
+    "announcementsRead": 670,
+    "opportunities": 56
   },
   "notices": [
+    {
+      "id": "AC-2026-7051",
+      "province": "A Coruña",
+      "title": "Anuncio publicación bases específicas que rexerán o proceso selectivo convocado para a cobertura, pola quenda de promoción interna, de 22 prazas de técnico/a de administración xeral (subgrupo A1), C.E. 2/26",
+      "entity": "Persoal",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/05/2026_0000007051.pdf"
+    },
+    {
+      "id": "AC-2026-7013",
+      "province": "A Coruña",
+      "title": "Anuncio publicación resolución pola que se declara deserto o proceso selectivo para a cobertura, pola quenda libre, de 2 prazas de técnico/a superior en economía (subgrupo A1) (C.E. 13/21)",
+      "entity": "Persoal",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/05/2026_0000007013.pdf"
+    },
     {
       "id": "AC-2026-7171",
       "province": "A Coruña",
@@ -616,16 +636,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/08/2026_0000006415.pdf"
-    },
-    {
-      "id": "AC-2026-6389",
-      "province": "A Coruña",
-      "title": "Bases para a selección do alumnado traballador e persoal directivo e docente para o obradoiro de emprego dual, \"Verdecume\", do Concello de Santiago de Compostela",
-      "entity": "Promoción Económica, Emprego e Comercio",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/06/2026_0000006389.pdf"
     }
   ]
 }
