@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-04T16:29:20.558279+00:00",
+  "lastCheckedUTC": "2026-11-05T06:28:58.773173+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 22,
-    "announcementsRead": 268,
+    "announcementsRead": 273,
     "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -37,10 +36,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,20 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 268,
+    "announcementsRead": 273,
     "opportunities": 53
   },
   "notices": [
+    {
+      "id": "OU-2026-353074",
+      "province": "Ourense",
+      "title": "APROBACIÓN INICIAL DEL PRESUPUESTO GENERAL, BASES DE EJECUCIÓN, Y LA PLANTILLA DE PERSONAL FUNCIONARIO, LABORAL Y EVENTUAL PARA EL EJERCICIO ECONÓMICO 2026",
+      "entity": "CONCELLO DE BOBORÁS",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353074/idioma/gl"
+    },
     {
       "id": "OU-2026-353118",
       "province": "Ourense",
@@ -597,16 +607,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352774/idioma/gl"
-    },
-    {
-      "id": "OU-2026-352660",
-      "province": "Ourense",
-      "title": "Oferta de Empleo Público para el año 2026",
-      "entity": "CONCELLO DE PIÑOR",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352660/idioma/gl"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-04T16:31:46.219498+00:00",
+  "lastCheckedUTC": "2026-11-05T06:31:41.017614+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 21,
-    "announcementsRead": 539,
-    "opportunities": 29
+    "pagesVisited": 20,
+    "announcementsRead": 518,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -39,7 +38,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-05"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 539,
-    "opportunities": 29
+    "issuesRead": 20,
+    "announcementsRead": 518,
+    "opportunities": 26
   },
   "notices": [
     {
@@ -336,36 +335,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094485;0&insert_number=4510&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4498",
-      "province": "Toledo",
-      "title": "Bases y convocatoria de una bolsa de trabajo en la categoría de auxiliar de cultura y turismo como personal laboral temporal, para la prestación de servicios de competencia municipal en las instalaciones culturales del Ayuntamiento de Consuegra.",
-      "entity": "AYUNTAMIENTO DE CONSUEGRA",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094476;0&insert_number=4498&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4497",
-      "province": "Toledo",
-      "title": "Bases y convocatoria de una bolsa de trabajo de Trabajador/a Social como personal laboral temporal para la prestación de servicios en el Ayuntamiento de Consuegra.",
-      "entity": "AYUNTAMIENTO DE CONSUEGRA",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094475;0&insert_number=4497&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4465",
-      "province": "Toledo",
-      "title": "Bases específicas 1 plaza Conductor/a de Autobús, Grupo C, Subgrupo C2, Concurso-Oposición (Instrumento de Planificación Plurianual)",
-      "entity": "AYUNTAMIENTO DE ILLESCAS",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094456;0&insert_number=4465&insert_year=2026"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-04T16:30:18.519821+00:00",
+  "lastCheckedUTC": "2026-11-05T06:30:11.559122+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 21,
-    "announcementsRead": 357,
-    "opportunities": 47
+    "pagesVisited": 20,
+    "announcementsRead": 331,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -39,7 +38,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -70,18 +68,19 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-05"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 357,
-    "opportunities": 47
+    "issuesRead": 20,
+    "announcementsRead": 331,
+    "opportunities": 43
   },
   "notices": [
     {
       "id": "PV-2026-4648",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 1777/2026, de 23 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se convoca concurso para la provisión de un puesto de jefe/a de Servicio Sanitario en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "04/11/2026",
       "bulletin": "211",
       "type": "Plaza / oposición",
@@ -91,7 +90,7 @@
       "id": "PV-2026-4647",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 1776/2026, de 23 de octubre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se convoca concurso para la provisión de un puesto de jefe/a de Sección Sanitaria, en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "04/11/2026",
       "bulletin": "211",
       "type": "Plaza / oposición",
@@ -101,7 +100,7 @@
       "id": "PV-2026-4646",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 1700/2026, de 23 de octubre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Servicio Corporativo, en la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "04/11/2026",
       "bulletin": "211",
       "type": "Plaza / oposición",
@@ -506,46 +505,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604141a.pdf"
-    },
-    {
-      "id": "PV-2026-4124",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 1523/2026, de 15 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se declara desierta la convocatoria realizada mediante la Resolución 1039/2026, de 1 de julio, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Sección Corporativa de Administración y Registro de Personal en la Subdirección de Planificación y Gestión de Personas de la Dirección de Personas y Talento de la Dirección General de Osakidetza-Servicio vasco de salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604124a.pdf"
-    },
-    {
-      "id": "PV-2026-4122",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 22 de septiembre de 2026, de la consejera de Movilidad Sostenible, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo de la Viceconsejería de Infraestructuras y Movilidad Sostenible.",
-      "entity": "Movilidad Sostenible",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604122a.pdf"
-    },
-    {
-      "id": "PV-2026-4120",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 16 de septiembre de 2026, del secretario general de Coordinación y Proyectos Estratégicos, por la que se anuncia la convocatoria pública para la provisión por el sistema de libre designación del puesto de trabajo de técnica/o especialista de Acción Exterior (código 511291, dotación 3), en la Dirección de Acción Exterior y Organismos Multilaterales.",
-      "entity": "Lehendakaritza",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604120a.pdf"
-    },
-    {
-      "id": "PV-2026-4119",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 16 de septiembre de 2026, del secretario general de Coordinación y Proyectos Estratégicos, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de técnica/o especialista de Acción Exterior (código 511291, dotación 6), en la Dirección de Asuntos Europeos.",
-      "entity": "Lehendakaritza",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604119a.pdf"
     }
   ]
 }

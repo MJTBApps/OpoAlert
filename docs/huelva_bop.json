@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-04T12:13:06.965420+00:00",
+  "lastCheckedUTC": "2026-11-05T06:27:45.889765+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 21,
-    "announcementsRead": 255,
+    "announcementsRead": 261,
     "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -36,10 +35,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -59,7 +58,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,9 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 255,
+    "announcementsRead": 261,
     "opportunities": 37,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_192_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_193_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_194_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_195_2026.pdf",
@@ -96,10 +95,31 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_211_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_212_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_212_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_213_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-384505",
+      "province": "Huelva",
+      "title": "Resolución de designación de los miembros del Tribunal del proceso selectivo nº 26 para cubrir una plaza de Letrado",
+      "entity": "Diputación Provincial de Huelva",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_384505_BOP-213_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382702",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases para la provisión por el procedimiento de libre designación del puesto de Jefe de Policía Local",
+      "entity": "Ayuntamiento de Hinojos",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382702_BOP-213_2026.pdf"
+    },
     {
       "id": "HB-2026-384583",
       "province": "Huelva",
@@ -449,26 +469,6 @@
       "bulletin": "194",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_378052_BOP-194_2026.pdf"
-    },
-    {
-      "id": "HB-2026-378284",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la constitución de una Bolsa de empleo de Auxiliar Administrativo",
-      "entity": "Ayuntamiento de Cumbres Mayores",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_378284_BOP-192_2026.pdf"
-    },
-    {
-      "id": "HB-2026-376707",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para la provisión en propiedad de una plaza de Subgestor Administración General",
-      "entity": "Ayuntamiento de Gibraleón",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_376707_BOP-192_2026.pdf"
     }
   ]
 }

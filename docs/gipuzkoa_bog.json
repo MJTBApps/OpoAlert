@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-04T16:27:12.140382+00:00",
+  "lastCheckedUTC": "2026-11-05T06:27:13.432333+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 22,
-    "announcementsRead": 819,
-    "opportunities": 34
+    "announcementsRead": 812,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "190",
       "191",
       "192",
       "193",
@@ -37,10 +36,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,40 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 819,
-    "opportunities": 34
+    "announcementsRead": 812,
+    "opportunities": 33
   },
   "notices": [
+    {
+      "id": "GP-2026-2607167",
+      "province": "Gipuzkoa",
+      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a cuatro plazas de Administrativo/a.",
+      "entity": "AYUNTAMIENTO DE EIBAR",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/05/c2607167.pdf"
+    },
+    {
+      "id": "GP-2026-2607134",
+      "province": "Gipuzkoa",
+      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Responsable de Obras.",
+      "entity": "AYUNTAMIENTO DE EIBAR",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/05/c2607134.pdf"
+    },
+    {
+      "id": "GP-2026-2607108",
+      "province": "Gipuzkoa",
+      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Responsable de Gestión de Expedientes e Informática.",
+      "entity": "AYUNTAMIENTO DE ASTIGARRAGA",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/05/c2607108.pdf"
+    },
     {
       "id": "GP-2026-2607214",
       "province": "Gipuzkoa",
@@ -377,46 +407,6 @@
       "bulletin": "191",
       "type": "Plaza / oposición",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/07/c2606311.pdf"
-    },
-    {
-      "id": "GP-2026-2606477",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Guía y Educador/a de Museo del Consorcio Sagardun.",
-      "entity": "AYUNTAMIENTO DE ASTIGARRAGA",
-      "date": "06/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/06/c2606477.pdf"
-    },
-    {
-      "id": "GP-2026-2606476",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Responsable de Marketing y Comunicación del Consorcio Sagardun.",
-      "entity": "AYUNTAMIENTO DE ASTIGARRAGA",
-      "date": "06/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/06/c2606476.pdf"
-    },
-    {
-      "id": "GP-2026-2606322",
-      "province": "Gipuzkoa",
-      "title": "Rectificación de los errores advertidos en los anexos III y VI del acuerdo de 7 de julio de 2026, por el que se aprobaron las convocatorias de los procesos selectivos para el acceso, mediante concurso-oposición, a las plazas incluidas en las ofertas de empleo público de los años 2023, 2024, 2025 y 2026.",
-      "entity": "DEPARTAMENTO DE GOBERNANZA",
-      "date": "06/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/06/c2606322.pdf"
-    },
-    {
-      "id": "GP-2026-2606317",
-      "province": "Gipuzkoa",
-      "title": "Establecimiento de la fecha de la primera prueba del proceso selectivo para el acceso a una plaza de Administrativo/a.",
-      "entity": "AYUNTAMIENTO DE AMEZKETA",
-      "date": "06/10/2026",
-      "bulletin": "190",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/06/c2606317.pdf"
     }
   ]
 }
