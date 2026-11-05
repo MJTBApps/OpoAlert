@@ -59,7 +59,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         completionHandler([.banner, .list, .sound])
     }
 
-    /// Al tocar el aviso: la ficha si era una sola convocatoria; si no, la lista con el filtro «Alertas».
+    /// Al tocar el aviso: la ficha si era una sola convocatoria; si no, la lista con el filtro «Avisos».
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
         let notice = AlertNotifications.notice(from: response)

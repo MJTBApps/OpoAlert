@@ -130,12 +130,12 @@ struct NoticeListView: View {
     }
 
     private func label(_ option: NoticeFilter) -> String {
-        // «Alertas» sin número: en la barra no cabe.
+        // «Avisos» sin número: en la barra no cabe.
         let count = option == .fresh ? model.freshIds.count : 0
         return count > 0 ? "\(option.rawValue) · \(count)" : option.rawValue
     }
 
-    /// Un aviso con varias convocatorias abre la lista con el filtro «Alertas».
+    /// Un aviso con varias convocatorias abre la lista con el filtro «Avisos».
     private func applyRequestedFilter() {
         guard mode == .explore, let requested = model.requestedFilter else { return }
         model.requestedFilter = nil

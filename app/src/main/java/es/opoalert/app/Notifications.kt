@@ -46,7 +46,7 @@ object Notifications {
         createChannel(context)
         val intent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
-            // La lista se abre con el filtro «Alertas»: ahí están todas las del aviso.
+            // La lista se abre con el filtro «Avisos»: ahí están todas las del aviso.
             putExtra(MainActivity.EXTRA_OPEN_FILTER, MainActivity.FILTER_ALERTS)
         }
         // Con un solo anuncio, el aviso abre su ficha; «atrás» vuelve a la lista.

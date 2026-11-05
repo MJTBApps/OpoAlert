@@ -28,7 +28,7 @@ object SmartAlertMatcher {
     }
 
     /**
-     * Para el filtro «Alertas» de la lista: cada convocatoria que coincide con
+     * Para el filtro «Avisos» de la lista: cada convocatoria que coincide con
      * alguna alerta activa, con las frases de las alertas que la encuentran.
      */
     fun hits(

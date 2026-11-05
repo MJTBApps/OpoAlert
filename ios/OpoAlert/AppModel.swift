@@ -3,7 +3,7 @@ import OpoAlertCore
 import SwiftUI
 
 enum NoticeFilter: String, CaseIterable, Identifiable {
-    case all = "Todas", fresh = "Nuevas", alerts = "Alertas", pools = "Bolsas", positions = "Plazas"
+    case all = "Todas", fresh = "Nuevas", alerts = "Avisos", pools = "Bolsas", positions = "Plazas"
     var id: String { rawValue }
 
     func accepts(_ notice: Notice) -> Bool {

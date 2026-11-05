@@ -867,7 +867,7 @@ class MainActivity : Activity() {
         private const val TAB_ALERTS = "alerts"
         const val EXTRA_OPEN_TAB = "es.opoalert.app.open_tab"
         const val EXTRA_OPEN_FILTER = "es.opoalert.app.open_filter"
-        const val FILTER_ALERTS = "Alertas"
+        const val FILTER_ALERTS = "Avisos"  // «Alertas» ya es la pestaña de abajo
         private const val FILTER_ALL = "Todas"
         private const val FILTER_NEW = "Nuevas"
         private const val FILTER_POOLS = "Bolsas"
