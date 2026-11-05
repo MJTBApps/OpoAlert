@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-04T17:03:15.280155+00:00",
+  "lastCheckedUTC": "2026-11-05T07:26:58.134721+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "254",
+    "bulletin": "255",
     "pagesVisited": 2,
-    "announcementsRead": 745,
-    "opportunities": 63
+    "announcementsRead": 738,
+    "opportunities": 65
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 745,
-    "opportunities": 63,
+    "announcementsRead": 738,
+    "opportunities": 65,
     "bulletins": [
-      "230",
       "231",
       "232",
       "233",
@@ -44,10 +43,10 @@
       "251",
       "252",
       "253",
-      "254"
+      "254",
+      "255"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -71,10 +70,10 @@
       "2026-10-30",
       "2026-10-31",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "issuePublicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -98,7 +97,8 @@
       "2026-10-30",
       "2026-10-31",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -108,19 +108,49 @@
       "2026-11-02"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 39,
-      "SECCIÓN QUINTA": 97,
-      "SECCIÓN SEXTA": 572,
       "SECCIÓN SEGUNDA": 8,
+      "SECCIÓN QUINTA": 94,
+      "SECCIÓN SEXTA": 569,
+      "SECCIÓN TERCERA": 38,
       "SECCIÓN CUARTA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
       "SECCIÓN SEPTIMA": 2,
       "PARTE NO OFICIAL": 5
     },
-    "documentsVerified": 87
+    "documentsVerified": 89
   },
   "notices": [
+    {
+      "id": "ZA-000344869",
+      "province": "Zaragoza",
+      "title": "ACUERDO del Consejo Comarcal de la Comarca de la Ribera Alta del Ebro de fecha 28 de octubre de 2026, de aprobación de las bases de la convocatoria para la constitución de bolsa de trabajo para la seleccion de…",
+      "entity": "COMARCA DE LA RIBERA ALTA DEL EBRO",
+      "date": "05/11/2026",
+      "bulletin": "255",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473401860606"
+    },
+    {
+      "id": "ZA-000344868",
+      "province": "Zaragoza",
+      "title": "ACUERDO del Consejo Comarcal de la Comarca de la Ribera Alta del Ebro de fecha 28 de octubre de 2026, de aprobación de las bases de la convocatoria para la constitución de bolsa de trabajo para la selección de…",
+      "entity": "COMARCA DE LA RIBERA ALTA DEL EBRO",
+      "date": "05/11/2026",
+      "bulletin": "255",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473400850606"
+    },
+    {
+      "id": "ZA-000344865",
+      "province": "Zaragoza",
+      "title": "De conformidad con lo acordado por resolución de Alcaldía de octubre de 2026, por medio del presente anuncio se efectúa convocatoria del procedimiento abierto, mediante concurso, con varios criterios…",
+      "entity": "AYUNTAMIENTO DE TORRES DE BERRELLÉN",
+      "date": "05/11/2026",
+      "bulletin": "255",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473397820505"
+    },
     {
       "id": "ZA-000344840",
       "province": "Zaragoza",
@@ -740,16 +770,6 @@
       "bulletin": "231",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469245510202"
-    },
-    {
-      "id": "ZA-000344119",
-      "province": "Zaragoza",
-      "title": "Detectado error en el anuncio de la resolución de Alcaldía de aprobación de la convocatoria y las bases del proceso selectivo para la provisión de una plaza de técnico de informática y administración…",
-      "entity": "AYUNTAMIENTO DE TARAZONA",
-      "date": "06/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469014810505"
     }
   ]
 }
