@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-04T16:39:57.605564+00:00",
+  "lastCheckedUTC": "2026-11-05T06:56:26.886953+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 21,
-    "announcementsRead": 952,
-    "opportunities": 95,
+    "announcementsRead": 966,
+    "opportunities": 97,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 952,
-    "opportunities": 95,
+    "announcementsRead": 966,
+    "opportunities": 97,
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -40,10 +39,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -63,7 +62,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -78,6 +78,36 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-213-09585",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la constitució d'una borsa de treball d'arquitectes tècnics",
+      "entity": "AJUNTAMENT DE CASTELLÓ D'EMPÚRIES",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309585.pdf"
+    },
+    {
+      "id": "GI-2026-213-09490",
+      "title": "Aprovació de les bases del concurs oposició de sis places d'agent de policia local més dues places addicionals",
+      "entity": "AJUNTAMENT DE LLORET DE MAR",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309490.pdf"
+    },
+    {
+      "id": "GI-2026-213-09476",
+      "title": "Aprovació de les bases i la convocatòria per a la provisió en propietat de dues places de peó serveis generals agutzil, pel sistema d'oposició",
+      "entity": "AJUNTAMENT D'AGULLANA",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309476.pdf"
+    },
     {
       "id": "GI-2026-212-09460",
       "title": "Aprovació de les bases del procés selectiu per a la creació d'una borsa de treball de la categoria de conserge (grup C2)",
@@ -1017,16 +1047,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/193/202619308488.pdf"
-    },
-    {
-      "id": "GI-2026-192-08620",
-      "title": "Aprovació de les bases reguladores del procés de selecció d'una plaça de tècnic/a mig de gestió en règim de funcionari interí per al servei de recaptació",
-      "entity": "AJUNTAMENT DE FIGUERES",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/192/202619208620.pdf"
     }
   ]
 }
