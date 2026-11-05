@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-04T16:25:07.097343+00:00",
+  "lastCheckedUTC": "2026-11-05T06:25:12.398869+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
+    "bulletin": "214",
     "pagesVisited": 22,
-    "announcementsRead": 342,
-    "opportunities": 22
+    "announcementsRead": 353,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -37,10 +36,10 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,30 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 342,
-    "opportunities": 22
+    "announcementsRead": 353,
+    "opportunities": 24
   },
   "notices": [
+    {
+      "id": "CR-2026-3558",
+      "province": "Ciudad Real",
+      "title": "Aprobación inicial del presupuesto general, bases de ejecución y plantilla de personal para el ejercicio económico 2026.",
+      "entity": "ALMEDINA",
+      "date": "05/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864889"
+    },
+    {
+      "id": "CR-2026-3555",
+      "province": "Ciudad Real",
+      "title": "Bases reguladoras de la convocatoria para la provisión como personal laboral fijo de una plaza de Oficial y constitución de bolsa, por el procedimiento de concurso-oposición libre, en turno de discapacidad.",
+      "entity": "ALCÁZAR DE SAN JUAN - PATRONATO MUNICIPAL DE CULTURA",
+      "date": "05/11/2026",
+      "bulletin": "214",
+      "type": "Bolsa de trabajo",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864886"
+    },
     {
       "id": "CR-2026-3546",
       "province": "Ciudad Real",

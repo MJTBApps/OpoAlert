@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-04T16:27:57.391938+00:00",
+  "lastCheckedUTC": "2026-11-05T06:24:31.934262+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 22,
-    "announcementsRead": 726,
+    "announcementsRead": 737,
     "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -37,10 +36,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,20 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 726,
+    "announcementsRead": 737,
     "opportunities": 47
   },
   "notices": [
+    {
+      "id": "BI-2026-II-5659",
+      "province": "Bizkaia",
+      "title": "Bases que han de regir la convocatoria para la provisión mediante el sistema de concurso-oposición libre de una (1) plaza de Técnico/a de Behargintza, vacante en la plantilla de personal del ayuntamiento de Leioa.",
+      "entity": "Ayuntamiento de Leioa",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/05/II-5659_cas.pdf"
+    },
     {
       "id": "BI-2026-II-5657",
       "province": "Bizkaia",
@@ -537,16 +547,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/07/II-5145_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5100",
-      "province": "Bizkaia",
-      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la adscripción en propiedad del concurso general para proveer, con carácter definitivo, diversas dotaciones de puestos básicos del grupo C, subgrupo C-2, adscritos a diversas áreas, previstos en la vigente relación de puestos de trabajo, por personal funcionario de carrera del Ayuntamiento de Bilbao, que posea alguna plaza en propiedad de oficial de oficios del grupo C, subgrupo C2.",
-      "entity": "Ayuntamiento de Barakaldo",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/06/II-5100_cas.pdf"
     }
   ]
 }

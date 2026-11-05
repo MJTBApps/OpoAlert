@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-04T16:23:41.534547+00:00",
+  "lastCheckedUTC": "2026-11-05T06:24:14.266312+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 21,
-    "announcementsRead": 446,
-    "opportunities": 46
+    "announcementsRead": 435,
+    "opportunities": 45
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -36,10 +35,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -59,7 +58,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,8 +73,8 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 446,
-    "opportunities": 46
+    "announcementsRead": 435,
+    "opportunities": 45
   },
   "notices": [
     {
@@ -526,16 +526,6 @@
       "bulletin": "192",
       "type": "Bolsa de trabajo",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-07000000_3916.pdf"
-    },
-    {
-      "id": "BD-2026-164633",
-      "province": "Badajoz",
-      "title": "Bases que han de regir en la selección para la provisión temporal de una plaza de Profesor/a de Viento Madera para la Escuela municipal de música",
-      "entity": "Ayuntamiento de Herrera del Duque",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-06000000_3903.pdf"
     }
   ]
 }
