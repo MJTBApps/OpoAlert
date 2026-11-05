@@ -13,6 +13,7 @@ struct OpoAlertApp: App {
             RootView()
                 .environmentObject(model)
                 .tint(Palette.blue)
+                .preferredColorScheme(.light)
                 .onAppear { delegate.attach(model) }
                 .task {
                     PremiumStore.shared.start()

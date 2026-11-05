@@ -54,6 +54,8 @@ targets:
       properties:
         CFBundleDevelopmentRegion: es
         UIBackgroundModes: [fetch]
+        # Los colores son los de Android (tema claro): sin modo oscuro.
+        UIUserInterfaceStyle: Light
         BGTaskSchedulerPermittedIdentifiers: [es.opoalert.app.refresh]
         UILaunchScreen: {}
         ITSAppUsesNonExemptEncryption: false

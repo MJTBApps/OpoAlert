@@ -27,6 +27,8 @@ struct NoticeListView: View {
                 Section { SummaryCard(showPicker: { model.showSourcePicker = true }) }
                     .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
             }
+            // Favoritas: solo las que has marcado, sin filtros.
+            if mode == .explore {
             Section {
                 Picker("Tipo", selection: $filter) {
                     ForEach(NoticeFilter.allCases) { option in
@@ -36,6 +38,7 @@ struct NoticeListView: View {
                 .pickerStyle(.segmented)
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
+            }
             }
             Section {
                 if shown.isEmpty {
@@ -89,7 +92,8 @@ struct NoticeListView: View {
         .background(Palette.background)
         .scrollContentBackground(.hidden)
         .navigationTitle(mode == .favorites ? "Favoritas" : "OpoAlert")
-        .searchable(text: $query, prompt: "Buscar puesto, organismo o referencia")
+        // La barra de búsqueda se queda fija arriba al bajar por la lista.
+        .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always), prompt: "Buscar puesto, organismo o referencia")
         .refreshable { await model.refresh() }
         .onChange(of: query) { _ in limit = AppModel.pageSize }
         .onChange(of: filter) { option in
