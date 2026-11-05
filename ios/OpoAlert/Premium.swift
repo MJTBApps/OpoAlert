@@ -32,9 +32,11 @@ final class PremiumStore: ObservableObject {
     }
 
     func refresh() async {
-        // Capturas del App Store en el simulador: como Premium, sin anuncios.
+        // Capturas del App Store en el simulador: como Premium, sin anuncios, salvo la
+        // de la pantalla de compra (para el equipo de revisión de la suscripción).
         if CaptureMode.isOn {
-            isActive = true
+            isActive = !CaptureMode.showsPurchase
+            if CaptureMode.showsPurchase { trialDays = 7 }
             return
         }
         var active = false
@@ -49,6 +51,8 @@ final class PremiumStore: ObservableObject {
     }
 
     func loadProduct() async {
+        // El simulador no tiene la tienda: la captura usa el precio configurado.
+        if CaptureMode.isOn { return }
         guard let found = try? await Product.products(for: [Self.productID]).first else { return }
         product = found
         if let offer = found.subscription?.introductoryOffer, offer.paymentMode == .freeTrial,
@@ -61,6 +65,7 @@ final class PremiumStore: ObservableObject {
 
     /// «3,99 € al año», con el precio y la moneda de cada país que da Apple.
     var priceText: String? {
+        if CaptureMode.showsPurchase { return CaptureMode.price }
         guard let product, let period = product.subscription?.subscriptionPeriod else { return nil }
         let unit: String
         switch period.unit {

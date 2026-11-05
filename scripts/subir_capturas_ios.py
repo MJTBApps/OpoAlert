@@ -100,13 +100,47 @@ def upload(set_id: str, path: Path) -> None:
     print("Subida", path.name)
 
 
+def upload_review_screenshot(subscription: str, path: Path) -> None:
+    """Captura para el equipo de revisión de la suscripción (sustituye la anterior)."""
+    old = call("GET", f"/subscriptions/{subscription}/appStoreReviewScreenshot")
+    if old.get("data"):
+        call("DELETE", f"/subscriptionAppStoreReviewScreenshots/{old['data']['id']}")
+    content = path.read_bytes()
+    created = call("POST", "/subscriptionAppStoreReviewScreenshots", {"data": {
+        "type": "subscriptionAppStoreReviewScreenshots",
+        "attributes": {"fileName": path.name, "fileSize": len(content)},
+        "relationships": {"subscription": {"data": {"type": "subscriptions", "id": subscription}}},
+    }})["data"]
+    for operation in created["attributes"]["uploadOperations"]:
+        part = content[operation["offset"]:operation["offset"] + operation["length"]]
+        request = urllib.request.Request(operation["url"], data=part, method=operation["method"])
+        for header in operation.get("requestHeaders", []):
+            request.add_header(header["name"], header["value"])
+        with urllib.request.urlopen(request, timeout=120):
+            pass
+    call("PATCH", f"/subscriptionAppStoreReviewScreenshots/{created['id']}", {"data": {
+        "type": "subscriptionAppStoreReviewScreenshots", "id": created["id"],
+        "attributes": {"uploaded": True, "sourceFileChecksum": hashlib.md5(content).hexdigest()},
+    }})
+    print("Captura de revisión de la suscripción subida:", path.name)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("folder", type=Path)
     parser.add_argument("--app", required=True)
     parser.add_argument("--locale", default="es-ES")
-    parser.add_argument("--size", choices=sorted(DISPLAY_TYPES), required=True)
+    parser.add_argument("--size", choices=sorted(DISPLAY_TYPES))
+    parser.add_argument("--review-subscription", help="ID de Apple de la suscripción: sube la carpeta como su captura de revisión")
     args = parser.parse_args()
+    if args.review_subscription:
+        files = sorted(p for p in args.folder.iterdir() if p.suffix.lower() in {".png", ".jpg", ".jpeg"})
+        if len(files) != 1:
+            sys.exit("Para la revisión de la suscripción hace falta exactamente una captura")
+        upload_review_screenshot(args.review_subscription, files[0])
+        return
+    if not args.size:
+        sys.exit("Falta --size")
     files = sorted(p for p in args.folder.iterdir() if p.suffix.lower() in {".png", ".jpg", ".jpeg"})
     if not files:
         sys.exit("No hay capturas que subir")

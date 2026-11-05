@@ -43,6 +43,7 @@ struct RootView: View {
         .sheet(isPresented: $model.showSourcePicker) {
             SourcePickerView(firstLaunch: !model.store.pickerShown)
         }
+        .sheet(isPresented: $model.showPremium) { PremiumView() }
         .sheet(item: $model.openedNotice) { notice in
             NavigationStack {
                 NoticeDetailView(notice: notice)

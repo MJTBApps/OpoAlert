@@ -3,7 +3,8 @@ import OpoAlertCore
 
 /// Capturas para la ficha del App Store (`ios-capturas.yml`). Solo existe en el
 /// simulador: en un iPhone `screen` es siempre nil y la app no cambia en nada.
-/// Se activa al lanzar con `-opoCapture <pantalla>` (explorar, alertas, ficha, boletines).
+/// Se activa al lanzar con `-opoCapture <pantalla>` (explorar, ficha, filtro, alertas,
+/// boletines, premium).
 enum CaptureMode {
     #if targetEnvironment(simulator)
     static var screen: String? { UserDefaults.standard.string(forKey: "opoCapture") }
@@ -12,6 +13,10 @@ enum CaptureMode {
     #endif
 
     static var isOn: Bool { screen != nil }
+    /// Captura de la pantalla de compra de Premium, que pide la revisión de la suscripción.
+    static var showsPurchase: Bool { screen == "premium" }
+    /// Precio de `opoalert_premium` en App Store Connect (España); solo para esa captura.
+    static let price = "3,99 € al año"
 
     /// Alertas de ejemplo para la captura de «Alertas» y del filtro.
     static let demoRules: [(String, Set<String>)] = [
@@ -40,6 +45,7 @@ enum CaptureMode {
             model.tab = .explore
             model.openedNotice = model.explore(query: "", filter: .positions).first
         case "boletines": model.showSourcePicker = true
+        case "premium": model.showPremium = true
         default: model.tab = .explore
         }
     }

@@ -32,6 +32,8 @@ final class AppModel: ObservableObject {
     @Published private(set) var isRefreshing = false
     @Published var message: String?
     @Published var showSourcePicker = false
+    /// Pantalla de Premium abierta desde fuera de la lista (capturas del App Store).
+    @Published var showPremium = false
     /// Ficha abierta desde un aviso.
     @Published var openedNotice: Notice?
     @Published var tab: AppTab = .explore

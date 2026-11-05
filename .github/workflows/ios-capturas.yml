@@ -93,6 +93,12 @@ jobs:
             shot 3-filtro-alertas filtro
             shot 4-mis-alertas alertas
             shot 5-elegir-boletines boletines
+            if [ "$2" = "6.9" ]; then
+              # Pantalla de compra de Premium, para el equipo de revisión de la suscripción.
+              mkdir -p capturas/revision
+              shot premium premium
+              mv "$OUT/premium.jpg" capturas/revision/premium.jpg
+            fi
             sips -g pixelWidth -g pixelHeight "$OUT/1-explorar.jpg" | tail -2
             xcrun simctl shutdown "$DEVICE"
           }
@@ -118,3 +124,5 @@ jobs:
             || python3 -m pip install --quiet pyjwt cryptography
           python3 scripts/subir_capturas_ios.py ios/capturas/6.3 --size 6.3 --app 6831053083 --locale es-ES
           python3 scripts/subir_capturas_ios.py ios/capturas/6.9 --size 6.9 --app 6831053083 --locale es-ES
+          # Suscripción «Premium anual» (opoalert_premium), ID de Apple 6831053334.
+          python3 scripts/subir_capturas_ios.py ios/capturas/revision --review-subscription 6831053334
