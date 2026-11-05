@@ -37,19 +37,10 @@ class AlertsActivity : Activity() {
         val top = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            setPadding(dp(14), dp(9), dp(18), dp(10))
+            setPadding(dp(18), dp(10), dp(18), dp(12))
         }
-        val back = text("‹", 34f, "#1E4FD5").apply {
-            gravity = Gravity.CENTER
-            minWidth = dp(45)
-            minHeight = dp(46)
-            isClickable = true
-            isFocusable = true
-            contentDescription = "Volver a convocatorias"
-            setOnClickListener { finish() }
-        }
-        top.addView(back)
-        val heading = text("Mis alertas", 23f, "#101D36", bold = true)
+        // Título grande y barra de pestañas abajo, como en iPhone.
+        val heading = text("Mis alertas", 32f, "#0E1C36", bold = true)
         top.addView(heading, LinearLayout.LayoutParams(0, -2, 1f))
         count = text("", 12f, "#64748B")
         top.addView(count)
@@ -58,7 +49,7 @@ class AlertsActivity : Activity() {
         val scroll = ScrollView(this).apply { isFillViewport = true }
         val body = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(dp(18), dp(7), dp(18), dp(24))
+            setPadding(dp(18), dp(7), dp(18), dp(110))
         }
         body.addView(text(
             "Recibe avisos únicamente cuando aparezcan anuncios nuevos que coincidan " +
@@ -109,7 +100,18 @@ class AlertsActivity : Activity() {
         ).apply { setPadding(dp(3), dp(16), dp(3), 0) })
         scroll.addView(body)
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
-        setContentView(root)
+        val tabs = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            elevation = dp(10).toFloat()
+            setPadding(dp(5), dp(5), dp(5), dp(5))
+        }
+        BottomTabs.build(tabs, BottomTabs.ALERTS) { tab -> BottomTabs.openMain(this, tab) }
+        val frame = android.widget.FrameLayout(this)
+        frame.addView(root)
+        frame.addView(tabs, android.widget.FrameLayout.LayoutParams(-1, dp(64), Gravity.BOTTOM).apply {
+            setMargins(dp(44), 0, dp(44), dp(14))
+        })
+        setContentView(frame)
         SystemBars.fit(this)
         render()
     }

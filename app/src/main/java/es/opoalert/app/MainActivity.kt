@@ -47,7 +47,8 @@ class MainActivity : Activity() {
     private lateinit var refreshButton: ImageButton
     private lateinit var menuButton: ImageButton
     private lateinit var provinceSelector: TextView
-    private lateinit var chooseSourcesButton: TextView
+    private lateinit var titleText: TextView
+    private lateinit var summaryCard: View
     private lateinit var searchInput: EditText
     private lateinit var tabsRow: LinearLayout
     private lateinit var filterRow: LinearLayout
@@ -79,7 +80,8 @@ class MainActivity : Activity() {
         refreshButton = findViewById(R.id.refreshButton)
         menuButton = findViewById(R.id.menuButton)
         provinceSelector = findViewById(R.id.provinceSelector)
-        chooseSourcesButton = findViewById(R.id.chooseSourcesButton)
+        titleText = findViewById(R.id.titleText)
+        summaryCard = findViewById(R.id.summaryCard)
         searchInput = findViewById(R.id.searchInput)
         tabsRow = findViewById(R.id.tabsRow)
         filterRow = findViewById(R.id.filterRow)
@@ -99,7 +101,6 @@ class MainActivity : Activity() {
         refreshButton.setOnClickListener { refresh() }
         menuButton.setOnClickListener { showOptions() }
         provinceSelector.setOnClickListener { showProvinceChooser() }
-        chooseSourcesButton.setOnClickListener { showProvinceChooser() }
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -230,6 +231,7 @@ class MainActivity : Activity() {
 
     private fun openAlerts() {
         startActivity(Intent(this, AlertsActivity::class.java))
+        @Suppress("DEPRECATION") overridePendingTransition(0, 0)
     }
 
     private fun showProvincePickerIfFirstLaunch() {
@@ -243,7 +245,7 @@ class MainActivity : Activity() {
     }
 
     private fun updateProvinceSelector() {
-        provinceSelector.text = "Siguiendo: ${ProvinceSettings.display(this)}"
+        provinceSelector.text = "Siguiendo: ${ProvinceSettings.display(this)}  ›"
     }
 
     /**
@@ -388,10 +390,10 @@ class MainActivity : Activity() {
         countText.text = notices.count { isRecent(it.date) && it.province in selected }.toString()
         updateProvinceSelector()
         val favorites = FavoritesStore.list(this).size
-        favoritesCountText.text = "★ $favorites favorita${if (favorites == 1) "" else "s"}"
+        favoritesCountText.text = "★ $favorites"
         val lastSync = Repository.lastSync(this)
         statusText.text = if (lastSync.isBlank()) "Sin consultar" else compactUpdated(lastSync)
-        sourceInfoText.text = compactSource(Repository.lastSource(this))
+        sourceInfoText.text = "· " + compactSource(Repository.lastSource(this))
         historyInfoText.text = compactHistory(Repository.lastHistory(this))
     }
 
@@ -417,64 +419,39 @@ class MainActivity : Activity() {
         }
     }
 
-    /** Tres pestañas equivalentes, sin añadir una fila extra al listado. */
+    /** Barra de pestañas flotante de abajo, como en iPhone. */
     private fun buildTabs() {
-        tabsRow.removeAllViews()
-        val choices = listOf(
-            TAB_ALL to "Explorar",
-            TAB_FAVORITES to "★ Favoritas",
-            TAB_ALERTS to "🔔 Alertas"
-        )
-        for ((index, choice) in choices.withIndex()) {
-            val (tab, label) = choice
-            val selected = selectedTab == tab
-            val button = TextView(this).apply {
-                text = label
-                textSize = 12.5f
-                typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
-                gravity = Gravity.CENTER
-                setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
-                background = rounded(if (selected) "#1E4FD5" else "#E7EDF5", 13)
-                isClickable = true
-                isFocusable = true
-                contentDescription = when (tab) {
-                    TAB_ALL -> "Explorar convocatorias"
-                    TAB_FAVORITES -> "Ver mis favoritas"
-                    else -> "Gestionar mis alertas"
-                }
-                setOnClickListener {
-                    if (tab == TAB_ALERTS) {
-                        openAlerts()
-                    } else {
-                        selectedTab = tab
-                        buildTabs()
-                        render()
-                        scroll.scrollTo(0, 0)
-                    }
-                }
+        BottomTabs.build(tabsRow, selectedTab) { tab ->
+            if (tab == TAB_ALERTS) {
+                openAlerts()
+            } else {
+                selectedTab = tab
+                buildTabs()
+                render()
+                scroll.scrollTo(0, 0)
             }
-            tabsRow.addView(button, LinearLayout.LayoutParams(0, dp(44), 1f).apply {
-                if (index < choices.lastIndex) marginEnd = dp(6)
-            })
         }
     }
 
+    /** Filtro segmentado, como el de iPhone: un solo control con cinco partes. */
     private fun buildFilters(fresh: Int = freshIds().size, alerts: Int = alertHits().size) {
         filterRow.removeAllViews()
+        filterRow.background = rounded("#E4E8EF", 19)
         for (filter in listOf(FILTER_ALL, FILTER_NEW, FILTER_ALERTS, FILTER_POOLS, FILTER_POSITIONS)) {
             val selected = selectedFilter == filter
-            val chip = TextView(this).apply {
-                text = when {
-                    filter == FILTER_NEW && fresh > 0 -> "$filter · $fresh"
-                    else -> filter
-                }
+            val segment = TextView(this).apply {
+                text = if (filter == FILTER_NEW && fresh > 0) "$filter · $fresh" else filter
                 textSize = 12.5f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
-                setTextColor(Color.parseColor(if (selected) "#FFFFFF" else "#34435B"))
-                background = rounded(if (selected) "#1E4FD5" else "#E7EDF5", 30)
+                setTextColor(Color.parseColor(if (selected) "#0E1C36" else "#5C6B80"))
+                if (selected) {
+                    background = rounded("#FFFFFF", 16)
+                    elevation = dp(1).toFloat()
+                }
                 gravity = Gravity.CENTER
-                setPadding(dp(15), dp(7), dp(15), dp(7))
-                minHeight = dp(34)
+                maxLines = 1
+                ellipsize = android.text.TextUtils.TruncateAt.END
+                setPadding(dp(2), 0, dp(2), 0)
                 isClickable = true
                 isFocusable = true
                 setOnClickListener {
@@ -488,9 +465,7 @@ class MainActivity : Activity() {
                     scroll.scrollTo(0, 0)
                 }
             }
-            filterRow.addView(chip, LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply { marginEnd = dp(7) })
+            filterRow.addView(segment, LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 1f))
         }
     }
 
@@ -511,7 +486,10 @@ class MainActivity : Activity() {
         if (selectedFilter == FILTER_ALERTS && !Premium.alertsUnlocked(this)) selectedFilter = FILTER_ALL
         // Favoritas: solo las que has marcado, sin filtros (como en iOS).
         if (selectedTab == TAB_FAVORITES) selectedFilter = FILTER_ALL
-        (filterRow.parent as View).visibility = if (selectedTab == TAB_FAVORITES) View.GONE else View.VISIBLE
+        val favoritesTab = selectedTab == TAB_FAVORITES
+        filterRow.visibility = if (favoritesTab) View.GONE else View.VISIBLE
+        summaryCard.visibility = if (favoritesTab) View.GONE else View.VISIBLE
+        titleText.text = if (favoritesTab) "Favoritas" else "OpoAlert"
         val alerts = alertHits()
         buildFilters(fresh.size, alerts.size)  // los números cambian al actualizar
         val shown = from.filter { item ->
@@ -530,7 +508,7 @@ class MainActivity : Activity() {
             correctType && correctDate && correctProvince && matches
         }
         resultsText.text = if (selectedTab == TAB_FAVORITES)
-            "MIS FAVORITAS · ${shown.size}" else "CONVOCATORIAS · ${shown.size}"
+            "Mis favoritas · ${shown.size}" else "Convocatorias · ${shown.size}"
         if (shown.isEmpty()) {
             val message = when {
                 selectedTab == TAB_FAVORITES && favorites.isEmpty() ->

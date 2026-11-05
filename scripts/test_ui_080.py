@@ -20,7 +20,7 @@ def main() -> None:
     desired = (
         "listContainer", "countText", "favoritesCountText", "statusText",
         "sourceInfoText", "historyInfoText", "progressBar", "refreshButton",
-        "menuButton", "provinceSelector", "chooseSourcesButton", "searchInput", "tabsRow", "filterRow", "resultsScroll",
+        "menuButton", "provinceSelector", "titleText", "summaryCard", "searchInput", "tabsRow", "filterRow", "resultsScroll",
         "resultsText",
     )
     activity = (KOTLIN / "MainActivity.kt").read_text(encoding="utf-8")
@@ -41,20 +41,18 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.52.0"' in gradle
-    assert "versionCode = 65" in gradle
+    assert 'versionName = "1.53.0"' in gradle
+    assert "versionCode = 66" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
     assert "assets" not in reader, "Todas las fuentes se leen de GitHub Pages, sin copias congeladas"
-    # El bloque resumen debe permitir que el listado crezca: maximo 8dp
-    # de relleno vertical y el texto de metadatos en una sola linea.
-    summary = next(node for node in tree.getroot() if
-                   node.attrib.get(ANDROID + "background") == "@drawable/bg_summary_compact")
-    assert summary.attrib.get(ANDROID + "paddingTop") == "8dp"
-    assert summary.attrib.get(ANDROID + "paddingBottom") == "8dp"
+    # 1.53.0: diseño de iPhone. Tarjeta de resumen blanca dentro de la lista,
+    # buscador fijo fuera de ella y barra de pestañas flotante abajo.
+    assert ids["summaryCard"].attrib.get(ANDROID + "background") == "@drawable/bg_card_white"
+    assert ids["tabsRow"].attrib.get(ANDROID + "layout_gravity") == "bottom"
+    assert "BottomTabs.build(tabsRow" in activity
     assert ids["historyInfoText"].attrib.get(ANDROID + "maxLines") == "1"
-    assert ids["countText"].attrib.get(ANDROID + "textSize") == "24sp"
     assert "compactUpdated(lastSync)" in activity
     assert "latestById" in activity
     assert "showProvinceChooser" in activity
@@ -103,7 +101,8 @@ def main() -> None:
     assert 'android:exported="false"' in manifest
     assert (KOTLIN / "AlertRuleStore.kt").exists()
     assert (KOTLIN / "AlertsActivity.kt").exists()
-    assert 'TAB_ALERTS to "🔔 Alertas"' in activity, "Alertas debe ser tercera pestaña"
+    tabs = (KOTLIN / "BottomTabs.kt").read_text(encoding="utf-8")
+    assert tabs.index('"Explorar"') < tabs.index('"Favoritas"') < tabs.index('"Alertas"'), "Alertas debe ser tercera pestaña"
     assert 'NoticeDetailActivity::class.java' in activity
     assert 'android:name=".NoticeDetailActivity"' in manifest
     assert "R.id.alertsButton" not in activity
@@ -130,7 +129,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.52.0"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.53.0"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -147,9 +146,9 @@ def main() -> None:
     alerts = (KOTLIN / "AlertsActivity.kt").read_text(encoding="utf-8")
     assert 'SourcePicker.build(this, selected)' in alerts, "Alertas: mismo selector por comunidades"
     assert 'SourcePicker.scrolling(this, content)' in alerts, "El editor de alertas debe poder desplazarse"
-    assert 'chooseSourcesButton.setOnClickListener' in activity
+    assert 'provinceSelector.setOnClickListener { showProvinceChooser() }' in activity
     assert 'BOE n.º ' in detail
-    print("OK: Android 1.52.0: recordatorio de Premium al guardar favoritas")
+    print("OK: Android 1.53.0: diseño igual que el de iPhone")
 
 
 if __name__ == "__main__":
