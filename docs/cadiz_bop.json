@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bopcadiz.es/",
   "province": "Cádiz",
-  "lastCheckedUTC": "2026-11-04T17:16:29.333059+00:00",
+  "lastCheckedUTC": "2026-11-05T07:41:03.305397+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
-    "announcementsRead": 381,
-    "opportunities": 33,
+    "bulletin": "213",
+    "announcementsRead": 375,
+    "opportunities": 34,
     "pagesVisited": 20
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "issuesRead": 20,
-    "announcementsRead": 381,
-    "opportunities": 33,
+    "announcementsRead": 375,
+    "opportunities": 34,
     "pagesVisited": 20,
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -39,10 +38,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-07",
@@ -86,6 +86,26 @@
     ]
   },
   "notices": [
+    {
+      "id": "CA-2026-369495",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de San Roque. Bases de la convocatoria para cubrir, mediante oposición y turno libre, de 1 plaza de Psicólogo/a, vacante en la plantilla del ayuntamiento",
+      "entity": "Ayuntamiento de San Roque",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/11_noviembre/BOP213_05-11-26.pdf"
+    },
+    {
+      "id": "CA-2026-367058",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de Jerez de la Frontera. Convocatoria y bases para la provisión, como funcionario/a de carrera, de 52 plazas de Policías Locales, a través de sistemas de acceso libre y movilidad sin ascenso, y mediante oposición y concurso de méritos respectivamente, OEP 2024, 2025 y 2026",
+      "entity": "Ayuntamiento de Jerez de la Frontera",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/11_noviembre/BOP213_05-11-26.pdf#page=4"
+    },
     {
       "id": "CA-2026-358936",
       "province": "Cádiz",
@@ -405,16 +425,6 @@
       "bulletin": "194",
       "type": "Bolsa de trabajo",
       "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP194_08-10-26.pdf#page=14"
-    },
-    {
-      "id": "CA-2026-318037",
-      "province": "Cádiz",
-      "title": "Ayuntamiento de Bornos. Aprobación definitiva del presupuesto general de 2026, bases de ejecución y plantilla de personal",
-      "entity": "Ayuntamiento de Bornos",
-      "date": "06/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP193_06-10-26.pdf#page=5"
     }
   ]
 }
