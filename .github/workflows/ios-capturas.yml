@@ -82,7 +82,7 @@ jobs:
               xcrun simctl terminate "$DEVICE" es.opoalert.app 2>/dev/null || true
               sleep 2
               xcrun simctl launch "$DEVICE" es.opoalert.app -opoCapture "$2"
-              sleep 30
+              sleep 40
               xcrun simctl io "$DEVICE" screenshot "$OUT/$1.png"
               # Sin canal alfa: App Store Connect rechaza las capturas con transparencia.
               sips -s format jpeg -s formatOptions 92 "$OUT/$1.png" --out "$OUT/$1.jpg" >/dev/null

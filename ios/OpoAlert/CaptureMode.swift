@@ -30,7 +30,7 @@ enum CaptureMode {
         guard let screen else { return }
         // Las hojas (ficha, boletines) no se abren si se piden antes de que la
         // lista termine de dibujarse.
-        try? await Task.sleep(nanoseconds: 1_500_000_000)
+        try? await Task.sleep(nanoseconds: 5_000_000_000)
         if model.rules.isEmpty {
             for (phrase, sources) in demoRules {
                 try? model.saveRule(id: nil, phrase: phrase, sources: sources)
