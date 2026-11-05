@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-05T06:42:41.554565+00:00",
+  "lastCheckedUTC": "2026-11-05T09:38:41.851872+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 293,
-    "opportunities": 293,
+    "announcementsRead": 299,
+    "opportunities": 299,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -41,21 +41,91 @@
       "2026-10-31",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01",
-      "2026-11-05"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 293,
-    "opportunities": 293
+    "announcementsRead": 299,
+    "opportunities": 299
   },
   "notices": [
+    {
+      "id": "CIDO5-22442985",
+      "title": "2 places d'Agent de civisme. Pla local d'ocupació 2025",
+      "entity": "Ajuntament de Torelló",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22442985"
+    },
+    {
+      "id": "CIDO5-22442967",
+      "title": "2 places de Tècnic mitjà de suport. Pla local d'ocupació 2025",
+      "entity": "Ajuntament de Torelló",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22442967"
+    },
+    {
+      "id": "CIDO5-22442911",
+      "title": "1 plaça d'Enginyer",
+      "entity": "Ajuntament de Torelló",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22442911"
+    },
+    {
+      "id": "CIDO5-22442842",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Seva",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22442842"
+    },
+    {
+      "id": "CIDO5-22442834",
+      "title": "Borsa de treball de places de Tècnic Superior de l'àmbit econòmic",
+      "entity": "Ajuntament de Sant Boi de Llobregat",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22442834"
+    },
+    {
+      "id": "CIDO5-22442616",
+      "title": "Borsa de treball de places d'Administratiu",
+      "entity": "Ajuntament d'Esparreguera",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22442616"
+    },
+    {
+      "id": "CIDO5-22367455",
+      "title": "1 plaça de Tècnic superior economista",
+      "entity": "Ajuntament de Sant Antoni de Vilamajor",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22367455"
+    },
     {
       "id": "CIDO5-22438265",
       "title": "Borsa de treball de places d'Encarregat de vigilància i manteniment de zones esportives",
@@ -1675,16 +1745,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22367671"
-    },
-    {
-      "id": "CIDO5-22367455",
-      "title": "1 plaça de Tècnic superior economista",
-      "entity": "Ajuntament de Sant Antoni de Vilamajor",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22367455"
     },
     {
       "id": "CIDO5-22367414",
