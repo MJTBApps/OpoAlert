@@ -1,0 +1,103 @@
+name: OpoAlert - Capturas iOS para el App Store
+
+# Saca las capturas de la ficha en el simulador de iPhone de 6,9" con datos
+# reales de los feeds y, si se pide, las sube a la versión en preparación de
+# App Store Connect (scripts/subir_capturas_ios.py, con los secretos ASC_*).
+# El modo de capturas (CaptureMode.swift) solo existe en el simulador.
+on:
+  workflow_dispatch:
+    inputs:
+      subir:
+        description: 'Subir las capturas a App Store Connect'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: opoalert-capturas-ios
+  cancel-in-progress: true
+
+jobs:
+  capturas:
+    runs-on: macos-15-intel
+    timeout-minutes: 60
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Elegir el Xcode mas reciente
+        run: |
+          XCODE="$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Generar el proyecto de Xcode
+        working-directory: ios
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Compilar para el simulador
+        working-directory: ios
+        run: |
+          set -o pipefail
+          xcodebuild -project OpoAlert.xcodeproj -scheme OpoAlert -configuration Debug \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -n 40
+
+      - name: Hacer las capturas
+        working-directory: ios
+        run: |
+          set -eu
+          # El iPhone «Pro Max» más reciente: pantalla de 6,9" (1320×2868).
+          DEVICE="$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          devices = json.load(sys.stdin)["devices"]
+          runtimes = sorted((r for r in devices if "iOS" in r), key=lambda r: [int(x) for x in r.split("iOS-")[-1].split("-")])
+          phones = [d for d in devices[runtimes[-1]] if "Pro Max" in d["name"]]
+          print(phones[-1]["udid"])')"
+          xcrun simctl boot "$DEVICE"
+          xcrun simctl bootstatus "$DEVICE" -b
+          xcrun simctl status_bar "$DEVICE" override --time 9:41 --dataNetwork wifi --wifiBars 3 \
+            --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+          xcrun simctl install "$DEVICE" build/Build/Products/Debug-iphonesimulator/OpoAlert.app
+          xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app selected_provinces_v1 -string "VA,AL,CS,ES"
+          xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app province_picker_seen_v1 -bool YES
+          mkdir -p capturas
+          shot() {
+            xcrun simctl terminate "$DEVICE" es.opoalert.app 2>/dev/null || true
+            xcrun simctl launch "$DEVICE" es.opoalert.app -opoCapture "$2"
+            sleep "$3"
+            xcrun simctl io "$DEVICE" screenshot "capturas/$1.png"
+            # Sin canal alfa: App Store Connect rechaza las capturas con transparencia.
+            sips -s format jpeg -s formatOptions 92 "capturas/$1.png" --out "capturas/$1.jpg" >/dev/null
+            rm "capturas/$1.png"
+            sips -g pixelWidth -g pixelHeight "capturas/$1.jpg" | tail -2
+          }
+          # La primera vez descarga los feeds; las demás ya los tienen guardados.
+          shot 1-explorar explorar 45
+          shot 2-ficha ficha 15
+          shot 3-filtro-alertas filtro 15
+          shot 4-mis-alertas alertas 12
+          shot 5-elegir-boletines boletines 12
+          ls -la capturas
+
+      - name: Guardar capturas
+        uses: actions/upload-artifact@v4
+        with:
+          name: capturas-app-store
+          path: ios/capturas/
+          retention-days: 30
+
+      - name: Subir a App Store Connect
+        if: ${{ inputs.subir }}
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+        run: |
+          python3 -m pip install --quiet --break-system-packages pyjwt cryptography 2>/dev/null \
+            || python3 -m pip install --quiet pyjwt cryptography
+          python3 scripts/subir_capturas_ios.py ios/capturas --app 6831053083 --locale es-ES

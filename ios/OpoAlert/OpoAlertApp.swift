@@ -16,8 +16,9 @@ struct OpoAlertApp: App {
                 .onAppear { delegate.attach(model) }
                 .task {
                     PremiumStore.shared.start()
-                    Ads.shared.start(premium: PremiumStore.isActiveStored)
+                    if !CaptureMode.isOn { Ads.shared.start(premium: PremiumStore.isActiveStored) }
                     await model.refresh()
+                    CaptureMode.apply(model)
                 }
         }
         .onChange(of: scenePhase) { phase in

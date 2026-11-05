@@ -164,7 +164,7 @@ final class AppModel: ObservableObject {
         try store.upsertRule(id: id, input: phrase, sources: sources)
         rules = store.rules
         updateAlertHits()
-        Task { await AlertNotifications.requestPermission() }
+        if !CaptureMode.isOn { Task { await AlertNotifications.requestPermission() } }
     }
 
     func enableRule(_ rule: AlertRule, _ enabled: Bool) {

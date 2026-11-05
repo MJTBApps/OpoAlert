@@ -32,6 +32,11 @@ final class PremiumStore: ObservableObject {
     }
 
     func refresh() async {
+        // Capturas del App Store en el simulador: como Premium, sin anuncios.
+        if CaptureMode.isOn {
+            isActive = true
+            return
+        }
         var active = false
         for await result in Transaction.currentEntitlements {
             if case .verified(let transaction) = result, transaction.productID == Self.productID,
