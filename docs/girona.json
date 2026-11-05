@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-04T16:34:47.839347+00:00",
+  "lastCheckedUTC": "2026-11-05T06:42:41.554565+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 70,
-    "opportunities": 70,
+    "announcementsRead": 67,
+    "opportunities": 67,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "publicationDates": [
-      "2026-10-06",
       "2026-10-08",
       "2026-10-09",
       "2026-10-13",
@@ -48,12 +47,13 @@
       "2026-10-19",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-05"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 70,
-    "opportunities": 70
+    "announcementsRead": 67,
+    "opportunities": 67
   },
   "notices": [
     {
@@ -725,36 +725,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20824107"
-    },
-    {
-      "id": "CIDO6-22264276",
-      "title": "1 plaça de Responsable neteja d'edificis i comandes",
-      "entity": "Ajuntament de Celrà",
-      "date": "06/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22264276"
-    },
-    {
-      "id": "CIDO6-21183385",
-      "title": "1 plaça de Tècnic mitjà d'informàtica",
-      "entity": "Ajuntament d'Olot",
-      "date": "06/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21183385"
-    },
-    {
-      "id": "CIDO6-15199229",
-      "title": "1 plaça de Tècnic mitjà de l'Àrea d'Esports",
-      "entity": "Ajuntament d'Olot",
-      "date": "06/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/15199229"
     }
   ]
 }

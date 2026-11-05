@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-04T16:34:47.839347+00:00",
+  "lastCheckedUTC": "2026-11-05T06:42:41.554565+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 61,
-    "opportunities": 61,
+    "announcementsRead": 60,
+    "opportunities": 60,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -48,12 +47,13 @@
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-05"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 61,
-    "opportunities": 61
+    "announcementsRead": 60,
+    "opportunities": 60
   },
   "notices": [
     {
@@ -655,16 +655,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22267222"
-    },
-    {
-      "id": "CIDO7-22228195",
-      "title": "1 plaça de Professor de música (especialitat violí)",
-      "entity": "Ajuntament d'Ivars d'Urgell",
-      "date": "06/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22228195"
     }
   ]
 }

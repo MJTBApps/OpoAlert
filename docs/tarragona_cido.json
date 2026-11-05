@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-04T16:34:47.839347+00:00",
+  "lastCheckedUTC": "2026-11-05T06:42:41.554565+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 96,
-    "opportunities": 96,
+    "announcementsRead": 88,
+    "opportunities": 88,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -26,7 +25,6 @@
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -45,15 +43,17 @@
       "2026-10-13",
       "2026-10-17",
       "2026-10-18",
+      "2026-10-21",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-05"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 96,
-    "opportunities": 96
+    "announcementsRead": 88,
+    "opportunities": 88
   },
   "notices": [
     {
@@ -757,36 +757,6 @@
       "url": "https://cido.diba.cat/oposicions/22353627"
     },
     {
-      "id": "CIDO8-22360043",
-      "title": "Borsa de treball de places de personal tècnic especialista en disseny gràfic",
-      "entity": "Ajuntament de Tarragona",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22360043"
-    },
-    {
-      "id": "CIDO8-22358167",
-      "title": "Borsa de treball de places de Vigilant (ampliació)",
-      "entity": "Ajuntament de Reus - Reus Mobilitat i Serveis, SA (AMERSAM)",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22358167"
-    },
-    {
-      "id": "CIDO8-22358164",
-      "title": "Borsa de treball de places de Personal de neteja (ampliació)",
-      "entity": "Ajuntament de Reus - Reus Mobilitat i Serveis, SA (AMERSAM)",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22358164"
-    },
-    {
       "id": "CIDO8-19868609",
       "title": "7 places d'Agent de la Policia local",
       "entity": "Ajuntament del Vendrell",
@@ -867,16 +837,6 @@
       "url": "https://cido.diba.cat/oposicions/20888930"
     },
     {
-      "id": "CIDO8-20691097",
-      "title": "1 plaça de Tècnic superior d'administració general (TAG)",
-      "entity": "Ajuntament de Castellvell del Camp",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20691097"
-    },
-    {
       "id": "CIDO8-19272377",
       "title": "1 plaça de Tècnic mitjà d'administració general",
       "entity": "Ajuntament de Salou",
@@ -895,26 +855,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22335041"
-    },
-    {
-      "id": "CIDO8-22320387",
-      "title": "Borsa de treball de places de Peó d'obra",
-      "entity": "Ajuntament de Roquetes",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22320387"
-    },
-    {
-      "id": "CIDO8-22320354",
-      "title": "Borsa de treball de places de Peó d'instal·lacions esportives",
-      "entity": "Ajuntament de Roquetes",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22320354"
     },
     {
       "id": "CIDO8-21523806",
@@ -995,26 +935,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/18462731"
-    },
-    {
-      "id": "CIDO8-21589884",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament de Vimbodí i Poblet",
-      "date": "06/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21589884"
-    },
-    {
-      "id": "CIDO8-20794234",
-      "title": "Borsa de treball de places d'Operari de manteniment i explotació de l'Àrea d'infraestructures de la divisió Aigües",
-      "entity": "Ajuntament de Reus - Reus Serveis Municipals, SA",
-      "date": "06/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20794234"
     }
   ]
 }
