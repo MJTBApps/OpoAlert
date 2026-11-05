@@ -1,11 +1,11 @@
 """Sube las capturas del iPhone a la ficha del App Store (versión en preparación).
 
 Lo usa `.github/workflows/ios-capturas.yml`. Sustituye las capturas de iPhone
-de 6,7"/6,9" del idioma indicado por las de la carpeta, en orden alfabético.
+del tamaño y el idioma indicados por las de la carpeta, en orden alfabético.
 La clave de la API llega por variables de entorno (secretos de GitHub):
 ASC_KEY_ID, ASC_ISSUER_ID y ASC_KEY_P8. Nunca se escribe en el repositorio.
 
-    python scripts/subir_capturas_ios.py capturas/ --app 6831053083 --locale es-ES
+    python scripts/subir_capturas_ios.py capturas/6.9 --size 6.9 --app 6831053083 --locale es-ES
 """
 
 from __future__ import annotations
@@ -23,7 +23,9 @@ from pathlib import Path
 import jwt  # PyJWT, con «cryptography» para ES256
 
 API = "https://api.appstoreconnect.apple.com/v1"
-DISPLAY_TYPE = "APP_IPHONE_67"  # 6,7" y 6,9" (1290×2796, 1320×2868)
+# Tamaños de iPhone de App Store Connect: 6,1"/6,3" (obligatorio desde 2026;
+# 1179×2556, 1206×2622) y 6,7"/6,9" (1290×2796, 1320×2868).
+DISPLAY_TYPES = {"6.3": "APP_IPHONE_61", "6.9": "APP_IPHONE_67"}
 
 
 def token() -> str:
@@ -65,13 +67,13 @@ def localization(version: str, locale: str) -> str:
     sys.exit(f"La versión no tiene el idioma {locale}")
 
 
-def screenshot_set(loc: str) -> str:
+def screenshot_set(loc: str, display_type: str) -> str:
     for item in call("GET", f"/appStoreVersionLocalizations/{loc}/appScreenshotSets")["data"]:
-        if item["attributes"]["screenshotDisplayType"] == DISPLAY_TYPE:
+        if item["attributes"]["screenshotDisplayType"] == display_type:
             return item["id"]
     created = call("POST", "/appScreenshotSets", {"data": {
         "type": "appScreenshotSets",
-        "attributes": {"screenshotDisplayType": DISPLAY_TYPE},
+        "attributes": {"screenshotDisplayType": display_type},
         "relationships": {"appStoreVersionLocalization": {"data": {"type": "appStoreVersionLocalizations", "id": loc}}},
     }})
     return created["data"]["id"]
@@ -103,19 +105,21 @@ def main() -> None:
     parser.add_argument("folder", type=Path)
     parser.add_argument("--app", required=True)
     parser.add_argument("--locale", default="es-ES")
+    parser.add_argument("--size", choices=sorted(DISPLAY_TYPES), required=True)
     args = parser.parse_args()
     files = sorted(p for p in args.folder.iterdir() if p.suffix.lower() in {".png", ".jpg", ".jpeg"})
     if not files:
         sys.exit("No hay capturas que subir")
     if len(files) > 10:
         sys.exit("App Store Connect admite como mucho 10 capturas por tamaño")
-    set_id = screenshot_set(localization(editable_version(args.app), args.locale))
+    display_type = DISPLAY_TYPES[args.size]
+    set_id = screenshot_set(localization(editable_version(args.app), args.locale), display_type)
     # Se sustituyen las anteriores para que la ficha quede igual que la carpeta.
     for old in call("GET", f"/appScreenshotSets/{set_id}/appScreenshots")["data"]:
         call("DELETE", f"/appScreenshots/{old['id']}")
     for path in files:
         upload(set_id, path)
-    print(f"{len(files)} capturas en la ficha ({DISPLAY_TYPE}, {args.locale})")
+    print(f"{len(files)} capturas en la ficha ({display_type}, {args.locale})")
 
 
 if __name__ == "__main__":

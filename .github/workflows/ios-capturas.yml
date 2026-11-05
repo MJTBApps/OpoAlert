@@ -1,6 +1,6 @@
 name: OpoAlert - Capturas iOS para el App Store
 
-# Saca las capturas de la ficha en el simulador de iPhone de 6,9" con datos
+# Saca las capturas de la ficha en los simuladores de iPhone de 6,3" y 6,9" con datos
 # reales de los feeds y, si se pide, las sube a la versión en preparación de
 # App Store Connect (scripts/subir_capturas_ios.py, con los secretos ASC_*).
 # El modo de capturas (CaptureMode.swift) solo existe en el simulador.
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   capturas:
     runs-on: macos-15-intel
-    timeout-minutes: 60
+    timeout-minutes: 75
     steps:
       - name: Descargar codigo
         uses: actions/checkout@v4
@@ -51,38 +51,54 @@ jobs:
         working-directory: ios
         run: |
           set -eu
-          # El iPhone «Pro Max» más reciente: pantalla de 6,9" (1320×2868).
-          DEVICE="$(xcrun simctl list devices available -j | python3 -c '
+          # Dos tamaños: 6,3" (obligatorio, «iPhone 17 Pro» o similar) y 6,9" («Pro Max»).
+          pick() {
+            xcrun simctl list devices available -j | python3 -c '
           import json, sys
+          want = sys.argv[1]
           devices = json.load(sys.stdin)["devices"]
           runtimes = sorted((r for r in devices if "iOS" in r), key=lambda r: [int(x) for x in r.split("iOS-")[-1].split("-")])
-          phones = [d for d in devices[runtimes[-1]] if "Pro Max" in d["name"]]
-          print(phones[-1]["udid"])')"
-          xcrun simctl boot "$DEVICE"
-          xcrun simctl bootstatus "$DEVICE" -b
-          xcrun simctl status_bar "$DEVICE" override --time 9:41 --dataNetwork wifi --wifiBars 3 \
-            --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
-          xcrun simctl install "$DEVICE" build/Build/Products/Debug-iphonesimulator/OpoAlert.app
-          xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app selected_provinces_v1 -string "VA,AL,CS,ES"
-          xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app province_picker_seen_v1 -bool YES
-          mkdir -p capturas
-          shot() {
-            xcrun simctl terminate "$DEVICE" es.opoalert.app 2>/dev/null || true
-            xcrun simctl launch "$DEVICE" es.opoalert.app -opoCapture "$2"
-            sleep "$3"
-            xcrun simctl io "$DEVICE" screenshot "capturas/$1.png"
-            # Sin canal alfa: App Store Connect rechaza las capturas con transparencia.
-            sips -s format jpeg -s formatOptions 92 "capturas/$1.png" --out "capturas/$1.jpg" >/dev/null
-            rm "capturas/$1.png"
-            sips -g pixelWidth -g pixelHeight "capturas/$1.jpg" | tail -2
+          phones = [d for d in devices[runtimes[-1]] if d["name"].startswith("iPhone")]
+          if want == "max":
+              phones = [d for d in phones if d["name"].endswith("Pro Max")]
+          else:
+              phones = [d for d in phones if d["name"].endswith(" Pro")]
+          print(phones[-1]["udid"])' "$1"
           }
-          # La primera vez descarga los feeds; las demás ya los tienen guardados.
-          shot 1-explorar explorar 45
-          shot 2-ficha ficha 15
-          shot 3-filtro-alertas filtro 15
-          shot 4-mis-alertas alertas 12
-          shot 5-elegir-boletines boletines 12
-          ls -la capturas
+          shoot_device() {
+            local DEVICE="$1" OUT="capturas/$2"
+            mkdir -p "$OUT"
+            xcrun simctl boot "$DEVICE"
+            xcrun simctl bootstatus "$DEVICE" -b
+            xcrun simctl status_bar "$DEVICE" override --time 9:41 --dataNetwork wifi --wifiBars 3 \
+              --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+            xcrun simctl install "$DEVICE" build/Build/Products/Debug-iphonesimulator/OpoAlert.app
+            xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app selected_provinces_v1 -string "VA,AL,CS,ES"
+            xcrun simctl spawn "$DEVICE" defaults write es.opoalert.app province_picker_seen_v1 -bool YES
+            # Primer arranque de calentamiento: descarga los feeds y crea las alertas de ejemplo.
+            xcrun simctl launch "$DEVICE" es.opoalert.app -opoCapture explorar
+            sleep 90
+            shot() {
+              xcrun simctl terminate "$DEVICE" es.opoalert.app 2>/dev/null || true
+              sleep 2
+              xcrun simctl launch "$DEVICE" es.opoalert.app -opoCapture "$2"
+              sleep 30
+              xcrun simctl io "$DEVICE" screenshot "$OUT/$1.png"
+              # Sin canal alfa: App Store Connect rechaza las capturas con transparencia.
+              sips -s format jpeg -s formatOptions 92 "$OUT/$1.png" --out "$OUT/$1.jpg" >/dev/null
+              rm "$OUT/$1.png"
+            }
+            shot 1-explorar explorar
+            shot 2-ficha ficha
+            shot 3-filtro-alertas filtro
+            shot 4-mis-alertas alertas
+            shot 5-elegir-boletines boletines
+            sips -g pixelWidth -g pixelHeight "$OUT/1-explorar.jpg" | tail -2
+            xcrun simctl shutdown "$DEVICE"
+          }
+          shoot_device "$(pick pro)" 6.3
+          shoot_device "$(pick max)" 6.9
+          ls -laR capturas
 
       - name: Guardar capturas
         uses: actions/upload-artifact@v4
@@ -100,4 +116,5 @@ jobs:
         run: |
           python3 -m pip install --quiet --break-system-packages pyjwt cryptography 2>/dev/null \
             || python3 -m pip install --quiet pyjwt cryptography
-          python3 scripts/subir_capturas_ios.py ios/capturas --app 6831053083 --locale es-ES
+          python3 scripts/subir_capturas_ios.py ios/capturas/6.3 --size 6.3 --app 6831053083 --locale es-ES
+          python3 scripts/subir_capturas_ios.py ios/capturas/6.9 --size 6.9 --app 6831053083 --locale es-ES

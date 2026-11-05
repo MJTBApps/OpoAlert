@@ -21,8 +21,11 @@ enum CaptureMode {
     ]
 
     /// Coloca la pantalla pedida cuando ya hay convocatorias cargadas.
-    @MainActor static func apply(_ model: AppModel) {
+    @MainActor static func apply(_ model: AppModel) async {
         guard let screen else { return }
+        // Las hojas (ficha, boletines) no se abren si se piden antes de que la
+        // lista termine de dibujarse.
+        try? await Task.sleep(nanoseconds: 1_500_000_000)
         if model.rules.isEmpty {
             for (phrase, sources) in demoRules {
                 try? model.saveRule(id: nil, phrase: phrase, sources: sources)
