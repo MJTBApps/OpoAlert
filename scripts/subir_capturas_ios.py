@@ -128,7 +128,7 @@ def upload_review_screenshot(subscription: str, path: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("folder", type=Path)
-    parser.add_argument("--app", required=True)
+    parser.add_argument("--app", help="ID de Apple de la app (para las capturas de la ficha)")
     parser.add_argument("--locale", default="es-ES")
     parser.add_argument("--size", choices=sorted(DISPLAY_TYPES))
     parser.add_argument("--review-subscription", help="ID de Apple de la suscripción: sube la carpeta como su captura de revisión")
@@ -139,8 +139,8 @@ def main() -> None:
             sys.exit("Para la revisión de la suscripción hace falta exactamente una captura")
         upload_review_screenshot(args.review_subscription, files[0])
         return
-    if not args.size:
-        sys.exit("Falta --size")
+    if not args.size or not args.app:
+        sys.exit("Faltan --size y --app")
     files = sorted(p for p in args.folder.iterdir() if p.suffix.lower() in {".png", ".jpg", ".jpeg"})
     if not files:
         sys.exit("No hay capturas que subir")
