@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-04T12:14:02.334813+00:00",
+  "lastCheckedUTC": "2026-11-05T16:35:40.633432+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "265",
+    "bulletin": "266",
     "pagesVisited": 28,
-    "announcementsRead": 1852,
-    "opportunities": 290
+    "announcementsRead": 1879,
+    "opportunities": 295
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "issuesRead": 28,
     "pagesVisited": 28,
-    "announcementsRead": 1852,
-    "opportunities": 290,
+    "announcementsRead": 1879,
+    "opportunities": 295,
     "bulletins": [
-      "238",
       "239",
       "240",
       "241",
@@ -47,10 +46,10 @@
       "262",
       "263",
       "264",
-      "265"
+      "265",
+      "266"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -77,7 +76,8 @@
       "2026-10-31",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -86,7 +86,6 @@
       "2026-11-01"
     ],
     "editionPDFs": [
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/06/23800.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/07/23900.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/08/24000.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/09/24100.PDF",
@@ -113,7 +112,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/31/26200.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/02/26300.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/03/26400.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/04/26500.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/04/26500.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/05/26600.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -133,11 +133,11 @@
       "xml",
       "xml",
       "xml",
-      "xml",
       "html",
       "xml",
       "xml",
       "html",
+      "xml",
       "xml",
       "xml",
       "xml",
@@ -148,10 +148,210 @@
   },
   "notices": [
     {
+      "id": "MD-20261105-88",
+      "province": "Madrid",
+      "title": "– Valdemoro. Ofertas de empleo. Proceso selectivo",
+      "entity": "VALDEMORO",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-88.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-86",
+      "province": "Madrid",
+      "title": "– Torrejón de Ardoz. Ofertas de empleo. Proceso selectivo",
+      "entity": "TORREJÓN DE ARDOZ",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-86.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-83",
+      "province": "Madrid",
+      "title": "– San Sebastián de los Reyes. Ofertas de empleo. Proceso selectivo",
+      "entity": "SAN SEBASTIÁN DE LOS REYES",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-83.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-78",
+      "province": "Madrid",
+      "title": "– Navalcarnero. Ofertas de empleo. Proceso selectivo",
+      "entity": "NAVALCARNERO",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-78.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-77",
+      "province": "Madrid",
+      "title": "– Navacerrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "NAVACERRADA",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-77.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-76",
+      "province": "Madrid",
+      "title": "– Navacerrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "NAVACERRADA",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-76.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-75",
+      "province": "Madrid",
+      "title": "– Navacerrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "NAVACERRADA",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-75.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-74",
+      "province": "Madrid",
+      "title": "– Navacerrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "NAVACERRADA",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-74.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-72",
+      "province": "Madrid",
+      "title": "– Moralzarzal. Ofertas de empleo. Proceso selectivo",
+      "entity": "MORALZARZAL",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-72.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-68",
+      "province": "Madrid",
+      "title": "– Getafe. Ofertas de empleo. Proceso selectivo",
+      "entity": "GETAFE",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-68.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-49",
+      "province": "Madrid",
+      "title": "– Alcobendas. Ofertas de empleo. Proceso selectivo",
+      "entity": "ALCOBENDAS",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-49.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-18",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 23 de octubre de 2026, de la Universidad Autónoma de Madrid, por la que se convoca proceso selectivo para elaborar una lista de espera de funcionarios/as interinos/as de la Escala Especial Técnica de Servicios de la Universidad Autónoma de Madrid",
+      "entity": "UNIVERSIDAD AUTÓNOMA DE MADRID",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-18.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-17",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 2011/2026, de 26 de octubre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-17.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-12",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 4127/2026, de 27 de octubre, por la que se aprueba convocatoria pública para la provisión de dos puestos de trabajo vacantes en la Consejería de Medio Ambiente, Agricultura e Interior (Agencia de Seguridad y Emergencias Madrid 112), por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-12.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-11",
+      "province": "Madrid",
+      "title": "Concurso de traslados – Resolución de 28 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se acuerda la publicación en el BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de la Resolución de 3 de julio de 2026, por la que se declara desierto y finalizado el proceso de concurso de traslados voluntario a plazas de personal estatutario de la categoría de Fontanero del Servicio de Salud de la Comunidad de Madrid",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-11.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-10",
+      "province": "Madrid",
+      "title": "Concurso de traslados – Resolución de 28 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se acuerda la publicación en el BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de la Resolución de 9 de marzo de 2026, por la que se declara finalizado el proceso de concurso de traslados voluntario a plazas de personal estatutario de la categoría de Peluquero/a del Servicio de Salud de la Comunidad de Madrid",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-10.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-8",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 27 de octubre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-8.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-6",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 26 de octubre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-6.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-5",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 26 de octubre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de puestos de trabajo vacantes en la Consejería Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-5.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261105-3",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 26 de octubre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "05/11/2026",
+      "bulletin": "266",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-3.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
       "id": "MD-20261104-89",
       "province": "Madrid",
       "title": "– Rivas-Vaciamadrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "Rivas-Vaciamadrid",
+      "entity": "RIVAS-VACIAMADRID",
       "date": "04/11/2026",
       "bulletin": "265",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-89.PDF",
@@ -161,7 +361,7 @@
       "id": "MD-20261104-88",
       "province": "Madrid",
       "title": "– Rivas-Vaciamadrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "Rivas-Vaciamadrid",
+      "entity": "RIVAS-VACIAMADRID",
       "date": "04/11/2026",
       "bulletin": "265",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-88.PDF",
@@ -171,7 +371,7 @@
       "id": "MD-20261104-74",
       "province": "Madrid",
       "title": "– Fuenlabrada. Ofertas de empleo. Proceso selectivo",
-      "entity": "Fuenlabrada",
+      "entity": "FUENLABRADA",
       "date": "04/11/2026",
       "bulletin": "265",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-74.PDF",
@@ -181,7 +381,7 @@
       "id": "MD-20261104-72",
       "province": "Madrid",
       "title": "– El Molar. Ofertas de empleo. Proceso selectivo",
-      "entity": "El Molar",
+      "entity": "EL MOLAR",
       "date": "04/11/2026",
       "bulletin": "265",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/04/BOCM-20261104-72.PDF",
@@ -221,7 +421,7 @@
       "id": "MD-20261103-79",
       "province": "Madrid",
       "title": "– Meco. Ofertas de empleo. Proceso selectivo",
-      "entity": "Meco",
+      "entity": "MECO",
       "date": "03/11/2026",
       "bulletin": "264",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-79.PDF",
@@ -231,7 +431,7 @@
       "id": "MD-20261103-78",
       "province": "Madrid",
       "title": "– Meco. Ofertas de empleo. Proceso selectivo",
-      "entity": "Meco",
+      "entity": "MECO",
       "date": "03/11/2026",
       "bulletin": "264",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-78.PDF",
@@ -241,7 +441,7 @@
       "id": "MD-20261103-76",
       "province": "Madrid",
       "title": "– Leganés. Ofertas de empleo. Proceso selectivo",
-      "entity": "Leganés",
+      "entity": "LEGANÉS",
       "date": "03/11/2026",
       "bulletin": "264",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-76.PDF",
@@ -251,7 +451,7 @@
       "id": "MD-20261103-73",
       "province": "Madrid",
       "title": "– Guadarrama. Ofertas de empleo. Proceso selectivo",
-      "entity": "Guadarrama",
+      "entity": "GUADARRAMA",
       "date": "03/11/2026",
       "bulletin": "264",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-73.PDF",
@@ -261,7 +461,7 @@
       "id": "MD-20261103-63",
       "province": "Madrid",
       "title": "– Alcorcón. Ofertas de empleo. Proceso selectivo",
-      "entity": "Alcorcón",
+      "entity": "ALCORCÓN",
       "date": "03/11/2026",
       "bulletin": "264",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/03/BOCM-20261103-63.PDF",
@@ -2895,156 +3095,6 @@
       "date": "07/10/2026",
       "bulletin": "239",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-3.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-61",
-      "province": "Madrid",
-      "title": "– Mancomunidad de Servicios Sociales de la Sierra Norte. Ofertas de empleo. Proceso selectivo",
-      "entity": "MANCOMUNIDAD DE SERVICIOS SOCIALES DE LA SIERRA NORTE",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-61.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-53",
-      "province": "Madrid",
-      "title": "– Pinto. Ofertas de empleo. Proceso selectivo",
-      "entity": "PINTO",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-53.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-52",
-      "province": "Madrid",
-      "title": "– Paracuellos de Jarama. Ofertas de empleo. Proceso selectivo",
-      "entity": "PARACUELLOS DE JARAMA",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-52.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-51",
-      "province": "Madrid",
-      "title": "– Navalcarnero. Ofertas de empleo. Proceso selectivo",
-      "entity": "NAVALCARNERO",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-51.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-42",
-      "province": "Madrid",
-      "title": "– Collado Villalba. Ofertas de empleo. Proceso selectivo",
-      "entity": "COLLADO VILLALBA",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-42.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-41",
-      "province": "Madrid",
-      "title": "– Collado Villalba. Ofertas de empleo. Proceso selectivo",
-      "entity": "COLLADO VILLALBA",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-41.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-38",
-      "province": "Madrid",
-      "title": "– Collado Mediano. Ofertas de empleo. Proceso selectivo",
-      "entity": "COLLADO MEDIANO",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-38.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-12",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 1836/2026, de 25 de septiembre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-12.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-9",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 2945/2026, de 21 de septiembre, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes, por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-9.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-8",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 2700/2026, de 16 de septiembre, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes, por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-8.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-7",
-      "province": "Madrid",
-      "title": "Convocatoria proceso selectivo – Anuncio de 28 de septiembre del 2026, de Canal de Isabel II, S. A., M. P., por el que hace pública la convocatoria de proceso selectivo para la cobertura de puestos indefinidos por turno libre de 4 plazas",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-7.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-6",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 3709/2026, de 29 de septiembre, de la Consejería de Medio Ambiente, Agricultura e Interior, por la que se dispone dejar sin efecto la convocatoria del puesto de trabajo n.o 58972, efectuada por Orden 3501/2026, de 17 de septiembre (BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de 28 de septiembre del 2026), para su provisión por el procedimiento de Concurso de Méritos en la referida Consejería",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-6.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-5",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 3682/2026, de 28 de septiembre, del Consejero de Medio Ambiente, Agricultura e Interior, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Medio Ambiente, Agricultura e Interior, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-5.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-4",
-      "province": "Madrid",
-      "title": "Convocatoria proceso selectivo – Anuncio de 1 de octubre de 2026, por el que se hace pública la convocatoria de un proceso selectivo para cubrir dos puestos de trabajo de Técnico/a en la División de Material Móvil de la Dirección de Explotación Ferroviaria de Metro de Madrid, S. A., mediante un contrato laboral indefinido y a jornada completa",
-      "entity": "CONSEJERÍA DE VIVIENDA, TRANSPORTES  E INFRAESTRUCTURAS",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-4.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261006-1",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 28 de septiembre de 2026, de la Consejería de Presidencia, Justicia y Administración Local, por la que se resuelve la Orden de 28 de julio de 2026, del Consejero de Presidencia, Justicia y Administración Local (BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de 6 de agosto), por la que se aprobó convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Presidencia, Justicia y Administración Local por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
-      "date": "06/10/2026",
-      "bulletin": "238",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/06/BOCM-20261006-1.PDF",
       "type": "Plaza / oposición"
     }
   ]

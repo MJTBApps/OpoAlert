@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-05T09:38:41.851872+00:00",
+  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 60,
-    "opportunities": 60,
+    "announcementsRead": 66,
+    "opportunities": 66,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -31,7 +31,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -47,15 +48,74 @@
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-05"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 60,
-    "opportunities": 60
+    "announcementsRead": 66,
+    "opportunities": 66
   },
   "notices": [
+    {
+      "id": "CIDO7-22447035",
+      "title": "1 plaça de Peó de brigada",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22447035"
+    },
+    {
+      "id": "CIDO7-22447029",
+      "title": "1 plaça d'Educador de l'escola bressol",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22447029"
+    },
+    {
+      "id": "CIDO7-22447020",
+      "title": "1 plaça de Netejador",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22447020"
+    },
+    {
+      "id": "CIDO7-22447017",
+      "title": "1 plaça d'Encarregat del servei de neteja",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22447017"
+    },
+    {
+      "id": "CIDO7-22445594",
+      "title": "1 plaça d'Agutzil",
+      "entity": "Ajuntament de la Granja d'Escarp",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22445594"
+    },
+    {
+      "id": "CIDO7-21397114",
+      "title": "1 plaça d'Agutzil",
+      "entity": "Ajuntament d'Alfarràs",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21397114"
+    },
     {
       "id": "CIDO7-22437600",
       "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
