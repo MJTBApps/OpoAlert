@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-04T16:50:55.157197+00:00",
+  "lastCheckedUTC": "2026-11-05T07:04:09.530749+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
+    "bulletin": "214",
     "pagesVisited": 22,
-    "announcementsRead": 561,
-    "opportunities": 38
+    "announcementsRead": 559,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -37,10 +36,10 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,22 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 561,
-    "opportunities": 38
+    "announcementsRead": 559,
+    "opportunities": 35
   },
   "notices": [
+    {
+      "id": "RI-2026-09e4b35eb3db7b590f",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO MEDIO SANITARIO (Cuidados Auxiliares de Enfermería): se aprueba la convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo OEP 2025 y 2026",
+      "entity": "SERVICIO RIOJANO DE SALUD",
+      "date": "05/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43121299-1-PDF-580648",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F05&referencia=43111839-2-HTML-580648-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-eefedcafa3e2f773cf",
       "province": "La Rioja (BOR)",
@@ -484,54 +496,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42533222-1-PDF-580079",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F07&referencia=42500665-3-HTML-580079-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-d1aea678f509599f08",
-      "province": "La Rioja (BOR)",
-      "title": "TÉCNICO PROTECCIÓN CIVIL: modificación de la convocatoria de pruebas selectivas (F.08/25)",
-      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42500039-1-PDF-579890",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F06&referencia=42319642-3-HTML-579890-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-a5b92e952b327ec6d5",
-      "province": "La Rioja (BOR)",
-      "title": "PEDIATRA DE ÁREA: se aprueba la convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo, OEP 2026",
-      "entity": "SERVICIO RIOJANO DE SALUD",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42499976-1-PDF-580066",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F06&referencia=42485284-4-HTML-580066-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-827d9a89670bd96681",
-      "province": "La Rioja (BOR)",
-      "title": "ÁREA DE NEUROCIRUGÍA: se aprueba la convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo, OEP 2026",
-      "entity": "SERVICIO RIOJANO DE SALUD",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42500005-1-PDF-580065",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F06&referencia=42485186-5-HTML-580065-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-65c9cbd280893da7a9",
-      "province": "La Rioja (BOR)",
-      "title": "GESTIÓN AG: modificación de la convocatoria de pruebas selectivas (FA.09/23-26)",
-      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
-      "date": "06/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42500017-1-PDF-579905",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F06&referencia=42313382-7-HTML-579905-X",
       "originalFormat": "pdf"
     }
   ]

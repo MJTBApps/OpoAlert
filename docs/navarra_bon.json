@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-04T16:50:08.048365+00:00",
+  "lastCheckedUTC": "2026-11-05T07:02:23.871658+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 23,
-    "announcementsRead": 1219,
-    "opportunities": 39
+    "announcementsRead": 1278,
+    "opportunities": 41
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -38,10 +37,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -63,7 +62,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -76,10 +76,30 @@
       "2026-11-02"
     ],
     "issuesRead": 23,
-    "announcementsRead": 1219,
-    "opportunities": 39
+    "announcementsRead": 1278,
+    "opportunities": 41
   },
   "notices": [
+    {
+      "id": "NA-2026-221-33",
+      "province": "Navarra",
+      "title": "Concurso-oposición de dos plazas de conserje",
+      "entity": "HUARTE",
+      "date": "05/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/221/33"
+    },
+    {
+      "id": "NA-2026-221-30",
+      "province": "Navarra",
+      "title": "Concurso-oposición de una plaza de educador/a infantil y constitución de una relación de aspirantes para posibles sustituciones",
+      "entity": "ALTSASU / ALSASUA",
+      "date": "05/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/221/30"
+    },
     {
       "id": "NA-2026-218-36",
       "province": "Navarra",

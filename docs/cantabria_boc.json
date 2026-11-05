@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-04T16:42:22.040504+00:00",
+  "lastCheckedUTC": "2026-11-05T06:55:23.702480+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 26,
-    "announcementsRead": 860,
-    "opportunities": 19,
+    "announcementsRead": 842,
+    "opportunities": 20,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -42,10 +41,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -70,7 +69,8 @@
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -82,10 +82,9 @@
       "2026-11-01"
     ],
     "issuesRead": 26,
-    "announcementsRead": 860,
-    "opportunities": 19,
+    "announcementsRead": 842,
+    "opportunities": 20,
     "regularBulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -105,7 +104,8 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "extraordinaryBulletins": [
       "Ext. 25",
@@ -115,7 +115,6 @@
       "Ext. 29"
     ],
     "officialIssueIds": [
-      46945,
       46966,
       47005,
       47025,
@@ -140,10 +139,21 @@
       47365,
       47385,
       47405,
-      47445
+      47445,
+      47205
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-8705",
+      "province": "Cantabria (BOC)",
+      "title": "Orden PRE/158/2026, de 2 de noviembre, por la que se convoca concurso de méritos para la provisión de puestos de trabajo vacantes reservados a personal laboral fijo en categorías profesionales de los grupos y niveles 1-6, 1-5, 2-4, 2-3, 2-2 y 3-1.",
+      "entity": "Consejería de Presidencia, Justicia, Seguridad y Simplificación Administrativa",
+      "date": "05/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442725"
+    },
     {
       "id": "CN-2026-8283",
       "province": "Cantabria (BOC)",

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-04T16:39:24.825338+00:00",
+  "lastCheckedUTC": "2026-11-05T06:51:10.530735+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "211",
+    "bulletin": "212",
     "pagesVisited": 21,
-    "announcementsRead": 509,
-    "opportunities": 32
+    "announcementsRead": 490,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-07",
+    "rangeEnd": "2026-11-05",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -36,10 +35,10 @@
       "208",
       "209",
       "210",
-      "211"
+      "211",
+      "212"
     ],
     "publicationDates": [
-      "2026-10-06",
       "2026-10-07",
       "2026-10-08",
       "2026-10-09",
@@ -59,7 +58,8 @@
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,20 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 509,
-    "opportunities": 32
+    "announcementsRead": 490,
+    "opportunities": 30
   },
   "notices": [
+    {
+      "id": "CC-2026-5164",
+      "province": "Cáceres",
+      "title": "Anulación Bases de la convocatoria para la provisión de 1 plaza de Arquitecto/a vacante en la plantilla de personal laboral.",
+      "entity": "Ayuntamiento de Moraleja",
+      "date": "05/11/2026",
+      "bulletin": "212",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5164"
+    },
     {
       "id": "CC-2026-5101",
       "province": "Cáceres",
@@ -366,36 +376,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4693"
-    },
-    {
-      "id": "CC-2026-4651",
-      "province": "Cáceres",
-      "title": "Convocatoria para la provisión 21 plazas auxiliar administrativo concurso-oposición turno libre y discapacidad.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4651"
-    },
-    {
-      "id": "CC-2026-4650",
-      "province": "Cáceres",
-      "title": "Activación de bolsa de trabajo temporal de Arquitecto/a.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4650"
-    },
-    {
-      "id": "CC-2026-4646",
-      "province": "Cáceres",
-      "title": "Designación Tribunal de Selección convocatoria de una Bolsa de empleo temporal de Monitor/a Deportivo/a.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "06/10/2026",
-      "bulletin": "191",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4646"
     }
   ]
 }
