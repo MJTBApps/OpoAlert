@@ -105,6 +105,15 @@ jobs:
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
         run: |
           set -o pipefail
+          # Las librerías de Google (anuncios y consentimiento) llegan al archivo sin
+          # firmar con una firma de Google que ya no es válida, y App Store Connect las
+          # rechazaba (05/11/2026). Sin firma, la exportación las firma con la app.
+          for fw in build/OpoAlert.xcarchive/Products/Applications/OpoAlert.app/Frameworks/*.framework; do
+            [ -d "$fw" ] || continue
+            echo "Quitar la firma de $(basename "$fw")"
+            codesign --remove-signature "$fw" || true
+            rm -rf "$fw/_CodeSignature"
+          done
           cat > build/ExportOptions.plist <<EOF
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
