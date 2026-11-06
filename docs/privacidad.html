@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Política de privacidad de OpoAlert</h1>
-  <p class="date">Última actualización: 1 de noviembre de 2026</p>
+  <p class="date">Última actualización: 6 de noviembre de 2026</p>
 
   <div class="box">
     <p><strong>En resumen:</strong> OpoAlert no tiene cuentas de usuario y no guarda tus datos en
@@ -52,6 +52,12 @@
         <td>Google (AdMob)</td>
         <td>Mostrar anuncios, medirlos y evitar fraudes. En el Espacio Económico Europeo se pide tu
             consentimiento antes; si no lo das, los anuncios no son personalizados o no se muestran.</td></tr>
+    <tr><td>Identificador de instalación para avisos (token de Firebase), IP y datos técnicos del
+        dispositivo</td>
+        <td>Google (Firebase Cloud Messaging) y, en iPhone, Apple (servicio de notificaciones)</td>
+        <td>Enviar al móvil un aviso sin texto cuando se publican convocatorias nuevas, para que
+            compruebe tus alertas aunque no abras la app. No va unido a tu nombre ni a tu correo, no
+            se usa para publicidad y no incluye qué buscas.</td></tr>
     <tr><td>Datos de la compra de Premium</td>
         <td>Google Play o App Store</td>
         <td>Gestionar la suscripción. OpoAlert no ve ni guarda los datos de tu tarjeta.</td></tr>
@@ -67,8 +73,13 @@
   <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
   <h2>4. Notificaciones</h2>
-  <p>Las alertas se comprueban en tu propio móvil. Los avisos son notificaciones locales: no se usa
-  ningún servidor de notificaciones ni se envía qué buscas.</p>
+  <p>Las alertas se comprueban en tu propio móvil. Cuando se publican convocatorias nuevas, OpoAlert
+  envía a todos los móviles el mismo aviso sin texto mediante Firebase Cloud Messaging de Google
+  (en iPhone, a través del servicio de notificaciones de Apple). Al recibirlo, la app descarga los
+  listados y, si alguna convocatoria coincide con tus alertas, muestra una notificación local. Ni
+  OpoAlert ni Google reciben tus alertas ni qué buscas. El identificador de avisos se borra al
+  desinstalar la app. Más información:
+  <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
 
   <h2>5. Base legal y conservación</h2>
   <p>El funcionamiento de la app se basa en la prestación del servicio que solicitas; la publicidad
