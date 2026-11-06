@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-06T06:43:10.047214+00:00",
+  "lastCheckedUTC": "2026-11-06T09:42:38.993248+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 86,
-    "opportunities": 86,
+    "announcementsRead": 88,
+    "opportunities": 88,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -47,15 +48,34 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-06"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 86,
-    "opportunities": 86
+    "announcementsRead": 88,
+    "opportunities": 88
   },
   "notices": [
+    {
+      "id": "CIDO8-16511262",
+      "title": "1 plaça de Monitor de menjador",
+      "entity": "Ajuntament de Duesaigües",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16511262"
+    },
+    {
+      "id": "CIDO8-13791629",
+      "title": "Bases generals reguladores dels processos de selecció",
+      "entity": "Diputació de Tarragona",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/13791629"
+    },
     {
       "id": "CIDO8-22445973",
       "title": "Borsa de treball de places de Guàrdia municipal",
@@ -75,6 +95,16 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21837947"
+    },
+    {
+      "id": "CIDO8-21038832",
+      "title": "1 plaça de Tècnic superior en dret",
+      "entity": "Ajuntament de Mont-roig del Camp - Entitat Pública Empresarial per la Gestió del Cicle Complet de l'Aigua (Nostraigua)",
+      "date": "05/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21038832"
     },
     {
       "id": "CIDO8-18012546",
@@ -335,16 +365,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21078364"
-    },
-    {
-      "id": "CIDO8-16511262",
-      "title": "1 plaça de Monitor de menjador",
-      "entity": "Ajuntament de Duesaigües",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16511262"
     },
     {
       "id": "CIDO8-22426522",

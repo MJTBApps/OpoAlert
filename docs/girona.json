@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-06T06:43:10.047214+00:00",
+  "lastCheckedUTC": "2026-11-06T09:42:38.993248+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 70,
-    "opportunities": 70,
+    "announcementsRead": 73,
+    "opportunities": 73,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -47,15 +48,64 @@
       "2026-10-19",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-06"
+      "2026-11-01"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 70,
-    "opportunities": 70
+    "announcementsRead": 73,
+    "opportunities": 73
   },
   "notices": [
+    {
+      "id": "CIDO6-22451502",
+      "title": "Borsa de treball de places de Conserge",
+      "entity": "Ajuntament de Tossa de Mar",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22451502"
+    },
+    {
+      "id": "CIDO6-22450110",
+      "title": "4 places d'Agent de la Policia local",
+      "entity": "Ajuntament de Puigcerdà",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22450110"
+    },
+    {
+      "id": "CIDO6-22450081",
+      "title": "1 plaça d'Auxiliar d'administració especial",
+      "entity": "Ajuntament de Castell d'Aro, Platja d'Aro i s'Agaró",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22450081"
+    },
+    {
+      "id": "CIDO6-22374077",
+      "title": "2 places de Peó de Serveis Generals Agutzil",
+      "entity": "Ajuntament d'Agullana",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22374077"
+    },
+    {
+      "id": "CIDO6-21398776",
+      "title": "1 plaça de Tècnic superior per al Servei d'arts visuals, museus i patrimoni cultural",
+      "entity": "Ajuntament de Girona",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21398776"
+    },
     {
       "id": "CIDO6-22447007",
       "title": "1 plaça de Peó de brigada",
@@ -95,16 +145,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22445024"
-    },
-    {
-      "id": "CIDO6-22374077",
-      "title": "2 places de Peó de Serveis Generals Agutzil",
-      "entity": "Ajuntament d'Agullana",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22374077"
     },
     {
       "id": "CIDO6-22436511",
@@ -605,16 +645,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21771332"
-    },
-    {
-      "id": "CIDO6-21398776",
-      "title": "1 plaça de Tècnic superior per al Servei d'arts visuals, museus i patrimoni cultural",
-      "entity": "Ajuntament de Girona",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21398776"
     },
     {
       "id": "CIDO6-22353433",
