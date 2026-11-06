@@ -24,7 +24,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - `MainActivity.kt` (pantalla principal), `NoticeDetailActivity.kt` (ficha), `AlertsActivity.kt` + `AlertRule*.kt` (alertas), `RemoteFeedReader.kt` / `Repository.kt` (lectura de feeds), `BopWorker.kt` + `Notifications.kt` (avisos), `FavoritesStore.kt`.
   - `DemoAds.kt` — anuncios AdMob **solo de demostración**, con consentimiento UMP. No generan ingresos.
   - Pruebas: `app/src/test/java/es/opoalert/app/`.
-  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 68 / 1.53.2). `applicationId` = `es.opoalert.app` (no cambiarlo).
+  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 69 / 1.53.3). `applicationId` = `es.opoalert.app` (no cambiarlo).
 - **Backend**: `backend/`
   - Lectores: `bop_full.py` + `history.py` (Valencia), `alicante.py`, `castellon.py`, `province_history.py`, `boe_nacional.py`, `cido_cataluna.py`, `tarragona.py`, `barcelona_bop.py`, `girona_bop.py`, `huesca_bop.py`, `teruel_bop.py`, `zaragoza_bop.py`, `cadiz_bop.py`, `pandora_bop.py` (Almería), `andalucia_opencms_bop.py` (Granada y Sevilla), `cordoba_bop.py`.
   - Validadores: `validar_*.py`, uno por fuente; `validar_feed.py` para el feed de Valencia.
@@ -91,6 +91,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 ## Estado (30/10/2026)
 
+- App **1.53.3** (06/11/2026): al instalarla, «Elegir boletines» sale sin ninguno marcado (antes venía BOP Valencia) y no se puede cerrar sin elegir uno (Android e iOS). Quien ya la tenía conserva su selección. Valencia sigue siendo el valor interno si no hay nada guardado.
 - App **1.53.2** (06/11/2026): el filtro «Nuevas» ya no lleva número (no cabía; la etiqueta NUEVA de cada tarjeta sigue). Android e iOS.
 - App **1.53.1** (06/11/2026): cambio de pestaña rápido. `MainActivity.render()` recorría miles de convocatorias en cada cambio (fecha con `SimpleDateFormat` por anuncio, titular aunque no se buscara nada y alertas recalculadas) y al volver de «Mis alertas» dibujaba dos veces. Ahora `isRecent` guarda el resultado por fecha, `alertHits` se recalcula solo si cambian convocatorias, alertas o boletines, y `onNewIntent` dibuja solo si la pantalla ya está activa (Android 10+ no llama a `onResume` en ese caso). Sin sombra por tarjeta. En el emulador: de 11-14 s a 0,5-1,8 s.
 - App **1.53.0** (05/11/2026): Android con el **mismo diseño que iPhone**: título grande, buscador fijo arriba, tarjeta de resumen blanca dentro de la lista, filtro segmentado y barra de pestañas flotante abajo (`BottomTabs.kt`, compartida con «Mis alertas»). Sin cambios de funciones. iOS en tema claro siempre; Favoritas sin filtros en las dos.

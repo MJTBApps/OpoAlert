@@ -241,8 +241,7 @@ class MainActivity : Activity() {
             demoAds.start(openAd = coldStart)
             return
         }
-        ProvinceSettings.markPickerShown(this)
-        showProvinceChooser { demoAds.start() }
+        showProvinceChooser(firstLaunch = true) { demoAds.start() }
     }
 
     private fun updateProvinceSelector() {
@@ -254,8 +253,9 @@ class MainActivity : Activity() {
      * Sin permisos de ubicacion, conserva los codigos guardados en versiones anteriores.
      * Las comunidades se despliegan bajo demanda, asi la lista puede crecer a 52 territorios.
      */
-    private fun showProvinceChooser(onClosed: () -> Unit = {}) {
-        val selected = ProvinceSettings.selected(this).toMutableSet()
+    private fun showProvinceChooser(firstLaunch: Boolean = false, onClosed: () -> Unit = {}) {
+        // La primera vez no hay ninguno marcado: cada usuario elige el suyo.
+        val selected = if (firstLaunch) mutableSetOf() else ProvinceSettings.selected(this).toMutableSet()
         val container = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(16), dp(8), dp(16), dp(8))
@@ -276,18 +276,21 @@ class MainActivity : Activity() {
             setPadding(dp(3), dp(12), dp(3), dp(6))
         })
         val viewport = SourcePicker.scrolling(this, container)
-        val dialog = AlertDialog.Builder(this)
+        val builder = AlertDialog.Builder(this)
             .setTitle("Elegir boletines")
             .setView(viewport)
             .setPositiveButton("Guardar", null)
-            .setNegativeButton("Cancelar", null)
-            .create()
+        // La primera vez hay que elegir al menos uno: sin «Cancelar».
+        if (!firstLaunch) builder.setNegativeButton("Cancelar", null)
+        val dialog = builder.create()
+        dialog.setCancelable(!firstLaunch)
         dialog.setOnDismissListener { onClosed() }
         dialog.setOnShowListener {
             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
                 if (selected.isEmpty()) {
                     Toast.makeText(this, "Selecciona al menos una fuente", Toast.LENGTH_SHORT).show()
                 } else if (ProvinceSettings.save(this, selected)) {
+                    ProvinceSettings.markPickerShown(this)
                     updateProvinceSelector()
                     updateHeader()
                     render()

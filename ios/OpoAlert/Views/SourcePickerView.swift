@@ -44,7 +44,8 @@ struct SourcePickerView: View {
         }
         .interactiveDismissDisabled(firstLaunch)
         .onAppear {
-            chosen = model.selected
+            // La primera vez no hay ninguno marcado: cada usuario elige el suyo.
+            chosen = firstLaunch ? [] : model.selected
             expanded = SourceSections.initiallyExpanded(groups, chosen: chosen)
         }
         .onDisappear { model.closePicker() }
