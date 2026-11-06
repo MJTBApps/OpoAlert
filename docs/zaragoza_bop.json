@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-05T17:23:44.213837+00:00",
+  "lastCheckedUTC": "2026-11-06T07:24:09.176963+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "255",
+    "bulletin": "256",
     "pagesVisited": 2,
-    "announcementsRead": 738,
-    "opportunities": 65
+    "announcementsRead": 745,
+    "opportunities": 68
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 738,
-    "opportunities": 65,
+    "announcementsRead": 745,
+    "opportunities": 68,
     "bulletins": [
-      "231",
       "232",
       "233",
       "234",
@@ -44,10 +43,10 @@
       "252",
       "253",
       "254",
-      "255"
+      "255",
+      "256"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -71,10 +70,10 @@
       "2026-10-31",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "issuePublicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -98,7 +97,8 @@
       "2026-10-31",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -108,19 +108,59 @@
       "2026-11-02"
     ],
     "sectionsRead": {
-      "SECCIÓN SEGUNDA": 8,
-      "SECCIÓN QUINTA": 94,
-      "SECCIÓN SEXTA": 569,
-      "SECCIÓN TERCERA": 38,
+      "SECCIÓN TERCERA": 40,
+      "SECCIÓN QUINTA": 99,
+      "SECCIÓN SEXTA": 570,
       "SECCIÓN CUARTA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
+      "SECCIÓN SEGUNDA": 7,
       "SECCIÓN SEPTIMA": 2,
       "PARTE NO OFICIAL": 5
     },
-    "documentsVerified": 89
+    "documentsVerified": 92
   },
   "notices": [
+    {
+      "id": "ZA-000344890",
+      "province": "Zaragoza",
+      "title": "Mediante decreto de Alcaldía 2026-1397, de fecha 29 de octubre de 2026, se han aprobado las bases reguladoras de la selección y provisión a través de sistema de concurso-oposición de una plaza de conserje de…",
+      "entity": "AYUNTAMIENTO DE VILLANUEVA DE GÁLLEGO",
+      "date": "06/11/2026",
+      "bulletin": "256",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473617140505"
+    },
+    {
+      "id": "ZA-000344886",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación inicial en el BOPZ.",
+      "entity": "AYUNTAMIENTO DE PEDROLA",
+      "date": "06/11/2026",
+      "bulletin": "256",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473613100404"
+    },
+    {
+      "id": "ZA-000344877",
+      "province": "Zaragoza",
+      "title": "Anuncio sobre aprobación de la adjudicación a la persona aspirante que ha superado el proceso selectivo para la provisión de un puesto de director/a de Programas, Eventos y Proyectos Deportivos.",
+      "entity": "ZARAGOZA DEPORTE MUNICIPAL, S.A.U.",
+      "date": "06/11/2026",
+      "bulletin": "256",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473604010303"
+    },
+    {
+      "id": "ZA-000344875",
+      "province": "Zaragoza",
+      "title": "Anuncio sobre rectificación de error material en las bases de la convocatoria que ha de regir el proceso selectivo para la cobertura de una plaza/puesto de trabajo de jefe/a de sala del Patronato Municipal de las Artes Escénicas y de la Imagen.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE CULTURA, EDUCACIÓN Y TURISMO. SERVICIO ADMINISTRATIVO DE CULTURA Y EDUCACIÓN",
+      "date": "06/11/2026",
+      "bulletin": "256",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473602990303"
+    },
     {
       "id": "ZA-000344869",
       "province": "Zaragoza",
@@ -760,16 +800,6 @@
       "bulletin": "232",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469494670909"
-    },
-    {
-      "id": "ZA-000344137",
-      "province": "Zaragoza",
-      "title": "ANUNCIO relativo a convocatoria para la provisión de una plaza de conserje de consultorio o centro médico y casa de cultura con funciones de auxiliar administrativo en régimen de personal laboral fijo (con…",
-      "entity": "AYUNTAMIENTO DE CALATORAO",
-      "date": "07/10/2026",
-      "bulletin": "231",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469245510202"
     }
   ]
 }
