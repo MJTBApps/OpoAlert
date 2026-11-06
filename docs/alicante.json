@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-05T16:40:48.873595+00:00",
+  "lastCheckedUTC": "2026-11-06T06:34:28.174102+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "211",
-    "pagesVisited": 21,
-    "announcementsRead": 872,
-    "opportunities": 71,
+    "pagesVisited": 20,
+    "announcementsRead": 828,
+    "opportunities": 69,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 872,
-    "opportunities": 71,
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 828,
+    "opportunities": 69,
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -43,7 +42,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-12",
       "2026-10-13",
@@ -74,7 +72,8 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-06"
     ]
   },
   "notices": [
@@ -767,26 +766,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007300.pdf"
-    },
-    {
-      "id": "AL-2026-7731",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA RELATIVA AL PROCESO DE SELECCIÓN PARA LA PROVISIÓN TEMPORAL DE 4 PUESTOS DE AGENTES DE POLICÍA LOCAL EN COMISIÓN DE SERVICIOS.",
-      "entity": "AYUNTAMIENTO ORIHUELA",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/07_191/2026_007731.pdf"
-    },
-    {
-      "id": "AL-2026-7714",
-      "province": "Alicante",
-      "title": "MODIFICACIÓN DE BASES Y ACUMULACIÓN DE PLAZAS OFICIAL/A DE JARDINERÍA 13 CO-PIV",
-      "entity": "AYUNTAMIENTO ELCHE",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/07_191/2026_007714.pdf"
     }
   ]
 }
