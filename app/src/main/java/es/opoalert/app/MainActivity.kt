@@ -30,6 +30,7 @@ import android.widget.TextView
 import android.widget.Toast
 import java.text.SimpleDateFormat
 import java.util.Calendar
+import java.util.Date
 import java.util.Locale
 
 /**
@@ -362,7 +363,21 @@ class MainActivity : Activity() {
         }
     }
 
+    // isRecent se llama para miles de convocatorias en cada cambio de pestaña:
+    // se guarda el resultado por fecha y se vacía al cambiar de día.
+    private val recentCache = HashMap<String, Boolean>()
+    private var recentCacheDay = ""
+
     private fun isRecent(date: String): Boolean {
+        val day = SimpleDateFormat("yyyyMMdd", Locale.ROOT).format(Date())
+        if (day != recentCacheDay) {
+            recentCache.clear()
+            recentCacheDay = day
+        }
+        return recentCache.getOrPut(date) { computeRecent(date) }
+    }
+
+    private fun computeRecent(date: String): Boolean {
         return try {
             val format = SimpleDateFormat("dd/MM/yyyy", Locale("es", "ES")).apply { isLenient = false }
             val published = format.parse(date) ?: return false
@@ -503,7 +518,7 @@ class MainActivity : Activity() {
             // Las alertas también vigilan boletines que no están en «Elegir boletines».
             val correctProvince = selectedTab == TAB_FAVORITES || selectedFilter == FILTER_ALERTS ||
                 item.province in selectedProvinces
-            val matches = SearchText.matchesNormalized(query,
+            val matches = query.isEmpty() || SearchText.matchesNormalized(query,
                 item.title, NoticeText.headline(item.title), item.entity, item.id)
             correctType && correctDate && correctProvince && matches
         }
@@ -584,6 +599,7 @@ class MainActivity : Activity() {
     }
 
     override fun onPause() {
+        onScreen = false
         if (::demoAds.isInitialized) demoAds.pause()
         super.onPause()
     }
@@ -621,6 +637,7 @@ class MainActivity : Activity() {
 
     override fun onResume() {
         super.onResume()
+        onScreen = true
         offerUpdate()
         // Versión de Google Play: comprobar si la suscripción sigue activa (renovada o cancelada).
         PlayBilling.refresh(this) { premiumChanged() }
@@ -629,7 +646,13 @@ class MainActivity : Activity() {
             // Las favoritas pueden haber cambiado desde la nueva ficha a pantalla completa.
             updateHeader()
             buildTabs()
-            render(keepScroll = true)
+            if (scrollToTop) {
+                scrollToTop = false
+                render()
+                scroll.scrollTo(0, 0)
+            } else {
+                render(keepScroll = true)
+            }
         }
     }
 
@@ -645,12 +668,19 @@ class MainActivity : Activity() {
             selectedFilter = FILTER_ALERTS
             if (::searchInput.isInitialized) searchInput.setText("")
         }
-        if (::tabsRow.isInitialized) {
+        // Si la app estaba en segundo plano, onResume (justo después) dibuja la lista:
+        // no hacerlo dos veces. Si ya estaba en pantalla, Android no llama a onResume.
+        if (onScreen && ::tabsRow.isInitialized) {
             buildTabs()
             render()
             scroll.scrollTo(0, 0)
+        } else {
+            scrollToTop = true
         }
     }
+
+    private var scrollToTop = false
+    private var onScreen = false
 
     override fun onDestroy() {
         if (::demoAds.isInitialized) demoAds.destroy()
@@ -666,17 +696,25 @@ class MainActivity : Activity() {
     /** Convocatorias que encuentran tus alertas activas (solo con Premium o sin cobro). */
     private fun alertHits(): Map<String, List<String>> {
         if (!Premium.alertsUnlocked(this)) return emptyMap()
-        return SmartAlertMatcher.hits(
-            notices.filter { isRecent(it.date) }, AlertRuleStore.list(this), Repository.watched(this)
-        )
+        val rules = AlertRuleStore.list(this)
+        val watched = Repository.watched(this)
+        val key = listOf(System.identityHashCode(notices), notices.size, rules, watched, recentCacheDay)
+        if (key != alertHitsKey) {
+            alertHitsCache = SmartAlertMatcher.hits(notices.filter { isRecent(it.date) }, rules, watched)
+            alertHitsKey = key
+        }
+        return alertHitsCache
     }
+
+    // Las coincidencias de las alertas solo cambian con las convocatorias, las alertas o los boletines.
+    private var alertHitsKey: List<Any>? = null
+    private var alertHitsCache: Map<String, List<String>> = emptyMap()
 
     private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false, alerts: List<String> = emptyList()) {
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(11), dp(14), dp(12))
             background = rounded("#FFFFFF", 16, if (favorite) "#EEC77A" else "#DEE5EF")
-            elevation = dp(1).toFloat()
             isClickable = true
             isFocusable = true
             setOnClickListener { showDetail(item) }
