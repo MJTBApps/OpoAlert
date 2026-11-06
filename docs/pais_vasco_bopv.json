@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-06T06:30:48.860398+00:00",
+  "lastCheckedUTC": "2026-11-06T09:29:41.889646+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
-    "pagesVisited": 20,
-    "announcementsRead": 336,
-    "opportunities": 42
+    "bulletin": "213",
+    "pagesVisited": 21,
+    "announcementsRead": 362,
+    "opportunities": 45
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
       "2026-10-08",
@@ -57,7 +58,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,43 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01",
-      "2026-11-06"
+      "2026-11-01"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 336,
-    "opportunities": 42
+    "issuesRead": 21,
+    "announcementsRead": 362,
+    "opportunities": 45
   },
   "notices": [
+    {
+      "id": "PV-2026-4703",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 27 de octubre de 2026, de la consejera de Alimentación, Desarrollo Rural, Agricultura y Pesca, por la que se aprueban las bases reguladoras de las ayudas de formación a personal investigador y personal tecnólogo en el ámbito científico-tecnológico y empresarial del sector agrario, pesquero y alimentario (programa Ikertalent), y se realiza su convocatoria para el ejercicio 2026.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604703a.pdf"
+    },
+    {
+      "id": "PV-2026-4698",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 26 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604698a.pdf"
+    },
+    {
+      "id": "PV-2026-4697",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 22 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor agregado de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604697a.pdf"
+    },
     {
       "id": "PV-2026-4648",
       "province": "País Vasco (BOPV)",

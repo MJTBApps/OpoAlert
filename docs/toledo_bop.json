@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-06T06:31:59.303041+00:00",
+  "lastCheckedUTC": "2026-11-06T09:31:05.943818+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
-    "pagesVisited": 20,
-    "announcementsRead": 509,
-    "opportunities": 22
+    "bulletin": "213",
+    "pagesVisited": 21,
+    "announcementsRead": 531,
+    "opportunities": 23
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
       "2026-10-08",
@@ -57,7 +58,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -68,14 +70,23 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02",
-      "2026-11-06"
+      "2026-11-02"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 509,
-    "opportunities": 22
+    "issuesRead": 21,
+    "announcementsRead": 531,
+    "opportunities": 23
   },
   "notices": [
+    {
+      "id": "TO-2026-5067",
+      "province": "Toledo",
+      "title": "Bases reguladoras del procedimiento selectivo para la constitución de una bolsa de trabajo temporal para el puesto de Educador/a de Centros Docentes del Ayuntamiento de Navahermosa",
+      "entity": "AYUNTAMIENTO DE NAVAHERMOSA",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026"
+    },
     {
       "id": "TO-2026-5054",
       "province": "Toledo",

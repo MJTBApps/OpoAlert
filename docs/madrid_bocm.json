@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-05T16:35:40.633432+00:00",
+  "lastCheckedUTC": "2026-11-06T09:28:45.572777+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "266",
+    "bulletin": "267",
     "pagesVisited": 28,
-    "announcementsRead": 1879,
-    "opportunities": 295
+    "announcementsRead": 1901,
+    "opportunities": 313
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "issuesRead": 28,
     "pagesVisited": 28,
-    "announcementsRead": 1879,
-    "opportunities": 295,
+    "announcementsRead": 1901,
+    "opportunities": 313,
     "bulletins": [
-      "239",
       "240",
       "241",
       "242",
@@ -47,10 +46,10 @@
       "263",
       "264",
       "265",
-      "266"
+      "266",
+      "267"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -77,7 +76,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -86,7 +86,6 @@
       "2026-11-01"
     ],
     "editionPDFs": [
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/07/23900.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/08/24000.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/09/24100.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/10/24200.PDF",
@@ -113,7 +112,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/02/26300.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/03/26400.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/04/26500.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/05/26600.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/05/26600.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/06/26700.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -132,11 +132,11 @@
       "xml",
       "xml",
       "xml",
-      "xml",
       "html",
       "xml",
       "xml",
       "html",
+      "xml",
       "xml",
       "xml",
       "xml",
@@ -147,6 +147,276 @@
     ]
   },
   "notices": [
+    {
+      "id": "MD-20261106-86",
+      "province": "Madrid",
+      "title": "– Villalbilla. Ofertas de empleo. Proceso selectivo",
+      "entity": "VILLALBILLA",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-86.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-76",
+      "province": "Madrid",
+      "title": "– Las Rozas de Madrid. Personal. Proceso selectivo",
+      "entity": "LAS ROZAS DE MADRID",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-76.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-75",
+      "province": "Madrid",
+      "title": "– Las Rozas de Madrid. Personal. Proceso selectivo",
+      "entity": "LAS ROZAS DE MADRID",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-75.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-74",
+      "province": "Madrid",
+      "title": "– Guadarrama. Ofertas de empleo. Proceso selectivo",
+      "entity": "GUADARRAMA",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-74.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-68",
+      "province": "Madrid",
+      "title": "– Colmenar de Oreja. Ofertas de empleo. Proceso selectivo",
+      "entity": "COLMENAR DE OREJA",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-68.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-63",
+      "province": "Madrid",
+      "title": "– Cadalso de los Vidrios. Ofertas de empleo. Proceso selectivo",
+      "entity": "CADALSO DE LOS VIDRIOS",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-63.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-59",
+      "province": "Madrid",
+      "title": "– Aranjuez. Ofertas de empleo. Proceso selectivo",
+      "entity": "ARANJUEZ",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-59.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-31",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 4099/2026, de 26 de octubre, del Consejero de Medio Ambiente, Agricultura e Interior, por la que se aprueba convocatoria pública para la provisión de puestos de trabajo vacantes en la Consejería de Medio Ambiente, Agricultura e Interior, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-31.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-30",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en las categorías de Gestión y Servicios, Grupo C, Subgrupo C2, del Servicio Madrileño de Salud, que se relacionan en el Anexo I",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-30.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-29",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Gobernanta/e, Grupo C, Subgrupo C2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-29.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-28",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Trabajador Social, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-28.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-27",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Grupo Administrativo de la Función Administrativa, Grupo C, Subgrupo C1, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-27.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-26",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en la categoría de Trabajador Social, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-26.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-25",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en la categoría de Grupo Administrativo de la Función Administrativa, Grupo C, Subgrupo C1, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-25.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-24",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Grupo de Gestión de la Función Administrativa, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-24.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-23",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en la categoría de Grupo de Gestión de la Función Administrativa, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-23.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-22",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Grupo Técnico la Función Administrativa, Grupo A, Subgrupo A1, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-22.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-21",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Terapeuta Ocupacional, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-21.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-20",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en la categoría de Terapeuta Ocupacional, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-20.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-19",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en la categoría de Grupo Técnico de la Función Administrativa, Grupo A, Subgrupo A1, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-19.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-18",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno libre para el acceso a la condición de personal estatutario fijo en la categoría de Fisioterapeuta, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-18.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-17",
+      "province": "Madrid",
+      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se convocan pruebas selectivas por el turno de promoción interna para el acceso a la condición de personal estatutario fijo en la categoría de Fisioterapeuta, Grupo A, Subgrupo A2, del Servicio Madrileño de Salud",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-17.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-15",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 1669/2026, de 26 de octubre, de la Consejera de Sanidad, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Sanidad, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-15.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-14",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 1668/2026, de 26 de octubre, de la Consejera de Sanidad, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Sanidad, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-14.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-12",
+      "province": "Madrid",
+      "title": "Puesto libre designacíón – Orden 4632/2026, de 27 de octubre, de la Consejera de Educación, Ciencia y Universidades, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Educación, Ciencia y Universidades, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-12.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-9",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 27 de octubre de 2026, de la Consejería de Digitalización, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE DIGITALIZACIÓN",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-9.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261106-2",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Resolución de 27 de octubre de 2026, de la Dirección General de Recursos Humanos y Relaciones con la Administración de Justicia, por la que se aprueba la convocatoria pública para la provisión de un puesto de carrera de naturaleza laboral, denominado “Coordinador de Traductores” por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
+      "date": "06/11/2026",
+      "bulletin": "267",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/06/BOCM-20261106-2.PDF",
+      "type": "Plaza / oposición"
+    },
     {
       "id": "MD-20261105-88",
       "province": "Madrid",
@@ -3005,96 +3275,6 @@
       "date": "08/10/2026",
       "bulletin": "240",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/08/BOCM-20261008-1.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-53",
-      "province": "Madrid",
-      "title": "– El Álamo. Ofertas de empleo. Proceso selectivo",
-      "entity": "EL ÁLAMO",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-53.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-52",
-      "province": "Madrid",
-      "title": "– El Álamo. Ofertas de empleo. Proceso selectivo",
-      "entity": "EL ÁLAMO",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-52.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-11",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Resolución de 29 de septiembre de 2026, de la Universidad Carlos III de Madrid, de fecha de firma electrónica, por la que se anuncia la convocatoria de concurso específico de méritos para la provisión de un puesto de trabajo de personal técnico de gestión, y de administración y servicios funcionario adscrito a los Subgrupos A1/A2 en esta Universidad",
-      "entity": "UNIVERSIDAD CARLOS III",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-11.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-10",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 28 de septiembre de 2026, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Familia, Juventud y Asuntos Sociales por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-10.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-8",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 4052/2026, de 28 de septiembre, de la Consejera de Educación, Ciencia y Universidades, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Educación, Ciencia y Universidades, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-8.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-7",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 3997/2026, de 25 de septiembre, de la Consejera de Educación, Ciencia y Universidades, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Educación, Ciencia y Universidades, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-7.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-5",
-      "province": "Madrid",
-      "title": "Bolsa única personal laboral – Resolución de 25 de septiembre de 2026, de la Dirección General de Función Pública, por la que se requiere la presentación de documentación acreditativa del cumplimiento de requisitos y la elección de zonas geográficas a efectos de constitución del primer bloque de la bolsa única permanentemente abierta de la categoría profesional de Auxiliar Administrativo (Grupo IV, Nivel 3, Área A) de la Comunidad de Madrid",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-5.PDF",
-      "type": "Bolsa de trabajo"
-    },
-    {
-      "id": "MD-20261007-4",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 28 de septiembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-4.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261007-3",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 28 de septiembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Economía, Hacienda y Empleo, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "07/10/2026",
-      "bulletin": "239",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/07/BOCM-20261007-3.PDF",
       "type": "Plaza / oposición"
     }
   ]
