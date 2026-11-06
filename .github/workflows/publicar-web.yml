@@ -44,6 +44,7 @@ on:
       - 'OpoAlert - Publicar APK 1.53.1 en web'
       - 'OpoAlert - Publicar APK 1.53.2 en web'
       - 'OpoAlert - Publicar APK 1.53.3 en web'
+      - 'OpoAlert - Publicar APK 1.54.0 en web'
       - 'OpoAlert - Leer plazos de los anuncios'
       - 'OpoAlert - Publicar APK 1.14.0 en web'
       - 'OpoAlert - Publicar APK 1.12.0 en web'
@@ -112,3 +113,24 @@ jobs:
       - id: deploy2
         if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
+      # 1.54.0: aviso silencioso a los móviles (Firebase) si hay anuncios nuevos.
+      # Sin el secreto FIREBASE_SERVICE_ACCOUNT no hace nada. Nunca hace fallar la web.
+      - uses: actions/cache/restore@v4
+        continue-on-error: true
+        with:
+          path: .aviso
+          key: aviso-fcm-${{ github.run_id }}
+          restore-keys: aviso-fcm-
+      - name: Avisar a los móviles
+        continue-on-error: true
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -n "$FIREBASE_SERVICE_ACCOUNT" ]; then pip install --quiet google-auth requests; fi
+          python3 backend/aviso_fcm.py --docs docs --state .aviso/estado.json
+      - uses: actions/cache/save@v4
+        if: hashFiles('.aviso/estado.json') != ''
+        continue-on-error: true
+        with:
+          path: .aviso
+          key: aviso-fcm-${{ github.run_id }}

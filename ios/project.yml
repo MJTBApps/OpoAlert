@@ -15,10 +15,13 @@ packages:
   GoogleUserMessagingPlatform:
     url: https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git
     from: 3.0.0
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: 12.0.0
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.53.3"  # mismo número que Android
+    MARKETING_VERSION: "1.54.0"  # mismo número que Android
     CURRENT_PROJECT_VERSION: "1"
     DEVELOPMENT_TEAM: ""
     # AdMob: identificadores de PRUEBA de Google. Los reales solo se pasan al compilar
@@ -26,6 +29,12 @@ settings:
     ADMOB_APP_ID: "ca-app-pub-3940256099942544~1458002511"
     ADMOB_BANNER: "ca-app-pub-3940256099942544/2435281174"
     ADMOB_OPEN_AD: "ca-app-pub-3940256099942544/5575463023"
+    # Firebase (aviso silencioso, 1.54.0): vacíos aquí; los pasan los secretos
+    # FIREBASE_IOS_* al compilar para TestFlight. Vacíos = sin aviso desde GitHub.
+    FCM_IOS_APP_ID: ""
+    FCM_IOS_API_KEY: ""
+    FCM_IOS_PROJECT_ID: ""
+    FCM_IOS_SENDER_ID: ""
 targets:
   OpoAlert:
     type: application
@@ -38,6 +47,12 @@ targets:
         product: GoogleMobileAds
       - package: GoogleUserMessagingPlatform
         product: GoogleUserMessagingPlatform
+      - package: Firebase
+        product: FirebaseMessaging
+    entitlements:
+      path: OpoAlert/OpoAlert.entitlements
+      properties:
+        aps-environment: production
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: es.opoalert.app
@@ -53,7 +68,7 @@ targets:
       path: OpoAlert/Info.plist
       properties:
         CFBundleDevelopmentRegion: es
-        UIBackgroundModes: [fetch]
+        UIBackgroundModes: [fetch, remote-notification]
         # Los colores son los de Android (tema claro): sin modo oscuro.
         UIUserInterfaceStyle: Light
         BGTaskSchedulerPermittedIdentifiers: [es.opoalert.app.refresh]
@@ -62,6 +77,12 @@ targets:
         GADApplicationIdentifier: $(ADMOB_APP_ID)
         OpoAdmobBanner: $(ADMOB_BANNER)
         OpoAdmobOpenAd: $(ADMOB_OPEN_AD)
+        OpoFcmAppId: $(FCM_IOS_APP_ID)
+        OpoFcmApiKey: $(FCM_IOS_API_KEY)
+        OpoFcmProjectId: $(FCM_IOS_PROJECT_ID)
+        OpoFcmSenderId: $(FCM_IOS_SENDER_ID)
+        # La app configura Firebase a mano y le pasa el token de APNs.
+        FirebaseAppDelegateProxyEnabled: false
         # Texto del aviso de Apple «¿Permitir que OpoAlert rastree tu actividad…?».
         NSUserTrackingUsageDescription: "Se usa solo para mostrarte anuncios más relevantes. OpoAlert funciona igual si no lo permites."
         # Red de anuncios de Google (SKAdNetwork), obligatorio para los anuncios en iOS.

@@ -99,6 +99,7 @@ class MainActivity : Activity() {
         }
         Notifications.createChannel(this)
         BopWorker.schedule(this)
+        Push.start(this)
         refreshButton.setOnClickListener { refresh() }
         menuButton.setOnClickListener { showOptions() }
         provinceSelector.setOnClickListener { showProvinceChooser() }

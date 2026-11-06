@@ -80,6 +80,10 @@ jobs:
           ADMOB_IOS_APP_ID: ${{ secrets.ADMOB_IOS_APP_ID }}
           ADMOB_IOS_BANNER: ${{ secrets.ADMOB_IOS_BANNER }}
           ADMOB_IOS_OPEN_AD: ${{ secrets.ADMOB_IOS_OPEN_AD }}
+          FIREBASE_IOS_APP_ID: ${{ secrets.FIREBASE_IOS_APP_ID }}
+          FIREBASE_IOS_API_KEY: ${{ secrets.FIREBASE_IOS_API_KEY }}
+          FIREBASE_IOS_SENDER_ID: ${{ secrets.FIREBASE_IOS_SENDER_ID }}
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
         run: |
           set -o pipefail
           ADMOB=()
@@ -88,6 +92,12 @@ jobs:
           else
             echo "::warning::Sin los secretos ADMOB_IOS_*: esta compilación lleva los anuncios de PRUEBA de Google (vale para TestFlight, no para el App Store)"
           fi
+          FCM=()
+          if [ -n "$FIREBASE_IOS_APP_ID" ] && [ -n "$FIREBASE_IOS_API_KEY" ] && [ -n "$FIREBASE_IOS_SENDER_ID" ] && [ -n "$FIREBASE_PROJECT_ID" ]; then
+            FCM=(FCM_IOS_APP_ID="$FIREBASE_IOS_APP_ID" FCM_IOS_API_KEY="$FIREBASE_IOS_API_KEY" FCM_IOS_SENDER_ID="$FIREBASE_IOS_SENDER_ID" FCM_IOS_PROJECT_ID="$FIREBASE_PROJECT_ID")
+          else
+            echo "::warning::Sin los secretos FIREBASE_*: esta compilación no recibe avisos desde GitHub"
+          fi
           # Número de compilación: uno más en cada ejecución (App Store Connect no admite repetidos).
           # Se archiva sin firmar: firmar aquí pide un perfil de desarrollo, y ese perfil
           # exige un iPhone registrado (fallo del 05/11/2026). La firma de distribución
@@ -95,7 +105,7 @@ jobs:
           xcodebuild -project OpoAlert.xcodeproj -scheme OpoAlert -configuration Release \
             -destination 'generic/platform=iOS' -archivePath build/OpoAlert.xcarchive \
             DEVELOPMENT_TEAM="$TEAM_ID" CODE_SIGN_STYLE=Automatic CODE_SIGNING_ALLOWED=NO \
-            CURRENT_PROJECT_VERSION="${{ github.run_number }}" "${ADMOB[@]}" \
+            CURRENT_PROJECT_VERSION="${{ github.run_number }}" "${ADMOB[@]}" "${FCM[@]}" \
             archive | tail -n 80
 
       - name: Subir a App Store Connect
@@ -114,6 +124,10 @@ jobs:
             codesign --remove-signature "$fw" || true
             rm -rf "$fw/_CodeSignature"
           done
+          # Se archiva sin firmar y la exportación no vería el permiso de avisos
+          # (aps-environment): se marca la app con sus entitlements antes de exportar.
+          codesign --force --sign - --entitlements OpoAlert/OpoAlert.entitlements \
+            build/OpoAlert.xcarchive/Products/Applications/OpoAlert.app
           cat > build/ExportOptions.plist <<EOF
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

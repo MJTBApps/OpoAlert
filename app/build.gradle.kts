@@ -14,6 +14,17 @@ val playProperties = Properties().apply {
     file(path).takeIf { it.exists() }?.inputStream()?.use { load(it) }
 }
 
+// Firebase Cloud Messaging (1.54.0): aviso silencioso cuando hay convocatorias
+// nuevas. Datos de la app Android de Firebase en ~/OpoAlert-claves/firebase.properties
+// (o en la ruta de OPOALERT_FIREBASE_PROPERTIES): appId, apiKey, projectId y
+// senderId. Sin ellos la app funciona igual, pero sin aviso desde GitHub.
+val firebaseProperties = Properties().apply {
+    val path = System.getenv("OPOALERT_FIREBASE_PROPERTIES")
+        ?: (System.getProperty("user.home") + "/OpoAlert-claves/firebase.properties")
+    file(path).takeIf { it.exists() }?.inputStream()?.use { load(it) }
+}
+fun firebase(key: String) = "\"${firebaseProperties.getProperty(key, "").trim()}\""
+
 // Identificadores de PRUEBA de Google: los usan la versión web y las pruebas.
 val testAdmobApp = "ca-app-pub-3940256099942544~3347511713"
 val testBanner = "ca-app-pub-3940256099942544/9214589741"
@@ -28,8 +39,12 @@ android {
         minSdk = 26
         // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
         targetSdk = 36
-        versionCode = 69
-        versionName = "1.53.3"
+        versionCode = 70
+        versionName = "1.54.0"
+        buildConfigField("String", "FCM_APP_ID", firebase("appId"))
+        buildConfigField("String", "FCM_API_KEY", firebase("apiKey"))
+        buildConfigField("String", "FCM_PROJECT_ID", firebase("projectId"))
+        buildConfigField("String", "FCM_SENDER_ID", firebase("senderId"))
     }
 
     // Firma fija de OpoAlert: sin ella cada compilación sale con una firma distinta
@@ -119,6 +134,7 @@ dependencies {
     implementation("com.google.android.gms:play-services-ads:25.5.0")
     implementation("com.google.android.ump:user-messaging-platform:4.0.0")
     implementation("com.android.billingclient:billing-ktx:8.0.0")
+    implementation("com.google.firebase:firebase-messaging:24.1.2")
 }
 
 // Nunca se sube a Google Play una versión con anuncios de prueba ni sin firmar.

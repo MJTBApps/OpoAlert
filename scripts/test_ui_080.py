@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.53.3"' in gradle
-    assert "versionCode = 69" in gradle
+    assert 'versionName = "1.54.0"' in gradle
+    assert "versionCode = 70" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -129,7 +129,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.53.3"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.54.0"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -150,7 +150,12 @@ def main() -> None:
     assert 'BOE n.º ' in detail
     assert "showProvinceChooser(firstLaunch = true)" in activity and "if (firstLaunch) mutableSetOf()" in activity, "La primera vez no hay boletín marcado"
     assert "chosen = firstLaunch ? [] : model.selected" in (ROOT / "ios/OpoAlert/Views/SourcePickerView.swift").read_text(encoding="utf-8")
-    print("OK: Android 1.53.3: la primera vez no hay boletín marcado")
+    # 1.54.0: aviso silencioso desde GitHub (Firebase) para que las alertas lleguen sin abrir la app.
+    assert "Push.start(this)" in activity and 'android:name=".OpoAlertMessagingService"' in manifest
+    assert "BopWorker.runNow(applicationContext)" in (KOTLIN / "Push.kt").read_text(encoding="utf-8")
+    assert "remote-notification" in ios_project and "aps-environment: production" in ios_project
+    assert "backend/aviso_fcm.py" in (ROOT / ".github/workflows/publicar-web.yml").read_text(encoding="utf-8")
+    print("OK: Android 1.54.0: aviso silencioso de convocatorias nuevas")
 
 
 if __name__ == "__main__":
