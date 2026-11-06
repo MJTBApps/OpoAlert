@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Extremadura (DOE)",
   "source": "https://doe.juntaex.es/",
-  "lastCheckedUTC": "2026-11-05T16:33:34.960087+00:00",
+  "lastCheckedUTC": "2026-11-06T06:25:46.830439+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213O",
+    "bulletin": "214O",
     "pagesVisited": 21,
     "announcementsRead": 523,
-    "opportunities": 42
+    "opportunities": 48
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "194O",
       "195O",
       "196O",
       "197O",
@@ -36,10 +35,10 @@
       "210O",
       "211O",
       "212O",
-      "213O"
+      "213O",
+      "214O"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-13",
@@ -59,7 +58,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -75,9 +75,69 @@
     ],
     "issuesRead": 21,
     "announcementsRead": 523,
-    "opportunities": 42
+    "opportunities": 48
   },
   "notices": [
+    {
+      "id": "EX-2026-26081866",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos.- Anuncio de 28 de octubre de 2026 por el que se da publicidad a la convocatoria de proceso selectivo para la cobertura de cuatro plazas de Policía Local.",
+      "entity": "AYUNTAMIENTO DE SAN VICENTE DE ALCÁNTARA",
+      "date": "06/11/2026",
+      "bulletin": "214O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2140o/26081866.pdf"
+    },
+    {
+      "id": "EX-2026-26062806",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos. Elección de plazas.- Resolución de 29 de octubre de 2026, de la Dirección General de Recursos Humanos, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para la elección de las mismas por los aspirantes que han superado el proceso selectivo para el acceso a la condición de personal estatutario fijo en la categoría de Pediatra de Equipo de Atención Primaria, en las instituciones sanitarias del Servicio Extremeño de Salud.",
+      "entity": "SERVICIO EXTREMEÑO DE SALUD",
+      "date": "06/11/2026",
+      "bulletin": "214O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2140o/26062806.pdf"
+    },
+    {
+      "id": "EX-2026-26062805",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos. Elección de plazas.- Resolución de 29 de octubre de 2026, de la Dirección General de Recursos Humanos, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para la elección de las mismas por los aspirantes que han superado el proceso selectivo en las especialidades de Aparato Digestivo y Otorrinolaringología, convocado por Resolución de 19 de diciembre de 2024 para el acceso a la condición de personal estatutario fijo en la categoría de Facultativo Especialista de Área, en las instituciones sanitarias del Servicio Extremeño de Salud.",
+      "entity": "SERVICIO EXTREMEÑO DE SALUD",
+      "date": "06/11/2026",
+      "bulletin": "214O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2140o/26062805.pdf"
+    },
+    {
+      "id": "EX-2026-26062784",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos. Relación de aprobados.- Resolución de 29 de octubre de 2026, de la Dirección Gerencia, por la que se hace pública la relación definitiva de aprobados en la especialidad de Pediatría y sus Áreas Específicas en el proceso selectivo convocado para el acceso a la condición de personal estatutario fijo en la categoría de Facultativo/a Especialista de Área, en las instituciones sanitarias del Servicio Extremeño de Salud.",
+      "entity": "SERVICIO EXTREMEÑO DE SALUD",
+      "date": "06/11/2026",
+      "bulletin": "214O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2140o/26062784.pdf"
+    },
+    {
+      "id": "EX-2026-26062783",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos.- Resolución de 23 de octubre de 2026, de la Alcaldía, referente a la convocatoria para el acceso a dos plazas de Agentes de la Policía Local de Olivenza, mediante el sistema de movilidad por concurso de méritos.",
+      "entity": "AYUNTAMIENTO DE OLIVENZA",
+      "date": "06/11/2026",
+      "bulletin": "214O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2140o/26062783.pdf"
+    },
+    {
+      "id": "EX-2026-26050124",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos.- Orden de 29 de octubre de 2026 por la que se modifica la Orden de 17 de diciembre de 2025 por la que se convocan pruebas selectivas para el acceso a plazas vacantes de personal laboral de los Grupos III, IV y V de la Administración de la Comunidad Autónoma de Extremadura.",
+      "entity": "CONSEJERÍA DE HACIENDA, ADMINISTRACIÓN PÚBLICA Y DIÁLOGO SOCIAL",
+      "date": "06/11/2026",
+      "bulletin": "214O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2140o/26050124.pdf"
+    },
     {
       "id": "EX-2026-26081841",
       "province": "Extremadura (DOE)",

@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
+  "lastCheckedUTC": "2026-11-06T06:43:10.047214+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 90,
-    "opportunities": 90,
+    "announcementsRead": 86,
+    "opportunities": 86,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-14",
@@ -48,12 +47,13 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-06"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 90,
-    "opportunities": 90
+    "announcementsRead": 86,
+    "opportunities": 86
   },
   "notices": [
     {
@@ -757,16 +757,6 @@
       "url": "https://cido.diba.cat/oposicions/18012537"
     },
     {
-      "id": "CIDO8-22369117",
-      "title": "Borsa de treball de places d'Oficial de 1a",
-      "entity": "Ajuntament de Falset",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22369117"
-    },
-    {
       "id": "CIDO8-22353627",
       "title": "Borsa de treball de places d'Interventor",
       "entity": "Ajuntament d'Alcanar",
@@ -925,36 +915,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21845182"
-    },
-    {
-      "id": "CIDO8-21789069",
-      "title": "2 places de Tècnic auxiliar infantil",
-      "entity": "Ajuntament d'Altafulla",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21789069"
-    },
-    {
-      "id": "CIDO8-19400955",
-      "title": "1 plaça d'Enginyer tècnic superior responsable tècnic de la brigada i control de servei",
-      "entity": "Ajuntament d'Altafulla",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19400955"
-    },
-    {
-      "id": "CIDO8-18462731",
-      "title": "1 plaça d'Operari de neteja",
-      "entity": "Ajuntament de Torredembarra",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/18462731"
     }
   ]
 }

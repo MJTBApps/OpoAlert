@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-05T16:58:33.950959+00:00",
+  "lastCheckedUTC": "2026-11-06T07:01:56.819944+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 22,
-    "announcementsRead": 526,
+    "announcementsRead": 521,
     "opportunities": 25,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
     "pdfLinksVerified": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -39,10 +38,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -63,7 +62,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -76,12 +76,12 @@
       "2026-11-02"
     ],
     "issuesRead": 22,
-    "announcementsRead": 526,
+    "announcementsRead": 521,
     "opportunities": 25,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "194",
-      "date": "2026-10-06"
+      "number": "195",
+      "date": "2026-10-07"
     }
   },
   "notices": [

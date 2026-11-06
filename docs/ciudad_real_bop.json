@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-05T16:32:58.475633+00:00",
+  "lastCheckedUTC": "2026-11-06T06:24:56.914093+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
+    "bulletin": "215",
     "pagesVisited": 22,
-    "announcementsRead": 353,
-    "opportunities": 24
+    "announcementsRead": 368,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -37,10 +36,10 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,20 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 353,
-    "opportunities": 24
+    "announcementsRead": 368,
+    "opportunities": 25
   },
   "notices": [
+    {
+      "id": "CR-2026-3595",
+      "province": "Ciudad Real",
+      "title": "Bases de la convocatoria para la provisión de una plaza de Técnico/a de RRHH, funcionario/a de carrera. OEP. extraordinaria 2025.",
+      "entity": "LA SOLANA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7867797"
+    },
     {
       "id": "CR-2026-3558",
       "province": "Ciudad Real",

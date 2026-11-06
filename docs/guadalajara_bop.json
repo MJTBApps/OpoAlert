@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Guadalajara",
   "source": "https://boletin.dguadalajara.es/boletin/",
-  "lastCheckedUTC": "2026-11-05T16:34:38.483069+00:00",
+  "lastCheckedUTC": "2026-11-06T06:26:29.651508+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "212",
-    "pagesVisited": 22,
-    "announcementsRead": 292,
-    "opportunities": 20
+    "pagesVisited": 21,
+    "announcementsRead": 274,
+    "opportunities": 19
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -40,7 +39,6 @@
       "212"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -71,11 +69,12 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-06"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 292,
-    "opportunities": 20
+    "issuesRead": 21,
+    "announcementsRead": 274,
+    "opportunities": 19
   },
   "notices": [
     {
@@ -267,16 +266,6 @@
       "bulletin": "193",
       "type": "Bolsa de trabajo",
       "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2628.pdf"
-    },
-    {
-      "id": "GJ-2026-2603",
-      "province": "Guadalajara",
-      "title": "PUBLICACION FECHA Y LUGAR PRIMERA PRUEBA FASE OPOSICION PLAZA OPERARIO SERVICIOS MULTIPLES",
-      "entity": "AYUNTAMIENTO DE VALDESOTOS",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2603.pdf"
     }
   ]
 }

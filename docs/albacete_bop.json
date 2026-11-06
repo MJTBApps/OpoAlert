@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-05T16:46:43.731631+00:00",
+  "lastCheckedUTC": "2026-11-06T06:47:35.735527+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "128",
-    "pagesVisited": 12,
-    "announcementsRead": 221,
-    "opportunities": 14
+    "pagesVisited": 11,
+    "announcementsRead": 202,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "117",
       "118",
       "119",
       "120",
@@ -30,7 +29,6 @@
       "128"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-09",
       "2026-10-12",
       "2026-10-14",
@@ -61,11 +59,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 221,
-    "opportunities": 14
+    "issuesRead": 11,
+    "announcementsRead": 202,
+    "opportunities": 13
   },
   "notices": [
     {
@@ -197,16 +196,6 @@
       "bulletin": "118",
       "type": "Plaza / oposición",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299352"
-    },
-    {
-      "id": "AB-2026-299321",
-      "province": "Albacete",
-      "title": "Convocatoria de procedimiento de selección bolsa Secretarios/as-Interventores/as interinos/as",
-      "entity": "Ayuntamiento de La Herrera",
-      "date": "07/10/2026",
-      "bulletin": "117",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299321"
     }
   ]
 }

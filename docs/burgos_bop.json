@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-05T16:48:05.630107+00:00",
+  "lastCheckedUTC": "2026-11-06T06:50:25.678504+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "210",
+    "bulletin": "211",
     "pagesVisited": 24,
-    "announcementsRead": 539,
-    "opportunities": 18,
+    "announcementsRead": 537,
+    "opportunities": 16,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 8
+    "pdfChecked": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "191",
       "192",
       "193",
       "Extraordinario 1",
@@ -38,10 +37,10 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -75,10 +75,9 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 539,
-    "opportunities": 18,
+    "announcementsRead": 537,
+    "opportunities": 16,
     "regularBulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -97,13 +96,13 @@
       "207",
       "208",
       "209",
-      "210"
+      "210",
+      "211"
     ],
     "extraordinaryBulletins": [
       "Extraordinario 1"
     ],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-191",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-192",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-193",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-001-0",
@@ -123,7 +122,8 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-207",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-208",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-209",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-210"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-210",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-211"
     ]
   },
   "notices": [
@@ -302,28 +302,6 @@
       "type": "Plaza / oposición",
       "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-192/bopbur-2026-192-anuncio-202604205.pdf",
       "publisherArticle": "202604205"
-    },
-    {
-      "id": "BU-2026-202604213",
-      "province": "Burgos",
-      "title": "Convocatoria para cubrir en propiedad dos plazas de monitor (C2) como personal laboral, mediante concurso de méritos",
-      "entity": "Ayuntamiento de Burgos – Concejalía de Personal, Seguridad y Régimen Interior",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-191/bopbur-2026-191-anuncio-202604213.pdf",
-      "publisherArticle": "202604213"
-    },
-    {
-      "id": "BU-2026-202604180",
-      "province": "Burgos",
-      "title": "Convocatoria para cubrir en propiedad dos plazas de coordinador (A2) como personal laboral, mediante concurso de méritos",
-      "entity": "Ayuntamiento de Burgos – Concejalía de Personal, Seguridad y Régimen Interior",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-191/bopbur-2026-191-anuncio-202604180.pdf",
-      "publisherArticle": "202604180"
     }
   ]
 }

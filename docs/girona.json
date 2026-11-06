@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
+  "lastCheckedUTC": "2026-11-06T06:43:10.047214+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 71,
-    "opportunities": 71,
+    "announcementsRead": 70,
+    "opportunities": 70,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "publicationDates": [
       "2026-10-08",
       "2026-10-09",
@@ -37,7 +37,6 @@
       "2026-11-05"
     ],
     "nonPublicationDates": [
-      "2026-10-07",
       "2026-10-10",
       "2026-10-11",
       "2026-10-12",
@@ -48,12 +47,13 @@
       "2026-10-19",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-06"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 71,
-    "opportunities": 71
+    "announcementsRead": 70,
+    "opportunities": 70
   },
   "notices": [
     {
@@ -735,16 +735,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22293317"
-    },
-    {
-      "id": "CIDO6-22292591",
-      "title": "1 plaça d'Arquitecte tècnic",
-      "entity": "Ajuntament d'Aiguaviva",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22292591"
     },
     {
       "id": "CIDO6-21628392",

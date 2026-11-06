@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
+  "lastCheckedUTC": "2026-11-06T06:43:10.047214+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 304,
-    "opportunities": 304,
+    "announcementsRead": 295,
+    "opportunities": 295,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -48,12 +47,13 @@
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-06"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 304,
-    "opportunities": 304
+    "announcementsRead": 295,
+    "opportunities": 295
   },
   "notices": [
     {
@@ -1487,26 +1487,6 @@
       "url": "https://cido.diba.cat/oposicions/22380925"
     },
     {
-      "id": "CIDO5-22379078",
-      "title": "1 plaça d'Arquitecte",
-      "entity": "Ajuntament de Roda de Ter",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22379078"
-    },
-    {
-      "id": "CIDO5-22379075",
-      "title": "1 plaça d'Arquitecte tècnic",
-      "entity": "Ajuntament de Roda de Ter",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22379075"
-    },
-    {
       "id": "CIDO5-22375349",
       "title": "Borsa de treball de places de Tècnic auxiliar de comunicació",
       "entity": "Ajuntament de la Garriga",
@@ -1755,16 +1735,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22320018"
-    },
-    {
-      "id": "CIDO5-19213597",
-      "title": "1 plaça de Tècnic mitjà especialista - Tècnic d'esports, joventut i participació ciutadana",
-      "entity": "Ajuntament de Collbató",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19213597"
     },
     {
       "id": "CIDO5-22368276",
@@ -2385,16 +2355,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22334734"
-    },
-    {
-      "id": "CIDO5-22173313",
-      "title": "2 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de Sant Vicenç dels Horts",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22173313"
     },
     {
       "id": "CIDO5-21405690",
@@ -3045,56 +3005,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/16434688"
-    },
-    {
-      "id": "CIDO5-22289649",
-      "title": "Borsa de treball de places de Tècnic superior Arquitecte",
-      "entity": "Ajuntament de Manresa",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22289649"
-    },
-    {
-      "id": "CIDO5-22259214",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Viladecans",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22259214"
-    },
-    {
-      "id": "CIDO5-22191242",
-      "title": "Borsa de treball de places de Treballador familiar",
-      "entity": "Ajuntament de Sant Celoni",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22191242"
-    },
-    {
-      "id": "CIDO5-21945752",
-      "title": "5 places de Subaltern",
-      "entity": "Ajuntament d'Esplugues de Llobregat",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21945752"
-    },
-    {
-      "id": "CIDO5-21689851",
-      "title": "5 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de Berga",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21689851"
     }
   ]
 }

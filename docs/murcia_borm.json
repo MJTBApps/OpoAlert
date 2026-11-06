@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-05T16:36:48.479071+00:00",
+  "lastCheckedUTC": "2026-11-06T06:29:34.066843+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "256",
+    "bulletin": "257",
     "pagesVisited": 26,
-    "announcementsRead": 579,
-    "opportunities": 53
+    "announcementsRead": 587,
+    "opportunities": 51
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "232",
       "233",
       "234",
       "235",
@@ -41,10 +40,10 @@
       "253",
       "254",
       "255",
-      "256"
+      "256",
+      "257"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -69,7 +68,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -78,10 +78,20 @@
       "2026-11-01"
     ],
     "issuesRead": 26,
-    "announcementsRead": 579,
-    "opportunities": 53
+    "announcementsRead": 587,
+    "opportunities": 51
   },
   "notices": [
+    {
+      "id": "MU-2026-5424",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1405/2026) de 27 de octubre, de la Universidad de Murcia, por la que se convoca concurso de acceso a plazas de los cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "06/11/2026",
+      "bulletin": "257",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846106/pdf"
+    },
     {
       "id": "MU-2026-5400",
       "province": "Región de Murcia (BORM)",
@@ -581,36 +591,6 @@
       "bulletin": "233",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845554/pdf"
-    },
-    {
-      "id": "MU-2026-4858",
-      "province": "Región de Murcia (BORM)",
-      "title": "Convocatoria de concurso-oposición para la promoción de cuatro plazas de Oficial de Mantenimiento encuadradas en la plantilla de personal laboral fijo del Ayuntamiento de Fuente Álamo de Murcia mediante promoción interna. (Expediente 3936/2026).",
-      "entity": "Fuente Álamo de Murcia",
-      "date": "07/10/2026",
-      "bulletin": "232",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845540/pdf"
-    },
-    {
-      "id": "MU-2026-4845",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1278/2026 de 1 de octubre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "07/10/2026",
-      "bulletin": "232",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845527/pdf"
-    },
-    {
-      "id": "MU-2026-4844",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución (R-1287/2026) del Rector de la Universidad de Murcia de 2 de octubre, por la que se corrige error en la (R-1186/2026) de 16 de septiembre, por la que se convoca concurso-oposición para la provisión de plazas de Profesorado Permanente Laboral.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "07/10/2026",
-      "bulletin": "232",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845526/pdf"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-05T16:42:22.362897+00:00",
+  "lastCheckedUTC": "2026-11-06T06:43:10.047214+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 66,
-    "opportunities": 66,
+    "announcementsRead": 64,
+    "opportunities": 64,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-14",
@@ -48,12 +47,13 @@
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-06"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 66,
-    "opportunities": 66
+    "announcementsRead": 64,
+    "opportunities": 64
   },
   "notices": [
     {
@@ -695,26 +695,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22297795"
-    },
-    {
-      "id": "CIDO7-22267228",
-      "title": "1 plaça de Personal de neteja",
-      "entity": "Ajuntament de Bellpuig",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267228"
-    },
-    {
-      "id": "CIDO7-22267222",
-      "title": "1 plaça de Tècnic educació Infantil",
-      "entity": "Ajuntament de Bellpuig",
-      "date": "07/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22267222"
     }
   ]
 }

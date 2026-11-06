@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-05T16:45:23.801706+00:00",
+  "lastCheckedUTC": "2026-11-06T06:49:04.957820+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
+    "bulletin": "215",
     "pagesVisited": 22,
-    "announcementsRead": 938,
-    "opportunities": 71
+    "announcementsRead": 947,
+    "opportunities": 70
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -37,10 +36,10 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -75,10 +75,40 @@
       "2026-11-02"
     ],
     "issuesRead": 22,
-    "announcementsRead": 938,
-    "opportunities": 71
+    "announcementsRead": 947,
+    "opportunities": 70
   },
   "notices": [
+    {
+      "id": "AS-2026-08954",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Convocatoria y bases para la provisión, por el sistema de libre designación, del puesto de Director/a Gerente de la Fundación Municipal de Cultura.",
+      "entity": "Ayuntamiento de Oviedo",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/06/2026-08954.pdf"
+    },
+    {
+      "id": "AS-2026-08863",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases para la selección de personal correspondiente al plan de empleo en el marco de los itinerarios integrados de activación en el ámbito local (convocatoria 2026).",
+      "entity": "Ayuntamiento de Castropol",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/06/2026-08863.pdf"
+    },
+    {
+      "id": "AS-2026-08861",
+      "province": "Asturias (BOPA)",
+      "title": "Edicto. Convocatoria y bases para la provisión de cuatro plazas de Técnico/a de Gestión, una de ellas reservada al turno de discapacidad, incluidas en las Ofertas de Empleo Público de 2025 y 2026.",
+      "entity": "Ayuntamiento de Oviedo",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/06/2026-08861.pdf"
+    },
     {
       "id": "AS-2026-08844",
       "province": "Asturias (BOPA)",
@@ -748,46 +778,6 @@
       "bulletin": "195",
       "type": "Bolsa de trabajo",
       "url": "https://www.asturias.es/bopa/2026/10/08/2026-08054.pdf"
-    },
-    {
-      "id": "AS-2026-07962",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases específicas para la provisión por el sistema de concurso-oposición, turno libre, de una plaza de Técnico/a Superior de Administración Especial, Psicólogo/a Municipal.",
-      "entity": "Ayuntamiento de Langreo",
-      "date": "07/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/07/2026-07962.pdf"
-    },
-    {
-      "id": "AS-2026-07959",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases específicas para proveer, por el sistema de concurso-oposición, turno libre, 25 plazas de Operario/a de los Servicios Operativos, 2 de ellas reservadas al turno de discapacidad.",
-      "entity": "Ayuntamiento de Langreo",
-      "date": "07/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/07/2026-07959.pdf"
-    },
-    {
-      "id": "AS-2026-07951",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria del proceso selectivo para la contratación de un Técnico Administrativo mediante contrato formativo para la obtención de la práctica profesional adecuada al nivel de estudios.",
-      "entity": "Ayuntamiento de Allande",
-      "date": "07/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/07/2026-07951.pdf"
-    },
-    {
-      "id": "AS-2026-07950",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria del proceso selectivo para la contratación de tres Peones de Obras y/o Servicios Múltiples en el marco del Plan de Empleo 2026-2027, en el marco de los itinerarios integrados de activación en el ámbito local.",
-      "entity": "Ayuntamiento de Allande",
-      "date": "07/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/07/2026-07950.pdf"
     }
   ]
 }
