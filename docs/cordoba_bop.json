@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-05T17:36:03.373658+00:00",
+  "lastCheckedUTC": "2026-11-06T08:05:35.389769+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
+    "bulletin": "215",
     "pagesVisited": 21,
-    "announcementsRead": 360,
-    "opportunities": 27
+    "announcementsRead": 371,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 360,
-    "opportunities": 27,
+    "announcementsRead": 371,
+    "opportunities": 26,
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -40,10 +39,10 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -63,7 +62,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -77,7 +77,6 @@
       "2026-11-02"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/07-10-2026/BOP-S-2026-194.pdf",
       "https://bop.dipucordoba.es/visor-pdf/08-10-2026/BOP-S-2026-195.pdf",
       "https://bop.dipucordoba.es/visor-pdf/09-10-2026/BOP-S-2026-196.pdf",
       "https://bop.dipucordoba.es/visor-pdf/12-10-2026/BOP-S-2026-197.pdf",
@@ -97,7 +96,8 @@
       "https://bop.dipucordoba.es/visor-pdf/30-10-2026/BOP-S-2026-211.pdf",
       "https://bop.dipucordoba.es/visor-pdf/03-11-2026/BOP-S-2026-212.pdf",
       "https://bop.dipucordoba.es/visor-pdf/04-11-2026/BOP-S-2026-213.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/05-11-2026/BOP-S-2026-214.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/05-11-2026/BOP-S-2026-214.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/06-11-2026/BOP-S-2026-215.pdf"
     ]
   },
   "notices": [
@@ -360,16 +360,6 @@
       "bulletin": "195",
       "type": "Plaza / oposición",
       "url": "https://bop.dipucordoba.es/visor-pdf/08-10-2026/BOP-A-2026-3268.pdf"
-    },
-    {
-      "id": "CO-2026-3342",
-      "province": "Córdoba",
-      "title": "Bases reguladoras que han de regir el procedimiento de selección, mediante el sistema de concurso en régimen de funcionario interino por programas de una plaza de Especialista en Igualdad",
-      "entity": "Ayuntamiento de Villaviciosa de Córdoba",
-      "date": "07/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/07-10-2026/BOP-A-2026-3342.pdf"
     }
   ]
 }
