@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-05T16:35:44.578271+00:00",
+  "lastCheckedUTC": "2026-11-06T06:28:50.937485+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "E50",
+    "bulletin": "6429",
     "pagesVisited": 15,
-    "announcementsRead": 130,
-    "opportunities": 13
+    "announcementsRead": 142,
+    "opportunities": 14
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "E44",
       "6421",
       "E45",
       "6422",
@@ -30,10 +29,10 @@
       "6427",
       "E49",
       "6428",
-      "E50"
+      "E50",
+      "6429"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -47,7 +46,8 @@
       "2026-10-30",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-08",
@@ -70,10 +70,30 @@
       "2026-11-05"
     ],
     "issuesRead": 15,
-    "announcementsRead": 130,
-    "opportunities": 13
+    "announcementsRead": 142,
+    "opportunities": 14
   },
   "notices": [
+    {
+      "id": "ML-2026-A-1245",
+      "province": "Melilla (BOME)",
+      "title": "Nota informativa para la celebración del primer ejercicio correspondiente a la convocatoria para la provisión en propiedad de 3 plazas de oficial mecánico-conductor (subgrupo C2, escala de Administración Especial, subescala Servicios Especiales) por el sistema de oposición libre.",
+      "entity": "Tribunal de examen",
+      "date": "06/11/2026",
+      "bulletin": "6429",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1245.pdf"
+    },
+    {
+      "id": "ML-2026-A-1230",
+      "province": "Melilla (BOME)",
+      "title": "Orden nº 5025, de fecha 2 de noviembre de 2026, relativa a relación definitiva de los aspirantes para la provisión en propiedad de una plaza de Psicólogo, personal funcionario, mediante el sistema de oposición libre.",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
+      "date": "06/11/2026",
+      "bulletin": "6429",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1230.pdf"
+    },
     {
       "id": "ML-2026-AX-133",
       "province": "Melilla (BOME)",
@@ -193,16 +213,6 @@
       "bulletin": "6421",
       "type": "Plaza / oposición",
       "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1134.pdf"
-    },
-    {
-      "id": "ML-2026-AX-119",
-      "province": "Melilla (BOME)",
-      "title": "Puntos de llamada del primer ejercicio del proceso selectivo para la provisión en propiedad de 30 plazas de Auxiliar Administrativo de la Ciudad Autónoma de Melilla por oposición libre.",
-      "entity": "Tribunal de examen",
-      "date": "07/10/2026",
-      "bulletin": "E44",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-119.pdf"
     }
   ]
 }

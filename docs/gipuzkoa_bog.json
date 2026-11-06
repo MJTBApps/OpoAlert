@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-05T16:34:00.264456+00:00",
+  "lastCheckedUTC": "2026-11-06T06:26:20.290945+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 22,
-    "announcementsRead": 812,
-    "opportunities": 33
+    "announcementsRead": 835,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -37,10 +36,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,20 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 812,
-    "opportunities": 33
+    "announcementsRead": 835,
+    "opportunities": 31
   },
   "notices": [
+    {
+      "id": "GP-2026-2607189",
+      "province": "Gipuzkoa",
+      "title": "Orden Foral 2209/2026, de 29 de octubre, por la que se efectúa convocatoria pública para la cobertura mediante el sistema de libre designación de diversos puestos de trabajo.",
+      "entity": "DEPARTAMENTO DE GOBERNANZA",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/06/c2607189.pdf"
+    },
     {
       "id": "GP-2026-2607167",
       "province": "Gipuzkoa",
@@ -377,36 +387,6 @@
       "bulletin": "192",
       "type": "Bolsa de trabajo",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/08/c2606372.pdf"
-    },
-    {
-      "id": "GP-2026-2606313",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Técnico/a de Comunicación y Relaciones.",
-      "entity": "MANCOMUNIDAD BETERRI-BURUNTZA",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/07/c2606313.pdf"
-    },
-    {
-      "id": "GP-2026-2606312",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Técnico/a de Emprendimiento.",
-      "entity": "MANCOMUNIDAD BETERRI-BURUNTZA",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/07/c2606312.pdf"
-    },
-    {
-      "id": "GP-2026-2606311",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Director/a.",
-      "entity": "MANCOMUNIDAD BETERRI-BURUNTZA",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/07/c2606311.pdf"
     }
   ]
 }

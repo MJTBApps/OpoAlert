@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-05T16:32:57.458639+00:00",
+  "lastCheckedUTC": "2026-11-06T06:24:47.110789+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
+    "bulletin": "215",
     "pagesVisited": 20,
-    "announcementsRead": 739,
-    "opportunities": 120
+    "announcementsRead": 754,
+    "opportunities": 126
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -35,10 +34,10 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-13",
@@ -57,7 +56,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -72,10 +72,120 @@
       "2026-11-02"
     ],
     "issuesRead": 20,
-    "announcementsRead": 739,
-    "opportunities": 120
+    "announcementsRead": 754,
+    "opportunities": 126
   },
   "notices": [
+    {
+      "id": "AO-2026-007962312",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 29 de julio de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Técnico/a Superior de Anatomía Patológica y Citología del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473537830606"
+    },
+    {
+      "id": "AO-2026-007962311",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 29 de julio de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Técnico/a Superior de Anatomía Patológica y Citología del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno de promoción interna.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473535810606"
+    },
+    {
+      "id": "AO-2026-007962310",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 29 de julio de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Pinche del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre, discapacidad general, discapacidad intelectual, enfermedad mental, personas transexuales y violencia de género.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473533790505"
+    },
+    {
+      "id": "AO-2026-007962309",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 21 de enero de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Telefonista del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473531770505"
+    },
+    {
+      "id": "AO-2026-007962308",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 21 de enero de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Telefonista del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno de promoción interna.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473529750505"
+    },
+    {
+      "id": "AO-2026-007962307",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de participantes que han superado el proceso selectivo, convocado por Resoluciones de 3 de abril de 2025 y 25 de julio de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Médico de Admisión y Documentación Clínica en Centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473527730505"
+    },
+    {
+      "id": "AO-2026-007962306",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de participantes que han superado el proceso selectivo, convocado por Resolución de 3 de abril de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Médico de Admisión y Documentación Clínica en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno de promoción interna.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473525710505"
+    },
+    {
+      "id": "AO-2026-007962304",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, del Director General de la Función Pública, por la que se modifica la composición de la Comisión permanente de selección en las pruebas selectivas para ingreso, por promoción interna, en el Cuerpo de Funcionarios Técnicos de la Administración, de la Comunidad Autónoma de Aragón, Escala Técnica de Gestión, Técnicos de Gestión General. (Código de convocatoria 260047).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473521670404"
+    },
+    {
+      "id": "AO-2026-007962303",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, del Director General de la Función Pública, por la que se modifica la composición de la Comisión Permanente de Selección en las pruebas selectivas para ingreso, por promoción interna, en el Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica de Gestión, Técnicos de Gestión General. (Código de convocatoria 260019).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473519650404"
+    },
+    {
+      "id": "AO-2026-007962302",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 22 de octubre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de las personas que han superado el proceso selectivo para ingreso, por promoción interna, en el Cuerpo Ejecutivo de la Administración de la Comunidad Autónoma de Aragón, Escala General Administrativa, Administrativos. (Código de convocatoria 260053).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473517630404"
+    },
+    {
+      "id": "AO-2026-007962301",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 22 de octubre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de las personas que han superado el proceso selectivo para ingreso, por promoción interna, en el Cuerpo Ejecutivo de la Administración de la Comunidad Autónoma de Aragón, Escala General Administrativa, Administrativos. (Código de convocatoria 260028).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473515610404"
+    },
     {
       "id": "AO-2026-007962278",
       "province": "Aragón (BOA)",
@@ -1225,56 +1335,6 @@
       "bulletin": "196",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469398350303"
-    },
-    {
-      "id": "AO-2026-007961570",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 24 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 25 de julio de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Pediatra de Atención Primaria en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre, discapacidad y violencia de género.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "07/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469204820505"
-    },
-    {
-      "id": "AO-2026-007961569",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 24 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 25 de julio de 2025, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Pediatra de Atención Primaria en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno de promoción interna.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "07/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469202800505"
-    },
-    {
-      "id": "AO-2026-007961563",
-      "province": "Aragón (BOA)",
-      "title": "ORDEN HAP/1428/2026, de 1 de octubre, por la que se nombra personal funcionario de carrera del Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica Facultativa, Facultativos Técnicos de Patrimonio Cultural, Archivos.  (Código de convocatoria 240117).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "07/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469190680404"
-    },
-    {
-      "id": "AO-2026-007961562",
-      "province": "Aragón (BOA)",
-      "title": "ORDEN HAP/1427/2026, de 23 de septiembre, por la que se nombra personal funcionario de carrera del Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica Facultativa, Enfermeros de Administración Sanitaria. (Código de convocatoria 220022).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "07/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469188660404"
-    },
-    {
-      "id": "AO-2026-007961561",
-      "province": "Aragón (BOA)",
-      "title": "ORDEN HAP/1426/2026, de 23 de septiembre, por la que se nombra personal funcionario de carrera del Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica Facultativa, Educadores Sociales. (Código de convocatoria 240047).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "07/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469186640404"
     }
   ]
 }

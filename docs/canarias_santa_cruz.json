@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-05T16:37:13.372097+00:00",
+  "lastCheckedUTC": "2026-11-06T06:32:26.066360+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "132",
+    "bulletin": "133",
     "pagesVisited": 13,
-    "announcementsRead": 557,
-    "opportunities": 31
+    "announcementsRead": 567,
+    "opportunities": 28
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "120",
       "121",
       "122",
       "123",
@@ -28,10 +27,10 @@
       "129",
       "130",
       "131",
-      "132"
+      "132",
+      "133"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-09",
       "2026-10-12",
       "2026-10-14",
@@ -43,7 +42,8 @@
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-08",
@@ -65,10 +65,40 @@
       "2026-11-05"
     ],
     "issuesRead": 13,
-    "announcementsRead": 557,
-    "opportunities": 31
+    "announcementsRead": 567,
+    "opportunities": 28
   },
   "notices": [
+    {
+      "id": "TF-20261106-049",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la aprobación de las Bases que han de regir la convocatoria para la provisión con funcionario de carrera, por sistema de promoción interna, de una plaza vacante de Subinspector de Policía Local",
+      "entity": "AYUNTAMIENTO DE VILLA DE LOS REALEJOS",
+      "date": "06/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/6-11-26/6-11-26.pdf"
+    },
+    {
+      "id": "TF-20261106-044",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a Decreto nº 3439/2026, de 3 de noviembre, por el que se subsanan las Bases de la convocatoria del procedimiento selectivo para la provisión en propiedad de tres plazas vacantes de funcionario de carrera de Policía, del Cuerpo de la Policía Local del Ayuntamiento de Candelaria",
+      "entity": "AYUNTAMIENTO DE VILLA DE CANDELARIA",
+      "date": "06/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/6-11-26/6-11-26.pdf"
+    },
+    {
+      "id": "TF-20261106-006",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la convocatoria pública y las Bases para la provisión, por el sistema de libre designación, del puesto de trabajo FC1272 “Jefe/a de Servicio Técnico de Planificación TIC y Soporte al Dato”",
+      "entity": "CABILDO INSULAR DE TENERIFE",
+      "date": "06/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/6-11-26/6-11-26.pdf"
+    },
     {
       "id": "TF-20261104-037",
       "province": "Santa Cruz de Tenerife (BOP)",
@@ -318,66 +348,6 @@
       "bulletin": "121",
       "type": "Plaza / oposición",
       "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/9-10-26/9-10-26.pdf"
-    },
-    {
-      "id": "TF-20261007-042",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a Decreto nº 2026-1737, por el que se declara la selección de la aspirante del proceso selectivo, mediante comisión de servicios de una (1) plaza vacante de Auxiliar Administrativo/a",
-      "entity": "AYUNTAMIENTO DE VILLA DE EL SAUZAL",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/7-10-26/7-10-26.pdf"
-    },
-    {
-      "id": "TF-20261007-037",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a Resolución de la Presidenta nº 2026-0112, de 30 de septiembre de 2026, por la que se procede a las adscripciones al puesto de los empleados de la Empresa de Inserción Viviendas y Servicios Municipales de Candelaria, S.L., que han tomado posesión de las plazas correspondientes a los procesos selectivos derivados de la Oferta de Empleo Público de estabilización",
-      "entity": "AYUNTAMIENTO DE VILLA DE CANDELARIA",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/7-10-26/7-10-26.pdf"
-    },
-    {
-      "id": "TF-20261007-036",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a Resolución de la Presidenta nº 2026-0128, de 30 de septiembre de 2026, por la que se procede a las adscripciones al puesto de los empleados de la Entidad Pública Empresarial Gestión de Empresas y Servicios Públicos del Ayuntamiento de Candelaria, que han tomado posesión de las plazas correspondientes a los procesos selectivos derivados de la Oferta de Empleo Público de estabilización",
-      "entity": "AYUNTAMIENTO DE VILLA DE CANDELARIA",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/7-10-26/7-10-26.pdf"
-    },
-    {
-      "id": "TF-20261007-023",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a la Resolución de Alcaldía 3640-2026, de 2 de octubre, por el que se aprobó la Oferta de Empleo Público correspondiente a la/s plaza/s que a continuación se reseñan para el año 2026",
-      "entity": "AYUNTAMIENTO DE GUÍA DE ISORA",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/7-10-26/7-10-26.pdf"
-    },
-    {
-      "id": "TF-20261007-013",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a Decreto dictado por la Concejalía Delegada en materia de Recursos Humanos con fecha 25 de septiembre de 2026, mediante el que se nombran dos funcionarios/as de carrera, resolviendo el proceso selectivo para la cobertura, mediante funcionarios/as de carrera, de dos plazas de Arquitecto/a, incluidas en las Ofertas de Empleo Público de los ejercicios 2022 y 2023, por el turno de acceso libre y mediante el sistema de concurso oposición",
-      "entity": "AYUNTAMIENTO DE SANTA CRUZ DE TENERIFE",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/7-10-26/7-10-26.pdf"
-    },
-    {
-      "id": "TF-20261007-002",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a la convocatoria pública para la provisión, con carácter definitivo, mediante el procedimiento de concurso ordinario y concurso específico, de los puestos de trabajo vacantes en la Relación de Puestos de Trabajo del Cabildo Insular de Tenerife, vinculados a la plaza de Técnico/a de Grado Superior de Planificación y Gestión, Rama Ambiental",
-      "entity": "CABILDO INSULAR DE TENERIFE",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/7-10-26/7-10-26.pdf"
     }
   ]
 }

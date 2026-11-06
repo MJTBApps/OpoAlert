@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-05T16:34:58.030603+00:00",
+  "lastCheckedUTC": "2026-11-06T06:27:29.786992+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "132",
-    "pagesVisited": 13,
-    "announcementsRead": 421,
-    "opportunities": 35
+    "pagesVisited": 12,
+    "announcementsRead": 381,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "120",
       "121",
       "122",
       "123",
@@ -31,7 +30,6 @@
       "132"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-09",
       "2026-10-12",
       "2026-10-14",
@@ -62,11 +60,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-03",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 421,
-    "opportunities": 35
+    "issuesRead": 12,
+    "announcementsRead": 381,
+    "opportunities": 34
   },
   "notices": [
     {
@@ -408,16 +407,6 @@
       "bulletin": "121",
       "type": "Plaza / oposición",
       "url": "https://www.boplaspalmas.net/boletines/2026/09-10-26/09-10-26.pdf"
-    },
-    {
-      "id": "LP-20261007-033",
-      "province": "Las Palmas (BOP)",
-      "title": "Convocatoria del procedimiento para otorgar autorizaciones para la instalación de establecimientos móviles de alimentación y productos gastronómicos en la plaza de San Gregorio en las fiestas patronales de San Gregorio 2026",
-      "entity": "M.I. AYUNTAMIENTO DE TELDE",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/7-10-26/7-10-26.pdf"
     }
   ]
 }

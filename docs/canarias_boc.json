@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-05T16:34:30.453360+00:00",
+  "lastCheckedUTC": "2026-11-06T06:27:03.871144+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 21,
-    "announcementsRead": 362,
-    "opportunities": 33
+    "announcementsRead": 367,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -36,10 +35,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-13",
@@ -59,7 +58,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,40 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 362,
-    "opportunities": 33
+    "announcementsRead": 367,
+    "opportunities": 30
   },
   "notices": [
+    {
+      "id": "IC-2026-3840",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Anuncio por el que se hace pública la Resolución de 21 de octubre de 2026, que remite el expediente y emplaza a cuantos aparezcan como interesados en el recurso que se tramita como procedimiento abreviado n.º 469/2026 ante la Plaza n.º 3 del Tribunal de Instancia, Sección de lo Contencioso-administrativo, de Santa Cruz de Tenerife, interpuesto por Dña. Verónica Merino Castillo contra la Resolución de 7 de mayo de 2026, por la que se hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior de Administración, Escala de Administradores Financieros y Tributarios (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 29 de noviembre de 2023, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "06/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-222-3840.pdf"
+    },
+    {
+      "id": "IC-2026-3821",
+      "province": "Canarias (BOC)",
+      "title": "Viceconsejería de la Presidencia.- Resolución de 26 de octubre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 13420310, denominado Puesto Singularizado, adscrito a la Dirección General de Transformación Digital de los Servicios Públicos, efectuada por Resolución de 17 de agosto de 2026.",
+      "entity": "Presidencia del Gobierno",
+      "date": "06/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-222-3821.pdf"
+    },
+    {
+      "id": "IC-2026-3820",
+      "province": "Canarias (BOC)",
+      "title": "Viceconsejería de la Presidencia.- Resolución de 23 de octubre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 13792310, denominado Jefe/a de Área de Evaluación y Seguimiento Presupuestario, adscrito a la Secretaría General, efectuada por Resolución de 20 de julio de 2026.",
+      "entity": "Presidencia del Gobierno",
+      "date": "06/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-222-3820.pdf"
+    },
     {
       "id": "IC-2026-3819",
       "province": "Canarias (BOC)",
@@ -347,66 +377,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-202-3490.pdf"
-    },
-    {
-      "id": "IC-2026-3473",
-      "province": "Canarias (BOC)",
-      "title": "ANUNCIO de 28 de septiembre de 2026, relativo a la convocatoria para la provisión de cinco puestos de trabajo, con carácter indefinido, en el marco de la tasa de reposición para el año 2026.",
-      "entity": "Hoteles Escuela de Canarias, S.A.",
-      "date": "07/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-201-3473.pdf"
-    },
-    {
-      "id": "IC-2026-3464",
-      "province": "Canarias (BOC)",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026, por la que se aprueba la convocatoria de contratación para la provisión de plazas de personal docente e investigador contratado temporal en régimen de derecho laboral, mediante procedimiento ordinario, en la figura de Profesor Asociado en Ciencias de la Salud.",
-      "entity": "Universidad de La Laguna",
-      "date": "07/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-201-3464.pdf"
-    },
-    {
-      "id": "IC-2026-3463",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 25 de septiembre de 2026, por la que se hace pública la relación con la persona aspirante seleccionada en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior Facultativo, Escala Técnica Facultativa Superior, Especialidad de Psicología (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 28 de noviembre de 2024, y se le oferta puesto de trabajo a los efectos de manifestar su preferencia.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "07/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-201-3463.pdf"
-    },
-    {
-      "id": "IC-2026-3462",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 24 de septiembre de 2026, por la que se declara finalizado el procedimiento administrativo relativo a la convocatoria de las pruebas selectivas para ingresar, por promoción interna horizontal y vertical, en el Cuerpo Superior Facultativo, Escala de Inspección Médica (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, aprobada por Resolución de 10 de abril de 2026.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "07/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-201-3462.pdf"
-    },
-    {
-      "id": "IC-2026-3461",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 22 de septiembre de 2026, por la que se hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior Facultativo, Escala Técnica Facultativa Superior, Especialidad de Técnicas de Prevención (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 28 de noviembre de 2024, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "07/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-201-3461.pdf"
-    },
-    {
-      "id": "IC-2026-3460",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 18 de septiembre de 2026, por la que se hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior Facultativo, Escala de Ingeniería y Arquitectura, Especialidad de Ingeniería Industrial (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 21 de noviembre de 2017, en ejecución de la Sentencia n.º 95/2022, de 22 de marzo, y de la Resolución de 21 de abril de 2025, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "07/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-201-3460.pdf"
     }
   ]
 }

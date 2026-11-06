@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-05T16:32:15.292940+00:00",
+  "lastCheckedUTC": "2026-11-06T06:24:13.375118+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 21,
-    "announcementsRead": 435,
-    "opportunities": 45
+    "announcementsRead": 436,
+    "opportunities": 46
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -36,10 +35,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -59,7 +58,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,40 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 435,
-    "opportunities": 45
+    "announcementsRead": 436,
+    "opportunities": 46
   },
   "notices": [
+    {
+      "id": "BD-2026-165112",
+      "province": "Badajoz",
+      "title": "Bases de la convocatoria para la provisión, por turno libre, mediante el sistema de concurso de méritos de una plaza de Limpiador/a",
+      "entity": "Ayuntamiento de Jerez de los Caballeros",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-06000000_4379.pdf"
+    },
+    {
+      "id": "BD-2026-165106",
+      "province": "Badajoz",
+      "title": "Decreto por el que se procede a la corrección de error en la convocatoria de quince plazas de Técnico/a Gestión Administrativa, de la Diputación de Badajoz",
+      "entity": "Diputación de Badajoz",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-06000000_4373.pdf"
+    },
+    {
+      "id": "BD-2026-165090",
+      "province": "Badajoz",
+      "title": "Bases de la convocatoria, para cubrir una plaza de Gerente/a como funcionario interino por programa para la dinamización comercial, mediante sistema de oposición",
+      "entity": "Ayuntamiento de Talavera la Real",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-06000000_4357.pdf"
+    },
     {
       "id": "BD-2026-165074",
       "province": "Badajoz",
@@ -506,26 +536,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-08000000_3956.pdf"
-    },
-    {
-      "id": "BD-2026-164655",
-      "province": "Badajoz",
-      "title": "Bases para la provisión, por el sistema de acceso de movilidad y el sistema de selección de concurso, de dos plazas de Agente de la Policía Local, vacantes en la plantilla de personal funcionario e incluidas en la oferta de empleo público de 2026",
-      "entity": "Ayuntamiento de Medellín",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-07000000_3925.pdf"
-    },
-    {
-      "id": "BD-2026-164646",
-      "province": "Badajoz",
-      "title": "Bases reguladoras para la constitución de una bolsa de trabajo de personal laboral temporal, en la categoría de Monitor/a Deportivo de fútbol en la Escuela municipal de deportes, mediante el sistema de oposición",
-      "entity": "Ayuntamiento de Talavera la Real",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-07000000_3916.pdf"
     }
   ]
 }

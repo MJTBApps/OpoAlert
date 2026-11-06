@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Palencia",
   "source": "https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia",
-  "lastCheckedUTC": "2026-11-05T16:35:52.784162+00:00",
+  "lastCheckedUTC": "2026-11-06T06:30:01.888515+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "132",
-    "pagesVisited": 14,
-    "announcementsRead": 275,
-    "opportunities": 10
+    "pagesVisited": 13,
+    "announcementsRead": 255,
+    "opportunities": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
-    "issuesRead": 14,
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
+    "issuesRead": 13,
     "bulletins": [
-      "120",
       "121",
       "3",
       "122",
@@ -33,7 +32,6 @@
       "132"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -49,7 +47,6 @@
       "2026-11-04"
     ],
     "editionTypes": [
-      "ordinario",
       "ordinario",
       "extraordinario",
       "ordinario",
@@ -80,10 +77,10 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "editionPDFs": [
-      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261009-bop-121-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261012-bop-3-Extraordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261013-bop-122-Ordinario.pdf",
@@ -98,8 +95,8 @@
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261103-bop-131-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261104-bop-132-Ordinario.pdf"
     ],
-    "announcementsRead": 275,
-    "opportunities": 10,
+    "announcementsRead": 255,
+    "opportunities": 7,
     "pdfScope": "El PDF completo firmado es el único documento publicado por edición; el enlace identifica también la página del anuncio."
   },
   "notices": [
@@ -172,36 +169,6 @@
       "bulletin": "121",
       "type": "Plaza / oposición",
       "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261009-bop-121-Ordinario.pdf#page=2"
-    },
-    {
-      "id": "PL-20261007-005",
-      "province": "Palencia",
-      "title": "Composición Bolsa de Empleo para el puesto de trabajo de Auxiliar Complejo Deportivo",
-      "entity": "Patronato Municipal de Deportes",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf#page=20"
-    },
-    {
-      "id": "PL-20261007-004",
-      "province": "Palencia",
-      "title": "Bases y convocatoria del proceso selectivo de una plaza de Encargado/a de Servicios, mediante concurso-oposición interna",
-      "entity": "Palencia",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf#page=6"
-    },
-    {
-      "id": "PL-20261007-002",
-      "province": "Palencia",
-      "title": "Ampliación de la cuantía inicial de los fondos destinados a la financiación de la Convocatoria de “Ayudas de carácter individual para favorecer la autonomía personal de personas dependientes, mayores o con discapacidad, año 2026",
-      "entity": "Área de Servicios Sociales",
-      "date": "07/10/2026",
-      "bulletin": "120",
-      "type": "Plaza / oposición",
-      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261007-bop-120-Ordinario.pdf#page=4"
     }
   ]
 }

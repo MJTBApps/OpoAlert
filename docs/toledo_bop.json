@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-05T16:37:20.472643+00:00",
+  "lastCheckedUTC": "2026-11-06T06:31:59.303041+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "212",
-    "pagesVisited": 21,
-    "announcementsRead": 539,
-    "opportunities": 26
+    "pagesVisited": 20,
+    "announcementsRead": 509,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -39,7 +38,6 @@
       "212"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-06"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 539,
-    "opportunities": 26
+    "issuesRead": 20,
+    "announcementsRead": 509,
+    "opportunities": 22
   },
   "notices": [
     {
@@ -296,46 +295,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094515;0&insert_number=4533&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4571",
-      "province": "Toledo",
-      "title": "Bases de convocatoria constitución nueva Bolsa de Trabajo -Tipo B- Auxiliar de Ayuda a Domicilio, C2, Concurso",
-      "entity": "AYUNTAMIENTO DE ILLESCAS",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104551;0&insert_number=4571&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4560",
-      "province": "Toledo",
-      "title": "Bases modificadas reguladoras del proceso selectivo para el acceso a tres plazas de policía local, por el procedimiento de oposición libre",
-      "entity": "AYUNTAMIENTO DE SESEÑA",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104543;0&insert_number=4560&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4559",
-      "province": "Toledo",
-      "title": "Bases modificadas reguladoras del proceso de provisión de tres puestos de policía local, por movilidad.",
-      "entity": "AYUNTAMIENTO DE SESEÑA",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104545;0&insert_number=4559&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4510",
-      "province": "Toledo",
-      "title": "Nueva convocatoria para una plaza de auxiliar de ayuda a domicilio a tiempo parcial",
-      "entity": "AYUNTAMIENTO DE VILLARRUBIA SANTIAGO",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094485;0&insert_number=4510&insert_year=2026"
     }
   ]
 }
