@@ -12,11 +12,21 @@ enum Push {
     static let topic = "convocatorias"
 
     private static func value(_ key: String) -> String {
-        (Bundle.main.object(forInfoDictionaryKey: key) as? String ?? "").trimmingCharacters(in: .whitespaces)
+        (Bundle.main.object(forInfoDictionaryKey: key) as? String ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
+    /// Firebase cierra la app (NSException) si el identificador no tiene la forma
+    /// «1:NÚMERO:ios:HEX» (fallo de la 1.54.0 al abrirla): sin datos válidos, no se inicia.
     static var configured: Bool {
-        ["OpoFcmAppId", "OpoFcmApiKey", "OpoFcmProjectId", "OpoFcmSenderId"].allSatisfy { !value($0).isEmpty }
+        let appId = value("OpoFcmAppId"), sender = value("OpoFcmSenderId")
+        let parts = appId.split(separator: ":", omittingEmptySubsequences: false)
+        guard parts.count == 4, parts[0] == "1", parts[1] == Substring(sender), parts[2] == "ios",
+              !sender.isEmpty, sender.allSatisfy(\.isNumber),
+              parts[3].allSatisfy(\.isHexDigit), !parts[3].isEmpty else { return false }
+        return ["OpoFcmApiKey", "OpoFcmProjectId"].allSatisfy { key in
+            let v = value(key)
+            return !v.isEmpty && !v.contains("=") && !v.contains(" ") && !v.contains("\"")
+        }
     }
 
     static func start(_ application: UIApplication) {

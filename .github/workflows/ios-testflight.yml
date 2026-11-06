@@ -93,6 +93,15 @@ jobs:
             echo "::warning::Sin los secretos ADMOB_IOS_*: esta compilación lleva los anuncios de PRUEBA de Google (vale para TestFlight, no para el App Store)"
           fi
           FCM=()
+          # Firebase cierra la app al abrirla si el identificador está mal (1.54.0):
+          # se comprueba la forma de cada secreto y, si no vale, no se compila.
+          if [ -n "$FIREBASE_IOS_APP_ID$FIREBASE_IOS_API_KEY$FIREBASE_IOS_SENDER_ID$FIREBASE_PROJECT_ID" ]; then
+            echo "$FIREBASE_IOS_APP_ID" | grep -Eqx '1:[0-9]+:ios:[0-9a-f]+' || { echo "::error::FIREBASE_IOS_APP_ID no tiene la forma 1:NÚMERO:ios:HEX (pega solo el valor, sin «NOMBRE=»)"; exit 1; }
+            echo "$FIREBASE_IOS_SENDER_ID" | grep -Eqx '[0-9]+' || { echo "::error::FIREBASE_IOS_SENDER_ID debe ser solo el número"; exit 1; }
+            echo "$FIREBASE_IOS_APP_ID" | grep -q "^1:$FIREBASE_IOS_SENDER_ID:" || { echo "::error::FIREBASE_IOS_SENDER_ID no coincide con FIREBASE_IOS_APP_ID"; exit 1; }
+            echo "$FIREBASE_IOS_API_KEY" | grep -Eqx 'AIza[0-9A-Za-z_-]{35}' || { echo "::error::FIREBASE_IOS_API_KEY no tiene la forma AIza… (pega solo el valor)"; exit 1; }
+            echo "$FIREBASE_PROJECT_ID" | grep -Eqx '[a-z0-9-]+' || { echo "::error::FIREBASE_PROJECT_ID debe ser solo el identificador (opoalert-14a87)"; exit 1; }
+          fi
           if [ -n "$FIREBASE_IOS_APP_ID" ] && [ -n "$FIREBASE_IOS_API_KEY" ] && [ -n "$FIREBASE_IOS_SENDER_ID" ] && [ -n "$FIREBASE_PROJECT_ID" ]; then
             FCM=(FCM_IOS_APP_ID="$FIREBASE_IOS_APP_ID" FCM_IOS_API_KEY="$FIREBASE_IOS_API_KEY" FCM_IOS_SENDER_ID="$FIREBASE_IOS_SENDER_ID" FCM_IOS_PROJECT_ID="$FIREBASE_PROJECT_ID")
           else
