@@ -449,13 +449,13 @@ class MainActivity : Activity() {
     }
 
     /** Filtro segmentado, como el de iPhone: un solo control con cinco partes. */
-    private fun buildFilters(fresh: Int = freshIds().size, alerts: Int = alertHits().size) {
+    private fun buildFilters() {
         filterRow.removeAllViews()
         filterRow.background = rounded("#E4E8EF", 19)
         for (filter in listOf(FILTER_ALL, FILTER_NEW, FILTER_ALERTS, FILTER_POOLS, FILTER_POSITIONS)) {
             val selected = selectedFilter == filter
             val segment = TextView(this).apply {
-                text = if (filter == FILTER_NEW && fresh > 0) "$filter · $fresh" else filter
+                text = filter  // sin número: en el control no cabe
                 textSize = 12.5f
                 typeface = Typeface.create("sans-serif-medium", Typeface.NORMAL)
                 setTextColor(Color.parseColor(if (selected) "#0E1C36" else "#5C6B80"))
@@ -506,7 +506,7 @@ class MainActivity : Activity() {
         summaryCard.visibility = if (favoritesTab) View.GONE else View.VISIBLE
         titleText.text = if (favoritesTab) "Favoritas" else "OpoAlert"
         val alerts = alertHits()
-        buildFilters(fresh.size, alerts.size)  // los números cambian al actualizar
+        buildFilters()
         val shown = from.filter { item ->
             val correctType = selectedFilter == FILTER_ALL ||
                 (selectedFilter == FILTER_NEW && item.id in fresh) ||
