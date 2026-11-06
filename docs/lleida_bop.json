@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-05T16:59:59.579967+00:00",
+  "lastCheckedUTC": "2026-11-06T07:03:29.031943+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 23,
-    "announcementsRead": 967,
-    "opportunities": 68
+    "announcementsRead": 977,
+    "opportunities": 67
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "191",
       "192",
       "193",
       "194",
@@ -37,10 +36,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,20 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 967,
-    "opportunities": 68
+    "announcementsRead": 977,
+    "opportunities": 67
   },
   "notices": [
+    {
+      "id": "LE-202621309365",
+      "province": "Lleida (BOP)",
+      "title": "Aprovació de les bases específiques que han de regir el procediment de selecció per a la promoció interna i aprovació de la convocatòria per a la cobertura d’1 plaça d’enginyer/a de camins, grup A, subgrup A1 de la Diputació de Lleida",
+      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/213/202621309365.pdf"
+    },
     {
       "id": "LE-202621209307",
       "province": "Lleida (BOP)",
@@ -737,26 +747,6 @@
       "bulletin": "192",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/192/202619208267.pdf"
-    },
-    {
-      "id": "LE-202619108306",
-      "province": "Lleida (BOP)",
-      "title": "ANUNCI PUBLICACIÓ BASES REGULADORES I CONVOCATÒRIA PROCÈS SELECTIU Dinamitzador cívic",
-      "entity": "CONSELL COMARCAL DEL PALLARS JUSSÀ (TREMP)",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/191/202619108306.pdf"
-    },
-    {
-      "id": "LE-202619108305",
-      "province": "Lleida (BOP)",
-      "title": "ANUNCI PUBLICACIÓ BASES REGULADORES I CONVOCATÒRIA PROCÈS SELECTIU educador/a social EAIA",
-      "entity": "CONSELL COMARCAL DEL PALLARS JUSSÀ (TREMP)",
-      "date": "07/10/2026",
-      "bulletin": "191",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/191/202619108305.pdf"
     }
   ]
 }

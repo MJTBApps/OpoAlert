@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-05T17:02:06.447413+00:00",
+  "lastCheckedUTC": "2026-11-06T07:06:30.378299+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
+    "bulletin": "215",
     "pagesVisited": 22,
-    "announcementsRead": 559,
-    "opportunities": 35
+    "announcementsRead": 573,
+    "opportunities": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -37,10 +36,10 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -61,7 +60,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +74,34 @@
       "2026-11-01"
     ],
     "issuesRead": 22,
-    "announcementsRead": 559,
-    "opportunities": 35
+    "announcementsRead": 573,
+    "opportunities": 32
   },
   "notices": [
+    {
+      "id": "RI-2026-f6629d216c577ec1b4",
+      "province": "La Rioja (BOR)",
+      "title": "OPERARIO/A: convocatoria bolsa de empleo temporal en la categoría de Operario/a del Parque de Obras y Servicios",
+      "entity": "AYUNTAMIENTO DE CALAHORRA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Bolsa de trabajo",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43152294-1-PDF-580681",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F06&referencia=43122089-4-HTML-580681-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-5f2391aff5a6d0e800",
+      "province": "La Rioja (BOR)",
+      "title": "SECRETARÍA-INTERVENCIÓN: aprobación de las bases de la convocatoria para la provisión temporal del puesto",
+      "entity": "AYUNTAMIENTO DE MURILLO DE RÍO LEZA",
+      "date": "06/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43152113-1-PDF-580654",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F06&referencia=43090639-4-HTML-580654-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-09e4b35eb3db7b590f",
       "province": "La Rioja (BOR)",
@@ -436,66 +460,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42563552-1-PDF-580105",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F08&referencia=42529048-3-HTML-580105-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-e5ed79c4a6b57775ce",
-      "province": "La Rioja (BOR)",
-      "title": "PUESTOS DE TRABAJO SINGULARIZADOS: se resuelve de forma definitiva el concurso específico para la provisión de puestos de trabajo singularizados en el Instituto de Medicina Legal y Ciencias Forenses de La Rioja",
-      "entity": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42533226-1-PDF-579999",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F07&referencia=42397293-2-HTML-579999-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-996968ea22b33d75f2",
-      "province": "La Rioja (BOR)",
-      "title": "TÉCNICA DE CUIDADOS AUXILIARES DE ENFERMERÍA O EN ATENCIÓN A PERSONAS EN SITUACIÓN DE DEPENDENCIA: convocatoria pruebas selectivas (F.24/25)",
-      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42533260-1-PDF-580077",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F07&referencia=42497043-7-HTML-580077-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-8bb09617790fdc8e2c",
-      "province": "La Rioja (BOR)",
-      "title": "AUXILIAR ENFERMERÍA: convocatoria de pruebas selectivas (FA.19/23-26)",
-      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42533247-1-PDF-580078",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F07&referencia=42499694-4-HTML-580078-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-3458d6895eca8a5740",
-      "province": "La Rioja (BOR)",
-      "title": "ENFERMERO/A ESPECIALISTA DE ENFERMERÍA FAMILIAR Y COMUNITARIA: relación definitiva de personas que han superado el proceso selectivo para la provisión de plazas vacantes, para su provisión por el turno libre, OEP 2023, así como las plazas vacantes ofertadas a las mismas",
-      "entity": "SERVICIO RIOJANO DE SALUD",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42533251-1-PDF-580084",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F07&referencia=42506364-4-HTML-580084-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-074eda727a82763633",
-      "province": "La Rioja (BOR)",
-      "title": "CONVOCATORIA PRUEBAS SELECTIVAS: Delineación (TL) (F.22/25)",
-      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42533222-1-PDF-580079",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F07&referencia=42500665-3-HTML-580079-X",
       "originalFormat": "pdf"
     }
   ]

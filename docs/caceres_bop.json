@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-05T16:49:27.826191+00:00",
+  "lastCheckedUTC": "2026-11-06T06:51:49.542407+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "212",
+    "bulletin": "213",
     "pagesVisited": 21,
-    "announcementsRead": 490,
-    "opportunities": 30
+    "announcementsRead": 494,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -36,10 +35,10 @@
       "209",
       "210",
       "211",
-      "212"
+      "212",
+      "213"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-12",
@@ -59,7 +58,8 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -73,10 +73,60 @@
       "2026-11-02"
     ],
     "issuesRead": 21,
-    "announcementsRead": 490,
-    "opportunities": 30
+    "announcementsRead": 494,
+    "opportunities": 33
   },
   "notices": [
+    {
+      "id": "CC-2026-5201",
+      "province": "Cáceres",
+      "title": "Bases del proceso para la selección de libre designación de una plaza de Encargado de Abastecimiento.",
+      "entity": "Canal de Isabel II, S.A.",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5201"
+    },
+    {
+      "id": "CC-2026-5200",
+      "province": "Cáceres",
+      "title": "Bases del proceso para la selección de libre designación de una plaza de Encargado de Tratamiento y Captación.",
+      "entity": "Canal de Isabel II, S.A.",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5200"
+    },
+    {
+      "id": "CC-2026-5185",
+      "province": "Cáceres",
+      "title": "Bases para la provisión de Una Plaza de Oficial 1.ª Mantenimiento (Promoción Interna).",
+      "entity": "Ayuntamiento de Navalmoral de la Mata",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5185"
+    },
+    {
+      "id": "CC-2026-5184",
+      "province": "Cáceres",
+      "title": "Bases para la provisión de una Plaza de Trabajador/a Social.",
+      "entity": "Ayuntamiento de Navalmoral de la Mata",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5184"
+    },
+    {
+      "id": "CC-2026-5182",
+      "province": "Cáceres",
+      "title": "Bases para la provisión de tres plazas de Administrativos/as",
+      "entity": "Ayuntamiento de Navalmoral de la Mata",
+      "date": "06/11/2026",
+      "bulletin": "213",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5182"
+    },
     {
       "id": "CC-2026-5164",
       "province": "Cáceres",
@@ -356,26 +406,6 @@
       "bulletin": "193",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4714"
-    },
-    {
-      "id": "CC-2026-4697",
-      "province": "Cáceres",
-      "title": "Modificación de las bases que rigen el proceso selectivo para la cobertura de dos plazas de administrativo (Funcionario/a de carrera por oposición libre - OEP 2025).",
-      "entity": "Ayuntamiento de Plasencia",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4697"
-    },
-    {
-      "id": "CC-2026-4693",
-      "province": "Cáceres",
-      "title": "Bases reguladoras para la cobertura de una plaza de encargado de logística, mantenimiento y limpieza.",
-      "entity": "Ayuntamiento de Logrosán",
-      "date": "07/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4693"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-05T16:54:39.516269+00:00",
+  "lastCheckedUTC": "2026-11-06T06:57:05.145743+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
+    "bulletin": "214",
     "pagesVisited": 26,
-    "announcementsRead": 842,
-    "opportunities": 20,
+    "announcementsRead": 848,
+    "opportunities": 21,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
+    "rangeStart": "2026-10-08",
+    "rangeEnd": "2026-11-06",
     "bulletins": [
-      "193",
       "194",
       "195",
       "Ext. 25",
@@ -42,10 +41,10 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
-      "2026-10-07",
       "2026-10-08",
       "2026-10-09",
       "2026-10-10",
@@ -70,7 +69,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -82,10 +82,9 @@
       "2026-11-01"
     ],
     "issuesRead": 26,
-    "announcementsRead": 842,
-    "opportunities": 20,
+    "announcementsRead": 848,
+    "opportunities": 21,
     "regularBulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -105,7 +104,8 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "extraordinaryBulletins": [
       "Ext. 25",
@@ -115,7 +115,6 @@
       "Ext. 29"
     ],
     "officialIssueIds": [
-      46966,
       47005,
       47025,
       47145,
@@ -140,10 +139,31 @@
       47385,
       47405,
       47445,
-      47205
+      47205,
+      47466
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-8664",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1392/26), por la que se convoca concurso público para la provisión de plazas de Personal Docente, contratado temporal en régimen de derecho laboral, en la figura de Profesorado Ayudante Doctor. Concurso número 3 PO 226-2027.",
+      "entity": "Universidad de Cantabria",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442678"
+    },
+    {
+      "id": "CN-2026-8661",
+      "province": "Cantabria (BOC)",
+      "title": "Bases y convocatoria para la constitución de una Bolsa de Empleo de Monitor/a de Ludoteca en régimen laboral temporal, por el sistema de concurso.",
+      "entity": "Ayuntamiento de Valdeolea",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "type": "Bolsa de trabajo",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442673"
+    },
     {
       "id": "CN-2026-8705",
       "province": "Cantabria (BOC)",
@@ -333,16 +353,6 @@
       "bulletin": "196",
       "type": "Plaza / oposición",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441553"
-    },
-    {
-      "id": "CN-2026-7787",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras y convocatoria del proceso selectivo para la constitución de una bolsa de empleo de Ayudantes de Oficios de Limpieza Viaria y Operarios de Limpieza Viaria. Expediente 2026/10505D.",
-      "entity": "Ayuntamiento de Torrelavega",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "type": "Bolsa de trabajo",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441395"
     }
   ]
 }
