@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-06T17:17:47.486645+00:00",
+  "lastCheckedUTC": "2026-11-07T07:27:02.571624+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 735,
-    "announcementsRead": 320,
-    "opportunities": 56
+    "pagesVisited": 717,
+    "announcementsRead": 309,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
-    "issuesRead": 21,
-    "pagesVisited": 735,
-    "announcementsRead": 320,
-    "opportunities": 56,
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
+    "issuesRead": 20,
+    "pagesVisited": 717,
+    "announcementsRead": 309,
+    "opportunities": 53,
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -43,7 +42,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -74,13 +72,13 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "originalPdfPagesRead": 735,
+    "originalPdfPagesRead": 717,
     "archiveIndexPagesRead": 2,
     "archiveTotalIssues": 48190,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392768&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+8%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392769&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+9%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392771&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392770&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F10%2F2026.pdf",
@@ -633,36 +631,6 @@
       "bulletin": "196",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2744/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02726",
-      "province": "Almería",
-      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso oposición para la provisión en propiedad de una plaza de trabajador/a social, reservada a promoción interna, se ha dictado resolución de la…",
-      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
-      "date": "08/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2726/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02717",
-      "province": "Almería",
-      "title": "EXPEDIENTE N.º 1192/2026 - CONSTITUCIÓN DE BOLSA DE EMPLEO DE PERSONAL LABORAL TEMPORAL PARA EL PUESTO DE MONITOR/A DE GUARDERÍA DEL EXCMO. AYUNTAMIENTO DE CANTORIA (ALMERÍA). Por Acuerdo de la Junta de Gobierno Local,…",
-      "entity": "AYUNTAMIENTO DE CANTORIA",
-      "date": "08/10/2026",
-      "bulletin": "195",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2717/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02714",
-      "province": "Almería",
-      "title": "De conformidad con lo establecido en las bases de la convocatoria de oposición para la provisión en propiedad de una plaza de auxiliar de servicios académicos y personal de administración y servicios, se ha dictado…",
-      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
-      "date": "08/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2714/anuncio.pdf"
     }
   ]
 }
