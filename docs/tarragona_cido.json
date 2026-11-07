@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-06T16:28:58.551954+00:00",
+  "lastCheckedUTC": "2026-11-07T06:28:49.487184+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 92,
-    "opportunities": 92,
+    "announcementsRead": 91,
+    "opportunities": 91,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-14",
       "2026-10-15",
@@ -48,12 +47,13 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 92,
-    "opportunities": 92
+    "announcementsRead": 91,
+    "opportunities": 91
   },
   "notices": [
     {
@@ -965,16 +965,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21472634"
-    },
-    {
-      "id": "CIDO8-21845182",
-      "title": "2 places d'Oficial 1a de la brigada municipal",
-      "entity": "Ajuntament de l'Espluga de Francolí",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21845182"
     }
   ]
 }

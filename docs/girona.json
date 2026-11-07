@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-06T16:28:58.551954+00:00",
+  "lastCheckedUTC": "2026-11-07T06:28:49.487184+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 73,
-    "opportunities": 73,
+    "announcementsRead": 68,
+    "opportunities": 68,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-13",
       "2026-10-16",
@@ -48,12 +47,13 @@
       "2026-10-19",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 73,
-    "opportunities": 73
+    "announcementsRead": 68,
+    "opportunities": 68
   },
   "notices": [
     {
@@ -735,56 +735,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22306531"
-    },
-    {
-      "id": "CIDO6-22297513",
-      "title": "Borsa de treball de places de Tècnic auxiliar de Biblioteca",
-      "entity": "Ajuntament de Sant Feliu de Guíxols",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22297513"
-    },
-    {
-      "id": "CIDO6-22293352",
-      "title": "1 plaça d'Auxiliar informador turístic",
-      "entity": "Ajuntament de la Bisbal d'Empordà",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22293352"
-    },
-    {
-      "id": "CIDO6-22293317",
-      "title": "1 plaça de Tècnic d'administració general (TAG) - Secretaria",
-      "entity": "Ajuntament de la Bisbal d'Empordà",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22293317"
-    },
-    {
-      "id": "CIDO6-21628392",
-      "title": "1 plaça d'Auxiliar administratiu de l'OAC",
-      "entity": "Ajuntament de Sant Pere Pescador",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21628392"
-    },
-    {
-      "id": "CIDO6-20824107",
-      "title": "2 places d'Auxiliar administratiu",
-      "entity": "Ajuntament d'Aiguaviva",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/20824107"
     }
   ]
 }

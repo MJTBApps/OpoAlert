@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-06T16:28:58.551954+00:00",
+  "lastCheckedUTC": "2026-11-07T06:28:49.487184+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 307,
-    "opportunities": 307,
+    "announcementsRead": 302,
+    "opportunities": 302,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-10",
       "2026-10-12",
@@ -48,12 +47,13 @@
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 307,
-    "opportunities": 307
+    "announcementsRead": 302,
+    "opportunities": 302
   },
   "notices": [
     {
@@ -3075,56 +3075,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/15573114"
-    },
-    {
-      "id": "CIDO5-22298939",
-      "title": "1 plaça d'Enginyer tècnic",
-      "entity": "Ajuntament de Martorell",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22298939"
-    },
-    {
-      "id": "CIDO5-22297324",
-      "title": "Borsa de treball de places d'Informador ciutadà",
-      "entity": "Ajuntament de Manresa",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22297324"
-    },
-    {
-      "id": "CIDO5-22297320",
-      "title": "Borsa de treball de places d'Administratiu",
-      "entity": "Ajuntament de Manresa",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22297320"
-    },
-    {
-      "id": "CIDO5-22249953",
-      "title": "Borsa de treball de places de Conductor de grua",
-      "entity": "Ajuntament de Cubelles",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22249953"
-    },
-    {
-      "id": "CIDO5-16434688",
-      "title": "3 places de Treballador social",
-      "entity": "Ajuntament de Vilassar de Mar",
-      "date": "08/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16434688"
     }
   ]
 }
