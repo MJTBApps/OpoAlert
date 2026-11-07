@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-06T16:21:39.020739+00:00",
+  "lastCheckedUTC": "2026-11-07T06:12:26.138520+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "222",
-    "pagesVisited": 21,
-    "announcementsRead": 367,
-    "opportunities": 30
+    "pagesVisited": 20,
+    "announcementsRead": 350,
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -39,7 +38,6 @@
       "222"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-13",
       "2026-10-14",
@@ -71,11 +69,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 367,
-    "opportunities": 30
+    "issuesRead": 20,
+    "announcementsRead": 350,
+    "opportunities": 29
   },
   "notices": [
     {
@@ -367,16 +366,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-204-3510.pdf"
-    },
-    {
-      "id": "IC-2026-3490",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Anuncio por el que se hace pública la Resolución de 24 de septiembre de 2026, que remite el expediente y emplaza a cuantos aparezcan como interesados en el recurso que se tramita como procedimiento abreviado n.º 442/2026 ante la Plaza n.º 2 del Tribunal de Instancia, Sección de lo Contencioso-administrativo, de Las Palmas de Gran Canaria, interpuesto por María Ángeles Hernández García contra la desestimación por silencio del recurso administrativo presentado frente a la Resolución de 16 de abril de 2026, por la que se hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior Facultativo, Escala de Titulaciones Sanitarias, Especialidad de Farmacia Asistencial (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 29 de noviembre de 2023, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "08/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-202-3490.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-06T16:19:58.904325+00:00",
+  "lastCheckedUTC": "2026-11-07T06:10:08.121911+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 22,
-    "announcementsRead": 368,
-    "opportunities": 25
+    "pagesVisited": 21,
+    "announcementsRead": 354,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -40,7 +39,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -71,11 +69,12 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 368,
-    "opportunities": 25
+    "issuesRead": 21,
+    "announcementsRead": 354,
+    "opportunities": 24
   },
   "notices": [
     {
@@ -317,16 +316,6 @@
       "bulletin": "195",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7812143"
-    },
-    {
-      "id": "CR-2026-3253",
-      "province": "Ciudad Real",
-      "title": "Bases que han de regir la selección de funcionario/a interino/a para la provisión del puesto de Oficial Jardinero/a, mediante concurso-oposición.",
-      "entity": "PUERTOLLANO",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7809368"
     }
   ]
 }

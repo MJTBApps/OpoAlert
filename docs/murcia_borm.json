@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-06T16:23:53.284971+00:00",
+  "lastCheckedUTC": "2026-11-07T06:14:31.998833+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "257",
+    "bulletin": "258",
     "pagesVisited": 26,
-    "announcementsRead": 587,
-    "opportunities": 51
+    "announcementsRead": 591,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "233",
       "234",
       "235",
       "2E",
@@ -41,10 +40,10 @@
       "254",
       "255",
       "256",
-      "257"
+      "257",
+      "258"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-10",
       "2026-10-12",
@@ -69,7 +68,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-07"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -78,10 +78,40 @@
       "2026-11-01"
     ],
     "issuesRead": 26,
-    "announcementsRead": 587,
-    "opportunities": 51
+    "announcementsRead": 591,
+    "opportunities": 53
   },
   "notices": [
+    {
+      "id": "MU-2026-5470",
+      "province": "Región de Murcia (BORM)",
+      "title": "Bases que rigen la convocatoria para la provisión de una plaza de Director/Técnico Deportivo como funcionario/a de carrera del Ayuntamiento de Santomera por promoción interna.",
+      "entity": "Santomera",
+      "date": "07/11/2026",
+      "bulletin": "258",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846152/pdf"
+    },
+    {
+      "id": "MU-2026-5461",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de convocatoria y bases específicas para la provisión de una plaza como personal laboral fijo de Encargado/a de Biblioteca del Ayuntamiento de Fortuna y la creación de una lista de espera, mediante el sistema de oposición libre. Expte. n.º 1340/2026.",
+      "entity": "Fortuna",
+      "date": "07/11/2026",
+      "bulletin": "258",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846143/pdf"
+    },
+    {
+      "id": "MU-2026-5453",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Rector de la Universidad de Murcia R-1447/2026 de 4 de noviembre por la que se aprueban las bases reguladoras y la convocatoria de ayudas para la formación de Personal Investigador Predoctoral (R1) del Plan de Fomento de la Investigación de la Universidad de Murcia para 2027.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "07/11/2026",
+      "bulletin": "258",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846135/pdf"
+    },
     {
       "id": "MU-2026-5424",
       "province": "Región de Murcia (BORM)",
@@ -581,16 +611,6 @@
       "bulletin": "234",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845562/pdf"
-    },
-    {
-      "id": "MU-2026-4872",
-      "province": "Región de Murcia (BORM)",
-      "title": "Aprobación definitiva de la ordenanza reguladora de la obligatoriedad de relación por medios electrónicos de las personas aspirantes en los procedimientos de selección de personal del Ayuntamiento de Alguazas.",
-      "entity": "Alguazas",
-      "date": "08/10/2026",
-      "bulletin": "233",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845554/pdf"
     }
   ]
 }

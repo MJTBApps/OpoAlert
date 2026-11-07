@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-06T16:24:56.968177+00:00",
+  "lastCheckedUTC": "2026-11-07T06:15:38.440571+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 21,
-    "announcementsRead": 278,
+    "pagesVisited": 20,
+    "announcementsRead": 255,
     "opportunities": 3
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -39,7 +38,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -70,13 +68,13 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 278,
+    "issuesRead": 20,
+    "announcementsRead": 255,
     "opportunities": 3,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261008/BOP-SA-20261008-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261009/BOP-SA-20261009-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261012/BOP-SA-20261012-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261013/BOP-SA-20261013-000.pdf",
@@ -99,7 +97,6 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261106/BOP-SA-20261106-000.pdf"
     ],
     "CVECounts": [
-      23,
       8,
       1,
       10,
@@ -121,7 +118,7 @@
       16,
       12
     ],
-    "originalPDFsChecked": 278
+    "originalPDFsChecked": 255
   },
   "notices": [
     {

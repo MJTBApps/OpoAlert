@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-06T16:24:02.667989+00:00",
+  "lastCheckedUTC": "2026-11-07T06:14:48.792595+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 362,
-    "opportunities": 45
+    "pagesVisited": 20,
+    "announcementsRead": 336,
+    "opportunities": 39
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -39,7 +38,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-13",
       "2026-10-14",
@@ -70,42 +68,23 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 362,
-    "opportunities": 45
+    "issuesRead": 20,
+    "announcementsRead": 336,
+    "opportunities": 39
   },
   "notices": [
     {
       "id": "PV-2026-4703",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 27 de octubre de 2026, de la consejera de Alimentación, Desarrollo Rural, Agricultura y Pesca, por la que se aprueban las bases reguladoras de las ayudas de formación a personal investigador y personal tecnólogo en el ámbito científico-tecnológico y empresarial del sector agrario, pesquero y alimentario (programa Ikertalent), y se realiza su convocatoria para el ejercicio 2026.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Alimentación, Desarrollo Rural, Agricultura y Pesca",
       "date": "06/11/2026",
       "bulletin": "213",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604703a.pdf"
-    },
-    {
-      "id": "PV-2026-4698",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 26 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "06/11/2026",
-      "bulletin": "213",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604698a.pdf"
-    },
-    {
-      "id": "PV-2026-4697",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 22 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor agregado de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "06/11/2026",
-      "bulletin": "213",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604697a.pdf"
     },
     {
       "id": "PV-2026-4648",
@@ -486,46 +465,6 @@
       "bulletin": "195",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604203a.pdf"
-    },
-    {
-      "id": "PV-2026-4160",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 1527/2026, de 15 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Sección Corporativa (Expedientes), en el Servicio de Compra Integrada y Catálogo, en la Subdirección de Análisis Económico y Logística Corporativa, de la Dirección de Estrategia Económica y Transformación, de la Dirección General de Osakidetza-Servicio vasco de salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604160a.pdf"
-    },
-    {
-      "id": "PV-2026-4159",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 1524/2026, de 15 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se declara desierta la convocatoria realizada mediante la Resolución 582/2026, de 8 de abril, por la que se anuncia convocatoria pública para la provisión, mediante el sistema de libre designación, del puesto de jefe/a de Servicio Corporativo responsable de Seguridad y Enlace en la Dirección General de Osakidetza-Servicio vasco de salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604159a.pdf"
-    },
-    {
-      "id": "PV-2026-4158",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 2295/2026, de 13 de agosto, de la directora gerente de la Organización Sanitaria Integrada Barrualde-Galdakao, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Servicio Sanitario de Hematología y Hemoterapia.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604158a.pdf"
-    },
-    {
-      "id": "PV-2026-4157",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 1477/2026, de 19 de mayo, de la directora gerente de la Organización Sanitaria Integrada Barrualde-Galdakao, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Sección Sanitaria de Medicina Física y Rehabilitación.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604157a.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-06T16:21:05.303144+00:00",
+  "lastCheckedUTC": "2026-11-07T06:11:21.196574+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 22,
-    "announcementsRead": 835,
-    "opportunities": 31
+    "pagesVisited": 21,
+    "announcementsRead": 811,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -40,7 +39,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -71,11 +69,12 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 835,
-    "opportunities": 31
+    "issuesRead": 21,
+    "announcementsRead": 811,
+    "opportunities": 30
   },
   "notices": [
     {
@@ -377,16 +376,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/09/c2606559.pdf"
-    },
-    {
-      "id": "GP-2026-2606372",
-      "province": "Gipuzkoa",
-      "title": "Aprobación definitiva del Reglamento de gestión de las bolsas de trabajo temporales.",
-      "entity": "AYUNTAMIENTO DE LEZO",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Bolsa de trabajo",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/08/c2606372.pdf"
     }
   ]
 }

@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-06T16:23:56.465810+00:00",
+  "lastCheckedUTC": "2026-11-07T06:14:40.749169+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 22,
-    "announcementsRead": 442,
-    "opportunities": 26
+    "pagesVisited": 20,
+    "announcementsRead": 401,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "194",
-      "195",
       "196",
       "197",
       "198",
@@ -40,8 +38,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-08",
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -64,6 +60,7 @@
       "2026-11-06"
     ],
     "nonPublicationDates": [
+      "2026-10-09",
       "2026-10-10",
       "2026-10-11",
       "2026-10-17",
@@ -71,11 +68,12 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 442,
-    "opportunities": 26
+    "issuesRead": 20,
+    "announcementsRead": 401,
+    "opportunities": 25
   },
   "notices": [
     {
@@ -327,16 +325,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/13/2026072844/an.bop.PONTEVEDRA.20261013.2026072844.pdf"
-    },
-    {
-      "id": "PO-2026072454",
-      "province": "Pontevedra",
-      "title": "CONVOCATORIA DE CONCURSO OPOSICIÓN PARA FORMACIÓN DE BOLSA DE EMPREGO AUXILIARES DA ESCALA DA ADMINISTRACIÓN XERAL, GRUPO C, SUBGRUPO C2 DO CONCELLO DE O PORRIÑO",
-      "entity": "Porriño, O",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Bolsa de trabajo",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/09/2026072454/an.bop.PONTEVEDRA.20261009.2026072454.pdf"
     }
   ]
 }

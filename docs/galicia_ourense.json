@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-06T16:23:25.108671+00:00",
+  "lastCheckedUTC": "2026-11-07T06:14:03.960552+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "214",
-    "pagesVisited": 22,
-    "announcementsRead": 283,
-    "opportunities": 53
+    "pagesVisited": 21,
+    "announcementsRead": 270,
+    "opportunities": 51
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -40,7 +39,6 @@
       "214"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -71,11 +69,12 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 283,
-    "opportunities": 53
+    "issuesRead": 21,
+    "announcementsRead": 270,
+    "opportunities": 51
   },
   "notices": [
     {
@@ -587,26 +586,6 @@
       "bulletin": "196",
       "type": "Plaza / oposición",
       "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352873/idioma/gl"
-    },
-    {
-      "id": "OU-2026-352848",
-      "province": "Ourense",
-      "title": "APROBACIÓN DE LA OFERTA DE EMPLEO PÚBLICO PARA EL AÑO 2026 DEL AYUNTAMIENTO DE TOÉN (EXP. 877/2026)",
-      "entity": "CONCELLO DE TOÉN",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352848/idioma/gl"
-    },
-    {
-      "id": "OU-2026-352774",
-      "province": "Ourense",
-      "title": "Anuncio oferta de empleo público 2026",
-      "entity": "MANCOMUNIDADE DO RIBEIRO",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352774/idioma/gl"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-06T16:25:21.228535+00:00",
+  "lastCheckedUTC": "2026-11-07T06:16:02.410601+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 531,
-    "opportunities": 23
+    "pagesVisited": 20,
+    "announcementsRead": 501,
+    "opportunities": 21
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -39,7 +38,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 531,
-    "opportunities": 23
+    "issuesRead": 20,
+    "announcementsRead": 501,
+    "opportunities": 21
   },
   "notices": [
     {
@@ -286,26 +285,6 @@
       "bulletin": "194",
       "type": "Bolsa de trabajo",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104542;0&insert_number=4558&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4598",
-      "province": "Toledo",
-      "title": "Convocatoria y bases del proceso selectivo para la contratación laboral temporal de una persona desempleada en el marco del Programa de apoyo activo al empleo en Castilla-La Mancha 2026",
-      "entity": "AYUNTAMIENTO DE VILLALUENGA DE LA SAGRA",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104580;0&insert_number=4598&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4533",
-      "province": "Toledo",
-      "title": "Convocatoria y Bases proceso selectivo Conserje Colegio Público OEP 2026",
-      "entity": "AYUNTAMIENTO DE VILLACAÑAS",
-      "date": "08/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26094515;0&insert_number=4533&insert_year=2026"
     }
   ]
 }

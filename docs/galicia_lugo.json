@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lugo",
   "source": "https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop",
-  "lastCheckedUTC": "2026-11-06T16:22:24.579310+00:00",
+  "lastCheckedUTC": "2026-11-07T06:13:15.808672+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "255",
-    "pagesVisited": 26,
-    "announcementsRead": 351,
-    "opportunities": 38
+    "pagesVisited": 25,
+    "announcementsRead": 338,
+    "opportunities": 36
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "230",
       "231",
       "232",
       "233",
@@ -44,7 +43,6 @@
       "255"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-10",
       "2026-10-12",
@@ -75,11 +73,12 @@
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 26,
-    "announcementsRead": 351,
-    "opportunities": 38
+    "issuesRead": 25,
+    "announcementsRead": 338,
+    "opportunities": 36
   },
   "notices": [
     {
@@ -441,26 +440,6 @@
       "bulletin": "231",
       "type": "Plaza / oposición",
       "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/09-10-2026_0.pdf"
-    },
-    {
-      "id": "LU-2026-2684",
-      "province": "Lugo",
-      "title": "CONVOCATORIA PARA A COBERTURA COMO PERSOAL LABORAL FIXO DE 7 PRAZAS DE AUXILIAR XEROCULTOR/A PARA A RESIDENCIA DE MAIORES A NOSA SEÑORA DO CARME, OPE 2023",
-      "entity": "SARRIA",
-      "date": "08/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/08-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2674",
-      "province": "Lugo",
-      "title": "OFERTA DE EMPREGO PÚBLICO 2026",
-      "entity": "MEIRA",
-      "date": "08/10/2026",
-      "bulletin": "230",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/08-10-2026.pdf"
     }
   ]
 }
