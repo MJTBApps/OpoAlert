@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-06T16:26:58.734215+00:00",
+  "lastCheckedUTC": "2026-11-07T06:23:06.767454+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "212",
-    "pagesVisited": 21,
-    "announcementsRead": 870,
-    "opportunities": 70,
+    "pagesVisited": 20,
+    "announcementsRead": 817,
+    "opportunities": 62,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 870,
-    "opportunities": 70,
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 817,
+    "opportunities": 62,
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -43,7 +42,6 @@
       "212"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -74,7 +72,8 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ]
   },
   "notices": [
@@ -697,86 +696,6 @@
       "bulletin": "194",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/13_194/2026_007793.pdf"
-    },
-    {
-      "id": "AL-2026-7781",
-      "province": "Alicante",
-      "title": "ANUNCIO CONVOCATORIA Y BASES DE UNA PLAZA DE ADMINISTRATIVO POR PROMOCIÓN INTERNA.",
-      "entity": "AYUNTAMIENTO RAFAL",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007781.pdf"
-    },
-    {
-      "id": "AL-2026-7768",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES PARA PROVISIÓN DE VARIOS PUESTOS DE JEFE/A DE DEPARTAMENTO DE LA AGENCIA LOCAL, POR LIBRE DESIGNACIÓN",
-      "entity": "AGENCIA LOCAL DE DESARROLLO ECONÓMICO Y SOCIAL ALICANTE",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007768.pdf"
-    },
-    {
-      "id": "AL-2026-7736",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA PARA LA PROVISIÓN EN PROPIEDAD DE DOS PLAZAS DE AGENTE INFORMADOR MEDIANTE CONCURSO-OPOSICIÓN.",
-      "entity": "AYUNTAMIENTO BUSOT",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007736.pdf"
-    },
-    {
-      "id": "AL-2026-7735",
-      "province": "Alicante",
-      "title": "CONVOCATORIA APERTURA PLAZO PARA LA CIUDADANIA - CAMPAÑA BONO CONSUMO 2026",
-      "entity": "AYUNTAMIENTO ONIL",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007735.pdf"
-    },
-    {
-      "id": "AL-2026-7689",
-      "province": "Alicante",
-      "title": "RELACIÓN DE APROBADOS PROCESO SELECTIVO DE UNA PLAZA DE AUXILIAR ADMINISTRATIVO/A POR EL SISTEMA DE OPOSICIÓN",
-      "entity": "AYUNTAMIENTO BENIARRÉS",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007689.pdf"
-    },
-    {
-      "id": "AL-2026-7643",
-      "province": "Alicante",
-      "title": "RECTIFICACIÓN ERROR MATERIAL EN LAS BASES PARA LA PROVISIÓN DE 4 PLAZAS DE CONSERJE",
-      "entity": "AYUNTAMIENTO ALMORADÍ",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007643.pdf"
-    },
-    {
-      "id": "AL-2026-7346",
-      "province": "Alicante",
-      "title": "BASES REGULADORAS Y CONVOCATORIA PARA LA CONCESIÓN ADMINISTRATIVA DE LA EXPLOTACIÓN CONJUNTA DE LOS PUESTOS 6 Y 7 DEL MERCADO MUNICIPAL",
-      "entity": "AYUNTAMIENTO CALLOSA DE SEGURA",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007346.pdf"
-    },
-    {
-      "id": "AL-2026-7300",
-      "province": "Alicante",
-      "title": "BASES DE CONVOCATORIA PROCESO SELECTIVO PARA CUBRIR UNA PLAZA DE COMISARIO DE LA POLICÍA LOCAL, TURNO PROMOCIÓN INTERNA (OEP 2024)",
-      "entity": "AYUNTAMIENTO PETRER",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/08_192/2026_007300.pdf"
     }
   ]
 }

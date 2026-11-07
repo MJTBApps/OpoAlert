@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-06T16:27:10.788745+00:00",
+  "lastCheckedUTC": "2026-11-07T06:23:18.564250+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "134",
+    "bulletin": "135",
     "pagesVisited": 14,
-    "announcementsRead": 470,
-    "opportunities": 22,
+    "announcementsRead": 477,
+    "opportunities": 23,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "issuesRead": 14,
     "pagesVisited": 14,
-    "announcementsRead": 470,
-    "opportunities": 22,
+    "announcementsRead": 477,
+    "opportunities": 23,
     "bulletins": [
-      "121",
       "122",
       "123",
       "124",
@@ -33,10 +32,10 @@
       "131",
       "132",
       "133",
-      "134"
+      "134",
+      "135"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-10",
       "2026-10-12",
       "2026-10-13",
@@ -49,7 +48,8 @@
       "2026-10-29",
       "2026-10-31",
       "2026-11-03",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-07"
     ],
     "nonPublicationDates": [
       "2026-10-09",
@@ -71,6 +71,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-168902",
+      "province": "Castellón",
+      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 18E/2022 UNA PLAZA DE OFICIAL/A PO ENCARGADO/A TELECOM. SELECCIÓN.",
+      "entity": "AJUNTAMENT DE VILA-REAL",
+      "date": "07/11/2026",
+      "bulletin": "135",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168902&idioma=es"
+    },
     {
       "id": "CS-168613",
       "province": "Castellón",
