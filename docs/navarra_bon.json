@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-06T16:47:09.275572+00:00",
+  "lastCheckedUTC": "2026-11-07T06:46:56.507970+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "222",
-    "pagesVisited": 23,
-    "announcementsRead": 1331,
-    "opportunities": 43
+    "pagesVisited": 22,
+    "announcementsRead": 1264,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -41,7 +40,6 @@
       "222"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-10",
       "2026-10-12",
@@ -73,11 +71,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "issuesRead": 23,
-    "announcementsRead": 1331,
-    "opportunities": 43
+    "issuesRead": 22,
+    "announcementsRead": 1264,
+    "opportunities": 37
   },
   "notices": [
     {
@@ -449,66 +448,6 @@
       "bulletin": "204",
       "type": "Bolsa de trabajo",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/204/27"
-    },
-    {
-      "id": "NA-2026-200-27",
-      "province": "Navarra",
-      "title": "Convocatoria para la constitución, a través de pruebas selectivas, de una relación de aspirantes al desempeño, mediante contratación temporal, de responsable técnico/a de la sección del agua, nivel B",
-      "entity": "MANCOMUNIDAD DE SERVICIOS DE LA COMARCA DE SANGÜESA",
-      "date": "08/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/200/27"
-    },
-    {
-      "id": "NA-2026-200-24",
-      "province": "Navarra",
-      "title": "Oposición, en promoción interna restringida, de una plaza del puesto de trabajo de encargado de aguas, sin incremento de plazas, para el personal funcionarial al servicio del Ayuntamiento",
-      "entity": "VALTIERRA",
-      "date": "08/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/200/24"
-    },
-    {
-      "id": "NA-2026-200-23",
-      "province": "Navarra",
-      "title": "Oposición de una plaza de oficial administrativo/a (área personal)",
-      "entity": "TAFALLA",
-      "date": "08/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/200/23"
-    },
-    {
-      "id": "NA-2026-200-20",
-      "province": "Navarra",
-      "title": "Oposición de 5 plazas del puesto de trabajo de técnico/a superior en integración social con competencia lingüística en euskera nivel B2",
-      "entity": "PAMPLONA",
-      "date": "08/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/200/20"
-    },
-    {
-      "id": "NA-2026-200-19",
-      "province": "Navarra",
-      "title": "Convocatoria para la elaboración de una relación de aspirantes a la contratación temporal del puesto de conserjería, nivel D",
-      "entity": "ORKOIEN",
-      "date": "08/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/200/19"
-    },
-    {
-      "id": "NA-2026-200-16",
-      "province": "Navarra",
-      "title": "Concurso-oposición de una plaza de auxiliar administrativo",
-      "entity": "BARÁSOAIN",
-      "date": "08/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/200/16"
     }
   ]
 }

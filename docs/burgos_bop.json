@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-06T16:33:33.442529+00:00",
+  "lastCheckedUTC": "2026-11-07T06:34:10.586926+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 24,
-    "announcementsRead": 537,
-    "opportunities": 16,
+    "pagesVisited": 23,
+    "announcementsRead": 507,
+    "opportunities": 11,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 7
+    "pdfChecked": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "192",
       "193",
       "Extraordinario 1",
       "194",
@@ -41,7 +40,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -72,13 +70,13 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 537,
-    "opportunities": 16,
+    "issuesRead": 20,
+    "announcementsRead": 507,
+    "opportunities": 11,
     "regularBulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -103,7 +101,6 @@
       "Extraordinario 1"
     ],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-192",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-193",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-001-0",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-194",
@@ -247,61 +244,6 @@
       "type": "Plaza / oposición",
       "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-193/bopbur-2026-193-anuncio-202604242.pdf",
       "publisherArticle": "202604242"
-    },
-    {
-      "id": "BU-2026-202604209",
-      "province": "Burgos",
-      "title": "Bases de la convocatoria para cubrir en propiedad una plaza vacante de profesor de música, especialidad violonchelo, mediante oposición libre",
-      "entity": "Ayuntamiento de Miranda de Ebro",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-192/bopbur-2026-192-anuncio-202604209.pdf",
-      "publisherArticle": "202604209"
-    },
-    {
-      "id": "BU-2026-202604208",
-      "province": "Burgos",
-      "title": "Bases de la convocatoria para cubrir en propiedad dos plazas vacantes de electricista oficial de primera, una mediante oposición libre y una mediante concurso-oposición, por promoción interna",
-      "entity": "Ayuntamiento de Miranda de Ebro",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-192/bopbur-2026-192-anuncio-202604208.pdf",
-      "publisherArticle": "202604208"
-    },
-    {
-      "id": "BU-2026-202604207",
-      "province": "Burgos",
-      "title": "Bases de la convocatoria para cubrir en propiedad tres plazas vacantes de fontanero oficial de primera, dos mediante oposición libre y una mediante concurso-oposición, por promoción interna",
-      "entity": "Ayuntamiento de Miranda de Ebro",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-192/bopbur-2026-192-anuncio-202604207.pdf",
-      "publisherArticle": "202604207"
-    },
-    {
-      "id": "BU-2026-202604206",
-      "province": "Burgos",
-      "title": "Bases de la convocatoria para cubrir en propiedad cuatro plazas vacantes de empleado/a de limpieza, mediante oposición libre",
-      "entity": "Ayuntamiento de Miranda de Ebro",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-192/bopbur-2026-192-anuncio-202604206.pdf",
-      "publisherArticle": "202604206"
-    },
-    {
-      "id": "BU-2026-202604205",
-      "province": "Burgos",
-      "title": "Bases de la convocatoria para cubrir en propiedad una plaza vacante de notificador/a, mediante oposición libre",
-      "entity": "Ayuntamiento de Miranda de Ebro",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-192/bopbur-2026-192-anuncio-202604205.pdf",
-      "publisherArticle": "202604205"
     }
   ]
 }

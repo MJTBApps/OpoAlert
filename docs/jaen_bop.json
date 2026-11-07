@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-06T16:44:17.997239+00:00",
+  "lastCheckedUTC": "2026-11-07T06:44:08.024148+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "217",
-    "pagesVisited": 22,
-    "announcementsRead": 521,
-    "opportunities": 25,
+    "pagesVisited": 21,
+    "announcementsRead": 498,
+    "opportunities": 24,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 25
+    "pdfLinksVerified": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -42,7 +41,6 @@
       "217"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-10",
       "2026-10-12",
@@ -73,15 +71,16 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-07"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 521,
-    "opportunities": 25,
+    "issuesRead": 21,
+    "announcementsRead": 498,
+    "opportunities": 24,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "195",
-      "date": "2026-10-07"
+      "number": "196",
+      "date": "2026-10-08"
     }
   },
   "notices": [
@@ -324,16 +323,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-09&numeroEdicto=4461&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4706",
-      "province": "Jaén",
-      "title": "Rectificación de las bases del proceso selectivo para la provisión de una plaza de Técnico en Administración General.",
-      "entity": "AYUNTAMIENTO DE LA CAROLINA (JAÉN)",
-      "date": "08/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-08&numeroEdicto=4706&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-06T16:45:42.906759+00:00",
+  "lastCheckedUTC": "2026-11-07T06:45:33.480060+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 23,
-    "announcementsRead": 977,
-    "opportunities": 67
+    "pagesVisited": 22,
+    "announcementsRead": 928,
+    "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2026-11-07",
     "bulletins": [
-      "192",
       "193",
       "194",
       "195",
@@ -40,7 +39,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-08",
       "2026-10-09",
       "2026-10-12",
       "2026-10-13",
@@ -71,11 +69,12 @@
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 977,
-    "opportunities": 67
+    "issuesRead": 21,
+    "announcementsRead": 928,
+    "opportunities": 63
   },
   "notices": [
     {
@@ -707,46 +706,6 @@
       "bulletin": "193",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/193/202619308298.pdf"
-    },
-    {
-      "id": "LE-202619208370",
-      "province": "Lleida (BOP)",
-      "title": "ANUNCI PUBLICACIÓ BASES REGULADORES I CONVOCATÒRIA PROCÈS SELECTIU TERAPEUTA OCUPACIONAL",
-      "entity": "CONSELL COMARCAL DEL PALLARS JUSSÀ (TREMP)",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/192/202619208370.pdf"
-    },
-    {
-      "id": "LE-202619208362",
-      "province": "Lleida (BOP)",
-      "title": "Bases per constituir una borsa de treball d’Auxiliars de Promoció i Difusió, personal funcionari, subgrup C2",
-      "entity": "PAERIA DE CERVERA",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/192/202619208362.pdf"
-    },
-    {
-      "id": "LE-202619208281",
-      "province": "Lleida (BOP)",
-      "title": "Anunci convocatòria i bases del procés de selecció d'una plaça de tècnic/a de cultura, grup de classificació A2 i constitució de borsa",
-      "entity": "AJUNTAMENT DE TÀRREGA (TÀRREGA)",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/192/202619208281.pdf"
-    },
-    {
-      "id": "LE-202619208267",
-      "province": "Lleida (BOP)",
-      "title": "BASES DE PROVISIÓ NO DEFINITIVA DE LLOCS RESERVATS",
-      "entity": "AJUNTAMENT DE SARROCA DE LLEIDA (SARROCA DE LLEIDA)",
-      "date": "08/10/2026",
-      "bulletin": "192",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/192/202619208267.pdf"
     }
   ]
 }
