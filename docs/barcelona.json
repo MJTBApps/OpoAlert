@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-07T16:16:42.705032+00:00",
+  "lastCheckedUTC": "2026-11-08T06:30:38.107016+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 302,
-    "opportunities": 302,
+    "announcementsRead": 292,
+    "opportunities": 292,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "publicationDates": [
-      "2026-10-09",
       "2026-10-10",
       "2026-10-12",
       "2026-10-13",
@@ -48,12 +47,13 @@
       "2026-10-18",
       "2026-10-25",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 302,
-    "opportunities": 302
+    "announcementsRead": 292,
+    "opportunities": 292
   },
   "notices": [
     {
@@ -2975,106 +2975,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21589761"
-    },
-    {
-      "id": "CIDO5-22307522",
-      "title": "1 plaça de Tècnic de distribució",
-      "entity": "Ajuntament de Terrassa - Terrassa Cicle de l'Aigua, EPEL",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22307522"
-    },
-    {
-      "id": "CIDO5-22307360",
-      "title": "1 plaça de TEI escola bressol",
-      "entity": "Ajuntament de Montesquiu",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22307360"
-    },
-    {
-      "id": "CIDO5-22307330",
-      "title": "1 plaça de Tècnic d'administració general",
-      "entity": "Ajuntament de Martorell",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22307330"
-    },
-    {
-      "id": "CIDO5-22306394",
-      "title": "1 plaça de Tècnic de l'oficina d'atenció ciutadana (OAC)",
-      "entity": "Ajuntament de Montmeló",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22306394"
-    },
-    {
-      "id": "CIDO5-22244020",
-      "title": "1 plaça d'Encarregat de xarxa",
-      "entity": "Ajuntament de Terrassa - Terrassa Cicle de l'Aigua, EPEL",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22244020"
-    },
-    {
-      "id": "CIDO5-22018509",
-      "title": "1 plaça d'Oficial de jardineria",
-      "entity": "Ajuntament de Sant Celoni",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22018509"
-    },
-    {
-      "id": "CIDO5-21966844",
-      "title": "1 plaça de Professor de guitarra",
-      "entity": "Ajuntament de Santa Coloma de Gramenet - Patronat Municipal de la Música",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21966844"
-    },
-    {
-      "id": "CIDO5-20937138",
-      "title": "1 plaça de Tècnic mitjà de cultura",
-      "entity": "Ajuntament de Sabadell",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20937138"
-    },
-    {
-      "id": "CIDO5-16708549",
-      "title": "1 plaça d'Enginyer Tècnic Industrial",
-      "entity": "Ajuntament de Cardedeu",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16708549"
-    },
-    {
-      "id": "CIDO5-15573114",
-      "title": "1 plaça de Peó",
-      "entity": "Ajuntament de Martorell",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/15573114"
     }
   ]
 }

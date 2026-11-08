@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-07T16:16:42.705032+00:00",
+  "lastCheckedUTC": "2026-11-08T06:30:38.107016+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 91,
-    "opportunities": 91,
+    "announcementsRead": 90,
+    "opportunities": 90,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "publicationDates": [
-      "2026-10-09",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -48,12 +47,13 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 91,
-    "opportunities": 91
+    "announcementsRead": 90,
+    "opportunities": 90
   },
   "notices": [
     {
@@ -955,16 +955,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22315669"
-    },
-    {
-      "id": "CIDO8-21472634",
-      "title": "Borsa de treball de places de Professor d'adults en l'àmbit de la comunicació",
-      "entity": "Ajuntament de Salou",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21472634"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-07T16:16:42.705032+00:00",
+  "lastCheckedUTC": "2026-11-08T06:30:38.107016+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 68,
-    "opportunities": 68,
+    "announcementsRead": 67,
+    "opportunities": 67,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "publicationDates": [
-      "2026-10-09",
       "2026-10-13",
       "2026-10-16",
       "2026-10-20",
@@ -48,12 +47,13 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 68,
-    "opportunities": 68
+    "announcementsRead": 67,
+    "opportunities": 67
   },
   "notices": [
     {
@@ -725,16 +725,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18247071"
-    },
-    {
-      "id": "CIDO6-22306531",
-      "title": "2 places d'Auxiliar administratiu",
-      "entity": "Ajuntament de Calonge i Sant Antoni",
-      "date": "09/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22306531"
     }
   ]
 }
