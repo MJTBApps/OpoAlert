@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-07T16:15:52.861005+00:00",
+  "lastCheckedUTC": "2026-11-08T06:16:41.969462+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "258",
-    "pagesVisited": 26,
-    "announcementsRead": 591,
-    "opportunities": 53
+    "pagesVisited": 25,
+    "announcementsRead": 577,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "234",
       "235",
       "2E",
       "236",
@@ -44,7 +43,6 @@
       "258"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-10",
       "2026-10-12",
       "2026-10-13",
@@ -75,11 +73,12 @@
       "2026-10-11",
       "2026-10-18",
       "2026-10-25",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-08"
     ],
-    "issuesRead": 26,
-    "announcementsRead": 591,
-    "opportunities": 53
+    "issuesRead": 25,
+    "announcementsRead": 577,
+    "opportunities": 50
   },
   "notices": [
     {
@@ -581,36 +580,6 @@
       "bulletin": "236",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845596/pdf"
-    },
-    {
-      "id": "MU-2026-4890",
-      "province": "Región de Murcia (BORM)",
-      "title": "Bases para la provisión por oposición libre de tres plazas de Agente de Policía Local en el Ayuntamiento de Librilla.",
-      "entity": "Librilla",
-      "date": "09/10/2026",
-      "bulletin": "234",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845572/pdf"
-    },
-    {
-      "id": "MU-2026-4881",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna sobre el mismo puesto de trabajo, 4 plazas del Cuerpo de Agentes Medioambientales de la Administración Pública Regional (código CAX00P25-6).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "09/10/2026",
-      "bulletin": "234",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845563/pdf"
-    },
-    {
-      "id": "MU-2026-4880",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 4 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna, 5 plazas del Cuerpo de Técnicos Auxiliares, opción Transmisiones de la Administración Pública Regional (código DFX25P24-9).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "09/10/2026",
-      "bulletin": "234",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845562/pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-07T16:17:31.736503+00:00",
+  "lastCheckedUTC": "2026-11-08T06:18:24.581714+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 20,
-    "announcementsRead": 501,
-    "opportunities": 21
+    "pagesVisited": 19,
+    "announcementsRead": 482,
+    "opportunities": 18
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -38,7 +37,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -69,11 +67,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 501,
-    "opportunities": 21
+    "issuesRead": 19,
+    "announcementsRead": 482,
+    "opportunities": 18
   },
   "notices": [
     {
@@ -255,36 +254,6 @@
       "bulletin": "197",
       "type": "Bolsa de trabajo",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104629;0&insert_number=4636&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4568",
-      "province": "Toledo",
-      "title": "ANULACIÓN DE BASES Y CONVOCATORIA DE PROCESO  SELECTIVO PARA LA COBERTURA DE PLAZA DE OPERARIO DE SERVICIOS  MÚLTIPLES EN EL AYUNTAMIENTO DE RIELVES",
-      "entity": "AYUNTAMIENTO DE RIELVES",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104555;0&insert_number=4568&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4565",
-      "province": "Toledo",
-      "title": "CONVOCATORIA Y BASES DEL PROCESO SELECTIVO DE PERSONAL TÉCNICO, DE GESTIÓN Y ADMINISTRACIÓN Y SERVICIOS. PERSONAL LABORAL POR CONCURSO-OPOSICIÓN, GRUPO IV, NIVEL B, PARA EL CONSORCIO UNIVERSITARIO DE LA UNED EN TALAVERA DE LA REINA",
-      "entity": "CENTRO REGIONAL DE LA UNED",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104548;0&insert_number=4565&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4558",
-      "province": "Toledo",
-      "title": "BASES CONVOCATORIA PARA LA SELECCIÓN MEDIANTE EL SISTEMA DE CONCURSO-OPOSICIÓN LIBRE DE UNA PLAZA DE PERSONAL LABORAL FIJO/A Y CONSTITUCIÓN DE UNA BOLSA DE SUSTITUCIONES, DE PEÓN DE LIMPIEZA DE LA RESIDENCIA, VACANTE EN LA PLANTILLA DEL AYUNTAMIENTO DE CARMENA",
-      "entity": "AYUNTAMIENTO DE CARMENA",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104542;0&insert_number=4558&insert_year=2026"
     }
   ]
 }

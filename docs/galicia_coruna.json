@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-07T16:08:57.469822+00:00",
+  "lastCheckedUTC": "2026-11-08T06:11:39.603818+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 681,
-    "opportunities": 57
+    "pagesVisited": 20,
+    "announcementsRead": 656,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -39,7 +38,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 681,
-    "opportunities": 57
+    "issuesRead": 20,
+    "announcementsRead": 656,
+    "opportunities": 56
   },
   "notices": [
     {
@@ -636,16 +635,6 @@
       "bulletin": "195",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/13/2026_0000006472.pdf"
-    },
-    {
-      "id": "AC-2026-6388",
-      "province": "A Coruña",
-      "title": "Anuncio publicación modificación bases específicas e convocatoria do proceso selectivo para a cobertura de 1 praza de técnico/a auxiliar de técnicas audiovisuais, quenda libre, C.E. 11/24",
-      "entity": "Persoal",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/09/2026_0000006388.pdf"
     }
   ]
 }

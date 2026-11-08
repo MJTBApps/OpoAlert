@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-07T16:17:06.679844+00:00",
+  "lastCheckedUTC": "2026-11-08T06:17:52.833306+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "133",
-    "pagesVisited": 13,
-    "announcementsRead": 567,
-    "opportunities": 28
+    "pagesVisited": 12,
+    "announcementsRead": 534,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "121",
       "122",
       "123",
       "124",
@@ -31,7 +30,6 @@
       "133"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-14",
       "2026-10-16",
@@ -62,11 +60,12 @@
       "2026-11-01",
       "2026-11-03",
       "2026-11-05",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 567,
-    "opportunities": 28
+    "issuesRead": 12,
+    "announcementsRead": 534,
+    "opportunities": 26
   },
   "notices": [
     {
@@ -328,26 +327,6 @@
       "bulletin": "122",
       "type": "Plaza / oposición",
       "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/12-10-26/12-10-26.pdf"
-    },
-    {
-      "id": "TF-20261009-025",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a declarar desierto el proceso selectivo para cubrir, por el turno libre, mediante el sistema de oposición y con el carácter de funcionario/a de carrera del Ayuntamiento de Villa de Mazo de una (1) plaza de Técnico/a de Administración General perteneciente a la Escala de Administración General, Subescala Técnica, Grupo A, Subgrupo A1 y la configuración de una lista de reserva, con objeto de cubrir las necesidades que puedan surgir al amparo del artículo 10 del TREBEP y no constituir lista de reserva, toda vez que ninguno de los aspirantes ha superado el proceso selectivo",
-      "entity": "AYUNTAMIENTO DE VILLA DE MAZO",
-      "date": "09/10/2026",
-      "bulletin": "121",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/9-10-26/9-10-26.pdf"
-    },
-    {
-      "id": "TF-20261009-008",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a proceder nuevamente a la publicación de las Bases correspondientes a la convocatoria pública para la selección de una plaza vacante de Técnico Jurídico y confección de una lista de reserva para que presten sus servicios en SERMUGRAN",
-      "entity": "AYUNTAMIENTO DE GRANADILLA DE ABONA",
-      "date": "09/10/2026",
-      "bulletin": "121",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/9-10-26/9-10-26.pdf"
     }
   ]
 }

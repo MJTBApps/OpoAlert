@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-07T16:15:20.972501+00:00",
+  "lastCheckedUTC": "2026-11-08T06:12:57.797393+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "3E",
-    "pagesVisited": 21,
-    "announcementsRead": 668,
-    "opportunities": 34
+    "pagesVisited": 20,
+    "announcementsRead": 640,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -39,7 +38,6 @@
       "3E"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -71,11 +69,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 668,
-    "opportunities": 34
+    "issuesRead": 20,
+    "announcementsRead": 640,
+    "opportunities": 33
   },
   "notices": [
     {
@@ -407,16 +406,6 @@
       "bulletin": "196",
       "type": "Plaza / oposición",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/13/pdf/2026_7281.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7218",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Universidades. Resolución de 02/10/2026 , de la Universidad de Castilla-La Mancha, por la que se convoca concurso para la provisión de plazas con la categoría de Profesorado Asociado. [NID 2026/7218]",
-      "entity": "Universidad de Castilla-La Mancha",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/09/pdf/2026_7218.pdf&tipo=rutaDocm"
     }
   ]
 }

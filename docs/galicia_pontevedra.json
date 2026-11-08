@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-07T16:16:20.815606+00:00",
+  "lastCheckedUTC": "2026-11-08T06:16:55.364095+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 21,
-    "announcementsRead": 420,
-    "opportunities": 26
+    "bulletin": "214",
+    "pagesVisited": 19,
+    "announcementsRead": 376,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -35,11 +34,9 @@
       "211",
       "212",
       "213",
-      "214",
-      "215"
+      "214"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -58,8 +55,7 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05",
-      "2026-11-06"
+      "2026-11-05"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -70,11 +66,13 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-06",
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 420,
-    "opportunities": 26
+    "issuesRead": 19,
+    "announcementsRead": 376,
+    "opportunities": 25
   },
   "notices": [
     {
@@ -326,16 +324,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/13/2026072844/an.bop.PONTEVEDRA.20261013.2026072844.pdf"
-    },
-    {
-      "id": "PO-2026072454",
-      "province": "Pontevedra",
-      "title": "CONVOCATORIA DE CONCURSO OPOSICIÓN PARA FORMACIÓN DE BOLSA DE EMPREGO AUXILIARES DA ESCALA DA ADMINISTRACIÓN XERAL, GRUPO C, SUBGRUPO C2 DO CONCELLO DE O PORRIÑO",
-      "entity": "Porriño, O",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Bolsa de trabajo",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/09/2026072454/an.bop.PONTEVEDRA.20261009.2026072454.pdf"
     }
   ]
 }

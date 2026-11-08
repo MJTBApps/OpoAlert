@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-07T16:09:30.631807+00:00",
+  "lastCheckedUTC": "2026-11-08T06:12:20.379555+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 21,
-    "announcementsRead": 354,
-    "opportunities": 24
+    "pagesVisited": 20,
+    "announcementsRead": 339,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -39,7 +38,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 354,
-    "opportunities": 24
+    "issuesRead": 20,
+    "announcementsRead": 339,
+    "opportunities": 22
   },
   "notices": [
     {
@@ -296,26 +295,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7815855"
-    },
-    {
-      "id": "CR-2026-3270",
-      "province": "Ciudad Real",
-      "title": "Bases del concurso de méritos para la provisión del puesto de trabajo de Jefe/a de Grupo de Instalaciones Deportes para Personal Laboral.",
-      "entity": "VALDEPEÑAS",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7812145"
-    },
-    {
-      "id": "CR-2026-3268",
-      "province": "Ciudad Real",
-      "title": "Declaración de caducidad de plazas no ejecutadas de la Oferta de Empleo Público de 2023.",
-      "entity": "VALDEPEÑAS",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7812143"
     }
   ]
 }

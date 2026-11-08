@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Segovia",
   "source": "https://www.dipsegovia.es/bop",
-  "lastCheckedUTC": "2026-11-07T16:17:01.768332+00:00",
+  "lastCheckedUTC": "2026-11-08T06:17:53.816722+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "133",
-    "pagesVisited": 13,
-    "announcementsRead": 258,
-    "opportunities": 12
+    "pagesVisited": 12,
+    "announcementsRead": 229,
+    "opportunities": 11
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "121",
       "122",
       "123",
       "124",
@@ -31,7 +30,6 @@
       "133"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-14",
       "2026-10-16",
@@ -62,13 +60,13 @@
       "2026-11-01",
       "2026-11-03",
       "2026-11-05",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 258,
-    "opportunities": 12,
+    "issuesRead": 12,
+    "announcementsRead": 229,
+    "opportunities": 11,
     "editionPDFs": [
-      "https://www.dipsegovia.es/documents/39512/49a2bbdb-7331-a950-7c0c-58313047b73f",
       "https://www.dipsegovia.es/documents/39512/f0625a03-0fde-2b10-c913-6477673d8f3d",
       "https://www.dipsegovia.es/documents/39512/f535aae0-755f-8d5b-2616-e4fab259f9aa",
       "https://www.dipsegovia.es/documents/39512/8f5a5261-d16f-9330-a60e-1cb8d35416f5",
@@ -82,9 +80,8 @@
       "https://www.dipsegovia.es/documents/39512/ea79c617-295f-ac89-8cf9-382869f06ebd",
       "https://www.dipsegovia.es/documents/39512/ddb9ecc2-34b4-30b5-7eb6-2f95a6ffe58b"
     ],
-    "originalPdfPagesRead": 488,
+    "originalPdfPagesRead": 450,
     "editionArticleCounts": [
-      29,
       14,
       17,
       19,
@@ -220,17 +217,6 @@
       "type": "Plaza / oposición",
       "url": "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
       "pageInPdf": 41
-    },
-    {
-      "id": "SG-2026-8865d9b0bc0b3373ba",
-      "province": "Segovia",
-      "title": "Bases y convocatoria del proceso selectivo para la constitución de una bolsa de trabajo de Auxiliar Administrativo",
-      "entity": "Ayuntamiento de Palazuelos de Eresma",
-      "date": "09/10/2026",
-      "bulletin": "121",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dipsegovia.es/documents/39512/49a2bbdb-7331-a950-7c0c-58313047b73f",
-      "pageInPdf": 28
     }
   ]
 }

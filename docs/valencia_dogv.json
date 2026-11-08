@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-06T16:20:53.532016+00:00",
+  "lastCheckedUTC": "2026-11-08T06:13:23.465801+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "10488",
-    "pagesVisited": 32,
-    "announcementsRead": 1062,
-    "opportunities": 261
+    "pagesVisited": 30,
+    "announcementsRead": 992,
+    "opportunities": 250
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "10468",
-      "10468B",
       "10469",
       "10470",
       "10471",
@@ -50,8 +48,6 @@
       "10488"
     ],
     "publicationDates": [
-      "2026-10-08",
-      "2026-10-08",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -84,7 +80,6 @@
       "2026-11-06"
     ],
     "nonPublicationDates": [
-      "2026-10-09",
       "2026-10-10",
       "2026-10-11",
       "2026-10-12",
@@ -92,11 +87,13 @@
       "2026-10-18",
       "2026-10-24",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 32,
-    "announcementsRead": 1062,
-    "opportunities": 261
+    "issuesRead": 30,
+    "announcementsRead": 992,
+    "opportunities": 250
   },
   "notices": [
     {
@@ -2598,116 +2595,6 @@
       "bulletin": "10469",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/13/pdf/2026_31269_es.pdf"
-    },
-    {
-      "id": "DV-2026-31743",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, de la Dirección General de Función Pública, por la que se adjudican destinos a las personas que han superado las pruebas selectivas de acceso al cuerpo de servicios auxiliares, escala auxiliar de cocina C2-03-02, convocatorias 75/25 y 76/25, para cubrir las plazas previstas en los anexos I y II del Decreto 47/2025, de 25 de marzo, del Consell, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_31743_es.pdf"
-    },
-    {
-      "id": "DV-2026-31742",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, por la que se nombra personal funcionario de carrera a las personas que han superado las pruebas selectivas de acceso al cuerpo de servicios auxiliares, escala auxiliar de cocina C2-03-02, convocatoria 75/25, turno libre y personas con discapacidad, por el sistema de oposición, y convocatoria 76/25, promoción interna, por el sistema de concurso-oposición, para cubrir las plazas previstas en los anexos I y II del Decreto 47/2025, de 25 de marzo, del Consell, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_31742_es.pdf"
-    },
-    {
-      "id": "DV-2026-31443",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 2 de octubre de 2026, de la Presidencia, por la que se modifica la relación definitiva de personas que han superado el proceso excepcional de estabilización por el sistema de concurso de méritos derivado de la oferta de empleo del año 2022 de la categoría de fisioterapeuta.",
-      "entity": "Instituto Valenciano de Servicios Sociales",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_31443_es.pdf"
-    },
-    {
-      "id": "DV-2026-31430",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 2 de octubre de 2026, de la Presidencia, por la que se modifica, para diversas categorías objeto del proceso excepcional de estabilización por el sistema de concurso de méritos derivado de la oferta de empleo del año 2022, la relación definitiva de personas que han superado el proceso.",
-      "entity": "Instituto Valenciano de Servicios Sociales",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_31430_es.pdf"
-    },
-    {
-      "id": "DV-2026-31419",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 2 de octubre de 2026, de la Presidencia, por la que se modifica, para diversas categorías objeto del proceso excepcional de estabilización por el sistema de concurso de méritos derivado de la oferta de empleo del año 2022, la relación definitiva de personas que han superado el proceso.",
-      "entity": "Instituto Valenciano de Servicios Sociales",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_31419_es.pdf"
-    },
-    {
-      "id": "DV-2026-31141",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 30 de septiembre de 2026, de la Presidencia, de adjudicación de puestos y formalización de contratos laborales fijos de las personas que han superado el proceso selectivo de acceso a los puestos de grupo B, convocatorias 12/22 y 16/22, del proceso excepcional de estabilización por el sistema de concurso de méritos, para cubrir los puestos previstos en la oferta pública de empleo de 2022 de la entidad, en ejecución de la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público.",
-      "entity": "Turisme Comunitat Valenciana",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_31141_es.pdf"
-    },
-    {
-      "id": "DV-2026-30204",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de las bases de la convocatoria 26/50 para la provisión definitiva de una plaza de auxiliar técnico o auxiliar técnica de mantenimiento (oficial u oficiala primera almacenistas), por el turno de promoción interna (concurso-oposición).",
-      "entity": "Ayuntamiento de Calp",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_30204_es.pdf"
-    },
-    {
-      "id": "DV-2026-29941",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la convocatoria y las bases específicas que tienen que regir el proceso selectivo, mediante el sistema de oposición, por turno libre, para la selección en propiedad de dos plazas de arquitecto técnico o arquitecta técnica.",
-      "entity": "Ayuntamiento de Sueca",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_29941_es.pdf"
-    },
-    {
-      "id": "DV-2026-29557",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de aprobación de las bases y de la convocatoria para la provisión en propiedad de dos plazas de oficial u oficiala de cementerio pertenecientes a la escala de administración especial, subescala servicios especiales, clase personal de oficios, grupo/subgrupo C2, por el sistema de oposición libre.",
-      "entity": "Ayuntamiento de Algemesí",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_29557_es.pdf"
-    },
-    {
-      "id": "DV-2026-29553",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la aprobación de las bases y de la convocatoria para la provisión en propiedad de una plaza de técnico o técnica medios de contratación por promoción interna, escala de administración general, subescala técnica, clase media, grupo A2.",
-      "entity": "Ayuntamiento de Algemesí",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_29553_es.pdf"
-    },
-    {
-      "id": "DV-2026-29551",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la aprobación de las bases específicas y de la convocatoria para la provisión en propiedad de una plaza de técnico o técnica medios de oficina municipal de información al consumidor y servicios generales por promoción interna, escala de administración general, subescala técnica, clase media y grupo A2.",
-      "entity": "Ayuntamiento de Algemesí",
-      "date": "08/10/2026",
-      "bulletin": "10468",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/08/pdf/2026_29551_es.pdf"
     }
   ]
 }

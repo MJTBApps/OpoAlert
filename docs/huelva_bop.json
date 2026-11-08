@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-07T16:12:02.017364+00:00",
+  "lastCheckedUTC": "2026-11-08T06:14:19.167825+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "214",
-    "pagesVisited": 20,
-    "announcementsRead": 265,
-    "opportunities": 40
+    "pagesVisited": 19,
+    "announcementsRead": 251,
+    "opportunities": 39
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -38,7 +37,6 @@
       "214"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -69,13 +67,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 265,
-    "opportunities": 40,
+    "issuesRead": 19,
+    "announcementsRead": 251,
+    "opportunities": 39,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_195_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_196_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_197_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_198_2026.pdf",
@@ -487,16 +485,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380653_BOP-197_2026.pdf"
-    },
-    {
-      "id": "HB-2026-378972",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir una plaza de Monitor Dinamizador de Turismo y Patrimonio Histórico Artístico",
-      "entity": "Ayuntamiento de Almonaster la Real",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_378972_BOP-195_2026.pdf"
     }
   ]
 }
