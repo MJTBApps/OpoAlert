@@ -128,6 +128,8 @@ dependencies {
     implementation("org.jsoup:jsoup:1.18.3")
     implementation("androidx.work:work-runtime-ktx:2.9.1")
     implementation("androidx.core:core-ktx:1.15.0")
+    // Play avisa de que fragment 1.1.0 (lo traen los servicios de Google) está obsoleta.
+    implementation("androidx.fragment:fragment:1.8.9")
     testImplementation("junit:junit:4.13.2")
     // org.json de Android está vacío en las pruebas locales.
     testImplementation("org.json:json:20240303")
