@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-07T16:49:25.810057+00:00",
+  "lastCheckedUTC": "2026-11-08T07:07:50.204308+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "257",
     "pagesVisited": 2,
-    "announcementsRead": 744,
-    "opportunities": 69
+    "announcementsRead": 699,
+    "opportunities": 68
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
-    "issuesRead": 25,
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
+    "issuesRead": 24,
     "pagesVisited": 2,
-    "announcementsRead": 744,
-    "opportunities": 69,
+    "announcementsRead": 699,
+    "opportunities": 68,
     "bulletins": [
-      "233",
       "234",
       "235",
       "236",
@@ -47,7 +46,6 @@
       "257"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-10",
       "2026-10-12",
       "2026-10-13",
@@ -74,7 +72,6 @@
       "2026-11-07"
     ],
     "issuePublicationDates": [
-      "2026-10-09",
       "2026-10-10",
       "2026-10-12",
       "2026-10-13",
@@ -105,20 +102,21 @@
       "2026-10-18",
       "2026-10-25",
       "2026-11-01",
-      "2026-11-02"
+      "2026-11-02",
+      "2026-11-08"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 38,
-      "SECCIÓN CUARTA": 2,
-      "SECCIÓN QUINTA": 102,
-      "SECCIÓN SEXTA": 567,
+      "SECCIÓN QUINTA": 93,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
       "SECCIÓN SEGUNDA": 7,
+      "SECCIÓN TERCERA": 36,
+      "SECCIÓN SEXTA": 534,
       "SECCIÓN SEPTIMA": 2,
-      "PARTE NO OFICIAL": 6
+      "PARTE NO OFICIAL": 6,
+      "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 93
+    "documentsVerified": 91
   },
   "notices": [
     {
@@ -800,16 +798,6 @@
       "bulletin": "236",
       "type": "Bolsa de trabajo",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469972270404"
-    },
-    {
-      "id": "ZA-000344239",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
-      "entity": "MANCOMUNIDAD AGUA DE MONEGROS",
-      "date": "09/10/2026",
-      "bulletin": "233",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469738890909"
     }
   ]
 }
