@@ -2,26 +2,23 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-04T16:40:54.977721+00:00",
+  "lastCheckedUTC": "2026-11-08T12:30:45.534984+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6666",
-    "pagesVisited": 16,
-    "announcementsRead": 64,
-    "opportunities": 3,
+    "bulletin": "6667",
+    "pagesVisited": 14,
+    "announcementsRead": 66,
+    "opportunities": 0,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 16,
-    "pdfPagesRead": 223
+    "originalFullPdfIssues": 14,
+    "pdfPagesRead": 201
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-06",
-    "rangeEnd": "2026-11-04",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "6658",
-      "6659",
-      "EXTRA45",
       "EXTRA46",
       "6660",
       "EXTRA47",
@@ -34,12 +31,10 @@
       "6664",
       "EXTRA51",
       "6665",
-      "6666"
+      "6666",
+      "6667"
     ],
     "publicationDates": [
-      "2026-10-06",
-      "2026-10-09",
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-15",
@@ -52,11 +47,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-30",
-      "2026-11-03"
+      "2026-11-03",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
-      "2026-10-07",
-      "2026-10-08",
       "2026-10-10",
       "2026-10-11",
       "2026-10-14",
@@ -70,24 +64,25 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 16,
-    "announcementsRead": 64,
-    "opportunities": 3,
+    "issuesRead": 14,
+    "announcementsRead": 66,
+    "opportunities": 0,
     "regularBulletins": [
-      "6658",
-      "6659",
       "6660",
       "6661",
       "6662",
       "6663",
       "6664",
       "6665",
-      "6666"
+      "6666",
+      "6667"
     ],
     "extraordinaryBulletins": [
-      "EXTRA45",
       "EXTRA46",
       "EXTRA47",
       "EXTRA48",
@@ -96,42 +91,6 @@
       "EXTRA51"
     ],
     "pdfEvidence": [
-      {
-        "number": "6658",
-        "date": "2026-10-06",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23281-bocce-6658-06-10-2026?Itemid=534",
-        "sha256": "41324e6b40578ed0dc1b2e5719da3ffc144d98d32141ff1d17b138a566550283",
-        "bytes": 1004436,
-        "pages": 33,
-        "edicts": [
-          681,
-          684
-        ]
-      },
-      {
-        "number": "6659",
-        "date": "2026-10-09",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23283-bocce-6659-09-10-2026?Itemid=534",
-        "sha256": "5afddeefcc005f91d0f6e7f7c225b5c6df4720c4a369180343301b1a2615d606",
-        "bytes": 501412,
-        "pages": 13,
-        "edicts": [
-          685,
-          688
-        ]
-      },
-      {
-        "number": "EXTRA45",
-        "date": "2026-10-09",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23286-bocce-extra45-09-10-2026?Itemid=534",
-        "sha256": "fcda14f1010caf24fbd68f09e4e2e933734cd51b8494fd532bbb7bd2d1c8abe1",
-        "bytes": 393708,
-        "pages": 6,
-        "edicts": [
-          92,
-          93
-        ]
-      },
       {
         "number": "EXTRA46",
         "date": "2026-10-12",
@@ -279,7 +238,7 @@
       {
         "number": "6666",
         "date": "2026-11-03",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23310-bocce-6666-03-11-2026?Itemid=534",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23314-bocce-6666-03-11-2026?Itemid=534",
         "sha256": "0e4be14f9bfaaa9dc143cc38f6d62dc25a1eb3d7134b15e25bc03368f5d30236",
         "bytes": 626724,
         "pages": 13,
@@ -287,42 +246,20 @@
           728,
           733
         ]
+      },
+      {
+        "number": "6667",
+        "date": "2026-11-06",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23315-bocce-6667-06-11-2026?Itemid=534",
+        "sha256": "68c220b2b6e3ab598b8cf2ac85a9a1164207c5640d84b80ea11a91495b1044ca",
+        "bytes": 6446544,
+        "pages": 30,
+        "edicts": [
+          734,
+          745
+        ]
       }
     ]
   },
-  "notices": [
-    {
-      "id": "CE-2026-683",
-      "province": "Ceuta (BOCCE)",
-      "title": "Decreto del Consejero de Presidencia y Gobernación, D. Alberto Ramón Gaitán Rodríguez, por el que se aprueban las bases de la convocatoria para la provisión de 4 plazas de Técnico/a de Educación Infantil, mediante el sistema de oposición en turno libre.",
-      "entity": "Ciudad Autónoma de Ceuta",
-      "date": "06/10/2026",
-      "bulletin": "6658",
-      "type": "Plaza / oposición",
-      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23281-bocce-6658-06-10-2026?Itemid=534",
-      "publisherArticle": "683"
-    },
-    {
-      "id": "CE-2026-682",
-      "province": "Ceuta (BOCCE)",
-      "title": "Decreto del Consejero de Presidencia y Gobernación, D. Alberto Ramón Gaitán Rodríguez, por el que se aprueban las bases de la convocatoria para la provisión de 1 plaza de Monitor/a Educativo, mediante el sistema de oposición en turno libre.",
-      "entity": "Ciudad Autónoma de Ceuta",
-      "date": "06/10/2026",
-      "bulletin": "6658",
-      "type": "Plaza / oposición",
-      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23281-bocce-6658-06-10-2026?Itemid=534",
-      "publisherArticle": "682"
-    },
-    {
-      "id": "CE-2026-681",
-      "province": "Ceuta (BOCCE)",
-      "title": "Decreto del Consejero de Presidencia y Gobernación, D. Alberto Ramón Gaitán Rodríguez, por el que se aprueban las bases de la convocatoria para la provisión de 5 plazas de Ayudante Educativo, mediante el sistema de oposición en turno libre.",
-      "entity": "Ciudad Autónoma de Ceuta",
-      "date": "06/10/2026",
-      "bulletin": "6658",
-      "type": "Plaza / oposición",
-      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23281-bocce-6658-06-10-2026?Itemid=534",
-      "publisherArticle": "681"
-    }
-  ]
+  "notices": []
 }
