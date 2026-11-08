@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-07T16:09:40.491693+00:00",
+  "lastCheckedUTC": "2026-11-08T09:17:26.316390+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 19,
-    "announcementsRead": 721,
-    "opportunities": 119
+    "pagesVisited": 18,
+    "announcementsRead": 689,
+    "opportunities": 114
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -37,7 +36,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -68,11 +66,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 721,
-    "opportunities": 119
+    "issuesRead": 18,
+    "announcementsRead": 689,
+    "opportunities": 114
   },
   "notices": [
     {
@@ -1214,56 +1213,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469874210303"
-    },
-    {
-      "id": "AO-2026-007961629",
-      "province": "Aragón (BOA)",
-      "title": "ANUNCIO relativo a la Resolución número 132, de 21 de septiembre de 2026, de la Alcaldía, por la que se aprueban las bases reguladoras para la cobertura en propiedad mediante promoción interna de una plaza de Técnico Medio de Gestión vacante en la plantilla de personal funcionario del Ayuntamiento de Binaced.",
-      "entity": "AYUNTAMIENTO DE BINACED",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469646650404"
-    },
-    {
-      "id": "AO-2026-007961628",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 25 de septiembre de 2026, de la Universidad de Zaragoza, por la que se convoca concurso de méritos para la provisión definitiva del puesto de Técnico de Calidad y Mejora de la Inspección General de Servicios y del puesto de Jefe de Secretaría de la Facultad de Economía y Empresa de la Universidad.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469644630404"
-    },
-    {
-      "id": "AO-2026-007961627",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 25 de septiembre de 2026, de la Universidad de Zaragoza, por la que se convoca concurso de méritos para la provisión definitiva de un puesto de Técnico de Calidad y Mejora de la Inspección General de Servicios y de Técnico de Contabilidad Financiera del Servicio de Gestión Financiera y Presupuestaria de la Universidad.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469642610404"
-    },
-    {
-      "id": "AO-2026-007961626",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 25 de septiembre de 2026, de la Universidad de Zaragoza, por la que se convoca concurso de méritos para la provisión definitiva de puestos singularizados de Técnicos de Apoyo de la Universidad.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469640590404"
-    },
-    {
-      "id": "AO-2026-007961625",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 23 de septiembre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para el ingreso, por el turno de acceso libre, en la escala de Técnicos Superiores de Laboratorio y Talleres, especialidad Veterinaria, mediante el sistema de concurso-oposición.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469638570303"
     }
   ]
 }
