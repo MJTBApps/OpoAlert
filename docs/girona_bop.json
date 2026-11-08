@@ -2,27 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-05T06:56:26.886953+00:00",
+  "lastCheckedUTC": "2026-11-08T10:03:19.856225+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 966,
-    "opportunities": 97,
+    "bulletin": "214",
+    "pagesVisited": 19,
+    "announcementsRead": 894,
+    "opportunities": 89,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-07",
-    "rangeEnd": "2026-11-05",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 966,
-    "opportunities": 97,
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
+    "issuesRead": 19,
+    "pagesVisited": 19,
+    "announcementsRead": 894,
+    "opportunities": 89,
     "bulletins": [
-      "193",
-      "194",
-      "195",
       "196",
       "197",
       "198",
@@ -40,12 +37,10 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
-      "2026-10-07",
-      "2026-10-08",
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -63,7 +58,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
     ],
     "nonPublicationDates": [
       "2026-10-10",
@@ -74,10 +70,72 @@
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07",
+      "2026-11-08"
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-214-09640",
+      "title": "Aprovació de la convocatòria i les bases del procés selectiu per a la provisió temporal del lloc de treball de secretari/a de l'Ajuntament de Celrà",
+      "entity": "AJUNTAMENT DE CELRÀ",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409640.pdf"
+    },
+    {
+      "id": "GI-2026-214-09561",
+      "title": "Aprovació de la convocatòria i les bases específiques del procés de selecció per a la creació d'una borsa de treball per cobrir necessitats temporals de personal de la categoria de tècnic mitjà d'ocupació juvenil que es produeixin durant un període de dos anys, mitjançant concurs oposició en torn lliure",
+      "entity": "AJUNTAMENT DE SANT FELIU DE GUÍXOLS",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409561.pdf"
+    },
+    {
+      "id": "GI-2026-214-09393",
+      "title": "Esmena error material de les bases del concurs oposició, promoció interna, de tres places administratiu/va vacants a la plantilla de personal funcionari",
+      "entity": "AJUNTAMENT DE LLORET DE MAR",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409393.pdf"
+    },
+    {
+      "id": "GI-2026-214-09392",
+      "title": "Esmena error material de les bases del concurs oposició. promoció interna, de tres places d'administratiu/va vacants a la plantilla de personal laboral",
+      "entity": "AJUNTAMENT DE LLORET DE MAR",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409392.pdf"
+    },
+    {
+      "id": "GI-2026-214-09374",
+      "title": "Aprovació de les bases específiques i la convocatòria del procés selectiu per cobrir 4 places d'agent de la Policia Local, en règim de personal funcionari de carrera de l'Ajuntament de Puigcerdà, amb previsió de fins a 1 plaça addicional",
+      "entity": "AJUNTAMENT DE PUIGCERDÀ",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409374.pdf"
+    },
+    {
+      "id": "GI-2026-214-09364",
+      "title": "Aprovació de les bases i la convocatòria per a la creació d'una borsa de treball de conserges, mitjançant sistema d'oposició",
+      "entity": "AJUNTAMENT DE TOSSA DE MAR",
+      "date": "06/11/2026",
+      "bulletin": "214",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409364.pdf"
+    },
     {
       "id": "GI-2026-213-09585",
       "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la constitució d'una borsa de treball d'arquitectes tècnics",
@@ -907,146 +965,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/197/202619708709.pdf"
-    },
-    {
-      "id": "GI-2026-195-08682",
-      "title": "Aprovació de les bases i la convocatòria per a la creació d'una borsa de treball d'arquitecte tècnic de l'Ajuntament de Puigcerdà",
-      "entity": "AJUNTAMENT DE PUIGCERDÀ",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/195/202619508682.pdf"
-    },
-    {
-      "id": "GI-2026-195-08681",
-      "title": "Aprovació de les bases i la convocatòria per a la creació d'una borsa de treball de professor/a de flauta travessera, grup A1, de l'Ajuntament de Puigcerdà",
-      "entity": "AJUNTAMENT DE PUIGCERDÀ",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/195/202619508681.pdf"
-    },
-    {
-      "id": "GI-2026-195-08680",
-      "title": "Aprovació de les bases i la convocatòria per regular el procés de selecció per a la constitució d'una borsa de treball d'arxivers, funcionari/ària interí/ina",
-      "entity": "CONSELL COMARCAL DEL GIRONÈS",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/195/202619508680.pdf"
-    },
-    {
-      "id": "GI-2026-194-08704",
-      "title": "Rectificació de les bases del procés selectiu de 3 places d'agent de policia, i constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE VIDRERES",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408704.pdf"
-    },
-    {
-      "id": "GI-2026-194-08631",
-      "title": "Aprovació de les bases reguladores i la convocatòria del procés selectiu per a la cobertura definitiva per la via de l'estabilització de l'ocupació temporal, mitjançant concurs de mèrits, d'una plaça de cap de comunicació, grup A1, de la plantilla de personal laboral de l'Ajuntament de Castell d'Aro, Platja d'Aro i S'Agaró",
-      "entity": "AJUNTAMENT DE CASTELL D'ARO, PLATJA D'ARO I S'AGARÓ",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408631.pdf"
-    },
-    {
-      "id": "GI-2026-194-08541",
-      "title": "Correcció d'error material de les bases i la convocatòria d'una plaça temporal i constitució de borsa de treball al lloc de treball de terapeuta familiar, grup de classificació A2",
-      "entity": "CONSELL COMARCAL DE LA CERDANYA",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408541.pdf"
-    },
-    {
-      "id": "GI-2026-194-08537",
-      "title": "Aprovació de les bases reguladores del concurs de mèrits per a la provisió definitiva del lloc de treball d'arquitecte/a tècnic/a, mitjançant mobilitat interadministrativa",
-      "entity": "AJUNTAMENT D'AIGUAVIVA",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408537.pdf"
-    },
-    {
-      "id": "GI-2026-194-08536",
-      "title": "Aprovació de la convocatòria i les bases específiques del procés de selecció per a la creació d'una borsa de treball per cobrir necessitats temporals de personal de la categoria de personal tècnic auxiliar de biblioteca que es produeixin durant un període de dos anys, mitjançant concurs oposició en torn lliure",
-      "entity": "AJUNTAMENT DE SANT FELIU DE GUÍXOLS",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408536.pdf"
-    },
-    {
-      "id": "GI-2026-194-08534",
-      "title": "Aprovació de la convocatòria i les bases específiques del procés de selecció per cobrir definitivament una plaça de personal tècnic de cultura de la plantilla de personal funcionari de l'Ajuntament de Sant Feliu de Guíxols, mitjançant concurs oposició en promoció interna",
-      "entity": "AJUNTAMENT DE SANT FELIU DE GUÍXOLS",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408534.pdf"
-    },
-    {
-      "id": "GI-2026-194-08525",
-      "title": "Aprovació de les bases i la convocatòria per cobrir, mitjançant concurs oposició,  una plaça d'administratiu/va de gestió C1, per torn de promoció interna",
-      "entity": "AJUNTAMENT DE SANTA PAU",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408525.pdf"
-    },
-    {
-      "id": "GI-2026-194-08524",
-      "title": "Aprovació inicial de les bases per a l'adjudicació, en règim de lloguer jove, d'habitatges i places d'aparcament titulariat de l'Ajuntament de Riudellots de la Selva",
-      "entity": "AJUNTAMENT DE RIUDELLOTS DE LA SELVA",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408524.pdf"
-    },
-    {
-      "id": "GI-2026-194-08503",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la constitució d'una borsa de treball de tècnics/ques auxiliars de biblioteca, grup C1, mitjançant concurs oposició a l'Ajuntament de Maçanet de la Selva (codi 14/2026)",
-      "entity": "AJUNTAMENT DE MAÇANET DE LA SELVA",
-      "date": "08/10/2026",
-      "bulletin": "194",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/194/202619408503.pdf"
-    },
-    {
-      "id": "GI-2026-193-08501",
-      "title": "Convocatòria per a la provisió de la plaça de jutge/essa de pau",
-      "entity": "AJUNTAMENT DE RABÓS",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/193/202619308501.pdf"
-    },
-    {
-      "id": "GI-2026-193-08488",
-      "title": "Convocatòria i bases del concurs oposició en torn lliure per a la cobertura definitiva de dues places d'auxiliar administratiu/va",
-      "entity": "AJUNTAMENT D'AIGUAVIVA",
-      "date": "07/10/2026",
-      "bulletin": "193",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/193/202619308488.pdf"
     }
   ]
 }
