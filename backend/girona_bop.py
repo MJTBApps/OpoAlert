@@ -25,6 +25,10 @@ ISSUE_HEADER = re.compile(r"Bop\s*n[úu]mero\s*:\s*(\d+)\s*/\s*(\d+)\s*-\s*(\d{2
 PDF_PATH = re.compile(r"^/bopV1/pdf/(\d{4})/(\d{1,3})/(\d{12})\.pdf$")
 
 
+class IssueNotFound(ProvincialCoverageError):
+    """La web responde 404: no hay boletin con ese numero en esa fecha."""
+
+
 def download(url: str) -> str:
     p=urlsplit(url)
     if p.scheme != "https" or p.hostname != "www.ddgi.cat" or not p.path.startswith("/bop/") or p.query or p.fragment or p.username or p.password:
@@ -42,6 +46,8 @@ def download(url: str) -> str:
                 if len(raw)>650_000:raise ProvincialCoverageError("Girona: indice HTML excesivo")
                 return raw.decode(response.headers.get_content_charset() or "utf-8","replace")
         except (HTTPError,URLError,OSError,TimeoutError) as exc:
+            if isinstance(exc,HTTPError) and exc.code==404:
+                raise IssueNotFound(f"Girona: no existe {url}") from exc
             last=exc
             if attempt<2:
                 import time;time.sleep(attempt+1)
@@ -128,8 +134,19 @@ def audit(days:int=30, today:date|None=None, fetch=download) -> dict:
             number=current["number"]-steps
             if number<1:
                 raise ProvincialCoverageError("Girona: cruce de año sin verificar")
-            url=ISSUE_PATH.format(latest.isoformat(),latest.year,number)
-            issue=parse_issue(fetch(url), number)
+            # La web solo sirve cada boletin con su fecha real en la direccion
+            # (desde el 07/11/2026): se prueban los dias anteriores al ultimo leido.
+            issue=None
+            for back in range(1,11):
+                day=previous-timedelta(days=back)
+                try:
+                    html=fetch(ISSUE_PATH.format(day.isoformat(),day.year,number))
+                except IssueNotFound:
+                    continue
+                issue=parse_issue(html, number)
+                break
+            if issue is None:
+                raise ProvincialCoverageError(f"Girona: no se encuentra el BOP {number}")
         else:
             issue=current
         issue_day=issue["date"]

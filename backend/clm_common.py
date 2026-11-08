@@ -84,10 +84,11 @@ def record(code,province,nid,title,agency,day,bulletin,pdf):
     return {"id":nid,"province":province,"title":title.strip(),"entity":agency.strip(),
       "date":day.strftime("%d/%m/%Y"),"bulletin":str(bulletin),"type":employment(title),"url":pdf}
 
-def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,start=None,max_gap=4):
+def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,start=None,max_gap=4,allow_empty=False):
     """start: solo para fuentes cuyo archivo oficial empieza cada año de cero;
     en enero la ventana va del 1 de enero a hoy (ver feeds_diarios.validate).
-    max_gap: días máximos entre los extremos de la ventana y la primera o última edición."""
+    max_gap: días máximos entre los extremos de la ventana y la primera o última edición.
+    allow_empty: fuentes pequeñas que pueden pasar 30 días sin ninguna convocatoria (Ceuta)."""
     if days!=30:invalid("histórico mínimo 30 días")
     end=today or date.today()
     if start is None:start=end-timedelta(days=29)
@@ -116,7 +117,7 @@ def publish_audit(source,province,issue_data,days=30,today=None,min_issues=15,st
             notices.append(n)
     if len({n["id"] for n in notices})!=len(notices):
         invalid("candidatas duplicadas")
-    if not notices:invalid("ninguna candidatura válida encontrada")
+    if not notices and not allow_empty:invalid("ninguna candidatura válida encontrada")
     notices.sort(key=lambda n:(datetime.strptime(n["date"],"%d/%m/%Y"),n["id"]),reverse=True)
     dates=sorted(set(x["day"] for x in issue_data))
     total=sum(x["read"] for x in issue_data)

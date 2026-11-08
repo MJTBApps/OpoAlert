@@ -69,4 +69,24 @@ class GironaBOPTests(unittest.TestCase):
         with self.assertRaises(ProvincialCoverageError):
             audit(today=end,fetch=fake)
 
+    def test_pide_cada_boletin_con_su_fecha_real(self):
+        import girona_bop
+        end=date(2026,11,8)
+        days={}
+        d=date(2026,11,6);n=214
+        while n>190:
+            if d.weekday()<5:
+                days[n]=d;n-=1
+            d-=timedelta(days=1)
+        def fake(url):
+            if url==BASE:return issue_html(214,days[214])
+            parts=url.rstrip("/").split("/")
+            num=int(parts[-1])
+            if parts[-3]!=days[num].isoformat():
+                raise girona_bop.IssueNotFound("404")
+            return issue_html(num,days[num])
+        output=audit(today=end,fetch=fake)
+        self.assertEqual(output["historyCoverage"]["bulletins"][-1],"214")
+        self.assertIn("213",output["historyCoverage"]["bulletins"])
+
 if __name__=="__main__":unittest.main()

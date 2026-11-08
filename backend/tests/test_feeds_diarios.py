@@ -67,6 +67,19 @@ class FeedsDiariosTest(unittest.TestCase):
             prev=self.write(tmp,old,"prev.json")
             with self.assertRaises(fd.FeedError):fd.validate("MD",ok,previous=prev,today=today)
 
+    def test_feed_vacio_solo_en_fuentes_pequenas(self):
+        empty=feed(date.today(),notices=[])
+        empty["coverage"]["opportunities"]=empty["historyCoverage"]["opportunities"]=0
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(fd.FeedError):fd.validate("MD",self.write(tmp,empty),today=date.today())
+        self.assertEqual(fd.ALLOW_NO_NOTICES,{"CE"})
+        from clm_common import publish_audit
+        from provincial_common import ProvincialCoverageError
+        today=date.today()
+        issues=[{"day":today-timedelta(days=i),"number":100-i,"read":3,"notices":[]} for i in range(0,30,2)]
+        self.assertEqual(publish_audit("s","p",issues,today=today,allow_empty=True)["notices"],[])
+        with self.assertRaises(ProvincialCoverageError):publish_audit("s","p",issues,today=today)
+
 def numbering_ok_main(main):
     from clm_common import numbering_ok
     return numbering_ok(main)

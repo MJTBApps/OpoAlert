@@ -349,7 +349,8 @@ def audit(today=None,listing=None,reader=None):
         issue_data.append({"day":x["day"],"number":number,"read":len(x["edicts"]),"notices":notices})
         pages+=x["pages"]
     try:
-        feed=clm_common.publish_audit(SOURCE,PROVINCE,issue_data,today=end,min_issues=MIN_ORDINARY)
+        # Ceuta publica pocas convocatorias: puede pasar 30 días sin ninguna (08/11/2026).
+        feed=clm_common.publish_audit(SOURCE,PROVINCE,issue_data,today=end,min_issues=MIN_ORDINARY,allow_empty=True)
     except CeutaCoverageError:raise
     except ProvincialCoverageError as ex:
         fail(str(ex).replace("Castilla-La Mancha: ",""))

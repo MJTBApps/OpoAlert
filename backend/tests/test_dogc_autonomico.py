@@ -76,5 +76,24 @@ class WindowTest(unittest.TestCase):
         self.assertFalse(dc.supplement_date_ok("31 de desembre de 2025",date(2026,1,2)))
 
 
+    def test_anuncio_del_suplemento_de_notificaciones(self):
+        day=date(2026,11,6)
+        meta={"numDOGC":None,"dateDOGC":None,"numSuplement":"9789SN","dateSuplement":"06/11/2026",
+              "tipusDiari":"SN","issuingAuthority":"Departament d'Agricultura",
+              "CVE":"CVE-DOGC-A-26307019-2026"}
+        doc={"documentData":meta,"authenticityIntegrity":{"result":"Verificació satisfactòria: autenticitat i integritat"},
+             "titleDocument":"Anunci de notificació en procediment d'ocupació de béns i drets afectats",
+             "textDocument":"x"*200}
+        old=dc.request_json
+        dc.request_json=lambda *a,**k:doc
+        try:
+            dc.official_original(("1058646","t",day,"9789SN","Plaza / oposición"))
+            with self.assertRaises(ProvincialCoverageError):
+                dc.official_original(("1058646","t",day,"9790SN","Plaza / oposición"))
+            with self.assertRaises(ProvincialCoverageError):
+                dc.official_original(("1058646","t",day,"9789","Plaza / oposición"))
+        finally:
+            dc.request_json=old
+
 if __name__=="__main__":
     unittest.main()

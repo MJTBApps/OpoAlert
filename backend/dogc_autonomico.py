@@ -237,11 +237,17 @@ def official_original(task):
     if not isinstance(meta,dict) or not isinstance(verification,dict):
         fail(f"documento {did}: metadatos/autenticidad ausentes")
     cve=CVE_RE.fullmatch(str(meta.get("CVE") or ""))
-    if (str(meta.get("numDOGC"))!=issue
-        or meta.get("dateDOGC")!=day.strftime("%d/%m/%Y")
+    # Los anuncios del suplemento de notificaciones («9789SN») traen su número y
+    # fecha en numSuplement/dateSuplement y dejan vacíos los del DOGC.
+    if issue.endswith("SN"):
+        num,when,kinds=meta.get("numSuplement"),meta.get("dateSuplement"),("SN",)
+    else:
+        num,when,kinds=meta.get("numDOGC"),meta.get("dateDOGC"),("DOGC",None)
+    if (str(num)!=issue
+        or when!=day.strftime("%d/%m/%Y")
         or not str(meta.get("issuingAuthority") or "").strip()
         or not cve or not day.year-1<=int(cve[1])<=day.year+1
-        or meta.get("tipusDiari") not in ("DOGC",None)):
+        or meta.get("tipusDiari") not in kinds):
         fail(f"documento {did}: fecha/numero/CVE/editor no coinciden")
     autentic=norm(verification.get("result"))
     if not (("satisfact" in autentic) and ("autentic" in autentic) and ("integr" in autentic)):

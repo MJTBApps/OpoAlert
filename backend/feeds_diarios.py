@@ -76,6 +76,9 @@ SOURCES={
 # Portales que no responden a los servidores de GitHub pero sí desde una
 # conexión española: se leen con el ejecutor propio de casa
 # (revisar-espana-casa.yml, ver EJECUTOR_CASA.md).
+# Fuentes pequeñas que pueden pasar 30 días sin ninguna convocatoria nueva: se acepta
+# el feed vacío si la lectura es completa (Ceuta, 08/11/2026).
+ALLOW_NO_NOTICES={"CE"}
 HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE","CU"}
 # Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
 HOME_BACKUP={"RI","CC"}
@@ -153,7 +156,8 @@ def validate(code,path,previous=None,today=None):
     if not isinstance(read,int) or read<issues or hist.get("announcementsRead")!=read:
         fail(code,"contador de anuncios incoherente")
     notices=data.get("notices")
-    if not isinstance(notices,list) or not notices:fail(code,"sin anuncios candidatos")
+    if not isinstance(notices,list) or (not notices and code not in ALLOW_NO_NOTICES):
+        fail(code,"sin anuncios candidatos")
     if cov.get("opportunities")!=len(notices) or hist.get("opportunities")!=len(notices):
         fail(code,"contador de candidatas incoherente")
     seen=set();bulletins=set(map(str,numbers));dateset=set(dates)
