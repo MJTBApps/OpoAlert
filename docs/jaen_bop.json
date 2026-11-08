@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-07T16:28:36.787924+00:00",
+  "lastCheckedUTC": "2026-11-08T06:44:55.803510+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "217",
-    "pagesVisited": 21,
-    "announcementsRead": 498,
-    "opportunities": 24,
+    "pagesVisited": 20,
+    "announcementsRead": 481,
+    "opportunities": 22,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 24
+    "pdfLinksVerified": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -41,7 +40,6 @@
       "217"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-10",
       "2026-10-12",
       "2026-10-13",
@@ -72,15 +70,16 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 498,
-    "opportunities": 24,
+    "issuesRead": 20,
+    "announcementsRead": 481,
+    "opportunities": 22,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "196",
-      "date": "2026-10-08"
+      "number": "197",
+      "date": "2026-10-09"
     }
   },
   "notices": [
@@ -303,26 +302,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-15&numeroEdicto=4549&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4465",
-      "province": "Jaén",
-      "title": "Convocatoria para la constitución de una Bolsa de trabajo de Formadores/as del Certificado de Profesionalidad de Dinamización, programación y desarrollo de acciones culturales.",
-      "entity": "AYUNTAMIENTO DE BAEZA (JAÉN)",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-09&numeroEdicto=4465&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4461",
-      "province": "Jaén",
-      "title": "Aprobación de las Bases por las que se regirá la convocatoria para proveer en propiedad una plaza de Policía Local.",
-      "entity": "AYUNTAMIENTO DE QUESADA (JAÉN)",
-      "date": "09/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-09&numeroEdicto=4461&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

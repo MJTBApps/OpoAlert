@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-07T16:21:18.627671+00:00",
+  "lastCheckedUTC": "2026-11-08T06:35:51.394234+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 20,
-    "announcementsRead": 463,
-    "opportunities": 30
+    "pagesVisited": 19,
+    "announcementsRead": 435,
+    "opportunities": 28
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -38,7 +37,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -69,11 +67,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 463,
-    "opportunities": 30
+    "issuesRead": 19,
+    "announcementsRead": 435,
+    "opportunities": 28
   },
   "notices": [
     {
@@ -355,26 +354,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4810"
-    },
-    {
-      "id": "CC-2026-4744",
-      "province": "Cáceres",
-      "title": "Aprobación Bolsa empleo temporal Administrativos/as, turno libre.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4744"
-    },
-    {
-      "id": "CC-2026-4742",
-      "province": "Cáceres",
-      "title": "Bolsa de empleo temporal de profesores/as del conservatorio de música (oboe y fagot). Fecha del primer ejercicio.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4742"
     }
   ]
 }

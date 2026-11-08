@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-07T16:32:04.236781+00:00",
+  "lastCheckedUTC": "2026-11-08T06:49:22.389722+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 21,
-    "announcementsRead": 544,
-    "opportunities": 31
+    "pagesVisited": 20,
+    "announcementsRead": 516,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -39,7 +38,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 544,
-    "opportunities": 31
+    "issuesRead": 20,
+    "announcementsRead": 516,
+    "opportunities": 30
   },
   "notices": [
     {
@@ -435,18 +434,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42627119-1-PDF-580186",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F13&referencia=42597771-4-HTML-580186-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-8dc4a7bf2922f2be2f",
-      "province": "La Rioja (BOR)",
-      "title": "ENFERMERO/A: corrección de error en la relación definitiva de personas que han superado el proceso selectivo para la provisión de plazas vacantes, para su provisión por el turno libre y de promoción interna, y cupo de personas con discapacidad, OEP 2022, 2023 y 2024, así como las plazas vacantes ofertadas a las mismas",
-      "entity": "SERVICIO RIOJANO DE SALUD",
-      "date": "09/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42596776-1-PDF-580158",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F09&referencia=42584978-4-HTML-580158-X",
       "originalFormat": "pdf"
     }
   ]

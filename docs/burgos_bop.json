@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-07T16:20:56.273489+00:00",
+  "lastCheckedUTC": "2026-11-08T06:35:31.415263+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "211",
-    "pagesVisited": 23,
-    "announcementsRead": 507,
-    "opportunities": 11,
+    "pagesVisited": 22,
+    "announcementsRead": 476,
+    "opportunities": 6,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 6
+    "pdfChecked": 5
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "193",
       "Extraordinario 1",
       "194",
       "195",
@@ -40,7 +39,6 @@
       "211"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -71,13 +69,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 507,
-    "opportunities": 11,
+    "issuesRead": 19,
+    "announcementsRead": 476,
+    "opportunities": 6,
     "regularBulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -101,7 +99,6 @@
       "Extraordinario 1"
     ],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-193",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-001-0",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-194",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-195",
@@ -189,61 +186,6 @@
       "type": "Plaza / oposición",
       "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-202/bopbur-2026-202-anuncio-202604599.pdf",
       "publisherArticle": "202604599"
-    },
-    {
-      "id": "BU-2026-202604253",
-      "province": "Burgos",
-      "title": "Bases y convocatoria de las pruebas selectivas de tres plazas de administrativo C1, en régimen funcionarial, por oposición-promoción interna",
-      "entity": "Ayuntamiento de Espinosa de los Monteros",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-193/bopbur-2026-193-anuncio-202604253.pdf",
-      "publisherArticle": "202604253"
-    },
-    {
-      "id": "BU-2026-202604252",
-      "province": "Burgos",
-      "title": "Bases y convocatoria de las pruebas selectivas de una plaza de oficial de vigilancia C2, en régimen funcionarial, por concurso-oposición (turno libre)",
-      "entity": "Ayuntamiento de Espinosa de los Monteros",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-193/bopbur-2026-193-anuncio-202604252.pdf",
-      "publisherArticle": "202604252"
-    },
-    {
-      "id": "BU-2026-202604251",
-      "province": "Burgos",
-      "title": "Bases y convocatoria de las pruebas selectivas de una plaza de técnico superior económico financiero A1, en régimen funcionarial, por oposición-promoción interna",
-      "entity": "Ayuntamiento de Espinosa de los Monteros",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-193/bopbur-2026-193-anuncio-202604251.pdf",
-      "publisherArticle": "202604251"
-    },
-    {
-      "id": "BU-2026-202604244",
-      "province": "Burgos",
-      "title": "Bases y convocatoria de las pruebas selectivas de una plaza de oficial 1.ª, en régimen laboral, por oposición-promoción interna",
-      "entity": "Ayuntamiento de Espinosa de los Monteros",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-193/bopbur-2026-193-anuncio-202604244.pdf",
-      "publisherArticle": "202604244"
-    },
-    {
-      "id": "BU-2026-202604242",
-      "province": "Burgos",
-      "title": "Bases y convocatoria de las pruebas selectivas de una plaza de oficial C2, en régimen funcionarial, por oposición-promoción interna",
-      "entity": "Ayuntamiento de Espinosa de los Monteros",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-193/bopbur-2026-193-anuncio-202604242.pdf",
-      "publisherArticle": "202604242"
     }
   ]
 }

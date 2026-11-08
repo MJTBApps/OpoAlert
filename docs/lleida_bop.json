@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-07T16:30:01.574566+00:00",
+  "lastCheckedUTC": "2026-11-08T06:46:27.166159+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 22,
-    "announcementsRead": 928,
-    "opportunities": 63
+    "pagesVisited": 21,
+    "announcementsRead": 880,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -39,7 +38,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -70,11 +68,12 @@
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 928,
-    "opportunities": 63
+    "issuesRead": 20,
+    "announcementsRead": 880,
+    "opportunities": 62
   },
   "notices": [
     {
@@ -696,16 +695,6 @@
       "bulletin": "195",
       "type": "Bolsa de trabajo",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/195/202619508459.pdf"
-    },
-    {
-      "id": "LE-202619308298",
-      "province": "Lleida (BOP)",
-      "title": "Anunci de convocatòria i bases per proveir mitjançant provisió no definitiva el lloc de treball de secretaria-intervenció reservat a funcionaris d’administració local amb habilitació de caràcter nacional, subescala secretaria intervenció de l’Ajuntament de",
-      "entity": "AJUNTAMENT DE SANAÜJA (SANAÜJA)",
-      "date": "09/10/2026",
-      "bulletin": "193",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/193/202619308298.pdf"
     }
   ]
 }

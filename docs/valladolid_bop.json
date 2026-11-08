@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-07T16:32:33.681806+00:00",
+  "lastCheckedUTC": "2026-11-08T06:50:44.518154+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "213",
-    "pagesVisited": 20,
-    "announcementsRead": 281,
-    "opportunities": 20
+    "pagesVisited": 19,
+    "announcementsRead": 265,
+    "opportunities": 18
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -38,7 +37,6 @@
       "213"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -69,11 +67,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 281,
-    "opportunities": 20
+    "issuesRead": 19,
+    "announcementsRead": 265,
+    "opportunities": 18
   },
   "notices": [
     {
@@ -255,26 +254,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/14/BOPVA-A-2026-02979.pdf"
-    },
-    {
-      "id": "VD-2026-2954",
-      "province": "Valladolid",
-      "title": "Concurso ordinario para la provisión de 12 plazas de bombero 3 del Servicio de Extinción de Incendios, Salvamento y Protección Civil en la plantilla del Ayuntamiento de Valladolid.",
-      "entity": "AYUNTAMIENTO DE VALLADOLID",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/09/BOPVA-A-2026-02954.pdf"
-    },
-    {
-      "id": "VD-2026-2947",
-      "province": "Valladolid",
-      "title": "Convocatoria mediante promoción interna de 3 plazas de sargento jefe/a de subgrupo operativo del servicio de extinción de incendios, salvamento y protección civil.",
-      "entity": "AYUNTAMIENTO DE VALLADOLID",
-      "date": "09/10/2026",
-      "bulletin": "194",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/09/BOPVA-A-2026-02947.pdf"
     }
   ]
 }

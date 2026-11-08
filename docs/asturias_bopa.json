@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-07T16:19:19.568998+00:00",
+  "lastCheckedUTC": "2026-11-08T06:33:56.623617+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
-    "pagesVisited": 21,
-    "announcementsRead": 893,
-    "opportunities": 67
+    "pagesVisited": 20,
+    "announcementsRead": 854,
+    "opportunities": 64
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -39,7 +38,6 @@
       "215"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -71,11 +69,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 893,
-    "opportunities": 67
+    "issuesRead": 20,
+    "announcementsRead": 854,
+    "opportunities": 64
   },
   "notices": [
     {
@@ -717,36 +716,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/13/2026-08042.pdf"
-    },
-    {
-      "id": "AS-2026-08034",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 24 de septiembre de 2026, de la Gerencia del Área de Salud II Centro-Suroccidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de un puesto de Jefe/a de Equipo no sanitario: Unidad Administrativa del Equipo de Atención Primaria de Figaredo.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "09/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/09/2026-08034.pdf"
-    },
-    {
-      "id": "AS-2026-08000",
-      "province": "Asturias (BOPA)",
-      "title": "Edicto. Convocatoria y bases para la provisión de dos plazas de Arquitecto/a del Ayuntamiento de Oviedo, perteneciente a la Oferta de Empleo Público de 2024 y 2026.",
-      "entity": "Ayuntamiento de Oviedo",
-      "date": "09/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/09/2026-08000.pdf"
-    },
-    {
-      "id": "AS-2026-07988",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria y bases reguladoras del proceso de selección para la formación de una bolsa de Limpiador/a.",
-      "entity": "Ayuntamiento de Valdés",
-      "date": "09/10/2026",
-      "bulletin": "196",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/09/2026-07988.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-07T16:19:33.935749+00:00",
+  "lastCheckedUTC": "2026-11-08T06:34:11.076976+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "129",
-    "pagesVisited": 12,
-    "announcementsRead": 219,
-    "opportunities": 13
+    "pagesVisited": 11,
+    "announcementsRead": 195,
+    "opportunities": 11
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-09",
-    "rangeEnd": "2026-11-07",
+    "rangeStart": "2026-10-10",
+    "rangeEnd": "2026-11-08",
     "bulletins": [
-      "118",
       "119",
       "120",
       "121",
@@ -30,7 +29,6 @@
       "129"
     ],
     "publicationDates": [
-      "2026-10-09",
       "2026-10-12",
       "2026-10-14",
       "2026-10-16",
@@ -61,11 +59,12 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-05",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 219,
-    "opportunities": 13
+    "issuesRead": 11,
+    "announcementsRead": 195,
+    "opportunities": 11
   },
   "notices": [
     {
@@ -177,26 +176,6 @@
       "bulletin": "120",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299429"
-    },
-    {
-      "id": "AB-2026-299367",
-      "province": "Albacete",
-      "title": "Bases para cubrir en propiedad una plaza de Policía Local (escala básica) mediante el sistema de acceso por oposición libre, incluidas en la Oferta de Empleo Público de 2026",
-      "entity": "Ayuntamiento de Caudete",
-      "date": "09/10/2026",
-      "bulletin": "118",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299367"
-    },
-    {
-      "id": "AB-2026-299352",
-      "province": "Albacete",
-      "title": "Resolución adjudicación definitiva de puestos del concurso de méritos de Técnico/a de Administración General y Trabajador/a Social",
-      "entity": "Ayuntamiento de Albacete",
-      "date": "09/10/2026",
-      "bulletin": "118",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299352"
     }
   ]
 }
