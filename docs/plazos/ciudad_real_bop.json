@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-08T16:49:41+00:00",
+ "updatedUTC": "2026-11-09T07:40:10+00:00",
  "items": {
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354": {
    "days": 20,
@@ -67,6 +67,18 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de veinte días hábiles, contados a partir del día si - guiente al que haya tenido lugar la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
    "page": 3
+  },
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871438": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de veinte días hábiles, contados desde el día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 1
+  },
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871432": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…el proceso selectivo se presentaran en el plazo de 20 días hábiles contados desde el siguiente a la publicación del anuncio en extracto de la convocatoria en el BOE, el aspirante deberá manifestar que reúne todas y cada una de las condiciones exigidas en la base segunda y que se compromete a prestar el juramento o…",
+   "page": 3
   }
  },
  "none": [
@@ -80,7 +92,8 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864889"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864889",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871440"
  ],
  "tries": {}
 }
