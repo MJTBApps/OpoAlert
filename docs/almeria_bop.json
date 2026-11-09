@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-09T07:49:55.690370+00:00",
+  "lastCheckedUTC": "2026-11-09T10:19:19.521510+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 682,
-    "announcementsRead": 294,
-    "opportunities": 51
+    "bulletin": "216",
+    "pagesVisited": 746,
+    "announcementsRead": 312,
+    "opportunities": 52
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-11",
     "rangeEnd": "2026-11-09",
-    "issuesRead": 19,
-    "pagesVisited": 682,
-    "announcementsRead": 294,
-    "opportunities": 51,
+    "issuesRead": 20,
+    "pagesVisited": 746,
+    "announcementsRead": 312,
+    "opportunities": 52,
     "bulletins": [
       "197",
       "198",
@@ -38,7 +38,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -59,7 +60,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -71,12 +73,11 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-09"
+      "2026-11-08"
     ],
-    "originalPdfPagesRead": 682,
+    "originalPdfPagesRead": 746,
     "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48190,
+    "archiveTotalIssues": 48191,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392771&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392770&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F10%2F2026.pdf",
@@ -96,10 +97,21 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392785&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+3%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392786&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+4%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392787&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+5%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392788&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+6%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392788&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+6%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392789&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+9%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03030",
+      "province": "Almería",
+      "title": "RESOLUCIÓN DE ALCALDÍA N.° 825 DE FECHA 28 DE OCTUBRE DEL AYUNTAMIENTO DE DALIAS POR LA QUE SE APRUEBAN LAS BASES Y LA CONVOCATORIA PARA LA SELECCIÓN EN RÉGIMEN DE INTERINIDAD POR CONCURSO OPOSICIÓN, PARA CUBRIR LA PLAZA DE…",
+      "entity": "AYUNTAMIENTO DE DALIAS",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3030/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03045",
       "province": "Almería",
