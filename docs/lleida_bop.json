@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-08T16:34:27.990626+00:00",
+  "lastCheckedUTC": "2026-11-09T07:05:05.663322+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 880,
-    "opportunities": 62
+    "bulletin": "214",
+    "pagesVisited": 22,
+    "announcementsRead": 945,
+    "opportunities": 65
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "194",
       "195",
@@ -35,7 +35,8 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -57,10 +58,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-17",
       "2026-10-18",
@@ -71,11 +72,41 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 880,
-    "opportunities": 62
+    "issuesRead": 21,
+    "announcementsRead": 945,
+    "opportunities": 65
   },
   "notices": [
+    {
+      "id": "LE-202621409402",
+      "province": "Lleida (BOP)",
+      "title": "Bases reguladores i convocatòria d'una plaça de Tècnic auxiliar de serveis econòmics, subgrup C1, en règim de personal funcionari interí, pel sistema de concurs-oposició i constitució de borsa de treball",
+      "entity": "AJUNTAMENT DE TÀRREGA (TÀRREGA)",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/214/202621409402.pdf"
+    },
+    {
+      "id": "LE-202621409268",
+      "province": "Lleida (BOP)",
+      "title": "Bases i convocatòria per a la selecció d’una borsa de treball de tècnic/a a l’àrea de joventut",
+      "entity": "CONSELL COMARCAL DE L'ALT URGELL (SEU D'URGELL, LA)",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/214/202621409268.pdf"
+    },
+    {
+      "id": "LE-202621409249",
+      "province": "Lleida (BOP)",
+      "title": "CONVOCATÒRIA DEL PROCÉS SELECTIU PER A LA PROVISIÓ D’UNA PLAÇA D’AUXILIAR ADMINISTRATIU/IVA",
+      "entity": "AJUNTAMENT D'ESPOT (ESPOT)",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/214/202621409249.pdf"
+    },
     {
       "id": "LE-202621309365",
       "province": "Lleida (BOP)",

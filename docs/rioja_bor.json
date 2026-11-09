@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-08T16:36:32.078926+00:00",
+  "lastCheckedUTC": "2026-11-09T07:08:11.669380+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 20,
-    "announcementsRead": 516,
-    "opportunities": 30
+    "bulletin": "216",
+    "pagesVisited": 21,
+    "announcementsRead": 549,
+    "opportunities": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "196",
       "197",
@@ -35,7 +35,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -57,10 +58,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-17",
       "2026-10-18",
@@ -71,11 +72,35 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 516,
-    "opportunities": 30
+    "issuesRead": 21,
+    "announcementsRead": 549,
+    "opportunities": 32
   },
   "notices": [
+    {
+      "id": "RI-2026-51df7b255a57bc1fde",
+      "province": "La Rioja (BOR)",
+      "title": "TRABAJADOR/A SOCIAL: convocatoria para la provisión mediante concurso de varios puestos de trabajo de la Escala de Administración Especial Grupo A Subgrupo A2. Expediente 825/2026",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43196791-1-PDF-580728",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F09&referencia=43152793-6-HTML-580728-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-36258c8d954e101608",
+      "province": "La Rioja (BOR)",
+      "title": "Rectificación del Acuerdo por el que se aprueban las bases reguladoras para la concesión de varias autorizaciones para la instalación y explotación de la actividad de churrería en distintos puestos ubicados en la vía pública. Temporada 2026-2030",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43196790-1-PDF-580703",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F09&referencia=43137531-3-HTML-580703-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-f6629d216c577ec1b4",
       "province": "La Rioja (BOR)",

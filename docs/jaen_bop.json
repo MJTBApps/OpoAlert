@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-08T16:32:58.696218+00:00",
+  "lastCheckedUTC": "2026-11-09T07:04:39.294300+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 20,
-    "announcementsRead": 481,
-    "opportunities": 22,
+    "announcementsRead": 499,
+    "opportunities": 24,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 22
+    "pdfLinksVerified": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -37,10 +36,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-10",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -59,7 +58,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -74,15 +74,35 @@
       "2026-11-08"
     ],
     "issuesRead": 20,
-    "announcementsRead": 481,
-    "opportunities": 22,
+    "announcementsRead": 499,
+    "opportunities": 24,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "197",
-      "date": "2026-10-09"
+      "number": "198",
+      "date": "2026-10-10"
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5251",
+      "province": "Jaén",
+      "title": "Aprobación de las bases y convocatoria de una plaza de Psicólogo/a.",
+      "entity": "AYUNTAMIENTO DE ARJONA (JAÉN)",
+      "date": "09/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-09&numeroEdicto=5251&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5228",
+      "province": "Jaén",
+      "title": "Aprobación de las Bases y convocatoria para la provisión de 1 plaza de Oficial 1ª Electricista.",
+      "entity": "AYUNTAMIENTO DE LA CAROLINA (JAÉN)",
+      "date": "09/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-09&numeroEdicto=5228&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5137",
       "province": "Jaén",
