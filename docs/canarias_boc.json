@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-08T16:09:13.607969+00:00",
+  "lastCheckedUTC": "2026-11-09T06:32:35.061590+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
-    "pagesVisited": 19,
-    "announcementsRead": 334,
-    "opportunities": 29
+    "bulletin": "223",
+    "pagesVisited": 20,
+    "announcementsRead": 350,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "204",
       "205",
@@ -34,7 +34,8 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -55,10 +56,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-12",
       "2026-10-17",
@@ -71,11 +72,31 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 334,
-    "opportunities": 29
+    "issuesRead": 20,
+    "announcementsRead": 350,
+    "opportunities": 31
   },
   "notices": [
+    {
+      "id": "IC-2026-3848",
+      "province": "Canarias (BOC)",
+      "title": "RESOLUCIÓN de 27 de octubre de 2026, por la que se convoca concurso público para la contratación de dos plazas de Profesorado Ayudante Doctor.",
+      "entity": "Universidad de Las Palmas de Gran Canaria",
+      "date": "09/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-223-3848.pdf"
+    },
+    {
+      "id": "IC-2026-3847",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 26 de octubre de 2026, por la que se ofertan puestos de trabajo a las personas aspirantes que integran la lista adicional de las pruebas selectivas para ingresar, por el sistema general de acceso libre, en la Agrupación Profesional de Subalternos (Grupo E), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas mediante Resolución de 2 de diciembre de 2022, en aplicación de lo previsto en la disposición transitoria quinta de la Ley 2/2025, de 26 de junio, a los efectos de manifestar sus preferencias.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "09/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-223-3847.pdf"
+    },
     {
       "id": "IC-2026-3840",
       "province": "Canarias (BOC)",

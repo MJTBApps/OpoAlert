@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Illes Balears (BOIB)",
   "source": "https://www.caib.es/eboibfront/es",
-  "lastCheckedUTC": "2026-11-08T16:09:53.615147+00:00",
+  "lastCheckedUTC": "2026-11-09T06:33:07.286448+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "142",
-    "pagesVisited": 15,
-    "announcementsRead": 1136,
-    "opportunities": 153
+    "pagesVisited": 14,
+    "announcementsRead": 1069,
+    "opportunities": 145
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
-      "128",
       "129",
       "130",
       "131",
@@ -33,7 +32,6 @@
       "142"
     ],
     "publicationDates": [
-      "2026-10-10",
       "2026-10-12",
       "2026-10-13",
       "2026-10-15",
@@ -64,11 +62,12 @@
       "2026-11-02",
       "2026-11-04",
       "2026-11-06",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 1136,
-    "opportunities": 153
+    "issuesRead": 14,
+    "announcementsRead": 1069,
+    "opportunities": 145
   },
   "notices": [
     {
@@ -1520,86 +1519,6 @@
       "bulletin": "130",
       "type": "Plaza / oposición",
       "url": "https://www.caib.es/eboibfront/pdf/es/2026/130/1230123"
-    },
-    {
-      "id": "IB-2026-10155",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de presidente de la Oficina Municipal de Tributos de Calvià por la cual se aprueban las Bases Generales que regirán los procesos selectivos para cubrir las plazas vacantes de personal funcionario a la Oferta Pública de la OMT de 2026",
-      "entity": "AYUNTAMIENTO DE CALVIÀ OFICINA MUNICIPAL DE TRIBUTOS",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230187"
-    },
-    {
-      "id": "IB-2026-10150",
-      "province": "Illes Balears (BOIB)",
-      "title": "Constitución de la bolsa de trabajo de peón/peona del servicio de mantenimiento del Ayuntamiento de Alaró",
-      "entity": "AYUNTAMIENTO DE ALARÓ",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230178"
-    },
-    {
-      "id": "IB-2026-10149",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del consejero ejecutivo de Hacienda, Innovación y Función Pública para la cual se constituye una bolsa temporal de personal interino de la Administración especial, de la subescala de servicios especiales, categoría de oficial/a de carreteras, derivada de la oferta de empleo pública correspondientes al ejercicio de 2024 del Consell de Mallorca",
-      "entity": "CONSEJO INSULAR DE MALLORCA DEPARTAMENTO DE HACIENDA, INNOVACIÓN Y FUNCIÓN PÚBLICA",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230175"
-    },
-    {
-      "id": "IB-2026-10143",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases de la convocatoria de 2 plazas de peón y 1 operario de mantenimiento como personal laboral fijo",
-      "entity": "AYUNTAMIENTO DE ALCÚDIA",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230164"
-    },
-    {
-      "id": "IB-2026-10140",
-      "province": "Illes Balears (BOIB)",
-      "title": "Convocatoria y bases reguladoras del procedimiento selectivo para la cobertura de 7 plazas de personal funcionario de carrera de auxiliar administrativo/a y creación de una bolsa de trabajo",
-      "entity": "AYUNTAMIENTO DE ALCÚDIA",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230158"
-    },
-    {
-      "id": "IB-2026-10122",
-      "province": "Illes Balears (BOIB)",
-      "title": "Constitución de bolsa de trabajo de técnico/a Administración General (TAG) del Ayuntamiento de Santanyí (exp.2025/4201)",
-      "entity": "AYUNTAMIENTO DE SANTANYÍ",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230122"
-    },
-    {
-      "id": "IB-2026-10120",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la convocatoria del procedimiento selectivo para la cobertura, por el turno libre, de una plaza de arquitecto/a, Técnico de Administración Especial (TAE), Subescala técnica, Grupo A, Subgrupo A1, en régimen de funcionario/a de carrera, mediante concurso-oposición, del Ayuntamiento de Maó (OPO 2023)",
-      "entity": "AYUNTAMIENTO DE MAÓ",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230118"
-    },
-    {
-      "id": "IB-2026-10112",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases que regirán la convocatoria del procedimiento selectivo para la constitución de una bolsa de trabajo de trabajador/a familiar, personal laboral, del Ajuntament de Binissalem",
-      "entity": "AYUNTAMIENTO DE BINISSALEM",
-      "date": "10/10/2026",
-      "bulletin": "128",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/128/1230102"
     }
   ]
 }

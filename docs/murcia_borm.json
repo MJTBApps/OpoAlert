@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-08T16:11:16.519239+00:00",
+  "lastCheckedUTC": "2026-11-09T06:34:30.998408+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "258",
+    "bulletin": "259",
     "pagesVisited": 25,
-    "announcementsRead": 577,
-    "opportunities": 50
+    "announcementsRead": 576,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
-      "235",
       "2E",
       "236",
       "237",
@@ -40,10 +39,10 @@
       "255",
       "256",
       "257",
-      "258"
+      "258",
+      "259"
     ],
     "publicationDates": [
-      "2026-10-10",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -67,7 +66,8 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -77,10 +77,40 @@
       "2026-11-08"
     ],
     "issuesRead": 25,
-    "announcementsRead": 577,
-    "opportunities": 50
+    "announcementsRead": 576,
+    "opportunities": 53
   },
   "notices": [
+    {
+      "id": "MU-2026-5473",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1449/2026) de 5 de noviembre, del Rector de la Universidad de Murcia, por la que se corrige error material en la Resolución (R-1416/2026) de 29 de octubre, por la que se convoca concurso público para la provisión de plazas de Profesorado Asociado de Ciencias de la Salud.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "09/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846155/pdf"
+    },
+    {
+      "id": "MU-2026-5472",
+      "province": "Región de Murcia (BORM)",
+      "title": "Bases específicas de la convocatoria de pruebas selectivas para cubrir una plaza de Técnico de Gestión, Grupo B (A2), nivel 22, Jefe Unidad de Mantenimiento de la Asamblea Regional de Murcia, por el turno de acceso libre.",
+      "entity": "Asamblea Regional",
+      "date": "09/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846154/pdf"
+    },
+    {
+      "id": "MU-2026-5471",
+      "province": "Región de Murcia (BORM)",
+      "title": "Bases específicas de la convocatoria de pruebas selectivas para cubrir tres plazas de Técnico de Gestión, Grupo B (A2), nivel 21, de la Asamblea Regional de Murcia, por el turno de acceso libre.",
+      "entity": "Asamblea Regional",
+      "date": "09/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846153/pdf"
+    },
     {
       "id": "MU-2026-5470",
       "province": "Región de Murcia (BORM)",

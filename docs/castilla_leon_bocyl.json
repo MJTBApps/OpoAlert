@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Castilla y León (BOCYL)",
   "source": "https://bocyl.jcyl.es/",
-  "lastCheckedUTC": "2026-11-08T16:07:23.621919+00:00",
+  "lastCheckedUTC": "2026-11-09T06:31:29.042915+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 18,
-    "announcementsRead": 738,
-    "opportunities": 162
+    "bulletin": "216",
+    "pagesVisited": 19,
+    "announcementsRead": 786,
+    "opportunities": 169
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "198",
       "199",
@@ -33,7 +33,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -53,10 +54,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-12",
       "2026-10-17",
@@ -69,11 +70,81 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 18,
-    "announcementsRead": 738,
-    "opportunities": 162
+    "issuesRead": 19,
+    "announcementsRead": 786,
+    "opportunities": 169
   },
   "notices": [
+    {
+      "id": "CY-20261109-9",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ORDEN EDU/1172/2026, de 4 de noviembre, por la que se resuelve convocatoria pública para cubrir, mediante el sistema de libre designación, los puestos de trabajo que se citan.",
+      "entity": "CONSEJERÍA DE EDUCACIÓN",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-9.pdf"
+    },
+    {
+      "id": "CY-20261109-42",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ACUERDO de 28 de agosto de 2026, de la Junta de Gobierno del Patronato Municipal de Deportes, por el que se aprueban las bases para la convocatoria del proceso selectivo para cubrir, mediante el sistema de oposición por turno libre, 1 plaza de Administrativo de Instalaciones, vacante en la plantilla de personal laboral e incluida en la oferta de empleo. Expte.: 256/2026.",
+      "entity": "AYUNTAMIENTO DE PALENCIA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-42.pdf"
+    },
+    {
+      "id": "CY-20261109-41",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ACUERDO de 28 de agosto de 2026, de la Junta de Gobierno del Patronato Municipal de Deportes, por el que se aprueban las bases para la convocatoria del proceso selectivo para cubrir, mediante el sistema de concurso-oposición por turno libre, 1 plaza de Encargado de Unidad de Gestión de Ingresos/Personal, vacante en la plantilla de personal laboral e incluida en la oferta de empleo. Expte.: 247/2026.",
+      "entity": "AYUNTAMIENTO DE PALENCIA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-41.pdf"
+    },
+    {
+      "id": "CY-20261109-40",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ACUERDO de 29 de septiembre de 2026, de la Diputada Delegada del Área de Hacienda y Administración General de la Diputación Provincial de Palencia, por el que se aprueban las bases que han de regir la convocatoria para el ingreso, como personal laboral fijo en la categoría de Guía Didáctico de las Villas Romanas, incluida en la oferta de empleo público del año 2023. Expte.: DIP/2026/12110.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE PALENCIA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-40.pdf"
+    },
+    {
+      "id": "CY-20261109-4",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ORDEN EYH/1181/2026, de 4 de noviembre, por la que se resuelve convocatoria pública para cubrir, mediante el sistema de libre designación, el puesto de trabajo que se cita.",
+      "entity": "CONSEJERÍA DE ECONOMÍA Y HACIENDA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-4.pdf"
+    },
+    {
+      "id": "CY-20261109-3",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ORDEN PRE/1174/2026, de 30 de octubre, por la que se nombran funcionarios de carrera en el Cuerpo de Gestión Económico-Financiera de la Administración de la Comunidad de Castilla y León a los aspirantes que han superado el proceso selectivo mediante concurso-oposición, convocado por Resolución de 22 de noviembre de 2022, en el marco del proceso de estabilización de empleo temporal previsto en la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público.",
+      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-3.pdf"
+    },
+    {
+      "id": "CY-20261109-11",
+      "province": "Castilla y León (BOCYL)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026, de la Viceconsejería de Administraciones Públicas, Relaciones Institucionales y Atención al Ciudadano, por la que se aprueba y publica la relación complementaria de aspirantes que han superado el proceso selectivo de acceso, mediante el sistema de concurso-oposición, a la competencia funcional de Técnico Superior de Educación Infantil, convocado en el marco del proceso de estabilización de empleo temporal previsto en la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público, y se ofertan los puestos de trabajo.",
+      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-11.pdf"
+    },
     {
       "id": "CY-20261106-9",
       "province": "Castilla y León (BOCYL)",

@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-08T16:06:33.392089+00:00",
+  "lastCheckedUTC": "2026-11-09T06:30:31.186105+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
-    "pagesVisited": 20,
-    "announcementsRead": 656,
-    "opportunities": 56
+    "bulletin": "214",
+    "pagesVisited": 21,
+    "announcementsRead": 697,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "194",
       "195",
@@ -35,7 +35,8 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -57,10 +58,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-17",
       "2026-10-18",
@@ -71,11 +72,51 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 656,
-    "opportunities": 56
+    "issuesRead": 21,
+    "announcementsRead": 697,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "AC-2026-7231",
+      "province": "A Coruña",
+      "title": "Convocatoria de proceso selectivo para a formación dunha bolsa de traballo de AEDL",
+      "entity": "Corcubión",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007231.pdf"
+    },
+    {
+      "id": "AC-2026-7220",
+      "province": "A Coruña",
+      "title": "Declaración da caducidade da Oferta de Emprego Público do Concello de Carballo para o ano 2023",
+      "entity": "Carballo",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007220.pdf"
+    },
+    {
+      "id": "AC-2026-7202",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases para a selección, por quenda de promoción interna, de 12 prazas de administrativo/a OEP 2024",
+      "entity": "Recursos Humanos",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007202.pdf"
+    },
+    {
+      "id": "AC-2026-7198",
+      "province": "A Coruña",
+      "title": "Aprobación da bolsa de emprego para a provisión temporal de postos de auxiliar SAF",
+      "entity": "Padrón",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007198.pdf"
+    },
     {
       "id": "AC-2026-7181",
       "province": "A Coruña",

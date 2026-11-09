@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-08T16:07:09.849467+00:00",
+  "lastCheckedUTC": "2026-11-09T06:31:03.985208+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 20,
-    "announcementsRead": 339,
-    "opportunities": 22
+    "bulletin": "216",
+    "pagesVisited": 21,
+    "announcementsRead": 356,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "196",
       "197",
@@ -35,7 +35,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -57,10 +58,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-17",
       "2026-10-18",
@@ -71,11 +72,41 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 339,
-    "opportunities": 22
+    "issuesRead": 21,
+    "announcementsRead": 356,
+    "opportunities": 25
   },
   "notices": [
+    {
+      "id": "CR-2026-3628",
+      "province": "Ciudad Real",
+      "title": "Emplazamiento a interesados en el P.O. 56/2026, ante el Tribunal de Instancia, Sección de lo Social, Plaza nº 1 de Ciudad Real, en relación a proceso selectivo para provisión de una plaza de Encargado de Almacén.",
+      "entity": "CONSORCIO PARA EL SERVICIO CONTRA INCENDIOS Y DE SALVAMENTO DE LA PROVINCIA DE CIUDAD REAL",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871440"
+    },
+    {
+      "id": "CR-2026-3626",
+      "province": "Ciudad Real",
+      "title": "Convocatoria para la provisión de una plaza de Guarda Rural como personal laboral fijo, mediante concurso-oposición libre, y constitución de bolsa de trabajo.",
+      "entity": "PUEBLA DE DON RODRIGO",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871438"
+    },
+    {
+      "id": "CR-2026-3620",
+      "province": "Ciudad Real",
+      "title": "Bases para cubrir en propiedad una plaza de Operario/a de Servicios Múltiples, grupo OAP, mediante el sistema de concurso-oposición en turno libre.",
+      "entity": "CIUDAD REAL",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871432"
+    },
     {
       "id": "CR-2026-3595",
       "province": "Ciudad Real",

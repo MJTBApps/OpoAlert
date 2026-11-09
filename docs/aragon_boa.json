@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-08T16:06:52.508398+00:00",
+  "lastCheckedUTC": "2026-11-09T06:31:13.094726+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 18,
-    "announcementsRead": 689,
-    "opportunities": 114
+    "bulletin": "216",
+    "pagesVisited": 19,
+    "announcementsRead": 722,
+    "opportunities": 121
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "198",
       "199",
@@ -33,7 +33,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -53,10 +54,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-12",
       "2026-10-17",
@@ -69,11 +70,81 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 18,
-    "announcementsRead": 689,
-    "opportunities": 114
+    "issuesRead": 19,
+    "announcementsRead": 722,
+    "opportunities": 121
   },
   "notices": [
+    {
+      "id": "AO-2026-007962356",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 5 de noviembre de 2026, de la Rectora de la Universidad de Zaragoza, por la que se publica la modificación de la Oferta de Empleo Público del personal Funcionario Técnico, de Gestión y de Administración y Servicios para el año 2026.",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473866910505"
+    },
+    {
+      "id": "AO-2026-007962355",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 27 de octubre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para el ingreso, por los turnos de acceso libre y promoción interna, en la Escala Facultativa de Archivos y Bibliotecas de la Universidad de Zaragoza, mediante el sistema de concurso-oposición.",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473864890505"
+    },
+    {
+      "id": "AO-2026-007962354",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN del 23 de octubre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para el ingreso, por los turnos de acceso libre y promoción interna, en la Escala de Técnicos Especialistas de Laboratorio y Talleres, especialidad Agropecuaria de la Universidad de Zaragoza, mediante los sistemas de oposición y concurso-oposición.",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473862870505"
+    },
+    {
+      "id": "AO-2026-007962353",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para el ingreso, por los turnos de acceso libre y promoción interna, en la Escala de Ayudantes de Archivos y Bibliotecas de la Universidad de Zaragoza, mediante el sistema de concurso-oposición.",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473860850505"
+    },
+    {
+      "id": "AO-2026-007962345",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se nombra personal estatutario fijo y se adjudican plazas a las personas aspirantes aprobadas en el proceso selectivo, convocado por Resolución de 25 de julio de 2025, de la categoría de Médico de Urgencias y Emergencias en la Gerencia de Urgencias y Emergencias Sanitarias del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón para su provisión por turno libre y discapacidad.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473844690404"
+    },
+    {
+      "id": "AO-2026-007962344",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 21 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se nombra personal estatutario fijo y se adjudican plazas a las personas aspirantes aprobadas en el proceso selectivo, convocado por Resolución de 25 de julio de 2025, de la categoría de Médico de Urgencias y Emergencias en la Gerencia de Urgencias y Emergencias Sanitarias del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón para su provisión por turno de promoción interna.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473842670303"
+    },
+    {
+      "id": "AO-2026-007962343",
+      "province": "Aragón (BOA)",
+      "title": "ORDEN HAP/1617/2026, de 3 de noviembre, por la que se nombran funcionarios de carrera del Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala Auxiliar Administrativa, Auxiliares Administrativos (Código de convocatoria 260031).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "09/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473840650303"
+    },
     {
       "id": "AO-2026-007962312",
       "province": "Aragón (BOA)",

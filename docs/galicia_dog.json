@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Galicia (DOG)",
   "source": "https://www.xunta.gal/diario-oficial-galicia/Welcome.do?lang=es",
-  "lastCheckedUTC": "2026-11-08T16:07:46.897668+00:00",
+  "lastCheckedUTC": "2026-11-09T06:31:39.253498+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "213",
-    "pagesVisited": 20,
-    "announcementsRead": 504,
-    "opportunities": 153
+    "bulletin": "214",
+    "pagesVisited": 21,
+    "announcementsRead": 522,
+    "opportunities": 159
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "bulletins": [
       "194",
       "195",
@@ -35,7 +35,8 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -57,10 +58,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-12",
       "2026-10-17",
@@ -71,11 +72,71 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 504,
-    "opportunities": 153
+    "issuesRead": 21,
+    "announcementsRead": 522,
+    "opportunities": 159
   },
   "notices": [
+    {
+      "id": "DG-2026-AnuncioG0759-031126-0001",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 23 de octubre de 2026 por la que se modifica la Resolución de 1 de septiembre de 2026 por la que se publica la concesión de las plazas para los grupos de tecnificación y de rendimiento deportivo al amparo de la Orden de 17 de junio de 2026 por la que se establecen las bases reguladoras para la concesión de plazas, en régimen de concurrencia competitiva, de tecnificación y rendimiento deportivo para el Centro Gallego de Tecnificación Deportiva para la temporada 2026/27, y se procede a su convocatoria (código de procedimiento PR952A).",
+      "entity": "Consellería de Presidencia, Justicia y Deportes",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0759-031126-0001_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0597-041126-0003",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026 por la que se nombra el tribunal que deberá calificar el proceso selectivo para el ingreso, mediante el sistema de oposición, por el turno de acceso libre, en el cuerpo facultativo superior de Administración especial de la Administración general de la Comunidad Autónoma de Galicia, subgrupo A1, escala de inspección urbanística, especialidad jurídica.",
+      "entity": "Consellería de Hacienda y Administración Pública",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0597-041126-0003_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0597-041126-0002",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026 por la que se nombra el tribunal que deberá calificar el proceso selectivo para el ingreso, mediante el sistema de oposición, por el turno de acceso libre, en el cuerpo facultativo superior de Administración especial de la Administración general de la Comunidad Autónoma de Galicia, subgrupo A1, escala de inspección urbanística, especialidad técnica.",
+      "entity": "Consellería de Hacienda y Administración Pública",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0597-041126-0002_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0597-041126-0001",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026 por la que se nombra el tribunal que deberá calificar el proceso selectivo para el ingreso, mediante el sistema de oposición, por el turno de acceso libre, en el cuerpo facultativo de grado medio de Administración especial de la Administración general de la Comunidad Autónoma de Galicia, subgrupo A2, escala de agentes de extensión pesquera.",
+      "entity": "Consellería de Hacienda y Administración Pública",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0597-041126-0001_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0460-301026-0001",
+      "province": "Galicia (DOG)",
+      "title": "RESOLUCIÓN de 30 de octubre de 2026 por la que se convoca proceso selectivo para la provisión, mediante contrato laboral temporal, de una plaza de titulado/a superior para el Área de Desarrollo e Innovación Sanitaria, para la gestión del proyecto Integrasaúde.",
+      "entity": "Agencia Gallega para la Gestión del Conocimiento en Salud",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0460-301026-0001_es.pdf"
+    },
+    {
+      "id": "DG-2026-AnuncioG0003-301026-0001",
+      "province": "Galicia (DOG)",
+      "title": "ANUNCIO de 29 de octubre de 2026, de la Gerencia del Área Sanitaria de Santiago de Compostela y Barbanza, por el que se da publicidad a la resolución de la misma fecha por la que se convoca la provisión, por el procedimiento de concurso de méritos, de un puesto vacante de jefe/a de Cocina del Complejo Hospitalario Universitario de Santiago de Compostela.",
+      "entity": "Servicio Gallego de Salud",
+      "date": "09/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0003-301026-0001_es.pdf"
+    },
     {
       "id": "DG-2026-AnuncioL168-161026-0001",
       "province": "Galicia (DOG)",
