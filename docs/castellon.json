@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-08T16:12:05.301123+00:00",
+  "lastCheckedUTC": "2026-11-09T06:37:05.370406+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "135",
-    "pagesVisited": 14,
-    "announcementsRead": 477,
-    "opportunities": 23,
+    "pagesVisited": 13,
+    "announcementsRead": 455,
+    "opportunities": 22,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
-    "issuesRead": 14,
-    "pagesVisited": 14,
-    "announcementsRead": 477,
-    "opportunities": 23,
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
+    "issuesRead": 13,
+    "pagesVisited": 13,
+    "announcementsRead": 455,
+    "opportunities": 22,
     "bulletins": [
-      "122",
       "123",
       "124",
       "125",
@@ -36,7 +35,6 @@
       "135"
     ],
     "publicationDates": [
-      "2026-10-10",
       "2026-10-12",
       "2026-10-13",
       "2026-10-15",
@@ -67,7 +65,8 @@
       "2026-11-02",
       "2026-11-04",
       "2026-11-06",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ]
   },
   "notices": [
@@ -290,16 +289,6 @@
       "bulletin": "124",
       "type": "Plaza / oposición",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168276&idioma=es"
-    },
-    {
-      "id": "CS-168368",
-      "province": "Castellón",
-      "title": "Aprobación bases y convocatoria de una plaza Personal de Limpieza, OEP 2026, concurso-oposición",
-      "entity": "AJUNTAMENT DE MONTANEJOS",
-      "date": "10/10/2026",
-      "bulletin": "122",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168368&idioma=es"
     }
   ]
 }
