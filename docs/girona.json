@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-08T16:15:08.159481+00:00",
+  "lastCheckedUTC": "2026-11-09T06:45:16.204248+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 67,
-    "opportunities": 67,
+    "announcementsRead": 66,
+    "opportunities": 66,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "publicationDates": [
       "2026-10-13",
       "2026-10-16",
@@ -36,7 +36,6 @@
       "2026-11-06"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-12",
       "2026-10-14",
@@ -48,12 +47,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 67,
-    "opportunities": 67
+    "announcementsRead": 66,
+    "opportunities": 66
   },
   "notices": [
     {
@@ -435,16 +435,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22394715"
-    },
-    {
-      "id": "CIDO6-22394620",
-      "title": "1 plaça de Secretari intervenció",
-      "entity": "Ajuntament de Llanars",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22394620"
     },
     {
       "id": "CIDO6-22381543",

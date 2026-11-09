@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-08T16:15:08.159481+00:00",
+  "lastCheckedUTC": "2026-11-09T06:45:16.204248+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 90,
-    "opportunities": 90,
+    "announcementsRead": 87,
+    "opportunities": 87,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "publicationDates": [
       "2026-10-14",
       "2026-10-15",
@@ -36,7 +36,6 @@
       "2026-11-06"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-12",
       "2026-10-13",
@@ -48,12 +47,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-09"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 90,
-    "opportunities": 90
+    "announcementsRead": 87,
+    "opportunities": 87
   },
   "notices": [
     {
@@ -597,16 +597,6 @@
       "url": "https://cido.diba.cat/oposicions/16758438"
     },
     {
-      "id": "CIDO8-22410322",
-      "title": "Borsa de treball de places d'Administratiu",
-      "entity": "Ajuntament de Deltebre",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22410322"
-    },
-    {
       "id": "CIDO8-22402389",
       "title": "Borsa de treball de places de Peó de brigada",
       "entity": "Ajuntament de Constantí",
@@ -687,16 +677,6 @@
       "url": "https://cido.diba.cat/oposicions/119114"
     },
     {
-      "id": "CIDO8-22396781",
-      "title": "1 plaça d'Oficial 1a",
-      "entity": "Ajuntament de Sant Jaume d'Enveja",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22396781"
-    },
-    {
       "id": "CIDO8-22390042",
       "title": "Borsa de treball de places d'Agent de la Policia Local",
       "entity": "Ajuntament de Roquetes",
@@ -775,16 +755,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/16887342"
-    },
-    {
-      "id": "CIDO8-22375137",
-      "title": "Borsa de treball de places de Monitor de menjador escolar (ampliació)",
-      "entity": "Ajuntament de Flix",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22375137"
     },
     {
       "id": "CIDO8-21967002",
