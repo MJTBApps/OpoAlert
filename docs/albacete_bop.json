@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-09T06:53:41.432902+00:00",
+  "lastCheckedUTC": "2026-11-09T09:43:54.343064+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "129",
-    "pagesVisited": 11,
-    "announcementsRead": 195,
-    "opportunities": 11
+    "bulletin": "130",
+    "pagesVisited": 12,
+    "announcementsRead": 210,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
@@ -26,7 +26,8 @@
       "126",
       "127",
       "128",
-      "129"
+      "129",
+      "130"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -39,7 +40,8 @@
       "2026-10-28",
       "2026-10-30",
       "2026-11-04",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -59,14 +61,33 @@
       "2026-11-03",
       "2026-11-05",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-09"
+      "2026-11-08"
     ],
-    "issuesRead": 11,
-    "announcementsRead": 195,
-    "opportunities": 11
+    "issuesRead": 12,
+    "announcementsRead": 210,
+    "opportunities": 13
   },
   "notices": [
+    {
+      "id": "AB-2026-299786",
+      "province": "Albacete",
+      "title": "Bases de la convocatoria para la provisión y selección del puesto de Coordinador/a de la Universidad Popular (turno de promoción interna horizontal y vertical)",
+      "entity": "Ayuntamiento de Hellín",
+      "date": "09/11/2026",
+      "bulletin": "130",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299786"
+    },
+    {
+      "id": "AB-2026-299774",
+      "province": "Albacete",
+      "title": "Patronato de la Universidad Popular Municipal. Persona aprobada en el proceso selectivo para la provisión de una plaza de Profesor/a de Educación de Adultos, incluida en la Oferta de Empleo Público de 2023",
+      "entity": "Ayuntamiento de Albacete",
+      "date": "09/11/2026",
+      "bulletin": "130",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299774"
+    },
     {
       "id": "AB-2026-299716",
       "province": "Albacete",
