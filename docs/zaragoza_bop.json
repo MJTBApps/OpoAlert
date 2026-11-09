@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-08T16:47:43.238184+00:00",
+  "lastCheckedUTC": "2026-11-09T07:34:45.068379+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "257",
+    "bulletin": "258",
     "pagesVisited": 2,
-    "announcementsRead": 699,
-    "opportunities": 68
+    "announcementsRead": 759,
+    "opportunities": 70
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-10",
-    "rangeEnd": "2026-11-08",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "issuesRead": 24,
     "pagesVisited": 2,
-    "announcementsRead": 699,
-    "opportunities": 68,
+    "announcementsRead": 759,
+    "opportunities": 70,
     "bulletins": [
-      "234",
       "235",
       "236",
       "237",
@@ -43,10 +42,10 @@
       "254",
       "255",
       "256",
-      "257"
+      "257",
+      "258"
     ],
     "publicationDates": [
-      "2026-10-10",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -69,10 +68,10 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-09"
     ],
     "issuePublicationDates": [
-      "2026-10-10",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -95,7 +94,8 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -106,19 +106,39 @@
       "2026-11-08"
     ],
     "sectionsRead": {
-      "SECCIÓN QUINTA": 93,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
       "SECCIÓN SEGUNDA": 7,
-      "SECCIÓN TERCERA": 36,
-      "SECCIÓN SEXTA": 534,
+      "SECCIÓN TERCERA": 38,
+      "SECCIÓN QUINTA": 96,
+      "SECCIÓN SEXTA": 588,
       "SECCIÓN SEPTIMA": 2,
-      "PARTE NO OFICIAL": 6,
+      "PARTE NO OFICIAL": 7,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 91
+    "documentsVerified": 93
   },
   "notices": [
+    {
+      "id": "ZA-000344959",
+      "province": "Zaragoza",
+      "title": "En relación con el anuncio 6678, de 7 de octubre de 2026, relativo a la convocatoria para la provisión de una plaza de conserje de consultorio o centro médico y casa de cultura con funciones de auxiliar…",
+      "entity": "AYUNTAMIENTO DE CALATORAO",
+      "date": "09/11/2026",
+      "bulletin": "258",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473924680505"
+    },
+    {
+      "id": "ZA-000344947",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE ALARBA",
+      "date": "09/11/2026",
+      "bulletin": "258",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473912560303"
+    },
     {
       "id": "ZA-000344937",
       "province": "Zaragoza",
