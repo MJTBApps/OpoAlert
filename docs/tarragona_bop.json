@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-11-06T16:49:15.782807+00:00",
+  "lastCheckedUTC": "2026-11-09T07:21:11.483340+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-11-06",
-    "pagesVisited": 66,
-    "announcementsRead": 1022,
-    "opportunities": 106,
+    "bulletin": "2026-11-09",
+    "pagesVisited": 64,
+    "announcementsRead": 994,
+    "opportunities": 103,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2026-11-06",
+    "rangeStart": "2026-10-11",
+    "rangeEnd": "2026-11-09",
     "publicationDates": [
-      "2026-10-08",
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -37,21 +35,21 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-10",
       "2026-10-11",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
-      "2026-11-01"
+      "2026-11-01",
+      "2026-11-07",
+      "2026-11-08"
     ],
     "bulletins": [
-      "2026-10-08",
-      "2026-10-09",
       "2026-10-12",
       "2026-10-13",
       "2026-10-14",
@@ -71,14 +69,95 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
-    "issuesRead": 22,
-    "pagesVisited": 66,
-    "announcementsRead": 1022,
-    "opportunities": 106
+    "issuesRead": 21,
+    "pagesVisited": 64,
+    "announcementsRead": 994,
+    "opportunities": 103
   },
   "notices": [
+    {
+      "id": "TA-2026-10478",
+      "title": "Rectifica 2026-09850, BOP 23.10.2026. Ampliació de la borsa de treball de monitor/a de menjador escolar. Bases i convocatòria.",
+      "entity": "AJUNTAMENT FLIX",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366302"
+    },
+    {
+      "id": "TA-2026-10471",
+      "title": "Borsa de treball de tècnic/a auxiliar d'acollida. Bases i convocatòria.",
+      "entity": "CONSELL COMARCAL MONTSIÀ",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366298"
+    },
+    {
+      "id": "TA-2026-10470",
+      "title": "Borsa de treball de juristes de l'àrea d'atenció a les persones, SIAD i Serveis Socials. Bases i convocatòria.",
+      "entity": "CONSELL COMARCAL MONTSIÀ",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366267"
+    },
+    {
+      "id": "TA-2026-10467",
+      "title": "Plaça d'auxiliar de serveis (1). Bases i convocatòria.",
+      "entity": "CONSELL COMARCAL MONTSIÀ",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366294"
+    },
+    {
+      "id": "TA-2026-10466",
+      "title": "Plaça de psicòleg/òloga (1). Bases i convocatòria.",
+      "entity": "CONSELL COMARCAL MONTSIÀ",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366293"
+    },
+    {
+      "id": "TA-2026-10465",
+      "title": "Borsa de treball de tècnic/a mitjà/ana d'administració especial.  Bases i convocatòria.",
+      "entity": "CONSELL COMARCAL BAIX PENEDÈS",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366287"
+    },
+    {
+      "id": "TA-2026-10462",
+      "title": "Plaça de monitor/a de menjador (1). Esmena de les bases.",
+      "entity": "AJUNTAMENT DUESAIGÜES",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366291"
+    },
+    {
+      "id": "TA-2026-10396",
+      "title": "Plaça d'administratiu/iva (3). Bases i convocatòria.",
+      "entity": "AJUNTAMENT REUS",
+      "date": "09/11/2026",
+      "bulletin": "09/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366220"
+    },
     {
       "id": "TA-2026-10455",
       "title": "Lloc de treball de Secretaria (1). Bases i convocatòria.",
@@ -1028,116 +1107,6 @@
       "province": "Tarragona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365169"
-    },
-    {
-      "id": "TA-2026-09397",
-      "title": "Plaça d'agutzil (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT MONT-RAL",
-      "date": "09/10/2026",
-      "bulletin": "09/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365191"
-    },
-    {
-      "id": "TA-2026-09293",
-      "title": "Plaça d'auxiliar administratiu/iva (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT AIGUAMÚRCIA",
-      "date": "09/10/2026",
-      "bulletin": "09/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365091"
-    },
-    {
-      "id": "TA-2026-09376",
-      "title": "Plaça de tècnic/a d'administració general (2). Bases i convocatòria.",
-      "entity": "AJUNTAMENT CAMBRILS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365171"
-    },
-    {
-      "id": "TA-2026-09367",
-      "title": "Plaça d'administratiu/iva (1). Bases i convocatòria. Promoció interna.",
-      "entity": "AJUNTAMENT LLORENÇ DEL PENEDÈS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365155"
-    },
-    {
-      "id": "TA-2026-09366",
-      "title": "Plaça de tècnic/a mitjà/ana (1). Bases i convocatòria. Promoció interna.",
-      "entity": "AJUNTAMENT LLORENÇ DEL PENEDÈS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365167"
-    },
-    {
-      "id": "TA-2026-09363",
-      "title": "Plaça d'administratiu/iva (9). Bases i convocatòria. Promoció interna.",
-      "entity": "AJUNTAMENT CAMBRILS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365126"
-    },
-    {
-      "id": "TA-2026-09226",
-      "title": "Plaça de tècnic/a superior d'administració general (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT CASTELLVELL DEL CAMP",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365020"
-    },
-    {
-      "id": "TA-2026-09060",
-      "title": "Borsa de treball d'operari/ària de neteja de dependències municipals. Bases i convocatòria.",
-      "entity": "AJUNTAMENT MONTBRIÓ DEL CAMP",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364860"
-    },
-    {
-      "id": "TA-2026-09043",
-      "title": "Plaça de tècnic/a d'ocupació i formació (1). Bases i la convocatòria. Promoció interna.",
-      "entity": "IDETSA - INICIATIVES DESENVOLUPAMENT EMPRESARIAL LES TÀPIES SA - VANDELLÒS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364849"
-    },
-    {
-      "id": "TA-2026-09042",
-      "title": "Plaça de tècnic/a en contractació i gestió administrativa (1). Bases i convocatòria. Promoció interna.",
-      "entity": "IDETSA - INICIATIVES DESENVOLUPAMENT EMPRESARIAL LES TÀPIES SA - VANDELLÒS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364848"
-    },
-    {
-      "id": "TA-2026-09041",
-      "title": "Plaça d'administratiu/iva (1). Bases i convocatòria. Promoció interna.",
-      "entity": "IDETSA - INICIATIVES DESENVOLUPAMENT EMPRESARIAL LES TÀPIES SA - VANDELLÒS",
-      "date": "08/10/2026",
-      "bulletin": "08/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/364846"
     }
   ]
 }
