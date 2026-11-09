@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-09T06:45:16.204248+00:00",
+  "lastCheckedUTC": "2026-11-09T16:43:11.016928+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 60,
-    "opportunities": 60,
+    "announcementsRead": 62,
+    "opportunities": 62,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -29,7 +29,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -47,15 +48,54 @@
       "2026-11-01",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-09"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 60,
-    "opportunities": 60
+    "announcementsRead": 62,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "CIDO7-22459892",
+      "title": "1 plaça de Tècnic en gestió econòmica",
+      "entity": "Ajuntament de Seròs",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22459892"
+    },
+    {
+      "id": "CIDO7-22459821",
+      "title": "1 plaça de Tècnic auxiliar de serveis econòmics",
+      "entity": "Ajuntament de Tàrrega",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22459821"
+    },
+    {
+      "id": "CIDO7-22382165",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament d'Espot",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22382165"
+    },
+    {
+      "id": "CIDO7-21397114",
+      "title": "1 plaça d'Agutzil - vigilant municipal",
+      "entity": "Ajuntament d'Alfarràs",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21397114"
+    },
     {
       "id": "CIDO7-22447035",
       "title": "1 plaça de Peó de brigada",
@@ -105,16 +145,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22445594"
-    },
-    {
-      "id": "CIDO7-21397114",
-      "title": "1 plaça d'Agutzil",
-      "entity": "Ajuntament d'Alfarràs",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21397114"
     },
     {
       "id": "CIDO7-22437600",
@@ -325,16 +355,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22394879"
-    },
-    {
-      "id": "CIDO7-22382165",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament d'Espot",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22382165"
     },
     {
       "id": "CIDO7-22298118",

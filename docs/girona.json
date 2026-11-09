@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-09T06:45:16.204248+00:00",
+  "lastCheckedUTC": "2026-11-09T16:43:11.016928+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 66,
-    "opportunities": 66,
+    "announcementsRead": 70,
+    "opportunities": 70,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -33,7 +33,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -47,15 +48,104 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-09"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 66,
-    "opportunities": 66
+    "announcementsRead": 70,
+    "opportunities": 70
   },
   "notices": [
+    {
+      "id": "CIDO6-22459685",
+      "title": "2 places de Tècnic mitjà d'orientació laboral. Projecte Treball als Barris",
+      "entity": "Ajuntament de Blanes",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22459685"
+    },
+    {
+      "id": "CIDO6-22459660",
+      "title": "1 plaça de Dinamitzador empresarial. Projecte Treball als Barris",
+      "entity": "Ajuntament de Blanes",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22459660"
+    },
+    {
+      "id": "CIDO6-22459589",
+      "title": "1 plaça d'Arquitecte tècnic",
+      "entity": "Ajuntament de Banyoles",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22459589"
+    },
+    {
+      "id": "CIDO6-22447007",
+      "title": "1 plaça de Peó de brigada",
+      "entity": "Ajuntament de Brunyola i Sant Martí Sapresa",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22447007"
+    },
+    {
+      "id": "CIDO6-22329399",
+      "title": "2 places de Guàrdia municipal",
+      "entity": "Ajuntament de Ribes de Freser",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22329399"
+    },
+    {
+      "id": "CIDO6-22222636",
+      "title": "1 plaça d'Oficial 1a electricista de la brigada d'obres, manteniment i logística",
+      "entity": "Ajuntament de Puigcerdà",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22222636"
+    },
+    {
+      "id": "CIDO6-21654739",
+      "title": "1 plaça de Peó de la brigada municipal d'obres, manteniment i logística",
+      "entity": "Ajuntament de Puigcerdà",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21654739"
+    },
+    {
+      "id": "CIDO6-20534820",
+      "title": "1 plaça d'Administratiu d'administració general",
+      "entity": "Ajuntament de Bàscara",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/20534820"
+    },
+    {
+      "id": "CIDO6-18010859",
+      "title": "1 plaça de Cap de departament, director d'escola bressol - mestre d'educació infantil",
+      "entity": "Ajuntament de Palafrugell",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/18010859"
+    },
     {
       "id": "CIDO6-22451502",
       "title": "Borsa de treball de places de Conserge",
@@ -115,16 +205,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16732228"
-    },
-    {
-      "id": "CIDO6-22447007",
-      "title": "1 plaça de Peó de brigada",
-      "entity": "Ajuntament de Brunyola i Sant Martí Sapresa",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22447007"
     },
     {
       "id": "CIDO6-22445926",
@@ -257,16 +337,6 @@
       "url": "https://cido.diba.cat/oposicions/20806477"
     },
     {
-      "id": "CIDO6-20534820",
-      "title": "1 plaça d'Administratiu d'administració general",
-      "entity": "Ajuntament de Bàscara",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/20534820"
-    },
-    {
       "id": "CIDO6-19106869",
       "title": "Borsa de treball de places d'Auxiliar administratiu",
       "entity": "Ajuntament d'Olot",
@@ -387,26 +457,6 @@
       "url": "https://cido.diba.cat/oposicions/22373973"
     },
     {
-      "id": "CIDO6-22222636",
-      "title": "1 plaça d'Oficial 1a electricista de la brigada d'obres, manteniment i logística",
-      "entity": "Ajuntament de Puigcerdà",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22222636"
-    },
-    {
-      "id": "CIDO6-21654739",
-      "title": "1 plaça de Peó de la brigada municipal d'obres, manteniment i logística",
-      "entity": "Ajuntament de Puigcerdà",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21654739"
-    },
-    {
       "id": "CIDO6-22410418",
       "title": "1 plaça de Monitor - Socorrista del Servei d'Esports",
       "entity": "Ajuntament de Ripoll",
@@ -495,16 +545,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22389617"
-    },
-    {
-      "id": "CIDO6-22329399",
-      "title": "2 places de Guàrdia municipal",
-      "entity": "Ajuntament de Ribes de Freser",
-      "date": "27/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22329399"
     },
     {
       "id": "CIDO6-21254712",

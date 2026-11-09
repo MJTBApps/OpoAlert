@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-09T06:45:16.204248+00:00",
+  "lastCheckedUTC": "2026-11-09T16:43:11.016928+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 293,
-    "opportunities": 293,
+    "announcementsRead": 301,
+    "opportunities": 301,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,60 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 293,
-    "opportunities": 293
+    "announcementsRead": 301,
+    "opportunities": 301
   },
   "notices": [
+    {
+      "id": "CIDO5-22460753",
+      "title": "1 plaça de Treballador social",
+      "entity": "Ajuntament de Begues",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22460753"
+    },
+    {
+      "id": "CIDO5-22460750",
+      "title": "1 plaça de Tècnic auxiliar de serveis i manteniment",
+      "entity": "Ajuntament de Begues",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22460750"
+    },
+    {
+      "id": "CIDO5-22460741",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Begues",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22460741"
+    },
+    {
+      "id": "CIDO5-22459560",
+      "title": "Borsa de treball de places de Tècnic mitjà de gestió en l'àmbit de la comunicació",
+      "entity": "Ajuntament de Santa Eulàlia de Ronçana",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22459560"
+    },
+    {
+      "id": "CIDO5-22459444",
+      "title": "1 plaça de Tècnic superior de serveis econòmics",
+      "entity": "Ajuntament de Torelló",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22459444"
+    },
     {
       "id": "CIDO5-22456830",
       "title": "1 plaça de Tècnic de jardineria",
@@ -75,6 +125,16 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22429994"
+    },
+    {
+      "id": "CIDO5-22428509",
+      "title": "1 plaça de Tècnic mitjà de gestió - tècnic de participació i ciutadania",
+      "entity": "Ajuntament de Vic",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22428509"
     },
     {
       "id": "CIDO5-22367699",
@@ -107,6 +167,16 @@
       "url": "https://cido.diba.cat/oposicions/22276756"
     },
     {
+      "id": "CIDO5-22250125",
+      "title": "1 plaça de Tècnic de Transparència i Participació Ciutadana",
+      "entity": "Ajuntament de Sant Andreu de Llavaneres",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22250125"
+    },
+    {
       "id": "CIDO5-17601481",
       "title": "1 plaça de Conserge d'escola",
       "entity": "Ajuntament de Matadepera",
@@ -115,6 +185,26 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/17601481"
+    },
+    {
+      "id": "CIDO5-22459969",
+      "title": "1 plaça de Treballador social",
+      "entity": "Ajuntament de Navarcles",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22459969"
+    },
+    {
+      "id": "CIDO5-22459930",
+      "title": "1 plaça de Tècnic auxiliar de so",
+      "entity": "Ajuntament de Navarcles",
+      "date": "06/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22459930"
     },
     {
       "id": "CIDO5-22456478",
@@ -318,7 +408,7 @@
     },
     {
       "id": "CIDO5-22334734",
-      "title": "1 plaça de Tècnic d'administració general",
+      "title": "1 plaça de Tècnic d'administració general (TAG)",
       "entity": "Ajuntament de Corbera de Llobregat",
       "date": "06/11/2026",
       "bulletin": "CIDO",
@@ -345,16 +435,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22258249"
-    },
-    {
-      "id": "CIDO5-22250125",
-      "title": "1 plaça de Tècnic de Transparència i Participació Ciutadana",
-      "entity": "Ajuntament de Sant Andreu de Llavaneres",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22250125"
     },
     {
       "id": "CIDO5-21645600",
@@ -617,6 +697,16 @@
       "url": "https://cido.diba.cat/oposicions/16772071"
     },
     {
+      "id": "CIDO5-22461683",
+      "title": "Borsa de treball de places de Tècnic superior Desenvolupament de Programari i Administració Electrònica",
+      "entity": "Ajuntament de Castelldefels",
+      "date": "04/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22461683"
+    },
+    {
       "id": "CIDO5-22444481",
       "title": "1 plaça de Tècnic de seguretat per a l'Anella",
       "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
@@ -785,16 +875,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22428625"
-    },
-    {
-      "id": "CIDO5-22428509",
-      "title": "1 plaça de Tècnic mitjà de gestió - tècnic de participació i ciutadania",
-      "entity": "Ajuntament de Vic",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22428509"
     },
     {
       "id": "CIDO5-22428458",

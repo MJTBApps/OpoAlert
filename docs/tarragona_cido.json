@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-09T06:45:16.204248+00:00",
+  "lastCheckedUTC": "2026-11-09T16:43:11.016928+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 87,
-    "opportunities": 87,
+    "announcementsRead": 88,
+    "opportunities": 88,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -33,7 +33,8 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-09"
     ],
     "nonPublicationDates": [
       "2026-10-11",
@@ -47,15 +48,64 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-09"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 87,
-    "opportunities": 87
+    "announcementsRead": 88,
+    "opportunities": 88
   },
   "notices": [
+    {
+      "id": "CIDO8-22420606",
+      "title": "1 plaça de Vigilant municipal",
+      "entity": "Ajuntament de l'Espluga de Francolí",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22420606"
+    },
+    {
+      "id": "CIDO8-22396855",
+      "title": "1 plaça de Cap de la Unitat d'Activitats",
+      "entity": "Ajuntament de Cambrils",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22396855"
+    },
+    {
+      "id": "CIDO8-22249978",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament dels Pallaresos",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22249978"
+    },
+    {
+      "id": "CIDO8-21973849",
+      "title": "3 places d'Administratiu",
+      "entity": "Ajuntament de Reus",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21973849"
+    },
+    {
+      "id": "CIDO8-16511262",
+      "title": "1 plaça de Monitor de menjador",
+      "entity": "Ajuntament de Duesaigües",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16511262"
+    },
     {
       "id": "CIDO8-22453499",
       "title": "2 places d'Oficial de Protocol de primera",
@@ -105,16 +155,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16522604"
-    },
-    {
-      "id": "CIDO8-16511262",
-      "title": "1 plaça de Monitor de menjador",
-      "entity": "Ajuntament de Duesaigües",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16511262"
     },
     {
       "id": "CIDO8-13791629",
@@ -377,16 +417,6 @@
       "url": "https://cido.diba.cat/oposicions/22421539"
     },
     {
-      "id": "CIDO8-22396855",
-      "title": "1 plaça de Cap de la Unitat d'Activitats",
-      "entity": "Ajuntament de Cambrils",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22396855"
-    },
-    {
       "id": "CIDO8-22323088",
       "title": "1 plaça de Conserge",
       "entity": "Ajuntament de Valls - Institut Municipal de Desenvolupament Local - Vallsgenera",
@@ -445,16 +475,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22420652"
-    },
-    {
-      "id": "CIDO8-22420606",
-      "title": "1 plaça de Vigilant municipal",
-      "entity": "Ajuntament de l'Espluga de Francolí",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22420606"
     },
     {
       "id": "CIDO8-22420343",
@@ -625,16 +645,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22397008"
-    },
-    {
-      "id": "CIDO8-22249978",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament dels Pallaresos",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22249978"
     },
     {
       "id": "CIDO8-21947008",
