@@ -1,18 +1,45 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-09T16:37:44.949796+00:00",
+  "lastCheckedUTC": "2026-11-10T06:37:52.310305+00:00",
   "coverage": {
-    "bulletin": "215",
-    "pagesVisited": 3,
-    "announcementsRead": 55,
-    "opportunities": 5,
+    "bulletin": "216",
+    "pagesVisited": 4,
+    "announcementsRead": 78,
+    "opportunities": 3,
     "complete": true,
     "status": "paginator_last_page",
     "details": "Se alcanzo la ultima pagina del paginador visible."
   },
-  "countNewBulletin": 5,
+  "countNewBulletin": 3,
   "notices": [
+    {
+      "id": "2026/13589",
+      "title": "Anuncio del Ayuntamiento de Meliana sobre la convocatoria y las bases específicas que regirán el procedimiento para la cobertura en propiedad de dos plazas de oficial de la Policía Local, puestos 024.SEG y 127.SEG, por promoción interna ordinaria, correspondientes a la oferta de empleo público de 2023 y de 2025.",
+      "entity": "Ayuntamiento de Meliana",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13589&lang=es"
+    },
+    {
+      "id": "2026/13555",
+      "title": "Anuncio del Ayuntamiento de l'Olleria sobre la aprobación de las bases de la convocatoria para la provisión de una plaza de encargado/a de la brigada de servicios municipales, mediante promoción interna.",
+      "entity": "Ayuntamiento de l'Olleria",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13555&lang=es"
+    },
+    {
+      "id": "2026/13554",
+      "title": "Anuncio de la Mancomunitat de la Ribera Alta sobre la aprobación de las bases de la convocatoria para la constitución de una bolsa de trabajo temporal de personal técnico graduado en ingeniería eléctrica, ingeniería electrónica industrial y automática, ingeniería mecánica, ingeniería química, grupo profesional A2. Convocatoria 3062596F.",
+      "entity": "la Mancomunitat de la Ribera Alta",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13554&lang=es"
+    },
     {
       "id": "2026/13523",
       "title": "Anuncio del Ayuntamiento de Fortaleny sobre la aprobación del extracto de convocatoria y las bases para la selección de personal de limpieza. Expediente 394/2026.",
@@ -647,11 +674,11 @@
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
-    "pagesVisited": 56,
-    "announcementsRead": 1280,
-    "opportunities": 70,
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
+    "pagesVisited": 57,
+    "announcementsRead": 1358,
+    "opportunities": 73,
     "bulletins": [
       "195",
       "196",
@@ -673,155 +700,157 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-09T16:37:44.949814+00:00",
+    "verifiedUTC": "2026-11-10T06:37:52.310317+00:00",
     "chunks": [
       {
         "start": "2026-10-12",
-        "end": "2026-10-15",
-        "requestedStart": "2026-10-11",
-        "requestedEnd": "2026-10-15",
+        "end": "2026-10-16",
+        "requestedStart": "2026-10-12",
+        "requestedEnd": "2026-10-16",
         "publishedDates": [
           "2026-10-12",
           "2026-10-13",
           "2026-10-14",
-          "2026-10-15"
+          "2026-10-15",
+          "2026-10-16"
         ],
-        "nonPublicationDates": [
-          "2026-10-11"
-        ],
-        "pagesVisited": 11,
-        "announcementsRead": 252,
+        "nonPublicationDates": [],
+        "pagesVisited": 13,
+        "announcementsRead": 313,
         "bulletins": [
           "195",
           "196",
           "197",
-          "198"
+          "198",
+          "199"
         ],
-        "opportunities": 12,
+        "opportunities": 16,
         "complete": true
       },
       {
-        "start": "2026-10-16",
-        "end": "2026-10-20",
-        "requestedStart": "2026-10-16",
-        "requestedEnd": "2026-10-20",
+        "start": "2026-10-19",
+        "end": "2026-10-21",
+        "requestedStart": "2026-10-17",
+        "requestedEnd": "2026-10-21",
         "publishedDates": [
-          "2026-10-16",
           "2026-10-19",
-          "2026-10-20"
+          "2026-10-20",
+          "2026-10-21"
         ],
         "nonPublicationDates": [
           "2026-10-17",
           "2026-10-18"
         ],
-        "pagesVisited": 11,
-        "announcementsRead": 253,
+        "pagesVisited": 9,
+        "announcementsRead": 220,
         "bulletins": [
-          "199",
           "200",
-          "201"
+          "201",
+          "202"
         ],
-        "opportunities": 8,
+        "opportunities": 5,
         "complete": true
       },
       {
-        "start": "2026-10-21",
-        "end": "2026-10-23",
-        "requestedStart": "2026-10-21",
-        "requestedEnd": "2026-10-25",
+        "start": "2026-10-22",
+        "end": "2026-10-26",
+        "requestedStart": "2026-10-22",
+        "requestedEnd": "2026-10-26",
         "publishedDates": [
-          "2026-10-21",
           "2026-10-22",
-          "2026-10-23"
+          "2026-10-23",
+          "2026-10-26"
         ],
         "nonPublicationDates": [
           "2026-10-24",
           "2026-10-25"
         ],
         "pagesVisited": 6,
-        "announcementsRead": 128,
+        "announcementsRead": 148,
         "bulletins": [
-          "202",
           "203",
-          "204"
+          "204",
+          "205"
         ],
-        "opportunities": 11,
+        "opportunities": 13,
         "complete": true
       },
       {
-        "start": "2026-10-26",
+        "start": "2026-10-27",
         "end": "2026-10-30",
-        "requestedStart": "2026-10-26",
-        "requestedEnd": "2026-10-30",
+        "requestedStart": "2026-10-27",
+        "requestedEnd": "2026-10-31",
         "publishedDates": [
-          "2026-10-26",
           "2026-10-27",
           "2026-10-28",
           "2026-10-29",
           "2026-10-30"
         ],
-        "nonPublicationDates": [],
-        "pagesVisited": 12,
-        "announcementsRead": 276,
+        "nonPublicationDates": [
+          "2026-10-31"
+        ],
+        "pagesVisited": 10,
+        "announcementsRead": 228,
         "bulletins": [
-          "205",
           "206",
           "207",
           "208",
           "209"
         ],
-        "opportunities": 19,
+        "opportunities": 16,
         "complete": true
       },
       {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "requestedStart": "2026-10-31",
-        "requestedEnd": "2026-11-04",
+        "end": "2026-11-05",
+        "requestedStart": "2026-11-01",
+        "requestedEnd": "2026-11-05",
         "publishedDates": [
           "2026-11-02",
           "2026-11-03",
-          "2026-11-04"
+          "2026-11-04",
+          "2026-11-05"
         ],
         "nonPublicationDates": [
-          "2026-10-31",
           "2026-11-01"
         ],
-        "pagesVisited": 8,
-        "announcementsRead": 193,
+        "pagesVisited": 11,
+        "announcementsRead": 256,
         "bulletins": [
           "210",
           "211",
-          "212"
+          "212",
+          "213"
         ],
-        "opportunities": 9,
+        "opportunities": 14,
         "complete": true
       },
       {
-        "start": "2026-11-05",
-        "end": "2026-11-09",
-        "requestedStart": "2026-11-05",
-        "requestedEnd": "2026-11-09",
+        "start": "2026-11-06",
+        "end": "2026-11-10",
+        "requestedStart": "2026-11-06",
+        "requestedEnd": "2026-11-10",
         "publishedDates": [
-          "2026-11-05",
           "2026-11-06",
-          "2026-11-09"
+          "2026-11-09",
+          "2026-11-10"
         ],
         "nonPublicationDates": [
           "2026-11-07",
           "2026-11-08"
         ],
         "pagesVisited": 8,
-        "announcementsRead": 178,
+        "announcementsRead": 193,
         "bulletins": [
-          "213",
           "214",
-          "215"
+          "215",
+          "216"
         ],
-        "opportunities": 11,
+        "opportunities": 9,
         "complete": true
       }
     ]
