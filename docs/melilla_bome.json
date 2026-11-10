@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-09T16:38:12.724926+00:00",
+  "lastCheckedUTC": "2026-11-10T06:22:52.221066+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "E51",
-    "pagesVisited": 15,
-    "announcementsRead": 130,
-    "opportunities": 13
+    "bulletin": "6430",
+    "pagesVisited": 16,
+    "announcementsRead": 141,
+    "opportunities": 14
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "E45",
       "6422",
@@ -30,7 +30,8 @@
       "6428",
       "E50",
       "6429",
-      "E51"
+      "E51",
+      "6430"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -47,10 +48,10 @@
       "2026-11-03",
       "2026-11-04",
       "2026-11-06",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-14",
       "2026-10-15",
       "2026-10-17",
@@ -70,11 +71,21 @@
       "2026-11-08",
       "2026-11-09"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 130,
-    "opportunities": 13
+    "issuesRead": 16,
+    "announcementsRead": 141,
+    "opportunities": 14
   },
   "notices": [
+    {
+      "id": "ML-2026-A-1250",
+      "province": "Melilla (BOME)",
+      "title": "Apertura plazo presentación instancias para la provisión de 4 plazas de Cabo de Extinción de Incendios, pertenecientes a la escala de Administración Especial, Subescala de Servicios Especiales, mediante el sistema de concurso-oposición, por promoción interna.",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
+      "date": "10/11/2026",
+      "bulletin": "6430",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1250.pdf"
+    },
     {
       "id": "ML-2026-A-1245",
       "province": "Melilla (BOME)",

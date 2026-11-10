@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-09T16:34:58.037865+00:00",
+  "lastCheckedUTC": "2026-11-10T06:19:44.489991+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
-    "pagesVisited": 19,
-    "announcementsRead": 722,
-    "opportunities": 121
+    "bulletin": "217",
+    "pagesVisited": 20,
+    "announcementsRead": 762,
+    "opportunities": 126
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "198",
       "199",
@@ -34,7 +34,8 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -55,10 +56,10 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-12",
       "2026-10-17",
       "2026-10-18",
@@ -70,11 +71,61 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 722,
-    "opportunities": 121
+    "issuesRead": 20,
+    "announcementsRead": 762,
+    "opportunities": 126
   },
   "notices": [
+    {
+      "id": "AO-2026-007962414",
+      "province": "Aragón (BOA)",
+      "title": "ANUNCIO de la Agrupación Europea de Cooperación Territorial \"Pirineos-Pyrénées\", de convocatoria para la provisión de la plaza de director/a de la AECT Pirineos - Pyrénées.",
+      "entity": "AGRUPACIÓN EUROPEA DE COOPERACIÓN TERRITORIAL PIRINEOS - PYRÉNÉES",
+      "date": "10/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474183360808"
+    },
+    {
+      "id": "AO-2026-007962381",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 24 de octubre de 2026, de la Gerencia de Sector de Calatayud, por la que se convoca procedimiento de provisión, por el sistema de libre designación, de un puesto de Jefatura de Grupo de Concursos en el Hospital \"Ernest Lluch\" de Calatayud.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "10/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474117700404"
+    },
+    {
+      "id": "AO-2026-007962377",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 28 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Servicio de Geriatría en el Hospital \"Nuestra Señora de Gracia\" de Zaragoza.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "10/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474109620303"
+    },
+    {
+      "id": "AO-2026-007962376",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 28 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección Radiología Cardiotorácica del Servicio de Radiodiagnóstico en el Hospital Clínico Universitario \"Lozano Blesa\" de Zaragoza.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "10/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474107600303"
+    },
+    {
+      "id": "AO-2026-007962375",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 28 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Radiología Abdominal del Servicio de Radiodiagnóstico en el Hospital Clínico Universitario \"Lozano Blesa\" de Zaragoza.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "10/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474105580303"
+    },
     {
       "id": "AO-2026-007962356",
       "province": "Aragón (BOA)",

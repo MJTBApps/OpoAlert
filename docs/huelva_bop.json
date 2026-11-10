@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-09T16:36:57.751972+00:00",
+  "lastCheckedUTC": "2026-11-10T06:21:29.230549+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 20,
-    "announcementsRead": 257,
-    "opportunities": 39
+    "bulletin": "216",
+    "pagesVisited": 21,
+    "announcementsRead": 280,
+    "opportunities": 45
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "196",
       "197",
@@ -35,7 +35,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -57,10 +58,10 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -71,9 +72,9 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 257,
-    "opportunities": 39,
+    "issuesRead": 21,
+    "announcementsRead": 280,
+    "opportunities": 45,
     "editionPDFs": [
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_196_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_197_2026.pdf",
@@ -94,10 +95,71 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_212_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_213_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_214_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_215_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_215_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_216_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-385046",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases reguladoras y convocatoria específica del proceso selectivo para la cobertura de dos plazas de Oficial 2ª Oficios Taller y la constitución de una Bolsa de trabajo",
+      "entity": "Empresa Municipial de Transportes Urbanos de Huelva S.A.",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385046_BOP-216_2026.pdf"
+    },
+    {
+      "id": "HB-2026-383521",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para la constitución de una Bolsa de empleo para cubrir vacantes de Secretario-Interventor",
+      "entity": "Ayuntamiento de Paymogo",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_383521_BOP-216_2026.pdf"
+    },
+    {
+      "id": "HB-2026-383003",
+      "province": "Huelva",
+      "title": "Resolución de publicación de la relación de aprobados en la convocatoria para cubrir como personal laboral fijo siete plazas de Oficial de Instalaciones Deportivas",
+      "entity": "Ayuntamiento de Valverde del Camino",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_383003_BOP-216_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382997",
+      "province": "Huelva",
+      "title": "Resolución de publicación de la relación de aprobados en la convocatoria para cubrir como personal laboral fijo una plaza de Oficial Conductor",
+      "entity": "Ayuntamiento de Valverde del Camino",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382997_BOP-216_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382991",
+      "province": "Huelva",
+      "title": "Resolución de publicación de la relación de aprobados en la convocatoria para cubrir como personal laboral fijo dos plazas de Oficial de Jardinería",
+      "entity": "Ayuntamiento de Valverde del Camino",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382991_BOP-216_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382989",
+      "province": "Huelva",
+      "title": "Resolución de publicación de la relación de aprobados en la convocatoria para cubrir como funcionario dos plazas de Oficial Jardinero",
+      "entity": "Ayuntamiento de Valverde del Camino",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382989_BOP-216_2026.pdf"
+    },
     {
       "id": "HB-2026-384988",
       "province": "Huelva",

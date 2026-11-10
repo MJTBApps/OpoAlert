@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-09T16:39:40.857128+00:00",
+  "lastCheckedUTC": "2026-11-10T06:23:56.554582+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "214",
     "pagesVisited": 20,
-    "announcementsRead": 347,
+    "announcementsRead": 336,
     "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "195",
       "196",
@@ -60,7 +60,6 @@
       "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-12",
       "2026-10-17",
       "2026-10-18",
@@ -69,10 +68,11 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-10"
     ],
     "issuesRead": 20,
-    "announcementsRead": 347,
+    "announcementsRead": 336,
     "opportunities": 40
   },
   "notices": [
@@ -80,7 +80,7 @@
       "id": "PV-2026-4718",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN de 23 de octubre de 2026, del director general de la Agencia Vasca del Agua, por la que se convoca el proceso selectivo para la provisión del puesto de director de Área de Planificación y Obras de la Agencia Vasca del Agua.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Agencia Vasca del Agua",
       "date": "09/11/2026",
       "bulletin": "214",
       "type": "Plaza / oposición",

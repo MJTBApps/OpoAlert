@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-09T16:51:20.838429+00:00",
+  "lastCheckedUTC": "2026-11-10T06:19:35.586377+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
-    "pagesVisited": 20,
-    "announcementsRead": 453,
-    "opportunities": 30
+    "bulletin": "215",
+    "pagesVisited": 21,
+    "announcementsRead": 482,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "195",
       "196",
@@ -35,7 +35,8 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -57,10 +58,10 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -71,11 +72,21 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 453,
-    "opportunities": 30
+    "issuesRead": 21,
+    "announcementsRead": 482,
+    "opportunities": 31
   },
   "notices": [
+    {
+      "id": "CC-2026-5236",
+      "province": "Cáceres",
+      "title": "Convocatoria de proceso selectivo de una plaza de profesor PALV Curso 2026/2027 Ayuntamiento de Peraleda de la Mata (Cáceres).",
+      "entity": "Ayuntamiento de Peraleda de la Mata",
+      "date": "10/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5236"
+    },
     {
       "id": "CC-2026-5212",
       "province": "Cáceres",
