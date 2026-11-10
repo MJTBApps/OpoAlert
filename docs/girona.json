@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-10T09:34:12.412445+00:00",
+  "lastCheckedUTC": "2026-11-10T16:29:03.559580+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 73,
-    "opportunities": 73,
+    "announcementsRead": 75,
+    "opportunities": 75,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,20 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 73,
-    "opportunities": 73
+    "announcementsRead": 75,
+    "opportunities": 75
   },
   "notices": [
+    {
+      "id": "CIDO6-22468431",
+      "title": "1 plaça de Tècnic d'urbanisme i obres",
+      "entity": "Ajuntament de Sant Martí de Llémena",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22468431"
+    },
     {
       "id": "CIDO6-22466771",
       "title": "Borsa de treball de places d'Auxiliar de Serveis i Atenció al Públic",
@@ -65,6 +75,16 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22466771"
+    },
+    {
+      "id": "CIDO6-22419816",
+      "title": "Borsa de treball de places de Secretari interventor",
+      "entity": "Ajuntament de Maçanet de Cabrenys",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22419816"
     },
     {
       "id": "CIDO6-22374077",
@@ -107,6 +127,16 @@
       "url": "https://cido.diba.cat/oposicions/20799043"
     },
     {
+      "id": "CIDO6-18010859",
+      "title": "1 plaça de Cap de departament, director d'escola bressol - mestre d'educació infantil",
+      "entity": "Ajuntament de Palafrugell",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/18010859"
+    },
+    {
       "id": "CIDO6-16732260",
       "title": "1 plaça de Tècnic de so, llum i audiovisuals",
       "entity": "Ajuntament de Salt",
@@ -115,6 +145,16 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16732260"
+    },
+    {
+      "id": "CIDO6-22469548",
+      "title": "1 plaça de Peó de brigada",
+      "entity": "Mancomunitat Intermunicipal d'Aigües i Serveis del Baix Empordà",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22469548"
     },
     {
       "id": "CIDO6-22459685",
@@ -195,16 +235,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20534820"
-    },
-    {
-      "id": "CIDO6-18010859",
-      "title": "1 plaça de Cap de departament, director d'escola bressol - mestre d'educació infantil",
-      "entity": "Ajuntament de Palafrugell",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/18010859"
     },
     {
       "id": "CIDO6-22451502",
@@ -415,16 +445,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22419833"
-    },
-    {
-      "id": "CIDO6-22419816",
-      "title": "Borsa de treball de places de Secretari interventor",
-      "entity": "Ajuntament de Maçanet de Cabrenys",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22419816"
     },
     {
       "id": "CIDO6-22381776",

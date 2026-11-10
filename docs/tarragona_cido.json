@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-10T09:34:12.412445+00:00",
+  "lastCheckedUTC": "2026-11-10T16:29:03.559580+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 89,
-    "opportunities": 89,
+    "announcementsRead": 93,
+    "opportunities": 93,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,50 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 89,
-    "opportunities": 89
+    "announcementsRead": 93,
+    "opportunities": 93
   },
   "notices": [
+    {
+      "id": "CIDO8-22469386",
+      "title": "Borsa de treball de places de Docent de música, especialitat Cant",
+      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22469386"
+    },
+    {
+      "id": "CIDO8-22469132",
+      "title": "Borsa de treball de places de monitor i dinamitzador de joventut",
+      "entity": "Ajuntament de Calafell",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22469132"
+    },
+    {
+      "id": "CIDO8-22469083",
+      "title": "Borsa de treball de places de Peó de neteja de brigada",
+      "entity": "Ajuntament d'Alcover",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22469083"
+    },
+    {
+      "id": "CIDO8-22451823",
+      "title": "1 plaça de Tècnic d'administració especial",
+      "entity": "Ajuntament d'Ascó",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22451823"
+    },
     {
       "id": "CIDO8-22420606",
       "title": "1 plaça de Vigilant municipal",
@@ -65,6 +105,76 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22420606"
+    },
+    {
+      "id": "CIDO8-22410612",
+      "title": "Borsa de treball de places d'Oficial 2a de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410612"
+    },
+    {
+      "id": "CIDO8-22410609",
+      "title": "Borsa de treball de places de Peó especialista de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410609"
+    },
+    {
+      "id": "CIDO8-22410606",
+      "title": "Borsa de treball de places de Peó de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410606"
+    },
+    {
+      "id": "CIDO8-22410603",
+      "title": "Borsa de treball de places de Personal de neteja",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410603"
+    },
+    {
+      "id": "CIDO8-22410596",
+      "title": "Borsa de treball de places d'Oficial 1a de la brigada d'obres i serveis",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22410596"
+    },
+    {
+      "id": "CIDO8-22329601",
+      "title": "6 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22329601"
+    },
+    {
+      "id": "CIDO8-21131872",
+      "title": "Borsa de treball de places de Tècnic de programes a l'Àrea de Promoció Econòmica",
+      "entity": "Ajuntament de Tortosa",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21131872"
     },
     {
       "id": "CIDO8-22466718",
@@ -125,16 +235,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22453499"
-    },
-    {
-      "id": "CIDO8-22451823",
-      "title": "1 plaça de Tècnic d'administració especial",
-      "entity": "Ajuntament d'Ascó",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22451823"
     },
     {
       "id": "CIDO8-22451782",
@@ -497,16 +597,6 @@
       "url": "https://cido.diba.cat/oposicions/22420343"
     },
     {
-      "id": "CIDO8-22329601",
-      "title": "6 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22329601"
-    },
-    {
       "id": "CIDO8-17959571",
       "title": "1 plaça d'Auxiliar administratiu",
       "entity": "Ajuntament de Valls - Patronat Municipal d'Esports",
@@ -515,56 +605,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/17959571"
-    },
-    {
-      "id": "CIDO8-22410612",
-      "title": "Borsa de treball de places d'Oficial 2a de la brigada d'obres i serveis",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22410612"
-    },
-    {
-      "id": "CIDO8-22410609",
-      "title": "Borsa de treball de places de Peó especialista de la brigada d'obres i serveis",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22410609"
-    },
-    {
-      "id": "CIDO8-22410606",
-      "title": "Borsa de treball de places de Peó de la brigada d'obres i serveis",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22410606"
-    },
-    {
-      "id": "CIDO8-22410603",
-      "title": "Borsa de treball de places de Personal de neteja",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22410603"
-    },
-    {
-      "id": "CIDO8-22410596",
-      "title": "Borsa de treball de places d'Oficial 1a de la brigada d'obres i serveis",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22410596"
     },
     {
       "id": "CIDO8-22410522",

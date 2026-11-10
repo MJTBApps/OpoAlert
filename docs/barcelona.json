@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-10T09:34:12.412445+00:00",
+  "lastCheckedUTC": "2026-11-10T16:29:03.559580+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 296,
-    "opportunities": 296,
+    "announcementsRead": 302,
+    "opportunities": 302,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,70 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 296,
-    "opportunities": 296
+    "announcementsRead": 302,
+    "opportunities": 302
   },
   "notices": [
+    {
+      "id": "CIDO5-22469619",
+      "title": "1 plaça d'Etòleg per al Centre d'Adopcions d'Animals Domèstics (CAAD) a l'Àrea de Transició Ecològica",
+      "entity": "Ajuntament de Terrassa",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22469619"
+    },
+    {
+      "id": "CIDO5-22469557",
+      "title": "2 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de Matadepera",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22469557"
+    },
+    {
+      "id": "CIDO5-22468536",
+      "title": "2 places de Professor d'educació secundària, especialitat en mecànica i coneixements de torn, fressa i soldadura, a l'Escola Municipal del Treball",
+      "entity": "Ajuntament de Granollers",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22468536"
+    },
+    {
+      "id": "CIDO5-22468532",
+      "title": "1 plaça de Professor tècnic d'educació secundària, especialitat en mecànica dins del cicle CFGM de xarxes i estacions d'aigües, a l'Escola Municipal del Treball",
+      "entity": "Ajuntament de Granollers",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22468532"
+    },
+    {
+      "id": "CIDO5-22468519",
+      "title": "1 plaça de Professor d'educació secundària, especialitat en llengua catalana, a l'Escola Municipal del Treball",
+      "entity": "Ajuntament de Granollers",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22468519"
+    },
+    {
+      "id": "CIDO5-22468470",
+      "title": "1 plaça de Vetllador per a l'Escola Municipal Salvador Llobet",
+      "entity": "Ajuntament de Granollers",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22468470"
+    },
     {
       "id": "CIDO5-22465774",
       "title": "3 places d'Agent de la Policia Local",
@@ -97,6 +157,16 @@
       "url": "https://cido.diba.cat/oposicions/22460741"
     },
     {
+      "id": "CIDO5-22433697",
+      "title": "1 plaça de Cap del Departament de Protocols i Relacions Institucionals",
+      "entity": "Ajuntament de Badalona",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22433697"
+    },
+    {
       "id": "CIDO5-22327369",
       "title": "1 plaça de Tècnic d'esports - Cap del servei d'esports",
       "entity": "Ajuntament d'Abrera",
@@ -107,6 +177,46 @@
       "url": "https://cido.diba.cat/oposicions/22327369"
     },
     {
+      "id": "CIDO5-22208830",
+      "title": "2 places de Tècnic mitjà de comunicació",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22208830"
+    },
+    {
+      "id": "CIDO5-21996476",
+      "title": "1 plaça de Tècnic mitjà de turisme",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21996476"
+    },
+    {
+      "id": "CIDO5-21939282",
+      "title": "1 plaça de Tècnic mitjà de cultura",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21939282"
+    },
+    {
+      "id": "CIDO5-21898204",
+      "title": "1 plaça d'Inspector de la Guàrdia Urbana",
+      "entity": "Ajuntament de Manresa",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21898204"
+    },
+    {
       "id": "CIDO5-21613925",
       "title": "1 plaça de Tècnic mitjà informàtica",
       "entity": "Ajuntament de Canet de Mar",
@@ -115,6 +225,56 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21613925"
+    },
+    {
+      "id": "CIDO5-20864546",
+      "title": "1 plaça d'Educador social",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/20864546"
+    },
+    {
+      "id": "CIDO5-16773104",
+      "title": "7 places d'Educador social",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16773104"
+    },
+    {
+      "id": "CIDO5-16773097",
+      "title": "2 places d'Educador escola bressol",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16773097"
+    },
+    {
+      "id": "CIDO5-16723226",
+      "title": "1 plaça de Tècnic especialista dinamització",
+      "entity": "Ajuntament de Viladecans",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16723226"
+    },
+    {
+      "id": "CIDO5-16723214",
+      "title": "2 places d'Inspector municipal",
+      "entity": "Ajuntament de Viladecans",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16723214"
     },
     {
       "id": "CIDO5-16607751",
@@ -185,6 +345,16 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22428509"
+    },
+    {
+      "id": "CIDO5-22372192",
+      "title": "1 plaça de Cap de Servei de Contractació i Compres",
+      "entity": "Ajuntament de Mollet del Vallès",
+      "date": "09/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22372192"
     },
     {
       "id": "CIDO5-22367699",
@@ -787,16 +957,6 @@
       "url": "https://cido.diba.cat/oposicions/22433753"
     },
     {
-      "id": "CIDO5-22433697",
-      "title": "1 plaça de Cap del Departament de Protocols i Relacions Institucionals",
-      "entity": "Ajuntament de Badalona",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22433697"
-    },
-    {
       "id": "CIDO5-22433617",
       "title": "Borsa de treball de places de Tècnic de de comunicació",
       "entity": "Ajuntament d'Igualada",
@@ -865,36 +1025,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22101089"
-    },
-    {
-      "id": "CIDO5-21898204",
-      "title": "1 plaça d'Inspector de la Guàrdia Urbana",
-      "entity": "Ajuntament de Manresa",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21898204"
-    },
-    {
-      "id": "CIDO5-16723226",
-      "title": "1 plaça de Tècnic especialista dinamització",
-      "entity": "Ajuntament de Viladecans",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16723226"
-    },
-    {
-      "id": "CIDO5-16723214",
-      "title": "2 places d'Inspector municipal",
-      "entity": "Ajuntament de Viladecans",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16723214"
     },
     {
       "id": "CIDO5-22428814",
@@ -1337,46 +1467,6 @@
       "url": "https://cido.diba.cat/oposicions/22327578"
     },
     {
-      "id": "CIDO5-22208830",
-      "title": "2 places de Tècnic mitjà de comunicació",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22208830"
-    },
-    {
-      "id": "CIDO5-21996476",
-      "title": "1 plaça de Tècnic mitjà de turisme",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21996476"
-    },
-    {
-      "id": "CIDO5-21939282",
-      "title": "1 plaça de Tècnic mitjà de cultura",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21939282"
-    },
-    {
-      "id": "CIDO5-20864546",
-      "title": "1 plaça d'Educador social",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20864546"
-    },
-    {
       "id": "CIDO5-16773319",
       "title": "1 plaça de Tècnic mitjà d'acció ambiental",
       "entity": "Ajuntament del Prat de Llobregat",
@@ -1385,26 +1475,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16773319"
-    },
-    {
-      "id": "CIDO5-16773104",
-      "title": "7 places d'Educador social",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16773104"
-    },
-    {
-      "id": "CIDO5-16773097",
-      "title": "2 places d'Educador escola bressol",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16773097"
     },
     {
       "id": "CIDO5-16723111",
@@ -1785,16 +1855,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22375349"
-    },
-    {
-      "id": "CIDO5-22372192",
-      "title": "1 plaça de Cap de Servei de Contractació i Compres",
-      "entity": "Ajuntament de Mollet del Vallès",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22372192"
     },
     {
       "id": "CIDO5-22319976",
