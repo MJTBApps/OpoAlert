@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-10T06:38:13.912185+00:00",
+  "lastCheckedUTC": "2026-11-10T09:34:12.412445+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 69,
-    "opportunities": 69,
+    "announcementsRead": 73,
+    "opportunities": 73,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
       "2026-10-12",
@@ -47,15 +48,74 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-10"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 69,
-    "opportunities": 69
+    "announcementsRead": 73,
+    "opportunities": 73
   },
   "notices": [
+    {
+      "id": "CIDO6-22466771",
+      "title": "Borsa de treball de places d'Auxiliar de Serveis i Atenció al Públic",
+      "entity": "Ajuntament de l'Escala",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22466771"
+    },
+    {
+      "id": "CIDO6-22374077",
+      "title": "2 places de Peó de Serveis Generals Agutzil",
+      "entity": "Ajuntament d'Agullana",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22374077"
+    },
+    {
+      "id": "CIDO6-21416131",
+      "title": "1 plaça de Coordinador de cultura, educació i patrimoni històric",
+      "entity": "Ajuntament de l'Escala",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21416131"
+    },
+    {
+      "id": "CIDO6-21398767",
+      "title": "1 plaça de Tècnic de gestió per prestar serveis a la Secció de serveis educatius",
+      "entity": "Ajuntament de Girona",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21398767"
+    },
+    {
+      "id": "CIDO6-20799043",
+      "title": "1 plaça de Coordinador de neteja",
+      "entity": "Ajuntament de Ribes de Freser",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/20799043"
+    },
+    {
+      "id": "CIDO6-16732260",
+      "title": "1 plaça de Tècnic de so, llum i audiovisuals",
+      "entity": "Ajuntament de Salt",
+      "date": "10/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16732260"
+    },
     {
       "id": "CIDO6-22459685",
       "title": "2 places de Tècnic mitjà d'orientació laboral. Projecte Treball als Barris",
@@ -175,16 +235,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22450081"
-    },
-    {
-      "id": "CIDO6-22374077",
-      "title": "2 places de Peó de Serveis Generals Agutzil",
-      "entity": "Ajuntament d'Agullana",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22374077"
     },
     {
       "id": "CIDO6-21398776",
@@ -415,16 +465,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/20858650"
-    },
-    {
-      "id": "CIDO6-20799043",
-      "title": "1 plaça de Coordinador de neteja",
-      "entity": "Ajuntament de Ribes de Freser",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/20799043"
     },
     {
       "id": "CIDO6-22410335",
