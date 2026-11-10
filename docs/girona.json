@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-09T16:43:11.016928+00:00",
+  "lastCheckedUTC": "2026-11-10T06:38:13.912185+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 70,
-    "opportunities": 70,
+    "announcementsRead": 69,
+    "opportunities": 69,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "publicationDates": [
       "2026-10-13",
       "2026-10-16",
@@ -37,7 +37,6 @@
       "2026-11-09"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-12",
       "2026-10-14",
       "2026-10-15",
@@ -48,12 +47,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-10"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 70,
-    "opportunities": 70
+    "announcementsRead": 69,
+    "opportunities": 69
   },
   "notices": [
     {
@@ -675,16 +675,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21771332"
-    },
-    {
-      "id": "CIDO6-22353433",
-      "title": "1 plaça d'Auxiliar de gestió administrativa",
-      "entity": "Ajuntament de Sant Gregori",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22353433"
     },
     {
       "id": "CIDO6-22319984",
