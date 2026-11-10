@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-09T17:00:34.123931+00:00",
+  "lastCheckedUTC": "2026-11-10T06:51:10.343308+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
-    "pagesVisited": 22,
-    "announcementsRead": 945,
-    "opportunities": 65
+    "bulletin": "215",
+    "pagesVisited": 23,
+    "announcementsRead": 1002,
+    "opportunities": 67
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "194",
       "195",
@@ -36,7 +36,8 @@
       "211",
       "212",
       "213",
-      "214"
+      "214",
+      "215"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -59,10 +60,10 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -72,11 +73,31 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 945,
-    "opportunities": 65
+    "issuesRead": 22,
+    "announcementsRead": 1002,
+    "opportunities": 67
   },
   "notices": [
+    {
+      "id": "LE-202621509458",
+      "province": "Lleida (BOP)",
+      "title": "Anunci de les bases i la convocatòria procés selectiu per cobrir, per concurs-oposició, una plaça de personal laboral fix de peó de brigada i creació de borsa de treball de l'Ajuntament de l'Albi",
+      "entity": "AJUNTAMENT DE L'ALBI",
+      "date": "10/11/2026",
+      "bulletin": "215",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/215/202621509458.pdf"
+    },
+    {
+      "id": "LE-202621509445",
+      "province": "Lleida (BOP)",
+      "title": "Bases i convocatòria places reservades a la promoció interna de personal laboral o funcionari",
+      "entity": "AJUNTAMENT DE BELLPUIG (BELLPUIG)",
+      "date": "10/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/215/202621509445.pdf"
+    },
     {
       "id": "LE-202621409402",
       "province": "Lleida (BOP)",

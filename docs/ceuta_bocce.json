@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-09T16:52:49.540698+00:00",
+  "lastCheckedUTC": "2026-11-10T06:44:56.195100+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6667",
-    "pagesVisited": 14,
-    "announcementsRead": 66,
+    "bulletin": "6668",
+    "pagesVisited": 15,
+    "announcementsRead": 75,
     "opportunities": 0,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 14,
-    "pdfPagesRead": 201
+    "originalFullPdfIssues": 15,
+    "pdfPagesRead": 219
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
     "bulletins": [
       "EXTRA46",
       "6660",
@@ -32,7 +32,8 @@
       "EXTRA51",
       "6665",
       "6666",
-      "6667"
+      "6667",
+      "6668"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -48,10 +49,10 @@
       "2026-10-28",
       "2026-10-30",
       "2026-11-03",
-      "2026-11-06"
+      "2026-11-06",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-14",
       "2026-10-17",
       "2026-10-18",
@@ -69,8 +70,8 @@
       "2026-11-08",
       "2026-11-09"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 66,
+    "issuesRead": 15,
+    "announcementsRead": 75,
     "opportunities": 0,
     "regularBulletins": [
       "6660",
@@ -80,7 +81,8 @@
       "6664",
       "6665",
       "6666",
-      "6667"
+      "6667",
+      "6668"
     ],
     "extraordinaryBulletins": [
       "EXTRA46",
@@ -257,6 +259,18 @@
         "edicts": [
           734,
           745
+        ]
+      },
+      {
+        "number": "6668",
+        "date": "2026-11-10",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23320-bocce-6668-10-11-2026?Itemid=534",
+        "sha256": "88027f3f3ae65d5b7aa3028e9e5d5978afcc3780ac1d7c80436c6dadb59f944e",
+        "bytes": 634443,
+        "pages": 18,
+        "edicts": [
+          746,
+          754
         ]
       }
     ]
