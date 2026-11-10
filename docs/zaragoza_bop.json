@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-09T17:18:43.293717+00:00",
+  "lastCheckedUTC": "2026-11-10T07:16:59.666617+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "258",
+    "bulletin": "259",
     "pagesVisited": 2,
-    "announcementsRead": 759,
-    "opportunities": 70
+    "announcementsRead": 809,
+    "opportunities": 76
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
-    "issuesRead": 24,
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
+    "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 759,
-    "opportunities": 70,
+    "announcementsRead": 809,
+    "opportunities": 76,
     "bulletins": [
       "235",
       "236",
@@ -43,7 +43,8 @@
       "255",
       "256",
       "257",
-      "258"
+      "258",
+      "259"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -69,7 +70,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "issuePublicationDates": [
       "2026-10-12",
@@ -95,10 +97,10 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-18",
       "2026-10-25",
       "2026-11-01",
@@ -110,15 +112,75 @@
       "SECCIÓN PRIMERA": 4,
       "SECCIÓN SEGUNDA": 7,
       "SECCIÓN TERCERA": 38,
-      "SECCIÓN QUINTA": 96,
-      "SECCIÓN SEXTA": 588,
+      "SECCIÓN QUINTA": 98,
+      "SECCIÓN SEXTA": 636,
       "SECCIÓN SEPTIMA": 2,
       "PARTE NO OFICIAL": 7,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 93
+    "documentsVerified": 100
   },
   "notices": [
+    {
+      "id": "ZA-000345050",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2026.",
+      "entity": "MANCOMUNIDAD DE AGUAS LAS TORCAS",
+      "date": "10/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474234921010"
+    },
+    {
+      "id": "ZA-000345037",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE SISAMÓN",
+      "date": "10/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474221790808"
+    },
+    {
+      "id": "ZA-000345031",
+      "province": "Zaragoza",
+      "title": "Aprobación definitiva de la Ordenanza municipal reguladora del alquiler de vivienda municipal del Ayuntamiento de Puebla de Abortón. Aprobada inicialmente la ordenanza municipal reguladora de alquiler de…",
+      "entity": "AYUNTAMIENTO DE PUEBLA DE ALBORTÓN",
+      "date": "10/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474215730707"
+    },
+    {
+      "id": "ZA-000345027",
+      "province": "Zaragoza",
+      "title": "Transcurrido el plazo de exposición pública marcado por el artículo 17 del Real Decreto legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas…",
+      "entity": "AYUNTAMIENTO DE PASTRIZ",
+      "date": "10/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474211690606"
+    },
+    {
+      "id": "ZA-000345023",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE MURERO",
+      "date": "10/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474207650606"
+    },
+    {
+      "id": "ZA-000345016",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo ak proceso selectivo para la cobertura de una plaza de técnico de Administración general/TAG/puesto jefe de Sección Control Financiero. Por resolución de Alcaldía número 2026-2424, de 3 de…",
+      "entity": "AYUNTAMIENTO DE LA ALMUNIA DE DOÑA GODINA",
+      "date": "10/11/2026",
+      "bulletin": "259",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474200580404"
+    },
     {
       "id": "ZA-000344959",
       "province": "Zaragoza",
