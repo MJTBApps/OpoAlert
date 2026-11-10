@@ -41,4 +41,10 @@ class LugoTest(unittest.TestCase):
   self.assertEqual(d["notices"][0]["url"],"https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/07-01-2026.pdf")
   with self.assertRaises(ProvincialCoverageError):
    lu.parse_day(BeautifulSoup(html,"html.parser"),date(2026,1,8),5,U)
+ def test_registro_sin_parentesis_final(self):
+  html="""<h2>BOP DE 07/01/2026</h2>
+  <a href="/sites/deputacionlugo.org/files/inline-files/07-01-2026.pdf#page=5">CONVOCATORIA DE PRAZAS DE POLICÍA LOCAL (PÁX. 5, R. 3042</a>"""
+  d=lu.parse_day(BeautifulSoup(html,"html.parser"),date(2026,1,7),4,U)
+  self.assertEqual([n["id"] for n in d["notices"]],["LU-2026-3042"])
+  self.assertNotIn("PÁX",d["notices"][0]["title"])
 if __name__=="__main__":unittest.main()

@@ -24,8 +24,9 @@ SOURCE="https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop"
 HOST="deputacionlugo.gal"
 ROW_RE=re.compile(r"(\d{1,3})\s+BOP DE (\d{2}/\d{2}/\d{4})\b",re.I)
 LINK_RE=re.compile(r"BOP DE (\d{2}/\d{2}/\d{4})",re.I)
-REC_RE=re.compile(r"(?:\bR\.?\s*|\bREG\.?\s*)(\d{2,6})\s*\)",re.I)
-PAGE_SUFFIX_RE=re.compile(r"\s*\(P[ÁA][XG]\.?\s*\d+(?:\s*,\s*R(?:EG)?\.?\s*\d+)?\)\s*$",re.I)
+# La web a veces omite el paréntesis final: «(PÁX. 5, R. 3042».
+REC_RE=re.compile(r"(?:\bR\.?\s*|\bREG\.?\s*)(\d{2,6})\s*(?:\)|$)",re.I)
+PAGE_SUFFIX_RE=re.compile(r"\s*\(P[ÁA][XG]\.?\s*\d+(?:\s*,\s*R(?:EG)?\.?\s*\d+)?\)?\s*$",re.I)
 MONTHS={1:("ENERO","XANEIRO"),2:("FEBRERO","FEBREIRO"),3:("MARZO","MARZO"),4:("ABRIL","ABRIL"),
         5:("MAYO","MAIO"),6:("JUNIO","XUÑO"),7:("JULIO","XULLO"),8:("AGOSTO","AGOSTO"),
         9:("SEPTIEMBRE","SETEMBRO"),10:("OCTUBRE","OUTUBRO"),11:("NOVIEMBRE","NOVEMBRO"),12:("DICIEMBRE","DECEMBRO")}
