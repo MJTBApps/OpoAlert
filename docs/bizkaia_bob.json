@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-10T06:19:26.713996+00:00",
+  "lastCheckedUTC": "2026-11-10T12:10:27.676148+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
-    "pagesVisited": 21,
-    "announcementsRead": 724,
-    "opportunities": 54
+    "bulletin": "216",
+    "pagesVisited": 22,
+    "announcementsRead": 784,
+    "opportunities": 57
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -59,7 +60,8 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -69,14 +71,43 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-10"
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 724,
-    "opportunities": 54
+    "issuesRead": 22,
+    "announcementsRead": 784,
+    "opportunities": 57
   },
   "notices": [
+    {
+      "id": "BI-2026-II-5804",
+      "province": "Bizkaia",
+      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la convocatoria para la provisión con carácter definitivo del puesto 1587.B0 Subdirección de Gestion de la Movilidad, adscrito a la Dirección de Movilidad, de nivel 29 de Complemento de Destino, Perfil Lingüístico 3 no preceptivo, retribución bruta anual por importe de (euros), Dedicación especial, Dedicación exclusiva, Disponibilidad y superior horario nivel 2 (entre 108 y 156 horas anuales sobre el horario ordinario) a proveer por personal funcionario de carrera del subgrupo A-1 del Ayuntamiento de Bilbao, de la Administración del Estado, Comunidades Autónomas y Local.",
+      "entity": "Ayuntamiento de Bilbao",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/10/II-5804_cas.pdf"
+    },
+    {
+      "id": "BI-2026-II-5787",
+      "province": "Bizkaia",
+      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a declarar desierto el proceso selectivo convocado para la provisión en propiedad de tres (3) plazas de Técnica/o de Laboratorio, 1 de ellas con perfil lingüístico 3 de euskera preceptivo, por el sistema general de acceso libre mediante concurso-oposición.",
+      "entity": "Ayuntamiento de Bilbao",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/10/II-5787_cas.pdf"
+    },
+    {
+      "id": "BI-2026-II-5771",
+      "province": "Bizkaia",
+      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la admisión y exclusión definitiva de aspirantes en el proceso selectivo convocado para la provisión en propiedad de dos (2) plazas de Técnica/o de Droga, con perfil lingüístico 3 de euskera no preceptivo, por el sistema general de acceso libre mediante concurso-oposición.",
+      "entity": "Ayuntamiento de Bilbao",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/10/II-5771_cas.pdf"
+    },
     {
       "id": "BI-2026-II-5633",
       "province": "Bizkaia",

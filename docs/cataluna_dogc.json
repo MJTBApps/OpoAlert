@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "province": "Cataluña (DOGC)",
   "source": "https://portaldogc.gencat.cat/eadop-rest/api/dogc/summaryDOGC",
-  "lastCheckedUTC": "2026-11-10T09:23:53.867447+00:00",
+  "lastCheckedUTC": "2026-11-10T12:12:57.542350+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "9791SN",
-    "pagesVisited": 43,
-    "announcementsRead": 2030,
+    "pagesVisited": 44,
+    "announcementsRead": 2031,
     "opportunities": 488
   },
   "historyCoverage": {
@@ -58,6 +58,7 @@
       "9790",
       "9790SN",
       "9791",
+      "9791A",
       "9791SN"
     ],
     "publicationDates": [
@@ -103,6 +104,7 @@
       "2026-11-09",
       "2026-11-09",
       "2026-11-10",
+      "2026-11-10",
       "2026-11-10"
     ],
     "nonPublicationDates": [
@@ -116,8 +118,8 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 43,
-    "announcementsRead": 2030,
+    "issuesRead": 44,
+    "announcementsRead": 2031,
     "opportunities": 488,
     "calendarEvidence": [
       {
@@ -2494,10 +2496,12 @@
         "date": "2026-11-10",
         "main": "9791",
         "editions": [
-          "9791"
+          "9791",
+          "9791A"
         ],
         "counts": [
-          97
+          97,
+          1
         ],
         "originalIds": [
           "1058819",
@@ -2596,7 +2600,8 @@
           "1058817",
           "1058861",
           "1058775",
-          "1058771"
+          "1058771",
+          "1058894"
         ],
         "supplement": "9791SN",
         "supplementCount": 7,
@@ -6519,7 +6524,7 @@
     ],
     "originalCandidateDocumentsVerified": 488,
     "mainIssues": 21,
-    "annexIssues": 1,
+    "annexIssues": 2,
     "supplementsAudited": 21
   },
   "notices": [
