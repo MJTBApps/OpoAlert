@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-09T12:55:32.782193+00:00",
+  "lastCheckedUTC": "2026-11-10T06:49:26.838789+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "215",
-    "pagesVisited": 20,
-    "announcementsRead": 960,
-    "opportunities": 96,
+    "bulletin": "216",
+    "pagesVisited": 21,
+    "announcementsRead": 1024,
+    "opportunities": 101,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
-    "issuesRead": 20,
-    "pagesVisited": 20,
-    "announcementsRead": 960,
-    "opportunities": 96,
+    "rangeStart": "2026-10-12",
+    "rangeEnd": "2026-11-10",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 1024,
+    "opportunities": 101,
     "bulletins": [
       "196",
       "197",
@@ -39,7 +39,8 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-12",
@@ -61,10 +62,10 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -77,6 +78,56 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-216-09787",
+      "title": "Aprovació de la modificació de la base segona de les bases reguladores i la convocatòria per a la provisió en propietat de dues places de peó de serveis generals agutzil, en règim laboral a temps complet, pel sistema d'oposició, vacants a la plantilla de personal de l'Ajuntament d'Agullana, i obertura d'un nou termini de presentació de sol·licituds",
+      "entity": "AJUNTAMENT D'AGULLANA",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609787.pdf"
+    },
+    {
+      "id": "GI-2026-216-09695",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la constitució d'una borsa de treball d'auxiliars de serveis i atenció al públic",
+      "entity": "AJUNTAMENT DE L'ESCALA",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609695.pdf"
+    },
+    {
+      "id": "GI-2026-216-09660",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu d'una plaça de tècnic de so, llum i audiovisuals, personal laboral fix pel sistema de concurs oposició lliure i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE SALT",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609660.pdf"
+    },
+    {
+      "id": "GI-2026-216-09543",
+      "title": "Aprovació de les bases i la convocatòria per a la provisió temporal del lloc de tècnic/a d'urbanisme i obres mitjançant comissió de serveis",
+      "entity": "AJUNTAMENT DE SANT MARTÍ DE LLÉMENA",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609543.pdf"
+    },
+    {
+      "id": "GI-2026-216-09523",
+      "title": "Aprovació de les bases específiques i la convocatòria del procés de selecció, per oposició lliure, d'una plaça de tècnic/a de gestió per prestar serveis a la secció de Serveis Educatius, vacant a la plantilla de personal funcionari de l'Ajuntamet de Girona i inclosa dins l'oferta pública d'ocupació de l'exercici 2026",
+      "entity": "AJUNTAMENT DE GIRONA",
+      "date": "10/11/2026",
+      "bulletin": "216",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609523.pdf"
+    },
     {
       "id": "GI-2026-215-09723",
       "title": "Aprovació de les bases i la convocatòria del procés selectiu, extraordinari i urgent, per a la cobertura d'un lloc de treball de dinamitzador/a empresarial, per a l'execució del Programa de suport als territoris amb majors necessitats de reequilibri territorial i social: Projecte Treball als barris (SOC-Treball als barris)",
