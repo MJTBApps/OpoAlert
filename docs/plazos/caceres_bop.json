@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-10T17:02:53+00:00",
+ "updatedUTC": "2026-11-11T07:29:16+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -49,6 +49,12 @@
    "kind": "naturales",
    "text": "Dicho informe deberá haber sido obtenido en el plazo máximo de los 45 días naturales anteriores al momento de finalizar el plazo de presentación de solicitudes establecido en la ficha descriptiva adjunta a las presentes bases.",
    "page": 3
+  },
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5274": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "TERCERO.- El plazo de presentación de instancias solicitando tomar parte en el proceso selectivo será de veinte días naturales contados a partir del siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 2
   }
  },
  "none": [
@@ -74,7 +80,9 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5185",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5203",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5212",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5236"
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5236",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5251",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5291"
  ],
  "tries": {}
 }
