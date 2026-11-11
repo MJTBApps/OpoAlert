@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-11T06:40:44.571156+00:00",
+  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 61,
-    "opportunities": 61,
+    "announcementsRead": 64,
+    "opportunities": 64,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -31,7 +31,8 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-13",
@@ -47,15 +48,44 @@
       "2026-11-01",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-11"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 61,
-    "opportunities": 61
+    "announcementsRead": 64,
+    "opportunities": 64
   },
   "notices": [
+    {
+      "id": "CIDO7-22474582",
+      "title": "Borsa de treball de places d'Educador de la llar d'infants municipal",
+      "entity": "Ajuntament de Sarroca de Lleida",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22474582"
+    },
+    {
+      "id": "CIDO7-22474210",
+      "title": "1 plaça de Tècnic auxiliar de música-instrument, especialitat guitarra per a l'escola municipal de música",
+      "entity": "Ajuntament d'Almacelles",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22474210"
+    },
+    {
+      "id": "CIDO7-22474119",
+      "title": "1 plaça de Tècnic auxiliar de música-instrument, especialitat bateria per a l'escola municipal de música",
+      "entity": "Ajuntament d'Almacelles",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22474119"
+    },
     {
       "id": "CIDO7-22459892",
       "title": "1 plaça de Tècnic en gestió econòmica",
