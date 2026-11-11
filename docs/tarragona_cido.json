@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-11T06:40:44.571156+00:00",
+  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 93,
-    "opportunities": 93,
+    "announcementsRead": 97,
+    "opportunities": 97,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-13",
@@ -47,15 +48,64 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-11"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 93,
-    "opportunities": 93
+    "announcementsRead": 97,
+    "opportunities": 97
   },
   "notices": [
+    {
+      "id": "CIDO8-22475831",
+      "title": "Borsa de treball de places de Tècnic de benestar social",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22475831"
+    },
+    {
+      "id": "CIDO8-22474616",
+      "title": "2 places d'Operari",
+      "entity": "Ajuntament de l'Aleixar",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22474616"
+    },
+    {
+      "id": "CIDO8-22474613",
+      "title": "1 plaça de Netejador",
+      "entity": "Ajuntament de l'Aleixar",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22474613"
+    },
+    {
+      "id": "CIDO8-22474607",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de l'Aleixar",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22474607"
+    },
+    {
+      "id": "CIDO8-13791629",
+      "title": "Bases generals reguladores dels processos de selecció",
+      "entity": "Diputació de Tarragona",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/13791629"
+    },
     {
       "id": "CIDO8-22469386",
       "title": "Borsa de treball de places de Docent de música, especialitat Cant",
@@ -265,16 +315,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16522604"
-    },
-    {
-      "id": "CIDO8-13791629",
-      "title": "Bases generals reguladores dels processos de selecció",
-      "entity": "Diputació de Tarragona",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/13791629"
     },
     {
       "id": "CIDO8-22445973",

@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-11T06:24:51.466377+00:00",
+  "lastCheckedUTC": "2026-11-11T09:28:26.464569+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "134",
-    "pagesVisited": 12,
-    "announcementsRead": 385,
-    "opportunities": 30
+    "bulletin": "135",
+    "pagesVisited": 13,
+    "announcementsRead": 418,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
@@ -27,7 +27,8 @@
       "131",
       "132",
       "133",
-      "134"
+      "134",
+      "135"
     ],
     "publicationDates": [
       "2026-10-14",
@@ -41,7 +42,8 @@
       "2026-11-02",
       "2026-11-04",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-13",
@@ -60,14 +62,23 @@
       "2026-11-05",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-10",
-      "2026-11-11"
+      "2026-11-10"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 385,
-    "opportunities": 30
+    "issuesRead": 13,
+    "announcementsRead": 418,
+    "opportunities": 31
   },
   "notices": [
+    {
+      "id": "LP-20261111-019",
+      "province": "Las Palmas (BOP)",
+      "title": "Aprobación de la Oferta de Empleo Público de personal funcionario y personal laboral",
+      "entity": "EXCMO. AYUNTAMIENTO DE ARUCAS",
+      "date": "11/11/2026",
+      "bulletin": "135",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/11-11-26/11-11-26.pdf"
+    },
     {
       "id": "LP-20261109-017",
       "province": "Las Palmas (BOP)",

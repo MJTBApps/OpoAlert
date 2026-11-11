@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-11T06:40:44.571156+00:00",
+  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 302,
-    "opportunities": 302,
+    "announcementsRead": 304,
+    "opportunities": 304,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 302,
-    "opportunities": 302
+    "announcementsRead": 304,
+    "opportunities": 304
   },
   "notices": [
     {
@@ -143,8 +143,38 @@
       "date": "11/11/2026",
       "bulletin": "CIDO",
       "province": "Barcelona",
-      "type": "Plaza / oposición",
+      "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21818790"
+    },
+    {
+      "id": "CIDO5-21818775",
+      "title": "1 plaça de Tècnic mitjà de gestió",
+      "entity": "Ajuntament de Vic - Xarxa de Serveis Urbans",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21818775"
+    },
+    {
+      "id": "CIDO5-21511059",
+      "title": "1 plaça d'Oficial 1a (paleta) de la brigada d'obres",
+      "entity": "Ajuntament de Vilanova del Camí",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21511059"
+    },
+    {
+      "id": "CIDO5-17031958",
+      "title": "1 plaça d'Enginyer",
+      "entity": "Ajuntament del Masnou",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/17031958"
     },
     {
       "id": "CIDO5-22469619",
@@ -995,16 +1025,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18464642"
-    },
-    {
-      "id": "CIDO5-17031958",
-      "title": "1 plaça d'Enginyer",
-      "entity": "Ajuntament del Masnou",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/17031958"
     },
     {
       "id": "CIDO5-16772071",

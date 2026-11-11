@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-11T06:40:44.571156+00:00",
+  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 72,
-    "opportunities": 72,
+    "announcementsRead": 74,
+    "opportunities": 74,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-14",
@@ -47,15 +48,44 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-11"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 72,
-    "opportunities": 72
+    "announcementsRead": 74,
+    "opportunities": 74
   },
   "notices": [
+    {
+      "id": "CIDO6-22473706",
+      "title": "Borsa de treball de places d'Operari d'obres i serveis",
+      "entity": "Ajuntament de Figueres",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22473706"
+    },
+    {
+      "id": "CIDO6-22445926",
+      "title": "6 places d'Agent de la policia local",
+      "entity": "Ajuntament de Lloret de Mar",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22445926"
+    },
+    {
+      "id": "CIDO6-22094691",
+      "title": "1 plaça d'Educador de la llar d'infants municipal",
+      "entity": "Ajuntament de Riudarenes",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22094691"
+    },
     {
       "id": "CIDO6-22468431",
       "title": "1 plaça de Tècnic d'urbanisme i obres",
@@ -285,16 +315,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16732228"
-    },
-    {
-      "id": "CIDO6-22445926",
-      "title": "6 places d'Agent de la policia local",
-      "entity": "Ajuntament de Lloret de Mar",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22445926"
     },
     {
       "id": "CIDO6-22445364",
