@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-10T12:52:18.697227+00:00",
+  "lastCheckedUTC": "2026-11-11T06:54:40.442946+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 21,
-    "announcementsRead": 1024,
-    "opportunities": 101,
+    "announcementsRead": 1082,
+    "opportunities": 104,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 1024,
-    "opportunities": 101,
+    "announcementsRead": 1082,
+    "opportunities": 104,
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -40,10 +39,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -63,7 +62,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -78,6 +78,36 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-217-09841",
+      "title": "Aprovació de les bases reguladores i la convocatòria del procés de selecció per a la creació d'una borsa de treball d'operari d'obres i serveis",
+      "entity": "AJUNTAMENT DE FIGUERES",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/217/202621709841.pdf"
+    },
+    {
+      "id": "GI-2026-217-09773",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu, mitjançant concurs oposició, per a l'ocupació d'una plaça d'educador/a llar infants, personal laboral fix, i borsa de treball",
+      "entity": "AJUNTAMENT DE RIUDARENES",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/217/202621709773.pdf"
+    },
+    {
+      "id": "GI-2026-217-09746",
+      "title": "Aprovació inicial del pressupost únic, les bases d'execució i la plantilla de personal per a l'any 2027",
+      "entity": "AJUNTAMENT DE FIGUERES",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/217/202621709746.pdf"
+    },
     {
       "id": "GI-2026-216-09787",
       "title": "Aprovació de la modificació de la base segona de les bases reguladores i la convocatòria per a la provisió en propietat de dues places de peó de serveis generals agutzil, en règim laboral a temps complet, pel sistema d'oposició, vacants a la plantilla de personal de l'Ajuntament d'Agullana, i obertura d'un nou termini de presentació de sol·licituds",
