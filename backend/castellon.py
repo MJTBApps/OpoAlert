@@ -9,22 +9,23 @@ from provincial_common import (ProvincialCoverageError, VerifiedIssue, classify,
 
 
 # Desde el 10/11 la web enlaza cada anuncio con un codigo opaco
-# (/api/descargarAnuncio/es/JLipjOp2iO). El PDF se llama con el numero oficial
-# del edicto (04722-2026-es.pdf), que es el que se usa como identificador.
-NEW_LINK = re.compile(r"/PortalBOP/api/descargarAnuncio/[a-z]{2}/[A-Za-z0-9]{4,40}$")
-EDICT_FILE = re.compile(r"filename=\"?(\d{3,6})-(\d{4})-[a-z]{2}\.pdf", re.I)
+# (/api/descargarAnuncio/es/JLipjOp2iO). No vale el numero de edicto del nombre
+# del PDF: la web lo repite en anuncios distintos (BOP 130, 04665-2026). El
+# identificador es el propio codigo leido en base 62: unico, estable y numerico,
+# como exige el patron CS-\d+ de la app.
+NEW_LINK = re.compile(r"/PortalBOP/api/descargarAnuncio/[a-z]{2}/([A-Za-z0-9]{4,40})$")
+BASE62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
 
-def edict_id(disposition: str) -> str:
-    match = EDICT_FILE.search(disposition or "")
-    if not match:
-        raise ProvincialCoverageError(f"Castellon: PDF sin numero de edicto ({disposition})")
-    return f"CS-{match.group(2)}{int(match.group(1)):05d}"
+def code_id(code: str) -> str:
+    value = 0
+    for char in code:
+        value = value * 62 + BASE62.index(char)
+    return f"CS-{value}"
 
 
 def parse_issue(html: str, expected_date: str | None = None,
-                expected_number: str | None = None,
-                disposition_of=None) -> VerifiedIssue:
+                expected_number: str | None = None) -> VerifiedIssue:
     soup = BeautifulSoup(html, "html.parser")
     form = soup.select_one('form[id="busquedaBoletinesForm"]')
     if form is None:
@@ -81,9 +82,7 @@ def parse_issue(html: str, expected_date: str | None = None,
                 raise ProvincialCoverageError("Castellon: falta ID oficial del anuncio")
             unique_id = "CS-" + ids[0]
         else:
-            if disposition_of is None:
-                raise ProvincialCoverageError("Castellon: enlace nuevo sin forma de leer el edicto")
-            unique_id = edict_id(disposition_of(pdf))
+            unique_id = code_id(NEW_LINK.search(urlsplit(pdf).path).group(1))
         if unique_id in all_ids:
             raise ProvincialCoverageError("Castellon: PDF repetido en sumario")
         all_ids.add(unique_id)
