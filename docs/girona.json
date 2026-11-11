@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-10T16:29:03.559580+00:00",
+  "lastCheckedUTC": "2026-11-11T06:40:44.571156+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 75,
-    "opportunities": 75,
+    "announcementsRead": 72,
+    "opportunities": 72,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "publicationDates": [
       "2026-10-13",
       "2026-10-16",
@@ -27,7 +27,6 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -38,22 +37,23 @@
       "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-12",
       "2026-10-14",
       "2026-10-15",
       "2026-10-17",
       "2026-10-18",
       "2026-10-19",
       "2026-10-25",
+      "2026-10-29",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-11"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 75,
-    "opportunities": 75
+    "announcementsRead": 72,
+    "opportunities": 72
   },
   "notices": [
     {
@@ -387,16 +387,6 @@
       "url": "https://cido.diba.cat/oposicions/21398728"
     },
     {
-      "id": "CIDO6-22428753",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament de Sant Pau de Segúries",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22428753"
-    },
-    {
       "id": "CIDO6-21589781",
       "title": "1 plaça de Tècnic superior econòmic",
       "entity": "Ajuntament de l'Escala",
@@ -515,26 +505,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22373973"
-    },
-    {
-      "id": "CIDO6-22410418",
-      "title": "1 plaça de Monitor - Socorrista del Servei d'Esports",
-      "entity": "Ajuntament de Ripoll",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22410418"
-    },
-    {
-      "id": "CIDO6-22410375",
-      "title": "1 plaça de Conserge - Operari del Servei d'Esports",
-      "entity": "Ajuntament de Ripoll",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22410375"
     },
     {
       "id": "CIDO6-22394715",

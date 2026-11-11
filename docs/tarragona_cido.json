@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-10T16:29:03.559580+00:00",
+  "lastCheckedUTC": "2026-11-11T06:40:44.571156+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -14,8 +14,8 @@
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "publicationDates": [
       "2026-10-14",
       "2026-10-15",
@@ -38,7 +38,6 @@
       "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-17",
       "2026-10-18",
@@ -48,7 +47,8 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-11"
     ],
     "bulletins": [],
     "issuesRead": 0,
