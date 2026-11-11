@@ -4,9 +4,11 @@ Aplicación nativa Android que busca convocatorias de empleo público,
 bolsas y oposiciones en boletines oficiales y catálogos públicos.
 Proyecto gratuito e independiente de las Administraciones públicas.
 
-## Descargar Android
+## Descargar
 
-Página pública y última APK: https://mjtbapps.github.io/OpoAlert/
+iPhone (App Store): https://apps.apple.com/es/app/opoalert-oposiciones-y-empleo/id6831053083
+
+Android: página pública y última APK: https://mjtbapps.github.io/OpoAlert/
 
 La app avisa cuando hay una APK nueva. Las fuentes nuevas aparecen sin
 instalar otra APK cuando la app ya las conoce: la lista de fuentes activas
