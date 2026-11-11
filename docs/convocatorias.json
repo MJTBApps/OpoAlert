@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-10T16:25:55.219622+00:00",
+  "lastCheckedUTC": "2026-11-11T06:35:56.444886+00:00",
   "coverage": {
-    "bulletin": "216",
-    "pagesVisited": 4,
-    "announcementsRead": 78,
+    "bulletin": "217",
+    "pagesVisited": 3,
+    "announcementsRead": 62,
     "opportunities": 3,
     "complete": true,
     "status": "paginator_last_page",
@@ -13,6 +13,33 @@
   },
   "countNewBulletin": 3,
   "notices": [
+    {
+      "id": "2026/13819",
+      "title": "Anuncio de la Diputación Provincial de Valencia sobre la designación de miembros del órgano técnico de selección del concurso-oposición libre de dos plazas de profesor/a de secundaria, especialidad ingeniería agrónoma. Convocatoria 06/26.",
+      "entity": "la Diputación Provincial de Valencia",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13819&lang=es"
+    },
+    {
+      "id": "2026/13810",
+      "title": "Anuncio de la Diputación Provincial de Valencia sobre la aprobación de las bases de la convocatoria de la oposición libre para la selección de tres plazas de técnico/a medio/a de artes plásticas, incluidas en las ofertas de empleo público de los años 2023 y 2024. Convocatoria 33/24.",
+      "entity": "la Diputación Provincial de Valencia",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13810&lang=es"
+    },
+    {
+      "id": "2026/13669",
+      "title": "Anuncio del Ayuntamiento de Alzira sobre la aprobación de las bases que regirán el proceso selectivo de una plaza de director/a de biblioteca municipal, subgrupo A1, convocatoria 22/2026.",
+      "entity": "Ayuntamiento de Alzira",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13669&lang=es"
+    },
     {
       "id": "2026/13589",
       "title": "Anuncio del Ayuntamiento de Meliana sobre la convocatoria y las bases específicas que regirán el procedimiento para la cobertura en propiedad de dos plazas de oficial de la Policía Local, puestos 024.SEG y 127.SEG, por promoción interna ordinaria, correspondientes a la oferta de empleo público de 2023 y de 2025.",
@@ -674,13 +701,12 @@
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
-    "pagesVisited": 57,
-    "announcementsRead": 1358,
-    "opportunities": 73,
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
+    "pagesVisited": 59,
+    "announcementsRead": 1419,
+    "opportunities": 76,
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -701,28 +727,29 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-10T16:25:55.219634+00:00",
+    "verifiedUTC": "2026-11-11T06:35:56.444899+00:00",
     "chunks": [
       {
-        "start": "2026-10-12",
+        "start": "2026-10-13",
         "end": "2026-10-16",
-        "requestedStart": "2026-10-12",
-        "requestedEnd": "2026-10-16",
+        "requestedStart": "2026-10-13",
+        "requestedEnd": "2026-10-17",
         "publishedDates": [
-          "2026-10-12",
           "2026-10-13",
           "2026-10-14",
           "2026-10-15",
           "2026-10-16"
         ],
-        "nonPublicationDates": [],
+        "nonPublicationDates": [
+          "2026-10-17"
+        ],
         "pagesVisited": 13,
-        "announcementsRead": 313,
+        "announcementsRead": 312,
         "bulletins": [
-          "195",
           "196",
           "197",
           "198",
@@ -733,124 +760,124 @@
       },
       {
         "start": "2026-10-19",
-        "end": "2026-10-21",
-        "requestedStart": "2026-10-17",
-        "requestedEnd": "2026-10-21",
+        "end": "2026-10-22",
+        "requestedStart": "2026-10-18",
+        "requestedEnd": "2026-10-22",
         "publishedDates": [
           "2026-10-19",
           "2026-10-20",
-          "2026-10-21"
+          "2026-10-21",
+          "2026-10-22"
         ],
         "nonPublicationDates": [
-          "2026-10-17",
           "2026-10-18"
         ],
-        "pagesVisited": 9,
-        "announcementsRead": 220,
+        "pagesVisited": 11,
+        "announcementsRead": 262,
         "bulletins": [
           "200",
           "201",
-          "202"
+          "202",
+          "203"
         ],
-        "opportunities": 5,
+        "opportunities": 9,
         "complete": true
       },
       {
-        "start": "2026-10-22",
-        "end": "2026-10-26",
-        "requestedStart": "2026-10-22",
-        "requestedEnd": "2026-10-26",
+        "start": "2026-10-23",
+        "end": "2026-10-27",
+        "requestedStart": "2026-10-23",
+        "requestedEnd": "2026-10-27",
         "publishedDates": [
-          "2026-10-22",
           "2026-10-23",
-          "2026-10-26"
+          "2026-10-26",
+          "2026-10-27"
         ],
         "nonPublicationDates": [
           "2026-10-24",
           "2026-10-25"
         ],
-        "pagesVisited": 6,
-        "announcementsRead": 148,
+        "pagesVisited": 7,
+        "announcementsRead": 172,
         "bulletins": [
-          "203",
           "204",
-          "205"
+          "205",
+          "206"
         ],
         "opportunities": 13,
         "complete": true
       },
       {
-        "start": "2026-10-27",
+        "start": "2026-10-28",
         "end": "2026-10-30",
-        "requestedStart": "2026-10-27",
-        "requestedEnd": "2026-10-31",
+        "requestedStart": "2026-10-28",
+        "requestedEnd": "2026-11-01",
         "publishedDates": [
-          "2026-10-27",
           "2026-10-28",
           "2026-10-29",
           "2026-10-30"
         ],
         "nonPublicationDates": [
-          "2026-10-31"
+          "2026-10-31",
+          "2026-11-01"
         ],
-        "pagesVisited": 10,
-        "announcementsRead": 228,
+        "pagesVisited": 7,
+        "announcementsRead": 162,
         "bulletins": [
-          "206",
           "207",
           "208",
           "209"
         ],
-        "opportunities": 16,
+        "opportunities": 12,
         "complete": true
       },
       {
         "start": "2026-11-02",
-        "end": "2026-11-05",
-        "requestedStart": "2026-11-01",
-        "requestedEnd": "2026-11-05",
+        "end": "2026-11-06",
+        "requestedStart": "2026-11-02",
+        "requestedEnd": "2026-11-06",
         "publishedDates": [
           "2026-11-02",
           "2026-11-03",
           "2026-11-04",
-          "2026-11-05"
+          "2026-11-05",
+          "2026-11-06"
         ],
-        "nonPublicationDates": [
-          "2026-11-01"
-        ],
-        "pagesVisited": 11,
-        "announcementsRead": 256,
+        "nonPublicationDates": [],
+        "pagesVisited": 13,
+        "announcementsRead": 316,
         "bulletins": [
           "210",
           "211",
           "212",
-          "213"
+          "213",
+          "214"
         ],
-        "opportunities": 14,
+        "opportunities": 15,
         "complete": true
       },
       {
-        "start": "2026-11-06",
-        "end": "2026-11-10",
-        "requestedStart": "2026-11-06",
-        "requestedEnd": "2026-11-10",
+        "start": "2026-11-09",
+        "end": "2026-11-11",
+        "requestedStart": "2026-11-07",
+        "requestedEnd": "2026-11-11",
         "publishedDates": [
-          "2026-11-06",
           "2026-11-09",
-          "2026-11-10"
+          "2026-11-10",
+          "2026-11-11"
         ],
         "nonPublicationDates": [
           "2026-11-07",
           "2026-11-08"
         ],
         "pagesVisited": 8,
-        "announcementsRead": 193,
+        "announcementsRead": 195,
         "bulletins": [
-          "214",
           "215",
-          "216"
+          "216",
+          "217"
         ],
-        "opportunities": 9,
+        "opportunities": 11,
         "complete": true
       }
     ]
