@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
+  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -85,6 +85,16 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22474119"
+    },
+    {
+      "id": "CIDO7-22437600",
+      "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
+      "entity": "Ajuntament de Vilagrassa",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22437600"
     },
     {
       "id": "CIDO7-22459892",
@@ -205,16 +215,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22447017"
-    },
-    {
-      "id": "CIDO7-22437600",
-      "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
-      "entity": "Ajuntament de Vilagrassa",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22437600"
     },
     {
       "id": "CIDO7-22437523",

@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
+  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 74,
-    "opportunities": 74,
+    "announcementsRead": 76,
+    "opportunities": 76,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,30 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 74,
-    "opportunities": 74
+    "announcementsRead": 76,
+    "opportunities": 76
   },
   "notices": [
+    {
+      "id": "CIDO6-22476331",
+      "title": "2 places d'Administratiu",
+      "entity": "Ajuntament de Salt",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22476331"
+    },
+    {
+      "id": "CIDO6-22476326",
+      "title": "2 places de Tècnic de gestió administració general",
+      "entity": "Ajuntament de Salt",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22476326"
+    },
     {
       "id": "CIDO6-22473706",
       "title": "Borsa de treball de places d'Operari d'obres i serveis",

@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-11T09:37:51.515566+00:00",
+  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 97,
-    "opportunities": 97,
+    "announcementsRead": 101,
+    "opportunities": 101,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -19,7 +19,6 @@
     "publicationDates": [
       "2026-10-14",
       "2026-10-15",
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-22",
@@ -40,6 +39,7 @@
     ],
     "nonPublicationDates": [
       "2026-10-13",
+      "2026-10-16",
       "2026-10-17",
       "2026-10-18",
       "2026-10-21",
@@ -52,10 +52,30 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 97,
-    "opportunities": 97
+    "announcementsRead": 101,
+    "opportunities": 101
   },
   "notices": [
+    {
+      "id": "CIDO8-22476397",
+      "title": "1 plaça de Peó",
+      "entity": "Ajuntament de Vilalba dels Arcs",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22476397"
+    },
+    {
+      "id": "CIDO8-22476187",
+      "title": "Borsa de treball de places d'Oficial de serveis",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22476187"
+    },
     {
       "id": "CIDO8-22475831",
       "title": "Borsa de treball de places de Tècnic de benestar social",
@@ -95,6 +115,36 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22474607"
+    },
+    {
+      "id": "CIDO8-22474592",
+      "title": "1 plaça d'Operari de serveis múltiples",
+      "entity": "Ajuntament de Rocafort de Queralt",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22474592"
+    },
+    {
+      "id": "CIDO8-19272377",
+      "title": "1 plaça de Tècnic mitjà d'administració general",
+      "entity": "Ajuntament de Salou",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19272377"
+    },
+    {
+      "id": "CIDO8-15229734",
+      "title": "1 plaça de Tècnic mitjà de gestió local",
+      "entity": "Ajuntament de Tarragona - Institut Municipal de Serveis Socials",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/15229734"
     },
     {
       "id": "CIDO8-13791629",
@@ -975,16 +1025,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20888930"
-    },
-    {
-      "id": "CIDO8-19272377",
-      "title": "1 plaça de Tècnic mitjà d'administració general",
-      "entity": "Ajuntament de Salou",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19272377"
     },
     {
       "id": "CIDO8-22335041",
