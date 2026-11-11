@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-10T16:26:24.293031+00:00",
+  "lastCheckedUTC": "2026-11-11T06:24:51.466377+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "134",
-    "pagesVisited": 13,
-    "announcementsRead": 410,
-    "opportunities": 33
+    "pagesVisited": 12,
+    "announcementsRead": 385,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "122",
       "123",
       "124",
       "125",
@@ -31,7 +30,6 @@
       "134"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-14",
       "2026-10-16",
       "2026-10-19",
@@ -62,11 +60,12 @@
       "2026-11-05",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 410,
-    "opportunities": 33
+    "issuesRead": 12,
+    "announcementsRead": 385,
+    "opportunities": 30
   },
   "notices": [
     {
@@ -368,36 +367,6 @@
       "bulletin": "124",
       "type": "Plaza / oposición",
       "url": "https://www.boplaspalmas.net/boletines/2026/16-10-26/16-10-26.pdf"
-    },
-    {
-      "id": "LP-20261012-010",
-      "province": "Las Palmas (BOP)",
-      "title": "Rectificación de la Base 5ª, apartado 6, de las Bases de 1 plaza de Técnico de Gestión Económica",
-      "entity": "CONSORCIO DE SEGURIDAD, EMERGENCIAS, SALVAMENTO, PREVENCIÓN Y EXTINCIÓN DE INCENDIOS DE LANZAROTE",
-      "date": "12/10/2026",
-      "bulletin": "122",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/12-10-26/12-10-26.pdf"
-    },
-    {
-      "id": "LP-20261012-009",
-      "province": "Las Palmas (BOP)",
-      "title": "Rectificación de la Base 5ª, apartado 6, de las Bases de 4 plazas de Administrativa/Administrativo",
-      "entity": "CONSORCIO DE SEGURIDAD, EMERGENCIAS, SALVAMENTO, PREVENCIÓN Y EXTINCIÓN DE INCENDIOS DE LANZAROTE",
-      "date": "12/10/2026",
-      "bulletin": "122",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/12-10-26/12-10-26.pdf"
-    },
-    {
-      "id": "LP-20261012-007",
-      "province": "Las Palmas (BOP)",
-      "title": "Rectificación de las bases específicas de 2 plazas de Técnico/a Medio, así como la configuración de la lista de reserva, incluida en la OEP 2023",
-      "entity": "EXCMO. CABILDO INSULAR DE FUERTEVENTURA",
-      "date": "12/10/2026",
-      "bulletin": "122",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/12-10-26/12-10-26.pdf"
     }
   ]
 }

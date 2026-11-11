@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-10T16:22:53.249363+00:00",
+  "lastCheckedUTC": "2026-11-11T06:22:17.345988+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 22,
-    "announcementsRead": 784,
-    "opportunities": 57
+    "announcementsRead": 830,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -37,10 +36,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -61,7 +60,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -74,10 +74,30 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 784,
-    "opportunities": 57
+    "announcementsRead": 830,
+    "opportunities": 59
   },
   "notices": [
+    {
+      "id": "BI-2026-II-5843",
+      "province": "Bizkaia",
+      "title": "Concurso de méritos específicos para la provisión del puesto de Responsable del Ärea de Personal.",
+      "entity": "Ayuntamiento de Sestao",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/11/II-5843_cas.pdf"
+    },
+    {
+      "id": "BI-2026-II-5831",
+      "province": "Bizkaia",
+      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la adjudicación definitiva del concurso específico para proveer, con carácter definitivo, diversas dotaciones de los puestos jefatura del grupo A, subgrupo A-1, adscritos al Área de Salud y Consumo.",
+      "entity": "Ayuntamiento de Bedia",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/11/II-5831_cas.pdf"
+    },
     {
       "id": "BI-2026-II-5804",
       "province": "Bizkaia",

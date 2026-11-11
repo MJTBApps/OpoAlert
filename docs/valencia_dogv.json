@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-10T16:24:46.183607+00:00",
+  "lastCheckedUTC": "2026-11-11T06:23:56.344846+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "10490B",
-    "pagesVisited": 33,
-    "announcementsRead": 1103,
-    "opportunities": 267
+    "bulletin": "10491",
+    "pagesVisited": 35,
+    "announcementsRead": 1162,
+    "opportunities": 279
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
       "10469",
       "10470",
@@ -48,7 +48,9 @@
       "10488",
       "10489",
       "10490",
-      "10490B"
+      "10490B",
+      "10490T",
+      "10491"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -83,10 +85,11 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
-      "2026-10-12",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -95,11 +98,131 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 33,
-    "announcementsRead": 1103,
-    "opportunities": 267
+    "issuesRead": 35,
+    "announcementsRead": 1162,
+    "opportunities": 279
   },
   "notices": [
+    {
+      "id": "DV-2026-34991",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 5 de noviembre de 2026, por la que se publica la relación definitiva de personas que han superado las pruebas selectivas de acceso al cuerpo superior de intervención y auditoría de la Generalitat, A1-03, cuerpo especial, por el sistema de oposición, turno libre, convocatoria 4/25, correspondientes a la oferta pública de empleo de 2025 para la Administración de la Generalitat.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34991_es.pdf"
+    },
+    {
+      "id": "DV-2026-34969",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026, de la Presidencia, por la que se determina la composición nominal de las comisiones de selección correspondientes a diversas convocatorias de concurso-oposición (CO/26/24, CO/33/24 y CO/34/24), convocadas por la Resolución 4 de abril de 2025 (DOGV 10100, 05.05.2025).",
+      "entity": "Consorcio Hospital General Universitario de València",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34969_es.pdf"
+    },
+    {
+      "id": "DV-2026-34898",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 26 de octubre de 2026, por la que se provee, por el sistema de libre designación, los puestos de trabajo de naturaleza funcionarial anunciados en la convocatoria número 138/2026, de 16 de septiembre de 2026.",
+      "entity": "Conselleria de Emergencias e Interior",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34898_es.pdf"
+    },
+    {
+      "id": "DV-2026-34761",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026, por la que se convoca un concurso público para la constitución de bolsas de empleo temporal de profesorado sustituto (C14/26) (2026/D/LD/CCB/4).",
+      "entity": "Universitat Politècnica de València",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Bolsa de trabajo",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34761_es.pdf"
+    },
+    {
+      "id": "DV-2026-34714",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 3 de noviembre 2026, del Vicerrectorado de Investigación, por la que se convoca un proceso selectivo para una plaza de personal investigador predoctoral en formación (proyectos) para colaborar en el proyecto de investigación «26I374 Aprendizaje pretexto para arquitecturas profundas avanzadas en problemas de imágenes con datos limitados». Grupo de investigación: Ingeniería Visual.",
+      "entity": "Universitat Jaume I de Castelló",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34714_es.pdf"
+    },
+    {
+      "id": "DV-2026-34709",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 3 de noviembre de 2026, del Vicerrectorado de Investigación, por la que se convoca un proceso selectivo para una plaza de personal tecnólogo o gestor superior para colaborar en el proyecto de investigación «26I473 Terapias avanzadas en oncología». Grupo de investigación: Cirugía Oncológica.",
+      "entity": "Universitat Jaume I de Castelló",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34709_es.pdf"
+    },
+    {
+      "id": "DV-2026-34706",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 3 de noviembre de 2026, de la Gerencia, por la que se convoca un concurso para la provisión de un puesto de trabajo de la escala técnica básica de laboratorios en el Departamento de Educación y Didácticas Específicas.",
+      "entity": "Universitat Jaume I de Castelló",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34706_es.pdf"
+    },
+    {
+      "id": "DV-2026-34705",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 3 de noviembre de 2026, de la Gerencia, por la que se convoca un concurso para la provisión del puesto de trabajo número 10644, de jefe o jefa de sección del Servicio de Recursos Humanos.",
+      "entity": "Universitat Jaume I de Castelló",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34705_es.pdf"
+    },
+    {
+      "id": "DV-2026-34703",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 3 de noviembre de 2026, de la Gerencia, por la que se convoca un concurso para la provisión del puesto de trabajo número 10356, de jefe o jefa de sección del Servicio de Contratación y Asuntos Generales.",
+      "entity": "Universitat Jaume I de Castelló",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34703_es.pdf"
+    },
+    {
+      "id": "DV-2026-33164",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de las bases específicas de la convocatoria para la provisión en propiedad de varias plazas de técnico o técnica superiores en educación infantil mediante oposición y cocinero o cocinera mediante concurso-oposición.",
+      "entity": "Patronato Municipal de Educación Infantil",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_33164_es.pdf"
+    },
+    {
+      "id": "DV-2026-33073",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de las bases de la convocatoria para la provisión en propiedad, mediante concurso-oposición, por promoción interna, de dos plazas de administrativo o administrativa y una plaza de técnico o técnica de administración general, vacantes en la plantilla de personal funcionario.",
+      "entity": "Ayuntamiento de Daimús",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_33073_es.pdf"
+    },
+    {
+      "id": "DV-2026-33061",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de la convocatoria de concurso-oposición para la provisión de una plaza de técnico o técnica de gestión administrativa de secretaría, por promoción interna.",
+      "entity": "Ayuntamiento de Almoradí",
+      "date": "11/11/2026",
+      "bulletin": "10491",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/11/pdf/2026_33061_es.pdf"
+    },
     {
       "id": "DV-2026-34244",
       "province": "Comunidad Valenciana (DOGV)",

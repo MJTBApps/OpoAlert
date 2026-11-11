@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-10T16:29:27.263918+00:00",
+  "lastCheckedUTC": "2026-11-11T06:27:08.450781+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "135",
+    "bulletin": "136",
     "pagesVisited": 14,
-    "announcementsRead": 576,
-    "opportunities": 28
+    "announcementsRead": 591,
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "122",
       "123",
       "124",
       "125",
@@ -29,10 +28,10 @@
       "132",
       "133",
       "134",
-      "135"
+      "135",
+      "136"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-14",
       "2026-10-16",
       "2026-10-19",
@@ -45,7 +44,8 @@
       "2026-11-04",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-13",
@@ -66,10 +66,30 @@
       "2026-11-08"
     ],
     "issuesRead": 14,
-    "announcementsRead": 576,
-    "opportunities": 28
+    "announcementsRead": 591,
+    "opportunities": 29
   },
   "notices": [
+    {
+      "id": "TF-20261111-039",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la aprobación de la tasa especifica de Oferta de Empleo Público para plazas afectadas por jubilación parcial para el año 2026 de la Empresa Pública de Servicios del Ayuntamiento de Los Realejos, S.L. (Realserv)",
+      "entity": "AYUNTAMIENTO DE VILLA DE LOS REALEJOS",
+      "date": "11/11/2026",
+      "bulletin": "136",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/11-11-26/11-11-26.pdf"
+    },
+    {
+      "id": "TF-20261111-005",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la convocatoria pública y las Bases para la cobertura, como funcionario de carrera, mediante el sistema de concurso oposición, de cinco (5) plazas de Técnico/a de Relaciones Laborales en ejecución de las Ofertas de Empleo Público de la Corporación Insular de 2024 y 2026",
+      "entity": "CABILDO INSULAR DE TENERIFE",
+      "date": "11/11/2026",
+      "bulletin": "136",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/11-11-26/11-11-26.pdf"
+    },
     {
       "id": "TF-20261109-040",
       "province": "Santa Cruz de Tenerife (BOP)",
@@ -339,16 +359,6 @@
       "bulletin": "123",
       "type": "Plaza / oposición",
       "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/14-10-26/14-10-26.pdf"
-    },
-    {
-      "id": "TF-20261012-004",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a la rectificación de la Base sexta de diversas convocatorias públicas para la cobertura, como funcionario/a de carrera, por el turno de acceso libre, en ejecución de las Ofertas de Empleo Público de la Corporación Insular de 2024 y 2026",
-      "entity": "CABILDO INSULAR DE TENERIFE",
-      "date": "12/10/2026",
-      "bulletin": "122",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/12-10-26/12-10-26.pdf"
     }
   ]
 }

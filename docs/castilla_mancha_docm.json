@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-09T16:35:51.308360+00:00",
+  "lastCheckedUTC": "2026-11-11T06:24:15.149758+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "214",
-    "pagesVisited": 21,
-    "announcementsRead": 673,
-    "opportunities": 34
+    "bulletin": "216",
+    "pagesVisited": 23,
+    "announcementsRead": 744,
+    "opportunities": 39
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
       "196",
       "197",
@@ -36,7 +36,9 @@
       "212",
       "213",
       "3E",
-      "214"
+      "214",
+      "215",
+      "216"
     ],
     "publicationDates": [
       "2026-10-13",
@@ -59,11 +61,11 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
-      "2026-10-12",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -73,11 +75,61 @@
       "2026-11-02",
       "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 673,
-    "opportunities": 34
+    "issuesRead": 23,
+    "announcementsRead": 744,
+    "opportunities": 39
   },
   "notices": [
+    {
+      "id": "CM-2026-7985",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Anuncio de 03/11/2026 , del Ayuntamiento de Villalba del Rey (Cuenca), sobre aprobación de la Oferta de Empleo Público correspondiente a la plaza de auxiliar administrativo. [NID 2026/7985]",
+      "entity": "Ayuntamiento de Villalba del Rey (Cuenca)",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7985.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-7974",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Bolsa de Trabajo. Resolución de 29/10/2026 , de la Dirección General de Autónomos, Trabajo y Economía Social, por la que se acepta el depósito y se dispone la publicación del acuerdo por el que se modifica el Pacto sobre Selección de Personal Temporal del Servicio de Salud de Castilla-La Mancha (Sescam). [NID 2026/7974]",
+      "entity": "Consejería de Economía, Empresas y Empleo",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7974.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-7600",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Anuncio de 16/10/2026 , del Ayuntamiento de Osa de la Vega (Cuenca), sobre aprobación de la Oferta de Empleo Público correspondiente a la plaza de encargado de instalaciones deportivas. [NID 2026/7600]",
+      "entity": "Ayuntamiento de Osa de la Vega (Cuenca)",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7600.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-7984",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Anuncio de 09/10/2026 , de la Real Academia de Bellas Artes y Ciencias Históricas de Toledo, de convocatoria de plaza vacante de académico numerario. [NID 2026/7984]",
+      "entity": "Consejería de Educación, Cultura y Deportes",
+      "date": "10/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/10/pdf/2026_7984.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-7924",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Anuncio de 30/10/2026 , del Ayuntamiento de Torrenueva (Ciudad Real), sobre aprobación de la Oferta de Empleo Público para el año 2026 correspondiente a una plaza de administrativo. [NID 2026/7924]",
+      "entity": "Ayuntamiento de Torrenueva (Ciudad Real)",
+      "date": "10/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/10/pdf/2026_7924.pdf&tipo=rutaDocm"
+    },
     {
       "id": "CM-2026-7927",
       "province": "Castilla-La Mancha (DOCM)",

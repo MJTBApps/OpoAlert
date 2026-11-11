@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-10T16:28:37.903381+00:00",
+  "lastCheckedUTC": "2026-11-11T06:26:29.391578+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "215",
     "pagesVisited": 21,
-    "announcementsRead": 366,
+    "announcementsRead": 352,
     "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
       "195",
       "196",
@@ -62,7 +62,6 @@
       "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-12",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -70,10 +69,11 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-11"
     ],
     "issuesRead": 21,
-    "announcementsRead": 366,
+    "announcementsRead": 352,
     "opportunities": 40
   },
   "notices": [

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-10T16:23:20.683815+00:00",
+  "lastCheckedUTC": "2026-11-11T06:22:34.648250+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 22,
-    "announcementsRead": 382,
-    "opportunities": 26
+    "announcementsRead": 393,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -37,10 +36,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -61,7 +60,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -74,10 +74,100 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 382,
-    "opportunities": 26
+    "announcementsRead": 393,
+    "opportunities": 35
   },
   "notices": [
+    {
+      "id": "CR-2026-3664",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema general de acceso libre, de dos plazas de Economista.",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878013"
+    },
+    {
+      "id": "CR-2026-3663",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema de promoción interna, de dos plazas de Mecánico-Conductor.",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878012"
+    },
+    {
+      "id": "CR-2026-3662",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema de promoción interna, de una plaza de Técnico/a Medio/a (en Competencias Digitales).",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878011"
+    },
+    {
+      "id": "CR-2026-3661",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema de promoción interna, de una (1) plaza de Técnico/a Superior de Informática (Analista de Desarrollo de Aplicaciones de RRHH)",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878010"
+    },
+    {
+      "id": "CR-2026-3660",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante concurso-oposición y sistema de promoción interna directa en el puesto, de una plaza de Técnico/a Superior de Informática (Analista de desarrollo web externas y redes sociales)",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878009"
+    },
+    {
+      "id": "CR-2026-3659",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cubrir, por concurso-oposición y sistema de promoción interna, de cuatro plazas de Técnico/a Superior de Informática (Analista de Aplicaciones de Admón. Electrónica)",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878008"
+    },
+    {
+      "id": "CR-2026-3658",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema de promoción interna, de una plaza de Arquitecto/a Superior.",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878007"
+    },
+    {
+      "id": "CR-2026-3657",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema de promoción interna, de una plaza de Ingeniero/a de Caminos, Canales y Puertos.",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878006"
+    },
+    {
+      "id": "CR-2026-3656",
+      "province": "Ciudad Real",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura, mediante procedimiento de concurso-oposición y sistema de promoción interna, de cuatro plazas de Encargado/a de Imprenta.",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878005"
+    },
     {
       "id": "CR-2026-3642",
       "province": "Ciudad Real",

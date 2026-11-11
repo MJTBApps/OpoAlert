@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-10T16:22:45.223805+00:00",
+  "lastCheckedUTC": "2026-11-11T06:22:01.255864+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
+    "bulletin": "216",
     "pagesVisited": 22,
-    "announcementsRead": 730,
-    "opportunities": 61
+    "announcementsRead": 771,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "194",
       "195",
       "196",
       "197",
@@ -37,10 +36,10 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -61,7 +60,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -74,10 +74,20 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 730,
-    "opportunities": 61
+    "announcementsRead": 771,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "AC-2026-7281",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases reguladoras das bolsas de comedor escolar baseadas na renda familiar para o curso 2026/2027",
+      "entity": "Alcaldía",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/11/2026_0000007281.pdf"
+    },
     {
       "id": "AC-2026-7249",
       "province": "A Coruña",

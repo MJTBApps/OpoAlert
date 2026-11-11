@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-10T12:12:48.984425+00:00",
+  "lastCheckedUTC": "2026-11-11T06:24:56.358216+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 21,
-    "announcementsRead": 280,
-    "opportunities": 45
+    "announcementsRead": 285,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -36,10 +35,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -59,7 +58,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,10 +73,9 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 280,
-    "opportunities": 45,
+    "announcementsRead": 285,
+    "opportunities": 47,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_196_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_197_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_198_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_199_2026.pdf",
@@ -96,10 +95,31 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_213_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_214_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_215_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_216_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_216_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_217_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-383498",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para la provisión en propiedad de una plaza de Técnico Medio de Gestión Económica, Contratación y Personal",
+      "entity": "Ayuntamiento de El Campillo",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_383498_BOP-217_2026.pdf"
+    },
+    {
+      "id": "HB-2026-382823",
+      "province": "Huelva",
+      "title": "Resolución de rectificación de errores materiales de las Bases de la convocatoria para la provisión de una plaza de Adjunto Técnico Coordinador de Deporte y seis plazas de Peón de Servicios Múltiples. OEP 2025",
+      "entity": "Ayuntamiento de Hinojos",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382823_BOP-217_2026.pdf"
+    },
     {
       "id": "HB-2026-385046",
       "province": "Huelva",

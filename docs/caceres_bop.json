@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-10T16:31:48.876284+00:00",
+  "lastCheckedUTC": "2026-11-11T06:22:41.196564+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
+    "bulletin": "216",
     "pagesVisited": 21,
-    "announcementsRead": 482,
-    "opportunities": 31
+    "announcementsRead": 527,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -36,10 +35,10 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -59,7 +58,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,10 +73,40 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 482,
-    "opportunities": 31
+    "announcementsRead": 527,
+    "opportunities": 34
   },
   "notices": [
+    {
+      "id": "CC-2026-5291",
+      "province": "Cáceres",
+      "title": "Bases que han de regir en el proceso selectivo para la selección y posterior contratación de 3 Técnico/a de Orientación y Prospección para el Desarrollo Local.",
+      "entity": "Ayuntamiento de Trujillo",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5291"
+    },
+    {
+      "id": "CC-2026-5274",
+      "province": "Cáceres",
+      "title": "Bases y convocatoria de una plaza de Auxiliar Administrativo mediante oposición, turno de acceso libre, correspondiente a la Oferta de Empleo 2026.",
+      "entity": "Ayuntamiento de Peraleda de la Mata",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5274"
+    },
+    {
+      "id": "CC-2026-5251",
+      "province": "Cáceres",
+      "title": "Activación de bolsa de trabajo temporal de Técnicos/as de Desarrollo Sostenible.",
+      "entity": "Diputación Provincial de Cáceres",
+      "date": "11/11/2026",
+      "bulletin": "216",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5251"
+    },
     {
       "id": "CC-2026-5236",
       "province": "Cáceres",

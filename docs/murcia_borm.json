@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-10T16:28:08.964323+00:00",
+  "lastCheckedUTC": "2026-11-11T06:26:42.807188+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "8E",
+    "bulletin": "261",
     "pagesVisited": 27,
-    "announcementsRead": 601,
-    "opportunities": 56
+    "announcementsRead": 632,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "2E",
       "236",
       "237",
       "238",
@@ -42,10 +41,10 @@
       "258",
       "259",
       "260",
-      "8E"
+      "8E",
+      "261"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -71,7 +70,8 @@
       "2026-11-07",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -80,10 +80,50 @@
       "2026-11-08"
     ],
     "issuesRead": 27,
-    "announcementsRead": 601,
-    "opportunities": 56
+    "announcementsRead": 632,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "MU-2026-5543",
+      "province": "Región de Murcia (BORM)",
+      "title": "Edicto de convocatoria para constitución de una bolsa de trabajo extraordinaria, mediante oposición libre de la categoría de Profesor de Percusión del Conservatorio Municipal.",
+      "entity": "Molina de Segura",
+      "date": "11/11/2026",
+      "bulletin": "261",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.borm.es/services/anuncio/846225/pdf"
+    },
+    {
+      "id": "MU-2026-5540",
+      "province": "Región de Murcia (BORM)",
+      "title": "Convocatoria y bases específicas del proceso selectivo para la cobertura de una plaza de Inspector de Policía. Promoción interna.",
+      "entity": "Jumilla",
+      "date": "11/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846222/pdf"
+    },
+    {
+      "id": "MU-2026-5539",
+      "province": "Región de Murcia (BORM)",
+      "title": "Convocatoria y bases especificas. Proceso selectivo para la cobertura de varias plazas de Administrativo/a. Libre y promoción interna.",
+      "entity": "Jumilla",
+      "date": "11/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846221/pdf"
+    },
+    {
+      "id": "MU-2026-5538",
+      "province": "Región de Murcia (BORM)",
+      "title": "Convocatoria y bases específicas del proceso selectivo para la cobertura de una plaza de Arquitecto.",
+      "entity": "Jumilla",
+      "date": "11/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846220/pdf"
+    },
     {
       "id": "MU-2026-5495",
       "province": "Región de Murcia (BORM)",
