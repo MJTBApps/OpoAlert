@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-10T16:30:51.875503+00:00",
+  "lastCheckedUTC": "2026-11-11T06:46:59.049418+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 22,
-    "announcementsRead": 949,
-    "opportunities": 68
+    "announcementsRead": 1008,
+    "opportunities": 73
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -37,10 +36,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -61,7 +60,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,10 +75,60 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 949,
-    "opportunities": 68
+    "announcementsRead": 1008,
+    "opportunities": 73
   },
   "notices": [
+    {
+      "id": "AS-2026-09215",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 5 de noviembre de 2026, de la Directora del Instituto Asturiano de Administración Pública “Adolfo Posada”, por la que se convocan pruebas selectivas para el ingreso en la Categoría de Técnico/a de Educación Infantil de la Administración del Principado de Asturias.",
+      "entity": "Instituto Asturiano de Administración Pública \"Adolfo Posada\"",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/11/2026-09215.pdf"
+    },
+    {
+      "id": "AS-2026-09214",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 5 de noviembre de 2026, de la Directora del Instituto Asturiano de Administración Pública “Adolfo Posada”, por la que se rectifica error material advertido en la Resolución de 14 de octubre de 2026, de la Directora del Instituto Asturiano de Administración Pública “Adolfo Posada”, por la que se deja sin efectos la Resolución de 11 de septiembre de 2026 que convocaba pruebas selectivas para la provisión de plazas de la Categoría de Auxiliar de Enfermería, correspondientes a las ofertas de empleo de los años 2024 y 2025, y se convocan pruebas selectivas para la citada categoría laboral (BOPA de 20 de octubre de 2026).",
+      "entity": "Instituto Asturiano de Administración Pública \"Adolfo Posada\"",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/11/2026-09214.pdf"
+    },
+    {
+      "id": "AS-2026-09199",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases y convocatoria para la selección de un/a Administrativo/a, en el marco de los contratos formativos para la obtención de la práctica profesional adecuada al nivel de estudios 2026-2027 en el Ayuntamiento de Santo Adriano.",
+      "entity": "Ayuntamiento de Santo Adriano",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/11/2026-09199.pdf"
+    },
+    {
+      "id": "AS-2026-09197",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases y convocatoria para la selección de desempleados/as dentro de los planes de empleo en el marco de los itinerarios integrados de activación en el ámbito local 2026-2027, del Ayuntamiento de Santo Adriano.",
+      "entity": "Ayuntamiento de Santo Adriano",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/11/2026-09197.pdf"
+    },
+    {
+      "id": "AS-2026-09084",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Acuerdo de la Comisión Delegada del Consorcio de Aguas por la que se aprueban las bases y la convocatoria del concurso de méritos para la provisión del puesto de trabajo vacante (el 27 de febrero de 2027) de Interventor/a en la plantilla del personal funcionario del Consorcio de Aguas de Asturias.",
+      "entity": "Consorcio de Aguas de Asturias (CADASA)",
+      "date": "11/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/11/2026-09084.pdf"
+    },
     {
       "id": "AS-2026-09154",
       "province": "Asturias (BOPA)",

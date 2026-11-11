@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-10T16:35:40.232974+00:00",
+  "lastCheckedUTC": "2026-11-11T06:50:30.356428+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "Ext. 31",
-    "pagesVisited": 27,
-    "announcementsRead": 860,
-    "opportunities": 21,
+    "bulletin": "Ext. 32",
+    "pagesVisited": 28,
+    "announcementsRead": 899,
+    "opportunities": 23,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "Ext. 26",
       "196",
       "197",
       "198",
@@ -43,10 +42,11 @@
       "215",
       "216",
       "Ext. 30",
-      "Ext. 31"
+      "Ext. 31",
+      "217",
+      "Ext. 32"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -72,7 +72,9 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-10",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -84,9 +86,9 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 27,
-    "announcementsRead": 860,
-    "opportunities": 21,
+    "issuesRead": 28,
+    "announcementsRead": 899,
+    "opportunities": 23,
     "regularBulletins": [
       "196",
       "197",
@@ -108,18 +110,18 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "extraordinaryBulletins": [
-      "Ext. 26",
       "Ext. 27",
       "Ext. 28",
       "Ext. 29",
       "Ext. 30",
-      "Ext. 31"
+      "Ext. 31",
+      "Ext. 32"
     ],
     "officialIssueIds": [
-      47146,
       47045,
       47065,
       46866,
@@ -145,10 +147,32 @@
       47485,
       47486,
       47546,
-      47565
+      47565,
+      47505,
+      47570
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-8910",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución de 9 de noviembre de 2026, por la que se convoca la constitución de bolsas de trabajo para Cuerpos de funcionarios al servicio de la Administración de Justicia.",
+      "entity": "Consejería de Presidencia, Justicia, Seguridad y Simplificación Administrativa. Dirección General de Justicia y Victimas del Terrorismo",
+      "date": "11/11/2026",
+      "bulletin": "Ext. 32",
+      "type": "Bolsa de trabajo",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443004"
+    },
+    {
+      "id": "CN-2026-8821",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1406/26), por la que se convoca concurso-oposición libre para cubrir dos plazas de Personal Técnico, de Gestión y de Administración y Servicios, laboral de la Escala A, Grupo Profesional Titulado/a Universitario/a. Técnico de Proyecto EUNICE, en el Vicerrectorado de Transformación Universitaria.",
+      "entity": "Universidad de Cantabria",
+      "date": "11/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442867"
+    },
     {
       "id": "CN-2026-8664",
       "province": "Cantabria (BOC)",

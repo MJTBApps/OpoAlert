@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-10T16:39:42.573141+00:00",
+  "lastCheckedUTC": "2026-11-11T06:53:42.177712+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
+    "bulletin": "220",
     "pagesVisited": 21,
-    "announcementsRead": 535,
-    "opportunities": 27,
+    "announcementsRead": 566,
+    "opportunities": 30,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 27
+    "pdfLinksVerified": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -38,10 +37,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -61,7 +60,8 @@
       "2026-11-05",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,15 +75,45 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 535,
-    "opportunities": 27,
+    "announcementsRead": 566,
+    "opportunities": 30,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "198",
-      "date": "2026-10-10"
+      "number": "199",
+      "date": "2026-10-12"
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5339",
+      "province": "Jaén",
+      "title": "Res. núm. 3566 de fecha 10/11/2026, de la Sra. Diputada de Recursos Humanos, por la que se aprueban las bases para la creación de la bolsa de trabajo de oficial/a, para cubrir necesidades temporales de la Diputación Provincial de Jaén y sus Organismos Autónomos asociadas a la gestión de proyectos específicos para la Vía Verde del Guadalimar y de Segura, mediante prueba.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
+      "date": "11/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-11&numeroEdicto=5339&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5042",
+      "province": "Jaén",
+      "title": "Bases y convocatoria para la provisión de una plaza de personal laboral fijo de Oficial de Obras, por concurso libre, con generación de bolsa de trabajo.",
+      "entity": "AYUNTAMIENTO DE TORREDONJIMENO (JAÉN)",
+      "date": "11/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-11&numeroEdicto=5042&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5033",
+      "province": "Jaén",
+      "title": "Rectificación de error material, ampliándose el número de plazas, en la convocatoria para la provisión en propiedad de siete plazas de Oficial, vacantes en la plantilla de personal laboral fijo del Ayuntamiento de Jaén.",
+      "entity": "AYUNTAMIENTO DE JAÉN",
+      "date": "11/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-11&numeroEdicto=5033&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5278",
       "province": "Jaén",
