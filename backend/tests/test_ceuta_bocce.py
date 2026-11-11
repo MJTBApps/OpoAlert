@@ -63,6 +63,17 @@ class CeutaCalendarTest(unittest.TestCase):
         with self.assertRaises(ProvincialCoverageError):
             ce.parse_listing(BeautifulSoup(html,"html.parser"),"1982-octubre",2026,10)
 
+    def test_listing_admite_boletin_en_categoria_de_otro_anio(self):
+        from bs4 import BeautifulSoup
+        v='/ceuta/component/jdownloads/viewdownload/'
+        html=(f'<a href="{v}1963-noviembre/23318-bocce-extra52-07-11-2026?Itemid=">a</a>'
+              f'<a href="{v}1963-noviembre/9-bocce-extra40-07-11-2025?Itemid=">b</a>'
+              f'<a href="{v}1950-octubre/8-bocce-extra51-28-10-2026?Itemid=">c</a>'
+              f'<a href="{v}1983-noviembre/23321-bocce-extra53-10-11-2026?Itemid=">d</a>')
+        found=ce.parse_listing(BeautifulSoup(html,"html.parser"),"1983-noviembre",2026,11)
+        self.assertEqual(list(found.values()),[(True,52,date(2026,11,7))])
+        self.assertIn('/finish/1963-noviembre/23318-bocce-extra52-07-11-2026',next(iter(found)))
+
 class CeutaPdfTest(unittest.TestCase):
     SUMARIO=("Boletín Oficial\nCiudad de Ceuta\nMartes\n6 de Octubre de 2026\nBOCCE\nNº6.658\nORDINARIO\nSUMARIO\n"
              "AUTORIDADES Y PERSONAL\nCIUDAD AUTÓNOMA DE CEUTA\n"

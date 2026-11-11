@@ -42,6 +42,7 @@ PROVINCE="Ceuta (BOCCE)"
 HOST="www.ceuta.es"
 BASE="https://www.ceuta.es"
 FINISH_PREFIX="/ceuta/component/jdownloads/finish/"
+VIEW_PREFIX="/ceuta/component/jdownloads/viewdownload/"
 CATEGORY_URL=BASE+"/ceuta/component/jdownloads/viewcategory/{slug}?Itemid=534"
 ENTITY_DEFAULT="Ciudad Autónoma de Ceuta"
 MONTHS=("enero","febrero","marzo","abril","mayo","junio","julio","agosto",
@@ -128,16 +129,21 @@ def parse_listing(soup,cat,year,month):
     found={}
     for a in soup.select("a[href]"):
         p=urlsplit(urljoin(BASE+"/",a["href"]))
-        if not p.path.startswith(FINISH_PREFIX):continue
-        rest=p.path[len(FINISH_PREFIX):]
-        if not rest.startswith(cat+"/"):continue   # p. ej. actas de otras categorías
-        slug=rest[len(cat)+1:]
+        prefix=next((x for x in (FINISH_PREFIX,VIEW_PREFIX) if p.path.startswith(x)),None)
+        if not prefix:continue
+        own,_,slug=p.path[len(prefix):].partition("/")
+        # El archivo a veces guarda un boletín en la categoría de ese mes de otro
+        # año y solo con enlace de ficha (extra 52 del 7/11/2026, en 1963-noviembre).
+        moved=own!=cat and re.fullmatch(r"\d+-"+MONTHS[month-1],own)
+        if own!=cat and not moved:continue   # p. ej. actas de otras categorías
+        if prefix==VIEW_PREFIX and not moved:continue
         if "bocce" not in slug:continue
         m=SLUG.fullmatch(slug)
         if not m:fail("boletín con nombre desconocido en el archivo: "+slug)
         try:day=date(int(m[6]),int(m[5]),int(m[4]))
         except ValueError:fail("fecha imposible en el archivo: "+slug)
-        url=f"{BASE}{p.path}?Itemid=534"
+        if moved and (day.year,day.month)!=(year,month):continue
+        url=f"{BASE}{FINISH_PREFIX}{own}/{slug}?Itemid=534"
         found[url]=(bool(m[2]),int(m[3]),day)
     return found
 
