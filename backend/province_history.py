@@ -156,6 +156,19 @@ def pick_castellon(page, number:str) -> None:
             f'Castellon: no se pudo seleccionar por AJAX BOP {number}: {exc}') from exc
 
 
+def castellon_disposition(page):
+    def head(url:str)->str:
+        for attempt in range(5):
+            try:
+                r=page.request.head(url,timeout=30000)
+                # A veces responde sin el nombre del archivo: se reintenta.
+                d=r.headers.get('content-disposition','') if r.ok else ''
+                if 'filename=' in d:return d
+            except Exception:
+                pass
+            page.wait_for_timeout(1500*(attempt+1))
+        raise ProvincialCoverageError(f'Castellon: no responde el PDF {url}')
+    return head
 def castellon_scan(page, start:date,end:date) -> tuple[list[VerifiedIssue],set[date]]:
     page.goto(CASTELLON,wait_until='domcontentloaded',timeout=70000)
     page.locator('span.titulo4').first.wait_for(timeout=20000)
@@ -177,7 +190,7 @@ def castellon_scan(page, start:date,end:date) -> tuple[list[VerifiedIssue],set[d
     result=[]
     for number,day in sorted(bulletin_dates.items(),key=lambda x:x[1],reverse=True):
         pick_castellon(page,number)
-        issue=parse_castellon(page.content(),date_label(day),number)
+        issue=parse_castellon(page.content(),date_label(day),number,castellon_disposition(page))
         result.append(issue)
         print(f'Castellon {date_label(day)}: BOP {number} · {issue.announcements_read} anuncios · '
               f'{len(issue.opportunities)} candidatas',flush=True)

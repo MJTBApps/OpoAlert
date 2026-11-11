@@ -8,8 +8,23 @@ from provincial_common import (ProvincialCoverageError, VerifiedIssue, classify,
                                source_record, validate_issue, validate_pdf)
 
 
+# Desde el 10/11 la web enlaza cada anuncio con un codigo opaco
+# (/api/descargarAnuncio/es/JLipjOp2iO). El PDF se llama con el numero oficial
+# del edicto (04722-2026-es.pdf), que es el que se usa como identificador.
+NEW_LINK = re.compile(r"/PortalBOP/api/descargarAnuncio/[a-z]{2}/[A-Za-z0-9]{4,40}$")
+EDICT_FILE = re.compile(r"filename=\"?(\d{3,6})-(\d{4})-[a-z]{2}\.pdf", re.I)
+
+
+def edict_id(disposition: str) -> str:
+    match = EDICT_FILE.search(disposition or "")
+    if not match:
+        raise ProvincialCoverageError(f"Castellon: PDF sin numero de edicto ({disposition})")
+    return f"CS-{match.group(2)}{int(match.group(1)):05d}"
+
+
 def parse_issue(html: str, expected_date: str | None = None,
-                expected_number: str | None = None) -> VerifiedIssue:
+                expected_number: str | None = None,
+                disposition_of=None) -> VerifiedIssue:
     soup = BeautifulSoup(html, "html.parser")
     form = soup.select_one('form[id="busquedaBoletinesForm"]')
     if form is None:
@@ -31,7 +46,8 @@ def parse_issue(html: str, expected_date: str | None = None,
         raise ProvincialCoverageError("Castellon: falta fecha de la edicion oficial")
     date = date_match.group()
     validate_issue(expected_date, date)
-    official_links = form.select('a[href*="/api/descargarAnuncio?idAnuncio="]')
+    official_links = [a for a in form.select('a[href*="/api/descargarAnuncio"]')
+                      if "idAnuncio=" in a["href"] or NEW_LINK.search(urlsplit(a["href"]).path)]
     titles = form.select('span.titulo4')
     if not titles or len(titles) != len(official_links):
         raise ProvincialCoverageError(
@@ -60,9 +76,14 @@ def parse_issue(html: str, expected_date: str | None = None,
         pdf_index += 1
         validate_pdf(pdf, "bop.dipcas.es", "/PortalBOP/api/descargarAnuncio")
         ids = parse_qs(urlsplit(pdf).query).get("idAnuncio", [])
-        if len(ids) != 1 or not ids[0].isdigit():
-            raise ProvincialCoverageError("Castellon: falta ID oficial del anuncio")
-        unique_id = "CS-" + ids[0]
+        if ids:
+            if len(ids) != 1 or not ids[0].isdigit():
+                raise ProvincialCoverageError("Castellon: falta ID oficial del anuncio")
+            unique_id = "CS-" + ids[0]
+        else:
+            if disposition_of is None:
+                raise ProvincialCoverageError("Castellon: enlace nuevo sin forma de leer el edicto")
+            unique_id = edict_id(disposition_of(pdf))
         if unique_id in all_ids:
             raise ProvincialCoverageError("Castellon: PDF repetido en sumario")
         all_ids.add(unique_id)

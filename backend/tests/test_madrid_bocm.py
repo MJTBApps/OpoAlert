@@ -65,5 +65,15 @@ class MadridTests(unittest.TestCase):
         self.assertEqual(res["read"],1)
         self.assertEqual(res["method"],"html")
         self.assertEqual(res["rows"][0]["entity"],"PRESIDENCIA DE LA COMUNIDAD")
+    def test_fallback_autoridad_vacia_de_ayuntamiento(self):
+        html='''<h2>BOCM Nº 259</h2>
+        <a href="https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/28/BOCM-20261028-37.PDF">pdf</a>'''
+        class Resp:
+            def json(self):return {"legislationIdentifier":"BOCM-20261028-37","name":"– Getafe. Personal. Convocatoria de plazas","isPartOf":{"name":"BOCM - Nº 259"},"datePublished":"2026/10/28","legislationResponsible":{"name":None}}
+        res=parse_fallback_html(html,D,259,lambda url:Resp())
+        self.assertEqual(res["rows"][0]["entity"],"Getafe")
+        Resp.json=lambda self:{"legislationIdentifier":"BOCM-20261028-37","name":"Sin autoridad","isPartOf":{"name":"BOCM - Nº 259"},"datePublished":"2026/10/28","legislationResponsible":{"name":None}}
+        with self.assertRaises(ProvincialCoverageError):
+            parse_fallback_html(html,D,259,lambda url:Resp())
 
 if __name__=="__main__":unittest.main()

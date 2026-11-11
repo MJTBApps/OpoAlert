@@ -40,6 +40,16 @@ class ProvincialTests(unittest.TestCase):
         self.assertEqual((c.number,c.announcements_read,len(c.opportunities)),('130',2,1))
         self.assertEqual(c.opportunities[0]['id'],'CS-168678')
         self.assertEqual(c.opportunities[0]['entity'],'AJUNTAMENT DE VINARÒS')
+    def test_castellon_enlaces_nuevos_con_numero_de_edicto(self):
+        html=(CAS.replace('api/descargarAnuncio?idAnuncio=168667&amp;idioma=es','api/descargarAnuncio/es/JLipjOp2iO')
+                 .replace('api/descargarAnuncio?idAnuncio=168678&amp;idioma=es','api/descargarAnuncio/es/4NShdAoeCp'))
+        files={'https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/JLipjOp2iO':'attachment; filename=04722-2026-es.pdf',
+               'https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/4NShdAoeCp':'attachment; filename=04772-2026-es.pdf'}
+        c=castellon(html,'27/10/2026','130',files.get)
+        self.assertEqual(c.opportunities[0]['id'],'CS-202604772')
+        self.assertEqual(c.opportunities[0]['url'],'https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/4NShdAoeCp')
+        with self.assertRaises(ProvincialCoverageError):castellon(html,'27/10/2026','130')
+        with self.assertRaises(ProvincialCoverageError):castellon(html,'27/10/2026','130',lambda u:'attachment; filename=otro.pdf')
     def test_castellon_reject_missing_title_or_date(self):
         with self.assertRaises(ProvincialCoverageError):castellon(CAS.replace('span class="titulo4"','span class="otra"',1))
         with self.assertRaises(ProvincialCoverageError):castellon(CAS,'28/10/2026')

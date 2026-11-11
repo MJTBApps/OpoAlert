@@ -234,6 +234,11 @@ def parse_fallback_html(html:str,day:date,number:int,fetch_json=request)->dict:
             fail(f"ficha {raw} de otra fecha")
         authority=payload.get("legislationResponsible") or {}
         agency=(authority.get("name") or "").strip() if isinstance(authority,dict) else ""
+        if not agency:
+            # Los anuncios de ayuntamientos traen la autoridad vacía en la ficha,
+            # pero el título oficial empieza por ella: «– Madrid. Licencias…».
+            m=re.match(r"^[–-]\s*([^.]{2,120})\.",title)
+            agency=m[1].strip() if m else ""
         if not agency:fail(f"autoridad oficial no identificada en ficha {raw}")
         if len(title)>2800 or len(agency)>400:fail("registro de respaldo demasiado largo")
         rows.append({"id":f"MD-{day:%Y%m%d}-{n}","province":PROVINCE,
