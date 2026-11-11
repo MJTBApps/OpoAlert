@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-10T17:02:36.299607+00:00",
+  "lastCheckedUTC": "2026-11-11T07:24:40.457652+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "259",
+    "bulletin": "260",
     "pagesVisited": 2,
-    "announcementsRead": 809,
-    "opportunities": 76
+    "announcementsRead": 848,
+    "opportunities": 80
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 809,
-    "opportunities": 76,
+    "announcementsRead": 848,
+    "opportunities": 80,
     "bulletins": [
-      "235",
       "236",
       "237",
       "238",
@@ -44,10 +43,10 @@
       "256",
       "257",
       "258",
-      "259"
+      "259",
+      "260"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -71,10 +70,10 @@
       "2026-11-06",
       "2026-11-07",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "issuePublicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -98,7 +97,8 @@
       "2026-11-06",
       "2026-11-07",
       "2026-11-09",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -108,19 +108,59 @@
       "2026-11-08"
     ],
     "sectionsRead": {
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 16,
       "SECCIÓN PRIMERA": 4,
       "SECCIÓN SEGUNDA": 7,
-      "SECCIÓN TERCERA": 38,
-      "SECCIÓN QUINTA": 98,
-      "SECCIÓN SEXTA": 636,
+      "SECCIÓN TERCERA": 39,
+      "SECCIÓN QUINTA": 99,
+      "SECCIÓN SEXTA": 671,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 15,
       "SECCIÓN SEPTIMA": 2,
-      "PARTE NO OFICIAL": 7,
+      "PARTE NO OFICIAL": 10,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 100
+    "documentsVerified": 104
   },
   "notices": [
+    {
+      "id": "ZA-000345084",
+      "province": "Zaragoza",
+      "title": "Habiéndose aprobado inicialmente el expediente de aprobación de ordenanza reguladora de Ordenanza reguladora del funcionamiento y utilización del servicio de gimnasio municipal que por acuerdo de pleno de…",
+      "entity": "AYUNTAMIENTO DE UNDUÉS DE LERDA",
+      "date": "11/11/2026",
+      "bulletin": "260",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474450241111"
+    },
+    {
+      "id": "ZA-000345083",
+      "province": "Zaragoza",
+      "title": "Al no haberse presentado reclamaciones durante el plazo de exposición al público, queda automáticamente elevado a definitivo el acuerdo de Pleno de 26 de septiembre de 2025 por el que se aprobó inicialmente la…",
+      "entity": "AYUNTAMIENTO DE UNDUÉS DE LERDA",
+      "date": "11/11/2026",
+      "bulletin": "260",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474449231111"
+    },
+    {
+      "id": "ZA-000345073",
+      "province": "Zaragoza",
+      "title": "Acuerdo del Pleno de fecha 3 de septiembre de 2026 de Ayuntamiento de Moros por el que se aprueba provisionalmente la Ordenanza reguladora de establecimiento de precio público de gimnasio municipal. Al no…",
+      "entity": "AYUNTAMIENTO DE MOROS",
+      "date": "11/11/2026",
+      "bulletin": "260",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474439130808"
+    },
+    {
+      "id": "ZA-000345069",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a aprobación inicial del presupuesto general y de la plantilla de personal para el ejercicio 2027. Aprobado inicialmente por el Pleno de este Ayuntamiento, en sesión ordinaria celebrada con…",
+      "entity": "AYUNTAMIENTO DE MALÓN",
+      "date": "11/11/2026",
+      "bulletin": "260",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474435090707"
+    },
     {
       "id": "ZA-000345050",
       "province": "Zaragoza",
