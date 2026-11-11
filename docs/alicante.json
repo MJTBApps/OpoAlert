@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-09T12:31:31.277017+00:00",
+  "lastCheckedUTC": "2026-11-11T11:34:43.088929+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "213",
-    "pagesVisited": 21,
-    "announcementsRead": 859,
-    "opportunities": 65,
+    "bulletin": "215",
+    "pagesVisited": 22,
+    "announcementsRead": 939,
+    "opportunities": 69,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 859,
-    "opportunities": 65,
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
+    "issuesRead": 22,
+    "pagesVisited": 22,
+    "announcementsRead": 939,
+    "opportunities": 69,
     "bulletins": [
-      "193",
       "194",
       "195",
       "196",
@@ -40,10 +39,11 @@
       "210",
       "211",
       "212",
-      "213"
+      "213",
+      "214",
+      "215"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-14",
       "2026-10-15",
@@ -63,10 +63,11 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-17",
       "2026-10-18",
       "2026-10-24",
@@ -78,6 +79,46 @@
     ]
   },
   "notices": [
+    {
+      "id": "AL-2026-8746",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES PROCESO SELECTIVO 7 PLAZAS DE EDUCADOR SOCIAL: 6 PLAZAS TL POR OPOSICIÓN, Y 1 PLAZA PI POR CONCURSO-OPOSICIÓN.",
+      "entity": "DIPUTACIÓN PROVINCIAL ALICANTE",
+      "date": "11/11/2026",
+      "bulletin": "215",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/11_215/2026_008746.pdf"
+    },
+    {
+      "id": "AL-2026-8567",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PARA LA PROVISIÓN TEMPORAL, DE PUESTOS DE AGENTE DE POLICÍA LOCAL EN COMISIÓN DE SERVICIOS DEL AYUNTAMIENTO DE AGOST.",
+      "entity": "AYUNTAMIENTO AGOST",
+      "date": "10/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008567.pdf"
+    },
+    {
+      "id": "AL-2026-8191",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO DE PSICÓLOGO/A, MEDIANTE CONCURSO-OPOSICIÓN Y PERIODO DE PRÁCTICAS, TURNO LIBRE.",
+      "entity": "AYUNTAMIENTO DÉNIA",
+      "date": "10/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008191.pdf"
+    },
+    {
+      "id": "AL-2026-8184",
+      "province": "Alicante",
+      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO DE ARQUEÓLOGO/A, MEDIANTE CONCURSO-OPOSICIÓN Y PERIODO DE PRÁCTICAS, TURNO LIBRE.",
+      "entity": "AYUNTAMIENTO DÉNIA",
+      "date": "10/11/2026",
+      "bulletin": "214",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008184.pdf"
+    },
     {
       "id": "AL-2026-8570",
       "province": "Alicante",

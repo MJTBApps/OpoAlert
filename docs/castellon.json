@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-09T12:31:43.182278+00:00",
+  "lastCheckedUTC": "2026-11-11T11:34:54.633542+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "135",
+    "bulletin": "136",
     "pagesVisited": 13,
-    "announcementsRead": 455,
-    "opportunities": 22,
+    "announcementsRead": 508,
+    "opportunities": 23,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-11",
-    "rangeEnd": "2026-11-09",
+    "rangeStart": "2026-10-13",
+    "rangeEnd": "2026-11-11",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 455,
-    "opportunities": 22,
+    "announcementsRead": 508,
+    "opportunities": 23,
     "bulletins": [
-      "123",
       "124",
       "125",
       "126",
@@ -32,10 +31,10 @@
       "132",
       "133",
       "134",
-      "135"
+      "135",
+      "136"
     ],
     "publicationDates": [
-      "2026-10-12",
       "2026-10-13",
       "2026-10-15",
       "2026-10-17",
@@ -47,10 +46,10 @@
       "2026-10-31",
       "2026-11-03",
       "2026-11-05",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-10"
     ],
     "nonPublicationDates": [
-      "2026-10-11",
       "2026-10-14",
       "2026-10-16",
       "2026-10-18",
@@ -66,229 +65,240 @@
       "2026-11-04",
       "2026-11-06",
       "2026-11-08",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-11"
     ]
   },
   "notices": [
     {
-      "id": "CS-168902",
+      "id": "CS-436607856979505629",
+      "province": "Castellón",
+      "title": "LISTADO DEFINITIVO ASPIRANTES OPOSICIÓN POLICIA LOCAL",
+      "entity": "AJUNTAMENT DE LA VILAVELLA",
+      "date": "10/11/2026",
+      "bulletin": "136",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WFfSAA3Aez"
+    },
+    {
+      "id": "CS-416093165825072565",
       "province": "Castellón",
       "title": "PROCESO SELECTIVO ESTABILIZACIÓN 18E/2022 UNA PLAZA DE OFICIAL/A PO ENCARGADO/A TELECOM. SELECCIÓN.",
       "entity": "AJUNTAMENT DE VILA-REAL",
       "date": "07/11/2026",
       "bulletin": "135",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168902&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Uji5WM2mtJ"
     },
     {
-      "id": "CS-168613",
+      "id": "CS-552835692226653514",
       "province": "Castellón",
       "title": "Bases reguladoras de las pruebas selectivas para la provisión en propiedad de una plaza de ordenanza conserje",
       "entity": "AJUNTAMENT DE BETXÍ",
       "date": "05/11/2026",
       "bulletin": "134",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168613&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/epzaNg0fpC"
     },
     {
-      "id": "CS-168821",
-      "province": "Castellón",
-      "title": "Bases y la convocatoria para cubrir la plaza de informador turístico de este Ayuntamiento, mediante sistema de concurso-oposición.",
-      "entity": "AJUNTAMENT DE CULLA",
-      "date": "03/11/2026",
-      "bulletin": "133",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168821&idioma=es"
-    },
-    {
-      "id": "CS-168789",
+      "id": "CS-485375307235593825",
       "province": "Castellón",
       "title": "PROCESO SELECTIVO ESTABILIZACIÓN 14E/2022 DOS PLAZAS DE TÉCNICO/A AUXILIAR DE ADMINISTRACIÓN ESPECIAL DEPORTES (TAAE). SELECCIÓN Y BOLSA DE TRABAJO.",
       "entity": "AJUNTAMENT DE VILA-REAL",
       "date": "03/11/2026",
       "bulletin": "133",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168789&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Zr1UTMOBg9"
     },
     {
-      "id": "CS-168587",
+      "id": "CS-435834826169733720",
+      "province": "Castellón",
+      "title": "Bases y la convocatoria para cubrir la plaza de informador turístico de este Ayuntamiento, mediante sistema de concurso-oposición.",
+      "entity": "AJUNTAMENT DE CULLA",
+      "date": "03/11/2026",
+      "bulletin": "133",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WC7wWQOuu8"
+    },
+    {
+      "id": "CS-306791093681921899",
       "province": "Castellón",
       "title": "aprobación bases y convocatoria de pruebas selectivas plaza de Auxiliar de Admon General",
       "entity": "AJUNTAMENT DE VALL D'ALBA",
       "date": "03/11/2026",
       "bulletin": "133",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168587&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Mf6bFK5KNH"
     },
     {
-      "id": "CS-168790",
-      "province": "Castellón",
-      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 17E/2022 UNA PLAZA DE OFICIAL/A PO SERVICIOS SOCIALES. SELECCIÓN.",
-      "entity": "AJUNTAMENT DE VILA-REAL",
-      "date": "31/10/2026",
-      "bulletin": "132",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168790&idioma=es"
-    },
-    {
-      "id": "CS-168762",
-      "province": "Castellón",
-      "title": "Bases y la convocatoria para cubrir la plaza de técnico de turismo de este Ayuntamiento, mediante sistema de concurso-oposición.",
-      "entity": "AJUNTAMENT DE CULLA",
-      "date": "31/10/2026",
-      "bulletin": "132",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168762&idioma=es"
-    },
-    {
-      "id": "CS-168539",
+      "id": "CS-563889722997204540",
       "province": "Castellón",
       "title": "Anuncio bases de selección en propiedad de dos plazas de monitor/a del Centro Taller",
       "entity": "AJUNTAMENT DE BORRIANA/BURRIANA",
       "date": "31/10/2026",
       "bulletin": "132",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168539&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/fecUn8PvkS"
     },
     {
-      "id": "CS-168714",
+      "id": "CS-293086800061370418",
+      "province": "Castellón",
+      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 17E/2022 UNA PLAZA DE OFICIAL/A PO SERVICIOS SOCIALES. SELECCIÓN.",
+      "entity": "AJUNTAMENT DE VILA-REAL",
+      "date": "31/10/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/LeL7TJdgSg"
+    },
+    {
+      "id": "CS-245804756161561607",
+      "province": "Castellón",
+      "title": "Bases y la convocatoria para cubrir la plaza de técnico de turismo de este Ayuntamiento, mediante sistema de concurso-oposición.",
+      "entity": "AJUNTAMENT DE CULLA",
+      "date": "31/10/2026",
+      "bulletin": "132",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/I9msZebtVn"
+    },
+    {
+      "id": "CS-48877021281442993",
       "province": "Castellón",
       "title": "Extracto bases selección para la constitución de una bolsa de trabajo de peón/a de cementerio",
       "entity": "AJUNTAMENT DE BORRIANA/BURRIANA",
       "date": "29/10/2026",
       "bulletin": "131",
       "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168714&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/3br9MsT1Xt"
     },
     {
-      "id": "CS-168429",
+      "id": "CS-301421766692063411",
       "province": "Castellón",
       "title": "Bases proceso selección gerocultor/a y constitución bolsa de trabajo",
       "entity": "AJUNTAMENT DE SONEJA",
       "date": "24/10/2026",
       "bulletin": "129",
       "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168429&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/MGVvEXLqhH"
     },
     {
-      "id": "CS-168582",
-      "province": "Castellón",
-      "title": "anuncio bases y convocatoria pruebas selectivas plaza de administrativo de admon general",
-      "entity": "AJUNTAMENT DE VALL D'ALBA",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168582&idioma=es"
-    },
-    {
-      "id": "CS-168563",
-      "province": "Castellón",
-      "title": "Anuncio ampliación plazo presentación solicitudes Concurso Igualdad \"La Igualtat és cosa de totes i de tots\"",
-      "entity": "Diputació Provincial de Castelló / Diputación Provincial de Castellón",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168563&idioma=es"
-    },
-    {
-      "id": "CS-168541",
-      "province": "Castellón",
-      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 10E/2022 UNA PLAZA DE TÉCNICO/A MEDIO/A DE ADMINISTRACIÓN ESPECIAL (TMAE) INSPECTOR/A OBRAS. SELECCIÓN Y BOLSA DE TRABAJO",
-      "entity": "AJUNTAMENT DE VILA-REAL",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168541&idioma=es"
-    },
-    {
-      "id": "CS-168536",
-      "province": "Castellón",
-      "title": "Bases y convocatoria para proveer en propiedad dos plazas de Oficial de Policía Local, por turno de promoción interna ordinaria.",
-      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168536&idioma=es"
-    },
-    {
-      "id": "CS-168535",
-      "province": "Castellón",
-      "title": "Bases y convocatoria para proveer en propiedad siete plazas de Agente de Policía Local, 4 por turno libre, por el sistema de oposición libre y 3 por movilidad, por el sistema de concurso.",
-      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168535&idioma=es"
-    },
-    {
-      "id": "CS-168397",
+      "id": "CS-66067223133627536",
       "province": "Castellón",
       "title": "Constitución Bolsa de Trabajo de Operarios-as del Cementerio.",
       "entity": "AYUNTAMIENTO DE BENICÀSSIM, AJUNTAMENT DE BENICÀSSIM/ BENICASIM",
       "date": "22/10/2026",
       "bulletin": "128",
       "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168397&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/4saUVmJmqm"
     },
     {
-      "id": "CS-168515",
+      "id": "CS-488797954727432357",
+      "province": "Castellón",
+      "title": "Bases y convocatoria para proveer en propiedad dos plazas de Oficial de Policía Local, por turno de promoción interna ordinaria.",
+      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
+      "date": "22/10/2026",
+      "bulletin": "128",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/a6hO6KA1rR"
+    },
+    {
+      "id": "CS-360650409336453124",
+      "province": "Castellón",
+      "title": "Anuncio ampliación plazo presentación solicitudes Concurso Igualdad \"La Igualtat és cosa de totes i de tots\"",
+      "entity": "Diputació Provincial de Castelló / Diputación Provincial de Castellón",
+      "date": "22/10/2026",
+      "bulletin": "128",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/QdmWhYkLYa"
+    },
+    {
+      "id": "CS-231483442233808961",
+      "province": "Castellón",
+      "title": "anuncio bases y convocatoria pruebas selectivas plaza de administrativo de admon general",
+      "entity": "AJUNTAMENT DE VALL D'ALBA",
+      "date": "22/10/2026",
+      "bulletin": "128",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/H6CBoMHl0j"
+    },
+    {
+      "id": "CS-17597372105547147",
+      "province": "Castellón",
+      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 10E/2022 UNA PLAZA DE TÉCNICO/A MEDIO/A DE ADMINISTRACIÓN ESPECIAL (TMAE) INSPECTOR/A OBRAS. SELECCIÓN Y BOLSA DE TRABAJO",
+      "entity": "AJUNTAMENT DE VILA-REAL",
+      "date": "22/10/2026",
+      "bulletin": "128",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/1IaxbSZA6d"
+    },
+    {
+      "id": "CS-132953883914123564",
+      "province": "Castellón",
+      "title": "Bases y convocatoria para proveer en propiedad siete plazas de Agente de Policía Local, 4 por turno libre, por el sistema de oposición libre y 3 por movilidad, por el sistema de concurso.",
+      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
+      "date": "22/10/2026",
+      "bulletin": "128",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9ovfgQyxzw"
+    },
+    {
+      "id": "CS-576298363748136125",
       "province": "Castellón",
       "title": "Convocatoria Bolsa de Empleo Temporal de FACULTATIVO/A ESPECIALISTA EN MEDICINA INTERNA en el Consorci Hospitalari Provincial Universitari de Castelló (CHPUCS)",
       "entity": "Consorcis / Consorcios",
       "date": "20/10/2026",
       "bulletin": "127",
       "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168515&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/gZS3s1wb7t"
     },
     {
-      "id": "CS-168496",
-      "province": "Castellón",
-      "title": "BASES ESPECÍFICAS PROCESO SELECTIVO 1 PLAZA AGENTE POLICÍA LOCAL",
-      "entity": "AJUNTAMENT DE BORRIOL",
-      "date": "17/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168496&idioma=es"
-    },
-    {
-      "id": "CS-168462",
+      "id": "CS-476413929522665114",
       "province": "Castellón",
       "title": "AMPLIACIÓN DEL PLAZO DE PRESENTACIÓN DE SOLICITUDES Y DESIGNACIÓN DEL JURADO DEL CONCURSO DE MICRORRELATOS PARA PERSONAS MAYORES Y DE CUENTOS NAVIDEÑOS INTERGENERACIONALES. EJERCICIO 2026",
       "entity": "Diputació Provincial de Castelló / Diputación Provincial de Castellón",
       "date": "17/10/2026",
       "bulletin": "126",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168462&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/ZByoOOoUuY"
     },
     {
-      "id": "CS-168432",
+      "id": "CS-263021485750074268",
+      "province": "Castellón",
+      "title": "BASES ESPECÍFICAS PROCESO SELECTIVO 1 PLAZA AGENTE POLICÍA LOCAL",
+      "entity": "AJUNTAMENT DE BORRIOL",
+      "date": "17/10/2026",
+      "bulletin": "126",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/JQdkklaqiK"
+    },
+    {
+      "id": "CS-100470303631349671",
       "province": "Castellón",
       "title": "CONSORCIO PROVINCIAL DE BOMBEROS DE CASTELLÓN. Bases que regirán en la convocatoria para la provisión temporal de puestos de Sargento y Cabo por el Turno de Mejora.",
       "entity": "Consorcis / Consorcios",
       "date": "15/10/2026",
       "bulletin": "125",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168432&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/7Q9c2JbENL"
     },
     {
-      "id": "CS-168308",
+      "id": "CS-511247990696363295",
       "province": "Castellón",
       "title": "Bases de las pruebas selectivas para la provisión en propiedad de una plaza de Agente de Empleo y Desarrollo Local",
       "entity": "AJUNTAMENT DE BETXÍ",
       "date": "13/10/2026",
       "bulletin": "124",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168308&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/blWJZdd6lD"
     },
     {
-      "id": "CS-168276",
+      "id": "CS-123587780492989969",
       "province": "Castellón",
       "title": "Bases específicas del concurso para la provisión en propiedad de un puesto de auxiliar implantación administración electrónica",
       "entity": "AJUNTAMENT DE BETXÍ",
       "date": "13/10/2026",
       "bulletin": "124",
       "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio?idAnuncio=168276&idioma=es"
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9824BFBEdl"
     }
   ]
 }
