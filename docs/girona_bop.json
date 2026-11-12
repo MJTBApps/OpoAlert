@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-11T16:47:41.975355+00:00",
+  "lastCheckedUTC": "2026-11-12T06:57:54.003379+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 21,
-    "announcementsRead": 1082,
+    "announcementsRead": 1066,
     "opportunities": 104,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 1082,
+    "announcementsRead": 1066,
     "opportunities": 104,
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -40,10 +39,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -63,7 +62,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -78,6 +78,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-218-09807",
+      "title": "Aprovació de les bases reguladores i de la convocatòria per proveir de forma no definitiva amb FHN el lloc de treball d'interventor/a de classe segona de l'Ajuntament de Llagostera",
+      "entity": "AJUNTAMENT DE LLAGOSTERA",
+      "date": "12/11/2026",
+      "bulletin": "218",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/218/202621809807.pdf"
+    },
     {
       "id": "GI-2026-217-09841",
       "title": "Aprovació de les bases reguladores i la convocatòria del procés de selecció per a la creació d'una borsa de treball d'operari d'obres i serveis",
@@ -1107,16 +1117,6 @@
       "province": "Girona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/198/202619808630.pdf"
-    },
-    {
-      "id": "GI-2026-197-08709",
-      "title": "Aprovació de les bases reguladores i la convocatòria del procés selectiu, per promoció interna, d'una plaça d'administratiu/va, personal laboral fix, grup professional C1",
-      "entity": "AJUNTAMENT D'ESPINELVES",
-      "date": "13/10/2026",
-      "bulletin": "197",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/197/202619708709.pdf"
     }
   ]
 }
