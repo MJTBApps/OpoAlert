@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Guadalajara",
   "source": "https://boletin.dguadalajara.es/boletin/",
-  "lastCheckedUTC": "2026-11-12T06:28:23.850536+00:00",
+  "lastCheckedUTC": "2026-11-12T09:31:36.262285+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
-    "pagesVisited": 21,
-    "announcementsRead": 313,
-    "opportunities": 19
+    "bulletin": "217",
+    "pagesVisited": 22,
+    "announcementsRead": 330,
+    "opportunities": 21
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
       "2026-10-14",
@@ -59,7 +60,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -69,14 +71,33 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-12"
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 313,
-    "opportunities": 19
+    "issuesRead": 22,
+    "announcementsRead": 330,
+    "opportunities": 21
   },
   "notices": [
+    {
+      "id": "GJ-2026-2970",
+      "province": "Guadalajara",
+      "title": "RESOLUCIÓN 164 DE 22 DE OCTUBRE DE 2026, DEL AYUNTAMIENTO DE ALCOLEA DEL PINAR, REFERENTE A LA CONVOCATORIA PARA PROVEER UNA PLAZA.",
+      "entity": "AYUNTAMIENTO DE ALCOLEA DEL PINAR",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2970.pdf"
+    },
+    {
+      "id": "GJ-2026-2969",
+      "province": "Guadalajara",
+      "title": "RESOLUCIÓN 162 DE 22 DE OCTUBRE DE 2026, DEL AYUNTAMIENTO DE ALCOLEA DEL PINAR, REFERENTE A LA CONVOCATORIA PARA PROVEER UNA PLAZA.",
+      "entity": "AYUNTAMIENTO DE ALCOLEA DEL PINAR",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2969.pdf"
+    },
     {
       "id": "GJ-2026-2950",
       "province": "Guadalajara",
