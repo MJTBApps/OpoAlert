@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-11T17:05:26.611076+00:00",
+  "lastCheckedUTC": "2026-11-12T07:30:06.999274+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "260",
+    "bulletin": "261",
     "pagesVisited": 2,
-    "announcementsRead": 848,
+    "announcementsRead": 805,
     "opportunities": 80
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 848,
+    "announcementsRead": 805,
     "opportunities": 80,
     "bulletins": [
-      "236",
       "237",
       "238",
       "239",
@@ -44,10 +43,10 @@
       "257",
       "258",
       "259",
-      "260"
+      "260",
+      "261"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -71,10 +70,10 @@
       "2026-11-07",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "issuePublicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -98,7 +97,8 @@
       "2026-11-07",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -108,19 +108,79 @@
       "2026-11-08"
     ],
     "sectionsRead": {
-      "SECCIÓN PRIMERA": 4,
-      "SECCIÓN SEGUNDA": 7,
-      "SECCIÓN TERCERA": 39,
-      "SECCIÓN QUINTA": 99,
-      "SECCIÓN SEXTA": 671,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 15,
+      "SECCIÓN TERCERA": 41,
+      "SECCIÓN SEXTA": 634,
+      "SECCIÓN PRIMERA": 3,
+      "SECCIÓN QUINTA": 95,
       "SECCIÓN SEPTIMA": 2,
       "PARTE NO OFICIAL": 10,
+      "SECCIÓN SEGUNDA": 4,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 104
+    "documentsVerified": 103
   },
   "notices": [
+    {
+      "id": "ZA-000345129",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2027.",
+      "entity": "MANCOMUNIDAD AGUA DE MONEGROS",
+      "date": "12/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474672421616"
+    },
+    {
+      "id": "ZA-000345120",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE MORÉS",
+      "date": "12/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474663331212"
+    },
+    {
+      "id": "ZA-000345102",
+      "province": "Zaragoza",
+      "title": "Por acuerdo de la Junta de Gobierno Local, de fecha 26 de octubre de 2026 se ha aprobado la convocatoria de las pruebas selectivas para la provisión en propiedad de una plaza de educador/a de adultos…",
+      "entity": "AYUNTAMIENTO DE EJEA DE LOS CABALLEROS",
+      "date": "12/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474645150606"
+    },
+    {
+      "id": "ZA-000345100",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE CASTEJÓN DE ALARBA",
+      "date": "12/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474643130505"
+    },
+    {
+      "id": "ZA-000345099",
+      "province": "Zaragoza",
+      "title": "Resolución de Alcaldía núm. 2026-367 de fecha 6 de noviembre de 2026 del Ayuntamiento de Cadrete por la que se aprueban las bases y la convocatoria para la cobertura, mediante el sistema de concurso-oposición,…",
+      "entity": "AYUNTAMIENTO DE CADRETE",
+      "date": "12/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474642120505"
+    },
+    {
+      "id": "ZA-000345091",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a la aprobación de la convocatoria y bases que han de regir el proceso selectivo para la cobertura, por oposición en turno libre, de una plaza de oficial 1.ª Vías y Obras.",
+      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
+      "date": "12/11/2026",
+      "bulletin": "261",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474634040202"
+    },
     {
       "id": "ZA-000345084",
       "province": "Zaragoza",
@@ -860,66 +920,6 @@
       "bulletin": "237",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470202680404"
-    },
-    {
-      "id": "ZA-000344283",
-      "province": "Zaragoza",
-      "title": "ANUNCIO relativo a resolución de Alcaldía núm. 1127/2026, de fecha 5 de octubre de 2026, del Ayuntamiento de Épila por la que se aprobaron las bases y la convocatoria para cubrir una plaza de Policía Local,…",
-      "entity": "AYUNTAMIENTO DE ÉPILA",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469996510808"
-    },
-    {
-      "id": "ZA-000344282",
-      "province": "Zaragoza",
-      "title": "Por resolución de la Alcaldía de fecha 14 de septiembre de 2026 se ha aprobado la oferta de empleo público correspondiente al ejercicio 2026, según el siguiente detalle: Personal funcionario Denominación Núm.…",
-      "entity": "AYUNTAMIENTO DE EL FRASNO",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469995500808"
-    },
-    {
-      "id": "ZA-000344279",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de contratación de personal laboral fijo y constitución de bolsa de trabajo.",
-      "entity": "AYUNTAMIENTO DE CUARTE DE HUERVA",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469992470707"
-    },
-    {
-      "id": "ZA-000344278",
-      "province": "Zaragoza",
-      "title": "Transcurrido el plazo de exposición pública sin que se haya presentado ninguna",
-      "entity": "AYUNTAMIENTO DE CUARTE DE HUERVA",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469991460707"
-    },
-    {
-      "id": "ZA-000344265",
-      "province": "Zaragoza",
-      "title": "Por resolución de Alcaldía núm. 2026-2982, de 5 de octubre de 2026, se ha adoptado lo siguiente: Primero. - Nombrar a doña Antonia Ortiz Urgel, doña Nuria Padilla Langa, doña Jessica Anquela García, doña Lenke…",
-      "entity": "AYUNTAMIENTO DE CALATAYUD",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469978330505"
-    },
-    {
-      "id": "ZA-000344259",
-      "province": "Zaragoza",
-      "title": "ANUNCIO relativo a rectificación de errores y ampliación del plazo de presentación de instancias. Advertido error material en la base primera, apartado 1.1, de las bases de la convocatoria para la creación de…",
-      "entity": "AYUNTAMIENTO DE ALPARTIR",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1469972270404"
     }
   ]
 }
