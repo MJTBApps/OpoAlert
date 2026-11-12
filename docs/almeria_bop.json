@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-11T17:25:54.396807+00:00",
+  "lastCheckedUTC": "2026-11-12T07:42:25.106129+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 842,
-    "announcementsRead": 342,
-    "opportunities": 60
+    "pagesVisited": 802,
+    "announcementsRead": 331,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
-    "issuesRead": 21,
-    "pagesVisited": 842,
-    "announcementsRead": 342,
-    "opportunities": 60,
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
+    "issuesRead": 20,
+    "pagesVisited": 802,
+    "announcementsRead": 331,
+    "opportunities": 59,
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -43,7 +42,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -74,13 +72,13 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-12"
     ],
-    "originalPdfPagesRead": 842,
+    "originalPdfPagesRead": 802,
     "archiveIndexPagesRead": 2,
     "archiveTotalIssues": 48193,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392770&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392772&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+14%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392773&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+15%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392774&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F10%2F2026.pdf",
@@ -693,16 +691,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2657/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02650",
-      "province": "Almería",
-      "title": "RESOLUCIÓN DE ALCALDÍA N.º 2026-0717 DE FECHA 25/09/2026, DEL AYUNTAMIENTO DE BALANEGRA POR LA QUE SE APRUEBAN LAS BASES Y LA CONVOCATORIA PARA CUBRIR UNA PLAZA DE ADMINISTRATIVO/A, ESCALA DE ADMINISTRACIÓN GENERAL,…",
-      "entity": "AYUNTAMIENTO DE BALANEGRA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2650/anuncio.pdf"
     }
   ]
 }
