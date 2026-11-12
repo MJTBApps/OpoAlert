@@ -2,25 +2,23 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-10T06:44:56.195100+00:00",
+  "lastCheckedUTC": "2026-11-12T06:52:53.460881+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6668",
-    "pagesVisited": 15,
-    "announcementsRead": 75,
+    "bulletin": "EXTRA54",
+    "pagesVisited": 16,
+    "announcementsRead": 76,
     "opportunities": 0,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 15,
-    "pdfPagesRead": 219
+    "originalFullPdfIssues": 16,
+    "pdfPagesRead": 213
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-12",
-    "rangeEnd": "2026-11-10",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "EXTRA46",
-      "6660",
       "EXTRA47",
       "6661",
       "EXTRA48",
@@ -33,11 +31,12 @@
       "6665",
       "6666",
       "6667",
-      "6668"
+      "EXTRA52",
+      "6668",
+      "EXTRA53",
+      "EXTRA54"
     ],
     "publicationDates": [
-      "2026-10-12",
-      "2026-10-13",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -50,6 +49,9 @@
       "2026-10-30",
       "2026-11-03",
       "2026-11-06",
+      "2026-11-07",
+      "2026-11-10",
+      "2026-11-10",
       "2026-11-10"
     ],
     "nonPublicationDates": [
@@ -66,15 +68,15 @@
       "2026-11-02",
       "2026-11-04",
       "2026-11-05",
-      "2026-11-07",
       "2026-11-08",
-      "2026-11-09"
+      "2026-11-09",
+      "2026-11-11",
+      "2026-11-12"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 75,
+    "issuesRead": 16,
+    "announcementsRead": 76,
     "opportunities": 0,
     "regularBulletins": [
-      "6660",
       "6661",
       "6662",
       "6663",
@@ -85,38 +87,16 @@
       "6668"
     ],
     "extraordinaryBulletins": [
-      "EXTRA46",
       "EXTRA47",
       "EXTRA48",
       "EXTRA49",
       "EXTRA50",
-      "EXTRA51"
+      "EXTRA51",
+      "EXTRA52",
+      "EXTRA53",
+      "EXTRA54"
     ],
     "pdfEvidence": [
-      {
-        "number": "EXTRA46",
-        "date": "2026-10-12",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23287-bocce-extra46-12-10-2026?Itemid=534",
-        "sha256": "f50be323142996f8bb09c841f9e7c40b0fa818b233f96c99fd9e941efdbf7e39",
-        "bytes": 458739,
-        "pages": 18,
-        "edicts": [
-          94,
-          96
-        ]
-      },
-      {
-        "number": "6660",
-        "date": "2026-10-13",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23288-bocce-6660-13-10-2026?Itemid=534",
-        "sha256": "b1e24f02c72211c6fce1589e21f6e0280c5aa5f79daa003f4237942ec13e295e",
-        "bytes": 363074,
-        "pages": 3,
-        "edicts": [
-          689,
-          689
-        ]
-      },
       {
         "number": "EXTRA47",
         "date": "2026-10-15",
@@ -262,6 +242,18 @@
         ]
       },
       {
+        "number": "EXTRA52",
+        "date": "2026-11-07",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1963-noviembre/23318-bocce-extra52-07-11-2026?Itemid=534",
+        "sha256": "58030bfc2beba1a76b827fb3118759aa4d4d01a75676f6955586a9b88995729e",
+        "bytes": 651928,
+        "pages": 5,
+        "edicts": [
+          103,
+          103
+        ]
+      },
+      {
         "number": "6668",
         "date": "2026-11-10",
         "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23320-bocce-6668-10-11-2026?Itemid=534",
@@ -271,6 +263,30 @@
         "edicts": [
           746,
           754
+        ]
+      },
+      {
+        "number": "EXTRA53",
+        "date": "2026-11-10",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23321-bocce-extra53-10-11-2026?Itemid=534",
+        "sha256": "e3079610bfcebf845d0e1a326baea71d3861e19243231cba336dbbb484ca42d1",
+        "bytes": 389561,
+        "pages": 7,
+        "edicts": [
+          104,
+          106
+        ]
+      },
+      {
+        "number": "EXTRA54",
+        "date": "2026-11-10",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23323-bocce-extra54-10-11-2026?Itemid=534",
+        "sha256": "a8110b98804648453042b9c3c4f131d88a26ff7418f42ef6dfd9f1a4523557cb",
+        "bytes": 346079,
+        "pages": 3,
+        "edicts": [
+          107,
+          107
         ]
       }
     ]

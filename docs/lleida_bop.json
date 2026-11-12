@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-11T16:46:28.765402+00:00",
+  "lastCheckedUTC": "2026-11-12T06:59:01.331596+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 23,
-    "announcementsRead": 1081,
-    "opportunities": 70
+    "announcementsRead": 1071,
+    "opportunities": 72
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -37,10 +36,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -61,7 +60,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -74,10 +74,40 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1081,
-    "opportunities": 70
+    "announcementsRead": 1071,
+    "opportunities": 72
   },
   "notices": [
+    {
+      "id": "LE-202621709552",
+      "province": "Lleida (BOP)",
+      "title": "Anunci aprovació bases del procés selectiu, mitjançant el sistema de concurs-oposició i torn restringit de promoció interna, per a la provisió definitiva d’una plaça d’Administratiu/va de serveis generals de l’Ajuntament d’Almatret.",
+      "entity": "AJUNTAMENT D'ALMATRET (ALMATRET)",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/217/202621709552.pdf"
+    },
+    {
+      "id": "LE-202621709460",
+      "province": "Lleida (BOP)",
+      "title": "Bases i convocatòria de la plaça de tècnic/a del Projecte Nodes d’Energia Territorial (NET) i creació de borsa",
+      "entity": "CONSELL COMARCAL DE L'ALT URGELL (SEU D'URGELL, LA)",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/217/202621709460.pdf"
+    },
+    {
+      "id": "LE-202621709451",
+      "province": "Lleida (BOP)",
+      "title": "Anunci bases específiques i convocatòria concurs oposició lliure per a la contractació amb caràcter laboral indefinit fix d’un netejador/a de l’Ajuntament de la Pobla de Segur i creació de borsa de treball.",
+      "entity": "AJUNTAMENT DE LA POBLA DE SEGUR (POBLA DE SEGUR, LA)",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/217/202621709451.pdf"
+    },
     {
       "id": "LE-202621609525",
       "province": "Lleida (BOP)",
@@ -767,16 +797,6 @@
       "bulletin": "196",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/196/202619608488.pdf"
-    },
-    {
-      "id": "LE-202619508459",
-      "province": "Lleida (BOP)",
-      "title": "Convocatòria i bases borsa intermunicipal auxiliars administratius",
-      "entity": "AJUNTAMENT DE TORRES DE SEGRE (TORRES DE SEGRE)",
-      "date": "13/10/2026",
-      "bulletin": "195",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/195/202619508459.pdf"
     }
   ]
 }

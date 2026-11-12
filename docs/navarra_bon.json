@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-11T16:46:56.456486+00:00",
+  "lastCheckedUTC": "2026-11-12T06:59:25.705891+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
+    "bulletin": "226",
     "pagesVisited": 22,
-    "announcementsRead": 1345,
-    "opportunities": 44
+    "announcementsRead": 1364,
+    "opportunities": 46
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -37,10 +36,10 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -61,7 +60,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,10 +75,40 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1345,
-    "opportunities": 44
+    "announcementsRead": 1364,
+    "opportunities": 46
   },
   "notices": [
+    {
+      "id": "NA-2026-226-29",
+      "province": "Navarra",
+      "title": "Constitución de una relación de aspirantes a la contratación temporal del puesto de operario/a de mantenimiento",
+      "entity": "JUNTA MUNICIPAL DE AGUAS DE TUDELA",
+      "date": "12/11/2026",
+      "bulletin": "226",
+      "type": "Bolsa de trabajo",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/226/29"
+    },
+    {
+      "id": "NA-2026-226-27",
+      "province": "Navarra",
+      "title": "Oposición de una plaza de técnico/a de grado medio del Área Económica",
+      "entity": "MARCILLA",
+      "date": "12/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/226/27"
+    },
+    {
+      "id": "NA-2026-226-12",
+      "province": "Navarra",
+      "title": "CONVOCATORIA para la confección, mediante pruebas selectivas, de una lista de técnico/a de grado medio de biblioteca, documentación y archivo al servicio del Parlamento de Navarra, para la contratación administrativa temporal.",
+      "entity": "Comunidad Foral de Navarra",
+      "date": "12/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/226/12"
+    },
     {
       "id": "NA-2026-224-24",
       "province": "Navarra",
@@ -508,16 +538,6 @@
       "bulletin": "206",
       "type": "Bolsa de trabajo",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/19"
-    },
-    {
-      "id": "NA-2026-204-27",
-      "province": "Navarra",
-      "title": "Convocatoria para la constitución de una relación de aspirantes a la contratación temporal del puesto de personal de servicios múltiples",
-      "entity": "MIRANDA DE ARGA",
-      "date": "13/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/204/27"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-11T16:40:59.628175+00:00",
+  "lastCheckedUTC": "2026-11-12T06:54:22.265231+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "Ext. 32",
-    "pagesVisited": 28,
-    "announcementsRead": 899,
-    "opportunities": 23,
+    "bulletin": "Ext. 33",
+    "pagesVisited": 29,
+    "announcementsRead": 908,
+    "opportunities": 25,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -44,10 +43,11 @@
       "Ext. 30",
       "Ext. 31",
       "217",
-      "Ext. 32"
+      "Ext. 32",
+      "218",
+      "Ext. 33"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -74,7 +74,9 @@
       "2026-11-10",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -86,11 +88,10 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "issuesRead": 28,
-    "announcementsRead": 899,
-    "opportunities": 23,
+    "issuesRead": 29,
+    "announcementsRead": 908,
+    "opportunities": 25,
     "regularBulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -111,7 +112,8 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "extraordinaryBulletins": [
       "Ext. 27",
@@ -119,10 +121,10 @@
       "Ext. 29",
       "Ext. 30",
       "Ext. 31",
-      "Ext. 32"
+      "Ext. 32",
+      "Ext. 33"
     ],
     "officialIssueIds": [
-      47045,
       47065,
       46866,
       47085,
@@ -149,10 +151,42 @@
       47546,
       47565,
       47505,
-      47570
+      47570,
+      47525,
+      47585
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-8876",
+      "province": "Cantabria (BOC)",
+      "title": "Convocatoria de proceso selectivo, para cubrir una necesidad urgente mediante contratación de un/a Técnico/a Jurídico, un/a Trabajador/a Social, un/a Administrativo/a de Gestión y dos Auxiliares Administrativos, todos de duración determinada por circunstancias de la producción.",
+      "entity": "Gestión de Viviendas e Infraestructuras de Cantabria S.L.",
+      "date": "12/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442949"
+    },
+    {
+      "id": "CN-2026-8872",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria para la cobertura, de forma interina, de la plaza de Secretario/a-Interventor/a, mediante el sistema de concurso. Expediente 575/2026.",
+      "entity": "Ayuntamiento de Potes",
+      "date": "12/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442946"
+    },
+    {
+      "id": "CN-2026-8850",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria para la creación de una bolsa de trabajo temporal de Técnico de Aula de Dos Años, para atender eventuales necesidades de personal. Expediente 2333/2026.",
+      "entity": "Ayuntamiento de Noja",
+      "date": "12/11/2026",
+      "bulletin": "218",
+      "type": "Bolsa de trabajo",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442932"
+    },
     {
       "id": "CN-2026-8910",
       "province": "Cantabria (BOC)",
@@ -372,16 +406,6 @@
       "bulletin": "198",
       "type": "Bolsa de trabajo",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441670"
-    },
-    {
-      "id": "CN-2026-7898",
-      "province": "Cantabria (BOC)",
-      "title": "Convocatoria para la selección de personal investigador en formación mediante contrato predoctoral con cargo a proyectos/contratos de investigación.",
-      "entity": "Universidad de Cantabria",
-      "date": "13/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441553"
     }
   ]
 }
