@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Illes Balears (BOIB)",
   "source": "https://www.caib.es/eboibfront/es",
-  "lastCheckedUTC": "2026-11-11T16:30:11.384615+00:00",
+  "lastCheckedUTC": "2026-11-12T06:29:04.378468+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "144",
-    "pagesVisited": 15,
-    "announcementsRead": 1131,
-    "opportunities": 155
+    "pagesVisited": 14,
+    "announcementsRead": 1082,
+    "opportunities": 152
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "130",
       "131",
       "132",
       "133",
@@ -33,7 +32,6 @@
       "144"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-15",
       "2026-10-17",
       "2026-10-20",
@@ -65,11 +63,12 @@
       "2026-11-06",
       "2026-11-08",
       "2026-11-09",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 1131,
-    "opportunities": 155
+    "issuesRead": 14,
+    "announcementsRead": 1082,
+    "opportunities": 152
   },
   "notices": [
     {
@@ -1591,36 +1590,6 @@
       "bulletin": "131",
       "type": "Plaza / oposición",
       "url": "https://www.caib.es/eboibfront/pdf/es/2026/131/1230145"
-    },
-    {
-      "id": "IB-2026-10197",
-      "province": "Illes Balears (BOIB)",
-      "title": "Constitución de la bolsa de trabajo de oficial 1.ª brigada del Ayuntamiento de Alaró",
-      "entity": "AYUNTAMIENTO DE ALARÓ",
-      "date": "13/10/2026",
-      "bulletin": "130",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/130/1230272"
-    },
-    {
-      "id": "IB-2026-10195",
-      "province": "Illes Balears (BOIB)",
-      "title": "Constitución de la bolsa de trabajo de limpiador/a del Ayuntamiento de Alaró",
-      "entity": "AYUNTAMIENTO DE ALARÓ",
-      "date": "13/10/2026",
-      "bulletin": "130",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/130/1230267"
-    },
-    {
-      "id": "IB-2026-10123",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la Presidencia del Instituto Mallorquín de Asuntos Sociales (IMAS), por la que se nombra personal funcionario de carrera y se adjudican los puestos de trabajo a las personas aspirantes que han superado el proceso selectivo para ingresar como personal funcionario de la escala de Administración especial, subescala técnica, clase técnico/a superior, especialidad Médico-Médica, de la oferta de empleo público correspondiente al año 2023 del Instituto Mallorquín de Asuntos Sociales",
-      "entity": "CONSEJO INSULAR DE MALLORCA INSTITUTO MALLORQUÍN DE ASUNTOS SOCIALES",
-      "date": "13/10/2026",
-      "bulletin": "130",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/130/1230123"
     }
   ]
 }

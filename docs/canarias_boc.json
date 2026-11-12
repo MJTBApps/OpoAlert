@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-11T16:27:19.059331+00:00",
+  "lastCheckedUTC": "2026-11-12T06:28:42.145128+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 23,
-    "announcementsRead": 402,
-    "opportunities": 36
+    "announcementsRead": 395,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -38,10 +37,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -63,7 +62,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -77,10 +77,30 @@
       "2026-11-08"
     ],
     "issuesRead": 23,
-    "announcementsRead": 402,
-    "opportunities": 36
+    "announcementsRead": 395,
+    "opportunities": 37
   },
   "notices": [
+    {
+      "id": "IC-2026-3914",
+      "province": "Canarias (BOC)",
+      "title": "ORDEN de 29 de octubre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 15631, denominado Secretario/a de Dirección, adscrito a la Dirección General de Universidades de este Departamento, efectuada por Resolución de 26 de agosto de 2026, de la Secretaría General Técnica.",
+      "entity": "Consejería de Universidades, Ciencia e Innovación y Cultura",
+      "date": "12/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-227-3914.pdf"
+    },
+    {
+      "id": "IC-2026-3913",
+      "province": "Canarias (BOC)",
+      "title": "ORDEN de 29 de octubre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 12312410, denominado Jefe/a Área Coordinación e Interrelación de Investigación, Innovación y Sociedad de la Información, adscrito a la Agencia Canaria de Investigación, Innovación y Sociedad de la Información de este Departamento, efectuada por Resolución de 9 de julio de 2026, de la Secretaría General Técnica.",
+      "entity": "Consejería de Universidades, Ciencia e Innovación y Cultura",
+      "date": "12/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-227-3913.pdf"
+    },
     {
       "id": "IC-2026-3908",
       "province": "Canarias (BOC)",
@@ -430,16 +450,6 @@
       "bulletin": "205",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-205-3536.pdf"
-    },
-    {
-      "id": "IC-2026-3510",
-      "province": "Canarias (BOC)",
-      "title": "Servicio Canario de la Salud. Dirección General de Recursos Humanos.- Resolución de 30 de septiembre de 2026, por la que se aprueba la relación definitiva y la adjudicación de plazas del concurso de traslado voluntario para la provisión de plazas básicas de personal estatutario de la categoría de Pediatra de Equipo de Atención Primaria en los órganos de prestación de servicios sanitarios del Servicio Canario de la Salud, convocado por Resolución de 1 de julio de 2025.",
-      "entity": "Consejería de Sanidad",
-      "date": "13/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-204-3510.pdf"
     }
   ]
 }

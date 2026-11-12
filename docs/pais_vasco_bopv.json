@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-11T16:29:30.403927+00:00",
+  "lastCheckedUTC": "2026-11-12T06:30:31.061681+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "216",
-    "pagesVisited": 22,
-    "announcementsRead": 378,
-    "opportunities": 42
+    "pagesVisited": 21,
+    "announcementsRead": 331,
+    "opportunities": 41
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -40,7 +39,6 @@
       "216"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -71,18 +69,19 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-12"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 378,
-    "opportunities": 42
+    "issuesRead": 21,
+    "announcementsRead": 331,
+    "opportunities": 41
   },
   "notices": [
     {
       "id": "PV-2026-4774",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 28 de octubre de 2026, del consejero de Industria, Transición Energética y Sostenibilidad, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «secretario/a alto cargo», código 520010, dotación 64, en la Viceconsejería de Tecnología, Innovación y Transformación Digital.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Industria, Transición Energética y Sostenibilidad",
       "date": "11/11/2026",
       "bulletin": "216",
       "type": "Plaza / oposición",
@@ -92,7 +91,7 @@
       "id": "PV-2026-4773",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 30 de octubre de 2026, de la consejera de Gobernanza, Administración Digital y Autogobierno, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo para la Dirección de Estrategia Digital.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Gobernanza, Administración Digital y Autogobierno",
       "date": "11/11/2026",
       "bulletin": "216",
       "type": "Plaza / oposición",
@@ -487,16 +486,6 @@
       "bulletin": "196",
       "type": "Bolsa de trabajo",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604260a.pdf"
-    },
-    {
-      "id": "PV-2026-4203",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 1350/2026, de 15 de mayo, de la directora gerente de la Red de Salud Mental de Bizkaia, por la que se convoca concurso para la provisión de un puesto de trabajo de jefe/a de Servicio Sanitario del Hospital de Zaldibar, en la Red de Salud Mental de Bizkaia de Osakidetza-Servicio vasco de salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "13/10/2026",
-      "bulletin": "195",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604203a.pdf"
     }
   ]
 }

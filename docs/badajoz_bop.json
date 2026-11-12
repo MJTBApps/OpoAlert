@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-11T16:24:49.274725+00:00",
+  "lastCheckedUTC": "2026-11-12T06:25:48.868329+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 21,
-    "announcementsRead": 473,
-    "opportunities": 50
+    "announcementsRead": 459,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -36,10 +35,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -59,7 +58,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,10 +73,20 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 473,
-    "opportunities": 50
+    "announcementsRead": 459,
+    "opportunities": 47
   },
   "notices": [
+    {
+      "id": "BD-2026-165217",
+      "province": "Badajoz",
+      "title": "Decreto de acumulación de plazas a la convocatoria de cinco plazas de Cabo del Servicio de Bomberos",
+      "entity": "Ayuntamiento de Badajoz",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-12000000_4483.pdf"
+    },
     {
       "id": "BD-2026-165189",
       "province": "Badajoz",
@@ -536,46 +546,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-15000000_3995.pdf"
-    },
-    {
-      "id": "BD-2026-164748",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión de una plaza de Formador/a, para los programas P01 y P02, durante el curso 2026-2027",
-      "entity": "Ayuntamiento de Valle de Santa Ana",
-      "date": "13/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-13000000_4017.pdf"
-    },
-    {
-      "id": "BD-2026-164737",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión de cinco plazas vacantes de personal funcionario/a, de Arquitecto/a Técnico/a",
-      "entity": "Diputación de Badajoz",
-      "date": "13/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-13000000_4006.pdf"
-    },
-    {
-      "id": "BD-2026-164734",
-      "province": "Badajoz",
-      "title": "Decreto de contratación como personal laboral fijo discontinuo de la convocatoria de cinco plazas de Profesor/a de Música",
-      "entity": "Ayuntamiento de Badajoz",
-      "date": "13/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-13000000_4004.pdf"
-    },
-    {
-      "id": "BD-2026-164733",
-      "province": "Badajoz",
-      "title": "Decreto por el que se declara desierta desierta la convocatoria para cubrir, mediante concurso específico de méritos, el puesto número 960/001 de Jefe/a de Sección de Control e Información",
-      "entity": "Ayuntamiento de Badajoz",
-      "date": "13/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-13000000_4003.pdf"
     }
   ]
 }
