@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
+  "lastCheckedUTC": "2026-11-12T06:43:09.397027+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 101,
-    "opportunities": 101,
+    "announcementsRead": 98,
+    "opportunities": 98,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-19",
       "2026-10-20",
@@ -38,7 +37,7 @@
       "2026-11-11"
     ],
     "nonPublicationDates": [
-      "2026-10-13",
+      "2026-10-14",
       "2026-10-16",
       "2026-10-17",
       "2026-10-18",
@@ -48,12 +47,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-12"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 101,
-    "opportunities": 101
+    "announcementsRead": 98,
+    "opportunities": 98
   },
   "notices": [
     {
@@ -1027,26 +1027,6 @@
       "url": "https://cido.diba.cat/oposicions/20888930"
     },
     {
-      "id": "CIDO8-22335041",
-      "title": "Borsa de treball de places de Tècnic municipal #Deltebreterritori, Arquitecte, Enginyer o Arquitecte tècnic",
-      "entity": "Ajuntament de Deltebre",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22335041"
-    },
-    {
-      "id": "CIDO8-21523806",
-      "title": "Borsa de treball de places d'Agent cívic de l'Àrea #DeltebreTerritori (complementària)",
-      "entity": "Ajuntament de Deltebre",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21523806"
-    },
-    {
       "id": "CIDO8-18615823",
       "title": "1 plaça d'Educador de llar d'infants",
       "entity": "Ajuntament de Corbera d'Ebre",
@@ -1055,16 +1035,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18615823"
-    },
-    {
-      "id": "CIDO8-22315669",
-      "title": "Borsa de treball de places de Peó de brigada municipal",
-      "entity": "Ajuntament del Morell",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22315669"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
+  "lastCheckedUTC": "2026-11-12T06:43:09.397027+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 76,
-    "opportunities": 76,
+    "announcementsRead": 71,
+    "opportunities": 71,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "publicationDates": [
-      "2026-10-13",
       "2026-10-16",
       "2026-10-20",
       "2026-10-21",
@@ -48,12 +47,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-12"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 76,
-    "opportunities": 76
+    "announcementsRead": 71,
+    "opportunities": 71
   },
   "notices": [
     {
@@ -567,16 +567,6 @@
       "url": "https://cido.diba.cat/oposicions/22381543"
     },
     {
-      "id": "CIDO6-21744935",
-      "title": "1 plaça d'Encarregat d'obres",
-      "entity": "Ajuntament de Salt",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21744935"
-    },
-    {
       "id": "CIDO6-19319033",
       "title": "2 places d'Educador de la Llar d'Infants",
       "entity": "Ajuntament de Tossa de Mar",
@@ -677,16 +667,6 @@
       "url": "https://cido.diba.cat/oposicions/22368620"
     },
     {
-      "id": "CIDO6-22368405",
-      "title": "Borsa de treball de places de Peó conductor especialista",
-      "entity": "Ajuntament de Cassà de la Selva",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22368405"
-    },
-    {
       "id": "CIDO6-22329464",
       "title": "Borsa de treball de places d'Auxiliar administratiu",
       "entity": "Ajuntament de Roses",
@@ -747,16 +727,6 @@
       "url": "https://cido.diba.cat/oposicions/21771332"
     },
     {
-      "id": "CIDO6-22319984",
-      "title": "Borsa de treball de places de personal Administratiu",
-      "entity": "Ajuntament de Cassà de la Selva",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22319984"
-    },
-    {
       "id": "CIDO6-17280871",
       "title": "1 plaça d'Agent de la Policia Local",
       "entity": "Ajuntament de Begur",
@@ -795,26 +765,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/19004614"
-    },
-    {
-      "id": "CIDO6-22315213",
-      "title": "1 plaça d'Oficial de brigada",
-      "entity": "Ajuntament de la Cellera de Ter",
-      "date": "13/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22315213"
-    },
-    {
-      "id": "CIDO6-18247071",
-      "title": "Borsa de treball de places d'Administratiu",
-      "entity": "Ajuntament de Sant Feliu de Guíxols",
-      "date": "13/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18247071"
     }
   ]
 }

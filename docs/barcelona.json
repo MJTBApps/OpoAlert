@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
+  "lastCheckedUTC": "2026-11-12T06:43:09.397027+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 304,
-    "opportunities": 304,
+    "announcementsRead": 302,
+    "opportunities": 302,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -48,12 +47,13 @@
       "2026-10-25",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-12"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 304,
-    "opportunities": 304
+    "announcementsRead": 302,
+    "opportunities": 302
   },
   "notices": [
     {
@@ -2177,16 +2177,6 @@
       "url": "https://cido.diba.cat/oposicions/22320018"
     },
     {
-      "id": "CIDO5-22368276",
-      "title": "Borsa de treball de places de Tècnic mitjà de l'Àrea d'Atenció a les Persones",
-      "entity": "Mancomunitat Intermunicipal Voluntària La Plana",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22368276"
-    },
-    {
       "id": "CIDO5-22367414",
       "title": "Borsa de treball de places d'Enginyer tècnic d'instal·lacions",
       "entity": "Ajuntament de Manresa",
@@ -3085,16 +3075,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21347597"
-    },
-    {
-      "id": "CIDO5-21872774",
-      "title": "1 plaça de Tècnic mitjà cultura",
-      "entity": "Ajuntament de Vilafranca del Penedès",
-      "date": "13/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21872774"
     }
   ]
 }
