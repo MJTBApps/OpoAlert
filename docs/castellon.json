@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-11T12:31:06.418883+00:00",
+  "lastCheckedUTC": "2026-11-12T06:35:34.460133+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "136",
+    "bulletin": "137",
     "pagesVisited": 13,
-    "announcementsRead": 508,
-    "opportunities": 23,
+    "announcementsRead": 504,
+    "opportunities": 21,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 508,
-    "opportunities": 23,
+    "announcementsRead": 504,
+    "opportunities": 21,
     "bulletins": [
-      "124",
       "125",
       "126",
       "127",
@@ -32,10 +31,10 @@
       "133",
       "134",
       "135",
-      "136"
+      "136",
+      "137"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-15",
       "2026-10-17",
       "2026-10-20",
@@ -47,7 +46,8 @@
       "2026-11-03",
       "2026-11-05",
       "2026-11-07",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-14",
@@ -279,26 +279,6 @@
       "bulletin": "125",
       "type": "Plaza / oposición",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/7Q9c2JbENL"
-    },
-    {
-      "id": "CS-511247990696363295",
-      "province": "Castellón",
-      "title": "Bases de las pruebas selectivas para la provisión en propiedad de una plaza de Agente de Empleo y Desarrollo Local",
-      "entity": "AJUNTAMENT DE BETXÍ",
-      "date": "13/10/2026",
-      "bulletin": "124",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/blWJZdd6lD"
-    },
-    {
-      "id": "CS-123587780492989969",
-      "province": "Castellón",
-      "title": "Bases específicas del concurso para la provisión en propiedad de un puesto de auxiliar implantación administración electrónica",
-      "entity": "AJUNTAMENT DE BETXÍ",
-      "date": "13/10/2026",
-      "bulletin": "124",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9824BFBEdl"
     }
   ]
 }
