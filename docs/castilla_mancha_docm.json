@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-11T16:25:41.003628+00:00",
+  "lastCheckedUTC": "2026-11-12T16:32:48.569023+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 23,
-    "announcementsRead": 744,
+    "announcementsRead": 753,
     "opportunities": 39
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -38,10 +37,10 @@
       "3E",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -63,7 +62,8 @@
       "2026-11-07",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -76,10 +76,20 @@
       "2026-11-08"
     ],
     "issuesRead": 23,
-    "announcementsRead": 744,
+    "announcementsRead": 753,
     "opportunities": 39
   },
   "notices": [
+    {
+      "id": "CM-2026-8053",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Oposiciones. Resolución de 29/10/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para opción a las mismas a las personas aspirantes que han superado el proceso selectivo convocado para el ingreso, por el sistema general de acceso libre, en la categoría de Facultativo/a Especialista de Área de Cirugía Torácica de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha. [NID 2026/8053]",
+      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/12/pdf/2026_8053.pdf&tipo=rutaDocm"
+    },
     {
       "id": "CM-2026-7985",
       "province": "Castilla-La Mancha (DOCM)",
@@ -459,16 +469,6 @@
       "bulletin": "197",
       "type": "Bolsa de trabajo",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/14/pdf/2026_7278.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7281",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 06/10/2026 , de la Dirección General de la Función Pública, por la que se adjudica destino a la persona aprobada en el proceso selectivo para la cobertura, con carácter fijo por el sistema de acceso libre en la categoría profesional de Auxiliar de Laboratorio, de puestos correspondientes a la plantilla de personal laboral de la Administración de la Junta de Comunidades de Castilla-La Mancha. [NID 2026/7281]",
-      "entity": "Consejería de Hacienda, Administraciones Públicas y Transformación Digital",
-      "date": "13/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/13/pdf/2026_7281.pdf&tipo=rutaDocm"
     }
   ]
 }

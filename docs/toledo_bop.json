@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-11T16:30:10.148503+00:00",
+  "lastCheckedUTC": "2026-11-12T16:38:36.256815+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "216",
+    "bulletin": "217",
     "pagesVisited": 21,
-    "announcementsRead": 560,
-    "opportunities": 21
+    "announcementsRead": 553,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -36,10 +35,10 @@
       "213",
       "214",
       "215",
-      "216"
+      "216",
+      "217"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -59,7 +58,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,10 +73,40 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 560,
-    "opportunities": 21
+    "announcementsRead": 553,
+    "opportunities": 24
   },
   "notices": [
+    {
+      "id": "TO-2026-5250",
+      "province": "Toledo",
+      "title": "Bases específicas que han de regir la convocatoria y el proceso de selección para la provisión de una plaza de Policía Local, personal funcionario subgrupo C1, mediante el sistema de movilidad.",
+      "entity": "AYUNTAMIENTO DE FUENSALIDA",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115233;0&insert_number=5250&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5190",
+      "province": "Toledo",
+      "title": "Bases específicas para la selección de una plaza de Ingeniero de Caminos, Canales y Puertos y constitución de bolsa de empleo temporal por el sistema de oposición libre del Ayuntamiento de Ontígola (Toledo).",
+      "entity": "AYUNTAMIENTO DE ONTIGOLA",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115166;0&insert_number=5190&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5153",
+      "province": "Toledo",
+      "title": "BASES PARA CUBRIR  UNA PLAZA DE AUXILIAR ADMINISTRATIVO EN RÉGIMEN DE PERSONAL LABORAL EN EL EXCMO. AYUNTAMIENTO DE PANTOJA",
+      "entity": "AYUNTAMIENTO DE PANTOJA",
+      "date": "12/11/2026",
+      "bulletin": "217",
+      "type": "Plaza / oposición",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115137;0&insert_number=5153&insert_year=2026"
+    },
     {
       "id": "TO-2026-5220",
       "province": "Toledo",

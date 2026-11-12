@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-11T16:34:55.041661+00:00",
+  "lastCheckedUTC": "2026-11-12T16:40:51.116973+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 64,
-    "opportunities": 64,
+    "announcementsRead": 66,
+    "opportunities": 66,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "publicationDates": [
       "2026-10-14",
       "2026-10-16",
@@ -32,10 +32,10 @@
       "2026-11-05",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
-      "2026-10-13",
       "2026-10-15",
       "2026-10-17",
       "2026-10-18",
@@ -52,10 +52,40 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 64,
-    "opportunities": 64
+    "announcementsRead": 66,
+    "opportunities": 66
   },
   "notices": [
+    {
+      "id": "CIDO7-22199087",
+      "title": "1 plaça de Peó de brigada",
+      "entity": "Ajuntament de l'Albi",
+      "date": "12/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22199087"
+    },
+    {
+      "id": "CIDO7-19976046",
+      "title": "1 plaça de Netejador",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "12/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19976046"
+    },
+    {
+      "id": "CIDO7-22484091",
+      "title": "Borsa de treball de places de Monitor de lleure per a la realització del Parc de Nadal Cucaliu (ampliació)",
+      "entity": "Ajuntament de Tremp",
+      "date": "11/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22484091"
+    },
     {
       "id": "CIDO7-22474582",
       "title": "Borsa de treball de places d'Educador de la llar d'infants municipal",
@@ -135,16 +165,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22335102"
-    },
-    {
-      "id": "CIDO7-22199087",
-      "title": "1 plaça de Peó de brigada",
-      "entity": "Ajuntament de l'Albi",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22199087"
     },
     {
       "id": "CIDO7-22469510",

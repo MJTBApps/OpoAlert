@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-11T16:29:13.250986+00:00",
+  "lastCheckedUTC": "2026-11-12T16:37:32.555001+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "261",
+    "bulletin": "262",
     "pagesVisited": 27,
-    "announcementsRead": 632,
-    "opportunities": 60
+    "announcementsRead": 628,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "236",
       "237",
       "238",
       "239",
@@ -42,10 +41,10 @@
       "259",
       "260",
       "8E",
-      "261"
+      "261",
+      "262"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -71,7 +70,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -80,8 +80,8 @@
       "2026-11-08"
     ],
     "issuesRead": 27,
-    "announcementsRead": 632,
-    "opportunities": 60
+    "announcementsRead": 628,
+    "opportunities": 53
   },
   "notices": [
     {
@@ -613,76 +613,6 @@
       "bulletin": "237",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845634/pdf"
-    },
-    {
-      "id": "MU-2026-4947",
-      "province": "Región de Murcia (BORM)",
-      "title": "Bases y convocatoria para la provisión definitiva, mediante sistema de concurso de méritos, de 2 puestos de Auxiliar Administrativo del Servicio de Estadística y Servicio de Personal del Ayuntamiento de Torre Pacheco.",
-      "entity": "Torre Pacheco",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845629/pdf"
-    },
-    {
-      "id": "MU-2026-4941",
-      "province": "Región de Murcia (BORM)",
-      "title": "Aprobación inicial de la modificación parcial de la base 31 de las bases de ejecución del Presupuesto Municipal para el ejercicio 2026 y rectificación de errores en la memoria de personal integrante del anexo del personal.",
-      "entity": "Los Alcázares",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845623/pdf"
-    },
-    {
-      "id": "MU-2026-4931",
-      "province": "Región de Murcia (BORM)",
-      "title": "Convocatoria y bases específicas para la provisión de una plaza de Técnico de Administración General, promoción interna, vacante en la plantilla de personal funcionario del Ayuntamiento de Archena.",
-      "entity": "Archena",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845613/pdf"
-    },
-    {
-      "id": "MU-2026-4919",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1297/2026 de 6 de octubre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845601/pdf"
-    },
-    {
-      "id": "MU-2026-4918",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1296/2026 de 6 de octubre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845600/pdf"
-    },
-    {
-      "id": "MU-2026-4915",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 4 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna, 16 plazas del Cuerpo de Técnicos Auxiliares, opción Cuidados Auxiliares de Enfermería de la Administración Pública Regional (código DFX04P24-6).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845597/pdf"
-    },
-    {
-      "id": "MU-2026-4914",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 4 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna sobre el mismo puesto de trabajo, 8 plazas del Cuerpo de Técnicos Especialistas, opción Emergencias de la Administración Pública Regional (código CFX41P25-6).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "13/10/2026",
-      "bulletin": "236",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845596/pdf"
     }
   ]
 }

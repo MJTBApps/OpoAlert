@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla y León (BOCYL)",
   "source": "https://bocyl.jcyl.es/",
-  "lastCheckedUTC": "2026-11-11T16:25:54.505336+00:00",
+  "lastCheckedUTC": "2026-11-12T16:32:28.020084+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "218",
+    "bulletin": "219",
     "pagesVisited": 21,
-    "announcementsRead": 878,
-    "opportunities": 188
+    "announcementsRead": 886,
+    "opportunities": 185
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -36,10 +35,10 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -59,7 +58,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,10 +73,60 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 878,
-    "opportunities": 188
+    "announcementsRead": 886,
+    "opportunities": 185
   },
   "notices": [
+    {
+      "id": "CY-20261112-9",
+      "province": "Castilla y León (BOCYL)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del Rectorado de la Universidad de Valladolid, por la que se convoca proceso selectivo para la formación de una bolsa de empleo para la cobertura de ofertas de trabajo con carácter temporal, de la categoría laboral de Técnico Especialista de Oficios Mantenimiento General.",
+      "entity": "UNIVERSIDAD DE VALLADOLID",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-9.pdf"
+    },
+    {
+      "id": "CY-20261112-3",
+      "province": "Castilla y León (BOCYL)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, de la Viceconsejería de Administraciones Públicas, Relaciones Institucionales y Atención al Ciudadano, por la que se aprueba y publica la relación complementaria de aspirantes que han superado el proceso selectivo de acceso, mediante el sistema de concurso-oposición, a la competencia funcional de Ayudante Técnico Educativo convocado por Resolución de 22 de diciembre de 2022, de la Viceconsejería de Administraciones Públicas y Atención al Ciudadano, en el marco del proceso de estabilización de empleo temporal previsto en la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público, y se ofertan los puestos de trabajo.",
+      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-3.pdf"
+    },
+    {
+      "id": "CY-20261112-27",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ACUERDO de 6 de noviembre de 2026, de la Junta de Gobierno de la Diputación Provincial de León, relativo a la convocatoria y las bases del concurso específico de méritos para la provisión del puesto de Jefe/a de Sección Portales de Internet y Gobierno Abierto, vacantes en la relación de puestos de trabajo, reservados a personal funcionario de la Diputación Provincial de León.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE LEÓN",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-27.pdf"
+    },
+    {
+      "id": "CY-20261112-2",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ORDEN PRE/1211/2026, de 30 de octubre, por la que se convoca la constitución de la bolsa de empleo temporal de la categoría profesional de Controlador Pecuario de la Administración de la Comunidad de Castilla y León.",
+      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-2.pdf"
+    },
+    {
+      "id": "CY-20261112-1",
+      "province": "Castilla y León (BOCYL)",
+      "title": "ORDEN CYT/1218/2026, de 6 de noviembre, por la que se resuelve convocatoria pública para cubrir, mediante el sistema de libre designación, el puesto de trabajo que se cita.",
+      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-1.pdf"
+    },
     {
       "id": "CY-20261111-41",
       "province": "Castilla y León (BOCYL)",
@@ -1876,86 +1926,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://bocyl.jcyl.es/boletines/2026/10/14/pdf/BOCYL-D-14102026-199-1.pdf"
-    },
-    {
-      "id": "CY-20261013-7",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 7 de octubre de 2026, de la Viceconsejería de Administraciones Públicas, Relaciones Institucionales y Atención al Ciudadano, por la que se modifica la composición del tribunal del proceso selectivo para el ingreso, por el sistema de acceso por promoción interna, en la categoría profesional de Técnico-a en Mecánica-Mantenimiento de la Administración de la Comunidad de Castilla y León, convocado por Resolución de 24 de noviembre de 2025.",
-      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-7.pdf"
-    },
-    {
-      "id": "CY-20261013-5",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, de la Viceconsejería de Administraciones Públicas, Relaciones Institucionales y Atención al Ciudadano, por la que se aprueba y publica la relación complementaria de aspirantes que han superado el proceso selectivo de acceso, mediante el sistema de concurso-oposición, al Cuerpo de Ingenieros Superiores (Montes) de la Administración de la Comunidad de Castilla y León, que fue convocado por Resolución de 22 de diciembre de 2022, en el marco del proceso de estabilización de empleo temporal previsto en la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público, y se ofertan los puestos de trabajo.",
-      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-5.pdf"
-    },
-    {
-      "id": "CY-20261013-4",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, de la Viceconsejería de Administraciones Públicas, Relaciones Institucionales y Atención al Ciudadano, por la que se aprueba y publica la relación complementaria de aspirantes que han superado el proceso selectivo de acceso, mediante el sistema de concurso, al Cuerpo Facultativo Superior Escala Sanitaria (Médicos) de la Administración de la Comunidad de Castilla y León, que fue convocado por Resolución de 24 de noviembre de 2022, de la Viceconsejería de Administraciones Públicas y Atención al Ciudadano, en el marco del proceso de estabilización de empleo temporal previsto en la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público, y se ofertan los puestos de trabajo.",
-      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-4.pdf"
-    },
-    {
-      "id": "CY-20261013-3",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 7 de octubre de 2026, del Rectorado de la Universidad de León, por la que se resuelve el concurso público convocado por Resolución de 7 de mayo de 2026, para cubrir plazas de personal docente e investigador contratado fijo en régimen de derecho laboral y se acuerda la formalización del correspondiente contrato (DL005053).",
-      "entity": "UNIVERSIDAD DE LEÓN",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-3.pdf"
-    },
-    {
-      "id": "CY-20261013-2",
-      "province": "Castilla y León (BOCYL)",
-      "title": "ORDEN EDU/1034/2026, de 6 de octubre, por la que se resuelve parcialmente convocatoria pública para cubrir, mediante el sistema de libre designación, el puesto de trabajo que se cita.",
-      "entity": "CONSEJERÍA DE EDUCACIÓN",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-2.pdf"
-    },
-    {
-      "id": "CY-20261013-18",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 7 de octubre de 2026, de la Alcaldía del Ayuntamiento de Segovia, por la que se aprueban las bases específicas para la cobertura, mediante el sistema de oposición por turno libre, de 1 plaza de Auxiliar de Archivo, Administración Especial, Subescala de Servicios Especiales, Subgrupo Cometidos Varios, oferta de empleo público de 2024. Expte.: 29/2024/P14105.",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-18.pdf"
-    },
-    {
-      "id": "CY-20261013-17",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, de la Alcaldía del Ayuntamiento de Segovia, por la que se aprueban las bases específicas para la cobertura, mediante el sistema de concurso-oposición por promoción interna, de 1 plaza de Oficial de Instalaciones Deportivas, Administración Especial, oferta de empleo público de 2023. Expte.: 15/2026/P14105.",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-17.pdf"
-    },
-    {
-      "id": "CY-20261013-16",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, de la Alcaldía del Ayuntamiento de Segovia, por la que se aprueban las bases específicas para la cobertura, mediante el sistema de concurso-oposición por promoción interna, de 1 plaza de Oficial Cantero, Administración Especial, oferta de empleo público de 2025. Expte.: 14/2026/P14105.",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/13/pdf/BOCYL-D-13102026-198-16.pdf"
     }
   ]
 }

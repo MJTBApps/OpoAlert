@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-11T17:33:43.964758+00:00",
+  "lastCheckedUTC": "2026-11-12T17:29:07.697072+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "218",
+    "bulletin": "219",
     "pagesVisited": 21,
-    "announcementsRead": 400,
-    "opportunities": 27
+    "announcementsRead": 413,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 400,
-    "opportunities": 27,
+    "announcementsRead": 413,
+    "opportunities": 30,
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -40,10 +39,10 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -63,7 +62,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -77,7 +77,6 @@
       "2026-11-08"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/13-10-2026/BOP-S-2026-198.pdf",
       "https://bop.dipucordoba.es/visor-pdf/14-10-2026/BOP-S-2026-199.pdf",
       "https://bop.dipucordoba.es/visor-pdf/15-10-2026/BOP-S-2026-200.pdf",
       "https://bop.dipucordoba.es/visor-pdf/16-10-2026/BOP-S-2026-201.pdf",
@@ -97,10 +96,41 @@
       "https://bop.dipucordoba.es/visor-pdf/06-11-2026/BOP-S-2026-215.pdf",
       "https://bop.dipucordoba.es/visor-pdf/09-11-2026/BOP-S-2026-216.pdf",
       "https://bop.dipucordoba.es/visor-pdf/10-11-2026/BOP-S-2026-217.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/11-11-2026/BOP-S-2026-218.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/11-11-2026/BOP-S-2026-218.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-S-2026-219.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3836",
+      "province": "Córdoba",
+      "title": "Aprobación inicial del Presupuesto General, Bases de Ejecución y Plantilla de Personal para el ejercicio económico 2027",
+      "entity": "Ayuntamiento de Monturque",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-A-2026-3836.pdf"
+    },
+    {
+      "id": "CO-2026-3822",
+      "province": "Córdoba",
+      "title": "Extracto de la Convocatoria de Ayudas Económicas para prestaciones Médico-Farmacéuticas para el ejercicio 2026, destinadas al personal laboral y funcionario de esta Corporación",
+      "entity": "Ayuntamiento de Fuente Obejuna",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-A-2026-3822.pdf"
+    },
+    {
+      "id": "CO-2026-3821",
+      "province": "Córdoba",
+      "title": "Extracto de la Convocatoria de Ayudas al Estudio para el ejercicio 2026, destinadas al personal laboral y funcionario de esta Corporación",
+      "entity": "Ayuntamiento de Fuente Obejuna",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-A-2026-3821.pdf"
+    },
     {
       "id": "CO-2026-3802",
       "province": "Córdoba",

@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-11T16:45:59.177076+00:00",
+  "lastCheckedUTC": "2026-11-12T16:52:42.563047+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 21,
-    "announcementsRead": 566,
-    "opportunities": 30,
+    "announcementsRead": 567,
+    "opportunities": 32,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 30
+    "pdfLinksVerified": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -38,10 +37,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -61,7 +60,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,15 +75,35 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 566,
-    "opportunities": 30,
+    "announcementsRead": 567,
+    "opportunities": 32,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "199",
-      "date": "2026-10-12"
+      "number": "200",
+      "date": "2026-10-13"
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5337",
+      "province": "Jaén",
+      "title": "Aprobación de las bases reguladoras del procedimiento de selección de una plaza en régimen de interinidad Auxiliar Administrativo y creación de una bolsa de empleo.",
+      "entity": "AYUNTAMIENTO DE LAHIGUERA (JAÉN)",
+      "date": "12/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-12&numeroEdicto=5337&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5078",
+      "province": "Jaén",
+      "title": "Aprobación de las Bases y convocatoria de una plaza de Policía Local.",
+      "entity": "AYUNTAMIENTO DE POZO ALCÓN (JAÉN)",
+      "date": "12/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-12&numeroEdicto=5078&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5339",
       "province": "Jaén",

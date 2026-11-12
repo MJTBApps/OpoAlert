@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-11T16:35:50.567753+00:00",
+  "lastCheckedUTC": "2026-11-12T16:43:12.321035+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "218",
+    "bulletin": "219",
     "pagesVisited": 22,
-    "announcementsRead": 1008,
-    "opportunities": 73
+    "announcementsRead": 999,
+    "opportunities": 74
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -37,10 +36,10 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -61,7 +60,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,10 +75,50 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1008,
-    "opportunities": 73
+    "announcementsRead": 999,
+    "opportunities": 74
   },
   "notices": [
+    {
+      "id": "AS-2026-09263",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección Gerencia del Servicio de Salud del Principado de Asturias, por la que se anuncia convocatoria pública para la provisión, mediante el sistema de libre designación, del puesto de Subdirector/a de Sistemas de Información e Infraestructuras Tecnológicas del Servicio de Salud del Principado de Asturias.",
+      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/12/2026-09263.pdf"
+    },
+    {
+      "id": "AS-2026-09261",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 4 de noviembre de 2026, de la Dirección Gerencia del Servicio de Salud del Principado de Asturias, por la que se anuncia convocatoria pública para la provisión, mediante el sistema de libre designación, del puesto de Secretario/a de Despacho de la Secretaría General del Servicio de Salud del Principado de Asturias.",
+      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/12/2026-09261.pdf"
+    },
+    {
+      "id": "AS-2026-09228",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases para la selección de personal correspondiente a los contratos formativos para la obtención de la práctica profesional.",
+      "entity": "Ayuntamiento de Castropol",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/12/2026-09228.pdf"
+    },
+    {
+      "id": "AS-2026-09135",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 3 de noviembre de 2026, de la Consejería de Presidencia, Reto Demográfico, Igualdad y Turismo, por la que se convoca procedimiento extraordinario para la formación de una bolsa de trabajo de personal funcionario interino del Cuerpo de Agentes Medioambientales (Grupo B) (20261007-11).",
+      "entity": "Consejería de Presidencia, Reto Demográfico, Igualdad y Turismo",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.asturias.es/bopa/2026/11/12/2026-09135.pdf"
+    },
     {
       "id": "AS-2026-09215",
       "province": "Asturias (BOPA)",
@@ -778,36 +818,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/14/2026-08161.pdf"
-    },
-    {
-      "id": "AS-2026-08205",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Acuerdo de la Junta de Gobierno Local, adoptado en sesión de fecha 6 de octubre de 2026, que aprueba la convocatoria de 6 plazas de Trabajador/a Social en turno de libre acceso de la Fundación Municipal de Servicios Sociales dependiente del Ayuntamiento de Gijón/Xixón. Expediente 28237P/2026.",
-      "entity": "Ayuntamiento de Gijón",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/13/2026-08205.pdf"
-    },
-    {
-      "id": "AS-2026-08061",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria y bases reguladoras para la elaboración de una bolsa de trabajo, a efectos de contratación de personal con carácter temporal en la Categoría de Auxiliar del Servicio de Ayuda a Domicilio del Ayuntamiento de Caravia.",
-      "entity": "Ayuntamiento de Caravia",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/13/2026-08061.pdf"
-    },
-    {
-      "id": "AS-2026-08042",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 24 de septiembre de 2026, de la Gerencia del Área de Salud II Centro-Suroccidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de un puesto de Jefe/a de Sección no Sanitario: Atención al Ciudadano.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "13/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/13/2026-08042.pdf"
     }
   ]
 }

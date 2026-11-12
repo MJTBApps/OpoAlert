@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-11-11T16:52:39.391103+00:00",
+  "lastCheckedUTC": "2026-11-12T12:58:58.401771+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-11-11",
-    "pagesVisited": 69,
-    "announcementsRead": 1089,
-    "opportunities": 112,
+    "bulletin": "2026-11-12",
+    "pagesVisited": 70,
+    "announcementsRead": 1096,
+    "opportunities": 109,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-13",
-    "rangeEnd": "2026-11-11",
+    "rangeStart": "2026-10-14",
+    "rangeEnd": "2026-11-12",
     "publicationDates": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -37,7 +36,8 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -50,7 +50,6 @@
       "2026-11-08"
     ],
     "bulletins": [
-      "2026-10-13",
       "2026-10-14",
       "2026-10-15",
       "2026-10-16",
@@ -71,14 +70,35 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12"
     ],
     "issuesRead": 22,
-    "pagesVisited": 69,
-    "announcementsRead": 1089,
-    "opportunities": 112
+    "pagesVisited": 70,
+    "announcementsRead": 1096,
+    "opportunities": 109
   },
   "notices": [
+    {
+      "id": "TA-2026-10672",
+      "title": "Borsa de treball de monitor/a - netejador/a de menjador escolar. Bases i convocatòria.",
+      "entity": "AJUNTAMENT AMPOLLA, L'",
+      "date": "12/11/2026",
+      "bulletin": "12/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366482"
+    },
+    {
+      "id": "TA-2026-10351",
+      "title": "Borsa de treball de personal de neteja de les dependències municipals. Bases i convocatòria.",
+      "entity": "AJUNTAMENT ALCOVER",
+      "date": "12/11/2026",
+      "bulletin": "12/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366161"
+    },
     {
       "id": "TA-2026-10655",
       "title": "Borsa de treball de tècnic/a de benestar social. Bases i convocatòria.",
@@ -1148,56 +1168,6 @@
       "province": "Tarragona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365028"
-    },
-    {
-      "id": "TA-2026-09463",
-      "title": "Plaça d'agutzil/a (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT MONT-RAL",
-      "date": "13/10/2026",
-      "bulletin": "13/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365264"
-    },
-    {
-      "id": "TA-2026-09462",
-      "title": "Rectifica 2026-08963, BOP 29.09.2026. Plaça d'auxiliar d'equipaments (1). Bases i convocatòria. Promoció interna vertical.",
-      "entity": "CONSELL COMARCAL BAIX EBRE",
-      "date": "13/10/2026",
-      "bulletin": "13/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365247"
-    },
-    {
-      "id": "TA-2026-09431",
-      "title": "Plaça d'educador/a de llar d'infants (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT CORBERA D'EBRE",
-      "date": "13/10/2026",
-      "bulletin": "13/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365231"
-    },
-    {
-      "id": "TA-2026-09394",
-      "title": "Borsa de treball d'administratiu/iva. Bases i convocatòria.",
-      "entity": "AJUNTAMENT CREIXELL",
-      "date": "13/10/2026",
-      "bulletin": "13/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365187"
-    },
-    {
-      "id": "TA-2026-09373",
-      "title": "Borsa de treball d'enginyer/a municipal. Bases i convocatòria.",
-      "entity": "AJUNTAMENT ROQUETES",
-      "date": "13/10/2026",
-      "bulletin": "13/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365169"
     }
   ]
 }
