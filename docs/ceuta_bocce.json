@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-13T06:48:29.086009+00:00",
+  "lastCheckedUTC": "2026-11-13T09:44:16.299620+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "EXTRA54",
-    "pagesVisited": 16,
-    "announcementsRead": 76,
+    "bulletin": "6669",
+    "pagesVisited": 17,
+    "announcementsRead": 84,
     "opportunities": 0,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 16,
-    "pdfPagesRead": 213
+    "originalFullPdfIssues": 17,
+    "pdfPagesRead": 254
   },
   "historyCoverage": {
     "complete": true,
@@ -34,7 +34,8 @@
       "EXTRA52",
       "6668",
       "EXTRA53",
-      "EXTRA54"
+      "EXTRA54",
+      "6669"
     ],
     "publicationDates": [
       "2026-10-15",
@@ -52,7 +53,8 @@
       "2026-11-07",
       "2026-11-10",
       "2026-11-10",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -70,11 +72,10 @@
       "2026-11-08",
       "2026-11-09",
       "2026-11-11",
-      "2026-11-12",
-      "2026-11-13"
+      "2026-11-12"
     ],
-    "issuesRead": 16,
-    "announcementsRead": 76,
+    "issuesRead": 17,
+    "announcementsRead": 84,
     "opportunities": 0,
     "regularBulletins": [
       "6661",
@@ -84,7 +85,8 @@
       "6665",
       "6666",
       "6667",
-      "6668"
+      "6668",
+      "6669"
     ],
     "extraordinaryBulletins": [
       "EXTRA47",
@@ -287,6 +289,18 @@
         "edicts": [
           107,
           107
+        ]
+      },
+      {
+        "number": "6669",
+        "date": "2026-11-13",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23324-bocce-6669-13-11-2026?Itemid=534",
+        "sha256": "656c037934178bf885a999d22d9149aa4ec2d68bb3fffab274523f921aa3dd0e",
+        "bytes": 5331871,
+        "pages": 41,
+        "edicts": [
+          755,
+          762
         ]
       }
     ]
