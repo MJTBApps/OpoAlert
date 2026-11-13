@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-12T17:22:26.775430+00:00",
+  "lastCheckedUTC": "2026-11-13T07:41:26.540626+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
-    "pagesVisited": 834,
-    "announcementsRead": 352,
+    "bulletin": "220",
+    "pagesVisited": 870,
+    "announcementsRead": 353,
     "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "issuesRead": 21,
-    "pagesVisited": 834,
-    "announcementsRead": 352,
+    "pagesVisited": 870,
+    "announcementsRead": 353,
     "opportunities": 63,
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -40,10 +39,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -63,7 +62,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -76,11 +76,10 @@
       "2026-11-07",
       "2026-11-08"
     ],
-    "originalPdfPagesRead": 834,
+    "originalPdfPagesRead": 870,
     "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48194,
+    "archiveTotalIssues": 48195,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392772&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+14%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392773&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+15%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392774&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392775&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+19%2F10%2F2026.pdf",
@@ -100,10 +99,21 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392789&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+9%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392790&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+10%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392791&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+11%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392792&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392792&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392793&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03166",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de oposición para la provisión en propiedad de seis plazas de auxiliar de administración general, se ha dictado resolución de la Presidencia núm. 2.863/2026,…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3166/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03134",
       "province": "Almería",
@@ -723,16 +733,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2792/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02657",
-      "province": "Almería",
-      "title": "AMPLIACIÓN DE PLAZO DE LA CONVOCATORIA PYME GLOBAL 2026 VISITA A LA FERIA WORLD TRAVEL MARKET (LONDRES - UK) CÁMARA DE ALMERÍA BDNS (Identif.): 928136 De conformidad con lo previsto en los artículos 17.3.b y 20.8.a de la Ley…",
-      "entity": "CAMARA OFICIAL DE COMERCIO,INDUSTRIA Y NAVEGACIÓN DE ALMERIA",
-      "date": "14/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2657/anuncio.pdf"
     }
   ]
 }
