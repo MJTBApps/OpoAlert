@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-13T09:38:08.399623+00:00",
+  "lastCheckedUTC": "2026-11-13T12:41:31.515032+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 99,
-    "opportunities": 99,
+    "announcementsRead": 100,
+    "opportunities": 100,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,20 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 99,
-    "opportunities": 99
+    "announcementsRead": 100,
+    "opportunities": 100
   },
   "notices": [
+    {
+      "id": "CIDO8-22491747",
+      "title": "1 plaça de Gerent",
+      "entity": "Ajuntament de Tarragona - Agrupació d'Empreses Municipals de Tarragona AIE",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22491747"
+    },
     {
       "id": "CIDO8-22490933",
       "title": "1 plaça d'Assessor jurídic",
@@ -107,6 +117,26 @@
       "url": "https://cido.diba.cat/oposicions/22489720"
     },
     {
+      "id": "CIDO8-22451782",
+      "title": "Borsa de treball de places de Tècnic de Sistemes d'Informació Geogràfica (SIG)",
+      "entity": "Ajuntament d'Amposta",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22451782"
+    },
+    {
+      "id": "CIDO8-21973849",
+      "title": "3 places d'Administratiu",
+      "entity": "Ajuntament de Reus",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21973849"
+    },
+    {
       "id": "CIDO8-19272377",
       "title": "1 plaça de Tècnic mitjà d'administració general",
       "entity": "Ajuntament de Salou",
@@ -115,6 +145,26 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/19272377"
+    },
+    {
+      "id": "CIDO8-16522604",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de l'Argentera",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16522604"
+    },
+    {
+      "id": "CIDO8-16511262",
+      "title": "1 plaça de Monitor de menjador",
+      "entity": "Ajuntament de Duesaigües",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16511262"
     },
     {
       "id": "CIDO8-22484489",
@@ -377,26 +427,6 @@
       "url": "https://cido.diba.cat/oposicions/22249978"
     },
     {
-      "id": "CIDO8-21973849",
-      "title": "3 places d'Administratiu",
-      "entity": "Ajuntament de Reus",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21973849"
-    },
-    {
-      "id": "CIDO8-16511262",
-      "title": "1 plaça de Monitor de menjador",
-      "entity": "Ajuntament de Duesaigües",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16511262"
-    },
-    {
       "id": "CIDO8-22453499",
       "title": "2 places d'Oficial de Protocol de primera",
       "entity": "Funecamp Serveis Funeraris Municipals, SA",
@@ -407,16 +437,6 @@
       "url": "https://cido.diba.cat/oposicions/22453499"
     },
     {
-      "id": "CIDO8-22451782",
-      "title": "Borsa de treball de places de Tècnic de Sistemes d'Informació Geogràfica (SIG)",
-      "entity": "Ajuntament d'Amposta",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22451782"
-    },
-    {
       "id": "CIDO8-18011934",
       "title": "1 plaça de Tècnic mitjà en gent gran",
       "entity": "Ajuntament de Mont-roig del Camp",
@@ -425,16 +445,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18011934"
-    },
-    {
-      "id": "CIDO8-16522604",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de l'Argentera",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16522604"
     },
     {
       "id": "CIDO8-22445973",
