@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-13T06:29:10.839250+00:00",
+  "lastCheckedUTC": "2026-11-13T09:33:09.177264+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
-    "pagesVisited": 21,
-    "announcementsRead": 317,
-    "opportunities": 40
+    "bulletin": "218",
+    "pagesVisited": 22,
+    "announcementsRead": 348,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
       "2026-10-15",
@@ -59,7 +60,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -69,14 +71,43 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-13"
+      "2026-11-08"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 317,
-    "opportunities": 40
+    "issuesRead": 22,
+    "announcementsRead": 348,
+    "opportunities": 43
   },
   "notices": [
+    {
+      "id": "PV-2026-4834",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 30 de octubre de 2026, del viceconsejero de Seguridad, por la que se anuncia la fecha de colocación, en el portal Gurenet, de la Resolución de 30 de octubre de 2026, dictada en el procedimiento de provisión de puestos de trabajo, por los sistemas de libre designación y de concurso de méritos específicos y generales de la Ertzaintza.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604834a.pdf"
+    },
+    {
+      "id": "PV-2026-4833",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 29 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora titular de Universidad, cuyo concurso de acceso a plazas de cuerpos de funcionarios docentes universitarios fue convocado por Resolución de 12 de febrero de 2026 (BOPV de 19-02-2026) y Resolución de 16 de febrero de 2026 (BOE de 23-02-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604833a.pdf"
+    },
+    {
+      "id": "PV-2026-4832",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN de 28 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra catedrático de Universidad, cuyo concurso de acceso a plazas de cuerpos de funcionarios docentes universitarios fue convocado por Resolución de 4 de marzo de 2026 (BOPV de 12-03-2026 y BOE de 13-03-2026).",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604832a.pdf"
+    },
     {
       "id": "PV-2026-4774",
       "province": "País Vasco (BOPV)",

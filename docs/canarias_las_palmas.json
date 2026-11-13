@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-13T06:27:27.212058+00:00",
+  "lastCheckedUTC": "2026-11-13T09:30:57.636948+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "135",
-    "pagesVisited": 12,
-    "announcementsRead": 384,
-    "opportunities": 31
+    "bulletin": "136",
+    "pagesVisited": 13,
+    "announcementsRead": 423,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
@@ -27,7 +27,8 @@
       "132",
       "133",
       "134",
-      "135"
+      "135",
+      "136"
     ],
     "publicationDates": [
       "2026-10-16",
@@ -41,7 +42,8 @@
       "2026-11-04",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-15",
@@ -60,14 +62,43 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-10",
-      "2026-11-12",
-      "2026-11-13"
+      "2026-11-12"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 384,
-    "opportunities": 31
+    "issuesRead": 13,
+    "announcementsRead": 423,
+    "opportunities": 34
   },
   "notices": [
+    {
+      "id": "LP-20261113-025",
+      "province": "Las Palmas (BOP)",
+      "title": "Rectificación de error en las bases específicas y convocatoria de 2 plazas de Arquitecto Técnico",
+      "entity": "ILUSTRE AYUNTAMIENTO DE LA OLIVA",
+      "date": "13/11/2026",
+      "bulletin": "136",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/13-11-26/13-11-26.pdf"
+    },
+    {
+      "id": "LP-20261113-022",
+      "province": "Las Palmas (BOP)",
+      "title": "Aprobación inicial del Presupuesto General Consolidado, Bases de Ejecución y la Plantilla de Personal (2027)",
+      "entity": "EXCMO. AYUNTAMIENTO DE GÁLDAR",
+      "date": "13/11/2026",
+      "bulletin": "136",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/13-11-26/13-11-26.pdf"
+    },
+    {
+      "id": "LP-20261113-008",
+      "province": "Las Palmas (BOP)",
+      "title": "Rectificación de error en el proceso selectivo de creación de lista de reserva de Téc./a de Admón. Especial-Economista",
+      "entity": "CONSORCIO MASPALOMAS GRAN CANARIA",
+      "date": "13/11/2026",
+      "bulletin": "136",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/13-11-26/13-11-26.pdf"
+    },
     {
       "id": "LP-20261111-019",
       "province": "Las Palmas (BOP)",

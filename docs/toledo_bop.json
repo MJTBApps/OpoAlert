@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-13T06:30:13.621428+00:00",
+  "lastCheckedUTC": "2026-11-13T09:34:43.593673+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
-    "pagesVisited": 20,
-    "announcementsRead": 507,
-    "opportunities": 21
+    "bulletin": "218",
+    "pagesVisited": 21,
+    "announcementsRead": 536,
+    "opportunities": 23
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
       "2026-10-15",
@@ -57,7 +58,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -68,14 +70,33 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-13"
+      "2026-11-08"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 507,
-    "opportunities": 21
+    "issuesRead": 21,
+    "announcementsRead": 536,
+    "opportunities": 23
   },
   "notices": [
+    {
+      "id": "TO-2026-5248",
+      "province": "Toledo",
+      "title": "BASES GENERALES DE FECHA 10-11-2026  QUE REGIRAN EL PROCESO SELECTIVO DE UNA (1) PLAZA DE FUNCIONARIO C2 AUXILIAR ADMINISTRATIVO POR CONCURSO OPOSICIÓN.",
+      "entity": "AYUNTAMIENTO DE EL VISO DE SAN JUAN",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115231;0&insert_number=5248&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5219",
+      "province": "Toledo",
+      "title": "RECTIFICACION ERRORES BASES BOLSA ARQUITECTO/A",
+      "entity": "AYUNTAMIENTO DE MADRIDEJOS",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115202;0&insert_number=5219&insert_year=2026"
+    },
     {
       "id": "TO-2026-5250",
       "province": "Toledo",
