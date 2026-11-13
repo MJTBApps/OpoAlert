@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-12T16:40:51.116973+00:00",
+  "lastCheckedUTC": "2026-11-13T06:41:13.802395+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 100,
-    "opportunities": 100,
+    "announcementsRead": 94,
+    "opportunities": 94,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "publicationDates": [
-      "2026-10-15",
       "2026-10-19",
       "2026-10-20",
       "2026-10-22",
@@ -38,7 +37,7 @@
       "2026-11-12"
     ],
     "nonPublicationDates": [
-      "2026-10-14",
+      "2026-10-15",
       "2026-10-16",
       "2026-10-17",
       "2026-10-18",
@@ -48,12 +47,13 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-13"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 100,
-    "opportunities": 100
+    "announcementsRead": 94,
+    "opportunities": 94
   },
   "notices": [
     {
@@ -667,26 +667,6 @@
       "url": "https://cido.diba.cat/oposicions/21078364"
     },
     {
-      "id": "CIDO8-22426522",
-      "title": "1 plaça de Director casa d'oficis",
-      "entity": "Ajuntament d'Amposta",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22426522"
-    },
-    {
-      "id": "CIDO8-22426193",
-      "title": "1 plaça d'Agent dinamitzador i suport a la borsa de treball",
-      "entity": "Ajuntament d'Amposta",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22426193"
-    },
-    {
       "id": "CIDO8-22420652",
       "title": "Borsa de treball de places d'Operari de neteja d'edificis municipals",
       "entity": "Ajuntament de Garcia",
@@ -775,16 +755,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16758438"
-    },
-    {
-      "id": "CIDO8-22402389",
-      "title": "Borsa de treball de places de Peó de brigada",
-      "entity": "Ajuntament de Constantí",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22402389"
     },
     {
       "id": "CIDO8-22402371",
@@ -927,16 +897,6 @@
       "url": "https://cido.diba.cat/oposicions/16887342"
     },
     {
-      "id": "CIDO8-21967002",
-      "title": "1 plaça d'Operador",
-      "entity": "Ajuntament de Reus",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21967002"
-    },
-    {
       "id": "CIDO8-20995800",
       "title": "1 plaça de Tècnic de l'Àrea #DeltebreTerritori",
       "entity": "Ajuntament de Deltebre",
@@ -945,16 +905,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20995800"
-    },
-    {
-      "id": "CIDO8-18012537",
-      "title": "1 plaça de Tècnic superior psicòleg",
-      "entity": "Ajuntament de Reus",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18012537"
     },
     {
       "id": "CIDO8-22353627",
@@ -1045,16 +995,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20888930"
-    },
-    {
-      "id": "CIDO8-18615823",
-      "title": "1 plaça d'Educador de llar d'infants",
-      "entity": "Ajuntament de Corbera d'Ebre",
-      "date": "15/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18615823"
     }
   ]
 }

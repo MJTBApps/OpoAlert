@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-12T16:40:51.116973+00:00",
+  "lastCheckedUTC": "2026-11-13T06:41:13.802395+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -14,14 +14,13 @@
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "publicationDates": [
       "2026-10-16",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
-      "2026-10-23",
       "2026-10-24",
       "2026-10-26",
       "2026-10-27",
@@ -38,17 +37,18 @@
       "2026-11-12"
     ],
     "nonPublicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-17",
       "2026-10-18",
       "2026-10-19",
+      "2026-10-23",
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-13"
     ],
     "bulletins": [],
     "issuesRead": 0,
@@ -56,6 +56,26 @@
     "opportunities": 73
   },
   "notices": [
+    {
+      "id": "CIDO6-22487283",
+      "title": "1 plaça de Tècnic superior Àrea de Govern Obert i Administració Digital",
+      "entity": "Ajuntament d'Olot",
+      "date": "12/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22487283"
+    },
+    {
+      "id": "CIDO6-22487277",
+      "title": "1 plaça de Recepcionista a l'Oficina d'Atenció Ciutadana",
+      "entity": "Ajuntament d'Olot",
+      "date": "12/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22487277"
+    },
     {
       "id": "CIDO6-22484593",
       "title": "1 plaça de Tècnic superior",
@@ -367,16 +387,6 @@
       "url": "https://cido.diba.cat/oposicions/16732228"
     },
     {
-      "id": "CIDO6-22445364",
-      "title": "Borsa de treball de places d'Arquitecte tècnic",
-      "entity": "Ajuntament de Castelló d'Empúries",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22445364"
-    },
-    {
       "id": "CIDO6-22445024",
       "title": "1 plaça d'Administratiu de gestió i OAC",
       "entity": "Ajuntament d'Amer",
@@ -655,16 +665,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16576970"
-    },
-    {
-      "id": "CIDO6-16760007",
-      "title": "1 plaça d'Enginyer",
-      "entity": "Ajuntament de Caldes de Malavella",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16760007"
     },
     {
       "id": "CIDO6-22368865",

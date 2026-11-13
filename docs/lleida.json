@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-12T16:40:51.116973+00:00",
+  "lastCheckedUTC": "2026-11-13T06:41:13.802395+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 66,
-    "opportunities": 66,
+    "announcementsRead": 63,
+    "opportunities": 63,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "publicationDates": [
-      "2026-10-14",
       "2026-10-16",
       "2026-10-20",
       "2026-10-22",
@@ -48,12 +47,13 @@
       "2026-11-01",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-13"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 66,
-    "opportunities": 66
+    "announcementsRead": 63,
+    "opportunities": 63
   },
   "notices": [
     {
@@ -685,36 +685,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22039916"
-    },
-    {
-      "id": "CIDO7-22297767",
-      "title": "1 plaça de Tècnic responsable d'instal·lacions i equipaments",
-      "entity": "Ajuntament d'Agramunt",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22297767"
-    },
-    {
-      "id": "CIDO7-22297736",
-      "title": "1 plaça d'Oficial de 2a",
-      "entity": "Ajuntament d'Agramunt",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22297736"
-    },
-    {
-      "id": "CIDO7-22297728",
-      "title": "2 places de Tècnic d'administració general (TAG)",
-      "entity": "Ajuntament d'Agramunt",
-      "date": "14/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22297728"
     }
   ]
 }
