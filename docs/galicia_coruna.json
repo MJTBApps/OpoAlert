@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-12T16:31:06.442551+00:00",
+  "lastCheckedUTC": "2026-11-13T06:23:32.370166+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 22,
-    "announcementsRead": 778,
-    "opportunities": 61
+    "announcementsRead": 774,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -37,10 +36,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -61,7 +60,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -74,10 +74,50 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 778,
-    "opportunities": 61
+    "announcementsRead": 774,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "AC-2026-7378",
+      "province": "A Coruña",
+      "title": "Anuncio prórroga por un ano da bolsa de emprego para operarios/as de servizos múltiples/varios do Concello de Dodro",
+      "entity": "Dodro",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007378.pdf"
+    },
+    {
+      "id": "AC-2026-7358",
+      "province": "A Coruña",
+      "title": "Convocatoria proceso selectivo",
+      "entity": "Vimianzo",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007358.pdf"
+    },
+    {
+      "id": "AC-2026-7344",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases para cubrir, por persoal funcionario interino, unha praza de operario/a de mantemento-conserxe (subgrupo C2) para o edificio multiusos",
+      "entity": "Persoal",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007344.pdf"
+    },
+    {
+      "id": "AC-2026-7343",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases para cubrir, por persoal funcionario interino, unha praza de técnico/a de mantemento (subgrupo C1) para o edificio multiusos",
+      "entity": "Persoal",
+      "date": "13/11/2026",
+      "bulletin": "218",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007343.pdf"
+    },
     {
       "id": "AC-2026-7281",
       "province": "A Coruña",
@@ -657,36 +697,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/15/2026_0000006552.pdf"
-    },
-    {
-      "id": "AC-2026-6534",
-      "province": "A Coruña",
-      "title": "Aprobación Oferta de Emprego Público do exercicio 2026",
-      "entity": "Secretaría-Intervención",
-      "date": "14/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/14/2026_0000006534.pdf"
-    },
-    {
-      "id": "AC-2026-6520",
-      "province": "A Coruña",
-      "title": "Convocatoria para a realización dunha bolsa de funcionarios interinos para a cobertura de postos de auxiliar administrativo",
-      "entity": "Zas",
-      "date": "14/10/2026",
-      "bulletin": "196",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/14/2026_0000006520.pdf"
-    },
-    {
-      "id": "AC-2026-6491",
-      "province": "A Coruña",
-      "title": "Bases da convocatoria de 2 prazas de auxiliar administrativo/a mediante oposición libre (OEP 2026)",
-      "entity": "Laracha, A",
-      "date": "14/10/2026",
-      "bulletin": "196",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/14/2026_0000006491.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-12T16:38:22.098848+00:00",
+  "lastCheckedUTC": "2026-11-13T06:30:11.895940+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "137",
+    "bulletin": "138",
     "pagesVisited": 15,
-    "announcementsRead": 593,
-    "opportunities": 29
+    "announcementsRead": 573,
+    "opportunities": 28
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "123",
       "124",
       "125",
       "126",
@@ -30,10 +29,10 @@
       "134",
       "135",
       "136",
-      "137"
+      "137",
+      "138"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-16",
       "2026-10-19",
       "2026-10-21",
@@ -47,7 +46,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-15",
@@ -67,10 +67,20 @@
       "2026-11-08"
     ],
     "issuesRead": 15,
-    "announcementsRead": 593,
-    "opportunities": 29
+    "announcementsRead": 573,
+    "opportunities": 28
   },
   "notices": [
+    {
+      "id": "TF-20261113-033",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la avocación de la competencia y a la corrección y Modificación parcial de las Bases y convocatoria de una (1) plaza de Inspector/a de la Policía Local, por turno de promoción interna y sistema de concurso",
+      "entity": "AYUNTAMIENTO DE VILLA DE ARICO",
+      "date": "13/11/2026",
+      "bulletin": "138",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/13-11-26/13-11-26.pdf"
+    },
     {
       "id": "TF-20261111-039",
       "province": "Santa Cruz de Tenerife (BOP)",
@@ -340,26 +350,6 @@
       "bulletin": "124",
       "type": "Plaza / oposición",
       "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/16-10-26/16-10-26.pdf"
-    },
-    {
-      "id": "TF-20261014-042",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a la convocatoria para el desarrollo del segundo ejercicio del proceso para la cobertura, por el sistema de oposición, de una (1) plaza de Ordenanza, encuadrada en el grupo denominado Agrupaciones Profesionales, vacante en la plantilla de personal funcionario del Ayuntamiento de San Sebastián de La Gomera, y constitución de una lista de reserva de la citada categoría",
-      "entity": "AYUNTAMIENTO DE SAN SEBASTIÁN DE LA GOMERA",
-      "date": "14/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/14-10-26/14-10-26.pdf"
-    },
-    {
-      "id": "TF-20261014-022",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a modificación de las Bases del proceso extraordinario de estabilización del personal del Consorcio Isla Baja",
-      "entity": "CABILDO INSULAR DE TENERIFE",
-      "date": "14/10/2026",
-      "bulletin": "123",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/14-10-26/14-10-26.pdf"
     }
   ]
 }

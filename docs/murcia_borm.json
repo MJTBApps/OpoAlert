@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-12T16:37:32.555001+00:00",
+  "lastCheckedUTC": "2026-11-13T06:28:40.815711+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "262",
+    "bulletin": "263",
     "pagesVisited": 27,
-    "announcementsRead": 628,
-    "opportunities": 53
+    "announcementsRead": 638,
+    "opportunities": 52
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "237",
       "238",
       "239",
       "240",
@@ -42,10 +41,10 @@
       "260",
       "8E",
       "261",
-      "262"
+      "262",
+      "263"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
@@ -71,7 +70,8 @@
       "2026-11-10",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -80,8 +80,8 @@
       "2026-11-08"
     ],
     "issuesRead": 27,
-    "announcementsRead": 628,
-    "opportunities": 53
+    "announcementsRead": 638,
+    "opportunities": 52
   },
   "notices": [
     {
@@ -603,16 +603,6 @@
       "bulletin": "238",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845661/pdf"
-    },
-    {
-      "id": "MU-2026-4952",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Director General del Instituto de las Industrias Culturales y las Artes de la Región de Murcia por la que se aprueban las bases y la convocatoria del proceso selectivo para cubrir dos puestos laborales de Técnico/a de Espectáculos en dicho ente.",
-      "entity": "Consejería de Turismo, Cultura y Deportes - Instituto de las Industrias Culturales y las Artes de la Región de Murcia",
-      "date": "14/10/2026",
-      "bulletin": "237",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845634/pdf"
     }
   ]
 }

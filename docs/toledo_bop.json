@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-12T16:38:36.256815+00:00",
+  "lastCheckedUTC": "2026-11-13T06:30:13.621428+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "217",
-    "pagesVisited": 21,
-    "announcementsRead": 553,
-    "opportunities": 24
+    "pagesVisited": 20,
+    "announcementsRead": 507,
+    "opportunities": 21
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -39,7 +38,6 @@
       "217"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-13"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 553,
-    "opportunities": 24
+    "issuesRead": 20,
+    "announcementsRead": 507,
+    "opportunities": 21
   },
   "notices": [
     {
@@ -286,36 +285,6 @@
       "bulletin": "198",
       "type": "Bolsa de trabajo",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104711;0&insert_number=4733&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4691",
-      "province": "Toledo",
-      "title": "Aprobación de bases para la creación de una bolsa de empleo destinada a cubrir necesidades de contratación laboral temporal de Educador/a Social.",
-      "entity": "AYUNTAMIENTO DE FUENSALIDA",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104673;0&insert_number=4691&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4690",
-      "province": "Toledo",
-      "title": "Aprobación de bases para la creación de una bolsa de empleo destinada a cubrir necesidades de contratación laboral temporal de Trabajador/a Social.",
-      "entity": "AYUNTAMIENTO DE FUENSALIDA",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104672;0&insert_number=4690&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4636",
-      "province": "Toledo",
-      "title": "Bases y Convocatoria para la creación de una bolsa permanente de trabajo de Auxiliares del Servicio de Ayuda a Domicilio",
-      "entity": "AYUNTAMIENTO DE YUNCOS",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104629;0&insert_number=4636&insert_year=2026"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-12T16:37:55.186941+00:00",
+  "lastCheckedUTC": "2026-11-13T06:29:10.839250+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "217",
-    "pagesVisited": 22,
-    "announcementsRead": 361,
-    "opportunities": 43
+    "pagesVisited": 21,
+    "announcementsRead": 317,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "196",
       "197",
       "198",
       "199",
@@ -40,7 +39,6 @@
       "217"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -71,33 +69,14 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-13"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 361,
-    "opportunities": 43
+    "issuesRead": 21,
+    "announcementsRead": 317,
+    "opportunities": 40
   },
   "notices": [
-    {
-      "id": "PV-2026-4802",
-      "province": "País Vasco (BOPV)",
-      "title": "ACUERDO de 8 de octubre de 2026, del Consejo de Gobierno de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por el que se aprueba la Oferta de Empleo Público y la promoción interna para el año 2026 de Personal Docente e Investigador.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "12/11/2026",
-      "bulletin": "217",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604802a.pdf"
-    },
-    {
-      "id": "PV-2026-4801",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 28 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "12/11/2026",
-      "bulletin": "217",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604801a.pdf"
-    },
     {
       "id": "PV-2026-4774",
       "province": "País Vasco (BOPV)",
@@ -497,16 +476,6 @@
       "bulletin": "197",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604283a.pdf"
-    },
-    {
-      "id": "PV-2026-4260",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 22 de septiembre de 2026, del director general de la Agencia Vasca del Agua, por la que se convoca proceso selectivo para la provisión, como personal laboral indefinido, mediante contrato de relevo, de 2 puestos de administrativo/a general de la Agencia Vasca del Agua, y la creación de la bolsa de trabajo.",
-      "entity": "Agencia Vasca del Agua",
-      "date": "14/10/2026",
-      "bulletin": "196",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604260a.pdf"
     }
   ]
 }

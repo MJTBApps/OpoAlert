@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-12T16:32:48.569023+00:00",
+  "lastCheckedUTC": "2026-11-13T06:27:06.277334+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 23,
-    "announcementsRead": 753,
-    "opportunities": 39
+    "announcementsRead": 745,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -38,10 +37,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -63,7 +62,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -76,8 +76,8 @@
       "2026-11-08"
     ],
     "issuesRead": 23,
-    "announcementsRead": 753,
-    "opportunities": 39
+    "announcementsRead": 745,
+    "opportunities": 35
   },
   "notices": [
     {
@@ -429,46 +429,6 @@
       "bulletin": "199",
       "type": "Bolsa de trabajo",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/16/pdf/2026_7418.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7297",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 06/10/2026 , de la Consejería de Desarrollo Sostenible, de persona aprobada y plaza ofertada por el sistema general de acceso libre, en el proceso selectivo para el ingreso en el Cuerpo de Agentes Medioambientales, de la Administración de la Junta de Comunidades de Castilla-La Mancha, en ejecución de sentencia. [NID 2026/7297]",
-      "entity": "Consejería de Desarrollo Sostenible",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/14/pdf/2026_7297.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7280",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Bolsa de Trabajo. Resolución de 05/10/2026 , del Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal de Castilla-La Mancha (Iriaf), por la que se convoca el proceso selectivo para la constitución de una bolsa de trabajo del Cuerpo Superior de Investigación de la Junta de Comunidades de Castilla-La Mancha, Especialidad en Sanidad y Patología Apícola. [NID 2026/7280]",
-      "entity": "Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal de Castilla-La Mancha (Iriaf)",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/14/pdf/2026_7280.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7279",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Bolsa de Trabajo. Resolución de 05/10/2026 , del Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal de Castilla-La Mancha (Iriaf), por la que se convoca el proceso selectivo para la constitución de una bolsa de trabajo del Cuerpo Superior de Investigación de la Junta de Comunidades de Castilla-La Mancha, Especialidad en Microbiología Enológica, Nuevas Técnicas de Fermentación y Calidad Fisicoquímica y Sensorial de Vinos. [NID 2026/7279]",
-      "entity": "Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal de Castilla-La Mancha (Iriaf)",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/14/pdf/2026_7279.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7278",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Bolsa de Trabajo. Resolución de 05/10/2026 , del Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal de Castilla-La Mancha (Iriaf), por la que se convoca el proceso selectivo para la constitución de una bolsa de trabajo del Cuerpo Superior de Investigación de la Junta de Comunidades de Castilla-La Mancha, Especialidad en Bioeconomía Circular Agroforestal. [NID 2026/7278]",
-      "entity": "Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal de Castilla-La Mancha (Iriaf)",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/14/pdf/2026_7278.pdf&tipo=rutaDocm"
     }
   ]
 }

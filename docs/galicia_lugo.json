@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lugo",
   "source": "https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop",
-  "lastCheckedUTC": "2026-11-12T16:36:02.223270+00:00",
+  "lastCheckedUTC": "2026-11-13T06:27:55.186552+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "260",
-    "pagesVisited": 26,
-    "announcementsRead": 359,
-    "opportunities": 36
+    "pagesVisited": 25,
+    "announcementsRead": 337,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "235",
       "236",
       "237",
       "238",
@@ -44,7 +43,6 @@
       "260"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
@@ -75,11 +73,12 @@
       "2026-10-18",
       "2026-10-25",
       "2026-11-01",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-13"
     ],
-    "issuesRead": 26,
-    "announcementsRead": 359,
-    "opportunities": 36
+    "issuesRead": 25,
+    "announcementsRead": 337,
+    "opportunities": 35
   },
   "notices": [
     {
@@ -431,16 +430,6 @@
       "bulletin": "236",
       "type": "Plaza / oposición",
       "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/15-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2717",
-      "province": "Lugo",
-      "title": "DERROGACIÓN DO REGULAMENTO DA BOLSA MUNICIPAL DE EMPREGO",
-      "entity": "SAMOS",
-      "date": "14/10/2026",
-      "bulletin": "235",
-      "type": "Bolsa de trabajo",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/14-10-2026.pdf"
     }
   ]
 }

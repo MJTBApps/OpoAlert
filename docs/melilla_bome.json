@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-12T16:36:53.809336+00:00",
+  "lastCheckedUTC": "2026-11-13T06:28:09.213039+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6430",
-    "pagesVisited": 14,
-    "announcementsRead": 117,
-    "opportunities": 13
+    "bulletin": "6431",
+    "pagesVisited": 15,
+    "announcementsRead": 134,
+    "opportunities": 14
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
       "6423",
       "E46",
@@ -29,7 +29,8 @@
       "E50",
       "6429",
       "E51",
-      "6430"
+      "6430",
+      "6431"
     ],
     "publicationDates": [
       "2026-10-16",
@@ -45,10 +46,10 @@
       "2026-11-04",
       "2026-11-06",
       "2026-11-06",
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-17",
       "2026-10-18",
@@ -69,11 +70,21 @@
       "2026-11-11",
       "2026-11-12"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 117,
-    "opportunities": 13
+    "issuesRead": 15,
+    "announcementsRead": 134,
+    "opportunities": 14
   },
   "notices": [
+    {
+      "id": "ML-2026-A-1262",
+      "province": "Melilla (BOME)",
+      "title": "Orden nº 5123, de fecha 5 de noviembre de 2026, relativa a convocatoria para la provisión en propiedad de tres plazas de Veterinario de Salud Pública, perteneciente a la Escala de Administración Especial, Subescala Técnica, por el procedimiento de oposición libre.",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
+      "date": "13/11/2026",
+      "bulletin": "6431",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1262.pdf"
+    },
     {
       "id": "ML-2026-A-1250",
       "province": "Melilla (BOME)",

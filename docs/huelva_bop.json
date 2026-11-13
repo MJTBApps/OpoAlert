@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-12T16:36:36.182514+00:00",
+  "lastCheckedUTC": "2026-11-13T06:26:22.288409+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "218",
+    "bulletin": "219",
     "pagesVisited": 21,
-    "announcementsRead": 272,
+    "announcementsRead": 274,
     "opportunities": 46
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -36,10 +35,10 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -59,7 +58,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,10 +73,9 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 272,
+    "announcementsRead": 274,
     "opportunities": 46,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_198_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_199_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_200_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_201_2026.pdf",
@@ -96,10 +95,21 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_215_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_216_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_217_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_218_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_218_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_219_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-384143",
+      "province": "Huelva",
+      "title": "Resolución de aprobación de las Bases y convocatoria para la Bolsa para la provisión del puesto de Secretaría-Intervención como funcionario interino mediante concurso",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "13/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_384143_BOP-219_2026.pdf"
+    },
     {
       "id": "HB-2026-383498",
       "province": "Huelva",
@@ -549,16 +559,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_379834_BOP-200_2026.pdf"
-    },
-    {
-      "id": "HB-2026-379387",
-      "province": "Huelva",
-      "title": "Resolución de modificación de las Bases reguladoras de los procesos de selección de personal laboral temporal para la ejecución del Plan de desarrollo económico y social de la provincia 2026",
-      "entity": "Ayuntamiento de Lucena del Puerto",
-      "date": "14/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_379387_BOP-198_2026.pdf"
     }
   ]
 }
