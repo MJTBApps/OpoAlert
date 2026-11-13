@@ -1,18 +1,45 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-12T16:34:16.768943+00:00",
+  "lastCheckedUTC": "2026-11-13T06:37:47.366243+00:00",
   "coverage": {
-    "bulletin": "218",
-    "pagesVisited": 2,
-    "announcementsRead": 30,
-    "opportunities": 1,
+    "bulletin": "219",
+    "pagesVisited": 4,
+    "announcementsRead": 98,
+    "opportunities": 3,
     "complete": true,
     "status": "paginator_last_page",
     "details": "Se alcanzo la ultima pagina del paginador visible."
   },
-  "countNewBulletin": 1,
+  "countNewBulletin": 3,
   "notices": [
+    {
+      "id": "2026/13774",
+      "title": "Anuncio del Ayuntamiento de Guadasséquies sobre la aprobación de la constitución de una bolsa de trabajo para la cobertura temporal de una plaza de operario/a de limpieza viaria.",
+      "entity": "Ayuntamiento de Guadasséquies",
+      "date": "13/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13774&lang=es"
+    },
+    {
+      "id": "2026/13742",
+      "title": "Anuncio del Ayuntamiento de Manises sobre la aprobación de las bases de la convocatoria para la constitución de una bolsa de trabajo temporal de técnico/a medio/a de informática. Convocatoria 3051220F.",
+      "entity": "Ayuntamiento de Manises",
+      "date": "13/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13742&lang=es"
+    },
+    {
+      "id": "2026/13728",
+      "title": "Anuncio del Ayuntamiento de Alfafar sobre la aprobación de las bases de la convocatoria para la constitución de una bolsa de empleo de técnico/a de administración general (A1) y otra bolsa de empleo de técnico/a medio/a de administración general (A2).",
+      "entity": "Ayuntamiento de Alfafar",
+      "date": "13/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13728&lang=es"
+    },
     {
       "id": "2026/14006",
       "title": "Anuncio del Consell Agrari Municipal de València sobre la aprobación de las bases de la convocatoria que regirán el proceso selectivo para la cobertura definitiva por concurso oposición de dos plazas de técnico/a medio/a de dinamización e inspección del medio agrario.",
@@ -660,27 +687,17 @@
       "bulletin": "198",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12407&lang=es"
-    },
-    {
-      "id": "2026/12338",
-      "title": "Anuncio de la Mancomunitat de Municipis de la Safor sobre la aprobación de las bases específicas que tienen que regir el proceso selectivo para la cobertura de una plaza de trabajador/a-educador/a social para la UPCCA, por turno libre, mediante el sistema de concurso-oposición, por ejecución de la oferta de empleo del segundo semestre de 2024 y 2025. Expediente 2685/2026.",
-      "entity": "la Mancomunitat de Municipis de la Safor",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12338&lang=es"
     }
   ],
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
-    "pagesVisited": 57,
-    "announcementsRead": 1372,
-    "opportunities": 73,
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
+    "pagesVisited": 58,
+    "announcementsRead": 1394,
+    "opportunities": 75,
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -701,156 +718,157 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-12T16:34:16.768958+00:00",
+    "verifiedUTC": "2026-11-13T06:37:47.366255+00:00",
     "chunks": [
       {
-        "start": "2026-10-14",
-        "end": "2026-10-16",
-        "requestedStart": "2026-10-14",
-        "requestedEnd": "2026-10-18",
+        "start": "2026-10-15",
+        "end": "2026-10-19",
+        "requestedStart": "2026-10-15",
+        "requestedEnd": "2026-10-19",
         "publishedDates": [
-          "2026-10-14",
           "2026-10-15",
-          "2026-10-16"
+          "2026-10-16",
+          "2026-10-19"
         ],
         "nonPublicationDates": [
           "2026-10-17",
           "2026-10-18"
         ],
         "pagesVisited": 10,
-        "announcementsRead": 235,
+        "announcementsRead": 247,
         "bulletins": [
-          "197",
           "198",
-          "199"
+          "199",
+          "200"
         ],
-        "opportunities": 12,
+        "opportunities": 14,
         "complete": true
       },
       {
-        "start": "2026-10-19",
+        "start": "2026-10-20",
         "end": "2026-10-23",
-        "requestedStart": "2026-10-19",
-        "requestedEnd": "2026-10-23",
+        "requestedStart": "2026-10-20",
+        "requestedEnd": "2026-10-24",
         "publishedDates": [
-          "2026-10-19",
           "2026-10-20",
           "2026-10-21",
           "2026-10-22",
           "2026-10-23"
         ],
-        "nonPublicationDates": [],
-        "pagesVisited": 13,
-        "announcementsRead": 320,
+        "nonPublicationDates": [
+          "2026-10-24"
+        ],
+        "pagesVisited": 10,
+        "announcementsRead": 232,
         "bulletins": [
-          "200",
           "201",
           "202",
           "203",
           "204"
         ],
-        "opportunities": 15,
+        "opportunities": 12,
         "complete": true
       },
       {
         "start": "2026-10-26",
-        "end": "2026-10-28",
-        "requestedStart": "2026-10-24",
-        "requestedEnd": "2026-10-28",
+        "end": "2026-10-29",
+        "requestedStart": "2026-10-25",
+        "requestedEnd": "2026-10-29",
         "publishedDates": [
           "2026-10-26",
           "2026-10-27",
-          "2026-10-28"
+          "2026-10-28",
+          "2026-10-29"
         ],
         "nonPublicationDates": [
-          "2026-10-24",
           "2026-10-25"
         ],
-        "pagesVisited": 7,
-        "announcementsRead": 170,
+        "pagesVisited": 9,
+        "announcementsRead": 221,
         "bulletins": [
           "205",
           "206",
-          "207"
+          "207",
+          "208"
         ],
-        "opportunities": 13,
+        "opportunities": 16,
         "complete": true
       },
       {
-        "start": "2026-10-29",
-        "end": "2026-11-02",
-        "requestedStart": "2026-10-29",
-        "requestedEnd": "2026-11-02",
+        "start": "2026-10-30",
+        "end": "2026-11-03",
+        "requestedStart": "2026-10-30",
+        "requestedEnd": "2026-11-03",
         "publishedDates": [
-          "2026-10-29",
           "2026-10-30",
-          "2026-11-02"
+          "2026-11-02",
+          "2026-11-03"
         ],
         "nonPublicationDates": [
           "2026-10-31",
           "2026-11-01"
         ],
-        "pagesVisited": 7,
-        "announcementsRead": 163,
+        "pagesVisited": 8,
+        "announcementsRead": 193,
         "bulletins": [
-          "208",
           "209",
-          "210"
+          "210",
+          "211"
         ],
-        "opportunities": 9,
+        "opportunities": 8,
         "complete": true
       },
       {
-        "start": "2026-11-03",
+        "start": "2026-11-04",
         "end": "2026-11-06",
-        "requestedStart": "2026-11-03",
-        "requestedEnd": "2026-11-07",
+        "requestedStart": "2026-11-04",
+        "requestedEnd": "2026-11-08",
         "publishedDates": [
-          "2026-11-03",
           "2026-11-04",
           "2026-11-05",
           "2026-11-06"
         ],
         "nonPublicationDates": [
-          "2026-11-07"
+          "2026-11-07",
+          "2026-11-08"
         ],
-        "pagesVisited": 11,
-        "announcementsRead": 259,
+        "pagesVisited": 8,
+        "announcementsRead": 178,
         "bulletins": [
-          "211",
           "212",
           "213",
           "214"
         ],
-        "opportunities": 12,
+        "opportunities": 10,
         "complete": true
       },
       {
         "start": "2026-11-09",
-        "end": "2026-11-12",
-        "requestedStart": "2026-11-08",
-        "requestedEnd": "2026-11-12",
+        "end": "2026-11-13",
+        "requestedStart": "2026-11-09",
+        "requestedEnd": "2026-11-13",
         "publishedDates": [
           "2026-11-09",
           "2026-11-10",
           "2026-11-11",
-          "2026-11-12"
+          "2026-11-12",
+          "2026-11-13"
         ],
-        "nonPublicationDates": [
-          "2026-11-08"
-        ],
-        "pagesVisited": 9,
-        "announcementsRead": 225,
+        "nonPublicationDates": [],
+        "pagesVisited": 13,
+        "announcementsRead": 323,
         "bulletins": [
           "215",
           "216",
           "217",
-          "218"
+          "218",
+          "219"
         ],
-        "opportunities": 12,
+        "opportunities": 15,
         "complete": true
       }
     ]
