@@ -11,11 +11,15 @@ from galicia_common import galicia_employment
 import argparse,requests,re,threading,time
 SOURCE="https://boppo.depo.gal/es/consulta-do-boppo"
 HOST="boppo.depo.gal"
-PDF_RE=re.compile(r"^/web/boppo/detalle/-/boppo/(\d{4})/(\d{2})/(\d{2})/(\d{10,12})/an\.bop\.PONTEVEDRA\.(\d{8})\.(\d{10,12})\.pdf$",re.I)
+PDF_RE=re.compile(r"^/web/boppo/detalle/-/boppo/(\d{4})/(\d{2})/(\d{2})/(\d{10,12})/an\.bop\.PONTEVEDRA\.(\d{8})\.(\d{10,40})\.pdf$",re.I)
 MONTHS={"enero":1,"xaneiro":1,"febrero":2,"febreiro":2,"marzo":3,"abril":4,"mayo":5,"maio":5,
 "junio":6,"xuño":6,"julio":7,"xullo":7,"agosto":8,"septiembre":9,"setembro":9,"octubre":10,"outubro":10,
 "noviembre":11,"novembro":11,"diciembre":12,"decembro":12}
 S=threading.local()
+def same_notice(folder,file):
+ """El PDF se llama con el número del anuncio; desde el 13/11/2026 algunos
+ llevan además un sufijo de 19 cifras (2026078647 -> 20260786471507798201515392787)."""
+ return file==folder or (file.startswith(folder) and len(file)-len(folder)>=10)
 def client():
  if not hasattr(S,"c"):
   r=requests.Session();r.headers.update({"User-Agent":"Mozilla/5.0","Accept-Language":"es-ES,es;q=0.9"});S.c=r
@@ -89,7 +93,7 @@ def read_day_once(day):
   pdf=urljoin("https://"+HOST,pdf_tag["href"]);u=urlsplit(pdf)
   mt=PDF_RE.fullmatch(u.path)
   if (not mt or u.hostname!=HOST or u.query or u.fragment or int(mt[1])!=day.year or
-      int(mt[2])!=day.month or int(mt[3])!=day.day or mt[4]!=mt[6] or
+      int(mt[2])!=day.month or int(mt[3])!=day.day or not same_notice(mt[4],mt[6]) or
       abs((datetime.strptime(mt[5],"%Y%m%d").date()-day).days)>10):
    invalid(f"Pontevedra {day}: PDF no corresponde al anuncio {pdf}")
   ident=mt[4];noticeid="PO-"+ident

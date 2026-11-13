@@ -18,6 +18,10 @@ class AlavaTest(unittest.TestCase):
  def test_calendar_untitled_latest(self):
   s=cal_html(10,2026,[(26,123),(28,124)],untitled=30)
   self.assertEqual(ar.calendar(s,date(2026,10,15)),{date(2026,10,26):123,date(2026,10,28):124,date(2026,10,30):None})
+ def test_calendar_simbolo_mal_codificado(self):
+  s=cal_html(10,2026,[(2,113)])
+  for a in s.select("a"):a["title"]="Boletín N\ufffd113"
+  self.assertEqual(ar.calendar(s,date(2026,10,15)),{date(2026,10,2):113})
  def test_archive_year_change(self):
   dec=cal_html(12,2025,[(17,143),(19,144),(22,145),(26,146),(29,147)])
   jan=cal_html(1,2026,[(2,1),(5,2),(7,3),(9,4),(12,5),(14,6),(16,7)])

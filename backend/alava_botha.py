@@ -77,7 +77,7 @@ def calendar(soup,target):
   if d.year!=target.year or d.month!=target.month:continue
   title=a.get("title")
   if title:
-   m=re.search(r"Bolet[ií]n\s+N[.º°]?\s*(\d{1,3})",title,re.I)
+   m=re.search(r"Bolet[ií]n\s+N[^\d\s]{0,3}\s*(\d{1,3})",title,re.I)
    if not m:invalid(f"Álava: calendario sin número de boletín {d}: {title}")
    num=int(m[1])
   else:

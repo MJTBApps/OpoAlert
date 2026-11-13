@@ -28,7 +28,7 @@ WORKERS=3
 MIN_ISSUES=15
 CONTROL_DAYS=7
 # The publisher occasionally prints a 4-digit number (BOP-SA-20251230-0025).
-CVE_RE=re.compile(r"\bBOP-SA-(\d{8})\s*-\s*(0?\d{3})\b",re.I)
+CVE_RE=re.compile(r"\bBOP-SA-(\d{7,8})\s*-\s*(0?\d{3})\b",re.I)
 ISSUE_RE=re.compile(r"N\.\s*[ºo]\s*(\d{1,3})\s*[•·]\s*(?:lunes|martes|miercoles|miércoles|jueves|viernes|sabado|sábado|domingo)",re.I)
 threadlocal=threading.local()
 

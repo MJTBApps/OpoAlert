@@ -50,6 +50,12 @@ def read_day(day):
     if not root:invalid(f"Gipuzkoa {day}: sin índice oficial")
     head=root.select_one("h2")
     matched=re.search(r"Bolet[ií]n\s+(\d{2}-\d{2}-\d{4}),\s*N[uú]mero\s+(\d{1,3})",head.get_text(" ",strip=True) if head else "",re.I)
+    head_text=" ".join((head.get_text(" ",strip=True) if head else "").split())
+    # Día sin boletín (p. ej. 11/11/2026): la página solo trae la fecha, sin número,
+    # sin anuncios ni PDF. La numeración seguida lo comprueba después.
+    if (not matched and re.fullmatch(r"Bolet[ií]n\s+"+re.escape(day.strftime("%d-%m-%Y")),head_text,re.I)
+            and not root.select("ul.anuncios > li") and not root.select('a[href$=".pdf"]')):
+        return None
     if not matched or matched[1]!=day.strftime("%d-%m-%Y"):
         invalid(f"Gipuzkoa {day}: cabecera oficial incorrecta")
     num=int(matched[2])

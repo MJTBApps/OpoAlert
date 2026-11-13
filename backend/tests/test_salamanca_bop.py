@@ -12,6 +12,9 @@ class SalamancaTest(unittest.TestCase):
   sa.official_url(sa.pdf_url(date(2027,1,4),0))
   with self.assertRaises(ProvincialCoverageError):
    sa.official_url("https://www.lasalina.es/documentacion/bop/2026/20261030/otro.pdf")
+ def test_cve_con_fecha_de_siete_cifras(self):
+  text="CVE: BOP-SA-20261112-001\nCVE: BOP-SA-2026112-002\nCVE: BOP-SA-20261112-003\n"
+  self.assertEqual(sa.extract_entry_info(text,date(2026,11,12)),[1,2,3])
  def test_misprinted_cve_kept_in_sequence(self):
   day=date(2025,12,18)
   text=("CVE: BOP-SA-20251218-000\nUno.\nCVE: BOP-SA-20251218-001\n"
