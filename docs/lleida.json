@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-13T06:41:13.802395+00:00",
+  "lastCheckedUTC": "2026-11-13T09:38:08.399623+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 63,
-    "opportunities": 63,
+    "announcementsRead": 65,
+    "opportunities": 65,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -32,7 +32,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-15",
@@ -47,15 +48,34 @@
       "2026-11-01",
       "2026-11-06",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-13"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 63,
-    "opportunities": 63
+    "announcementsRead": 65,
+    "opportunities": 65
   },
   "notices": [
+    {
+      "id": "CIDO7-22489584",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Balaguer",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22489584"
+    },
+    {
+      "id": "CIDO7-22108435",
+      "title": "1 plaça de Tècnic mitjà subvencions",
+      "entity": "Ajuntament de Balaguer",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22108435"
+    },
     {
       "id": "CIDO7-22199087",
       "title": "1 plaça de Peó de brigada",

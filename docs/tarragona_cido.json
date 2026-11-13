@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-13T06:41:13.802395+00:00",
+  "lastCheckedUTC": "2026-11-13T09:38:08.399623+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 94,
-    "opportunities": 94,
+    "announcementsRead": 99,
+    "opportunities": 99,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-15",
@@ -47,15 +48,74 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-13"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 94,
-    "opportunities": 94
+    "announcementsRead": 99,
+    "opportunities": 99
   },
   "notices": [
+    {
+      "id": "CIDO8-22490933",
+      "title": "1 plaça d'Assessor jurídic",
+      "entity": "Ajuntament de Tortosa - Gestió Sanitària i Assistencial de Tortosa, SAM (GESAT, SAM)",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22490933"
+    },
+    {
+      "id": "CIDO8-22490512",
+      "title": "2 places d'Oficial paleta",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22490512"
+    },
+    {
+      "id": "CIDO8-22489732",
+      "title": "Borsa de treball de places d'Oficial 2a",
+      "entity": "Ajuntament de Tortosa",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22489732"
+    },
+    {
+      "id": "CIDO8-22489729",
+      "title": "Borsa de treball de places d'Operari",
+      "entity": "Ajuntament de Tortosa",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22489729"
+    },
+    {
+      "id": "CIDO8-22489720",
+      "title": "Borsa de treball de places d'Oficial 1a",
+      "entity": "Ajuntament de Tortosa",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22489720"
+    },
+    {
+      "id": "CIDO8-19272377",
+      "title": "1 plaça de Tècnic mitjà d'administració general",
+      "entity": "Ajuntament de Salou",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19272377"
+    },
     {
       "id": "CIDO8-22484489",
       "title": "Borsa de treball de places de Monitor-netejador de menjador escolar",
@@ -145,16 +205,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22474592"
-    },
-    {
-      "id": "CIDO8-19272377",
-      "title": "1 plaça de Tècnic mitjà d'administració general",
-      "entity": "Ajuntament de Salou",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19272377"
     },
     {
       "id": "CIDO8-15229734",

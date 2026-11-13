@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-13T06:41:13.802395+00:00",
+  "lastCheckedUTC": "2026-11-13T09:38:08.399623+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 73,
-    "opportunities": 73,
+    "announcementsRead": 74,
+    "opportunities": 74,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-15",
@@ -47,15 +48,34 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08",
-      "2026-11-13"
+      "2026-11-08"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 73,
-    "opportunities": 73
+    "announcementsRead": 74,
+    "opportunities": 74
   },
   "notices": [
+    {
+      "id": "CIDO6-22489484",
+      "title": "Borsa de treball de places d'Auxiliar administratiu",
+      "entity": "Ajuntament de Peralada",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22489484"
+    },
+    {
+      "id": "CIDO6-22484593",
+      "title": "1 plaça de Tècnic superior",
+      "entity": "Ajuntament de Lloret de Mar",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22484593"
+    },
     {
       "id": "CIDO6-22487283",
       "title": "1 plaça de Tècnic superior Àrea de Govern Obert i Administració Digital",
@@ -75,16 +95,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22487277"
-    },
-    {
-      "id": "CIDO6-22484593",
-      "title": "1 plaça de Tècnic superior",
-      "entity": "Ajuntament de Lloret de Mar",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22484593"
     },
     {
       "id": "CIDO6-22484134",
