@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-12T17:14:12.275853+00:00",
+  "lastCheckedUTC": "2026-11-13T07:26:19.535600+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "261",
+    "bulletin": "262",
     "pagesVisited": 2,
-    "announcementsRead": 805,
-    "opportunities": 80
+    "announcementsRead": 803,
+    "opportunities": 77
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 805,
-    "opportunities": 80,
+    "announcementsRead": 803,
+    "opportunities": 77,
     "bulletins": [
-      "237",
       "238",
       "239",
       "240",
@@ -44,10 +43,10 @@
       "258",
       "259",
       "260",
-      "261"
+      "261",
+      "262"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
@@ -71,10 +70,10 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "issuePublicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
@@ -98,7 +97,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -108,19 +108,29 @@
       "2026-11-08"
     ],
     "sectionsRead": {
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 15,
-      "SECCIÓN TERCERA": 41,
-      "SECCIÓN SEXTA": 634,
       "SECCIÓN PRIMERA": 3,
-      "SECCIÓN QUINTA": 95,
+      "SECCIÓN TERCERA": 40,
+      "SECCIÓN QUINTA": 104,
+      "SECCIÓN SEXTA": 629,
       "SECCIÓN SEPTIMA": 2,
-      "PARTE NO OFICIAL": 10,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
+      "PARTE NO OFICIAL": 12,
       "SECCIÓN SEGUNDA": 4,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 103
+    "documentsVerified": 100
   },
   "notices": [
+    {
+      "id": "ZA-000345156",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE NUÉVALOS",
+      "date": "13/11/2026",
+      "bulletin": "262",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1474845860909"
+    },
     {
       "id": "ZA-000345129",
       "province": "Zaragoza",
@@ -880,46 +890,6 @@
       "bulletin": "238",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470410050202"
-    },
-    {
-      "id": "ZA-000344366",
-      "province": "Zaragoza",
-      "title": "Por resolución de Alcaldía de este Ayuntamiento de fecha 7 de octubre de 2026 se aprobó la oferta de empleo público correspondiente a la plaza que a continuación se reseña para el año 2026. Personal laboral:…",
-      "entity": "ENTIDAD LOCAL MENOR DE ONTINAR DE SALZ",
-      "date": "14/10/2026",
-      "bulletin": "237",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470230960808"
-    },
-    {
-      "id": "ZA-000344345",
-      "province": "Zaragoza",
-      "title": "Aprobada inicialmente la Ordenanza municipal reguladora del Centro Juvenil de Lituénigo por acuerdo del Pleno de fecha 28 de septiembre de 2026, de conformidad con los artículos 49 y 70.2 de la Ley 7/1985, de…",
-      "entity": "AYUNTAMIENTO DE LITUÉNIGO",
-      "date": "14/10/2026",
-      "bulletin": "237",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470209750505"
-    },
-    {
-      "id": "ZA-000344339",
-      "province": "Zaragoza",
-      "title": "Al no haberse presentado reclamaciones durante el plazo de exposición al público, queda automáticamente elevado a definitivo el acuerdo plenario inicial de fecha 30 de julio de 2026, aprobatorio del Reglamento…",
-      "entity": "AYUNTAMIENTO DE CASPE",
-      "date": "14/10/2026",
-      "bulletin": "237",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470203690404"
-    },
-    {
-      "id": "ZA-000344338",
-      "province": "Zaragoza",
-      "title": "Acuerdo del Pleno extraordinario de fecha 17 de agosto de 2026 del Ayuntamiento de Cariñena, por el que se aprueba definitivamente expediente de aprobación del Reglamento de Funcionamiento del Servicio Público…",
-      "entity": "AYUNTAMIENTO DE CARIÑENA",
-      "date": "14/10/2026",
-      "bulletin": "237",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470202680404"
     }
   ]
 }
