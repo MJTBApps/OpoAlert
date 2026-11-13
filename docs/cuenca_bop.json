@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Cuenca",
   "source": "https://www.dipucuenca.es/boletin1",
-  "lastCheckedUTC": "2026-11-13T09:45:17.469180+00:00",
+  "lastCheckedUTC": "2026-11-13T12:50:09.830286+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "129",
-    "pagesVisited": 11,
-    "announcementsRead": 273,
-    "opportunities": 8
+    "bulletin": "130",
+    "pagesVisited": 12,
+    "announcementsRead": 311,
+    "opportunities": 10
   },
   "historyCoverage": {
     "complete": true,
@@ -26,7 +26,8 @@
       "126",
       "127",
       "128",
-      "129"
+      "129",
+      "130"
     ],
     "publicationDates": [
       "2026-10-16",
@@ -39,7 +40,8 @@
       "2026-11-04",
       "2026-11-06",
       "2026-11-09",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-15",
@@ -59,14 +61,33 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-10",
-      "2026-11-12",
-      "2026-11-13"
+      "2026-11-12"
     ],
-    "issuesRead": 11,
-    "announcementsRead": 273,
-    "opportunities": 8
+    "issuesRead": 12,
+    "announcementsRead": 311,
+    "opportunities": 10
   },
   "notices": [
+    {
+      "id": "CU-2026-2713",
+      "province": "Cuenca",
+      "title": "Bases de la convocatoria para selección de 1 plaza de policía local mediante turno libre.",
+      "entity": "Ayuntamiento de San Clemente",
+      "date": "13/11/2026",
+      "bulletin": "130",
+      "type": "Plaza / oposición",
+      "url": "https://www.dipucuenca.es/documents/34525/2261658/26.pdf/51f24c4b-e96a-00a5-3808-ffdbc4650b12"
+    },
+    {
+      "id": "CU-2026-2700",
+      "province": "Cuenca",
+      "title": "Bases de la convocatoria para constitución de bolsa de trabajo de operario de servicios múltiples mediante concurso.",
+      "entity": "Ayuntamiento de Arguisuelas",
+      "date": "13/11/2026",
+      "bulletin": "130",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dipucuenca.es/documents/34525/2261658/28.pdf/6522106d-39d0-e557-3673-a27c398c4ea2"
+    },
     {
       "id": "CU-2026-2667",
       "province": "Cuenca",
