@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-12T17:29:07.697072+00:00",
+  "lastCheckedUTC": "2026-11-13T07:56:57.746672+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
+    "bulletin": "220",
     "pagesVisited": 21,
-    "announcementsRead": 413,
-    "opportunities": 30
+    "announcementsRead": 448,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 413,
-    "opportunities": 30,
+    "announcementsRead": 448,
+    "opportunities": 33,
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -40,10 +39,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -63,7 +62,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -77,7 +77,6 @@
       "2026-11-08"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/14-10-2026/BOP-S-2026-199.pdf",
       "https://bop.dipucordoba.es/visor-pdf/15-10-2026/BOP-S-2026-200.pdf",
       "https://bop.dipucordoba.es/visor-pdf/16-10-2026/BOP-S-2026-201.pdf",
       "https://bop.dipucordoba.es/visor-pdf/19-10-2026/BOP-S-2026-202.pdf",
@@ -97,10 +96,41 @@
       "https://bop.dipucordoba.es/visor-pdf/09-11-2026/BOP-S-2026-216.pdf",
       "https://bop.dipucordoba.es/visor-pdf/10-11-2026/BOP-S-2026-217.pdf",
       "https://bop.dipucordoba.es/visor-pdf/11-11-2026/BOP-S-2026-218.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-S-2026-219.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-S-2026-219.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-S-2026-220.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3859",
+      "province": "Córdoba",
+      "title": "Extracto de la Convocatoria 940830 del Programa Provincial Específico de promoción del Patrimonio Cultural y Empresarial 2026 en el marco del Proyecto Club Patrimonio  cuyo plazo de ejecución ha sido ampliado",
+      "entity": "Instituto Provincial de Desarrollo Económico de Córdoba (IPRODECO)",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-A-2026-3859.pdf"
+    },
+    {
+      "id": "CO-2026-3800",
+      "province": "Córdoba",
+      "title": "Bases para selección de una plaza de Coordinador de Deportes, funcionario de carrera, por el sistema de oposición, turno libre, incluida en la Oferta Pública de Empleo 2025",
+      "entity": "Ayuntamiento de Priego de Córdoba",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-A-2026-3800.pdf"
+    },
+    {
+      "id": "CO-2026-3793",
+      "province": "Córdoba",
+      "title": "Acuerdo de 27 de octubre de 2026, del Consejo Rector, por el que se aprueban las Bases de la Convocatoria para la provisión definitiva de una plaza de funcionario de carrera, de Coordinador de Programas, mediante el sistema de oposición en turno libre, incluida en la Oferta Pública de Empleo de 2025, y constitución bolsa de empleo",
+      "entity": "Instituto Municipal de Deportes de Córdoba (IMDECO)",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-A-2026-3793.pdf"
+    },
     {
       "id": "CO-2026-3836",
       "province": "Córdoba",
