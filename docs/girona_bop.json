@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-12T12:55:16.156958+00:00",
+  "lastCheckedUTC": "2026-11-13T06:56:18.304343+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "218",
+    "bulletin": "219",
     "pagesVisited": 21,
-    "announcementsRead": 1066,
-    "opportunities": 104,
+    "announcementsRead": 1072,
+    "opportunities": 102,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 1066,
-    "opportunities": 104,
+    "announcementsRead": 1072,
+    "opportunities": 102,
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -40,10 +39,10 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -63,7 +62,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -78,6 +78,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-219-09824",
+      "title": "Aprovació de la convocatòria i les bases del procés selectiu, mitjançant concurs oposició, per constituir una borsa de treball de personal laboral de la categoria auxiliar administratiu/va, grup C2, amb la finalitat de realitzar substitucions de places vacants a l'Oficina municipal de Turisme de l'Ajuntament de Peralada",
+      "entity": "AJUNTAMENT DE PERALADA",
+      "date": "13/11/2026",
+      "bulletin": "219",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/219/202621909824.pdf"
+    },
     {
       "id": "GI-2026-218-09807",
       "title": "Aprovació de les bases reguladores i de la convocatòria per proveir de forma no definitiva amb FHN el lloc de treball d'interventor/a de classe segona de l'Ajuntament de Llagostera",
@@ -1087,36 +1097,6 @@
       "province": "Girona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/199/202619908670.pdf"
-    },
-    {
-      "id": "GI-2026-198-08778",
-      "title": "Aprovació de la convocatòria i les bases específiques per a la provisió temporal d'una plaça de funcionàri/a interí/na tècnic/a mitjà/na de Joventut",
-      "entity": "CONSELL COMARCAL DEL PLA DE L'ESTANY",
-      "date": "14/10/2026",
-      "bulletin": "198",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/198/202619808778.pdf"
-    },
-    {
-      "id": "GI-2026-198-08660",
-      "title": "Aprovació de les bases reguladores i la convocatòria del procés de selecció d'una plaça de delineant en règim de funcionari de carrera",
-      "entity": "AJUNTAMENT DE FIGUERES",
-      "date": "14/10/2026",
-      "bulletin": "198",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/198/202619808660.pdf"
-    },
-    {
-      "id": "GI-2026-198-08630",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la creació d'una borsa de treball de personal administratiu a l'Ajuntament de Cassà de la Selva",
-      "entity": "AJUNTAMENT DE CASSÀ DE LA SELVA",
-      "date": "14/10/2026",
-      "bulletin": "198",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/198/202619808630.pdf"
     }
   ]
 }
