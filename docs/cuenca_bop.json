@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cuenca",
   "source": "https://www.dipucuenca.es/boletin1",
-  "lastCheckedUTC": "2026-11-12T16:50:03.626818+00:00",
+  "lastCheckedUTC": "2026-11-13T06:51:37.597316+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "129",
-    "pagesVisited": 12,
-    "announcementsRead": 292,
-    "opportunities": 10
+    "pagesVisited": 11,
+    "announcementsRead": 273,
+    "opportunities": 8
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "118",
       "119",
       "120",
       "121",
@@ -30,7 +29,6 @@
       "129"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-16",
       "2026-10-19",
       "2026-10-21",
@@ -61,11 +59,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-10",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 292,
-    "opportunities": 10
+    "issuesRead": 11,
+    "announcementsRead": 273,
+    "opportunities": 8
   },
   "notices": [
     {
@@ -147,26 +146,6 @@
       "bulletin": "119",
       "type": "Bolsa de trabajo",
       "url": "https://www.dipucuenca.es/documents/34525/2173050/15.pdf/0e6c0d1e-3a80-cf20-175d-85f0b983eff3"
-    },
-    {
-      "id": "CU-2026-2416",
-      "province": "Cuenca",
-      "title": "Bases de la convocatoria bolsa de trabajo por concurso de 1 plaza de técnico auxiliar de biblioteca.",
-      "entity": "Ayuntamiento de Casas de Benítez",
-      "date": "14/10/2026",
-      "bulletin": "118",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dipucuenca.es/documents/34525/2172384/19.pdf/40e8a6ab-9ab3-b033-a416-50838c53213f"
-    },
-    {
-      "id": "CU-2026-2394",
-      "province": "Cuenca",
-      "title": "Bases de la convocatoria de 1 plaza de auxiliar administrativo por oposición y constitución de bolsa de trabajo.",
-      "entity": "Ayuntamiento de Campillo de Altobuey",
-      "date": "14/10/2026",
-      "bulletin": "118",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dipucuenca.es/documents/34525/2172384/10.pdf/141001ca-74fb-a5e3-5bb7-ebc91b1b1185"
     }
   ]
 }

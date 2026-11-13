@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-12T16:56:44.257508+00:00",
+  "lastCheckedUTC": "2026-11-13T06:57:07.229692+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "217",
+    "bulletin": "218",
     "pagesVisited": 21,
-    "announcementsRead": 357,
-    "opportunities": 23
+    "announcementsRead": 367,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -36,10 +35,10 @@
       "214",
       "215",
       "216",
-      "217"
+      "217",
+      "218"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -59,7 +58,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -73,8 +73,8 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 357,
-    "opportunities": 23
+    "announcementsRead": 367,
+    "opportunities": 22
   },
   "notices": [
     {
@@ -296,16 +296,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/15/BOPVA-A-2026-03000.pdf"
-    },
-    {
-      "id": "VD-2026-2979",
-      "province": "Valladolid",
-      "title": "Concurso específico para la provisión de 6 plazas de Jefe/a de grupo-suboficial del Servicio de Extinción de Incendios, Salvamento y Protección Civil.",
-      "entity": "AYUNTAMIENTO DE VALLADOLID",
-      "date": "14/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/14/BOPVA-A-2026-02979.pdf"
     }
   ]
 }

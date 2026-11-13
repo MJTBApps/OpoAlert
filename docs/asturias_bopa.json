@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-12T16:43:12.321035+00:00",
+  "lastCheckedUTC": "2026-11-13T06:47:17.594989+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
+    "bulletin": "220",
     "pagesVisited": 22,
-    "announcementsRead": 999,
-    "opportunities": 74
+    "announcementsRead": 980,
+    "opportunities": 78
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -37,10 +36,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -61,7 +60,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,10 +75,60 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 999,
-    "opportunities": 74
+    "announcementsRead": 980,
+    "opportunities": 78
   },
   "notices": [
+    {
+      "id": "AS-2026-09204",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Aprobación de las bases y convocatoria para la cobertura de una plaza de Administrativo/a (Tesorería) mediante promoción interna, por el sistema de concurso-oposición.",
+      "entity": "Ayuntamiento de Cabrales",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/13/2026-09204.pdf"
+    },
+    {
+      "id": "AS-2026-09139",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 30 de octubre de 2026, de la Gerencia del Área de Salud I Occidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura del puesto de Jefe/a de Grupo no Sanitario: Gestión Medio Ambiental, Limpieza y Residuos de Ámbito Sanitario.",
+      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/13/2026-09139.pdf"
+    },
+    {
+      "id": "AS-2026-09126",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 30 de octubre de 2026, de la Universidad de Oviedo, por la que se convoca concurso público para la provisión de plazas de Profesoras y Profesores Sustitutas/os por el artículo 80.2 de la Ley Orgánica 2/2023 del Sistema Universitario con acreditación para la figura de Profesora y Profesor Permanente Laboral.",
+      "entity": "Universidad de Oviedo",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/13/2026-09126.pdf"
+    },
+    {
+      "id": "AS-2026-09118",
+      "province": "Asturias (BOPA)",
+      "title": "Convocatoria y bases para la cobertura del puesto de Director/a Gerente de Ciudad Industrial del Valle del Nalón, S. A. U.",
+      "entity": "Ciudad Industrial del Valle del Nalón, S. A. U. (VALNALÓN)",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/13/2026-09118.pdf"
+    },
+    {
+      "id": "AS-2026-09085",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Acuerdo de la Comisión Delegada del Consorcio de Aguas, por el que se aprueban las bases y la convocatoria del concurso de méritos para la provisión del puesto de trabajo vacante de Técnico/a Superior del Servicio de Abastecimiento en la plantilla del personal funcionario del Consorcio de Aguas de Asturias.",
+      "entity": "Consorcio de Aguas de Asturias (CADASA)",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/13/2026-09085.pdf"
+    },
     {
       "id": "AS-2026-09263",
       "province": "Asturias (BOPA)",
@@ -808,16 +858,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/15/2026-08160.pdf"
-    },
-    {
-      "id": "AS-2026-08161",
-      "province": "Asturias (BOPA)",
-      "title": "Edicto. Convocatoria y bases para la provisión de una plaza de Analista TIC del Ayuntamiento de Oviedo perteneciente a la Oferta de Empleo Público de 2026.",
-      "entity": "Ayuntamiento de Oviedo",
-      "date": "14/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/14/2026-08161.pdf"
     }
   ]
 }

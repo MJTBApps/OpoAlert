@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-12T16:44:51.130665+00:00",
+  "lastCheckedUTC": "2026-11-13T06:47:38.380559+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "215",
+    "bulletin": "216",
     "pagesVisited": 24,
-    "announcementsRead": 570,
-    "opportunities": 7,
+    "announcementsRead": 571,
+    "opportunities": 8,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 6
+    "pdfChecked": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -38,10 +37,10 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -61,7 +60,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -75,10 +75,9 @@
       "2026-11-08"
     ],
     "issuesRead": 21,
-    "announcementsRead": 570,
-    "opportunities": 7,
+    "announcementsRead": 571,
+    "opportunities": 8,
     "regularBulletins": [
-      "195",
       "196",
       "197",
       "198",
@@ -98,11 +97,11 @@
       "212",
       "213",
       "214",
-      "215"
+      "215",
+      "216"
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-195",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-196",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-197",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-198",
@@ -122,10 +121,22 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-212",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-213",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-214",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-215"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-215",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-216"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202604967",
+      "province": "Burgos",
+      "title": "Convocatoria unitaria para la provisión en propiedad de las plazas de personal funcionario fijo correspondientes al turno de nuevo ingreso, incluidas en las ofertas públicas de empleo de los años 2024, 2025 y 2026",
+      "entity": "Diputación Provincial de Burgos – Servicio de Personal",
+      "date": "13/11/2026",
+      "bulletin": "216",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-216/bopbur-2026-216-anuncio-202604967.pdf",
+      "publisherArticle": "202604967"
+    },
     {
       "id": "BU-2026-202604834",
       "province": "Burgos",

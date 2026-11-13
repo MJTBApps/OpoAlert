@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-12T16:56:22.720552+00:00",
+  "lastCheckedUTC": "2026-11-13T06:56:46.007314+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
+    "bulletin": "220",
     "pagesVisited": 22,
-    "announcementsRead": 608,
-    "opportunities": 34
+    "announcementsRead": 605,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-15",
+    "rangeEnd": "2026-11-13",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -37,10 +36,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-14",
       "2026-10-15",
       "2026-10-16",
       "2026-10-19",
@@ -61,7 +60,8 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -74,8 +74,8 @@
       "2026-11-08"
     ],
     "issuesRead": 22,
-    "announcementsRead": 608,
-    "opportunities": 34
+    "announcementsRead": 605,
+    "opportunities": 33
   },
   "notices": [
     {
@@ -472,18 +472,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42838300-1-PDF-580358",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F22&referencia=42768567-3-HTML-580358-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-c198711980e91cee26",
-      "province": "La Rioja (BOR)",
-      "title": "CUERPO DOCENTES UNIVERSITARIOS: se convoca concurso de acceso al Cuerpo de Funcionarios Docentes Universitarios",
-      "entity": "UNIVERSIDAD DE LA RIOJA",
-      "date": "14/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42656331-1-PDF-580197",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F14&referencia=42613281-2-HTML-580197-X",
       "originalFormat": "pdf"
     }
   ]
