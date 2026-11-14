@@ -6,15 +6,16 @@ import UserMessagingPlatform
 
 /// Publicidad de AdMob con las mismas reglas que Android (`DemoAds.kt`):
 /// - Primero el consentimiento del RGPD (mensaje de AdMob) y el aviso de Apple de seguimiento.
-/// - Un anuncio al abrir la app: nunca la primera vez, como mucho uno por hora y se
+/// - Un anuncio al abrir la app: nunca la primera vez, como mucho uno cada 15 minutos y se
 ///   descarta si tarda más de 5 segundos.
-/// - Un banner cada 8 convocatorias de la lista, como mucho 5.
+/// - Un banner cada 8 convocatorias de la lista, también al pulsar «Ver más».
 /// - Con Premium no hay anuncios.
 @MainActor
 final class Ads: ObservableObject {
     static let shared = Ads()
     static let listAdEvery = 8
-    static let maxListAds = 5
+    /// Cada cuánto puede salir el anuncio de apertura (segundos).
+    static let openAdInterval: TimeInterval = 15 * 60
 
     @Published private(set) var ready = false
     private var starting = false
@@ -51,6 +52,19 @@ final class Ads: ObservableObject {
         }
     }
 
+    private var backgroundSince: Date?
+
+    /// La app pasa a segundo plano (para el anuncio al volver).
+    func didEnterBackground() { backgroundSince = Date() }
+
+    /// Al volver a la app tras 5 minutos o más fuera (iOS suele mantenerla abierta horas),
+    /// también sale el anuncio de apertura. Volver de Safari tras pulsar un anuncio no cuenta.
+    func didBecomeActive(premium: Bool) {
+        defer { backgroundSince = nil }
+        guard ready, !premium, let since = backgroundSince, Date().timeIntervalSince(since) >= 5 * 60 else { return }
+        showOpenAd()
+    }
+
     /// El aviso de Apple solo se muestra una vez; si se rechaza, los anuncios no son personalizados.
     private func askTracking() async {
         guard ATTrackingManager.trackingAuthorizationStatus == .notDetermined else { return }
@@ -61,7 +75,7 @@ final class Ads: ObservableObject {
 
     private func showOpenAd() {
         let last = defaults.double(forKey: lastOpenAdKey)
-        guard Date().timeIntervalSince1970 - last >= 3600 else { return }
+        guard Date().timeIntervalSince1970 - last >= Self.openAdInterval else { return }
         let requested = Date()
         AppOpenAd.load(with: openAdID, request: Request()) { [weak self] ad, _ in
             Task { @MainActor in
@@ -71,6 +85,20 @@ final class Ads: ObservableObject {
                 ad.present(from: Self.topController())
             }
         }
+    }
+
+    /// Los banners se guardan por posición: si SwiftUI vuelve a dibujar la lista (por ejemplo
+    /// al volver de Safari tras pulsar un anuncio), se reutiliza el mismo y no queda un hueco vacío.
+    private var banners: [Int: BannerView] = [:]
+
+    func banner(slot: Int) -> BannerView {
+        if let view = banners[slot] { return view }
+        let view = BannerView(adSize: AdSizeBanner)
+        view.adUnitID = bannerID
+        view.rootViewController = Self.topController()
+        view.load(Request())
+        banners[slot] = view
+        return view
     }
 
     var privacyOptionsRequired: Bool {
@@ -93,15 +121,23 @@ final class Ads: ObservableObject {
 
 /// Banner estándar (320×50) entre las convocatorias.
 struct BannerAdView: UIViewRepresentable {
-    let adUnitID: String
+    let slot: Int
 
-    func makeUIView(context: Context) -> BannerView {
-        let view = BannerView(adSize: AdSizeBanner)
-        view.adUnitID = adUnitID
-        view.rootViewController = Ads.topController()
-        view.load(Request())
-        return view
+    func makeUIView(context: Context) -> UIView {
+        let box = UIView()
+        attach(to: box)
+        return box
     }
 
-    func updateUIView(_ view: BannerView, context: Context) {}
+    func updateUIView(_ box: UIView, context: Context) {
+        if box.subviews.isEmpty { attach(to: box) }
+    }
+
+    private func attach(to box: UIView) {
+        let banner = Ads.shared.banner(slot: slot)
+        banner.removeFromSuperview()
+        banner.frame = CGRect(x: 0, y: 0, width: 320, height: 50)
+        box.addSubview(banner)
+        if banner.rootViewController == nil { banner.rootViewController = Ads.topController() }
+    }
 }

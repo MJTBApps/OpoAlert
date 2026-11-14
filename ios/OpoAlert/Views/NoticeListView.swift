@@ -55,10 +55,9 @@ struct NoticeListView: View {
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
                             .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
-                        // Un anuncio cada 8 convocatorias, como mucho 5 (sin anuncios con Premium).
-                        if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == 3
-                            && index / Ads.listAdEvery < Ads.maxListAds {
-                            BannerAdView(adUnitID: ads.bannerID)
+                        // Un anuncio cada 8 convocatorias, también al pulsar «Ver más» (sin anuncios con Premium).
+                        if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == 3 {
+                            BannerAdView(slot: index / Ads.listAdEvery)
                                 .frame(width: 320, height: 50)
                                 .frame(maxWidth: .infinity)
                                 .listRowSeparator(.hidden)

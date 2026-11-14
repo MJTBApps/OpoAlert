@@ -25,10 +25,12 @@ struct OpoAlertApp: App {
         .onChange(of: scenePhase) { phase in
             if phase == .background {
                 model.endVisit()
+                Ads.shared.didEnterBackground()
                 BackgroundRefresh.schedule()
             }
             if phase == .active {
                 model.startVisit()
+                if !CaptureMode.isOn { Ads.shared.didBecomeActive(premium: PremiumStore.isActiveStored) }
                 if !model.isRefreshing { Task { await model.refresh() } }
             }
         }

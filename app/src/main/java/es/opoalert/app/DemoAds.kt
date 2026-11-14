@@ -85,7 +85,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
 
     /** Anuncio n.º [slot] de la lista (empieza en 0); null mientras no haya cargado. */
     fun bannerFor(slot: Int): View? {
-        if (!initialized || slot >= MAX_LIST_ADS || !Premium.showsAds(activity)) return null
+        if (!initialized || !Premium.showsAds(activity)) return null
         while (banners.size <= slot) {
             val index = banners.size
             val dm = activity.resources.displayMetrics
@@ -131,9 +131,8 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
     fun destroy() { banners.forEach { it.destroy() }; banners.clear(); loaded.clear() }
 
     companion object {
-        /** Cada cuántas convocatorias va un anuncio en la lista, y cuántos como máximo. */
+        /** Cada cuántas convocatorias va un anuncio en la lista (también al pulsar «Ver más»). */
         const val LIST_AD_EVERY = 8
-        const val MAX_LIST_ADS = 5
 
         // De PRUEBA en la versión web; los reales de AdMob en la de Google Play (build.gradle.kts).
         private val BANNER_ID = BuildConfig.ADMOB_BANNER
@@ -141,7 +140,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
 
         private const val PREFS = "opoalert_ui"
         private const val LAST_OPEN_AD = "last_app_open_ad"
-        private const val OPEN_AD_MIN_INTERVAL_MS = 60 * 60 * 1000L
+        private const val OPEN_AD_MIN_INTERVAL_MS = 15 * 60 * 1000L
         private const val OPEN_AD_TIMEOUT_MS = 5000L
     }
 }
