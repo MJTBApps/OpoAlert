@@ -132,7 +132,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
 
     companion object {
         /** Cada cuántas convocatorias va un anuncio en la lista (también al pulsar «Ver más»). */
-        const val LIST_AD_EVERY = 8
+        const val LIST_AD_EVERY = 6
 
         // De PRUEBA en la versión web; los reales de AdMob en la de Google Play (build.gradle.kts).
         private val BANNER_ID = BuildConfig.ADMOB_BANNER

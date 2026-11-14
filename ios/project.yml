@@ -21,7 +21,7 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.54.1"  # mismo número que Android
+    MARKETING_VERSION: "1.54.2"  # mismo número que Android
     CURRENT_PROJECT_VERSION: "1"
     DEVELOPMENT_TEAM: ""
     # AdMob: identificadores de PRUEBA de Google. Los reales solo se pasan al compilar

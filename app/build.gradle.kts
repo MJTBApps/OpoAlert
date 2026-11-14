@@ -39,8 +39,8 @@ android {
         minSdk = 26
         // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
         targetSdk = 36
-        versionCode = 71
-        versionName = "1.54.1"
+        versionCode = 72
+        versionName = "1.54.2"
         buildConfigField("String", "FCM_APP_ID", firebase("appId"))
         buildConfigField("String", "FCM_API_KEY", firebase("apiKey"))
         buildConfigField("String", "FCM_PROJECT_ID", firebase("projectId"))

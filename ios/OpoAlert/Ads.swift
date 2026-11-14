@@ -8,12 +8,12 @@ import UserMessagingPlatform
 /// - Primero el consentimiento del RGPD (mensaje de AdMob) y el aviso de Apple de seguimiento.
 /// - Un anuncio al abrir la app: nunca la primera vez, como mucho uno cada 15 minutos y se
 ///   descarta si tarda más de 5 segundos.
-/// - Un banner cada 8 convocatorias de la lista, también al pulsar «Ver más».
+/// - Un banner cada 6 convocatorias de la lista, también al pulsar «Ver más».
 /// - Con Premium no hay anuncios.
 @MainActor
 final class Ads: ObservableObject {
     static let shared = Ads()
-    static let listAdEvery = 8
+    static let listAdEvery = 6
     /// Cada cuánto puede salir el anuncio de apertura (segundos).
     static let openAdInterval: TimeInterval = 15 * 60
 
