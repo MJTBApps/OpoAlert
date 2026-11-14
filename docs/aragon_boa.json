@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-13T16:24:29.911905+00:00",
+  "lastCheckedUTC": "2026-11-14T06:13:09.869779+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 21,
-    "announcementsRead": 806,
-    "opportunities": 131
+    "pagesVisited": 20,
+    "announcementsRead": 767,
+    "opportunities": 127
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -39,7 +38,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 806,
-    "opportunities": 131
+    "issuesRead": 20,
+    "announcementsRead": 767,
+    "opportunities": 127
   },
   "notices": [
     {
@@ -1346,46 +1345,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470523440303"
-    },
-    {
-      "id": "AO-2026-007961739",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 27 de diciembre de 2024, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Fontanero/a en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre y discapacidad intelectual.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470362500606"
-    },
-    {
-      "id": "AO-2026-007961738",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 27 de diciembre de 2024, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Fontanero/a en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno de promoción interna.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470360480505"
-    },
-    {
-      "id": "AO-2026-007961737",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 27 de diciembre de 2024, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Electricista en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre y discapacidad general.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470358460505"
-    },
-    {
-      "id": "AO-2026-007961736",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se declara aprobada la relación definitiva de personas participantes que han superado el proceso selectivo, convocado por Resolución de 27 de diciembre de 2024, para el acceso a la condición de personal estatutario fijo en plazas de la categoría de Electricista en centros del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno de promoción interna.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470356440505"
     }
   ]
 }

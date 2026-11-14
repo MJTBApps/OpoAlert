@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-13T16:27:31.559932+00:00",
+  "lastCheckedUTC": "2026-11-14T06:16:11.321364+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 293,
-    "opportunities": 51
+    "pagesVisited": 20,
+    "announcementsRead": 285,
+    "opportunities": 49
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 293,
-    "opportunities": 51
+    "issuesRead": 20,
+    "announcementsRead": 285,
+    "opportunities": 49
   },
   "notices": [
     {
@@ -566,26 +565,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352834/idioma/gl"
-    },
-    {
-      "id": "OU-2026-352908",
-      "province": "Ourense",
-      "title": "Anuncio de la convocatoria de una edición del Curso de formación para bomberos/as y personal de los GES: Curso de actualización en el rescate vital en accidentes de tráfico (AF-58-2026). EXP: 2026/15433S",
-      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352908/idioma/gl"
-    },
-    {
-      "id": "OU-2026-352743",
-      "province": "Ourense",
-      "title": "Resolución de 2 de septiembre de 2026 de la Dirección General de la Academia Galega de Seguridad Pública, de la Consellería de Presidencia, Justicia y Deportes, por la que se anuncia la convocatoria del proceso selectivo de acceso por promoción interna (código de procedimiento PR461F) y el proceso de provisión por movilidad (código de procedimiento PR461J) en los cuerpos de Policía Local de Galicia, escala ejecutiva, categoría de inspector.",
-      "entity": "ACADEMIA GALEGA DE SEGURIDADE PUBLICA",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352743/idioma/gl"
     }
   ]
 }

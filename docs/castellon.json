@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-13T16:29:18.100476+00:00",
+  "lastCheckedUTC": "2026-11-14T06:25:13.365375+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "137",
+    "bulletin": "138",
     "pagesVisited": 13,
-    "announcementsRead": 504,
+    "announcementsRead": 493,
     "opportunities": 21,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 504,
+    "announcementsRead": 493,
     "opportunities": 21,
     "bulletins": [
-      "125",
       "126",
       "127",
       "128",
@@ -32,10 +31,10 @@
       "134",
       "135",
       "136",
-      "137"
+      "137",
+      "138"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-17",
       "2026-10-20",
       "2026-10-22",
@@ -47,7 +46,8 @@
       "2026-11-05",
       "2026-11-07",
       "2026-11-10",
-      "2026-11-12"
+      "2026-11-12",
+      "2026-11-14"
     ],
     "nonPublicationDates": [
       "2026-10-16",
@@ -70,6 +70,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-217663700993802806",
+      "province": "Castellón",
+      "title": "Convocatoria y Bases proceso selectivo cobertura una plaza Técnico Medio Agricultura y Medio Ambiente",
+      "entity": "AJUNTAMENT DE NULES",
+      "date": "14/11/2026",
+      "bulletin": "138",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/G4tvW6e94w"
+    },
     {
       "id": "CS-436607856979505629",
       "province": "Castellón",
@@ -269,16 +279,6 @@
       "bulletin": "126",
       "type": "Plaza / oposición",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/JQdkklaqiK"
-    },
-    {
-      "id": "CS-100470303631349671",
-      "province": "Castellón",
-      "title": "CONSORCIO PROVINCIAL DE BOMBEROS DE CASTELLÓN. Bases que regirán en la convocatoria para la provisión temporal de puestos de Sargento y Cabo por el Turno de Mejora.",
-      "entity": "Consorcis / Consorcios",
-      "date": "15/10/2026",
-      "bulletin": "125",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/7Q9c2JbENL"
     }
   ]
 }

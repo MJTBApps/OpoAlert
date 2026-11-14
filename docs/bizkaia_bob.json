@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-13T16:23:02.513590+00:00",
+  "lastCheckedUTC": "2026-11-14T06:12:09.941189+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "219",
-    "pagesVisited": 22,
-    "announcementsRead": 835,
-    "opportunities": 62
+    "pagesVisited": 21,
+    "announcementsRead": 813,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -40,7 +39,6 @@
       "219"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -71,11 +69,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 835,
-    "opportunities": 62
+    "issuesRead": 21,
+    "announcementsRead": 813,
+    "opportunities": 61
   },
   "notices": [
     {
@@ -687,16 +686,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/16/II-5302_cas.pdf"
-    },
-    {
-      "id": "BI-2026-I-1158",
-      "province": "Bizkaia",
-      "title": "ORDEN FORAL 5668/2026, de 5 de octubre, del diputado foral de Administración Pública y Relaciones Institucionales, por la que se incrementa el número de plazas convocadas en la convocatoria de la categoría de Inspección de Finanzas, aprobada mediante Decreto Foral 112/2026, de 10 de junio, de la Diputada General publicado en el «Boletín Oficial de Bizkaia» número 110, de 12 de junio de 2026.",
-      "entity": "Administración Foral del Territorio Histórico de Bizkaia",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/15/I-1158_cas.pdf"
     }
   ]
 }

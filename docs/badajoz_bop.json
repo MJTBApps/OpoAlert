@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-13T16:22:41.753066+00:00",
+  "lastCheckedUTC": "2026-11-14T06:11:40.581616+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 460,
-    "opportunities": 47
+    "pagesVisited": 20,
+    "announcementsRead": 442,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 460,
-    "opportunities": 47
+    "issuesRead": 20,
+    "announcementsRead": 442,
+    "opportunities": 44
   },
   "notices": [
     {
@@ -516,36 +515,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-16000000_4068.pdf"
-    },
-    {
-      "id": "BD-2026-164792",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para cubrir en propiedad seis plazas de Administrativo/a, personal funcionario/a, en el turno libre por el sistema de concurso-oposición",
-      "entity": "Ayuntamiento de Don Benito",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-15000000_4061.pdf"
-    },
-    {
-      "id": "BD-2026-164766",
-      "province": "Badajoz",
-      "title": "Bases de selección de una plaza de Encargado/a General de Obras y Servicios Operativos, por el sistema de concurso-oposición, con carácter de personal laboral fijo",
-      "entity": "Ayuntamiento de Castuera",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-15000000_4035.pdf"
-    },
-    {
-      "id": "BD-2026-164725",
-      "province": "Badajoz",
-      "title": "Bases de selección de una plaza de Operario de Limpieza-Lavandería",
-      "entity": "Ayuntamiento de Castuera",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-15000000_3995.pdf"
     }
   ]
 }

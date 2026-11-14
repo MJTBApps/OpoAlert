@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-13T16:30:01.683558+00:00",
+  "lastCheckedUTC": "2026-11-14T06:18:00.796042+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 536,
-    "opportunities": 23
+    "pagesVisited": 20,
+    "announcementsRead": 513,
+    "opportunities": 20
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 536,
-    "opportunities": 23
+    "issuesRead": 20,
+    "announcementsRead": 513,
+    "opportunities": 20
   },
   "notices": [
     {
@@ -276,36 +275,6 @@
       "bulletin": "201",
       "type": "Bolsa de trabajo",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104806;0&insert_number=4822&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4754",
-      "province": "Toledo",
-      "title": "Corrección error material en las bases de la convocatoria para para la constitución de una bolsa de TRABADOR/A SOCIAL (Subgrupo A2/Grupo profesional II) de la plantilla de personal del Ayuntamiento de Toledo",
-      "entity": "AYUNTAMIENTO DE TOLEDO",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104737;0&insert_number=4754&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4753",
-      "province": "Toledo",
-      "title": "Corrección error material en las bases de la convocatoria para para la constitución de una bolsa de EDUCADOR/A SOCIAL (Subgrupo A2/Grupo profesional II) de la plantilla de personal del Ayuntamiento de Toledo",
-      "entity": "AYUNTAMIENTO DE TOLEDO",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104736;0&insert_number=4753&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4733",
-      "province": "Toledo",
-      "title": "BASES Y CONVOCATORIA MEDIANTE CONCURSO PARA LA SELECCIÓN DE UN/A OPERARIO/A DE LIMPIEZA DE COLEGIO Y CREACIÓN DE BOLSA DE TRABAJO PARA SU CONTRATACIÓN EN RÉGIMEN LABORAL DE CARÁCTER TEMPORAL",
-      "entity": "AYUNTAMIENTO DE RIELVES",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104711;0&insert_number=4733&insert_year=2026"
     }
   ]
 }

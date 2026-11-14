@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-13T17:28:27.956814+00:00",
+  "lastCheckedUTC": "2026-11-14T07:43:01.954717+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 21,
-    "announcementsRead": 448,
-    "opportunities": 33
+    "pagesVisited": 20,
+    "announcementsRead": 426,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 448,
-    "opportunities": 33,
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 426,
+    "opportunities": 31,
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -43,7 +42,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -74,10 +72,10 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/15-10-2026/BOP-S-2026-200.pdf",
       "https://bop.dipucordoba.es/visor-pdf/16-10-2026/BOP-S-2026-201.pdf",
       "https://bop.dipucordoba.es/visor-pdf/19-10-2026/BOP-S-2026-202.pdf",
       "https://bop.dipucordoba.es/visor-pdf/20-10-2026/BOP-S-2026-203.pdf",
@@ -410,26 +408,6 @@
       "bulletin": "202",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipucordoba.es/visor-pdf/19-10-2026/BOP-A-2026-3456.pdf"
-    },
-    {
-      "id": "CO-2026-3495",
-      "province": "Córdoba",
-      "title": "Bases de la Convocatoria para la provisión en propiedad de 1 plaza de Oficial/a 1ª Carpintero/a de personal laboral, turno libre, correspondiente a la Oferta de Empleo Público de 2024",
-      "entity": "Diputación de Córdoba",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/15-10-2026/BOP-A-2026-3495.pdf"
-    },
-    {
-      "id": "CO-2026-3448",
-      "province": "Córdoba",
-      "title": "Resolución por la que se aprueban las Bases y Convocatoria para la selección de un Auxiliar Administrativo, Grupo C2, con la categoría de personal laboral temporal",
-      "entity": "Ayuntamiento de Villanueva de Córdoba",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/15-10-2026/BOP-A-2026-3448.pdf"
     }
   ]
 }

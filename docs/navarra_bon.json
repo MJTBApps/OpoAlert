@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-13T16:47:45.766831+00:00",
+  "lastCheckedUTC": "2026-11-14T06:49:07.678536+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "227",
-    "pagesVisited": 22,
-    "announcementsRead": 1391,
-    "opportunities": 46
+    "pagesVisited": 21,
+    "announcementsRead": 1328,
+    "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -40,7 +39,6 @@
       "227"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -72,11 +70,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 1391,
-    "opportunities": 46
+    "issuesRead": 21,
+    "announcementsRead": 1328,
+    "opportunities": 38
   },
   "notices": [
     {
@@ -458,86 +457,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/208/2"
-    },
-    {
-      "id": "NA-2026-206-27",
-      "province": "Navarra",
-      "title": "Concurso-oposición de una plaza de oficial de administración del personal",
-      "entity": "VILLAVA",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/27"
-    },
-    {
-      "id": "NA-2026-206-26",
-      "province": "Navarra",
-      "title": "Concurso-oposición de dos plazas de auxiliar de protección ciudadana",
-      "entity": "VIANA",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/26"
-    },
-    {
-      "id": "NA-2026-206-25",
-      "province": "Navarra",
-      "title": "Oposición, en promoción interna restringida, de tres plazas de obrero-peón de la brigada de obras",
-      "entity": "TAFALLA",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/25"
-    },
-    {
-      "id": "NA-2026-206-24",
-      "province": "Navarra",
-      "title": "Oposición de una plaza de educador/a social",
-      "entity": "TAFALLA",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/24"
-    },
-    {
-      "id": "NA-2026-206-23",
-      "province": "Navarra",
-      "title": "Oposición de 6 plazas de oficial administrativo/a, oficial administrativo/a secretaría-actas y oficial administrativo/a contabilidad",
-      "entity": "TAFALLA",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/23"
-    },
-    {
-      "id": "NA-2026-206-22",
-      "province": "Navarra",
-      "title": "Concurso-oposición de cinco plazas de cuidador/a-gerocultor/a, con carácter laboral fijo, al servicio del organismo autónomo Residencia Municipal San Vicente de Paúl y constitución de una relación de aspirantes en orden a la cobertura de las necesidades que se produzcan. Desistimiento",
-      "entity": "SANGÜESA",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/22"
-    },
-    {
-      "id": "NA-2026-206-20",
-      "province": "Navarra",
-      "title": "Constitución de una relación de aspirantes a la contratación temporal de profesor/a de la Escuela de Música, especialidad Batería, con conocimiento de euskera",
-      "entity": "ETXARRI ARANATZ",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/20"
-    },
-    {
-      "id": "NA-2026-206-19",
-      "province": "Navarra",
-      "title": "Convocatoria para la constitución de una relación de aspirantes para la contratación temporal como oficial de mantenimiento en el Servicio Municipal Lagunak",
-      "entity": "BARAÑÁIN",
-      "date": "15/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/206/19"
     }
   ]
 }

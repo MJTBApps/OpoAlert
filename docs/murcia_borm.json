@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-13T16:28:17.870250+00:00",
+  "lastCheckedUTC": "2026-11-14T06:16:49.735292+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "263",
+    "bulletin": "264",
     "pagesVisited": 27,
-    "announcementsRead": 638,
-    "opportunities": 52
+    "announcementsRead": 623,
+    "opportunities": 48
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "238",
       "239",
       "240",
       "241",
@@ -42,10 +41,10 @@
       "8E",
       "261",
       "262",
-      "263"
+      "263",
+      "264"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-17",
       "2026-10-19",
@@ -71,7 +70,8 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-14"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -80,10 +80,20 @@
       "2026-11-08"
     ],
     "issuesRead": 27,
-    "announcementsRead": 638,
-    "opportunities": 52
+    "announcementsRead": 623,
+    "opportunities": 48
   },
   "notices": [
+    {
+      "id": "MU-2026-5623",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución R-151/26 de 6 de noviembre de 2026, del Director del Centro Universitario de la Defensa ubicado en la Academia General del Aire y del Espacio, por la que se convoca concurso de contratación de personal docente e investigador en la modalidad de Profesor Ayudante Doctor (CPD_04/2026).",
+      "entity": "Ministerio de Defensa - Centro Universitario de la Defensa en la Academia General del Aire y del Espacio de San Javier",
+      "date": "14/11/2026",
+      "bulletin": "264",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846305/pdf"
+    },
     {
       "id": "MU-2026-5543",
       "province": "Región de Murcia (BORM)",
@@ -553,56 +563,6 @@
       "bulletin": "239",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845698/pdf"
-    },
-    {
-      "id": "MU-2026-5009",
-      "province": "Región de Murcia (BORM)",
-      "title": "Bases reguladoras del proceso selectivo para la provisión, por turno de promoción interna, a través del sistema de concurso-oposición, de 2 plazas de Inspector/a de Policía Local del Ayuntamiento de Molina de Segura.",
-      "entity": "Molina de Segura",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845691/pdf"
-    },
-    {
-      "id": "MU-2026-5008",
-      "province": "Región de Murcia (BORM)",
-      "title": "Bases reguladoras del proceso selectivo para la provisión, por promoción interna, a través del sistema de concurso-oposición, de 4 plazas de Subinspector/a de Policía Local del Ayuntamiento de Molina de Segura.",
-      "entity": "Molina de Segura",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845690/pdf"
-    },
-    {
-      "id": "MU-2026-5007",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de convocatoria de proceso selectivo para cubrir una (1) plaza de Subinspector/a-Jefe/a de Policía Local mediante promoción interna en el Ayuntamiento de Librilla.",
-      "entity": "Librilla",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845689/pdf"
-    },
-    {
-      "id": "MU-2026-4980",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1306/2026 de 7 de octubre, referente a la convocatoria para proveer una plaza de Investigador/a Licenciado/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845662/pdf"
-    },
-    {
-      "id": "MU-2026-4979",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 8 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna, 1 plaza del Cuerpo de Técnicos Auxiliares, opción Vigilancia de Obras de la Administración Pública Regional (código DFX29P24-3).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845661/pdf"
     }
   ]
 }

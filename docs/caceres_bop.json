@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-13T16:39:33.318354+00:00",
+  "lastCheckedUTC": "2026-11-14T06:38:56.332288+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 544,
-    "opportunities": 38
+    "pagesVisited": 20,
+    "announcementsRead": 521,
+    "opportunities": 36
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 544,
-    "opportunities": 38
+    "issuesRead": 20,
+    "announcementsRead": 521,
+    "opportunities": 36
   },
   "notices": [
     {
@@ -436,26 +435,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4835"
-    },
-    {
-      "id": "CC-2026-4831",
-      "province": "Cáceres",
-      "title": "Convocatoria y bases bolsa PALV 26-27",
-      "entity": "Mancomunidad Integral de Municipios Campo Arañuelo",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4831"
-    },
-    {
-      "id": "CC-2026-4829",
-      "province": "Cáceres",
-      "title": "Bases convocatoria para contratación de un/a Dinamizador/a Deportivo/a y formación de bolsa de trabajo para posteriores contrataciones laborales temporales, mediante el sistema de concurso-oposición libre.",
-      "entity": "Mancomunidad Integral de Municipios Campo Arañuelo",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4829"
     }
   ]
 }

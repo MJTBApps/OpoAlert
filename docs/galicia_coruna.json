@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-13T16:22:52.290837+00:00",
+  "lastCheckedUTC": "2026-11-14T06:11:45.676421+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 22,
-    "announcementsRead": 774,
-    "opportunities": 62
+    "pagesVisited": 21,
+    "announcementsRead": 733,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -40,7 +39,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -71,11 +69,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 774,
-    "opportunities": 62
+    "issuesRead": 21,
+    "announcementsRead": 733,
+    "opportunities": 59
   },
   "notices": [
     {
@@ -667,36 +666,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/16/2026_0000006579.pdf"
-    },
-    {
-      "id": "AC-2026-6650",
-      "province": "A Coruña",
-      "title": "Corrección de erro das bases específicas para a provisión en propiedade con persoal funcionario de carreira dunha praza de auxiliar de arquivo, da escala de Administración xeral, subescala administrativa, convocatoria 1/2024, incluída na OEP 2024",
-      "entity": "Secretaría",
-      "date": "15/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/15/2026_0000006650.pdf"
-    },
-    {
-      "id": "AC-2026-6558",
-      "province": "A Coruña",
-      "title": "Bases que han de rexer a convocatoria para a selección e provisión, en propiedade, de dúas prazas de persoal do Grupo de Emerxencias Supramunicipal (GES) de Ponteceso, como persoal laboral fixo e formación dunha bolsa de emprego",
-      "entity": "Secretaría",
-      "date": "15/10/2026",
-      "bulletin": "197",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/15/2026_0000006558.pdf"
-    },
-    {
-      "id": "AC-2026-6552",
-      "province": "A Coruña",
-      "title": "Convocatoria e bases para cubrir -por persoal funcionario de carreira- unha praza de arquitecto/a técnico/a",
-      "entity": "Persoal",
-      "date": "15/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/15/2026_0000006552.pdf"
     }
   ]
 }
