@@ -9,6 +9,27 @@ public struct SyncResult: Sendable {
     public let alertMatches: [Notice]
 }
 
+/// Deja pasar las revisiones de una en una (el `@Synchronized` de `Repository.sync` en Android).
+/// El aviso silencioso, la revisión en segundo plano y la de abrir la app pueden coincidir:
+/// sin esto, dos leían los mismos «vistos» antes de guardar y salía el aviso repetido (1.54.1).
+actor SyncGate {
+    static let shared = SyncGate()
+    private var busy = false
+    private var waiting: [CheckedContinuation<Void, Never>] = []
+
+    func enter() async {
+        if busy {
+            await withCheckedContinuation { waiting.append($0) }
+        } else {
+            busy = true
+        }
+    }
+
+    func leave() {
+        if waiting.isEmpty { busy = false } else { waiting.removeFirst().resume() }
+    }
+}
+
 /// Revisión de las fuentes seguidas (`Repository.sync` de Android).
 public struct Synchronizer: Sendable {
     public static let cacheSize = 2000
@@ -40,6 +61,18 @@ public struct Synchronizer: Sendable {
     }
 
     public func sync(now: Date = Date()) async throws -> SyncResult {
+        await SyncGate.shared.enter()
+        do {
+            let result = try await syncAlone(now: now)
+            await SyncGate.shared.leave()
+            return result
+        } catch {
+            await SyncGate.shared.leave()
+            throw error
+        }
+    }
+
+    private func syncAlone(now: Date) async throws -> SyncResult {
         if let active = await fetchActive() { store.saveActive(active) }
         let chosen = store.selected
         // Las alertas creadas durante la descarga no reciben avisos de este mismo ciclo.

@@ -119,8 +119,8 @@ class MainActivity : Activity() {
         render()
         refresh()
 
-        // Android 13+ requests the system notification permission once on first launch.
-        // On earlier Android versions, notification channels are enabled by default.
+        // El permiso de notificaciones ya no se pide al abrir por primera vez (1.54.1):
+        // lo pide «Mis alertas» al guardar la primera alerta, que es cuando hace falta.
         window.decorView.post {
             if (!requestNotificationsOnce()) showProvincePickerIfFirstLaunch()
         }
@@ -132,17 +132,14 @@ class MainActivity : Activity() {
         super.onSaveInstanceState(outState)
     }
 
-    /** Devuelve true cuando el sistema abre el dialogo de notificaciones. */
+    /**
+     * Primer arranque: deja los avisos activados en la app sin abrir el diálogo del sistema.
+     * Devuelve siempre false (antes, true cuando Android abría el diálogo de notificaciones).
+     */
     private fun requestNotificationsOnce(): Boolean {
         val prefs = getSharedPreferences(UI_PREFS, MODE_PRIVATE)
         if (prefs.getBoolean(NOTIFICATIONS_PROMPTED, false)) return false
         prefs.edit().putBoolean(NOTIFICATIONS_PROMPTED, true).apply()
-        if (Build.VERSION.SDK_INT >= 33 &&
-            checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
-        ) {
-            requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), NOTIFICATION_PERMISSION_REQUEST)
-            return true
-        }
         Repository.setAlertsEnabled(this, true)
         return false
     }

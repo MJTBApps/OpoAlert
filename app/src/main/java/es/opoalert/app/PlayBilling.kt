@@ -76,6 +76,27 @@ object PlayBilling {
         }
     }
 
+    /**
+     * «Ya soy Premium»: consulta Google Play y dice qué ha encontrado.
+     * true = suscripción activa, false = ninguna, null = no se ha podido consultar.
+     */
+    fun restore(context: Context, done: (Boolean?) -> Unit) {
+        if (!enabled) return done(null)
+        onChange = null   // el resultado lo comunica `done`, no el aviso de cambio de estado
+        connect(context) { billing ->
+            billing ?: return@connect done(null)
+            billing.queryPurchasesAsync(
+                QueryPurchasesParams.newBuilder().setProductType(BillingClient.ProductType.SUBS).build()
+            ) { result, purchases ->
+                main.post {
+                    if (result.responseCode != BillingClient.BillingResponseCode.OK) return@post done(null)
+                    handle(context, purchases, replaceState = true)
+                    done(Premium.isActive(context))
+                }
+            }
+        }
+    }
+
     fun loadOffer(context: Context, done: (Offer?) -> Unit) {
         connect(context) { billing ->
             billing ?: return@connect done(null)

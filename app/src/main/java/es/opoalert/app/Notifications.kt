@@ -44,6 +44,9 @@ object Notifications {
             ) != PackageManager.PERMISSION_GRANTED
         ) return
         createChannel(context)
+        // Un identificador por aviso: con uno fijo, el aviso siguiente borraba el anterior
+        // sin que se hubiera leído (1.54.1). También distingue los PendingIntent.
+        val id = notificationId(matching.first().id)
         val intent = Intent(context, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
             // La lista se abre con el filtro «Avisos»: ahí están todas las del aviso.
@@ -54,9 +57,9 @@ object Notifications {
             val detail = Intent(context, NoticeDetailActivity::class.java)
                 .putExtra(NoticeDetailActivity.EXTRA_NOTICE, matching.first().toJson().toString())
             TaskStackBuilder.create(context).addNextIntent(intent).addNextIntent(detail)
-                .getPendingIntent(1, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
+                .getPendingIntent(id, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
         } else PendingIntent.getActivity(
-            context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            context, id, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
         val title = if (matching.size == 1) "Nueva convocatoria para tus alertas"
             else "${matching.size} convocatorias para tus alertas"
@@ -78,6 +81,9 @@ object Notifications {
             .setContentIntent(pending)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .build()
-        NotificationManagerCompat.from(context).notify(1001, notification)
+        NotificationManagerCompat.from(context).notify(id, notification)
     }
+
+    /** Entre 1001 y 1 001 000, estable para el mismo anuncio. */
+    fun notificationId(noticeId: String): Int = 1001 + (noticeId.hashCode() and 0x7fffffff) % 1_000_000
 }

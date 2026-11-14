@@ -60,10 +60,16 @@ object PremiumDialog {
     }
 
     private fun showRestoreOptions(activity: Activity, changed: () -> Unit) {
+        // Antes solo respondía si el estado cambiaba: sin suscripción no pasaba nada (1.54.1).
         val restore = {
-            PlayBilling.refresh(activity) {
-                changed()
-                Toast.makeText(activity, "Suscripción recuperada", Toast.LENGTH_SHORT).show()
+            PlayBilling.restore(activity) { active ->
+                if (active != null) changed()
+                val message = when (active) {
+                    true -> "Suscripción recuperada"
+                    false -> "No hay ninguna suscripción activa en esta cuenta de Google Play."
+                    null -> "No se ha podido consultar Google Play. Comprueba la conexión e inténtalo de nuevo."
+                }
+                Toast.makeText(activity, message, Toast.LENGTH_LONG).show()
             }
         }
         if (!Premium.acceptsReviewCode) return restore()

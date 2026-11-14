@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.54.0"' in gradle
-    assert "versionCode = 70" in gradle
+    assert 'versionName = "1.54.1"' in gradle
+    assert "versionCode = 71" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -129,7 +129,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.54.0"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.54.1"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -155,7 +155,18 @@ def main() -> None:
     assert "BopWorker.runNow(applicationContext)" in (KOTLIN / "Push.kt").read_text(encoding="utf-8")
     assert "remote-notification" in ios_project and "aps-environment: production" in ios_project
     assert "backend/aviso_fcm.py" in (ROOT / ".github/workflows/publicar-web.yml").read_text(encoding="utf-8")
-    print("OK: Android 1.54.0: aviso silencioso de convocatorias nuevas")
+    # 1.54.1: avisos sin duplicar ni pisarse, permiso de notificaciones al guardar la primera alerta.
+    assert "requestPermissions" not in activity.split("private fun requestNotificationsOnce")[1].split("override fun")[0], \
+        "El permiso de notificaciones no se pide al abrir por primera vez"
+    assert "askNotificationsThenBattery()" in alerts and "POST_NOTIFICATIONS" in alerts
+    notifications = (KOTLIN / "Notifications.kt").read_text(encoding="utf-8")
+    assert "notify(1001" not in notifications and "notify(id, notification)" in notifications, \
+        "Cada aviso lleva su identificador"
+    assert "fun restore(" in (KOTLIN / "PlayBilling.kt").read_text(encoding="utf-8")
+    sync_ios = (ROOT / "ios/OpoAlertCore/Sources/OpoAlertCore/Sync.swift").read_text(encoding="utf-8")
+    assert "SyncGate.shared.enter()" in sync_ios, "iOS revisa de una en una, como Android"
+    assert "notificationsDenied" in (ROOT / "ios/OpoAlert/Views/AlertsView.swift").read_text(encoding="utf-8")
+    print("OK: Android 1.54.1: avisos sin duplicar y permiso al guardar la primera alerta")
 
 
 if __name__ == "__main__":

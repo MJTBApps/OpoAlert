@@ -261,6 +261,19 @@ do {
     equal(store.rules.first?.phrase, "policia local", "frase limpia")
     check((try? store.upsertRule(id: nil, input: "Policía Local", sources: ["VA"])) == nil, "alerta repetida")
     check((try? store.upsertRule(id: nil, input: "ab", sources: ["VA"])) == nil, "frase corta")
+    // Dos revisiones a la vez (aviso silencioso y abrir la app): el anuncio nuevo solo avisa una vez.
+    web.notices.append(valencia("2026/10004", title: "Bases de 3 plazas de policía local"))
+    let slow = Synchronizer(store: store,
+                            fetchFeed: { [web] source in
+                                guard source.code == "VA" else { throw FeedError("sin datos") }
+                                try await Task.sleep(nanoseconds: 200_000_000)
+                                return try FeedReader.parse(feed(web.notices), source: source)
+                            },
+                            fetchActive: { nil })
+    async let one = slow.sync()
+    async let two = slow.sync()
+    let pair = try await [one, two]
+    equal(pair.flatMap(\.alertMatches).map(\.id), ["2026/10004"], "dos revisiones simultáneas no duplican el aviso")
     check(store.toggleFavorite(policeAL), "guarda favorita")
     check(store.isFavorite(policeAL.id), "favorita guardada")
     check(!store.toggleFavorite(policeAL), "quita favorita")

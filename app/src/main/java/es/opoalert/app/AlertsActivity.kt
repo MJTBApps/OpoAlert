@@ -1,11 +1,14 @@
 package es.opoalert.app
 
+import android.Manifest
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
+import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.view.Gravity
@@ -22,6 +25,8 @@ import androidx.core.app.NotificationManagerCompat
  * Gestión de alertas: sin registro, sin permisos de ubicación y sin ocupar
  * espacio en la portada de convocatorias.
  */
+private const val NOTIFICATION_PERMISSION_REQUEST = 334
+
 class AlertsActivity : Activity() {
     private lateinit var list: LinearLayout
     private lateinit var count: TextView
@@ -232,7 +237,7 @@ class AlertsActivity : Activity() {
                     AlertRuleStore.upsert(this, existing?.id, input.text.toString(), selected.toSet())
                     dialog.dismiss()
                     render()
-                    if (existing == null) BatteryCheck.askOnce(this)
+                    if (existing == null) askNotificationsThenBattery()
                 } catch (error: IllegalArgumentException) {
                     Toast.makeText(this, error.message ?: "Revisa los datos.", Toast.LENGTH_LONG).show()
                 } catch (error: Exception) {
@@ -241,6 +246,30 @@ class AlertsActivity : Activity() {
             }
         }
         dialog.show()
+    }
+
+    /** Al guardar una alerta nueva: primero el permiso de notificaciones (Android 13+), luego la batería. */
+    private fun askNotificationsThenBattery() {
+        if (Build.VERSION.SDK_INT >= 33 &&
+            checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+        ) {
+            requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), NOTIFICATION_PERMISSION_REQUEST)
+        } else {
+            BatteryCheck.askOnce(this)
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int, permissions: Array<out String>, grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode != NOTIFICATION_PERMISSION_REQUEST) return
+        if (grantResults.firstOrNull() == PackageManager.PERMISSION_GRANTED) {
+            Repository.setAlertsEnabled(this, true)
+        }
+        // Si se deniega, la tarjeta «Los avisos están desactivados» lo explica.
+        render()
+        BatteryCheck.askOnce(this)
     }
 
     private fun confirmDelete(rule: AlertRule) {

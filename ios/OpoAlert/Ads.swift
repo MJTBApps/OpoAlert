@@ -28,7 +28,9 @@ final class Ads: ObservableObject {
 
     /// Al arrancar: consentimiento, seguimiento y, si procede, el anuncio de apertura.
     func start(premium: Bool) {
-        guard !starting else { return }
+        // Con Premium no hay anuncios: tampoco se pregunta por el consentimiento ni por el
+        // seguimiento (como en Android). Si deja de ser Premium, empieza al abrir de nuevo.
+        guard !premium, !starting else { return }
         starting = true
         let launches = defaults.integer(forKey: launchesKey) + 1
         defaults.set(launches, forKey: launchesKey)

@@ -1,5 +1,6 @@
 import OpoAlertCore
 import SwiftUI
+import UserNotifications
 
 /// «Mis alertas»: avisos solo cuando aparecen anuncios nuevos que coinciden.
 struct AlertsView: View {
@@ -7,9 +8,29 @@ struct AlertsView: View {
     @State private var editing: AlertDraft?
     @State private var showPremium = false
     @ObservedObject private var premium = PremiumStore.shared
+    /// iOS tiene denegadas las notificaciones de OpoAlert: las alertas no pueden avisar.
+    @State private var notificationsDenied = false
+    @Environment(\.openURL) private var openURL
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         List {
+            if notificationsDenied && premium.isActive {
+                Section {
+                    Button {
+                        if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
+                    } label: {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Label("Los avisos están desactivados", systemImage: "bell.slash.fill")
+                                .font(.headline).foregroundStyle(Color(hex: 0x7A4A00))
+                            Text("iOS tiene bloqueadas las notificaciones de OpoAlert y tus alertas no pueden avisarte. Toca aquí para permitirlas en Ajustes.")
+                                .font(.subheadline).foregroundStyle(Color(hex: 0x7A5A2B))
+                        }
+                    }
+                    .buttonStyle(.plain)
+                    .listRowBackground(Color(hex: 0xFFF4E5))
+                }
+            }
             if !premium.isActive {
                 Section {
                     Button { showPremium = true } label: {
@@ -69,7 +90,7 @@ struct AlertsView: View {
                 }
             }
             Section {
-                Text("Los avisos llegan cuando iOS permite a OpoAlert revisar en segundo plano (normalmente varias veces al día). No hay garantía de inmediatez: abre la app para revisar al momento.")
+                Text("Los avisos llegan cuando iOS permite a OpoAlert revisar en segundo plano (normalmente varias veces al día). No hay garantía de inmediatez: abre la app para revisar al momento. Si cierras la app deslizándola hacia arriba, iOS deja de avisar hasta que la vuelvas a abrir.")
                     .font(.caption)
                     .foregroundStyle(Palette.slate)
             }
@@ -77,6 +98,17 @@ struct AlertsView: View {
         .navigationTitle("Mis alertas")
         .sheet(item: $editing) { AlertEditView(draft: $0) }
         .sheet(isPresented: $showPremium) { PremiumView() }
+        .task { await checkNotifications() }
+        // Al volver de Ajustes (o tras responder al permiso) se comprueba de nuevo.
+        .onChange(of: scenePhase) { phase in
+            if phase == .active { Task { await checkNotifications() } }
+        }
+        .onChange(of: model.rules.count) { _ in Task { await checkNotifications() } }
+    }
+
+    private func checkNotifications() async {
+        let settings = await UNUserNotificationCenter.current().notificationSettings()
+        notificationsDenied = settings.authorizationStatus == .denied
     }
 
     private var activeText: String {
