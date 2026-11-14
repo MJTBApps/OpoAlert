@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-13T16:25:35.900905+00:00",
+  "lastCheckedUTC": "2026-11-14T06:13:53.385339+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "10493",
-    "pagesVisited": 35,
-    "announcementsRead": 1135,
-    "opportunities": 248
+    "pagesVisited": 33,
+    "announcementsRead": 1092,
+    "opportunities": 243
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "10471",
-      "10471B",
       "10472",
       "10473",
       "10473B",
@@ -53,8 +51,6 @@
       "10493"
     ],
     "publicationDates": [
-      "2026-10-15",
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-19",
@@ -96,11 +92,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 35,
-    "announcementsRead": 1135,
-    "opportunities": 248
+    "issuesRead": 33,
+    "announcementsRead": 1092,
+    "opportunities": 243
   },
   "notices": [
     {
@@ -2532,56 +2529,6 @@
       "bulletin": "10472",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_30181_es.pdf"
-    },
-    {
-      "id": "DV-2026-32066",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, de la Dirección General de Función Pública, por la que se modifica la Resolución de 9 de septiembre de 2026, de la Dirección General de Función Pública, por la que se convoca el concurso ordinario, con fases de resultas, 127/2026, para la provisión de puestos de trabajo de naturaleza funcionarial, de administración especial, del cuerpo A1-04, superior facultativo, escala A1-04-12, veterinaria de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "15/10/2026",
-      "bulletin": "10471",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/15/pdf/2026_32066_es.pdf"
-    },
-    {
-      "id": "DV-2026-31629",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, por la que se dispone la publicación de la relación de personas que, en ejecución de sentencia, han superado las pruebas selectivas de acceso al cuerpo de especialistas en la administración del medio ambiente de la Administración de la Generalitat (agentes medioambientales), C1-13, sector administración especial, convocatoria 162/18, turno libre general, por el sistema de concurso-oposición y proceso de estabilización de empleo, correspondiente a la oferta de empleo público de 2018 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "15/10/2026",
-      "bulletin": "10471",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/15/pdf/2026_31629_es.pdf"
-    },
-    {
-      "id": "DV-2026-31622",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, del Vicerrectorado de Investigación, por la que se convoca un proceso selectivo para una plaza de personal investigador junior para colaborar en el proyecto de investigación «24I345 La desinformación electoral en Europa: repercusiones de los desórdenes informativos en campaña y mecanismos de resiliencia democrática». Grupo de investigación: Periodismo, Comunicación y Poder.",
-      "entity": "Universitat Jaume I de Castelló",
-      "date": "15/10/2026",
-      "bulletin": "10471",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/15/pdf/2026_31622_es.pdf"
-    },
-    {
-      "id": "DV-2026-31589",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación indefinida de personal de investigación de la categoría de personal investigador colaborador para colaborar con la línea de investigación financiada «Reconocimiento óptico de música». Referencia: I-PI 82-26.",
-      "entity": "Universidad de Alicante",
-      "date": "15/10/2026",
-      "bulletin": "10471",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/15/pdf/2026_31589_es.pdf"
-    },
-    {
-      "id": "DV-2026-30242",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 23 de septiembre de 2026, de la Dirección General, por la que se convoca el proceso de selección para la cobertura del puesto de naturaleza laboral número 5124, técnico o técnica de caracterización, correspondiente a la oferta de empleo pública de 2025, por turno libre y mediante el sistema de concurso-oposición. Convocatoria 06/2026.",
-      "entity": "Palau de Les Arts Reina Sofía, Fundación de la Comunitat Valenciana",
-      "date": "15/10/2026",
-      "bulletin": "10471",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/15/pdf/2026_30242_es.pdf"
     }
   ]
 }

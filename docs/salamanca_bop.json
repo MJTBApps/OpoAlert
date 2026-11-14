@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-12T06:31:47.254402+00:00",
+  "lastCheckedUTC": "2026-11-14T06:17:36.401890+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "218",
+    "bulletin": "220",
     "pagesVisited": 20,
-    "announcementsRead": 304,
-    "opportunities": 3
+    "announcementsRead": 296,
+    "opportunities": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-14",
-    "rangeEnd": "2026-11-12",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "199",
-      "200",
       "201",
       "202",
       "203",
@@ -35,11 +33,11 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-14",
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -57,7 +55,9 @@
       "2026-11-06",
       "2026-11-09",
       "2026-11-10",
-      "2026-11-11"
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
     ],
     "nonPublicationDates": [
       "2026-10-17",
@@ -69,14 +69,12 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-12"
+      "2026-11-14"
     ],
     "issuesRead": 20,
-    "announcementsRead": 304,
-    "opportunities": 3,
+    "announcementsRead": 296,
+    "opportunities": 6,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261014/BOP-SA-20261014-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261015/BOP-SA-20261015-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261016/BOP-SA-20261016-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261019/BOP-SA-20261019-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261020/BOP-SA-20261020-000.pdf",
@@ -94,11 +92,11 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261106/BOP-SA-20261106-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261109/BOP-SA-20261109-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261110/BOP-SA-20261110-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261111/BOP-SA-20261111-000.pdf"
+      "https://www.lasalina.es/documentacion/bop/2026/20261111/BOP-SA-20261111-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261112/BOP-SA-20261112-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261113/BOP-SA-20261113-000.pdf"
     ],
     "CVECounts": [
-      24,
-      8,
       16,
       18,
       18,
@@ -116,11 +114,43 @@
       12,
       13,
       28,
-      27
+      27,
+      12,
+      12
     ],
-    "originalPDFsChecked": 304
+    "originalPDFsChecked": 296
   },
   "notices": [
+    {
+      "id": "SA-20261113-005",
+      "province": "Salamanca",
+      "title": "Béjar Anuncio. Bases y la convocatoria para la provisión, en régimen de interinidad, del puesto de secretaría clase 2.ª, reser- vado a habilitado de carácter nacional, mediante sistema de concurso-oposición",
+      "entity": "Ayuntamientos de Salamanca",
+      "date": "13/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://www.lasalina.es/documentacion/bop/2026/20261113/BOP-SA-20261113-005.pdf"
+    },
+    {
+      "id": "SA-20261112-007",
+      "province": "Salamanca",
+      "title": "Anuncio. Corrección de error material en nombreamiento del vocal 5 titular y suplente del tribunal del proceso selectivo para la provisión en propiedad de una plaza de coordinador/a de cultura, mediante oposición por turno libre",
+      "entity": "Ayuntamientos de Salamanca",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://www.lasalina.es/documentacion/bop/2026/20261112/BOP-SA-20261112-007.pdf"
+    },
+    {
+      "id": "SA-20261112-002",
+      "province": "Salamanca",
+      "title": "Castellanos de Moriscos Anuncio. Bases y la convocatoria para cubrir, mediante el sistema de concurso-oposición, 1 plaza de funcionario de carrera, encargado general, incluida en la oferta de empleo público 2026",
+      "entity": "Ayuntamientos de Salamanca",
+      "date": "12/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://www.lasalina.es/documentacion/bop/2026/20261112/BOP-SA-20261112-002.pdf"
+    },
     {
       "id": "SA-20261022-010",
       "province": "Salamanca",

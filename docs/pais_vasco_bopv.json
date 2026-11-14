@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-13T16:28:38.907145+00:00",
+  "lastCheckedUTC": "2026-11-14T06:16:58.785782+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 22,
-    "announcementsRead": 348,
-    "opportunities": 43
+    "pagesVisited": 21,
+    "announcementsRead": 292,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -40,7 +39,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -71,42 +69,23 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 348,
-    "opportunities": 43
+    "issuesRead": 21,
+    "announcementsRead": 292,
+    "opportunities": 40
   },
   "notices": [
     {
       "id": "PV-2026-4834",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN de 30 de octubre de 2026, del viceconsejero de Seguridad, por la que se anuncia la fecha de colocación, en el portal Gurenet, de la Resolución de 30 de octubre de 2026, dictada en el procedimiento de provisión de puestos de trabajo, por los sistemas de libre designación y de concurso de méritos específicos y generales de la Ertzaintza.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Seguridad",
       "date": "13/11/2026",
       "bulletin": "218",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604834a.pdf"
-    },
-    {
-      "id": "PV-2026-4833",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 29 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora titular de Universidad, cuyo concurso de acceso a plazas de cuerpos de funcionarios docentes universitarios fue convocado por Resolución de 12 de febrero de 2026 (BOPV de 19-02-2026) y Resolución de 16 de febrero de 2026 (BOE de 23-02-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "13/11/2026",
-      "bulletin": "218",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604833a.pdf"
-    },
-    {
-      "id": "PV-2026-4832",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 28 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra catedrático de Universidad, cuyo concurso de acceso a plazas de cuerpos de funcionarios docentes universitarios fue convocado por Resolución de 4 de marzo de 2026 (BOPV de 12-03-2026 y BOE de 13-03-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "13/11/2026",
-      "bulletin": "218",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604832a.pdf"
     },
     {
       "id": "PV-2026-4774",
@@ -497,16 +476,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604358a.pdf"
-    },
-    {
-      "id": "PV-2026-4283",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 5 de octubre de 2026, de la vicepresidenta primera del Gobierno y consejera de Cultura y Política Lingüística, por la que se declara desierta la convocatoria para la provisión, por el sistema de libre designación, de un puesto de trabajo vacante en el Departamento de Cultura y Política Lingüística.",
-      "entity": "Cultura y Política Lingüística",
-      "date": "15/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604283a.pdf"
     }
   ]
 }

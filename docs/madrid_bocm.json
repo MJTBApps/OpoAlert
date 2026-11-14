@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-13T16:27:58.176030+00:00",
+  "lastCheckedUTC": "2026-11-14T06:16:30.521137+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "273",
-    "pagesVisited": 28,
-    "announcementsRead": 1843,
-    "opportunities": 324
+    "pagesVisited": 27,
+    "announcementsRead": 1763,
+    "opportunities": 311
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
-    "issuesRead": 28,
-    "pagesVisited": 28,
-    "announcementsRead": 1843,
-    "opportunities": 324,
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
+    "issuesRead": 27,
+    "pagesVisited": 27,
+    "announcementsRead": 1763,
+    "opportunities": 311,
     "bulletins": [
-      "246",
       "247",
       "248",
       "249",
@@ -50,7 +49,6 @@
       "273"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-17",
       "2026-10-19",
@@ -83,10 +81,10 @@
       "2026-10-18",
       "2026-10-25",
       "2026-11-01",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
     "editionPDFs": [
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/15/24600.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/16/24700.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/17/24800.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/19/24900.PDF",
@@ -123,8 +121,7 @@
       "xml",
       "xml",
       "xml",
-      "xml",
-      "xml",
+      "html",
       "xml",
       "html",
       "xml",
@@ -132,7 +129,7 @@
       "html",
       "xml",
       "xml",
-      "xml",
+      "html",
       "xml",
       "xml",
       "xml",
@@ -3255,136 +3252,6 @@
       "date": "16/10/2026",
       "bulletin": "247",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/16/BOCM-20261016-2.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-71",
-      "province": "Madrid",
-      "title": "– Pozuelo de Alarcón. Ofertas de empleo. Proceso selectivo",
-      "entity": "POZUELO DE ALARCÓN",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-71.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-70",
-      "province": "Madrid",
-      "title": "– Pinto. Ofertas de empleo. Proceso selectivo",
-      "entity": "PINTO",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-70.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-68",
-      "province": "Madrid",
-      "title": "– Leganés. Ofertas de empleo. Proceso selectivo",
-      "entity": "LEGANÉS",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-68.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-67",
-      "province": "Madrid",
-      "title": "– Leganés. Ofertas de empleo. Proceso selectivo",
-      "entity": "LEGANÉS",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-67.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-66",
-      "province": "Madrid",
-      "title": "– Leganés. Ofertas de empleo. Proceso selectivo",
-      "entity": "LEGANÉS",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-66.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-64",
-      "province": "Madrid",
-      "title": "– Las Rozas de Madrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "LAS ROZAS DE MADRID",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-64.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-54",
-      "province": "Madrid",
-      "title": "– Alcobendas. Ofertas de empleo. Proceso selectivo",
-      "entity": "ALCOBENDAS",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-54.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-19",
-      "province": "Madrid",
-      "title": "Convocatoria proceso selectivo – Resolución de 6 de octubre de 2026, de la Universidad Autónoma de Madrid, por la que se convoca proceso selectivo para elaborar una lista de espera de funcionarios/as interinos/as de la Escala Especial Técnica de Sistemas y Tecnología de la Información de la Universidad Autónoma de Madrid",
-      "entity": "UNIVERSIDAD AUTÓNOMA DE MADRID",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-19.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-18",
-      "province": "Madrid",
-      "title": "Convocatoria proceso selectivo – Resolución de 6 de octubre de 2026, de la Universidad Autónoma de Madrid, por la que se convocan pruebas selectivas para la funcionarización, por el sistema de concurso-oposición, de la plantilla de Personal Laboral Técnico, de Gestión y de Administración y Servicios",
-      "entity": "UNIVERSIDAD AUTÓNOMA DE MADRID",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-18.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-15",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 3763/2026, de 5 de octubre, de la Consejería de Medio Ambiente, Agricultura e Interior, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en el Instituto Madrileño de Investigación y Desarrollo Rural, Agrario y Alimentario, por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-15.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-10",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 6 de octubre de 2026, de la Consejería de Digitalización, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en dicha Consejería por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE DIGITALIZACIÓN",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-10.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-5",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 5 de octubre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Medio Ambiente, Agricultura e Interior, de conformidad con el artículo 55 de la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-5.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261015-1",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 5 de octubre de 2026, del Consejero de Presidencia, Justicia y Administración Local, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Presidencia, Justicia y Administración Local, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
-      "date": "15/10/2026",
-      "bulletin": "246",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/15/BOCM-20261015-1.PDF",
       "type": "Plaza / oposición"
     }
   ]
