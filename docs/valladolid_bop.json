@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-13T16:49:03.446982+00:00",
+  "lastCheckedUTC": "2026-11-14T06:51:58.311227+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 367,
-    "opportunities": 22
+    "pagesVisited": 20,
+    "announcementsRead": 351,
+    "opportunities": 21
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 367,
-    "opportunities": 22
+    "issuesRead": 20,
+    "announcementsRead": 351,
+    "opportunities": 21
   },
   "notices": [
     {
@@ -286,16 +285,6 @@
       "bulletin": "199",
       "type": "Bolsa de trabajo",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/16/BOPVA-A-2026-03008.pdf"
-    },
-    {
-      "id": "VD-2026-3000",
-      "province": "Valladolid",
-      "title": "Convocatoria y bases para la provisión de plaza de Encargado, personal laboral fijo en la modalidad de contrato de relevo mediante el sistema de oposición.",
-      "entity": "MANCOMUNIDAD PINODUERO",
-      "date": "15/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/15/BOPVA-A-2026-03000.pdf"
     }
   ]
 }

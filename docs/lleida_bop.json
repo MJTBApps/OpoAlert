@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-13T16:46:16.461229+00:00",
+  "lastCheckedUTC": "2026-11-14T06:47:39.625086+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 23,
-    "announcementsRead": 1093,
-    "opportunities": 74
+    "pagesVisited": 22,
+    "announcementsRead": 1055,
+    "opportunities": 72
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -40,7 +39,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -71,11 +69,12 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 1093,
-    "opportunities": 74
+    "issuesRead": 21,
+    "announcementsRead": 1055,
+    "opportunities": 72
   },
   "notices": [
     {
@@ -797,26 +796,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/198/202619808587.pdf"
-    },
-    {
-      "id": "LE-202619708575",
-      "province": "Lleida (BOP)",
-      "title": "Anunci aprovació de la convocatòria i de les bases reguladores que han de regir el procés per proveir mitjançant nomenament provisional, comissió de serveis o acumulació el lloc de treball de secretari/ària-interventor/a de l’Ajuntament de Vinaixa",
-      "entity": "AJUNTAMENT DE VINAIXA (VINAIXA)",
-      "date": "15/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/197/202619708575.pdf"
-    },
-    {
-      "id": "LE-202619708541",
-      "province": "Lleida (BOP)",
-      "title": "Anunci per a la selecció de funcionari per promoció interna mitjançant concurs-oposició",
-      "entity": "AJUNTAMENT DE CIUTADILLA (CIUTADILLA)",
-      "date": "15/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/197/202619708541.pdf"
     }
   ]
 }

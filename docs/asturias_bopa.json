@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-13T16:36:40.273998+00:00",
+  "lastCheckedUTC": "2026-11-14T06:34:43.418290+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 22,
-    "announcementsRead": 980,
-    "opportunities": 78
+    "pagesVisited": 21,
+    "announcementsRead": 940,
+    "opportunities": 73
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -40,7 +39,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -72,11 +70,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 980,
-    "opportunities": 78
+    "issuesRead": 21,
+    "announcementsRead": 940,
+    "opportunities": 73
   },
   "notices": [
     {
@@ -808,56 +807,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/16/2026-08165.pdf"
-    },
-    {
-      "id": "AS-2026-08322",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Publicación de la convocatoria y las bases específicas del proceso de selección para la constitución de una bolsa de empleo de Agentes de Desarrollo Local Villaviciosa de la Mancomunidad Comarca de la Sidra.",
-      "entity": "Mancomunidad Comarca de la Sidra (MANCOSI)",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/15/2026-08322.pdf"
-    },
-    {
-      "id": "AS-2026-08319",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases y convocatoria para la selección de un/a Técnico Medio de Gestión, en el marco de los contratos formativos para la obtención de la práctica profesional adecuada al nivel de estudios 2026-2027 en el Ayuntamiento de Piloña.",
-      "entity": "Ayuntamiento de Piloña",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/15/2026-08319.pdf"
-    },
-    {
-      "id": "AS-2026-08232",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases para la elaboración de una bolsa de empleo en la Categoría de Psicólogo/a, en régimen de personal laboral, para la cobertura provisional de vacantes, sustituciones transitorias o necesidades temporales de personal en el ámbito del Ayuntamiento de Grado.",
-      "entity": "Ayuntamiento de Grado",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/15/2026-08232.pdf"
-    },
-    {
-      "id": "AS-2026-08231",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases para la elaboración de una bolsa de empleo en la Categoría de Educador/a Social, en régimen de personal laboral, para la cobertura provisional de vacantes, sustituciones transitorias o necesidades temporales de personal en el ámbito del Ayuntamiento de Grado.",
-      "entity": "Ayuntamiento de Grado",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/15/2026-08231.pdf"
-    },
-    {
-      "id": "AS-2026-08160",
-      "province": "Asturias (BOPA)",
-      "title": "Edicto. Convocatoria y bases para la provisión de una plaza de Ingeniero/a Técnico/a de Obras Públicas o Graduado/a en Ingeniería Civil del Ayuntamiento de Oviedo, perteneciente a la Oferta de Empleo Público de 2026.",
-      "entity": "Ayuntamiento de Oviedo",
-      "date": "15/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/15/2026-08160.pdf"
     }
   ]
 }

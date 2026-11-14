@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-13T16:44:46.644028+00:00",
+  "lastCheckedUTC": "2026-11-14T06:47:14.045702+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "222",
-    "pagesVisited": 21,
-    "announcementsRead": 572,
-    "opportunities": 32,
+    "pagesVisited": 20,
+    "announcementsRead": 539,
+    "opportunities": 29,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 32
+    "pdfLinksVerified": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -41,7 +40,6 @@
       "222"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-19",
       "2026-10-20",
@@ -72,15 +70,16 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 572,
-    "opportunities": 32,
+    "issuesRead": 20,
+    "announcementsRead": 539,
+    "opportunities": 29,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "201",
-      "date": "2026-10-14"
+      "number": "202",
+      "date": "2026-10-15"
     }
   },
   "notices": [
@@ -373,36 +372,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-16&numeroEdicto=4835&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4811",
-      "province": "Jaén",
-      "title": "Convocatoria y bases del proceso selectivo para la provisión de una plaza de personal funcionario/a de carrera, denominada Auxiliar Administrativo/a, mediante el sistema de oposición libre.",
-      "entity": "AYUNTAMIENTO DE TORREBLASCOPEDRO (JAÉN)",
-      "date": "15/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-15&numeroEdicto=4811&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4553",
-      "province": "Jaén",
-      "title": "Rectificación de la convocatoria para la provisión en propiedad de tres plazas de Oficial, vacantes en la plantilla de personal laboral fijo del Ayuntamiento de Jaén.",
-      "entity": "AYUNTAMIENTO DE JAÉN",
-      "date": "15/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-15&numeroEdicto=4553&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4549",
-      "province": "Jaén",
-      "title": "Convocatoria para la provisión en propiedad de una plaza de Arquitecto/a vacante en la plantilla de funcionarios del Ayuntamiento de Jaén.",
-      "entity": "AYUNTAMIENTO DE JAÉN",
-      "date": "15/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-15&numeroEdicto=4549&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }
