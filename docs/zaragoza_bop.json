@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-13T17:03:05.954408+00:00",
+  "lastCheckedUTC": "2026-11-14T07:09:49.008531+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "262",
     "pagesVisited": 2,
-    "announcementsRead": 803,
-    "opportunities": 77
+    "announcementsRead": 755,
+    "opportunities": 74
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
-    "issuesRead": 25,
+    "rangeStart": "2026-10-16",
+    "rangeEnd": "2026-11-14",
+    "issuesRead": 24,
     "pagesVisited": 2,
-    "announcementsRead": 803,
-    "opportunities": 77,
+    "announcementsRead": 755,
+    "opportunities": 74,
     "bulletins": [
-      "238",
       "239",
       "240",
       "241",
@@ -47,7 +46,6 @@
       "262"
     ],
     "publicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-17",
       "2026-10-19",
@@ -74,7 +72,6 @@
       "2026-11-13"
     ],
     "issuePublicationDates": [
-      "2026-10-15",
       "2026-10-16",
       "2026-10-17",
       "2026-10-19",
@@ -105,20 +102,21 @@
       "2026-10-25",
       "2026-11-01",
       "2026-11-02",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14"
     ],
     "sectionsRead": {
-      "SECCIÓN PRIMERA": 3,
-      "SECCIÓN TERCERA": 40,
-      "SECCIÓN QUINTA": 104,
-      "SECCIÓN SEXTA": 629,
+      "SECCIÓN TERCERA": 38,
+      "SECCIÓN QUINTA": 93,
+      "SECCIÓN SEXTA": 596,
+      "SECCIÓN PRIMERA": 1,
       "SECCIÓN SEPTIMA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
       "PARTE NO OFICIAL": 12,
       "SECCIÓN SEGUNDA": 4,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 100
+    "documentsVerified": 96
   },
   "notices": [
     {
@@ -860,36 +858,6 @@
       "bulletin": "239",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470595410202"
-    },
-    {
-      "id": "ZA-000344404",
-      "province": "Zaragoza",
-      "title": "Por decreto de Alcaldía de fecha 29 de septiembre de 2026 se aprobaron la oferta de empleo público 2026, convocatoria y las bases que han de regir el procedimiento para la selección mediante oposición de una…",
-      "entity": "AYUNTAMIENTO DE PLASENCIA DE JALÓN",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470445400808"
-    },
-    {
-      "id": "ZA-000344391",
-      "province": "Zaragoza",
-      "title": "Rectificación de errores en anexo 1 (numeración de temario) de la convocatoria para la provisión de una plaza de conserje de consultorio o centro médico y casa de cultura con funciones de auxiliar…",
-      "entity": "AYUNTAMIENTO DE CALATORAO",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470432270606"
-    },
-    {
-      "id": "ZA-000344369",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a señalamiento de la fecha, lugar y hora de realización del primer ejercicio de la oposición para la cobertura, en turno de promoción profesional, de una plaza de encargado/a de obra.",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
-      "date": "15/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470410050202"
     }
   ]
 }
