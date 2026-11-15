@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-14T16:15:44.227128+00:00",
+  "lastCheckedUTC": "2026-11-15T06:26:55.101558+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "217",
-    "pagesVisited": 21,
-    "announcementsRead": 861,
-    "opportunities": 64,
+    "pagesVisited": 20,
+    "announcementsRead": 820,
+    "opportunities": 61,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 861,
-    "opportunities": 64,
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 820,
+    "opportunities": 61,
     "bulletins": [
-      "197",
       "198",
       "199",
       "200",
@@ -43,7 +42,6 @@
       "217"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -74,7 +72,8 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ]
   },
   "notices": [
@@ -687,36 +686,6 @@
       "bulletin": "198",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007270.pdf"
-    },
-    {
-      "id": "AL-2026-7968",
-      "province": "Alicante",
-      "title": "CONVOCATORIA BOLSA PARA COBERTURA DE VACANTES EN COMISIÓN DE SERVICIO, PLAZAS DE AGENTE DE POLICIA LOCAL",
-      "entity": "AYUNTAMIENTO FINESTRAT",
-      "date": "16/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/16_197/2026_007968.pdf"
-    },
-    {
-      "id": "AL-2026-7811",
-      "province": "Alicante",
-      "title": "PROCESO SELECTIVO DE OPOSICIÓN, POR TURNO LIBRE, PARA LA PROVISIÓN DE UNA PLAZA DE DELINEANTE, OEP 2025.",
-      "entity": "AYUNTAMIENTO LA NUCÍA",
-      "date": "16/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/16_197/2026_007811.pdf"
-    },
-    {
-      "id": "AL-2026-7269",
-      "province": "Alicante",
-      "title": "ACORD JGL PEL QUAL S´APROVEN LES BASES I LA CONVOCATÒRIA PER A COBRIR UNA PLAÇA DE PEÓ SOTERRADOR/OBRES",
-      "entity": "AYUNTAMIENTO GATA DE GORGOS",
-      "date": "16/10/2026",
-      "bulletin": "197",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/16_197/2026_007269.pdf"
     }
   ]
 }
