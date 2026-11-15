@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-14T16:31:23.630053+00:00",
+  "lastCheckedUTC": "2026-11-15T06:49:08.903661+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 20,
-    "announcementsRead": 351,
-    "opportunities": 21
+    "pagesVisited": 19,
+    "announcementsRead": 332,
+    "opportunities": 20
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -38,7 +37,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -69,11 +67,12 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 351,
-    "opportunities": 21
+    "issuesRead": 19,
+    "announcementsRead": 332,
+    "opportunities": 20
   },
   "notices": [
     {
@@ -275,16 +274,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/19/BOPVA-A-2026-03029.pdf"
-    },
-    {
-      "id": "VD-2026-3008",
-      "province": "Valladolid",
-      "title": "Bases generales y convocatoria para la creación de una bolsa de trabajo de técnico de guardería para cubrir, como personal laboral temporal, posibles vacantes, necesidades o sustituciones.",
-      "entity": "AYUNTAMIENTO DE ALCAZARÉN",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/16/BOPVA-A-2026-03008.pdf"
     }
   ]
 }

@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-14T16:27:30.066034+00:00",
+  "lastCheckedUTC": "2026-11-15T06:44:38.997523+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "222",
-    "pagesVisited": 20,
-    "announcementsRead": 539,
-    "opportunities": 29,
+    "pagesVisited": 19,
+    "announcementsRead": 501,
+    "opportunities": 25,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 29
+    "pdfLinksVerified": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -40,7 +39,6 @@
       "222"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -71,15 +69,16 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 539,
-    "opportunities": 29,
+    "issuesRead": 19,
+    "announcementsRead": 501,
+    "opportunities": 25,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "202",
-      "date": "2026-10-15"
+      "number": "203",
+      "date": "2026-10-16"
     }
   },
   "notices": [
@@ -332,46 +331,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-19&numeroEdicto=4643&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4846",
-      "province": "Jaén",
-      "title": "Extracto de la convocatoria de la Red Provincial de Personal Técnico de Juventud 2027.",
-      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Igualdad, Políticas Sociales y Juventud",
-      "date": "16/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-16&numeroEdicto=4846&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4844",
-      "province": "Jaén",
-      "title": "Aprobación de las Bases que han de regir la convocatoria y el proceso de selección Funcionario/a interino/a del puesto de Secretaria-Intervención.",
-      "entity": "AYUNTAMIENTO DE LAHIGUERA (JAÉN)",
-      "date": "16/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-16&numeroEdicto=4844&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4839",
-      "province": "Jaén",
-      "title": "Convocatoria y Bases del proceso selectivo para la provisión de una plaza de personal laboral fijo, denominada Limpiador/a, mediante el sistema de oposición libre.",
-      "entity": "AYUNTAMIENTO DE TORREBLASCOPEDRO (JAÉN)",
-      "date": "16/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-16&numeroEdicto=4839&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4835",
-      "province": "Jaén",
-      "title": "Bases y convocatoria para la provisión de 1 plaza de Técnico/a Superior en Gestión Económica.",
-      "entity": "AYUNTAMIENTO DE LA CAROLINA (JAÉN)",
-      "date": "16/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-16&numeroEdicto=4835&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

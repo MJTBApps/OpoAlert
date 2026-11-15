@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-14T16:24:33.159675+00:00",
+  "lastCheckedUTC": "2026-11-15T06:41:52.907985+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "Ext. 34",
-    "pagesVisited": 29,
-    "announcementsRead": 863,
-    "opportunities": 24,
+    "pagesVisited": 28,
+    "announcementsRead": 831,
+    "opportunities": 23,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -48,7 +47,6 @@
       "Ext. 34"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -87,13 +85,13 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 29,
-    "announcementsRead": 863,
-    "opportunities": 24,
+    "issuesRead": 28,
+    "announcementsRead": 831,
+    "opportunities": 23,
     "regularBulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -126,7 +124,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47085,
       47165,
       47185,
       47206,
@@ -387,16 +384,6 @@
       "bulletin": "200",
       "type": "Bolsa de trabajo",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441869"
-    },
-    {
-      "id": "CN-2026-8052",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras y convocatoria para la selección de persona idónea para la atención de la Oficina de Justicia.",
-      "entity": "Ayuntamiento de San Felices de Buelna",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441860"
     }
   ]
 }

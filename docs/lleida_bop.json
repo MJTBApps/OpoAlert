@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-14T16:27:54.682348+00:00",
+  "lastCheckedUTC": "2026-11-15T06:46:09.957442+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 22,
-    "announcementsRead": 1055,
-    "opportunities": 72
+    "pagesVisited": 21,
+    "announcementsRead": 1007,
+    "opportunities": 70
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 1055,
-    "opportunities": 72
+    "issuesRead": 20,
+    "announcementsRead": 1007,
+    "opportunities": 70
   },
   "notices": [
     {
@@ -776,26 +775,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908504.pdf"
-    },
-    {
-      "id": "LE-202619808624",
-      "province": "Lleida (BOP)",
-      "title": "ANUNCI sobre la convocatòria i les bases del procés selectiu per a la constitució d’una borsa de treball d’administratius/ives, escala d’administració general, subescala administrativa, grup C, subgrup C1, mitjançant concurs oposició lliure",
-      "entity": "AJUNTAMENT DE LES BORGES BLANQUES (BORGES BLANQUES, LES)",
-      "date": "16/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/198/202619808624.pdf"
-    },
-    {
-      "id": "LE-202619808587",
-      "province": "Lleida (BOP)",
-      "title": "Anunci de bases i convocatòria per a provisió interina d'un/a tècnic/a mig d'urbanisme i comerç",
-      "entity": "AJUNTAMENT DE TREMP (TREMP)",
-      "date": "16/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/198/202619808587.pdf"
     }
   ]
 }

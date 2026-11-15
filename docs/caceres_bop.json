@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-14T16:22:29.547797+00:00",
+  "lastCheckedUTC": "2026-11-15T06:40:53.658425+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 20,
-    "announcementsRead": 521,
-    "opportunities": 36
+    "pagesVisited": 19,
+    "announcementsRead": 489,
+    "opportunities": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -38,7 +37,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -69,11 +67,12 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 521,
-    "opportunities": 36
+    "issuesRead": 19,
+    "announcementsRead": 489,
+    "opportunities": 32
   },
   "notices": [
     {
@@ -395,46 +394,6 @@
       "bulletin": "200",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4875"
-    },
-    {
-      "id": "CC-2026-4847",
-      "province": "Cáceres",
-      "title": "Bases para la constitución de una bolsa de funcionarios interinos para provisión del puesto de Secretaria-Intervención.",
-      "entity": "Ayuntamiento de Casares de las Hurdes",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4847"
-    },
-    {
-      "id": "CC-2026-4837",
-      "province": "Cáceres",
-      "title": "Convocatoria para la provisión 2 plazas Técnico en disciplina Urbanística - Especialidad Técnica concurso-oposición turno libre.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4837"
-    },
-    {
-      "id": "CC-2026-4836",
-      "province": "Cáceres",
-      "title": "Convocatoria para la provisión 2 plazas Técnico en disciplina Urbanística - Especialidad Jurídica concurso-oposición turno libre.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4836"
-    },
-    {
-      "id": "CC-2026-4835",
-      "province": "Cáceres",
-      "title": "Convocatoria para la provisión 1 plaza Auxiliar Administrativo concurso-oposición turno promoción interna.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4835"
     }
   ]
 }

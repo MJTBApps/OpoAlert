@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-14T16:20:43.647895+00:00",
+  "lastCheckedUTC": "2026-11-15T06:39:59.342576+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 21,
-    "announcementsRead": 940,
-    "opportunities": 73
+    "pagesVisited": 20,
+    "announcementsRead": 917,
+    "opportunities": 70
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -39,7 +38,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -71,11 +69,12 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 940,
-    "opportunities": 73
+    "issuesRead": 20,
+    "announcementsRead": 917,
+    "opportunities": 70
   },
   "notices": [
     {
@@ -777,36 +776,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/20/2026-08260.pdf"
-    },
-    {
-      "id": "AS-2026-08341",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria pública y bases reguladoras para la provisión interina, por oposición, de una plaza de Oficial de Mantenimiento de Edificios de la plantilla de funcionarios del Ayuntamiento de Laviana.",
-      "entity": "Ayuntamiento de Laviana",
-      "date": "16/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/16/2026-08341.pdf"
-    },
-    {
-      "id": "AS-2026-08307",
-      "province": "Asturias (BOPA)",
-      "title": "Extracto de la Resolución de 7 de octubre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria octubre extra 1).",
-      "entity": "Universidad de Oviedo",
-      "date": "16/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/16/2026-08307.pdf"
-    },
-    {
-      "id": "AS-2026-08165",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria y bases reguladoras del proceso de selección de una plaza de Trabajador/a Social del Ayuntamiento de Valdés (Oferta de Empleo Público de 2023).",
-      "entity": "Ayuntamiento de Valdés",
-      "date": "16/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/16/2026-08165.pdf"
     }
   ]
 }
