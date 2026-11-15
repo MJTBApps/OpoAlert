@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-14T16:14:33.708593+00:00",
+  "lastCheckedUTC": "2026-11-15T06:31:56.086416+00:00",
   "coverage": {
     "bulletin": "219",
     "pagesVisited": 4,
@@ -588,54 +588,17 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12551&lang=es"
-    },
-    {
-      "id": "2026/12849",
-      "title": "Anuncio del Ayuntamiento de Daimús sobre la aprobación de las bases de la convocatoria para la provisión en propiedad de una plaza de técnico/a de la administración general (del turno por promoción interna vertical), mediante el sistema de concurso-oposición.",
-      "entity": "Ayuntamiento de Daimús",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12849&lang=es"
-    },
-    {
-      "id": "2026/12847",
-      "title": "Anuncio del Ayuntamiento de Daimús sobre la aprobación de las bases de la convocatoria para la provisión en propiedad de dos plazas de administrativo/a de la administración general (turno promoción interna vertical), mediante el sistema de concurso-oposición.",
-      "entity": "Ayuntamiento de Daimús",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12847&lang=es"
-    },
-    {
-      "id": "2026/12492",
-      "title": "Anuncio del Ayuntamiento de la Pobla de Farnals sobre la acumulación de la plaza de operario/a de servicios múltiples, correspondiente a la oferta de empleo público de 2026, a la convocatoria y provisión de dos plazas de operario/a de servicios múltiples en régimen laboral con carácter fijo, por turno libre, mediante sistema de concurso-oposición, correspondiente a la oferta de empleo público de 2023.",
-      "entity": "Ayuntamiento de la Pobla de Farnals",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12492&lang=es"
-    },
-    {
-      "id": "2026/12457",
-      "title": "Anuncio del Ayuntamiento de Chiva sobre la aprobación de las bases de la convocatoria para la cobertura en propiedad de dos plazas de auxiliar administrativo/a.",
-      "entity": "Ayuntamiento de Chiva",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12457&lang=es"
     }
   ],
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
-    "pagesVisited": 56,
-    "announcementsRead": 1296,
-    "opportunities": 68,
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
+    "pagesVisited": 52,
+    "announcementsRead": 1235,
+    "opportunities": 64,
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -658,152 +621,152 @@
       "219"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-14T16:14:33.708607+00:00",
+    "verifiedUTC": "2026-11-15T06:31:56.086431+00:00",
     "chunks": [
       {
-        "start": "2026-10-16",
-        "end": "2026-10-20",
-        "requestedStart": "2026-10-16",
-        "requestedEnd": "2026-10-20",
+        "start": "2026-10-19",
+        "end": "2026-10-21",
+        "requestedStart": "2026-10-17",
+        "requestedEnd": "2026-10-21",
         "publishedDates": [
-          "2026-10-16",
           "2026-10-19",
-          "2026-10-20"
+          "2026-10-20",
+          "2026-10-21"
         ],
         "nonPublicationDates": [
           "2026-10-17",
           "2026-10-18"
         ],
-        "pagesVisited": 11,
-        "announcementsRead": 253,
+        "pagesVisited": 9,
+        "announcementsRead": 220,
         "bulletins": [
-          "199",
           "200",
-          "201"
+          "201",
+          "202"
         ],
-        "opportunities": 8,
+        "opportunities": 5,
         "complete": true
       },
       {
-        "start": "2026-10-21",
-        "end": "2026-10-23",
-        "requestedStart": "2026-10-21",
-        "requestedEnd": "2026-10-25",
+        "start": "2026-10-22",
+        "end": "2026-10-26",
+        "requestedStart": "2026-10-22",
+        "requestedEnd": "2026-10-26",
         "publishedDates": [
-          "2026-10-21",
           "2026-10-22",
-          "2026-10-23"
+          "2026-10-23",
+          "2026-10-26"
         ],
         "nonPublicationDates": [
           "2026-10-24",
           "2026-10-25"
         ],
         "pagesVisited": 6,
-        "announcementsRead": 128,
+        "announcementsRead": 148,
         "bulletins": [
-          "202",
           "203",
-          "204"
+          "204",
+          "205"
         ],
-        "opportunities": 11,
+        "opportunities": 13,
         "complete": true
       },
       {
-        "start": "2026-10-26",
+        "start": "2026-10-27",
         "end": "2026-10-30",
-        "requestedStart": "2026-10-26",
-        "requestedEnd": "2026-10-30",
+        "requestedStart": "2026-10-27",
+        "requestedEnd": "2026-10-31",
         "publishedDates": [
-          "2026-10-26",
           "2026-10-27",
           "2026-10-28",
           "2026-10-29",
           "2026-10-30"
         ],
-        "nonPublicationDates": [],
-        "pagesVisited": 12,
-        "announcementsRead": 276,
+        "nonPublicationDates": [
+          "2026-10-31"
+        ],
+        "pagesVisited": 10,
+        "announcementsRead": 228,
         "bulletins": [
-          "205",
           "206",
           "207",
           "208",
           "209"
         ],
-        "opportunities": 19,
+        "opportunities": 16,
         "complete": true
       },
       {
         "start": "2026-11-02",
-        "end": "2026-11-04",
-        "requestedStart": "2026-10-31",
-        "requestedEnd": "2026-11-04",
+        "end": "2026-11-05",
+        "requestedStart": "2026-11-01",
+        "requestedEnd": "2026-11-05",
         "publishedDates": [
           "2026-11-02",
           "2026-11-03",
-          "2026-11-04"
+          "2026-11-04",
+          "2026-11-05"
         ],
         "nonPublicationDates": [
-          "2026-10-31",
           "2026-11-01"
         ],
-        "pagesVisited": 8,
-        "announcementsRead": 193,
+        "pagesVisited": 11,
+        "announcementsRead": 256,
         "bulletins": [
           "210",
           "211",
-          "212"
+          "212",
+          "213"
         ],
-        "opportunities": 9,
+        "opportunities": 14,
         "complete": true
       },
       {
-        "start": "2026-11-05",
-        "end": "2026-11-09",
-        "requestedStart": "2026-11-05",
-        "requestedEnd": "2026-11-09",
+        "start": "2026-11-06",
+        "end": "2026-11-10",
+        "requestedStart": "2026-11-06",
+        "requestedEnd": "2026-11-10",
         "publishedDates": [
-          "2026-11-05",
           "2026-11-06",
-          "2026-11-09"
+          "2026-11-09",
+          "2026-11-10"
         ],
         "nonPublicationDates": [
           "2026-11-07",
           "2026-11-08"
         ],
         "pagesVisited": 8,
-        "announcementsRead": 178,
+        "announcementsRead": 193,
         "bulletins": [
-          "213",
           "214",
-          "215"
+          "215",
+          "216"
         ],
-        "opportunities": 11,
+        "opportunities": 9,
         "complete": true
       },
       {
-        "start": "2026-11-10",
+        "start": "2026-11-11",
         "end": "2026-11-13",
-        "requestedStart": "2026-11-10",
-        "requestedEnd": "2026-11-14",
+        "requestedStart": "2026-11-11",
+        "requestedEnd": "2026-11-15",
         "publishedDates": [
-          "2026-11-10",
           "2026-11-11",
           "2026-11-12",
           "2026-11-13"
         ],
         "nonPublicationDates": [
-          "2026-11-14"
+          "2026-11-14",
+          "2026-11-15"
         ],
-        "pagesVisited": 11,
-        "announcementsRead": 268,
+        "pagesVisited": 8,
+        "announcementsRead": 190,
         "bulletins": [
-          "216",
           "217",
           "218",
           "219"
         ],
-        "opportunities": 10,
+        "opportunities": 7,
         "complete": true
       }
     ]
