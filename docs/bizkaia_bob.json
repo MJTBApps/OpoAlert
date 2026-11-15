@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-14T16:10:51.343624+00:00",
+  "lastCheckedUTC": "2026-11-15T06:17:00.814429+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "219",
-    "pagesVisited": 21,
-    "announcementsRead": 813,
-    "opportunities": 61
+    "pagesVisited": 20,
+    "announcementsRead": 786,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -39,7 +38,6 @@
       "219"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 813,
-    "opportunities": 61
+    "issuesRead": 20,
+    "announcementsRead": 786,
+    "opportunities": 58
   },
   "notices": [
     {
@@ -656,36 +655,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/19/II-5318_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5309",
-      "province": "Bizkaia",
-      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la convocatoria del concurso específico para proveer, con carácter definitivo, diversas dotaciones de los puestos de Jefatura del subgrupo A-2, adscritos a diversas Áreas; así como a la aprobación de las bases específicas que regularán el presente proceso selectivo.",
-      "entity": "Ayuntamiento de Basauri",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/16/II-5309_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5303",
-      "province": "Bizkaia",
-      "title": "Convocatoria para la selección por turno libre, mediante el sistema de oposición de dos (2) plazas de Técnico/a de Administración General, Grupo A1.",
-      "entity": "Ayuntamiento de Arantzazu",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/16/II-5303_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5302",
-      "province": "Bizkaia",
-      "title": "Bases de la convocatoria para la provisión mediante concurso general de méritos del puesto número 8 —Administrativo/a de Atención a la Ciudadanía y Medio Rural.",
-      "entity": "Ayuntamiento de Getxo",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/16/II-5302_cas.pdf"
     }
   ]
 }

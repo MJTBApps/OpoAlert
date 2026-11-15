@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-14T16:13:33.866960+00:00",
+  "lastCheckedUTC": "2026-11-15T06:20:09.677440+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "136",
-    "pagesVisited": 13,
-    "announcementsRead": 423,
-    "opportunities": 34
+    "pagesVisited": 12,
+    "announcementsRead": 399,
+    "opportunities": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "124",
       "125",
       "126",
       "127",
@@ -31,7 +30,6 @@
       "136"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-21",
       "2026-10-23",
@@ -62,11 +60,12 @@
       "2026-11-08",
       "2026-11-10",
       "2026-11-12",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 423,
-    "opportunities": 34
+    "issuesRead": 12,
+    "announcementsRead": 399,
+    "opportunities": 32
   },
   "notices": [
     {
@@ -388,26 +387,6 @@
       "bulletin": "126",
       "type": "Bolsa de trabajo",
       "url": "https://www.boplaspalmas.net/boletines/2026/21-10-26/21-10-26.pdf"
-    },
-    {
-      "id": "LP-20261016-023",
-      "province": "Las Palmas (BOP)",
-      "title": "Convocatoria de provisión temporal de un puesto de trabajo de Policía Local a cubrir mediante comisión de servicios",
-      "entity": "ILUSTRE AYUNTAMIENTO DE TINAJO",
-      "date": "16/10/2026",
-      "bulletin": "124",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/16-10-26/16-10-26.pdf"
-    },
-    {
-      "id": "LP-20261016-020",
-      "province": "Las Palmas (BOP)",
-      "title": "Convalidación y modificación de las bases de la convocatoria para proveer 1 plaza de Ingeniero/a Técnico/a Industrial",
-      "entity": "ILUSTRE AYUNTAMIENTO DE SANTA BRÍGIDA",
-      "date": "16/10/2026",
-      "bulletin": "124",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/16-10-26/16-10-26.pdf"
     }
   ]
 }

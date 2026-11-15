@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-14T16:12:36.533761+00:00",
+  "lastCheckedUTC": "2026-11-15T06:19:15.407246+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "217",
-    "pagesVisited": 20,
-    "announcementsRead": 814,
-    "opportunities": 31
+    "pagesVisited": 19,
+    "announcementsRead": 763,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -38,7 +37,6 @@
       "217"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -69,11 +67,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-11",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 814,
-    "opportunities": 31
+    "issuesRead": 19,
+    "announcementsRead": 763,
+    "opportunities": 30
   },
   "notices": [
     {
@@ -375,16 +374,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/19/c2606561.pdf"
-    },
-    {
-      "id": "GP-2026-2606496",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para la ampliación de la bolsa de trabajo de Oficial/a Técnico/a de Mantenimiento de Edificios e Instalaciones.",
-      "entity": "ENTIDAD PÚBLICA EMPRESARIAL DONOSTIA KULTURA",
-      "date": "16/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/16/c2606496.pdf"
     }
   ]
 }

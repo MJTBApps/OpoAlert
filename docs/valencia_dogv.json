@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-14T16:12:17.602046+00:00",
+  "lastCheckedUTC": "2026-11-15T06:18:35.854649+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "10493",
-    "pagesVisited": 33,
-    "announcementsRead": 1092,
-    "opportunities": 243
+    "pagesVisited": 32,
+    "announcementsRead": 1045,
+    "opportunities": 238
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "10472",
       "10473",
       "10473B",
       "10473Q",
@@ -51,7 +50,6 @@
       "10493"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-19",
       "2026-10-19",
@@ -93,11 +91,12 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 33,
-    "announcementsRead": 1092,
-    "opportunities": 243
+    "issuesRead": 32,
+    "announcementsRead": 1045,
+    "opportunities": 238
   },
   "notices": [
     {
@@ -2479,56 +2478,6 @@
       "bulletin": "10473",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/19/pdf/2026_31863_es.pdf"
-    },
-    {
-      "id": "DV-2026-32222",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO del extracto de la convocatoria del proceso selectivo para cubrir una plaza de personal de limpieza por concurso-oposición, turno libre.",
-      "entity": "Ayuntamiento de Montanejos",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_32222_es.pdf"
-    },
-    {
-      "id": "DV-2026-31721",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 23 de septiembre de 2026, de la Dirección General, por la que se convoca el proceso de selección del puesto de naturaleza laboral 5139, técnico o técnica de vestuario, correspondiente a la oferta pública de empleo de 2023 de la entidad, por turno libre y por el sistema de concurso-oposición. Convocatoria 05/2026.",
-      "entity": "Palau de Les Arts Reina Sofía, Fundación de la Comunitat Valenciana",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_31721_es.pdf"
-    },
-    {
-      "id": "DV-2026-31704",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 29 de julio de 2026, de la Dirección General, por la que se hacen públicas las bases para la constitución de dos bolsas de empleo temporal, una por cada grupo profesional, para la contratación laboral temporal en el Departamento de Mecánica Escénica, y se convoca el proceso selectivo correspondiente.",
-      "entity": "Palau de Les Arts Reina Sofía, Fundación de la Comunitat Valenciana",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_31704_es.pdf"
-    },
-    {
-      "id": "DV-2026-30196",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de las bases específicas y la convocatoria del proceso selectivo para la provisión como funcionario o funcionaria de carrera de dos plazas de conserje, mediante concurso-oposición.",
-      "entity": "Ayuntamiento de Orihuela",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_30196_es.pdf"
-    },
-    {
-      "id": "DV-2026-30181",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la convocatoria y de las bases específicas que regirán el procedimiento para proveer en propiedad una plaza vacante de trabajador o trabajadora sociales.",
-      "entity": "Ayuntamiento de Meliana",
-      "date": "16/10/2026",
-      "bulletin": "10472",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/16/pdf/2026_30181_es.pdf"
     }
   ]
 }

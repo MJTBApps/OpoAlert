@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-14T16:13:02.635833+00:00",
+  "lastCheckedUTC": "2026-11-15T06:19:39.243246+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "219",
-    "pagesVisited": 20,
-    "announcementsRead": 265,
-    "opportunities": 46
+    "pagesVisited": 19,
+    "announcementsRead": 251,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -38,7 +37,6 @@
       "219"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -69,13 +67,13 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 265,
-    "opportunities": 46,
+    "issuesRead": 19,
+    "announcementsRead": 251,
+    "opportunities": 43,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_200_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_201_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_202_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_203_2026.pdf",
@@ -527,36 +525,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380108_BOP-202_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381427",
-      "province": "Huelva",
-      "title": "Bases reguladoras del proceso de selección de personal laboral temporal a través de oferta genérica al SAE para la ejecución del Plan de desarrollo económico y social de la provincia",
-      "entity": "Ayuntamiento de Aroche",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381427_BOP-200_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381153",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la creación de una Bolsa de empleo para el puesto de Operario Servicios Múltiples (Electricista)",
-      "entity": "Ayuntamiento de El Campillo",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381153_BOP-200_2026.pdf"
-    },
-    {
-      "id": "HB-2026-379834",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para proveer mediante concurso-oposición por promoción interna una plaza de Oficial de Jardinería",
-      "entity": "Ayuntamiento de Gibraleón",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_379834_BOP-200_2026.pdf"
     }
   ]
 }

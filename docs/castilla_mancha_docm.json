@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-14T16:11:32.681928+00:00",
+  "lastCheckedUTC": "2026-11-15T06:17:35.903708+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 22,
-    "announcementsRead": 716,
-    "opportunities": 35
+    "pagesVisited": 21,
+    "announcementsRead": 678,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -40,7 +39,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -72,11 +70,12 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 716,
-    "opportunities": 35
+    "issuesRead": 21,
+    "announcementsRead": 678,
+    "opportunities": 34
   },
   "notices": [
     {
@@ -418,16 +417,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/19/pdf/2026_7374.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7418",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Bolsa de Trabajo. Resolución de 09/10/2026 , de la Secretaría General de la Presidencia, sobre ampliación del plazo por incidencia técnica, al amparo del artículo 32.4 de la Ley 39/2015, de 1 de octubre, de Procedimiento Administrativo Común de las Administraciones Públicas para la presentación de solicitudes de participación en el proceso selectivo convocado por Resolución de 28/09/2026, para la ampliación de la bolsa de trabajo del Cuerpo de Letrados de la Administración de la Junta de Comunidades de Castilla-La Mancha. [NID 2026/7418]",
-      "entity": "Presidencia de la Junta",
-      "date": "16/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/16/pdf/2026_7418.pdf&tipo=rutaDocm"
     }
   ]
 }

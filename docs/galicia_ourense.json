@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-14T16:14:32.415509+00:00",
+  "lastCheckedUTC": "2026-11-15T06:21:02.464528+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 20,
-    "announcementsRead": 285,
+    "pagesVisited": 19,
+    "announcementsRead": 278,
     "opportunities": 49
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -38,7 +37,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -69,10 +67,11 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-11",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 285,
+    "issuesRead": 19,
+    "announcementsRead": 278,
     "opportunities": 49
   },
   "notices": [

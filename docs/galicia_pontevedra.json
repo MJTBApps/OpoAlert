@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-14T16:15:04.683648+00:00",
+  "lastCheckedUTC": "2026-11-15T06:21:44.691491+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 21,
-    "announcementsRead": 426,
-    "opportunities": 27
+    "pagesVisited": 20,
+    "announcementsRead": 405,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -39,7 +38,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 426,
-    "opportunities": 27
+    "issuesRead": 20,
+    "announcementsRead": 405,
+    "opportunities": 25
   },
   "notices": [
     {
@@ -326,26 +325,6 @@
       "bulletin": "202",
       "type": "Bolsa de trabajo",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/20/2026073645/an.bop.PONTEVEDRA.20261020.2026073645.pdf"
-    },
-    {
-      "id": "PO-2026073359",
-      "province": "Pontevedra",
-      "title": "CONVOCATORIA PROCESO SELECTIVO PARA CREACIÓN LISTA RESERVA",
-      "entity": "Cambados",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/16/2026073359/an.bop.PONTEVEDRA.20261016.2026073359.pdf"
-    },
-    {
-      "id": "PO-2026073354",
-      "province": "Pontevedra",
-      "title": "RESOLUCIÓN RECURSOS DE REPOSICIÓN CONTRA AS BASES XERAIS E ESPECÍFICAS QUE REGULAN A CONVOCATORIA DO PROCESO SELECTIVO PARA O ACCESO A DIVERSAS PRAZAS VACANTES, PROCEDENTES DA OFERTA DE EMPREGO PÚBLICO DO ANO 2023, 2024 E 2025",
-      "entity": "Tui",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/16/2026073354/an.bop.PONTEVEDRA.20261016.2026073354.pdf"
     }
   ]
 }

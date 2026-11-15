@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-14T16:17:17.374552+00:00",
+  "lastCheckedUTC": "2026-11-15T06:21:58.170845+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "264",
-    "pagesVisited": 27,
-    "announcementsRead": 623,
-    "opportunities": 48
+    "pagesVisited": 26,
+    "announcementsRead": 597,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "239",
       "240",
       "241",
       "242",
@@ -45,7 +44,6 @@
       "264"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-17",
       "2026-10-19",
       "2026-10-20",
@@ -77,11 +75,12 @@
       "2026-10-18",
       "2026-10-25",
       "2026-11-01",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-15"
     ],
-    "issuesRead": 27,
-    "announcementsRead": 623,
-    "opportunities": 48
+    "issuesRead": 26,
+    "announcementsRead": 597,
+    "opportunities": 42
   },
   "notices": [
     {
@@ -503,66 +502,6 @@
       "bulletin": "240",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845739/pdf"
-    },
-    {
-      "id": "MU-2026-5022",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución Rectoral de 7 de octubre de 2026 de la Universidad Politécnica de Cartagena, por la que se convocan pruebas selectivas para la provisión de una plaza de la Escala Facultativa de Archivos y Bibliotecas de esta Universidad, mediante el sistema de promoción interna.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad Politécnica de Cartagena",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845704/pdf"
-    },
-    {
-      "id": "MU-2026-5021",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución Rectoral de 7 de octubre de 2026 de la Universidad Politécnica de Cartagena, por la que se convocan pruebas selectivas para la provisión de una plaza de la Escala Técnica Superior de Ciencia y Tecnología, Especialidad Cálculo Científico y Diseño Técnico de esta Universidad, mediante el sistema de promoción interna.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad Politécnica de Cartagena",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845703/pdf"
-    },
-    {
-      "id": "MU-2026-5020",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Rector de la Universidad de Murcia (R-1325/2026), de 13 de octubre de 2026 por la que se convoca concurso público de méritos para la constitución de bolsas de empleo para la contratación de profesorado sustituto.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.borm.es/services/anuncio/845702/pdf"
-    },
-    {
-      "id": "MU-2026-5019",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Rector de la Universidad de Murcia R-1324/2026 de 13 de octubre de 2026, por la que se anuncia la apertura de plazo de presentación de nuevas solicitudes y aportación de méritos a bolsas de empleo de vigencia permanente constituidas en la Universidad de Murcia para contratación de profesorado sustituto.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.borm.es/services/anuncio/845701/pdf"
-    },
-    {
-      "id": "MU-2026-5017",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 8 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna 26 plazas del Cuerpo de Técnicos Auxiliares, opción Tributaria de la Administración Pública Regional (código DFX31P24-6).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845699/pdf"
-    },
-    {
-      "id": "MU-2026-5016",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 8 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, 364 plazas del Cuerpo Administrativo de la Administración Pública Regional: 50 plazas de promoción interna (código CGX00P24-2) y 314 plazas de promoción interna sobre el mismo puesto de trabajo (código CGX00P25-2).",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845698/pdf"
     }
   ]
 }

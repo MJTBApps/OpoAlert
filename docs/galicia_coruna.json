@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-14T16:10:39.585200+00:00",
+  "lastCheckedUTC": "2026-11-15T06:16:47.874983+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 733,
-    "opportunities": 59
+    "pagesVisited": 20,
+    "announcementsRead": 701,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -39,7 +38,6 @@
       "218"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -70,11 +68,12 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 733,
-    "opportunities": 59
+    "issuesRead": 20,
+    "announcementsRead": 701,
+    "opportunities": 56
   },
   "notices": [
     {
@@ -636,36 +635,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/19/2026_0000006643.pdf"
-    },
-    {
-      "id": "AC-2026-6654",
-      "province": "A Coruña",
-      "title": "Ampliación do prazo de xustificación da convocatoria de bolsas para sufragar gastos relacionados con medidas terapéuticas que apoien o desenvolvemento e o benestar persoal. Ano 2026",
-      "entity": "Área de Servizos Sociais",
-      "date": "16/10/2026",
-      "bulletin": "198",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/16/2026_0000006654.pdf"
-    },
-    {
-      "id": "AC-2026-6609",
-      "province": "A Coruña",
-      "title": "Anuncio de aprobación da Oferta de Emprego Público do ano 2026",
-      "entity": "Ordes",
-      "date": "16/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/16/2026_0000006609.pdf"
-    },
-    {
-      "id": "AC-2026-6579",
-      "province": "A Coruña",
-      "title": "Convocatoria e bases dunha praza de técnica/o superior de administración especial",
-      "entity": "Persoal",
-      "date": "16/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/16/2026_0000006579.pdf"
     }
   ]
 }

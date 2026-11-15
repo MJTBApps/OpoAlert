@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-14T16:14:25.917168+00:00",
+  "lastCheckedUTC": "2026-11-15T06:21:06.537105+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "E52",
-    "pagesVisited": 16,
-    "announcementsRead": 135,
-    "opportunities": 14
+    "pagesVisited": 14,
+    "announcementsRead": 116,
+    "opportunities": 11
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "bulletins": [
-      "6423",
-      "E46",
       "6424",
       "E47",
       "6425",
@@ -34,8 +32,6 @@
       "E52"
     ],
     "publicationDates": [
-      "2026-10-16",
-      "2026-10-16",
       "2026-10-20",
       "2026-10-21",
       "2026-10-23",
@@ -70,11 +66,12 @@
       "2026-11-09",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 16,
-    "announcementsRead": 135,
-    "opportunities": 14
+    "issuesRead": 14,
+    "announcementsRead": 116,
+    "opportunities": 11
   },
   "notices": [
     {
@@ -186,36 +183,6 @@
       "bulletin": "E47",
       "type": "Plaza / oposición",
       "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-123.pdf"
-    },
-    {
-      "id": "ML-2026-A-1164",
-      "province": "Melilla (BOME)",
-      "title": "Orden nº 4665, de fecha 13 de octubre de 2026, relativa a convocatoria para la provisión en propiedad de cuatro plazas de Técnico Economista, pertenecientes a la Escala de Administración Especial, Subescala Técnica, por el procedimiento de oposición libre.",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
-      "date": "16/10/2026",
-      "bulletin": "6423",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1164.pdf"
-    },
-    {
-      "id": "ML-2026-A-1162",
-      "province": "Melilla (BOME)",
-      "title": "Orden nº 4537, de fecha 6 de octubre de 2026, relativa a bases de la convocatoria para la provisión, mediante comisión de servicios, de los puestos de trabajo de Jefe/a Sección de Retribuciones y Jefe/a Sección de Acceso y Gestión de Empleados Públicos.",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
-      "date": "16/10/2026",
-      "bulletin": "6423",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1162.pdf"
-    },
-    {
-      "id": "ML-2026-A-1160",
-      "province": "Melilla (BOME)",
-      "title": "Acuerdo del Consejo de Gobierno, de fecha 2 de octubre de 2026, relativo a rectificación de errores en anuncio referente a las bases de la convocatoria para la provisión en propiedad de cinco plazas de Subalterno, pertenecientes a la Escala de Administración General, Subescala Subalterna, por oposición libre, publicado en BOME nº6384, de 2 de junio de 2026.",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
-      "date": "16/10/2026",
-      "bulletin": "6423",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1160.pdf"
     }
   ]
 }
