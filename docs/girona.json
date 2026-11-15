@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-14T16:16:42.867798+00:00",
+  "lastCheckedUTC": "2026-11-15T06:36:03.733957+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 74,
-    "opportunities": 74,
+    "announcementsRead": 71,
+    "opportunities": 71,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "publicationDates": [
-      "2026-10-16",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -48,12 +47,13 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 74,
-    "opportunities": 74
+    "announcementsRead": 71,
+    "opportunities": 71
   },
   "notices": [
     {
@@ -765,36 +765,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/17280871"
-    },
-    {
-      "id": "CIDO6-19004672",
-      "title": "1 plaça d'Auxiliar administratiu d'atenció al públic de l'Oficina d'Atenció Ciutadana (OAC)",
-      "entity": "Ajuntament de Sarrià de Ter",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19004672"
-    },
-    {
-      "id": "CIDO6-19004665",
-      "title": "1 plaça d'Auxiliar administratiu adscrit a l'àrea de cultura",
-      "entity": "Ajuntament de Sarrià de Ter",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19004665"
-    },
-    {
-      "id": "CIDO6-19004614",
-      "title": "1 plaça de Coordinador d'esports",
-      "entity": "Ajuntament de Sarrià de Ter",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19004614"
     }
   ]
 }

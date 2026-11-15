@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-14T16:16:42.867798+00:00",
+  "lastCheckedUTC": "2026-11-15T06:36:03.733957+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 286,
-    "opportunities": 286,
+    "announcementsRead": 282,
+    "opportunities": 282,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "publicationDates": [
-      "2026-10-16",
       "2026-10-17",
       "2026-10-19",
       "2026-10-20",
@@ -48,12 +47,13 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 286,
-    "opportunities": 286
+    "announcementsRead": 282,
+    "opportunities": 282
   },
   "notices": [
     {
@@ -2875,46 +2875,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18684826"
-    },
-    {
-      "id": "CIDO5-21405690",
-      "title": "1 plaça de Coordinador de gestió àmbit administratiu",
-      "entity": "Ajuntament de Vilanova i la Geltrú - Assistència Integral Social i Sanitària (AISSA - mitjà propi)",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21405690"
-    },
-    {
-      "id": "CIDO5-21405687",
-      "title": "9 places de Treballador familiar",
-      "entity": "Ajuntament de Vilanova i la Geltrú - Assistència Integral Social i Sanitària (AISSA - mitjà propi)",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21405687"
-    },
-    {
-      "id": "CIDO5-21405684",
-      "title": "2 places d'Auxiliar de la llar - auxiliar de neteja",
-      "entity": "Ajuntament de Vilanova i la Geltrú - Assistència Integral Social i Sanitària (AISSA - mitjà propi)",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21405684"
-    },
-    {
-      "id": "CIDO5-21405677",
-      "title": "13 places de Gerocultor de residència",
-      "entity": "Ajuntament de Vilanova i la Geltrú - Assistència Integral Social i Sanitària (AISSA - mitjà propi)",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21405677"
     }
   ]
 }

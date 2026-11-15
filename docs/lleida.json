@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-14T16:16:42.867798+00:00",
+  "lastCheckedUTC": "2026-11-15T06:36:03.733957+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 65,
-    "opportunities": 65,
+    "announcementsRead": 63,
+    "opportunities": 63,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
     "publicationDates": [
-      "2026-10-16",
       "2026-10-20",
       "2026-10-22",
       "2026-10-23",
@@ -48,12 +47,13 @@
       "2026-11-06",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 65,
-    "opportunities": 65
+    "announcementsRead": 63,
+    "opportunities": 63
   },
   "notices": [
     {
@@ -685,26 +685,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22345789"
-    },
-    {
-      "id": "CIDO7-22335079",
-      "title": "Borsa de treball de places d'Administratiu",
-      "entity": "Ajuntament de les Borges Blanques",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22335079"
-    },
-    {
-      "id": "CIDO7-22039916",
-      "title": "1 plaça de Tècnic mitjà de cultura",
-      "entity": "Ajuntament de Tàrrega",
-      "date": "16/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22039916"
     }
   ]
 }
