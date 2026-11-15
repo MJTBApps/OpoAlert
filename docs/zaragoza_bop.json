@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-14T16:51:42.003193+00:00",
+  "lastCheckedUTC": "2026-11-15T07:12:24.846733+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "262",
     "pagesVisited": 2,
-    "announcementsRead": 755,
-    "opportunities": 74
+    "announcementsRead": 739,
+    "opportunities": 71
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
-    "issuesRead": 24,
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
+    "issuesRead": 23,
     "pagesVisited": 2,
-    "announcementsRead": 755,
-    "opportunities": 74,
+    "announcementsRead": 739,
+    "opportunities": 71,
     "bulletins": [
-      "239",
       "240",
       "241",
       "242",
@@ -46,7 +45,6 @@
       "262"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-17",
       "2026-10-19",
       "2026-10-20",
@@ -72,7 +70,6 @@
       "2026-11-13"
     ],
     "issuePublicationDates": [
-      "2026-10-16",
       "2026-10-17",
       "2026-10-19",
       "2026-10-20",
@@ -103,20 +100,21 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 38,
-      "SECCIÓN QUINTA": 93,
-      "SECCIÓN SEXTA": 596,
+      "SECCIÓN QUINTA": 92,
       "SECCIÓN PRIMERA": 1,
+      "SECCIÓN SEXTA": 583,
       "SECCIÓN SEPTIMA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
+      "SECCIÓN TERCERA": 36,
       "PARTE NO OFICIAL": 12,
       "SECCIÓN SEGUNDA": 4,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 96
+    "documentsVerified": 92
   },
   "notices": [
     {
@@ -828,36 +826,6 @@
       "bulletin": "241",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470785130303"
-    },
-    {
-      "id": "ZA-000344427",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
-      "entity": "AYUNTAMIENTO DE URRIÉS",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470605510303"
-    },
-    {
-      "id": "ZA-000344426",
-      "province": "Zaragoza",
-      "title": "Por esta Alcaldía-Presidencia se ha adoptado Resolución núm. 2026-1685, de fecha 8 de octubre de 2026, con el siguiente contenido: «Iniciado expediente de aprobación de bases y convocatoria para la provisión…",
-      "entity": "AYUNTAMIENTO DE TARAZONA",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470604500303"
-    },
-    {
-      "id": "ZA-000344417",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a bases del proceso selectivo para la constitución de una lista de espera extraordinaria para la plaza/categoría de oficial 1.ª tramoya mantenimiento del Patronato Municipal de Artes Escénicas y de la Imagen.",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE CULTURA, EDUCACIÓN Y TURISMO. SERVICIO ADMINISTRATIVO DE CULTURA Y EDUCACIÓN",
-      "date": "16/10/2026",
-      "bulletin": "239",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470595410202"
     }
   ]
 }
