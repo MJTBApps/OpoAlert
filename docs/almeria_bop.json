@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-14T17:04:18.632895+00:00",
+  "lastCheckedUTC": "2026-11-15T07:30:19.308895+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 848,
-    "announcementsRead": 336,
-    "opportunities": 62
+    "pagesVisited": 825,
+    "announcementsRead": 319,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-16",
-    "rangeEnd": "2026-11-14",
-    "issuesRead": 20,
-    "pagesVisited": 848,
-    "announcementsRead": 336,
-    "opportunities": 62,
+    "rangeStart": "2026-10-17",
+    "rangeEnd": "2026-11-15",
+    "issuesRead": 19,
+    "pagesVisited": 825,
+    "announcementsRead": 319,
+    "opportunities": 61,
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -42,7 +41,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -73,13 +71,13 @@
       "2026-11-02",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "originalPdfPagesRead": 848,
+    "originalPdfPagesRead": 825,
     "archiveIndexPagesRead": 2,
     "archiveTotalIssues": 48195,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392774&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392775&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+19%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392776&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+20%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392777&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+21%2F10%2F2026.pdf",
@@ -711,16 +709,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2793/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02790",
-      "province": "Almería",
-      "title": "Don Domingo Fernández Zurano, Alcalde del Excmo. Ayuntamiento de Huércal-Overa, hace saber que, en relación con el proceso selectivo convocado para la provisión, como personal laboral fijo, mediante el sistema de…",
-      "entity": "AYUNTAMIENTO DE HUÉRCAL-OVERA",
-      "date": "16/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2790/anuncio.pdf"
     }
   ]
 }
