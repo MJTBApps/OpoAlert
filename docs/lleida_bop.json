@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-15T16:33:35.661121+00:00",
+  "lastCheckedUTC": "2026-11-16T07:39:01.483955+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "218",
-    "pagesVisited": 21,
-    "announcementsRead": 1007,
-    "opportunities": 70
+    "bulletin": "219",
+    "pagesVisited": 22,
+    "announcementsRead": 1063,
+    "opportunities": 76
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "199",
       "200",
@@ -35,7 +35,8 @@
       "215",
       "216",
       "217",
-      "218"
+      "218",
+      "219"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -57,10 +58,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -71,11 +72,71 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 1007,
-    "opportunities": 70
+    "issuesRead": 21,
+    "announcementsRead": 1063,
+    "opportunities": 76
   },
   "notices": [
+    {
+      "id": "LE-202621909702",
+      "province": "Lleida (BOP)",
+      "title": "Anunci bases concurs lliure constitució borsa de treball de Tècnic/a d'estratègies comercials",
+      "entity": "AJUNTAMENT DE LA SEU D'URGELL (SEU D'URGELL, LA)",
+      "date": "16/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/219/202621909702.pdf"
+    },
+    {
+      "id": "LE-202621909700",
+      "province": "Lleida (BOP)",
+      "title": "Bases generals reguladores del procés selectiu per a la formació d’una borsa de treball de peó serveis múltiples - polivalent pel procediment de concurs de mèrits de l’Ajuntament de Balaguer. Reobertura termini presentació d’instàncies",
+      "entity": "AJUNTAMENT DE BALAGUER (BALAGUER)",
+      "date": "16/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/219/202621909700.pdf"
+    },
+    {
+      "id": "LE-202621909680",
+      "province": "Lleida (BOP)",
+      "title": "ANUNCI referent a la convocatòria i les bases reguladores del procés per proveir mitjançant nomenament provisional, comissió de serveis o acumulació el lloc de treball d'intervenció",
+      "entity": "AJUNTAMENT D'ALCARRÀS (ALCARRÀS)",
+      "date": "16/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/219/202621909680.pdf"
+    },
+    {
+      "id": "LE-202621909657",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria del procés de selecció d'un Tècnic/a d'educació infantil mitjançant concurs-oposició",
+      "entity": "AJUNTAMENT DE BELLPUIG (BELLPUIG)",
+      "date": "16/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/219/202621909657.pdf"
+    },
+    {
+      "id": "LE-202621909655",
+      "province": "Lleida (BOP)",
+      "title": "EDICTE relatiu a la convocatòria del procés selectiu d’un/a tècnic/a informàtic",
+      "entity": "CONSELL COMARCAL DEL PLA D'URGELL (MOLLERUSSA)",
+      "date": "16/11/2026",
+      "bulletin": "219",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/219/202621909655.pdf"
+    },
+    {
+      "id": "LE-202621909575",
+      "province": "Lleida (BOP)",
+      "title": "Anunci de Convocatòria i bases per a la creació d’una borsa de treball en l’Àrea de Serveis Socials, Salut i Igualtat del Consell Comarcal de la Segarra.",
+      "entity": "CONSELL COMARCAL DE LA SEGARRA (CERVERA)",
+      "date": "16/11/2026",
+      "bulletin": "219",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/219/202621909575.pdf"
+    },
     {
       "id": "LE-202621809643",
       "province": "Lleida (BOP)",

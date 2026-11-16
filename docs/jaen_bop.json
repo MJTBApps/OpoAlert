@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-15T16:32:05.182743+00:00",
+  "lastCheckedUTC": "2026-11-16T07:37:04.982773+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
-    "pagesVisited": 19,
-    "announcementsRead": 501,
-    "opportunities": 25,
+    "bulletin": "223",
+    "pagesVisited": 20,
+    "announcementsRead": 523,
+    "opportunities": 27,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 25
+    "pdfLinksVerified": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "204",
       "205",
@@ -36,7 +36,8 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -57,10 +58,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -72,9 +73,9 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 501,
-    "opportunities": 25,
+    "issuesRead": 20,
+    "announcementsRead": 523,
+    "opportunities": 27,
     "daysRequested": 30,
     "previousBulletin": {
       "number": "203",
@@ -82,6 +83,26 @@
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5394",
+      "province": "Jaén",
+      "title": "Modificación de la fecha de constitución del Tribunal del proceso selectivo para cubrir como Funcionario de Carrera, una plaza de Auxiliar Administrativo, mediante el sistema de oposición, en turno libre.",
+      "entity": "AYUNTAMIENTO DE POZO ALCÓN (JAÉN)",
+      "date": "16/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-16&numeroEdicto=5394&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5389",
+      "province": "Jaén",
+      "title": "Res. núm. 3580 de fecha 12/11/2026 de la Sra. Diputada de Recursos Humanos, por la que se aprueban las bases para la selección de un/a Técnico/a Superior de Obras para el Programa Planes Integrados de Actuación EDIL-FEDER, como funcionario/a interino/a en ejecución de programa, perteneciente al Grupo A.1, mediante prueba.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
+      "date": "16/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-16&numeroEdicto=5389&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5337",
       "province": "Jaén",

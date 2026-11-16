@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-15T16:22:13.058747+00:00",
+  "lastCheckedUTC": "2026-11-16T07:24:41.378329+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 20,
-    "announcementsRead": 917,
-    "opportunities": 70
+    "bulletin": "221",
+    "pagesVisited": 21,
+    "announcementsRead": 973,
+    "opportunities": 72
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "202",
       "203",
@@ -35,7 +35,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -57,10 +58,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -72,11 +73,31 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 917,
-    "opportunities": 70
+    "issuesRead": 21,
+    "announcementsRead": 973,
+    "opportunities": 72
   },
   "notices": [
+    {
+      "id": "AS-2026-09274",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Convocatoria y bases reguladoras para la selección de personas que serán contratadas por el Ayuntamiento de Quirós en el marco del Plan de Empleo 2026, dentro de los itinerarios integrados de activación en el ámbito local.",
+      "entity": "Ayuntamiento de Quirós",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/16/2026-09274.pdf"
+    },
+    {
+      "id": "AS-2026-09203",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bolsa de empleo de Trabajador/a Social.",
+      "entity": "Ayuntamiento de Cabrales",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.asturias.es/bopa/2026/11/16/2026-09203.pdf"
+    },
     {
       "id": "AS-2026-09204",
       "province": "Asturias (BOPA)",

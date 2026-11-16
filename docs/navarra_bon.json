@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-15T16:35:04.102841+00:00",
+  "lastCheckedUTC": "2026-11-16T07:40:31.205494+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
-    "pagesVisited": 20,
-    "announcementsRead": 1280,
-    "opportunities": 38
+    "bulletin": "228",
+    "pagesVisited": 21,
+    "announcementsRead": 1320,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "208",
       "209",
@@ -35,7 +35,8 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -57,10 +58,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -72,11 +73,31 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 1280,
-    "opportunities": 38
+    "issuesRead": 21,
+    "announcementsRead": 1320,
+    "opportunities": 40
   },
   "notices": [
+    {
+      "id": "NA-2026-228-16",
+      "province": "Navarra",
+      "title": "Constitución de una bolsa de trabajo subsidiaria para la cobertura temporal de la plaza de técnica/o de igualdad",
+      "entity": "MANCOMUNIDAD DE VALDIZARBE / IZARBEIBARKO MANKOMUNITATEA",
+      "date": "16/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/228/16"
+    },
+    {
+      "id": "NA-2026-228-15",
+      "province": "Navarra",
+      "title": "Concurso-oposición restringido de un puesto de educadora social nivel B",
+      "entity": "MANCOMUNIDAD DE SERVICIOS SOCIALES AUÑAMENDI",
+      "date": "16/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/228/15"
+    },
     {
       "id": "NA-2026-226-29",
       "province": "Navarra",
