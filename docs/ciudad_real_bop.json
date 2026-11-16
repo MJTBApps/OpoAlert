@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-13T09:28:22.112802+00:00",
+  "lastCheckedUTC": "2026-11-16T17:59:47.813719+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 22,
+    "bulletin": "221",
+    "pagesVisited": 21,
     "announcementsRead": 393,
-    "opportunities": 31
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
-      "199",
-      "200",
       "201",
       "202",
       "203",
@@ -37,11 +35,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-15",
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -61,23 +58,45 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14",
+      "2026-11-15"
     ],
-    "issuesRead": 22,
+    "issuesRead": 21,
     "announcementsRead": 393,
-    "opportunities": 31
+    "opportunities": 29
   },
   "notices": [
+    {
+      "id": "CR-2026-3732",
+      "province": "Ciudad Real",
+      "title": "Bases de la convocatoria para la constitución de una bolsa de empleo de Auxiliares Administrativos/as, personal funcionario interino, por el procedimiento de oposición.",
+      "entity": "HERENCIA",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887310"
+    },
+    {
+      "id": "CR-2026-3727",
+      "province": "Ciudad Real",
+      "title": "Bases de la convocatoria para proveer, mediante oposición libre, una plaza de Psicólogo/a para el Centro de la Mujer, y creación de bolsa de trabajo.",
+      "entity": "ALMODÓVAR DEL CAMPO",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887305"
+    },
     {
       "id": "CR-2026-3664",
       "province": "Ciudad Real",
@@ -347,46 +366,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7828271"
-    },
-    {
-      "id": "CR-2026-3342",
-      "province": "Ciudad Real",
-      "title": "Convocatoria de proceso selectivo para la contratación temporal de un/a Monitor/a del gimnasio municipal.",
-      "entity": "LUCIANA",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7823032"
-    },
-    {
-      "id": "CR-2026-3337",
-      "province": "Ciudad Real",
-      "title": "Emplazamiento a interesados en el procedimiento 65/2026 en relación al proceso selectivo para la provisión de tres plazas de Jefe de Unidad.",
-      "entity": "CONSORCIO PARA EL SERVICIO CONTRA INCENDIOS Y DE SALVAMENTO DE LA PROVINCIA DE CIUDAD REAL",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7820978"
-    },
-    {
-      "id": "CR-2026-3335",
-      "province": "Ciudad Real",
-      "title": "Declarar desierto el proceso selectivo para cubrir, por turno libre, dos plazas de Técnico/a de Administración General correspondientes a la Oferta de Empleo Público del ejercicio 2023.",
-      "entity": "VALDEPEÑAS",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7820976"
-    },
-    {
-      "id": "CR-2026-3328",
-      "province": "Ciudad Real",
-      "title": "Bases de la Convocatoria para la cobertura de una plaza de funcionario de carrera, Informático.",
-      "entity": "ALHAMBRA",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7820969"
     }
   ]
 }
