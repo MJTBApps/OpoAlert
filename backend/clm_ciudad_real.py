@@ -15,8 +15,15 @@ HOME="https://bop.dipucr.es"
 SOURCE=HOME+"/"
 HOST={"bop.dipucr.es"}
 PDF_HOST={"se1.dipucr.es"}
-CA_ISSUER="https://secure.globalsign.com/cacert/gsgccr6alphasslca2025.crt"
-ISSUER="CN=GlobalSign GCC R6 AlphaSSL CA 2025,O=GlobalSign nv-sa,C=BE"
+# El portal no envía el certificado intermedio. Se descargan los de GlobalSign
+# (HTTPS verificado) y OpenSSL valida la cadena hasta una raíz de certifi.
+# El 11/11/2026 el portal renovó su certificado con el intermedio R46 (antes R6).
+CA_ISSUERS={
+    "https://secure.globalsign.com/cacert/gsgccr46alphasslca2025.crt":
+        "CN=GlobalSign GCC R46 AlphaSSL CA 2025,O=GlobalSign nv-sa,C=BE",
+    "https://secure.globalsign.com/cacert/gsgccr6alphasslca2025.crt":
+        "CN=GlobalSign GCC R6 AlphaSSL CA 2025,O=GlobalSign nv-sa,C=BE",
+}
 DAY=re.compile(r"^/bop/(\d{4})/(\d{2})/(\d{2})$")
 NUM=re.compile(r"Bolet[ií]n\s+Oficial\s+de\s+la\s+Provincia\s+(\d{1,3})\s*·",re.I)
 CA_BUNDLE=None
@@ -24,16 +31,19 @@ CA_BUNDLE=None
 def trusted_bundle():
     global CA_BUNDLE
     if CA_BUNDLE:return CA_BUNDLE
-    r=requests.get(CA_ISSUER,timeout=(8,25),verify=True)
-    if r.status_code!=200 or len(r.content)>10000:invalid("GlobalSign: certificado no disponible")
-    try:cert=x509.load_der_x509_certificate(r.content)
-    except ValueError:cert=x509.load_pem_x509_certificate(r.content)
-    if cert.subject.rfc4514_string()!=ISSUER:
-        invalid("GlobalSign: certificado intermedio con emisor inesperado")
     from datetime import datetime,timezone
-    if not (cert.not_valid_before_utc<datetime.now(timezone.utc)<cert.not_valid_after_utc):
-        invalid("GlobalSign: certificado no vigente")
-    ca_bytes=cert.public_bytes(serialization.Encoding.PEM)
+    ca_bytes=b""
+    for url,issuer in CA_ISSUERS.items():
+        r=requests.get(url,timeout=(8,25),verify=True)
+        if r.status_code!=200 or len(r.content)>10000:invalid("GlobalSign: certificado no disponible")
+        try:cert=x509.load_der_x509_certificate(r.content)
+        except ValueError:cert=x509.load_pem_x509_certificate(r.content)
+        if cert.subject.rfc4514_string()!=issuer:
+            invalid("GlobalSign: certificado intermedio con emisor inesperado")
+        if not (cert.not_valid_before_utc<datetime.now(timezone.utc)<cert.not_valid_after_utc):
+            continue
+        ca_bytes+=cert.public_bytes(serialization.Encoding.PEM)
+    if not ca_bytes:invalid("GlobalSign: certificado no vigente")
     bundle=tempfile.NamedTemporaryFile("wb",prefix="opoalert-cr-ca-",suffix=".pem",delete=False)
     with bundle as h:
         h.write(Path(certifi.where()).read_bytes()+b"\n"+ca_bytes)
