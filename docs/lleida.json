@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-15T16:18:27.604361+00:00",
+  "lastCheckedUTC": "2026-11-16T07:19:49.842567+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 63,
-    "opportunities": 63,
+    "announcementsRead": 61,
+    "opportunities": 61,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "publicationDates": [
       "2026-10-20",
       "2026-10-22",
@@ -35,7 +35,6 @@
       "2026-11-13"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-19",
       "2026-10-21",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-16"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 63,
-    "opportunities": 63
+    "announcementsRead": 61,
+    "opportunities": 61
   },
   "notices": [
     {
@@ -517,16 +517,6 @@
       "url": "https://cido.diba.cat/oposicions/22266838"
     },
     {
-      "id": "CIDO7-21942482",
-      "title": "1 plaça d'Enginyer industrial",
-      "entity": "Ajuntament de Mollerussa",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21942482"
-    },
-    {
       "id": "CIDO7-22374985",
       "title": "1 plaça d'Auxiliar de biblioteca",
       "entity": "Ajuntament de Sant Llorenç de Morunys",
@@ -565,16 +555,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22374974"
-    },
-    {
-      "id": "CIDO7-22353534",
-      "title": "1 plaça d'Arquitecte tècnic",
-      "entity": "Consell Comarcal de les Garrigues",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22353534"
     },
     {
       "id": "CIDO7-22266913",

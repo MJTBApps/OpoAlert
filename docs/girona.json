@@ -2,25 +2,24 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-15T16:18:27.604361+00:00",
+  "lastCheckedUTC": "2026-11-16T07:19:49.842567+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 71,
-    "opportunities": 71,
+    "announcementsRead": 68,
+    "opportunities": 68,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "publicationDates": [
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
-      "2026-10-24",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -37,10 +36,10 @@
       "2026-11-13"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-19",
       "2026-10-23",
+      "2026-10-24",
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-16"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 71,
-    "opportunities": 71
+    "announcementsRead": 68,
+    "opportunities": 68
   },
   "notices": [
     {
@@ -577,16 +577,6 @@
       "url": "https://cido.diba.cat/oposicions/22374179"
     },
     {
-      "id": "CIDO6-22373973",
-      "title": "Borsa de treball de places de Tènic d'Administració General (TAG)",
-      "entity": "Ajuntament de Tossa de Mar",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22373973"
-    },
-    {
       "id": "CIDO6-22394715",
       "title": "1 plaça d'Arquitecte",
       "entity": "Ajuntament de Peralada",
@@ -655,26 +645,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21254712"
-    },
-    {
-      "id": "CIDO6-15541398",
-      "title": "1 plaça d'Arquitecte Tècnic",
-      "entity": "Ajuntament de Fornells de la Selva",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/15541398"
-    },
-    {
-      "id": "CIDO6-16576970",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Caldes de Malavella",
-      "date": "24/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16576970"
     },
     {
       "id": "CIDO6-22368865",

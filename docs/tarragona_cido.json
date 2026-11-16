@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-15T16:18:27.604361+00:00",
+  "lastCheckedUTC": "2026-11-16T07:19:49.842567+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 100,
-    "opportunities": 100,
+    "announcementsRead": 99,
+    "opportunities": 99,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "publicationDates": [
       "2026-10-19",
       "2026-10-20",
@@ -38,7 +38,6 @@
       "2026-11-13"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-21",
       "2026-10-24",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-16"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 100,
-    "opportunities": 100
+    "announcementsRead": 99,
+    "opportunities": 99
   },
   "notices": [
     {
@@ -935,16 +935,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21301420"
-    },
-    {
-      "id": "CIDO8-22382397",
-      "title": "Borsa de treball de places de Conserge del pavelló i de l'Ajuntament",
-      "entity": "Ajuntament de Roquetes",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22382397"
     },
     {
       "id": "CIDO8-16887342",
