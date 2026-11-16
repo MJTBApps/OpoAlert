@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-15T17:06:00.295901+00:00",
+  "lastCheckedUTC": "2026-11-16T09:09:46.893271+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 825,
-    "announcementsRead": 319,
-    "opportunities": 61
+    "bulletin": "221",
+    "pagesVisited": 878,
+    "announcementsRead": 333,
+    "opportunities": 67
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
-    "issuesRead": 19,
-    "pagesVisited": 825,
-    "announcementsRead": 319,
-    "opportunities": 61,
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
+    "issuesRead": 20,
+    "pagesVisited": 878,
+    "announcementsRead": 333,
+    "opportunities": 67,
     "bulletins": [
       "202",
       "203",
@@ -38,7 +38,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -74,9 +75,9 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "originalPdfPagesRead": 825,
-    "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48195,
+    "originalPdfPagesRead": 878,
+    "archiveIndexPagesRead": 3,
+    "archiveTotalIssues": 48196,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392775&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+19%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392776&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+20%2F10%2F2026.pdf",
@@ -96,10 +97,71 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392790&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+10%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392791&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+11%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392792&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392793&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392793&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392794&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03169",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso oposición para la provisión en propiedad de diez plazas de auxiliar de enfermería, se ha dictado resolución de la Presidencia núm. 2.774/2026, de…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3169/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03168",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de oposición para la provisión en propiedad de dos plazas de auxiliar de administración general, reservadas a promoción interna, se ha dictado resolución de…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3168/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03167",
+      "province": "Almería",
+      "title": "CONVOCATORIA DE CONCURSO ESPECÍFICO PARA LA PROVISIÓN DEFINITIVA DE PUESTOS DE TRABAJO DE LA DIPUTACIÓN DE ALMERÍA 1. Objeto de la convocatoria. Es objeto de la presente convocatoria la celebración de un concurso específico…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3167/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03154",
+      "province": "Almería",
+      "title": "Documento firmado electrónicamente. Verificable en https://ov.dipalme.org/csv?id=3-5jU8htMnepviQiypqCrw== . BASES PARA PROVEER POR OPOSICION DIECISIETE PLAZAS DE AUXILIARES ADMINISTRATIVOS DE LA PLANTILLA DE PERSONAL…",
+      "entity": "AYUNTAMIENTO DE EL EJIDO",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3154/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03139",
+      "province": "Almería",
+      "title": "PROCESO DE SELECCIÓN EXPEDIENTE NÚM. 2657/2026. APROBACIÓN DE LAS BASES PARA PROVEER, MEDIANTE CONCURSO-OPOSICIÓN, POR EL SISTEMA DE PROMOCIÓN INTERNA, UNA PLAZA DE TÉCNICO/A DE CONTRATACIÓN Y PATRIMONIO ADSCRITO AL…",
+      "entity": "AYUNTAMIENTO DE VERA",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3139/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03138",
+      "province": "Almería",
+      "title": "PROCESO DE SELECCIÓN EXPEDIENTE NÚM. 3170/2026. APROBACIÓN DE LAS BASES PARA PROVEER, MEDIANTE CONCURSO-OPOSICIÓN, POR EL SISTEMA DE PROMOCIÓN INTERNA, UNA PLAZA DE TÉCNICO/A DE CONTABILIDAD Y PRESUPUESTOS ADSCRITO AL…",
+      "entity": "AYUNTAMIENTO DE VERA",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3138/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03166",
       "province": "Almería",
