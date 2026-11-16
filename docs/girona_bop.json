@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-13T12:54:03.661683+00:00",
+  "lastCheckedUTC": "2026-11-16T07:35:46.267784+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "219",
-    "pagesVisited": 21,
-    "announcementsRead": 1072,
-    "opportunities": 102,
+    "bulletin": "220",
+    "pagesVisited": 20,
+    "announcementsRead": 1050,
+    "opportunities": 99,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 1072,
-    "opportunities": 102,
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 1050,
+    "opportunities": 99,
     "bulletins": [
-      "199",
-      "200",
       "201",
       "202",
       "203",
@@ -40,11 +38,10 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
-      "2026-10-15",
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -63,10 +60,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -74,10 +71,82 @@
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14",
+      "2026-11-15"
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-220-09887",
+      "title": "Aprovació de les bases específiques i la convocatòria del procés selectiu per a la constitució d'una borsa de treball d'operaris de brigada, mitjançant concurs, en règim de personal laboral temporal",
+      "entity": "AJUNTAMENT DE VILAJUÏGA",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009887.pdf"
+    },
+    {
+      "id": "GI-2026-220-09782",
+      "title": "Aprovació de les bases i la convocatòria del procés de selecció per a la cobertura definitiva d'una plaça d'ajudant d'agutzil a l'Ajuntament de Ventalló",
+      "entity": "AJUNTAMENT DE VENTALLÓ",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009782.pdf"
+    },
+    {
+      "id": "GI-2026-220-09763",
+      "title": "Aprovació de la convocatòria i les bases reguladores del procés de selecció per a la cobertura definitiva d'una plaça de tècnic/a d'esports (grup A1), a adscriure al lloc de treball de tècnic/a superior d'Esports - Cap de l'Àrea d'Esports, en règim de funcionari/ària de carrera, per mitjà de concurs oposició de torn lliure  de l'Ajuntament de Palafrugell",
+      "entity": "AJUNTAMENT DE PALAFRUGELL",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009763.pdf"
+    },
+    {
+      "id": "GI-2026-220-09760",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la creació d'una borsa de treball de peons de la brigada municipal",
+      "entity": "AJUNTAMENT D'ANGLÈS",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009760.pdf"
+    },
+    {
+      "id": "GI-2026-220-09754",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la cobertura definitiva de cinc places d'auxiliar administratiu/va, mitjançant concurs oposició de lliure accés",
+      "entity": "AJUNTAMENT DE CALONGE I SANT ANTONI",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009754.pdf"
+    },
+    {
+      "id": "GI-2026-220-09739",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu, per urgència, d'un/a tècnic/a mitjà/na de joventut, en règim de funcionari/a interí/na fins a la cobertura definitiva de la vacant, adscrit/a al Departament de Participació Ciutadana i Joventut i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE BLANES",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009739.pdf"
+    },
+    {
+      "id": "GI-2026-220-09737",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per urgència, per a la cobertura d'una plaça de tècnic/a superior d'educació - cap de servei, adscrita al Departament d'Educació, en règim de funcionari/ària interí/ina i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE BLANES",
+      "date": "16/11/2026",
+      "bulletin": "220",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009737.pdf"
+    },
     {
       "id": "GI-2026-219-09824",
       "title": "Aprovació de la convocatòria i les bases del procés selectiu, mitjançant concurs oposició, per constituir una borsa de treball de personal laboral de la categoria auxiliar administratiu/va, grup C2, amb la finalitat de realitzar substitucions de places vacants a l'Oficina municipal de Turisme de l'Ajuntament de Peralada",
@@ -997,106 +1066,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/201/202620108760.pdf"
-    },
-    {
-      "id": "GI-2026-200-08830",
-      "title": "Aprovació de les bases reguladores i la convocatòria del procés de selecció d'un tècnic/a coordinador/a (A1), per portar a terme el programa d'implantació i gestió de l'oficina de projectes de la comarca del Ripollès i creació d'una borsa de treball",
-      "entity": "CONSELL COMARCAL DEL RIPOLLÈS",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/200/202620008830.pdf"
-    },
-    {
-      "id": "GI-2026-200-08731",
-      "title": "Aprovació de les bases reguladores del procés selectiu per a la cobertura definitiva d'una plaça d'encarregat/ada de la brigada del cementiri municipal de la plantilla del personal laboral reservada al torn de promoció interna, mitjançant el sistema selectiu de concurs oposició, grup C1",
-      "entity": "AJUNTAMENT DE ROSES",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/200/202620008731.pdf"
-    },
-    {
-      "id": "GI-2026-200-08730",
-      "title": "Aprovació de les bases reguladores del procés selectiu per a la cobertura definitiva d'una plaça d'encarregat/da de la brigada del patrimoni cultural de la plantilla del personal laboral reservada al torn de promoció interna, mitjançant el sistema selectiu de concurs oposició, grup C1",
-      "entity": "AJUNTAMENT DE ROSES",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/200/202620008730.pdf"
-    },
-    {
-      "id": "GI-2026-200-08729",
-      "title": "Aprovació de les bases reguladores del procés selectiu per a la cobertura definitiva d'una plaça d'encarregat/ada de la brigada de via pública i serveis urbans de la plantilla del personal laboral reservada al torn de promoció interna, mitjançant el sistema selectiu de concurs oposició, grup C1",
-      "entity": "AJUNTAMENT DE ROSES",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/200/202620008729.pdf"
-    },
-    {
-      "id": "GI-2026-200-08728",
-      "title": "Convocatòria i bases del procés selectiu per a la cobertura definitiva d'una plaça de tècnic superior econòmic",
-      "entity": "AJUNTAMENT DE L'ESCALA",
-      "date": "16/10/2026",
-      "bulletin": "200",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/200/202620008728.pdf"
-    },
-    {
-      "id": "GI-2026-199-08883",
-      "title": "Aprovació de les bases i la convocatòria per a la selecció d'una plaça de personal funcionari interí per executar el programa \"gestió de l'espai jove per al curs escolar 2026-2027\" adscrites al lloc de treball d'auxiliar espai jove (subgrup C2) i constitució de borsa de treball",
-      "entity": "AJUNTAMENT D'AMER",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/199/202619908883.pdf"
-    },
-    {
-      "id": "GI-2026-199-08789",
-      "title": "Aprovació de les bases i la convocatòria per a la provisió definitiva de dues places de guàrdies municipals i la creació d'una borsa",
-      "entity": "AJUNTAMENT DE RIBES DE FRESER",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/199/202619908789.pdf"
-    },
-    {
-      "id": "GI-2026-199-08693",
-      "title": "Convocatòria i bases del procés per a la provisió, promoció interna i pel sistema de concurs específic, del lloc de treball de gestor/a administratiu/va (grup C, subgrup C1), plaça vacant de l'escala d'administració general, subescala administrativa (OPO 2025)",
-      "entity": "CONSELL COMARCAL DE LA SELVA",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/199/202619908693.pdf"
-    },
-    {
-      "id": "GI-2026-199-08692",
-      "title": "Aprovació de la convocatòria i les bases del procés selectiu d'1 plaça de l'escala d'administració especial, subescala tècnica, classe superior, per ocupar el lloc de treball de tècnic/a de Territori i Sostenibilitat (grup A, subgrup A1) en règim de funcionari/ària de carrera",
-      "entity": "CONSELL COMARCAL DE LA SELVA",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/199/202619908692.pdf"
-    },
-    {
-      "id": "GI-2026-199-08670",
-      "title": "Aprovació de les bases reguladores del procés selectiu per a la creació d'una borsa de treball d'auxiliars administratius per cobrir les suplències temporals que es produeixin, mitjançant el sistema selectiu d'oposició lliure, grup C2",
-      "entity": "AJUNTAMENT DE ROSES",
-      "date": "15/10/2026",
-      "bulletin": "199",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/199/202619908670.pdf"
     }
   ]
 }
