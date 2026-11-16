@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-16T08:55:25.384702+00:00",
+  "lastCheckedUTC": "2026-11-16T10:48:52.997036+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "262",
+    "bulletin": "264",
     "pagesVisited": 2,
-    "announcementsRead": 738,
-    "opportunities": 71
+    "announcementsRead": 778,
+    "opportunities": 76
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-18",
     "rangeEnd": "2026-11-16",
-    "issuesRead": 22,
+    "issuesRead": 24,
     "pagesVisited": 2,
-    "announcementsRead": 738,
-    "opportunities": 71,
+    "announcementsRead": 778,
+    "opportunities": 76,
     "bulletins": [
       "241",
       "242",
@@ -41,7 +41,9 @@
       "259",
       "260",
       "261",
-      "262"
+      "262",
+      "263",
+      "264"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -65,7 +67,9 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-16"
     ],
     "issuePublicationDates": [
       "2026-10-19",
@@ -89,7 +93,9 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -97,24 +103,72 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-08",
-      "2026-11-14",
-      "2026-11-15",
-      "2026-11-16"
+      "2026-11-15"
     ],
     "sectionsRead": {
       "SECCIÓN PRIMERA": 1,
-      "SECCIÓN QUINTA": 91,
-      "SECCIÓN SEXTA": 583,
+      "SECCIÓN QUINTA": 101,
+      "SECCIÓN SEXTA": 612,
       "SECCIÓN SEPTIMA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
-      "SECCIÓN TERCERA": 36,
+      "SECCIÓN TERCERA": 37,
       "PARTE NO OFICIAL": 12,
       "SECCIÓN SEGUNDA": 4,
       "SECCIÓN CUARTA": 1
     },
-    "documentsVerified": 91
+    "documentsVerified": 98
   },
   "notices": [
+    {
+      "id": "ZA-000345180",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a actualización de las bases generales que rigen las convocatorias para la provisión de puestos de trabajo de naturaleza no singularizada y singularizada (COSITADMON, COEs y COG.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "16/11/2026",
+      "bulletin": "264",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475087924343"
+    },
+    {
+      "id": "ZA-000345179",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a actualización de las bases generales que rigen las convocatorias para la provisión de puestos de trabajo de naturaleza no singularizada y singularizada (COSITADMON, COEs y COG.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS. SERVICIO DE GESTIÓN DE RECURSOS HUMANOS",
+      "date": "16/11/2026",
+      "bulletin": "264",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475086654343"
+    },
+    {
+      "id": "ZA-000345178",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a actualización de las bases generales que rigen las convocatorias para la provisión de puestos de trabajo de naturaleza no singularizada y singularizada (COSITADMON, COEs y COG.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS. SERVICIO DE GESTIÓN DE RECURSOS HUMANOS",
+      "date": "16/11/2026",
+      "bulletin": "264",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475085914242"
+    },
+    {
+      "id": "ZA-000345177",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a bases específicas de las convocatorias de los procesos selectivos para el ingreso y provisión de plazas integradas en los grupos/subgrupos de clasificación profesional A2 y C1 de la plantilla de personal funcionario del Ayuntamiento de Zaragoza.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "16/11/2026",
+      "bulletin": "264",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475084904242"
+    },
+    {
+      "id": "ZA-000345176",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a bases específicas de las convocatorias de los procesos selectivos para el ingreso y provisión de plazas integradas en los grupos/subgrupos de clasificación profesional A2 y C1 de la plantilla de personal funcionario del Ayuntamiento de Zaragoza.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "16/11/2026",
+      "bulletin": "264",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475083644242"
+    },
     {
       "id": "ZA-000345156",
       "province": "Zaragoza",
