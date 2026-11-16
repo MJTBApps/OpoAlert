@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-11-13T16:52:29.316464+00:00",
+  "lastCheckedUTC": "2026-11-16T08:37:41.934933+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-11-13",
-    "pagesVisited": 70,
-    "announcementsRead": 1104,
-    "opportunities": 108,
+    "bulletin": "2026-11-16",
+    "pagesVisited": 65,
+    "announcementsRead": 1033,
+    "opportunities": 103,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-15",
-    "rangeEnd": "2026-11-13",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "publicationDates": [
-      "2026-10-15",
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -37,21 +35,21 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
-      "2026-11-08"
+      "2026-11-08",
+      "2026-11-14",
+      "2026-11-15"
     ],
     "bulletins": [
-      "2026-10-15",
-      "2026-10-16",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -71,14 +69,85 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
-    "issuesRead": 22,
-    "pagesVisited": 70,
-    "announcementsRead": 1104,
-    "opportunities": 108
+    "issuesRead": 21,
+    "pagesVisited": 65,
+    "announcementsRead": 1033,
+    "opportunities": 103
   },
   "notices": [
+    {
+      "id": "TA-2026-10803",
+      "title": "Plaça d'auxiliar d'equipaments (1). Modificació de les bases.",
+      "entity": "CONSELL COMARCAL BAIX EBRE",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366615"
+    },
+    {
+      "id": "TA-2026-10800",
+      "title": "Plaça d'administratiu/iva (1). Bases i convocatòria.",
+      "entity": "AJUNTAMENT COLLDEJOU",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366613"
+    },
+    {
+      "id": "TA-2026-10799",
+      "title": "Lloc de treball de tresorer/a (1). Bases i convocatòria. Comissió de serveis.",
+      "entity": "AJUNTAMENT VALLS",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366605"
+    },
+    {
+      "id": "TA-2026-10734",
+      "title": "Borsa de treball de secretari/ària. Bases i convocatòria.",
+      "entity": "AJUNTAMENT MONTBLANC",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366556"
+    },
+    {
+      "id": "TA-2026-10688",
+      "title": "Borsa de treball de tècnic/a d'administració especial, àmbit econòmic. Bases i convocatòria.",
+      "entity": "AJUNTAMENT REUS",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366487"
+    },
+    {
+      "id": "TA-2026-10687",
+      "title": "Borsa de treball de tècnic/a administració especial. Bases i convocatòria.",
+      "entity": "AJUNTAMENT REUS",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366488"
+    },
+    {
+      "id": "TA-2026-10686",
+      "title": "Borsa de treball de tècnic/a d'administració general. Bases i convocatòria.",
+      "entity": "AJUNTAMENT REUS",
+      "date": "16/11/2026",
+      "bulletin": "16/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366489"
+    },
     {
       "id": "TA-2026-10776",
       "title": "Plaça d'oficial/a d'oficis segona (5). Bases i convocatòria. Promoció interna.",
@@ -1038,126 +1107,6 @@
       "province": "Tarragona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365198"
-    },
-    {
-      "id": "TA-2026-09619",
-      "title": "Borsa de treball de professor/a de joieria artística per a les escoles d'art i disseny de la Diputació de Tarragona. Bases i convocatòria. Conv. 26-027.",
-      "entity": "DIPUTACIÓ TARRAGONA - PERSONES I TALENT",
-      "date": "16/10/2026",
-      "bulletin": "16/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365431"
-    },
-    {
-      "id": "TA-2026-09375",
-      "title": "Plaça de tècnic/a mitjà/ana d'administració general (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT SALOU",
-      "date": "16/10/2026",
-      "bulletin": "16/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365151"
-    },
-    {
-      "id": "TA-2026-09337",
-      "title": "Plaça de capatàs/assa, brigada de neteja viària (1). Bases i convocatòria. Promoció interna.",
-      "entity": "ENTITAT PÚBLICA EMPRESARIAL SERVEIS I OBRES - NOSTRESERVEIS",
-      "date": "16/10/2026",
-      "bulletin": "16/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365092"
-    },
-    {
-      "id": "TA-2026-09585",
-      "title": "Borsa de treball de tècnic/a superior en administració de sistemes informàtics en xarxa. Bases i convocatòria.",
-      "entity": "CONSELL COMARCAL BAIX EBRE",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365387"
-    },
-    {
-      "id": "TA-2026-09584",
-      "title": "Plaça d'agutzil (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT MONT-RAL",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365386"
-    },
-    {
-      "id": "TA-2026-09546",
-      "title": "Borsa de treball d'arquitecte/a. Bases i convocatòria.",
-      "entity": "CONSELL COMARCAL BAIX CAMP",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365347"
-    },
-    {
-      "id": "TA-2026-09545",
-      "title": "Borsa de treball de tècnic/a mitjà/ana d'informàtica. Bases i convocatòria.",
-      "entity": "CONSELL COMARCAL BAIX CAMP",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365349"
-    },
-    {
-      "id": "TA-2026-09544",
-      "title": "Borsa de treball d'enginyer/a industrial. Bases i convocatòria.",
-      "entity": "CONSELL COMARCAL BAIX CAMP",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365332"
-    },
-    {
-      "id": "TA-2026-09543",
-      "title": "Borsa de treball d'arquitecte/a tècnic/a. Bases i convocatòria.",
-      "entity": "CONSELL COMARCAL BAIX CAMP",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365351"
-    },
-    {
-      "id": "TA-2026-09435",
-      "title": "Borsa de treball de peons d'instal·lacions esportives. Bases i convocatòria.",
-      "entity": "AJUNTAMENT ROQUETES",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365213"
-    },
-    {
-      "id": "TA-2026-09434",
-      "title": "Borsa de treball de peons d'obres. Bases i convocatòria.",
-      "entity": "AJUNTAMENT ROQUETES",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365234"
-    },
-    {
-      "id": "TA-2026-09292",
-      "title": "Plaça d'operari/ària, brigada neteja viària (21). Bases i convocatòria.",
-      "entity": "ENTITAT PÚBLICA EMPRESARIAL SERVEIS I OBRES - NOSTRESERVEIS",
-      "date": "15/10/2026",
-      "bulletin": "15/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365081"
     }
   ]
 }
