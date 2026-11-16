@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-15T16:15:30.132649+00:00",
+  "lastCheckedUTC": "2026-11-16T07:09:51.526319+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "138",
-    "pagesVisited": 13,
-    "announcementsRead": 493,
-    "opportunities": 21,
+    "pagesVisited": 12,
+    "announcementsRead": 453,
+    "opportunities": 19,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
-    "issuesRead": 13,
-    "pagesVisited": 13,
-    "announcementsRead": 493,
-    "opportunities": 21,
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
+    "issuesRead": 12,
+    "pagesVisited": 12,
+    "announcementsRead": 453,
+    "opportunities": 19,
     "bulletins": [
-      "126",
       "127",
       "128",
       "129",
@@ -35,7 +34,6 @@
       "138"
     ],
     "publicationDates": [
-      "2026-10-17",
       "2026-10-20",
       "2026-10-22",
       "2026-10-24",
@@ -66,7 +64,8 @@
       "2026-11-09",
       "2026-11-11",
       "2026-11-13",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-16"
     ]
   },
   "notices": [
@@ -259,26 +258,6 @@
       "bulletin": "127",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/gZS3s1wb7t"
-    },
-    {
-      "id": "CS-476413929522665114",
-      "province": "Castellón",
-      "title": "AMPLIACIÓN DEL PLAZO DE PRESENTACIÓN DE SOLICITUDES Y DESIGNACIÓN DEL JURADO DEL CONCURSO DE MICRORRELATOS PARA PERSONAS MAYORES Y DE CUENTOS NAVIDEÑOS INTERGENERACIONALES. EJERCICIO 2026",
-      "entity": "Diputació Provincial de Castelló / Diputación Provincial de Castellón",
-      "date": "17/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/ZByoOOoUuY"
-    },
-    {
-      "id": "CS-263021485750074268",
-      "province": "Castellón",
-      "title": "BASES ESPECÍFICAS PROCESO SELECTIVO 1 PLAZA AGENTE POLICÍA LOCAL",
-      "entity": "AJUNTAMENT DE BORRIOL",
-      "date": "17/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/JQdkklaqiK"
     }
   ]
 }
