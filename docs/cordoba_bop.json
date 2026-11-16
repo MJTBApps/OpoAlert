@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-15T17:15:23.223281+00:00",
+  "lastCheckedUTC": "2026-11-16T09:24:51.055103+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 19,
-    "announcementsRead": 414,
-    "opportunities": 31
+    "bulletin": "221",
+    "pagesVisited": 20,
+    "announcementsRead": 441,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
-    "issuesRead": 19,
-    "pagesVisited": 19,
-    "announcementsRead": 414,
-    "opportunities": 31,
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 441,
+    "opportunities": 34,
     "bulletins": [
       "202",
       "203",
@@ -38,7 +38,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -93,10 +94,41 @@
       "https://bop.dipucordoba.es/visor-pdf/10-11-2026/BOP-S-2026-217.pdf",
       "https://bop.dipucordoba.es/visor-pdf/11-11-2026/BOP-S-2026-218.pdf",
       "https://bop.dipucordoba.es/visor-pdf/12-11-2026/BOP-S-2026-219.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-S-2026-220.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-S-2026-220.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/16-11-2026/BOP-S-2026-221.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3940",
+      "province": "Córdoba",
+      "title": "Resolución de 12 de noviembre 2026, de la Alcaldía, por la que se aprueba la rectificación de las Bases reguladoras para la constitución de una Bolsa de Empleo, para la cobertura de necesidades temporales en diferentes categorías de personal laboral para posteriores contrataciones temporales, mediante el sistema de concurso de méritos",
+      "entity": "Ayuntamiento de Añora",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipucordoba.es/visor-pdf/16-11-2026/BOP-A-2026-3940.pdf"
+    },
+    {
+      "id": "CO-2026-3917",
+      "province": "Córdoba",
+      "title": "Acuerdo de 10 de noviembre de 2026, de la Junta de Gobierno, por el que se aprueban las Bases de la Convocatoria para la provisión de 3 plazas de Monitor/a (1 reservada por turno de discapacidad), de personal funcionario, promoción interna, incluidas en la Oferta de Empleo Público de 2023",
+      "entity": "Diputación de Córdoba",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/16-11-2026/BOP-A-2026-3917.pdf"
+    },
+    {
+      "id": "CO-2026-3916",
+      "province": "Córdoba",
+      "title": "Acuerdo de 10 de noviembre de 2026, de la Junta de Gobierno, por el que se aprueban las Bases de la Convocatoria para la provisión de 3 plazas de Ingeniero/a Superior en Geodesia y Cartografía, por promoción interna, incluida en la Oferta de Empleo Público de 2023",
+      "entity": "Diputación de Córdoba",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/16-11-2026/BOP-A-2026-3916.pdf"
+    },
     {
       "id": "CO-2026-3859",
       "province": "Córdoba",
