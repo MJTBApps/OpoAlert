@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-16T07:19:49.842567+00:00",
+  "lastCheckedUTC": "2026-11-16T14:22:16.211122+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 61,
-    "opportunities": 61,
+    "announcementsRead": 64,
+    "opportunities": 64,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -32,7 +32,8 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -47,15 +48,74 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-16"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 61,
-    "opportunities": 61
+    "announcementsRead": 64,
+    "opportunities": 64
   },
   "notices": [
+    {
+      "id": "CIDO7-22499784",
+      "title": "Borsa de treball de places de Tècnic d'estratègies comercials",
+      "entity": "Ajuntament de la Seu d'Urgell",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499784"
+    },
+    {
+      "id": "CIDO7-22474582",
+      "title": "Borsa de treball de places d'Educador de la llar d'infants municipal",
+      "entity": "Ajuntament de Sarroca de Lleida",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22474582"
+    },
+    {
+      "id": "CIDO7-22437600",
+      "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
+      "entity": "Ajuntament de Vilagrassa",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22437600"
+    },
+    {
+      "id": "CIDO7-22267222",
+      "title": "1 plaça de Tècnic d'educació infantil",
+      "entity": "Ajuntament de Bellpuig",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22267222"
+    },
+    {
+      "id": "CIDO7-22015277",
+      "title": "Borsa de treball de places de Peó de serveis múltiples - polivalent",
+      "entity": "Ajuntament de Balaguer",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22015277"
+    },
+    {
+      "id": "CIDO7-19976046",
+      "title": "1 plaça de Netejador",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19976046"
+    },
     {
       "id": "CIDO7-22489584",
       "title": "1 plaça d'Auxiliar administratiu",
@@ -87,16 +147,6 @@
       "url": "https://cido.diba.cat/oposicions/22199087"
     },
     {
-      "id": "CIDO7-19976046",
-      "title": "1 plaça de Netejador",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19976046"
-    },
-    {
       "id": "CIDO7-22484091",
       "title": "Borsa de treball de places de Monitor de lleure per a la realització del Parc de Nadal Cucaliu (ampliació)",
       "entity": "Ajuntament de Tremp",
@@ -105,16 +155,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22484091"
-    },
-    {
-      "id": "CIDO7-22474582",
-      "title": "Borsa de treball de places d'Educador de la llar d'infants municipal",
-      "entity": "Ajuntament de Sarroca de Lleida",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22474582"
     },
     {
       "id": "CIDO7-22474210",
@@ -135,16 +175,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22474119"
-    },
-    {
-      "id": "CIDO7-22437600",
-      "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
-      "entity": "Ajuntament de Vilagrassa",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22437600"
     },
     {
       "id": "CIDO7-22459892",

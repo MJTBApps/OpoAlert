@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-16T07:19:49.842567+00:00",
+  "lastCheckedUTC": "2026-11-16T14:22:16.211122+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 99,
-    "opportunities": 99,
+    "announcementsRead": 103,
+    "opportunities": 103,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,9 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-14",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -46,16 +48,94 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-14",
-      "2026-11-15",
-      "2026-11-16"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 99,
-    "opportunities": 99
+    "announcementsRead": 103,
+    "opportunities": 103
   },
   "notices": [
+    {
+      "id": "CIDO8-22499602",
+      "title": "Borsa de treball de places de Tècnic d'administració especial, àmbit econòmic",
+      "entity": "Ajuntament de Reus",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499602"
+    },
+    {
+      "id": "CIDO8-22499564",
+      "title": "Borsa de treball de places de Tècnic d'administració especial - Tècnic assessor SIAD",
+      "entity": "Ajuntament de Reus",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499564"
+    },
+    {
+      "id": "CIDO8-22499502",
+      "title": "Borsa de treball de places de Tècnic d'administració general",
+      "entity": "Ajuntament de Reus",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499502"
+    },
+    {
+      "id": "CIDO8-22499446",
+      "title": "Borsa de treball de places de Secretari",
+      "entity": "Ajuntament de Montblanc",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499446"
+    },
+    {
+      "id": "CIDO8-22402371",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Colldejou",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22402371"
+    },
+    {
+      "id": "CIDO8-22329601",
+      "title": "6 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de l'Ametlla de Mar",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22329601"
+    },
+    {
+      "id": "CIDO8-22249978",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament dels Pallaresos",
+      "date": "16/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22249978"
+    },
+    {
+      "id": "CIDO8-17959571",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Valls - Patronat Municipal d'Esports",
+      "date": "14/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17959571"
+    },
     {
       "id": "CIDO8-22491747",
       "title": "1 plaça de Gerent",
@@ -377,16 +457,6 @@
       "url": "https://cido.diba.cat/oposicions/22410596"
     },
     {
-      "id": "CIDO8-22329601",
-      "title": "6 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de l'Ametlla de Mar",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22329601"
-    },
-    {
       "id": "CIDO8-21131872",
       "title": "Borsa de treball de places de Tècnic de programes a l'Àrea de Promoció Econòmica",
       "entity": "Ajuntament de Tortosa",
@@ -415,16 +485,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22396855"
-    },
-    {
-      "id": "CIDO8-22249978",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament dels Pallaresos",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22249978"
     },
     {
       "id": "CIDO8-22453499",
@@ -747,16 +807,6 @@
       "url": "https://cido.diba.cat/oposicions/22420343"
     },
     {
-      "id": "CIDO8-17959571",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Valls - Patronat Municipal d'Esports",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/17959571"
-    },
-    {
       "id": "CIDO8-22410522",
       "title": "Borsa de treball de places de Coordinador del Pla Educatiu d'Entorn",
       "entity": "Ajuntament de Tortosa",
@@ -815,16 +865,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16758438"
-    },
-    {
-      "id": "CIDO8-22402371",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament de Colldejou",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22402371"
     },
     {
       "id": "CIDO8-22397008",
