@@ -20,6 +20,7 @@ struct OpoAlertApp: App {
                     if !CaptureMode.isOn { Ads.shared.start(premium: PremiumStore.isActiveStored) }
                     await model.refresh()
                     await CaptureMode.apply(model)
+                    await UpdateCheck.shared.check()
                 }
         }
         .onChange(of: scenePhase) { phase in
@@ -32,6 +33,7 @@ struct OpoAlertApp: App {
                 model.startVisit()
                 if !CaptureMode.isOn { Ads.shared.didBecomeActive(premium: PremiumStore.isActiveStored) }
                 if !model.isRefreshing { Task { await model.refresh() } }
+                Task { await UpdateCheck.shared.check() }
             }
         }
     }

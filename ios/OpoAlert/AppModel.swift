@@ -21,7 +21,15 @@ final class AppModel: ObservableObject {
     static let pageSize = 40
 
     let store: Store
-    @Published private(set) var notices: [Notice] = []
+    @Published private(set) var notices: [Notice] = [] {
+        didSet { rebuildSearchIndex() }
+    }
+    /// Texto de búsqueda ya normalizado de cada anuncio: se prepara una vez por descarga,
+    /// no con cada letra que se escribe (con miles de anuncios el teclado iba lento).
+    private var searchIndex: [String: String] = [:]
+    /// Resultado de `NoticeDates.isRecent` por fecha (hay pocas fechas distintas).
+    private var recentByDate: [String: Bool] = [:]
+    private var recentDay = Calendar.current.startOfDay(for: Date())
     @Published private(set) var favorites: [Notice] = []
     @Published private(set) var rules: [AlertRule] = []
     @Published private(set) var selected: Set<String> = []
@@ -117,7 +125,7 @@ final class AppModel: ObservableObject {
             return filtered(notices.filter { alertHits[$0.id] != nil }, query: query, filter: filter)
         }
         let labels = selectedLabels
-        return filtered(notices.filter { labels.contains($0.province) && NoticeDates.isRecent($0.date) },
+        return filtered(notices.filter { labels.contains($0.province) && isRecent($0.date) },
                         query: query, filter: filter)
     }
 
@@ -127,12 +135,35 @@ final class AppModel: ObservableObject {
         return filtered(favorites.map { latest[$0.id] ?? $0 }, query: query, filter: filter)
     }
 
+    private func rebuildSearchIndex() {
+        var index: [String: String] = [:]
+        index.reserveCapacity(notices.count)
+        for notice in notices where index[notice.id] == nil {
+            index[notice.id] = Self.searchKey(notice)
+        }
+        searchIndex = index
+        recentByDate = [:]
+    }
+
+    private static func searchKey(_ notice: Notice) -> String {
+        [notice.title, notice.headline, notice.entity, notice.id].map(SearchText.normalize).joined(separator: "\n")
+    }
+
+    private func isRecent(_ date: String) -> Bool {
+        let today = Calendar.current.startOfDay(for: Date())
+        if today != recentDay { recentByDate = [:]; recentDay = today }
+        if let known = recentByDate[date] { return known }
+        let value = NoticeDates.isRecent(date)
+        recentByDate[date] = value
+        return value
+    }
+
     private func filtered(_ list: [Notice], query: String, filter: NoticeFilter) -> [Notice] {
         let normalized = SearchText.normalize(query.trimmingCharacters(in: .whitespacesAndNewlines))
         return list.filter { notice in
             filter.accepts(notice) && (filter != .fresh || freshIds.contains(notice.id)) &&
                 (filter != .alerts || alertHits[notice.id] != nil) &&
-                SearchText.matchesNormalized(normalized, notice.title, notice.headline, notice.entity, notice.id)
+                (normalized.isEmpty || (searchIndex[notice.id] ?? Self.searchKey(notice)).contains(normalized))
         }
     }
 

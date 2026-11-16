@@ -8,6 +8,9 @@ struct NoticeListView: View {
     let mode: Mode
     @EnvironmentObject private var model: AppModel
     @State private var query = ""
+    /// Lo que se va escribiendo; la búsqueda se hace al parar 0,25 s (con miles de anuncios,
+    /// buscar en cada letra hacía que el teclado fuera lento).
+    @State private var typed = ""
     @State private var filter = NoticeFilter.all
     @State private var limit = AppModel.pageSize
     @State private var showAbout = false
@@ -92,8 +95,12 @@ struct NoticeListView: View {
         .scrollContentBackground(.hidden)
         .navigationTitle(mode == .favorites ? "Favoritas" : "OpoAlert")
         // La barra de búsqueda se queda fija arriba al bajar por la lista.
-        .searchable(text: $query, placement: .navigationBarDrawer(displayMode: .always), prompt: "Buscar puesto, organismo o referencia")
+        .searchable(text: $typed, placement: .navigationBarDrawer(displayMode: .always), prompt: "Buscar puesto, organismo o referencia")
         .refreshable { await model.refresh() }
+        .task(id: typed) {
+            if !typed.isEmpty { try? await Task.sleep(nanoseconds: 250_000_000) }
+            if !Task.isCancelled && query != typed { query = typed }
+        }
         .onChange(of: query) { _ in limit = AppModel.pageSize }
         .onChange(of: filter) { option in
             // Las convocatorias de las alertas van con las alertas: son de Premium.
@@ -137,6 +144,7 @@ struct NoticeListView: View {
     private func applyRequestedFilter() {
         guard mode == .explore, let requested = model.requestedFilter else { return }
         model.requestedFilter = nil
+        typed = ""
         query = ""
         filter = requested
     }

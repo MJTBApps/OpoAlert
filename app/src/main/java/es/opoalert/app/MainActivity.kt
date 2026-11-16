@@ -106,8 +106,9 @@ class MainActivity : Activity() {
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                render()
-                scroll.scrollTo(0, 0)
+                // Se busca al dejar de escribir 0,25 s: con miles de anuncios el teclado iba lento.
+                searchInput.removeCallbacks(searchRunnable)
+                if (s.isNullOrEmpty()) searchRunnable.run() else searchInput.postDelayed(searchRunnable, 250)
             }
             override fun afterTextChanged(s: Editable?) {}
         })
@@ -485,6 +486,22 @@ class MainActivity : Activity() {
         }
     }
 
+    private val searchRunnable = Runnable {
+        render()
+        scroll.scrollTo(0, 0)
+    }
+
+    /// Texto de búsqueda normalizado por anuncio (se prepara una vez, no con cada letra).
+    private val searchKeys = HashMap<Notice, String>()
+
+    private fun searchKey(item: Notice): String {
+        if (searchKeys.size > 20000) searchKeys.clear()
+        return searchKeys.getOrPut(item) {
+        listOf(item.title, NoticeText.headline(item.title), item.entity, item.id)
+            .joinToString("\n") { SearchText.normalize(it) }
+        }
+    }
+
     private fun render(keepScroll: Boolean = false) {
         if (!keepScroll) displayedLimit = PAGE_SIZE
         val oldScroll = if (keepScroll) scroll.scrollY else 0
@@ -519,8 +536,7 @@ class MainActivity : Activity() {
             // Las alertas también vigilan boletines que no están en «Elegir boletines».
             val correctProvince = selectedTab == TAB_FAVORITES || selectedFilter == FILTER_ALERTS ||
                 item.province in selectedProvinces
-            val matches = query.isEmpty() || SearchText.matchesNormalized(query,
-                item.title, NoticeText.headline(item.title), item.entity, item.id)
+            val matches = query.isEmpty() || searchKey(item).contains(query)
             correctType && correctDate && correctProvince && matches
         }
         resultsText.text = if (selectedTab == TAB_FAVORITES)
