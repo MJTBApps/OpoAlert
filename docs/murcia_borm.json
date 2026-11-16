@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-15T16:14:39.990758+00:00",
+  "lastCheckedUTC": "2026-11-16T07:04:10.870037+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "264",
+    "bulletin": "265",
     "pagesVisited": 26,
-    "announcementsRead": 597,
+    "announcementsRead": 604,
     "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
-      "240",
       "241",
       "242",
       "243",
@@ -41,10 +40,10 @@
       "261",
       "262",
       "263",
-      "264"
+      "264",
+      "265"
     ],
     "publicationDates": [
-      "2026-10-17",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -69,7 +68,8 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -79,10 +79,30 @@
       "2026-11-15"
     ],
     "issuesRead": 26,
-    "announcementsRead": 597,
+    "announcementsRead": 604,
     "opportunities": 42
   },
   "notices": [
+    {
+      "id": "MU-2026-5663",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Excmo. Ayuntamiento de Murcia sobre la convocatoria para la provisión por el sistema de libre designación del puesto de Dirección de la Agencia Municipal Tributaria.",
+      "entity": "Murcia",
+      "date": "16/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846345/pdf"
+    },
+    {
+      "id": "MU-2026-5656",
+      "province": "Región de Murcia (BORM)",
+      "title": "Aprobación definitiva de la modificación parcial de la base 31 de las bases de ejecución del Presupuesto Municipal para el ejercicio 2026 y rectificación de errores materiales y aritméticos en la Memoria de Personal integrante del Anexo del Personal.",
+      "entity": "Los Alcázares",
+      "date": "16/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846338/pdf"
+    },
     {
       "id": "MU-2026-5623",
       "province": "Región de Murcia (BORM)",
@@ -482,26 +502,6 @@
       "bulletin": "241",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845768/pdf"
-    },
-    {
-      "id": "MU-2026-5062",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de modificación de las bases generales reguladoras de los procesos selectivos del Ayuntamiento de Yecla: plazo de presentación de solicitudes y plazo de presentación de documentación por aspirantes propuestos por el órgano de selección (expte. 1043613N).",
-      "entity": "Yecla",
-      "date": "17/10/2026",
-      "bulletin": "240",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845744/pdf"
-    },
-    {
-      "id": "MU-2026-5057",
-      "province": "Región de Murcia (BORM)",
-      "title": "Convocatoria y bases reguladoras del proceso de selección convocado por el Ayuntamiento de Cieza para la provisión en propiedad como funcionario/a de carrera, de seis plazas de Auxiliar Administrativo, por el sistema de concurso-oposición, turno libre.",
-      "entity": "Cieza",
-      "date": "17/10/2026",
-      "bulletin": "240",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845739/pdf"
     }
   ]
 }

@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-15T16:15:08.796649+00:00",
+  "lastCheckedUTC": "2026-11-16T07:05:06.046344+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "138",
-    "pagesVisited": 14,
-    "announcementsRead": 518,
-    "opportunities": 24
+    "bulletin": "139",
+    "pagesVisited": 15,
+    "announcementsRead": 551,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "125",
       "126",
@@ -29,7 +29,8 @@
       "135",
       "136",
       "137",
-      "138"
+      "138",
+      "139"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -45,10 +46,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-20",
       "2026-10-22",
@@ -65,11 +66,31 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 518,
-    "opportunities": 24
+    "issuesRead": 15,
+    "announcementsRead": 551,
+    "opportunities": 26
   },
   "notices": [
+    {
+      "id": "TF-20261116-022",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la aprobación de las Bases y la convocatoria para cubrir una (1) plaza de Técnico de Administración General, Escala de Administración General, Subescala Técnica, Grupo de Clasificación Profesional A, Subgrupo A1, del Ayuntamiento de Los Silos, incluida en la Oferta de Empleo Público del año 2026",
+      "entity": "AYUNTAMIENTO DE LOS SILOS",
+      "date": "16/11/2026",
+      "bulletin": "139",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/16-11-26/16-11-26.pdf"
+    },
+    {
+      "id": "TF-20261116-009",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a Decreto dictado por la Concejalía Delegada en materia de Recursos Humanos con fecha 20 de octubre de 2026, y corrección de error de 2 de noviembre de 2026, mediante el que se aprueban las Bases que regirán en la convocatoria para la cobertura del puesto de trabajo denominado “Jefe/a de Servicio” adscrito al Servicio Administrativo de Sostenibilidad Ambiental y Servicios Públicos, con código F509 en la Relación de Puestos de Trabajo, por el procedimiento de libre designación",
+      "entity": "AYUNTAMIENTO DE SANTA CRUZ DE TENERIFE",
+      "date": "16/11/2026",
+      "bulletin": "139",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/16-11-26/16-11-26.pdf"
+    },
     {
       "id": "TF-20261113-033",
       "province": "Santa Cruz de Tenerife (BOP)",

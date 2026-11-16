@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-15T16:15:15.225921+00:00",
+  "lastCheckedUTC": "2026-11-16T07:06:29.032665+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 19,
-    "announcementsRead": 280,
-    "opportunities": 6
+    "bulletin": "221",
+    "pagesVisited": 20,
+    "announcementsRead": 296,
+    "opportunities": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "202",
       "203",
@@ -34,7 +34,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -55,10 +56,10 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -70,9 +71,9 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 280,
-    "opportunities": 6,
+    "issuesRead": 20,
+    "announcementsRead": 296,
+    "opportunities": 7,
     "summaryPDFs": [
       "https://www.lasalina.es/documentacion/bop/2026/20261019/BOP-SA-20261019-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261020/BOP-SA-20261020-000.pdf",
@@ -92,7 +93,8 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261110/BOP-SA-20261110-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261111/BOP-SA-20261111-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261112/BOP-SA-20261112-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261113/BOP-SA-20261113-000.pdf"
+      "https://www.lasalina.es/documentacion/bop/2026/20261113/BOP-SA-20261113-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261116/BOP-SA-20261116-000.pdf"
     ],
     "CVECounts": [
       18,
@@ -113,11 +115,22 @@
       28,
       27,
       12,
-      12
+      12,
+      16
     ],
-    "originalPDFsChecked": 280
+    "originalPDFsChecked": 296
   },
   "notices": [
+    {
+      "id": "SA-20261116-001",
+      "province": "Salamanca",
+      "title": "Salamanca Departamento de Recursos Humanos Anuncio. Convocatoria y bases para la cobertura en propiedad, mediante oposición libre, de una plaza de auxiliar técnico de imagen y sonido",
+      "entity": "Ayuntamientos de Salamanca",
+      "date": "16/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://www.lasalina.es/documentacion/bop/2026/20261116/BOP-SA-20261116-001.pdf"
+    },
     {
       "id": "SA-20261113-005",
       "province": "Salamanca",

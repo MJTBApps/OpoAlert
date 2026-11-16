@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lugo",
   "source": "https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop",
-  "lastCheckedUTC": "2026-11-15T16:13:39.182156+00:00",
+  "lastCheckedUTC": "2026-11-16T07:04:02.564981+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "262",
+    "bulletin": "263",
     "pagesVisited": 25,
-    "announcementsRead": 332,
-    "opportunities": 32
+    "announcementsRead": 316,
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
-      "238",
       "239",
       "240",
       "241",
@@ -40,10 +39,10 @@
       "259",
       "260",
       "261",
-      "262"
+      "262",
+      "263"
     ],
     "publicationDates": [
-      "2026-10-17",
       "2026-10-19",
       "2026-10-20",
       "2026-10-21",
@@ -67,7 +66,8 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
       "2026-10-18",
@@ -77,10 +77,30 @@
       "2026-11-15"
     ],
     "issuesRead": 25,
-    "announcementsRead": 332,
-    "opportunities": 32
+    "announcementsRead": 316,
+    "opportunities": 29
   },
   "notices": [
+    {
+      "id": "LU-2026-3106",
+      "province": "Lugo",
+      "title": "BASES XERAIS DA CONVOCATORIA PARA A CONSTITUCIÓN DUNHA BOLSA DE EMPREGO DE TRABALLADORES/AS SOCIAIS",
+      "entity": "A PONTENOVA",
+      "date": "16/11/2026",
+      "bulletin": "263",
+      "type": "Bolsa de trabajo",
+      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/16-11-2026.pdf"
+    },
+    {
+      "id": "LU-2026-3103",
+      "province": "Lugo",
+      "title": "RECTIFICACIÓN DA LISTAXE DEFINITIVA E TRIBUNAL DO PROCESO SELECTIVO PARA O ACCESO A 17 PRAZAS DE BOMBEIRO/A CONDUTOR/A, QUENDA LIBRE",
+      "entity": "LUGO",
+      "date": "16/11/2026",
+      "bulletin": "263",
+      "type": "Plaza / oposición",
+      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/16-11-2026.pdf"
+    },
     {
       "id": "LU-2026-3085",
       "province": "Lugo",
@@ -350,56 +370,6 @@
       "bulletin": "239",
       "type": "Plaza / oposición",
       "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/19-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2811",
-      "province": "Lugo",
-      "title": "DECLARACIÓN DE URXENCIA DO PROCESO SELECTIVO DE POLICÍA LOCAL, OPE 2026",
-      "entity": "SARRIA",
-      "date": "17/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/17-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2810",
-      "province": "Lugo",
-      "title": "BASES DO PROCESO SELECTIVO PARA A PROVISIÓN DE 1 PRAZA DE POLICÍA LOCAL, OPE 2026",
-      "entity": "SARRIA",
-      "date": "17/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/17-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2808",
-      "province": "Lugo",
-      "title": "CONVOCATORIA PARA A ADXUDICACIÓN DE SUBVENCIÓNS PARA O DESPRAZAMENTO EN TAXI ADAPTADO DE PERSOAS CON DISCAPACIDADE FÍSICA E MOBILIDADE REDUCIDA RECOÑECIDA",
-      "entity": "LUGO",
-      "date": "17/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/17-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2777",
-      "province": "Lugo",
-      "title": "BASES PARA A CREACIÓN DUNHA BOLSA DE TRABALLO DE MONITORES DEPORTIVOS E MONITORES EPORTIVOS-SOCORRISTAS",
-      "entity": "CHANTADA",
-      "date": "17/10/2026",
-      "bulletin": "238",
-      "type": "Bolsa de trabajo",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/17-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2775",
-      "province": "Lugo",
-      "title": "CONVOCATORIA E BASES PARA A SELECCIÓN DE 1 AUXILIAR ADMINISTRATIVO/A COMO PERSOAL LABORAL TEMPORAL",
-      "entity": "BÓVEDA",
-      "date": "17/10/2026",
-      "bulletin": "238",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/17-10-2026.pdf"
     }
   ]
 }

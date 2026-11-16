@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-15T16:13:28.131967+00:00",
+  "lastCheckedUTC": "2026-11-16T07:03:03.770262+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
-    "pagesVisited": 21,
-    "announcementsRead": 368,
-    "opportunities": 46
+    "bulletin": "229",
+    "pagesVisited": 22,
+    "announcementsRead": 389,
+    "opportunities": 48
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-17",
-    "rangeEnd": "2026-11-15",
+    "rangeStart": "2026-10-18",
+    "rangeEnd": "2026-11-16",
     "bulletins": [
       "208",
       "209",
@@ -36,7 +36,8 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-11",
       "2026-11-11",
       "2026-11-12",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-17",
       "2026-10-18",
       "2026-10-24",
       "2026-10-25",
@@ -74,11 +75,31 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 368,
-    "opportunities": 46
+    "issuesRead": 22,
+    "announcementsRead": 389,
+    "opportunities": 48
   },
   "notices": [
+    {
+      "id": "IC-2026-3969",
+      "province": "Canarias (BOC)",
+      "title": "ANUNCIO de 4 de noviembre de 2026, relativo a la convocatoria de creación de bolsa de empleo de Técnicos/as Jurídicos/as para la empresa pública Gestión de Proyectos y Estudios Turísticos en Canarias, S.A.U. MP (GESPROTUR) para posibles y futuras contrataciones al efecto.",
+      "entity": "Gestión de Proyectos y Estudios Turísticos en Canarias, S.A.U.",
+      "date": "16/11/2026",
+      "bulletin": "229",
+      "type": "Bolsa de trabajo",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-229-3969.pdf"
+    },
+    {
+      "id": "IC-2026-3961",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 9 de noviembre de 2026, por la que se modifica puntualmente la Resolución de 21 de agosto de 2026, que hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo de Gestión, Gestión General (Grupo A, Subgrupo A2), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 29 de noviembre de 2023, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "16/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-229-3961.pdf"
+    },
     {
       "id": "IC-2026-3945",
       "province": "Canarias (BOC)",
