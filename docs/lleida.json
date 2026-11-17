@@ -2,26 +2,25 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-16T16:57:11.514823+00:00",
+  "lastCheckedUTC": "2026-11-17T06:43:49.798469+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 64,
-    "opportunities": 64,
+    "announcementsRead": 62,
+    "opportunities": 62,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "publicationDates": [
       "2026-10-20",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
-      "2026-10-27",
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
@@ -36,11 +35,11 @@
       "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-19",
       "2026-10-21",
       "2026-10-24",
       "2026-10-25",
+      "2026-10-27",
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-17"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 64,
-    "opportunities": 64
+    "announcementsRead": 62,
+    "opportunities": 62
   },
   "notices": [
     {
@@ -505,26 +505,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22125349"
-    },
-    {
-      "id": "CIDO7-22353558",
-      "title": "1 plaça de Secretari de classe tercera",
-      "entity": "Ajuntament d'Almenar",
-      "date": "27/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22353558"
-    },
-    {
-      "id": "CIDO7-22345843",
-      "title": "1 plaça d'Encarregat del servei aigua",
-      "entity": "Ajuntament de Torrefarrera",
-      "date": "27/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22345843"
     },
     {
       "id": "CIDO7-22382092",
