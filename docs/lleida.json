@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-17T12:39:29.893132+00:00",
+  "lastCheckedUTC": "2026-11-17T16:40:12.507366+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -32,7 +32,8 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
       "2026-10-19",
@@ -47,8 +48,7 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-17"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
@@ -56,6 +56,26 @@
     "opportunities": 62
   },
   "notices": [
+    {
+      "id": "CIDO7-22437600",
+      "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
+      "entity": "Ajuntament de Vilagrassa",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22437600"
+    },
+    {
+      "id": "CIDO7-21397114",
+      "title": "1 plaça d'Agutzil - vigilant municipal",
+      "entity": "Ajuntament d'Alfarràs",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21397114"
+    },
     {
       "id": "CIDO7-22499784",
       "title": "Borsa de treball de places de Tècnic d'estratègies comercials",
@@ -75,16 +95,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22474582"
-    },
-    {
-      "id": "CIDO7-22437600",
-      "title": "1 plaça de Tècnica d'Educació Infantil (TEI)",
-      "entity": "Ajuntament de Vilagrassa",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22437600"
     },
     {
       "id": "CIDO7-22267222",
@@ -235,16 +245,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22459821"
-    },
-    {
-      "id": "CIDO7-21397114",
-      "title": "1 plaça d'Agutzil - vigilant municipal",
-      "entity": "Ajuntament d'Alfarràs",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21397114"
     },
     {
       "id": "CIDO7-22447035",

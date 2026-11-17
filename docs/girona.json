@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-17T12:39:29.893132+00:00",
+  "lastCheckedUTC": "2026-11-17T16:40:12.507366+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -75,6 +75,16 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22499838"
+    },
+    {
+      "id": "CIDO6-22468431",
+      "title": "1 plaça de Tècnic d'urbanisme i obres",
+      "entity": "Ajuntament de Sant Martí de Llémena",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22468431"
     },
     {
       "id": "CIDO6-22450110",
@@ -335,16 +345,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22445926"
-    },
-    {
-      "id": "CIDO6-22468431",
-      "title": "1 plaça de Tècnic d'urbanisme i obres",
-      "entity": "Ajuntament de Sant Martí de Llémena",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22468431"
     },
     {
       "id": "CIDO6-22466771",
