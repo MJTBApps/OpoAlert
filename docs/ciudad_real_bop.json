@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-16T17:59:47.813719+00:00",
+  "lastCheckedUTC": "2026-11-17T06:26:17.023083+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
-    "pagesVisited": 21,
-    "announcementsRead": 393,
-    "opportunities": 29
+    "bulletin": "222",
+    "pagesVisited": 22,
+    "announcementsRead": 411,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "201",
       "202",
@@ -36,7 +36,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -72,11 +73,31 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 393,
-    "opportunities": 29
+    "issuesRead": 22,
+    "announcementsRead": 411,
+    "opportunities": 31
   },
   "notices": [
+    {
+      "id": "CR-2026-3741",
+      "province": "Ciudad Real",
+      "title": "Corrección en anuncio publicado en el BOP n.º 217, relativo a las bases que han de regir la convocatoria para cubrir en propiedad una plaza de Ayudante de Instalaciones Deportivas.",
+      "entity": "CIUDAD REAL - PATRONATO MUNICIPAL DE DEPORTES",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890884"
+    },
+    {
+      "id": "CR-2026-3739",
+      "province": "Ciudad Real",
+      "title": "Convocatoria para la provisión mediante libre designación del puesto de trabajo n.º 3.25.060 (ID 998) de Jefatura de Departamento de Impulso Económico y Territorial y Reto Demográfico.",
+      "entity": "SERVICIO DE PERSONAL",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890882"
+    },
     {
       "id": "CR-2026-3732",
       "province": "Ciudad Real",

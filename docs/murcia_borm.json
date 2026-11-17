@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-16T18:05:15.838388+00:00",
+  "lastCheckedUTC": "2026-11-17T06:30:32.872188+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "265",
-    "pagesVisited": 26,
-    "announcementsRead": 604,
-    "opportunities": 42
+    "bulletin": "266",
+    "pagesVisited": 27,
+    "announcementsRead": 630,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "241",
       "242",
@@ -41,7 +41,8 @@
       "262",
       "263",
       "264",
-      "265"
+      "265",
+      "266"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -69,20 +70,100 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
       "2026-11-15"
     ],
-    "issuesRead": 26,
-    "announcementsRead": 604,
-    "opportunities": 42
+    "issuesRead": 27,
+    "announcementsRead": 630,
+    "opportunities": 50
   },
   "notices": [
+    {
+      "id": "MU-2026-5675",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1453/2026 de 5 de noviembre, referente a la convocatoria para proveer una plaza de Investigador/a Licenciado/a de la misma.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846357/pdf"
+    },
+    {
+      "id": "MU-2026-5674",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1451/2026 de 5 de noviembre, referente a la convocatoria para proveer una plaza de Investigador/a Licenciado/a de la misma.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846356/pdf"
+    },
+    {
+      "id": "MU-2026-5673",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Rector de la Universidad de Murcia (R-1492/2026) de 12 de noviembre de 2026, por la que se convoca concurso público de méritos para la constitución de bolsas de empleo para la contratación de profesorado sustituto.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.borm.es/services/anuncio/846355/pdf"
+    },
+    {
+      "id": "MU-2026-5672",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1459/2026) de 6 de noviembre, de la Universidad de Murcia, por la que se convocan concursos de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846354/pdf"
+    },
+    {
+      "id": "MU-2026-5671",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución (R-1457/2026) de 6 de noviembre, de la Universidad de Murcia por la que se convocan concursos de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846353/pdf"
+    },
+    {
+      "id": "MU-2026-5670",
+      "province": "Región de Murcia (BORM)",
+      "title": "Orden de 5 de noviembre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna, 25 plazas del Cuerpo de Gestión Administrativa de la Administración Pública Regional (código BGX00P24-1).",
+      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846352/pdf"
+    },
+    {
+      "id": "MU-2026-5669",
+      "province": "Región de Murcia (BORM)",
+      "title": "Orden de 5 de noviembre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir, mediante promoción interna, 2 plazas del Cuerpo Técnico, Escala de Diplomados de Salud Pública, opción Inspección de Enfermería de la Administración Pública Regional (código BFS06P24-1).",
+      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846351/pdf"
+    },
+    {
+      "id": "MU-2026-5668",
+      "province": "Región de Murcia (BORM)",
+      "title": "Orden de 5 de noviembre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convocan pruebas selectivas para cubrir 5 plazas del Cuerpo Superior de Administradores Tributarios de la Administración Pública Regional: 1 plaza de promoción interna (código ATT00P24-9) y 4 plazas de promoción interna sobre el mismo puesto de trabajo (código ATT00P25-9).",
+      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
+      "date": "17/11/2026",
+      "bulletin": "266",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846350/pdf"
+    },
     {
       "id": "MU-2026-5663",
       "province": "Región de Murcia (BORM)",

@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-16T17:59:13.713834+00:00",
+  "lastCheckedUTC": "2026-11-17T06:25:33.940982+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
-    "pagesVisited": 21,
-    "announcementsRead": 734,
-    "opportunities": 56
+    "bulletin": "220",
+    "pagesVisited": 22,
+    "announcementsRead": 769,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "199",
       "200",
@@ -36,7 +36,8 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -72,11 +73,41 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 734,
-    "opportunities": 56
+    "issuesRead": 22,
+    "announcementsRead": 769,
+    "opportunities": 59
   },
   "notices": [
+    {
+      "id": "AC-2026-7421",
+      "province": "A Coruña",
+      "title": "Convocatoria bolsa de emprego técnico/a de igualdade de xénero",
+      "entity": "Mañón",
+      "date": "17/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007421.pdf"
+    },
+    {
+      "id": "AC-2026-7420",
+      "province": "A Coruña",
+      "title": "Convocatoria bolsa de emprego traballador/a social",
+      "entity": "Mañón",
+      "date": "17/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007420.pdf"
+    },
+    {
+      "id": "AC-2026-7396",
+      "province": "A Coruña",
+      "title": "Bases específicas da convocatoria dunha praza de enxeñeiro/a técnico/a agrícola (A2) correspondente á Oferta de Emprego Público 2025 da Deputación Provincial da Coruña",
+      "entity": "Servizo de Recursos Humanos. Sección de Planificación de Recursos Humanos",
+      "date": "17/11/2026",
+      "bulletin": "220",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007396.pdf"
+    },
     {
       "id": "AC-2026-7378",
       "province": "A Coruña",

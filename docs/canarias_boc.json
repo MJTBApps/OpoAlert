@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-16T18:03:08.528785+00:00",
+  "lastCheckedUTC": "2026-11-17T06:28:39.898375+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
-    "pagesVisited": 22,
-    "announcementsRead": 389,
-    "opportunities": 48
+    "bulletin": "230",
+    "pagesVisited": 23,
+    "announcementsRead": 412,
+    "opportunities": 49
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "208",
       "209",
@@ -37,7 +37,8 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -61,10 +62,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -75,11 +76,21 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 389,
-    "opportunities": 48
+    "issuesRead": 23,
+    "announcementsRead": 412,
+    "opportunities": 49
   },
   "notices": [
+    {
+      "id": "IC-2026-3997",
+      "province": "Canarias (BOC)",
+      "title": "ANUNCIO de 3 de noviembre de 2026, relativo a las bases que han de regir la convocatoria para la provisión, mediante el sistema de oposición libre, de dos plazas de Auxiliar Administrativo/a, Subgrupo C2, de este Ayuntamiento.",
+      "entity": "Ayuntamiento de Teror (Gran Canaria)",
+      "date": "17/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-230-3997.pdf"
+    },
     {
       "id": "IC-2026-3969",
       "province": "Canarias (BOC)",

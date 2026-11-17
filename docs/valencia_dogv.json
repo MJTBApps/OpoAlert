@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-16T18:01:56.259481+00:00",
+  "lastCheckedUTC": "2026-11-17T06:27:16.472600+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "10494",
-    "pagesVisited": 33,
-    "announcementsRead": 1098,
-    "opportunities": 257
+    "bulletin": "10495",
+    "pagesVisited": 34,
+    "announcementsRead": 1154,
+    "opportunities": 278
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "10473",
       "10473B",
@@ -48,7 +48,8 @@
       "10491",
       "10492",
       "10493",
-      "10494"
+      "10494",
+      "10495"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -83,10 +84,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-31",
       "2026-11-01",
@@ -95,11 +96,221 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 33,
-    "announcementsRead": 1098,
-    "opportunities": 257
+    "issuesRead": 34,
+    "announcementsRead": 1154,
+    "opportunities": 278
   },
   "notices": [
+    {
+      "id": "DV-2026-36002",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca un concurso ordinario, 82/2026, con fases de resultas, para la provisión de puestos de trabajo de naturaleza funcionarial, del cuerpo superior facultativo A1-04, escala A1-04-05 ingeniería de minas.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_36002_es.pdf"
+    },
+    {
+      "id": "DV-2026-35984",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 13 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en la Agencia Valenciana de Seguridad y Respuesta a las Emergencias, convocatoria número 172/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35984_es.pdf"
+    },
+    {
+      "id": "DV-2026-35961",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en la Vicepresidencia Segunda y Conselleria de Presidencia, convocatoria número 161/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35961_es.pdf"
+    },
+    {
+      "id": "DV-2026-35852",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en la Conselleria de Sanidad, convocatoria número 164/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35852_es.pdf"
+    },
+    {
+      "id": "DV-2026-35851",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de varios puestos de trabajo vacantes de naturaleza funcionarial en el Institut Valencià de la Joventut, convocatoria número 163/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35851_es.pdf"
+    },
+    {
+      "id": "DV-2026-35850",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en la Autoridad de Transporte Metropolitano de València, convocatoria número 162/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35850_es.pdf"
+    },
+    {
+      "id": "DV-2026-35849",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en la Conselleria de Educación, Cultura y Universidades, convocatoria número 160/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35849_es.pdf"
+    },
+    {
+      "id": "DV-2026-35848",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de varios puestos de trabajo vacantes de naturaleza funcionarial en la Agencia Valenciana de Seguridad Ferroviaria, convocatoria número 159/2026.",
+      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35848_es.pdf"
+    },
+    {
+      "id": "DV-2026-35847",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, de la Dirección General de Justicia y Autogobierno, por la que se hace pública la relación de plazas que se ofrecen a las personas aprobadas, correspondientes al ámbito de la Comunitat Valenciana, en las pruebas selectivas para ingreso en el cuerpo de tramitación procesal y administrativa de la Administración de justicia, turno libre, convocadas por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "Conselleria de Servicios Sociales y Justicia",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35847_es.pdf"
+    },
+    {
+      "id": "DV-2026-35846",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, de la Dirección General de Justicia y Autogobierno, por la que se hace pública la relación de plazas que se ofrecen a las personas aprobadas correspondientes al ámbito de la Comunitat Valenciana, en las pruebas selectivas para ingreso en el cuerpo de gestión procesal y administrativa de la Administración de justicia, turno libre, convocada por la Orden PJC/64/2024, de 25 de enero.",
+      "entity": "Conselleria de Servicios Sociales y Justicia",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35846_es.pdf"
+    },
+    {
+      "id": "DV-2026-35844",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, de la Dirección General de Justicia y Autogobierno, por la que se hace pública la relación de plazas que se ofrecen a las personas aprobadas correspondientes al ámbito de la Comunitat Valenciana, en las pruebas selectivas para ingreso en el cuerpo de auxilio judicial de la Administración de justicia, turno libre, convocada por la Orden PJC/64/2024, de 25 de enero.",
+      "entity": "Conselleria de Servicios Sociales y Justicia",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35844_es.pdf"
+    },
+    {
+      "id": "DV-2026-35482",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 10 de noviembre de 2026, de la Presidencia, por la que se nombra personal funcionario de carrera del cuerpo de letrados y letradas a las personas aspirantes que han superado el proceso selectivo, y se declara desierta una de las plazas convocadas.",
+      "entity": "Consell Jurídic Consultiu de la Comunitat Valenciana",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35482_es.pdf"
+    },
+    {
+      "id": "DV-2026-35447",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 10 de noviembre de 2026, del Rectorado, por la que se convoca la creación de la bolsa de trabajo temporal del grupo A, subgrupo A2, de la escala técnica media de planificación, análisis y evaluación, subescala de calidad, sector de administración especial (A2_26115BOL).",
+      "entity": "Universitat de València",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Bolsa de trabajo",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35447_es.pdf"
+    },
+    {
+      "id": "DV-2026-35409",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, por la que se publica la relación definitiva con las personas aspirantes que han superado el proceso selectivo para el acceso a la escala auxiliar administrativa, referencia 25/93846.",
+      "entity": "Universidad Miguel Hernández de Elche",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35409_es.pdf"
+    },
+    {
+      "id": "DV-2026-35402",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, por la que se publica la relación definitiva con las personas aspirantes que han superado el proceso selectivo para el acceso a la escala auxiliar administrativa, referencia 25/93839.",
+      "entity": "Universidad Miguel Hernández de Elche",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35402_es.pdf"
+    },
+    {
+      "id": "DV-2026-35385",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación temporal de personal de investigación de la categoría de personal investigador en formación para colaborar con el proyecto «Asentamiento transatlántico latinoamericano y español». Referencia: I-PI 89-26.",
+      "entity": "Universidad de Alicante",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35385_es.pdf"
+    },
+    {
+      "id": "DV-2026-35381",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación temporal de personal de investigación de la categoría de personal investigador en formación para colaborar con los proyectos «Resiliencia, productividad y riesgo para un crecimiento sostenible e inclusivo» y «From School to Old Age: Understanding Inequality Before, During, and After Working Life». Referencia: I-PI 84-26.",
+      "entity": "Universidad de Alicante",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35381_es.pdf"
+    },
+    {
+      "id": "DV-2026-35210",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de la aprobación de las bases específicas de la convocatoria para la provisión de varias plazas en propiedad de personal funcionario, pertenecientes a las ofertas públicas de empleo de 2023 y 2025.",
+      "entity": "Ayuntamiento de Santa Pola",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35210_es.pdf"
+    },
+    {
+      "id": "DV-2026-33806",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 27 de octubre de 2026, del Rectorado, por la que se convoca la constitución de una bolsa de trabajo de especialista técnico de laboratorio (C1) en el Área de Producción Vegetal, Invernaderos (código 2026/P/FI/ACON/5).",
+      "entity": "Universitat Politècnica de València",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Bolsa de trabajo",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_33806_es.pdf"
+    },
+    {
+      "id": "DV-2026-32321",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de la convocatoria y las bases específicas para cubrir como funcionario o funcionaria de carrera una plaza de ingeniero o ingeniera en telecomunicaciones y una plaza de profesor o profesora superiores de la banda de música, especialidad trompeta.",
+      "entity": "Ayuntamiento de Alicante",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_32321_es.pdf"
+    },
+    {
+      "id": "DV-2026-30441",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de la convocatoria del proceso selectivo para cubrir una plaza de comisario o comisaria de la Policía Local, mediante turno de promoción interna (OPE 2024).",
+      "entity": "Ayuntamiento de Petrer",
+      "date": "17/11/2026",
+      "bulletin": "10495",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/17/pdf/2026_30441_es.pdf"
+    },
     {
       "id": "DV-2026-35761",
       "province": "Comunidad Valenciana (DOGV)",

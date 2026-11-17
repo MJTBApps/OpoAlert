@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-16T18:01:24.566656+00:00",
+  "lastCheckedUTC": "2026-11-17T06:27:42.598199+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
-    "pagesVisited": 20,
-    "announcementsRead": 764,
-    "opportunities": 120
+    "bulletin": "222",
+    "pagesVisited": 21,
+    "announcementsRead": 802,
+    "opportunities": 128
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "202",
       "203",
@@ -35,7 +35,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -57,10 +58,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -71,11 +72,91 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 764,
-    "opportunities": 120
+    "issuesRead": 21,
+    "announcementsRead": 802,
+    "opportunities": 128
   },
   "notices": [
+    {
+      "id": "AO-2026-007962574",
+      "province": "Aragón (BOA)",
+      "title": "ACUERDO del 22 de octubre de 2026, del Consejo Comarcal de la Comarca del Bajo Aragón, por la que se aprueban las bases y convocatoria del proceso selectivo para la cobertura definitiva de dos plazas Auxiliares SAD (OEP 2024) y creación de una bolsa de trabajo.",
+      "entity": "COMARCA DEL BAJO ARAGÓN",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475166551010"
+    },
+    {
+      "id": "AO-2026-007962573",
+      "province": "Aragón (BOA)",
+      "title": "ACUERDO de 22 de octubre de 2026, del Consejo Comarcal de la Comarca del Bajo Aragón, por la que se aprueban las bases y convocatoria del proceso selectivo para la cobertura definitiva de una plaza de Educador/a Social (OEP 2024) y creación de una bolsa de trabajo.",
+      "entity": "COMARCA DEL BAJO ARAGÓN",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475164530909"
+    },
+    {
+      "id": "AO-2026-007962567",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 5 de noviembre de 2026, del Director General de la Función Pública, por la que se amplía la relación de personas que han superado la fase de oposición del proceso selectivo para ingreso en el Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala de Auxiliares Facultativos, Auxiliares de Educación Especial. (Código de convocatoria 240091).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475152410707"
+    },
+    {
+      "id": "AO-2026-007962566",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 19 de octubre de 2026, del Director General de la Función Pública, por la que se declara finalizado el proceso selectivo para ingreso, por promoción interna, en el Cuerpo de Funcionarios Superiores de la Administración de la Comunidad Autónoma de Aragón, Escala Facultativa Superior, Ingenieros de Minas. (Código de convocatoria 260040).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475150390606"
+    },
+    {
+      "id": "AO-2026-007962565",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 19 de octubre de 2026, del Director General de la Función Pública, por la que se declara finalizado el proceso selectivo para ingreso, por promoción interna, en el Cuerpo de Funcionarios Superiores de la Administración de la Comunidad Autónoma de Aragón, Escala Facultativa Superior, Ingenieros de Minas. (Código de convocatoria 260010).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475148370606"
+    },
+    {
+      "id": "AO-2026-007962563",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de Justicia, por la que se hace pública la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Aragón que se ofrecen a las personas aspirantes que han superado el proceso selectivo para ingreso, en el Cuerpo de Auxilio Judicial de la Administración de Justicia, turno libre, convocada por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "VICEPRESIDENCIA DEL GOBIERNO Y DEPARTAMENTO DE PRESIDENCIA, JUSTICIA, CULTURA Y DEPORTE",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475144330505"
+    },
+    {
+      "id": "AO-2026-007962562",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de Justicia, por la que se hace pública la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Aragón que se ofrecen a las personas aspirantes que han superado el proceso selectivo para ingreso, Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, turno libre, convocada por Orden PJC/64/2024, de 25 de enero",
+      "entity": "VICEPRESIDENCIA DEL GOBIERNO Y DEPARTAMENTO DE PRESIDENCIA, JUSTICIA, CULTURA Y DEPORTE",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475142310404"
+    },
+    {
+      "id": "AO-2026-007962561",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de Justicia, por la que se hace pública la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Aragón que se ofrecen a las personas aspirantes que han superado el proceso selectivo para ingreso en el Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, turno libre, convocada por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "VICEPRESIDENCIA DEL GOBIERNO Y DEPARTAMENTO DE PRESIDENCIA, JUSTICIA, CULTURA Y DEPORTE",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475140290404"
+    },
     {
       "id": "AO-2026-007962537",
       "province": "Aragón (BOA)",

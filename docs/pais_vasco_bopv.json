@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-16T18:05:33.883709+00:00",
+  "lastCheckedUTC": "2026-11-17T06:30:28.273026+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "219",
     "pagesVisited": 21,
-    "announcementsRead": 311,
-    "opportunities": 49
+    "announcementsRead": 296,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "199",
       "200",
@@ -62,7 +62,6 @@
       "2026-11-16"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -70,28 +69,19 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-17"
     ],
     "issuesRead": 21,
-    "announcementsRead": 311,
-    "opportunities": 49
+    "announcementsRead": 296,
+    "opportunities": 42
   },
   "notices": [
-    {
-      "id": "PV-2026-4874",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 4 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se convoca concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios, Profesorado Titular, por turno libre.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604874a.pdf"
-    },
     {
       "id": "PV-2026-4872",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 1974/2026, de 14 de octubre, de la directora gerente de la Red de Salud Mental de Bizkaia, por la que se declara desierta la convocatoria para la provisión, mediante libre designación, de un puesto de jefe/a de Servicio de Administración y Gestión (Área de Servicios Generales y Gestión Económica) en el Hospital de Zaldibar de la Red de Salud Mental de Bizkaia.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "16/11/2026",
       "bulletin": "219",
       "type": "Plaza / oposición",
@@ -101,71 +91,11 @@
       "id": "PV-2026-4871",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 568/2026, de 7 de octubre, de la directora gerente de la Red de Salud Mental de Gipuzkoa, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Unidad de Salud Mental del Centro de Salud Mental de Arrasate.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "16/11/2026",
       "bulletin": "219",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604871a.pdf"
-    },
-    {
-      "id": "PV-2026-4870",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 2 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor pleno de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 11 de marzo de 2026 (BOPV de 20-03-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604870a.pdf"
-    },
-    {
-      "id": "PV-2026-4869",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 30 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 9 de febrero de 2026 (BOPV de 18-02-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604869a.pdf"
-    },
-    {
-      "id": "PV-2026-4868",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 30 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604868a.pdf"
-    },
-    {
-      "id": "PV-2026-4867",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 30 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor agregado de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604867a.pdf"
-    },
-    {
-      "id": "PV-2026-4866",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 29 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604866a.pdf"
-    },
-    {
-      "id": "PV-2026-4865",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 28 de octubre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "16/11/2026",
-      "bulletin": "219",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604865a.pdf"
     },
     {
       "id": "PV-2026-4834",

@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-16T18:04:48.338618+00:00",
+  "lastCheckedUTC": "2026-11-17T06:30:24.308113+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
-    "pagesVisited": 21,
-    "announcementsRead": 430,
-    "opportunities": 30
+    "bulletin": "222",
+    "pagesVisited": 22,
+    "announcementsRead": 445,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "201",
       "202",
@@ -36,7 +36,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -72,11 +73,41 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 430,
-    "opportunities": 30
+    "issuesRead": 22,
+    "announcementsRead": 445,
+    "opportunities": 33
   },
   "notices": [
+    {
+      "id": "PO-2026079163",
+      "province": "Pontevedra",
+      "title": "CONVOCATORIA E BASES DO PROCESO SELECTIVO DUNHA PRAZA DE RECEPCIONISTA, FUNCIONARIO/A DE CARREIRA",
+      "entity": "Lalín",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/17/2026079163/an.bop.PONTEVEDRA.20261117.2026079163.pdf"
+    },
+    {
+      "id": "PO-2026079121",
+      "province": "Pontevedra",
+      "title": "DESESTIMENTO OFERTA DE EMPREGO PÚBLICO PRAZA DE LIMPADOR/A (OEP/2024)",
+      "entity": "Vilaboa",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/17/2026079121/an.bop.PONTEVEDRA.20261117.2026079121.pdf"
+    },
+    {
+      "id": "PO-2026078960",
+      "province": "Pontevedra",
+      "title": "BASES E CONVOCATORIA DO PROCESO SELECTIVO PARA A COBERTURA, EN QUENDA LIBRE E MEDIANTE PERSOAL LABORAL FIXO, DUNHA PRAZA VACANTE DE AUXILIAR ADMINISTRATIVO/A",
+      "entity": "Bueu",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/17/2026078960/an.bop.PONTEVEDRA.20261117.2026078960.pdf"
+    },
     {
       "id": "PO-2026078984",
       "province": "Pontevedra",
