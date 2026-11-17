@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-17T06:43:49.798469+00:00",
+  "lastCheckedUTC": "2026-11-17T09:41:08.767319+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 281,
-    "opportunities": 281,
+    "announcementsRead": 291,
+    "opportunities": 291,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -40,22 +40,122 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-17"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 281,
-    "opportunities": 281
+    "announcementsRead": 291,
+    "opportunities": 291
   },
   "notices": [
+    {
+      "id": "CIDO5-22506311",
+      "title": "Borsa de treball de Lletrat",
+      "entity": "Ajuntament de Sant Martí Sarroca",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22506311"
+    },
+    {
+      "id": "CIDO5-22504985",
+      "title": "1 plaça de Tècnic superior Arquitecte",
+      "entity": "Ajuntament de Gualba",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22504985"
+    },
+    {
+      "id": "CIDO5-22504912",
+      "title": "Borsa de treball de places de Conserge municipal",
+      "entity": "Ajuntament de Canyelles",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22504912"
+    },
+    {
+      "id": "CIDO5-22504830",
+      "title": "1 plaça de Cap del Departament Tècnic",
+      "entity": "Ajuntament de Badalona",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22504830"
+    },
+    {
+      "id": "CIDO5-22504750",
+      "title": "Borsa de treball de places de Conserge",
+      "entity": "Ajuntament d'Arenys de Mar",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22504750"
+    },
+    {
+      "id": "CIDO5-22504705",
+      "title": "Borsa de treball de places d'Oficial 2a Conductor",
+      "entity": "Ajuntament d'Arenys de Mar",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22504705"
+    },
+    {
+      "id": "CIDO5-22429092",
+      "title": "Borsa de treball de places de Peó",
+      "entity": "Ajuntament de Granollers",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429092"
+    },
+    {
+      "id": "CIDO5-22429087",
+      "title": "Borsa de treball de places de Personal del grup AP (agrupacions professionals) (excepte peó)",
+      "entity": "Ajuntament de Granollers",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22429087"
+    },
+    {
+      "id": "CIDO5-22426477",
+      "title": "Borsa de treball de places de Tècnic del grup A",
+      "entity": "Ajuntament de Granollers",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22426477"
+    },
+    {
+      "id": "CIDO5-21613919",
+      "title": "1 plaça de Tècnic auxiliar d'arxiu",
+      "entity": "Ajuntament de Canet de Mar",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21613919"
+    },
     {
       "id": "CIDO5-22499679",
       "title": "1 plaça de Tècnic superior de serveis econòmics",
