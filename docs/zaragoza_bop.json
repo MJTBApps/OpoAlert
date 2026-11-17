@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-16T17:24:21.400089+00:00",
+  "lastCheckedUTC": "2026-11-17T07:29:48.896172+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "264",
+    "bulletin": "265",
     "pagesVisited": 2,
-    "announcementsRead": 778,
-    "opportunities": 76
+    "announcementsRead": 830,
+    "opportunities": 81
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
-    "issuesRead": 24,
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
+    "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 778,
-    "opportunities": 76,
+    "announcementsRead": 830,
+    "opportunities": 81,
     "bulletins": [
       "241",
       "242",
@@ -43,7 +43,8 @@
       "261",
       "262",
       "263",
-      "264"
+      "264",
+      "265"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -69,7 +70,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "issuePublicationDates": [
       "2026-10-19",
@@ -95,10 +97,10 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-25",
       "2026-11-01",
       "2026-11-02",
@@ -107,18 +109,69 @@
     ],
     "sectionsRead": {
       "SECCIÓN PRIMERA": 1,
-      "SECCIÓN QUINTA": 101,
-      "SECCIÓN SEXTA": 612,
+      "SECCIÓN QUINTA": 106,
+      "SECCIÓN SEXTA": 652,
       "SECCIÓN SEPTIMA": 2,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
-      "SECCIÓN TERCERA": 37,
-      "PARTE NO OFICIAL": 12,
-      "SECCIÓN SEGUNDA": 4,
-      "SECCIÓN CUARTA": 1
+      "SECCIÓN TERCERA": 38,
+      "PARTE NO OFICIAL": 14,
+      "SECCIÓN SEGUNDA": 5,
+      "SECCIÓN CUARTA": 1,
+      "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 98
+    "documentsVerified": 104
   },
   "notices": [
+    {
+      "id": "ZA-000345259",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "MANCOMUNIDAD SIERRA DE LUNA-LAS PEDROSAS",
+      "date": "17/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475265921717"
+    },
+    {
+      "id": "ZA-000345245",
+      "province": "Zaragoza",
+      "title": "Resolución de Alcaldía núm. 2026-270, de fecha 12 de noviembre de 2026, del Ayuntamiento de Morata de Jalón, por la que se aprueba la contratación de la plaza denominada oficial de servicios múltiples, en…",
+      "entity": "AYUNTAMIENTO DE MORATA DE JALÓN",
+      "date": "17/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475251781212"
+    },
+    {
+      "id": "ZA-000345243",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE LOS PINTANOS",
+      "date": "17/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475249761212"
+    },
+    {
+      "id": "ZA-000345233",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a las bases y convocatoria para la selección, mediante el sistema de concurso-oposición, de dos plazas de oficial de la Policía Local por promoción interna en el Ayuntamiento de Caspe.…",
+      "entity": "AYUNTAMIENTO DE CASPE",
+      "date": "17/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475239680909"
+    },
+    {
+      "id": "ZA-000345220",
+      "province": "Zaragoza",
+      "title": "Transcurrido el plazo de exposición pública marcado por el artículo 17 del Real Decreto legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas…",
+      "entity": "AYUNTAMIENTO DE ALFAMÉN",
+      "date": "17/11/2026",
+      "bulletin": "265",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475226350505"
+    },
     {
       "id": "ZA-000345180",
       "province": "Zaragoza",
