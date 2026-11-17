@@ -1,18 +1,72 @@
 {
   "schemaVersion": 1,
   "source": "https://bop.dival.es/bop/xhtml/portal.xhtml",
-  "lastCheckedUTC": "2026-11-16T16:56:42.888107+00:00",
+  "lastCheckedUTC": "2026-11-17T06:40:15.011796+00:00",
   "coverage": {
-    "bulletin": "220",
-    "pagesVisited": 4,
-    "announcementsRead": 90,
-    "opportunities": 8,
+    "bulletin": "221",
+    "pagesVisited": 3,
+    "announcementsRead": 70,
+    "opportunities": 6,
     "complete": true,
     "status": "paginator_last_page",
     "details": "Se alcanzo la ultima pagina del paginador visible."
   },
-  "countNewBulletin": 8,
+  "countNewBulletin": 6,
   "notices": [
+    {
+      "id": "2026/14007",
+      "title": "Anuncio del OAM Palau de la Música sobre la aprobación de las bases de la convocatoria para proveer en régimen de contratación laboral fija una plaza de técnico/a economista financiero/a del grupo de titulación A, subgrupo A1, correspondiente a la oferta de empleo público 2026. Convocatoria E 70021 2026 000182.",
+      "entity": "OAM Palau de la Música",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14007&lang=es"
+    },
+    {
+      "id": "2026/13990",
+      "title": "Anuncio del Ayuntamiento de Benifaió sobre las bases para la provisión en propiedad de una plaza de técnico/a de gestión presupuestaria vacante encuadrada en el grupo A, subgrupo A2 de la escala de administración especial, por concurso oposición, turno de promoción interna, en el departamento de tesorería.",
+      "entity": "Ayuntamiento de Benifaió",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13990&lang=es"
+    },
+    {
+      "id": "2026/13989",
+      "title": "Anuncio del Ayuntamiento de Gandia sobre la aprobación de las bases de la convocatoria de dos plazas de ingeniero/a técnico/a industrial. Expediente 32604.",
+      "entity": "Ayuntamiento de Gandia",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13989&lang=es"
+    },
+    {
+      "id": "2026/13984",
+      "title": "Anuncio del Ayuntamiento de Gandia sobre la aprobación de las bases de la convocatoria de dos plazas de ingeniero/a técnico/a de obras públicas. Expediente 32603.",
+      "entity": "Ayuntamiento de Gandia",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13984&lang=es"
+    },
+    {
+      "id": "2026/13961",
+      "title": "Anuncio del Ayuntamiento de Godelleta sobre la aprobación de las bases de la convocatoria de director/a-educador/a de la escuela infantil municipal de primer ciclo para la creación de una bolsa de trabajo. Expediente 1122/2026.",
+      "entity": "Ayuntamiento de Godelleta",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13961&lang=es"
+    },
+    {
+      "id": "2026/13951",
+      "title": "Anuncio del Ayuntamiento de Godelleta sobre la aprobación de las bases de la convocatoria de educador/a de la escuela infantil municipal de primer ciclo para la creación de una bolsa de trabajo. Expediente 1285/2026.",
+      "entity": "Ayuntamiento de Godelleta",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13951&lang=es"
+    },
     {
       "id": "2026/13922",
       "title": "Anuncio de la Mancomunitat de Municipis de la Safor sobre la modificación del anexo donde figura el temario general y específico de las bases que regirán el proceso selectivo para la cobertura tres plazas de asesor/a jurídico/a, personal laboral fijo, por concurso-oposición, por ejecución de la oferta de empleo público específica. Expediente 30/2026.",
@@ -665,11 +719,11 @@
   "warning": "Verifica siempre el anuncio oficial. Los plazos pueden abrirse en el BOE.",
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
-    "pagesVisited": 55,
-    "announcementsRead": 1325,
-    "opportunities": 72,
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
+    "pagesVisited": 58,
+    "announcementsRead": 1395,
+    "opportunities": 78,
     "bulletins": [
       "200",
       "201",
@@ -691,155 +745,157 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "status": "windows_ajax_verified",
-    "verifiedUTC": "2026-11-16T16:56:42.888121+00:00",
+    "verifiedUTC": "2026-11-17T06:40:15.011810+00:00",
     "chunks": [
       {
         "start": "2026-10-19",
-        "end": "2026-10-22",
-        "requestedStart": "2026-10-18",
-        "requestedEnd": "2026-10-22",
+        "end": "2026-10-23",
+        "requestedStart": "2026-10-19",
+        "requestedEnd": "2026-10-23",
         "publishedDates": [
           "2026-10-19",
           "2026-10-20",
           "2026-10-21",
-          "2026-10-22"
+          "2026-10-22",
+          "2026-10-23"
         ],
-        "nonPublicationDates": [
-          "2026-10-18"
-        ],
-        "pagesVisited": 11,
-        "announcementsRead": 262,
+        "nonPublicationDates": [],
+        "pagesVisited": 13,
+        "announcementsRead": 320,
         "bulletins": [
           "200",
           "201",
           "202",
-          "203"
+          "203",
+          "204"
         ],
-        "opportunities": 9,
+        "opportunities": 15,
         "complete": true
       },
       {
-        "start": "2026-10-23",
-        "end": "2026-10-27",
-        "requestedStart": "2026-10-23",
-        "requestedEnd": "2026-10-27",
+        "start": "2026-10-26",
+        "end": "2026-10-28",
+        "requestedStart": "2026-10-24",
+        "requestedEnd": "2026-10-28",
         "publishedDates": [
-          "2026-10-23",
           "2026-10-26",
-          "2026-10-27"
+          "2026-10-27",
+          "2026-10-28"
         ],
         "nonPublicationDates": [
           "2026-10-24",
           "2026-10-25"
         ],
         "pagesVisited": 7,
-        "announcementsRead": 172,
+        "announcementsRead": 170,
         "bulletins": [
-          "204",
           "205",
-          "206"
+          "206",
+          "207"
         ],
         "opportunities": 13,
         "complete": true
       },
       {
-        "start": "2026-10-28",
-        "end": "2026-10-30",
-        "requestedStart": "2026-10-28",
-        "requestedEnd": "2026-11-01",
+        "start": "2026-10-29",
+        "end": "2026-11-02",
+        "requestedStart": "2026-10-29",
+        "requestedEnd": "2026-11-02",
         "publishedDates": [
-          "2026-10-28",
           "2026-10-29",
-          "2026-10-30"
+          "2026-10-30",
+          "2026-11-02"
         ],
         "nonPublicationDates": [
           "2026-10-31",
           "2026-11-01"
         ],
         "pagesVisited": 7,
-        "announcementsRead": 162,
+        "announcementsRead": 163,
         "bulletins": [
-          "207",
           "208",
-          "209"
+          "209",
+          "210"
         ],
-        "opportunities": 12,
+        "opportunities": 9,
         "complete": true
       },
       {
-        "start": "2026-11-02",
+        "start": "2026-11-03",
         "end": "2026-11-06",
-        "requestedStart": "2026-11-02",
-        "requestedEnd": "2026-11-06",
+        "requestedStart": "2026-11-03",
+        "requestedEnd": "2026-11-07",
         "publishedDates": [
-          "2026-11-02",
           "2026-11-03",
           "2026-11-04",
           "2026-11-05",
           "2026-11-06"
         ],
-        "nonPublicationDates": [],
-        "pagesVisited": 13,
-        "announcementsRead": 316,
+        "nonPublicationDates": [
+          "2026-11-07"
+        ],
+        "pagesVisited": 11,
+        "announcementsRead": 259,
         "bulletins": [
-          "210",
           "211",
           "212",
           "213",
           "214"
         ],
-        "opportunities": 15,
+        "opportunities": 12,
         "complete": true
       },
       {
         "start": "2026-11-09",
-        "end": "2026-11-11",
-        "requestedStart": "2026-11-07",
-        "requestedEnd": "2026-11-11",
+        "end": "2026-11-12",
+        "requestedStart": "2026-11-08",
+        "requestedEnd": "2026-11-12",
         "publishedDates": [
           "2026-11-09",
           "2026-11-10",
-          "2026-11-11"
+          "2026-11-11",
+          "2026-11-12"
         ],
         "nonPublicationDates": [
-          "2026-11-07",
           "2026-11-08"
         ],
-        "pagesVisited": 8,
-        "announcementsRead": 195,
+        "pagesVisited": 9,
+        "announcementsRead": 225,
         "bulletins": [
           "215",
           "216",
-          "217"
+          "217",
+          "218"
         ],
-        "opportunities": 11,
+        "opportunities": 12,
         "complete": true
       },
       {
-        "start": "2026-11-12",
-        "end": "2026-11-16",
-        "requestedStart": "2026-11-12",
-        "requestedEnd": "2026-11-16",
+        "start": "2026-11-13",
+        "end": "2026-11-17",
+        "requestedStart": "2026-11-13",
+        "requestedEnd": "2026-11-17",
         "publishedDates": [
-          "2026-11-12",
           "2026-11-13",
-          "2026-11-16"
+          "2026-11-16",
+          "2026-11-17"
         ],
         "nonPublicationDates": [
           "2026-11-14",
           "2026-11-15"
         ],
-        "pagesVisited": 9,
-        "announcementsRead": 218,
+        "pagesVisited": 11,
+        "announcementsRead": 258,
         "bulletins": [
-          "218",
           "219",
-          "220"
+          "220",
+          "221"
         ],
-        "opportunities": 12,
+        "opportunities": 17,
         "complete": true
       }
     ]
