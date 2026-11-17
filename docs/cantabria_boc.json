@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-16T17:04:06.894534+00:00",
+  "lastCheckedUTC": "2026-11-17T07:01:45.039939+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 29,
-    "announcementsRead": 871,
-    "opportunities": 23,
+    "bulletin": "221",
+    "pagesVisited": 30,
+    "announcementsRead": 906,
+    "opportunities": 25,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "200",
       "201",
@@ -45,7 +45,8 @@
       "Ext. 33",
       "219",
       "Ext. 34",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -76,10 +77,10 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -89,9 +90,9 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 29,
-    "announcementsRead": 871,
-    "opportunities": 23,
+    "issuesRead": 30,
+    "announcementsRead": 906,
+    "opportunities": 25,
     "regularBulletins": [
       "200",
       "201",
@@ -113,7 +114,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "extraordinaryBulletins": [
       "Ext. 27",
@@ -154,10 +156,31 @@
       47585,
       47545,
       47605,
-      47566
+      47566,
+      47567
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-8980",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria para la cobertura, en propiedad, de una plaza de Arquitecto Técnico, personal laboral fijo, mediante el sistema de oposición libre y formación de Bolsa de Empleo.",
+      "entity": "Ayuntamiento de Medio Cudeyo",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443096"
+    },
+    {
+      "id": "CN-2026-8952",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución de 9 de noviembre de 2026, por la que se aprueban las bases y convocatoria para la provisión de una (1) plaza de Maestra/o de Educación Infantil, en régimen de personal laboral fijo, por el sistema de concurso-oposición, turno promoción interna, con destino en la Escuela de Educación Infantil Anjana, incluida en la OEP 2025.",
+      "entity": "Patronato Municipal de Educación de Torrelavega",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443029"
+    },
     {
       "id": "CN-2026-8876",
       "province": "Cantabria (BOC)",

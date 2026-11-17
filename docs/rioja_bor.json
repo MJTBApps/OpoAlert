@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-16T17:10:43.159948+00:00",
+  "lastCheckedUTC": "2026-11-17T07:08:51.351012+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
-    "pagesVisited": 21,
-    "announcementsRead": 577,
-    "opportunities": 33
+    "bulletin": "222",
+    "pagesVisited": 22,
+    "announcementsRead": 615,
+    "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "201",
       "202",
@@ -36,7 +36,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -72,11 +73,71 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 577,
-    "opportunities": 33
+    "issuesRead": 22,
+    "announcementsRead": 615,
+    "opportunities": 38
   },
   "notices": [
+    {
+      "id": "RI-2026-bccda7134e1b378128",
+      "province": "La Rioja (BOR)",
+      "title": "GESTOR/A DE SECRETARÍA: conclusión del proceso selectivo",
+      "entity": "AYUNTAMIENTO DE HARO",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43363496-1-PDF-580941",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F17&referencia=43318933-4-HTML-580941-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-b5f561a770c3a18f1f",
+      "province": "La Rioja (BOR)",
+      "title": "TRAMITACIÓN PROCESAL Y ADMINISTRATIVA: relación de plazas que se ofrecen a las personas aprobadas correspondientes al ámbito de La Rioja, en las pruebas selectivas para ingreso en el Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, turno libre",
+      "entity": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43363340-1-PDF-580869",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F17&referencia=43271147-4-HTML-580869-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-a7a52913ab124aeca3",
+      "province": "La Rioja (BOR)",
+      "title": "LIBRE DESIGNACIÓN: convocatoria de un puesto (LD.10/26)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43363480-1-PDF-580953",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F17&referencia=43325326-3-HTML-580953-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-10b49c7350f7746396",
+      "province": "La Rioja (BOR)",
+      "title": "AUXILIO JUDICIAL: relación de plazas que se ofrecen a las personas aprobadas correspondientes al ámbito de La Rioja, en las pruebas selectivas para ingreso en el Cuerpo de Auxilio Judicial de la Administración de Justicia, turno libre",
+      "entity": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43363398-1-PDF-580872",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F17&referencia=43271430-4-HTML-580872-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-06b2df43cad6d731b3",
+      "province": "La Rioja (BOR)",
+      "title": "GESTIÓN PROCESAL Y ADMINISTRATIVA: relación de plazas que se ofrecen a las personas aprobadas en La Rioja en las pruebas selectivas para ingreso en el Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, turno libre",
+      "entity": "CONSEJERÍA DE SALUD Y POLÍTICAS SOCIALES",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43363618-1-PDF-580866",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F17&referencia=43270949-7-HTML-580866-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-1b0dd7aae7f8cc8f68",
       "province": "La Rioja (BOR)",

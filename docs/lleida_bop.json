@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-16T17:08:35.414536+00:00",
+  "lastCheckedUTC": "2026-11-17T07:06:19.956841+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
-    "pagesVisited": 22,
-    "announcementsRead": 1063,
-    "opportunities": 76
+    "bulletin": "220",
+    "pagesVisited": 23,
+    "announcementsRead": 1090,
+    "opportunities": 77
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "bulletins": [
       "199",
       "200",
@@ -36,7 +36,8 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -59,10 +60,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
@@ -72,11 +73,21 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 1063,
-    "opportunities": 76
+    "issuesRead": 22,
+    "announcementsRead": 1090,
+    "opportunities": 77
   },
   "notices": [
+    {
+      "id": "LE-202622009721",
+      "province": "Lleida (BOP)",
+      "title": "Anunci d'aprovació de les bases i de la convocatòria per la cobertura, en règim de personal laboral temporal, pel sistema de concurs de mèrits, la constitució d’una borsa de treball del servei d’acollida i polítiques migratòries per cobrir baixes mèdiques, reserves de lloc de treball, vacances i altres circumstàncies sobrevingudes del Consell Comarcal de l’Urgell",
+      "entity": "CONSELL COMARCAL DE L'URGELL (TÀRREGA)",
+      "date": "17/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/220/202622009721.pdf"
+    },
     {
       "id": "LE-202621909702",
       "province": "Lleida (BOP)",
