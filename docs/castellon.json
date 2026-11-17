@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-16T13:55:45.610043+00:00",
+  "lastCheckedUTC": "2026-11-17T06:36:01.372034+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "138",
-    "pagesVisited": 12,
-    "announcementsRead": 453,
-    "opportunities": 19,
+    "bulletin": "139",
+    "pagesVisited": 13,
+    "announcementsRead": 489,
+    "opportunities": 25,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
-    "issuesRead": 12,
-    "pagesVisited": 12,
-    "announcementsRead": 453,
-    "opportunities": 19,
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
+    "issuesRead": 13,
+    "pagesVisited": 13,
+    "announcementsRead": 489,
+    "opportunities": 25,
     "bulletins": [
       "127",
       "128",
@@ -31,7 +31,8 @@
       "135",
       "136",
       "137",
-      "138"
+      "138",
+      "139"
     ],
     "publicationDates": [
       "2026-10-20",
@@ -45,10 +46,10 @@
       "2026-11-07",
       "2026-11-10",
       "2026-11-12",
-      "2026-11-14"
+      "2026-11-14",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-19",
       "2026-10-21",
       "2026-10-23",
@@ -69,6 +70,66 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-369872859635188751",
+      "province": "Castellón",
+      "title": "Bases para la cobertura en propiedad de una plaza de oficial de policía local",
+      "entity": "AJUNTAMENT D'ALMASSORA",
+      "date": "17/11/2026",
+      "bulletin": "139",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/RK1L6w4BMF"
+    },
+    {
+      "id": "CS-257490441180130855",
+      "province": "Castellón",
+      "title": "Anuncio de la convocatoria de la Bolsa de empleo de Técnico/a de empleo y formación",
+      "entity": "Mancomunitats / Mancomunidades",
+      "date": "17/11/2026",
+      "bulletin": "139",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/J1J9c0By6R"
+    },
+    {
+      "id": "CS-250854053320755494",
+      "province": "Castellón",
+      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 19E/2022. UNA PLAZA DE OFICIAL/A PO CULTURA. SELECCIÓN",
+      "entity": "AJUNTAMENT DE VILA-REAL",
+      "date": "17/11/2026",
+      "bulletin": "139",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/IWugHYK8TW"
+    },
+    {
+      "id": "CS-211884490548113880",
+      "province": "Castellón",
+      "title": "Anuncio de la convocatoria del procedimiento extraordinario de encuadre inicial en el sistema de carrera profesional horizontal del personal al servicio del Ayuntamiento de Peñíscola.",
+      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
+      "date": "17/11/2026",
+      "bulletin": "139",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/FeQrHB7DKq"
+    },
+    {
+      "id": "CS-154592509741616139",
+      "province": "Castellón",
+      "title": "Anuncio declarar desierta convocatoria proceso selectivo plaza Psicólogo/a-director/a del centro geriátrico \"Sant Bertomeu\" de Benicarló.",
+      "entity": "Altres Entitats i anuncis particulars / Otras entidades y anuncios particulares",
+      "date": "17/11/2026",
+      "bulletin": "139",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/BQ2BpFlM7f"
+    },
+    {
+      "id": "CS-124159109845908787",
+      "province": "Castellón",
+      "title": "Anuncio de aprobación de las bases y la convocatoria para la constitución de una bolsa de empleo para cubrir las posibles vacantes de Administrativo para el Ayuntamiento de Soneja.",
+      "entity": "AJUNTAMENT DE SONEJA",
+      "date": "17/11/2026",
+      "bulletin": "139",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9AeIkoHvKV"
+    },
     {
       "id": "CS-217663700993802806",
       "province": "Castellón",
