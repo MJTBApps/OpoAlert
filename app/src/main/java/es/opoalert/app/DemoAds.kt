@@ -29,6 +29,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
     private var initialized = false
     private var wantsOpenAd = false
     private val banners = mutableListOf<AdView>()
+    private val retryHandler = Handler(Looper.getMainLooper())
     private val loaded = mutableSetOf<Int>()
 
     /** [openAd]: mostrar el anuncio de apertura (solo al abrir la app, nunca la primera vez). */
@@ -94,12 +95,23 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
             view.adUnitId = BANNER_ID
             view.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, widthDp))
             view.adListener = object : AdListener() {
+                private var tries = 0
                 override fun onAdLoaded() {
+                    tries = 0
                     loaded.add(index)
                     onBannerLoaded()
                 }
+                // Si no llega anuncio, se vuelve a pedir: a los 30 s, 60 s… hasta 5 min
+                // (antes ese hueco no volvía a tener anuncio hasta reabrir la app).
                 override fun onAdFailedToLoad(error: LoadAdError) {
                     loaded.remove(index)
+                    tries++
+                    val delay = (30_000L * tries).coerceAtMost(300_000L)
+                    retryHandler.postDelayed({
+                        if (index < banners.size && banners[index] === view && !activity.isFinishing && !activity.isDestroyed) {
+                            view.loadAd(AdRequest.Builder().build())
+                        }
+                    }, delay)
                 }
             }
             banners.add(view)
@@ -128,7 +140,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
 
     fun pause() { banners.forEach { it.pause() } }
     fun resume() { banners.forEach { it.resume() } }
-    fun destroy() { banners.forEach { it.destroy() }; banners.clear(); loaded.clear() }
+    fun destroy() { retryHandler.removeCallbacksAndMessages(null); banners.forEach { it.destroy() }; banners.clear(); loaded.clear() }
 
     companion object {
         /** Cada cuántas convocatorias va un anuncio en la lista (también al pulsar «Ver más»). */
