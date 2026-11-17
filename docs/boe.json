@@ -1,17 +1,17 @@
 {
   "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
   "province": "España (BOE)",
-  "lastCheckedUTC": "2026-11-16T17:39:38Z",
+  "lastCheckedUTC": "2026-11-17T07:51:05Z",
   "coverage": {
     "complete": true,
-    "bulletin": "285",
-    "announcementsRead": 853,
-    "opportunities": 721
+    "bulletin": "286",
+    "announcementsRead": 929,
+    "opportunities": 794
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
     "publicationDates": [
       "2026-10-19",
       "2026-10-20",
@@ -37,10 +37,10 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
@@ -73,13 +73,744 @@
       "282",
       "283",
       "284",
-      "285"
+      "285",
+      "286"
     ],
-    "issuesRead": 27,
-    "announcementsRead": 853,
-    "opportunities": 721
+    "issuesRead": 28,
+    "announcementsRead": 929,
+    "opportunities": 794
   },
   "notices": [
+    {
+      "id": "BOE-A-2026-24093",
+      "title": "Resolución de 6 de noviembre de 2026, de la Universidad de Alicante, por la que se publica la convocatoria de proceso selectivo para ingreso, por el sistema general de acceso libre, en la Escala Básica de Laboratorios de Ciencias y Tecnológicos y en la Escala Superior de Administración.",
+      "entity": "Universidad de Alicante",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24093.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24090",
+      "title": "Resolución de 2 de noviembre de 2026, de la Universitat de València, por la que se convocan pruebas selectivas de acceso, por el sistema general de acceso libre, a la Escala Técnica Superior de Lingüística.",
+      "entity": "UNIVERSIDADES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24090.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24089",
+      "title": "Resolución de 11 de noviembre de 2026, de la Universidad de Málaga, por la que se convoca concurso de acceso a plaza de cuerpos docentes universitarios.",
+      "entity": "Universidad de Málaga",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24089.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24088",
+      "title": "Resolución de 10 de noviembre de 2026, de la Universidad de Málaga, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Universidad de Málaga",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24088.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24087",
+      "title": "Resolución de 10 de noviembre de 2026, de la Universidad de Málaga, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Universidad de Málaga",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24087.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24086",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de La Puebla del Río (Sevilla), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de La Puebla del Río (Sevilla)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24086.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24085",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de San Sebastián de los Reyes (Madrid), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de San Sebastián de los Reyes (Madrid)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24085.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24084",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Gójar (Granada), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Gójar (Granada)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24084.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24083",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Mayorga (Valladolid), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Mayorga (Valladolid)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24083.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24082",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de El Catllar (Tarragona), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de El Catllar (Tarragona)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24082.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24081",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Almensilla (Sevilla), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Almensilla (Sevilla)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24081.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24080",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Vilanova del Camí (Barcelona), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Vilanova del Camí (Barcelona)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24080.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24079",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Castelló de la Plana (Castellón/Castelló), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Castelló de la Plana (Castellón/Castelló)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24079.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24077",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Toro (Zamora), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Toro (Zamora)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24077.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24076",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Solana de los Barros (Badajoz), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Solana de los Barros (Badajoz)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24076.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24075",
+      "title": "Resolución de 11 de noviembre de 2026, de la Diputación Provincial de Albacete, referente a la convocatoria para proveer varias plazas.",
+      "entity": "Diputación Provincial de Albacete",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24075.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24074",
+      "title": "Resolución de 11 de noviembre de 2026, del Consejo Comarcal del Vallés Oriental (Barcelona), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Consejo Comarcal del Vallés Oriental (Barcelona)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24074.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24073",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Dueñas (Palencia), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Dueñas (Palencia)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24073.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24072",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Totana (Murcia), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Totana (Murcia)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24072.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24071",
+      "title": "Resolución de 11 de noviembre de 2026, del Consejo Comarcal del Montsià (Tarragona), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Consejo Comarcal del Montsià (Tarragona)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24071.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24070",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de La Zubia (Granada), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de La Zubia (Granada)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24070.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24069",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Abrera (Barcelona), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Abrera (Barcelona)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24069.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24068",
+      "title": "Resolución de 11 de noviembre de 2026, del Ayuntamiento de Alfarràs (Lleida), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Alfarràs (Lleida)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24068.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24067",
+      "title": "Resolución de 10 de noviembre de 2026, del Ayuntamiento de Dénia (Alicante/Alacant), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Dénia (Alicante/Alacant)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24067.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24066",
+      "title": "Resolución de 10 de noviembre de 2026, de la Diputación Provincial de Lleida, Organismo Autónomo de Gestión y Recaudación de Tributos Locales, referente a la convocatoria para proveer una plaza.",
+      "entity": "Diputación Provincial de Lleida",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24066.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24065",
+      "title": "Resolución de 10 de noviembre de 2026, del Ayuntamiento de Palencia, Patronato Municipal de Deportes, referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Palencia",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24065.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24064",
+      "title": "Resolución de 9 de noviembre de 2026, de la Mancomunidad de Servicios del Alto Tietar (Ávila), referente a la convocatoria para proveer una plaza.",
+      "entity": "Mancomunidad de Servicios del Alto Tietar (Ávila)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24064.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24063",
+      "title": "Resolución de 9 de noviembre de 2026, del Ayuntamiento de Villaviciosa (Asturias), referente a la convocatoria para proveer puesto de trabajo por el sistema de concurso.",
+      "entity": "Ayuntamiento de Villaviciosa (Asturias)",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24063.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24062",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Recursos Humanos y Relaciones con la Administración de Justicia, de la Consejería de Presidencia, Justicia y Administración Local, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad de Madrid, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD DE MADRID",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24062.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24061",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Recursos Humanos y Relaciones con la Administración de Justicia, de la Consejería de Presidencia, Justicia y Administración Local, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad de Madrid, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD DE MADRID",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24061.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24060",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Recursos Humanos y Relaciones con la Administración de Justicia, de la Consejería de Presidencia, Justicia y Administración Local, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad de Madrid, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD DE MADRID",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24060.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24059",
+      "title": "Resolución 551/2026, de 6 de noviembre, de la Dirección General de Justicia, del Departamento de Interior, Función Pública y Justicia, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Foral de Navarra, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD FORAL DE NAVARRA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24059.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24058",
+      "title": "Resolución 550/2026, de 6 de noviembre, de la Dirección General de Justicia, del Departamento de Interior, Función Pública y Justicia, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Foral de Navarra, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD FORAL DE NAVARRA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24058.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24057",
+      "title": "Resolución 552/2026, de 6 de noviembre, de la Dirección General de Justicia, del Departamento de Interior, Función Pública y Justicia, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Foral de Navarra, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD FORAL DE NAVARRA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24057.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24056",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Relaciones con la Administración de Justicia, de la Consejería de Administraciones Públicas, Justicia y Seguridad, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Canarias, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANARIAS",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24056.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24055",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Relaciones con la Administración de Justicia, de la Consejería de Administraciones Públicas, Justicia y Seguridad, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Canarias, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANARIAS",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24055.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24054",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Relaciones con la Administración de Justicia, de la Consejería de Administraciones Públicas, Justicia y Seguridad, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Canarias, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANARIAS",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24054.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24053",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia, del Departamento de Presidencia, Justicia, Cultura y Deporte, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Aragón, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ARAGÓN",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24053.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24052",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia, del Departamento de Presidencia, Justicia, Cultura y Deporte, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Aragón, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ARAGÓN",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24052.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24051",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia, del Departamento de Presidencia, Justicia, Cultura y Deporte, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Aragón, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ARAGÓN",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24051.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24050",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia y Autogobierno, de la Conselleria de Servicios Sociales y Justicia, por la que se publica la relación de plazas correspondientes al ámbito de la Comunitat Valenciana, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNITAT VALENCIANA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24050.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24049",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia y Autogobierno, de la Conselleria de Servicios Sociales y Justicia, por la que se publica la relación de plazas correspondientes al ámbito de la Comunitat Valenciana, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNITAT VALENCIANA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24049.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24048",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia y Autogobierno, de la Conselleria de Servicios Sociales y Justicia, por la que se publica la relación de plazas correspondientes al ámbito de la Comunitat Valenciana, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNITAT VALENCIANA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24048.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24047",
+      "title": "Resolución 1623/2026, de 6 de noviembre, de la Dirección General de Justicia e Interior, de la Consejería de Salud y Políticas Sociales, por la que se publica la relación de plazas correspondientes al ámbito de La Rioja, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE LA RIOJA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24047.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24046",
+      "title": "Resolución 1624/2026, de 6 de noviembre, de la Dirección General de Justicia e Interior, de la Consejería de Salud y Políticas Sociales, por la que se publica la relación de plazas correspondientes al ámbito de La Rioja, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE LA RIOJA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24046.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24045",
+      "title": "Resolución 1622/2026, de 6 de noviembre, de la Dirección General de Justicia e Interior, de la Consejería de Salud y Políticas Sociales, por la que se publica la relación de plazas correspondientes al ámbito de La Rioja, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE LA RIOJA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24045.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24044",
+      "title": "Orden PRE/161/2026, de 6 de noviembre, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Cantabria, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANTABRIA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24044.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24043",
+      "title": "Orden PRE/160/2026, de 6 de noviembre, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Cantabria, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANTABRIA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24043.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24042",
+      "title": "Orden PRE/162/2026, de 6 de noviembre, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Cantabria, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CANTABRIA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24042.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24041",
+      "title": "Resolución de 6 de noviembre de 2026, de la Consejería de Hacienda, Justicia y Asuntos Europeos, por la que se publica la relación de plazas correspondientes al ámbito territorial del Principado de Asturias, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PRINCIPADO DE ASTURIAS",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24041.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24040",
+      "title": "Resolución de 6 de noviembre de 2026, de la Consejería de Hacienda, Justicia y Asuntos Europeos, por la que se publica la relación de plazas correspondientes al ámbito territorial del Principado de Asturias, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PRINCIPADO DE ASTURIAS",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24040.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24039",
+      "title": "Resolución de 6 de noviembre de 2026, de la Consejería de Hacienda, Justicia y Asuntos Europeos, por la que se publica la relación de plazas correspondientes al ámbito territorial del Principado de Asturias, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PRINCIPADO DE ASTURIAS",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24039.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24038",
+      "title": "Resolución de 11 de noviembre de 2026, de la Dirección General de Infraestructuras Judiciales y Recursos Humanos, de la Consejería de Turismo, Justicia, Desregulación y Administración Local, por la que se publica la relación de plazas correspondientes al ámbito de Andalucía, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ANDALUCÍA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24038.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24037",
+      "title": "Resolución de 11 de noviembre de 2026, de la Dirección General de Infraestructuras Judiciales y Recursos Humanos, de la Consejería de Turismo, Justicia, Desregulación y Administración Local, por la que se publica la relación de plazas correspondientes al ámbito de Andalucía, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ANDALUCÍA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24037.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24036",
+      "title": "Resolución de 11 de noviembre de 2026, de la Dirección General de Infraestructuras Judiciales y Recursos Humanos, de la Consejería de Turismo, Justicia, Desregulación y Administración Local, por la que se publica la relación de plazas correspondientes al ámbito de Andalucía, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE ANDALUCÍA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24036.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24035",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia, de la Consellería de Presidencia, Justicia y Deportes, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Galicia, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE GALICIA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24035.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24034",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia, de la Consellería de Presidencia, Justicia y Deportes, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Galicia, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE GALICIA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24034.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24033",
+      "title": "Resolución de 6 de noviembre de 2026, de la Dirección General de Justicia, de la Consellería de Presidencia, Justicia y Deportes, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma de Galicia, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE GALICIA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24033.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24032",
+      "title": "Resolución de 6 de noviembre de 2026, del Departamento de Justicia y Calidad Democràtica, por la que se publica la relación de plazas correspondientes al ámbito de Cataluña, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CATALUÑA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24032.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24031",
+      "title": "Resolución de 6 de noviembre de 2026, del Departamento de Justicia y Calidad Democrática, por la que se publica la relación de plazas correspondientes al ámbito de Cataluña, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CATALUÑA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24031.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24030",
+      "title": "Resolución de 6 de noviembre de 2026, del Departamento de Justicia y Calidad Democrática, por la que se publica la relación de plazas correspondientes al ámbito de Cataluña, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DE CATALUÑA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24030.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24029",
+      "title": "Orden de 6 de noviembre de 2026, del Departamento de Justicia y Derechos Humanos, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma del País Vasco, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24029.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24028",
+      "title": "Orden de 6 de noviembre de 2026, del Departamento de Justicia y Derechos Humanos, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma del País Vasco, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24028.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24027",
+      "title": "Orden de 6 de noviembre de 2026, del Departamento de Justicia y Derechos Humanos, por la que se publica la relación de plazas correspondientes al ámbito de la Comunidad Autónoma del País Vasco, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, por oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24027.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24026",
+      "title": "Resolución 6 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+      "entity": "MINISTERIO DE TRANSPORTES Y MOVILIDAD SOSTENIBLE",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24026.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24025",
+      "title": "Resolución de 10 de noviembre de 2026, de la Subsecretaría, por la que se convoca proceso selectivo para ingreso, por el sistema general de acceso libre y promoción interna, en el Cuerpo de Ingenieros Geógrafos.",
+      "entity": "MINISTERIO DE TRANSPORTES Y MOVILIDAD SOSTENIBLE",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24025.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24024",
+      "title": "Resolución de 11 de noviembre de 2026, de la Delegación Especial del Estado en el Consorcio Zona Franca de Cádiz, por la que se convoca proceso selectivo, por el sistema general de acceso libre, para la provisión de plaza de personal laboral fijo, Ingeniero/a Técnico/a Industrial.",
+      "entity": "MINISTERIO DE HACIENDA",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24024.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24023",
+      "title": "Orden PJC/1231/2026, de 6 de noviembre, por la que se publica la relación de plazas correspondientes al ámbito del Ministerio de la Presidencia, Justicia y Relaciones con las Cortes, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, mediante oposición, en el Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24023.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24022",
+      "title": "Orden PJC/1230/2026, de 6 de noviembre, por la que se modifica la Orden PJC/1015/2025, de 4 de septiembre, por la que se publica la relación de personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, mediante oposición, al Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24022.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24021",
+      "title": "Orden PJC/1229/2026, de 6 de noviembre, por la que se publica la relación de plazas correspondientes al ámbito del Ministerio de la Presidencia, Justicia y Relaciones con las Cortes, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, mediante oposición, en el Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24021.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24020",
+      "title": "Orden PJC/1228/2026, de 6 de noviembre, por la que se modifica la Orden PJC/294/2026, de 20 de marzo, por la que se publica la relación de personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, mediante oposición, al Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24020.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24019",
+      "title": "Orden PJC/1227/2026, de 6 de noviembre, por la que se publica la relación de plazas correspondientes al ámbito del Ministerio de la Presidencia, Justicia y Relaciones con las Cortes, que se ofrecen a las personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, mediante oposición, en el Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24019.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24018",
+      "title": "Orden PJC/1226/2026, de 6 de noviembre, por la que se modifica la Orden PJC/1014/2025, de 4 de septiembre, por la que se publica la relación de personas aprobadas en el proceso selectivo para ingreso, por el sistema general de acceso libre, mediante oposición, al Cuerpo de Auxilio Judicial de la Administración de Justicia, convocado por Orden PJC/64/2024, de 25 de enero.",
+      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
+      "date": "17/11/2026",
+      "bulletin": "286",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/17/pdfs/BOE-A-2026-24018.pdf"
+    },
     {
       "id": "BOE-A-2026-23958",
       "title": "Resolución de 10 de noviembre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para ingreso, por el sistema general de acceso libre, en la Escala de Técnicos Medios en Ingeniería y Arquitectura.",
