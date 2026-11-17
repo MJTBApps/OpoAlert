@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-17T06:31:32.633971+00:00",
+  "lastCheckedUTC": "2026-11-17T09:38:12.920683+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "219",
-    "pagesVisited": 20,
-    "announcementsRead": 514,
-    "opportunities": 20
+    "bulletin": "220",
+    "pagesVisited": 21,
+    "announcementsRead": 528,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "216",
       "217",
       "218",
-      "219"
+      "219",
+      "220"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -57,7 +58,8 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -68,14 +70,33 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-17"
+      "2026-11-15"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 514,
-    "opportunities": 20
+    "issuesRead": 21,
+    "announcementsRead": 528,
+    "opportunities": 22
   },
   "notices": [
+    {
+      "id": "TO-2026-5292",
+      "province": "Toledo",
+      "title": "Convocatoria Bolsa de Trabajo Técnico/a Medioambiente.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE TOLEDO",
+      "date": "17/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115279;0&insert_number=5292&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5277",
+      "province": "Toledo",
+      "title": "Bases y Convocatoria para la creación de una bolsa de trabajo permanente de operarios de servicios múltiples.",
+      "entity": "AYUNTAMIENTO DE YUNCOS",
+      "date": "17/11/2026",
+      "bulletin": "220",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115260;0&insert_number=5277&insert_year=2026"
+    },
     {
       "id": "TO-2026-5248",
       "province": "Toledo",

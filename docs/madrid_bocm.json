@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-17T06:29:51.532367+00:00",
+  "lastCheckedUTC": "2026-11-17T09:35:53.407999+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "275",
-    "pagesVisited": 27,
-    "announcementsRead": 1784,
-    "opportunities": 318
+    "bulletin": "276",
+    "pagesVisited": 28,
+    "announcementsRead": 1904,
+    "opportunities": 339
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-19",
     "rangeEnd": "2026-11-17",
-    "issuesRead": 27,
-    "pagesVisited": 27,
-    "announcementsRead": 1784,
-    "opportunities": 318,
+    "issuesRead": 28,
+    "pagesVisited": 28,
+    "announcementsRead": 1904,
+    "opportunities": 339,
     "bulletins": [
       "249",
       "250",
@@ -46,7 +46,8 @@
       "272",
       "273",
       "274",
-      "275"
+      "275",
+      "276"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -75,14 +76,14 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-14",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-17"
+      "2026-11-15"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/19/24900.PDF",
@@ -111,7 +112,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/12/27200.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/13/27300.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/14/27400.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/16/27500.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/16/27500.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/17/27600.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -140,10 +142,221 @@
       "xml",
       "xml",
       "xml",
+      "xml",
       "xml"
     ]
   },
   "notices": [
+    {
+      "id": "MD-20261117-112",
+      "province": "Madrid",
+      "title": "– San Fernando de Henares. Ofertas de empleo. Proceso selectivo",
+      "entity": "San Fernando de Henares",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-112.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-106",
+      "province": "Madrid",
+      "title": "– Parla. Ofertas de empleo. Proceso selectivo",
+      "entity": "Parla",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-106.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-101",
+      "province": "Madrid",
+      "title": "– Navacerrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "Navacerrada",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-101.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-100",
+      "province": "Madrid",
+      "title": "– Navacerrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "Navacerrada",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-100.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-87",
+      "province": "Madrid",
+      "title": "– Arroyomolinos. Ofertas de empleo. Proceso selectivo",
+      "entity": "Arroyomolinos",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-87.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-82",
+      "province": "Madrid",
+      "title": "– Alcorcón. Ofertas de empleo. Proceso selectivo",
+      "entity": "Alcorcón",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-82.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-34",
+      "province": "Madrid",
+      "title": "Concurso cuerpos docentes – Resolución de 9 de noviembre de 2026, de la Universidad de Alcalá, por la que se convoca concurso de acceso a plazas de funcionario/as de carrera de los cuerpos docentes universitarios",
+      "entity": "UNIVERSIDAD DE ALCALÁ",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-34.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-31",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 2105/2026, de 5 de noviembre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-31.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-30",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 2084/2026, de 3 de noviembre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-30.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-29",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 6 de noviembre de 2026, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Familia, Juventud y Asuntos Sociales, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-29.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-20",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 4849/2026, de 5 de noviembre, de la Consejera de Educación, Ciencia y Universidades, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Educación, Ciencia y Universidades, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-20.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-14",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 6 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de puestos de trabajo vacantes en la Consejería Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-14.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-13",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 6 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-13.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-12",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 6 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-12.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-10",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 6 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-10.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-9",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 5 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-9.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-8",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 4 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de tres puestos de trabajo vacantes en la Consejería de Vivienda, Transportes e Infraestructuras (Organismo Autónomo Consorcio Regional de Transportes Públicos Regulares de Madrid), de conformidad con el artículo 55 de la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-8.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-7",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 4 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de tres puestos de trabajo vacantes en la Consejería de Vivienda, Transportes e Infraestructuras (Organismo Autónomo Agencia de Vivienda Social de la Comunidad de Madrid), de conformidad con el artículo 55 de la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-7.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-6",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 4 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Sanidad, de conformidad con el artículo 55 de la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-6.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-2",
+      "province": "Madrid",
+      "title": "Concurso específico – Resolución de 4 de noviembre de 2026, de la Dirección General de Recursos Humanos y Relaciones con la Administración de Justicia de la Consejería de Presidencia, Justicia y Administración Local, por la que se convocan diversos puestos de trabajo en Oficinas Judiciales por el sistema de Concurso Específico",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-2.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261117-1",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 5 de noviembre de 2026, del Consejero de Presidencia, Justicia y Administración Local, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Presidencia, Justicia y Administración Local, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
+      "date": "17/11/2026",
+      "bulletin": "276",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/17/BOCM-20261117-1.PDF",
+      "type": "Plaza / oposición"
+    },
     {
       "id": "MD-20261116-97",
       "province": "Madrid",
