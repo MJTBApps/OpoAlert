@@ -90,12 +90,16 @@ final class Ads: ObservableObject {
     /// Los banners se guardan por posición: si SwiftUI vuelve a dibujar la lista (por ejemplo
     /// al volver de Safari tras pulsar un anuncio), se reutiliza el mismo y no queda un hueco vacío.
     private var banners: [Int: BannerView] = [:]
+    /// Si Google no devuelve anuncio (sin conexión o sin anuncio que servir), se vuelve a pedir
+    /// al cabo de un rato; antes el hueco se quedaba vacío hasta cerrar y abrir la app.
+    private let retry = BannerRetry()
 
     func banner(slot: Int) -> BannerView {
         if let view = banners[slot] { return view }
         let view = BannerView(adSize: AdSizeBanner)
         view.adUnitID = bannerID
         view.rootViewController = Self.topController()
+        view.delegate = retry
         view.load(Request())
         banners[slot] = view
         return view
@@ -116,6 +120,37 @@ final class Ads: ObservableObject {
         var top = scene?.windows.first { $0.isKeyWindow }?.rootViewController ?? scene?.windows.first?.rootViewController
         while let presented = top?.presentedViewController { top = presented }
         return top
+    }
+}
+
+/// Vuelve a pedir un banner que no ha cargado: a los 30 s, luego 60 s… hasta 5 minutos.
+@MainActor
+final class BannerRetry: NSObject, BannerViewDelegate {
+    private var attempts: [ObjectIdentifier: Int] = [:]
+
+    nonisolated func bannerViewDidReceiveAd(_ bannerView: BannerView) {
+        MainActor.assumeIsolated { received(bannerView) }
+    }
+
+    nonisolated func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
+        MainActor.assumeIsolated { failed(bannerView) }
+    }
+
+    private func received(_ bannerView: BannerView) {
+        attempts[ObjectIdentifier(bannerView)] = 0
+    }
+
+    private func failed(_ bannerView: BannerView) {
+        let key = ObjectIdentifier(bannerView)
+        let tries = (attempts[key] ?? 0) + 1
+        attempts[key] = tries
+        let delay = min(30.0 * Double(tries), 300.0)
+        Task { @MainActor [weak bannerView] in
+            try? await Task.sleep(nanoseconds: UInt64(delay * 1_000_000_000))
+            guard let bannerView else { return }
+            if bannerView.rootViewController == nil { bannerView.rootViewController = Ads.topController() }
+            bannerView.load(Request())
+        }
     }
 }
 
