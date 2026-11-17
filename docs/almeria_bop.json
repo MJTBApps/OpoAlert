@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-17T07:43:26.463148+00:00",
+  "lastCheckedUTC": "2026-11-17T10:29:10.992360+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
-    "pagesVisited": 878,
-    "announcementsRead": 333,
-    "opportunities": 67
+    "bulletin": "222",
+    "pagesVisited": 904,
+    "announcementsRead": 348,
+    "opportunities": 70
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-19",
     "rangeEnd": "2026-11-17",
-    "issuesRead": 20,
-    "pagesVisited": 878,
-    "announcementsRead": 333,
-    "opportunities": 67,
+    "issuesRead": 21,
+    "pagesVisited": 904,
+    "announcementsRead": 348,
+    "opportunities": 70,
     "bulletins": [
       "202",
       "203",
@@ -39,7 +39,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -61,7 +62,8 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -72,12 +74,11 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-17"
+      "2026-11-15"
     ],
-    "originalPdfPagesRead": 878,
+    "originalPdfPagesRead": 904,
     "archiveIndexPagesRead": 3,
-    "archiveTotalIssues": 48196,
+    "archiveTotalIssues": 48197,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392775&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+19%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392776&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+20%2F10%2F2026.pdf",
@@ -98,10 +99,41 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392791&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+11%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392792&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392793&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392794&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392794&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392795&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+17%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03163",
+      "province": "Almería",
+      "title": "PROCESO DE SELECCIÓN EXPEDIENTE NÚM. 5281/2026. APROBACIÓN DE LAS BASES QUE HAN DE REGIR EL PROCESO DE SELECCIÓN PARA PARA PROVEER, MEDIANTE CONCURSO-OPOSICIÓN, DE TRES PLAZAS DE TRABAJADOR/A SOCIAL ADSCRITOS AL ÁREA DE…",
+      "entity": "AYUNTAMIENTO DE VERA",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3163/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03158",
+      "province": "Almería",
+      "title": "Expediente nº: 438/2026 Asunto: CONSTITUCIÓN DE UNA BOLSA DE TRABAJO PARA LA COBERTURA DE NECESIDADES TEMPORALES DE PERSONAL D. Juan Francisco González Carmona, Alcalde del Ayuntamiento de Sorbas (Almería). HACE SABER: Que…",
+      "entity": "AYUNTAMIENTO DE SORBAS",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Bolsa de trabajo",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3158/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03155",
+      "province": "Almería",
+      "title": "Expediente: 96/2026 Asunto: CONVOCATORIA DE PLAZA DE CONSERJE / 2026/404840/900-026/00002 El Alcalde-Presidente del Ayuntamiento de Los Gallardos, mediante resolución de fecha 09 de noviembre de 2026, aprobó las Bases que…",
+      "entity": "AYUNTAMIENTO DE LOS GALLARDOS",
+      "date": "17/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3155/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03169",
       "province": "Almería",
