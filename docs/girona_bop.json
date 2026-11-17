@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-16T14:46:01.947244+00:00",
+  "lastCheckedUTC": "2026-11-17T06:59:23.795673+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "220",
-    "pagesVisited": 20,
-    "announcementsRead": 1050,
-    "opportunities": 99,
+    "bulletin": "221",
+    "pagesVisited": 21,
+    "announcementsRead": 1094,
+    "opportunities": 100,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
-    "issuesRead": 20,
-    "pagesVisited": 20,
-    "announcementsRead": 1050,
-    "opportunities": 99,
+    "rangeStart": "2026-10-19",
+    "rangeEnd": "2026-11-17",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 1094,
+    "opportunities": 100,
     "bulletins": [
       "201",
       "202",
@@ -39,7 +39,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-19",
@@ -61,10 +62,10 @@
       "2026-11-11",
       "2026-11-12",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-24",
       "2026-10-25",
       "2026-10-29",
@@ -77,6 +78,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-221-09991",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la creació d'una borsa de treball per cobrir absències, permisos, jubilacions i altres necessitats temporals de conserge del pavelló municipal de l'Ajuntament de Sant Julià de Ramis",
+      "entity": "AJUNTAMENT DE SANT JULIÀ DE RAMIS",
+      "date": "17/11/2026",
+      "bulletin": "221",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/221/202622109991.pdf"
+    },
     {
       "id": "GI-2026-220-09887",
       "title": "Aprovació de les bases específiques i la convocatòria del procés selectiu per a la constitució d'una borsa de treball d'operaris de brigada, mitjançant concurs, en règim de personal laboral temporal",
