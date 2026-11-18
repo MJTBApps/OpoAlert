@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   subir:
-    runs-on: macos-15-intel
+    runs-on: macos-15
     timeout-minutes: 60
     env:
       TEAM_ID: 6QLP74LVPC

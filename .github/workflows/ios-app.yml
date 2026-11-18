@@ -22,9 +22,9 @@ concurrency:
 
 jobs:
   compilar:
-    # El 2/11/2026 las colas de Mac arm64 (macos-15 y macos-26) se cancelaban por falta de Macs;
+    # El 2/11/2026 las colas de Mac arm64 se cancelaban por falta de Macs y el 18/11/2026 las de Mac Intel;
     # los Mac Intel también traen Xcode 26 (el paso siguiente lo comprueba).
-    runs-on: macos-15-intel
+    runs-on: macos-15
     timeout-minutes: 45
     steps:
       - name: Descargar codigo
