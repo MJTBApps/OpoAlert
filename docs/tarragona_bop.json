@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-11-17T12:57:52.896026+00:00",
+  "lastCheckedUTC": "2026-11-18T07:10:44.487175+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-11-17",
-    "pagesVisited": 69,
-    "announcementsRead": 1096,
-    "opportunities": 107,
+    "bulletin": "2026-11-18",
+    "pagesVisited": 68,
+    "announcementsRead": 1086,
+    "opportunities": 104,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -37,7 +36,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -50,7 +50,6 @@
       "2026-11-15"
     ],
     "bulletins": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -71,14 +70,25 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "issuesRead": 22,
-    "pagesVisited": 69,
-    "announcementsRead": 1096,
-    "opportunities": 107
+    "pagesVisited": 68,
+    "announcementsRead": 1086,
+    "opportunities": 104
   },
   "notices": [
+    {
+      "id": "TA-2026-10859",
+      "title": "Borsa de treball d'operari/ària de neteja. Bases i convocatòria.",
+      "entity": "AJUNTAMENT BATEA",
+      "date": "18/11/2026",
+      "bulletin": "18/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366673"
+    },
     {
       "id": "TA-2026-10857",
       "title": "Plaça d'administratiu/iva (50). Bases i convocatòria. Promoció interna.",
@@ -1108,46 +1118,6 @@
       "province": "Tarragona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365514"
-    },
-    {
-      "id": "TA-2026-09674",
-      "title": "Ampliació de la borsa de treball de conductor/a -perceptor/a. Bases i convocatòria.",
-      "entity": "REUS TRANSPORT PÚBLIC SA",
-      "date": "19/10/2026",
-      "bulletin": "19/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365487"
-    },
-    {
-      "id": "TA-2026-09673",
-      "title": "Ampliació de la borsa de treball de personal de manteniment compartida per les societats Reus Mobilitat i Serveis SA i Reus Transport Públic SA. Bases i convocatòria.",
-      "entity": "REUS MOBILITAT I SERVEIS SA",
-      "date": "19/10/2026",
-      "bulletin": "19/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365486"
-    },
-    {
-      "id": "TA-2026-09632",
-      "title": "Borsa segona de treball complementària de tècnic/a de serveis jurídics. Bases i convocatòria.",
-      "entity": "CONSELL COMARCAL BAIX CAMP",
-      "date": "19/10/2026",
-      "bulletin": "19/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365441"
-    },
-    {
-      "id": "TA-2026-09407",
-      "title": "Plaça de tècnic/a auxiliar de biblioteca (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT MORELL, EL",
-      "date": "19/10/2026",
-      "bulletin": "19/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365198"
     }
   ]
 }
