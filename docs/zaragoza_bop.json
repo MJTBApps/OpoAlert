@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-17T17:15:31.212475+00:00",
+  "lastCheckedUTC": "2026-11-18T07:28:53.880377+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "265",
+    "bulletin": "266",
     "pagesVisited": 2,
-    "announcementsRead": 830,
-    "opportunities": 81
+    "announcementsRead": 804,
+    "opportunities": 79
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 830,
-    "opportunities": 81,
+    "announcementsRead": 804,
+    "opportunities": 79,
     "bulletins": [
-      "241",
       "242",
       "243",
       "244",
@@ -44,10 +43,10 @@
       "262",
       "263",
       "264",
-      "265"
+      "265",
+      "266"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -71,10 +70,10 @@
       "2026-11-13",
       "2026-11-14",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "issuePublicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -98,7 +97,8 @@
       "2026-11-13",
       "2026-11-14",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -108,18 +108,17 @@
       "2026-11-15"
     ],
     "sectionsRead": {
-      "SECCIÓN PRIMERA": 1,
-      "SECCIÓN QUINTA": 106,
-      "SECCIÓN SEXTA": 652,
-      "SECCIÓN SEPTIMA": 2,
+      "SECCIÓN QUINTA": 101,
+      "SECCIÓN SEXTA": 632,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
-      "SECCIÓN TERCERA": 38,
+      "SECCIÓN TERCERA": 39,
       "PARTE NO OFICIAL": 14,
       "SECCIÓN SEGUNDA": 5,
       "SECCIÓN CUARTA": 1,
+      "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 104
+    "documentsVerified": 102
   },
   "notices": [
     {
@@ -911,26 +910,6 @@
       "bulletin": "242",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471029130505"
-    },
-    {
-      "id": "ZA-000344448",
-      "province": "Zaragoza",
-      "title": "Por resolución de Presidencia núm. 0292/2026, de 5 de octubre, se han aprobado las bases reguladoras y convocatoria para la provisión en propiedad de una plaza de plaza de técnico de RR.HH. y Gestión Laboral…",
-      "entity": "AYUNTAMIENTO DE LA ALMUNIA DE DOÑA GODINA. ESCUELA UNIVERSITARIA POLITÉCNICA LA ALMUNIA (EUPLA)",
-      "date": "19/10/2026",
-      "bulletin": "241",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470790180404"
-    },
-    {
-      "id": "ZA-000344443",
-      "province": "Zaragoza",
-      "title": "Bases de la convocatoria que ha de regir el proceso selectivo para la contratación temporal de tres operarios medioambientales mediante el procedimiento de oposición. Primera. - Objeto de la convocatoria. Es…",
-      "entity": "AYUNTAMIENTO DE CALATAYUD",
-      "date": "19/10/2026",
-      "bulletin": "241",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470785130303"
     }
   ]
 }
