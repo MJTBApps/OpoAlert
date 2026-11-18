@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Guadalajara",
   "source": "https://boletin.dguadalajara.es/boletin/",
-  "lastCheckedUTC": "2026-11-18T06:30:22.064940+00:00",
+  "lastCheckedUTC": "2026-11-18T09:35:12.457524+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
-    "pagesVisited": 21,
-    "announcementsRead": 299,
-    "opportunities": 22
+    "bulletin": "221",
+    "pagesVisited": 22,
+    "announcementsRead": 321,
+    "opportunities": 24
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
       "2026-10-20",
@@ -59,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -69,14 +71,33 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-18"
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 299,
-    "opportunities": 22
+    "issuesRead": 22,
+    "announcementsRead": 321,
+    "opportunities": 24
   },
   "notices": [
+    {
+      "id": "GJ-2026-3034",
+      "province": "Guadalajara",
+      "title": "BASES ESPECÍFICAS Y CONVOCATORIA DE LAS PRUEBAS SELECTIVAS PARA LA PROVISIÓN EN PROPIEDAD, POR EL SISTEMA DE CONCURSO OPOSICIÓN Y TURNO LIBRE, DE UNA PLAZA DE TÉCNICO/A AUXILIAR JUVENTUD",
+      "entity": "DIPUTACIÓN PROVINCIAL DE GUADALAJARA. ÁREA DE RECURSOS HUMANOS",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_3034.pdf"
+    },
+    {
+      "id": "GJ-2026-3033",
+      "province": "Guadalajara",
+      "title": "BASES ESPECÍFICAS Y CONVOCATORIA DE LAS PRUEBAS SELECTIVAS PARA LA PROVISIÓN EN PROPIEDAD, POR EL SISTEMA DE CONCURSO OPOSICIÓN Y TURNO LIBRE, DE UNA PLAZA DE INGENIERO/A TÉCNICO/A AGRÍCOLA",
+      "entity": "DIPUTACIÓN PROVINCIAL DE GUADALAJARA. ÁREA DE RECURSOS HUMANOS",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_3033.pdf"
+    },
     {
       "id": "GJ-2026-3018",
       "province": "Guadalajara",

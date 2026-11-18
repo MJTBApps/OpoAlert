@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-18T06:33:47.762826+00:00",
+  "lastCheckedUTC": "2026-11-18T09:42:01.028513+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "276",
-    "pagesVisited": 27,
-    "announcementsRead": 1815,
-    "opportunities": 325
+    "bulletin": "277",
+    "pagesVisited": 28,
+    "announcementsRead": 1913,
+    "opportunities": 338
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-20",
     "rangeEnd": "2026-11-18",
-    "issuesRead": 27,
-    "pagesVisited": 27,
-    "announcementsRead": 1815,
-    "opportunities": 325,
+    "issuesRead": 28,
+    "pagesVisited": 28,
+    "announcementsRead": 1913,
+    "opportunities": 338,
     "bulletins": [
       "250",
       "251",
@@ -46,7 +46,8 @@
       "273",
       "274",
       "275",
-      "276"
+      "276",
+      "277"
     ],
     "publicationDates": [
       "2026-10-20",
@@ -75,14 +76,14 @@
       "2026-11-13",
       "2026-11-14",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-18"
+      "2026-11-15"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/20/25000.PDF",
@@ -111,20 +112,22 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/13/27300.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/14/27400.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/16/27500.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/17/27600.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/17/27600.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/18/27700.PDF"
     ],
     "parseMethods": [
       "xml",
       "xml",
-      "html",
       "xml",
       "xml",
       "xml",
+      "xml",
       "html",
       "html",
       "xml",
       "html",
       "html",
+      "xml",
       "xml",
       "xml",
       "xml",
@@ -144,6 +147,136 @@
     ]
   },
   "notices": [
+    {
+      "id": "MD-20261118-79",
+      "province": "Madrid",
+      "title": "– San Fernando de Henares. Ofertas de empleo. Proceso selectivo",
+      "entity": "San Fernando de Henares",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-79.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-73",
+      "province": "Madrid",
+      "title": "– Navalcarnero. Ofertas de empleo. Proceso selectivo",
+      "entity": "Navalcarnero",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-73.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-71",
+      "province": "Madrid",
+      "title": "– Majadahonda. Ofertas de empleo. Proceso selectivo",
+      "entity": "Majadahonda",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-71.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-61",
+      "province": "Madrid",
+      "title": "– Boadilla del Monte. Ofertas de empleo. Proceso selectivo",
+      "entity": "Boadilla del Monte",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-61.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-58",
+      "province": "Madrid",
+      "title": "– Alcobendas. Ofertas de empleo. Proceso selectivo",
+      "entity": "Alcobendas",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-58.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-57",
+      "province": "Madrid",
+      "title": "– Alcalá de Henares. Ofertas de empleo. Proceso selectivo",
+      "entity": "Alcalá de Henares",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-57.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-14",
+      "province": "Madrid",
+      "title": "Aspirantes proceso selectivo – Resolución de 12 de noviembre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se procede a declarar la pérdida de derechos, de una aspirante en el Concurso de Traslados Voluntario a plazas de personal estatutario en la categoría de Médico de Familia de Atención Primaria del Servicio Madrileño de Salud, por incumplimiento de requisitos",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-14.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-13",
+      "province": "Madrid",
+      "title": "Concurso de traslados – Resolución de 12 de noviembre de 2026, de la Dirección General de Recursos Humanos y Relaciones Laborales del Servicio Madrileño de Salud, por la que se adjudica una plaza de la categoría de Médico de Familia en Atención Primaria como consecuencia de la pérdida del derecho a la adjudicación por una persona concursante en el concurso de traslados voluntario",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-13.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-11",
+      "province": "Madrid",
+      "title": "Bolsa única personal laboral – Resolución de 10 de noviembre de 2026, de la Dirección General de Función Pública, por la que se aprueba y publica la constitución del primer bloque de la bolsa única permanentemente abierta a efectos de contrataciones temporales de la categoría profesional de Titulado Superior (Grupo I, Nivel 9, Área B) de la Comunidad de Madrid",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-11.PDF",
+      "type": "Bolsa de trabajo"
+    },
+    {
+      "id": "MD-20261118-10",
+      "province": "Madrid",
+      "title": "Bolsa única personal laboral – Resolución de 10 de noviembre de 2026, de la Dirección General de Función Pública, por la que se declara finalizado el procedimiento de constitución del primer bloque de la bolsa única permanentemente abierta de Titulado Superior Especialista, Especialidad de Psiquiatría (Grupo I, Nivel 10, Área D) de la Comunidad de Madrid y se acuerda el archivo de las actuaciones",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-10.PDF",
+      "type": "Bolsa de trabajo"
+    },
+    {
+      "id": "MD-20261118-5",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 10 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Cultura, Turismo y Deporte, de conformidad con el artículo 55 de la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-5.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-4",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 10 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Digitalización, de conformidad con el artículo 55 de la Ley 1/1986, de 10 de abril, de la Función Pública de la Comunidad de Madrid, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-4.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261118-3",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 6 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de puestos de trabajo vacantes en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "18/11/2026",
+      "bulletin": "277",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/18/BOCM-20261118-3.PDF",
+      "type": "Plaza / oposición"
+    },
     {
       "id": "MD-20261117-112",
       "province": "Madrid",
@@ -2968,7 +3101,7 @@
       "id": "MD-20261022-68",
       "province": "Madrid",
       "title": "– Mancomunidad Intermunicipal de Servicios Sociales del Este de Madrid (MISSEM). Ofertas de empleo. Proceso selectivo",
-      "entity": "Mancomunidad Intermunicipal de Servicios Sociales del Este de Madrid (MISSEM)",
+      "entity": "MANCOMUNIDAD INTERMUNICIPAL DE SERVICIOS SOCIALES DEL ESTE DE MADRID (MISSEM)",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-68.PDF",
@@ -2978,7 +3111,7 @@
       "id": "MD-20261022-65",
       "province": "Madrid",
       "title": "– San Martín de Valdeiglesias. Ofertas de empleo. Proceso selectivo",
-      "entity": "San Martín de Valdeiglesias",
+      "entity": "SAN MARTÍN DE VALDEIGLESIAS",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-65.PDF",
@@ -2988,7 +3121,7 @@
       "id": "MD-20261022-62",
       "province": "Madrid",
       "title": "– Las Rozas de Madrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "Las Rozas de Madrid",
+      "entity": "LAS ROZAS DE MADRID",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-62.PDF",
@@ -2998,7 +3131,7 @@
       "id": "MD-20261022-61",
       "province": "Madrid",
       "title": "– Las Rozas de Madrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "Las Rozas de Madrid",
+      "entity": "LAS ROZAS DE MADRID",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-61.PDF",
@@ -3008,7 +3141,7 @@
       "id": "MD-20261022-59",
       "province": "Madrid",
       "title": "– Getafe. Ofertas de empleo. Proceso selectivo",
-      "entity": "Getafe",
+      "entity": "GETAFE",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-59.PDF",
@@ -3018,7 +3151,7 @@
       "id": "MD-20261022-58",
       "province": "Madrid",
       "title": "– Getafe. Ofertas de empleo. Proceso selectivo",
-      "entity": "Getafe",
+      "entity": "GETAFE",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-58.PDF",
@@ -3028,7 +3161,7 @@
       "id": "MD-20261022-56",
       "province": "Madrid",
       "title": "– Galapagar. Ofertas de empleo. Proceso selectivo",
-      "entity": "Galapagar",
+      "entity": "GALAPAGAR",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-56.PDF",
@@ -3038,7 +3171,7 @@
       "id": "MD-20261022-53",
       "province": "Madrid",
       "title": "– Colmenar Viejo. Ofertas de empleo. Proceso selectivo",
-      "entity": "Colmenar Viejo",
+      "entity": "COLMENAR VIEJO",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-53.PDF",
@@ -3058,7 +3191,7 @@
       "id": "MD-20261022-5",
       "province": "Madrid",
       "title": "Libre designación – Orden 4281/2026, de 7 de octubre, de la Consejería de Educación, Ciencia y Universidades, por la que se aprueba convocatoria pública para la provisión de un puesto de carrera de naturaleza laboral, denominado “Coordinador de Enfermería”, Área D, sanitario-asistencial, Nivel de puesto de carrera 14, forma de provisión Libre Designación",
-      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
+      "entity": "CONSEJERÍA DE EDUCACIÓN, CIENCIA  Y UNIVERSIDADES",
       "date": "22/10/2026",
       "bulletin": "252",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/22/BOCM-20261022-5.PDF",
