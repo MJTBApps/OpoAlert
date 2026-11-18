@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-17T16:55:28.151340+00:00",
+  "lastCheckedUTC": "2026-11-18T07:00:28.842087+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 21,
-    "announcementsRead": 548,
-    "opportunities": 28,
+    "announcementsRead": 544,
+    "opportunities": 29,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 28
+    "pdfLinksVerified": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -38,10 +37,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -61,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -75,15 +75,55 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 548,
-    "opportunities": 28,
+    "announcementsRead": 544,
+    "opportunities": 29,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "203",
-      "date": "2026-10-16"
+      "number": "204",
+      "date": "2026-10-19"
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5431",
+      "province": "Jaén",
+      "title": "Rectificación de las bases para la creación de una bolsa de empleo de Mediador Comunicativo en el Excmo. Ayto. de Bailén.",
+      "entity": "AYUNTAMIENTO DE BAILÉN (JAÉN)",
+      "date": "18/11/2026",
+      "bulletin": "225",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-18&numeroEdicto=5431&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5430",
+      "province": "Jaén",
+      "title": "Convocatoria y bases para la creación de tres bolsas de empleo en las categorías profesionales de personal directivo, personal de apoyo a la orientación y personal de apoyo administrativo para la ejecución del Programa de Empleo y Formación en el Excmo. Ayto. de Bailén.",
+      "entity": "AYUNTAMIENTO DE BAILÉN (JAÉN)",
+      "date": "18/11/2026",
+      "bulletin": "225",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-18&numeroEdicto=5430&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5422",
+      "province": "Jaén",
+      "title": "Convocatoria y aprobación de las bases de selección de cuatro plazas de Oficial 1ª Electricista, personal laboral fijo, mediante el sistema de concurso-oposición libre, para el Excmo. Ayuntamiento de Andújar.",
+      "entity": "AYUNTAMIENTO DE ANDÚJAR (JAÉN)",
+      "date": "18/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-18&numeroEdicto=5422&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5421",
+      "province": "Jaén",
+      "title": "Convocatoria y aprobación de las bases de selección de dos plazas de Oficial 1ª Electricista, reservado a personal laboral fijo, promoción interna y mediante sistema de concurso, para el Excmo. Ayuntamiento de Andújar.",
+      "entity": "AYUNTAMIENTO DE ANDÚJAR (JAÉN)",
+      "date": "18/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-18&numeroEdicto=5421&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5400",
       "province": "Jaén",
@@ -333,36 +373,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-21&numeroEdicto=4918&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4898",
-      "province": "Jaén",
-      "title": "Res. núm. 3238, de fecha 13/10/2026 de la Sra. Diputada de Recursos Humanos, por la que se aprueban las bases para la creación de la bolsa de trabajo de oficial/a de albañilería, perteneciente al grupo c2, para cubrir necesidades temporales de la Diputación Provincial y sus Organismos Autónomos, mediante prueba.",
-      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
-      "date": "19/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-19&numeroEdicto=4898&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4895",
-      "province": "Jaén",
-      "title": "Res. núm. 3263, de fecha 14/10/2026 de la Sra. Diputada de Recursos Humanos, por la que se aprueban las bases para la provisión de cuatro plazas de funcionarias/os de carrera, pertenecientes al Grupo C, Subgrupo C.2, Escala Administración Especial, Subescala Servicios Especiales, clase Personal de Oficios, categoría Oficial, denominación Supervisora/or de Obras, mediante el sistema de oposición libre.",
-      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
-      "date": "19/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-19&numeroEdicto=4895&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4643",
-      "province": "Jaén",
-      "title": "Bases y convocatoria para la selección de un/a funcionario/a interino/a, perteneciente al Grupo C-1, Escala Administración General, Subescala Administrativa del Área de Intervención y Tesorería mediante el sistema de concurso-oposición.",
-      "entity": "AYUNTAMIENTO DE PEGALAJAR (JAÉN)",
-      "date": "19/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-19&numeroEdicto=4643&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-17T16:50:14.602816+00:00",
+  "lastCheckedUTC": "2026-11-18T06:56:13.511786+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 30,
-    "announcementsRead": 906,
-    "opportunities": 25,
+    "announcementsRead": 929,
+    "opportunities": 24,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "200",
       "201",
       "202",
       "Ext. 27",
@@ -46,10 +45,10 @@
       "219",
       "Ext. 34",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-21",
@@ -78,7 +77,8 @@
       "2026-11-13",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -91,10 +91,9 @@
       "2026-11-15"
     ],
     "issuesRead": 30,
-    "announcementsRead": 906,
-    "opportunities": 25,
+    "announcementsRead": 929,
+    "opportunities": 24,
     "regularBulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -115,7 +114,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "extraordinaryBulletins": [
       "Ext. 27",
@@ -128,7 +128,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47165,
       47185,
       47206,
       47245,
@@ -157,7 +156,8 @@
       47545,
       47605,
       47566,
-      47567
+      47567,
+      47625
     ]
   },
   "notices": [
@@ -400,16 +400,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441895"
-    },
-    {
-      "id": "CN-2026-8065",
-      "province": "Cantabria (BOC)",
-      "title": "Bases y convocatoria por la que se regirá la selección para constituir mediante concurso y por el procedimiento de urgencia, una bolsa de empleo de personal laboral, Oficial 1º Mantenimiento Electrónico del Servicio Municipal de Transportes Urbanos.",
-      "entity": "Ayuntamiento de Santander",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441869"
     }
   ]
 }

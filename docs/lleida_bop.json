@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-17T16:55:53.671236+00:00",
+  "lastCheckedUTC": "2026-11-18T07:00:53.939940+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 23,
-    "announcementsRead": 1090,
-    "opportunities": 77
+    "announcementsRead": 1064,
+    "opportunities": 71
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -37,10 +36,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -61,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,40 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1090,
-    "opportunities": 77
+    "announcementsRead": 1064,
+    "opportunities": 71
   },
   "notices": [
+    {
+      "id": "LE-202622109755",
+      "province": "Lleida (BOP)",
+      "title": "Convocatoria i bases reguladores del procés selectiu mitjançant concurs oposició per a la cobertura definitiva d’una plaça de Tècnic/a jurista dels Serveis Socials del Consell Comarcal del Segrià, A1, codi F-AG14 (exp. 10515/2026)",
+      "entity": "CONSELL COMARCAL DEL SEGRIÀ",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/221/202622109755.pdf"
+    },
+    {
+      "id": "LE-202622109754",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria i bases reguladores del procés selectiu mitjançant concurs oposició per a la cobertura definitiva d’una plaça d’Arquitecte/a Tècnic/a del Consell Comarcal del Segrià, A2, codi F-AE80 (exp. 10781/2026)",
+      "entity": "CONSELL COMARCAL DEL SEGRIÀ",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/221/202622109754.pdf"
+    },
+    {
+      "id": "LE-202622109753",
+      "province": "Lleida (BOP)",
+      "title": "Anunci d'aprovació de les bases específiques i la convocatòria que han de regir el procediment de selecció per a la creació d’una borsa de treball de tècnic/a mitjà/na del Subgrup A2, de l’escala d’administració especial, per al Departament de Noves Tecnologies",
+      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/221/202622109753.pdf"
+    },
     {
       "id": "LE-202622009721",
       "province": "Lleida (BOP)",
@@ -757,96 +787,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/200/202620008686.pdf"
-    },
-    {
-      "id": "LE-202619908662",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu, a través del sistema concurs-oposició lliure per cobrir una plaça d’encarregat/da del servei d’aigua (C1), provisió del lloc de treball i creació d’una borsa de treball",
-      "entity": "AJUNTAMENT DE TORREFARRERA (TORREFARRERA)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908662.pdf"
-    },
-    {
-      "id": "LE-202619908657",
-      "province": "Lleida (BOP)",
-      "title": "Bases i convocatòria del procés selectiu, mitjançant concurs-oposició, torn lliure, per la constitució d'una borsa de treball d'oficials de cementiri, subgrup C2, amb caràcter d'urgència",
-      "entity": "AJUNTAMENT DE TÀRREGA (TÀRREGA)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908657.pdf"
-    },
-    {
-      "id": "LE-202619908656",
-      "province": "Lleida (BOP)",
-      "title": "Bases i convocatòria per a la provisió no definitiva del lloc de treball de Tresoreria de la Paeria de Cervera",
-      "entity": "PAERIA DE CERVERA",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908656.pdf"
-    },
-    {
-      "id": "LE-202619908655",
-      "province": "Lleida (BOP)",
-      "title": "Bases i convocatòria per a la provisió no definitiva del lloc de treball de Secretaria de la Paeria de Cervera",
-      "entity": "PAERIA DE CERVERA",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908655.pdf"
-    },
-    {
-      "id": "LE-202619908635",
-      "province": "Lleida (BOP)",
-      "title": "Anunci de la convocatòria i les bases reguladores que han de regir el procés de selecció, mitjançant concurs oposició lliure, per proveir una plaça de tècnic/a superior, associada al lloc de treball de tècnic en dret, grup A, subgrup A1, i constitució d'una borsa de treball.",
-      "entity": "CONSELL COMARCAL DE LES GARRIGUES (BORGES BLANQUES, LES)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908635.pdf"
-    },
-    {
-      "id": "LE-202619908633",
-      "province": "Lleida (BOP)",
-      "title": "ANUNCI CONVOCATORIA I BASES REGULADORES PROCES SELECTIU D'UN PEO/CONDUCTOR",
-      "entity": "CONSELL COMARCAL DEL PALLARS JUSSÀ (TREMP)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908633.pdf"
-    },
-    {
-      "id": "LE-202619908632",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases i la convocatòria d'un/a agent d'ocupació i desenvolupament local (AODL) a l'àrea de promoció econòmica del Consell Comarcal de la Cerdanya, en règim de personal funcionari interí, i constitució de borsa de treball",
-      "entity": "CONSELL COMARCAL DE LA CERDANYA (PUIGCERDÀ)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908632.pdf"
-    },
-    {
-      "id": "LE-202619908553",
-      "province": "Lleida (BOP)",
-      "title": "Modificació de les bases específiques reguladores del procés de selecció, mitjançant concurs-oposició en torn lliure, per a la provisió d'una plaça d'Enginyer/a industrial amb constitució de borsa. Reobertura del termini de presentació de sol·licituds.",
-      "entity": "AJUNTAMENT DE MOLLERUSSA (MOLLERUSSA)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908553.pdf"
-    },
-    {
-      "id": "LE-202619908504",
-      "province": "Lleida (BOP)",
-      "title": "CONVOCATORIA I BASES CONCURS-OPOSICIÓ, SECRETARIA-INTERVENCIÓ",
-      "entity": "AJUNTAMENT DE RIBERA D'URGELLET (RIBERA D'URGELLET)",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/199/202619908504.pdf"
     }
   ]
 }

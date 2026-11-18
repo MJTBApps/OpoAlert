@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-17T16:58:08.636459+00:00",
+  "lastCheckedUTC": "2026-11-18T07:03:41.886895+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 22,
-    "announcementsRead": 615,
-    "opportunities": 38
+    "announcementsRead": 631,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -37,10 +36,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -61,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,34 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 615,
-    "opportunities": 38
+    "announcementsRead": 631,
+    "opportunities": 40
   },
   "notices": [
+    {
+      "id": "RI-2026-c1f1e166be5c9aee23",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO/A: se convoca el proceso selectivo para la contratación como personal indefinido de un técnico con cargo a financiación externa de carácter finalista del Proyecto de referencia TAU Protein, titulado: Systematic manipulation of tau protein aggregation: bridging biochemical and pathological properties",
+      "entity": "UNIVERSIDAD DE LA RIOJA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43390233-1-PDF-580979",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F18&referencia=43359788-5-HTML-580979-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-92d19f6bf055622e34",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO/A: convocatoria para la contratación como personal indefinido con cargo a financiación externa de carácter finalista del Proyecto PID2024-157613OB-C21, titulado: Aplicaciones sostenibles de plasma para mejorar las etapas clave de la elaboración de cerveza y valorización de sus subproductos. SPARKS",
+      "entity": "UNIVERSIDAD DE LA RIOJA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43390274-1-PDF-580973",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F18&referencia=43355397-7-HTML-580973-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-bccda7134e1b378128",
       "province": "La Rioja (BOR)",

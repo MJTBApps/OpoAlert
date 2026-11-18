@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-17T16:57:22.662882+00:00",
+  "lastCheckedUTC": "2026-11-18T07:02:23.540903+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
+    "bulletin": "230",
     "pagesVisited": 22,
-    "announcementsRead": 1349,
-    "opportunities": 40
+    "announcementsRead": 1467,
+    "opportunities": 39
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -37,10 +36,10 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -61,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -75,8 +75,8 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1349,
-    "opportunities": 40
+    "announcementsRead": 1467,
+    "opportunities": 39
   },
   "notices": [
     {
@@ -468,16 +468,6 @@
       "bulletin": "209",
       "type": "Plaza / oposición",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/209/1"
-    },
-    {
-      "id": "NA-2026-208-2",
-      "province": "Navarra",
-      "title": "RESOLUCIÓN 3186/2026, de 29 de septiembre, de la directora general de Función Pública, por la que se aprueba la convocatoria para la provisión, mediante oposición, de dos plazas del puesto de trabajo de titulado/a superior, al servicio de la Administración de la Comunidad Foral de Navarra y sus organismos autónomos.",
-      "entity": "Comunidad Foral de Navarra",
-      "date": "19/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/208/2"
     }
   ]
 }

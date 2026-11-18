@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-17T16:59:34.892418+00:00",
+  "lastCheckedUTC": "2026-11-18T07:04:04.084629+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 21,
-    "announcementsRead": 372,
-    "opportunities": 20
+    "announcementsRead": 373,
+    "opportunities": 18
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -36,10 +35,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -59,7 +58,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,20 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 372,
-    "opportunities": 20
+    "announcementsRead": 373,
+    "opportunities": 18
   },
   "notices": [
+    {
+      "id": "VD-2026-3403",
+      "province": "Valladolid",
+      "title": "Convocatoria a celebración de prueba selectiva relativa a la provisión de una plaza por promoción interna de oficial segunda de limpieza de interiores.",
+      "entity": "AYUNTAMIENTO DE TUDELA DE DUERO",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/noviembre/18/BOPVA-A-2026-03403.pdf"
+    },
     {
       "id": "VD-2026-3241",
       "province": "Valladolid",
@@ -246,36 +256,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/20/BOPVA-A-2026-03041.pdf"
-    },
-    {
-      "id": "VD-2026-3031",
-      "province": "Valladolid",
-      "title": "Bases y convocatoria para el acceso a una plaza de Encargado/a de la Guardería Municipal, personal laboral fijo del Ayuntamiento de Viana de Cega, por el sistema de Concurso-Oposición.",
-      "entity": "AYUNTAMIENTO DE VIANA DE CEGA",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/19/BOPVA-A-2026-03031.pdf"
-    },
-    {
-      "id": "VD-2026-3030",
-      "province": "Valladolid",
-      "title": "Bases y convocatoria para el acceso a dos plazas de Técnico/a en Educación Infantil, personal laboral fijo del Ayuntamiento de Viana de Cega, por el sistema de concurso-oposición.",
-      "entity": "AYUNTAMIENTO DE VIANA DE CEGA",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/19/BOPVA-A-2026-03030.pdf"
-    },
-    {
-      "id": "VD-2026-3029",
-      "province": "Valladolid",
-      "title": "Bases y convocatoria para el acceso por promoción interna a una plaza de administrativo (Grupo C, Subgrupo C1), personal funcionario de carrera del Ayuntamiento de Viana de Cega, por el sistema de concurso oposición.",
-      "entity": "AYUNTAMIENTO DE VIANA DE CEGA",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/19/BOPVA-A-2026-03029.pdf"
     }
   ]
 }
