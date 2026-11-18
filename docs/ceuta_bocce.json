@@ -2,24 +2,23 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-16T17:02:33.496033+00:00",
+  "lastCheckedUTC": "2026-11-18T10:32:45.636026+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6669",
+    "bulletin": "6670",
     "pagesVisited": 15,
-    "announcementsRead": 79,
-    "opportunities": 0,
+    "announcementsRead": 91,
+    "opportunities": 1,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
     "originalFullPdfIssues": 15,
-    "pdfPagesRead": 240
+    "pdfPagesRead": 275
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-18",
-    "rangeEnd": "2026-11-16",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "EXTRA48",
       "6662",
       "EXTRA49",
       "EXTRA50",
@@ -33,10 +32,10 @@
       "6668",
       "EXTRA53",
       "EXTRA54",
-      "6669"
+      "6669",
+      "6670"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-20",
       "2026-10-22",
@@ -50,10 +49,10 @@
       "2026-11-10",
       "2026-11-10",
       "2026-11-10",
-      "2026-11-13"
+      "2026-11-13",
+      "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-18",
       "2026-10-21",
       "2026-10-24",
       "2026-10-25",
@@ -70,11 +69,12 @@
       "2026-11-12",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-18"
     ],
     "issuesRead": 15,
-    "announcementsRead": 79,
-    "opportunities": 0,
+    "announcementsRead": 91,
+    "opportunities": 1,
     "regularBulletins": [
       "6662",
       "6663",
@@ -83,10 +83,10 @@
       "6666",
       "6667",
       "6668",
-      "6669"
+      "6669",
+      "6670"
     ],
     "extraordinaryBulletins": [
-      "EXTRA48",
       "EXTRA49",
       "EXTRA50",
       "EXTRA51",
@@ -95,18 +95,6 @@
       "EXTRA54"
     ],
     "pdfEvidence": [
-      {
-        "number": "EXTRA48",
-        "date": "2026-10-19",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23296-bocce-extra48-19-10-2026?Itemid=534",
-        "sha256": "8d8c57d34308f6f107d15e41fbc4c3ccd1e81d9588c3ad7b0dc5d48a1ea1492d",
-        "bytes": 383096,
-        "pages": 4,
-        "edicts": [
-          98,
-          98
-        ]
-      },
       {
         "number": "6662",
         "date": "2026-10-20",
@@ -274,8 +262,32 @@
           755,
           762
         ]
+      },
+      {
+        "number": "6670",
+        "date": "2026-11-17",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23325-bocce-6670-17-11-2026?Itemid=534",
+        "sha256": "40882ce3c14bbbb5759b5dda4a63b628788f2778ebb042944335bef3e16fdfab",
+        "bytes": 6669934,
+        "pages": 39,
+        "edicts": [
+          763,
+          775
+        ]
       }
     ]
   },
-  "notices": []
+  "notices": [
+    {
+      "id": "CE-2026-763",
+      "province": "Ceuta (BOCCE)",
+      "title": "Aprobación de la convocatoria pública del procedimiento para otorgar 7 licencias provisionales sobre el dominio público, por plazo de 1 año (prorrogable), en régimen de uso común especial, para el aprovechamiento y utilización de kiosco, y con destino a venta de golosinas, helados y/o periódicos y revistas.",
+      "entity": "Ciudad Autónoma de Ceuta",
+      "date": "17/11/2026",
+      "bulletin": "6670",
+      "type": "Plaza / oposición",
+      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23325-bocce-6670-17-11-2026?Itemid=534",
+      "publisherArticle": "763"
+    }
+  ]
 }
