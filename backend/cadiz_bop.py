@@ -19,7 +19,7 @@ ISSUE_RE=re.compile(r"/boletin/Boletin-numero-(\d{1,4})-del-ano-(\d{4})/?")
 TITLE_RE=re.compile(r"Bolet[ií]n n[uú]mero\s+(\d{1,4}) del a[nñ]o\s+(\d{4})",re.I)
 SUM_RE=re.compile(r"^SU-(\d{1,4})_(\d{2})-(\d{2})-(\d{2})\.pdf$",re.I)
 PDF_RE=re.compile(r"^BOP(\d{1,4})_(\d{2})-(\d{2})-(\d{2})\.pdf$",re.I)
-ID_RE=re.compile(r"^\s*(\d{1,3})\.(\d{3})\s*\.\s*-\s*")
+ID_RE=re.compile(r"^\s*(\d{1,3})\s*\.\s*(\d{3})\s*\.\s*-\s*")
 PAGE_RE=re.compile(r"page=(\d{1,5})")
 DATE_STAMP_RE=re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s+([A-Za-z]{3})\s+(\d{1,2})\s+\d{2}:\d{2}:\d{2}\s+(?:CET|CEST)\s+(\d{4})")
 SPANISH_DATE_RE=re.compile(r"\b(\d{1,2})\s+de\s+(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\s+de\s+(\d{4})\b",re.I)
@@ -220,7 +220,7 @@ def parse_issue(html:str,year:int,number:int)->dict:
         agency=ID_RE.sub("",agency).strip(" .-\t")
         original=urljoin(HOME,a.get("href",""))
         if not code or not agency or not validate_doc(original):
-            raise ProvincialCoverageError(f"Cadiz BOP {number}: anuncio sin ID, organismo o PDF")
+            raise ProvincialCoverageError(f"Cadiz BOP {number}: anuncio sin ID, organismo o PDF: {full[:90]!r} {a.get('href','')[-70:]}")
         if urlsplit(original).path!=urlsplit(pdf).path.replace("/.boletines_pdf/","/export/sites/default/.boletines_pdf/",1):
             raise ProvincialCoverageError(f"Cadiz BOP {number}: enlace a PDF de otro boletin")
         ident=f"CA-{year}-{code.group(1)}{code.group(2)}".replace("CA-"+str(year)+"-0","CA-"+str(year)+"-0")

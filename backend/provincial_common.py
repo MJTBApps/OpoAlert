@@ -59,6 +59,12 @@ def classify(title: str) -> str | None:
     )):
         if any(x in t for x in ("convocatoria", "bases", "constitucio", "creacio", "formacion")):
             return "Bolsa de trabajo"
+    # Listas para cubrir necesidades temporales (Diputación de Cádiz, BOP 221/2026:
+    # «constitución de listados de 50 personas aspirantes… necesidades temporales»).
+    if any(x in t for x in ("convocatoria", "constitucion")) and (
+        "necesidades temporales" in t or ("listados de" in t and "aspirantes" in t)
+    ):
+        return "Bolsa de trabajo"
     if any(x in t for x in ("convocatoria", "bases", "oposicion", "oposicio",
                            "proceso selectivo", "proces selectiu", "concurso", "concurs")):
         if re.search(r"\b(?:plaz[ao]s?|places?|placa|puestos?|llocs?|dotacion(?:es)?|personal|funcionari[oa]s?|oposicion|oposicio)\b", t):

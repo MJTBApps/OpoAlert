@@ -155,7 +155,17 @@ def month_listing(year,month):
     if soup.select(".pagination a, a[href*='limitstart'], a[href*='start=']"):
         fail(f"el mes {month}/{year} tiene varias páginas; el lector solo conoce listados de una")
     time.sleep(PAUSE)
-    return parse_listing(soup,cat,year,month)
+    found=parse_listing(soup,cat,year,month)
+    # El archivo a veces deja un boletín solo en la categoría de ese mes del año anterior
+    # (extra 52 del 7/11/2026, en 1963-noviembre). Se toman de allí los de este mes y año.
+    prev=year_category(year-1).get(month)
+    if prev:
+        old=html(CATEGORY_URL.format(slug=prev))
+        time.sleep(PAUSE)
+        for url,v in parse_listing(old,prev,year,month).items():
+            if (v[2].year,v[2].month)==(year,month):
+                found.setdefault(url,v)
+    return found
 
 def months_back(y,m,n):
     for _ in range(n):
