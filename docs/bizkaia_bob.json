@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-17T16:29:59.657198+00:00",
+  "lastCheckedUTC": "2026-11-18T06:27:38.662929+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "221",
-    "pagesVisited": 22,
-    "announcementsRead": 844,
-    "opportunities": 63
+    "pagesVisited": 21,
+    "announcementsRead": 810,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -40,7 +39,6 @@
       "221"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-18"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 844,
-    "opportunities": 63
+    "issuesRead": 21,
+    "announcementsRead": 810,
+    "opportunities": 60
   },
   "notices": [
     {
@@ -677,36 +676,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/20/II-5376_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5345",
-      "province": "Bizkaia",
-      "title": "Modificar las bases generales para la provisión en comisión de servicios de puestos de trabajo en el Ayuntamiento de Barakaldo.",
-      "entity": "Ayuntamiento de Barakaldo",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/19/II-5345_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5329",
-      "province": "Bizkaia",
-      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la incorporación de una aspirante en el proceso selectivo convocado para la provisión en propiedad de 13 plazas de Auxiliar de Biblioteca, 5 de ellas con perfil lingüístico 3 de euskera preceptivo y 1 para turno restringido de reserva a discapacitadas/os, con perfil lingüístico 3 de euskera preceptivo, mediante el sistema de acceso libre por concurso-oposición.",
-      "entity": "Ayuntamiento de Bilbao",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/19/II-5329_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5318",
-      "province": "Bizkaia",
-      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la convocatoria del Concurso Específico para proveer, con carácter definitivo, diversas dotaciones de los puestos de Jefatura del Grupo A, Subgrupo A-1, adscritos a diversas Áreas, así como a la aprobación de las Bases Específicas que regularán el presente proceso selectivo.",
-      "entity": "Ayuntamiento de Bilbao",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/19/II-5318_cas.pdf"
     }
   ]
 }

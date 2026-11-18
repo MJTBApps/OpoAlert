@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Guadalajara",
   "source": "https://boletin.dguadalajara.es/boletin/",
-  "lastCheckedUTC": "2026-11-17T16:32:43.945102+00:00",
+  "lastCheckedUTC": "2026-11-18T06:30:22.064940+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 22,
-    "announcementsRead": 309,
-    "opportunities": 24
+    "pagesVisited": 21,
+    "announcementsRead": 299,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -40,7 +39,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-18"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 309,
-    "opportunities": 24
+    "issuesRead": 21,
+    "announcementsRead": 299,
+    "opportunities": 22
   },
   "notices": [
     {
@@ -297,26 +296,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2743.pdf"
-    },
-    {
-      "id": "GJ-2026-2725",
-      "province": "Guadalajara",
-      "title": "BASES ESPECÍFICAS Y CONVOCATORIA DE LAS PRUEBAS SELECTIVAS PARA LA PROVISIÓN EN PROPIEDAD, POR EL SISTEMA DE CONCURSO OPOSICIÓN Y TURNO DE PROMOCIÓN INTERNA, DE UNA PLAZA DE ENCARGADO/A DE INFRAESTRUCTURAS",
-      "entity": "DIPUTACIÓN PROVINCIAL DE GUADALAJARA. ÁREA DE RECURSOS HUMANOS",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2725.pdf"
-    },
-    {
-      "id": "GJ-2026-2724",
-      "province": "Guadalajara",
-      "title": "BASES ESPECÍFICAS Y CONVOCATORIA DE LAS PRUEBAS SELECTIVAS PARA LA PROVISIÓN EN PROPIEDAD, POR EL SISTEMA DE CONCURSO OPOSICIÓN Y TURNO DE PROMOCIÓN INTERNA, DE UNA PLAZA DE TÉCNICO/A AUXILIAR PROTOCOLO",
-      "entity": "DIPUTACIÓN PROVINCIAL DE GUADALAJARA. ÁREA DE RECURSOS HUMANOS",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://boletin.dguadalajara.es/boletin/pdf/pdf2026_2724.pdf"
     }
   ]
 }

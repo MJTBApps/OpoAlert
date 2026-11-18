@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-17T16:29:40.303349+00:00",
+  "lastCheckedUTC": "2026-11-18T06:27:25.481020+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 22,
-    "announcementsRead": 769,
-    "opportunities": 59
+    "announcementsRead": 772,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -37,10 +36,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -61,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,30 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 769,
-    "opportunities": 59
+    "announcementsRead": 772,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "AC-2026-7496",
+      "province": "A Coruña",
+      "title": "Bases, convocatoria e constitución de bolsa de emprego de traballador/a social (A2)",
+      "entity": "Betanzos",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/18/2026_0000007496.pdf"
+    },
+    {
+      "id": "AC-2026-7471",
+      "province": "A Coruña",
+      "title": "Bases reguladoras para a selección de dous orientadores/as-prospectores/as e un auxiliar administrativo/a como funcionarios/as interinos/as para a execución do Programa integrado de emprego A Laracha-Coristanco 2026/27",
+      "entity": "Laracha, A",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/18/2026_0000007471.pdf"
+    },
     {
       "id": "AC-2026-7421",
       "province": "A Coruña",
@@ -657,16 +677,6 @@
       "bulletin": "200",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/20/2026_0000006530.pdf"
-    },
-    {
-      "id": "AC-2026-6643",
-      "province": "A Coruña",
-      "title": "Bases para a provisión do posto de traballo administrativa/o de modernización e xestión da información, código do posto: 01.00.00.06, mediante comisión de servizos",
-      "entity": "Neda",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/19/2026_0000006643.pdf"
     }
   ]
 }

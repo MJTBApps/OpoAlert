@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Segovia",
   "source": "https://www.dipsegovia.es/bop",
-  "lastCheckedUTC": "2026-11-17T16:36:03.488406+00:00",
+  "lastCheckedUTC": "2026-11-18T06:33:25.144379+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "137",
+    "bulletin": "138",
     "pagesVisited": 13,
-    "announcementsRead": 285,
-    "opportunities": 11
+    "announcementsRead": 307,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "125",
       "126",
       "127",
       "128",
@@ -28,10 +27,10 @@
       "134",
       "135",
       "136",
-      "137"
+      "137",
+      "138"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-21",
       "2026-10-23",
       "2026-10-26",
@@ -43,7 +42,8 @@
       "2026-11-09",
       "2026-11-11",
       "2026-11-13",
-      "2026-11-16"
+      "2026-11-16",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-20",
@@ -65,10 +65,9 @@
       "2026-11-17"
     ],
     "issuesRead": 13,
-    "announcementsRead": 285,
-    "opportunities": 11,
+    "announcementsRead": 307,
+    "opportunities": 13,
     "editionPDFs": [
-      "https://www.dipsegovia.es/documents/39512/60906fa2-f09b-c4a8-7b7f-7150d4aa7983",
       "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
       "https://www.dipsegovia.es/documents/39512/e99e5722-90ef-57a0-683f-d2d7d40178ec",
       "https://www.dipsegovia.es/documents/39512/c199de1b-8423-f910-df6f-8a5802c9c602",
@@ -80,11 +79,11 @@
       "https://www.dipsegovia.es/documents/39512/fd22df13-1993-1e86-3b21-ed4dec8fefea",
       "https://www.dipsegovia.es/documents/39512/5225d5ee-eadf-918d-87de-c5e80807d507",
       "https://www.dipsegovia.es/documents/39512/70cd5634-c35c-591e-d532-d7cb88172f0e",
-      "https://www.dipsegovia.es/documents/39512/ceda7672-e01b-7e30-5d31-956f1829ebee"
+      "https://www.dipsegovia.es/documents/39512/ceda7672-e01b-7e30-5d31-956f1829ebee",
+      "https://www.dipsegovia.es/documents/39512/228d84ee-1061-b327-99f3-f11f62e72178"
     ],
-    "originalPdfPagesRead": 638,
+    "originalPdfPagesRead": 676,
     "editionArticleCounts": [
-      15,
       19,
       26,
       22,
@@ -96,10 +95,33 @@
       31,
       27,
       24,
-      24
+      24,
+      37
     ]
   },
   "notices": [
+    {
+      "id": "SG-2026-c1b67dae712024c819",
+      "province": "Segovia",
+      "title": "Convocatoria y bases del proceso selectivo para cubrir una plaza de Administrativo/a mediante promoción interna",
+      "entity": "Ayuntamiento de Bernuy de Porreros",
+      "date": "18/11/2026",
+      "bulletin": "138",
+      "type": "Plaza / oposición",
+      "url": "https://www.dipsegovia.es/documents/39512/228d84ee-1061-b327-99f3-f11f62e72178",
+      "pageInPdf": 29
+    },
+    {
+      "id": "SG-2026-0d8aae5fe4a28b0f8b",
+      "province": "Segovia",
+      "title": "Bases y convocatoria para la constitución de una bolsa de trabajo de Ingenieros Técnicos de Obras Públicas",
+      "entity": "AYUNTAMIENTO DE SEGOVIA",
+      "date": "18/11/2026",
+      "bulletin": "138",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dipsegovia.es/documents/39512/228d84ee-1061-b327-99f3-f11f62e72178",
+      "pageInPdf": 15
+    },
     {
       "id": "SG-2026-0340640465c1b19f8a",
       "province": "Segovia",

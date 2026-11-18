@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-17T16:32:05.444022+00:00",
+  "lastCheckedUTC": "2026-11-18T06:30:12.511034+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 802,
-    "opportunities": 128
+    "announcementsRead": 799,
+    "opportunities": 120
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -36,10 +35,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -59,7 +58,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,30 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 802,
-    "opportunities": 128
+    "announcementsRead": 799,
+    "opportunities": 120
   },
   "notices": [
+    {
+      "id": "AO-2026-007962614",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de la Función Pública, por la que se nombra personal funcionario en prácticas del Cuerpo Ejecutivo de la Administración de la Comunidad Autónoma de Aragón, Escala General Administrativa, Ejecutivos de Informática. (Código de convocatoria 240023).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475419081010"
+    },
+    {
+      "id": "AO-2026-007962613",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de la Función Pública, por la que se nombra personal funcionario en prácticas del Cuerpo de Funcionarios Superiores de la Administración de la Comunidad Autónoma de Aragón, Escala Facultativa Superior, Veterinarios de Administración Sanitaria. (Código de convocatoria 240001).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475417061010"
+    },
     {
       "id": "AO-2026-007962574",
       "province": "Aragón (BOA)",
@@ -1256,106 +1276,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470958240404"
-    },
-    {
-      "id": "AO-2026-007961813",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 7 de agosto de 2026, del Ayuntamiento de Cuarte de Huerva, por la que se convocan pruebas selectivas para la provisión, mediante concurso-oposición, de una plaza de Ingeniero Técnico Industrial de la plantilla de funcionarios del Ayuntamiento de Cuarte de Huerva.",
-      "entity": "AYUNTAMIENTO DE CUARTE DE HUERVA",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470726390505"
-    },
-    {
-      "id": "AO-2026-007961812",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Directora General de Personal, por la que convoca concurso de méritos para la elaboración de una lista complementaria para el desempeño temporal de puestos de trabajo del Cuerpo de Inspectores de Educación por funcionariado de otros cuerpos docentes de enseñanzas no universitarias en el ámbito de la Comunidad Autónoma de Aragón.",
-      "entity": "DEPARTAMENTO DE EDUCACIÓN, CIENCIA Y UNIVERSIDADES",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470724370505"
-    },
-    {
-      "id": "AO-2026-007961809",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, del Director General de la Función Pública, por la que se determina la composición de la Comisión Permanente de Selección en las pruebas selectivas para ingreso, por turno independiente para personas con enfermedad mental, en el Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica de Gestión, Técnicos de Gestión General. (Código de convocatoria 250136).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470718310404"
-    },
-    {
-      "id": "AO-2026-007961808",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, del Director General de la Función Pública, por la que se determina la composición de la Comisión Permanente de Selección en las pruebas selectivas para ingreso, por turno independiente para personas con discapacidad física o sensorial, en el Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica de Gestión, Técnicos de Gestión General. (Código de convocatoria 250122).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470716290404"
-    },
-    {
-      "id": "AO-2026-007961804",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Servicio de Anestesiología y Reanimación en el Hospital Universitario \"Royo Villanova\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470708210404"
-    },
-    {
-      "id": "AO-2026-007961803",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Psiquiatría Infantojuvenil en el Hospital Universitario \"Royo Villanova\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470706190303"
-    },
-    {
-      "id": "AO-2026-007961802",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Oncología Vesical del Servicio de Urología en el Hospital Clínico Universitario \"Lozano Blesa\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470704170303"
-    },
-    {
-      "id": "AO-2026-007961801",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Neumología en el Hospital Universitario \"Royo Villanova\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470702150303"
-    },
-    {
-      "id": "AO-2026-007961800",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Hospitalización, Unidad de Cuidados Intermedios y Consultas Externas del Servicio de Cardiología en el Hospital Clínico Universitario \"Lozano Blesa\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470700130303"
-    },
-    {
-      "id": "AO-2026-007961799",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se resuelve el proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Ginecología Orgánica y Salud de la Mujer del Servicio de Obstetricia y Ginecología en el Hospital Clínico Universitario \"Lozano Blesa\" de Zaragoza.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470698110303"
     }
   ]
 }

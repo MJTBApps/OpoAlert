@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-17T16:32:18.146579+00:00",
+  "lastCheckedUTC": "2026-11-18T06:30:12.076312+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 21,
-    "announcementsRead": 267,
-    "opportunities": 44
+    "announcementsRead": 272,
+    "opportunities": 45
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -36,10 +35,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -59,7 +58,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,9 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 267,
-    "opportunities": 44,
+    "announcementsRead": 272,
+    "opportunities": 45,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_201_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_202_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_203_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_204_2026.pdf",
@@ -96,10 +95,21 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_218_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_219_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_220_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_221_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_221_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_222_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-384779",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para la selección como funcionario de carrera de una plaza de Auxiliar Administrativo",
+      "entity": "Ayuntamiento de Higuera de la Sierra",
+      "date": "18/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_384779_BOP-222_2026.pdf"
+    },
     {
       "id": "HB-2026-385327",
       "province": "Huelva",

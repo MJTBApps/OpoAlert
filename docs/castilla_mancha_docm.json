@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-17T16:30:25.175236+00:00",
+  "lastCheckedUTC": "2026-11-18T06:28:20.739022+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 23,
-    "announcementsRead": 737,
+    "announcementsRead": 730,
     "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -38,10 +37,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -63,7 +62,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -76,10 +76,20 @@
       "2026-11-15"
     ],
     "issuesRead": 23,
-    "announcementsRead": 737,
+    "announcementsRead": 730,
     "opportunities": 38
   },
   "notices": [
+    {
+      "id": "CM-2026-8196",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Universidades. Resolución de 11/11/2026 , de la Universidad de Castilla-La Mancha, por la que se establecen las bases reguladoras de la séptima convocatoria extraordinaria de ampliación de bolsas para la incorporación de personal docente con carácter laboral en la categoría de Profesorado Sustituto. [NID 2026/8196]",
+      "entity": "Universidad de Castilla-La Mancha",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm"
+    },
     {
       "id": "CM-2026-8146",
       "province": "Castilla-La Mancha (DOCM)",
@@ -449,16 +459,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/20/pdf/2026_7451.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7374",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 01/10/2026 , de la Consejería de Educación, Cultura y Deportes, por la que se nombra funcionaria en prácticas a la aspirante seleccionada en el concurso-oposición para ingreso en el Cuerpo de Maestros por el turno libre, convocado por Resolución de la Consejería de Educación, Cultura y Deportes de fecha 20/01/2026, por estimación del recurso de alzada CR/381/26. [NID 2026/7374]",
-      "entity": "Consejería de Educación, Cultura y Deportes",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/19/pdf/2026_7374.pdf&tipo=rutaDocm"
     }
   ]
 }

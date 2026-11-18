@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-17T16:32:48.541802+00:00",
+  "lastCheckedUTC": "2026-11-18T06:30:55.022318+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "230",
+    "bulletin": "231",
     "pagesVisited": 23,
-    "announcementsRead": 412,
-    "opportunities": 49
+    "announcementsRead": 429,
+    "opportunities": 52
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -38,10 +37,10 @@
       "227",
       "228",
       "229",
-      "230"
+      "230",
+      "231"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -63,7 +62,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -77,10 +77,40 @@
       "2026-11-15"
     ],
     "issuesRead": 23,
-    "announcementsRead": 412,
-    "opportunities": 49
+    "announcementsRead": 429,
+    "opportunities": 52
   },
   "notices": [
+    {
+      "id": "IC-2026-4008",
+      "province": "Canarias (BOC)",
+      "title": "Servicio Canario de la Salud. Gerencia de Servicios Sanitarios del Área de Salud de Lanzarote.- Resolución de 4 de noviembre de 2026, por la que se efectúa convocatoria para la provisión, con carácter temporal, del puesto de Jefatura de Sección (Sanitaria) de la Unidad del Dolor del Hospital Universitario Doctor José Molina Orosa, incluido en la plantilla orgánica de esta Gerencia, en el ámbito de Atención Especializada.",
+      "entity": "Consejería de Sanidad",
+      "date": "18/11/2026",
+      "bulletin": "231",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-231-4008.pdf"
+    },
+    {
+      "id": "IC-2026-4007",
+      "province": "Canarias (BOC)",
+      "title": "Servicio Canario de la Salud. Gerencia de Servicios Sanitarios del Área de Salud de Lanzarote.- Resolución de 4 de noviembre de 2026, por la que se efectúa convocatoria para la provisión, con carácter temporal, del puesto de Jefatura de Servicio (Sanitaria) de Cardiología del Hospital Universitario Doctor José Molina Orosa, incluido en la plantilla orgánica de esta Gerencia, en el ámbito de Atención Especializada.",
+      "entity": "Consejería de Sanidad",
+      "date": "18/11/2026",
+      "bulletin": "231",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-231-4007.pdf"
+    },
+    {
+      "id": "IC-2026-4006",
+      "province": "Canarias (BOC)",
+      "title": "ORDEN de 5 de noviembre de 2026, por la que se declara desierta la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 9984, denominado Secretaria/o Alto Cargo, adscrito a la Dirección General de Transportes y Movilidad de esta Consejería.",
+      "entity": "Consejería de Obras Públicas, Vivienda y Movilidad",
+      "date": "18/11/2026",
+      "bulletin": "231",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-231-4006.pdf"
+    },
     {
       "id": "IC-2026-3997",
       "province": "Canarias (BOC)",

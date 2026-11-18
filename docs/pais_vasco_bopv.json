@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-17T16:35:12.562771+00:00",
+  "lastCheckedUTC": "2026-11-18T06:33:02.900945+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "220",
-    "pagesVisited": 22,
-    "announcementsRead": 326,
-    "opportunities": 53
+    "pagesVisited": 21,
+    "announcementsRead": 294,
+    "opportunities": 41
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -40,7 +39,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -71,122 +69,23 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-18"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 326,
-    "opportunities": 53
+    "issuesRead": 21,
+    "announcementsRead": 294,
+    "opportunities": 41
   },
   "notices": [
-    {
-      "id": "PV-2026-4906",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo a la convocatoria de provisión de un puesto de trabajo.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604906a.pdf"
-    },
     {
       "id": "PV-2026-4905",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 4 de noviembre de 2026, de la consejera de Gobernanza, Administración Digital y Autogobierno, por la que se modifica la composición del Tribunal del proceso selectivo de acceso a la Escala de Ayudantes en Ejecución Penal de la Administración penitenciaria de la Comunidad Autónoma de Euskadi.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Gobernanza, Administración Digital y Autogobierno",
       "date": "17/11/2026",
       "bulletin": "220",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604905a.pdf"
-    },
-    {
-      "id": "PV-2026-4904",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604904a.pdf"
-    },
-    {
-      "id": "PV-2026-4903",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604903a.pdf"
-    },
-    {
-      "id": "PV-2026-4902",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor pleno de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 11 de marzo de 2026 (BOPV de 20-03-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604902a.pdf"
-    },
-    {
-      "id": "PV-2026-4901",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 9 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor agregado de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604901a.pdf"
-    },
-    {
-      "id": "PV-2026-4900",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 6 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora agregada de Universidad, cuyo concurso de acceso a plazas fue convocado por Resolución de 17 de junio de 2026 (BOPV de 06-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604900a.pdf"
-    },
-    {
-      "id": "PV-2026-4899",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 5 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604899a.pdf"
-    },
-    {
-      "id": "PV-2026-4898",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 5 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesora titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604898a.pdf"
-    },
-    {
-      "id": "PV-2026-4897",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 5 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604897a.pdf"
-    },
-    {
-      "id": "PV-2026-4896",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 5 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 12 de febrero de 2026 (BOPV de 19-02-2026) y Resolución de 16 de febrero de 2026 (BOE de 23-02-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "17/11/2026",
-      "bulletin": "220",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604896a.pdf"
     },
     {
       "id": "PV-2026-4872",
@@ -587,26 +486,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604384a.pdf"
-    },
-    {
-      "id": "PV-2026-4359",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 2642/2026, de 27 de agosto, de la directora gerente de la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces, por la que se convoca la provisión, mediante concurso, de un puesto de jefe/a de Servicio Sanitario de Cirugía Cardiovascular en la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces de Osakidetza-Servicio vasco de salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604359a.pdf"
-    },
-    {
-      "id": "PV-2026-4358",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 2641/2026, de 27 de agosto, de la directora gerente de la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces, por la que se convoca la provisión, mediante concurso, de un puesto de jefe/a de Servicio Sanitario de Oftalmología en la Organización Sanitaria Integrada Ezkerraldea-Enkarterri-Cruces de Osakidetza-Servicio vasco de salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "19/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604358a.pdf"
     }
   ]
 }

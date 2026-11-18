@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-17T16:29:35.067433+00:00",
+  "lastCheckedUTC": "2026-11-18T06:27:19.087643+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 21,
-    "announcementsRead": 468,
-    "opportunities": 47
+    "announcementsRead": 473,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -36,10 +35,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -59,7 +58,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,30 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 468,
-    "opportunities": 47
+    "announcementsRead": 473,
+    "opportunities": 44
   },
   "notices": [
+    {
+      "id": "BD-2026-165324",
+      "province": "Badajoz",
+      "title": "Decreto de corrección de error en la convocatoria de treinta y ocho plazas de Conductor/a Bombero/a del Consorcio CPEI",
+      "entity": "Consorcio Provincial de Prevención y Extinción de Incendios (CPEI) (Badajoz)",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-18000000_4591.pdf"
+    },
+    {
+      "id": "BD-2026-165322",
+      "province": "Badajoz",
+      "title": "Convocatoria y bases para la cobertura por concurso-oposición de una plaza de Informático/a funcionario/a y constitución de bolsa de empleo",
+      "entity": "Ayuntamiento de Montijo",
+      "date": "18/11/2026",
+      "bulletin": "221",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-18000000_4590.pdf"
+    },
     {
       "id": "BD-2026-165296",
       "province": "Badajoz",
@@ -496,56 +516,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-20000000_4117.pdf"
-    },
-    {
-      "id": "BD-2026-164853",
-      "province": "Badajoz",
-      "title": "Bases que regirán la selección de una plaza de Formador/a para los programas de aprendizaje a lo largo de la vida, curso 2026/2027",
-      "entity": "Ayuntamiento de Villanueva del Fresno",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-19000000_4121.pdf"
-    },
-    {
-      "id": "BD-2026-164842",
-      "province": "Badajoz",
-      "title": "Bases reguladoras para la selección de una plaza de Operario/a de Cementerio, Oficial de 2ª, contratación laboral temporal por sustitución",
-      "entity": "Ayuntamiento de Puebla de Sancho Pérez",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-19000000_4111.pdf"
-    },
-    {
-      "id": "BD-2026-164820",
-      "province": "Badajoz",
-      "title": "Bases de selección de dos plazas de auxiliares administrativos correspondientes a la oferta de empleo público 2026",
-      "entity": "Ayuntamiento de Castuera",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-19000000_4089.pdf"
-    },
-    {
-      "id": "BD-2026-164818",
-      "province": "Badajoz",
-      "title": "Bases de selección para una plaza de Administrativo/a correspondiente a la oferta de empleo público de 2026",
-      "entity": "Ayuntamiento de Castuera",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-19000000_4087.pdf"
-    },
-    {
-      "id": "BD-2026-164761",
-      "province": "Badajoz",
-      "title": "Bases y convocatoria para la selección de cuatro plazas de Agentes de Policía Local, por el sistema de oposición libre, incluidas en la oferta pública de empleo correspondiente a los ejercicios de 2025 y 2026",
-      "entity": "Ayuntamiento de San Vicente de Alcántara",
-      "date": "19/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-19000000_4030.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-17T16:36:47.549695+00:00",
+  "lastCheckedUTC": "2026-11-18T06:33:47.738065+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 313,
-    "opportunities": 7
+    "announcementsRead": 311,
+    "opportunities": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -36,10 +35,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -59,7 +58,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,9 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 313,
-    "opportunities": 7,
+    "announcementsRead": 311,
+    "opportunities": 6,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261019/BOP-SA-20261019-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261020/BOP-SA-20261020-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261021/BOP-SA-20261021-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261022/BOP-SA-20261022-000.pdf",
@@ -96,10 +95,10 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261112/BOP-SA-20261112-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261113/BOP-SA-20261113-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261116/BOP-SA-20261116-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261117/BOP-SA-20261117-000.pdf"
+      "https://www.lasalina.es/documentacion/bop/2026/20261117/BOP-SA-20261117-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261118/BOP-SA-20261118-000.pdf"
     ],
     "CVECounts": [
-      18,
       18,
       14,
       21,
@@ -119,9 +118,10 @@
       12,
       12,
       16,
-      17
+      17,
+      16
     ],
-    "originalPDFsChecked": 313
+    "originalPDFsChecked": 311
   },
   "notices": [
     {
@@ -183,16 +183,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://www.lasalina.es/documentacion/bop/2026/20261020/BOP-SA-20261020-005.pdf"
-    },
-    {
-      "id": "SA-20261019-010",
-      "province": "Salamanca",
-      "title": "Santa Marta de Tormes Anuncio. Convocatoria y bases reguladoras de las pruebas selectivas para la provisión en propiedad de una plaza de Técnico Medio de Gestión-Área de Servicios a la Ciudadanía/Cultura/Deporte” (funcionario/a) del Ayuntamiento de Santa Marta de Tormes, mediante oposición libre con reserva para personas con discapacidad",
-      "entity": "Ayuntamiento de Edicto",
-      "date": "19/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261019/BOP-SA-20261019-010.pdf"
     }
   ]
 }

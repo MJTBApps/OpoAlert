@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Extremadura (DOE)",
   "source": "https://doe.juntaex.es/",
-  "lastCheckedUTC": "2026-11-17T16:31:30.705145+00:00",
+  "lastCheckedUTC": "2026-11-18T06:29:07.691813+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221O",
+    "bulletin": "222O",
     "pagesVisited": 22,
     "announcementsRead": 613,
     "opportunities": 48
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "bulletins": [
-      "201O",
       "202O",
       "203O",
       "204O",
@@ -37,10 +36,10 @@
       "218O",
       "219O",
       "220O",
-      "221O"
+      "221O",
+      "222O"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -61,7 +60,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -79,6 +79,26 @@
     "opportunities": 48
   },
   "notices": [
+    {
+      "id": "EX-2026-26081966",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos.- Anuncio de 7 de noviembre de 2026 por el que se da publicidad a la convocatoria de pruebas selectivas para la provisión, por el sistema de oposición libre, de una plaza de Trabajador/a Social, incluida en la Oferta de Empleo Público de 2026.",
+      "entity": "AYUNTAMIENTO DE NAVALMORAL DE LA MATA",
+      "date": "18/11/2026",
+      "bulletin": "222O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2220o/26081966.pdf"
+    },
+    {
+      "id": "EX-2026-26081959",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos.- Anuncio de 10 de noviembre de 2026 sobre convocatoria pública para la contratación de un puesto de trabajo.",
+      "entity": "FUNDACIÓN CENTRO DE CIRUGÍA DE MÍNIMA INVASIÓN JESÚS USÓN",
+      "date": "18/11/2026",
+      "bulletin": "222O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2220o/26081959.pdf"
+    },
     {
       "id": "EX-2026-26081967",
       "province": "Extremadura (DOE)",
@@ -538,26 +558,6 @@
       "bulletin": "203O",
       "type": "Plaza / oposición",
       "url": "https://doe.juntaex.es/pdfs/doe/2026/2030o/26062612.pdf"
-    },
-    {
-      "id": "EX-2026-26062593",
-      "province": "Extremadura (DOE)",
-      "title": "Procesos selectivos. Libre designación.- Resolución de 7 de octubre de 2026, del Rector, por la que se resuelve la convocatoria pública para la provisión, por el sistema de libre designación, de un puesto de trabajo vacante en el organismo.",
-      "entity": "UNIVERSIDAD DE EXTREMADURA",
-      "date": "19/10/2026",
-      "bulletin": "201O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/2010o/26062593.pdf"
-    },
-    {
-      "id": "EX-2026-26062581",
-      "province": "Extremadura (DOE)",
-      "title": "Procesos selectivos.- Resolución de 7 de octubre de 2026 referente a la convocatoria para la cobertura de una plaza de Encargado de Logística, Mantenimiento y Limpieza.",
-      "entity": "AYUNTAMIENTO DE LOGROSÁN",
-      "date": "19/10/2026",
-      "bulletin": "201O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/2010o/26062581.pdf"
     }
   ]
 }
