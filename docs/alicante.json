@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-17T16:35:51.260117+00:00",
+  "lastCheckedUTC": "2026-11-18T06:36:14.472752+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "219",
-    "pagesVisited": 22,
-    "announcementsRead": 881,
-    "opportunities": 63,
+    "pagesVisited": 21,
+    "announcementsRead": 843,
+    "opportunities": 55,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
-    "issuesRead": 22,
-    "pagesVisited": 22,
-    "announcementsRead": 881,
-    "opportunities": 63,
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 843,
+    "opportunities": 55,
     "bulletins": [
-      "198",
       "199",
       "200",
       "201",
@@ -44,7 +43,6 @@
       "219"
     ],
     "publicationDates": [
-      "2026-10-19",
       "2026-10-20",
       "2026-10-21",
       "2026-10-22",
@@ -75,7 +73,8 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-18"
     ]
   },
   "notices": [
@@ -628,86 +627,6 @@
       "bulletin": "199",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008016.pdf"
-    },
-    {
-      "id": "AL-2026-8000",
-      "province": "Alicante",
-      "title": "BASES PROVISIÓN EN PROPIEDAD 1 PLAZA TÉCNICO/A DE GESTIÓN DE CONTRATACIÓN, TURNO PROMOCIÓN INTERNA",
-      "entity": "AYUNTAMIENTO JÁVEA",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_008000.pdf"
-    },
-    {
-      "id": "AL-2026-7994",
-      "province": "Alicante",
-      "title": "RESULTADO DEFINITIVO DEL PROCESO SELECTIVO PARA CUBRIR DOS PLAZAS DE OPERARIO DE OBRAS Y SERVICIOS.",
-      "entity": "AYUNTAMIENTO BENEJÚZAR",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007994.pdf"
-    },
-    {
-      "id": "AL-2026-7986",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA DEL CONCURSO DE MÉRITOS PARA LA PROVISIÓN DEFINITIVA POR MOVILIDAD INTERNA DE LA PLAZA DE AGENTE INFORMADOR.",
-      "entity": "AYUNTAMIENTO BUSOT",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007986.pdf"
-    },
-    {
-      "id": "AL-2026-7723",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 1 PLAZA DE TÉCNICO/A SUPERIOR EN GESTIÓN ECONÓMICA, MEDIANTE CONCURSO-OPOSICIÓN POR TURNO LIBRE.",
-      "entity": "AYUNTAMIENTO SANTA POLA",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007723.pdf"
-    },
-    {
-      "id": "AL-2026-7709",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 8 PLAZAS DE AGENTE DE POLICÍA LOCAL, 5 EN TURNO LIBRE Y 3 EN TURNO DE MOVILIDAD.",
-      "entity": "AYUNTAMIENTO SANTA POLA",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007709.pdf"
-    },
-    {
-      "id": "AL-2026-7699",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 1 PLAZA DE TÉCNICO/A AUXILIAR DE ARCHIVO-BIBLIOTECA, MEDIANTE CONCURSO-OPOSICIÓN, TURNO LIBRE.",
-      "entity": "AYUNTAMIENTO SANTA POLA",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007699.pdf"
-    },
-    {
-      "id": "AL-2026-7677",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA LA PROVISIÓN DE 1 PLAZA DE OPERARIO/A CONSERJE 3ª EDAD, MEDIANTE CONCURSO-OPOSICIÓN, TURNO LIBRE",
-      "entity": "AYUNTAMIENTO SANTA POLA",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007677.pdf"
-    },
-    {
-      "id": "AL-2026-7270",
-      "province": "Alicante",
-      "title": "APROBACIÓN BASES ESPECÍFICAS Y MODIFICACIÓN BASES CONV. 25/30, PROVISIÓN DEFINITIVA 1 PLAZA TÉCNICO/A DE PARTICIPACIÓN CIUDADANA.",
-      "entity": "AYUNTAMIENTO CALP",
-      "date": "19/10/2026",
-      "bulletin": "198",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/19_198/2026_007270.pdf"
     }
   ]
 }
