@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-17T16:40:12.507366+00:00",
+  "lastCheckedUTC": "2026-11-18T06:42:52.258557+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 62,
-    "opportunities": 62,
+    "announcementsRead": 58,
+    "opportunities": 58,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "publicationDates": [
       "2026-10-20",
       "2026-10-22",
@@ -36,7 +36,6 @@
       "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-19",
       "2026-10-21",
       "2026-10-24",
       "2026-10-25",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-18"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 62,
-    "opportunities": 62
+    "announcementsRead": 58,
+    "opportunities": 58
   },
   "notices": [
     {
@@ -297,16 +297,6 @@
       "url": "https://cido.diba.cat/oposicions/22437523"
     },
     {
-      "id": "CIDO7-22429430",
-      "title": "Borsa de treball de places d'Operari de neteja d'edificis i instal·lacions municipals (reobertura)",
-      "entity": "Ajuntament de Cervera",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22429430"
-    },
-    {
       "id": "CIDO7-22420072",
       "title": "1 plaça de Tècnic d'esports",
       "entity": "Ajuntament de Bellver de Cerdanya",
@@ -385,16 +375,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22335055"
-    },
-    {
-      "id": "CIDO7-21845159",
-      "title": "Borsa de treball de places de Professor de l'escola municipal de música - conservatori (diferents especialitats)",
-      "entity": "Ajuntament de Cervera",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21845159"
     },
     {
       "id": "CIDO7-22382021",
@@ -485,26 +465,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22394879"
-    },
-    {
-      "id": "CIDO7-22298118",
-      "title": "Borsa de treball de places d'Auxiliar de Promoció i Difusió",
-      "entity": "Ajuntament de Cervera",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22298118"
-    },
-    {
-      "id": "CIDO7-22125349",
-      "title": "Borsa de treball de places de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament de Cervera",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22125349"
     },
     {
       "id": "CIDO7-22382092",

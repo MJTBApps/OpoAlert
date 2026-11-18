@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-17T16:40:12.507366+00:00",
+  "lastCheckedUTC": "2026-11-18T06:42:52.258557+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 74,
-    "opportunities": 74,
+    "announcementsRead": 72,
+    "opportunities": 72,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-20",
+    "rangeEnd": "2026-11-18",
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-26",
@@ -37,7 +36,7 @@
       "2026-11-17"
     ],
     "nonPublicationDates": [
-      "2026-10-19",
+      "2026-10-20",
       "2026-10-23",
       "2026-10-24",
       "2026-10-25",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-18"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 74,
-    "opportunities": 74
+    "announcementsRead": 72,
+    "opportunities": 72
   },
   "notices": [
     {
@@ -667,16 +667,6 @@
       "url": "https://cido.diba.cat/oposicions/22381543"
     },
     {
-      "id": "CIDO6-19319033",
-      "title": "2 places d'Educador de la Llar d'Infants",
-      "entity": "Ajuntament de Tossa de Mar",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19319033"
-    },
-    {
       "id": "CIDO6-22389624",
       "title": "1 plaça d'Auxiliar administratiu",
       "entity": "Ajuntament de Bescanó",
@@ -785,16 +775,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21771332"
-    },
-    {
-      "id": "CIDO6-17280871",
-      "title": "1 plaça d'Agent de la Policia Local",
-      "entity": "Ajuntament de Begur",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/17280871"
     }
   ]
 }
