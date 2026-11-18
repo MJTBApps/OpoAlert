@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-18T09:40:20.457356+00:00",
+  "lastCheckedUTC": "2026-11-18T12:43:15.153387+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 92,
-    "opportunities": 92,
+    "announcementsRead": 93,
+    "opportunities": 93,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -36,7 +36,8 @@
       "2026-11-13",
       "2026-11-14",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-20",
@@ -47,15 +48,64 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-18"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 92,
-    "opportunities": 92
+    "announcementsRead": 93,
+    "opportunities": 93
   },
   "notices": [
+    {
+      "id": "CIDO8-22515561",
+      "title": "Borsa de treball de places de Personal de neteja",
+      "entity": "Ajuntament de Batea",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22515561"
+    },
+    {
+      "id": "CIDO8-22476187",
+      "title": "Borsa de treball de places d'Oficial de serveis",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22476187"
+    },
+    {
+      "id": "CIDO8-22475831",
+      "title": "Borsa de treball de places de Tècnic de benestar social",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22475831"
+    },
+    {
+      "id": "CIDO8-22469386",
+      "title": "Borsa de treball de places de Docent de música, especialitat Cant",
+      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22469386"
+    },
+    {
+      "id": "CIDO8-15229734",
+      "title": "1 plaça de Tècnic mitjà de gestió local",
+      "entity": "Ajuntament de Tarragona - Institut Municipal de Serveis Socials",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/15229734"
+    },
     {
       "id": "CIDO8-22508057",
       "title": "Borsa de treball de places de Secretari Interventor",
@@ -317,26 +367,6 @@
       "url": "https://cido.diba.cat/oposicions/22484439"
     },
     {
-      "id": "CIDO8-22476187",
-      "title": "Borsa de treball de places d'Oficial de serveis",
-      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22476187"
-    },
-    {
-      "id": "CIDO8-22475831",
-      "title": "Borsa de treball de places de Tècnic de benestar social",
-      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22475831"
-    },
-    {
       "id": "CIDO8-22474592",
       "title": "1 plaça d'Operari de serveis múltiples",
       "entity": "Ajuntament de Rocafort de Queralt",
@@ -347,16 +377,6 @@
       "url": "https://cido.diba.cat/oposicions/22474592"
     },
     {
-      "id": "CIDO8-15229734",
-      "title": "1 plaça de Tècnic mitjà de gestió local",
-      "entity": "Ajuntament de Tarragona - Institut Municipal de Serveis Socials",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/15229734"
-    },
-    {
       "id": "CIDO8-13791629",
       "title": "Bases generals reguladores dels processos de selecció",
       "entity": "Diputació de Tarragona",
@@ -365,16 +385,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/13791629"
-    },
-    {
-      "id": "CIDO8-22469386",
-      "title": "Borsa de treball de places de Docent de música, especialitat Cant",
-      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22469386"
     },
     {
       "id": "CIDO8-22469132",
