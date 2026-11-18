@@ -115,6 +115,8 @@ struct NoticeDetailView: View {
             }
         }
         .task { deadline = await Deadlines.fetch(for: notice) }
+        // Al volver a la lista puede tocar el intersticial (cada 3 fichas).
+        .onDisappear { Ads.shared.noticeClosed(premium: PremiumStore.isActiveStored) }
         .sheet(item: $pdfLink) { link in
             PdfViewerView(url: link.url, title: source.shortName)
         }

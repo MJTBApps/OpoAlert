@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.54.4"' in gradle
-    assert "versionCode = 74" in gradle
+    assert 'versionName = "1.55.0"' in gradle
+    assert "versionCode = 75" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -129,7 +129,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.54.4"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.55.0"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -169,8 +169,12 @@ def main() -> None:
     # 1.54.2: un anuncio cada 6 convocatorias sin tope (también tras «Ver más») y banners de iOS reutilizados.
     ads_kt = (KOTLIN / "DemoAds.kt").read_text(encoding="utf-8")
     ads_ios = (ROOT / "ios/OpoAlert/Ads.swift").read_text(encoding="utf-8")
-    assert "LIST_AD_EVERY = 6" in ads_kt and "MAX_LIST_ADS" not in ads_kt
-    assert "listAdEvery = 6" in ads_ios and "maxListAds" not in ads_ios and "func banner(slot:" in ads_ios
+    # 1.55.0: un banner cada 4, solo cuando ha cargado, y un intersticial cada 3 fichas.
+    assert "LIST_AD_EVERY = 4" in ads_kt and "MAX_LIST_ADS" not in ads_kt
+    assert "listAdEvery = 4" in ads_ios and "maxListAds" not in ads_ios and "func banner(slot:" in ads_ios
+    assert "NOTICES_PER_INTERSTITIAL = 3" in ads_kt and "fun noticeClosed()" in ads_kt
+    assert "noticesPerInterstitial = 3" in ads_ios and "loadedSlots" in ads_ios
+    assert "Ads.shared.noticeClosed" in (ROOT / "ios/OpoAlert/Views/NoticeDetailView.swift").read_text(encoding="utf-8")
     # 1.54.3: buscador sin trabas (texto preparado una vez y búsqueda al dejar de escribir) y aviso de versión nueva en iOS.
     main_kt = (KOTLIN / "MainActivity.kt").read_text(encoding="utf-8")
     assert "postDelayed(searchRunnable, 250)" in main_kt and "searchKeys" in main_kt
@@ -180,7 +184,7 @@ def main() -> None:
     update_ios = (ROOT / "ios/OpoAlert/UpdateCheck.swift").read_text(encoding="utf-8")
     assert "itunes.apple.com/lookup?id=6831053083" in update_ios
     assert "UpdateCheck.shared.check()" in (ROOT / "ios/OpoAlert/OpoAlertApp.swift").read_text(encoding="utf-8")
-    print("OK: Android 1.54.2: avisos sin duplicar, permiso al guardar la primera alerta y anuncios cada 6")
+    print("OK: Android 1.54.2: avisos sin duplicar, permiso al guardar la primera alerta y anuncios (1.55.0: cada 4 e intersticial cada 3 fichas)")
 
 
 if __name__ == "__main__":

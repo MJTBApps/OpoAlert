@@ -29,6 +29,7 @@ fun firebase(key: String) = "\"${firebaseProperties.getProperty(key, "").trim()}
 val testAdmobApp = "ca-app-pub-3940256099942544~3347511713"
 val testBanner = "ca-app-pub-3940256099942544/9214589741"
 val testOpenAd = "ca-app-pub-3940256099942544/9257395921"
+val testInterstitial = "ca-app-pub-3940256099942544/1033173712"
 
 android {
     namespace = "es.opoalert.app"
@@ -39,8 +40,8 @@ android {
         minSdk = 26
         // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
         targetSdk = 36
-        versionCode = 74
-        versionName = "1.54.4"
+        versionCode = 75
+        versionName = "1.55.0"
         buildConfigField("String", "FCM_APP_ID", firebase("appId"))
         buildConfigField("String", "FCM_API_KEY", firebase("apiKey"))
         buildConfigField("String", "FCM_PROJECT_ID", firebase("projectId"))
@@ -87,6 +88,7 @@ android {
             buildConfigField("boolean", "BILLING", "false")
             buildConfigField("String", "ADMOB_BANNER", "\"$testBanner\"")
             buildConfigField("String", "ADMOB_OPEN_AD", "\"$testOpenAd\"")
+            buildConfigField("String", "ADMOB_INTERSTITIAL", "\"$testInterstitial\"")
             buildConfigField("String", "REVIEW_CODE_SHA256", "\"\"")
             manifestPlaceholders["admobAppId"] = testAdmobApp
         }
@@ -98,6 +100,8 @@ android {
             buildConfigField("boolean", "BILLING", "true")
             buildConfigField("String", "ADMOB_BANNER", "\"${playProperties.getProperty("admobBanner", testBanner)}\"")
             buildConfigField("String", "ADMOB_OPEN_AD", "\"${playProperties.getProperty("admobOpenAd", testOpenAd)}\"")
+            // Opcional: sin admobInterstitial en play.properties no hay intersticial.
+            buildConfigField("String", "ADMOB_INTERSTITIAL", "\"${playProperties.getProperty("admobInterstitial", "")}\"")
             // Código para los revisores de Google Play: en la app solo va su huella SHA-256.
             buildConfigField("String", "REVIEW_CODE_SHA256",
                 "\"${playProperties.getProperty("reviewCodeSha256", "")}\"")
@@ -145,8 +149,8 @@ tasks.matching { it.name == "bundlePlayRelease" || it.name == "assemblePlayRelea
         val missing = listOf("storeFile", "admobAppId", "admobBanner", "admobOpenAd", "reviewCodeSha256")
             .filter { playProperties.getProperty(it).isNullOrBlank() }
         check(missing.isEmpty()) { "Faltan datos en ~/OpoAlert-claves/play.properties: $missing" }
-        check(listOf("admobAppId", "admobBanner", "admobOpenAd").none {
-            playProperties.getProperty(it).startsWith("ca-app-pub-3940256099942544")
+        check(listOf("admobAppId", "admobBanner", "admobOpenAd", "admobInterstitial").none {
+            (playProperties.getProperty(it) ?: "").startsWith("ca-app-pub-3940256099942544")
         }) { "La versión de Google Play no puede llevar identificadores de PRUEBA de AdMob" }
     }
 }

@@ -5,7 +5,7 @@ name: OpoAlert - Subir iOS a TestFlight
 # en la nube el certificado y el perfil de distribución. Nada de esto va en el
 # repositorio; la clave solo está en los secretos ASC_KEY_ID, ASC_ISSUER_ID y ASC_KEY_P8.
 # Identificadores reales de AdMob (opcionales): secretos ADMOB_IOS_APP_ID,
-# ADMOB_IOS_BANNER y ADMOB_IOS_OPEN_AD. Sin ellos se usan los de PRUEBA de Google.
+# ADMOB_IOS_BANNER y ADMOB_IOS_OPEN_AD (y ADMOB_IOS_INTERSTITIAL, opcional). Sin ellos se usan los de PRUEBA de Google.
 on:
   workflow_dispatch:
 
@@ -80,6 +80,7 @@ jobs:
           ADMOB_IOS_APP_ID: ${{ secrets.ADMOB_IOS_APP_ID }}
           ADMOB_IOS_BANNER: ${{ secrets.ADMOB_IOS_BANNER }}
           ADMOB_IOS_OPEN_AD: ${{ secrets.ADMOB_IOS_OPEN_AD }}
+          ADMOB_IOS_INTERSTITIAL: ${{ secrets.ADMOB_IOS_INTERSTITIAL }}
           FIREBASE_IOS_APP_ID: ${{ secrets.FIREBASE_IOS_APP_ID }}
           FIREBASE_IOS_API_KEY: ${{ secrets.FIREBASE_IOS_API_KEY }}
           FIREBASE_IOS_SENDER_ID: ${{ secrets.FIREBASE_IOS_SENDER_ID }}
@@ -88,7 +89,8 @@ jobs:
           set -o pipefail
           ADMOB=()
           if [ -n "$ADMOB_IOS_APP_ID" ] && [ -n "$ADMOB_IOS_BANNER" ] && [ -n "$ADMOB_IOS_OPEN_AD" ]; then
-            ADMOB=(ADMOB_APP_ID="$ADMOB_IOS_APP_ID" ADMOB_BANNER="$ADMOB_IOS_BANNER" ADMOB_OPEN_AD="$ADMOB_IOS_OPEN_AD")
+            ADMOB=(ADMOB_APP_ID="$ADMOB_IOS_APP_ID" ADMOB_BANNER="$ADMOB_IOS_BANNER" ADMOB_OPEN_AD="$ADMOB_IOS_OPEN_AD" ADMOB_INTERSTITIAL="$ADMOB_IOS_INTERSTITIAL")
+            # Sin el secreto ADMOB_IOS_INTERSTITIAL queda vacío: la app no muestra intersticial.
           else
             echo "::warning::Sin los secretos ADMOB_IOS_*: esta compilación lleva los anuncios de PRUEBA de Google (vale para TestFlight, no para el App Store)"
           fi

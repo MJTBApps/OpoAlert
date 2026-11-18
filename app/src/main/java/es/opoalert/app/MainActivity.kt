@@ -64,6 +64,8 @@ class MainActivity : Activity() {
     private var refreshPending = false
     private lateinit var demoAds: DemoAds
     private var coldStart = false
+    /** Al volver de una ficha puede tocar el intersticial (DemoAds.noticeClosed). */
+    private var returningFromDetail = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -240,7 +242,7 @@ class MainActivity : Activity() {
             demoAds.start(openAd = coldStart)
             return
         }
-        showProvinceChooser(firstLaunch = true) { demoAds.start() }
+        showProvinceChooser(firstLaunch = true) { demoAds.start(openAd = coldStart) }
     }
 
     private fun updateProvinceSelector() {
@@ -659,6 +661,10 @@ class MainActivity : Activity() {
         // Versión de Google Play: comprobar si la suscripción sigue activa (renovada o cancelada).
         PlayBilling.refresh(this) { premiumChanged() }
         if (::demoAds.isInitialized) demoAds.resume()
+        if (returningFromDetail) {
+            returningFromDetail = false
+            if (::demoAds.isInitialized) demoAds.noticeClosed()
+        }
         if (::tabsRow.isInitialized) {
             // Las favoritas pueden haber cambiado desde la nueva ficha a pantalla completa.
             updateHeader()
@@ -846,6 +852,7 @@ class MainActivity : Activity() {
     }
 
     private fun showDetail(item: Notice) {
+        returningFromDetail = true
         startActivity(Intent(this, NoticeDetailActivity::class.java).apply {
             putExtra(NoticeDetailActivity.EXTRA_NOTICE, item.toJson().toString())
         })

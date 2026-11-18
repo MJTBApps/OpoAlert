@@ -6,18 +6,28 @@ import UserMessagingPlatform
 
 /// Publicidad de AdMob con las mismas reglas que Android (`DemoAds.kt`):
 /// - Primero el consentimiento del RGPD (mensaje de AdMob) y el aviso de Apple de seguimiento.
-/// - Un anuncio al abrir la app: nunca la primera vez, como mucho uno cada 15 minutos y se
+/// - Un anuncio al abrir la app (también la primera vez), como mucho uno cada 15 minutos y se
 ///   descarta si tarda más de 5 segundos.
-/// - Un banner cada 6 convocatorias de la lista, también al pulsar «Ver más».
+/// - Un intersticial cada 3 fichas cerradas, nunca a menos de 2 minutos de otro a pantalla completa.
+/// - Un banner cada 4 convocatorias de la lista, también al pulsar «Ver más». El hueco solo
+///   aparece cuando el anuncio ha cargado.
 /// - Con Premium no hay anuncios.
 @MainActor
 final class Ads: ObservableObject {
     static let shared = Ads()
-    static let listAdEvery = 6
+    static let listAdEvery = 4
+    static let noticesPerInterstitial = 3
+    static let fullscreenGap: TimeInterval = 2 * 60
     /// Cada cuánto puede salir el anuncio de apertura (segundos).
     static let openAdInterval: TimeInterval = 15 * 60
 
     @Published private(set) var ready = false
+    /// Banners de la lista que tienen anuncio: solo esos se muestran.
+    @Published private(set) var loadedSlots: Set<Int> = []
+    private let lastFullscreenKey = "last_fullscreen_ad"
+    private let noticesKey = "notices_since_interstitial"
+    private var interstitial: InterstitialAd?
+    private var loadingInterstitial = false
     private var starting = false
     private let defaults = UserDefaults.standard
     private let lastOpenAdKey = "last_app_open_ad"
@@ -25,6 +35,8 @@ final class Ads: ObservableObject {
 
     var bannerID: String { Bundle.main.object(forInfoDictionaryKey: "OpoAdmobBanner") as? String ?? "" }
     private var openAdID: String { Bundle.main.object(forInfoDictionaryKey: "OpoAdmobOpenAd") as? String ?? "" }
+    /// Vacío = sin intersticial (compilación del App Store sin el bloque creado en AdMob).
+    private var interstitialID: String { Bundle.main.object(forInfoDictionaryKey: "OpoAdmobInterstitial") as? String ?? "" }
     var usesTestAds: Bool { bannerID.hasPrefix("ca-app-pub-3940256099942544") }
 
     /// Al arrancar: consentimiento, seguimiento y, si procede, el anuncio de apertura.
@@ -33,8 +45,7 @@ final class Ads: ObservableObject {
         // seguimiento (como en Android). Si deja de ser Premium, empieza al abrir de nuevo.
         guard !premium, !starting else { return }
         starting = true
-        let launches = defaults.integer(forKey: launchesKey) + 1
-        defaults.set(launches, forKey: launchesKey)
+        defaults.set(defaults.integer(forKey: launchesKey) + 1, forKey: launchesKey)
         let parameters = RequestParameters()
         ConsentInformation.shared.requestConsentInfoUpdate(with: parameters) { [weak self] _ in
             Task { @MainActor in
@@ -45,7 +56,10 @@ final class Ads: ObservableObject {
                         await self.askTracking()
                         MobileAds.shared.start(completionHandler: nil)
                         self.ready = true
-                        if !premium && launches > 1 { self.showOpenAd() }
+                        self.showOpenAd()
+                        self.preload(slot: 0)
+                        self.preload(slot: 1)
+                        self.loadInterstitial()
                     }
                 }
             }
@@ -82,8 +96,47 @@ final class Ads: ObservableObject {
                 // Si tarda más de 5 segundos, ya no se muestra: el usuario ya está usando la app.
                 guard let self, let ad, Date().timeIntervalSince(requested) <= 5 else { return }
                 self.defaults.set(Date().timeIntervalSince1970, forKey: self.lastOpenAdKey)
+                self.defaults.set(Date().timeIntervalSince1970, forKey: self.lastFullscreenKey)
                 ad.present(from: Self.topController())
             }
+        }
+    }
+
+    private func loadInterstitial() {
+        guard ready, !interstitialID.isEmpty, interstitial == nil, !loadingInterstitial else { return }
+        loadingInterstitial = true
+        InterstitialAd.load(with: interstitialID, request: Request()) { [weak self] ad, _ in
+            Task { @MainActor in
+                guard let self else { return }
+                self.loadingInterstitial = false
+                if let ad { self.interstitial = ad; return }
+                try? await Task.sleep(nanoseconds: 60_000_000_000)
+                self.loadInterstitial()
+            }
+        }
+    }
+
+    /// Se ha cerrado una ficha. Cada 3 sale un intersticial; si aún no ha cargado o es
+    /// pronto (menos de 2 minutos desde otro a pantalla completa), sale en la siguiente.
+    func noticeClosed(premium: Bool) {
+        guard ready, !premium, !interstitialID.isEmpty else { return }
+        let count = defaults.integer(forKey: noticesKey) + 1
+        defaults.set(count, forKey: noticesKey)
+        let now = Date().timeIntervalSince1970
+        guard count >= Self.noticesPerInterstitial, let ad = interstitial,
+              now - defaults.double(forKey: lastFullscreenKey) >= Self.fullscreenGap else {
+            loadInterstitial()
+            return
+        }
+        interstitial = nil
+        defaults.set(0, forKey: noticesKey)
+        defaults.set(now, forKey: lastFullscreenKey)
+        // Esperar a que acabe la animación de volver a la lista.
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 500_000_000)
+            ad.present(from: Self.topController())
+            try? await Task.sleep(nanoseconds: 2_000_000_000)
+            self.loadInterstitial()
         }
     }
 
@@ -93,6 +146,14 @@ final class Ads: ObservableObject {
     /// Si Google no devuelve anuncio (sin conexión o sin anuncio que servir), se vuelve a pedir
     /// al cabo de un rato; antes el hueco se quedaba vacío hasta cerrar y abrir la app.
     private let retry = BannerRetry()
+
+    /// Pide el banner de esa posición; se mostrará cuando cargue.
+    func preload(slot: Int) { _ = banner(slot: slot) }
+
+    fileprivate func bannerChanged(_ view: BannerView, loaded: Bool) {
+        guard let slot = banners.first(where: { $0.value === view })?.key else { return }
+        if loaded { loadedSlots.insert(slot) } else if loadedSlots.contains(slot) { loadedSlots.remove(slot) }
+    }
 
     func banner(slot: Int) -> BannerView {
         if let view = banners[slot] { return view }
@@ -138,9 +199,12 @@ final class BannerRetry: NSObject, BannerViewDelegate {
 
     private func received(_ bannerView: BannerView) {
         attempts[ObjectIdentifier(bannerView)] = 0
+        Ads.shared.bannerChanged(bannerView, loaded: true)
     }
 
     private func failed(_ bannerView: BannerView) {
+        // Sin anuncio, el hueco se quita de la lista (nunca un recuadro vacío).
+        Ads.shared.bannerChanged(bannerView, loaded: false)
         let key = ObjectIdentifier(bannerView)
         let tries = (attempts[key] ?? 0) + 1
         attempts[key] = tries

@@ -13,13 +13,15 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.appopen.AppOpenAd
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.ump.ConsentInformation
 import com.google.android.ump.ConsentRequestParameters
 import com.google.android.ump.UserMessagingPlatform
 
 /**
- * Publicidad de OpoAlert: un anuncio al abrir la app y anuncios intercalados en
- * la lista. Hoy usa los identificadores de PRUEBA de Google (no producen
+ * Publicidad de OpoAlert: un anuncio al abrir la app, un intersticial cada
+ * [NOTICES_PER_INTERSTITIAL] fichas cerradas y anuncios intercalados en la lista. Hoy usa los identificadores de PRUEBA de Google (no producen
  * ingresos); con la cuenta de AdMob basta cambiar los de abajo y el del manifiesto.
  * Con Premium activo no se pide ningún anuncio.
  */
@@ -31,8 +33,11 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
     private val banners = mutableListOf<AdView>()
     private val retryHandler = Handler(Looper.getMainLooper())
     private val loaded = mutableSetOf<Int>()
+    private val prefs = activity.getSharedPreferences(PREFS, Activity.MODE_PRIVATE)
+    private var interstitial: InterstitialAd? = null
+    private var loadingInterstitial = false
 
-    /** [openAd]: mostrar el anuncio de apertura (solo al abrir la app, nunca la primera vez). */
+    /** [openAd]: mostrar el anuncio de apertura (al arrancar la app, también la primera vez). */
     fun start(openAd: Boolean = false) {
         if (started || !Premium.showsAds(activity)) return
         started = true
@@ -59,6 +64,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
                     if (!activity.isFinishing && !activity.isDestroyed) {
                         if (wantsOpenAd) loadOpenAd()
                         repeat(2) { bannerFor(it) }
+                        loadInterstitial()
                     }
                 }
             }
@@ -66,7 +72,6 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
     }
 
     private fun loadOpenAd() {
-        val prefs = activity.getSharedPreferences(PREFS, Activity.MODE_PRIVATE)
         val now = System.currentTimeMillis()
         if (now - prefs.getLong(LAST_OPEN_AD, 0L) < OPEN_AD_MIN_INTERVAL_MS) return
         var expired = false
@@ -76,12 +81,49 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
             object : AppOpenAd.AppOpenAdLoadCallback() {
                 override fun onAdLoaded(ad: AppOpenAd) {
                     if (expired || activity.isFinishing || activity.isDestroyed || !Premium.showsAds(activity)) return
-                    prefs.edit().putLong(LAST_OPEN_AD, System.currentTimeMillis()).apply()
+                    prefs.edit().putLong(LAST_OPEN_AD, System.currentTimeMillis())
+                        .putLong(LAST_FULLSCREEN, System.currentTimeMillis()).apply()
                     ad.fullScreenContentCallback = object : FullScreenContentCallback() {}
                     ad.show(activity)
                 }
                 override fun onAdFailedToLoad(error: LoadAdError) {}
             })
+    }
+
+    private fun loadInterstitial() {
+        if (INTERSTITIAL_ID.isBlank() || interstitial != null || loadingInterstitial) return
+        if (!initialized || activity.isFinishing || activity.isDestroyed || !Premium.showsAds(activity)) return
+        loadingInterstitial = true
+        InterstitialAd.load(activity, INTERSTITIAL_ID, AdRequest.Builder().build(),
+            object : InterstitialAdLoadCallback() {
+                override fun onAdLoaded(ad: InterstitialAd) { loadingInterstitial = false; interstitial = ad }
+                override fun onAdFailedToLoad(error: LoadAdError) {
+                    loadingInterstitial = false
+                    retryHandler.postDelayed({ loadInterstitial() }, 60_000L)
+                }
+            })
+    }
+
+    /**
+     * El usuario vuelve a la lista tras ver una ficha. Cada [NOTICES_PER_INTERSTITIAL] fichas
+     * sale un anuncio a pantalla completa, nunca a menos de 2 minutos de otro (apertura incluida).
+     * Si aún no ha cargado o es pronto, sale en la siguiente ficha.
+     */
+    fun noticeClosed() {
+        if (INTERSTITIAL_ID.isBlank() || !Premium.showsAds(activity)) return
+        val count = prefs.getInt(NOTICES_SINCE_AD, 0) + 1
+        prefs.edit().putInt(NOTICES_SINCE_AD, count).apply()
+        val now = System.currentTimeMillis()
+        val ad = interstitial
+        if (count < NOTICES_PER_INTERSTITIAL || ad == null ||
+            now - prefs.getLong(LAST_FULLSCREEN, 0L) < FULLSCREEN_MIN_GAP_MS) { loadInterstitial(); return }
+        interstitial = null
+        prefs.edit().putInt(NOTICES_SINCE_AD, 0).putLong(LAST_FULLSCREEN, now).apply()
+        ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+            override fun onAdDismissedFullScreenContent() { loadInterstitial() }
+            override fun onAdFailedToShowFullScreenContent(error: com.google.android.gms.ads.AdError) { loadInterstitial() }
+        }
+        ad.show(activity)
     }
 
     /** Anuncio n.º [slot] de la lista (empieza en 0); null mientras no haya cargado. */
@@ -104,7 +146,8 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
                 // Si no llega anuncio, se vuelve a pedir: a los 30 s, 60 s… hasta 5 min
                 // (antes ese hueco no volvía a tener anuncio hasta reabrir la app).
                 override fun onAdFailedToLoad(error: LoadAdError) {
-                    loaded.remove(index)
+                    // Si el hueco estaba en la lista, se quita: nunca se queda un recuadro vacío.
+                    if (loaded.remove(index)) onBannerLoaded()
                     tries++
                     val delay = (30_000L * tries).coerceAtMost(300_000L)
                     retryHandler.postDelayed({
@@ -128,7 +171,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         } else {
             AlertDialog.Builder(activity)
                 .setTitle("Privacidad y publicidad")
-                .setMessage("OpoAlert muestra un anuncio al abrir la app y algunos entre las convocatorias. " +
+                .setMessage("OpoAlert muestra un anuncio al abrir la app, otro de vez en cuando al cerrar una convocatoria y algunos en la lista. " +
                     (if (BANNER_ID.startsWith("ca-app-pub-3940256099942544"))
                         "Por ahora son anuncios de prueba de Google y no generan ingresos. " else "") +
                     "Si no das tu consentimiento, la app funciona igual sin publicidad. " +
@@ -144,14 +187,21 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
 
     companion object {
         /** Cada cuántas convocatorias va un anuncio en la lista (también al pulsar «Ver más»). */
-        const val LIST_AD_EVERY = 6
+        const val LIST_AD_EVERY = 4
+        /** Cada cuántas fichas abiertas sale el intersticial. */
+        const val NOTICES_PER_INTERSTITIAL = 3
 
         // De PRUEBA en la versión web; los reales de AdMob en la de Google Play (build.gradle.kts).
         private val BANNER_ID = BuildConfig.ADMOB_BANNER
         private val OPEN_AD_ID = BuildConfig.ADMOB_OPEN_AD
+        /** Vacío = sin intersticial (versión de Play sin el bloque creado en AdMob). */
+        private val INTERSTITIAL_ID = BuildConfig.ADMOB_INTERSTITIAL
 
         private const val PREFS = "opoalert_ui"
         private const val LAST_OPEN_AD = "last_app_open_ad"
+        private const val LAST_FULLSCREEN = "last_fullscreen_ad"
+        private const val NOTICES_SINCE_AD = "notices_since_interstitial"
+        private const val FULLSCREEN_MIN_GAP_MS = 2 * 60 * 1000L
         private const val OPEN_AD_MIN_INTERVAL_MS = 15 * 60 * 1000L
         private const val OPEN_AD_TIMEOUT_MS = 5000L
     }

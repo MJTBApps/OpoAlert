@@ -21,7 +21,7 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.54.4"  # mismo número que Android
+    MARKETING_VERSION: "1.55.0"  # mismo número que Android
     CURRENT_PROJECT_VERSION: "1"
     DEVELOPMENT_TEAM: ""
     # AdMob: identificadores de PRUEBA de Google. Los reales solo se pasan al compilar
@@ -29,6 +29,7 @@ settings:
     ADMOB_APP_ID: "ca-app-pub-3940256099942544~1458002511"
     ADMOB_BANNER: "ca-app-pub-3940256099942544/2435281174"
     ADMOB_OPEN_AD: "ca-app-pub-3940256099942544/5575463023"
+    ADMOB_INTERSTITIAL: "ca-app-pub-3940256099942544/4411468910"
     # Firebase (aviso silencioso, 1.54.0): vacíos aquí; los pasan los secretos
     # FIREBASE_IOS_* al compilar para TestFlight. Vacíos = sin aviso desde GitHub.
     FCM_IOS_APP_ID: ""
@@ -77,6 +78,7 @@ targets:
         GADApplicationIdentifier: $(ADMOB_APP_ID)
         OpoAdmobBanner: $(ADMOB_BANNER)
         OpoAdmobOpenAd: $(ADMOB_OPEN_AD)
+        OpoAdmobInterstitial: $(ADMOB_INTERSTITIAL)
         OpoFcmAppId: $(FCM_IOS_APP_ID)
         OpoFcmApiKey: $(FCM_IOS_API_KEY)
         OpoFcmProjectId: $(FCM_IOS_PROJECT_ID)
