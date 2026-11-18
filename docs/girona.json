@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-18T06:42:52.258557+00:00",
+  "lastCheckedUTC": "2026-11-18T09:40:20.457356+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 72,
-    "opportunities": 72,
+    "announcementsRead": 74,
+    "opportunities": 74,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,30 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 72,
-    "opportunities": 72
+    "announcementsRead": 74,
+    "opportunities": 74
   },
   "notices": [
+    {
+      "id": "CIDO6-22512479",
+      "title": "1 plaça de Conserge a l'àrea d'esports i joventut. Programa Treball i Formació, Línia ACOL 2026",
+      "entity": "Ajuntament de Sant Feliu de Guíxols",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22512479"
+    },
+    {
+      "id": "CIDO6-22512471",
+      "title": "1 plaça d'Oficial de 2a àrea de manteniment de la ciutat. Programa Treball i Formació, Línia ACOL 2026",
+      "entity": "Ajuntament de Sant Feliu de Guíxols",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22512471"
+    },
     {
       "id": "CIDO6-22507636",
       "title": "Borsa de treball de places de Conserge del Pavelló municipal",
@@ -73,7 +93,7 @@
       "date": "17/11/2026",
       "bulletin": "CIDO",
       "province": "Girona",
-      "type": "Plaza / oposición",
+      "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22499838"
     },
     {

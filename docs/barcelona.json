@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-18T06:42:52.258557+00:00",
+  "lastCheckedUTC": "2026-11-18T09:40:20.457356+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 277,
-    "opportunities": 277,
+    "announcementsRead": 286,
+    "opportunities": 286,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -40,22 +40,112 @@
       "2026-11-13",
       "2026-11-14",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-18"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 277,
-    "opportunities": 277
+    "announcementsRead": 286,
+    "opportunities": 286
   },
   "notices": [
+    {
+      "id": "CIDO5-22513292",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Martorelles",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22513292"
+    },
+    {
+      "id": "CIDO5-22513078",
+      "title": "1 plaça d'Agent cívic",
+      "entity": "Ajuntament de Gironella",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22513078"
+    },
+    {
+      "id": "CIDO5-22513062",
+      "title": "3 places d'Agent Local",
+      "entity": "Ajuntament de Gironella",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22513062"
+    },
+    {
+      "id": "CIDO5-22512861",
+      "title": "1 plaça de Tècnic d'Administració Especial - Lletrat",
+      "entity": "Ajuntament de Gelida",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22512861"
+    },
+    {
+      "id": "CIDO5-22512789",
+      "title": "Bases generals reguladores dels processos de selecció per a l'accés, com a personal funcionari de carrera, a places d'agent de la Policia Local",
+      "entity": "Ajuntament de Castelldefels",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22512789"
+    },
+    {
+      "id": "CIDO5-22512727",
+      "title": "2 places de Conserge. Pla d'ocupació local 2025",
+      "entity": "Ajuntament de Begues",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22512727"
+    },
+    {
+      "id": "CIDO5-22512683",
+      "title": "Borsa de treball de places d'Administratiu",
+      "entity": "Ajuntament d'Argentona",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22512683"
+    },
+    {
+      "id": "CIDO5-22515336",
+      "title": "1 plaça de Tècnic especialista TIC SMOU",
+      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22515336"
+    },
+    {
+      "id": "CIDO5-22513521",
+      "title": "1 plaça de Controlador d'accessos de rotació per a Àrea Econòmica, i Aparcaments Rotació",
+      "entity": "Ajuntament de Badalona - Ens de Gestió Urbanística, SA (ENGESTUR, SA)",
+      "date": "17/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22513521"
+    },
     {
       "id": "CIDO5-22512072",
       "title": "1 plaça de Peó de la brigada municipal",
