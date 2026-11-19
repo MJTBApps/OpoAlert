@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-19T09:43:26.747630+00:00",
+  "lastCheckedUTC": "2026-11-19T16:42:04.293476+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 92,
-    "opportunities": 92,
+    "announcementsRead": 95,
+    "opportunities": 95,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -37,7 +37,8 @@
       "2026-11-14",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-21",
@@ -47,15 +48,64 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-19"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 92,
-    "opportunities": 92
+    "announcementsRead": 95,
+    "opportunities": 95
   },
   "notices": [
+    {
+      "id": "CIDO8-22525032",
+      "title": "Borsa de treball de places de Tècnic mitjà en gestió cultural i cicle festiu",
+      "entity": "Ajuntament de Tarragona",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22525032"
+    },
+    {
+      "id": "CIDO8-22524818",
+      "title": "Borsa de treball de places de Tècnic de dinamització de joventut",
+      "entity": "Ajuntament de la Ràpita",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22524818"
+    },
+    {
+      "id": "CIDO8-22524746",
+      "title": "1 plaça d'Oficial 1a",
+      "entity": "Ajuntament dels Garidells",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524746"
+    },
+    {
+      "id": "CIDO8-21973849",
+      "title": "3 places d'Administratiu",
+      "entity": "Ajuntament de Reus",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21973849"
+    },
+    {
+      "id": "CIDO8-18012546",
+      "title": "1 plaça de Tècnic mitjà bibliotecari",
+      "entity": "Ajuntament de Reus",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18012546"
+    },
     {
       "id": "CIDO8-22515561",
       "title": "Borsa de treball de places de Personal de neteja",
@@ -317,16 +367,6 @@
       "url": "https://cido.diba.cat/oposicions/22451782"
     },
     {
-      "id": "CIDO8-21973849",
-      "title": "3 places d'Administratiu",
-      "entity": "Ajuntament de Reus",
-      "date": "13/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21973849"
-    },
-    {
       "id": "CIDO8-16522604",
       "title": "1 plaça d'Auxiliar administratiu",
       "entity": "Ajuntament de l'Argentera",
@@ -555,16 +595,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21038832"
-    },
-    {
-      "id": "CIDO8-18012546",
-      "title": "1 plaça de Tècnic mitjà bibliotecari",
-      "entity": "Ajuntament de Reus",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18012546"
     },
     {
       "id": "CIDO8-22437739",

@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-19T09:43:26.747630+00:00",
+  "lastCheckedUTC": "2026-11-19T16:42:04.293476+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 70,
-    "opportunities": 70,
+    "announcementsRead": 75,
+    "opportunities": 75,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -34,7 +34,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-23",
@@ -47,15 +48,84 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-19"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 70,
-    "opportunities": 70
+    "announcementsRead": 75,
+    "opportunities": 75
   },
   "notices": [
+    {
+      "id": "CIDO6-22525243",
+      "title": "4 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de Roses",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22525243"
+    },
+    {
+      "id": "CIDO6-22525237",
+      "title": "1 plaça de Cap de protecció civil",
+      "entity": "Ajuntament de Blanes",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22525237"
+    },
+    {
+      "id": "CIDO6-22524268",
+      "title": "Borsa de treball de places d'Administratiu",
+      "entity": "Ajuntament de Salt",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22524268"
+    },
+    {
+      "id": "CIDO6-22524166",
+      "title": "Borsa de treball de places de Director de biblioteca",
+      "entity": "Ajuntament de l'Escala",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22524166"
+    },
+    {
+      "id": "CIDO6-22524104",
+      "title": "1 plaça d'Oficial de manteniment",
+      "entity": "Ajuntament de Campllong",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22524104"
+    },
+    {
+      "id": "CIDO6-22500376",
+      "title": "Borsa de treball de places d'Operaris de brigada",
+      "entity": "Ajuntament de Vilajuïga",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22500376"
+    },
+    {
+      "id": "CIDO6-22484134",
+      "title": "1 plaça de Tècnic d'Administració General Serveis Tècnics",
+      "entity": "Ajuntament de Ribes de Freser",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22484134"
+    },
     {
       "id": "CIDO6-22445926",
       "title": "6 places d'Agent de la policia local",
@@ -165,16 +235,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21416131"
-    },
-    {
-      "id": "CIDO6-22500376",
-      "title": "Borsa de treball de places d'Operaris de brigada",
-      "entity": "Ajuntament de Vilajuïga",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22500376"
     },
     {
       "id": "CIDO6-22500135",
@@ -345,16 +405,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22487277"
-    },
-    {
-      "id": "CIDO6-22484134",
-      "title": "1 plaça de Tècnic d'Administració General Serveis Tècnics",
-      "entity": "Ajuntament de Ribes de Freser",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22484134"
     },
     {
       "id": "CIDO6-22476331",
