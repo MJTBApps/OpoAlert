@@ -29,6 +29,17 @@ command -v xcodegen >/dev/null || brew install xcodegen
 xcodegen generate
 
 set -o pipefail
+# Un identificador de AdMob mal pegado cierra la app al abrirla (19/11/2026,
+# primera compilación de Codemagic): se comprueba la forma y no se compila si falla.
+check_admob() {  # nombre, patrón
+  local v="${!1}"
+  [ -z "$v" ] && return 0
+  echo "$v" | grep -Eqx "$2" || { echo "ERROR: $1 no tiene la forma correcta (pega solo el valor ca-app-pub-…, sin «nombre=» ni espacios)"; exit 1; }
+}
+check_admob ADMOB_IOS_APP_ID 'ca-app-pub-[0-9]{16}~[0-9]{10}'
+check_admob ADMOB_IOS_BANNER 'ca-app-pub-[0-9]{16}/[0-9]{10}'
+check_admob ADMOB_IOS_OPEN_AD 'ca-app-pub-[0-9]{16}/[0-9]{10}'
+check_admob ADMOB_IOS_INTERSTITIAL 'ca-app-pub-[0-9]{16}/[0-9]{10}'
 ADMOB=()
 if [ -n "$ADMOB_IOS_APP_ID" ] && [ -n "$ADMOB_IOS_BANNER" ] && [ -n "$ADMOB_IOS_OPEN_AD" ]; then
   ADMOB=(ADMOB_APP_ID="$ADMOB_IOS_APP_ID" ADMOB_BANNER="$ADMOB_IOS_BANNER" ADMOB_OPEN_AD="$ADMOB_IOS_OPEN_AD" ADMOB_INTERSTITIAL="$ADMOB_IOS_INTERSTITIAL")
