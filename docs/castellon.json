@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-18T16:37:13.346740+00:00",
+  "lastCheckedUTC": "2026-11-19T06:36:30.574325+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "139",
+    "bulletin": "140",
     "pagesVisited": 13,
-    "announcementsRead": 489,
+    "announcementsRead": 501,
     "opportunities": 25,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 489,
+    "announcementsRead": 501,
     "opportunities": 25,
     "bulletins": [
-      "127",
       "128",
       "129",
       "130",
@@ -32,10 +31,10 @@
       "136",
       "137",
       "138",
-      "139"
+      "139",
+      "140"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-22",
       "2026-10-24",
       "2026-10-27",
@@ -47,7 +46,8 @@
       "2026-11-10",
       "2026-11-12",
       "2026-11-14",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-21",
@@ -70,6 +70,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-324345635751201064",
+      "province": "Castellón",
+      "title": "Publicación inicial del Presupuesto General para el ejercicio 2027, que incluye las bases de ejecución del presupuesto y la plantilla de personal",
+      "entity": "Consorcis / Consorcios",
+      "date": "19/11/2026",
+      "bulletin": "140",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/NxVOnsj7NY"
+    },
     {
       "id": "CS-369872859635188751",
       "province": "Castellón",
@@ -309,16 +319,6 @@
       "bulletin": "128",
       "type": "Plaza / oposición",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9ovfgQyxzw"
-    },
-    {
-      "id": "CS-576298363748136125",
-      "province": "Castellón",
-      "title": "Convocatoria Bolsa de Empleo Temporal de FACULTATIVO/A ESPECIALISTA EN MEDICINA INTERNA en el Consorci Hospitalari Provincial Universitari de Castelló (CHPUCS)",
-      "entity": "Consorcis / Consorcios",
-      "date": "20/10/2026",
-      "bulletin": "127",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/gZS3s1wb7t"
     }
   ]
 }

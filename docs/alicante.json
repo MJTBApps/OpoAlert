@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-18T16:36:59.066167+00:00",
+  "lastCheckedUTC": "2026-11-19T06:36:17.524038+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "220",
-    "pagesVisited": 22,
-    "announcementsRead": 883,
-    "opportunities": 61,
+    "pagesVisited": 21,
+    "announcementsRead": 847,
+    "opportunities": 57,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
-    "issuesRead": 22,
-    "pagesVisited": 22,
-    "announcementsRead": 883,
-    "opportunities": 61,
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 847,
+    "opportunities": 57,
     "bulletins": [
-      "199",
       "200",
       "201",
       "202",
@@ -44,7 +43,6 @@
       "220"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -75,7 +73,8 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ]
   },
   "notices": [
@@ -648,46 +647,6 @@
       "bulletin": "200",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/21_200/2026_008012.pdf"
-    },
-    {
-      "id": "AL-2026-8040",
-      "province": "Alicante",
-      "title": "APROBACIÓN BASES Y CONVOCATORIA PÚBLICA DESIGNACIÓN PUESTO DIRECTOR/A IDELSA",
-      "entity": "INSTITUTO DESARROLLO DE ELDA Y SERVICIOS ADMINISTRATIVOS",
-      "date": "20/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008040.pdf"
-    },
-    {
-      "id": "AL-2026-8025",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFICAS Y CONVOCATORIA PROCESO SELECTIVO PARA PROVISIÓN EN PROPIEDAD DEL PUESTO TÉCNICO/A DE ADMINISTRACIÓN ESPECIAL CASA DE CULTURA",
-      "entity": "AYUNTAMIENTO L´ALFÀS DEL PI",
-      "date": "20/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008025.pdf"
-    },
-    {
-      "id": "AL-2026-8018",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES ESPECÍFICAS PARA UNA PLAZA DE COCINERO/A POR SISTEMA CONCURSO-OPOSICIÓN.",
-      "entity": "PATRONATO MUNICIPAL DE EDUCACIÓN INFANTIL DE ALICANTE",
-      "date": "20/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008018.pdf"
-    },
-    {
-      "id": "AL-2026-8016",
-      "province": "Alicante",
-      "title": "CONVOCATORIA Y BASES ESPECÍFICAS VARIAS PLAZAS TÉCNICO SUPERIOR EDUCACIÓN INFANTIL, SISTEMA OPOSICIÓN",
-      "entity": "PATRONATO MUNICIPAL DE EDUCACIÓN INFANTIL DE ALICANTE",
-      "date": "20/10/2026",
-      "bulletin": "199",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/20_199/2026_008016.pdf"
     }
   ]
 }
