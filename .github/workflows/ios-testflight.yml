@@ -8,17 +8,24 @@ name: OpoAlert - Subir iOS a TestFlight
 # ADMOB_IOS_BANNER y ADMOB_IOS_OPEN_AD (y ADMOB_IOS_INTERSTITIAL, opcional). Sin ellos se usan los de PRUEBA de Google.
 on:
   workflow_dispatch:
+    inputs:
+      mac:
+        description: 'Mac de GitHub (si uno está saturado, probar el otro)'
+        type: choice
+        default: macos-26
+        options: [macos-26, macos-15]
 
 permissions:
   contents: read
 
 concurrency:
   group: opoalert-testflight
-  cancel-in-progress: false
+  # La nueva sustituye a la que espera Mac (19/11/2026: colas de horas).
+  cancel-in-progress: true
 
 jobs:
   subir:
-    runs-on: macos-15
+    runs-on: ${{ inputs.mac || 'macos-26' }}
     timeout-minutes: 60
     env:
       TEAM_ID: 6QLP74LVPC
