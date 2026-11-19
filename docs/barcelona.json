@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-18T16:41:53.099572+00:00",
+  "lastCheckedUTC": "2026-11-19T06:41:35.085616+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 288,
-    "opportunities": 288,
+    "announcementsRead": 274,
+    "opportunities": 274,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -48,12 +47,13 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 288,
-    "opportunities": 288
+    "announcementsRead": 274,
+    "opportunities": 274
   },
   "notices": [
     {
@@ -1317,16 +1317,6 @@
       "url": "https://cido.diba.cat/oposicions/13040011"
     },
     {
-      "id": "CIDO5-22484418",
-      "title": "1 plaça de Gerent",
-      "entity": "Ajuntament de Sant Pere de Ribes",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22484418"
-    },
-    {
       "id": "CIDO5-22473203",
       "title": "Borsa de treball de places d'Educador social",
       "entity": "Ajuntament de Santa Coloma de Gramenet",
@@ -2087,16 +2077,6 @@
       "url": "https://cido.diba.cat/oposicions/22418634"
     },
     {
-      "id": "CIDO5-22402132",
-      "title": "Borsa de treball de places d'Enginyer",
-      "entity": "Ajuntament de Santa Margarida i els Monjos",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22402132"
-    },
-    {
       "id": "CIDO5-22387342",
       "title": "Borsa de treball de places de Professor llicenciat (especialitat vent fusta/ cant coral en anglès)",
       "entity": "Ajuntament d'Igualada - Organisme Autònom Municipal d'Ensenyaments Artístics d'Igualada",
@@ -2385,16 +2365,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16027180"
-    },
-    {
-      "id": "CIDO5-22394590",
-      "title": "1 plaça de Tècnic superior de salut pública",
-      "entity": "Ajuntament de Vilanova i la Geltrú",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22394590"
     },
     {
       "id": "CIDO5-22358226",
@@ -2825,116 +2795,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22367182"
-    },
-    {
-      "id": "CIDO5-22361362",
-      "title": "Borsa de treball de places de Tècnic d'Inserció i Formació Ocupacional",
-      "entity": "Ajuntament de Manlleu",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22361362"
-    },
-    {
-      "id": "CIDO5-22361103",
-      "title": "Borsa de treball de places d'Interventor",
-      "entity": "Ajuntament de Cabrils",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22361103"
-    },
-    {
-      "id": "CIDO5-22306919",
-      "title": "1 plaça de Tècnic d'administració especial - Enginyer",
-      "entity": "Ajuntament de Sitges",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22306919"
-    },
-    {
-      "id": "CIDO5-21705266",
-      "title": "1 plaça de Peó",
-      "entity": "Ajuntament de Querol",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21705266"
-    },
-    {
-      "id": "CIDO5-21091393",
-      "title": "2 places de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament de Sant Joan Despí",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21091393"
-    },
-    {
-      "id": "CIDO5-22358081",
-      "title": "1 plaça de Tècnic generalista de gestió de persones, nòmines i retribucions",
-      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22358081"
-    },
-    {
-      "id": "CIDO5-22358066",
-      "title": "1 plaça de Tècnic de dades SMOU",
-      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22358066"
-    },
-    {
-      "id": "CIDO5-22314736",
-      "title": "1 plaça de Tècnic mitjà educació",
-      "entity": "Ajuntament de Vilafranca del Penedès",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22314736"
-    },
-    {
-      "id": "CIDO5-21872844",
-      "title": "2 places d'Oficial 2a manteniment general",
-      "entity": "Ajuntament de Vilafranca del Penedès",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21872844"
-    },
-    {
-      "id": "CIDO5-21872801",
-      "title": "1 plaça d'Oficial 1a gruista",
-      "entity": "Ajuntament de Vilafranca del Penedès",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21872801"
-    },
-    {
-      "id": "CIDO5-21872765",
-      "title": "1 plaça d'Oficial 1a habitatge",
-      "entity": "Ajuntament de Vilafranca del Penedès",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21872765"
     }
   ]
 }

@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-18T16:41:53.099572+00:00",
+  "lastCheckedUTC": "2026-11-19T06:41:35.085616+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 74,
-    "opportunities": 74,
+    "announcementsRead": 70,
+    "opportunities": 70,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "publicationDates": [
       "2026-10-21",
       "2026-10-22",
@@ -37,7 +37,6 @@
       "2026-11-18"
     ],
     "nonPublicationDates": [
-      "2026-10-20",
       "2026-10-23",
       "2026-10-24",
       "2026-10-25",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 74,
-    "opportunities": 74
+    "announcementsRead": 70,
+    "opportunities": 70
   },
   "notices": [
     {
@@ -567,26 +567,6 @@
       "url": "https://cido.diba.cat/oposicions/22436172"
     },
     {
-      "id": "CIDO6-22436042",
-      "title": "Borsa de treball de places de Conserge",
-      "entity": "Ajuntament de Cadaqués",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22436042"
-    },
-    {
-      "id": "CIDO6-22435630",
-      "title": "Borsa de treball de places de Conserge mantenidor",
-      "entity": "Ajuntament de Blanes",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22435630"
-    },
-    {
       "id": "CIDO6-21589781",
       "title": "1 plaça de Tècnic superior econòmic",
       "entity": "Ajuntament de l'Escala",
@@ -757,16 +737,6 @@
       "url": "https://cido.diba.cat/oposicions/22366864"
     },
     {
-      "id": "CIDO6-22360096",
-      "title": "1 plaça de Vigilant",
-      "entity": "Ajuntament de Camprodon",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22360096"
-    },
-    {
       "id": "CIDO6-22334988",
       "title": "1 plaça d'Oficial polivalent",
       "entity": "Ajuntament de Sant Jaume de Llierca",
@@ -785,16 +755,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22334981"
-    },
-    {
-      "id": "CIDO6-21771332",
-      "title": "1 plaça de Tècnic d'administració general (TAG)",
-      "entity": "Ajuntament de Sant Feliu de Guíxols",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21771332"
     }
   ]
 }

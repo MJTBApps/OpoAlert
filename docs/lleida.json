@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-18T16:41:53.099572+00:00",
+  "lastCheckedUTC": "2026-11-19T06:41:35.085616+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 62,
-    "opportunities": 62,
+    "announcementsRead": 59,
+    "opportunities": 59,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "publicationDates": [
-      "2026-10-20",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -48,12 +47,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 62,
-    "opportunities": 62
+    "announcementsRead": 59,
+    "opportunities": 59
   },
   "notices": [
     {
@@ -645,36 +645,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22346326"
-    },
-    {
-      "id": "CIDO7-22290699",
-      "title": "1 plaça de Peó de Brigada Municipal",
-      "entity": "Ajuntament d'Alins",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22290699"
-    },
-    {
-      "id": "CIDO7-22290661",
-      "title": "1 plaça de Cap de Brigada Municipal",
-      "entity": "Ajuntament d'Alins",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22290661"
-    },
-    {
-      "id": "CIDO7-22345789",
-      "title": "1 plaça de Secretari de classe tercera",
-      "entity": "Ajuntament de Ribera d'Urgellet",
-      "date": "20/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22345789"
     }
   ]
 }
