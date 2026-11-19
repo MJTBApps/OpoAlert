@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-19T09:43:26.747630+00:00",
+  "lastCheckedUTC": "2026-11-19T16:42:04.293476+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 60,
-    "opportunities": 60,
+    "announcementsRead": 65,
+    "opportunities": 65,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -33,7 +33,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-21",
@@ -47,15 +48,54 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-19"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 60,
-    "opportunities": 60
+    "announcementsRead": 65,
+    "opportunities": 65
   },
   "notices": [
+    {
+      "id": "CIDO7-22524580",
+      "title": "2 places de Llicenciat en Dret",
+      "entity": "Ajuntament de Lleida",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524580"
+    },
+    {
+      "id": "CIDO7-22524511",
+      "title": "1 plaça de Cap Secció de Protocol",
+      "entity": "Ajuntament de Lleida",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524511"
+    },
+    {
+      "id": "CIDO7-22267222",
+      "title": "1 plaça de Tècnic d'educació infantil",
+      "entity": "Ajuntament de Bellpuig",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22267222"
+    },
+    {
+      "id": "CIDO7-19970364",
+      "title": "1 plaça de Tècnic de Desenvolupament Rural",
+      "entity": "Ajuntament de la Vall de Boí",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/19970364"
+    },
     {
       "id": "CIDO7-22515295",
       "title": "1 plaça de Director de llar d'infants",
@@ -147,16 +187,6 @@
       "url": "https://cido.diba.cat/oposicions/22474582"
     },
     {
-      "id": "CIDO7-22267222",
-      "title": "1 plaça de Tècnic d'educació infantil",
-      "entity": "Ajuntament de Bellpuig",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22267222"
-    },
-    {
       "id": "CIDO7-22015277",
       "title": "Borsa de treball de places de Peó de serveis múltiples - polivalent",
       "entity": "Ajuntament de Balaguer",
@@ -175,6 +205,26 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/19976046"
+    },
+    {
+      "id": "CIDO7-22524709",
+      "title": "1 plaça d'Auxiliar de geriatria",
+      "entity": "Ajuntament de la Juneda -  Patronat Municipal Assistencial de la Residència d'Avis",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524709"
+    },
+    {
+      "id": "CIDO7-22524645",
+      "title": "1 plaça d'Auxiliar d'infermeria",
+      "entity": "Ajuntament de la Juneda -  Patronat Municipal Assistencial de la Residència d'Avis",
+      "date": "13/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524645"
     },
     {
       "id": "CIDO7-22489584",

@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-19T09:43:26.747630+00:00",
+  "lastCheckedUTC": "2026-11-19T16:42:04.293476+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 281,
-    "opportunities": 281,
+    "announcementsRead": 288,
+    "opportunities": 288,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,60 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 281,
-    "opportunities": 281
+    "announcementsRead": 288,
+    "opportunities": 288
   },
   "notices": [
+    {
+      "id": "CIDO5-22525200",
+      "title": "1 plaça d'Agent de la Policia Local",
+      "entity": "Ajuntament de Sant Andreu de la Barca",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22525200"
+    },
+    {
+      "id": "CIDO5-22523960",
+      "title": "Borsa de treball de places de Tècnic superiors en l'àmbit d'economia",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22523960"
+    },
+    {
+      "id": "CIDO5-22523828",
+      "title": "Borsa de treball de places de Tècnic auxiliar especialitzat en tècniques al servei de l'espectacle",
+      "entity": "Ajuntament de Vic",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22523828"
+    },
+    {
+      "id": "CIDO5-22523765",
+      "title": "1 plaça d'Arquitecte tècnic",
+      "entity": "Ajuntament de Torelló",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22523765"
+    },
+    {
+      "id": "CIDO5-22523712",
+      "title": "1 plaça de Tècnic de participació, civisme i convivència",
+      "entity": "Ajuntament de Sant Vicenç dels Horts",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22523712"
+    },
     {
       "id": "CIDO5-22522021",
       "title": "1 plaça de Desenvolupador multimèdia",
@@ -87,6 +137,66 @@
       "url": "https://cido.diba.cat/oposicions/22521850"
     },
     {
+      "id": "CIDO5-22512789",
+      "title": "Bases generals reguladores dels processos de selecció per a l'accés, com a personal funcionari de carrera, a places d'agent de la Policia Local",
+      "entity": "Ajuntament de Castelldefels",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22512789"
+    },
+    {
+      "id": "CIDO5-22506311",
+      "title": "Borsa de treball de places de Lletrat",
+      "entity": "Ajuntament de Sant Martí Sarroca",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22506311"
+    },
+    {
+      "id": "CIDO5-22473110",
+      "title": "1 plaça d'Auxiliar administratiu. Pla Local d'Ocupació",
+      "entity": "Ajuntament de Sant Antoni de Vilamajor",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22473110"
+    },
+    {
+      "id": "CIDO5-21030385",
+      "title": "2 places de Tècnic superior d'economia i hisenda",
+      "entity": "Ajuntament de Sant Vicenç dels Horts",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21030385"
+    },
+    {
+      "id": "CIDO5-18813229",
+      "title": "1 plaça de Tècnic de gestió administrativa - Tècnic de participació ciutadana i festes",
+      "entity": "Ajuntament de Berga",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18813229"
+    },
+    {
+      "id": "CIDO5-18719392",
+      "title": "1 plaça de Tècnic d'informàtica",
+      "entity": "Ajuntament de la Roca del Vallès",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18719392"
+    },
+    {
       "id": "CIDO5-17499189",
       "title": "1 plaça de Tècnic mitjà - mediador ciutadanes",
       "entity": "Ajuntament de Cornellà de Llobregat",
@@ -95,6 +205,46 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/17499189"
+    },
+    {
+      "id": "CIDO5-17031958",
+      "title": "1 plaça d'Enginyer",
+      "entity": "Ajuntament del Masnou",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/17031958"
+    },
+    {
+      "id": "CIDO5-16773319",
+      "title": "1 plaça de Tècnic mitjà d'acció ambiental",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16773319"
+    },
+    {
+      "id": "CIDO5-16607751",
+      "title": "2 places de Tècnic superior arquitecte",
+      "entity": "Ajuntament de Santa Perpètua de Mogoda",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16607751"
+    },
+    {
+      "id": "CIDO5-16505342",
+      "title": "1 plaça de Cap de grup",
+      "entity": "Ajuntament de Vilafranca del Penedès",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/16505342"
     },
     {
       "id": "CIDO5-16484914",
@@ -115,6 +265,16 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16461792"
+    },
+    {
+      "id": "CIDO5-22523920",
+      "title": "1 plaça de Tècnic de so",
+      "entity": "Ajuntament de Sant Cugat del Vallès - EPEL Cugat.cat",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22523920"
     },
     {
       "id": "CIDO5-22521853",
@@ -185,16 +345,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22512861"
-    },
-    {
-      "id": "CIDO5-22512789",
-      "title": "Bases generals reguladores dels processos de selecció per a l'accés, com a personal funcionari de carrera, a places d'agent de la Policia Local",
-      "entity": "Ajuntament de Castelldefels",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22512789"
     },
     {
       "id": "CIDO5-22512727",
@@ -415,16 +565,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22506934"
-    },
-    {
-      "id": "CIDO5-22506311",
-      "title": "Borsa de treball de places de Lletrat",
-      "entity": "Ajuntament de Sant Martí Sarroca",
-      "date": "17/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22506311"
     },
     {
       "id": "CIDO5-22504985",
@@ -1037,16 +1177,6 @@
       "url": "https://cido.diba.cat/oposicions/21114029"
     },
     {
-      "id": "CIDO5-18813229",
-      "title": "1 plaça de Tècnic de gestió administrativa - Tècnic de participació ciutadana i festes",
-      "entity": "Ajuntament de Berga",
-      "date": "13/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18813229"
-    },
-    {
       "id": "CIDO5-22489164",
       "title": "1 plaça de Tècnic especialista en organització",
       "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
@@ -1317,16 +1447,6 @@
       "url": "https://cido.diba.cat/oposicions/21511059"
     },
     {
-      "id": "CIDO5-21030385",
-      "title": "2 places de Tècnic superior d'economia i hisenda",
-      "entity": "Ajuntament de Sant Vicenç dels Horts",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21030385"
-    },
-    {
       "id": "CIDO5-20922643",
       "title": "2 places de Conserge - Vigilant per a l'Àrea de Cultura i Educació",
       "entity": "Ajuntament d'Olot",
@@ -1415,16 +1535,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22473132"
-    },
-    {
-      "id": "CIDO5-22473110",
-      "title": "1 plaça d'Auxiliar administratiu. Pla Local d'Ocupació",
-      "entity": "Ajuntament de Sant Antoni de Vilamajor",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22473110"
     },
     {
       "id": "CIDO5-22442834",
@@ -1545,16 +1655,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/19067323"
-    },
-    {
-      "id": "CIDO5-17031958",
-      "title": "1 plaça d'Enginyer",
-      "entity": "Ajuntament del Masnou",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/17031958"
     },
     {
       "id": "CIDO5-22469619",
@@ -1705,16 +1805,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16723214"
-    },
-    {
-      "id": "CIDO5-16607751",
-      "title": "2 places de Tècnic superior arquitecte",
-      "entity": "Ajuntament de Santa Perpètua de Mogoda",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16607751"
     },
     {
       "id": "CIDO5-15538479",
@@ -1965,16 +2055,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18743603"
-    },
-    {
-      "id": "CIDO5-18719392",
-      "title": "1 plaça de Tècnic d'informàtica",
-      "entity": "Ajuntament de la Roca del Vallès",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/18719392"
     },
     {
       "id": "CIDO5-16757272",
@@ -2365,16 +2445,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22327578"
-    },
-    {
-      "id": "CIDO5-16773319",
-      "title": "1 plaça de Tècnic mitjà d'acció ambiental",
-      "entity": "Ajuntament del Prat de Llobregat",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16773319"
     },
     {
       "id": "CIDO5-16596329",
