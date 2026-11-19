@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-18T16:30:27.463215+00:00",
+  "lastCheckedUTC": "2026-11-19T06:24:35.464675+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 21,
-    "announcementsRead": 473,
-    "opportunities": 44
+    "announcementsRead": 463,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -36,10 +35,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,20 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 473,
-    "opportunities": 44
+    "announcementsRead": 463,
+    "opportunities": 42
   },
   "notices": [
+    {
+      "id": "BD-2026-165334",
+      "province": "Badajoz",
+      "title": "Bases para la provisión por el procedimiento de concurso específico de méritos del puesto de Jefatura de Negociado de Asuntos Sociales",
+      "entity": "Diputación de Badajoz",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-19000000_4599.pdf"
+    },
     {
       "id": "BD-2026-165324",
       "province": "Badajoz",
@@ -486,36 +496,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-21000000_4166.pdf"
-    },
-    {
-      "id": "BD-2026-164866",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la creación de bolsas de trabajo constituidas para varias categorías de operarios",
-      "entity": "Ayuntamiento de Talavera la Real",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-20000000_4133.pdf"
-    },
-    {
-      "id": "BD-2026-164865",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión de una plaza de Formador/a para programas de aprendizaje a lo largo de la vida",
-      "entity": "Ayuntamiento de Talavera la Real",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-20000000_4132.pdf"
-    },
-    {
-      "id": "BD-2026-164849",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión temporal, mediante comisión de servicios por vacante, de un puesto de Agente de la Policía Local",
-      "entity": "Ayuntamiento de Villafranca de los Barros",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-20000000_4117.pdf"
     }
   ]
 }

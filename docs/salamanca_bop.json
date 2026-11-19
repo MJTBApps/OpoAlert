@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-18T16:36:48.391823+00:00",
+  "lastCheckedUTC": "2026-11-19T06:31:15.740323+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
+    "bulletin": "224",
     "pagesVisited": 21,
-    "announcementsRead": 311,
-    "opportunities": 6
+    "announcementsRead": 299,
+    "opportunities": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -36,10 +35,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,9 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 311,
-    "opportunities": 6,
+    "announcementsRead": 299,
+    "opportunities": 7,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261020/BOP-SA-20261020-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261021/BOP-SA-20261021-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261022/BOP-SA-20261022-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261023/BOP-SA-20261023-000.pdf",
@@ -96,10 +95,10 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261113/BOP-SA-20261113-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261116/BOP-SA-20261116-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261117/BOP-SA-20261117-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261118/BOP-SA-20261118-000.pdf"
+      "https://www.lasalina.es/documentacion/bop/2026/20261118/BOP-SA-20261118-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261119/BOP-SA-20261119-000.pdf"
     ],
     "CVECounts": [
-      18,
       14,
       21,
       9,
@@ -119,11 +118,32 @@
       12,
       16,
       17,
-      16
+      16,
+      6
     ],
-    "originalPDFsChecked": 311
+    "originalPDFsChecked": 299
   },
   "notices": [
+    {
+      "id": "SA-20261119-006",
+      "province": "Salamanca",
+      "title": "Anuncio. Bases y la convocatoria para cubrir una plaza de agente de policía del cuerpo de la policía local, mediante sistema de oposición libre",
+      "entity": "Ayuntamientos de Salamanca",
+      "date": "19/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://www.lasalina.es/documentacion/bop/2026/20261119/BOP-SA-20261119-006.pdf"
+    },
+    {
+      "id": "SA-20261119-001",
+      "province": "Salamanca",
+      "title": "Salamanca Departamento de Recursos Humanos Anuncio. Convocatoria y bases para la cobertura en propiedad, mediante concurso de méritos específicos, del puesto de jefatura de sección de dependencia del Ayuntamiento de Salamanca",
+      "entity": "Ayuntamientos de Salamanca",
+      "date": "19/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://www.lasalina.es/documentacion/bop/2026/20261119/BOP-SA-20261119-001.pdf"
+    },
     {
       "id": "SA-20261116-001",
       "province": "Salamanca",
@@ -173,16 +193,6 @@
       "bulletin": "205",
       "type": "Plaza / oposición",
       "url": "https://www.lasalina.es/documentacion/bop/2026/20261022/BOP-SA-20261022-010.pdf"
-    },
-    {
-      "id": "SA-20261020-005",
-      "province": "Salamanca",
-      "title": "Convocatoria y bases para la cobertura en propiedad, mediante concurso de méritos específicos, de diversos puestos de trabajo vacantes en el Ayuntamiento de Salamanca",
-      "entity": "Ayuntamiento de Salamanca",
-      "date": "20/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261020/BOP-SA-20261020-005.pdf"
     }
   ]
 }

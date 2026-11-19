@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-18T16:35:26.763664+00:00",
+  "lastCheckedUTC": "2026-11-19T06:30:12.655829+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "221",
-    "pagesVisited": 22,
-    "announcementsRead": 312,
-    "opportunities": 45
+    "pagesVisited": 21,
+    "announcementsRead": 285,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -40,7 +39,6 @@
       "221"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -71,52 +69,23 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 312,
-    "opportunities": 45
+    "issuesRead": 21,
+    "announcementsRead": 285,
+    "opportunities": 40
   },
   "notices": [
     {
       "id": "PV-2026-4934",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN de 6 de noviembre de 2026, del director de Gestión de Personal, por la que se hace público el resultado del sorteo de la letra que determinará el orden alfabético en el proceso de gestión de candidatas y candidatos a sustituciones durante el curso escolar 2027-2028, así como en cualquier otro proceso selectivo que pueda convocarse a lo largo de dicho curso escolar.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Educación",
       "date": "18/11/2026",
       "bulletin": "221",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604934a.pdf"
-    },
-    {
-      "id": "PV-2026-4927",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 3 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se convoca concurso de acceso a plazas de profesorado agregado por turno libre.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "18/11/2026",
-      "bulletin": "221",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604927a.pdf"
-    },
-    {
-      "id": "PV-2026-4926",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo a la convocatoria pública para la cobertura, mediante el sistema de libre designación, de diversos puestos de trabajo.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "18/11/2026",
-      "bulletin": "221",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604926a.pdf"
-    },
-    {
-      "id": "PV-2026-4924",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 12 de noviembre de 2026, del rector de la Universidad del País Vasco / Euskal Herriko Unibertsitatea, por la que se nombra profesor titular de Universidad, cuyo concurso de acceso a plazas de Cuerpos de Funcionarios Docentes Universitarios fue convocado por Resolución de 16 de junio de 2026 (BOE de 23-06-2026 y BOPV de 07-07-2026).",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "18/11/2026",
-      "bulletin": "221",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2604924a.pdf"
     },
     {
       "id": "PV-2026-4905",
@@ -507,26 +476,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604422a.pdf"
-    },
-    {
-      "id": "PV-2026-4386",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 1533/2026, de 18 de septiembre, de la directora de Personas y Talento de Osakidetza-Servicio vasco de salud, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, del puesto de coordinador/a de docencia de medicina familiar y comunitaria, en la Unidad Docente de Medicina Familiar y Comunitaria, de la Subdirección de Atención Primaria, de la Dirección de Asistencia Sanitaria, de la Dirección General de Osakidetza-Servicio vasco de salud, en Gipuzkoa.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604386a.pdf"
-    },
-    {
-      "id": "PV-2026-4384",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 2 de octubre de 2026, del vicepresidente segundo del Gobierno y consejero de Economía, Trabajo y Empleo, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «secretario/a de alto cargo» de la Dirección de Economía Social del Departamento de Economía, Trabajo y Empleo.",
-      "entity": "Economía, Trabajo y Empleo",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604384a.pdf"
     }
   ]
 }

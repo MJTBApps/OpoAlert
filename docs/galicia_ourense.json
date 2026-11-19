@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-18T16:34:26.832106+00:00",
+  "lastCheckedUTC": "2026-11-19T06:29:19.097353+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 21,
-    "announcementsRead": 283,
-    "opportunities": 25
+    "announcementsRead": 284,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -36,10 +35,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,20 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 283,
-    "opportunities": 25
+    "announcementsRead": 284,
+    "opportunities": 26
   },
   "notices": [
+    {
+      "id": "OU-2026-353315",
+      "province": "Ourense",
+      "title": "Anuncio de la convocatoria de una edición del Curso de especialización en personal directivo e inteligencia emocional” (AF-78-2026). EXP: 2026/16831X",
+      "entity": "DEPUTACIÓN PROVINCIAL DE OURENSE",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353315/idioma/gl"
+    },
     {
       "id": "OU-2026-353250",
       "province": "Ourense",

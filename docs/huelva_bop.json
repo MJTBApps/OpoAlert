@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-18T16:33:02.588400+00:00",
+  "lastCheckedUTC": "2026-11-19T06:28:08.274968+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 272,
-    "opportunities": 45
+    "announcementsRead": 278,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -36,10 +35,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,9 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 272,
-    "opportunities": 45,
+    "announcementsRead": 278,
+    "opportunities": 43,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_202_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_203_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_204_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_205_2026.pdf",
@@ -96,7 +95,8 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_219_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_220_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_221_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_222_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_222_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_223_2026.pdf"
     ]
   },
   "notices": [
@@ -529,26 +529,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380211_BOP-203_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380213",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para la selección mediante el sistema de concurso-oposición de un empleado laboral fijo discontinuo en plaza de Técnico Especialista (Dirección Festival de Cine)",
-      "entity": "Mancomunidad de Islantilla",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380213_BOP-202_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380108",
-      "province": "Huelva",
-      "title": "Aprobación de la Bases de la convocatoria para la contratación de una plaza de Adjunto Técnico Coordinador de Deporte y seis plazas de Peón de Servicios Múltiples incluidas en la OEP 2025",
-      "entity": "Ayuntamiento de Hinojos",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380108_BOP-202_2026.pdf"
     }
   ]
 }

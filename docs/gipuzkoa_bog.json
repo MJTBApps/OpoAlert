@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-18T16:32:40.040622+00:00",
+  "lastCheckedUTC": "2026-11-19T06:27:32.870422+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 21,
-    "announcementsRead": 846,
-    "opportunities": 29
+    "announcementsRead": 834,
+    "opportunities": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -36,10 +35,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,20 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 846,
-    "opportunities": 29
+    "announcementsRead": 834,
+    "opportunities": 27
   },
   "notices": [
+    {
+      "id": "GP-2026-2607463",
+      "province": "Gipuzkoa",
+      "title": "Emplazamiento a terceros interesados en el procedimiento abreviado 427/2026 (proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a veinticinco plazas de Bombero/a-Conductor/a).",
+      "entity": "AYUNTAMIENTO DE SAN SEBASTIÁN",
+      "date": "19/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/19/c2607463.pdf"
+    },
     {
       "id": "GP-2026-2607448",
       "province": "Gipuzkoa",
@@ -336,36 +346,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/23/c2606546.pdf"
-    },
-    {
-      "id": "GP-2026-2606578",
-      "province": "Gipuzkoa",
-      "title": "Emplazamiento a terceros interesados en el procedimiento abreviado 369/2026 (proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a veintidós plazas de Técnico/a de Administración General).",
-      "entity": "AYUNTAMIENTO DE SAN SEBASTIÁN",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/20/c2606578.pdf"
-    },
-    {
-      "id": "GP-2026-2606576",
-      "province": "Gipuzkoa",
-      "title": "Emplazamiento a terceros interesados en el procedimiento abreviado 306/2026 (proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a veinticuatro plazas de Técnico/a en Trabajo Social).",
-      "entity": "AYUNTAMIENTO DE SAN SEBASTIÁN",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/20/c2606576.pdf"
-    },
-    {
-      "id": "GP-2026-2606574",
-      "province": "Gipuzkoa",
-      "title": "Emplazamiento a terceros interesados en el procedimiento abreviado 368/2026 (proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a veintitrés plazas de Agente de Movilidad).",
-      "entity": "AYUNTAMIENTO DE SAN SEBASTIÁN",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/20/c2606574.pdf"
     }
   ]
 }

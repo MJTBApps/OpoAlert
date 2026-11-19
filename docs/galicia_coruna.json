@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-18T16:30:26.600253+00:00",
+  "lastCheckedUTC": "2026-11-19T06:24:41.706339+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 22,
-    "announcementsRead": 772,
-    "opportunities": 60
+    "announcementsRead": 767,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -37,10 +36,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -61,7 +60,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,30 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 772,
-    "opportunities": 60
+    "announcementsRead": 767,
+    "opportunities": 61
   },
   "notices": [
+    {
+      "id": "AC-2026-7521",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases de selección; proceso de contratación catro persoas mozas, como persoal laboral, ao abeiro da subvención Consellería de Emprego, Comercio e Emigración da Xunta de Galicia (Programa TR350E - Garantía Xuvenil - FSE+2021-2027)",
+      "entity": "Promoción Económica, Emprego e Comercio",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/19/2026_0000007521.pdf"
+    },
+    {
+      "id": "AC-2026-7517",
+      "province": "A Coruña",
+      "title": "Prórroga do prazo máximo de resolución do proceso selectivo para a cobertura, en quenda libre, mediante persoal funcionario de carreira, dunha vacante de arquitecto/a (OEP 2025)",
+      "entity": "Secretaría",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/19/2026_0000007517.pdf"
+    },
     {
       "id": "AC-2026-7496",
       "province": "A Coruña",
@@ -667,16 +687,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006678.pdf"
-    },
-    {
-      "id": "AC-2026-6530",
-      "province": "A Coruña",
-      "title": "Anuncio bases para a ampliación da bolsa de emprego de persoal auxiliar de Axuda no Fogar do Concello de Cabanas",
-      "entity": "Cabanas",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/20/2026_0000006530.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-18T16:32:19.996228+00:00",
+  "lastCheckedUTC": "2026-11-19T06:27:15.183456+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
+    "bulletin": "224",
     "pagesVisited": 21,
-    "announcementsRead": 799,
-    "opportunities": 120
+    "announcementsRead": 802,
+    "opportunities": 121
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -36,10 +35,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,30 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 799,
-    "opportunities": 120
+    "announcementsRead": 802,
+    "opportunities": 121
   },
   "notices": [
+    {
+      "id": "AO-2026-007962651",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 16 de septiembre de 2026, de la Diputación Provincial de Zaragoza, referente a la convocatoria para la provisión, mediante concurso específico de méritos, del puesto de trabajo de Jefe/a Servicio Archivos y Bibliotecas (clave 2), vacante en el catálogo de puestos de trabajo de la plantilla de personal funcionario de la Diputación Provincial de Zaragoza.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ZARAGOZA",
+      "date": "19/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475589821111"
+    },
+    {
+      "id": "AO-2026-007962650",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, del Director General de la Función Pública, por la que se aprueba la lista de espera derivada del correspondiente proceso selectivo para la provisión con carácter interino de puestos de trabajo correspondientes al Cuerpo de Funcionarios Superiores de la Administración de la Comunidad Autónoma de Aragón, Escala Facultativa Superior, Técnico Superior de Prevención de Riesgos Laborales, Ramas: Seguridad en el Trabajo, Higiene Industrial, y Ergonomía y Psicosociología Aplicada (22/0016).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "19/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475587801010"
+    },
     {
       "id": "AO-2026-007962614",
       "province": "Aragón (BOA)",
@@ -1266,16 +1286,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471181920505"
-    },
-    {
-      "id": "AO-2026-007961847",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 28 de septiembre de 2026, del Ayuntamiento de Pastriz, por la que se convoca oposición libre para la provisión de una plaza de Operario de Servicios Múltiples de la plantilla de personal laboral.",
-      "entity": "AYUNTAMIENTO DE PASTRIZ",
-      "date": "20/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470958240404"
     }
   ]
 }

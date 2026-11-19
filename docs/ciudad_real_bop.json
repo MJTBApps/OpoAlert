@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-18T16:31:07.427366+00:00",
+  "lastCheckedUTC": "2026-11-19T06:25:15.581453+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 22,
-    "announcementsRead": 399,
-    "opportunities": 31
+    "pagesVisited": 21,
+    "announcementsRead": 380,
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -40,7 +39,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 399,
-    "opportunities": 31
+    "issuesRead": 21,
+    "announcementsRead": 380,
+    "opportunities": 29
   },
   "notices": [
     {
@@ -367,26 +366,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200"
-    },
-    {
-      "id": "CR-2026-3378",
-      "province": "Ciudad Real",
-      "title": "Aprobación de las condiciones para constitución y funcionamiento de las bolsas de trabajo temporal.",
-      "entity": "CIUDAD REAL - INSTITUTO MUNICIPAL PROMOCIÓN ECONÓMICA, FORMACIÓN Y EMPLEO - (IMPEFE)",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "type": "Bolsa de trabajo",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7828274"
-    },
-    {
-      "id": "CR-2026-3375",
-      "province": "Ciudad Real",
-      "title": "Corrección en anuncio publicado en el BOP número 199, relativo a las bases de la convocatoria para la cobertura de una plaza de Técnico/a Informático/a.",
-      "entity": "ALHAMBRA",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7828271"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-18T16:35:23.500100+00:00",
+  "lastCheckedUTC": "2026-11-19T06:30:16.493247+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "267",
+    "bulletin": "268",
     "pagesVisited": 27,
-    "announcementsRead": 628,
-    "opportunities": 55
+    "announcementsRead": 621,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "242",
       "243",
       "244",
       "245",
@@ -42,10 +41,10 @@
       "264",
       "265",
       "266",
-      "267"
+      "267",
+      "268"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -71,7 +70,8 @@
       "2026-11-14",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -80,10 +80,40 @@
       "2026-11-15"
     ],
     "issuesRead": 27,
-    "announcementsRead": 628,
-    "opportunities": 55
+    "announcementsRead": 621,
+    "opportunities": 56
   },
   "notices": [
+    {
+      "id": "MU-2026-5741",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de convocatoria para la selección y provisión en propiedad mediante oposición libre, de treinta y cinco plazas de Bombero-Conductor Especialista del Consorcio de Extinción de Incendios y Salvamento de la Comunidad Autónoma de la Región de Murcia.",
+      "entity": "Consorcio de Extinción de Incendios y Salvamento de la Región de Murcia",
+      "date": "19/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846423/pdf"
+    },
+    {
+      "id": "MU-2026-5720",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1490/2026 de 12 de noviembre, referente a la convocatoria para proveer dos plazas de Investigador/a Doctor/a de la misma.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "19/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846402/pdf"
+    },
+    {
+      "id": "MU-2026-5719",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1478/2026 de 10 de noviembre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "19/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846401/pdf"
+    },
     {
       "id": "MU-2026-5717",
       "province": "Región de Murcia (BORM)",
@@ -613,26 +643,6 @@
       "bulletin": "243",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845806/pdf"
-    },
-    {
-      "id": "MU-2026-5095",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1329/2026 de 14 de octubre, referente a la convocatoria para proveer una plaza de Investigador/a Licenciado/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845777/pdf"
-    },
-    {
-      "id": "MU-2026-5094",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1326/2026 de 13 de octubre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845776/pdf"
     }
   ]
 }

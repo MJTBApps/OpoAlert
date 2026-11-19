@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-18T16:32:10.788569+00:00",
+  "lastCheckedUTC": "2026-11-19T06:27:01.781670+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "10496",
+    "bulletin": "10497",
     "pagesVisited": 31,
-    "announcementsRead": 1169,
-    "opportunities": 284
+    "announcementsRead": 1151,
+    "opportunities": 260
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "10474",
       "10475",
       "10475B",
       "10476",
@@ -46,10 +45,10 @@
       "10493",
       "10494",
       "10495",
-      "10496"
+      "10496",
+      "10497"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-21",
       "2026-10-22",
@@ -79,7 +78,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -91,10 +91,20 @@
       "2026-11-15"
     ],
     "issuesRead": 31,
-    "announcementsRead": 1169,
-    "opportunities": 284
+    "announcementsRead": 1151,
+    "opportunities": 260
   },
   "notices": [
+    {
+      "id": "DV-2026-35768",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 10 de noviembre de 2026, de la Presidencia, por la que se convoca un concurso para la provisión, mediante concurso de méritos, de la plaza de carácter asistencial de jefatura del Servicio de Documentación Clínica y Admisión, y se aprueban sus bases específicas (CM/02/2026).",
+      "entity": "Consorcio Hospital General Universitario de València",
+      "date": "19/11/2026",
+      "bulletin": "10497",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/19/pdf/2026_35768_es.pdf"
+    },
     {
       "id": "DV-2026-36062",
       "province": "Comunidad Valenciana (DOGV)",
@@ -2684,256 +2694,6 @@
       "bulletin": "10475",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/21/pdf/2026_29444_es.pdf"
-    },
-    {
-      "id": "DV-2026-32663",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 17 de octubre de 2026, de la Dirección General de Función Pública, por la que se adjudican destinos a las personas que han superado las pruebas selectivas de acceso al cuerpo técnico facultativo de emergencias y protección civil, A2-06, cuerpo de administración especial, convocatoria 60/25, turno libre, por el sistema de oposición, para cubrir las plazas previstas en el anexo I del Decreto 47/2025, de 25 de marzo, del Consell, correspondientes a la oferta pública de empleo de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32663_es.pdf"
-    },
-    {
-      "id": "DV-2026-32661",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 16 de octubre de 2026, por la que se nombra personal funcionario de carrera a las personas que han superado las pruebas selectivas de acceso al cuerpo técnico facultativo de emergencias y protección civil, A2-06, cuerpo de administración especial, convocatoria 60/25, turno libre, por el sistema de oposición, para cubrir las plazas previstas en el anexo I del Decreto 47/2025, de 25 de marzo, del Consell, correspondientes a la oferta pública de empleo de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32661_es.pdf"
-    },
-    {
-      "id": "DV-2026-32516",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 16 de octubre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en el Institut Valencià de Cultura, convocatoria número 151/2026.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32516_es.pdf"
-    },
-    {
-      "id": "DV-2026-32514",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 16 de octubre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de un puesto de trabajo vacante de naturaleza funcionarial en la Conselleria de Justicia, Transparencia y Participación, convocatoria número 144/2026.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32514_es.pdf"
-    },
-    {
-      "id": "DV-2026-32510",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 16 de octubre de 2026, de la Dirección General de Función Pública, por la que se convoca la provisión, por el sistema de libre designación, de varios puestos de trabajo vacantes de naturaleza funcionarial en la Conselleria de Economía, Hacienda y Administración Pública, convocatoria número 142/2026.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32510_es.pdf"
-    },
-    {
-      "id": "DV-2026-32493",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 14 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanidad por el que se efectúa la convocatoria de las ayudas destinadas a promover la salud sexual y prevenir el estigma social asociado al virus de la inmunodeficiencia humana (VIH) y otras infecciones de transmisión sexual (ITS) para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32493_es.pdf"
-    },
-    {
-      "id": "DV-2026-32491",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 14 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanidad por el que se efectúa la convocatoria de las ayudas en materia de proyectos y de programas de despliegue del Plan de salud de la Comunitat Valenciana en sus municipios para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32491_es.pdf"
-    },
-    {
-      "id": "DV-2026-32489",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 14 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanidad por el que se efectúa la convocatoria de las ayudas destinadas a promover proyectos de promoción de la salud de entornos saludables para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32489_es.pdf"
-    },
-    {
-      "id": "DV-2026-32483",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, de la Presidencia, por la que se modifica la Resolución de 27 de mayo de 2022, por la que se aprobó la oferta de empleo público del proceso extraordinario de estabilización para el año 2022.",
-      "entity": "Instituto Valenciano de Servicios Sociales",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32483_es.pdf"
-    },
-    {
-      "id": "DV-2026-32481",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, de la Subsecretaría, por la que se proveen, por sistema de libre designación, los puestos de trabajo anunciados en la convocatoria número 107/2026, de 7 de julio de 2026.",
-      "entity": "Vicepresidencia Primera y Conselleria de Vivienda, Empleo, Juventud e Igualdad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32481_es.pdf"
-    },
-    {
-      "id": "DV-2026-32463",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "EXTRACTO de la Resolución de 14 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanidad por el que se efectúa la convocatoria de las ayudas en materia de proyectos y de programas de despliegue del Plan de salud de la Comunitat Valenciana en sus municipios para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32463_es.pdf"
-    },
-    {
-      "id": "DV-2026-32462",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "EXTRACTO de la Resolución de 8 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanitat por el que se efectúa la convocatoria de las ayudas en materia de proyectos de apoyo a las asociaciones de personas consumidoras en el ámbito de la seguridad alimentaria para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32462_es.pdf"
-    },
-    {
-      "id": "DV-2026-32383",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "EXTRACTO de la Resolución de 14 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanidad por el que se efectúa la convocatoria de las ayudas destinadas a promover la salud sexual y prevenir el estigma social asociado al virus de la inmunodeficiencia humana (VIH) y otras infecciones de transmisión sexual (ITS) para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32383_es.pdf"
-    },
-    {
-      "id": "DV-2026-32316",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, de la Dirección General de Salud Pública, por la que se amplía el plazo máximo para resolver y notificar el procedimiento de la Conselleria de Sanitat por el que se efectúa la convocatoria de las ayudas en materia de proyectos de apoyo a las asociaciones de personas consumidoras en el ámbito de la seguridad alimentaria para el ejercicio 2026.",
-      "entity": "Conselleria de Sanidad",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32316_es.pdf"
-    },
-    {
-      "id": "DV-2026-32130",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, del Rectorado, por la que se convoca concurso para la creación de bolsas de empleo de profesorado sustituto.",
-      "entity": "Universidad de Alicante",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32130_es.pdf"
-    },
-    {
-      "id": "DV-2026-32126",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, de la Gerencia, por la que se adjudica destino a la persona participante en el concurso para la provisión del puesto de trabajo de la escala media de administración/escala administrativa.",
-      "entity": "Universitat Jaume I de Castelló",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32126_es.pdf"
-    },
-    {
-      "id": "DV-2026-32121",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, de la Gerencia, por la que se convoca un concurso para la provisión de puestos de trabajo de la escala auxiliar básica de apoyo administrativo (conserjerías).",
-      "entity": "Universitat Jaume I de Castelló",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32121_es.pdf"
-    },
-    {
-      "id": "DV-2026-32105",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, del Rectorado, por la que se hace pública la lista con las personas aprobadas por oposición y concurso-oposición en las pruebas selectivas de acceso al grupo C, subgrupo C1, por promoción interna, sector de administración general, de la escala administrativa (C1-PIOC-25-06), convocadas por la Resolución de 22 de mayo de 2025.",
-      "entity": "Universitat de València",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32105_es.pdf"
-    },
-    {
-      "id": "DV-2026-32101",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, del Rectorado, por la que se convocan pruebas selectivas de acceso al grupo A, subgrupo A1, sector administración especial, médico o médica, por el sistema de oposición (código: 2026/P/FC/O/3), correspondiente a la oferta de empleo público del año 2026.",
-      "entity": "Universitat Politècnica de València",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32101_es.pdf"
-    },
-    {
-      "id": "DV-2026-32071",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 23 de septiembre de 2026, por la que se publica, con carácter definitivo, el nombre de la persona aspirante que ha superado el proceso selectivo para el ingreso en la escala superior de informática (referencia PI-05/26), por el sistema general de promoción interna.",
-      "entity": "Universidad de Alicante",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32071_es.pdf"
-    },
-    {
-      "id": "DV-2026-32069",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 23 de septiembre de 2026, por la que se publica, con carácter definitivo, el nombre de la persona aspirante que ha superado el proceso selectivo para el ingreso en la escala básica de laboratorios de ciencias y tecnológicos (referencia PI-03/26), por el sistema de promoción interna.",
-      "entity": "Universidad de Alicante",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32069_es.pdf"
-    },
-    {
-      "id": "DV-2026-32063",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, del Rectorado, por la que se publica la convocatoria de concurso para la provisión de plazas de profesorado ayudante doctor para el curso 2026-2027. Convocatoria temporales número 6.",
-      "entity": "Universitat de València",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32063_es.pdf"
-    },
-    {
-      "id": "DV-2026-32062",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 9 de octubre de 2026, del Rectorado, por la que se publica, con carácter definitivo, la relación de aspirantes que han superado el proceso selectivo para el acceso a la escala básica de administración (referencia PI-02/26), por el sistema general de promoción interna.",
-      "entity": "Universidad de Alicante",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32062_es.pdf"
-    },
-    {
-      "id": "DV-2026-32047",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 11 de septiembre de 2026, de la Subsecretaría, por la que se proveen, por el sistema de libre designación, los puestos de trabajo anunciados por la convocatoria 104/2026.",
-      "entity": "Conselleria de Educación, Cultura y Universidades",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32047_es.pdf"
-    },
-    {
-      "id": "DV-2026-32041",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 9 de octubre de 2026, por la que se publica, con carácter definitivo, la relación de aspirantes que han superado el proceso selectivo para el acceso a la escala básica de administración (referencia PI-01/26), por el sistema de promoción interna.",
-      "entity": "Universidad de Alicante",
-      "date": "20/10/2026",
-      "bulletin": "10474",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/20/pdf/2026_32041_es.pdf"
     }
   ]
 }

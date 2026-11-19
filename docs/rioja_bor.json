@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-18T17:16:01.875028+00:00",
+  "lastCheckedUTC": "2026-11-19T06:30:49.037122+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
+    "bulletin": "224",
     "pagesVisited": 22,
-    "announcementsRead": 631,
+    "announcementsRead": 645,
     "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -37,10 +36,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -61,7 +60,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,7 +74,7 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 631,
+    "announcementsRead": 645,
     "opportunities": 40
   },
   "notices": [

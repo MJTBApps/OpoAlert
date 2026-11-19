@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-18T16:33:04.081638+00:00",
+  "lastCheckedUTC": "2026-11-19T06:25:50.974036+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 23,
-    "announcementsRead": 730,
-    "opportunities": 38
+    "announcementsRead": 688,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -38,10 +37,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -63,7 +62,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -76,8 +76,8 @@
       "2026-11-15"
     ],
     "issuesRead": 23,
-    "announcementsRead": 730,
-    "opportunities": 38
+    "announcementsRead": 688,
+    "opportunities": 37
   },
   "notices": [
     {
@@ -449,16 +449,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/21/pdf/2026_7572.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7451",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Provisión de Puestos de Trabajo. Resolución de 13/10/2026 , de la Gerencia de Atención Integrada de Talavera de la Reina (Toledo), por la que se resuelve el procedimiento de provisión de la Jefatura de Sección de Cirugía Ortopédica y Traumatológica, conforme a lo establecido en el Decreto 89/2005, de 29 de julio, sobre Provisión de Jefaturas Asistenciales del Sescam. Convocatoria de 20/03/2026 (DOCM de 17/04/2026, número 72). [NID 2026/7451]",
-      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/20/pdf/2026_7451.pdf&tipo=rutaDocm"
     }
   ]
 }

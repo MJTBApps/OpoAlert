@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-18T16:33:28.401293+00:00",
+  "lastCheckedUTC": "2026-11-19T06:28:14.217716+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "232",
+    "bulletin": "233",
     "pagesVisited": 24,
-    "announcementsRead": 431,
-    "opportunities": 52
+    "announcementsRead": 443,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "209",
       "210",
       "211",
       "212",
@@ -39,10 +38,10 @@
       "229",
       "230",
       "231",
-      "232"
+      "232",
+      "233"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-22",
@@ -65,7 +64,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -79,10 +79,80 @@
       "2026-11-15"
     ],
     "issuesRead": 24,
-    "announcementsRead": 431,
-    "opportunities": 52
+    "announcementsRead": 443,
+    "opportunities": 58
   },
   "notices": [
+    {
+      "id": "IC-2026-4055",
+      "province": "Canarias (BOC)",
+      "title": "ANUNCIO de 6 de noviembre de 2026, relativo a la aprobación de las bases que han de regir la convocatoria para la provisión, por el sistema de promoción interna, de una plaza vacante de Subinspector de Policía Local de este Ayuntamiento.",
+      "entity": "Ayuntamiento de Los Realejos (Tenerife)",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4055.pdf"
+    },
+    {
+      "id": "IC-2026-4053",
+      "province": "Canarias (BOC)",
+      "title": "ANUNCIO de 6 de noviembre de 2026, relativo a la selección de personal indefinido y creación de lista de reserva para cubrir un puesto de Técnico/a Coordinador/a de planes sectoriales y proyectos empresariales.",
+      "entity": "Sociedad Canaria de Fomento Económico, S.A.",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4053.pdf"
+    },
+    {
+      "id": "IC-2026-4052",
+      "province": "Canarias (BOC)",
+      "title": "ANUNCIO de 6 de noviembre de 2026, relativo a la selección de personal indefinido y creación de lista de reserva para cubrir un puesto de Técnico/a de Comunicación, para el Área de Marketing, Comunicación e Inteligencia de Mercado.",
+      "entity": "Sociedad Canaria de Fomento Económico, S.A.",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4052.pdf"
+    },
+    {
+      "id": "IC-2026-4038",
+      "province": "Canarias (BOC)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, por la que se convocan pruebas selectivas para el ingreso, por el turno libre, en la Escala Administrativa, Subgrupo C1, de esta Universidad.",
+      "entity": "Universidad de Las Palmas de Gran Canaria",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4038.pdf"
+    },
+    {
+      "id": "IC-2026-4037",
+      "province": "Canarias (BOC)",
+      "title": "RESOLUCIÓN de 6 de noviembre de 2026, por la que se hace pública la identidad de los aspirantes que han superado el proceso selectivo para el grupo profesional Titulado Superior, especialidad Informática (L1), por el sistema de concurso-oposición restringido.",
+      "entity": "Universidad de Las Palmas de Gran Canaria",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4037.pdf"
+    },
+    {
+      "id": "IC-2026-4036",
+      "province": "Canarias (BOC)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, por la que se aprueba la convocatoria de contratación para la provisión de plazas de personal docente e investigador contratado temporal, en régimen de derecho laboral, mediante procedimiento ordinario, en la figura de Profesor Asociado en Ciencias de la Salud.",
+      "entity": "Universidad de La Laguna",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4036.pdf"
+    },
+    {
+      "id": "IC-2026-4035",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de Estudios, Formación e Investigación en Seguridad Pública.- Resolución de 5 de noviembre de 2026, por la que se precisa el contenido de la base específica 8.1.A) de las pruebas selectivas para el ingreso, por el sistema general de acceso turno libre, en el Cuerpo General de la Policía Canaria, Escala Básica, Empleo Policía (Grupo C, Subgrupo C1), convocadas por Resolución de 3 de febrero de 2026, de este Centro Directivo, mediante la determinación de la puntuación mínima necesaria para superar cada uno de los ejercicios que integran la prueba de conocimiento e idiomas.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "19/11/2026",
+      "bulletin": "233",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4035.pdf"
+    },
     {
       "id": "IC-2026-4008",
       "province": "Canarias (BOC)",
@@ -592,16 +662,6 @@
       "bulletin": "210",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-210-3617.pdf"
-    },
-    {
-      "id": "IC-2026-3600",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 5 de octubre de 2026, por la que se adicionan plazas a las convocatorias de las pruebas selectivas realizadas mediante Resolución de 29 de noviembre de 2023, en ejecución de la Oferta de Empleo Público de la Administración General de la Comunidad Autónoma de Canarias para el año 2020, en aplicación de lo previsto en la disposición transitoria quinta de la Ley 2/2025, de 26 de junio.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "20/10/2026",
-      "bulletin": "209",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-209-3600.pdf"
     }
   ]
 }

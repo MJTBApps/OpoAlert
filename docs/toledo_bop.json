@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-18T16:38:53.544639+00:00",
+  "lastCheckedUTC": "2026-11-19T06:33:18.033298+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "221",
-    "pagesVisited": 21,
-    "announcementsRead": 521,
-    "opportunities": 23
+    "pagesVisited": 20,
+    "announcementsRead": 493,
+    "opportunities": 22
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -39,7 +38,6 @@
       "221"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -70,11 +68,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-19"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 521,
-    "opportunities": 23
+    "issuesRead": 20,
+    "announcementsRead": 493,
+    "opportunities": 22
   },
   "notices": [
     {
@@ -296,16 +295,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104773;0&insert_number=4789&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4822",
-      "province": "Toledo",
-      "title": "Bases que regulan el procedimiento de selección de una bolsa de trabajo de Auxiliares Administrativos en el Ayuntamiento de Portillo de Toledo",
-      "entity": "AYUNTAMIENTO DE PORTILLO DE TOLEDO",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104806;0&insert_number=4822&insert_year=2026"
     }
   ]
 }
