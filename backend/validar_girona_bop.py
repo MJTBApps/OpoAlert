@@ -54,6 +54,8 @@ def validate(file:Path,expected_end:date|None=None)->dict:
                 or p.query or p.fragment or p.username or not pdf
                 or pdf.group(1)!=m.group(1) or int(pdf.group(2))!=int(m.group(2))
                 or (pdf.group(3)!="".join(m.groups()) and
+                    not (int(m.group(3))>=10000 and pdf.group(3)==
+                         m.group(1)+m.group(2)+"0"+m.group(3)) and
                     not (int(m.group(3))<10000 and pdf.group(3)==
                          m.group(1)+m.group(2)+"1"+m.group(3)[1:]))
                 or int(m.group(2)) not in nums):

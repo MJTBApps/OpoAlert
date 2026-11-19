@@ -22,7 +22,7 @@ ISSUE_PATH = "https://www.ddgi.cat/bop/mostra-bop/{}/{}/{}"
 PROVINCE = "Girona (BOP)"
 PDF_HOST = "ssl4.ddgi.cat"
 ISSUE_HEADER = re.compile(r"Bop\s*n[úu]mero\s*:\s*(\d+)\s*/\s*(\d+)\s*-\s*(\d{2}/\d{2}/\d{4})", re.I)
-PDF_PATH = re.compile(r"^/bopV1/pdf/(\d{4})/(\d{1,3})/(\d{12})\.pdf$")
+PDF_PATH = re.compile(r"^/bopV1/pdf/(\d{4})/(\d{1,3})/(\d{12,13})\.pdf$")
 
 
 class IssueNotFound(ProvincialCoverageError):
@@ -92,9 +92,11 @@ def parse_issue(html: str, expected_number: int|None=None) -> dict:
         # El BOPG distingue ciertos edictos (p. ej. electorales) mediante
         # el digito de serie 1 delante de un registro de cuatro cifras.
         # Comprobar siempre año, numero y las cuatro cifras del registro.
+        # Desde el registro 10000 (19/11/2026) el nombre lleva la serie 0
+        # delante de las cinco cifras: 2026223010051.pdf.
         base=f"{day.year}{number:03d}"
         suffix=filename[len(base):]
-        valid_suffix=(suffix==f"{edict:05d}" or
+        valid_suffix=(suffix=="0"+f"{edict:04d}" or
                       (edict<10000 and suffix=="1"+f"{edict:04d}"))
         if not filename.startswith(base) or not valid_suffix:
             raise ProvincialCoverageError(

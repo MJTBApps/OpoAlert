@@ -45,6 +45,15 @@ class GironaBOPTests(unittest.TestCase):
         self.assertEqual(parsed["read"],1)
         self.assertEqual(parsed["notices"][0]["id"],"GI-2026-208-09310")
 
+    def test_registro_de_cinco_cifras(self):
+        # 19/11/2026: el registro pasa de 9999 y el PDF lleva una cifra más.
+        html=issue_html(223,date(2026,11,19)).replace(
+            "202622309310.pdf","2026223010051.pdf").replace("9310 - <span>","10051 - <span>")
+        parsed=parse_issue(html,223)
+        self.assertEqual(parsed["notices"][0]["id"],"GI-2026-223-10051")
+        with self.assertRaises(ProvincialCoverageError):
+            parse_issue(html.replace("2026223010051.pdf","2026223110051.pdf"),223)
+
     def test_full_30_days_by_consecutive_issues(self):
         end=date(2026,10,28)
         weekdays=[end-timedelta(days=i) for i in range(32) if (end-timedelta(days=i)).weekday()<5]
