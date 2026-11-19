@@ -24,7 +24,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - `MainActivity.kt` (pantalla principal), `NoticeDetailActivity.kt` (ficha), `AlertsActivity.kt` + `AlertRule*.kt` (alertas), `RemoteFeedReader.kt` / `Repository.kt` (lectura de feeds), `BopWorker.kt` + `Notifications.kt` (avisos), `FavoritesStore.kt`.
   - `DemoAds.kt` — anuncios AdMob **solo de demostración**, con consentimiento UMP. No generan ingresos.
   - Pruebas: `app/src/test/java/es/opoalert/app/`.
-  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 75 / 1.55.0). `applicationId` = `es.opoalert.app` (no cambiarlo).
+  - Versión: `versionCode` / `versionName` en `app/build.gradle.kts` (ahora 76 / 1.55.1). `applicationId` = `es.opoalert.app` (no cambiarlo).
 - **Backend**: `backend/`
   - Lectores: `bop_full.py` + `history.py` (Valencia), `alicante.py`, `castellon.py`, `province_history.py`, `boe_nacional.py`, `cido_cataluna.py`, `tarragona.py`, `barcelona_bop.py`, `girona_bop.py`, `huesca_bop.py`, `teruel_bop.py`, `zaragoza_bop.py`, `cadiz_bop.py`, `pandora_bop.py` (Almería), `andalucia_opencms_bop.py` (Granada y Sevilla), `cordoba_bop.py`.
   - Validadores: `validar_*.py`, uno por fuente; `validar_feed.py` para el feed de Valencia.
@@ -91,6 +91,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 ## Estado (30/10/2026)
 
+- App **1.55.1** (19/11/2026): las alertas no distinguen masculino y femenino: «administrativo» encuentra «administrativa», «administrativo/a» y «administrativas/os» (`SmartAlertMatcher.termMatches`, igual en iOS). iOS se sube a TestFlight también desde **Codemagic** (`codemagic.yaml`, cuenta personal, 500 min/mes de Mac M2 gratis; variables en el grupo `opoalert_ios`), porque los Mac de GitHub llevaban días sin asignarse; los dos llaman a `scripts/ios_subir_testflight.sh` y el número de compilación es la fecha y hora (`261119.1930`).
 - App **1.55.0** (18/11/2026): más publicidad para empujar a Premium. Banner cada 4 convocatorias que solo aparece cuando ha cargado (nunca un hueco vacío; `DemoAds.bannerFor` / `Ads.loadedSlots`), anuncio de apertura también la primera vez e **intersticial cada 3 fichas cerradas**, nunca a menos de 2 min de otro a pantalla completa (`DemoAds.noticeClosed`, `Ads.noticeClosed`). Identificador: Android `admobInterstitial` en `~/OpoAlert-claves/play.properties`, iOS secreto `ADMOB_IOS_INTERSTITIAL`; sin él no hay intersticial en las versiones de las tiendas.
 - App **1.54.4** (17/11/2026): Android (`DemoAds.bannerFor`) e iOS vuelven a pedir los banners de la lista que no cargan (a los 30 s, 60 s… hasta 5 min; `BannerRetry` en `Ads.swift`); antes el hueco quedaba vacío hasta reabrir la app.
 - App **1.54.3** (16/11/2026): el buscador ya no traba el teclado con muchos boletines (texto de búsqueda preparado una vez por anuncio y búsqueda 0,25 s después de la última letra; Android `MainActivity.searchKey`, iOS `AppModel.searchIndex`). iOS avisa de versión nueva en el App Store (`UpdateCheck.swift`, consulta pública de iTunes cada 6 h como mucho, una vez por versión).
