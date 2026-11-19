@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-18T17:17:50.058788+00:00",
+  "lastCheckedUTC": "2026-11-19T07:29:28.254428+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "266",
+    "bulletin": "267",
     "pagesVisited": 2,
     "announcementsRead": 804,
-    "opportunities": 79
+    "opportunities": 78
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "issuesRead": 25,
     "pagesVisited": 2,
     "announcementsRead": 804,
-    "opportunities": 79,
+    "opportunities": 78,
     "bulletins": [
-      "242",
       "243",
       "244",
       "245",
@@ -44,10 +43,10 @@
       "263",
       "264",
       "265",
-      "266"
+      "266",
+      "267"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -71,10 +70,10 @@
       "2026-11-14",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "issuePublicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -98,7 +97,8 @@
       "2026-11-14",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -108,19 +108,59 @@
       "2026-11-15"
     ],
     "sectionsRead": {
-      "SECCIÓN QUINTA": 101,
-      "SECCIÓN SEXTA": 632,
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 8,
-      "SECCIÓN TERCERA": 39,
-      "PARTE NO OFICIAL": 14,
-      "SECCIÓN SEGUNDA": 5,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 10,
+      "SECCIÓN TERCERA": 43,
+      "SECCIÓN QUINTA": 103,
+      "SECCIÓN SEXTA": 622,
+      "PARTE NO OFICIAL": 15,
+      "SECCIÓN SEGUNDA": 6,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 102
+    "documentsVerified": 101
   },
   "notices": [
+    {
+      "id": "ZA-000345298",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a las bases de convocatoria para proveer mediante concurso de movilidad interadministrativa dos plazas de policía local vacante en el Ayuntamiento de María de Huerva, abierto a funcionarios de…",
+      "entity": "AYUNTAMIENTO DE MARÍA DE HUERVA",
+      "date": "19/11/2026",
+      "bulletin": "267",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475664801010"
+    },
+    {
+      "id": "ZA-000345288",
+      "province": "Zaragoza",
+      "title": "Por resolución de Alcaldía núm. 2026-3446, de 12 de noviembre de 2026, se ha adoptado lo siguiente: Visto el expediente 3551/2026, sobre la cobertura definitiva de tres plazas de técnico de Administración…",
+      "entity": "AYUNTAMIENTO DE CALATAYUD",
+      "date": "19/11/2026",
+      "bulletin": "267",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475654700707"
+    },
+    {
+      "id": "ZA-000345286",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a la aprobación definitiva de la modificación de la relación de puestos de trabajo del Ayuntamiento de Ateca de 2026. Habiendo transcurrido el plazo de exposición al público del expediente de…",
+      "entity": "AYUNTAMIENTO DE ATECA",
+      "date": "19/11/2026",
+      "bulletin": "267",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475652680707"
+    },
+    {
+      "id": "ZA-000345280",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a las bases de la convocatoria del proceso selectivo para la constitución de una lista de espera extraordinaria para la plaza de técnica/o de Comunicación.",
+      "entity": "SOCIEDAD MUNICIPAL ZARAGOZA CULTURAL, S.A.U.",
+      "date": "19/11/2026",
+      "bulletin": "267",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475646620505"
+    },
     {
       "id": "ZA-000345259",
       "province": "Zaragoza",
@@ -860,56 +900,6 @@
       "bulletin": "243",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471257180303"
-    },
-    {
-      "id": "ZA-000344501",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
-      "entity": "AYUNTAMIENTO DE URREA DE JALÓN",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471044280707"
-    },
-    {
-      "id": "ZA-000344500",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
-      "entity": "AYUNTAMIENTO DE SOS DEL REY CATÓLICO",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471043270707"
-    },
-    {
-      "id": "ZA-000344499",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
-      "entity": "AYUNTAMIENTO DE SOS DEL REY CATÓLICO",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471042260707"
-    },
-    {
-      "id": "ZA-000344498",
-      "province": "Zaragoza",
-      "title": "Por resolución de Alcaldía de fecha 13 de octubre de 2026 se aprobaron las bases y convocatoria para cubrir mediante oposición libre una plaza de auxiliar administrativo (contrato de relevo), en régimen…",
-      "entity": "AYUNTAMIENTO DE RICLA",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471041250707"
-    },
-    {
-      "id": "ZA-000344486",
-      "province": "Zaragoza",
-      "title": "De conformidad con la resolución de Alcaldía de fecha 8 de octubre de 2026, por medio del presente anuncio se efectúa convocatoria del concurso, para el arrendamiento del bien inmueble local de negocio hostal…",
-      "entity": "AYUNTAMIENTO DE LETUX",
-      "date": "20/10/2026",
-      "bulletin": "242",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471029130505"
     }
   ]
 }
