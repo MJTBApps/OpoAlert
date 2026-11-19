@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Illes Balears (BOIB)",
   "source": "https://www.caib.es/eboibfront/es",
-  "lastCheckedUTC": "2026-11-19T06:28:30.973098+00:00",
+  "lastCheckedUTC": "2026-11-19T09:39:16.403097+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "147",
-    "pagesVisited": 14,
-    "announcementsRead": 1122,
-    "opportunities": 162
+    "bulletin": "148",
+    "pagesVisited": 15,
+    "announcementsRead": 1232,
+    "opportunities": 179
   },
   "historyCoverage": {
     "complete": true,
@@ -29,7 +29,8 @@
       "144",
       "145",
       "146",
-      "147"
+      "147",
+      "148"
     ],
     "publicationDates": [
       "2026-10-21",
@@ -45,7 +46,8 @@
       "2026-11-10",
       "2026-11-12",
       "2026-11-14",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-23",
@@ -63,14 +65,183 @@
       "2026-11-13",
       "2026-11-15",
       "2026-11-16",
-      "2026-11-18",
-      "2026-11-19"
+      "2026-11-18"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 1122,
-    "opportunities": 162
+    "issuesRead": 15,
+    "announcementsRead": 1232,
+    "opportunities": 179
   },
   "notices": [
+    {
+      "id": "IB-2026-11733",
+      "province": "Illes Balears (BOIB)",
+      "title": "Convocatoria y bases del proceso selectivo, por el sistema de concurso oposición, para la creación de una bolsa de trabajo para cubrir con carácter interino la plaza de interventor/a del Ayuntamiento de Alaró (Expediente número: 1372/2026)",
+      "entity": "AYUNTAMIENTO DE ALARÓ",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233346"
+    },
+    {
+      "id": "IB-2026-11720",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución del director-gerente del Instituto Balear de la Vivienda (IBAVI) por la que se aprueba la constitución de las bolsas de trabajo de personal laboral temporal para las categorías de los grupos B y C, derivadas del proceso selectivo por el sistema de concurso oposición por el turno libre y torno de promoción interna para cubrir las plazas de personal laboral del Instituto Balear de la Vivienda (IBAVI) correspondiente a la oferta pública de empleo ordinaria del año 2022",
+      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA INSTITUTO BALEAR DE LA VIVIENDA (IBAVI)",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233320"
+    },
+    {
+      "id": "IB-2026-11716",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución del recurso potestativo de reposición contra el acuerdo de aprobación de las bases específicas del proceso selectivo de una plaza de técnico superior de Recursos Humanos, por promoción interna vertical",
+      "entity": "AYUNTAMIENTO DE SANT ANTONI DE PORTMANY",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233312"
+    },
+    {
+      "id": "IB-2026-11715",
+      "province": "Illes Balears (BOIB)",
+      "title": "Recurso potestativo de reposición contra las bases específicas del proceso selectivo de una plaza de técnico superior de Gestión Tributaria (A1). Solicitud de suspensión cautelar",
+      "entity": "AYUNTAMIENTO DE SANT ANTONI DE PORTMANY",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233310"
+    },
+    {
+      "id": "IB-2026-11709",
+      "province": "Illes Balears (BOIB)",
+      "title": "Departamento de Selección y Provisión de Recursos Humanos. Servicio de Selección. Convocatoria y bases específicas del concurso oposición, por turno libre, para cubrir dos plazas de auxiliar de Archivo (OPE 2023)",
+      "entity": "AYUNTAMIENTO DE PALMA",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233298"
+    },
+    {
+      "id": "IB-2026-11708",
+      "province": "Illes Balears (BOIB)",
+      "title": "Departamento de Selección y Provisión de Recursos Humanos. Servicio de Selección. Convocatoria y bases específicas pruebas selectivas por el sistema de concurso oposición, por el turno libre, para cubrir 8 plazas de ayudante/a de personal de oficios",
+      "entity": "AYUNTAMIENTO DE PALMA",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233296"
+    },
+    {
+      "id": "IB-2026-11703",
+      "province": "Illes Balears (BOIB)",
+      "title": "Departamento de Selección y Provisión de Recursos Humanos. Servicio de Planificación y Provisión. Convocatoria pública para la provisión temporal en comisión de servicios por el sistema de libre designación del puesto de Jefe/a de Departamento adscrito al IME",
+      "entity": "AYUNTAMIENTO DE PALMA",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233286"
+    },
+    {
+      "id": "IB-2026-11698",
+      "province": "Illes Balears (BOIB)",
+      "title": "Aprobación de la convocatoria y de las bases que han de regir el proceso selectivo para constituir, mediante concurso, una bolsa de trabajo de personal funcionario interino trabajador/a familiar de la escala de administración especial, subescala Servicios Especiales, grupo C, subgrupo C2 del Ayuntamiento de Son Servera",
+      "entity": "AYUNTAMIENTO DE SON SERVERA",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233276"
+    },
+    {
+      "id": "IB-2026-11692",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución del consejero ejecutivo de Hacienda, Innovación y Función Pública de aprobación de la convocatoria para constituir una bolsa de trabajo, por los procedimientos extraordinario y específico, mediante concurso de méritos de selección de personal funcionario interino de la escala de la administración especial, subescala técnica clase superior, del subgrupo A1, especialidad ingeniero -a civil y de personal laboral temporal de la categoría ingeniero -a civil",
+      "entity": "CONSEJO INSULAR DE MALLORCA DEPARTAMENTO DE HACIENDA, INNOVACIÓN Y FUNCIÓN PÚBLICA",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233263"
+    },
+    {
+      "id": "IB-2026-11691",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución de aprobación de la convocatoria de comisión de servicios CS 177/2026 de Jefe/a de sección I de Gestión de Personal del Área de Gerencia del IMAS",
+      "entity": "CONSEJO INSULAR DE MALLORCA INSTITUTO MALLORQUÍN DE ASUNTOS SOCIALES",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233262"
+    },
+    {
+      "id": "IB-2026-11688",
+      "province": "Illes Balears (BOIB)",
+      "title": "Proceso selectivo para cubrir ocho plazas de policía local de la plantilla de personal funcionario de carrera del Ayuntamiento de Santa Eulària des Riu",
+      "entity": "AYUNTAMIENTO DE SANTA EULÀRIA DES RIU",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233256"
+    },
+    {
+      "id": "IB-2026-11679",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución de la directora general de Personal Docente y Centros Concertados por la cual se aprueba la convocatoria para formar parte de la lista de profesores especialistas en centros públicos no universitarios dependientes de la Consejería de Educación y Universidades",
+      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA CONSEJERÍA DE EDUCACIÓN Y UNIVERSIDADES",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233237"
+    },
+    {
+      "id": "IB-2026-11677",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución de la directora general de Personal Docente y Centros Concertados por la cual se aprueba la convocatoria para formar parte de la lista de profesores expertos del sector productivo en centros públicos no universitarios dependientes de la Consejería de Educación y Universidades",
+      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA CONSEJERÍA DE EDUCACIÓN Y UNIVERSIDADES",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233234"
+    },
+    {
+      "id": "IB-2026-11675",
+      "province": "Illes Balears (BOIB)",
+      "title": "Bases reguladoras del procedimiento selectivo para la cobertura de una plaza de delineante, por turno libre, personal funcionario de carrera, de la escala de administración especial, subescala técnica, grupo C, subgrupo C1, del Ayuntamiento de Sant Lluís",
+      "entity": "AYUNTAMIENTO DE SANT LLUIS",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233230"
+    },
+    {
+      "id": "IB-2026-11664",
+      "province": "Illes Balears (BOIB)",
+      "title": "Constitución de una bolsa de trabajo extraordinaria de la categoría de trabajador/a familiar",
+      "entity": "AYUNTAMIENTO DE MANACOR",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233208"
+    },
+    {
+      "id": "IB-2026-11653",
+      "province": "Illes Balears (BOIB)",
+      "title": "Resolución del director gerente de la Fundación Instituto de Investigación Sanitaria Illes Balears por la que se convoca un proceso selectivo para cubrir una plaza de investigador o investigadora postdoctoral, del grupo profesional A, para el proyecto «PRD25_132: ANGIOMOD. Modulació molecular de l’angiogènesi per afavorir la recuperació funcional de l’ictus: paper del gen PATJ i del miR-199a-3p en la dinàmica endotelial» Código de expediente: 2026-56-NAHUSE",
+      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA FUNDACIÓ INSTITUT D'INVESTIGACIÓ SANITÀRIA ILLES BALEARS (IDISBA)",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233186"
+    },
+    {
+      "id": "IB-2026-11648",
+      "province": "Illes Balears (BOIB)",
+      "title": "Bases específicas de la convocatoria para la cobertura de 1 plaza fija de capataz/a administrativo/a - almacén taller (GP-3) en el Área de Energía y Movilidad de EMAYA – Convenio colectivo transversal (CCT)",
+      "entity": "AYUNTAMIENTO DE PALMA EMPRESA MUNICIPAL DE AGUAS Y ALCANTARILLADO, S.A. EMAYA",
+      "date": "19/11/2026",
+      "bulletin": "148",
+      "type": "Plaza / oposición",
+      "url": "https://www.caib.es/eboibfront/pdf/es/2026/148/1233176"
+    },
     {
       "id": "IB-2026-11626",
       "province": "Illes Balears (BOIB)",

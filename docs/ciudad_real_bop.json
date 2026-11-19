@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-19T06:25:15.581453+00:00",
+  "lastCheckedUTC": "2026-11-19T09:36:40.437067+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
-    "pagesVisited": 21,
-    "announcementsRead": 380,
-    "opportunities": 29
+    "bulletin": "224",
+    "pagesVisited": 22,
+    "announcementsRead": 389,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
       "2026-10-21",
@@ -59,7 +60,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -69,14 +71,23 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-19"
+      "2026-11-15"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 380,
-    "opportunities": 29
+    "issuesRead": 22,
+    "announcementsRead": 389,
+    "opportunities": 30
   },
   "notices": [
+    {
+      "id": "CR-2026-3772",
+      "province": "Ciudad Real",
+      "title": "Convocatoria de proceso selectivo para la constitución de una bolsa de empleo de Administrativo de Personal y otros servicios.",
+      "entity": "ALDEA DEL REY",
+      "date": "19/11/2026",
+      "bulletin": "224",
+      "type": "Bolsa de trabajo",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440"
+    },
     {
       "id": "CR-2026-3741",
       "province": "Ciudad Real",

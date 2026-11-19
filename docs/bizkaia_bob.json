@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-18T16:30:45.103354+00:00",
+  "lastCheckedUTC": "2026-11-19T09:36:09.200827+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 22,
-    "announcementsRead": 838,
-    "opportunities": 61
+    "announcementsRead": 820,
+    "opportunities": 63
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -37,10 +36,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -61,7 +60,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,40 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 838,
-    "opportunities": 61
+    "announcementsRead": 820,
+    "opportunities": 63
   },
   "notices": [
+    {
+      "id": "BI-2026-II-6009",
+      "province": "Bizkaia",
+      "title": "Resolución del recurso de reposición presentado contra la Resolución de Alcaldía 1250-2026, de 6 de octubre, relativa al proceso selectivo de una (1) plaza de Técnico/a del Área Sociocultural (Deportes).",
+      "entity": "Ayuntamiento de Elorrio",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/19/II-6009_cas.pdf"
+    },
+    {
+      "id": "BI-2026-II-6008",
+      "province": "Bizkaia",
+      "title": "Convocatoria para la provisión, mediante el sistema de concurso-oposición libre de tres (3) plazas de Técnico/a de Servicios Sociales, vacantes en la plantilla de personal del Ayuntamiento de Leioa.",
+      "entity": "Ayuntamiento de Lanestosa",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/19/II-6008_cas.pdf"
+    },
+    {
+      "id": "BI-2026-I-1309",
+      "province": "Bizkaia",
+      "title": "ORDEN FORAL 6503/2026, de 11 de noviembre, del Diputado Foral de Administración Pública y Relaciones Institucionales, por la que se modifica la composición del tribunal del proceso selectivo de la categoría de Técnica Técnico Superior Medioambiental.",
+      "entity": "Departamento de Administración Pública y Relaciones Institucionales",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/19/I-1309_cas.pdf"
+    },
     {
       "id": "BI-2026-II-6018",
       "province": "Bizkaia",
@@ -677,16 +707,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/21/I-1184_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5376",
-      "province": "Bizkaia",
-      "title": "Aprobación del Instrumento de Planificación de Recursos Humanos para la cobertura de jubilaciones parciales mediante contrato de relevo, de la modificación de la Relación de Puestos de Trabajo y de las bases específicas para la provisión de cinco puestos de personal laboral fijo de plantilla por concurso de méritos.",
-      "entity": "Tribunal Económico-Administrativo de Bilbao",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/20/II-5376_cas.pdf"
     }
   ]
 }
