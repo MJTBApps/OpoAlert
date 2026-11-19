@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-18T17:33:37.064749+00:00",
+  "lastCheckedUTC": "2026-11-19T07:59:24.055253+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
+    "bulletin": "224",
     "pagesVisited": 21,
-    "announcementsRead": 460,
-    "opportunities": 32
+    "announcementsRead": 454,
+    "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 460,
-    "opportunities": 32,
+    "announcementsRead": 454,
+    "opportunities": 31,
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -40,10 +39,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -63,7 +62,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -77,7 +77,6 @@
       "2026-11-15"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/20-10-2026/BOP-S-2026-203.pdf",
       "https://bop.dipucordoba.es/visor-pdf/21-10-2026/BOP-S-2026-204.pdf",
       "https://bop.dipucordoba.es/visor-pdf/22-10-2026/BOP-S-2026-205.pdf",
       "https://bop.dipucordoba.es/visor-pdf/23-10-2026/BOP-S-2026-206.pdf",
@@ -97,10 +96,21 @@
       "https://bop.dipucordoba.es/visor-pdf/13-11-2026/BOP-S-2026-220.pdf",
       "https://bop.dipucordoba.es/visor-pdf/16-11-2026/BOP-S-2026-221.pdf",
       "https://bop.dipucordoba.es/visor-pdf/17-11-2026/BOP-S-2026-222.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/18-11-2026/BOP-S-2026-223.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/18-11-2026/BOP-S-2026-223.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/19-11-2026/BOP-S-2026-224.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "CO-2026-3838",
+      "province": "Córdoba",
+      "title": "Resolución de Presidencia nº 702/2026, de 6 de noviembre de 2026, por la que se publican las Bases de la Convocatoria para la contratación temporal, de una plaza de Encargado de Obras, Jardines y Mantenimiento, vinculada a jubilación parcial de esta Corporación",
+      "entity": "Ayuntamiento de La Guijarrosa",
+      "date": "19/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipucordoba.es/visor-pdf/19-11-2026/BOP-A-2026-3838.pdf"
+    },
     {
       "id": "CO-2026-3940",
       "province": "Córdoba",
@@ -400,26 +410,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://bop.dipucordoba.es/visor-pdf/21-10-2026/BOP-A-2026-3546.pdf"
-    },
-    {
-      "id": "CO-2026-3430",
-      "province": "Córdoba",
-      "title": "Resolución de 2 de octubre de 2026, de la Alcaldía, por la que se aprueban las Bases que han de regir el procedimiento de selección, para la creación de una Bolsa de Empleo de Oficiales de Servicios Varios en esta Corporación",
-      "entity": "Ayuntamiento de Hornachuelos",
-      "date": "20/10/2026",
-      "bulletin": "203",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipucordoba.es/visor-pdf/20-10-2026/BOP-A-2026-3430.pdf"
-    },
-    {
-      "id": "CO-2026-3429",
-      "province": "Córdoba",
-      "title": "Resolución de 2 de octubre de 2026, de la Alcaldía, por la que se aprueban las Bases que han de regir el procedimiento de selección, para la creación de una Bolsa de Empleo de Arquitectos en esta Corporación",
-      "entity": "Ayuntamiento de Hornachuelos",
-      "date": "20/10/2026",
-      "bulletin": "203",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipucordoba.es/visor-pdf/20-10-2026/BOP-A-2026-3429.pdf"
     }
   ]
 }
