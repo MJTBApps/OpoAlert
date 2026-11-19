@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-19T06:41:35.085616+00:00",
+  "lastCheckedUTC": "2026-11-19T09:43:26.747630+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 274,
-    "opportunities": 274,
+    "announcementsRead": 281,
+    "opportunities": 281,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -40,22 +40,92 @@
       "2026-11-14",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-19"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 274,
-    "opportunities": 274
+    "announcementsRead": 281,
+    "opportunities": 281
   },
   "notices": [
+    {
+      "id": "CIDO5-22522021",
+      "title": "1 plaça de Desenvolupador multimèdia",
+      "entity": "Ajuntament de Barcelona - Informació i Comunicació de Barcelona, SA",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22522021"
+    },
+    {
+      "id": "CIDO5-22522017",
+      "title": "1 plaça de Tècnic de Contractació",
+      "entity": "Ajuntament de Barcelona - Informació i Comunicació de Barcelona, SA",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22522017"
+    },
+    {
+      "id": "CIDO5-22521850",
+      "title": "1 plaça de Cap del Departament de Comptabilitat",
+      "entity": "Ajuntament de Badalona",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22521850"
+    },
+    {
+      "id": "CIDO5-17499189",
+      "title": "1 plaça de Tècnic mitjà - mediador ciutadanes",
+      "entity": "Ajuntament de Cornellà de Llobregat",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17499189"
+    },
+    {
+      "id": "CIDO5-16484914",
+      "title": "1 plaça d'Auxiliar serveis",
+      "entity": "Ajuntament de Llinars del Vallès",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16484914"
+    },
+    {
+      "id": "CIDO5-16461792",
+      "title": "1 plaça de Tècnic superior Activitats Culturals - Coordinador de serveis d'interpretació històrica",
+      "entity": "Ajuntament de Cornellà de Llobregat",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16461792"
+    },
+    {
+      "id": "CIDO5-22521853",
+      "title": "Borsa de treball de places de Personal d'oficis, cementiri, peó, subaltern i similars (ampliació)",
+      "entity": "Ajuntament de Castelldefels",
+      "date": "18/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22521853"
+    },
     {
       "id": "CIDO5-22516286",
       "title": "1 plaça de Fisioterapeuta per a les escoles d'educació especial del servei d'educació",
