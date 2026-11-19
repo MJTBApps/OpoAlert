@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-19T07:43:47.146475+00:00",
+  "lastCheckedUTC": "2026-11-19T10:27:57.234952+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
-    "pagesVisited": 842,
-    "announcementsRead": 310,
-    "opportunities": 59
+    "bulletin": "224",
+    "pagesVisited": 909,
+    "announcementsRead": 344,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-21",
     "rangeEnd": "2026-11-19",
-    "issuesRead": 19,
-    "pagesVisited": 842,
-    "announcementsRead": 310,
-    "opportunities": 59,
+    "issuesRead": 21,
+    "pagesVisited": 909,
+    "announcementsRead": 344,
+    "opportunities": 62,
     "bulletins": [
       "204",
       "205",
@@ -38,7 +38,9 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223",
+      "224"
     ],
     "publicationDates": [
       "2026-10-21",
@@ -59,7 +61,9 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -70,13 +74,11 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-18",
-      "2026-11-19"
+      "2026-11-15"
     ],
-    "originalPdfPagesRead": 842,
+    "originalPdfPagesRead": 909,
     "archiveIndexPagesRead": 3,
-    "archiveTotalIssues": 48197,
+    "archiveTotalIssues": 48199,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392777&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+21%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392778&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+22%2F10%2F2026.pdf",
@@ -96,10 +98,42 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392792&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+12%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392793&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+13%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392794&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+16%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392795&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+17%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392795&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+17%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392797&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+18%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392796&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+19%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03190",
+      "province": "Almería",
+      "title": "Expediente n.º: 185/2026 Unidad Gestora: LM04. PERSONAL/RRHH Asunto: 2026/410545/900-023/00004-\"Provisión en propiedad de dos plazas de peón de oficios varios de la plantilla de personal laboral y creación de bolsa de empleo…",
+      "entity": "AYUNTAMIENTO DE LA MOJONERA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Bolsa de trabajo",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03187",
+      "province": "Almería",
+      "title": "RESOLUCIÓN DE ALCALDÍA N.º 2026/893, DE FECHA 5 DE NOVIEMBRE DE 2026, DEL AYUNTAMIENTO DE BALANEGRA POR LA QUE SE APRUEBAN LAS BASES Y LA CONVOCATORIA PARA CUBRIR LA PLAZA DE AGENTE DE INNOVACIÓN TECNOLÓGICA, DE ESTE…",
+      "entity": "AYUNTAMIENTO DE BALANEGRA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3187/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03180",
+      "province": "Almería",
+      "title": "Expte.: 320/2026 BASES DE LA CONVOCATORIA PARA LA PROVISIÓN DE UNA PLAZA DE FUNCIONARIO/A DE CARRERA, DENOMINADA TÉCNICO/A ADMINISTRATIVO/A, ESCALA DE ADMINISTRACIÓN GENERAL, SUBESCALA ADMINISTRATIVA. VACANTE EN LA PLANTILLA…",
+      "entity": "AYUNTAMIENTO DE ABRUCENA",
+      "date": "18/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3180/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03163",
       "province": "Almería",
