@@ -29,7 +29,18 @@ public enum SmartAlertMatcher {
         let terms = SearchText.normalize(rule.phrase).split(whereSeparator: \.isWhitespace)
         if terms.isEmpty { return false }
         let haystack = SearchText.normalize(notice.title + " " + notice.entity)
-        return terms.allSatisfy { haystack.contains($0) }
+        return terms.allSatisfy { termMatches(String($0), haystack) }
+    }
+
+    /// «administrativo» también encuentra «administrativa», «administrativo/a»
+    /// o «administrativas/os» (como `termMatches` en Android).
+    public static func termMatches(_ term: String, _ haystack: String) -> Bool {
+        if haystack.contains(term) { return true }
+        guard let ending = ["os", "as", "o", "a"].first(where: { term.hasSuffix($0) }) else { return false }
+        let stem = String(term.dropLast(ending.count))
+        guard stem.count >= 4 else { return false }
+        let pattern = NSRegularExpression.escapedPattern(for: stem) + "(os|as|o|a)(?![\\p{L}\\p{N}])"
+        return haystack.range(of: pattern, options: .regularExpression) != nil
     }
 
     /// Para el filtro «Alertas» de la lista: cada convocatoria que encuentra alguna

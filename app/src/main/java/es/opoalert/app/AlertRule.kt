@@ -24,7 +24,22 @@ object SmartAlertMatcher {
             .split(whitespace).filter { it.isNotBlank() }
         if (terms.isEmpty()) return false
         val haystack = SearchText.normalize(notice.title + " " + notice.entity)
-        return terms.all { haystack.contains(it) }
+        return terms.all { termMatches(it, haystack) }
+    }
+
+    private val genderEnding = Regex("(os|as|o|a)$")
+
+    /**
+     * «administrativo» también encuentra «administrativa», «administrativo/a»
+     * o «administrativas/os»: una palabra acabada en -o/-a/-os/-as vale con
+     * cualquiera de esas terminaciones. Nunca encuentra menos que antes.
+     */
+    internal fun termMatches(term: String, haystack: String): Boolean {
+        if (haystack.contains(term)) return true
+        val ending = genderEnding.find(term) ?: return false
+        val stem = term.substring(0, ending.range.first)
+        if (stem.length < 4) return false
+        return Regex(Regex.escape(stem) + "(os|as|o|a)(?![\\p{L}\\p{N}])").containsMatchIn(haystack)
     }
 
     /**

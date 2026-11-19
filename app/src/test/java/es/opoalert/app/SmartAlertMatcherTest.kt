@@ -109,4 +109,17 @@ class SmartAlertMatcherTest {
         assertEquals(2, hits.size)
         assertTrue(SmartAlertMatcher.hits(listOf(policeAl), listOf(paused), valenciaAndAlicante).isEmpty())
     }
+
+    @Test fun masculineAndFeminineFormsMatchEachOther() {
+        fun m(term: String, text: String) = SmartAlertMatcher.termMatches(term, SearchText.normalize(text))
+        assertTrue(m("administrativo", "Bolsa de Administrativa"))
+        assertTrue(m("administrativo", "Plaza de administrativo/a"))
+        assertTrue(m("administrativo", "Auxiliares administrativas/os"))
+        assertTrue(m("administrativa", "Auxiliar administrativo"))
+        assertTrue(m("bombera", "Bomberos del consorcio"))
+        assertTrue(m("admin", "Administrativa"))
+        assertFalse(m("administrativo", "Administración local"))
+        assertFalse(m("administrativo", "Administrativamente"))
+        assertFalse(m("pena", "Peñíscola"))
+    }
 }
