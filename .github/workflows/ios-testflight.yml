@@ -47,15 +47,14 @@ jobs:
             *) echo "::error::ASC_KEY_P8 no parece un archivo .p8 completo"; exit 1;;
           esac
 
-      - name: Elegir el Xcode mas reciente
+      # Xcode 26.3 fijo: la 1.55.1 compilada con 26.5 y 26.6 se cerraba al abrirla
+      # (19/11/2026, aborto del sistema de tareas de Swift en iOS 27). Con 26.3 funciona.
+      - name: Elegir Xcode 26.3
         run: |
-          XCODE="$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+          XCODE="$(ls -d /Applications/Xcode_26.3*.app 2>/dev/null | sort -V | tail -1)"
+          if [ -z "$XCODE" ]; then echo "::error::Este Mac no tiene Xcode 26.3: probar con el otro Mac"; ls -d /Applications/Xcode_*.app; exit 1; fi
           sudo xcode-select -s "$XCODE"
           xcodebuild -version
-          case "$(xcodebuild -version | head -1)" in
-            "Xcode 2"[6-9]*|"Xcode 3"*) ;;
-            *) echo "::error::El App Store exige Xcode 26 o posterior"; exit 1;;
-          esac
 
       - name: Fuentes de iOS al dia con Android
         run: python3 scripts/generar_fuentes_ios.py --check

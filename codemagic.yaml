@@ -11,7 +11,9 @@ workflows:
     instance_type: mac_mini_m2
     max_build_duration: 60
     environment:
-      xcode: latest
+      # Xcode 26.3 fijo: con 26.5 y 26.6 la app se cerraba al abrirla (19/11/2026,
+      # aborto del sistema de tareas de Swift en iOS 27). Cambiarlo solo tras probarlo en TestFlight.
+      xcode: 26.3
       groups:
         - opoalert_ios
       vars:
@@ -21,8 +23,8 @@ workflows:
         script: |
           xcodebuild -version
           case "$(xcodebuild -version | head -1)" in
-            "Xcode 2"[6-9]*|"Xcode 3"*) ;;
-            *) echo "El App Store exige Xcode 26 o posterior"; exit 1;;
+            "Xcode 26.3"*) ;;
+            *) echo "Se espera Xcode 26.3 (ver codemagic.yaml)"; exit 1;;
           esac
       - name: Fuentes de iOS al dia con Android
         script: python3 scripts/generar_fuentes_ios.py --check
