@@ -1,0 +1,32 @@
+# Codemagic: alternativa a GitHub Actions para subir iOS a TestFlight cuando
+# los Mac de GitHub están saturados (19/11/2026). Cuenta personal: 500 min/mes
+# de Mac M2 gratis. Se lanza a mano desde codemagic.io («Start new build»).
+# Los secretos van en el grupo de variables «opoalert_ios» de Codemagic, con los
+# mismos nombres que en GitHub: ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_P8,
+# ADMOB_IOS_APP_ID, ADMOB_IOS_BANNER, ADMOB_IOS_OPEN_AD, ADMOB_IOS_INTERSTITIAL,
+# FIREBASE_IOS_APP_ID, FIREBASE_IOS_API_KEY, FIREBASE_IOS_SENDER_ID, FIREBASE_PROJECT_ID.
+workflows:
+  ios-testflight:
+    name: Subir iOS a TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+      groups:
+        - opoalert_ios
+      vars:
+        TEAM_ID: 6QLP74LVPC
+    scripts:
+      - name: Comprobar Xcode 26 o posterior
+        script: |
+          xcodebuild -version
+          case "$(xcodebuild -version | head -1)" in
+            "Xcode 2"[6-9]*|"Xcode 3"*) ;;
+            *) echo "El App Store exige Xcode 26 o posterior"; exit 1;;
+          esac
+      - name: Fuentes de iOS al dia con Android
+        script: python3 scripts/generar_fuentes_ios.py --check
+      - name: Comprobar el nucleo y todos los feeds publicados
+        script: cd ios/OpoAlertCore && swift run OpoAlertChecks "$CM_BUILD_DIR/docs"
+      - name: Archivar y subir a App Store Connect
+        script: bash scripts/ios_subir_testflight.sh

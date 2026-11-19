@@ -64,26 +64,12 @@ jobs:
         working-directory: ios/OpoAlertCore
         run: swift run OpoAlertChecks "$GITHUB_WORKSPACE/docs"
 
-      - name: Guardar la clave de la API (solo en este ejecutor)
+      - name: Archivar y subir a App Store Connect
         env:
-          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
-          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
-        run: |
-          mkdir -p "$RUNNER_TEMP/asc"
-          printf '%s\n' "$ASC_KEY_P8" > "$RUNNER_TEMP/asc/AuthKey_$ASC_KEY_ID.p8"
-          chmod 600 "$RUNNER_TEMP/asc/AuthKey_$ASC_KEY_ID.p8"
-
-      - name: Generar el proyecto de Xcode
-        working-directory: ios
-        run: |
-          brew install xcodegen
-          xcodegen generate
-
-      - name: Archivar firmado
-        working-directory: ios
-        env:
+          TEAM_ID: ${{ env.TEAM_ID }}
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
           ADMOB_IOS_APP_ID: ${{ secrets.ADMOB_IOS_APP_ID }}
           ADMOB_IOS_BANNER: ${{ secrets.ADMOB_IOS_BANNER }}
           ADMOB_IOS_OPEN_AD: ${{ secrets.ADMOB_IOS_OPEN_AD }}
@@ -92,79 +78,5 @@ jobs:
           FIREBASE_IOS_API_KEY: ${{ secrets.FIREBASE_IOS_API_KEY }}
           FIREBASE_IOS_SENDER_ID: ${{ secrets.FIREBASE_IOS_SENDER_ID }}
           FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-        run: |
-          set -o pipefail
-          ADMOB=()
-          if [ -n "$ADMOB_IOS_APP_ID" ] && [ -n "$ADMOB_IOS_BANNER" ] && [ -n "$ADMOB_IOS_OPEN_AD" ]; then
-            ADMOB=(ADMOB_APP_ID="$ADMOB_IOS_APP_ID" ADMOB_BANNER="$ADMOB_IOS_BANNER" ADMOB_OPEN_AD="$ADMOB_IOS_OPEN_AD" ADMOB_INTERSTITIAL="$ADMOB_IOS_INTERSTITIAL")
-            # Sin el secreto ADMOB_IOS_INTERSTITIAL queda vacío: la app no muestra intersticial.
-          else
-            echo "::warning::Sin los secretos ADMOB_IOS_*: esta compilación lleva los anuncios de PRUEBA de Google (vale para TestFlight, no para el App Store)"
-          fi
-          FCM=()
-          # Firebase cierra la app al abrirla si el identificador está mal (1.54.0):
-          # se comprueba la forma de cada secreto y, si no vale, no se compila.
-          if [ -n "$FIREBASE_IOS_APP_ID$FIREBASE_IOS_API_KEY$FIREBASE_IOS_SENDER_ID$FIREBASE_PROJECT_ID" ]; then
-            echo "$FIREBASE_IOS_APP_ID" | grep -Eqx '1:[0-9]+:ios:[0-9a-f]+' || { echo "::error::FIREBASE_IOS_APP_ID no tiene la forma 1:NÚMERO:ios:HEX (pega solo el valor, sin «NOMBRE=»)"; exit 1; }
-            echo "$FIREBASE_IOS_SENDER_ID" | grep -Eqx '[0-9]+' || { echo "::error::FIREBASE_IOS_SENDER_ID debe ser solo el número"; exit 1; }
-            echo "$FIREBASE_IOS_APP_ID" | grep -q "^1:$FIREBASE_IOS_SENDER_ID:" || { echo "::error::FIREBASE_IOS_SENDER_ID no coincide con FIREBASE_IOS_APP_ID"; exit 1; }
-            echo "$FIREBASE_IOS_API_KEY" | grep -Eqx 'AIza[0-9A-Za-z_-]{35}' || { echo "::error::FIREBASE_IOS_API_KEY no tiene la forma AIza… (pega solo el valor)"; exit 1; }
-            echo "$FIREBASE_PROJECT_ID" | grep -Eqx '[a-z0-9-]+' || { echo "::error::FIREBASE_PROJECT_ID debe ser solo el identificador (opoalert-14a87)"; exit 1; }
-          fi
-          if [ -n "$FIREBASE_IOS_APP_ID" ] && [ -n "$FIREBASE_IOS_API_KEY" ] && [ -n "$FIREBASE_IOS_SENDER_ID" ] && [ -n "$FIREBASE_PROJECT_ID" ]; then
-            FCM=(FCM_IOS_APP_ID="$FIREBASE_IOS_APP_ID" FCM_IOS_API_KEY="$FIREBASE_IOS_API_KEY" FCM_IOS_SENDER_ID="$FIREBASE_IOS_SENDER_ID" FCM_IOS_PROJECT_ID="$FIREBASE_PROJECT_ID")
-          else
-            echo "::warning::Sin los secretos FIREBASE_*: esta compilación no recibe avisos desde GitHub"
-          fi
-          # Número de compilación: uno más en cada ejecución (App Store Connect no admite repetidos).
-          # Se archiva sin firmar: firmar aquí pide un perfil de desarrollo, y ese perfil
-          # exige un iPhone registrado (fallo del 05/11/2026). La firma de distribución
-          # la hace el paso siguiente.
-          xcodebuild -project OpoAlert.xcodeproj -scheme OpoAlert -configuration Release \
-            -destination 'generic/platform=iOS' -archivePath build/OpoAlert.xcarchive \
-            DEVELOPMENT_TEAM="$TEAM_ID" CODE_SIGN_STYLE=Automatic CODE_SIGNING_ALLOWED=NO \
-            CURRENT_PROJECT_VERSION="${{ github.run_number }}" "${ADMOB[@]}" "${FCM[@]}" \
-            archive | tail -n 80
-
-      - name: Subir a App Store Connect
-        working-directory: ios
-        env:
-          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
-          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-        run: |
-          set -o pipefail
-          # Las librerías de Google (anuncios y consentimiento) llegan al archivo sin
-          # firmar con una firma de Google que ya no es válida, y App Store Connect las
-          # rechazaba (05/11/2026). Sin firma, la exportación las firma con la app.
-          for fw in build/OpoAlert.xcarchive/Products/Applications/OpoAlert.app/Frameworks/*.framework; do
-            [ -d "$fw" ] || continue
-            echo "Quitar la firma de $(basename "$fw")"
-            codesign --remove-signature "$fw" || true
-            rm -rf "$fw/_CodeSignature"
-          done
-          # Se archiva sin firmar y la exportación no vería el permiso de avisos
-          # (aps-environment): se marca la app con sus entitlements antes de exportar.
-          codesign --force --sign - --entitlements OpoAlert/OpoAlert.entitlements \
-            build/OpoAlert.xcarchive/Products/Applications/OpoAlert.app
-          cat > build/ExportOptions.plist <<EOF
-          <?xml version="1.0" encoding="UTF-8"?>
-          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-          <plist version="1.0"><dict>
-            <key>method</key><string>app-store-connect</string>
-            <key>destination</key><string>upload</string>
-            <key>teamID</key><string>$TEAM_ID</string>
-            <key>signingStyle</key><string>automatic</string>
-            <key>manageAppVersionAndBuildNumber</key><false/>
-          </dict></plist>
-          EOF
-          xcodebuild -exportArchive -archivePath build/OpoAlert.xcarchive \
-            -exportOptionsPlist build/ExportOptions.plist -exportPath build/export \
-            -allowProvisioningUpdates \
-            -authenticationKeyPath "$RUNNER_TEMP/asc/AuthKey_$ASC_KEY_ID.p8" \
-            -authenticationKeyID "$ASC_KEY_ID" -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
-            | tail -n 60
-          echo "Subida la compilación ${{ github.run_number }}. App Store Connect tarda unos minutos en procesarla."
-
-      - name: Borrar la clave
-        if: always()
-        run: rm -rf "$RUNNER_TEMP/asc"
+        # Mismo script que Codemagic (codemagic.yaml).
+        run: bash scripts/ios_subir_testflight.sh
