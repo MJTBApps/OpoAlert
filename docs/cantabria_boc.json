@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-18T16:50:45.875750+00:00",
+  "lastCheckedUTC": "2026-11-19T06:55:20.177798+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 30,
-    "announcementsRead": 929,
-    "opportunities": 24,
+    "announcementsRead": 925,
+    "opportunities": 21,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "Ext. 27",
       "203",
@@ -46,10 +45,10 @@
       "Ext. 34",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-21",
       "2026-10-22",
@@ -78,7 +77,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -91,10 +91,9 @@
       "2026-11-15"
     ],
     "issuesRead": 30,
-    "announcementsRead": 929,
-    "opportunities": 24,
+    "announcementsRead": 925,
+    "opportunities": 21,
     "regularBulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -115,7 +114,8 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "extraordinaryBulletins": [
       "Ext. 27",
@@ -128,7 +128,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47185,
       47206,
       47245,
       47225,
@@ -157,10 +156,21 @@
       47605,
       47566,
       47567,
-      47625
+      47625,
+      47645
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9056",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria para la cobertura, en propiedad, mediante oposición libre, de una plaza de funcionario de carrera, Auxiliar Administrativo. Expediente 389/2026.",
+      "entity": "Ayuntamiento de Cabezón de Liébana",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443227"
+    },
     {
       "id": "CN-2026-8980",
       "province": "Cantabria (BOC)",
@@ -360,46 +370,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442152"
-    },
-    {
-      "id": "CN-2026-8113",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras y convocatoria del proceso selectivo para cubrir en propiedad, mediante el sistema de concurso-oposición, por turno libre, una plaza de Auxiliar Administrativo, adscrita a Recaudación. Expediente 2715/2026.",
-      "entity": "Ayuntamiento de Reocín",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441924"
-    },
-    {
-      "id": "CN-2026-8104",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras y convocatoria que han de regir para la cobertura, por personal laboral fijo, de seis (6) plazas de Oficial 3ª Mantenimiento.",
-      "entity": "Instituto Municipal de Deportes de Santander",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441899"
-    },
-    {
-      "id": "CN-2026-8100",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras y convocatoria que han de regir para la cobertura, por personal laboral fijo, de tres (3) plazas de Conserje.",
-      "entity": "Instituto Municipal de Deportes de Santander",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441912"
-    },
-    {
-      "id": "CN-2026-8096",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras del proceso selectivo para proveer en propiedad, como funcionario de carrera, mediante oposición libre, tres (3) plazas de Técnico de Gestión. Expediente 2026/2939P.",
-      "entity": "Ayuntamiento de Torrelavega",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=441895"
     }
   ]
 }

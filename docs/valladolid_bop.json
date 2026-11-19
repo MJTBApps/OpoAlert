@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-18T17:17:28.148239+00:00",
+  "lastCheckedUTC": "2026-11-19T07:06:39.730464+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 21,
-    "announcementsRead": 373,
-    "opportunities": 18
+    "announcementsRead": 369,
+    "opportunities": 14
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -36,10 +35,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -59,7 +58,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,8 +73,8 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 373,
-    "opportunities": 18
+    "announcementsRead": 369,
+    "opportunities": 14
   },
   "notices": [
     {
@@ -216,46 +216,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/21/BOPVA-A-2026-03064.pdf"
-    },
-    {
-      "id": "VD-2026-3044",
-      "province": "Valladolid",
-      "title": "Convocatoria específica por la que se regirá el proceso selectivo para la adquisición de la condición de funcionario/a de carrera por el personal laboral fijo (categoría Técnico Superior A1-22) del Ayuntamiento de Valladolid.",
-      "entity": "AYUNTAMIENTO DE VALLADOLID",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/20/BOPVA-A-2026-03044.pdf"
-    },
-    {
-      "id": "VD-2026-3043",
-      "province": "Valladolid",
-      "title": "Bases y convocatoria para el acceso a una plaza de Monitor/a de ocio y tiempo libre, personal laboral fijo del Ayuntamiento de Viana de Cega, por el sistema de Concurso-Oposición.",
-      "entity": "AYUNTAMIENTO DE VIANA DE CEGA",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/20/BOPVA-A-2026-03043.pdf"
-    },
-    {
-      "id": "VD-2026-3042",
-      "province": "Valladolid",
-      "title": "Bases y convocatoria para el acceso a una plaza de Auxiliar de Cultura y Deportes, personal laboral fijo del Ayuntamiento de Viana de Cega, por el sistema de Concurso-Oposición.",
-      "entity": "AYUNTAMIENTO DE VIANA DE CEGA",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/20/BOPVA-A-2026-03042.pdf"
-    },
-    {
-      "id": "VD-2026-3041",
-      "province": "Valladolid",
-      "title": "Bases y convocatoria para el acceso a dos plazas de Limpiador/a de edificios e instalaciones municipales, personal laboral fijo del Ayuntamiento de Viana de Cega, por el sistema de Concurso-Oposición.",
-      "entity": "AYUNTAMIENTO DE VIANA DE CEGA",
-      "date": "20/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/20/BOPVA-A-2026-03041.pdf"
     }
   ]
 }

@@ -2,25 +2,23 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-18T16:49:13.060800+00:00",
+  "lastCheckedUTC": "2026-11-19T06:53:46.953922+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "6670",
-    "pagesVisited": 15,
-    "announcementsRead": 91,
+    "pagesVisited": 13,
+    "announcementsRead": 82,
     "opportunities": 1,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 15,
-    "pdfPagesRead": 275
+    "originalFullPdfIssues": 13,
+    "pdfPagesRead": 251
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "6662",
-      "EXTRA49",
       "EXTRA50",
       "6663",
       "6664",
@@ -36,8 +34,6 @@
       "6670"
     ],
     "publicationDates": [
-      "2026-10-20",
-      "2026-10-20",
       "2026-10-22",
       "2026-10-23",
       "2026-10-27",
@@ -70,13 +66,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-16",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 91,
+    "issuesRead": 13,
+    "announcementsRead": 82,
     "opportunities": 1,
     "regularBulletins": [
-      "6662",
       "6663",
       "6664",
       "6665",
@@ -87,7 +83,6 @@
       "6670"
     ],
     "extraordinaryBulletins": [
-      "EXTRA49",
       "EXTRA50",
       "EXTRA51",
       "EXTRA52",
@@ -95,30 +90,6 @@
       "EXTRA54"
     ],
     "pdfEvidence": [
-      {
-        "number": "6662",
-        "date": "2026-10-20",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23295-bocce-6662-20-10-2026?Itemid=534",
-        "sha256": "3ea4fd283a0daaec3cab6cc710a41bdbd08543852b9549e605afaba3aa4653b0",
-        "bytes": 1016132,
-        "pages": 19,
-        "edicts": [
-          694,
-          700
-        ]
-      },
-      {
-        "number": "EXTRA49",
-        "date": "2026-10-20",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23298-bocce-extra49-20-10-2026?Itemid=534",
-        "sha256": "079f5309af2c3e8359d5736fb32c4000c53a2b7319de79f47d2c5f373b8aa444",
-        "bytes": 3399713,
-        "pages": 5,
-        "edicts": [
-          99,
-          100
-        ]
-      },
       {
         "number": "EXTRA50",
         "date": "2026-10-22",

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-18T17:12:46.633078+00:00",
+  "lastCheckedUTC": "2026-11-19T07:02:58.124364+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "221",
+    "bulletin": "222",
     "pagesVisited": 23,
-    "announcementsRead": 1064,
-    "opportunities": 71
+    "announcementsRead": 1056,
+    "opportunities": 73
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-20",
-    "rangeEnd": "2026-11-18",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -37,10 +36,10 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -61,7 +60,8 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,50 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1064,
-    "opportunities": 71
+    "announcementsRead": 1056,
+    "opportunities": 73
   },
   "notices": [
+    {
+      "id": "LE-202622209812",
+      "province": "Lleida (BOP)",
+      "title": "Aprovació de la convocatòria i les bases específiques que han de regir el procediment de selecció per torn lliure de la Diputació de Lleida de 2 places d’oficial 1a polivalent, el grup C, subgrup C1, per a ocupar els llocs d’oficial fuster i d’oficial d’instal·lacions (TLL4/2026)",
+      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/222/202622209812.pdf"
+    },
+    {
+      "id": "LE-202622209804",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria i bases comissió de serveis dos llocs de treball de Llicenciat/da en Dret",
+      "entity": "AJUNTAMENT DE LLEIDA (LLEIDA)",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/222/202622209804.pdf"
+    },
+    {
+      "id": "LE-202622209803",
+      "province": "Lleida (BOP)",
+      "title": "Convocatòria i bases comissió de serveis lloc de treball de Cap Secció de Protocol",
+      "entity": "AJUNTAMENT DE LLEIDA (LLEIDA)",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/222/202622209803.pdf"
+    },
+    {
+      "id": "LE-202622209791",
+      "province": "Lleida (BOP)",
+      "title": "Anunci sobre la convocatòria i les bases del procés selectiu per cobrir, en torn lliure i mitjançant concurs oposició, una plaça de tècnic/a de desenvolupament rural (A1), com a personal funcionari de carrera",
+      "entity": "AJUNTAMENT DE LA VALL DE BOÍ (VALL DE BOÍ, LA)",
+      "date": "19/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/222/202622209791.pdf"
+    },
     {
       "id": "LE-202622109755",
       "province": "Lleida (BOP)",
@@ -767,26 +807,6 @@
       "bulletin": "201",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/201/202620108745.pdf"
-    },
-    {
-      "id": "LE-202620008706",
-      "province": "Lleida (BOP)",
-      "title": "Convocatòria d’arquitecte/a tècnic/a A2 com a funcionari/ària interí/ina per programes i borsa de treball a les Garrigues",
-      "entity": "CONSELL COMARCAL DE LES GARRIGUES (BORGES BLANQUES, LES)",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/200/202620008706.pdf"
-    },
-    {
-      "id": "LE-202620008686",
-      "province": "Lleida (BOP)",
-      "title": "Anunci bases i convocatòria del procés selectiu per cobrir interinament el lloc de treball de secretaria-intervenció de l'Ajuntament d'Almenar",
-      "entity": "AJUNTAMENT D'ALMENAR (ALMENAR)",
-      "date": "20/10/2026",
-      "bulletin": "200",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/200/202620008686.pdf"
     }
   ]
 }
