@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-18T17:17:47+00:00",
+ "updatedUTC": "2026-11-19T07:33:18+00:00",
  "items": {
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471705440303": {
    "days": 20,
@@ -13,12 +13,6 @@
    "kind": "naturales",
    "text": "El plazo de presentación de instancias será de 20 días naturales contados a partir del día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial del Estado».",
    "page": 1
-  },
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471041250707": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de instancias será de veinte días hábiles, contados a partir del siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado, anuncio que se publicará con posterioridad a la publicación de las bases íntegras en el BOPZ.",
-   "page": 4
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473002770404": {
    "days": 20,
@@ -109,13 +103,21 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de la instancia será el de veinte días hábiles a partir del día siguiente a la publicación del extracto de la convocatoria en el Boletín Oficial del Estado.",
    "page": 3
+  },
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475664801010": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…la Ley 39/2015, de 26 de noviembre, en el plazo de veinte días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el BOE.",
+   "page": 2
+  },
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475646620505": {
+   "days": 10,
+   "kind": "naturales",
+   "text": "El plazo de presentación de la instancia será el de diez días naturales a partir del día siguiente a la publicación de la convocatoria en el BOPZ.",
+   "page": 5
   }
  },
  "none": [
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471029130505",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471042260707",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471043270707",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471044280707",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471257180303",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471264250404",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471506720404",
@@ -172,7 +174,9 @@
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475087924343",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475226350505",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475249761212",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475265921717"
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475265921717",
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475652680707",
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475654700707"
  ],
  "tries": {}
 }

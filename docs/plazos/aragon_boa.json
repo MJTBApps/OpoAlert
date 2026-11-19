@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-18T17:17:47+00:00",
+ "updatedUTC": "2026-11-19T07:33:18+00:00",
  "items": {
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472685240404": {
    "days": 20,
@@ -43,12 +43,6 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de las instancias será de veinte días hábiles contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el “Boletín Oficial del Estado”.",
    "page": 5
-  },
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1470958240404": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de instancias será de veinte días hábiles, contados a partir del siguiente al de la publicación del anuncio de la convocatoria en el \"Boletín Oficial del Estado\", anuncio que se publicará con posterioridad a la publicación de las bases íntegras en el \"Boletín Oficial de Aragón\" y en el…",
-   "page": 3
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473121680606": {
    "days": 15,
@@ -121,6 +115,12 @@
    "kind": "hábiles",
    "text": "…de las Administraciones Públicas, en el plazo de cinco días hábiles a contar a partir del día siguiente a la publicación de la presente Resolución en el \"Boletín Oficial del Estado\".",
    "page": 2
+  },
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475589821111": {
+   "days": 15,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de quince días hábiles a contar desde el siguiente al de la publicación de esta Resolución en el \"Boletín Oficial del Estado\".",
+   "page": 1
   }
  },
  "none": [
@@ -223,7 +223,8 @@
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475164530909",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475166551010",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475417061010",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475419081010"
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475419081010",
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475587801010"
  ],
  "tries": {}
 }
