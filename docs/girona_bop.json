@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-17T16:46:25.276410+00:00",
+  "lastCheckedUTC": "2026-11-19T08:49:54.015937+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "221",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 1094,
-    "opportunities": 100,
+    "announcementsRead": 1071,
+    "opportunities": 94,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-19",
-    "rangeEnd": "2026-11-17",
+    "rangeStart": "2026-10-21",
+    "rangeEnd": "2026-11-19",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 1094,
-    "opportunities": 100,
+    "announcementsRead": 1071,
+    "opportunities": 94,
     "bulletins": [
-      "201",
-      "202",
       "203",
       "204",
       "205",
@@ -40,11 +38,11 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-19",
-      "2026-10-20",
       "2026-10-21",
       "2026-10-22",
       "2026-10-23",
@@ -63,7 +61,9 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -78,6 +78,56 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-223-10056",
+      "title": "Aprovació de la convocatòria i les bases del procés selectiu per a la constitució d'una borsa de treball de director/a de biblioteca, mitjançant oposició i torn lliure",
+      "entity": "AJUNTAMENT DE L'ESCALA",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010056.pdf"
+    },
+    {
+      "id": "GI-2026-223-10051",
+      "title": "Aprovació inicial del pressupost municipal de l'exercici 2027, les bases d'execució i la plantilla de personal",
+      "entity": "AJUNTAMENT DE CASTELLFOLLIT DE LA ROCA",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010051.pdf"
+    },
+    {
+      "id": "GI-2026-223-10043",
+      "title": "Aprovació de les bases i la convocatòria urgent per a l'ampliació de la borsa de treball d'administratius/ves C1",
+      "entity": "AJUNTAMENT DE SALT",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010043.pdf"
+    },
+    {
+      "id": "GI-2026-223-10042",
+      "title": "Aprovació de les bases reguladores i la convocatòria del procés selectiu per a la creació d'una borsa de treball temporal de tècnic/a de grau superior d'AODL",
+      "entity": "CONSELL COMARCAL DEL BAIX EMPORDÀ",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010042.pdf"
+    },
+    {
+      "id": "GI-2026-223-09970",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu, mitjançant concurs oposició lliure, per a la cobertura temporal d'una plaça d'oficial de manteniment i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE CAMPLLONG",
+      "date": "19/11/2026",
+      "bulletin": "223",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/202622309970.pdf"
+    },
     {
       "id": "GI-2026-221-09991",
       "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la creació d'una borsa de treball per cobrir absències, permisos, jubilacions i altres necessitats temporals de conserge del pavelló municipal de l'Ajuntament de Sant Julià de Ramis",
@@ -967,116 +1017,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/203/202620308834.pdf"
-    },
-    {
-      "id": "GI-2026-202-09003",
-      "title": "Aprovació de bases i la convocatòria de selecció de personal per concurs oposició lliure d'una plaça d'auxiliar administratiu/va (C2) en règim de funcionari de carrera i constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE CALDES DE MALAVELLA",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620209003.pdf"
-    },
-    {
-      "id": "GI-2026-202-08929",
-      "title": "Aprovació de la convocatòria i les bases per a la cobertura del lloc de treball de tècnic/a mitjà/na enginyer/a, en règim interí/na, adscrit/a al Departament d'Activitats de l'Àrea de Territori d'aquest ajuntament",
-      "entity": "AJUNTAMENT DE BLANES",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620208929.pdf"
-    },
-    {
-      "id": "GI-2026-202-08927",
-      "title": "Aprovació de les bases i la convocatòria per a la selecció d'un/a agent d'ocupació i desenvolupament local (AODL) a l'àrea de Promoció Econòmica del Consell Comarcal de la Cerdanya, en règim de personal funcionari interí, i constitució de borsa de treball",
-      "entity": "CONSELL COMARCAL DE LA CERDANYA",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620208927.pdf"
-    },
-    {
-      "id": "GI-2026-202-08925",
-      "title": "Modificacions en la convocatòria d'una plaça de TAG a l'Ajuntament de Vidreres",
-      "entity": "AJUNTAMENT DE VIDRERES",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620208925.pdf"
-    },
-    {
-      "id": "GI-2026-202-08808",
-      "title": "Aprovació de les bases i la convocatòria d'una plaça d'encarregat d'obres (Grup C1), com a personal laboral fix pel sistema de concurs oposició lliure i constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE SALT",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620208808.pdf"
-    },
-    {
-      "id": "GI-2026-202-08804",
-      "title": "Aprovació de les bases del procés selectiu per a la cobertura d'una plaça d'agent de la Policia Local i constitució d'una borsa de treball (Exp. 3390/2026)",
-      "entity": "AJUNTAMENT DE BEGUR",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620208804.pdf"
-    },
-    {
-      "id": "GI-2026-202-08788",
-      "title": "Aprovació de les bases i convocatòria del procés selectiu per a la provisió d'una plaça d'auxiliar de gestió administrativa de l'Ajuntament de Sant Gregori",
-      "entity": "AJUNTAMENT DE SANT GREGORI",
-      "date": "20/10/2026",
-      "bulletin": "202",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/202/202620208788.pdf"
-    },
-    {
-      "id": "GI-2026-201-08968",
-      "title": "Aprovació de les bases i la convocatòria de selecció de personal per concurs oposició lliure d'una plaça d'enginyer (A1) en règim de funcionari de carrera i constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE CALDES DE MALAVELLA",
-      "date": "19/10/2026",
-      "bulletin": "201",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/201/202620108968.pdf"
-    },
-    {
-      "id": "GI-2026-201-08945",
-      "title": "Aprovació de les bases que han de regir el procés selectiu, per promoció interna, d'una plaça de tècnic/a auxiliar d'educador/a, C1-18, laboral fix, mitjançant concurs oposició",
-      "entity": "ESCOLA INFANTIL MUNICIPAL \"PASSEIG DE LES OQUES\" (CASTELLÓ D'EMPÚRIES)",
-      "date": "19/10/2026",
-      "bulletin": "201",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/201/202620108945.pdf"
-    },
-    {
-      "id": "GI-2026-201-08876",
-      "title": "Aprovació de les bases i la convocatòria per cobrir dues places d'educador/a de la llar d'infants, vacants a la plantilla de personal laboral, pel sistema d'oposició lliure, i la creació d'una borsa de treball",
-      "entity": "AJUNTAMENT DE TOSSA DE MAR",
-      "date": "19/10/2026",
-      "bulletin": "201",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/201/202620108876.pdf"
-    },
-    {
-      "id": "GI-2026-201-08760",
-      "title": "Modificació de les bases reguladores del procés selectiu convocat per a la provisió, per promoció interna, mitjançant concurs oposició, d'una plaça de caporal/a de la Policia Local de Santa Cristina d'Aro i obertura d'un nou termini de presentació d'instàncies",
-      "entity": "AJUNTAMENT DE SANTA CRISTINA D'ARO",
-      "date": "19/10/2026",
-      "bulletin": "201",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/201/202620108760.pdf"
     }
   ]
 }
