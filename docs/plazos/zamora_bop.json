@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T10:42:16+00:00",
+ "updatedUTC": "2026-11-20T13:43:42+00:00",
  "items": {
   "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/132/202602638.pdf": {
    "days": 15,
@@ -22,7 +22,31 @@
   "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/135/202602670.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
+ "sedes": {
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/132/202602585.pdf": "https://www.toroayto.es/",
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/132/202602638.pdf": "https://cubillos.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/132/202602585.pdf": [
+   "https://diputaciondezamora.sedelectronica.es/",
+   "https://www.toroayto.es/"
+  ],
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/132/202602638.pdf": [
+   "https://diputaciondezamora.sedelectronica.es/",
+   "https://cubillos.sedelectronica.es/"
+  ],
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/134/202602676.pdf": [
+   "https://diputaciondezamora.sedelectronica.es/"
+  ],
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/135/202602669.pdf": [
+   "https://diputaciondezamora.sedelectronica.es/"
+  ],
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/135/202602670.pdf": [
+   "https://diputaciondezamora.sedelectronica.es/"
+  ],
+  "https://www.diputaciondezamora.es/opencms/export/sites/dipu-zamora/servicios/BOP/.Archivos/documentos/BOP/anuncios/2026/135/202602690.pdf": [
+   "https://diputaciondezamora.sedelectronica.es/"
+  ]
+ },
  "sinSede": []
 }

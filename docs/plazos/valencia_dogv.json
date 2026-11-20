@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T10:42:16+00:00",
+ "updatedUTC": "2026-11-20T13:43:42+00:00",
  "items": {
   "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33702_es.pdf": {
    "days": 10,
@@ -1066,7 +1066,638 @@
   "https://dogv.gva.es/datos/2026/11/20/pdf/2026_35882_es.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_30706_es.pdf": "https://carcaixent.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32394_es.pdf": "https://dayanueva.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32401_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30925_es.pdf": "https://tibi.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30941_es.pdf": "https://soneja.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30965_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_31523_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32759_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_33461_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_31261_es.pdf": "https://soneja.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32842_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32906_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_33044_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_33327_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33041_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33042_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33043_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33045_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33046_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33062_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33063_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33067_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33183_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33202_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_28128_es.pdf": "https://burriana.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31581_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31583_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31584_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31586_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31590_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31591_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_33761_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31774_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31775_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31777_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31779_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31781_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31782_es.pdf": "https://sede.umh.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31828_es.pdf": "https://www.albuixech.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31861_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31862_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33021_es.pdf": "https://picanya.sede.dival.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33615_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33616_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33619_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_33881_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_33943_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34132_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_33845_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_33884_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34003_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34020_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34030_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34583_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34585_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_31769_es.pdf": "https://sedeelectronica.alicante.es/",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_31771_es.pdf": "https://sedeelectronica.alicante.es/",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34133_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34138_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34139_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34142_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34242_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34246_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34248_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34281_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34462_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_33921_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34002_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34004_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34383_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34387_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34388_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34603_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34621_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34964_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34703_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34705_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34706_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34709_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34714_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34761_es.pdf": "https://sede.upv.es/",
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_34902_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_34994_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_34999_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35129_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35206_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35207_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35541_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35563_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33561_es.pdf": "https://lesarts.convoca.online/",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_34896_es.pdf": "https://chpcs.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35263_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35265_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35294_es.pdf": "https://www.uv.es/sede-electronica",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35303_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_32321_es.pdf": "https://sedeelectronica.alicante.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_33806_es.pdf": "https://sede.upv.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35381_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35385_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35447_es.pdf": "https://www.uv.es/sede-electronica",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35844_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35846_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35847_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_36002_es.pdf": "https://sede.gva.es/",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_33808_es.pdf": "https://sede.upv.es/",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35575_es.pdf": "https://ceetinc.es/",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35645_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_36062_es.pdf": "https://seu.uv.es/",
+  "https://dogv.gva.es/datos/2026/11/19/pdf/2026_35768_es.pdf": "https://www.chguv.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_32224_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_33885_es.pdf": "https://www.uv.es/sede-electronica",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_33924_es.pdf": "https://www.fgv.es/",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34013_es.pdf": "https://diputacionalicante.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34122_es.pdf": "https://www.uv.es/sede-electronica",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_35644_es.pdf": "https://sede.gva.es/"
+ },
+ "sedeRaw": {
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_30706_es.pdf": [
+   "https://carcaixent.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32394_es.pdf": [
+   "https://dayanueva.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32401_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30925_es.pdf": [
+   "https://tibi.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30941_es.pdf": [
+   "https://soneja.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30965_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_31523_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32759_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_33461_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_31261_es.pdf": [
+   "https://soneja.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32842_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_32906_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_33044_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_33327_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33041_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33042_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33043_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33045_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33046_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33062_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33063_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33067_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33183_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33202_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_28128_es.pdf": [
+   "https://burriana.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31581_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31583_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31584_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31586_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31590_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31591_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_33761_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31774_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31775_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31777_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31779_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31781_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31782_es.pdf": [
+   "https://sede.umh.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31828_es.pdf": [
+   "https://www.albuixech.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31861_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31862_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33021_es.pdf": [
+   "https://picanya.sede.dival.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33615_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33616_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33619_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_33881_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_33943_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34132_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_33845_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_33884_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34003_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34020_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34030_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34583_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34585_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_31769_es.pdf": [
+   "https://sedeelectronica.alicante.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_31771_es.pdf": [
+   "https://sedeelectronica.alicante.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34133_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34138_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34139_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34142_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34242_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34246_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34248_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34281_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34462_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_33921_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34002_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34004_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34383_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34387_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34388_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34603_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34621_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_34964_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34703_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34705_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34706_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34709_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34714_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34761_es.pdf": [
+   "https://sede.upv.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_34902_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_34994_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_34999_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35129_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35206_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35207_es.pdf": [
+   "https://seuelectronica.ua.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35541_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_35563_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33561_es.pdf": [
+   "https://lesarts.convoca.online/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_34896_es.pdf": [
+   "https://chpcs.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35263_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35265_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35294_es.pdf": [
+   "https://www.uv.es/sede-electronica"
+  ],
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35303_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_32321_es.pdf": [
+   "https://sedeelectronica.alicante.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_33806_es.pdf": [
+   "https://sede.upv.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35381_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35385_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35447_es.pdf": [
+   "https://www.uv.es/sede-electronica"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35844_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35846_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35847_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_36002_es.pdf": [
+   "https://sede.gva.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_33808_es.pdf": [
+   "https://sede.upv.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35575_es.pdf": [
+   "https://ceetinc.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35645_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_36062_es.pdf": [
+   "https://seu.uv.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/19/pdf/2026_35768_es.pdf": [
+   "https://www.chguv.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_32224_es.pdf": [
+   "https://seuelectronica.ua.es/",
+   "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_33885_es.pdf": [
+   "https://www.uv.es/sede-electronica"
+  ],
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_33924_es.pdf": [
+   "https://www.fgv.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34013_es.pdf": [
+   "https://diputacionalicante.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34122_es.pdf": [
+   "https://www.uv.es/sede-electronica"
+  ],
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_35644_es.pdf": [
+   "https://sede.gva.es/"
+  ]
+ },
+ "sinSede": [
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32363_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32364_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30921_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32441_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32461_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32482_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32500_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32520_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32541_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32542_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32768_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_32925_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33001_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33002_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33003_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33005_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33006_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33007_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33009_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/23/pdf/2026_33261_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32641_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32642_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32643_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32644_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32645_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32704_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32763_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32764_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32769_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32770_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/26/pdf/2026_33444_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_31282_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/27/pdf/2026_33481_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_31381_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_31401_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_31402_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_31404_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/28/pdf/2026_33221_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31592_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31625_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31632_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_31641_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/29/pdf/2026_33304_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31767_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31844_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_31987_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33529_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33531_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33536_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33702_es.pdf",
+  "https://dogv.gva.es/datos/2026/10/30/pdf/2026_34124_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_31915_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_31925_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_32046_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34082_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34083_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34084_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34085_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34086_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34087_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/02/pdf/2026_34143_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_33741_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_33784_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_34249_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_34328_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/03/pdf/2026_34329_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_32176_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_32221_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_33364_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34125_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/04/pdf/2026_34331_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_32045_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_32315_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_32389_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_32395_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34131_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34386_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/05/pdf/2026_34602_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_24912_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_32492_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_32502_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_33618_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34245_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34322_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34821_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34822_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/06/pdf/2026_34823_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_32662_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_32702_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_32747_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/09/pdf/2026_35122_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/10/pdf/2026_32883_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/10/pdf/2026_32923_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/10/pdf/2026_32924_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/10/pdf/2026_34244_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_33061_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_33073_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_33164_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34898_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34969_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/11/pdf/2026_34991_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_33306_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/12/pdf/2026_35162_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_33302_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_33305_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_33532_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/13/pdf/2026_33537_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33325_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33326_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33329_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33330_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33332_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33387_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33607_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33683_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33685_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33687_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_33693_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35208_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/16/pdf/2026_35761_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_30441_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35210_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35402_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35409_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35482_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35848_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35849_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35850_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35851_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35852_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35961_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/17/pdf/2026_35984_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_32301_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_33541_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35853_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35854_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35855_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35965_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35967_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/18/pdf/2026_35968_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_31084_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_33942_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34011_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34060_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34137_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34149_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34169_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_34185_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_35881_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/20/pdf/2026_35882_es.pdf"
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T10:42:16+00:00",
+ "updatedUTC": "2026-11-20T13:43:42+00:00",
  "items": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": {
    "days": 20,
@@ -91,15 +91,28 @@
    "kind": "hábiles",
    "text": "…sistema de concurso-oposición, se abre el plazo de presentación de solicitudes, que será de 20 días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial del Estado.",
    "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "…Vuela (Guadalinfo) de Albanchez, se abre el plazo de presentación de solicitudes, que será de 20 días naturales a contar desde el día siguiente a la publicación de este anuncio en Boletín Oficial de la Provincia.",
+   "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3225/anuncio.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo para la presentación de solicitudes de participación será de DIEZ DÍAS HÁBILES, a contar desde el siguiente a la publicación del presente Anuncio (en extracto) de convocatoria en el BOP de Almería.",
+   "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3224/anuncio.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo para la presentación de solicitudes de participación será de DIEZ DÍAS HÁBILES, a contar desde el siguiente a la publicación del presente Anuncio (en extracto) de convocatoria en el BOP de Almería.",
+   "page": 1
   }
  },
  "none": [
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2762/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2822/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2823/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2824/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2825/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2826/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2844/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2845/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf",
@@ -140,7 +153,10 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3168/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3169/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3180/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3216/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3217/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3250/anuncio.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -163,7 +179,10 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3167/anuncio.pdf": "https://www.dipalme.org/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3180/anuncio.pdf": "https://abrucena.sedelectronica.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3187/anuncio.pdf": "https://balanegra.sedelectronica.es/",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf": "https://www.sede.lamojonera.es/"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf": "https://www.sede.lamojonera.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3216/anuncio.pdf": "https://sede.aytoalmeria.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3217/anuncio.pdf": "https://sede.aytoalmeria.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": "https://www.albanchez.es/"
  },
  "sedeRaw": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf": [
@@ -228,15 +247,19 @@
   ],
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf": [
    "https://www.sede.lamojonera.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3216/anuncio.pdf": [
+   "https://sede.aytoalmeria.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3217/anuncio.pdf": [
+   "https://sede.aytoalmeria.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": [
+   "https://www.albanchez.es/"
   ]
  },
  "sinSede": [
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2762/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2822/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2823/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2824/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2825/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2826/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2844/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2845/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2881/anuncio.pdf",
@@ -272,6 +295,9 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3163/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3166/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3168/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3169/anuncio.pdf"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3169/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3224/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3225/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3250/anuncio.pdf"
  ]
 }

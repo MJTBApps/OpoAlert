@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T10:42:16+00:00",
+ "updatedUTC": "2026-11-20T13:43:42+00:00",
  "items": {
   "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026": {
    "days": 20,
@@ -73,6 +73,12 @@
    "kind": "hábiles",
    "text": "Plazo: El plazo de presentación de solicitudes será de diez días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el “Boletín Oficial” de la provincia de Toledo.",
    "page": 3
+  },
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115286;0&insert_number=5302&insert_year=2026": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "Las personas interesadas en participar en el proceso selectivo deberán presentar su solicitud en el plazo de veinte días hábiles, contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el “Boletín Oficial del Estado”.",
+   "page": 2
   }
  },
  "none": [
@@ -84,10 +90,71 @@
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115137;0&insert_number=5153&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115143;0&insert_number=5159&insert_year=2026",
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26115202;0&insert_number=5219&insert_year=2026"
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115202;0&insert_number=5219&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115348;0&insert_number=5363&insert_year=2026"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104830;0&insert_number=4850&insert_year=2026": "https://lapueblademontalban.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026": "https://portillodetoledo.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": "https://navahermosa.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026": "https://navahermosa.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115143;0&insert_number=5159&insert_year=2026": "https://aytopolan.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115144;0&insert_number=5160&insert_year=2026": "https://sonseca.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115166;0&insert_number=5190&insert_year=2026": "https://ontigola.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115231;0&insert_number=5248&insert_year=2026": "https://sede.elvisodesanjuan.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115233;0&insert_number=5250&insert_year=2026": "https://sede.fuensalida.com/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115316;0&insert_number=5332&insert_year=2026": "https://arges.sedelectronica.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115348;0&insert_number=5363&insert_year=2026": "https://www.fuensalida.com/"
+ },
+ "sedeRaw": {
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104830;0&insert_number=4850&insert_year=2026": [
+   "https://lapueblademontalban.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026": [
+   "https://portillodetoledo.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": [
+   "https://navahermosa.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026": [
+   "https://navahermosa.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115143;0&insert_number=5159&insert_year=2026": [
+   "https://aytopolan.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115144;0&insert_number=5160&insert_year=2026": [
+   "https://sonseca.sedelectronica.es/",
+   "https://sonseca.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115166;0&insert_number=5190&insert_year=2026": [
+   "https://ontigola.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115231;0&insert_number=5248&insert_year=2026": [
+   "https://sede.elvisodesanjuan.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115233;0&insert_number=5250&insert_year=2026": [
+   "https://sede.fuensalida.com/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115316;0&insert_number=5332&insert_year=2026": [
+   "https://arges.sedelectronica.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115348;0&insert_number=5363&insert_year=2026": [
+   "https://www.fuensalida.com/"
+  ]
+ },
+ "sinSede": [
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104753;0&insert_number=4977&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26104908;0&insert_number=4946&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26105010;0&insert_number=5027&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26105017;0&insert_number=5034&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26105018;0&insert_number=5035&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26105036;0&insert_number=5054&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115137;0&insert_number=5153&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115202;0&insert_number=5219&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115204;0&insert_number=5220&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115260;0&insert_number=5277&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115279;0&insert_number=5292&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115286;0&insert_number=5302&insert_year=2026"
+ ]
 }

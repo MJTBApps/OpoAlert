@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T10:42:16+00:00",
+ "updatedUTC": "2026-11-20T13:43:42+00:00",
  "items": {
   "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_2226_1738997c%232E%23pdf": {
    "days": 15,
@@ -13,7 +13,17 @@
   "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_1966_7bfe1862%232E%23pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
+ "sedes": {
+  "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_1966_7bfe1862%232E%23pdf": "https://burgodeosma.sedelectronica.es/",
+  "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_2226_1738997c%232E%23pdf": "https://portaltramitador.dipsoria.es/"
+ },
+ "sedeRaw": {
+  "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_1966_7bfe1862%232E%23pdf": [
+   "https://burgodeosma.sedelectronica.es/"
+  ],
+  "https://bop.dipsoria.es/index.php/mod.documentos/mem.descargar/fichero.documentos_2226_1738997c%232E%23pdf": [
+   "https://portaltramitador.dipsoria.es/"
+  ]
+ },
  "sinSede": []
 }
