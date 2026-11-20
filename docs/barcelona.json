@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-19T16:42:04.293476+00:00",
+  "lastCheckedUTC": "2026-11-20T06:40:56.337548+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 288,
-    "opportunities": 288,
+    "announcementsRead": 271,
+    "opportunities": 271,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-24",
@@ -48,12 +47,13 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-20"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 288,
-    "opportunities": 288
+    "announcementsRead": 271,
+    "opportunities": 271
   },
   "notices": [
     {
@@ -637,36 +637,6 @@
       "url": "https://cido.diba.cat/oposicions/22444917"
     },
     {
-      "id": "CIDO5-22429092",
-      "title": "Borsa de treball de places de Peó",
-      "entity": "Ajuntament de Granollers",
-      "date": "17/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22429092"
-    },
-    {
-      "id": "CIDO5-22429087",
-      "title": "Borsa de treball de places de Personal del grup AP (agrupacions professionals) (excepte peó)",
-      "entity": "Ajuntament de Granollers",
-      "date": "17/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22429087"
-    },
-    {
-      "id": "CIDO5-22426477",
-      "title": "Borsa de treball de places de Tècnic del grup A",
-      "entity": "Ajuntament de Granollers",
-      "date": "17/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22426477"
-    },
-    {
       "id": "CIDO5-22327369",
       "title": "1 plaça de Tècnic d'esports - Cap del servei d'esports",
       "entity": "Ajuntament d'Abrera",
@@ -815,16 +785,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22498882"
-    },
-    {
-      "id": "CIDO5-22498832",
-      "title": "1 plaça de Tècnic mitjà d'ensenyament primari",
-      "entity": "Ajuntament de Granollers",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22498832"
     },
     {
       "id": "CIDO5-22498758",
@@ -1607,16 +1567,6 @@
       "url": "https://cido.diba.cat/oposicions/22428414"
     },
     {
-      "id": "CIDO5-22365687",
-      "title": "Borsa de treball de places de Tècnic de projectes estratègics de finançament",
-      "entity": "Ajuntament de Cabrera de Mar",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22365687"
-    },
-    {
       "id": "CIDO5-22293829",
       "title": "1 plaça de Tècnic superior - Tècnic d'Arxiu",
       "entity": "Ajuntament de Mollet del Vallès",
@@ -1847,26 +1797,6 @@
       "url": "https://cido.diba.cat/oposicions/22429994"
     },
     {
-      "id": "CIDO5-22367699",
-      "title": "Borsa de treball de places d'Auxiliar de la llar del Servei d'Ajuda a Domicili",
-      "entity": "Ajuntament de Vilanova i la Geltrú - Assistència Integral Social i Sanitària (AISSA - mitjà propi)",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22367699"
-    },
-    {
-      "id": "CIDO5-22367671",
-      "title": "Borsa de treball de places de Treballador familiar del Servei d'Ajuda a Domicili",
-      "entity": "Ajuntament de Vilanova i la Geltrú - Assistència Integral Social i Sanitària (AISSA - mitjà propi)",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22367671"
-    },
-    {
       "id": "CIDO5-22250125",
       "title": "1 plaça de Tècnic de Transparència i Participació Ciutadana",
       "entity": "Ajuntament de Sant Andreu de Llavaneres",
@@ -2077,26 +2007,6 @@
       "url": "https://cido.diba.cat/oposicions/13743557"
     },
     {
-      "id": "CIDO5-22442985",
-      "title": "2 places d'Agent de civisme. Pla local d'ocupació 2025",
-      "entity": "Ajuntament de Torelló",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22442985"
-    },
-    {
-      "id": "CIDO5-22442967",
-      "title": "2 places de Tècnic mitjà de suport. Pla local d'ocupació 2025",
-      "entity": "Ajuntament de Torelló",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22442967"
-    },
-    {
       "id": "CIDO5-22442616",
       "title": "Borsa de treball de places d'Administratiu",
       "entity": "Ajuntament d'Esparreguera",
@@ -2127,16 +2037,6 @@
       "url": "https://cido.diba.cat/oposicions/18464642"
     },
     {
-      "id": "CIDO5-16772071",
-      "title": "2 places de Treballador social",
-      "entity": "Ajuntament de la Garriga",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16772071"
-    },
-    {
       "id": "CIDO5-22461683",
       "title": "Borsa de treball de places de Tècnic superior Desenvolupament de Programari i Administració Electrònica",
       "entity": "Ajuntament de Castelldefels",
@@ -2145,16 +2045,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22461683"
-    },
-    {
-      "id": "CIDO5-22444481",
-      "title": "1 plaça de Tècnic de seguretat per a l'Anella",
-      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
-      "date": "04/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22444481"
     },
     {
       "id": "CIDO5-22433976",
@@ -2445,16 +2335,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22327578"
-    },
-    {
-      "id": "CIDO5-16596329",
-      "title": "2 places de Peó d'obres",
-      "entity": "Ajuntament de Castellbisbal",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16596329"
     },
     {
       "id": "CIDO5-22365729",
@@ -2817,16 +2697,6 @@
       "url": "https://cido.diba.cat/oposicions/22372064"
     },
     {
-      "id": "CIDO5-22367414",
-      "title": "Borsa de treball de places d'Enginyer tècnic d'instal·lacions",
-      "entity": "Ajuntament de Manresa",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22367414"
-    },
-    {
       "id": "CIDO5-22333721",
       "title": "1 plaça d'Oficial 2a de manteniment",
       "entity": "Ajuntament d'Òrrius",
@@ -2887,26 +2757,6 @@
       "url": "https://cido.diba.cat/oposicions/22323538"
     },
     {
-      "id": "CIDO5-22276745",
-      "title": "1 plaça de Coordinador i treballador social de l'Àrea Bàsica de Serveis Socials",
-      "entity": "Mancomunitat de Municipis de la Comarca del Lluçanès",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22276745"
-    },
-    {
-      "id": "CIDO5-22276691",
-      "title": "1 plaça de Director de l'Àrea Bàsica de Serveis Socials",
-      "entity": "Mancomunitat de Municipis de la Comarca del Lluçanès",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22276691"
-    },
-    {
       "id": "CIDO5-21986381",
       "title": "4 places d'Agent de Policia Local",
       "entity": "Ajuntament del Papiol",
@@ -2915,26 +2765,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21986381"
-    },
-    {
-      "id": "CIDO5-19188129",
-      "title": "1 plaça de Director",
-      "entity": "Ajuntament de Sant Esteve de Palautordera - Patronat Municipal de Música Jaume Puig Arabia",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/19188129"
-    },
-    {
-      "id": "CIDO5-22367182",
-      "title": "1 plaça de Cap d'Unitat SMOU - Direcció Serveis mobilitat urbana",
-      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
-      "date": "21/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22367182"
     }
   ]
 }

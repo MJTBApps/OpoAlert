@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-19T16:42:04.293476+00:00",
+  "lastCheckedUTC": "2026-11-20T06:40:56.337548+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 95,
-    "opportunities": 95,
+    "announcementsRead": 91,
+    "opportunities": 91,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -41,19 +40,20 @@
       "2026-11-19"
     ],
     "nonPublicationDates": [
-      "2026-10-21",
+      "2026-10-22",
       "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-20"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 95,
-    "opportunities": 95
+    "announcementsRead": 91,
+    "opportunities": 91
   },
   "notices": [
     {
@@ -387,16 +387,6 @@
       "url": "https://cido.diba.cat/oposicions/16511262"
     },
     {
-      "id": "CIDO8-22484489",
-      "title": "Borsa de treball de places de Monitor-netejador de menjador escolar",
-      "entity": "Ajuntament de l'Ampolla",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22484489"
-    },
-    {
       "id": "CIDO8-22484439",
       "title": "Borsa de treball de places de Personal de neteja de les dependències municipals",
       "entity": "Ajuntament d'Alcover",
@@ -565,16 +555,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18011934"
-    },
-    {
-      "id": "CIDO8-22445973",
-      "title": "Borsa de treball de places de Guàrdia municipal",
-      "entity": "Ajuntament de l'Aldea",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22445973"
     },
     {
       "id": "CIDO8-21837947",
@@ -887,16 +867,6 @@
       "url": "https://cido.diba.cat/oposicions/17988011"
     },
     {
-      "id": "CIDO8-16758438",
-      "title": "1 plaça de Vigilant municipal",
-      "entity": "Ajuntament de la Selva del Camp",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16758438"
-    },
-    {
       "id": "CIDO8-22397008",
       "title": "1 plaça de Sergent",
       "entity": "Ajuntament de Calafell",
@@ -995,16 +965,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20995800"
-    },
-    {
-      "id": "CIDO8-22353627",
-      "title": "Borsa de treball de places d'Interventor",
-      "entity": "Ajuntament d'Alcanar",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22353627"
     }
   ]
 }
