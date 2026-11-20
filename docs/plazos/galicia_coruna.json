@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T09:41:34+00:00",
+ "updatedUTC": "2026-11-20T10:42:16+00:00",
  "items": {
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006942.pdf": {
    "days": 20,
@@ -154,7 +154,120 @@
   "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007553.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf": "https://outes.sedelectronica.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf": "https://ortigueira.sedelectronica.es/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006892.pdf": "https://sede.ribeira.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006912.pdf": "https://sede.coiros.es/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006918.pdf": "https://www.sede.carballo.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006997.pdf": "https://dacoruna.convoca.online/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000006765.pdf": "https://sede.muros.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007052.pdf": "https://sede.ribeira.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007085.pdf": "https://sede.ribeira.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007086.pdf": "https://sede.ribeira.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/06/2026_0000007153.pdf": "https://sede.sada.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007396.pdf": "https://dacoruna.convoca.online/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007420.pdf": "https://sede.manon.es/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007421.pdf": "https://sede.manon.es/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/18/2026_0000007471.pdf": "https://sede.alaracha.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/18/2026_0000007496.pdf": "https://sede.betanzos.gal/",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007549.pdf": "https://sede.dacoruna.gal/"
+ },
+ "sedeRaw": {
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf": [
+   "https://outes.sedelectronica.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf": [
+   "https://ortigueira.sedelectronica.es/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006892.pdf": [
+   "https://sede.ribeira.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006912.pdf": [
+   "https://sede.coiros.es/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006918.pdf": [
+   "https://www.sede.carballo.gal/",
+   "https://sede.dacoruna.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006997.pdf": [
+   "https://dacoruna.convoca.online/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000006765.pdf": [
+   "https://sede.muros.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007052.pdf": [
+   "https://sede.ribeira.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007085.pdf": [
+   "https://sede.ribeira.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007086.pdf": [
+   "https://sede.ribeira.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/06/2026_0000007153.pdf": [
+   "https://sede.sada.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007396.pdf": [
+   "https://dacoruna.convoca.online/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007420.pdf": [
+   "https://sede.manon.es/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/17/2026_0000007421.pdf": [
+   "https://sede.manon.es/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/18/2026_0000007471.pdf": [
+   "https://sede.alaracha.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/18/2026_0000007496.pdf": [
+   "https://sede.betanzos.gal/"
+  ],
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007549.pdf": [
+   "https://sede.dacoruna.gal/"
+  ]
+ },
+ "sinSede": [
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006802.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006785.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006873.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006874.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006877.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006902.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006891.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006921.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006929.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006938.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006940.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006941.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006942.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006946.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006954.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/30/2026_0000006970.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/30/2026_0000006973.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000007018.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000007099.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/03/2026_0000007053.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/04/2026_0000007089.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/04/2026_0000007093.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/04/2026_0000007171.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/05/2026_0000007013.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/05/2026_0000007051.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/06/2026_0000007156.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/06/2026_0000007181.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007198.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007202.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007220.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/09/2026_0000007231.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/10/2026_0000007249.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/11/2026_0000007281.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007343.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007344.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007358.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/13/2026_0000007378.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/19/2026_0000007517.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/19/2026_0000007521.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007545.pdf",
+  "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007553.pdf"
+ ]
 }

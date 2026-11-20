@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T09:41:34+00:00",
+ "updatedUTC": "2026-11-20T10:42:16+00:00",
  "items": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": {
    "days": 10,
@@ -356,7 +356,246 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14489&lang=es"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12783&lang=es": "https://tavernesblanques.sede.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12797&lang=es": "https://sede.paterna.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12798&lang=es": "https://www.valencia.es/sede",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12807&lang=es": "https://sede.lliria.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12809&lang=es": "https://sede.lliria.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12827&lang=es": "https://barxeta.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12840&lang=es": "https://sede.lliria.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12874&lang=es": "https://manra.sede.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": "https://www.benaguasil.eu/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12953&lang=es": "https://www.benaguasil.eu/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12959&lang=es": "https://elperello.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13015&lang=es": "https://manra.sede.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13036&lang=es": "https://sede.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13037&lang=es": "https://sede.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13038&lang=es": "https://sede.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13039&lang=es": "https://sede.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13040&lang=es": "https://sede.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13068&lang=es": "https://castello.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13115&lang=es": "https://manises.sedipualba.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es": "https://utiel.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13254&lang=es": "https://beniparrell.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13324&lang=es": "https://massalfassar.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13432&lang=es": "https://lolleria.convoca.online/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": "https://www.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13494&lang=es": "https://oliva.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13554&lang=es": "https://manra.sede.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13555&lang=es": "https://lolleria.convoca.online/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13742&lang=es": "https://manises.sedipualba.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13774&lang=es": "https://guadassequies.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13810&lang=es": "https://www.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13879&lang=es": "https://alcublas.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13901&lang=es": "https://mancomunitatriberabaixa.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13902&lang=es": "https://mancomunitatriberabaixa.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13903&lang=es": "https://mancomunitatriberabaixa.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13918&lang=es": "https://meliana.sede.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13919&lang=es": "https://mancomunitatdelasafor.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13920&lang=es": "https://mancomunitatdelasafor.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13990&lang=es": "https://benifaio.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14006&lang=es": "https://www.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14007&lang=es": "https://sede.valencia.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14063&lang=es": "https://mancomunitatriberabaixa.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14065&lang=es": "https://mancomunitatriberabaixa.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14104&lang=es": "https://www.quartdepoblet.sedipualba.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14117&lang=es": "https://mancomunitatriberabaixa.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14173&lang=es": "https://lolleria.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14174&lang=es": "https://lolleria.convoca.online/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14196&lang=es": "https://quartdepoblet.sedipualba.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14206&lang=es": "https://benifaio.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12783&lang=es": [
+   "https://tavernesblanques.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12797&lang=es": [
+   "https://sede.paterna.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12798&lang=es": [
+   "https://www.valencia.es/sede"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12807&lang=es": [
+   "https://sede.lliria.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12809&lang=es": [
+   "https://sede.lliria.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12827&lang=es": [
+   "https://barxeta.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12840&lang=es": [
+   "https://sede.lliria.es/",
+   "https://bop.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12874&lang=es": [
+   "https://manra.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": [
+   "https://www.benaguasil.eu/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12953&lang=es": [
+   "https://www.benaguasil.eu/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12959&lang=es": [
+   "https://elperello.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13015&lang=es": [
+   "https://manra.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13036&lang=es": [
+   "https://sede.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13037&lang=es": [
+   "https://sede.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13038&lang=es": [
+   "https://sede.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13039&lang=es": [
+   "https://sede.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13040&lang=es": [
+   "https://sede.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13068&lang=es": [
+   "https://castello.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13115&lang=es": [
+   "https://manises.sedipualba.es/",
+   "https://bop.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es": [
+   "https://utiel.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13254&lang=es": [
+   "https://beniparrell.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13324&lang=es": [
+   "https://massalfassar.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13432&lang=es": [
+   "https://lolleria.convoca.online/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": [
+   "https://www.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13494&lang=es": [
+   "https://oliva.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13554&lang=es": [
+   "https://manra.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13555&lang=es": [
+   "https://lolleria.convoca.online/",
+   "https://lolleria.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13669&lang=es": [
+   "https://bop.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13742&lang=es": [
+   "https://manises.sedipualba.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13774&lang=es": [
+   "https://guadassequies.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13810&lang=es": [
+   "https://www.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13879&lang=es": [
+   "https://alcublas.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13901&lang=es": [
+   "https://mancomunitatriberabaixa.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13902&lang=es": [
+   "https://mancomunitatriberabaixa.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13903&lang=es": [
+   "https://mancomunitatriberabaixa.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13918&lang=es": [
+   "https://meliana.sede.dival.es/",
+   "https://www.meliana.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13919&lang=es": [
+   "https://mancomunitatdelasafor.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13920&lang=es": [
+   "https://mancomunitatdelasafor.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13990&lang=es": [
+   "https://benifaio.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14006&lang=es": [
+   "https://www.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14007&lang=es": [
+   "https://sede.valencia.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14063&lang=es": [
+   "https://mancomunitatriberabaixa.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14065&lang=es": [
+   "https://mancomunitatriberabaixa.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14104&lang=es": [
+   "https://www.quartdepoblet.sedipualba.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14117&lang=es": [
+   "https://mancomunitatriberabaixa.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14173&lang=es": [
+   "https://lolleria.sedelectronica.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14174&lang=es": [
+   "https://lolleria.convoca.online/",
+   "https://lolleria.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14196&lang=es": [
+   "https://quartdepoblet.sedipualba.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14206&lang=es": [
+   "https://benifaio.sedelectronica.es/"
+  ]
+ },
+ "sinSede": [
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12754&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12787&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12788&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12914&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12915&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13079&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13080&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13108&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13135&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13136&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13214&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13269&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13314&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13334&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13350&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13351&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13355&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13477&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13479&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13481&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13523&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13589&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13727&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13728&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13749&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13819&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13922&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13951&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13961&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13984&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13989&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14046&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14064&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14133&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14489&lang=es"
+ ]
 }

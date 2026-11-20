@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T09:41:34+00:00",
+ "updatedUTC": "2026-11-20T10:42:16+00:00",
  "items": {
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909144.pdf": {
    "days": 20,
@@ -422,8 +422,183 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409920.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf"
  ],
- "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "tries": {
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209289.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209277.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209269.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209268.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209266.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109407.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109371.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109368.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109340.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/211/202621109242.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009329.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009311.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009206.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009180.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009179.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909383.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909144.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809325.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809310.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809301.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809233.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809231.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809215.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809214.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809213.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809057.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709245.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709020.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620609228.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620609149.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620609129.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620609127.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620609120.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620608972.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620608965.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620608958.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620608956.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509174.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509173.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509172.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509171.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509151.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509150.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620508937.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620508923.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620508921.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/204/202620409029.pdf": 1,
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/204/202620408881.pdf": 1
+ },
+ "sedes": {
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309490.pdf": "https://www.lloret.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309585.pdf": "https://www.castello.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409364.pdf": "https://tossademar.eadministracio.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409561.pdf": "https://ciutadania.guixols.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509404.pdf": "https://seu.banyoles.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509443.pdf": "https://seu.palafrugell.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509455.pdf": "https://www.seu-e.cat/ca/web/bascara",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509608.pdf": "https://baixemporda.convoca.online/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509722.pdf": "https://www.blanes.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509723.pdf": "https://www.blanes.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609660.pdf": "https://www.seu-e.cat/es/web/salt",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009737.pdf": "https://sede.sepe.gob.es/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009739.pdf": "https://sede.sepe.gob.es/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009754.pdf": "https://seu.calonge.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009763.pdf": "https://seu.palafrugell.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010042.pdf": "https://baixemporda.convoca.online/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010043.pdf": "https://www.seu-e.cat/es/web/salt",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010051.pdf": "https://www.castellfollitdelaroca.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010025.pdf": "https://tauler.seu.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010095.pdf": "https://caldesdemalavella.eadministracio.cat/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409904.pdf": "https://seu-e.cat/ca/web/riudellotsdelaselva",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409906.pdf": "https://sede.sepe.gob.es/",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf": "https://www.blanes.cat/"
+ },
+ "sedeRaw": {
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309490.pdf": [
+   "https://www.lloret.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309585.pdf": [
+   "https://www.castello.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409364.pdf": [
+   "https://tossademar.eadministracio.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409561.pdf": [
+   "https://ciutadania.guixols.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509404.pdf": [
+   "https://seu.banyoles.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509443.pdf": [
+   "https://seu.palafrugell.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509455.pdf": [
+   "https://www.seu-e.cat/ca/web/bascara"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509608.pdf": [
+   "https://baixemporda.convoca.online/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509722.pdf": [
+   "https://www.blanes.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509723.pdf": [
+   "https://www.blanes.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609660.pdf": [
+   "https://www.seu-e.cat/es/web/salt",
+   "https://seu-e.cat/ca/web/salt"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009737.pdf": [
+   "https://sede.sepe.gob.es/",
+   "https://www.blanes.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009739.pdf": [
+   "https://sede.sepe.gob.es/",
+   "https://www.blanes.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009754.pdf": [
+   "https://seu.calonge.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009763.pdf": [
+   "https://seu.palafrugell.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010042.pdf": [
+   "https://baixemporda.convoca.online/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010043.pdf": [
+   "https://www.seu-e.cat/es/web/salt"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010051.pdf": [
+   "https://www.castellfollitdelaroca.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010025.pdf": [
+   "https://tauler.seu.cat/",
+   "https://www.olot.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010095.pdf": [
+   "https://caldesdemalavella.eadministracio.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409904.pdf": [
+   "https://seu-e.cat/ca/web/riudellotsdelaselva"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409906.pdf": [
+   "https://sede.sepe.gob.es/",
+   "https://www.blanes.cat/"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf": [
+   "https://www.blanes.cat/"
+  ]
+ },
+ "sinSede": [
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/212/202621209460.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/213/202621309476.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409374.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409392.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409393.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/214/202621409640.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/215/202621509633.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609523.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609543.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609695.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/216/202621609787.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/217/202621709746.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/217/202621709773.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/217/202621709841.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/218/202621809807.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/219/202621909824.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009760.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009782.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/220/202622009887.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/221/202622109991.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/2026223010056.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/202622309970.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010059.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010108.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409910.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409920.pdf"
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T09:41:34+00:00",
+ "updatedUTC": "2026-11-20T10:42:16+00:00",
  "items": {
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354": {
    "days": 20,
@@ -141,7 +141,80 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200": "https://campodecriptana.sedelectronica.es/",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835203": "https://www.ciudadreal.es/",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871432": "https://www.ciudadreal.es/sede",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871438": "https://puebladedonrodrigo.sedelectronica.es/",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887305": "https://www.almodovardelcampo.es/",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887310": "https://herencia.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200": [
+   "https://campodecriptana.sedelectronica.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835203": [
+   "https://www.ciudadreal.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7857881": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871432": [
+   "https://www.ciudadreal.es/sede"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871438": [
+   "https://puebladedonrodrigo.sedelectronica.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878005": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878006": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878007": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878008": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878009": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878010": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878011": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878012": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7878013": [
+   "https://sede.dipucr.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887305": [
+   "https://www.almodovardelcampo.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887310": [
+   "https://herencia.sedelectronica.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890882": [
+   "https://sede.dipucr.es/"
+  ]
+ },
+ "sinSede": [
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835204",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835215",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864886",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864889",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7867797",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871440",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7874477",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890884",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440"
+ ]
 }

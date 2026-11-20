@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T09:41:34+00:00",
+ "updatedUTC": "2026-11-20T10:42:16+00:00",
  "items": {
   "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-261026-0002_es.pdf": {
    "days": 20,
@@ -390,7 +390,303 @@
   "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0597-171126-0003_es.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://www.xunta.gal/dog/Publicados/2026/20261022/AnuncioG0766-161026-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261022/AnuncioU500-151026-0001_es.pdf": "https://sede.uvigo.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioO92-201026-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioU500-151026-0002_es.pdf": "https://sede.uvigo.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261026/AnuncioG0759-161026-3_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261027/AnuncioU500-191026-0001_es.pdf": "https://sede.uvigo.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0597-231026-0007_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioL457-261026-0002_es.pdf": "https://sarria.sedelectronica.es/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0008_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-261026-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-261026-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG2017-211026-0001_es.pdf": "https://sede.udc.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG0597-271026-0005_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG0759-271026-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0426-291026-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-021126-0008_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG2017-281026-0001_es.pdf": "https://sede.udc.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0597-021126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0597-021126-0003_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0760-041126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0762-021126-0007_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0767-021126-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261111/AnuncioG0759-031126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261111/AnuncioG2017-021126-0001_es.pdf": "https://sede.udc.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioG0759-041126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioL240-081126-0001_es.pdf": "https://portas.sedelectronica.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-051126-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-091126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG2017-051126-0001_es.pdf": "https://sede.udc.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioL229-231026-0001_es.pdf": "https://concellodemoana.sedelectronica.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioL229-231026-0002_es.pdf": "https://concellodemoana.sedelectronica.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0759-101126-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0759-101126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0759-101126-0003_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0765-091126-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0765-091126-0002_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0760-131126-0001_es.pdf": "https://sede.xunta.gal/",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0760-131126-0002_es.pdf": "https://sede.xunta.gal/"
+ },
+ "sedeRaw": {
+  "https://www.xunta.gal/dog/Publicados/2026/20261022/AnuncioG0766-161026-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261022/AnuncioU500-151026-0001_es.pdf": [
+   "https://sede.uvigo.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioO92-201026-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioU500-151026-0002_es.pdf": [
+   "https://sede.uvigo.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261026/AnuncioG0759-161026-3_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261027/AnuncioU500-191026-0001_es.pdf": [
+   "https://sede.uvigo.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0597-231026-0007_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioL457-261026-0002_es.pdf": [
+   "https://sarria.sedelectronica.es/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0008_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-261026-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-261026-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG2017-211026-0001_es.pdf": [
+   "https://sede.udc.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG0597-271026-0005_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG0759-271026-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0426-291026-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-021126-0008_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG2017-281026-0001_es.pdf": [
+   "https://sede.udc.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0597-021126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0597-021126-0003_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0760-041126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0762-021126-0007_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0767-021126-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261111/AnuncioG0759-031126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261111/AnuncioG2017-021126-0001_es.pdf": [
+   "https://sede.udc.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioG0759-041126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioL240-081126-0001_es.pdf": [
+   "https://portas.sedelectronica.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-051126-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-091126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG2017-051126-0001_es.pdf": [
+   "https://sede.udc.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioL229-231026-0001_es.pdf": [
+   "https://concellodemoana.sedelectronica.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioL229-231026-0002_es.pdf": [
+   "https://concellodemoana.sedelectronica.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0759-101126-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0759-101126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0759-101126-0003_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0765-091126-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0765-091126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0760-131126-0001_es.pdf": [
+   "https://sede.xunta.gal/"
+  ],
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0760-131126-0002_es.pdf": [
+   "https://sede.xunta.gal/"
+  ]
+ },
+ "sinSede": [
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioG0427-161026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioG0597-161026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261023/AnuncioG0597-161026-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261026/AnuncioC3K1-061026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261026/AnuncioG0761-161026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261027/AnuncioG0765-211026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261027/AnuncioG2018-201026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0597-141026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0597-141026-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0597-201026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0597-221026-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0597-221026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0763-211026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG0900-231026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG1351-221026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioG2017-201026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioL257-071026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261028/AnuncioL381-061026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0003-211026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0003-211026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0003-211026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0597-161026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0597-231026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0597-271026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG0597-271026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261029/AnuncioG1557-071026-1_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0008_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0009_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0012_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0013_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0014_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0015_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0016_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0017_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-211026-0018_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-221026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-231026-0009_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG0597-261026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261030/AnuncioG2018-191026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0003-231026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0003-231026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0597-301026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG0597-301026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261102/AnuncioG2017-221026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioC3K1-281026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG0003-231026-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG0597-271026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261103/AnuncioG2017-231026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-021126-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-271026-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-271026-0008_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-271026-0009_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-271026-0010_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-271026-0011_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-281026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0008_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0009_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0010_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0011_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0012_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0013_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0014_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0015_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0016_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0017_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261105/AnuncioG0597-291026-0018_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioC141-271026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-291026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-291026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-291026-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-291026-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-301026-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-301026-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-301026-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-301026-0008_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG0597-301026-0009_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioG2017-281026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261106/AnuncioL168-161026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0003-301026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0460-301026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0597-041126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0597-041126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0597-041126-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261109/AnuncioG0759-031126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioC3K1-031126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0759-021126-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG0767-021126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioG2017-021126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261110/AnuncioO601-021126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261111/AnuncioC3K1-041126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioG0003-051126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioG0597-061126-0009_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261112/AnuncioL456-221026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioC3K1-051126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0003-051126-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-061126-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-061126-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-061126-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-061126-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-061126-0007_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG0597-291026-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG2018-061126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG2018-061126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG2018-291026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261113/AnuncioG2018-291026-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0003-051126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0003-051126-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0003-051126-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0003-061126-0004_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0003-061126-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0426-061126-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0597-091126-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0597-101126-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG0597-101126-0005_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261116/AnuncioG2017-061126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0761-091126-0003_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261117/AnuncioG0766-121126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261118/AnuncioG0762-121126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioC3Q2-131126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioG0003-111126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioG0003-111126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioG0198-111126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioG0597-131126-0006_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioG0597-181126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioL173-291026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261119/AnuncioL351-291026-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0003-101126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0003-101126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0003-121126-0001_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0597-171126-0002_es.pdf",
+  "https://www.xunta.gal/dog/Publicados/2026/20261120/AnuncioG0597-171126-0003_es.pdf"
+ ]
 }

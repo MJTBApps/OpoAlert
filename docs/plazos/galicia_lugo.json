@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T09:41:34+00:00",
+ "updatedUTC": "2026-11-20T10:42:16+00:00",
  "items": {
   "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/31-10-2026.pdf": {
    "days": 20,
@@ -37,6 +37,12 @@
    "kind": "hábiles",
    "text": "Resultando que no Boletín Oficial do Estado de data 24 de febreiro de 2023 número 47 publícase a convocatoria para prover varias prazas, establecendo que o prazo de presentación de solicitudes será de 20 días hábiles a contar dende o seguinte ao da publicación, entre as que se atopa a praza de operario do punto limpo.",
    "page": 1
+  },
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/20-11-2026.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "…o sistema de oposición libre; e ábrese o prazo de presentación de solicitudes, que será de 10 días hábiles a contar desde o día seguinte á publicación deste anuncio no Boletín Oficial da Provincia de Lugo.",
+   "page": 1
   }
  },
  "none": [
@@ -47,7 +53,31 @@
   "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/28-10-2026.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/06-11-2026.pdf": "https://castroderei.sedelectronica.gal/",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/12-11-2026.pdf": "https://concellocastroverde.sedelectronica.es/",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/20-11-2026.pdf": "https://concellodealfoz.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/06-11-2026.pdf": [
+   "https://castroderei.sedelectronica.gal/"
+  ],
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/12-11-2026.pdf": [
+   "https://concellocastroverde.sedelectronica.es/"
+  ],
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/20-11-2026.pdf": [
+   "https://concellodealfoz.sedelectronica.es/"
+  ]
+ },
+ "sinSede": [
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/07-11-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/10-11-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/16-11-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/18-11-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/22-10-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/23-10-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/26-10-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/28-10-2026.pdf",
+  "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/31-10-2026.pdf"
+ ]
 }
