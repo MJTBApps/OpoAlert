@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-20T06:31:17.001753+00:00",
+  "lastCheckedUTC": "2026-11-20T09:34:52.789655+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "6432",
-    "pagesVisited": 13,
-    "announcementsRead": 126,
-    "opportunities": 13
+    "bulletin": "6433",
+    "pagesVisited": 14,
+    "announcementsRead": 144,
+    "opportunities": 15
   },
   "historyCoverage": {
     "complete": true,
@@ -28,7 +28,8 @@
       "6430",
       "6431",
       "E52",
-      "6432"
+      "6432",
+      "6433"
     ],
     "publicationDates": [
       "2026-10-23",
@@ -43,7 +44,8 @@
       "2026-11-10",
       "2026-11-13",
       "2026-11-13",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-22",
@@ -65,14 +67,33 @@
       "2026-11-15",
       "2026-11-16",
       "2026-11-18",
-      "2026-11-19",
-      "2026-11-20"
+      "2026-11-19"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 126,
-    "opportunities": 13
+    "issuesRead": 14,
+    "announcementsRead": 144,
+    "opportunities": 15
   },
   "notices": [
+    {
+      "id": "ML-2026-A-1313",
+      "province": "Melilla (BOME)",
+      "title": "Nota informativa para la celebración del segundo ejercicio correspondiente a la convocatoria para la provisión en propiedad de treinta (30) plazas de Auxiliar de Administración, pertenecientes a la Escala de Administración General, Subescala Auxiliar, por el procedimiento de oposición libre (con reserva de cuatro plazas para el cupo de personas con diversidad funcional).",
+      "entity": "Tribunal de examen",
+      "date": "20/11/2026",
+      "bulletin": "6433",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1313.pdf"
+    },
+    {
+      "id": "ML-2026-A-1302",
+      "province": "Melilla (BOME)",
+      "title": "Resolución nº 1048, de fecha 17 de noviembre de 2026, relativa a relación provisional de la convocatoria pública para la concesión, en régimen de concurrencia competitiva, de las plazas de Viajes Ocio-Culturales para personas mayores - año 2026.",
+      "entity": "CONSEJERÍA DE CULTURA, PATRIMONIO CULTURAL Y DEL MAYOR",
+      "date": "20/11/2026",
+      "bulletin": "6433",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1302.pdf"
+    },
     {
       "id": "ML-2026-A-1277",
       "province": "Melilla (BOME)",
