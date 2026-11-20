@@ -64,7 +64,9 @@ public enum Deadlines {
     private static func file(for notice: Notice, session: URLSession) async -> Data? {
         guard OfficialDocument.isPdf(notice),
               let url = url(for: Source.of(notice)), url.scheme == "https", url.host == "mjtbapps.github.io" else { return nil }
-        var request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad, timeoutInterval: 15)
+        // Caché normal de HTTP (GitHub Pages: 10 min). Con `.returnCacheDataElseLoad` el iPhone se
+        // quedaba para siempre con el primer archivo y no veía los plazos ni las sedes nuevas.
+        var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 15)
         request.setValue("OpoAlert-iOS/1.0", forHTTPHeaderField: "User-Agent")
         guard let (data, response) = try? await session.data(for: request),
               (response as? HTTPURLResponse)?.statusCode == 200, data.count < 3_000_000 else { return nil }
