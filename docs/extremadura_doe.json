@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Extremadura (DOE)",
   "source": "https://doe.juntaex.es/",
-  "lastCheckedUTC": "2026-11-19T16:33:55.682611+00:00",
+  "lastCheckedUTC": "2026-11-20T06:28:31.192235+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223O",
+    "bulletin": "224O",
     "pagesVisited": 22,
-    "announcementsRead": 620,
+    "announcementsRead": 614,
     "opportunities": 52
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "203O",
       "204O",
       "205O",
       "206O",
@@ -37,10 +36,10 @@
       "220O",
       "221O",
       "222O",
-      "223O"
+      "223O",
+      "224O"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -61,7 +60,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -75,10 +75,30 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 620,
+    "announcementsRead": 614,
     "opportunities": 52
   },
   "notices": [
+    {
+      "id": "EX-2026-26081982",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos.- Anuncio de 12 de noviembre de 2026 por el que se da publicidad a la convocatoria de una plaza de Auxiliar Administrativo, mediante oposición, turno libre, correspondiente a la Oferta de Empleo 2026.",
+      "entity": "AYUNTAMIENTO DE PERALEDA DE LA MATA",
+      "date": "20/11/2026",
+      "bulletin": "224O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2240o/26081982.pdf"
+    },
+    {
+      "id": "EX-2026-26062953",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos. Lista de espera.- Resolución de 12 de noviembre de 2026, de la Dirección General de Función Pública, por la que se constituye lista de espera derivada de la Orden de 23 de diciembre de 2024, por la que se convocan pruebas selectivas para el acceso a plazas vacantes de personal laboral del Grupo II, categoría Educador/a de la Administración de la Comunidad Autónoma de Extremadura.",
+      "entity": "CONSEJERÍA DE HACIENDA, ADMINISTRACIÓN PÚBLICA Y DIÁLOGO SOCIAL",
+      "date": "20/11/2026",
+      "bulletin": "224O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2240o/26062953.pdf"
+    },
     {
       "id": "EX-2026-26081974",
       "province": "Extremadura (DOE)",
@@ -578,26 +598,6 @@
       "bulletin": "204O",
       "type": "Plaza / oposición",
       "url": "https://doe.juntaex.es/pdfs/doe/2026/2040o/26062630.pdf"
-    },
-    {
-      "id": "EX-2026-26081744",
-      "province": "Extremadura (DOE)",
-      "title": "Procesos selectivos.- Anuncio de 14 de octubre de 2026 por el que se da publicidad a las bases que han de regir la convocatoria para la provisión, mediante el sistema de concurso ordinario de méritos, del puesto de trabajo vacante de carácter no singularizado y reservado a personal funcionario de carrera \"321 Auxiliar Técnico Jefe de Grupo de Luces y Sonido\".",
-      "entity": "AYUNTAMIENTO DE ALMENDRALEJO",
-      "date": "21/10/2026",
-      "bulletin": "203O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/2030o/26081744.pdf"
-    },
-    {
-      "id": "EX-2026-26062612",
-      "province": "Extremadura (DOE)",
-      "title": "Oferta de Empleo Público.- Resolución de 13 de octubre de 2026, de la Gerencia, por la que se ejecuta el Acuerdo adoptado por el Consejo de Gobierno por el que se aprueba la Oferta de Empleo Público para el personal Técnico, de Gestión y de Administración y Servicios de la Universidad de Extremadura para el año 2026.",
-      "entity": "UNIVERSIDAD DE EXTREMADURA",
-      "date": "21/10/2026",
-      "bulletin": "203O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/2030o/26062612.pdf"
     }
   ]
 }

@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Cataluña (DOGC)",
   "source": "https://portaldogc.gencat.cat/eadop-rest/api/dogc/summaryDOGC",
-  "lastCheckedUTC": "2026-11-19T16:34:36.673623+00:00",
+  "lastCheckedUTC": "2026-11-20T06:29:41.735829+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "9798SN",
+    "bulletin": "9799SN",
     "pagesVisited": 46,
-    "announcementsRead": 2121,
-    "opportunities": 499
+    "announcementsRead": 2097,
+    "opportunities": 494
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "9777",
-      "9777SN",
       "9778",
       "9778SN",
       "9779",
@@ -61,11 +59,11 @@
       "9797",
       "9797SN",
       "9798",
-      "9798SN"
+      "9798SN",
+      "9799",
+      "9799SN"
     ],
     "publicationDates": [
-      "2026-10-21",
-      "2026-10-21",
       "2026-10-22",
       "2026-10-22",
       "2026-10-23",
@@ -109,7 +107,9 @@
       "2026-11-18",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -122,13 +122,9 @@
       "2026-11-15"
     ],
     "issuesRead": 46,
-    "announcementsRead": 2121,
-    "opportunities": 499,
+    "announcementsRead": 2097,
+    "opportunities": 494,
     "calendarEvidence": [
-      {
-        "date": "2026-10-21",
-        "mainBulletin": "9777"
-      },
       {
         "date": "2026-10-22",
         "mainBulletin": "9778"
@@ -244,120 +240,13 @@
       {
         "date": "2026-11-19",
         "mainBulletin": "9798"
+      },
+      {
+        "date": "2026-11-20",
+        "mainBulletin": "9799"
       }
     ],
     "sumariosVerificados": [
-      {
-        "date": "2026-10-21",
-        "main": "9777",
-        "editions": [
-          "9777"
-        ],
-        "counts": [
-          90
-        ],
-        "originalIds": [
-          "1057355",
-          "1057366",
-          "1057300",
-          "1057332",
-          "1057304",
-          "1057341",
-          "1057308",
-          "1057306",
-          "1057303",
-          "1057379",
-          "1057313",
-          "1057372",
-          "1057321",
-          "1057358",
-          "1057316",
-          "1057314",
-          "1057373",
-          "1057369",
-          "1057323",
-          "1057378",
-          "1057362",
-          "1057315",
-          "1057296",
-          "1057364",
-          "1057349",
-          "1057347",
-          "1057318",
-          "1057363",
-          "1057382",
-          "1057351",
-          "1057367",
-          "1057334",
-          "1057299",
-          "1057335",
-          "1057302",
-          "1057301",
-          "1057295",
-          "1057381",
-          "1057346",
-          "1057294",
-          "1057359",
-          "1057348",
-          "1057330",
-          "1057297",
-          "1057328",
-          "1057375",
-          "1057343",
-          "1057353",
-          "1057350",
-          "1057298",
-          "1057370",
-          "1057317",
-          "1057368",
-          "1057345",
-          "1057340",
-          "1057336",
-          "1057311",
-          "1057338",
-          "1057325",
-          "1057377",
-          "1057380",
-          "1057352",
-          "1057376",
-          "1057307",
-          "1057327",
-          "1057337",
-          "1057361",
-          "1057320",
-          "1057310",
-          "1057357",
-          "1057374",
-          "1057309",
-          "1057324",
-          "1057365",
-          "1057329",
-          "1057354",
-          "1057371",
-          "1057326",
-          "1057342",
-          "1057312",
-          "1057344",
-          "1057360",
-          "1057356",
-          "1057319",
-          "1057322",
-          "1057339",
-          "1057293",
-          "1057331",
-          "1057305",
-          "1057333"
-        ],
-        "supplement": "9777SN",
-        "supplementCount": 5,
-        "supplementIds": [
-          "1057385",
-          "1057384",
-          "1057387",
-          "1057386",
-          "1057383"
-        ]
-      },
       {
         "date": "2026-10-22",
         "main": "9778",
@@ -2723,193 +2612,96 @@
         "supplementIds": [
           "1059669"
         ]
+      },
+      {
+        "date": "2026-11-20",
+        "main": "9799",
+        "editions": [
+          "9799"
+        ],
+        "counts": [
+          67
+        ],
+        "originalIds": [
+          "1059711",
+          "1059697",
+          "1059710",
+          "1059721",
+          "1059678",
+          "1059737",
+          "1059693",
+          "1059728",
+          "1059703",
+          "1059715",
+          "1059688",
+          "1059685",
+          "1059706",
+          "1059736",
+          "1059676",
+          "1059677",
+          "1059731",
+          "1059730",
+          "1059716",
+          "1059702",
+          "1059691",
+          "1059707",
+          "1059705",
+          "1059719",
+          "1059689",
+          "1059674",
+          "1059699",
+          "1059690",
+          "1059675",
+          "1059739",
+          "1059727",
+          "1059723",
+          "1059681",
+          "1059700",
+          "1059718",
+          "1059724",
+          "1059698",
+          "1059683",
+          "1059709",
+          "1059714",
+          "1059712",
+          "1059695",
+          "1059725",
+          "1059729",
+          "1059680",
+          "1059720",
+          "1059717",
+          "1059708",
+          "1059684",
+          "1059734",
+          "1059692",
+          "1059704",
+          "1059733",
+          "1059673",
+          "1059726",
+          "1059682",
+          "1059679",
+          "1059735",
+          "1059738",
+          "1059696",
+          "1059722",
+          "1059713",
+          "1059701",
+          "1059687",
+          "1059686",
+          "1059694",
+          "1059732"
+        ],
+        "supplement": "9799SN",
+        "supplementCount": 4,
+        "supplementIds": [
+          "1059740",
+          "1059743",
+          "1059742",
+          "1059741"
+        ]
       }
     ],
     "candidateOriginalEvidence": [
-      {
-        "id": "1057308",
-        "cve": "CVE-DOGC-A-26292035-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 43039,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057306",
-        "cve": "CVE-DOGC-A-26292036-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 44403,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057303",
-        "cve": "CVE-DOGC-A-26292037-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 46337,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057313",
-        "cve": "CVE-DOGC-A-26292040-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 34488,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057348",
-        "cve": "CVE-DOGC-A-26289086-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 10806,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057330",
-        "cve": "CVE-DOGC-A-26289087-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 10061,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057328",
-        "cve": "CVE-DOGC-A-26287079-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 61027,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057375",
-        "cve": "CVE-DOGC-A-26287077-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 60845,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057353",
-        "cve": "CVE-DOGC-A-26289058-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 62900,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057350",
-        "cve": "CVE-DOGC-A-26289061-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 50557,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057298",
-        "cve": "CVE-DOGC-A-26287053-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 602,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057336",
-        "cve": "CVE-DOGC-A-26289034-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 649,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057380",
-        "cve": "CVE-DOGC-A-26287007-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 671,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057352",
-        "cve": "CVE-DOGC-A-26289032-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1984,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057361",
-        "cve": "CVE-DOGC-A-26287003-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 2865,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057320",
-        "cve": "CVE-DOGC-A-26287078-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1381,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057310",
-        "cve": "CVE-DOGC-A-26287067-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 731,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057357",
-        "cve": "CVE-DOGC-A-26287070-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1878,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057374",
-        "cve": "CVE-DOGC-A-26282071-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1347,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057371",
-        "cve": "CVE-DOGC-A-26288098-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1030,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057326",
-        "cve": "CVE-DOGC-A-26287048-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1593,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057342",
-        "cve": "CVE-DOGC-A-26289026-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 1203,
-        "authenticityVerified": true
-      },
-      {
-        "id": "1057305",
-        "cve": "CVE-DOGC-A-26289055-2026",
-        "issue": "9777",
-        "date": "2026-10-21",
-        "textChars": 3376,
-        "authenticityVerified": true
-      },
       {
         "id": "1057427",
         "cve": "CVE-DOGC-A-26293036-2026",
@@ -6711,6 +6503,150 @@
         "authenticityVerified": true
       },
       {
+        "id": "1059730",
+        "cve": "CVE-DOGC-A-26322047-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 2334,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059716",
+        "cve": "CVE-DOGC-A-26322051-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 33573,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059702",
+        "cve": "CVE-DOGC-A-26322052-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 47270,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059675",
+        "cve": "CVE-DOGC-A-26321019-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 777,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059739",
+        "cve": "CVE-DOGC-A-26321067-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 44776,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059727",
+        "cve": "CVE-DOGC-A-26320091-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 2215,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059681",
+        "cve": "CVE-DOGC-A-26317020-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 518,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059718",
+        "cve": "CVE-DOGC-A-26317053-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 844,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059680",
+        "cve": "CVE-DOGC-A-26321048-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 992,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059720",
+        "cve": "CVE-DOGC-A-26321043-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 1331,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059717",
+        "cve": "CVE-DOGC-A-26321046-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 1092,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059692",
+        "cve": "CVE-DOGC-A-26316021-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 1115,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059704",
+        "cve": "CVE-DOGC-A-26317015-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 1291,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059682",
+        "cve": "CVE-DOGC-A-26317085-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 39275,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059735",
+        "cve": "CVE-DOGC-A-26320005-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 2603,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059722",
+        "cve": "CVE-DOGC-A-26320082-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 929,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059713",
+        "cve": "CVE-DOGC-A-26317009-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 857,
+        "authenticityVerified": true
+      },
+      {
+        "id": "1059701",
+        "cve": "CVE-DOGC-A-26317010-2026",
+        "issue": "9799",
+        "date": "2026-11-20",
+        "textChars": 778,
+        "authenticityVerified": true
+      },
+      {
         "id": "1058646",
         "cve": "CVE-DOGC-A-26307019-2026",
         "issue": "9789SN",
@@ -6719,12 +6655,192 @@
         "authenticityVerified": true
       }
     ],
-    "originalCandidateDocumentsVerified": 499,
+    "originalCandidateDocumentsVerified": 494,
     "mainIssues": 22,
     "annexIssues": 2,
     "supplementsAudited": 22
   },
   "notices": [
+    {
+      "id": "DC-2026-1059739",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre aprovació de les bases específiques i la convocatòria del procés selectiu d'una plaça d'administratiu/iva, en règim de personal funcionari de carrera, en torn lliure, de l'Ajuntament d'Alp (exp. 2026001601)",
+      "entity": "Ajuntament d'Alp",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059739"
+    },
+    {
+      "id": "DC-2026-1059735",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre convocatòria del procés selectiu per cobrir definitivament dues places de tècnic/a superior en dret (exp. 3339/2026)",
+      "entity": "Consell Comarcal del Vallès Occidental",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059735"
+    },
+    {
+      "id": "DC-2026-1059730",
+      "province": "Cataluña (DOGC)",
+      "title": "Resolució TER/4259/2026, de 18 de novembre, de la directora de l'Institut Català d'Energia (ICAEN), de convocatòria del concurs oposició per a la provisió d'un lloc de treball de cap de Secció de Planificació Energètica, corresponent a l'oferta pública ordinària de personal laboral de l'Institut Català d'Energia per a l'any 2025",
+      "entity": "Institut Català d'Energia",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059730"
+    },
+    {
+      "id": "DC-2026-1059727",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre aprovació de l'oferta pública d'ocupació complementària per a l'exercici 2026 (exp. 1454-2026-1527)",
+      "entity": "Ajuntament de Bescanó",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059727"
+    },
+    {
+      "id": "DC-2026-1059722",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci pel qual s'amplia el termini de presentació de sol·licituds del procés de selecció de diverses places en règim laboral de la Fundació per a l'Atenció a Persones Dependents, corresponents a l'oferta pública d'ocupació per a l'estabilització de l'ocupació temporal de personal laboral (Llei 20/2021, de 28 de desembre, de mesures urgents per a la reducció de la temporalitat en l'ocupació pública, i taxes de reposició dels anys 2022, 2023, 2024 i 2025)",
+      "entity": "Fundació per a l'Atenció a Persones Dependents",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059722"
+    },
+    {
+      "id": "DC-2026-1059720",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre convocatòria del procés per a la selecció, com a funcionaris/àries de carrera, de divuit places d'administratiu/iva d'administració general, en torn de promoció interna",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059720"
+    },
+    {
+      "id": "DC-2026-1059718",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre aprovació de les bases del procés selectiu, per oposició lliure, per a la cobertura d'una plaça de tècnic/a de gestió per prestar serveis a la secció de Serveis Educatius, vacant a la plantilla de l'Ajuntament de Girona, de l'oferta pública d'ocupació 2026 (exp. 2026063918)",
+      "entity": "Ajuntament de Girona",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059718"
+    },
+    {
+      "id": "DC-2026-1059717",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre convocatòria del procés per a la selecció, com a funcionaris/àries de carrera, de dues places de tècnic/a auxiliar, vinculades al lloc de treball de tècnic/a auxiliar de retribucions de les persones, en torn de promoció interna",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059717"
+    },
+    {
+      "id": "DC-2026-1059716",
+      "province": "Cataluña (DOGC)",
+      "title": "Resolució ARP/4261/2026, de 3 de novembre, de convocatòria de concurs específic de mèrits i capacitats per a la provisió d'un lloc singular dels Serveis Territorials a Girona del Departament d'Agricultura, Ramaderia, Pesca i Alimentació (convocatòria de provisió núm. ARP/036/26)",
+      "entity": "Departament d'Agricultura, Ramaderia, Pesca i Alimentació",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059716"
+    },
+    {
+      "id": "DC-2026-1059713",
+      "province": "Cataluña (DOGC)",
+      "title": "Edicte relatiu a les bases específiques reguladores del procés de selecció d'una plaça de tècnic/a mitjà/ana de gestió",
+      "entity": "Organisme Autònom Local Xarxa de Serveis Urbans",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059713"
+    },
+    {
+      "id": "DC-2026-1059704",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre aprovació de les bases reguladores que regeixen la convocatòria del procés selectiu per a la cobertura, mitjançant concurs oposició lliure, d'una plaça d'oficial/a de paleta de caràcter indefinit i una plaça d'oficial/a de paleta mitjançant contracte de relleu",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059704"
+    },
+    {
+      "id": "DC-2026-1059702",
+      "province": "Cataluña (DOGC)",
+      "title": "Resolució ARP/4262/2026, de 30 d'octubre, de convocatòria de concurs específic de mèrits i capacitats per a la provisió de dos llocs de comandament de la Direcció de Serveis del Departament d'Agricultura, Ramaderia, Pesca i Alimentació (convocatòria de provisió núm. ARP/030/26)",
+      "entity": "Departament d'Agricultura, Ramaderia, Pesca i Alimentació",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059702"
+    },
+    {
+      "id": "DC-2026-1059701",
+      "province": "Cataluña (DOGC)",
+      "title": "Edicte relatiu a les bases específiques reguladores del procés de selecció de dues places d'oficial/a lampista",
+      "entity": "Organisme Autònom Local Xarxa de Serveis Urbans",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059701"
+    },
+    {
+      "id": "DC-2026-1059692",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre finalització del procés selectiu per cobrir una plaça de psicòleg/òloga de joventut",
+      "entity": "Ajuntament de Torredembarra",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059692"
+    },
+    {
+      "id": "DC-2026-1059682",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre aprovació de les bases i la convocatòria del procés de selecció, pel sistema de concurs de mèrits, per a la constitució d'una borsa de treball del Servei d'Acollida i Polítiques Migratòries, en règim de personal laboral temporal, per cobrir baixes mèdiques, reserves de lloc de treball, vacances i altres circumstàncies sobrevingudes del Consell Comarcal de l'Urgell",
+      "entity": "Consell Comarcal de l'Urgell",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Bolsa de trabajo",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059682"
+    },
+    {
+      "id": "DC-2026-1059681",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre aprovació de l'oferta pública d'ocupació per a l'any 2026",
+      "entity": "Ajuntament dels Garidells",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059681"
+    },
+    {
+      "id": "DC-2026-1059680",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre convocatòria del procés per a la selecció, com a funcionari/ària de carrera, d'una plaça de tècnic/a auxiliar, vinculada al lloc de treball de tècnic/a auxiliar de gestió de les persones, en torn de promoció interna",
+      "entity": "Ajuntament del Prat de Llobregat",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059680"
+    },
+    {
+      "id": "DC-2026-1059675",
+      "province": "Cataluña (DOGC)",
+      "title": "Anunci sobre convocatòria per cobrir una plaça d'auxiliar administratiu/iva",
+      "entity": "Ajuntament d'Almoster",
+      "date": "20/11/2026",
+      "bulletin": "9799",
+      "type": "Plaza / oposición",
+      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1059675"
+    },
     {
       "id": "DC-2026-1059668",
       "province": "Cataluña (DOGC)",
@@ -11484,236 +11600,6 @@
       "bulletin": "9778",
       "type": "Bolsa de trabajo",
       "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057394"
-    },
-    {
-      "id": "DC-2026-1057380",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre la convocatòria per cobrir una plaça de peó",
-      "entity": "Ajuntament de Querol",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057380"
-    },
-    {
-      "id": "DC-2026-1057375",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci relatiu a la convocatòria i les bases del procés selectiu per cobrir una plaça de professor/a de música, especialitat trombó i conjunt instrumental (RH-137/2026)",
-      "entity": "Ajuntament d'Artés",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057375"
-    },
-    {
-      "id": "DC-2026-1057374",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre convocatòria per disposar d'una borsa de treball, per via d'urgència, de personal temporal en la categoria de tècnic/a especialista en disseny gràfic",
-      "entity": "Ajuntament de Tarragona",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057374"
-    },
-    {
-      "id": "DC-2026-1057371",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre convocatòria del procés de selecció, en règim de personal funcionari de carrera, mitjançant concurs oposició lliure, per proveir una plaça de tècnic/a superior, associada al lloc de treball de tècnic/a en dret per a l'assistència en matèria jurídica als municipis, grup A, subgrup A1, i per constituir una borsa de treball",
-      "entity": "Consell Comarcal de les Garrigues",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057371"
-    },
-    {
-      "id": "DC-2026-1057361",
-      "province": "Cataluña (DOGC)",
-      "title": "Edicte sobre aprovació de l'oferta pública d'ocupació per a l'any 2026",
-      "entity": "Ajuntament de Sant Jaume de Llierca",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057361"
-    },
-    {
-      "id": "DC-2026-1057357",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci relatiu a la convocatòria i les bases específiques del procés de selecció pel sistema d'oposició per torn lliure, per a la cobertura interina d'una plaça de tècnic/a d'administració especial, enginyer/a",
-      "entity": "Ajuntament de Sitges",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057357"
-    },
-    {
-      "id": "DC-2026-1057353",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre aprovació de les bases i la convocatòria de selecció de personal per concurs oposició lliure d'una plaça d'enginyer/a (A1) en règim de funcionari/ària de carrera i constitució d'una borsa de treball",
-      "entity": "Ajuntament de Caldes de Malavella",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057353"
-    },
-    {
-      "id": "DC-2026-1057352",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre la convocatòria del procés de selecció per cobrir definitivament una plaça de personal tècnic d'administració general de la plantilla de personal funcionari de l'Ajuntament de Sant Feliu de Guíxols, mitjançant concurs oposició en torn lliure (exp. X2026042415 / 16202026000577)",
-      "entity": "Ajuntament de Sant Feliu de Guíxols",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057352"
-    },
-    {
-      "id": "DC-2026-1057350",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre aprovació de les bases i la convocatòria de selecció de personal per concurs oposició lliure d'una plaça d'auxiliar administratiu/iva (C2) en règim de funcionari/ària de carrera i constitució d'una borsa de treball",
-      "entity": "Ajuntament de Caldes de Malavella",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057350"
-    },
-    {
-      "id": "DC-2026-1057348",
-      "province": "Cataluña (DOGC)",
-      "title": "Edicte sobre aprovació de les bases específiques i la convocatòria per a la provisió, com a personal laboral fix, pel sistema de concurs oposició i mitjançant torn lliure, d'una plaça de cap de brigada municipal inclosa en l'oferta pública d'ocupació, i la constitució d'una borsa de treball",
-      "entity": "Ajuntament d'Alins",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057348"
-    },
-    {
-      "id": "DC-2026-1057342",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre el procés de selecció d'un tècnic/a coordinador/a (A1), per portar a terme el programa d’implantació i gestió de l’Oficina de Projectes de la comarca del Ripollès i creació d'una borsa de treball (exp. 2134/2026)",
-      "entity": "Consell Comarcal del Ripollès",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057342"
-    },
-    {
-      "id": "DC-2026-1057336",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre aprovació de les bases i la convocatòria del procés de selecció per a la provisió com a personal laboral fix d'una plaça de tècnic/a de grau mitjà, per adscriure el titular al lloc de treball de tècnic/a de serveis personals, mitjançant concurs oposició lliure",
-      "entity": "Ajuntament de Llinars del Vallès",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057336"
-    },
-    {
-      "id": "DC-2026-1057330",
-      "province": "Cataluña (DOGC)",
-      "title": "Edicte sobre aprovació de les bases específiques i la convocatòria per a la provisió, com a personal laboral fix, pel sistema de concurs oposició i mitjançant torn lliure, d'una plaça de peó de la brigada municipal inclosa en l'oferta pública d'ocupació, i la constitució d'una borsa de treball",
-      "entity": "Ajuntament d'Alins",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057330"
-    },
-    {
-      "id": "DC-2026-1057328",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci relatiu a la convocatòria i les bases del procés selectiu per cobrir una plaça de professor/a de música, especialitat llenguatge musical i conjunt coral (RH-136/2026)",
-      "entity": "Ajuntament d'Artés",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057328"
-    },
-    {
-      "id": "DC-2026-1057326",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre convocatòria de proves selectives per cobrir, mitjançant promoció interna vertical, una plaça d'auxiliar d'equipaments, grup C2, de personal laboral fix",
-      "entity": "Consell Comarcal del Baix Ebre",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057326"
-    },
-    {
-      "id": "DC-2026-1057320",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre la cobertura de dues places de tècnic/a auxiliar de biblioteca, associades al lloc de tècnic/a auxiliar de biblioteca, pel sistema de concurs oposició",
-      "entity": "Ajuntament de Sant Joan Despí",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057320"
-    },
-    {
-      "id": "DC-2026-1057313",
-      "province": "Cataluña (DOGC)",
-      "title": "Resolució JUS/3749/2026, de 19 d'octubre, de convocatòria per a la provisió, pel sistema de lliure designació, de tres llocs de comandament de la Secretaria General del Departament de Justícia i Qualitat Democràtica (convocatòria de provisió núm. JUS/018/26)",
-      "entity": "Departament de Justícia i Qualitat Democràtica",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057313"
-    },
-    {
-      "id": "DC-2026-1057310",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre publicació de les bases que han de regir la convocatòria per regular la provisió definitiva mitjançant concurs, per mobilitat interadministrativa, del lloc de treball de tècnic/a superior d'economia i hisenda de l'Ajuntament de Sant Vicenç dels Horts",
-      "entity": "Ajuntament de Sant Vicenç dels Horts",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057310"
-    },
-    {
-      "id": "DC-2026-1057308",
-      "province": "Cataluña (DOGC)",
-      "title": "Resolució PRE/3724/2026, de 18 d'octubre, de convocatòria de concurs específic de mèrits i capacitats per proveir un lloc de treball singular de la Direcció de Serveis del Departament de la Presidència (convocatòria de provisió núm. PRE/57/26)",
-      "entity": "Departament de la Presidència",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057308"
-    },
-    {
-      "id": "DC-2026-1057306",
-      "province": "Cataluña (DOGC)",
-      "title": "Resolució PRE/3744/2026, de 18 d'octubre, de convocatòria de concurs específic de mèrits i capacitats per proveir un lloc de treball singular de la Direcció General de Coordinació Interdepartamental i Relacions amb l'Estat del Departament de la Presidència (convocatòria de provisió núm. PRE/47/26)",
-      "entity": "Departament de la Presidència",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057306"
-    },
-    {
-      "id": "DC-2026-1057305",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci sobre convocatòria d'aixecament d'actes de pagament i ocupació del Projecte d'expropiació per taxació conjunta de l'actuació aïllada AA1, bloc Venus del barri de la Mina, d'acord amb el que preveu el Pla especial de reordenació i millora del barri de la Mina",
-      "entity": "Consorci del Barri de la Mina",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057305"
-    },
-    {
-      "id": "DC-2026-1057303",
-      "province": "Cataluña (DOGC)",
-      "title": "Resolució PRE/3745/2026, de 18 d'octubre, de convocatòria de concurs específic de mèrits i capacitats per proveir dos llocs de treball singulars de la Direcció General de Funció Pública del Departament de la Presidència (convocatòria de provisió núm. PRE/52/26)",
-      "entity": "Departament de la Presidència",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057303"
-    },
-    {
-      "id": "DC-2026-1057298",
-      "province": "Cataluña (DOGC)",
-      "title": "Anunci relatiu a la convocatòria d'una plaça de tècnic/a de sanitat",
-      "entity": "Ajuntament de Canet de Mar",
-      "date": "21/10/2026",
-      "bulletin": "9777",
-      "type": "Plaza / oposición",
-      "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1057298"
     }
   ]
 }

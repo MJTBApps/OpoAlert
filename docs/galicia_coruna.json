@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-19T16:32:08.736827+00:00",
+  "lastCheckedUTC": "2026-11-20T06:26:51.786323+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 22,
-    "announcementsRead": 767,
-    "opportunities": 61
+    "announcementsRead": 755,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -37,10 +36,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -61,7 +60,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,40 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 767,
-    "opportunities": 61
+    "announcementsRead": 755,
+    "opportunities": 58
   },
   "notices": [
+    {
+      "id": "AC-2026-7553",
+      "province": "A Coruña",
+      "title": "Corrección erro material proceso selectivo conserxe OEP 2024",
+      "entity": "Organización e RR.HH.",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007553.pdf"
+    },
+    {
+      "id": "AC-2026-7549",
+      "province": "A Coruña",
+      "title": "Apertura dun expediente de selección de persoal para confeccionar unha listaxe de substitucións para coberturas temporais ou interinas de traballadora social",
+      "entity": "Carballo",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007549.pdf"
+    },
+    {
+      "id": "AC-2026-7545",
+      "province": "A Coruña",
+      "title": "Convocatoria e bases de 22 prazas de administrativos/as por quenda de promoción interna incluídas na OEP do ano 2026",
+      "entity": "Recursos Humanos",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007545.pdf"
+    },
     {
       "id": "AC-2026-7521",
       "province": "A Coruña",
@@ -627,66 +657,6 @@
       "bulletin": "202",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf"
-    },
-    {
-      "id": "AC-2026-6744",
-      "province": "A Coruña",
-      "title": "Anuncio bolsa emprego monitor tempo libre",
-      "entity": "Muros",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006744.pdf"
-    },
-    {
-      "id": "AC-2026-6743",
-      "province": "A Coruña",
-      "title": "Anuncio bolsa emprego SAF",
-      "entity": "Muros",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006743.pdf"
-    },
-    {
-      "id": "AC-2026-6741",
-      "province": "A Coruña",
-      "title": "Proceso selectivo para formación de bolsa de emprego de técnicos/as de servizos sociais",
-      "entity": "Dodro",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006741.pdf"
-    },
-    {
-      "id": "AC-2026-6716",
-      "province": "A Coruña",
-      "title": "Proceso selectivo para formación de bolsa de emprego de oficiais de servizos varios",
-      "entity": "Dodro",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006716.pdf"
-    },
-    {
-      "id": "AC-2026-6710",
-      "province": "A Coruña",
-      "title": "Anuncio de convocatoria e bases de selección dun/dunha director/a avogado/a do CIM (funcionario/a de carreira)",
-      "entity": "Boiro",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006710.pdf"
-    },
-    {
-      "id": "AC-2026-6678",
-      "province": "A Coruña",
-      "title": "Anuncio bases de selección e convocatoria dun/dunha ordenanza de garantía xuvenil (TR350E)",
-      "entity": "Betanzos",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/21/2026_0000006678.pdf"
     }
   ]
 }

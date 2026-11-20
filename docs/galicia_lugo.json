@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lugo",
   "source": "https://deputacionlugo.gal/gl/boletin-oficial-da-provincia-de-lugo/bop",
-  "lastCheckedUTC": "2026-11-19T16:35:21.565044+00:00",
+  "lastCheckedUTC": "2026-11-20T06:30:23.352969+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "266",
-    "pagesVisited": 26,
-    "announcementsRead": 313,
-    "opportunities": 27
+    "pagesVisited": 25,
+    "announcementsRead": 301,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "241",
       "242",
       "243",
       "244",
@@ -44,7 +43,6 @@
       "266"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-24",
@@ -75,11 +73,12 @@
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-20"
     ],
-    "issuesRead": 26,
-    "announcementsRead": 313,
-    "opportunities": 27
+    "issuesRead": 25,
+    "announcementsRead": 301,
+    "opportunities": 25
   },
   "notices": [
     {
@@ -331,26 +330,6 @@
       "bulletin": "242",
       "type": "Plaza / oposición",
       "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/22-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2838",
-      "province": "Lugo",
-      "title": "CONVOCATORIA E BASES DO PROCESO SELECTIVO PARA A CONSTITUCIÓN DUNHA BOLSA DE TRABALLO PARA A CONTRATACIÓN DE 1 TRABALLADOR/A SOCIAL",
-      "entity": "TRIACASTELA",
-      "date": "21/10/2026",
-      "bulletin": "241",
-      "type": "Bolsa de trabajo",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/21-10-2026.pdf"
-    },
-    {
-      "id": "LU-2026-2837",
-      "province": "Lugo",
-      "title": "DECLARACIÓN DE URXENCIA DE PROCESOS SELECTIVOS DO ANO 2023",
-      "entity": "SARRIA",
-      "date": "21/10/2026",
-      "bulletin": "241",
-      "type": "Plaza / oposición",
-      "url": "https://deputacionlugo.gal/sites/deputacionlugo.org/files/inline-files/21-10-2026.pdf"
     }
   ]
 }

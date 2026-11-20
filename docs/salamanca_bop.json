@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-19T16:38:05.265063+00:00",
+  "lastCheckedUTC": "2026-11-20T06:33:22.789296+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 21,
-    "announcementsRead": 299,
+    "announcementsRead": 313,
     "opportunities": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -36,10 +35,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -59,7 +58,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,9 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 299,
+    "announcementsRead": 313,
     "opportunities": 7,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261021/BOP-SA-20261021-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261022/BOP-SA-20261022-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261023/BOP-SA-20261023-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261026/BOP-SA-20261026-000.pdf",
@@ -96,10 +95,10 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261116/BOP-SA-20261116-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261117/BOP-SA-20261117-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261118/BOP-SA-20261118-000.pdf",
-      "https://www.lasalina.es/documentacion/bop/2026/20261119/BOP-SA-20261119-000.pdf"
+      "https://www.lasalina.es/documentacion/bop/2026/20261119/BOP-SA-20261119-000.pdf",
+      "https://www.lasalina.es/documentacion/bop/2026/20261120/BOP-SA-20261120-000.pdf"
     ],
     "CVECounts": [
-      14,
       21,
       9,
       9,
@@ -119,9 +118,10 @@
       16,
       17,
       16,
-      6
+      6,
+      28
     ],
-    "originalPDFsChecked": 299
+    "originalPDFsChecked": 313
   },
   "notices": [
     {

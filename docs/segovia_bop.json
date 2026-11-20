@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Segovia",
   "source": "https://www.dipsegovia.es/bop",
-  "lastCheckedUTC": "2026-11-19T16:37:18.728043+00:00",
+  "lastCheckedUTC": "2026-11-20T06:33:21.677460+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "138",
+    "bulletin": "139",
     "pagesVisited": 13,
-    "announcementsRead": 307,
-    "opportunities": 13
+    "announcementsRead": 315,
+    "opportunities": 11
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "126",
       "127",
       "128",
       "129",
@@ -28,10 +27,10 @@
       "135",
       "136",
       "137",
-      "138"
+      "138",
+      "139"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
@@ -43,7 +42,8 @@
       "2026-11-11",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-22",
@@ -65,10 +65,9 @@
       "2026-11-19"
     ],
     "issuesRead": 13,
-    "announcementsRead": 307,
-    "opportunities": 13,
+    "announcementsRead": 315,
+    "opportunities": 11,
     "editionPDFs": [
-      "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
       "https://www.dipsegovia.es/documents/39512/e99e5722-90ef-57a0-683f-d2d7d40178ec",
       "https://www.dipsegovia.es/documents/39512/c199de1b-8423-f910-df6f-8a5802c9c602",
       "https://www.dipsegovia.es/documents/39512/de568f33-0970-6e5a-59ce-739a904cc74c",
@@ -80,11 +79,11 @@
       "https://www.dipsegovia.es/documents/39512/5225d5ee-eadf-918d-87de-c5e80807d507",
       "https://www.dipsegovia.es/documents/39512/70cd5634-c35c-591e-d532-d7cb88172f0e",
       "https://www.dipsegovia.es/documents/39512/ceda7672-e01b-7e30-5d31-956f1829ebee",
-      "https://www.dipsegovia.es/documents/39512/228d84ee-1061-b327-99f3-f11f62e72178"
+      "https://www.dipsegovia.es/documents/39512/228d84ee-1061-b327-99f3-f11f62e72178",
+      "https://www.dipsegovia.es/documents/39512/136836a8-5127-6360-e86b-442a2a0b332e"
     ],
-    "originalPdfPagesRead": 676,
+    "originalPdfPagesRead": 656,
     "editionArticleCounts": [
-      19,
       26,
       22,
       16,
@@ -96,10 +95,44 @@
       27,
       24,
       24,
-      37
+      37,
+      27
     ]
   },
   "notices": [
+    {
+      "id": "SG-2026-baf634169e2fbc97d5",
+      "province": "Segovia",
+      "title": "Aprobación de bases y convocatoria para la creación de una bolsa de empleo de Ayudante de Carpintería, para cobertura de vacantes y contrataciones temporales",
+      "entity": "AYUNTAMIENTO DE SEGOVIA",
+      "date": "20/11/2026",
+      "bulletin": "139",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dipsegovia.es/documents/39512/136836a8-5127-6360-e86b-442a2a0b332e",
+      "pageInPdf": 14
+    },
+    {
+      "id": "SG-2026-63e22cff1d1e641761",
+      "province": "Segovia",
+      "title": "Aprobación de bases y convocatoria para la creación de una bolsa de empleo de Oficial/a Carpintero/a, para cobertura de vacantes y contrataciones temporales",
+      "entity": "AYUNTAMIENTO DE SEGOVIA",
+      "date": "20/11/2026",
+      "bulletin": "139",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dipsegovia.es/documents/39512/136836a8-5127-6360-e86b-442a2a0b332e",
+      "pageInPdf": 13
+    },
+    {
+      "id": "SG-2026-121ea75d143782bdba",
+      "province": "Segovia",
+      "title": "Ayuntamiento del Real Sitio de San Ildefonso Bases que deben regir la convocatoria para la constitución de una bolsa de empleo temporal de profesores de música y danza (música tradicional-dulzaina y percusión tradicional)",
+      "entity": "Ayuntamiento de Pelayos del Arroyo",
+      "date": "20/11/2026",
+      "bulletin": "139",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dipsegovia.es/documents/39512/136836a8-5127-6360-e86b-442a2a0b332e",
+      "pageInPdf": 35
+    },
     {
       "id": "SG-2026-c1b67dae712024c819",
       "province": "Segovia",
@@ -187,61 +220,6 @@
       "type": "Plaza / oposición",
       "url": "https://www.dipsegovia.es/documents/39512/c199de1b-8423-f910-df6f-8a5802c9c602",
       "pageInPdf": 23
-    },
-    {
-      "id": "SG-2026-edda118be18c8352dc",
-      "province": "Segovia",
-      "title": "Bases y convocatoria del proceso selectivo para la provisión como funcionario/a de carrera, mediante el sistema de oposición por turno libre de tres (3) plazas de Auxiliar Administrativo, Oferta de Empleo Público 2024 del Ayuntamiento",
-      "entity": "Ayuntamiento de Palazuelos de Eresma",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
-      "pageInPdf": 66
-    },
-    {
-      "id": "SG-2026-80af9ac6ebe4e0b01b",
-      "province": "Segovia",
-      "title": "Resolución de Alcaldía n.º 2026/06224, de 6 de octubre de 2026, por la que se aprueban las bases específicas por las que se regirá el proceso selectivo para la provisión en propiedad de una plaza de Oficial Cantero por promoción interna, incluida en la Oferta Pública de Empleo de 2025",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
-      "pageInPdf": 51
-    },
-    {
-      "id": "SG-2026-7c7f0f7eab1319816c",
-      "province": "Segovia",
-      "title": "Personal y Organización Resolución de Alcaldía n.º 2026/06240, de 7 de octubre de 2026, por la que se aprueban las bases específicas por las que se regirá el proceso selectivo para la provisión en propiedad de una plaza de Auxiliar de Archivo, incluida en la Oferta Pública de Empleo de 2024",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
-      "pageInPdf": 49
-    },
-    {
-      "id": "SG-2026-26308a9d478b6ecbec",
-      "province": "Segovia",
-      "title": "Resolución de Alcaldía n.º 2026/06216, de 6 de octubre de 2026, por la que se aprueban las bases específicas por las que se regirá el proceso selectivo para la provisión en propiedad de una plaza de Oficial de Instalaciones Deportivas por promoción interna, incluida en la Oferta Pública de Empleo de 2023",
-      "entity": "AYUNTAMIENTO DE SEGOVIA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
-      "pageInPdf": 50
-    },
-    {
-      "id": "SG-2026-0fd52154f6006702bb",
-      "province": "Segovia",
-      "title": "Servicio de Recursos Humanos Concurso específico de méritos para la provisión del puesto de trabajo singularizado de Jefatura Servicio de Planificación y Cooperación Económica Local Extracto del decreto n.º 2026/7920, de 14 de octubre de 2026, por el que se aprueba la resolución y mejora en los colegios públicos de educación infantil y primaria del medio rural de la provincia",
-      "entity": "DIPUTACIÓN DE SEGOVIA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.dipsegovia.es/documents/39512/99a0efa0-e8cd-3841-9bc2-c7a3ffe9907f",
-      "pageInPdf": 41
     }
   ]
 }

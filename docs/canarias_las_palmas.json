@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-19T16:35:07.417363+00:00",
+  "lastCheckedUTC": "2026-11-20T06:30:20.407853+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "138",
-    "pagesVisited": 13,
-    "announcementsRead": 450,
-    "opportunities": 41
+    "pagesVisited": 12,
+    "announcementsRead": 411,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "126",
       "127",
       "128",
       "129",
@@ -31,7 +30,6 @@
       "138"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
@@ -62,11 +60,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-17",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 450,
-    "opportunities": 41
+    "issuesRead": 12,
+    "announcementsRead": 411,
+    "opportunities": 37
   },
   "notices": [
     {
@@ -438,46 +437,6 @@
       "bulletin": "127",
       "type": "Plaza / oposición",
       "url": "https://www.boplaspalmas.net/boletines/2026/23-10-26/23-10-26.pdf"
-    },
-    {
-      "id": "LP-20261021-039",
-      "province": "Las Palmas (BOP)",
-      "title": "Aprobación de las convocatorias de procesos selectivos para cubrir 1 plaza de Director/a Pedagógico/a y 1 de Maestro",
-      "entity": "FUNDACIÓN MUNICIPAL DE ESCUELAS INFANTILES DE SANTA LUCÍA, S.A.",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/21-10-26/21-10-26.pdf"
-    },
-    {
-      "id": "LP-20261021-030",
-      "province": "Las Palmas (BOP)",
-      "title": "Lista de reserva relativa a la convocatoria para proveer 2 plazas de Oficial/a de Primera/Conductor",
-      "entity": "ILUSTRE AYUNTAMIENTO DE PÁJARA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/21-10-26/21-10-26.pdf"
-    },
-    {
-      "id": "LP-20261021-018",
-      "province": "Las Palmas (BOP)",
-      "title": "Contratación de personal que ha superado el proceso selectivo de estabilización de 27 plazas de Animador/a Sociocultural",
-      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/21-10-26/21-10-26.pdf"
-    },
-    {
-      "id": "LP-20261021-014",
-      "province": "Las Palmas (BOP)",
-      "title": "Bases reguladoras del proceso de selección para contratar 1 Administrativo/a con discapacidad y la constitución de bolsas de empleo de Administrativo/a, Auxiliar Administrativo/a con discapacidad y Conductor/a, con y sin discapacidad",
-      "entity": "EXCMO. CABILDO INSULAR DE GRAN CANARIA",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boplaspalmas.net/boletines/2026/21-10-26/21-10-26.pdf"
     }
   ]
 }

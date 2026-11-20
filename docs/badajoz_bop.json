@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-19T16:32:08.950449+00:00",
+  "lastCheckedUTC": "2026-11-20T06:26:42.087736+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 463,
+    "announcementsRead": 440,
     "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -36,10 +35,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -59,7 +58,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,20 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 463,
+    "announcementsRead": 440,
     "opportunities": 42
   },
   "notices": [
+    {
+      "id": "BD-2026-165373",
+      "province": "Badajoz",
+      "title": "Bases para la provisión por el procedimiento de concurso específico de méritos del puesto de Jefatura de Negociado de Asuntos Sociales",
+      "entity": "Diputación de Badajoz",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-20000000_R4599.pdf"
+    },
     {
       "id": "BD-2026-165334",
       "province": "Badajoz",
@@ -486,16 +496,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4199.pdf"
-    },
-    {
-      "id": "BD-2026-164898",
-      "province": "Badajoz",
-      "title": "Bases específicas con convocatoria de oferta de plazas de alumnado de la Escuela Provincial de Tauromaquia",
-      "entity": "Diputación de Badajoz",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-21000000_4166.pdf"
     }
   ]
 }

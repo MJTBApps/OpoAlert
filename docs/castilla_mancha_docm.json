@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-19T16:33:11.153873+00:00",
+  "lastCheckedUTC": "2026-11-20T06:27:49.587952+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 23,
-    "announcementsRead": 688,
-    "opportunities": 37
+    "announcementsRead": 686,
+    "opportunities": 36
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -38,10 +37,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -63,7 +62,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -76,8 +76,8 @@
       "2026-11-15"
     ],
     "issuesRead": 23,
-    "announcementsRead": 688,
-    "opportunities": 37
+    "announcementsRead": 686,
+    "opportunities": 36
   },
   "notices": [
     {
@@ -439,16 +439,6 @@
       "bulletin": "203",
       "type": "Bolsa de trabajo",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/22/pdf/2026_7512.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7572",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 15/10/2026 , de la Dirección General de la Función Pública, de personas aprobadas por el sistema de promoción interna directa en el puesto, para el sistema general de acceso de personas con discapacidad y por el sistema general de acceso libre, en el proceso selectivo para el ingreso en el Cuerpo Ejecutivo, Especialidad Administrativa, de la Administración de la Junta de Comunidades de Castilla-La Mancha. [NID 2026/7572]",
-      "entity": "Consejería de Hacienda, Administraciones Públicas y Transformación Digital",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/21/pdf/2026_7572.pdf&tipo=rutaDocm"
     }
   ]
 }

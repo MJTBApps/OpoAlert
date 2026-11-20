@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-19T16:35:34.738922+00:00",
+  "lastCheckedUTC": "2026-11-20T06:31:17.001753+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "6432",
-    "pagesVisited": 14,
-    "announcementsRead": 129,
-    "opportunities": 15
+    "pagesVisited": 13,
+    "announcementsRead": 126,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "E47",
       "6425",
       "E48",
       "6426",
@@ -32,7 +31,6 @@
       "6432"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-23",
       "2026-10-23",
       "2026-10-27",
@@ -67,11 +65,12 @@
       "2026-11-15",
       "2026-11-16",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 129,
-    "opportunities": 15
+    "issuesRead": 13,
+    "announcementsRead": 126,
+    "opportunities": 13
   },
   "notices": [
     {
@@ -203,26 +202,6 @@
       "bulletin": "E48",
       "type": "Plaza / oposición",
       "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-126.pdf"
-    },
-    {
-      "id": "ML-2026-AX-124",
-      "province": "Melilla (BOME)",
-      "title": "Nota informativa para la realización del primer ejercicio de seis plazas de oficial de electromecánica, encuadradas en la escala de administración especial, subescala servicios especiales, en la clase de personal de oficios pertenecientes al subgrupo c2, de la plantilla de funcionarios de la CAM, por oposición libre.",
-      "entity": "Tribunal de examen",
-      "date": "21/10/2026",
-      "bulletin": "E47",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-124.pdf"
-    },
-    {
-      "id": "ML-2026-AX-123",
-      "province": "Melilla (BOME)",
-      "title": "Nota informativa para la realización del primer ejercicio de una plaza de celador de captaciones, perteneciente a la escala de administración especial, subescala servicios especiales, en la clase de personal de oficios, pertenecientes al subgrupo c2, de la plantilla de funcionarios de la CAM, por oposición libre.",
-      "entity": "Tribunal de examen",
-      "date": "21/10/2026",
-      "bulletin": "E47",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-123.pdf"
     }
   ]
 }

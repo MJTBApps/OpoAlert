@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-19T16:34:11.373316+00:00",
+  "lastCheckedUTC": "2026-11-20T06:28:45.218586+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 21,
-    "announcementsRead": 802,
-    "opportunities": 121
+    "announcementsRead": 785,
+    "opportunities": 125
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -36,10 +35,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -59,7 +58,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,70 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 802,
-    "opportunities": 121
+    "announcementsRead": 785,
+    "opportunities": 125
   },
   "notices": [
+    {
+      "id": "AO-2026-007962684",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, de la Presidencia de la Agrupación Secretarial de los Ayuntamientos de Benabarre y Tolva, por la que se aprueban las bases y la convocatoria para cubrir la plaza de Gestor/a Administrativo/a (C1), funcionario de carrera, mediante concurso-oposición, y creación de una bolsa de trabajo.",
+      "entity": "AGRUPACIÓN SECRETARIAL DE BENABARRE Y TOLVA",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475807240808"
+    },
+    {
+      "id": "AO-2026-007962683",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, de la Diputación Provincial de Huesca, relativa a la convocatoria para proveer, mediante oposición libre, una plaza de Vigilante-Peón (AP) vacante en la plantilla de personal funcionario de la Diputación Provincial de Huesca.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE HUESCA",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475805220707"
+    },
+    {
+      "id": "AO-2026-007962682",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, de la Diputación Provincial de Huesca, relativa a la convocatoria para proveer, mediante oposición libre, una plaza de Técnico de Intervención (A1) vacante en la plantilla de personal funcionario de la Diputación Provincial de Huesca.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE HUESCA",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475803200707"
+    },
+    {
+      "id": "AO-2026-007962681",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, de la Diputación Provincial de Huesca, relativa a la convocatoria para proveer, mediante oposición libre, dos plazas de Ordenanzas (AP) vacantes en la plantilla de personal funcionario de la Diputación Provincial de Huesca.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE HUESCA",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475801180606"
+    },
+    {
+      "id": "AO-2026-007962680",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, de la Diputación Provincial de Huesca, relativa a la convocatoria para proveer, mediante oposición libre, cuatro plazas de Técnico de Administración General (A1), vacantes en la plantilla de personal funcionario de la Diputación Provincial de Huesca.",
+      "entity": "DIPUTACIÓN PROVINCIAL DE HUESCA",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475799160606"
+    },
+    {
+      "id": "AO-2026-007962679",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 9 de noviembre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para el ingreso, por el turno de acceso libre, en la Escala de Oficiales de Laboratorio y Talleres, especialidad Electricidad de la Universidad de Zaragoza, mediante el sistema de oposición.",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475797140505"
+    },
     {
       "id": "AO-2026-007962651",
       "province": "Aragón (BOA)",
@@ -1266,26 +1326,6 @@
       "bulletin": "205",
       "type": "Bolsa de trabajo",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471428820404"
-    },
-    {
-      "id": "AO-2026-007961883",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, del Director General de la Función Pública, por la que se nombra personal funcionario en prácticas del Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala Auxiliar Administrativa, Auxiliares Administrativos. (Código de convocatoria 240060).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "21/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471185960505"
-    },
-    {
-      "id": "AO-2026-007961881",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, del Director General de la Función Pública, por la que se declara finalizado el proceso selectivo para ingreso, por promoción interna, en el Cuerpo de Funcionarios Superiores de la Administración de la Comunidad Autónoma de Aragón, Escala Superior de Investigación, Investigación Agraria. (Código de convocatoria 260016).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "21/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471181920505"
     }
   ]
 }

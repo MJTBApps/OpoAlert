@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-19T16:38:09.392400+00:00",
+  "lastCheckedUTC": "2026-11-20T06:34:02.076282+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "140",
+    "bulletin": "141",
     "pagesVisited": 15,
-    "announcementsRead": 570,
+    "announcementsRead": 550,
     "opportunities": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "126",
       "127",
       "128",
       "129",
@@ -30,10 +29,10 @@
       "137",
       "138",
       "139",
-      "140"
+      "140",
+      "141"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
@@ -47,7 +46,8 @@
       "2026-11-12",
       "2026-11-13",
       "2026-11-16",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-22",
@@ -67,10 +67,40 @@
       "2026-11-19"
     ],
     "issuesRead": 15,
-    "announcementsRead": 570,
+    "announcementsRead": 550,
     "opportunities": 31
   },
   "notices": [
+    {
+      "id": "TF-20261120-025",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la aprobación de la convocatoria para la contratación en régimen laboral fijo de una plaza vacante de Oficial de Primera Fontanero por promoción interna",
+      "entity": "AYUNTAMIENTO DE VILLA DE LOS REALEJOS",
+      "date": "20/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/20-11-26/20-11-26.pdf"
+    },
+    {
+      "id": "TF-20261120-024",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la aprobación de la Bases específicas del proceso selectivo para la generación de una Bolsa de Empleo Publico Temporal de los puestos de trabajo de Administrativo e Ingeniero de la Empresa Publica de Servicios del Ayuntamiento de Los Realejos (Realserv)",
+      "entity": "AYUNTAMIENTO DE VILLA DE LOS REALEJOS",
+      "date": "20/11/2026",
+      "bulletin": "141",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/20-11-26/20-11-26.pdf"
+    },
+    {
+      "id": "TF-20261120-020",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la aprobación de las Bases específicas para la provisión en propiedad por el turno libre y mediante el sistema de oposición de veintiuna (21) plazas de Policía Local al servicio del Ayuntamiento de la Histórica Villa de Adeje, pertenecientes a la Escala de Administración Especial, Subescala de Servicios Especiales, Clase Policía Local, Escala Básica, Empleo Policía, Grupo C, Subgrupo C1",
+      "entity": "AYUNTAMIENTO DE VILLA DE ADEJE",
+      "date": "20/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/20-11-26/20-11-26.pdf"
+    },
     {
       "id": "TF-20261118-042",
       "province": "Santa Cruz de Tenerife (BOP)",
@@ -350,36 +380,6 @@
       "bulletin": "130",
       "type": "Plaza / oposición",
       "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/30-10-26/30-10-26.pdf"
-    },
-    {
-      "id": "TF-20261021-030",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a Decreto dictado por la Concejalía Delegada en materia de Recursos Humanos con fecha 13 de octubre de 2026, mediante el que se nombran cuatro funcionarios/as de carrera, resolviendo el proceso selectivo para la cobertura, mediante funcionarios/as de carrera, de cuatro plazas de Técnico/a Auxiliar de Servicios Públicos, Escala de Administración Especial, Subescala Técnica, Clase Técnicos/as Auxiliares, Grupo de Clasificación Profesional C, Subgrupo C1, del Ayuntamiento de Santa Cruz de Tenerife, incluidas en las Ofertas de Empleo Público de los ejercicios 2022 y 2023",
-      "entity": "AYUNTAMIENTO DE SANTA CRUZ DE TENERIFE",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/21-10-26/21-10-26.pdf"
-    },
-    {
-      "id": "TF-20261021-024",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a la declaración de convocatoria desierta para la Provisión Definitiva mediante concurso de traslado específico del puesto de trabajo singularizado de Jefatura de Centro Hospital Santísima Trinidad, Grupo A1/A2, del Organismo Autónomo IASS",
-      "entity": "INSTITUTO INSULAR DE ATENCIÓN SOCIAL Y SOCIOSANITARIA (IASS)",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/21-10-26/21-10-26.pdf"
-    },
-    {
-      "id": "TF-20261021-022",
-      "province": "Santa Cruz de Tenerife (BOP)",
-      "title": "Anuncio relativo a la relación de aspirantes que han superado el proceso selectivo y los puestos ofertados, de la convocatoria pública para la cobertura como personal laboral fijo, por el turno de acceso libre, de cuarenta y una (41) plazas de Peón de Conservación, en ejecución de las Ofertas de Empleo Público de la Corporación Insular de 2019, 2020, 2022 y 2023",
-      "entity": "CABILDO INSULAR DE TENERIFE",
-      "date": "21/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/21-10-26/21-10-26.pdf"
     }
   ]
 }

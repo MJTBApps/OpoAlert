@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-19T16:36:37.668326+00:00",
+  "lastCheckedUTC": "2026-11-20T06:31:55.767144+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "268",
+    "bulletin": "269",
     "pagesVisited": 27,
-    "announcementsRead": 621,
-    "opportunities": 56
+    "announcementsRead": 618,
+    "opportunities": 55
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "243",
       "244",
       "245",
       "246",
@@ -42,10 +41,10 @@
       "265",
       "266",
       "267",
-      "268"
+      "268",
+      "269"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-24",
@@ -71,7 +70,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -80,8 +80,8 @@
       "2026-11-15"
     ],
     "issuesRead": 27,
-    "announcementsRead": 621,
-    "opportunities": 56
+    "announcementsRead": 618,
+    "opportunities": 55
   },
   "notices": [
     {
@@ -633,16 +633,6 @@
       "bulletin": "244",
       "type": "Bolsa de trabajo",
       "url": "https://www.borm.es/services/anuncio/845833/pdf"
-    },
-    {
-      "id": "MU-2026-5124",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución de la Directora Gerente del Servicio Murciano de Salud, por la que se resuelve con carácter definitivo el concurso de méritos convocado por la Resolución de 19 de junio de 2025 de la Directora Gerente del Servicio Murciano de Salud (BORM n.º 152, de 4 de julio), para la provisión del puesto de Jefatura de Servicio de Cirugía Ortopédica y Traumatología en el Complejo Hospitalario Universitario de Cartagena de la Gerencia del Área de Salud II (Cartagena).",
-      "entity": "Consejería de Salud - Servicio Murciano de Salud",
-      "date": "21/10/2026",
-      "bulletin": "243",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845806/pdf"
     }
   ]
 }
