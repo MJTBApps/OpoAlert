@@ -205,7 +205,7 @@ def parse_day(html,day):
     return {"day":day,"number":number,"edicts":edicts,"sumario":sumario_pdf}
 
 # ---------------------------------------------------------------- sumario PDF
-CODE_RE=re.compile(r"BOP-(\d{4})-(\d{1,6})(?!\d)")
+CODE_RE=re.compile(r"BOP-(\d{4})-(\d{1,6})(?!\d|-[A-Z])")  # «BOP-2026-226-SUM» (pie del sumario) y «BOP-2026-227-ERR» (corrección del boletín) no son edictos (desde el 19/11/2026)
 def sumario_codes(data,day,number):
     import pymupdf
     try:doc=pymupdf.open(stream=data,filetype="pdf")

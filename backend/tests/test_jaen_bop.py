@@ -118,6 +118,13 @@ class ParseDayTest(unittest.TestCase):
             ja.parse_day("<html><body>Please complete the CAPTCHA</body></html>", DAY)
 
 
+class SumarioCodesTest(unittest.TestCase):
+    def test_pie_del_sumario_no_es_un_edicto(self):
+        # Desde el 19/11/2026 cada página del sumario lleva «cve: BOP-2026-226-SUM».
+        text = "BOP-2026-5193\nAYUNTAMIENTO\ncve: BOP-2026-226-SUM\nBOP-2026-5202\ncve: BOP-2026-226-SUM"
+        self.assertEqual(ja.CODE_RE.findall(text + "\nBOP-2026-227-ERR"), [("2026", "5193"), ("2026", "5202")])
+
+
 class ClassificationTest(unittest.TestCase):
     def test_kind(self):
         self.assertEqual(ja.kind("Bases y convocatoria para la provisión de 1 plaza de Técnico/a Superior."),
