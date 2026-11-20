@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-20T06:40:56.337548+00:00",
+  "lastCheckedUTC": "2026-11-20T09:39:57.350093+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 65,
-    "opportunities": 65,
+    "announcementsRead": 66,
+    "opportunities": 66,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,20 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 65,
-    "opportunities": 65
+    "announcementsRead": 66,
+    "opportunities": 66
   },
   "notices": [
+    {
+      "id": "CIDO7-22528472",
+      "title": "1 plaça de Tècnic d'educació infantil per a l'escola bressol",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22528472"
+    },
     {
       "id": "CIDO7-22526834",
       "title": "1 plaça d'Administratiu",

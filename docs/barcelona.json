@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-20T06:40:56.337548+00:00",
+  "lastCheckedUTC": "2026-11-20T09:39:57.350093+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 271,
-    "opportunities": 271,
+    "announcementsRead": 283,
+    "opportunities": 283,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -40,22 +40,152 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-20"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 271,
-    "opportunities": 271
+    "announcementsRead": 283,
+    "opportunities": 283
   },
   "notices": [
+    {
+      "id": "CIDO5-22530867",
+      "title": "1 plaça de Tècnic en manteniment elèctric",
+      "entity": "Depuradores d'Osona, SL",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22530867"
+    },
+    {
+      "id": "CIDO5-22528694",
+      "title": "Borsa de treball de places de Tècnic d'educació",
+      "entity": "Ajuntament de Gavà",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528694"
+    },
+    {
+      "id": "CIDO5-22528619",
+      "title": "Borsa de treball de places de Psicòleg",
+      "entity": "Ajuntament de Gavà",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528619"
+    },
+    {
+      "id": "CIDO5-22528434",
+      "title": "Borsa de treball de places de Tècnic de comunicació/mitjans de comunicació",
+      "entity": "Ajuntament d'Olèrdola",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528434"
+    },
+    {
+      "id": "CIDO5-22528404",
+      "title": "Borsa de treball de places d'Administratiu",
+      "entity": "Ajuntament d'Artés",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528404"
+    },
+    {
+      "id": "CIDO5-22113581",
+      "title": "2 places d'Agent de la Policia Local",
+      "entity": "Ajuntament d'Artés",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22113581"
+    },
+    {
+      "id": "CIDO5-21818657",
+      "title": "1 plaça de Tècnic de protecció civil",
+      "entity": "Ajuntament de Vic",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21818657"
+    },
+    {
+      "id": "CIDO5-21589744",
+      "title": "3 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de Sant Esteve Sesrovires",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21589744"
+    },
+    {
+      "id": "CIDO5-17161048",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Castelldefels",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17161048"
+    },
+    {
+      "id": "CIDO5-16716846",
+      "title": "2 places d'Operari de consergeria manteniment (CEM)",
+      "entity": "Ajuntament de la Roca del Vallès",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16716846"
+    },
+    {
+      "id": "CIDO5-22528890",
+      "title": "Borsa de treball de places de Personal de brigada en l'especialitat operari d'oficis. Pla Local d'Ocupació 2027",
+      "entity": "Ajuntament d'Esparreguera",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528890"
+    },
+    {
+      "id": "CIDO5-22528556",
+      "title": "1 plaça de Tècnic de manteniment i obres, mobilitat",
+      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22528556"
+    },
+    {
+      "id": "CIDO5-22528524",
+      "title": "1 plaça d'Encarregat de client i operacions per al Park Güell",
+      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
+      "date": "19/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22528524"
+    },
     {
       "id": "CIDO5-22525200",
       "title": "1 plaça d'Agent de la Policia Local",
@@ -875,16 +1005,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22387330"
-    },
-    {
-      "id": "CIDO5-22113581",
-      "title": "2 places d'Agent de la Policia Local",
-      "entity": "Ajuntament d'Artés",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22113581"
     },
     {
       "id": "CIDO5-20967028",

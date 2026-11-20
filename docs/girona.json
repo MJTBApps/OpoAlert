@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-20T06:40:56.337548+00:00",
+  "lastCheckedUTC": "2026-11-20T09:39:57.350093+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 69,
-    "opportunities": 69,
+    "announcementsRead": 76,
+    "opportunities": 76,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -33,7 +33,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-22",
@@ -47,20 +48,69 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-20"
+      "2026-11-15"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 69,
-    "opportunities": 69
+    "announcementsRead": 76,
+    "opportunities": 76
   },
   "notices": [
+    {
+      "id": "CIDO6-22528670",
+      "title": "Borsa de treball de places de Tècnic de Joventut",
+      "entity": "Ajuntament de Puigcerdà",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528670"
+    },
+    {
+      "id": "CIDO6-22528612",
+      "title": "2 places de Coordinació pel Parc de Nadal - Monitor de lleure pel Parc infantil de Nadal (JAN)",
+      "entity": "Ajuntament de Caldes de Malavella",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22528612"
+    },
+    {
+      "id": "CIDO6-22528587",
+      "title": "10 places de Premonitor de lleure pel Parc infantil de Nadal (JAN)",
+      "entity": "Ajuntament de Caldes de Malavella",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22528587"
+    },
+    {
+      "id": "CIDO6-22528567",
+      "title": "14 places de Monitor de lleure pel Parc infantil de Nadal (JAN)",
+      "entity": "Ajuntament de Caldes de Malavella",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22528567"
+    },
+    {
+      "id": "CIDO6-22528509",
+      "title": "Borsa de treball de places d'Arquitecte de l'Àrea de Territori - Departament d'Urbanisme",
+      "entity": "Ajuntament de Blanes",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22528509"
+    },
     {
       "id": "CIDO6-22525243",
       "title": "4 places d'Agent de la Policia Local",
       "entity": "Ajuntament de Roses",
-      "date": "19/11/2026",
+      "date": "20/11/2026",
       "bulletin": "CIDO",
       "province": "Girona",
       "type": "Plaza / oposición",
@@ -70,11 +120,41 @@
       "id": "CIDO6-22525237",
       "title": "1 plaça de Cap de protecció civil",
       "entity": "Ajuntament de Blanes",
-      "date": "19/11/2026",
+      "date": "20/11/2026",
       "bulletin": "CIDO",
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22525237"
+    },
+    {
+      "id": "CIDO6-22419816",
+      "title": "Borsa de treball de places de Secretari interventor",
+      "entity": "Ajuntament de Maçanet de Cabrenys",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22419816"
+    },
+    {
+      "id": "CIDO6-22180701",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament d'Alp",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22180701"
+    },
+    {
+      "id": "CIDO6-15199257",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament d'Olot",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/15199257"
     },
     {
       "id": "CIDO6-22524268",
@@ -445,16 +525,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22466771"
-    },
-    {
-      "id": "CIDO6-22419816",
-      "title": "Borsa de treball de places de Secretari interventor",
-      "entity": "Ajuntament de Maçanet de Cabrenys",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22419816"
     },
     {
       "id": "CIDO6-21398767",
