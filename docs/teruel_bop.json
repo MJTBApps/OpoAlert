@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp",
   "province": "Teruel",
-  "lastCheckedUTC": "2026-11-19T17:07:31.611386+00:00",
+  "lastCheckedUTC": "2026-11-20T07:17:15.797165+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 50,
-    "announcementsRead": 435,
-    "opportunities": 9
+    "announcementsRead": 441,
+    "opportunities": 8
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "issuesRead": 21,
     "pagesVisited": 50,
-    "announcementsRead": 435,
-    "opportunities": 9,
+    "announcementsRead": 441,
+    "opportunities": 8,
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -40,10 +39,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -63,7 +62,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -157,16 +157,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://bender.dpteruel.es/dpt/bopt.nsf/0/E63FC51EF355BAA0C1258E97003F912C"
-    },
-    {
-      "id": "TE-2026-3052-EE9360E900CAB747C1258E960040882C",
-      "province": "Teruel",
-      "title": "Modificación de la oposición como funcionario de carrera de cinco plazas de Técnicos de Administración General.",
-      "entity": "Ayto. de Teruel",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bender.dpteruel.es/dpt/bopt.nsf/0/EE9360E900CAB747C1258E960040882C"
     }
   ]
 }
