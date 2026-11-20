@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-19T16:59:23.723742+00:00",
+  "lastCheckedUTC": "2026-11-20T06:59:58.932021+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 23,
-    "announcementsRead": 1056,
-    "opportunities": 73
+    "announcementsRead": 1047,
+    "opportunities": 71
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "201",
       "202",
       "203",
       "204",
@@ -37,10 +36,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -61,7 +60,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,20 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1056,
-    "opportunities": 73
+    "announcementsRead": 1047,
+    "opportunities": 71
   },
   "notices": [
+    {
+      "id": "LE-202622309792",
+      "province": "Lleida (BOP)",
+      "title": "Edicto: Convocatoria de pruebas selectivas de acceso mediante concurso-oposición libre para cubrir una plaza vacante en la plantilla de PTGAS laboral",
+      "entity": "CONSORCI UNIVERSITARI DE LA UNED A LA SEU D'URGELL (SEU D'URGELL, LA)",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/223/202622309792.pdf"
+    },
     {
       "id": "LE-202622209812",
       "province": "Lleida (BOP)",
@@ -777,36 +787,6 @@
       "bulletin": "202",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/202/202620208803.pdf"
-    },
-    {
-      "id": "LE-202620108762",
-      "province": "Lleida (BOP)",
-      "title": "Convocatòria i bases procés selecctiu personal laboral temporal -administratiu/va-",
-      "entity": "AJUNTAMENT D'ALBATÀRREC (ALBATÀRREC)",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/201/202620108762.pdf"
-    },
-    {
-      "id": "LE-202620108758",
-      "province": "Lleida (BOP)",
-      "title": "Bases i convocatòria provisió no definitiva per a cobrir 1 lloc de treball de Tresorer/a, classe segona, del Consell Comarcal del Segrià.",
-      "entity": "CONSELL COMARCAL DEL SEGRIÀ",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/201/202620108758.pdf"
-    },
-    {
-      "id": "LE-202620108745",
-      "province": "Lleida (BOP)",
-      "title": "Anunci convocatòria i bases per a la provisió no definitiva del lloc de treball d'Oficial/a Major de l'Ajuntament de Lleida",
-      "entity": "AJUNTAMENT DE LLEIDA (LLEIDA)",
-      "date": "21/10/2026",
-      "bulletin": "201",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/201/202620108745.pdf"
     }
   ]
 }

@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-19T16:46:07.691767+00:00",
+  "lastCheckedUTC": "2026-11-20T06:50:01.308947+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "220",
+    "bulletin": "221",
     "pagesVisited": 24,
-    "announcementsRead": 632,
-    "opportunities": 8,
+    "announcementsRead": 647,
+    "opportunities": 9,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 7
+    "pdfChecked": 8
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -38,10 +37,10 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -61,7 +60,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -75,10 +75,9 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 632,
-    "opportunities": 8,
+    "announcementsRead": 647,
+    "opportunities": 9,
     "regularBulletins": [
-      "200",
       "201",
       "202",
       "203",
@@ -98,11 +97,11 @@
       "217",
       "218",
       "219",
-      "220"
+      "220",
+      "221"
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-200",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-201",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-202",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-203",
@@ -122,10 +121,22 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-217",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-218",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-219",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-220"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-220",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-221"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202605204",
+      "province": "Burgos",
+      "title": "Bases de la convocatoria para la provisión del puesto de jefe del Servicio de Bienestar Social, por el sistema de libre designación",
+      "entity": "Diputación Provincial de Burgos – Servicio de Personal",
+      "date": "20/11/2026",
+      "bulletin": "221",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-221/bopbur-2026-221-anuncio-202605204.pdf",
+      "publisherArticle": "202605204"
+    },
     {
       "id": "BU-2026-202604967",
       "province": "Burgos",

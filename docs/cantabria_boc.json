@@ -2,23 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-19T16:50:52.446446+00:00",
+  "lastCheckedUTC": "2026-11-20T06:52:32.090013+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
-    "pagesVisited": 30,
-    "announcementsRead": 925,
-    "opportunities": 21,
+    "bulletin": "224",
+    "pagesVisited": 29,
+    "announcementsRead": 917,
+    "opportunities": 22,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "202",
-      "Ext. 27",
       "203",
       "204",
       "205",
@@ -46,11 +44,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
-      "2026-10-21",
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -78,7 +75,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -90,11 +88,10 @@
       "2026-11-14",
       "2026-11-15"
     ],
-    "issuesRead": 30,
-    "announcementsRead": 925,
-    "opportunities": 21,
+    "issuesRead": 29,
+    "announcementsRead": 917,
+    "opportunities": 22,
     "regularBulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -115,10 +112,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "extraordinaryBulletins": [
-      "Ext. 27",
       "Ext. 28",
       "Ext. 29",
       "Ext. 30",
@@ -128,8 +125,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47206,
-      47245,
       47225,
       47246,
       47265,
@@ -157,10 +152,21 @@
       47566,
       47567,
       47625,
-      47645
+      47645,
+      47665
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9078",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria de las pruebas selectivas para la provisión, mediante concurso-oposición libre, de una plaza de Auxiliar Administrativo de Administración General.",
+      "entity": "Ayuntamiento de Bareyo",
+      "date": "20/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443246"
+    },
     {
       "id": "CN-2026-9056",
       "province": "Cantabria (BOC)",

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-19T16:47:34.285577+00:00",
+  "lastCheckedUTC": "2026-11-20T06:50:21.632116+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 543,
+    "announcementsRead": 510,
     "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -36,10 +35,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -59,7 +58,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,30 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 543,
+    "announcementsRead": 510,
     "opportunities": 34
   },
   "notices": [
+    {
+      "id": "CC-2026-5452",
+      "province": "Cáceres",
+      "title": "Constitución bolsa puesto de Técnico/a de Recurso Humanos.",
+      "entity": "Ayuntamiento de Navalmoral de la Mata",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452"
+    },
+    {
+      "id": "CC-2026-5446",
+      "province": "Cáceres",
+      "title": "Bases convocatoria para la constitución de una bolsa de trabajo de Auxiliar Administrativo en régimen personal laboral.",
+      "entity": "Ayuntamiento de Aldea del Cano",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5446"
+    },
     {
       "id": "CC-2026-5436",
       "province": "Cáceres",
@@ -396,26 +416,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4951"
-    },
-    {
-      "id": "CC-2026-4923",
-      "province": "Cáceres",
-      "title": "Bases que han de regir la convocatoria y proceso de selección de un Ordenanza-Encargado del pabellón polideportivo e instalaciones deportivas en régimen de personal laboral temporal.",
-      "entity": "Ayuntamiento de Hervás",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4923"
-    },
-    {
-      "id": "CC-2026-4904",
-      "province": "Cáceres",
-      "title": "Convocatoria para la provisión 9 plazas Administrativo concurso-oposición turno libre y discapacidad.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4904"
     }
   ]
 }

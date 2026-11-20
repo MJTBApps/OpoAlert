@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-19T16:45:46.431236+00:00",
+  "lastCheckedUTC": "2026-11-20T06:48:35.318331+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 22,
-    "announcementsRead": 1021,
-    "opportunities": 74
+    "announcementsRead": 1012,
+    "opportunities": 72
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "204",
       "205",
       "206",
       "206S1",
@@ -37,10 +36,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-23",
@@ -61,7 +60,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -75,10 +75,20 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1021,
-    "opportunities": 74
+    "announcementsRead": 1012,
+    "opportunities": 72
   },
   "notices": [
+    {
+      "id": "AS-2026-09466",
+      "province": "Asturias (BOPA)",
+      "title": "Extracto de la Resolución de 11 de noviembre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria noviembre extra 9-2026).",
+      "entity": "Universidad de Oviedo",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/20/2026-09466.pdf"
+    },
     {
       "id": "AS-2026-09449",
       "province": "Asturias (BOPA)",
@@ -788,36 +798,6 @@
       "bulletin": "205",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/22/2026-08371.pdf"
-    },
-    {
-      "id": "AS-2026-08337",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 8 de octubre de 2026, de la Gerencia del Área de Salud II Centro-Suroccidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura del puesto de Coordinador/a de Área Continuidad de Cuidados de Cangas.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "21/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/21/2026-08337.pdf"
-    },
-    {
-      "id": "AS-2026-08327",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 8 de octubre de 2026, del Rector de la Universidad de Oviedo, por la que se convoca concurso público para la elaboración de bolsas de empleo temporal de personal docente e investigador.",
-      "entity": "Universidad de Oviedo",
-      "date": "21/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/21/2026-08327.pdf"
-    },
-    {
-      "id": "AS-2026-08294",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria y bases reguladoras para la selección de personas a contratar por el Ayuntamiento de Mieres, dentro del plan de empleo en el marco de los itinerarios integrados de activación en el ámbito local. Convocatoria 2026.",
-      "entity": "Ayuntamiento de Mieres",
-      "date": "21/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/21/2026-08294.pdf"
     }
   ]
 }

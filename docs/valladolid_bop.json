@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-19T17:03:12.920861+00:00",
+  "lastCheckedUTC": "2026-11-20T07:05:07.771397+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
+    "bulletin": "223",
     "pagesVisited": 21,
-    "announcementsRead": 369,
-    "opportunities": 14
+    "announcementsRead": 364,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -36,10 +35,10 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -59,7 +58,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,10 +73,30 @@
       "2026-11-15"
     ],
     "issuesRead": 21,
-    "announcementsRead": 369,
-    "opportunities": 14
+    "announcementsRead": 364,
+    "opportunities": 13
   },
   "notices": [
+    {
+      "id": "VD-2026-3424",
+      "province": "Valladolid",
+      "title": "Convocatoria para la provisión, mediante acceso libre, de una plaza de Técnico/a Medio de Salud Pública, correspondiente a la Oferta de Empleo Público del año 2024, en la plantilla del Ayuntamiento de Valladolid.",
+      "entity": "AYUNTAMIENTO DE VALLADOLID",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/noviembre/20/BOPVA-A-2026-03424.pdf"
+    },
+    {
+      "id": "VD-2026-3423",
+      "province": "Valladolid",
+      "title": "Composición de la Bolsa de Trabajo para la prestación de servicios de carácter temporal correspondiente a la categoría de Técnico/a Medio Base en Medio Ambiente del Ayuntamiento de Valladolid.",
+      "entity": "AYUNTAMIENTO DE VALLADOLID",
+      "date": "20/11/2026",
+      "bulletin": "223",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/noviembre/20/BOPVA-A-2026-03423.pdf"
+    },
     {
       "id": "VD-2026-3403",
       "province": "Valladolid",
@@ -186,36 +206,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/28/BOPVA-A-2026-03130.pdf"
-    },
-    {
-      "id": "VD-2026-3066",
-      "province": "Valladolid",
-      "title": "Convocatoria y bases para la provisión de una plaza de administrativo de administración general mediante concurso-oposición en turno libre.",
-      "entity": "AYUNTAMIENTO DE VALDESTILLAS",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/21/BOPVA-A-2026-03066.pdf"
-    },
-    {
-      "id": "VD-2026-3065",
-      "province": "Valladolid",
-      "title": "Convocatoria y bases para la provisión de una plaza de operario de mantenimiento.",
-      "entity": "AYUNTAMIENTO DE VILLALAR DE LOS COMUNEROS",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/21/BOPVA-A-2026-03065.pdf"
-    },
-    {
-      "id": "VD-2026-3064",
-      "province": "Valladolid",
-      "title": "Convocatoria para la provisión, mediante acceso libre, de 1 plaza de Técnico/a Superior de Salud Pública - Veterinario/a, correspondiente a la OEP de 2025 del Ayuntamiento de Valladolid.",
-      "entity": "AYUNTAMIENTO DE VALLADOLID",
-      "date": "21/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/octubre/21/BOPVA-A-2026-03064.pdf"
     }
   ]
 }

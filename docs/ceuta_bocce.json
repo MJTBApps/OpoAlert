@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-19T16:49:20.631119+00:00",
+  "lastCheckedUTC": "2026-11-20T06:52:05.084128+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "EXTRA55",
-    "pagesVisited": 14,
-    "announcementsRead": 85,
-    "opportunities": 1,
+    "bulletin": "6671",
+    "pagesVisited": 15,
+    "announcementsRead": 90,
+    "opportunities": 2,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 14,
-    "pdfPagesRead": 264
+    "originalFullPdfIssues": 15,
+    "pdfPagesRead": 360
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
       "EXTRA50",
       "6663",
@@ -32,7 +32,8 @@
       "EXTRA54",
       "6669",
       "6670",
-      "EXTRA55"
+      "EXTRA55",
+      "6671"
     ],
     "publicationDates": [
       "2026-10-22",
@@ -48,10 +49,10 @@
       "2026-11-10",
       "2026-11-13",
       "2026-11-17",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
-      "2026-10-21",
       "2026-10-24",
       "2026-10-25",
       "2026-10-26",
@@ -70,9 +71,9 @@
       "2026-11-16",
       "2026-11-18"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 85,
-    "opportunities": 1,
+    "issuesRead": 15,
+    "announcementsRead": 90,
+    "opportunities": 2,
     "regularBulletins": [
       "6663",
       "6664",
@@ -81,7 +82,8 @@
       "6667",
       "6668",
       "6669",
-      "6670"
+      "6670",
+      "6671"
     ],
     "extraordinaryBulletins": [
       "EXTRA50",
@@ -259,10 +261,33 @@
           108,
           110
         ]
+      },
+      {
+        "number": "6671",
+        "date": "2026-11-20",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23329-bocce-6671-20-11-2026?Itemid=534",
+        "sha256": "47b2808a02ad9108de64b156647bb53bcac4baab6d930f6c1b4ba0835ffca8e7",
+        "bytes": 6071089,
+        "pages": 96,
+        "edicts": [
+          776,
+          780
+        ]
       }
     ]
   },
   "notices": [
+    {
+      "id": "CE-2026-780",
+      "province": "Ceuta (BOCCE)",
+      "title": "OBIMACE S.L.U.-Aprobación de la convocatoria pública para dar cobertura a las Bases Reguladoras de los puestos de trabajo incluidos en las Ofertas Públicas de Empleo referidas a los ejercicio 2021, 2022 y 2023, a través del sistema selectivo de promoción libre (1 plaza de Auxiliar Administrativo; 1 plaza de Delineante; 3 plazas de Oficial Primera de Albañilería; 1 plaza de Oficial Primera de Carpintería; 1 plaza de Oficial Primera Electricista; 1 plaza de Oficial Primera en Electromecánica; 1 plaza de Oficial Primera de Fontanería; 2 plazas de Oficial Primera de Pintura; 1 plaza de Oficial Primera Soldador; 3 plazas de Oficial de Segunda).",
+      "entity": "Ciudad Autónoma de Ceuta",
+      "date": "20/11/2026",
+      "bulletin": "6671",
+      "type": "Plaza / oposición",
+      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23329-bocce-6671-20-11-2026?Itemid=534",
+      "publisherArticle": "780"
+    },
     {
       "id": "CE-2026-763",
       "province": "Ceuta (BOCCE)",
