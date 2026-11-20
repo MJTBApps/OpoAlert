@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-20T06:34:00.788395+00:00",
+  "lastCheckedUTC": "2026-11-20T12:32:12.671311+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "221",
-    "pagesVisited": 21,
-    "announcementsRead": 844,
-    "opportunities": 56,
+    "bulletin": "222",
+    "pagesVisited": 22,
+    "announcementsRead": 885,
+    "opportunities": 59,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-22",
     "rangeEnd": "2026-11-20",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 844,
-    "opportunities": 56,
+    "issuesRead": 22,
+    "pagesVisited": 22,
+    "announcementsRead": 885,
+    "opportunities": 59,
     "bulletins": [
       "201",
       "202",
@@ -40,7 +40,8 @@
       "218",
       "219",
       "220",
-      "221"
+      "221",
+      "222"
     ],
     "publicationDates": [
       "2026-10-22",
@@ -63,7 +64,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -73,11 +75,40 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15",
-      "2026-11-20"
+      "2026-11-15"
     ]
   },
   "notices": [
+    {
+      "id": "AL-2026-9004",
+      "province": "Alicante",
+      "title": "APROBACIÓN BASES SELECCIÓN PUESTO DE PEÓN PARA LA SOCIEDAD MERCANTIL ALICANTE NATURA RED AMBIENTAL DE LA PROVINCIA DE ALICANTE, S.A.",
+      "entity": "ALICANTE NATURA RED AMBIENTAL DE LA PROVINCIA DE ALICANTE, S.A.",
+      "date": "20/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/20_222/2026_009004.pdf"
+    },
+    {
+      "id": "AL-2026-8881",
+      "province": "Alicante",
+      "title": "LISTADO PROVISIONAL CONVOCATORIA DOS PLAZAS DE AUXILIAR SERVICIO DE AYUDA A DOMICILIO (SAD)",
+      "entity": "AYUNTAMIENTO LOS MONTESINOS",
+      "date": "20/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/20_222/2026_008881.pdf"
+    },
+    {
+      "id": "AL-2026-8862",
+      "province": "Alicante",
+      "title": "RECTIFICACIÓN DE ERROR MATERIAL EN LAS BASES DEL PROCESO SELECTIVO PARA 1 PLAZA DE ADMINISTRATIVO/A.",
+      "entity": "AYUNTAMIENTO ALMORADÍ",
+      "date": "20/11/2026",
+      "bulletin": "222",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/20_222/2026_008862.pdf"
+    },
     {
       "id": "AL-2026-8934",
       "province": "Alicante",
