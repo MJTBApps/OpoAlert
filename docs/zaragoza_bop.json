@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-19T17:17:50.286222+00:00",
+  "lastCheckedUTC": "2026-11-20T10:18:17.301509+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "267",
+    "bulletin": "268",
     "pagesVisited": 2,
-    "announcementsRead": 804,
-    "opportunities": 78
+    "announcementsRead": 849,
+    "opportunities": 83
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 804,
-    "opportunities": 78,
+    "announcementsRead": 849,
+    "opportunities": 83,
     "bulletins": [
-      "243",
       "244",
       "245",
       "246",
@@ -44,10 +43,10 @@
       "264",
       "265",
       "266",
-      "267"
+      "267",
+      "268"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-24",
@@ -71,10 +70,10 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "issuePublicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-24",
@@ -98,7 +97,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -108,19 +108,99 @@
       "2026-11-15"
     ],
     "sectionsRead": {
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 10,
-      "SECCIÓN TERCERA": 43,
-      "SECCIÓN QUINTA": 103,
-      "SECCIÓN SEXTA": 622,
-      "PARTE NO OFICIAL": 15,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 5,
+      "SECCIÓN TERCERA": 40,
+      "SECCIÓN QUINTA": 107,
+      "SECCIÓN SEXTA": 666,
+      "PARTE NO OFICIAL": 20,
       "SECCIÓN SEGUNDA": 6,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 101
+    "documentsVerified": 106
   },
   "notices": [
+    {
+      "id": "ZA-000345375",
+      "province": "Zaragoza",
+      "title": "En cumplimiento del artículo 51 de las Ordenanzas, se convoca a todos los partícipes de la Comunidad de Regantes de la Acequia de Cascajo de Grisén a la Junta general ordinaria, que tendrá lugar en el Centro…",
+      "entity": "COMUNIDAD DE REGANTES DE LA ACEQUIA DE CASCAJO, DE GRISÉN",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475904222020"
+    },
+    {
+      "id": "ZA-000345373",
+      "province": "Zaragoza",
+      "title": "ACUERDO de la Junta de la Mancomunidad de la Ribera Izquierda del Ebro por el que se aprueba inicialmente su presupuesto para el ejercicio 2027. Aprobado inicialmente en sesión ordinaria de Junta de la…",
+      "entity": "MANCOMUNIDAD RIBERA IZQUIERDA DEL EBRO",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475902201919"
+    },
+    {
+      "id": "ZA-000345364",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE TORREHERMOSA",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475893111717"
+    },
+    {
+      "id": "ZA-000345363",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE SIERRA DE LUNA",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475892101616"
+    },
+    {
+      "id": "ZA-000345351",
+      "province": "Zaragoza",
+      "title": "BASES para la creación de bolsa de empleo de peones de limpieza viaria.",
+      "entity": "AYUNTAMIENTO DE LA MUELA",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475880981313"
+    },
+    {
+      "id": "ZA-000345348",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a aprobación inicial del presupuesto municipal para el año 2027.",
+      "entity": "AYUNTAMIENTO DE LA ALMUNIA DE DOÑA GODINA",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475877951212"
+    },
+    {
+      "id": "ZA-000345342",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE HERRERA DE LOS NAVARROS",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475871891010"
+    },
+    {
+      "id": "ZA-000345325",
+      "province": "Zaragoza",
+      "title": "El Pleno de la Corporación, en sesión celebrada el día 16 de noviembre de 2026, ha aprobado inicialmente el presupuesto general del Ayuntamiento de Ariza para el ejercicio 2027, cuyo estado de gastos…",
+      "entity": "AYUNTAMIENTO DE ARIZA",
+      "date": "20/11/2026",
+      "bulletin": "268",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475854720606"
+    },
     {
       "id": "ZA-000345298",
       "province": "Zaragoza",
@@ -870,36 +950,6 @@
       "bulletin": "244",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471506720404"
-    },
-    {
-      "id": "ZA-000344521",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2026.",
-      "entity": "AYUNTAMIENTO DE LUNA",
-      "date": "21/10/2026",
-      "bulletin": "243",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471264250404"
-    },
-    {
-      "id": "ZA-000344519",
-      "province": "Zaragoza",
-      "title": "Anuncio sobre rectificación de la base cuarta.3 de las bases que rigen el proceso selectivo para el ingreso y provisión de una plaza de jefe/a de mantenimiento del Patronato Municipal de las Artes Escénicas y de la Imagen, mediante el turno de promoción interna y sistema selectivo de concurso",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE CULTURA, EDUCACIÓN Y TURISMO. SERVICIO ADMINISTRATIVO DE CULTURA Y EDUCACIÓN",
-      "date": "21/10/2026",
-      "bulletin": "243",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471262230404"
-    },
-    {
-      "id": "ZA-000344514",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a decreto por el que se declara desierta la convocatoria para la cobertura, por oposición en turno libre, de una plaza de letrado/a asesor/a.",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
-      "date": "21/10/2026",
-      "bulletin": "243",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471257180303"
     }
   ]
 }
