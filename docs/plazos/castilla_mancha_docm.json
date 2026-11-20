@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T08:23:32+00:00",
+ "updatedUTC": "2026-11-20T09:41:34+00:00",
  "items": {
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/29/pdf/2026_7856.pdf&tipo=rutaDocm": {
    "days": 15,
@@ -92,7 +92,61 @@
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/04/pdf/2026_7829.pdf&tipo=rutaDocm": "https://www.daimiel.es/sede",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/12/pdf/2026_8053.pdf&tipo=rutaDocm": "https://www.jccm.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8044.pdf&tipo=rutaDocm": "https://buenachedealarcon.sedelectronica.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/17/pdf/2026_8146.pdf&tipo=rutaDocm": "https://www.jccm.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm": "https://www.sede.uclm.es/"
+ },
+ "sedeRaw": {
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/04/pdf/2026_7829.pdf&tipo=rutaDocm": [
+   "https://www.daimiel.es/sede"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/12/pdf/2026_8053.pdf&tipo=rutaDocm": [
+   "https://www.jccm.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8044.pdf&tipo=rutaDocm": [
+   "https://buenachedealarcon.sedelectronica.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/17/pdf/2026_8146.pdf&tipo=rutaDocm": [
+   "https://www.jccm.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm": [
+   "https://www.sede.uclm.es/"
+  ]
+ },
+ "sinSede": [
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/22/pdf/2026_7512.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/23/pdf/2026_7370.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/23/pdf/2026_7591.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7210.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7629.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7630.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/29/pdf/2026_7856.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/30/pdf/2026_7812.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/30/pdf/2026_7825.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/30/pdf/2026_7833.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/03/pdf/2026_7821.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/03/pdf/2026_7824.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/04/pdf/2026_7293.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/04/pdf/2026_7855.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/05/pdf/2026_7843.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/05/pdf/2026_7859.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/05/pdf/2026_7861.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/05/pdf/2026_7862.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/05/pdf/2026_7863.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/05/pdf/2026_7877.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/06/pdf/2026_7886.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/06/pdf/2026_7887.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/06/pdf/2026_7906.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/09/pdf/2026_7927.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/10/pdf/2026_7924.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/10/pdf/2026_7984.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7600.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7974.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7985.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8043.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8091.pdf&tipo=rutaDocm"
+ ]
 }

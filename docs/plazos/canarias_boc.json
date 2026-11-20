@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T08:23:32+00:00",
+ "updatedUTC": "2026-11-20T09:41:34+00:00",
  "items": {
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": {
    "days": 10,
@@ -146,7 +146,213 @@
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-234-4064.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
+ "sedes": {
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3699.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3700.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-216-3711.pdf": "https://sede.grancanaria.com/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-216-3712.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-218-3737.pdf": "https://sede.parcan.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-221-3799.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-225-3896.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-225-3908.pdf": "https://teror.sedelectronica.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4036.pdf": "https://sede.ull.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4038.pdf": "https://administracion.ulpgc.es/",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4055.pdf": "https://sede.losrelejos.es/"
+ },
+ "sedeRaw": {
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-211-3632.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-211-3634.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-211-3636.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-214-3681.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3696.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3697.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3699.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3700.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-216-3709.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-216-3711.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.grancanaria.com/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-216-3712.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3725.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3726.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-218-3737.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.parcan.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-220-3778.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-221-3799.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-221-3819.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-222-3820.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-222-3821.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-222-3840.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-223-3847.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-223-3848.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-224-3860.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-224-3875.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-224-3884.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-225-3896.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-225-3908.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://teror.sedelectronica.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-227-3913.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-227-3914.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3933.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3934.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3935.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3936.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3937.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3938.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3939.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3940.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3941.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3942.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3943.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3944.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-228-3945.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-229-3961.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-229-3969.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-230-3997.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-231-4006.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-231-4007.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-231-4008.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4035.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4036.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.ull.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4037.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4038.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://administracion.ulpgc.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4052.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4053.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4055.pdf": [
+   "https://sede.gobiernodecanarias.org/",
+   "https://sede.losrelejos.es/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-234-4056.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-234-4062.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-234-4063.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-234-4064.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ]
+ },
  "sinSede": []
 }

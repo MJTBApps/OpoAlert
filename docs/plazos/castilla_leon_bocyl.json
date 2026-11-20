@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T08:23:32+00:00",
+ "updatedUTC": "2026-11-20T09:41:34+00:00",
  "items": {
   "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-41.pdf": {
    "days": 20,
@@ -631,7 +631,343 @@
   "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-8.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-38.pdf": "https://sede.aytoleon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-39.pdf": "https://portalciudadano.aytosanandres.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-40.pdf": "https://navadelaasuncion.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-8.pdf": "https://diputacionavila.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-27.pdf": "https://sede.diputaciondepalencia.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-29.pdf": "https://valdestillas.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-30.pdf": "https://valdestillas.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-39.pdf": "https://sede.mirandadeebro.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-40.pdf": "https://sede.mirandadeebro.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/27/pdf/BOCYL-D-27102026-208-7.pdf": "https://sede.unileon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-6.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-7.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-17.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-17.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-40.pdf": "https://aytobembibre.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-41.pdf": "https://cigales.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-32.pdf": "https://sede.dipuleon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-33.pdf": "https://sede.dipuleon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-40.pdf": "https://villalardeloscomuneros.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/05/pdf/BOCYL-D-05112026-214-24.pdf": "https://villaquilambre.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/05/pdf/BOCYL-D-05112026-214-25.pdf": "https://sede.pmdpalencia.com/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-11.pdf": "https://sede.unileon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-12.pdf": "https://sede.unileon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-13.pdf": "https://sede.usal.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-14.pdf": "https://sede.usal.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-15.pdf": "https://sede.usal.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-17.pdf": "https://sede.usal.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-19.pdf": "https://sede.usal.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-63.pdf": "https://mayorga.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-64.pdf": "https://mayorga.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-65.pdf": "https://mayorga.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-40.pdf": "https://sede.diputaciondepalencia.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-41.pdf": "https://sede.pmdpalencia.com/",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-10.pdf": "https://sede.unileon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-32.pdf": "https://portaltramitador.dipsoria.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-33.pdf": "https://portaltramitador.dipsoria.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-34.pdf": "https://portaltramitador.dipsoria.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-37.pdf": "https://mayorga.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-41.pdf": "https://portaltramitador.dipsoria.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-9.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-10.pdf": "https://sede.ubu.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-57.pdf": "https://cubillos.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-46.pdf": "https://sede.mirandadeebro.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-47.pdf": "https://sede.mirandadeebro.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-39.pdf": "https://sede.mirandadeebro.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-27.pdf": "https://www.oager.net/SedeElectronica",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-31.pdf": "https://cuevasdelvalle.sedeelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-38.pdf": "https://www.valladolid.gob.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-39.pdf": "https://villaralbo.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-38.pdf": [
+   "https://sede.aytoleon.es/",
+   "https://www.sede.aytoleon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-39.pdf": [
+   "https://portalciudadano.aytosanandres.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-40.pdf": [
+   "https://navadelaasuncion.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-8.pdf": [
+   "https://diputacionavila.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-27.pdf": [
+   "https://sede.diputaciondepalencia.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-29.pdf": [
+   "https://valdestillas.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-30.pdf": [
+   "https://valdestillas.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-39.pdf": [
+   "https://sede.mirandadeebro.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-40.pdf": [
+   "https://sede.mirandadeebro.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/27/pdf/BOCYL-D-27102026-208-7.pdf": [
+   "https://sede.unileon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-6.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-7.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-17.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-17.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-40.pdf": [
+   "https://aytobembibre.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-41.pdf": [
+   "https://cigales.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-32.pdf": [
+   "https://sede.dipuleon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-33.pdf": [
+   "https://sede.dipuleon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-40.pdf": [
+   "https://villalardeloscomuneros.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/05/pdf/BOCYL-D-05112026-214-24.pdf": [
+   "https://villaquilambre.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/05/pdf/BOCYL-D-05112026-214-25.pdf": [
+   "https://sede.pmdpalencia.com/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-11.pdf": [
+   "https://sede.unileon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-12.pdf": [
+   "https://sede.unileon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-13.pdf": [
+   "https://sede.usal.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-14.pdf": [
+   "https://sede.usal.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-15.pdf": [
+   "https://sede.usal.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-17.pdf": [
+   "https://sede.usal.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-19.pdf": [
+   "https://sede.usal.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-63.pdf": [
+   "https://mayorga.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-64.pdf": [
+   "https://mayorga.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-65.pdf": [
+   "https://mayorga.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-40.pdf": [
+   "https://sede.diputaciondepalencia.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-41.pdf": [
+   "https://sede.pmdpalencia.com/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-10.pdf": [
+   "https://sede.unileon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-32.pdf": [
+   "https://portaltramitador.dipsoria.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-33.pdf": [
+   "https://portaltramitador.dipsoria.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-34.pdf": [
+   "https://portaltramitador.dipsoria.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-37.pdf": [
+   "https://mayorga.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-41.pdf": [
+   "https://portaltramitador.dipsoria.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-9.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-10.pdf": [
+   "https://sede.ubu.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-57.pdf": [
+   "https://cubillos.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-46.pdf": [
+   "https://sede.mirandadeebro.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-47.pdf": [
+   "https://sede.mirandadeebro.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-39.pdf": [
+   "https://sede.mirandadeebro.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-27.pdf": [
+   "https://www.oager.net/SedeElectronica"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-31.pdf": [
+   "https://cuevasdelvalle.sedeelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-38.pdf": [
+   "https://www.valladolid.gob.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-39.pdf": [
+   "https://villaralbo.sedelectronica.es/"
+  ]
+ },
+ "sinSede": [
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-10.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-13.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-14.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/22/pdf/BOCYL-D-22102026-205-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-10.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-28.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/23/pdf/BOCYL-D-23102026-206-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/27/pdf/BOCYL-D-27102026-208-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/27/pdf/BOCYL-D-27102026-208-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/27/pdf/BOCYL-D-27102026-208-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/27/pdf/BOCYL-D-27102026-208-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/28/pdf/BOCYL-D-28102026-209-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-30.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-33.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-35.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-11.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-12.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-14.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-10.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-11.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-35.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/03/pdf/BOCYL-D-03112026-212-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-10.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-38.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/04/pdf/BOCYL-D-04112026-213-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/05/pdf/BOCYL-D-05112026-214-22.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/05/pdf/BOCYL-D-05112026-214-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-10.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-24.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-25.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-26.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-60.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/06/pdf/BOCYL-D-06112026-215-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-11.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-42.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/09/pdf/BOCYL-D-09112026-216-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-36.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/10/pdf/BOCYL-D-10112026-217-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-13.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-14.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-15.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-17.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/11/pdf/BOCYL-D-11112026-218-18.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-27.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/12/pdf/BOCYL-D-12112026-219-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-56.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/13/pdf/BOCYL-D-13112026-220-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/16/pdf/BOCYL-D-16112026-221-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-10.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-11.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-12.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-40.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/17/pdf/BOCYL-D-17112026-222-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-26.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/18/pdf/BOCYL-D-18112026-223-7.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-29.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-30.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-32.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-33.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-34.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-35.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-36.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-8.pdf"
+ ]
 }

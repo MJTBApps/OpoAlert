@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T08:23:32+00:00",
+ "updatedUTC": "2026-11-20T09:41:34+00:00",
  "items": {
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WFfSAA3Aez": {
    "days": 20,
@@ -96,7 +96,79 @@
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/epzaNg0fpC"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/1IaxbSZA6d": "https://seuelectronica.vila-real.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/3br9MsT1Xt": "https://burriana.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9ovfgQyxzw": "https://sede.peniscola.org/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/FeQrHB7DKq": "https://sede.peniscola.org/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/H6CBoMHl0j": "https://valldalba.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/I9msZebtVn": "https://culla.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/IWugHYK8TW": "https://seuelectronica.vila-real.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/J1J9c0By6R": "https://altopalancia.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/LeL7TJdgSg": "https://seuelectronica.vila-real.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/MGVvEXLqhH": "https://soneja.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Mf6bFK5KNH": "https://valldalba.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Uji5WM2mtJ": "https://seuelectronica.vila-real.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Zr1UTMOBg9": "https://seuelectronica.vila-real.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/a6hO6KA1rR": "https://sede.peniscola.org/"
+ },
+ "sedeRaw": {
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/1IaxbSZA6d": [
+   "https://seuelectronica.vila-real.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/3br9MsT1Xt": [
+   "https://burriana.sedelectronica.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9ovfgQyxzw": [
+   "https://sede.peniscola.org/",
+   "https://www.sede.peniscola.org/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/FeQrHB7DKq": [
+   "https://sede.peniscola.org/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/H6CBoMHl0j": [
+   "https://valldalba.sedelectronica.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/I9msZebtVn": [
+   "https://culla.sedelectronica.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/IWugHYK8TW": [
+   "https://seuelectronica.vila-real.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/J1J9c0By6R": [
+   "https://altopalancia.sedelectronica.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/LeL7TJdgSg": [
+   "https://seuelectronica.vila-real.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/MGVvEXLqhH": [
+   "https://soneja.sedelectronica.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Mf6bFK5KNH": [
+   "https://valldalba.sedelectronica.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Uji5WM2mtJ": [
+   "https://seuelectronica.vila-real.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Zr1UTMOBg9": [
+   "https://seuelectronica.vila-real.es/"
+  ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/a6hO6KA1rR": [
+   "https://sede.peniscola.org/",
+   "https://www.sede.peniscola.org/"
+  ]
+ },
+ "sinSede": [
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/4saUVmJmqm",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9AeIkoHvKV",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/BQ2BpFlM7f",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/G4tvW6e94w",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/NxVOnsj7NY",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/QdmWhYkLYa",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/RK1L6w4BMF",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WC7wWQOuu8",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WFfSAA3Aez",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/epzaNg0fpC",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/fecUn8PvkS"
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T08:23:32+00:00",
+ "updatedUTC": "2026-11-20T09:41:34+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -95,7 +95,99 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
- "sinSede": []
+ "sedes": {
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4951": "https://www.dip-caceres.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": "https://tajosalor.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": "https://riberosdeltajo.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": "https://tietar.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067": "https://valverdedelfresno.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068": "https://zorita.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": "https://valdecanasdetajo.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5182": "https://aytonavalmoral.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5184": "https://aytonavalmoral.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5185": "https://aytonavalmoral.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5212": "https://malpartidadecaceres.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5236": "https://peraledadelamata.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5274": "https://peraledadelamata.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5291": "https://trujillo.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5389": "https://torrejoncillo.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5436": "https://villanuevadelavera.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5446": "https://aldeadelcano.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": "https://aytonavalmoral.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4951": [
+   "https://www.dip-caceres.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": [
+   "https://tajosalor.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": [
+   "https://riberosdeltajo.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": [
+   "https://tietar.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067": [
+   "https://valverdedelfresno.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068": [
+   "https://zorita.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": [
+   "https://valdecanasdetajo.sedelectronica.es/",
+   "https://sede.inap.gob.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5182": [
+   "https://aytonavalmoral.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5184": [
+   "https://aytonavalmoral.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5185": [
+   "https://aytonavalmoral.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5212": [
+   "https://malpartidadecaceres.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5236": [
+   "https://peraledadelamata.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5274": [
+   "https://peraledadelamata.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5291": [
+   "https://trujillo.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5389": [
+   "https://torrejoncillo.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5436": [
+   "https://villanuevadelavera.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5446": [
+   "https://aldeadelcano.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": [
+   "https://aytonavalmoral.sedelectronica.es/"
+  ]
+ },
+ "sinSede": [
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4967",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5164",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5200",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5201",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5203",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5251",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5298",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5299",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5305",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5323",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5346",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5358",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5361",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5369"
+ ]
 }
