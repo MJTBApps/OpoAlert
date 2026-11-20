@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-20T09:35:58.849356+00:00",
+  "lastCheckedUTC": "2026-11-20T12:22:11.850578+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
@@ -118,7 +118,7 @@
     "parseMethods": [
       "xml",
       "xml",
-      "html",
+      "xml",
       "xml",
       "html",
       "xml",
