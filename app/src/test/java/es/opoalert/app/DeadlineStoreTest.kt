@@ -25,6 +25,17 @@ class DeadlineStoreTest {
         assertNull(DeadlineStore.parse("""{"schemaVersion":2,"items":{}}""", url))
     }
 
+    private fun sedes(link: String) = """{"schemaVersion":1,"items":{},"sedes":{"$url":"$link"}}"""
+
+    @Test fun readsTheSedeWrittenInTheNotice() {
+        assertEquals("https://lietor.sedipualba.es/", DeadlineStore.parseSede(sedes("https://lietor.sedipualba.es/"), url))
+        assertEquals("https://www.seu-e.cat/ca/web/bascara", DeadlineStore.parseSede(sedes("https://www.seu-e.cat/ca/web/bascara"), url))
+        assertNull(DeadlineStore.parseSede(sedes("http://lietor.sedipualba.es/"), url))
+        assertNull(DeadlineStore.parseSede(sedes("https://lietor.sedi-/"), url))
+        assertNull(DeadlineStore.parseSede(sedes("javascript:alert(1)"), url))
+        assertNull(DeadlineStore.parseSede(file("{}"), url))
+    }
+
     @Test fun oneFilePerSource() {
         assertEquals("https://mjtbapps.github.io/OpoAlert/plazos/boe.json", DeadlineStore.urlFor(Province.BOE))
         assertEquals("https://mjtbapps.github.io/OpoAlert/plazos/convocatorias.json", DeadlineStore.urlFor(Province.VALENCIA))

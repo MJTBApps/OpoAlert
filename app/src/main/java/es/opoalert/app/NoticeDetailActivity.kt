@@ -60,6 +60,7 @@ class NoticeDetailActivity : Activity() {
         addHero(content)
         addOfficialButton(content)
         addDeadline(content)
+        addSede(content)
         addSummary(content)
         addOfficialSource(content)
         addActions(content)
@@ -291,6 +292,43 @@ class NoticeDetailActivity : Activity() {
                 card.visibility = View.VISIBLE
             }
         }.start()
+    }
+
+    /**
+     * Sede electrónica de quien convoca, si el anuncio la escribe (la copia
+     * `backend/plazos.py`). Se abre en el navegador del móvil.
+     */
+    private fun addSede(content: LinearLayout) {
+        if (!officialIsPdf()) return
+        val province = Province.fromLabel(notice.province) ?: Province.fromNoticeId(notice.id)
+        val holder = column().apply { visibility = View.GONE }
+        content.addView(holder, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(8); bottomMargin = dp(6) })
+        Thread {
+            val sede = DeadlineStore.findSede(applicationContext, province, notice.url)
+            runOnUiThread {
+                if (sede == null || isFinishing || isDestroyed) return@runOnUiThread
+                holder.addView(action("🏛   Ir a la sede electrónica", "#E8F5EE", "#13795B") { openSede(sede) },
+                    LinearLayout.LayoutParams(-1, dp(52)))
+                holder.addView(text(
+                    sede.removePrefix("https://").removeSuffix("/") + " · dirección copiada del anuncio",
+                    10.5f, "#5E7A6C"
+                ).apply {
+                    gravity = Gravity.CENTER
+                    setPadding(dp(4), dp(6), dp(4), 0)
+                })
+                holder.visibility = View.VISIBLE
+            }
+        }.start()
+    }
+
+    private fun openSede(address: String) {
+        val link = Uri.parse(address)
+        if (link.scheme != "https") return
+        try {
+            startActivity(Intent(Intent.ACTION_VIEW, link).addCategory(Intent.CATEGORY_BROWSABLE))
+        } catch (_: ActivityNotFoundException) {
+            Toast.makeText(this, "No hay navegador para abrir la sede.", Toast.LENGTH_LONG).show()
+        }
     }
 
     /** Enlaces que son páginas web (fichas) y no PDF: se abren en el navegador. */

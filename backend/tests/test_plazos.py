@@ -118,5 +118,69 @@ class UpdateTest(unittest.TestCase):
         self.assertIsNotNone(plazos.problem("https://x.es/a.pdf", dict(good, kind="lectivos"), urls))
 
 
+class FindSedeTest(unittest.TestCase):
+    """Direcciones reales de anuncios de noviembre de 2026."""
+
+    def test_sedes_escritas_en_el_anuncio(self):
+        cases = [
+            ("Las solicitudes se presentarán en la sede electrónica https://lietor.sedipualba.es/, apartado…",
+             "https://lietor.sedipualba.es/"),
+            ("a través de la sede electrónica del Ayuntamiento [http://ribadedeva.sedelectronica.es].",
+             "https://ribadedeva.sedelectronica.es/"),
+            ("disponible en https://casavieja.\nsedelectronica.es/board.", "https://casavieja.sedelectronica.es/"),
+            ("tablón de la sede (https://www.daimiel.es/sede).", "https://www.daimiel.es/sede"),
+            ("https://www.seu-e.cat/ca/web/bascara/tramits-i-gestions", "https://www.seu-e.cat/ca/web/bascara"),
+            ("en la sede electrónica de este Ayuntamiento (www.villarrobledo.com).", "https://www.villarrobledo.com/"),
+        ]
+        for text, link in cases:
+            with self.subTest(text=text[:40]):
+                self.assertEqual(plazos.find_sedes_in_text(text)[:1], [link])
+
+    def test_no_son_sedes(self):
+        for text in [
+            "Puede verificarse en https://sede.dipucr.es/verificador?csv=XYZ",
+            "Más información en www.ayuntamiento.es/empleo",           # web sin decir que es la sede
+            "https://lietor.sedi-",                                     # cortada al final de la línea
+            "Protección de datos: https://sedeagpd.gob.es",
+            "Firmado con www.svc.cat",
+        ]:
+            with self.subTest(text=text):
+                self.assertEqual(plazos.find_sedes_in_text(text), [])
+
+    def test_la_sede_propia_gana_a_la_web_general(self):
+        self.assertEqual(plazos.find_sedes_in_text("sede electrónica www.motril.es o https://sede.motril.es.")[0],
+                         "https://sede.motril.es/")
+
+    def test_pie_del_boletin_y_dominio_del_anuncio_no_cuentan(self):
+        raw = {f"https://bop.x.es/{i}.pdf": ["https://sede.dipux.es/"] for i in range(8)}
+        raw["https://bop.x.es/1.pdf"] = ["https://sede.dipux.es/", "https://pueblo.sedelectronica.es/"]
+        raw["https://bop.x.es/9.pdf"] = ["https://bop.x.es/"]
+        chosen = plazos.choose_sedes(raw, set(raw))
+        self.assertEqual(chosen, {"https://bop.x.es/1.pdf": "https://pueblo.sedelectronica.es/"})
+
+    def test_lee_la_sede_de_anuncios_ya_leidos_una_sola_vez(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            docs = Path(tmp)
+            feed = {"notices": [{"id": "1", "type": "Plaza / oposición", "url": "https://x.es/a.pdf"}]}
+            (docs / "boe.json").write_text(json.dumps(feed), encoding="utf-8")
+            (docs / "plazos").mkdir()
+            (docs / "plazos" / "boe.json").write_text(json.dumps(
+                {"schemaVersion": 1, "items": {}, "none": ["https://x.es/a.pdf"], "tries": {}}), encoding="utf-8")
+            with mock.patch.object(plazos, "download", return_value=b"%PDF-"), \
+                    mock.patch.object(plazos, "find_in_pdf", return_value=None), \
+                    mock.patch.object(plazos, "find_sedes_in_pdf", return_value=["https://pueblo.sedelectronica.es/"]):
+                self.assertEqual(plazos.update(docs, limit=10)["leidos"], 1)
+                saved = json.loads((docs / "plazos" / "boe.json").read_text(encoding="utf-8"))
+                self.assertEqual(saved["sedes"], {"https://x.es/a.pdf": "https://pueblo.sedelectronica.es/"})
+                self.assertEqual(saved["none"], ["https://x.es/a.pdf"])
+                self.assertEqual(plazos.update(docs, limit=10)["leidos"], 0)
+
+    def test_validacion_de_la_sede(self):
+        urls = {"https://x.es/a.pdf"}
+        self.assertIsNone(plazos.sede_problem("https://x.es/a.pdf", "https://pueblo.sedelectronica.es/", urls))
+        self.assertIsNotNone(plazos.sede_problem("https://x.es/a.pdf", "http://pueblo.sedelectronica.es/", urls))
+        self.assertIsNotNone(plazos.sede_problem("https://otro.es/a.pdf", "https://pueblo.sedelectronica.es/", urls))
+
+
 if __name__ == "__main__":
     unittest.main()

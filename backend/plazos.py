@@ -136,6 +136,129 @@ def find_in_pdf(data: bytes, first_page: int = 1, max_pages: int = 6) -> dict | 
 
 
 # ---------------------------------------------------------------------------
+# Sede electrónica de la administración que convoca, tal como la escribe el anuncio
+# («…a través de la sede electrónica https://xxxx.sedelectronica.es»). Solo se toma
+# una dirección que esté escrita en el PDF; nunca se deduce del nombre. Se enlaza la
+# raíz de la sede (las rutas largas suelen quedar cortadas al cambiar de línea).
+# El pie de página del propio boletín (su sede, el verificador de firmas) se descarta
+# después, en `choose_sede`, porque se repite en casi todos los anuncios de la fuente.
+# ---------------------------------------------------------------------------
+URL_IN_TEXT = re.compile(r"(?:https?://|www\.)[^\s<>\"'()\[\]{}«»“”‘’|]+", re.IGNORECASE)
+# «https://casavieja.\nsedelectronica.es»: dirección partida al final de la línea.
+URL_SPLIT = re.compile(r"((?:https?://|www\.)[\w\-.]*\w\.)[ \t]*\n[ \t]*(?=[a-z0-9])", re.IGNORECASE)
+HOST = re.compile(r"^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:es|cat|gal|eus|org|com|net|eu|online|info)$")
+SEDE_WORDS = ("sede", "seu", "sedipualba", "convoca")
+SEDE_CONTEXT = re.compile(r"\b(?:sede|seu)\s+electronica\b|\bsede-e\b|\bseu-e\b")
+NOT_SEDE = re.compile(r"verifi|valida|cotejo|\bcsv\b|firma")
+NOT_SEDE_HOSTS = {"sedeagpd.gob.es", "tcpdf.org", "boe.es", "administracion.gob.es", "svc.cat",
+                  "sede.administracionespublicas.gob.es", "rec.redsara.es"}
+# Sedes compartidas por muchos ayuntamientos: la ruta dice de cuál es («/ca/web/bascara»).
+SHARED_SEDES = {"seu-e.cat": 3}
+MAX_SEDES = 3
+
+
+def sede_link(raw: str) -> str | None:
+    """Dirección de una sede escrita en el anuncio → «https://host/» (None si no lo es)."""
+    raw = raw.rstrip(".,;:)]»”’'-")
+    lowered = raw.lower()
+    rest = lowered.split("://", 1)[1] if "://" in lowered else lowered
+    written, _, path = rest.partition("/")
+    host = written.removeprefix("www.")
+    if not HOST.match(host) or host in NOT_SEDE_HOSTS or NOT_SEDE.search(lowered):
+        return None
+    if host in SHARED_SEDES:
+        original = (raw.split("://", 1)[-1]).split("?", 1)[0].split("/")[1:SHARED_SEDES[host] + 1]
+        if len(original) < SHARED_SEDES[host] or not all(re.fullmatch(r"[A-Za-z0-9_-]+", part) for part in original):
+            return None
+        return f"https://{written}/" + "/".join(original)
+    if any(word in host for word in SEDE_WORDS):
+        return f"https://{written}/"
+    # «https://www.daimiel.es/sede»: la sede es una carpeta de la web municipal.
+    first = path.split("/", 1)[0].split("?", 1)[0]
+    if first in {"sede", "seu", "sede-electronica", "seu-electronica", "sedeelectronica"}:
+        original = (raw.split("://", 1)[-1]).split("/", 2)[1].split("?", 1)[0]
+        return f"https://{written}/{original}"
+    return None
+
+
+def find_sedes_in_text(text: str) -> list[str]:
+    """Sedes electrónicas escritas en el texto, de la más repetida a la menos."""
+    text = URL_SPLIT.sub(r"\1", text)
+    folded = fold(text)
+    counts: dict[str, int] = {}
+    by_context: set[str] = set()
+    for match in URL_IN_TEXT.finditer(text):
+        link = sede_link(match.group(0))
+        if link:
+            by_context.discard(link)
+        else:
+            # Dirección cualquiera, pero presentada como sede: «sede electrónica (www.x.es)».
+            if SEDE_CONTEXT.search(folded[max(0, match.start() - 80):match.start()]):
+                raw = match.group(0).rstrip(".,;:)]»”’'-").lower()
+                written = (raw.split("://", 1)[-1]).split("/", 1)[0]
+                host = written.removeprefix("www.")
+                if HOST.match(host) and host not in NOT_SEDE_HOSTS and not NOT_SEDE.search(raw):
+                    link = f"https://{written}/"
+                    if link not in counts:
+                        by_context.add(link)
+        if link:
+            counts[link] = counts.get(link, 0) + 1
+    # Primero las que se ven que son una sede («sede.x.es», «x.sedelectronica.es»); la web
+    # general presentada como sede, solo si no hay otra.
+    ranked = sorted(counts.items(), key=lambda kv: (kv[0] in by_context, -kv[1]))
+    return [link for link, _ in ranked][:MAX_SEDES]
+
+
+def find_sedes_in_pdf(data: bytes, max_pages: int = 6) -> list[str]:
+    try:
+        import pymupdf
+
+        with pymupdf.open(stream=data, filetype="pdf") as document:
+            text = "\n".join(document[i].get_text() for i in range(min(document.page_count, max_pages)))
+    except Exception:
+        return []
+    return find_sedes_in_text(text)
+
+
+def sede_host(link: str) -> str:
+    return link.split("://", 1)[1].split("/", 1)[0].removeprefix("www.")
+
+
+def choose_sedes(raw: dict[str, list[str]], urls: set[str]) -> dict[str, str]:
+    """Una sede por anuncio, sin las del pie de página del boletín.
+
+    Un dominio que aparece en muchos anuncios de la misma fuente es del boletín
+    (su sede, su verificador), no de quien convoca. También se descarta el dominio
+    del propio enlace oficial del anuncio."""
+    seen: dict[str, int] = {}
+    for links in raw.values():
+        for host in {sede_host(link) for link in links}:
+            seen[host] = seen.get(host, 0) + 1
+    limit = max(4, len(raw) * 0.25)
+    footer = {host for host, count in seen.items() if count >= limit}
+    chosen = {}
+    for url, links in raw.items():
+        if url not in urls:
+            continue
+        own = url.split("://", 1)[-1].split("/", 1)[0].lower().removeprefix("www.")
+        for link in links:
+            host = sede_host(link)
+            if host not in footer and host != own:
+                chosen[url] = link
+                break
+    return chosen
+
+
+def sede_problem(url: str, link: object, urls: set[str]) -> str | None:
+    if url not in urls:
+        return "enlace que no está en el feed"
+    if not (isinstance(link, str) and link.startswith("https://") and len(link) <= 120
+            and HOST.match(sede_host(link))):
+        return "sede no válida"
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Archivos diarios: docs/plazos/<feed>.json, uno por fuente (la app solo descarga
 # los de los boletines que sigue). Cada anuncio se lee una sola vez: lo que ya se
 # miró se conserva y solo se descargan los PDF de los anuncios nuevos.
@@ -203,12 +326,16 @@ def validate(document: dict, urls: set[str]) -> None:
         error = problem(url, item, urls)
         if error:
             raise ValueError(f"{error}: {url[:90]}")
+    for url, link in document.get("sedes", {}).items():
+        error = sede_problem(url, link, urls)
+        if error:
+            raise ValueError(f"{error}: {url[:90]}")
 
 
 def update(docs: Path, limit: int, workers: int = 6) -> dict:
     out_dir = docs / "plazos"
     out_dir.mkdir(exist_ok=True)
-    stats = {"leidos": 0, "con_plazo": 0, "fallidos": 0, "pendientes": 0}
+    stats = {"leidos": 0, "con_plazo": 0, "con_sede": 0, "fallidos": 0, "pendientes": 0}
     jobs = []
     states = {}
     for feed_path in sorted(docs.glob("*.json")):
@@ -228,11 +355,15 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
             "items": {u: v for u, v in old.get("items", {}).items() if u in urls},
             "none": [u for u in old.get("none", []) if u in urls],
             "tries": {u: n for u, n in old.get("tries", {}).items() if u in urls},
+            # Sedes leídas de cada anuncio ([] = ninguna). Los anuncios leídos antes
+            # de existir este campo se vuelven a descargar una vez.
+            "sedeRaw": {**{u: [] for u in old.get("sinSede", []) if u in urls},
+                        **{u: v for u, v in old.get("sedeRaw", {}).items() if u in urls}},
         }
         states[feed_path.name] = (state, set(urls))
         done = set(state["items"]) | set(state["none"])
         for url in urls:
-            if url not in done and state["tries"].get(url, 0) < MAX_TRIES:
+            if (url not in done or url not in state["sedeRaw"]) and state["tries"].get(url, 0) < MAX_TRIES:
                 jobs.append((feed_path.name, url))
     stats["pendientes"] = max(0, len(jobs) - limit)
 
@@ -240,12 +371,14 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
         name, url = job
         try:
             data = download(url)
-            return name, url, "ok", find_in_pdf(data) if data else None
+            if not data:
+                return name, url, "ok", None, []
+            return name, url, "ok", find_in_pdf(data), find_sedes_in_pdf(data)
         except Exception as error:  # red, servidor o PDF dañado: se reintenta otro día
-            return name, url, type(error).__name__, None
+            return name, url, type(error).__name__, None, []
 
     with ThreadPoolExecutor(workers) as pool:
-        for name, url, status, found in pool.map(work, jobs[:limit]):
+        for name, url, status, found, sedes in pool.map(work, jobs[:limit]):
             state = states[name][0]
             if status != "ok":
                 state["tries"][url] = state["tries"].get(url, 0) + 1
@@ -253,6 +386,9 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
                 continue
             stats["leidos"] += 1
             state["tries"].pop(url, None)
+            state["sedeRaw"][url] = sedes
+            if url in state["items"] or url in state["none"]:
+                continue  # el plazo ya estaba leído: solo faltaba la sede
             if found and not problem(url, found, states[name][1]):
                 state["items"][url] = found
                 stats["con_plazo"] += 1
@@ -261,8 +397,13 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     for name, (state, urls) in states.items():
+        sedes = choose_sedes(state["sedeRaw"], urls)
+        stats["con_sede"] += len(sedes)
         document = {"schemaVersion": 1, "updatedUTC": now, "items": state["items"],
-                    "none": sorted(state["none"]), "tries": state["tries"]}
+                    "none": sorted(state["none"]), "tries": state["tries"],
+                    "sedes": dict(sorted(sedes.items())),
+                    "sedeRaw": {u: v for u, v in sorted(state["sedeRaw"].items()) if v},
+                    "sinSede": sorted(u for u, v in state["sedeRaw"].items() if not v)}
         validate(document, urls)
         (out_dir / name).write_text(json.dumps(document, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     # Archivos de fuentes que ya no existen.

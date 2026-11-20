@@ -90,6 +90,14 @@ equal(Deadlines.parse(plazos(#"{"days":20,"kind":"lectivos","page":1,"text":"El 
 equal(Deadlines.parse(plazos(#"{"days":20,"kind":"hábiles","page":1,"text":"corto"}"#), noticeURL: plazoURL), nil, "cita demasiado corta")
 equal(Deadlines.parse(plazos(#"{"days":20,"kind":"hábiles","page":1,"text":"El plazo de presentación será de veinte días hábiles."}"#), noticeURL: plazoURL + "x"),
       nil, "otro anuncio")
+func sedes(_ link: String) -> Data { Data(#"{"schemaVersion":1,"items":{},"sedes":{"\#(plazoURL)":"\#(link)"}}"#.utf8) }
+equal(Deadlines.parseSede(sedes("https://lietor.sedipualba.es/"), noticeURL: plazoURL)?.absoluteString,
+      "https://lietor.sedipualba.es/", "sede del anuncio")
+equal(Deadlines.parseSede(sedes("https://www.seu-e.cat/ca/web/bascara"), noticeURL: plazoURL)?.absoluteString,
+      "https://www.seu-e.cat/ca/web/bascara", "sede compartida con ruta")
+equal(Deadlines.parseSede(sedes("http://lietor.sedipualba.es/"), noticeURL: plazoURL), nil, "sede sin HTTPS")
+equal(Deadlines.parseSede(sedes("https://lietor.sedi-/"), noticeURL: plazoURL), nil, "sede cortada")
+equal(Deadlines.parseSede(sedes("https://lietor.sedipualba.es/"), noticeURL: plazoURL + "x"), nil, "sede de otro anuncio")
 equal(Deadlines.url(for: Source.of(Notice(id: "BOE-A-2026-1", title: "t", entity: "e", date: "31/10/2026", bulletin: "1",
                                           type: "Plaza / oposición", url: plazoURL, province: "España (BOE)")))?.absoluteString,
       "https://mjtbapps.github.io/OpoAlert/plazos/boe.json", "un archivo por fuente")

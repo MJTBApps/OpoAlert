@@ -10,6 +10,7 @@ struct NoticeDetailView: View {
     @State private var linkRejected = false
     @State private var pdfLink: PdfLink?
     @State private var deadline: Deadline?
+    @State private var sede: URL?
 
     private var source: Source { Source.of(notice) }
 
@@ -51,6 +52,25 @@ struct NoticeDetailView: View {
 
                 if let deadline {
                     DeadlineCard(deadline: deadline) { openOfficial(page: deadline.page) }
+                }
+
+                if let sede {
+                    // Sede de quien convoca, copiada del anuncio: se abre en Safari.
+                    VStack(spacing: 6) {
+                        Button {
+                            openURL(sede)
+                        } label: {
+                            Label("Ir a la sede electrónica", systemImage: "building.columns")
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, minHeight: 46)
+                        }
+                        .buttonStyle(.bordered)
+                        .tint(Color(hex: 0x13795B))
+                        Text("\(sede.host ?? "")\(sede.path.count > 1 ? sede.path : "") · dirección copiada del anuncio")
+                            .font(.caption2)
+                            .foregroundStyle(Color(hex: 0x5E7A6C))
+                            .multilineTextAlignment(.center)
+                    }
                 }
 
                 Text("Resumen del anuncio")
@@ -114,7 +134,7 @@ struct NoticeDetailView: View {
                 .accessibilityLabel(favorite ? "Quitar de favoritas" : "Guardar en favoritas")
             }
         }
-        .task { deadline = await Deadlines.fetch(for: notice) }
+        .task { (deadline, sede) = await Deadlines.fetchBoth(for: notice) }
         // Al volver a la lista puede tocar el intersticial (cada 3 fichas).
         .onDisappear { Ads.shared.noticeClosed(premium: PremiumStore.isActiveStored) }
         .sheet(item: $pdfLink) { link in

@@ -38,6 +38,34 @@ object DeadlineStore {
         }
     }
 
+    private val sedeHost = Regex("^([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\\.)+(es|cat|gal|eus|org|com|net|eu|online|info)$")
+
+    /**
+     * Sede electrónica de quien convoca, copiada del anuncio por `backend/plazos.py`
+     * (campo `sedes`). Solo HTTPS y un dominio con forma normal; si no, nada.
+     */
+    fun findSede(context: Context, province: Province, noticeUrl: String): String? {
+        val text = try {
+            read(context, province)
+        } catch (_: Exception) {
+            return null
+        } ?: return null
+        return try {
+            parseSede(text, noticeUrl)
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    fun parseSede(text: String, noticeUrl: String): String? {
+        val root = JSONObject(text)
+        if (root.optInt("schemaVersion") != 1) return null
+        val link = root.optJSONObject("sedes")?.optString(noticeUrl).orEmpty()
+        if (!link.startsWith("https://") || link.length > 120) return null
+        val host = link.removePrefix("https://").substringBefore('/').removePrefix("www.")
+        return if (sedeHost.matches(host)) link else null
+    }
+
     fun parse(text: String, noticeUrl: String): Deadline? {
         val root = JSONObject(text)
         if (root.optInt("schemaVersion") != 1) return null

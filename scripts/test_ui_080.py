@@ -134,7 +134,9 @@ def main() -> None:
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
     assert 'cleartextTrafficPermitted="false"' in security, "Solo HTTPS"
-    assert "Sede electrónica" not in detail, "No inventar enlace de sede"
+    # La sede solo sale copiada del anuncio (backend/plazos.py → DeadlineStore.findSede), nunca deducida.
+    assert detail.count("DeadlineStore.findSede(") == 1 and "sedelectronica." not in detail, "No inventar enlace de sede"
+    assert 'link.scheme != "https"' in detail.split("private fun openSede", 1)[1][:400], "Sede solo HTTPS"
     province = (KOTLIN / "Province.kt").read_text(encoding="utf-8")
     assert 'BOE(' in province and 'BOE-A-' in province
     assert 'boe.json' in province
