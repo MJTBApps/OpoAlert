@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T07:31:19+00:00",
+ "updatedUTC": "2026-11-20T08:23:32+00:00",
  "items": {
   "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008224.pdf": {
    "days": 15,
@@ -261,5 +261,127 @@
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008805.pdf",
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008877.pdf"
  ],
- "tries": {}
+ "tries": {},
+ "sedes": {
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/22_201/2026_008092.pdf": "https://teuladamoraira.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/26_203/2026_008097.pdf": "https://pedreguer.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/27_204/2026_008176.pdf": "https://orihuela.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_007896.pdf": "https://denia.convoca.online/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_007957.pdf": "https://denia.convoca.online/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008071.pdf": "https://denia.convoca.online/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_007240.pdf": "https://orihuela.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_008443.pdf": "https://benimarfull.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/06_212/2026_008115.pdf": "https://sede.xixona.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/09_213/2026_008558.pdf": "https://sedeelectronica.alicante.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/09_213/2026_008570.pdf": "https://cocentaina.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008184.pdf": "https://denia.convoca.online/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008191.pdf": "https://denia.convoca.online/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008567.pdf": "https://agost.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/11_215/2026_008746.pdf": "https://diputacionalicante.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008501.pdf": "https://sedeelectronica.mutxamel.org/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008546.pdf": "https://denia.convoca.online/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008797.pdf": "https://elcastelldeguadalest.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/13_217/2026_008764.pdf": "https://sede.aspe.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/13_217/2026_008814.pdf": "https://crevillent.sedipualba.es/"
+ },
+ "sedeRaw": {
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/22_201/2026_008092.pdf": [
+   "https://teuladamoraira.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/26_203/2026_008097.pdf": [
+   "https://pedreguer.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/27_204/2026_008176.pdf": [
+   "https://orihuela.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_007896.pdf": [
+   "https://denia.convoca.online/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_007957.pdf": [
+   "https://denia.convoca.online/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008071.pdf": [
+   "https://denia.convoca.online/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_007240.pdf": [
+   "https://orihuela.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_008443.pdf": [
+   "https://benimarfull.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/06_212/2026_008115.pdf": [
+   "https://sede.xixona.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/09_213/2026_008558.pdf": [
+   "https://sedeelectronica.alicante.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/09_213/2026_008570.pdf": [
+   "https://cocentaina.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008184.pdf": [
+   "https://denia.convoca.online/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008191.pdf": [
+   "https://denia.convoca.online/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/10_214/2026_008567.pdf": [
+   "https://agost.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/11_215/2026_008746.pdf": [
+   "https://diputacionalicante.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008501.pdf": [
+   "https://sedeelectronica.mutxamel.org/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008546.pdf": [
+   "https://denia.convoca.online/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008797.pdf": [
+   "https://elcastelldeguadalest.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/13_217/2026_008764.pdf": [
+   "https://sede.aspe.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/13_217/2026_008814.pdf": [
+   "https://crevillent.sedipualba.es/"
+  ]
+ },
+ "sinSede": [
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007870.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007873.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007875.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007876.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_008003.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_008121.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008069.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008132.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008223.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008224.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008296.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008298.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008299.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_008461.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_008462.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_008463.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_008464.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/05_211/2026_008249.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/05_211/2026_008313.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/05_211/2026_008314.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/05_211/2026_008423.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/05_211/2026_008556.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/09_213/2026_008405.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008637.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008639.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/12_216/2026_008808.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/13_217/2026_008796.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/13_217/2026_008815.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/16_218/2026_008663.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/16_218/2026_008875.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008805.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008877.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008890.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008891.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008921.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/18_220/2026_008934.pdf"
+ ]
 }

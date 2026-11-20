@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T07:31:19+00:00",
+ "updatedUTC": "2026-11-20T08:23:32+00:00",
  "items": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": {
    "days": 20,
@@ -142,5 +142,136 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3180/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf"
  ],
- "tries": {}
+ "tries": {},
+ "sedes": {
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2854/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2862/anuncio.pdf": "https://adra.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf": "https://sede.sorbas.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": "https://sede.tijola.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2973/anuncio.pdf": "https://sede.tijola.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2987/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2988/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2989/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3030/anuncio.pdf": "https://sede.dalias.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3099/anuncio.pdf": "https://sede.tijola.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3138/anuncio.pdf": "https://vera.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3139/anuncio.pdf": "https://vera.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3154/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3155/anuncio.pdf": "https://sede.losgallardos.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3158/anuncio.pdf": "https://sede.sorbas.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3167/anuncio.pdf": "https://www.dipalme.org/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3180/anuncio.pdf": "https://abrucena.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3187/anuncio.pdf": "https://balanegra.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf": "https://www.sede.lamojonera.es/"
+ },
+ "sedeRaw": {
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2854/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2862/anuncio.pdf": [
+   "https://adra.sedelectronica.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf": [
+   "https://sede.sorbas.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": [
+   "https://sede.tijola.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2973/anuncio.pdf": [
+   "https://sede.tijola.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2987/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2988/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2989/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3030/anuncio.pdf": [
+   "https://sede.dalias.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3099/anuncio.pdf": [
+   "https://sede.tijola.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3138/anuncio.pdf": [
+   "https://vera.sedelectronica.es/",
+   "https://www.vera.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3139/anuncio.pdf": [
+   "https://vera.sedelectronica.es/",
+   "https://www.vera.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3154/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3155/anuncio.pdf": [
+   "https://sede.losgallardos.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3158/anuncio.pdf": [
+   "https://sede.sorbas.es/",
+   "https://www.sorbas.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3167/anuncio.pdf": [
+   "https://www.dipalme.org/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3180/anuncio.pdf": [
+   "https://abrucena.sedelectronica.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3187/anuncio.pdf": [
+   "https://balanegra.sedelectronica.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf": [
+   "https://www.sede.lamojonera.es/"
+  ]
+ },
+ "sinSede": [
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2762/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2822/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2823/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2824/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2825/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2826/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2844/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2845/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2881/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2882/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2883/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2884/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2885/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2886/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2889/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2921/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2922/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2923/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2924/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2925/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2939/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2940/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2956/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2990/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/2992/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3007/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3045/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3057/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3091/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3094/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3095/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3096/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3097/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3098/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3114/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3115/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3119/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3134/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3163/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3166/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3168/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3169/anuncio.pdf"
+ ]
 }

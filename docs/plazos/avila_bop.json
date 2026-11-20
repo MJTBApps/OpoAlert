@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T07:31:19+00:00",
+ "updatedUTC": "2026-11-20T08:23:32+00:00",
  "items": {
   "https://www.diputacionavila.es/bops/2026/26-10-2026/26-10-2026_211226.pdf": {
    "days": 20,
@@ -32,5 +32,35 @@
   "https://www.diputacionavila.es/bops/2026/18-11-2026/18-11-2026_234926.pdf",
   "https://www.diputacionavila.es/bops/2026/18-11-2026/18-11-2026_235026.pdf"
  ],
- "tries": {}
+ "tries": {},
+ "sedes": {
+  "https://www.diputacionavila.es/bops/2026/05-11-2026/05-11-2026_179826.pdf": "https://serviciosdelaltotietar.sedelectronica.es/",
+  "https://www.diputacionavila.es/bops/2026/06-11-2026/06-11-2026_215726.pdf": "https://santacruzdelvalle.sedelectronica.es/",
+  "https://www.diputacionavila.es/bops/2026/11-11-2026/11-11-2026_219326.pdf": "https://cuevasdelvalle.sedelectronica.es/",
+  "https://www.diputacionavila.es/bops/2026/26-10-2026/26-10-2026_211226.pdf": "https://casavieja.sedelectronica.es/"
+ },
+ "sedeRaw": {
+  "https://www.diputacionavila.es/bops/2026/05-11-2026/05-11-2026_179826.pdf": [
+   "https://serviciosdelaltotietar.sedelectronica.es/"
+  ],
+  "https://www.diputacionavila.es/bops/2026/06-11-2026/06-11-2026_215726.pdf": [
+   "https://santacruzdelvalle.sedelectronica.es/"
+  ],
+  "https://www.diputacionavila.es/bops/2026/11-11-2026/11-11-2026_219326.pdf": [
+   "https://cuevasdelvalle.sedelectronica.es/"
+  ],
+  "https://www.diputacionavila.es/bops/2026/26-10-2026/26-10-2026_211226.pdf": [
+   "https://casavieja.sedelectronica.es/"
+  ]
+ },
+ "sinSede": [
+  "https://www.diputacionavila.es/bops/2026/04-11-2026/04-11-2026_214626.pdf",
+  "https://www.diputacionavila.es/bops/2026/05-11-2026/05-11-2026_218426.pdf",
+  "https://www.diputacionavila.es/bops/2026/06-11-2026/06-11-2026_218026.pdf",
+  "https://www.diputacionavila.es/bops/2026/06-11-2026/06-11-2026_218126.pdf",
+  "https://www.diputacionavila.es/bops/2026/06-11-2026/06-11-2026_218226.pdf",
+  "https://www.diputacionavila.es/bops/2026/18-11-2026/18-11-2026_234826.pdf",
+  "https://www.diputacionavila.es/bops/2026/18-11-2026/18-11-2026_234926.pdf",
+  "https://www.diputacionavila.es/bops/2026/18-11-2026/18-11-2026_235026.pdf"
+ ]
 }
