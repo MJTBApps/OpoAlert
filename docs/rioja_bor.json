@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-19T17:01:43.475578+00:00",
+  "lastCheckedUTC": "2026-11-20T09:53:12.258399+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 22,
-    "announcementsRead": 645,
-    "opportunities": 40
+    "announcementsRead": 643,
+    "opportunities": 45
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-21",
-    "rangeEnd": "2026-11-19",
+    "rangeStart": "2026-10-22",
+    "rangeEnd": "2026-11-20",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -37,10 +36,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-21",
       "2026-10-22",
       "2026-10-23",
       "2026-10-26",
@@ -61,7 +60,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-20"
     ],
     "nonPublicationDates": [
       "2026-10-24",
@@ -74,10 +74,70 @@
       "2026-11-15"
     ],
     "issuesRead": 22,
-    "announcementsRead": 645,
-    "opportunities": 40
+    "announcementsRead": 643,
+    "opportunities": 45
   },
   "notices": [
+    {
+      "id": "RI-2026-d9838628a7b8c87d14",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO/A AE (actividades culturales): aprobación de las bases de la convocatoria para la provisión mediante personal funcionario de carrera de una plaza, turno libre. OEP 2023",
+      "entity": "AYUNTAMIENTO DE LOGROÑO",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432162-1-PDF-581047",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F20&referencia=43407518-4-HTML-581047-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-95b845b6eed41ee025",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO/A DE GESTIÓN: bases y convocatoria para la formación de una bolsa de trabajo, por el sistema de concurso-oposición, para cubrir necesidades como funcionario interino",
+      "entity": "AYUNTAMIENTO DE LARDERO",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Bolsa de trabajo",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432051-1-PDF-581053",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F20&referencia=43412318-4-HTML-581053-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-87a2f45911350d7220",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO PREVENCIÓN: convocatoria pruebas selectivas (F.18/25)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432091-1-PDF-581050",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F20&referencia=43410172-3-HTML-581050-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-7a95e720c85ca743f9",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO SUPERIOR DE PREVENCIÓN: convocatoria pruebas selectivas (TL y PIV) (F.05/26)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432155-1-PDF-581052",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F20&referencia=43412914-5-HTML-581052-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-1bce60f53f51edbf5a",
+      "province": "La Rioja (BOR)",
+      "title": "PINCHE: convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo, OEP 2025 y 2026",
+      "entity": "SERVICIO RIOJANO DE SALUD",
+      "date": "20/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432045-1-PDF-581043",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F20&referencia=43410554-3-HTML-581043-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-c1f1e166be5c9aee23",
       "province": "La Rioja (BOR)",
