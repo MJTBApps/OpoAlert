@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-20T16:29:19.037764+00:00",
+  "lastCheckedUTC": "2026-11-21T06:22:19.008803+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 21,
-    "announcementsRead": 785,
-    "opportunities": 125
+    "pagesVisited": 20,
+    "announcementsRead": 749,
+    "opportunities": 122
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -39,7 +38,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -70,11 +68,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 785,
-    "opportunities": 125
+    "issuesRead": 20,
+    "announcementsRead": 749,
+    "opportunities": 122
   },
   "notices": [
     {
@@ -1296,36 +1295,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471624510303"
-    },
-    {
-      "id": "AO-2026-007961926",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se da publicidad a las plazas que no han sido cubiertas en el proceso selectivo, convocado por Resolución de 14 de diciembre de 2023, de la Dirección Gerencia del Servicio Aragonés de Salud, para el acceso a la condición de personal estatutario fijo en plazas básicas de la categoría de Facultativo/a Especialista de Área de Radiodiagnóstico en centros sanitarios del Servicio Aragonés de Salud de la Comunidad Autónoma de Aragón, para su provisión por turno libre y discapacidad, se convoca acto centralizado de elección de destinos vacantes, y se declara la pérdida de derechos de alguna de las personas aspirantes, conforme a lo previsto en las bases de la Convocatoria.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "22/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471444980505"
-    },
-    {
-      "id": "AO-2026-007961919",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de las personas que han superado el proceso selectivo para ingreso, por promoción interna, en el Cuerpo de Funcionarios Técnicos de la Administración de la Comunidad Autónoma de Aragón, Escala Técnica de Gestión, Técnicos Medios de Gestión de Empleo. (Código de convocatoria 240072).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "22/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471430840404"
-    },
-    {
-      "id": "AO-2026-007961918",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, del Director General de la Función Pública, por la que se aprueba la bolsa de empleo derivada del correspondiente proceso selectivo de nuevo ingreso, como personal laboral fijo de la categoría profesional de Jefe de Unidad Perito Judicial de Automóviles de la Administración de la Comunidad Autónoma de Aragón.  (Código de convocatoria 220097).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "22/10/2026",
-      "bulletin": "205",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471428820404"
     }
   ]
 }

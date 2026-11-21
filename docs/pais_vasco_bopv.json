@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-20T16:32:18.667568+00:00",
+  "lastCheckedUTC": "2026-11-21T06:25:13.363517+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 22,
-    "announcementsRead": 316,
-    "opportunities": 43
+    "pagesVisited": 21,
+    "announcementsRead": 296,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -40,7 +39,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -71,18 +69,19 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 316,
-    "opportunities": 43
+    "issuesRead": 21,
+    "announcementsRead": 296,
+    "opportunities": 40
   },
   "notices": [
     {
       "id": "PV-2026-4970",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 1851/2026, de 10 de noviembre, de la directora general de Osakidetza-Servicio vasco de salud, por la que se aprueban las bases que han de regir el proceso selectivo para la adquisición del vínculo estatutario fijo en Osakidetza-Servicio vasco de salud, por personas con discapacidad intelectual, convocado en los años 2023-2024-2025.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "20/11/2026",
       "bulletin": "223",
       "type": "Plaza / oposición",
@@ -477,36 +476,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604473a.pdf"
-    },
-    {
-      "id": "PV-2026-4428",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 7419/2026, de 25 de septiembre, de la directora gerente de la Organización Sanitaria Integrada Donostialdea, por la que se convoca concurso para la provisión de puesto de trabajo de jefe/a de Servicio de Medicina Nuclear.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "22/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604428a.pdf"
-    },
-    {
-      "id": "PV-2026-4427",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 7418/2026, de 25 de septiembre, de la directora gerente de la Organización Sanitaria Integrada Donostialdea, por la que se convoca concurso para la provisión del puesto de trabajo de jefe/a de Servicio de Anatomía Patológica.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "22/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604427a.pdf"
-    },
-    {
-      "id": "PV-2026-4422",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 6 de octubre de 2026, de la consejera de Justicia y Derechos Humanos, por la que se resuelve definitivamente el concurso específico para la cobertura de puestos singularizados como consecuencia de la implantación de las Oficinas Judiciales, la Oficina General del Registro Civil, y las Oficinas de Justicia en el municipio y sus agrupaciones, del partido judicial de Vitoria-Gasteiz.",
-      "entity": "Justicia y Derechos Humanos",
-      "date": "22/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604422a.pdf"
     }
   ]
 }

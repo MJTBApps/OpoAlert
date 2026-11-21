@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-20T16:28:11.612843+00:00",
+  "lastCheckedUTC": "2026-11-21T06:22:10.112264+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 23,
-    "announcementsRead": 686,
-    "opportunities": 36
+    "pagesVisited": 22,
+    "announcementsRead": 667,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -41,7 +40,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -73,11 +71,12 @@
       "2026-11-02",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 23,
-    "announcementsRead": 686,
-    "opportunities": 36
+    "issuesRead": 22,
+    "announcementsRead": 667,
+    "opportunities": 35
   },
   "notices": [
     {
@@ -429,16 +428,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/23/pdf/2026_7370.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7512",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Bolsa de Trabajo. Resolución de 13/10/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se ordena la publicación del aviso relativo a la publicación de los listados definitivos de la bolsa de trabajo del Sescam del proceso extraordinario para nuevas solicitudes de personal temporal de determinadas categorías del Sescam, aprobada mediante Resolución de 22/05/2026. [NID 2026/7512]",
-      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
-      "date": "22/10/2026",
-      "bulletin": "203",
-      "type": "Bolsa de trabajo",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/22/pdf/2026_7512.pdf&tipo=rutaDocm"
     }
   ]
 }

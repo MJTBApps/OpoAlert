@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Salamanca",
   "source": "https://www.lasalina.es/documentacion/bop/",
-  "lastCheckedUTC": "2026-11-20T16:34:01.507294+00:00",
+  "lastCheckedUTC": "2026-11-21T06:25:38.558613+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 21,
-    "announcementsRead": 313,
-    "opportunities": 7
+    "pagesVisited": 20,
+    "announcementsRead": 292,
+    "opportunities": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -39,7 +38,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -70,13 +68,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 313,
-    "opportunities": 7,
+    "issuesRead": 20,
+    "announcementsRead": 292,
+    "opportunities": 6,
     "summaryPDFs": [
-      "https://www.lasalina.es/documentacion/bop/2026/20261022/BOP-SA-20261022-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261023/BOP-SA-20261023-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261026/BOP-SA-20261026-000.pdf",
       "https://www.lasalina.es/documentacion/bop/2026/20261027/BOP-SA-20261027-000.pdf",
@@ -99,7 +97,6 @@
       "https://www.lasalina.es/documentacion/bop/2026/20261120/BOP-SA-20261120-000.pdf"
     ],
     "CVECounts": [
-      21,
       9,
       9,
       18,
@@ -121,7 +118,7 @@
       6,
       28
     ],
-    "originalPDFsChecked": 313
+    "originalPDFsChecked": 292
   },
   "notices": [
     {
@@ -183,16 +180,6 @@
       "bulletin": "219",
       "type": "Plaza / oposición",
       "url": "https://www.lasalina.es/documentacion/bop/2026/20261112/BOP-SA-20261112-002.pdf"
-    },
-    {
-      "id": "SA-20261022-010",
-      "province": "Salamanca",
-      "title": "Ciudad Rodrigo Anuncio. Convocatoria para la selección de cuatro plazas de oficial de policía local por promoción interna",
-      "entity": "Ayuntamientos de Salamanca",
-      "date": "22/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.lasalina.es/documentacion/bop/2026/20261022/BOP-SA-20261022-010.pdf"
     }
   ]
 }

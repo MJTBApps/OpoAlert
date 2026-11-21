@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-20T16:27:31.187339+00:00",
+  "lastCheckedUTC": "2026-11-21T06:20:53.727411+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "224",
-    "pagesVisited": 22,
-    "announcementsRead": 825,
-    "opportunities": 62
+    "pagesVisited": 21,
+    "announcementsRead": 808,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -40,7 +39,6 @@
       "224"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 825,
-    "opportunities": 62
+    "issuesRead": 21,
+    "announcementsRead": 808,
+    "opportunities": 61
   },
   "notices": [
     {
@@ -687,16 +686,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/23/I-1208_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5408",
-      "province": "Bizkaia",
-      "title": "Aprobación de la convocatoria y las bases para la selección, por el turno libre y mediante concurso-oposición, de dos plazas de Operario/a Polivalente adscritas a plazas del grupo A.P. de la plantilla laboral del Ayuntamiento de Ondarroa.",
-      "entity": "Ayuntamiento de Maruri-Jatabe",
-      "date": "22/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/22/II-5408_cas.pdf"
     }
   ]
 }

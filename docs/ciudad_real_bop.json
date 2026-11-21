@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-20T16:27:42.697981+00:00",
+  "lastCheckedUTC": "2026-11-21T06:21:25.536603+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 22,
-    "announcementsRead": 389,
-    "opportunities": 30
+    "pagesVisited": 21,
+    "announcementsRead": 367,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -40,7 +39,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 389,
-    "opportunities": 30
+    "issuesRead": 21,
+    "announcementsRead": 367,
+    "opportunities": 26
   },
   "notices": [
     {
@@ -337,46 +336,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349"
-    },
-    {
-      "id": "CR-2026-3426",
-      "province": "Ciudad Real",
-      "title": "Aprobación inicial del presupuesto general, bases de ejecución y plantilla de personal para el ejercicio 2026.",
-      "entity": "MANCOMUNIDAD EL QUIJOTE - ALHAMBRA",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835215"
-    },
-    {
-      "id": "CR-2026-3415",
-      "province": "Ciudad Real",
-      "title": "Modificación de las bases de la convocatoria de una plaza de Subinspector/a Policía Local, promoción interna, mediante concurso-oposición.",
-      "entity": "PUERTOLLANO",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835204"
-    },
-    {
-      "id": "CR-2026-3414",
-      "province": "Ciudad Real",
-      "title": "Bases del concurso singularizado de méritos para la provisión de puesto de trabajo n.º 10163, denominado Técnico/a de Gestión, personal funcionario.",
-      "entity": "CIUDAD REAL",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835203"
-    },
-    {
-      "id": "CR-2026-3411",
-      "province": "Ciudad Real",
-      "title": "Bases de la convocatoria para la provisión de puestos vacantes de Encargado/a de Jardines y Profesor/a Técnico/a responsable de Danza, mediante el sistema de concurso de méritos.",
-      "entity": "CAMPO DE CRIPTANA",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200"
     }
   ]
 }

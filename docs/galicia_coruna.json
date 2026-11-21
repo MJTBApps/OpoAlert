@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-20T16:27:08.084518+00:00",
+  "lastCheckedUTC": "2026-11-21T06:20:47.278498+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 22,
-    "announcementsRead": 755,
-    "opportunities": 58
+    "pagesVisited": 21,
+    "announcementsRead": 726,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -40,7 +39,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 755,
-    "opportunities": 58
+    "issuesRead": 21,
+    "announcementsRead": 726,
+    "opportunities": 56
   },
   "notices": [
     {
@@ -637,26 +636,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006785.pdf"
-    },
-    {
-      "id": "AC-2026-6802",
-      "province": "A Coruña",
-      "title": "Anuncio de corrección material do decreto de aprobación da Oferta de Emprego Público do ano 2026",
-      "entity": "Ordes",
-      "date": "22/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006802.pdf"
-    },
-    {
-      "id": "AC-2026-6759",
-      "province": "A Coruña",
-      "title": "Bases e convocatoria para a creación dunha bolsa de emprego para o posto de técnico/a auxiliar de servizos sociais no Concello de Outes",
-      "entity": "Outes",
-      "date": "22/10/2026",
-      "bulletin": "202",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf"
     }
   ]
 }

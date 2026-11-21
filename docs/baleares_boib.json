@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Illes Balears (BOIB)",
   "source": "https://www.caib.es/eboibfront/es",
-  "lastCheckedUTC": "2026-11-20T16:31:17.248965+00:00",
+  "lastCheckedUTC": "2026-11-21T06:24:04.259792+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "149",
-    "pagesVisited": 15,
-    "announcementsRead": 1232,
-    "opportunities": 179
+    "pagesVisited": 14,
+    "announcementsRead": 1130,
+    "opportunities": 173
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "135",
       "136",
       "137",
       "138",
@@ -33,7 +32,6 @@
       "149"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-24",
       "2026-10-27",
       "2026-10-29",
@@ -65,11 +63,12 @@
       "2026-11-13",
       "2026-11-15",
       "2026-11-16",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-21"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 1232,
-    "opportunities": 179
+    "issuesRead": 14,
+    "announcementsRead": 1130,
+    "opportunities": 173
   },
   "notices": [
     {
@@ -1801,66 +1800,6 @@
       "bulletin": "136",
       "type": "Plaza / oposición",
       "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1230899"
-    },
-    {
-      "id": "IB-2026-10549",
-      "province": "Illes Balears (BOIB)",
-      "title": "Convocatoria del proceso selectivo para cubrir como personal funcionario de carrera dos plazas vacantes de la categoría de policía local del Consell Insular de Formentera mediante el procedimiento ordinario",
-      "entity": "CONSEJO INSULAR DE FORMENTERA",
-      "date": "22/10/2026",
-      "bulletin": "135",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/135/1230975"
-    },
-    {
-      "id": "IB-2026-10503",
-      "province": "Illes Balears (BOIB)",
-      "title": "Convocatoria y bases reguladoras del procedimiento selectivo para la provisión de 5 plazas de policía local del Ayuntamiento de Alcúdia y la constitución de una bolsa de trabajo",
-      "entity": "AYUNTAMIENTO DE ALCÚDIA",
-      "date": "22/10/2026",
-      "bulletin": "135",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/135/1230884"
-    },
-    {
-      "id": "IB-2026-10488",
-      "province": "Illes Balears (BOIB)",
-      "title": "Desistimiento de la convocatoria y las bases para la selección, como personal laboral fijo, de una plaza de responsable de biblioteca y constitución de una bolsa para contrataciones temporales",
-      "entity": "AYUNTAMIENTO DE SA POBLA",
-      "date": "22/10/2026",
-      "bulletin": "135",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/135/1230854"
-    },
-    {
-      "id": "IB-2026-10487",
-      "province": "Illes Balears (BOIB)",
-      "title": "Departamento de Selección y Provisión de Recursos Humanos. Servicio de Selección. Aprobación de la constitución de la bolsa de trabajo de profesor/a músico de trompa",
-      "entity": "AYUNTAMIENTO DE PALMA",
-      "date": "22/10/2026",
-      "bulletin": "135",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/135/1230852"
-    },
-    {
-      "id": "IB-2026-10482",
-      "province": "Illes Balears (BOIB)",
-      "title": "Rectificación del error material del acuerdo de la Junta de Gobierno de día 23 de septiembre de 2026, relativo a la aprobación de la convocatoria y las bases reguladoras del procedimiento selectivo, mediante concurso oposición, para constituir una bolsa de trabajo de ingeniero o ingeniera de servicios (expediente EX007-2026-003152)",
-      "entity": "AYUNTAMIENTO DE CIUTADELLA",
-      "date": "22/10/2026",
-      "bulletin": "135",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/135/1230842"
-    },
-    {
-      "id": "IB-2026-10253",
-      "province": "Illes Balears (BOIB)",
-      "title": "Convocatoria del proceso de selección por el sistema de concurso-oposición correspondiente a la oferta pública ordinaria para el año 2024 para la cobertura de plazas de personal laboral de la Fundación Instituto de Investigación Sanitaria de les Illes Balears (IdISBa)",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA FUNDACIÓ INSTITUT D'INVESTIGACIÓ SANITÀRIA ILLES BALEARS (IDISBA)",
-      "date": "22/10/2026",
-      "bulletin": "135",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/135/1230384"
     }
   ]
 }

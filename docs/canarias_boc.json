@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-20T16:30:37.626762+00:00",
+  "lastCheckedUTC": "2026-11-21T06:23:35.292391+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "234",
-    "pagesVisited": 24,
-    "announcementsRead": 440,
-    "opportunities": 60
+    "pagesVisited": 22,
+    "announcementsRead": 421,
+    "opportunities": 57
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "211",
-      "212",
       "213",
       "214",
       "215",
@@ -42,8 +40,6 @@
       "234"
     ],
     "publicationDates": [
-      "2026-10-22",
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -76,11 +72,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 24,
-    "announcementsRead": 440,
-    "opportunities": 60
+    "issuesRead": 22,
+    "announcementsRead": 421,
+    "opportunities": 57
   },
   "notices": [
     {
@@ -652,36 +649,6 @@
       "bulletin": "214",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-214-3681.pdf"
-    },
-    {
-      "id": "IC-2026-3636",
-      "province": "Canarias (BOC)",
-      "title": "RESOLUCIÓN de 9 de octubre de 2026, por la que se modifica la Resolución de 6 de agosto de 2026, que aprueba la convocatoria para la provisión de bolsas de sustitución.",
-      "entity": "Universidad de Las Palmas de Gran Canaria",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Bolsa de trabajo",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-211-3636.pdf"
-    },
-    {
-      "id": "IC-2026-3634",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de la Función Pública.- Resolución de 16 de octubre de 2026, por la que se determinan el lugar, fecha y hora de celebración del ejercicio único de las pruebas selectivas para ingresar, por el sistema general de acceso libre, en la Agrupación Profesional de Personal Subalterno, destinadas a la reserva específica de personas con discapacidad intelectual leve, moderada o límite, convocadas por Resolución de 20 de julio de 2026.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-211-3634.pdf"
-    },
-    {
-      "id": "IC-2026-3632",
-      "province": "Canarias (BOC)",
-      "title": "Servicio Canario de la Salud. Dirección Gerencia del Hospital Universitario de Gran Canaria Dr. Negrín.- Resolución de 28 de septiembre de 2026, por la que se declara la caducidad del proceso selectivo convocado mediante Resolución de 10 de septiembre de 2018, para la provisión con carácter temporal de dos puestos de Jefe/a de Sección de Medicina Interna del Hospital Universitario de Gran Canaria Dr. Negrín.",
-      "entity": "Consejería de Sanidad",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-211-3632.pdf"
     }
   ]
 }

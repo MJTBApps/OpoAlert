@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-20T16:29:56.446498+00:00",
+  "lastCheckedUTC": "2026-11-21T06:23:18.506821+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "224",
-    "pagesVisited": 21,
-    "announcementsRead": 281,
-    "opportunities": 42
+    "pagesVisited": 20,
+    "announcementsRead": 274,
+    "opportunities": 41
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -39,7 +38,6 @@
       "224"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -70,13 +68,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 281,
-    "opportunities": 42,
+    "issuesRead": 20,
+    "announcementsRead": 274,
+    "opportunities": 41,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_204_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_205_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_206_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
@@ -509,16 +507,6 @@
       "bulletin": "205",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380700_BOP-205_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380137",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la ampliación de la Bolsa de trabajo de Gestor de Personal (Técnico Medio de Personal y RR.HH) por el sistema de concurso-oposición",
-      "entity": "Ayuntamiento de Ayamonte",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380137_BOP-204_2026.pdf"
     }
   ]
 }

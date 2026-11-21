@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-20T16:29:24.041229+00:00",
+  "lastCheckedUTC": "2026-11-21T06:22:48.433346+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "10498",
-    "pagesVisited": 30,
-    "announcementsRead": 1174,
-    "opportunities": 265
+    "pagesVisited": 28,
+    "announcementsRead": 1118,
+    "opportunities": 260
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "10476",
-      "10476B",
       "10477",
       "10478",
       "10479",
@@ -48,8 +46,6 @@
       "10498"
     ],
     "publicationDates": [
-      "2026-10-22",
-      "2026-10-22",
       "2026-10-23",
       "2026-10-25",
       "2026-10-26",
@@ -86,11 +82,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 30,
-    "announcementsRead": 1174,
-    "opportunities": 265
+    "issuesRead": 28,
+    "announcementsRead": 1118,
+    "opportunities": 260
   },
   "notices": [
     {
@@ -2692,56 +2689,6 @@
       "bulletin": "10477",
       "type": "Plaza / oposición",
       "url": "https://dogv.gva.es/datos/2026/10/23/pdf/2026_30921_es.pdf"
-    },
-    {
-      "id": "DV-2026-32401",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se convocan a concurso plazas de profesorado ayudante doctor en régimen de contratación laboral.",
-      "entity": "Universidad de Alicante",
-      "date": "22/10/2026",
-      "bulletin": "10476",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32401_es.pdf"
-    },
-    {
-      "id": "DV-2026-32394",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO por el que se aprueban las bases de la convocatoria para cubrir en propiedad una plaza de agente de policía local mediante turno libre y la constitución de una bolsa de trabajo temporal.",
-      "entity": "Ayuntamiento de Daya Nueva",
-      "date": "22/10/2026",
-      "bulletin": "10476",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32394_es.pdf"
-    },
-    {
-      "id": "DV-2026-32364",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se declaran desiertas las pruebas selectivas de acceso al cuerpo superior facultativo, escala arquitectura, A1-04-10, convocatoria 17/25, promoción interna, por el sistema de concurso-oposición, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "22/10/2026",
-      "bulletin": "10476",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32364_es.pdf"
-    },
-    {
-      "id": "DV-2026-32363",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se publica la relación definitiva de personas que han superado las pruebas selectivas de acceso al cuerpo superior facultativo, escala arquitectura, A1-04-10, convocatoria 16/25, turno libre, por el sistema de oposición, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "22/10/2026",
-      "bulletin": "10476",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_32363_es.pdf"
-    },
-    {
-      "id": "DV-2026-30706",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la aprobación de las bases de la convocatoria de una plaza de técnico o técnica medios de administración general, grupo A2.",
-      "entity": "Ayuntamiento de Carcaixent",
-      "date": "22/10/2026",
-      "bulletin": "10476",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/22/pdf/2026_30706_es.pdf"
     }
   ]
 }
