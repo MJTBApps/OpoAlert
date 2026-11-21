@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-20T16:53:53.458016+00:00",
+  "lastCheckedUTC": "2026-11-21T06:53:48.318891+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 22,
-    "announcementsRead": 643,
-    "opportunities": 45
+    "pagesVisited": 21,
+    "announcementsRead": 626,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -40,7 +39,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -71,11 +69,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 643,
-    "opportunities": 45
+    "issuesRead": 21,
+    "announcementsRead": 626,
+    "opportunities": 43
   },
   "notices": [
     {
@@ -592,30 +591,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42862017-1-PDF-580398",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F23&referencia=42826657-5-HTML-580398-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-79723e23262cce481b",
-      "province": "La Rioja (BOR)",
-      "title": "AGRUPACIONES PROFESIONALES: bases y convocatoria de creación de una bolsa de empleo temporal",
-      "entity": "AYUNTAMIENTO DE SANTO DOMINGO DE LA CALZADA",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42838268-1-PDF-580381",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F22&referencia=42798494-4-HTML-580381-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-7189d3826c86fef01e",
-      "province": "La Rioja (BOR)",
-      "title": "GESTIÓN DE INFRAESTRUCTURAS: se declara desierto el proceso selectivo para el acceso a la Escala Básica de Especialistas",
-      "entity": "UNIVERSIDAD DE LA RIOJA",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42838300-1-PDF-580358",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F22&referencia=42768567-3-HTML-580358-X",
       "originalFormat": "pdf"
     }
   ]

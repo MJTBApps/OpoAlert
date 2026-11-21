@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-20T16:53:11.232873+00:00",
+  "lastCheckedUTC": "2026-11-21T06:53:06.970789+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "232",
-    "pagesVisited": 22,
-    "announcementsRead": 1361,
-    "opportunities": 38
+    "pagesVisited": 21,
+    "announcementsRead": 1300,
+    "opportunities": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "211",
       "212",
       "213",
       "214",
@@ -40,7 +39,6 @@
       "232"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -72,11 +70,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 1361,
-    "opportunities": 38
+    "issuesRead": 21,
+    "announcementsRead": 1300,
+    "opportunities": 29
   },
   "notices": [
     {
@@ -368,96 +367,6 @@
       "bulletin": "212",
       "type": "Plaza / oposición",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/212/21"
-    },
-    {
-      "id": "NA-2026-211-30",
-      "province": "Navarra",
-      "title": "Convocatoria para la constitución de una relación de aspirantes a la contratación temporal del puesto de trabajo de coordinador cultural-deportivo",
-      "entity": "BERIÁIN",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/30"
-    },
-    {
-      "id": "NA-2026-211-3",
-      "province": "Navarra",
-      "title": "RESOLUCIÓN 2596/2026, de 14 de octubre de la gerente de la Universidad Pública de Navarra, por la que se aprueba la convocatoria para la provisión mediante procedimiento de ingreso, por el sistema de oposición, de plazas del puesto de trabajo de servicios generales, nivel D, cuatro plazas al servicio de la Universidad Pública de Navarra y una plaza al servicio de la Cámara de Comptos.",
-      "entity": "Comunidad Foral de Navarra",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/3"
-    },
-    {
-      "id": "NA-2026-211-25",
-      "province": "Navarra",
-      "title": "Concurso-oposición de una plaza de oficial de administración y elaboración de una bolsa de empleo para contrataciones temporales futuras",
-      "entity": "MANCOMUNIDAD DE SERVICIOS ADMINISTRATIVOS DE IZAGA",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/25"
-    },
-    {
-      "id": "NA-2026-211-23",
-      "province": "Navarra",
-      "title": "Oposición de una plaza de educador/a social en régimen laboral fijo, mediante la modalidad de contrato de relevo",
-      "entity": "MANCOMUNIDAD DE SERVICIOS SOCIALES DE BASE DEL ÁREA DE CARCASTILLO",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/23"
-    },
-    {
-      "id": "NA-2026-211-22",
-      "province": "Navarra",
-      "title": "Oposición de una plaza de profesor/a de Saxofón, en régimen de contratación laboral fija a jornada parcial al servicio de la Escuela municipal de Música",
-      "entity": "TAFALLA",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/22"
-    },
-    {
-      "id": "NA-2026-211-21",
-      "province": "Navarra",
-      "title": "Oposición de una plaza de profesor/a de Percusión, en régimen de contratación laboral fija a jornada parcial, al servicio de la Escuela Municipal de Música",
-      "entity": "TAFALLA",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/21"
-    },
-    {
-      "id": "NA-2026-211-20",
-      "province": "Navarra",
-      "title": "Oposición de dos plazas del puesto de trabajo de portería guardarropía-ordenanza instalación deportiva y Ereta",
-      "entity": "TAFALLA",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/20"
-    },
-    {
-      "id": "NA-2026-211-2",
-      "province": "Navarra",
-      "title": "RESOLUCIÓN 2465/2026, de 30 de septiembre, del vicerrector de Investigación de la Universidad Pública de Navarra, por la que se convoca proceso selectivo para la contratación en régimen laboral de personal investigador para el desarrollo del proyecto de investigación \"EFA193/06 MET- SUSCOAT\".",
-      "entity": "Comunidad Foral de Navarra",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/2"
-    },
-    {
-      "id": "NA-2026-211-19",
-      "province": "Navarra",
-      "title": "Convocatoria para la constitución, a través de pruebas selectivas, de dos relaciones de aspirantes al desempeño del puesto de trabajo de graduado/a en Derecho, una para la formación y otra para la contratación temporal",
-      "entity": "PAMPLONA",
-      "date": "22/10/2026",
-      "bulletin": "211",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/211/19"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-20T16:40:54.655134+00:00",
+  "lastCheckedUTC": "2026-11-21T06:46:01.384630+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 22,
-    "announcementsRead": 1012,
-    "opportunities": 72
+    "pagesVisited": 21,
+    "announcementsRead": 979,
+    "opportunities": 71
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "205",
       "206",
       "206S1",
       "207",
@@ -40,7 +39,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-23",
       "2026-10-26",
@@ -72,11 +70,12 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 1012,
-    "opportunities": 72
+    "issuesRead": 21,
+    "announcementsRead": 979,
+    "opportunities": 71
   },
   "notices": [
     {
@@ -788,16 +787,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/23/2026-08391.pdf"
-    },
-    {
-      "id": "AS-2026-08371",
-      "province": "Asturias (BOPA)",
-      "title": "Edicto. Convocatoria y bases para la provisión de siete plazas de Técnico/a Auxiliar del Ayuntamiento de Oviedo, pertenecientes a las Ofertas de Empleo Público de 2019 y 2024, por el turno de promoción interna.",
-      "entity": "Ayuntamiento de Oviedo",
-      "date": "22/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/22/2026-08371.pdf"
     }
   ]
 }

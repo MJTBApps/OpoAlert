@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-20T16:45:56.663203+00:00",
+  "lastCheckedUTC": "2026-11-21T06:49:04.856742+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "224",
-    "pagesVisited": 29,
-    "announcementsRead": 917,
+    "pagesVisited": 28,
+    "announcementsRead": 882,
     "opportunities": 22,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "203",
       "204",
       "205",
       "Ext. 28",
@@ -48,7 +47,6 @@
       "224"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-26",
@@ -86,13 +84,13 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 29,
-    "announcementsRead": 917,
+    "issuesRead": 28,
+    "announcementsRead": 882,
     "opportunities": 22,
     "regularBulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -125,7 +123,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47225,
       47246,
       47265,
       47345,

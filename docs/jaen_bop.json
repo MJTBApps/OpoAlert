@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-20T16:50:09.645863+00:00",
+  "lastCheckedUTC": "2026-11-21T06:52:16.486234+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "227",
-    "pagesVisited": 21,
-    "announcementsRead": 534,
-    "opportunities": 32,
+    "pagesVisited": 20,
+    "announcementsRead": 513,
+    "opportunities": 31,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 32
+    "pdfLinksVerified": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -41,7 +40,6 @@
       "227"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-27",
@@ -72,15 +70,16 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 534,
-    "opportunities": 32,
+    "issuesRead": 20,
+    "announcementsRead": 513,
+    "opportunities": 31,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "206",
-      "date": "2026-10-21"
+      "number": "207",
+      "date": "2026-10-22"
     }
   },
   "notices": [
@@ -393,16 +392,6 @@
       "bulletin": "208",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-23&numeroEdicto=4974&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4936",
-      "province": "Jaén",
-      "title": "Convocatoria y Bases de selección para cubrir una plaza de Arquitecto/a, funcionario/a de carrera, Administración Especial, Subescala Técnica.",
-      "entity": "AYUNTAMIENTO DE BAÑOS DE LA ENCINA (JAÉN)",
-      "date": "22/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-22&numeroEdicto=4936&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }
