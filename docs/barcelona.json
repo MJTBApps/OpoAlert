@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-20T16:37:08.542200+00:00",
+  "lastCheckedUTC": "2026-11-21T06:41:36.044761+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 283,
-    "opportunities": 283,
+    "announcementsRead": 276,
+    "opportunities": 276,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-24",
       "2026-10-26",
@@ -48,12 +47,13 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 283,
-    "opportunities": 283
+    "announcementsRead": 276,
+    "opportunities": 276
   },
   "notices": [
     {
@@ -2815,76 +2815,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22372064"
-    },
-    {
-      "id": "CIDO5-22333721",
-      "title": "1 plaça d'Oficial 2a de manteniment",
-      "entity": "Ajuntament d'Òrrius",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22333721"
-    },
-    {
-      "id": "CIDO5-22323552",
-      "title": "1 plaça de Tècnic mitjà de cultura i festes",
-      "entity": "Ajuntament del Papiol",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22323552"
-    },
-    {
-      "id": "CIDO5-22323549",
-      "title": "1 plaça de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament del Papiol",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22323549"
-    },
-    {
-      "id": "CIDO5-22323546",
-      "title": "1 plaça d'Operari N3",
-      "entity": "Ajuntament del Papiol",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22323546"
-    },
-    {
-      "id": "CIDO5-22323543",
-      "title": "2 places d'Operari N2 Oficial",
-      "entity": "Ajuntament del Papiol",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22323543"
-    },
-    {
-      "id": "CIDO5-22323538",
-      "title": "1 plaça d'Enginyer",
-      "entity": "Ajuntament del Papiol",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22323538"
-    },
-    {
-      "id": "CIDO5-21986381",
-      "title": "4 places d'Agent de Policia Local",
-      "entity": "Ajuntament del Papiol",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21986381"
     }
   ]
 }

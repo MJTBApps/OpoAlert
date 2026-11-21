@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-20T16:37:08.542200+00:00",
+  "lastCheckedUTC": "2026-11-21T06:41:36.044761+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 66,
-    "opportunities": 66,
+    "announcementsRead": 59,
+    "opportunities": 59,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-26",
       "2026-10-28",
@@ -48,12 +47,13 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-21"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 66,
-    "opportunities": 66
+    "announcementsRead": 59,
+    "opportunities": 59
   },
   "notices": [
     {
@@ -645,76 +645,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22266913"
-    },
-    {
-      "id": "CIDO7-22346354",
-      "title": "1 plaça d'Enginyer telecomunicacions",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346354"
-    },
-    {
-      "id": "CIDO7-22346350",
-      "title": "1 plaça d'Enginyer tècnic informàtic",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346350"
-    },
-    {
-      "id": "CIDO7-22346346",
-      "title": "20 places d'Auxiliar administratiu",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346346"
-    },
-    {
-      "id": "CIDO7-22346342",
-      "title": "1 plaça d'Auxiliar de gestió",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346342"
-    },
-    {
-      "id": "CIDO7-22346338",
-      "title": "5 places d'Auxiliar inspecció",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346338"
-    },
-    {
-      "id": "CIDO7-22346334",
-      "title": "4 places d'Operari d'obres i serveis",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346334"
-    },
-    {
-      "id": "CIDO7-22346326",
-      "title": "1 plaça d'Enginyer informàtic",
-      "entity": "Ajuntament de Lleida",
-      "date": "22/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22346326"
     }
   ]
 }
