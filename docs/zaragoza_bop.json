@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-20T17:09:31.417494+00:00",
+  "lastCheckedUTC": "2026-11-21T07:19:10.298975+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "268",
+    "bulletin": "269",
     "pagesVisited": 2,
-    "announcementsRead": 849,
-    "opportunities": 83
+    "announcementsRead": 805,
+    "opportunities": 82
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 849,
-    "opportunities": 83,
+    "announcementsRead": 805,
+    "opportunities": 82,
     "bulletins": [
-      "244",
       "245",
       "246",
       "247",
@@ -44,10 +43,10 @@
       "265",
       "266",
       "267",
-      "268"
+      "268",
+      "269"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-24",
       "2026-10-26",
@@ -71,10 +70,10 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-21"
     ],
     "issuePublicationDates": [
-      "2026-10-22",
       "2026-10-23",
       "2026-10-24",
       "2026-10-26",
@@ -98,7 +97,8 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-21"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -108,17 +108,17 @@
       "2026-11-15"
     ],
     "sectionsRead": {
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 5,
       "SECCIÓN TERCERA": 40,
-      "SECCIÓN QUINTA": 107,
-      "SECCIÓN SEXTA": 666,
-      "PARTE NO OFICIAL": 20,
+      "SECCIÓN QUINTA": 98,
+      "SECCIÓN SEXTA": 633,
       "SECCIÓN SEGUNDA": 6,
+      "PARTE NO OFICIAL": 19,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 4,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 106
+    "documentsVerified": 105
   },
   "notices": [
     {
@@ -940,16 +940,6 @@
       "bulletin": "245",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471705440303"
-    },
-    {
-      "id": "ZA-000344540",
-      "province": "Zaragoza",
-      "title": "Anuncio sobre señalamiento de fecha, lugar y hora de realización del primer y segundo ejercicio del proceso selectivo convocado para la provisión, por turno libre y sistema selectivo de oposición, de veintiuna plazas de oficial agente inspector.",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
-      "date": "22/10/2026",
-      "bulletin": "244",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471506720404"
     }
   ]
 }
