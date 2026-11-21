@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-20T16:32:36.161973+00:00",
+  "lastCheckedUTC": "2026-11-21T06:31:28.091857+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "140",
+    "bulletin": "141",
     "pagesVisited": 13,
-    "announcementsRead": 501,
-    "opportunities": 25,
+    "announcementsRead": 507,
+    "opportunities": 20,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
+    "rangeStart": "2026-10-23",
+    "rangeEnd": "2026-11-21",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 501,
-    "opportunities": 25,
+    "announcementsRead": 507,
+    "opportunities": 20,
     "bulletins": [
-      "128",
       "129",
       "130",
       "131",
@@ -32,10 +31,10 @@
       "137",
       "138",
       "139",
-      "140"
+      "140",
+      "141"
     ],
     "publicationDates": [
-      "2026-10-22",
       "2026-10-24",
       "2026-10-27",
       "2026-10-29",
@@ -47,7 +46,8 @@
       "2026-11-12",
       "2026-11-14",
       "2026-11-17",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-21"
     ],
     "nonPublicationDates": [
       "2026-10-23",
@@ -70,6 +70,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-564945570177247153",
+      "province": "Castellón",
+      "title": "Anuncio aprobación bases y convocatoria de 1 plaza de Arquitecto-a (Oposición)",
+      "entity": "AJUNTAMENT DE BENICARLÓ",
+      "date": "21/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/fjSJZbI22D"
+    },
     {
       "id": "CS-324345635751201064",
       "province": "Castellón",
@@ -259,66 +269,6 @@
       "bulletin": "129",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/MGVvEXLqhH"
-    },
-    {
-      "id": "CS-66067223133627536",
-      "province": "Castellón",
-      "title": "Constitución Bolsa de Trabajo de Operarios-as del Cementerio.",
-      "entity": "AYUNTAMIENTO DE BENICÀSSIM, AJUNTAMENT DE BENICÀSSIM/ BENICASIM",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/4saUVmJmqm"
-    },
-    {
-      "id": "CS-488797954727432357",
-      "province": "Castellón",
-      "title": "Bases y convocatoria para proveer en propiedad dos plazas de Oficial de Policía Local, por turno de promoción interna ordinaria.",
-      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/a6hO6KA1rR"
-    },
-    {
-      "id": "CS-360650409336453124",
-      "province": "Castellón",
-      "title": "Anuncio ampliación plazo presentación solicitudes Concurso Igualdad \"La Igualtat és cosa de totes i de tots\"",
-      "entity": "Diputació Provincial de Castelló / Diputación Provincial de Castellón",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/QdmWhYkLYa"
-    },
-    {
-      "id": "CS-231483442233808961",
-      "province": "Castellón",
-      "title": "anuncio bases y convocatoria pruebas selectivas plaza de administrativo de admon general",
-      "entity": "AJUNTAMENT DE VALL D'ALBA",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/H6CBoMHl0j"
-    },
-    {
-      "id": "CS-17597372105547147",
-      "province": "Castellón",
-      "title": "PROCESO SELECTIVO ESTABILIZACIÓN 10E/2022 UNA PLAZA DE TÉCNICO/A MEDIO/A DE ADMINISTRACIÓN ESPECIAL (TMAE) INSPECTOR/A OBRAS. SELECCIÓN Y BOLSA DE TRABAJO",
-      "entity": "AJUNTAMENT DE VILA-REAL",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/1IaxbSZA6d"
-    },
-    {
-      "id": "CS-132953883914123564",
-      "province": "Castellón",
-      "title": "Bases y convocatoria para proveer en propiedad siete plazas de Agente de Policía Local, 4 por turno libre, por el sistema de oposición libre y 3 por movilidad, por el sistema de concurso.",
-      "entity": "AJUNTAMENT DE PENÍSCOLA/PEÑISCOLA",
-      "date": "22/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/9ovfgQyxzw"
     }
   ]
 }
