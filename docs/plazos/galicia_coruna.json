@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T17:19:59+00:00",
+ "updatedUTC": "2026-11-21T07:25:16+00:00",
  "items": {
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/29/2026_0000006942.pdf": {
    "days": 20,
@@ -37,12 +37,6 @@
    "kind": "hábiles",
    "text": "O prazo de presentación de solicitudes será de 20 días hábiles, contados a partir do seguinte ao da publicación do anuncio do extracto da convocatoria no BOE.",
    "page": 2
-  },
-  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf": {
-   "days": 10,
-   "kind": "hábiles",
-   "text": "5º) FORMA E PRAZO DE PRESENTACIÓN DE SOLICITUDES O prazo de presentación de solicitudes, que se cumprimentarán de conformidade coa instancia que figura no Anexo I, será de 10 días hábiles, a contar dende o día seguinte da publicación destas bases no Boletín Oficial da Provincia e que finalizará ás 23:59 horas do…",
-   "page": 1
   },
   "https://bop.dacoruna.gal/bopportal/publicado/2026/11/02/2026_0000006765.pdf": {
    "days": 10,
@@ -112,7 +106,6 @@
   }
  },
  "none": [
-  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006802.pdf",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006873.pdf",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006874.pdf",
@@ -155,7 +148,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf": "https://outes.sedelectronica.gal/",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf": "https://ortigueira.sedelectronica.es/",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006892.pdf": "https://sede.ribeira.gal/",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006912.pdf": "https://sede.coiros.es/",
@@ -174,9 +166,6 @@
   "https://bop.dacoruna.gal/bopportal/publicado/2026/11/20/2026_0000007549.pdf": "https://sede.dacoruna.gal/"
  },
  "sedeRaw": {
-  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006759.pdf": [
-   "https://outes.sedelectronica.gal/"
-  ],
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf": [
    "https://ortigueira.sedelectronica.es/"
   ],
@@ -228,7 +217,6 @@
   ]
  },
  "sinSede": [
-  "https://bop.dacoruna.gal/bopportal/publicado/2026/10/22/2026_0000006802.pdf",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006785.pdf",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006873.pdf",
   "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006874.pdf",

@@ -1,24 +1,12 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T17:19:59+00:00",
+ "updatedUTC": "2026-11-21T07:25:16+00:00",
  "items": {
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354": {
    "days": 20,
    "kind": "hábiles",
    "text": "3.3.- El plazo de presentación de solicitudes será de veinte días hábiles, contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
    "page": 3
-  },
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835203": {
-   "days": 15,
-   "kind": "hábiles",
-   "text": "En dicho apartado se publicará asimismo la fecha de inicio y fin del plazo de presentación de solicitudes, así co - mo el resto de información y documentación relevante del proceso (convocatoria, bases, anuncios, listados, resultados y demás comunicaciones) durante el plazo de quince días hábiles, contados a partir…",
-   "page": 4
-  },
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200": {
-   "days": 15,
-   "kind": "hábiles",
-   "text": "…presentarán por las personas interesadas en el plazo de quince días hábiles contados a partir del día siguiente al de la publicación de la convocatoria en el Boletín Oficial de la Provincia de Ciudad Real, haciendo constar que reúnen los requisitos exigidos en las bases de la convocatoria y en la normativa vigente.",
-   "page": 2
   },
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7857881": {
    "days": 10,
@@ -130,8 +118,6 @@
   }
  },
  "none": [
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835204",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835215",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622",
@@ -142,20 +128,12 @@
  ],
  "tries": {},
  "sedes": {
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200": "https://campodecriptana.sedelectronica.es/",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835203": "https://www.ciudadreal.es/",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871432": "https://www.ciudadreal.es/sede",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871438": "https://puebladedonrodrigo.sedelectronica.es/",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887305": "https://www.almodovardelcampo.es/",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887310": "https://herencia.sedelectronica.es/"
  },
  "sedeRaw": {
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835200": [
-   "https://campodecriptana.sedelectronica.es/"
-  ],
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835203": [
-   "https://www.ciudadreal.es/"
-  ],
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7857881": [
    "https://sede.dipucr.es/"
   ],
@@ -203,8 +181,6 @@
   ]
  },
  "sinSede": [
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835204",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7835215",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",

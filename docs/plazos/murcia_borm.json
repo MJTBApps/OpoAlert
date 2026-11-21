@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T17:19:59+00:00",
+ "updatedUTC": "2026-11-21T07:25:16+00:00",
  "items": {
   "https://www.borm.es/services/anuncio/845966/pdf": {
    "days": 15,
@@ -103,11 +103,15 @@
    "kind": "hábiles",
    "text": "En cuanto a las solicitudes para participar en el proceso selectivo, se presentarán en el plazo de 20 días hábiles contados a partir del siguiente al de la publicación de la convocatoria en el Boletín Oficial de la Región de Murcia, en el registro del Consorcio.",
    "page": 3
+  },
+  "https://www.borm.es/services/anuncio/846455/pdf": {
+   "days": 7,
+   "kind": "naturales",
+   "text": "…consulares de España en el extranjero. • Plazo de presentación: será de 7 días naturales contados a partir del día siguiente a la publicación de esta convocatoria en el Tablón de anuncios electrónico del Ayuntamiento y el Boletín Oficial de la Región de Murcia. • Documentación a presentar junto a la solicitud: -…",
+   "page": 3
   }
  },
  "none": [
-  "https://www.borm.es/services/anuncio/845833/pdf",
-  "https://www.borm.es/services/anuncio/845835/pdf",
   "https://www.borm.es/services/anuncio/845856/pdf",
   "https://www.borm.es/services/anuncio/845884/pdf",
   "https://www.borm.es/services/anuncio/845904/pdf",
@@ -143,7 +147,10 @@
   "https://www.borm.es/services/anuncio/846379/pdf",
   "https://www.borm.es/services/anuncio/846380/pdf",
   "https://www.borm.es/services/anuncio/846401/pdf",
-  "https://www.borm.es/services/anuncio/846402/pdf"
+  "https://www.borm.es/services/anuncio/846402/pdf",
+  "https://www.borm.es/services/anuncio/846445/pdf",
+  "https://www.borm.es/services/anuncio/846450/pdf",
+  "https://www.borm.es/services/anuncio/846454/pdf"
  ],
  "tries": {},
  "sedes": {
@@ -156,8 +163,6 @@
   ]
  },
  "sinSede": [
-  "https://www.borm.es/services/anuncio/845833/pdf",
-  "https://www.borm.es/services/anuncio/845835/pdf",
   "https://www.borm.es/services/anuncio/845856/pdf",
   "https://www.borm.es/services/anuncio/845884/pdf",
   "https://www.borm.es/services/anuncio/845904/pdf",
@@ -209,6 +214,10 @@
   "https://www.borm.es/services/anuncio/846398/pdf",
   "https://www.borm.es/services/anuncio/846399/pdf",
   "https://www.borm.es/services/anuncio/846401/pdf",
-  "https://www.borm.es/services/anuncio/846402/pdf"
+  "https://www.borm.es/services/anuncio/846402/pdf",
+  "https://www.borm.es/services/anuncio/846445/pdf",
+  "https://www.borm.es/services/anuncio/846450/pdf",
+  "https://www.borm.es/services/anuncio/846454/pdf",
+  "https://www.borm.es/services/anuncio/846455/pdf"
  ]
 }

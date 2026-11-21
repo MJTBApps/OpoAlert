@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T17:19:59+00:00",
+ "updatedUTC": "2026-11-21T07:25:16+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -24,12 +24,6 @@
    "days": 10,
    "kind": "naturales",
    "text": "…http://tajosalor.sedelectronica.es, en el plazo de 10 días naturales, contados a partir del siguiente de la publicación íntegra de estas bases en el BOP de Cáceres, cumplimentando los modelos de instancias según Anexo I que serán facilitados por la Mancomunidad Tajo-Salor, consignando su nombre y apellidos, DNI y que…",
-   "page": 4
-  },
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4967": {
-   "days": 20,
-   "kind": "naturales",
-   "text": "…del Ayuntamiento de Escurial, dentro del plazo de veinte días naturales contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado y se ajustarán al modelo del ANEXO II, que se facilita junto con las presentes bases.",
    "page": 4
   },
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5201": {
@@ -70,7 +64,6 @@
   }
  },
  "none": [
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4951",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048",
@@ -96,7 +89,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4951": "https://www.dip-caceres.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": "https://tajosalor.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": "https://riberosdeltajo.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": "https://tietar.sedelectronica.es/",
@@ -116,9 +108,6 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": "https://aytonavalmoral.sedelectronica.es/"
  },
  "sedeRaw": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4951": [
-   "https://www.dip-caceres.es/"
-  ],
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": [
    "https://tajosalor.sedelectronica.es/"
   ],
@@ -173,7 +162,6 @@
   ]
  },
  "sinSede": [
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-4967",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5164",

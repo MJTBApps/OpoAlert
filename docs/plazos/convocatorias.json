@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-20T17:19:59+00:00",
+ "updatedUTC": "2026-11-21T07:25:16+00:00",
  "items": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": {
    "days": 10,
@@ -115,18 +115,6 @@
    "kind": "hábiles",
    "text": "…de firma electrónica, o DNIe, durante un plazo de 20 días hábiles a partir del siguiente al de la publicación del extracto de esta convocatoria en el Boletín Oficial del Estado.",
    "page": 5
-  },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12788&lang=es": {
-   "days": 8,
-   "kind": "hábiles",
-   "text": "Alcalde, en el plazo de ocho días hábiles a partir del día siguiente a la publicación del correspondiente anuncio en el “Boletín Oficial de la Provincia” Las instancias presentadas en las Oficinas de Correos, de acuerdo con lo previsto en el citado artículo 16.4, se presentarán en dichas Oficinas en sobre abierto,…",
-   "page": 4
-  },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12787&lang=es": {
-   "days": 8,
-   "kind": "hábiles",
-   "text": "Alcalde, en el plazo de ocho días hábiles a partir del día siguiente a la publicación del correspondiente anuncio en el “Boletín Oficial de la Provincia” Las instancias presentadas en las Oficinas de Correos, de acuerdo con lo previsto en el citado artículo 16.4, se presentarán en dichas Oficinas en sobre abierto,…",
-   "page": 4
   },
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es": {
    "days": 10,
@@ -322,9 +310,7 @@
   }
  },
  "none": [
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12754&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12783&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12797&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12914&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12915&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
@@ -358,7 +344,6 @@
  "tries": {},
  "sedes": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12783&lang=es": "https://tavernesblanques.sede.dival.es/",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12797&lang=es": "https://sede.paterna.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12798&lang=es": "https://www.valencia.es/sede",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12807&lang=es": "https://sede.lliria.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12809&lang=es": "https://sede.lliria.es/",
@@ -409,9 +394,6 @@
  "sedeRaw": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12783&lang=es": [
    "https://tavernesblanques.sede.dival.es/"
-  ],
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12797&lang=es": [
-   "https://sede.paterna.es/"
   ],
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12798&lang=es": [
    "https://www.valencia.es/sede"
@@ -561,9 +543,6 @@
   ]
  },
  "sinSede": [
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12754&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12787&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12788&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12914&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12915&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
