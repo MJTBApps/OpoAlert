@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-21T07:25:16+00:00",
+ "updatedUTC": "2026-11-21T10:09:02+00:00",
  "items": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": {
    "days": 20,
@@ -12,12 +12,6 @@
    "days": 15,
    "kind": "hábiles",
    "text": "Mediante el presente anuncio se hace público el texto íntegro de las citadas bases, abriéndose el plazo de presentación de solicitudes, que será de quince días hábiles a contar desde el día siguiente a la publicación del extracto de esta convocatoria en el Boletín Oficial de la Junta de Andalucía.",
-   "page": 1
-  },
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2862/anuncio.pdf": {
-   "days": 10,
-   "kind": "naturales",
-   "text": "A tal efecto, se establece un nuevo plazo de presentación de solicitudes de diez días naturales, contados a partir del día siguiente al de la publicación del presente anuncio en el Boletín Oficial de la Provincia de Almería.",
    "page": 1
   },
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2992/anuncio.pdf": {
@@ -113,16 +107,6 @@
  },
  "none": [
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2762/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2844/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2845/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2854/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2881/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2882/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2883/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2884/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2885/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2886/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2889/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2921/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2922/anuncio.pdf",
@@ -160,9 +144,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf": "https://sede.elejido.es/",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2854/anuncio.pdf": "https://sede.elejido.es/",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2862/anuncio.pdf": "https://adra.sedelectronica.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf": "https://sede.sorbas.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": "https://sede.tijola.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2973/anuncio.pdf": "https://sede.tijola.es/",
@@ -185,15 +166,6 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": "https://www.albanchez.es/"
  },
  "sedeRaw": {
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2853/anuncio.pdf": [
-   "https://sede.elejido.es/"
-  ],
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2854/anuncio.pdf": [
-   "https://sede.elejido.es/"
-  ],
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2862/anuncio.pdf": [
-   "https://adra.sedelectronica.es/"
-  ],
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf": [
    "https://sede.sorbas.es/"
   ],
@@ -260,14 +232,6 @@
  },
  "sinSede": [
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2762/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2844/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2845/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2881/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2882/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2883/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2884/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2885/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2886/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2889/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2921/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2922/anuncio.pdf",
