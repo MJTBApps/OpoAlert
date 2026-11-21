@@ -563,7 +563,7 @@ class MainActivity : Activity() {
         } else {
             for ((index, item) in shown.take(displayedLimit).withIndex()) {
                 addCard(item, item.id in favoriteIds, item.id in fresh, alerts[item.id].orEmpty())
-                if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == 3) {
+                if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == DemoAds.LIST_AD_EVERY - 1) {
                     addBannerIfAvailable(index / DemoAds.LIST_AD_EVERY)
                 }
             }

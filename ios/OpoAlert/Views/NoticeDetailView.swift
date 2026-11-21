@@ -11,6 +11,8 @@ struct NoticeDetailView: View {
     @State private var pdfLink: PdfLink?
     @State private var deadline: Deadline?
     @State private var sede: URL?
+    @ObservedObject private var ads = Ads.shared
+    @ObservedObject private var premium = PremiumStore.shared
 
     private var source: Source { Source.of(notice) }
 
@@ -118,6 +120,20 @@ struct NoticeDetailView: View {
                 Text("OpoAlert no es una aplicación oficial. Las bases, requisitos y plazos válidos son los publicados por la Administración competente.")
                     .font(.caption2)
                     .foregroundStyle(Color(hex: 0x8190A5))
+
+                // Un banner al final de la ficha, lejos de los botones (sin anuncios con Premium).
+                // Solo aparece cuando ha cargado: nunca un hueco vacío.
+                if ads.ready && !premium.isActive && ads.loadedSlots.contains(Ads.detailSlot) {
+                    VStack(spacing: 6) {
+                        Text("PUBLICIDAD")
+                            .font(.system(size: 10))
+                            .foregroundStyle(Color(hex: 0x64748B))
+                        BannerAdView(slot: Ads.detailSlot)
+                            .frame(width: 320, height: 50)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 18)
+                }
             }
             .padding(16)
         }
@@ -135,6 +151,7 @@ struct NoticeDetailView: View {
             }
         }
         .task { (deadline, sede) = await Deadlines.fetchBoth(for: notice) }
+        .onAppear { if !premium.isActive { ads.refreshDetailBanner() } }
         // Al volver a la lista puede tocar el intersticial (cada 3 fichas).
         .onDisappear { Ads.shared.noticeClosed(premium: PremiumStore.isActiveStored) }
         .sheet(item: $pdfLink) { link in

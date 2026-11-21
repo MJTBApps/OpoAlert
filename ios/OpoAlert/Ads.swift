@@ -8,16 +8,20 @@ import UserMessagingPlatform
 /// - Primero el consentimiento del RGPD (mensaje de AdMob) y el aviso de Apple de seguimiento.
 /// - Un anuncio al abrir la app (también la primera vez), como mucho uno cada 15 minutos y se
 ///   descarta si tarda más de 5 segundos.
-/// - Un intersticial cada 3 fichas cerradas, nunca a menos de 2 minutos de otro a pantalla completa.
-/// - Un banner cada 4 convocatorias de la lista, también al pulsar «Ver más». El hueco solo
-///   aparece cuando el anuncio ha cargado.
+/// - Un intersticial cada 3 fichas cerradas, nunca a menos de 1 minuto de otro a pantalla completa.
+/// - Un banner cada 3 convocatorias de la lista, también al pulsar «Ver más», y otro al final de
+///   la ficha. El hueco solo aparece cuando el anuncio ha cargado.
 /// - Con Premium no hay anuncios.
 @MainActor
 final class Ads: ObservableObject {
     static let shared = Ads()
-    static let listAdEvery = 4
+    static let listAdEvery = 3
+    /// Banner de la ficha (uno para todas: se vuelve a pedir en cada ficha).
+    static let detailSlot = -1
     static let noticesPerInterstitial = 3
-    static let fullscreenGap: TimeInterval = 2 * 60
+    static let fullscreenGap: TimeInterval = 60
+    /// Un intersticial cargado caduca a la hora: se pide otro antes.
+    static let interstitialLifetime: TimeInterval = 50 * 60
     /// Cada cuánto puede salir el anuncio de apertura (segundos).
     static let openAdInterval: TimeInterval = 15 * 60
 
@@ -28,6 +32,8 @@ final class Ads: ObservableObject {
     private let noticesKey = "notices_since_interstitial"
     private var interstitial: InterstitialAd?
     private var loadingInterstitial = false
+    private var interstitialLoadedAt = Date.distantPast
+    private let fullscreenDelegate = FullscreenDelegate()
     private var starting = false
     private let defaults = UserDefaults.standard
     private let lastOpenAdKey = "last_app_open_ad"
@@ -109,7 +115,12 @@ final class Ads: ObservableObject {
             Task { @MainActor in
                 guard let self else { return }
                 self.loadingInterstitial = false
-                if let ad { self.interstitial = ad; return }
+                if let ad {
+                    ad.fullScreenContentDelegate = self.fullscreenDelegate
+                    self.interstitial = ad
+                    self.interstitialLoadedAt = Date()
+                    return
+                }
                 try? await Task.sleep(nanoseconds: 60_000_000_000)
                 self.loadInterstitial()
             }
@@ -117,26 +128,39 @@ final class Ads: ObservableObject {
     }
 
     /// Se ha cerrado una ficha. Cada 3 sale un intersticial; si aún no ha cargado o es
-    /// pronto (menos de 2 minutos desde otro a pantalla completa), sale en la siguiente.
+    /// pronto (menos de 1 minuto desde otro a pantalla completa), sale en la siguiente.
     func noticeClosed(premium: Bool) {
         guard ready, !premium, !interstitialID.isEmpty else { return }
         let count = defaults.integer(forKey: noticesKey) + 1
         defaults.set(count, forKey: noticesKey)
-        let now = Date().timeIntervalSince1970
-        guard count >= Self.noticesPerInterstitial, let ad = interstitial,
-              now - defaults.double(forKey: lastFullscreenKey) >= Self.fullscreenGap else {
+        if interstitial != nil, Date().timeIntervalSince(interstitialLoadedAt) > Self.interstitialLifetime {
+            interstitial = nil  // caducado: Google ya no lo mostraría
+        }
+        guard count >= Self.noticesPerInterstitial, interstitial != nil,
+              Date().timeIntervalSince1970 - defaults.double(forKey: lastFullscreenKey) >= Self.fullscreenGap else {
             loadInterstitial()
             return
         }
-        interstitial = nil
-        defaults.set(0, forKey: noticesKey)
-        defaults.set(now, forKey: lastFullscreenKey)
-        // Esperar a que acabe la animación de volver a la lista.
+        // Antes se presentaba a los 0,5 s, a veces con la animación de volver a la lista aún
+        // en marcha: iOS rechazaba la presentación sin avisar y nunca salía ninguno
+        // (AdMob: 0 impresiones del intersticial). Ahora se espera a que acabe la transición.
         Task { @MainActor in
-            try? await Task.sleep(nanoseconds: 500_000_000)
-            ad.present(from: Self.topController())
-            try? await Task.sleep(nanoseconds: 2_000_000_000)
-            self.loadInterstitial()
+            for _ in 0..<20 {
+                try? await Task.sleep(nanoseconds: 250_000_000)
+                if let top = Self.topController(), top.transitionCoordinator == nil, !top.isBeingDismissed,
+                   top.view.window != nil { break }
+            }
+            guard let ad = self.interstitial, let top = Self.topController(), top.view.window != nil else { return }
+            self.interstitial = nil
+            self.defaults.set(0, forKey: self.noticesKey)
+            self.defaults.set(Date().timeIntervalSince1970, forKey: self.lastFullscreenKey)
+            self.fullscreenDelegate.finished = { [weak self] shown in
+                guard let self else { return }
+                // Si no se pudo mostrar, toca en la próxima ficha.
+                if !shown { self.defaults.set(Self.noticesPerInterstitial - 1, forKey: self.noticesKey) }
+                self.loadInterstitial()
+            }
+            ad.present(from: top)
         }
     }
 
@@ -149,6 +173,14 @@ final class Ads: ObservableObject {
 
     /// Pide el banner de esa posición; se mostrará cuando cargue.
     func preload(slot: Int) { _ = banner(slot: slot) }
+
+    /// Banner del final de la ficha: el mismo para todas, con un anuncio nuevo en cada ficha.
+    func refreshDetailBanner() {
+        guard ready else { return }
+        guard let view = banners[Self.detailSlot] else { _ = banner(slot: Self.detailSlot); return }
+        loadedSlots.remove(Self.detailSlot)
+        view.load(Request())
+    }
 
     fileprivate func bannerChanged(_ view: BannerView, loaded: Bool) {
         guard let slot = banners.first(where: { $0.value === view })?.key else { return }
@@ -181,6 +213,20 @@ final class Ads: ObservableObject {
         var top = scene?.windows.first { $0.isKeyWindow }?.rootViewController ?? scene?.windows.first?.rootViewController
         while let presented = top?.presentedViewController { top = presented }
         return top
+    }
+}
+
+/// Avisa cuando el intersticial se cierra o no se ha podido mostrar.
+@MainActor
+final class FullscreenDelegate: NSObject, FullScreenContentDelegate {
+    var finished: ((Bool) -> Void)?
+
+    nonisolated func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
+        MainActor.assumeIsolated { finished?(true); finished = nil }
+    }
+
+    nonisolated func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        MainActor.assumeIsolated { finished?(false); finished = nil }
     }
 }
 

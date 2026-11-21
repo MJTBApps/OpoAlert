@@ -21,7 +21,7 @@ import com.google.android.ump.UserMessagingPlatform
 
 /**
  * Publicidad de OpoAlert: un anuncio al abrir la app, un intersticial cada
- * [NOTICES_PER_INTERSTITIAL] fichas cerradas y anuncios intercalados en la lista. Hoy usa los identificadores de PRUEBA de Google (no producen
+ * [NOTICES_PER_INTERSTITIAL] fichas cerradas, anuncios intercalados en la lista y uno al final de la ficha. Hoy usa los identificadores de PRUEBA de Google (no producen
  * ingresos); con la cuenta de AdMob basta cambiar los de abajo y el del manifiesto.
  * Con Premium activo no se pide ningún anuncio.
  */
@@ -36,6 +36,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
     private val prefs = activity.getSharedPreferences(PREFS, Activity.MODE_PRIVATE)
     private var interstitial: InterstitialAd? = null
     private var loadingInterstitial = false
+    private var interstitialLoadedAt = 0L
 
     /** [openAd]: mostrar el anuncio de apertura (al arrancar la app, también la primera vez). */
     fun start(openAd: Boolean = false) {
@@ -60,6 +61,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         initialized = true
         Thread {
             MobileAds.initialize(activity) {
+                mobileAdsReady = true
                 activity.runOnUiThread {
                     if (!activity.isFinishing && !activity.isDestroyed) {
                         if (wantsOpenAd) loadOpenAd()
@@ -96,7 +98,11 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         loadingInterstitial = true
         InterstitialAd.load(activity, INTERSTITIAL_ID, AdRequest.Builder().build(),
             object : InterstitialAdLoadCallback() {
-                override fun onAdLoaded(ad: InterstitialAd) { loadingInterstitial = false; interstitial = ad }
+                override fun onAdLoaded(ad: InterstitialAd) {
+                    loadingInterstitial = false
+                    interstitial = ad
+                    interstitialLoadedAt = System.currentTimeMillis()
+                }
                 override fun onAdFailedToLoad(error: LoadAdError) {
                     loadingInterstitial = false
                     retryHandler.postDelayed({ loadInterstitial() }, 60_000L)
@@ -114,6 +120,8 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         val count = prefs.getInt(NOTICES_SINCE_AD, 0) + 1
         prefs.edit().putInt(NOTICES_SINCE_AD, count).apply()
         val now = System.currentTimeMillis()
+        // Un intersticial cargado caduca a la hora: Google ya no lo mostraría.
+        if (interstitial != null && now - interstitialLoadedAt > INTERSTITIAL_LIFETIME_MS) interstitial = null
         val ad = interstitial
         if (count < NOTICES_PER_INTERSTITIAL || ad == null ||
             now - prefs.getLong(LAST_FULLSCREEN, 0L) < FULLSCREEN_MIN_GAP_MS) { loadInterstitial(); return }
@@ -121,7 +129,11 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         prefs.edit().putInt(NOTICES_SINCE_AD, 0).putLong(LAST_FULLSCREEN, now).apply()
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
             override fun onAdDismissedFullScreenContent() { loadInterstitial() }
-            override fun onAdFailedToShowFullScreenContent(error: com.google.android.gms.ads.AdError) { loadInterstitial() }
+            override fun onAdFailedToShowFullScreenContent(error: com.google.android.gms.ads.AdError) {
+                // No se pudo mostrar: toca en la próxima ficha.
+                prefs.edit().putInt(NOTICES_SINCE_AD, NOTICES_PER_INTERSTITIAL - 1).apply()
+                loadInterstitial()
+            }
         }
         ad.show(activity)
     }
@@ -187,7 +199,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
 
     companion object {
         /** Cada cuántas convocatorias va un anuncio en la lista (también al pulsar «Ver más»). */
-        const val LIST_AD_EVERY = 4
+        const val LIST_AD_EVERY = 3
         /** Cada cuántas fichas abiertas sale el intersticial. */
         const val NOTICES_PER_INTERSTITIAL = 3
 
@@ -201,7 +213,33 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         private const val LAST_OPEN_AD = "last_app_open_ad"
         private const val LAST_FULLSCREEN = "last_fullscreen_ad"
         private const val NOTICES_SINCE_AD = "notices_since_interstitial"
-        private const val FULLSCREEN_MIN_GAP_MS = 2 * 60 * 1000L
+        private const val FULLSCREEN_MIN_GAP_MS = 60 * 1000L
+        private const val INTERSTITIAL_LIFETIME_MS = 50 * 60 * 1000L
+
+        /** MobileAds ya iniciado (con consentimiento) en este proceso. */
+        @Volatile private var mobileAdsReady = false
+
+        /**
+         * Banner del final de la ficha. Solo si la lista ya inició la publicidad con
+         * consentimiento y no hay Premium; [onLoaded] recibe el anuncio cuando carga
+         * (si no carga, no se muestra nada: nunca un hueco vacío).
+         */
+        fun detailBanner(activity: Activity, onLoaded: (AdView) -> Unit): AdView? {
+            if (!mobileAdsReady || !Premium.showsAds(activity) ||
+                !UserMessagingPlatform.getConsentInformation(activity).canRequestAds()) return null
+            val dm = activity.resources.displayMetrics
+            val widthDp = ((dm.widthPixels / dm.density).toInt() - 36).coerceAtLeast(260)
+            val view = AdView(activity)
+            view.adUnitId = BANNER_ID
+            view.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, widthDp))
+            view.adListener = object : AdListener() {
+                override fun onAdLoaded() {
+                    if (!activity.isFinishing && !activity.isDestroyed) onLoaded(view)
+                }
+            }
+            view.loadAd(AdRequest.Builder().build())
+            return view
+        }
         private const val OPEN_AD_MIN_INTERVAL_MS = 15 * 60 * 1000L
         private const val OPEN_AD_TIMEOUT_MS = 5000L
     }

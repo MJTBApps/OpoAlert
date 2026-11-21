@@ -64,6 +64,7 @@ class NoticeDetailActivity : Activity() {
         addSummary(content)
         addOfficialSource(content)
         addActions(content)
+        addBanner(content)
         scroll.addView(content)
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
         return root
@@ -353,6 +354,45 @@ class NoticeDetailActivity : Activity() {
             "OpoAlert no es una aplicación oficial. Las bases, requisitos y plazos válidos son los publicados por la Administración competente.",
             10.5f, "#8190A5"
         ).apply { setPadding(dp(4), dp(14), dp(4), 0) })
+    }
+
+    private var banner: com.google.android.gms.ads.AdView? = null
+
+    /** Un banner al final de la ficha, lejos de los botones; solo aparece cuando ha cargado. */
+    private fun addBanner(content: LinearLayout) {
+        val block = column().apply {
+            visibility = View.GONE
+            gravity = Gravity.CENTER_HORIZONTAL
+            setPadding(0, dp(22), 0, 0)
+        }
+        content.addView(block, LinearLayout.LayoutParams(-1, -2))
+        banner = DemoAds.detailBanner(this) { ad ->
+            if (block.childCount == 0) {
+                block.addView(text("PUBLICIDAD", 10f, "#64748B").apply {
+                    gravity = Gravity.CENTER
+                    setPadding(0, 0, 0, dp(8))
+                })
+                (ad.parent as? android.view.ViewGroup)?.removeView(ad)
+                block.addView(ad, LinearLayout.LayoutParams(-2, -2))
+            }
+            block.visibility = View.VISIBLE
+        }
+    }
+
+    override fun onPause() {
+        banner?.pause()
+        super.onPause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        banner?.resume()
+    }
+
+    override fun onDestroy() {
+        banner?.destroy()
+        banner = null
+        super.onDestroy()
     }
 
     private fun updateFavoriteState() {
