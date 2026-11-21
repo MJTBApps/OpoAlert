@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-21T06:24:29.522768+00:00",
+  "lastCheckedUTC": "2026-11-21T12:09:31.590258+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "279",
-    "pagesVisited": 27,
-    "announcementsRead": 1809,
+    "bulletin": "280",
+    "pagesVisited": 28,
+    "announcementsRead": 1841,
     "opportunities": 309
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-23",
     "rangeEnd": "2026-11-21",
-    "issuesRead": 27,
-    "pagesVisited": 27,
-    "announcementsRead": 1809,
+    "issuesRead": 28,
+    "pagesVisited": 28,
+    "announcementsRead": 1841,
     "opportunities": 309,
     "bulletins": [
       "253",
@@ -46,7 +46,8 @@
       "276",
       "277",
       "278",
-      "279"
+      "279",
+      "280"
     ],
     "publicationDates": [
       "2026-10-23",
@@ -75,14 +76,14 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-21"
     ],
     "nonPublicationDates": [
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
-      "2026-11-15",
-      "2026-11-21"
+      "2026-11-15"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/23/25300.PDF",
@@ -111,7 +112,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/17/27600.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/18/27700.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/19/27800.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/20/27900.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/20/27900.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/21/28000.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -121,6 +123,7 @@
       "xml",
       "xml",
       "html",
+      "xml",
       "xml",
       "xml",
       "xml",
