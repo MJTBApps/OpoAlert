@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-21T16:57:39+00:00",
+ "updatedUTC": "2026-11-22T07:24:27+00:00",
  "items": {
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-30000000_4305.pdf": {
    "days": 5,
@@ -49,18 +49,6 @@
    "kind": "hábiles",
    "text": "El plazo para presentar la solicitud para tomar parte del proceso selectivo se inicia con la publicación del anuncio en el BOP de la provincia de Badajoz, vigente durante 15 días hábiles desde el día siguiente a su publicación.",
    "page": 5
-  },
-  "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4213.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "…Estado, y proceder a la apertura de un nuevo plazo de presentación de solicitudes por un período de 20 días hábiles contados a partir del día siguiente a su publicación en el Boletín Oficial del Estado.",
-   "page": 2
-  },
-  "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4199.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "3.2.- El plazo de presentación será de veinte días hábiles a contar del siguiente a aquel en que aparezca publicado el anuncio de esta convocatoria en el Boletín Oficial del Estado, una vez que se hubiesen publicado íntegramente las bases en el Boletín Oficial de la Provincia.",
-   "page": 3
   },
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-03000000_4317.pdf": {
    "days": 10,
@@ -149,7 +137,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4199.pdf": "https://sede.olivenza.es/",
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4234.pdf": "https://mscijara.sedelectronica.es/",
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4271.pdf": "https://sede.dip-badajoz.es/",
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4278.pdf": "https://www.villafrancadelosbarros.es/",
@@ -168,9 +155,6 @@
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-19000000_4599.pdf": "https://sede.dip-badajoz.es/"
  },
  "sedeRaw": {
-  "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4199.pdf": [
-   "https://sede.olivenza.es/"
-  ],
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4234.pdf": [
    "https://mscijara.sedelectronica.es/"
   ],
@@ -224,7 +208,6 @@
   ]
  },
  "sinSede": [
-  "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4213.pdf",
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-26000000_4227.pdf",
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4260.pdf",
   "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4261.pdf",
