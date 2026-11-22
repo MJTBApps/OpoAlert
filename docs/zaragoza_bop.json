@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-21T16:57:05.450706+00:00",
+  "lastCheckedUTC": "2026-11-22T07:19:53.655767+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "269",
     "pagesVisited": 2,
-    "announcementsRead": 805,
-    "opportunities": 82
+    "announcementsRead": 787,
+    "opportunities": 81
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
-    "issuesRead": 25,
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
+    "issuesRead": 24,
     "pagesVisited": 2,
-    "announcementsRead": 805,
-    "opportunities": 82,
+    "announcementsRead": 787,
+    "opportunities": 81,
     "bulletins": [
-      "245",
       "246",
       "247",
       "248",
@@ -47,7 +46,6 @@
       "269"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-24",
       "2026-10-26",
       "2026-10-27",
@@ -74,7 +72,6 @@
       "2026-11-21"
     ],
     "issuePublicationDates": [
-      "2026-10-23",
       "2026-10-24",
       "2026-10-26",
       "2026-10-27",
@@ -105,20 +102,21 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-22"
     ],
     "sectionsRead": {
-      "SECCIÓN TERCERA": 40,
-      "SECCIÓN QUINTA": 98,
-      "SECCIÓN SEXTA": 633,
+      "SECCIÓN QUINTA": 95,
       "SECCIÓN SEGUNDA": 6,
+      "SECCIÓN TERCERA": 35,
+      "SECCIÓN SEXTA": 623,
       "PARTE NO OFICIAL": 19,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 4,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 105
+    "documentsVerified": 103
   },
   "notices": [
     {
@@ -930,16 +928,6 @@
       "bulletin": "247",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471923270404"
-    },
-    {
-      "id": "ZA-000344586",
-      "province": "Zaragoza",
-      "title": "Por acuerdo de la Junta de Gobierno Local de fecha 5 de octubre de 2026 se ha aprobado la convocatoria de las pruebas selectivas para la provisión en propiedad de una plaza de guarda montero vacante en la…",
-      "entity": "AYUNTAMIENTO DE EJEA DE LOS CABALLEROS",
-      "date": "23/10/2026",
-      "bulletin": "245",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471705440303"
     }
   ]
 }
