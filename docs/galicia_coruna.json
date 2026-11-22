@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-21T16:16:22.154768+00:00",
+  "lastCheckedUTC": "2026-11-22T06:20:24.384074+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 21,
-    "announcementsRead": 726,
-    "opportunities": 56
+    "pagesVisited": 20,
+    "announcementsRead": 686,
+    "opportunities": 54
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -39,7 +38,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -70,11 +68,12 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 726,
-    "opportunities": 56
+    "issuesRead": 20,
+    "announcementsRead": 686,
+    "opportunities": 54
   },
   "notices": [
     {
@@ -616,26 +615,6 @@
       "bulletin": "204",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf"
-    },
-    {
-      "id": "AC-2026-6873",
-      "province": "A Coruña",
-      "title": "Resolución da Presidencia de contratación, por parte da Entidade Pública Empresarial Augas de Ames EPEL, e coa condición de persoal laboral indefinido, dun oficial de 1ª de servizos. Expediente GD. 9085/2026",
-      "entity": "Entidade Pública Empresarial Augas de Ames EPEL",
-      "date": "23/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006873.pdf"
-    },
-    {
-      "id": "AC-2026-6785",
-      "province": "A Coruña",
-      "title": "Anuncio publicación bases específicas que rexerán o proceso selectivo para a cobertura, pola quenda de promoción interna, de 30 prazas de administrativo/a, escala de administración xeral (subgrupo C1), C.E. 7/26",
-      "entity": "Persoal",
-      "date": "23/10/2026",
-      "bulletin": "203",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/23/2026_0000006785.pdf"
     }
   ]
 }

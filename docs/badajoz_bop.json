@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-21T16:16:13.317692+00:00",
+  "lastCheckedUTC": "2026-11-22T06:20:19.842792+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 20,
-    "announcementsRead": 417,
-    "opportunities": 42
+    "pagesVisited": 19,
+    "announcementsRead": 405,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -38,7 +37,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -69,11 +67,12 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 417,
-    "opportunities": 42
+    "issuesRead": 19,
+    "announcementsRead": 405,
+    "opportunities": 40
   },
   "notices": [
     {
@@ -475,26 +474,6 @@
       "bulletin": "205",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-26000000_4227.pdf"
-    },
-    {
-      "id": "BD-2026-164945",
-      "province": "Badajoz",
-      "title": "Modificación de las bases de la convocatoria para la provisión de una plaza de funcionario/a de carrera, Agente de Policía Local",
-      "entity": "Ayuntamiento de Orellana la Vieja",
-      "date": "23/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4213.pdf"
-    },
-    {
-      "id": "BD-2026-164932",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para el acceso a dos plazas de agentes de la Policía Local, mediante el sistema de movilidad por concurso de méritos",
-      "entity": "Ayuntamiento de Olivenza",
-      "date": "23/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-23000000_4199.pdf"
     }
   ]
 }

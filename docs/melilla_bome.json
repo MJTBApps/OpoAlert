@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-21T16:20:35.288553+00:00",
+  "lastCheckedUTC": "2026-11-22T06:24:32.552268+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "E53",
-    "pagesVisited": 15,
-    "announcementsRead": 145,
-    "opportunities": 15
+    "pagesVisited": 13,
+    "announcementsRead": 125,
+    "opportunities": 13
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "6425",
-      "E48",
       "6426",
       "6427",
       "E49",
@@ -33,8 +31,6 @@
       "E53"
     ],
     "publicationDates": [
-      "2026-10-23",
-      "2026-10-23",
       "2026-10-27",
       "2026-10-30",
       "2026-10-30",
@@ -69,11 +65,12 @@
       "2026-11-16",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 145,
-    "opportunities": 15
+    "issuesRead": 13,
+    "announcementsRead": 125,
+    "opportunities": 13
   },
   "notices": [
     {
@@ -205,26 +202,6 @@
       "bulletin": "6426",
       "type": "Plaza / oposición",
       "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1204.pdf"
-    },
-    {
-      "id": "ML-2026-AX-128",
-      "province": "Melilla (BOME)",
-      "title": "Nota informativa para la celebración del primer ejercicio correspondiente a la convocatoria para la provisión en propiedad de 30 plazas de Auxiliar de Administración, pertenecientes a la escala de administración general, subescala auxiliar, por el procedimiento de oposición libre, con reserva de cuatro plazas para el cupo de personas con diversidad funcional.",
-      "entity": "Tribunal de examen",
-      "date": "23/10/2026",
-      "bulletin": "E48",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-128.pdf"
-    },
-    {
-      "id": "ML-2026-AX-126",
-      "province": "Melilla (BOME)",
-      "title": "Orden nº 4876, de fecha 23 de octubre de 2026, relativa a rectificación de error en los aspirantes del proceso selectivo para la provisión en propiedad de treinta plazas de Auxiliar Administrativo, pertenecientes a la Escala de Administración General, Subescala Auxiliar, por el procedimiento de oposición libre (con reserva cuatro plazas para el cupo de personas con diversidad funcional).",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
-      "date": "23/10/2026",
-      "bulletin": "E48",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-AX-2026-126.pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-21T16:19:08.815136+00:00",
+  "lastCheckedUTC": "2026-11-22T06:23:12.924901+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "224",
-    "pagesVisited": 20,
-    "announcementsRead": 274,
-    "opportunities": 41
+    "pagesVisited": 19,
+    "announcementsRead": 256,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -38,7 +37,6 @@
       "224"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -69,13 +67,13 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 274,
-    "opportunities": 41,
+    "issuesRead": 19,
+    "announcementsRead": 256,
+    "opportunities": 35,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_205_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_206_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_208_2026.pdf",
@@ -447,66 +445,6 @@
       "bulletin": "206",
       "type": "Bolsa de trabajo",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382950_BOP-206_2026.pdf"
-    },
-    {
-      "id": "HB-2026-382624",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases para la creación de una Bolsa de empleo temporal de Formador del Certificado de Profesionalidad IFCD0210-Desarrollo de Aplicaciones con Tecnologías Web, para ejecución del Programa de Empleo y Formación en la Comunidad Autónoma de Andalucía",
-      "entity": "Ayuntamiento de San Juan del Puerto",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382624_BOP-205_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380804",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir una plaza de Oficial 1ª Mantenimiento mediante sistema de concurso-oposición",
-      "entity": "Mancomunidad de Islantilla",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380804_BOP-205_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380800",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir una plaza de Auxiliar Administrativo de Registro y Atención al Público mediante sistema de concurso-oposición",
-      "entity": "Mancomunidad de Islantilla",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380800_BOP-205_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380787",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir una plaza de Ordenanza/Auxilio Administrativo mediante sistema de concurso-oposición",
-      "entity": "Mancomunidad de Islantilla",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380787_BOP-205_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380705",
-      "province": "Huelva",
-      "title": "Aprobaron de las Bases de la convocatoria para cubrir una plaza de Fontanero, Sepulturero y Servicios Múltiples por promoción interna mediante concurso",
-      "entity": "Ayuntamiento de Almonaster la Real",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380705_BOP-205_2026.pdf"
-    },
-    {
-      "id": "HB-2026-380700",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir una plaza de Técnico de Taller de Automoción y Mantenimiento Conductor por promoción interna mediante concurso",
-      "entity": "Ayuntamiento de Almonaster la Real",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_380700_BOP-205_2026.pdf"
     }
   ]
 }

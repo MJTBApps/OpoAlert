@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-21T16:21:30.657411+00:00",
+  "lastCheckedUTC": "2026-11-22T06:25:41.514625+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "270",
-    "pagesVisited": 27,
-    "announcementsRead": 619,
-    "opportunities": 57
+    "pagesVisited": 26,
+    "announcementsRead": 605,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "245",
       "246",
       "247",
       "248",
@@ -45,7 +44,6 @@
       "270"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-24",
       "2026-10-26",
       "2026-10-27",
@@ -77,11 +75,12 @@
       "2026-10-25",
       "2026-11-01",
       "2026-11-08",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-22"
     ],
-    "issuesRead": 27,
-    "announcementsRead": 619,
-    "opportunities": 57
+    "issuesRead": 26,
+    "announcementsRead": 605,
+    "opportunities": 56
   },
   "notices": [
     {
@@ -643,16 +642,6 @@
       "bulletin": "247",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845884/pdf"
-    },
-    {
-      "id": "MU-2026-5174",
-      "province": "Región de Murcia (BORM)",
-      "title": "Convocatoria de ayudas del Subprograma Regional de Formación de Personal Investigador en Universidades y Organismos Públicos de Investigación de la Región de Murcia en los ámbitos académicos y de interés para la industria.",
-      "entity": "Fundación Séneca, Agencia de Ciencia y Tecnología de la Región de Murcia",
-      "date": "23/10/2026",
-      "bulletin": "245",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845856/pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-21T16:18:24.449974+00:00",
+  "lastCheckedUTC": "2026-11-22T06:21:13.855709+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "223",
-    "pagesVisited": 22,
-    "announcementsRead": 667,
-    "opportunities": 35
+    "pagesVisited": 21,
+    "announcementsRead": 635,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -40,7 +39,6 @@
       "223"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -72,11 +70,12 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 667,
-    "opportunities": 35
+    "issuesRead": 21,
+    "announcementsRead": 635,
+    "opportunities": 33
   },
   "notices": [
     {
@@ -408,26 +407,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7210.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7591",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 16/10/2026 , de la Consejería de Desarrollo Sostenible, por la que se nombra personal funcionario de carrera y se adjudica destino definitivo a la persona aprobada en el proceso selectivo para el ingreso por el sistema general de acceso libre, en el Cuerpo de Agentes Medioambientales de la Administración de la Junta de Comunidades de Castilla-La Mancha, en ejecución de sentencia. [NID 2026/7591]",
-      "entity": "Consejería de Desarrollo Sostenible",
-      "date": "23/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/23/pdf/2026_7591.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7370",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Anuncio de 08/10/2026 , del Ayuntamiento de Seseña (Toledo), sobre la convocatoria de tres plazas de policía local, por movilidad. [NID 2026/7370]",
-      "entity": "Ayuntamiento de Seseña (Toledo)",
-      "date": "23/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/23/pdf/2026_7370.pdf&tipo=rutaDocm"
     }
   ]
 }

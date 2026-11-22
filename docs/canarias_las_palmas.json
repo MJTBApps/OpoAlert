@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-21T16:19:40.954297+00:00",
+  "lastCheckedUTC": "2026-11-22T06:23:46.414012+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "139",
-    "pagesVisited": 13,
-    "announcementsRead": 437,
-    "opportunities": 39
+    "pagesVisited": 12,
+    "announcementsRead": 413,
+    "opportunities": 36
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "127",
       "128",
       "129",
       "130",
@@ -31,7 +30,6 @@
       "139"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
@@ -62,11 +60,12 @@
       "2026-11-15",
       "2026-11-17",
       "2026-11-19",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 437,
-    "opportunities": 39
+    "issuesRead": 12,
+    "announcementsRead": 413,
+    "opportunities": 36
   },
   "notices": [
     {
@@ -428,36 +427,6 @@
       "bulletin": "128",
       "type": "Plaza / oposición",
       "url": "https://www.boplaspalmas.net/boletines/2026/26-10-26/26-10-26.pdf"
-    },
-    {
-      "id": "LP-20261023-009",
-      "province": "Las Palmas (BOP)",
-      "title": "Contratación como personal laboral fijo en la convocatoria de estabilización de 1 plaza de Oficial Especialista Electricista",
-      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
-      "date": "23/10/2026",
-      "bulletin": "127",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/23-10-26/23-10-26.pdf"
-    },
-    {
-      "id": "LP-20261023-008",
-      "province": "Las Palmas (BOP)",
-      "title": "Convocatoria que rige el proceso selectivo para cubrir 5 plazas de Técnico/a Superior de Seguridad y Emergencias",
-      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
-      "date": "23/10/2026",
-      "bulletin": "127",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/23-10-26/23-10-26.pdf"
-    },
-    {
-      "id": "LP-20261023-007",
-      "province": "Las Palmas (BOP)",
-      "title": "Bases Específicas del proceso selectivo para cubrir 5 plazas de Técnico/a Superior de Seguridad y Emergencias",
-      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
-      "date": "23/10/2026",
-      "bulletin": "127",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/23-10-26/23-10-26.pdf"
     }
   ]
 }
