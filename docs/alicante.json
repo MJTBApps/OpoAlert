@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-21T16:21:42.056314+00:00",
+  "lastCheckedUTC": "2026-11-22T06:29:02.340947+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "222",
-    "pagesVisited": 21,
-    "announcementsRead": 861,
-    "opportunities": 58,
+    "pagesVisited": 20,
+    "announcementsRead": 824,
+    "opportunities": 52,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 861,
-    "opportunities": 58,
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 824,
+    "opportunities": 52,
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -43,7 +42,6 @@
       "222"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -74,7 +72,8 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ]
   },
   "notices": [
@@ -597,66 +596,6 @@
       "bulletin": "203",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/26_203/2026_008097.pdf"
-    },
-    {
-      "id": "AL-2026-8121",
-      "province": "Alicante",
-      "title": "ACUMULACIÓN DE UNA PLAZA DE AUXILIAR DE ADMINISTRACIÓN GENERAL OEP 2026 (Nº 52) A LA CONVOCATORIA DE TRES PLAZAS DE LA MISMA CLASE",
-      "entity": "AYUNTAMIENTO EL CAMPELLO",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_008121.pdf"
-    },
-    {
-      "id": "AL-2026-8003",
-      "province": "Alicante",
-      "title": "BASES ESPECÍFIQUES I CONVOCATÒRIA PROCÉS SELECTIU DE 1 PLAÇA DE TÈCNIC/A DE JOVENTUT, PEL TORN LLIURE, MITJANÇANT OPOSICIÓ.",
-      "entity": "AYUNTAMIENTO MURO DE ALCOY",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_008003.pdf"
-    },
-    {
-      "id": "AL-2026-7876",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA DE 1 PLAZA DE ARQUITECTO/A TÉCNICO/A, (TÉCNICO MEDIO EN ARQUITECTURA) POR TURNO LIBRE",
-      "entity": "AYUNTAMIENTO ALMORADÍ",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007876.pdf"
-    },
-    {
-      "id": "AL-2026-7875",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO POR PROMOCIÓN INTERNA DE 1 PLAZA DE AUXILIAR ADMINISTRATIVO/A",
-      "entity": "AYUNTAMIENTO ALMORADÍ",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007875.pdf"
-    },
-    {
-      "id": "AL-2026-7873",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA DE 1 PLAZA DE ADMINISTRATIVO/A POR TURNO LIBRE",
-      "entity": "AYUNTAMIENTO ALMORADÍ",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007873.pdf"
-    },
-    {
-      "id": "AL-2026-7870",
-      "province": "Alicante",
-      "title": "BASES Y CONVOCATORIA PROCESO SELECTIVO POR CONCURSO-OPOSICIÓN 3 PLAZAS DE OPERARIOS DE OBRAS Y SERVICIOS",
-      "entity": "AYUNTAMIENTO ALMORADÍ",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/23_202/2026_007870.pdf"
     }
   ]
 }
