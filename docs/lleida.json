@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-21T16:24:49.781538+00:00",
+  "lastCheckedUTC": "2026-11-22T06:38:19.931833+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 59,
-    "opportunities": 59,
+    "announcementsRead": 54,
+    "opportunities": 54,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-20",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 59,
-    "opportunities": 59
+    "announcementsRead": 54,
+    "opportunities": 54
   },
   "notices": [
     {
@@ -595,56 +595,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22266838"
-    },
-    {
-      "id": "CIDO7-22374985",
-      "title": "1 plaça d'Auxiliar de biblioteca",
-      "entity": "Ajuntament de Sant Llorenç de Morunys",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22374985"
-    },
-    {
-      "id": "CIDO7-22374982",
-      "title": "1 plaça de Peó servei de manteniment i reparacions",
-      "entity": "Ajuntament de Sant Llorenç de Morunys",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22374982"
-    },
-    {
-      "id": "CIDO7-22374979",
-      "title": "1 plaça de Netejador",
-      "entity": "Ajuntament de Sant Llorenç de Morunys",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22374979"
-    },
-    {
-      "id": "CIDO7-22374974",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Sant Llorenç de Morunys",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22374974"
-    },
-    {
-      "id": "CIDO7-22266913",
-      "title": "Borsa de treball de places d'Auxiliar administratiu",
-      "entity": "Ajuntament de Ponts",
-      "date": "23/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22266913"
     }
   ]
 }
