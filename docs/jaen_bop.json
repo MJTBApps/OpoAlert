@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-21T16:34:03.288557+00:00",
+  "lastCheckedUTC": "2026-11-22T06:48:57.504637+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "227",
-    "pagesVisited": 20,
-    "announcementsRead": 513,
-    "opportunities": 31,
+    "pagesVisited": 19,
+    "announcementsRead": 493,
+    "opportunities": 29,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 31
+    "pdfLinksVerified": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -40,7 +39,6 @@
       "227"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -71,15 +69,16 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 513,
-    "opportunities": 31,
+    "issuesRead": 19,
+    "announcementsRead": 493,
+    "opportunities": 29,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "207",
-      "date": "2026-10-22"
+      "number": "208",
+      "date": "2026-10-23"
     }
   },
   "notices": [
@@ -372,26 +371,6 @@
       "bulletin": "210",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-27&numeroEdicto=4806&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4978",
-      "province": "Jaén",
-      "title": "Bases y convocatoria de las pruebas selectivas para la selección de personal laboral, por el sistema de oposición y turno libre, para una plaza de Monitor/a Deportivo.",
-      "entity": "AYUNTAMIENTO DE SEGURA DE LA SIERRA (JAÉN)",
-      "date": "23/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-23&numeroEdicto=4978&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4974",
-      "province": "Jaén",
-      "title": "Resolución de aprobación de la convocatoria y las bases reguladoras para la creación de las bolsas de trabajo de músicos instrumentistas de la Banda municipal de música de Jaén dependiente del Patronato de Cultura, Turismo, Fiestas y Patrimonio Histórico.",
-      "entity": "AYUNTAMIENTO DE JAÉN. Patronato Municipal de Cultura, Turismo, Fiestas y Patrimonio Histórico",
-      "date": "23/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-23&numeroEdicto=4974&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

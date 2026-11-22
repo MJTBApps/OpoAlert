@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-21T16:35:54.044930+00:00",
+  "lastCheckedUTC": "2026-11-22T06:49:42.288031+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "232",
-    "pagesVisited": 21,
-    "announcementsRead": 1300,
-    "opportunities": 29
+    "pagesVisited": 20,
+    "announcementsRead": 1252,
+    "opportunities": 28
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "212",
       "213",
       "214",
       "215",
@@ -39,7 +38,6 @@
       "232"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -71,11 +69,12 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 1300,
-    "opportunities": 29
+    "issuesRead": 20,
+    "announcementsRead": 1252,
+    "opportunities": 28
   },
   "notices": [
     {
@@ -357,16 +356,6 @@
       "bulletin": "216",
       "type": "Bolsa de trabajo",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/216/12"
-    },
-    {
-      "id": "NA-2026-212-21",
-      "province": "Navarra",
-      "title": "Oposición de empleado de servicios múltiples. Contratación",
-      "entity": "CORELLA",
-      "date": "23/10/2026",
-      "bulletin": "212",
-      "type": "Plaza / oposición",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/212/21"
     }
   ]
 }

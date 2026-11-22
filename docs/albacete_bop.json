@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-21T16:26:28.641184+00:00",
+  "lastCheckedUTC": "2026-11-22T06:44:18.715028+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "135",
-    "pagesVisited": 12,
-    "announcementsRead": 224,
-    "opportunities": 20
+    "pagesVisited": 11,
+    "announcementsRead": 205,
+    "opportunities": 16
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "124",
       "125",
       "126",
       "127",
@@ -30,7 +29,6 @@
       "135"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-28",
       "2026-10-30",
@@ -61,11 +59,12 @@
       "2026-11-15",
       "2026-11-17",
       "2026-11-19",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 224,
-    "opportunities": 20
+    "issuesRead": 11,
+    "announcementsRead": 205,
+    "opportunities": 16
   },
   "notices": [
     {
@@ -227,46 +226,6 @@
       "bulletin": "125",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299611"
-    },
-    {
-      "id": "AB-2026-299577",
-      "province": "Albacete",
-      "title": "Bases que han de regir la convocatoria del proceso selectivo para cubrir, como personal laboral fijo, una plaza de Conductor-Maquinista mediante concurso-oposición y constitución de bolsa de empleo",
-      "entity": "Mancomunidad Unión Manchuela",
-      "date": "23/10/2026",
-      "bulletin": "124",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299577"
-    },
-    {
-      "id": "AB-2026-299572",
-      "province": "Albacete",
-      "title": "Desistimiento de la convocatoria del procedimiento de selección para la confección de una bolsa de Secretarios-Interventores interinos",
-      "entity": "Ayuntamiento de La Herrera",
-      "date": "23/10/2026",
-      "bulletin": "124",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299572"
-    },
-    {
-      "id": "AB-2026-299555",
-      "province": "Albacete",
-      "title": "Nueva fijación de fecha, hora y lugar de celebración del ejercicio de la fase de oposición del proceso selectivo para la provisión de dos plazas de Limpiador/a de Edificios Municipales",
-      "entity": "Ayuntamiento de Balazote",
-      "date": "23/10/2026",
-      "bulletin": "124",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299555"
-    },
-    {
-      "id": "AB-2026-299553",
-      "province": "Albacete",
-      "title": "Resolución de la adjudicación definitiva de la fase de resultas del concurso de méritos para la provisión del puesto de Trabajador/a Social",
-      "entity": "Ayuntamiento de Albacete",
-      "date": "23/10/2026",
-      "bulletin": "124",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299553"
     }
   ]
 }

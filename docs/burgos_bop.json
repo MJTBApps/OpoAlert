@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-21T16:28:22.460649+00:00",
+  "lastCheckedUTC": "2026-11-22T06:44:39.293132+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "221",
-    "pagesVisited": 23,
-    "announcementsRead": 629,
-    "opportunities": 9,
+    "pagesVisited": 22,
+    "announcementsRead": 603,
+    "opportunities": 8,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 8
+    "pdfChecked": 7
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -40,7 +39,6 @@
       "221"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -71,13 +69,13 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 629,
-    "opportunities": 9,
+    "issuesRead": 19,
+    "announcementsRead": 603,
+    "opportunities": 8,
     "regularBulletins": [
-      "202",
       "203",
       "204",
       "205",
@@ -100,7 +98,6 @@
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-202",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-203",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-204",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-205",
@@ -210,17 +207,6 @@
       "type": "Plaza / oposición",
       "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-204/bopbur-2026-204-anuncio-202604540.pdf",
       "publisherArticle": "202604540"
-    },
-    {
-      "id": "BU-2026-202604599",
-      "province": "Burgos",
-      "title": "Modificación de las bases que han de regir la convocatoria y el proceso de selección para cubrir en propiedad, una plaza vacante de animador/a sociocultural, mediante el sistema de concurso-oposición libre",
-      "entity": "Ayuntamiento de Miranda de Ebro",
-      "date": "23/10/2026",
-      "bulletin": "202",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-202/bopbur-2026-202-anuncio-202604599.pdf",
-      "publisherArticle": "202604599"
     }
   ]
 }

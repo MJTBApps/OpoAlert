@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-21T16:29:47.038079+00:00",
+  "lastCheckedUTC": "2026-11-22T06:46:00.061645+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "224",
-    "pagesVisited": 28,
-    "announcementsRead": 882,
-    "opportunities": 22,
+    "pagesVisited": 27,
+    "announcementsRead": 850,
+    "opportunities": 21,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "204",
       "205",
       "Ext. 28",
       "206",
@@ -47,7 +46,6 @@
       "224"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-26",
       "2026-10-26",
       "2026-10-27",
@@ -85,13 +83,13 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 28,
-    "announcementsRead": 882,
-    "opportunities": 22,
+    "issuesRead": 27,
+    "announcementsRead": 850,
+    "opportunities": 21,
     "regularBulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -123,7 +121,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47246,
       47265,
       47345,
       47285,
@@ -363,16 +360,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442214"
-    },
-    {
-      "id": "CN-2026-8246",
-      "province": "Cantabria (BOC)",
-      "title": "Convocatoria para la cobertura del puesto directivo de Director/a Científico/a.",
-      "entity": "Fundación Instituto de Investigación Marqués de Valdecilla",
-      "date": "23/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442152"
     }
   ]
 }

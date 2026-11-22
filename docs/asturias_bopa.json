@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-21T16:26:56.176735+00:00",
+  "lastCheckedUTC": "2026-11-22T06:43:54.734548+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 21,
-    "announcementsRead": 979,
-    "opportunities": 71
+    "pagesVisited": 19,
+    "announcementsRead": 920,
+    "opportunities": 66
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "206",
-      "206S1",
       "207",
       "208",
       "209",
@@ -39,8 +37,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-23",
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -71,11 +67,12 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 979,
-    "opportunities": 71
+    "issuesRead": 19,
+    "announcementsRead": 920,
+    "opportunities": 66
   },
   "notices": [
     {
@@ -737,56 +734,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/26/2026-08430.pdf"
-    },
-    {
-      "id": "AS-2026-08398",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases específicas para la provisión, por concurso-oposición, de dos plazas, en turno libre, de Auxiliar Administrativo de la plantilla de funcionarios del Ayuntamiento de Cudillero (oferta de empleo público 2023 y 2024).",
-      "entity": "Ayuntamiento de Cudillero",
-      "date": "23/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/23/2026-08398.pdf"
-    },
-    {
-      "id": "AS-2026-08397",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 8 de octubre de 2026, de la Gerencia del Área de Salud II Centro-Suroccidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de un puesto de Jefe/a de Servicio Facultativo: Inmunología, en el Área de Gestión Clínica del Laboratorio de Medicina.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "23/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/23/2026-08397.pdf"
-    },
-    {
-      "id": "AS-2026-08396",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases específicas para proveer, por concurso-oposición, tres plazas de Oficial de Obras de la plantilla de personal laboral del Ayuntamiento de Cudillero, incluidas en la Oferta de Empleo Público de 2025.",
-      "entity": "Ayuntamiento de Cudillero",
-      "date": "23/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/23/2026-08396.pdf"
-    },
-    {
-      "id": "AS-2026-08393",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 6 de octubre de 2026, de la Gerencia del Área de Salud I Occidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de un puesto de Coordinador/a de Atención Sociosanitaria en el Hospital de Jarrio.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "23/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/23/2026-08393.pdf"
-    },
-    {
-      "id": "AS-2026-08391",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 6 de octubre de 2026, de la Gerencia del Área de Salud I Occidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de un puesto de Supervisora de Unidad de Calidad y Seguridad del Paciente en el Hospital de Jarrio.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "23/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/23/2026-08391.pdf"
     }
   ]
 }

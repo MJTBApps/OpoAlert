@@ -2,24 +2,23 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-21T16:29:20.416931+00:00",
+  "lastCheckedUTC": "2026-11-22T06:45:34.166250+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "EXTRA56",
-    "pagesVisited": 15,
-    "announcementsRead": 90,
+    "pagesVisited": 14,
+    "announcementsRead": 81,
     "opportunities": 2,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 15,
-    "pdfPagesRead": 358
+    "originalFullPdfIssues": 14,
+    "pdfPagesRead": 327
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-23",
-    "rangeEnd": "2026-11-21",
+    "rangeStart": "2026-10-24",
+    "rangeEnd": "2026-11-22",
     "bulletins": [
-      "6663",
       "6664",
       "EXTRA51",
       "6665",
@@ -36,7 +35,6 @@
       "EXTRA56"
     ],
     "publicationDates": [
-      "2026-10-23",
       "2026-10-27",
       "2026-10-28",
       "2026-10-30",
@@ -70,13 +68,13 @@
       "2026-11-15",
       "2026-11-16",
       "2026-11-18",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-22"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 90,
+    "issuesRead": 14,
+    "announcementsRead": 81,
     "opportunities": 2,
     "regularBulletins": [
-      "6663",
       "6664",
       "6665",
       "6666",
@@ -95,18 +93,6 @@
       "EXTRA56"
     ],
     "pdfEvidence": [
-      {
-        "number": "6663",
-        "date": "2026-10-23",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23302-bocce-6663-23-10-2026?Itemid=534",
-        "sha256": "da7d518e81f61ece757bdc3dcb9abba8dbc54ef2a51bd61d931b8bb05bb0e02e",
-        "bytes": 4888794,
-        "pages": 31,
-        "edicts": [
-          701,
-          709
-        ]
-      },
       {
         "number": "6664",
         "date": "2026-10-27",
