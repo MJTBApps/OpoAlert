@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-23T09:58:25.284637+00:00",
+  "lastCheckedUTC": "2026-11-23T16:33:13.332604+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -56,6 +56,26 @@
     "opportunities": 295
   },
   "notices": [
+    {
+      "id": "CIDO5-22540394",
+      "title": "1 plaça de Tècnic mitjà de contractació",
+      "entity": "Ajuntament de Canet de Mar",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22540394"
+    },
+    {
+      "id": "CIDO5-22539870",
+      "title": "1 plaça d'Enginyer superior",
+      "entity": "Ajuntament de Sallent",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22539870"
+    },
     {
       "id": "CIDO5-22539354",
       "title": "Borsa de treball de places de Professor de música de l'especialitat de trombó de les escoles municipals de música de Barcelona",
@@ -695,16 +715,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16607751"
-    },
-    {
-      "id": "CIDO5-16558418",
-      "title": "3 places d'Educador",
-      "entity": "Ajuntament de Granollers",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16558418"
     },
     {
       "id": "CIDO5-16505342",
@@ -1585,16 +1595,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22489136"
-    },
-    {
-      "id": "CIDO5-22487269",
-      "title": "1 plaça d'Enginyer superior",
-      "entity": "Ajuntament de Sallent",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22487269"
     },
     {
       "id": "CIDO5-22484862",
