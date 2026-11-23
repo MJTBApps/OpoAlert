@@ -1,19 +1,18 @@
 {
   "source": "https://www.boe.es/datosabiertos/api/boe/sumario/",
   "province": "España (BOE)",
-  "lastCheckedUTC": "2026-11-22T17:11:40Z",
+  "lastCheckedUTC": "2026-11-23T08:04:43Z",
   "coverage": {
     "complete": true,
-    "bulletin": "290",
-    "announcementsRead": 894,
-    "opportunities": 780
+    "bulletin": "291",
+    "announcementsRead": 895,
+    "opportunities": 775
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "publicationDates": [
-      "2026-10-24",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -37,7 +36,8 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -47,7 +47,6 @@
       "2026-11-22"
     ],
     "bulletins": [
-      "264",
       "265",
       "266",
       "268",
@@ -73,13 +72,274 @@
       "287",
       "288",
       "289",
-      "290"
+      "290",
+      "291"
     ],
     "issuesRead": 27,
-    "announcementsRead": 894,
-    "opportunities": 780
+    "announcementsRead": 895,
+    "opportunities": 775
   },
   "notices": [
+    {
+      "id": "BOE-A-2026-24560",
+      "title": "Resolución de 16 de noviembre de 2026, de la Universidad de Cantabria, por la que se convoca proceso selectivo para la provisión, por el sistema general de acceso libre, de plazas de personal laboral de la Escala A.",
+      "entity": "Universidad de Cantabria",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24560.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24559",
+      "title": "Resolución de 10 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se convocan pruebas selectivas para la provisión, por el sistema general de acceso libre, de plazas de personal laboral, Grupo IV, Nivel B.",
+      "entity": "Universidad Nacional de Educación a Distancia",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24559.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24558",
+      "title": "Resolución de 17 de noviembre de 2026, de la Universidad de Málaga, por la que se corrigen errores en la de 11 de noviembre de 2026, por la que se convoca concurso de acceso a plaza de cuerpos docentes universitarios.",
+      "entity": "Universidad de Málaga",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24558.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24557",
+      "title": "Resolución de 17 de noviembre de 2026, de la Universidad de Málaga, por la que se corrigen errores en la de 10 de noviembre de 2026, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Universidad de Málaga",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24557.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24556",
+      "title": "Resolución de 17 de noviembre de 2026, de la Universidad de Santiago de Compostela, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Universidad de Santiago de Compostela",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24556.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24555",
+      "title": "Resolución de 17 de noviembre de 2026, de la Universidad de Santiago de Compostela, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Universidad de Santiago de Compostela",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24555.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24554",
+      "title": "Resolución de 10 de noviembre de 2026, de la Universidad Nacional de Educación a Distancia, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
+      "entity": "Universidad Nacional de Educación a Distancia",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24554.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24552",
+      "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Villanueva del Arzobispo (Jaén), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Villanueva del Arzobispo (Jaén)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24552.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24551",
+      "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de La Nucia (Alicante/Alacant), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de La Nucia (Alicante/Alacant)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24551.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24550",
+      "title": "Resolución de 17 de noviembre de 2026, de la Diputación Provincial de Córdoba, referente a la convocatoria para proveer una plaza.",
+      "entity": "Diputación Provincial de Córdoba",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24550.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24549",
+      "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Puigcerdà (Girona), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Puigcerdà (Girona)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24549.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24548",
+      "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de La Nucia (Alicante/Alacant), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de La Nucia (Alicante/Alacant)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24548.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24547",
+      "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Alhendín (Granada), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Alhendín (Granada)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24547.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24546",
+      "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Villa del Río (Córdoba), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Villa del Río (Córdoba)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24546.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24545",
+      "title": "Resolución de 16 de noviembre de 2026, del Ayuntamiento de Almoradí (Alicante/Alacant), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Almoradí (Alicante/Alacant)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24545.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24544",
+      "title": "Resolución de 16 de noviembre de 2026, de la Mancomunitat de Municipis de la Safor (Valencia/València), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Mancomunitat de Municipis de la Safor (Valencia/València)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24544.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24543",
+      "title": "Resolución de 16 de noviembre de 2026, del Ayuntamiento de Buenache de Alarcón (Cuenca), referente a la convocatoria para proveer una plaza.",
+      "entity": "Ayuntamiento de Buenache de Alarcón (Cuenca)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24543.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24542",
+      "title": "Resolución de 12 de noviembre de 2026, del Ayuntamiento de Hinojos (Huelva), referente a la convocatoria para proveer varias plazas.",
+      "entity": "Ayuntamiento de Hinojos (Huelva)",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24542.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24541",
+      "title": "Resolución de 12 de noviembre de 2026, de la Diputación Provincial de Zaragoza, referente a la convocatoria para proveer una plaza.",
+      "entity": "Diputación Provincial de Zaragoza",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24541.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24540",
+      "title": "Resolución 568/2026, de 7 de octubre, de la Dirección Gerencia de la Red de Salud Mental de Gipuzkoa, por la que se convoca concurso para la provisión de puesto de trabajo de Jefe/a de Unidad de Salud Mental del Centro de Salud Mental de Arrasate.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24540.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24539",
+      "title": "Resolución de 5 de noviembre de 2026, de la Dirección de Gestión de Personal, del Departamento de Educación, por la que se publica la convocatoria del proceso excepcional de estabilización de empleo temporal de larga duración para turno de reserva por discapacidad en los Cuerpos de Profesores y Profesoras de Enseñanza Secundaria y de Maestras y Maestros de la Comunidad Autónoma del País Vasco.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24539.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24538",
+      "title": "Resolución de 5 de noviembre de 2026, de la Dirección de Gestión de Personal, del Departamento de Educación, por la que se publica la convocatoria del procedimiento selectivo para el ingreso en el Cuerpo de Maestras y Maestros de la Comunidad Autónoma del País Vasco.",
+      "entity": "COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24538.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24535",
+      "title": "Resolución de 17 de noviembre de 2026, de la Subsecretaría, por la que se convoca proceso selectivo para ingreso, por el sistema general de acceso libre y promoción interna, en la Escala Auxiliar de Archivos, Bibliotecas y Museos de Organismos Autónomos del Ministerio de Cultura, y para el cambio de régimen jurídico del personal laboral fijo incluido en el anexo II del IV Convenio Único para el personal laboral de la Administración General del Estado.",
+      "entity": "MINISTERIO DE CULTURA",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24535.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24534",
+      "title": "Resolución de 13 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+      "entity": "MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACIÓN",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24534.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24533",
+      "title": "Resolución de 16 de noviembre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+      "entity": "MINISTERIO DE INDUSTRIA Y TURISMO",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24533.pdf"
+    },
+    {
+      "id": "BOE-A-2026-24530",
+      "title": "Resolución de 18 de noviembre de 2026, de la Presidencia de la Agencia Estatal de Administración Tributaria, por la que se convoca proceso selectivo para el ingreso, por promoción interna, como personal laboral fijo en el grupo profesional I1, sujeto al V Convenio Colectivo del personal laboral de la Agencia Estatal de Administración Tributaria.",
+      "entity": "MINISTERIO DE HACIENDA",
+      "date": "23/11/2026",
+      "bulletin": "291",
+      "province": "España (BOE)",
+      "type": "Plaza / oposición",
+      "url": "https://www.boe.es/boe/dias/2026/11/23/pdfs/BOE-A-2026-24530.pdf"
+    },
     {
       "id": "BOE-A-2026-24474",
       "title": "Resolución de 17 de noviembre de 2026, del Ayuntamiento de Córdoba, referente a la convocatoria para proveer varias plazas.",
@@ -7569,316 +7829,6 @@
       "province": "España (BOE)",
       "type": "Plaza / oposición",
       "url": "https://www.boe.es/boe/dias/2026/10/26/pdfs/BOE-A-2026-22339.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22271",
-      "title": "Resolución de 19 de octubre de 2026, de la Universidad de Jaén, por la que se convoca concurso de acceso a plazas de cuerpos docentes universitarios.",
-      "entity": "Universidad de Jaén",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22271.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22270",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Viana de Cega (Valladolid), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Viana de Cega (Valladolid)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22270.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22269",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Lorca (Murcia), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Lorca (Murcia)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22269.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22268",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Daimús (Valencia/València), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Daimús (Valencia/València)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22268.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22267",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Cuevas del Campo (Granada), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Cuevas del Campo (Granada)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22267.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22266",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Pollença (Illes Balears), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Pollença (Illes Balears)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22266.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22265",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Sueca (Valencia/València), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Sueca (Valencia/València)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22265.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22264",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Don Benito (Badajoz), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Don Benito (Badajoz)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22264.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22263",
-      "title": "Resolución de 20 de octubre de 2026, del Consell Comarcal del Pallars Jussà ( Lleida ), referente a la convocatoria para proveer una plaza.",
-      "entity": "Consell Comarcal del Pallars Jussà ( Lleida )",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22263.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22262",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de La Almunia de Doña Godina (Zaragoza), Organismo Autónomo Local Escuela Universitaria Politécnica, referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de La Almunia de Doña Godina (Zaragoza)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22262.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22261",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Torredonjimeno (Jaén), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Torredonjimeno (Jaén)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22261.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22260",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Leioa (Bizkaia), Organismo Autónomo Soinu Atadia, referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Leioa (Bizkaia)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22260.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22259",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Las Navas del Marqués (Ávila), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Las Navas del Marqués (Ávila)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22259.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22258",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Polopos (Granada), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Polopos (Granada)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22258.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22257",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Quesada (Jaén), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Quesada (Jaén)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22257.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22256",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Vícar (Almería), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Vícar (Almería)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22256.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22255",
-      "title": "Resolución de 20 de octubre de 2026, de la Mancomunidad del Sur (Madrid), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Mancomunidad del Sur (Madrid)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22255.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22254",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Loeches (Madrid), referente a la convocatoria para proveer varias plazas.",
-      "entity": "Ayuntamiento de Loeches (Madrid)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22254.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22253",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Alhambra (Ciudad Real), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Alhambra (Ciudad Real)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22253.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22252",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Caldes de Malavella (Girona), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Caldes de Malavella (Girona)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22252.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22251",
-      "title": "Resolución de 20 de octubre de 2026, del Ayuntamiento de Algatocín (Málaga), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Algatocín (Málaga)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22251.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22250",
-      "title": "Resolución de 19 de octubre de 2026, del Ayuntamiento de Torrelavega (Cantabria), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Torrelavega (Cantabria)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22250.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22249",
-      "title": "Resolución de 19 de octubre de 2026, de la Diputación Provincial de Lugo, referente a la convocatoria para proveer una plaza.",
-      "entity": "Diputación Provincial de Lugo",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22249.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22248",
-      "title": "Resolución de 16 de octubre de 2026, del Ayuntamiento de Òrrius (Barcelona), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Òrrius (Barcelona)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22248.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22247",
-      "title": "Resolución de 15 de octubre de 2026, del Ayuntamiento de Daya Nueva (Alicante/Alacant), referente a la convocatoria para proveer una plaza.",
-      "entity": "Ayuntamiento de Daya Nueva (Alicante/Alacant)",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22247.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22246",
-      "title": "Resolución de 20 de octubre de 2026, de la Subsecretaría, por la que se publica la relación de personas aprobadas en la fase de oposición de los procesos selectivos para ingreso, por el sistema general de acceso libre y promoción interna, en el Cuerpo de Diplomados en Estadística del Estado, convocados por Resolución de 22 de diciembre de 2025.",
-      "entity": "MINISTERIO DE ECONOMÍA, COMERCIO Y EMPRESA",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22246.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22245",
-      "title": "Resolución de 19 de octubre de 2026, de la Subsecretaría, por la que se convoca concurso específico para la provisión de puestos de trabajo en el Instituto de la Cinematografía y de las Artes Audiovisuales.",
-      "entity": "MINISTERIO DE CULTURA",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22245.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22244",
-      "title": "Resolución de 21 de octubre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
-      "entity": "MINISTERIO DE VIVIENDA Y AGENDA URBANA",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22244.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22243",
-      "title": "Resolución de 19 de octubre de 2026, de la Subsecretaría, por la que se convoca concurso general para la provisión de puestos de trabajo en la Abogacía General del Estado.",
-      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22243.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22242",
-      "title": "Resolución de 16 de octubre de 2026, de la Subsecretaría, por la que se convoca concurso general para la provisión de puestos de trabajo.",
-      "entity": "MINISTERIO DE LA PRESIDENCIA, JUSTICIA Y RELACIONES CON LAS CORTES",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22242.pdf"
-    },
-    {
-      "id": "BOE-A-2026-22241",
-      "title": "Resolución de 22 de octubre de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación, en la Carrera Diplomática.",
-      "entity": "MINISTERIO DE ASUNTOS EXTERIORES, UNIÓN EUROPEA Y COOPERACIÓN",
-      "date": "24/10/2026",
-      "bulletin": "264",
-      "province": "España (BOE)",
-      "type": "Plaza / oposición",
-      "url": "https://www.boe.es/boe/dias/2026/10/24/pdfs/BOE-A-2026-22241.pdf"
     }
   ]
 }
