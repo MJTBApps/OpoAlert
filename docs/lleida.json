@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-23T06:50:04.162952+00:00",
+  "lastCheckedUTC": "2026-11-23T09:58:25.284637+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -32,7 +32,8 @@
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
-      "2026-11-19"
+      "2026-11-19",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -47,8 +48,7 @@
       "2026-11-15",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-23"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
@@ -56,6 +56,36 @@
     "opportunities": 53
   },
   "notices": [
+    {
+      "id": "CIDO7-22524580",
+      "title": "2 places de Llicenciat en Dret",
+      "entity": "Ajuntament de Lleida",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524580"
+    },
+    {
+      "id": "CIDO7-22524511",
+      "title": "1 plaça de Cap Secció de Protocol",
+      "entity": "Ajuntament de Lleida",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524511"
+    },
+    {
+      "id": "CIDO7-22499784",
+      "title": "Borsa de treball de places de Tècnic d'estratègies comercials, mercats i fires",
+      "entity": "Ajuntament de la Seu d'Urgell",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499784"
+    },
     {
       "id": "CIDO7-22528472",
       "title": "1 plaça de Tècnic d'educació infantil per a l'escola bressol",
@@ -75,26 +105,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22526834"
-    },
-    {
-      "id": "CIDO7-22524580",
-      "title": "2 places de Llicenciat en Dret",
-      "entity": "Ajuntament de Lleida",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22524580"
-    },
-    {
-      "id": "CIDO7-22524511",
-      "title": "1 plaça de Cap Secció de Protocol",
-      "entity": "Ajuntament de Lleida",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22524511"
     },
     {
       "id": "CIDO7-22267222",
@@ -155,16 +165,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22515284"
-    },
-    {
-      "id": "CIDO7-22499784",
-      "title": "Borsa de treball de places de Tècnic d'estratègies comercials",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22499784"
     },
     {
       "id": "CIDO7-22437600",

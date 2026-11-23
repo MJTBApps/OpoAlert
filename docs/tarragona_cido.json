@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-23T06:50:04.162952+00:00",
+  "lastCheckedUTC": "2026-11-23T09:58:25.284637+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 91,
-    "opportunities": 91,
+    "announcementsRead": 96,
+    "opportunities": 96,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -30,14 +30,14 @@
       "2026-11-09",
       "2026-11-10",
       "2026-11-11",
-      "2026-11-12",
       "2026-11-13",
       "2026-11-14",
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -45,17 +45,87 @@
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
+      "2026-11-12",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-23"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 91,
-    "opportunities": 91
+    "announcementsRead": 96,
+    "opportunities": 96
   },
   "notices": [
+    {
+      "id": "CIDO8-22538826",
+      "title": "1 plaça de Monitor de lleure",
+      "entity": "Ajuntament de Roda de Berà",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22538826"
+    },
+    {
+      "id": "CIDO8-22538776",
+      "title": "1 plaça de Director de l'Escola municipal de Música i del Conservatori professional de Música",
+      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22538776"
+    },
+    {
+      "id": "CIDO8-22538628",
+      "title": "1 plaça de Peó de brigada",
+      "entity": "Ajuntament de Vinebre",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22538628"
+    },
+    {
+      "id": "CIDO8-22538624",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Vinebre",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22538624"
+    },
+    {
+      "id": "CIDO8-22538597",
+      "title": "1 plaça de Peó",
+      "entity": "Ajuntament de Capafonts",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22538597"
+    },
+    {
+      "id": "CIDO8-22484439",
+      "title": "Borsa de treball de places de Personal de neteja de les dependències municipals",
+      "entity": "Ajuntament d'Alcover",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22484439"
+    },
+    {
+      "id": "CIDO8-22524746",
+      "title": "1 plaça d'Oficial 1a",
+      "entity": "Ajuntament dels Garidells",
+      "date": "20/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22524746"
+    },
     {
       "id": "CIDO8-22507852",
       "title": "1 plaça d'Auxiliar administratiu",
@@ -115,16 +185,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22524818"
-    },
-    {
-      "id": "CIDO8-22524746",
-      "title": "1 plaça d'Oficial 1a",
-      "entity": "Ajuntament dels Garidells",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22524746"
     },
     {
       "id": "CIDO8-21973849",
@@ -405,16 +465,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16511262"
-    },
-    {
-      "id": "CIDO8-22484439",
-      "title": "Borsa de treball de places de Personal de neteja de les dependències municipals",
-      "entity": "Ajuntament d'Alcover",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22484439"
     },
     {
       "id": "CIDO8-22474592",
