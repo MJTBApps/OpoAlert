@@ -21,7 +21,7 @@ import com.google.android.ump.UserMessagingPlatform
 
 /**
  * Publicidad de OpoAlert: un anuncio al abrir la app, un intersticial cada
- * [NOTICES_PER_INTERSTITIAL] fichas cerradas, anuncios intercalados en la lista y uno al final de la ficha. Hoy usa los identificadores de PRUEBA de Google (no producen
+ * [NOTICES_PER_INTERSTITIAL] fichas cerradas, anuncios intercalados en la lista y dos en la ficha (a mitad y al final). Hoy usa los identificadores de PRUEBA de Google (no producen
  * ingresos); con la cuenta de AdMob basta cambiar los de abajo y el del manifiesto.
  * Con Premium activo no se pide ningún anuncio.
  */
@@ -193,13 +193,30 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         }
     }
 
-    fun pause() { banners.forEach { it.pause() } }
-    fun resume() { banners.forEach { it.resume() } }
+    private var pausedAt = 0L
+
+    fun pause() {
+        pausedAt = System.currentTimeMillis()
+        banners.forEach { it.pause() }
+    }
+
+    /**
+     * Tras más de 5 minutos fuera, los banners guardados ya no muestran nada (el anuncio
+     * caduca): se vuelven a pedir todos. Antes había que cerrar la app del todo.
+     */
+    fun resume() {
+        banners.forEach { it.resume() }
+        if (pausedAt == 0L || System.currentTimeMillis() - pausedAt < STALE_AFTER_MS) return
+        pausedAt = 0L
+        if (!initialized || !Premium.showsAds(activity)) return
+        if (loaded.isNotEmpty()) { loaded.clear(); onBannerLoaded() }
+        banners.forEach { it.loadAd(AdRequest.Builder().build()) }
+    }
     fun destroy() { retryHandler.removeCallbacksAndMessages(null); banners.forEach { it.destroy() }; banners.clear(); loaded.clear() }
 
     companion object {
         /** Cada cuántas convocatorias va un anuncio en la lista (también al pulsar «Ver más»). */
-        const val LIST_AD_EVERY = 3
+        const val LIST_AD_EVERY = 2
         /** Cada cuántas fichas abiertas sale el intersticial. */
         const val NOTICES_PER_INTERSTITIAL = 3
 
@@ -215,6 +232,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         private const val NOTICES_SINCE_AD = "notices_since_interstitial"
         private const val FULLSCREEN_MIN_GAP_MS = 60 * 1000L
         private const val INTERSTITIAL_LIFETIME_MS = 50 * 60 * 1000L
+        private const val STALE_AFTER_MS = 5 * 60 * 1000L
 
         /** MobileAds ya iniciado (con consentimiento) en este proceso. */
         @Volatile private var mobileAdsReady = false

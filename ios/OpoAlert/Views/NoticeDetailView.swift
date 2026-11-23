@@ -20,6 +20,18 @@ struct NoticeDetailView: View {
         let favorite = model.isFavorite(notice)
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
+                // Banner de arriba, encima del título (el título lo separa del botón del PDF).
+                if ads.ready && !premium.isActive && ads.loadedSlots.contains(Ads.detailTopSlot) {
+                    VStack(spacing: 6) {
+                        Text("PUBLICIDAD")
+                            .font(.system(size: 10))
+                            .foregroundStyle(Color(hex: 0x64748B))
+                        BannerAdView(slot: Ads.detailTopSlot)
+                            .frame(width: 320, height: 50)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom, 4)
+                }
                 HStack(spacing: 6) {
                     NoticeTag(text: badge, color: notice.isPool ? Palette.poolText : Palette.blue,
                         fill: notice.isPool ? Palette.poolFill : Palette.positionFill)
@@ -85,6 +97,19 @@ struct NoticeDetailView: View {
                     .padding(14)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color.white, in: RoundedRectangle(cornerRadius: 14))
+
+                // Banner a mitad de la ficha, entre el resumen y los datos (lejos de los botones).
+                if ads.ready && !premium.isActive && ads.loadedSlots.contains(Ads.detailMidSlot) {
+                    VStack(spacing: 6) {
+                        Text("PUBLICIDAD")
+                            .font(.system(size: 10))
+                            .foregroundStyle(Color(hex: 0x64748B))
+                        BannerAdView(slot: Ads.detailMidSlot)
+                            .frame(width: 320, height: 50)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+                }
 
                 Text("Datos de la publicación")
                     .font(.headline)

@@ -63,7 +63,7 @@ struct NoticeListView: View {
                                     ads.preload(slot: index / Ads.listAdEvery)
                                 }
                             }
-                        // Un anuncio cada 3 convocatorias, también al pulsar «Ver más» (sin anuncios con Premium).
+                        // Un anuncio cada 2 convocatorias, también al pulsar «Ver más» (sin anuncios con Premium).
                         // Solo cuando ha cargado: así no queda nunca un hueco vacío.
                         if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == Ads.listAdEvery - 1
                             && ads.loadedSlots.contains(index / Ads.listAdEvery) {

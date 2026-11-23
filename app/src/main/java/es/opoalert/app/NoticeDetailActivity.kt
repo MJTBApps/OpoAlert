@@ -57,14 +57,16 @@ class NoticeDetailActivity : Activity() {
         val content = column().apply {
             setPadding(dp(18), dp(8), dp(18), dp(25))
         }
+        addBanner(content, top = 4)  // arriba, encima del título (lo separa del botón del PDF)
         addHero(content)
         addOfficialButton(content)
         addDeadline(content)
         addSede(content)
         addSummary(content)
+        addBanner(content, top = 10)
         addOfficialSource(content)
         addActions(content)
-        addBanner(content)
+        addBanner(content, top = 22)
         scroll.addView(content)
         root.addView(scroll, LinearLayout.LayoutParams(-1, 0, 1f))
         return root
@@ -356,17 +358,20 @@ class NoticeDetailActivity : Activity() {
         ).apply { setPadding(dp(4), dp(14), dp(4), 0) })
     }
 
-    private var banner: com.google.android.gms.ads.AdView? = null
+    private val banners = mutableListOf<com.google.android.gms.ads.AdView>()
 
-    /** Un banner al final de la ficha, lejos de los botones; solo aparece cuando ha cargado. */
-    private fun addBanner(content: LinearLayout) {
+    /**
+     * Banners de la ficha: arriba (encima del título), a mitad (entre el resumen y los datos) y al final, lejos de los
+     * botones. Solo aparecen cuando han cargado.
+     */
+    private fun addBanner(content: LinearLayout, top: Int) {
         val block = column().apply {
             visibility = View.GONE
             gravity = Gravity.CENTER_HORIZONTAL
-            setPadding(0, dp(22), 0, 0)
+            setPadding(0, dp(top), 0, dp(if (top < 20) 10 else 0))
         }
         content.addView(block, LinearLayout.LayoutParams(-1, -2))
-        banner = DemoAds.detailBanner(this) { ad ->
+        DemoAds.detailBanner(this) { ad ->
             if (block.childCount == 0) {
                 block.addView(text("PUBLICIDAD", 10f, "#64748B").apply {
                     gravity = Gravity.CENTER
@@ -376,22 +381,22 @@ class NoticeDetailActivity : Activity() {
                 block.addView(ad, LinearLayout.LayoutParams(-2, -2))
             }
             block.visibility = View.VISIBLE
-        }
+        }?.let { banners.add(it) }
     }
 
     override fun onPause() {
-        banner?.pause()
+        banners.forEach { it.pause() }
         super.onPause()
     }
 
     override fun onResume() {
         super.onResume()
-        banner?.resume()
+        banners.forEach { it.resume() }
     }
 
     override fun onDestroy() {
-        banner?.destroy()
-        banner = null
+        banners.forEach { it.destroy() }
+        banners.clear()
         super.onDestroy()
     }
 

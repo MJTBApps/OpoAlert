@@ -9,15 +9,19 @@ import UserMessagingPlatform
 /// - Un anuncio al abrir la app (también la primera vez), como mucho uno cada 15 minutos y se
 ///   descarta si tarda más de 5 segundos.
 /// - Un intersticial cada 3 fichas cerradas, nunca a menos de 1 minuto de otro a pantalla completa.
-/// - Un banner cada 3 convocatorias de la lista, también al pulsar «Ver más», y otro al final de
-///   la ficha. El hueco solo aparece cuando el anuncio ha cargado.
+/// - Un banner cada 2 convocatorias de la lista, también al pulsar «Ver más», y dos en la ficha
+///   (arriba, a mitad y al final, lejos de los botones). El hueco solo aparece cuando el anuncio ha cargado.
 /// - Con Premium no hay anuncios.
 @MainActor
 final class Ads: ObservableObject {
     static let shared = Ads()
-    static let listAdEvery = 3
+    static let listAdEvery = 2
     /// Banner de la ficha (uno para todas: se vuelve a pedir en cada ficha).
     static let detailSlot = -1
+    /// Banner de la mitad de la ficha (entre el resumen y los datos de la publicación).
+    static let detailMidSlot = -2
+    /// Banner de arriba de la ficha (encima del título, separado del botón del PDF).
+    static let detailTopSlot = -3
     static let noticesPerInterstitial = 3
     static let fullscreenGap: TimeInterval = 60
     /// Un intersticial cargado caduca a la hora: se pide otro antes.
@@ -82,7 +86,20 @@ final class Ads: ObservableObject {
     func didBecomeActive(premium: Bool) {
         defer { backgroundSince = nil }
         guard ready, !premium, let since = backgroundSince, Date().timeIntervalSince(since) >= 5 * 60 else { return }
+        // Tras un rato fuera, los banners guardados ya no muestran nada (el anuncio caduca y
+        // iOS para su refresco en segundo plano): se vuelven a pedir todos. Antes había que
+        // cerrar la app del todo para que volvieran.
+        reloadBanners()
         showOpenAd()
+    }
+
+    private func reloadBanners() {
+        let root = Self.topController()
+        for (slot, view) in banners {
+            loadedSlots.remove(slot)
+            view.rootViewController = root
+            view.load(Request())
+        }
     }
 
     /// El aviso de Apple solo se muestra una vez; si se rechaza, los anuncios no son personalizados.
@@ -177,9 +194,12 @@ final class Ads: ObservableObject {
     /// Banner del final de la ficha: el mismo para todas, con un anuncio nuevo en cada ficha.
     func refreshDetailBanner() {
         guard ready else { return }
-        guard let view = banners[Self.detailSlot] else { _ = banner(slot: Self.detailSlot); return }
-        loadedSlots.remove(Self.detailSlot)
-        view.load(Request())
+        for slot in [Self.detailTopSlot, Self.detailMidSlot, Self.detailSlot] {
+            guard let view = banners[slot] else { _ = banner(slot: slot); continue }
+            loadedSlots.remove(slot)
+            view.rootViewController = Self.topController()
+            view.load(Request())
+        }
     }
 
     fileprivate func bannerChanged(_ view: BannerView, loaded: Bool) {

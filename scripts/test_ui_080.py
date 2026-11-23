@@ -41,8 +41,8 @@ def main() -> None:
     assert "fun feedUrl(ctx: Context): String = DEFAULT_FEED_URL" in repository
     assert "https://mjtbapps.github.io/OpoAlert/convocatorias.json" in repository
     gradle = (ROOT / "app/build.gradle.kts").read_text(encoding="utf-8")
-    assert 'versionName = "1.56.1"' in gradle
-    assert "versionCode = 78" in gradle
+    assert 'versionName = "1.56.2"' in gradle
+    assert "versionCode = 79" in gradle
     assert "applicationIdSuffix" not in gradle, "La APK publicada debe actualizar la app habitual"
     assert not (ROOT / "app/src/debug").exists(), "Sin variante paralela: misma app y mismo nombre"
     reader = (KOTLIN / "RemoteFeedReader.kt").read_text(encoding="utf-8")
@@ -129,7 +129,7 @@ def main() -> None:
     assert "VisitStore.startVisit(this)" in activity and "VisitStore.remember(this, notices)" in activity
     assert 'FILTER_NEW = "Nuevas"' in activity and '"NUEVA"' in activity, "Marcar las convocatorias nuevas"
     ios_project = (ROOT / "ios/project.yml").read_text(encoding="utf-8")
-    assert 'MARKETING_VERSION: "1.56.1"' in ios_project, "iOS y Android con el mismo número de versión"
+    assert 'MARKETING_VERSION: "1.56.2"' in ios_project, "iOS y Android con el mismo número de versión"
     assert 'android:networkSecurityConfig="@xml/network_security_config"' in manifest
     security = (ROOT / "app/src/main/res/xml/network_security_config.xml").read_text(encoding="utf-8")
     assert '<certificates src="system" />' in security and "@raw/sectigo_r46" in security
@@ -172,9 +172,9 @@ def main() -> None:
     ads_kt = (KOTLIN / "DemoAds.kt").read_text(encoding="utf-8")
     ads_ios = (ROOT / "ios/OpoAlert/Ads.swift").read_text(encoding="utf-8")
     # 1.56.1: un banner cada 3 y otro al final de la ficha (solo cuando ha cargado) y un intersticial cada 3 fichas.
-    assert "LIST_AD_EVERY = 3" in ads_kt and "MAX_LIST_ADS" not in ads_kt and "fun detailBanner(" in ads_kt
-    assert "DemoAds.detailBanner(this)" in detail and "banner?.destroy()" in detail
-    assert "listAdEvery = 3" in ads_ios and "detailSlot" in ads_ios and "transitionCoordinator == nil" in ads_ios and "maxListAds" not in ads_ios and "func banner(slot:" in ads_ios
+    assert "LIST_AD_EVERY = 2" in ads_kt and "STALE_AFTER_MS" in ads_kt and "MAX_LIST_ADS" not in ads_kt and "fun detailBanner(" in ads_kt
+    assert "DemoAds.detailBanner(this)" in detail and detail.count("addBanner(content, top =") == 3 and "banners.forEach { it.destroy() }" in detail
+    assert "listAdEvery = 2" in ads_ios and "detailMidSlot" in ads_ios and "detailTopSlot" in ads_ios and "reloadBanners()" in ads_ios and "transitionCoordinator == nil" in ads_ios and "maxListAds" not in ads_ios and "func banner(slot:" in ads_ios
     assert "NOTICES_PER_INTERSTITIAL = 3" in ads_kt and "fun noticeClosed()" in ads_kt
     assert "noticesPerInterstitial = 3" in ads_ios and "loadedSlots" in ads_ios
     assert "Ads.shared.noticeClosed" in (ROOT / "ios/OpoAlert/Views/NoticeDetailView.swift").read_text(encoding="utf-8")
