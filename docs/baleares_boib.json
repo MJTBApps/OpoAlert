@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Illes Balears (BOIB)",
   "source": "https://www.caib.es/eboibfront/es",
-  "lastCheckedUTC": "2026-11-22T16:18:38.434427+00:00",
+  "lastCheckedUTC": "2026-11-23T09:55:33.626470+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "150",
-    "pagesVisited": 15,
-    "announcementsRead": 1250,
-    "opportunities": 192
+    "pagesVisited": 14,
+    "announcementsRead": 1157,
+    "opportunities": 173
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
-      "136",
       "137",
       "138",
       "139",
@@ -33,7 +32,6 @@
       "150"
     ],
     "publicationDates": [
-      "2026-10-24",
       "2026-10-27",
       "2026-10-29",
       "2026-10-31",
@@ -65,11 +63,12 @@
       "2026-11-15",
       "2026-11-16",
       "2026-11-18",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-23"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 1250,
-    "opportunities": 192
+    "issuesRead": 14,
+    "announcementsRead": 1157,
+    "opportunities": 173
   },
   "notices": [
     {
@@ -1801,196 +1800,6 @@
       "bulletin": "137",
       "type": "Bolsa de trabajo",
       "url": "https://www.caib.es/eboibfront/pdf/es/2026/137/1231238"
-    },
-    {
-      "id": "IB-2026-10674",
-      "province": "Illes Balears (BOIB)",
-      "title": "Convocatoria y bases para la constitución de una bolsa de trabajo de técnico/a de administración especial",
-      "entity": "AYUNTAMIENTO DE ES CASTELL",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231226"
-    },
-    {
-      "id": "IB-2026-10671",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases que ha de regir la convocatoria para la cobertura de una plaza de electricista, personal laboral fijo, de la categoría de oficios del Ayuntamiento de Sant Lluís",
-      "entity": "AYUNTAMIENTO DE SANT LLUIS",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231220"
-    },
-    {
-      "id": "IB-2026-10668",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del consejero ejecutivo de Hacienda, Innovación y Función Pública por la que se aprueba la constitución de la bolsa de trabajo de personal laboral temporal derivada del proceso selectivo de estabilización por el sistema excepcional de concurso de méritos de la categoría de peón especialista herrero -a del grupo AP (Oferta de empleo público extraordinaria del Consejo de Mallorca y de la agencia de defensa del territorio para el año 2022 y acumuladas de 2017 y 2019)",
-      "entity": "CONSEJO INSULAR DE MALLORCA DEPARTAMENTO DE HACIENDA, INNOVACIÓN Y FUNCIÓN PÚBLICA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231214"
-    },
-    {
-      "id": "IB-2026-10660",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases específicas para cubrir dos plazas de auxiliar de clínica, personal laboral fijo",
-      "entity": "AYUNTAMIENTO DE POLLENÇA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231198"
-    },
-    {
-      "id": "IB-2026-10658",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución núm. 2026-7922 por la cual se aprueban las bases y la convocatoria para la constitución de una bolsa de trabajo de operario/a de jardinería para cubrir con carácter temporal necesidades urgentes e inaplazables de prestación de servicios en el Ayuntamiento de Eivissa, mediante el sistema de concurso oposición",
-      "entity": "AYUNTAMIENTO DE EIVISSA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231194"
-    },
-    {
-      "id": "IB-2026-10657",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución núm. 2026-7923 por la cual se aprueban las bases y la convocatoria para la constitución de una bolsa de trabajo de lacero/a para cubrir con carácter temporal necesidades urgentes e inaplazables de prestación de servicios en el Ayuntamiento de Eivissa, mediante el sistema de concurso de méritos",
-      "entity": "AYUNTAMIENTO DE EIVISSA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231192"
-    },
-    {
-      "id": "IB-2026-10654",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del consejero de Agricultura, Pesca y Medio Natural, a propuesta del director general de Calidad Agroalimentaria y Producto Local, por la que se aprueba la convocatoria de participación y se establecen las bases de selección de los participantes en el programa de visitas a explotaciones agrarias e industrias agroalimentarias para la promoción del producto local en las Illes Balears",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA CONSEJERÍA DE AGRICULTURA, PESCA Y MEDIO NATURAL",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231185"
-    },
-    {
-      "id": "IB-2026-10640",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución del consejero ejecutivo de Hacienda, Innovación y Función Pública por la cual se aprueba la constitución de la bolsa de trabajo mediante concurso de méritos por los procedimientos extraordinario y específico de selección de personal funcionario interino, para cubrir plazas vacantes de la Administración Especial, subescala técnica media, grupo B, especialidad práctico-a topográfico-a y de personal laboral temporal de la categoría/especialidad práctico-a topográfico-a",
-      "entity": "CONSEJO INSULAR DE MALLORCA DEPARTAMENTO DE HACIENDA, INNOVACIÓN Y FUNCIÓN PÚBLICA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231158"
-    },
-    {
-      "id": "IB-2026-10638",
-      "province": "Illes Balears (BOIB)",
-      "title": "Revocación de la convocatoria y las bases para la creación de una bolsa de trabajo de técnico/a de Administración Especial",
-      "entity": "AYUNTAMIENTO DE ES CASTELL",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231154"
-    },
-    {
-      "id": "IB-2026-10630",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la consejera de Trabajo, Función Pública y Diálogo Social per la que se constituye la bolsa única de personal laboral temporal de la categoría profesional de recepcionista al servicio de la Administración de la Comunidad Autónoma de las Illes Balears",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ESCUELA BALEAR DE ADMINISTRACIÓN PÚBLICA (EBAP)",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231138"
-    },
-    {
-      "id": "IB-2026-10628",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la consejera de Trabajo, Función Pública y Diálogo Social per la que se constituye la bolsa única de personal laboral temporal de la categoría profesional empleado/empleada de servicios al servicio de la Administración de la Comunidad Autónoma de las Illes Balears",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ESCUELA BALEAR DE ADMINISTRACIÓN PÚBLICA (EBAP)",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231134"
-    },
-    {
-      "id": "IB-2026-10621",
-      "province": "Illes Balears (BOIB)",
-      "title": "Revocación de la convocatoria y bases de la bolsa de trabajo de coordinador/a de Cultura",
-      "entity": "AYUNTAMIENTO DE ES CASTELL",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231120"
-    },
-    {
-      "id": "IB-2026-10613",
-      "province": "Illes Balears (BOIB)",
-      "title": "Convocatoria y bases específicas del procedimientos selectivo para constituir una bolsa de trabajo de personal laboral temporal de la categoría de trabajador/a familiar",
-      "entity": "AYUNTAMIENTO DE ES MIGJORN GRAN",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231104"
-    },
-    {
-      "id": "IB-2026-10604",
-      "province": "Illes Balears (BOIB)",
-      "title": "Bases de la convocatoria para la creación de una bolsa de la categoría de redactor/a del Ente Público de Radiotelevisión de las Islas Baleares (en adelante EPRTVIB), para contrataciones laborales temporales para las islas de Mallorca, Menorca, Ibiza y Formentera",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ENTE PÚBLICO DE RADIOTELEVISIÓN DE LAS ILLES BALEARS",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231085"
-    },
-    {
-      "id": "IB-2026-10603",
-      "province": "Illes Balears (BOIB)",
-      "title": "Rectificación de errores de las bases de la convocatoria para la selección i contratación en régimen laboral, mediante contrato de relevo, de una plaza de oficial 2ª de mantenimiento, mediante sistema de concurso, en colaboración con el SOIB",
-      "entity": "AYUNTAMIENTO DE BUNYOLA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231084"
-    },
-    {
-      "id": "IB-2026-10592",
-      "province": "Illes Balears (BOIB)",
-      "title": "Contratación y constitución de la bolsa de trabajo de limpiadoras del Ayuntamiento de Alcúdia",
-      "entity": "AYUNTAMIENTO DE ALCÚDIA",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1231062"
-    },
-    {
-      "id": "IB-2026-10513",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la consejera de Trabajo, Función Pública y Diálogo Social por la que se nombra funcionario de carrera del cuerpo facultativo técnico, escala humanística y de ciencias sociales, especialidad terapeuta de la Administración de la Comunidad Autónoma de las Illes Balears, a la persona aspirante que ha superado, por el turno libre para la isla de Mallorca, las pruebas selectivas convocadas mediante Resolución de 15 de octubre de 2025 y se le adjudica un puesto de trabajo",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ESCUELA BALEAR DE ADMINISTRACIÓN PÚBLICA (EBAP)",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1230904"
-    },
-    {
-      "id": "IB-2026-10512",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la consejera de Trabajo, Función Pública y Diálogo Social por la que se nombra funcionario de carrera del cuerpo facultativo técnico, escala de ingeniería, especialidad de ingeniería técnica de obras públicas de la Administración de la Comunidad Autónoma de las Illes Balears, a la persona aspirante que ha superado, por el turno libre para la isla de Mallorca, las pruebas selectivas convocadas mediante Resolución de 15 de octubre de 2025, y se le adjudica un puesto de trabajo",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ESCUELA BALEAR DE ADMINISTRACIÓN PÚBLICA (EBAP)",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1230902"
-    },
-    {
-      "id": "IB-2026-10511",
-      "province": "Illes Balears (BOIB)",
-      "title": "Resolución de la consejera de Trabajo, Función Pública y Diálogo Social por la que se nombra funcionario de carrera del cuerpo facultativo superior, escala de ingeniería, especialidad ingeniería de caminos, canales y puertos de la Administración de la Comunidad Autónoma de las Illes Balears, a la persona aspirante que ha superado, por el turno libre para la isla de Menorca, las pruebas selectivas convocadas por Resolución de 3 de abril de 2025, y se le adjudica un puesto de trabajo",
-      "entity": "ADMINISTRACIÓN DE LA COMUNIDAD AUTÓNOMA ESCUELA BALEAR DE ADMINISTRACIÓN PÚBLICA (EBAP)",
-      "date": "24/10/2026",
-      "bulletin": "136",
-      "type": "Plaza / oposición",
-      "url": "https://www.caib.es/eboibfront/pdf/es/2026/136/1230899"
     }
   ]
 }

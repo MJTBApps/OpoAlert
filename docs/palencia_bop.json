@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "province": "Palencia",
   "source": "https://www.diputaciondepalencia.es/servicios/boletin-oficial-provincia",
-  "lastCheckedUTC": "2026-11-23T06:38:43.813414+00:00",
+  "lastCheckedUTC": "2026-11-23T09:55:32.428905+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "139",
-    "pagesVisited": 12,
-    "announcementsRead": 294,
-    "opportunities": 10
+    "bulletin": "140",
+    "pagesVisited": 13,
+    "announcementsRead": 314,
+    "opportunities": 12
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-25",
     "rangeEnd": "2026-11-23",
-    "issuesRead": 12,
+    "issuesRead": 13,
     "bulletins": [
       "128",
       "129",
@@ -28,7 +28,8 @@
       "136",
       "137",
       "138",
-      "139"
+      "139",
+      "140"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -42,9 +43,11 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-18",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "editionTypes": [
+      "ordinario",
       "ordinario",
       "ordinario",
       "ordinario",
@@ -75,8 +78,7 @@
       "2026-11-17",
       "2026-11-19",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-23"
+      "2026-11-22"
     ],
     "editionPDFs": [
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261026-bop-128-Ordinario.pdf",
@@ -90,13 +92,34 @@
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261113-bop-136-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261116-bop-137-Ordinario.pdf",
       "https://www.diputaciondepalencia.es/system/files/bop/2026/20261118-bop-138-Ordinario.pdf",
-      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261120-bop-139-Ordinario.pdf"
+      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261120-bop-139-Ordinario.pdf",
+      "https://www.diputaciondepalencia.es/system/files/bop/2026/20261123-bop-140-Ordinario.pdf"
     ],
-    "announcementsRead": 294,
-    "opportunities": 10,
+    "announcementsRead": 314,
+    "opportunities": 12,
     "pdfScope": "El PDF completo firmado es el único documento publicado por edición; el enlace identifica también la página del anuncio."
   },
   "notices": [
+    {
+      "id": "PL-20261123-009",
+      "province": "Palencia",
+      "title": "Composición Bolsa Empleo para el puesto de trabajo Celador de Instalaciones",
+      "entity": "Patronato Municipal de Deportes",
+      "date": "23/11/2026",
+      "bulletin": "140",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261123-bop-140-Ordinario.pdf#page=38"
+    },
+    {
+      "id": "PL-20261123-006",
+      "province": "Palencia",
+      "title": "Bases y convocatoria del proceso selectivo de seis plazas de Trabajador/a Social (cuatro para el turno libre y dos para el turno de personas con discapacidad), mediante oposición libre",
+      "entity": "Palencia",
+      "date": "23/11/2026",
+      "bulletin": "140",
+      "type": "Plaza / oposición",
+      "url": "https://www.diputaciondepalencia.es/system/files/bop/2026/20261123-bop-140-Ordinario.pdf#page=18"
+    },
     {
       "id": "PL-20261120-014",
       "province": "Palencia",
