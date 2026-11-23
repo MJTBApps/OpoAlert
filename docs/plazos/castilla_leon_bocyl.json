@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-22T16:57:47+00:00",
+ "updatedUTC": "2026-11-23T07:49:29+00:00",
  "items": {
   "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-41.pdf": {
    "days": 20,
@@ -511,6 +511,24 @@
    "kind": "hábiles",
    "text": "…de las Administraciones Públicas, en el plazo de diez (10) días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial de Castilla y León.",
    "page": 3
+  },
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-27.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes, de veinte días hábiles comenzara a contar desde el día siguiente a la publicación de este anuncio en el Boletín oficial del Estado.",
+   "page": 1
+  },
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-26.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de veinte días hábiles para la presentación de solicitudes se computará a partir del día siguiente al de la publicación de dicho anuncio en el BOE.",
+   "page": 2
+  },
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-25.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de veinte días hábiles para la presentación de solicitudes se computará a partir del día siguiente al de la publicación de dicho anuncio en el BOE.",
+   "page": 2
   }
  },
  "none": [
@@ -603,7 +621,10 @@
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-2.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-33.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-34.pdf",
-  "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-35.pdf"
+  "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-35.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-8.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -650,7 +671,11 @@
   "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-38.pdf": "https://www.valladolid.gob.es/",
   "https://bocyl.jcyl.es/boletines/2026/11/19/pdf/BOCYL-D-19112026-224-39.pdf": "https://villaralbo.sedelectronica.es/",
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-38.pdf": "https://villaquilambre.sedelectronica.es/",
-  "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-39.pdf": "https://www.villaquilambre.es/"
+  "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-39.pdf": "https://www.villaquilambre.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-25.pdf": "https://sede.dipuleon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-26.pdf": "https://sede.dipuleon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-27.pdf": "https://pedrajasdesanesteban.sedelectronica.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-8.pdf": "https://sede.ubu.es/"
  },
  "sedeRaw": {
   "https://bocyl.jcyl.es/boletines/2026/10/26/pdf/BOCYL-D-26102026-207-39.pdf": [
@@ -784,6 +809,18 @@
   ],
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-39.pdf": [
    "https://www.villaquilambre.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-25.pdf": [
+   "https://sede.dipuleon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-26.pdf": [
+   "https://sede.dipuleon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-27.pdf": [
+   "https://pedrajasdesanesteban.sedelectronica.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-8.pdf": [
+   "https://sede.ubu.es/"
   ]
  },
  "sinSede": [
@@ -917,6 +954,8 @@
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-5.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-6.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-7.pdf",
-  "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-8.pdf"
+  "https://bocyl.jcyl.es/boletines/2026/11/20/pdf/BOCYL-D-20112026-225-8.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-1.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/23/pdf/BOCYL-D-23112026-226-4.pdf"
  ]
 }

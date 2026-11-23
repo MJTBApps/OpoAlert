@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-22T16:57:47+00:00",
+ "updatedUTC": "2026-11-23T07:49:29+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -61,6 +61,18 @@
    "kind": "hábiles",
    "text": "…sistema de concurso-oposición, se abre el plazo de presentación de solicitudes, que será de diez días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial de la Provincia.",
    "page": 1
+  },
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "3.3.- Plazo de presentación de instancias Las personas interesadas dispondrán de un plazo de 20 DÍAS HÁBILES, que se computará desde el siguiente al de la publicación del anuncio de estas Bases en el BOLETÍN OFICIAL DEL ESTADO.",
+   "page": 5
+  },
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5469": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "3.3.- Plazo de presentación de instancias Las personas interesadas dispondrán de un plazo de 20 DÍAS HÁBILES, que se computará desde el siguiente al de la publicación del anuncio de estas Bases en el BOLETÍN OFICIAL DEL ESTADO.",
+   "page": 5
   }
  },
  "none": [
@@ -85,7 +97,8 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5358",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5361",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5369",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452"
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5468"
  ],
  "tries": {},
  "sedes": {
@@ -105,7 +118,10 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5389": "https://torrejoncillo.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5436": "https://villanuevadelavera.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5446": "https://aldeadelcano.sedelectronica.es/",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": "https://aytonavalmoral.sedelectronica.es/"
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": "https://aytonavalmoral.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5468": "https://aytonavalmoral.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5469": "https://sede.plasencia.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": "https://sede.plasencia.es/"
  },
  "sedeRaw": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": [
@@ -159,6 +175,15 @@
   ],
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": [
    "https://aytonavalmoral.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5468": [
+   "https://aytonavalmoral.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5469": [
+   "https://sede.plasencia.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": [
+   "https://sede.plasencia.es/"
   ]
  },
  "sinSede": [

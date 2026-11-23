@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-22T16:57:47+00:00",
+ "updatedUTC": "2026-11-23T07:49:29+00:00",
  "items": {},
  "none": [
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42883667-1-PDF-580418",
@@ -43,7 +43,9 @@
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432051-1-PDF-581053",
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432091-1-PDF-581050",
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432155-1-PDF-581052",
-  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432162-1-PDF-581047"
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43432162-1-PDF-581047",
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43457849-1-PDF-581049",
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43457853-1-PDF-581076"
  ],
  "tries": {},
  "sedes": {
@@ -53,7 +55,9 @@
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42969595-1-PDF-580488": "https://sede.unirioja.es/",
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43217157-1-PDF-580750": "https://sede.unirioja.es/",
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43390233-1-PDF-580979": "https://sede.unirioja.es/",
-  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43390274-1-PDF-580973": "https://sede.unirioja.es/"
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43390274-1-PDF-580973": "https://sede.unirioja.es/",
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43457849-1-PDF-581049": "https://santodomingodelacalzada.sedelectronica.es/",
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43457853-1-PDF-581076": "https://aldeanuevadeebro.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42883797-1-PDF-580438": [
@@ -76,6 +80,12 @@
   ],
   "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43390274-1-PDF-580973": [
    "https://sede.unirioja.es/"
+  ],
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43457849-1-PDF-581049": [
+   "https://santodomingodelacalzada.sedelectronica.es/"
+  ],
+  "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43457853-1-PDF-581076": [
+   "https://aldeanuevadeebro.sedelectronica.es/"
   ]
  },
  "sinSede": [

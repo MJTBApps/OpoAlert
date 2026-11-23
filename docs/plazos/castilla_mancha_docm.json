@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-22T16:57:47+00:00",
+ "updatedUTC": "2026-11-23T07:49:29+00:00",
  "items": {
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/29/pdf/2026_7856.pdf&tipo=rutaDocm": {
    "days": 15,
@@ -55,6 +55,30 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de diez días hábiles contados a partir del siguiente al de la publicación de esta Resolución en el Diario Oficial de Castilla-La Mancha.",
    "page": 1
+  },
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8290.pdf&tipo=rutaDocm": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles contados a partir del siguiente al de la publicación de esta Resolución en el Diario Oficial de Castilla-La Mancha.",
+   "page": 1
+  },
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8257.pdf&tipo=rutaDocm": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles contados a partir del siguiente al de la publicación de esta Resolución en el Diario Oficial de Castilla-La Mancha.",
+   "page": 1
+  },
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8256.pdf&tipo=rutaDocm": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles contados a partir del siguiente al de la publicación de esta Resolución en el Diario Oficial de Castilla-La Mancha.",
+   "page": 1
+  },
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8255.pdf&tipo=rutaDocm": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles contados a partir del siguiente al de la publicación de esta Resolución en el Diario Oficial de Castilla-La Mancha.",
+   "page": 1
   }
  },
  "none": [
@@ -81,7 +105,9 @@
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7985.pdf&tipo=rutaDocm",
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8043.pdf&tipo=rutaDocm",
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8091.pdf&tipo=rutaDocm",
-  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm"
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8326.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8327.pdf&tipo=rutaDocm"
  ],
  "tries": {},
  "sedes": {
@@ -89,7 +115,11 @@
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/12/pdf/2026_8053.pdf&tipo=rutaDocm": "https://www.jccm.es/",
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8044.pdf&tipo=rutaDocm": "https://buenachedealarcon.sedelectronica.es/",
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/17/pdf/2026_8146.pdf&tipo=rutaDocm": "https://www.jccm.es/",
-  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm": "https://www.sede.uclm.es/"
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm": "https://www.sede.uclm.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8255.pdf&tipo=rutaDocm": "https://www.jccm.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8256.pdf&tipo=rutaDocm": "https://www.jccm.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8257.pdf&tipo=rutaDocm": "https://www.jccm.es/",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8290.pdf&tipo=rutaDocm": "https://www.jccm.es/"
  },
  "sedeRaw": {
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/04/pdf/2026_7829.pdf&tipo=rutaDocm": [
@@ -106,6 +136,18 @@
   ],
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/18/pdf/2026_8196.pdf&tipo=rutaDocm": [
    "https://www.sede.uclm.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8255.pdf&tipo=rutaDocm": [
+   "https://www.jccm.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8256.pdf&tipo=rutaDocm": [
+   "https://www.jccm.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8257.pdf&tipo=rutaDocm": [
+   "https://www.jccm.es/"
+  ],
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8290.pdf&tipo=rutaDocm": [
+   "https://www.jccm.es/"
   ]
  },
  "sinSede": [
@@ -136,6 +178,8 @@
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7974.pdf&tipo=rutaDocm",
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/11/pdf/2026_7985.pdf&tipo=rutaDocm",
   "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8043.pdf&tipo=rutaDocm",
-  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8091.pdf&tipo=rutaDocm"
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/16/pdf/2026_8091.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8326.pdf&tipo=rutaDocm",
+  "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8327.pdf&tipo=rutaDocm"
  ]
 }

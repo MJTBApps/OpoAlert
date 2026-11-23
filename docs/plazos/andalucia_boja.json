@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-22T16:57:47+00:00",
+ "updatedUTC": "2026-11-23T07:49:29+00:00",
  "items": {
   "https://www.juntadeandalucia.es/eboja/2026/211/BOJA26-211-00002-14284-01_00345514.pdf": {
    "days": 10,
@@ -1195,6 +1195,36 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de 20 días hábiles, a contar desde el día siguiente a la publicación del anuncio en el Boletín Oficial del Estado sobre extracto de la convocatoria.",
    "page": 1
+  },
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15357-01_00346585.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "Plazo de presentación: El plazo de presentación de solicitudes será de diez días hábiles, contados a partir del siguiente al de publicación de la presente resolución en el Boletín Oficial de la Junta de Andalucía.",
+   "page": 5
+  },
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00012-15355-01_00346583.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "Plazo de presentación: El plazo de presentación de solicitudes será de diez días hábiles, contados a partir del siguiente al de publicación de la presente resolución en el Boletín Oficial de la Junta de Andalucía.",
+   "page": 5
+  },
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15354-01_00346582.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "Plazo de presentación: El plazo de presentación de solicitudes será de diez días hábiles, contados a partir del siguiente al de la publicación de la presente resolución en el Boletín Oficial de la Junta de Andalucía.",
+   "page": 5
+  },
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00002-15308-01_00346536.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "…Administración Local, se presentarán dentro del plazo de diez días hábiles, contados a partir del día siguiente al de la publicación en el BOJA de la presente resolución, a través del Registro Electrónico General de la Junta de Andalucía, de conformidad con lo establecido en el articulo 14.2.e) de la Ley 39/2015, de…",
+   "page": 1
+  },
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15245-01_00346500.pdf": {
+   "days": 8,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de ocho días hábiles contados a partir del día siguiente al de la publicación de la convocatoria en el «Boletín Oficial de la Junta de Andalucía», igualmente se publicará a los meros efectos de publicidad en el «Boletín Oficial de la Universidad de Cádiz», así como en la…",
+   "page": 5
   }
  },
  "none": [
@@ -1291,7 +1321,11 @@
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00001-15237-01_00346464.pdf",
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00001-15276-01_00346504.pdf",
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00003-15215-01_00346443.pdf",
-  "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00003-15254-01_00346481.pdf"
+  "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00003-15254-01_00346481.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00001-15289-01_00346517.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00001-15306-01_00346533.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00001-15343-01_00346571.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00002-15350-01_00346578.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -1343,7 +1377,8 @@
   "https://www.juntadeandalucia.es/eboja/2026/224/BOJA26-224-00013-15116-01_00346345.pdf": "https://sede.uma.es/",
   "https://www.juntadeandalucia.es/eboja/2026/224/BOJA26-224-00017-15137-01_00346371.pdf": "https://sedelectronica.uca.es/",
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00015-15158-01_00346387.pdf": "https://ptsgranada.sedelectronica.es/",
-  "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00027-15197-01_00346426.pdf": "https://portalempleopublico.juntadeandalucia.es/sede"
+  "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00027-15197-01_00346426.pdf": "https://portalempleopublico.juntadeandalucia.es/sede",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15245-01_00346500.pdf": "https://sedelectronica.uca.es/"
  },
  "sedeRaw": {
   "https://www.juntadeandalucia.es/eboja/2026/207/BOJA26-207-00001-13203-01_00344433.pdf": [
@@ -1493,6 +1528,9 @@
   ],
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00027-15197-01_00346426.pdf": [
    "https://portalempleopublico.juntadeandalucia.es/sede"
+  ],
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15245-01_00346500.pdf": [
+   "https://sedelectronica.uca.es/"
   ]
  },
  "sinSede": [
@@ -1739,6 +1777,14 @@
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00002-15255-01_00346482.pdf",
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00003-15215-01_00346443.pdf",
   "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00003-15254-01_00346481.pdf",
-  "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00011-15199-01_00346428.pdf"
+  "https://www.juntadeandalucia.es/eboja/2026/225/BOJA26-225-00011-15199-01_00346428.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00001-15289-01_00346517.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00001-15306-01_00346533.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00001-15343-01_00346571.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00002-15308-01_00346536.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00002-15350-01_00346578.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00012-15355-01_00346583.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15354-01_00346582.pdf",
+  "https://www.juntadeandalucia.es/eboja/2026/226/BOJA26-226-00014-15357-01_00346585.pdf"
  ]
 }
