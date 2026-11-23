@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-22T16:25:54.917138+00:00",
+  "lastCheckedUTC": "2026-11-23T06:50:04.162952+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 76,
-    "opportunities": 76,
+    "announcementsRead": 73,
+    "opportunities": 73,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "publicationDates": [
       "2026-10-26",
       "2026-10-27",
@@ -37,7 +37,6 @@
       "2026-11-20"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-23"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 76,
-    "opportunities": 76
+    "announcementsRead": 73,
+    "opportunities": 73
   },
   "notices": [
     {
@@ -235,16 +235,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22374077"
-    },
-    {
-      "id": "CIDO6-16732228",
-      "title": "1 plaça de Tècnic mitjà de l'oficina cultural de la Coma Cros",
-      "entity": "Ajuntament de Salt",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16732228"
     },
     {
       "id": "CIDO6-22512479",
@@ -617,16 +607,6 @@
       "url": "https://cido.diba.cat/oposicions/20534820"
     },
     {
-      "id": "CIDO6-22451502",
-      "title": "Borsa de treball de places de Conserge",
-      "entity": "Ajuntament de Tossa de Mar",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22451502"
-    },
-    {
       "id": "CIDO6-22450081",
       "title": "1 plaça d'Auxiliar d'administració especial",
       "entity": "Ajuntament de Castell d'Aro, Platja d'Aro i s'Agaró",
@@ -685,16 +665,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22436172"
-    },
-    {
-      "id": "CIDO6-21589781",
-      "title": "1 plaça de Tècnic superior econòmic",
-      "entity": "Ajuntament de l'Escala",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/21589781"
     },
     {
       "id": "CIDO6-20806477",

@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-22T16:25:54.917138+00:00",
+  "lastCheckedUTC": "2026-11-23T06:50:04.162952+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 54,
-    "opportunities": 54,
+    "announcementsRead": 53,
+    "opportunities": 53,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "publicationDates": [
       "2026-10-26",
       "2026-10-28",
@@ -35,7 +35,6 @@
       "2026-11-19"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
@@ -48,12 +47,13 @@
       "2026-11-15",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-23"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 54,
-    "opportunities": 54
+    "announcementsRead": 53,
+    "opportunities": 53
   },
   "notices": [
     {
@@ -165,16 +165,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22499784"
-    },
-    {
-      "id": "CIDO7-22521151",
-      "title": "1 plaça d'Auxiliar administratiu de suport a la gestió tributària municipal",
-      "entity": "Ajuntament d'Agramunt",
-      "date": "17/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22521151"
     },
     {
       "id": "CIDO7-22437600",

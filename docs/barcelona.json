@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-22T16:25:54.917138+00:00",
+  "lastCheckedUTC": "2026-11-23T06:50:04.162952+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 271,
-    "opportunities": 271,
+    "announcementsRead": 279,
+    "opportunities": 279,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "publicationDates": [
-      "2026-10-24",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -39,7 +38,9 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-21",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -47,15 +48,164 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-15",
-      "2026-11-21",
       "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 271,
-    "opportunities": 271
+    "announcementsRead": 279,
+    "opportunities": 279
   },
   "notices": [
+    {
+      "id": "CIDO5-22535230",
+      "title": "1 plaça de Tècnic superior (f sub SE) a l'Àrea de Recursos Humans, servei de Prevenció de Riscos Laborals",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22535230"
+    },
+    {
+      "id": "CIDO5-19115976",
+      "title": "1 plaça d'Educador social al Departament d'Acció i Promoció Social",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/19115976"
+    },
+    {
+      "id": "CIDO5-18040716",
+      "title": "1 plaça d'Ordenança al Departament de Programes Territorials de Cultura",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040716"
+    },
+    {
+      "id": "CIDO5-18040697",
+      "title": "1 plaça de Tècnic superior (f sub SE) al Servei de Disciplina i Sancions",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040697"
+    },
+    {
+      "id": "CIDO5-18040689",
+      "title": "1 plaça d'Agent de Rendes i Exaccions al Departament de Gestió i Control d'Ingressos de Dret Públic",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040689"
+    },
+    {
+      "id": "CIDO5-18040683",
+      "title": "1 plaça de Tècnic auxiliar f al Departament d'Informàtica i TIC",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040683"
+    },
+    {
+      "id": "CIDO5-18040670",
+      "title": "1 plaça de Tècnic auxiliar de biblioteca",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040670"
+    },
+    {
+      "id": "CIDO5-18040664",
+      "title": "1 plaça de Treballador social al Departament de Programes d'Acció Social de Ciutat",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040664"
+    },
+    {
+      "id": "CIDO5-18040660",
+      "title": "1 plaça d'Arquitecte tècnic al Departament de Projectes i Control d'Obres Municipals",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040660"
+    },
+    {
+      "id": "CIDO5-18040653",
+      "title": "1 plaça d'Arquitecte al Departament de Llicències d'Obres",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040653"
+    },
+    {
+      "id": "CIDO5-18040609",
+      "title": "1 plaça de Tècnic d'Administració Especial (TAE) al Servei Jurídic d'Administració General de l'Àmbit d'Impuls Econòmic i de Ciutat, Treball, Cultura, Ciutadania i Govern",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040609"
+    },
+    {
+      "id": "CIDO5-18040602",
+      "title": "2 places d'Auxiliar administratiu",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040602"
+    },
+    {
+      "id": "CIDO5-18040593",
+      "title": "12 places d'Administratiu",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040593"
+    },
+    {
+      "id": "CIDO5-18040587",
+      "title": "2 places de Tècnic d'administració general (TAG)",
+      "entity": "Ajuntament de Badalona",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18040587"
+    },
+    {
+      "id": "CIDO5-21818775",
+      "title": "1 plaça de Tècnic mitjà de gestió",
+      "entity": "Ajuntament de Vic - Xarxa de Serveis Urbans",
+      "date": "21/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21818775"
+    },
     {
       "id": "CIDO5-22530867",
       "title": "1 plaça de Tècnic en manteniment elèctric",
@@ -125,16 +275,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21818790"
-    },
-    {
-      "id": "CIDO5-21818775",
-      "title": "1 plaça de Tècnic mitjà de gestió",
-      "entity": "Ajuntament de Vic - Xarxa de Serveis Urbans",
-      "date": "20/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21818775"
     },
     {
       "id": "CIDO5-21818657",
@@ -435,16 +575,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16461792"
-    },
-    {
-      "id": "CIDO5-22523920",
-      "title": "1 plaça de Tècnic de so",
-      "entity": "Ajuntament de Sant Cugat del Vallès - EPEL Cugat.cat",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22523920"
     },
     {
       "id": "CIDO5-22521853",
@@ -1977,16 +2107,6 @@
       "url": "https://cido.diba.cat/oposicions/22445867"
     },
     {
-      "id": "CIDO5-22433723",
-      "title": "1 plaça d'Interventor de classe segona",
-      "entity": "Ajuntament de Capellades",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22433723"
-    },
-    {
       "id": "CIDO5-22425988",
       "title": "1 plaça de Gerent",
       "entity": "Ajuntament de Badalona - Badalona Cultura, SL",
@@ -2377,16 +2497,6 @@
       "url": "https://cido.diba.cat/oposicions/16484959"
     },
     {
-      "id": "CIDO5-22410123",
-      "title": "2 places d'Assessor jurídic",
-      "entity": "Ajuntament de Vilanova i la Geltrú",
-      "date": "30/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22410123"
-    },
-    {
       "id": "CIDO5-22410103",
       "title": "Borsa de treball de places de Dinamitzador d'activitat física i esport",
       "entity": "Ajuntament de Vic",
@@ -2525,16 +2635,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22350700"
-    },
-    {
-      "id": "CIDO5-22327685",
-      "title": "Borsa de treball de places d'Arquitecte tècnic",
-      "entity": "Ajuntament de Tona",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22327685"
     },
     {
       "id": "CIDO5-19406613",
@@ -2745,26 +2845,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/21627541"
-    },
-    {
-      "id": "CIDO5-16655045",
-      "title": "1 plaça de Supervisor via pública",
-      "entity": "Ajuntament de Montmeló",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16655045"
-    },
-    {
-      "id": "CIDO5-22333724",
-      "title": "1 plaça de Tècnic superior arquitecte",
-      "entity": "Ajuntament d'Òrrius",
-      "date": "24/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22333724"
     }
   ]
 }
