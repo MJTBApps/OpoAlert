@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-22T16:22:01.184937+00:00",
+  "lastCheckedUTC": "2026-11-23T06:43:53.821301+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "141",
-    "pagesVisited": 13,
-    "announcementsRead": 507,
-    "opportunities": 20,
+    "pagesVisited": 12,
+    "announcementsRead": 473,
+    "opportunities": 19,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
-    "issuesRead": 13,
-    "pagesVisited": 13,
-    "announcementsRead": 507,
-    "opportunities": 20,
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
+    "issuesRead": 12,
+    "pagesVisited": 12,
+    "announcementsRead": 473,
+    "opportunities": 19,
     "bulletins": [
-      "129",
       "130",
       "131",
       "132",
@@ -35,7 +34,6 @@
       "141"
     ],
     "publicationDates": [
-      "2026-10-24",
       "2026-10-27",
       "2026-10-29",
       "2026-10-31",
@@ -66,7 +64,8 @@
       "2026-11-16",
       "2026-11-18",
       "2026-11-20",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-23"
     ]
   },
   "notices": [
@@ -259,16 +258,6 @@
       "bulletin": "131",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/3br9MsT1Xt"
-    },
-    {
-      "id": "CS-301421766692063411",
-      "province": "Castellón",
-      "title": "Bases proceso selección gerocultor/a y constitución bolsa de trabajo",
-      "entity": "AJUNTAMENT DE SONEJA",
-      "date": "24/10/2026",
-      "bulletin": "129",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/MGVvEXLqhH"
     }
   ]
 }
