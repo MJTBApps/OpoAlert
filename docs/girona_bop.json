@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-20T16:54:58.620348+00:00",
+  "lastCheckedUTC": "2026-11-23T07:12:00.314993+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "224",
-    "pagesVisited": 21,
-    "announcementsRead": 1067,
-    "opportunities": 97,
+    "bulletin": "225",
+    "pagesVisited": 20,
+    "announcementsRead": 994,
+    "opportunities": 87,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-22",
-    "rangeEnd": "2026-11-20",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 1067,
-    "opportunities": 97,
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
+    "issuesRead": 20,
+    "pagesVisited": 20,
+    "announcementsRead": 994,
+    "opportunities": 87,
     "bulletins": [
-      "204",
-      "205",
       "206",
       "207",
       "208",
@@ -40,11 +38,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-22",
-      "2026-10-23",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -63,10 +60,10 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-29",
       "2026-10-31",
@@ -74,10 +71,22 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-14",
-      "2026-11-15"
+      "2026-11-15",
+      "2026-11-21",
+      "2026-11-22"
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-225-09965",
+      "title": "Aprovació de les bases i la convocatòria del procés de selecció, mitjançant concurs oposició lliure, per a la constitució d'una borsa de treball d'auxiliars administratius/ves",
+      "entity": "ENTITAT MUNICIPAL DESCENTRALITZADA DE L'ESTARTIT",
+      "date": "23/11/2026",
+      "bulletin": "225",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/225/202622509965.pdf"
+    },
     {
       "id": "GI-2026-224-10108",
       "title": "Aprovació inicial del pressupost general per a l'exercici 2027, les bases d'execució i la plantilla de personal",
@@ -937,116 +946,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620608956.pdf"
-    },
-    {
-      "id": "GI-2026-205-09174",
-      "title": "Convocatòria i bases per a la provisió d'un lloc de treball de cap de servei Administració i Organització, A1, mitjançant sistema de lliure designació",
-      "entity": "XARXA LOCAL DE MUNICIPIS GIRONINS DE LA DIPUTACIÓ DE GIRONA (XALOC)",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509174.pdf"
-    },
-    {
-      "id": "GI-2026-205-09173",
-      "title": "Convocatòria i bases per a la provisió de tres llocs de treball de cap de secció, A1, pel sistema de concurs específic",
-      "entity": "XARXA LOCAL DE MUNICIPIS GIRONINS DE LA DIPUTACIÓ DE GIRONA (XALOC)",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509173.pdf"
-    },
-    {
-      "id": "GI-2026-205-09172",
-      "title": "Convocatòria i bases per a la provisió d'un lloc de treball de tècnic/a expert tresoreria, A1, mitjançant sistema de concurs de mèrits",
-      "entity": "XARXA LOCAL DE MUNICIPIS GIRONINS DE LA DIPUTACIÓ DE GIRONA (XALOC)",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509172.pdf"
-    },
-    {
-      "id": "GI-2026-205-09171",
-      "title": "Convocatòria i bases per a la provisió de set llocs de treball d'administratiu/va expert/a, mitjançant sistema de concurs de mèrits",
-      "entity": "XARXA LOCAL DE MUNICIPIS GIRONINS DE LA DIPUTACIÓ DE GIRONA (XALOC)",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509171.pdf"
-    },
-    {
-      "id": "GI-2026-205-09151",
-      "title": "Aprovació de les bases i la convocatòria per cobrir una plaça de caporal/a de la Policia Local vacant a la Plantilla, mitjançant sistema de concurs oposició promoció interna",
-      "entity": "AJUNTAMENT DE TOSSA DE MAR",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509151.pdf"
-    },
-    {
-      "id": "GI-2026-205-09150",
-      "title": "Aprovació de les bases i la convocatòria per a la creació d'una borsa de treball de tècnics/ques d'administració general, mitjançant sistema de concurs oposició",
-      "entity": "AJUNTAMENT DE TOSSA DE MAR",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620509150.pdf"
-    },
-    {
-      "id": "GI-2026-205-08937",
-      "title": "Aprovació de la convocatòria de concurs oposició d'una plaça de tècnic/a auxiliar adscrita al Gabinet de Comunicació vacant a la plantilla de personal laboral",
-      "entity": "AJUNTAMENT DE LLORET DE MAR",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620508937.pdf"
-    },
-    {
-      "id": "GI-2026-205-08923",
-      "title": "Modificació definitiva de les bases del procés selectiu per a la creació d'una borsa de treball d'arquitecte/a tècnic/a (grup A, subgrup A2), en règim de funcionari/ària interí/ina",
-      "entity": "CONSELL COMARCAL DE LA SELVA",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620508923.pdf"
-    },
-    {
-      "id": "GI-2026-205-08921",
-      "title": "Aprovació de les bases i la convocatòria que regiran el procés de selecció de dues places del grup B, en règim laboral, vinculades al lloc de treball de delineant, mitjançant concurs oposició, a proveir mitjançant promoció interna",
-      "entity": "CONSELL COMARCAL DE LA GARROTXA",
-      "date": "23/10/2026",
-      "bulletin": "205",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/205/202620508921.pdf"
-    },
-    {
-      "id": "GI-2026-204-09029",
-      "title": "Aprovació de les bases reguladores i la convocatòria per a la provisió d'un lloc de treball de direcció Sala Gala (A2)",
-      "entity": "AJUNTAMENT DE CASSÀ DE LA SELVA",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/204/202620409029.pdf"
-    },
-    {
-      "id": "GI-2026-204-08881",
-      "title": "Aprovació de la convocatòria pública del procés selectiu, mitjançant oposició, per a la creació d'una borsa de treball d'administratius/ves, grup C1 de l'Ajuntament de Peralada",
-      "entity": "AJUNTAMENT DE PERALADA",
-      "date": "22/10/2026",
-      "bulletin": "204",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/204/202620408881.pdf"
     }
   ]
 }
