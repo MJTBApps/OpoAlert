@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-22T16:57:34.736941+00:00",
+  "lastCheckedUTC": "2026-11-23T07:45:59.724377+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "269",
+    "bulletin": "270",
     "pagesVisited": 2,
-    "announcementsRead": 787,
-    "opportunities": 81
+    "announcementsRead": 817,
+    "opportunities": 82
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "issuesRead": 24,
     "pagesVisited": 2,
-    "announcementsRead": 787,
-    "opportunities": 81,
+    "announcementsRead": 817,
+    "opportunities": 82,
     "bulletins": [
-      "246",
       "247",
       "248",
       "249",
@@ -43,10 +42,10 @@
       "266",
       "267",
       "268",
-      "269"
+      "269",
+      "270"
     ],
     "publicationDates": [
-      "2026-10-24",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -69,10 +68,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-23"
     ],
     "issuePublicationDates": [
-      "2026-10-24",
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
@@ -95,7 +94,8 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
       "2026-10-25",
@@ -106,19 +106,29 @@
       "2026-11-22"
     ],
     "sectionsRead": {
-      "SECCIÓN QUINTA": 95,
       "SECCIÓN SEGUNDA": 6,
-      "SECCIÓN TERCERA": 35,
-      "SECCIÓN SEXTA": 623,
+      "SECCIÓN TERCERA": 38,
+      "SECCIÓN QUINTA": 114,
+      "SECCIÓN SEXTA": 629,
       "PARTE NO OFICIAL": 19,
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 4,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 6,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 103
+    "documentsVerified": 104
   },
   "notices": [
+    {
+      "id": "ZA-000345411",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación definitiva del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE VILLAFELICHE",
+      "date": "23/11/2026",
+      "bulletin": "270",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476083631010"
+    },
     {
       "id": "ZA-000345375",
       "province": "Zaragoza",
