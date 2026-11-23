@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-22T16:32:20.291368+00:00",
+  "lastCheckedUTC": "2026-11-23T07:01:17.254517+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
-    "pagesVisited": 27,
-    "announcementsRead": 850,
-    "opportunities": 21,
+    "bulletin": "225",
+    "pagesVisited": 28,
+    "announcementsRead": 890,
+    "opportunities": 23,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
       "205",
       "Ext. 28",
@@ -43,7 +43,8 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -72,10 +73,10 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
@@ -86,9 +87,9 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 27,
-    "announcementsRead": 850,
-    "opportunities": 21,
+    "issuesRead": 28,
+    "announcementsRead": 890,
+    "opportunities": 23,
     "regularBulletins": [
       "205",
       "206",
@@ -109,7 +110,8 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "extraordinaryBulletins": [
       "Ext. 28",
@@ -147,10 +149,31 @@
       47567,
       47625,
       47645,
-      47665
+      47665,
+      47685
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9156",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R.1440/26), por la que se convoca concurso-oposición libre para cubrir tres (3) plazas de Personal Técnico, de Gestión y de Administración y Servicios, laboral de la Escala A, Grupo Profesional Titulado/a Universitario, Técnico/a de Captación de Proyectos, en la Oficina de Captación de Proyectos Internacionales (OCAPI).",
+      "entity": "Universidad de Cantabria",
+      "date": "23/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443547"
+    },
+    {
+      "id": "CN-2026-9121",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria del proceso selectivo para la provisión mediante nombramiento interino, por el procedimiento de concurso-oposición, de una (1) plaza de Ingeniero Técnico de Obras Públicas. Expediente 2026/9834A.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "23/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443305"
+    },
     {
       "id": "CN-2026-9078",
       "province": "Cantabria (BOC)",
