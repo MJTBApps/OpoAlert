@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-22T16:18:05.571001+00:00",
+  "lastCheckedUTC": "2026-11-23T06:37:03.477963+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
-    "pagesVisited": 19,
-    "announcementsRead": 256,
-    "opportunities": 35
+    "bulletin": "225",
+    "pagesVisited": 20,
+    "announcementsRead": 265,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
       "206",
       "207",
@@ -34,7 +34,8 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -55,10 +56,10 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
@@ -70,9 +71,9 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 19,
-    "announcementsRead": 256,
-    "opportunities": 35,
+    "issuesRead": 20,
+    "announcementsRead": 265,
+    "opportunities": 37,
     "editionPDFs": [
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_206_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
@@ -92,10 +93,31 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_221_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_222_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_223_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_224_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_224_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_225_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-386917",
+      "province": "Huelva",
+      "title": "Resolución por la que se deja sin efecto la convocatoria para cubrir una plaza de Administrativo por el sistema de concurso oposición en turno libre",
+      "entity": "Ayuntamiento de Bonares",
+      "date": "23/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_386917_BOP-225_2026.pdf"
+    },
+    {
+      "id": "HB-2026-384810",
+      "province": "Huelva",
+      "title": "Acuerdo declarando desierto el procedimiento de adjudicación por concurso de los puestos vacantes del Mercado Municipal de Abastos de San Telmo (lotes 1 a 4) y apertura del procedimiento de adjudicación directa",
+      "entity": "Ayuntamiento de Cortegana",
+      "date": "23/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_384810_BOP-225_2026.pdf"
+    },
     {
       "id": "HB-2026-385283",
       "province": "Huelva",

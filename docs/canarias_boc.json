@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-22T16:18:41.435101+00:00",
+  "lastCheckedUTC": "2026-11-23T06:37:23.882889+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "234",
-    "pagesVisited": 21,
-    "announcementsRead": 393,
-    "opportunities": 57
+    "bulletin": "235",
+    "pagesVisited": 22,
+    "announcementsRead": 415,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
       "214",
       "215",
@@ -36,7 +36,8 @@
       "231",
       "232",
       "233",
-      "234"
+      "234",
+      "235"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-18",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
@@ -74,11 +75,31 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 393,
-    "opportunities": 57
+    "issuesRead": 22,
+    "announcementsRead": 415,
+    "opportunities": 59
   },
   "notices": [
+    {
+      "id": "IC-2026-4073",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 5 de noviembre de 2026, por la que se acuerda el cese de la suspensión del procedimiento respecto de determinado aspirante seleccionado, y la formalización de contrato de trabajo de personal laboral fijo, en las pruebas selectivas para el ingreso, por el sistema general de acceso libre, en la categoría profesional de Ayudante de Cocina y Auxiliar de Cocina (Grupo V), en ejecución del Anexo II del Decreto 115/2022, de 20 de mayo, por el que se aprueba la Oferta Extraordinaria de Empleo Público para la estabilización del empleo temporal e indefinido no fijo de larga duración en el ámbito de la Administración General de la Comunidad Autónoma de Canarias, convocadas por Resolución de 22 de diciembre de 2022, se le adjudica puesto de trabajo y se le confiere plazo para la toma de posesión.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "23/11/2026",
+      "bulletin": "235",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-235-4073.pdf"
+    },
+    {
+      "id": "IC-2026-4072",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 5 de noviembre de 2026, por la que se acuerda el cese de la suspensión del procedimiento respecto de determinada aspirante seleccionada, y se le nombra personal funcionario de carrera en las pruebas selectivas para el ingreso, por el sistema general de acceso libre, en el Cuerpo Auxiliar (Grupo C, Subgrupo C2), en ejecución del Anexo I del Decreto 114/2022, de 20 de mayo, por el que se aprueba la Oferta Extraordinaria de Empleo Público para la estabilización del empleo temporal a que se refiere el artículo 2.1 de la Ley 20/2021, de 28 de diciembre, de medidas urgentes para la reducción de la temporalidad en el empleo público en el ámbito de la Administración General de la Comunidad Autónoma de Canarias, convocadas por Resolución de 14 de diciembre de 2022, se le adjudica puesto de trabajo y se le confiere plazo para la toma de posesión.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "23/11/2026",
+      "bulletin": "235",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-235-4072.pdf"
+    },
     {
       "id": "IC-2026-4064",
       "province": "Canarias (BOC)",

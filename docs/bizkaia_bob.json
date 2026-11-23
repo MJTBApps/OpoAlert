@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-22T16:16:00.981036+00:00",
+  "lastCheckedUTC": "2026-11-23T06:34:13.660299+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
-    "pagesVisited": 20,
-    "announcementsRead": 769,
-    "opportunities": 57
+    "bulletin": "225",
+    "pagesVisited": 21,
+    "announcementsRead": 795,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
       "205",
       "206",
@@ -35,7 +35,8 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -57,10 +58,10 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
@@ -71,11 +72,21 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 769,
-    "opportunities": 57
+    "issuesRead": 21,
+    "announcementsRead": 795,
+    "opportunities": 58
   },
   "notices": [
+    {
+      "id": "BI-2026-II-6054",
+      "province": "Bizkaia",
+      "title": "Corrección del título del anuncio publicado el día 15 de julio de 2025, corregido posteriormente el día 28 de agosto de 2025, relativo a la propuesta de adjudicación provisional en referencia al proceso selectivo de estabilización de una plaza de Letrado/a Asesor/a, mediante el sistema concurso, cuyas bases fueron objeto de publicación en el «Boletín Oficial de Bizkaia» 248 de fecha 30 de diciembre de 2022, del ayuntamiento de Barakaldo.",
+      "entity": "Ayuntamiento de Bakio",
+      "date": "23/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/23/II-6054_cas.pdf"
+    },
     {
       "id": "BI-2026-II-6031",
       "province": "Bizkaia",

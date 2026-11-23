@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-22T16:16:57.141446+00:00",
+  "lastCheckedUTC": "2026-11-23T06:35:28.288342+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
-    "pagesVisited": 21,
-    "announcementsRead": 635,
-    "opportunities": 33
+    "bulletin": "224",
+    "pagesVisited": 22,
+    "announcementsRead": 680,
+    "opportunities": 39
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
       "205",
       "206",
@@ -36,7 +36,8 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-31",
       "2026-11-01",
@@ -73,11 +74,71 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 635,
-    "opportunities": 33
+    "issuesRead": 22,
+    "announcementsRead": 680,
+    "opportunities": 39
   },
   "notices": [
+    {
+      "id": "CM-2026-8327",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Universidades. Resolución de 16/11/2026 , de la Universidad de Castilla-La Mancha, por la que se modifica la Resolución de 01/10/2026, por la que se convocan pruebas selectivas para el ingreso por los turnos de promoción interna vertical directa en el puesto de trabajo, promoción interna horizontal, promoción interna vertical directa en el puesto de trabajo para personas con discapacidad y promoción interna horizontal para personas con discapacidad en las escalas de la UCLM relacionadas en la convocatoria, y se abre un nuevo plazo de presentación de solicitudes. [NID 2026/8327]",
+      "entity": "Universidad de Castilla-La Mancha",
+      "date": "23/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8327.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8326",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Universidades. Resolución de 16/11/2026 , de la Universidad de Castilla-La Mancha, por la que se convoca concurso específico de méritos para la cobertura de puestos por personal funcionario de esta universidad. [NID 2026/8326]",
+      "entity": "Universidad de Castilla-La Mancha",
+      "date": "23/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8326.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8290",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Oposiciones. Resolución de 13/11/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para opción a las mismas a las personas aspirantes que han superado el proceso selectivo convocado para el ingreso, por el sistema general de acceso libre, en la categoría de Farmacéutico/a de Atención Primaria de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha. [NID 2026/8290]",
+      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
+      "date": "23/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8290.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8257",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Oposiciones. Resolución de 12/11/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para opción a las mismas a las personas aspirantes que han superado el proceso selectivo convocado para el ingreso, por el sistema general de acceso libre, en la categoría de Peluquero/a de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha. [NID 2026/8257]",
+      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
+      "date": "23/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8257.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8256",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Oposiciones. Resolución de 13/11/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para opción a las mismas a las personas aspirantes que han superado los procesos selectivos convocados para el ingreso, por los sistemas de promoción interna y general de acceso libre, en la categoría de Ingeniero/a Superior de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha. [NID 2026/8256]",
+      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
+      "date": "23/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8256.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8255",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Oposiciones. Resolución de 12/11/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para opción a las mismas a las personas aspirantes que han superado el proceso selectivo convocado para el ingreso, por el sistema general de acceso libre, en la categoría de Bibliotecario/a de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha. [NID 2026/8255]",
+      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
+      "date": "23/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/23/pdf/2026_8255.pdf&tipo=rutaDocm"
+    },
     {
       "id": "CM-2026-8196",
       "province": "Castilla-La Mancha (DOCM)",

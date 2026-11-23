@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-22T16:21:57.360053+00:00",
+  "lastCheckedUTC": "2026-11-23T06:41:45.046845+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "141",
-    "pagesVisited": 14,
-    "announcementsRead": 519,
-    "opportunities": 31
+    "bulletin": "142",
+    "pagesVisited": 15,
+    "announcementsRead": 548,
+    "opportunities": 32
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
+    "rangeStart": "2026-10-25",
+    "rangeEnd": "2026-11-23",
     "bulletins": [
       "128",
       "129",
@@ -29,7 +29,8 @@
       "138",
       "139",
       "140",
-      "141"
+      "141",
+      "142"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -45,10 +46,10 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-18",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-24",
       "2026-10-25",
       "2026-10-27",
       "2026-10-29",
@@ -65,11 +66,21 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 519,
-    "opportunities": 31
+    "issuesRead": 15,
+    "announcementsRead": 548,
+    "opportunities": 32
   },
   "notices": [
+    {
+      "id": "TF-20261123-015",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la Corrección de error material previsto en el Anexo I de las Bases reguladoras del proceso selectivo de una (1) plaza de Dinamizador/a de Biblioteca, Grupo III, personal laboral fijo, por el turno de acceso libre, mediante el sistema de concurso-oposición",
+      "entity": "AYUNTAMIENTO DE SANTA CRUZ DE LA PALMA",
+      "date": "23/11/2026",
+      "bulletin": "142",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/23-11-26/23-11-26.pdf"
+    },
     {
       "id": "TF-20261120-025",
       "province": "Santa Cruz de Tenerife (BOP)",
