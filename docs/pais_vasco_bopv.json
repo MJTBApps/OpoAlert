@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-24T06:26:29.905324+00:00",
+  "lastCheckedUTC": "2026-11-24T09:46:02.412358+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
-    "pagesVisited": 21,
-    "announcementsRead": 303,
-    "opportunities": 40
+    "bulletin": "225",
+    "pagesVisited": 22,
+    "announcementsRead": 323,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,7 +60,8 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -69,14 +71,43 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-24"
+      "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 303,
-    "opportunities": 40
+    "issuesRead": 22,
+    "announcementsRead": 323,
+    "opportunities": 43
   },
   "notices": [
+    {
+      "id": "PV-2026-5020",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO relativo a la convocatoria de concurso de méritos para la provisión del puesto de técnica/o de administración en el Área de Personal del Ayuntamiento de Sopela.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "24/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605020a.pdf"
+    },
+    {
+      "id": "PV-2026-5019",
+      "province": "País Vasco (BOPV)",
+      "title": "RESOLUCIÓN 1629/2026, de 5 de noviembre, del director gerente de la Organización Sanitaria Integrada Debabarrena, por la que se declara desierta la convocatoria para la provisión, mediante libre designación, del puesto de supervisor/a de Docencia, Formación Continuada y Calidad Asistencial, en la Organización Sanitaria Integrada Debabarrena de Osakidetza-Servicio vasco de salud.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "24/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605019a.pdf"
+    },
+    {
+      "id": "PV-2026-5017",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 13 de noviembre de 2026, del consejero de Industria, Transición Energética y Sostenibilidad, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «delegado/a territorial», código 511786, dotación 12, en la Delegación Territorial de Administración Industrial de Bizkaia.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "24/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605017a.pdf"
+    },
     {
       "id": "PV-2026-4970",
       "province": "País Vasco (BOPV)",

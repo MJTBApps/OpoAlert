@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-22T06:24:46.407219+00:00",
+  "lastCheckedUTC": "2026-11-24T09:45:05.247321+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "280",
-    "pagesVisited": 27,
-    "announcementsRead": 1741,
-    "opportunities": 291
+    "bulletin": "282",
+    "pagesVisited": 28,
+    "announcementsRead": 1880,
+    "opportunities": 317
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-24",
-    "rangeEnd": "2026-11-22",
-    "issuesRead": 27,
-    "pagesVisited": 27,
-    "announcementsRead": 1741,
-    "opportunities": 291,
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
+    "issuesRead": 28,
+    "pagesVisited": 28,
+    "announcementsRead": 1880,
+    "opportunities": 317,
     "bulletins": [
-      "254",
       "255",
       "256",
       "257",
@@ -46,10 +45,11 @@
       "277",
       "278",
       "279",
-      "280"
+      "280",
+      "281",
+      "282"
     ],
     "publicationDates": [
-      "2026-10-24",
       "2026-10-26",
       "2026-10-26",
       "2026-10-27",
@@ -75,17 +75,17 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-21"
+      "2026-11-21",
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-11-01",
       "2026-11-08",
       "2026-11-15",
       "2026-11-22"
     ],
     "editionPDFs": [
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/24/25400.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/26/25500.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/26/25600.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/27/25700.PDF",
@@ -111,15 +111,18 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/18/27700.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/19/27800.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/20/27900.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/21/28000.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/21/28000.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/23/28100.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/24/28200.PDF"
     ],
     "parseMethods": [
       "xml",
-      "xml",
       "html",
       "xml",
       "xml",
       "html",
+      "xml",
+      "xml",
       "xml",
       "xml",
       "xml",
@@ -144,6 +147,266 @@
     ]
   },
   "notices": [
+    {
+      "id": "MD-20261124-87",
+      "province": "Madrid",
+      "title": "– Valdemanco. Ofertas de empleo. Proceso selectivo",
+      "entity": "Valdemanco",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-87.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-85",
+      "province": "Madrid",
+      "title": "– Tres Cantos. Ofertas de empleo. Proceso selectivo",
+      "entity": "Tres Cantos",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-85.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-77",
+      "province": "Madrid",
+      "title": "– Olmeda de las Fuentes. Ofertas de empleo. Proceso selectivo",
+      "entity": "Olmeda de las Fuentes",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-77.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-76",
+      "province": "Madrid",
+      "title": "– Navalcarnero. Ofertas de empleo. Proceso selectivo",
+      "entity": "Navalcarnero",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-76.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-75",
+      "province": "Madrid",
+      "title": "– Majadahonda. Ofertas de empleo. Proceso selectivo",
+      "entity": "Majadahonda",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-75.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-63",
+      "province": "Madrid",
+      "title": "– Colmenar Viejo. Ofertas de empleo. Proceso selectivo",
+      "entity": "Colmenar Viejo",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-63.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-62",
+      "province": "Madrid",
+      "title": "– Ciempozuelos. Ofertas de empleo. Proceso selectivo",
+      "entity": "Ciempozuelos",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-62.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-56",
+      "province": "Madrid",
+      "title": "– Arroyomolinos. Ofertas de empleo. Proceso selectivo",
+      "entity": "Arroyomolinos",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-56.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-55",
+      "province": "Madrid",
+      "title": "– Arroyomolinos. Ofertas de empleo. Proceso selectivo",
+      "entity": "Arroyomolinos",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-55.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-52",
+      "province": "Madrid",
+      "title": "– Alcalá de Henares. Ofertas de empleo. Ente Público Empresarial Alcalá Desarrollo. Proceso selectivo",
+      "entity": "Alcalá de Henares",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-52.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-44",
+      "province": "Madrid",
+      "title": "Convocatoria contrato – Resolución de 16 de noviembre de 2026, de la Dirección-Gerencia del Hospital Universitario “La Paz”, por la que se procede a la ampliación del plazo para presentación de ofertas del P. A. 23/2026, cuyo objeto es «Servicios de análisis, operación, soporte y mantenimiento de sistemas de información descritos en el PPT, del Hospital Universitario “La Paz”»",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-44.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-15",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 3827/2026, de 10 de noviembre, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Agencia Madrileña de Atención Social, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-15.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-14",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 3826/2026, de 10 de noviembre, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Agencia Madrileña de Atención Social, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-14.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-13",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 3825/2026, de 10 de noviembre, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Agencia Madrileña de Atención Social, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-13.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-4",
+      "province": "Madrid",
+      "title": "Resolución proceso selectivo – Resolución de 16 de noviembre de 2026, de la Dirección General de Función Pública, por la que se procede a la adjudicacion de destinos correspondiente al proceso selectivo para el acceso a plazas de carácter laboral de la categoría profesional de Titulado Medio, Especialidad Perito Judicial, Materia Inmuebles (Grupo II, Nivel 7, Área A), de la Comunidad de Madrid",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-4.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-3",
+      "province": "Madrid",
+      "title": "Resolución proceso selectivo – Resolución de 13 de noviembre de 2026, de la Dirección General de Función Pública, por la que se procede a la adjudicación de destinos correspondiente a la Orden 2313/2023, de 21 de septiembre, por la que se convocan las pruebas selectivas para el acceso, por el sistema general de acceso libre, a plazas de carácter laboral de la categoría profesional de Medicina Familiar y Comunitaria (Grupo I, Nivel 10, Área D) de la Comunidad de Madrid",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-3.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261124-1",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden de 11 de noviembre de 2026, del Consejero de Presidencia, Justicia y Administración Local, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Presidencia, Justicia y Administración Local (Organismo Autónomo Boletín Oficial de la Comunidad de Madrid), por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
+      "date": "24/11/2026",
+      "bulletin": "282",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-1.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-57",
+      "province": "Madrid",
+      "title": "– San Martín de Valdeiglesias. Ofertas de empleo. Proceso selectivo",
+      "entity": "SAN MARTÍN DE VALDEIGLESIAS",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-57.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-25",
+      "province": "Madrid",
+      "title": "Convocatoria contrato – Resolución de 13 de noviembre de 2026, de la Dirección-Gerencia del Hospital Universitario “La Paz”, por la que se procede a la ampliación del plazo para presentación de ofertas del P. A. 2026-0-46 cuyo objeto es el «Suministro de lentes intraoculares para el Hospital Universitario “La Paz”»",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-25.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-24",
+      "province": "Madrid",
+      "title": "Convocatoria contrato – Resolución de 13 de noviembre de 2026, de la Dirección-Gerencia del Hospital Universitario “La Paz”, por la que se procede a la ampliación del plazo para presentación de ofertas del P. A. 45/2026, cuyo objeto es el «Suministro, instalación y puesta en funcionamiento de una bomba de circulación extracorpórea para el servicio de cirugía cardiovascular infantil del Hospital Universitario “La Paz”»",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-24.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-11",
+      "province": "Madrid",
+      "title": "Concurso cuerpos docentes – Resolución de 12 de noviembre de 2026, de la Universidad de Alcalá, por la que se convoca concurso de acceso a plazas de funcionario/as de carrera de los cuerpos docentes universitarios",
+      "entity": "UNIVERSIDAD DE ALCALÁ",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-11.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-8",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden 2138/2026, de 11 de noviembre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba la convocatoria pública para la provisión de puestos de trabajo vacantes en la citada Consejería por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-8.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-7",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden 2137/2026, de 11 de noviembre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba la convocatoria pública para la provisión de puestos de trabajo vacantes en la citada Consejería por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-7.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-6",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden 3537/2026, de 29 de octubre, de la Consejera de Familia, Juventud y Asuntos Sociales, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes, por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE FAMILIA, JUVENTUD  Y ASUNTOS SOCIALES",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-6.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-5",
+      "province": "Madrid",
+      "title": "Puesto libre designación – Orden 1818/2026, de 16 de noviembre, de la Consejera de Sanidad, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Sanidad, por el procedimiento de Libre Designación",
+      "entity": "CONSEJERÍA DE SANIDAD",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-5.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261123-1",
+      "province": "Madrid",
+      "title": "Concurso de méritos – Orden de 13 de noviembre de 2026, de la Consejera de Economía, Hacienda y Empleo, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Economía, Hacienda y Empleo por el procedimiento de Concurso de Méritos",
+      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
+      "date": "23/11/2026",
+      "bulletin": "281",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-1.PDF",
+      "type": "Plaza / oposición"
+    },
     {
       "id": "MD-20261120-59",
       "province": "Madrid",
