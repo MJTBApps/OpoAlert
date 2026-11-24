@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-24T09:47:50.089154+00:00",
+  "lastCheckedUTC": "2026-11-24T12:47:43.643989+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 50,
-    "opportunities": 50,
+    "announcementsRead": 61,
+    "opportunities": 61,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -30,9 +30,9 @@
       "2026-11-13",
       "2026-11-16",
       "2026-11-17",
-      "2026-11-18",
       "2026-11-19",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
       "2026-10-26",
@@ -45,17 +45,187 @@
       "2026-11-08",
       "2026-11-14",
       "2026-11-15",
+      "2026-11-18",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-24"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 50,
-    "opportunities": 50
+    "announcementsRead": 61,
+    "opportunities": 61
   },
   "notices": [
+    {
+      "id": "CIDO7-22515295",
+      "title": "1 plaça de Director de llar d'infants",
+      "entity": "Ajuntament de Torres de Segre",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22515295"
+    },
+    {
+      "id": "CIDO7-22515292",
+      "title": "2 places de Tècnic d'Educació Infantil (TEI)",
+      "entity": "Ajuntament de Torres de Segre",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22515292"
+    },
+    {
+      "id": "CIDO7-22515289",
+      "title": "1 plaça de Tècnic auxiliar de biblioteca",
+      "entity": "Ajuntament de Torres de Segre",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22515289"
+    },
+    {
+      "id": "CIDO7-22515284",
+      "title": "1 plaça d'Auxiliar de serveis",
+      "entity": "Ajuntament de Torres de Segre",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22515284"
+    },
+    {
+      "id": "CIDO7-22499784",
+      "title": "Borsa de treball de places de Tècnic d'estratègies comercials, mercats i fires",
+      "entity": "Ajuntament de la Seu d'Urgell",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22499784"
+    },
+    {
+      "id": "CIDO7-19970364",
+      "title": "1 plaça de Tècnic de Desenvolupament Rural",
+      "entity": "Ajuntament de la Vall de Boí",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/19970364"
+    },
+    {
+      "id": "CIDO7-16724684",
+      "title": "2 places d'Auxiliar educador jardineria",
+      "entity": "Ajuntament de Lleida - Institut Municipal d'Ocupació Salvador Seguí",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16724684"
+    },
+    {
+      "id": "CIDO7-16724125",
+      "title": "1 plaça de Tècnic especialista EMBA",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16724125"
+    },
+    {
+      "id": "CIDO7-16723939",
+      "title": "2 places de Tècnic auxiliar",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16723939"
+    },
+    {
+      "id": "CIDO7-16723875",
+      "title": "5 places de Professor especialista Conservatori",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16723875"
+    },
+    {
+      "id": "CIDO7-16723782",
+      "title": "1 plaça d'Enginyer Tècnic Espais Verds",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16723782"
+    },
+    {
+      "id": "CIDO7-16723734",
+      "title": "1 plaça de Bibliotecari",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16723734"
+    },
+    {
+      "id": "CIDO7-13774036",
+      "title": "2 places de Veterinari",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/13774036"
+    },
+    {
+      "id": "CIDO7-13774024",
+      "title": "1 plaça de Tècnic mitjà de gestió cultural",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/13774024"
+    },
+    {
+      "id": "CIDO7-13774020",
+      "title": "1 plaça de Tècnic mitjà d'informàtica",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/13774020"
+    },
+    {
+      "id": "CIDO7-13774016",
+      "title": "1 plaça de Tècnic de protecció civil",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/13774016"
+    },
+    {
+      "id": "CIDO7-13773988",
+      "title": "1 plaça de Tècnic d'auditoria",
+      "entity": "Ajuntament de Lleida",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/13773988"
+    },
     {
       "id": "CIDO7-22524580",
       "title": "2 places de Llicenciat en Dret",
@@ -77,16 +247,6 @@
       "url": "https://cido.diba.cat/oposicions/22524511"
     },
     {
-      "id": "CIDO7-22499784",
-      "title": "Borsa de treball de places de Tècnic d'estratègies comercials, mercats i fires",
-      "entity": "Ajuntament de la Seu d'Urgell",
-      "date": "23/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22499784"
-    },
-    {
       "id": "CIDO7-22528472",
       "title": "1 plaça de Tècnic d'educació infantil per a l'escola bressol",
       "entity": "Ajuntament de la Pobla de Segur",
@@ -105,56 +265,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22267222"
-    },
-    {
-      "id": "CIDO7-19970364",
-      "title": "1 plaça de Tècnic de Desenvolupament Rural",
-      "entity": "Ajuntament de la Vall de Boí",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/19970364"
-    },
-    {
-      "id": "CIDO7-22515295",
-      "title": "1 plaça de Director de llar d'infants",
-      "entity": "Ajuntament de Torres de Segre",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22515295"
-    },
-    {
-      "id": "CIDO7-22515292",
-      "title": "2 places de Tècnic d'Educació Infantil (TEI)",
-      "entity": "Ajuntament de Torres de Segre",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22515292"
-    },
-    {
-      "id": "CIDO7-22515289",
-      "title": "1 plaça de Tècnic auxiliar de biblioteca",
-      "entity": "Ajuntament de Torres de Segre",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22515289"
-    },
-    {
-      "id": "CIDO7-22515284",
-      "title": "1 plaça d'Auxiliar de serveis",
-      "entity": "Ajuntament de Torres de Segre",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22515284"
     },
     {
       "id": "CIDO7-22437600",

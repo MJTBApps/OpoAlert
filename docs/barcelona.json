@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-24T09:47:50.089154+00:00",
+  "lastCheckedUTC": "2026-11-24T12:47:43.643989+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 295,
-    "opportunities": 295,
+    "announcementsRead": 298,
+    "opportunities": 298,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 295,
-    "opportunities": 295
+    "announcementsRead": 298,
+    "opportunities": 298
   },
   "notices": [
     {
@@ -177,6 +177,16 @@
       "url": "https://cido.diba.cat/oposicions/22489117"
     },
     {
+      "id": "CIDO5-22488959",
+      "title": "Borsa de treball de places de Fisioterapeuta de l'Escola d'Educació Especial de Can Vila",
+      "entity": "Ajuntament de Mollet del Vallès - Institut Municipal de Serveis als Discapacitats",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22488959"
+    },
+    {
       "id": "CIDO5-22459444",
       "title": "1 plaça de Tècnic superior de serveis econòmics",
       "entity": "Ajuntament de Torelló",
@@ -207,6 +217,16 @@
       "url": "https://cido.diba.cat/oposicions/21973249"
     },
     {
+      "id": "CIDO5-19264187",
+      "title": "1 plaça de Guàrdia municipal",
+      "entity": "Ajuntament d'Òdena",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/19264187"
+    },
+    {
       "id": "CIDO5-18719392",
       "title": "1 plaça de Tècnic d'informàtica",
       "entity": "Ajuntament de la Roca del Vallès",
@@ -215,6 +235,36 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/18719392"
+    },
+    {
+      "id": "CIDO5-16505342",
+      "title": "1 plaça de Cap de grup",
+      "entity": "Ajuntament de Vilafranca del Penedès",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/16505342"
+    },
+    {
+      "id": "CIDO5-22547886",
+      "title": "Borsa de treball de places de Personal auxiliar administratiu. Pla local d'ocupació 2026",
+      "entity": "Ajuntament de Cubelles",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22547886"
+    },
+    {
+      "id": "CIDO5-22547551",
+      "title": "1 plaça d'Administratiu especialitzat en formació",
+      "entity": "Ajuntament de Barcelona - Barcelona de Serveis Municipals, SA",
+      "date": "23/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22547551"
     },
     {
       "id": "CIDO5-22540394",
@@ -865,16 +915,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/16607751"
-    },
-    {
-      "id": "CIDO5-16505342",
-      "title": "1 plaça de Cap de grup",
-      "entity": "Ajuntament de Vilafranca del Penedès",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/16505342"
     },
     {
       "id": "CIDO5-16484914",
@@ -1595,16 +1635,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22488986"
-    },
-    {
-      "id": "CIDO5-22488959",
-      "title": "Borsa de treball de places de Fisioterapeuta de l'Escola d'Educació Especial de Can Vila",
-      "entity": "Ajuntament de Mollet del Vallès - Institut Municipal de Serveis als Discapacitats",
-      "date": "13/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22488959"
     },
     {
       "id": "CIDO5-22488834",

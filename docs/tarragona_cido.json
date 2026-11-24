@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-24T09:47:50.089154+00:00",
+  "lastCheckedUTC": "2026-11-24T12:47:43.643989+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 92,
-    "opportunities": 92,
+    "announcementsRead": 95,
+    "opportunities": 95,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -29,7 +29,6 @@
       "2026-11-10",
       "2026-11-11",
       "2026-11-13",
-      "2026-11-14",
       "2026-11-16",
       "2026-11-17",
       "2026-11-18",
@@ -46,16 +45,67 @@
       "2026-11-07",
       "2026-11-08",
       "2026-11-12",
+      "2026-11-14",
       "2026-11-15",
       "2026-11-21",
       "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 92,
-    "opportunities": 92
+    "announcementsRead": 95,
+    "opportunities": 95
   },
   "notices": [
+    {
+      "id": "CIDO8-22547767",
+      "title": "Borsa de treball de places d'Auxiliar polivalent de mitjans de comunicació",
+      "entity": "Ajuntament de Vandellòs i l'Hospitalet de l'Infant - Patronat de Mitjans de Comunicació",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22547767"
+    },
+    {
+      "id": "CIDO8-22547660",
+      "title": "1 plaça de Cap del Servei de Recursos Humans",
+      "entity": "Ajuntament de Mont-roig del Camp",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22547660"
+    },
+    {
+      "id": "CIDO8-22547468",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Riudecols",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22547468"
+    },
+    {
+      "id": "CIDO8-22421539",
+      "title": "1 plaça de Tècnic especialista de comeses especials - tècnic auxiliar dinamitzador",
+      "entity": "Ajuntament de Reus",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22421539"
+    },
+    {
+      "id": "CIDO8-17959571",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Valls - Patronat Municipal d'Esports",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17959571"
+    },
     {
       "id": "CIDO8-15229734",
       "title": "1 plaça de Tècnic mitjà de gestió local",
@@ -375,16 +425,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22249978"
-    },
-    {
-      "id": "CIDO8-17959571",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Valls - Patronat Municipal d'Esports",
-      "date": "14/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/17959571"
     },
     {
       "id": "CIDO8-22491747",
@@ -805,16 +845,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22421550"
-    },
-    {
-      "id": "CIDO8-22421539",
-      "title": "1 plaça de Tècnic especialista de comeses especials - tècnic auxiliar dinamitzador",
-      "entity": "Ajuntament de Reus",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22421539"
     },
     {
       "id": "CIDO8-22323088",
