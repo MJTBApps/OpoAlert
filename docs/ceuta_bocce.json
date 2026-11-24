@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-23T16:41:53.924322+00:00",
+  "lastCheckedUTC": "2026-11-24T06:50:33.284784+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "EXTRA56",
-    "pagesVisited": 14,
-    "announcementsRead": 81,
-    "opportunities": 2,
+    "bulletin": "6672",
+    "pagesVisited": 15,
+    "announcementsRead": 89,
+    "opportunities": 5,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
-    "originalFullPdfIssues": 14,
-    "pdfPagesRead": 327
+    "originalFullPdfIssues": 15,
+    "pdfPagesRead": 346
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "6664",
       "EXTRA51",
@@ -32,7 +32,8 @@
       "6670",
       "EXTRA55",
       "6671",
-      "EXTRA56"
+      "EXTRA56",
+      "6672"
     ],
     "publicationDates": [
       "2026-10-27",
@@ -48,10 +49,10 @@
       "2026-11-17",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-26",
       "2026-10-29",
       "2026-10-31",
@@ -71,9 +72,9 @@
       "2026-11-22",
       "2026-11-23"
     ],
-    "issuesRead": 14,
-    "announcementsRead": 81,
-    "opportunities": 2,
+    "issuesRead": 15,
+    "announcementsRead": 89,
+    "opportunities": 5,
     "regularBulletins": [
       "6664",
       "6665",
@@ -82,7 +83,8 @@
       "6668",
       "6669",
       "6670",
-      "6671"
+      "6671",
+      "6672"
     ],
     "extraordinaryBulletins": [
       "EXTRA51",
@@ -260,10 +262,55 @@
           111,
           111
         ]
+      },
+      {
+        "number": "6672",
+        "date": "2026-11-24",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23332-bocce-6672-24-11-2026?Itemid=534",
+        "sha256": "0e0933fa5ff7fe236ea68caf2922bf8379ec3541c0f6f270d2750c8851ca2cc3",
+        "bytes": 4950008,
+        "pages": 19,
+        "edicts": [
+          781,
+          788
+        ]
       }
     ]
   },
   "notices": [
+    {
+      "id": "CE-2026-788",
+      "province": "Ceuta (BOCCE)",
+      "title": "Información pública de la oferta de empleo que remitirá la Ciudad Autónoma de Ceuta a la Oficina del SEPE, al objeto de solicitar 20 candidatos/as de Educador/a para la creación de una bolsa de trabajo.",
+      "entity": "Ciudad Autónoma de Ceuta",
+      "date": "24/11/2026",
+      "bulletin": "6672",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23332-bocce-6672-24-11-2026?Itemid=534",
+      "publisherArticle": "788"
+    },
+    {
+      "id": "CE-2026-787",
+      "province": "Ceuta (BOCCE)",
+      "title": "Información pública de la oferta de empleo que remitirá la Ciudad Autónoma de Ceuta a la Oficina del SEPE, al objeto de solicitar 12 candidatos/as de Licenciados/as en Derecho para la creación de una bolsa de trabajo.",
+      "entity": "Ciudad Autónoma de Ceuta",
+      "date": "24/11/2026",
+      "bulletin": "6672",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23332-bocce-6672-24-11-2026?Itemid=534",
+      "publisherArticle": "787"
+    },
+    {
+      "id": "CE-2026-786",
+      "province": "Ceuta (BOCCE)",
+      "title": "Información pública de la oferta de empleo que remitirá la Ciudad Autónoma de Ceuta a la Oficina del SEPE, al objeto de solicitar 20 candidatos/as de Auxiliar de Enfermería para la creación de una bolsa de trabajo.",
+      "entity": "Ciudad Autónoma de Ceuta",
+      "date": "24/11/2026",
+      "bulletin": "6672",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23332-bocce-6672-24-11-2026?Itemid=534",
+      "publisherArticle": "786"
+    },
     {
       "id": "CE-2026-780",
       "province": "Ceuta (BOCCE)",

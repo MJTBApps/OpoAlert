@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-23T16:46:56.814718+00:00",
+  "lastCheckedUTC": "2026-11-24T06:57:58.723252+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
-    "pagesVisited": 22,
-    "announcementsRead": 1005,
-    "opportunities": 66
+    "bulletin": "225",
+    "pagesVisited": 23,
+    "announcementsRead": 1053,
+    "opportunities": 67
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "204",
       "205",
@@ -36,7 +36,8 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
@@ -72,11 +73,21 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 1005,
-    "opportunities": 66
+    "issuesRead": 22,
+    "announcementsRead": 1053,
+    "opportunities": 67
   },
   "notices": [
+    {
+      "id": "LE-202622509826",
+      "province": "Lleida (BOP)",
+      "title": "Anunci aprovació Text Refós bases reguladores dels processos selectius per a la cobertura de places de Subgrups A1, A2, C1 i C2",
+      "entity": "AJUNTAMENT DE LLEIDA (LLEIDA)",
+      "date": "24/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/225/202622509826.pdf"
+    },
     {
       "id": "LE-202622309792",
       "province": "Lleida (BOP)",

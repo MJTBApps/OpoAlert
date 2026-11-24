@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-23T16:38:46.588123+00:00",
+  "lastCheckedUTC": "2026-11-24T06:47:25.642983+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "222",
-    "pagesVisited": 23,
-    "announcementsRead": 635,
-    "opportunities": 8,
+    "bulletin": "223",
+    "pagesVisited": 24,
+    "announcementsRead": 676,
+    "opportunities": 12,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 7
+    "pdfChecked": 8
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "203",
       "204",
@@ -37,7 +37,8 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
@@ -73,9 +74,9 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 635,
-    "opportunities": 8,
+    "issuesRead": 21,
+    "announcementsRead": 676,
+    "opportunities": 12,
     "regularBulletins": [
       "203",
       "204",
@@ -96,7 +97,8 @@
       "219",
       "220",
       "221",
-      "222"
+      "222",
+      "223"
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
@@ -119,10 +121,55 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-219",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-220",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-221",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-222"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-222",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-223"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202605173",
+      "province": "Burgos",
+      "title": "Bases y convocatoria para la contratación de la plaza de gobernante en régimen laboral fijo, por el sistema de concurso-oposición",
+      "entity": "Ayuntamiento de Valle de Tobalina – SERMUTOSA – Servicios Municipales Tobalina, S.A.",
+      "date": "24/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-223/bopbur-2026-223-anuncio-202605173.pdf",
+      "publisherArticle": "202605173"
+    },
+    {
+      "id": "BU-2026-202605169",
+      "province": "Burgos",
+      "title": "Bases de la convocatoria para cubrir en propiedad cuatro plazas vacantes de albañil oficial de primera, mediante diferentes sistemas de oposición",
+      "entity": "Ayuntamiento de Miranda de Ebro",
+      "date": "24/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-223/bopbur-2026-223-anuncio-202605169.pdf",
+      "publisherArticle": "202605169"
+    },
+    {
+      "id": "BU-2026-202605129",
+      "province": "Burgos",
+      "title": "Bases de la convocatoria para cubrir en propiedad una plaza vacante de enterrador/a, mediante el sistema de oposición libre",
+      "entity": "Ayuntamiento de Miranda de Ebro",
+      "date": "24/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-223/bopbur-2026-223-anuncio-202605129.pdf",
+      "publisherArticle": "202605129"
+    },
+    {
+      "id": "BU-2026-202605128",
+      "province": "Burgos",
+      "title": "Bases de la convocatoria para cubrir en propiedad una plaza vacante de programador/a informático/a, mediante el sistema de oposición libre",
+      "entity": "Ayuntamiento de Miranda de Ebro",
+      "date": "24/11/2026",
+      "bulletin": "223",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-223/bopbur-2026-223-anuncio-202605128.pdf",
+      "publisherArticle": "202605128"
+    },
     {
       "id": "BU-2026-202605204",
       "province": "Burgos",

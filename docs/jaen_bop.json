@@ -2,21 +2,21 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-23T16:46:29.035099+00:00",
+  "lastCheckedUTC": "2026-11-24T06:56:24.852180+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
-    "pagesVisited": 20,
-    "announcementsRead": 512,
-    "opportunities": 29,
+    "bulletin": "229",
+    "pagesVisited": 21,
+    "announcementsRead": 533,
+    "opportunities": 31,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 29
+    "pdfLinksVerified": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "209",
       "210",
@@ -37,7 +37,8 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
@@ -73,9 +74,9 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 512,
-    "opportunities": 29,
+    "issuesRead": 21,
+    "announcementsRead": 533,
+    "opportunities": 31,
     "daysRequested": 30,
     "previousBulletin": {
       "number": "208",
@@ -83,6 +84,26 @@
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5491",
+      "province": "Jaén",
+      "title": "Aprobación de las bases y convocatoria de procedimiento selectivo para la constitución de varias Bolsas de Trabajo en el ámbito de los Servicios Sociales del Ayuntamiento de Alcalá la Real, mediante el sistema de concurso-oposición y turno libre.",
+      "entity": "AYUNTAMIENTO DE ALCALÁ LA REAL (JAÉN)",
+      "date": "24/11/2026",
+      "bulletin": "229",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-24&numeroEdicto=5491&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5310",
+      "province": "Jaén",
+      "title": "Aprobación de las Bases y convocatoria para la provisión del puesto de trabajo de Jefe de la Policía Local, mediante sistema de libre designación.",
+      "entity": "AYUNTAMIENTO DE CAZORLA (JAÉN)",
+      "date": "24/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-24&numeroEdicto=5310&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5459",
       "province": "Jaén",

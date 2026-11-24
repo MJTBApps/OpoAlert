@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-23T16:42:22.441558+00:00",
+  "lastCheckedUTC": "2026-11-24T06:52:06.319918+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
-    "pagesVisited": 28,
-    "announcementsRead": 890,
-    "opportunities": 23,
+    "bulletin": "226",
+    "pagesVisited": 29,
+    "announcementsRead": 922,
+    "opportunities": 26,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "205",
       "Ext. 28",
@@ -44,7 +44,8 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -74,10 +75,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
@@ -87,9 +88,9 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 28,
-    "announcementsRead": 890,
-    "opportunities": 23,
+    "issuesRead": 29,
+    "announcementsRead": 922,
+    "opportunities": 26,
     "regularBulletins": [
       "205",
       "206",
@@ -111,7 +112,8 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "extraordinaryBulletins": [
       "Ext. 28",
@@ -150,10 +152,41 @@
       47625,
       47645,
       47665,
-      47685
+      47685,
+      47705
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9171",
+      "province": "Cantabria (BOC)",
+      "title": "Ampliación a dos (2) el número de plazas de la convocatoria para proveer en propiedad, como Ayudante de Oficios de Limpieza Viaria, personal laboral fijo, contrato de relevo, mediante concurso-oposición. Expediente 2026/8880S.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443562"
+    },
+    {
+      "id": "CN-2026-9169",
+      "province": "Cantabria (BOC)",
+      "title": "Ampliación a cuatro (4) del número de plazas de la convocatoria para proveer en propiedad, como Conserje, personal laboral fijo, contrato de relevo, mediante oposición libre. Expediente 2026/8857S.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443559"
+    },
+    {
+      "id": "CN-2026-9166",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria para la provisión, mediante concurso interno de méritos, de un puesto de trabajo de Administrativo, personal funcionario.",
+      "entity": "Ayuntamiento de Bárcena de Cicero",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443556"
+    },
     {
       "id": "CN-2026-9156",
       "province": "Cantabria (BOC)",
