@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-24T10:27:54.174773+00:00",
+  "lastCheckedUTC": "2026-11-24T13:46:04.127216+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
-    "pagesVisited": 810,
-    "announcementsRead": 323,
-    "opportunities": 51
+    "bulletin": "227",
+    "pagesVisited": 942,
+    "announcementsRead": 360,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-26",
     "rangeEnd": "2026-11-24",
-    "issuesRead": 19,
-    "pagesVisited": 810,
-    "announcementsRead": 323,
-    "opportunities": 51,
+    "issuesRead": 21,
+    "pagesVisited": 942,
+    "announcementsRead": 360,
+    "opportunities": 53,
     "bulletins": [
       "207",
       "208",
@@ -38,7 +38,9 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226",
+      "227"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,7 +61,9 @@
       "2026-11-17",
       "2026-11-18",
       "2026-11-19",
-      "2026-11-20"
+      "2026-11-20",
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -70,13 +74,11 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-23",
-      "2026-11-24"
+      "2026-11-22"
     ],
-    "originalPdfPagesRead": 810,
+    "originalPdfPagesRead": 942,
     "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48200,
+    "archiveTotalIssues": 48202,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392780&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+26%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392781&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+27%2F10%2F2026.pdf",
@@ -96,10 +98,32 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392795&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+17%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392797&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+18%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392796&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+19%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392798&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+20%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392798&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+20%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392799&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+23%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392800&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+24%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03261",
+      "province": "Almería",
+      "title": "RESOLUCIÓN DE ALCALDÍA N.º 2026/913, DE FECHA 17 DE NOVIEMBRE, DEL AYUNTAMIENTO DE BALANEGRA, POR LA QUE SE APRUEBAN LAS BASES Y LA CONVOCATORIA PARA LA CONTRATACIÓN DE TRES PLAZAS DE OPERARIOS/AS DE SERVICIOS MÚLTIPLES EN…",
+      "entity": "AYUNTAMIENTO DE BALANEGRA",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03260",
+      "province": "Almería",
+      "title": "RESOLUCIÓN DE ALCALDÍA DE 17 NOVIEMBRE DE 2026 DEL AYUNTAMIENTO DE BALANEGRA POR LA QUE SE APROBARON LAS BASES Y LA CONVOCATORIA PARA CUBRIR DOS PLAZAS DE OPERARIOS/AS DE LIMPIEZA VIARIA PARA ESTE AYUNTAMIENTO, MEDIANTE…",
+      "entity": "AYUNTAMIENTO DE BALANEGRA",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3260/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03250",
       "province": "Almería",
