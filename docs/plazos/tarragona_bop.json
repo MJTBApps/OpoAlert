@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365924": {
    "days": 15,
@@ -367,6 +367,18 @@
    "kind": "hábiles",
    "text": "5.3 Termini de presentació El termini per presentar sol·licituds és de 20 dies hàbils a partir de l’endemà de la darrera publicació de l’extracte de la convocatòria en el DOGC o BOE.",
    "page": 6
+  },
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366913": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "l’Oferta Pública d’Ocupació de l'Ajuntament de Reus de l’any 2026 (el termini de presentació de sol·licituds començarà l’endemà de la publicació de la convocatòria juntament amb les bases específiques en el Butlletí Oficial de la Província de Tarragona (BOPT) i acabarà als vint dies naturals, comptats a partir de…",
+   "page": 5
+  },
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366916": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "5.- PRESENTACIÓ DE SOL·LICITUDS I TERMINI Les persones interessades han de presentar la sol·licitud a la seu electrònica de l’Ajuntament, mitjançant el tràmit indicat a l’apartat municipal de convocatòries de personal, en el termini de 10 dies hàbils a comptar de l’endemà de la publicació al Diari Oficial de la…",
+   "page": 5
   }
  },
  "none": [
@@ -408,9 +420,11 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366669",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366673",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366741",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366790",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366816",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366853",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923"
  ],
  "tries": {},
  "sedes": {
@@ -454,7 +468,9 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366819": "https://rodadebera.eadministracio.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366824": "https://turismevila-seca.eadministracio.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366853": "https://seu.reus.cat/",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856": "https://musicavila-seca.eadministracio.cat/"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856": "https://musicavila-seca.eadministracio.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366913": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923": "https://www.reus.cat/"
  },
  "sedeRaw": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365547": [
@@ -585,6 +601,12 @@
   ],
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856": [
    "https://musicavila-seca.eadministracio.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366913": [
+   "https://seu.reus.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923": [
+   "https://www.reus.cat/"
   ]
  },
  "sinSede": [
@@ -648,6 +670,8 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366615",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366669",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366673",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366816"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366790",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366816",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366916"
  ]
 }

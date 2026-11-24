@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352942/idioma/gl": {
    "days": 15,
@@ -22,12 +22,14 @@
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353152/idioma/gl",
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353250/idioma/gl",
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353268/idioma/gl",
+  "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353311/idioma/gl",
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353315/idioma/gl"
  ],
  "tries": {},
  "sedes": {
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353012/idioma/gl": "https://rairizdeveiga.sedelectronica.gal/",
-  "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353250/idioma/gl": "https://sede.depourense.es/"
+  "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353250/idioma/gl": "https://sede.depourense.es/",
+  "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353311/idioma/gl": "https://ribeiro.sedelectronica.gal/"
  },
  "sedeRaw": {
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353012/idioma/gl": [
@@ -35,6 +37,9 @@
   ],
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353250/idioma/gl": [
    "https://sede.depourense.es/"
+  ],
+  "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353311/idioma/gl": [
+   "https://ribeiro.sedelectronica.gal/"
   ]
  },
  "sinSede": [

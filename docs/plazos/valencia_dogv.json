@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://dogv.gva.es/datos/2026/10/30/pdf/2026_33702_es.pdf": {
    "days": 10,
@@ -931,6 +931,48 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de veinte días hábiles a contar desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial del Estado.",
    "page": 1
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36221_es.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación solicitudes será de diez días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el DOGV.",
+   "page": 6
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36204_es.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación solicitudes será de diez días hábiles a contar desde el día siguiente al de la publicación de la convocatoria en el DOGV.",
+   "page": 5
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34623_es.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles a contar desde el día siguiente de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 1
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34622_es.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles a contar desde el día siguiente de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 1
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34567_es.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "3.3 El plazo de presentación de solicitudes de participación será de 10 días hábiles, contados a partir del día siguiente a la publicación de esta convocatoria en el Boletín Oficial del Estado (BOE).",
+   "page": 5
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34463_es.pdf": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "El plazo de presentación de instancias será de veinte días naturales, contados a partir del día siguiente al de la publicación del presente anuncio en el Boletín Oficial del Estado.",
+   "page": 1
+  },
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34404_es.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de veinte días hábiles a contar desde el siguiente al de la publicación del anuncio en el Boletín Oficial del Estado.",
+   "page": 1
   }
  },
  "none": [
@@ -1035,7 +1077,13 @@
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_35941_es.pdf",
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_35983_es.pdf",
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36003_es.pdf",
-  "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36101_es.pdf"
+  "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36101_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36307_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36323_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36324_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36326_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36343_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36664_es.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -1156,7 +1204,12 @@
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36049_es.pdf": "https://www.uji.es/seu",
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36051_es.pdf": "https://www.uji.es/seu",
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36054_es.pdf": "https://www.uji.es/seu",
-  "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36101_es.pdf": "https://seuelectronica.ua.es/"
+  "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36101_es.pdf": "https://seuelectronica.ua.es/",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34404_es.pdf": "https://soneja.sedelectronica.es/",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34567_es.pdf": "https://www.uv.es/sede-electronica",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36204_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36221_es.pdf": "https://www.uji.es/seu",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36343_es.pdf": "https://sede.gva.es/"
  },
  "sedeRaw": {
   "https://dogv.gva.es/datos/2026/10/26/pdf/2026_31523_es.pdf": [
@@ -1535,6 +1588,21 @@
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36101_es.pdf": [
    "https://seuelectronica.ua.es/",
    "https://universidades.sede.gob.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34404_es.pdf": [
+   "https://soneja.sedelectronica.es/"
+  ],
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34567_es.pdf": [
+   "https://www.uv.es/sede-electronica"
+  ],
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36204_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36221_es.pdf": [
+   "https://www.uji.es/seu"
+  ],
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36343_es.pdf": [
+   "https://sede.gva.es/"
   ]
  },
  "sinSede": [
@@ -1676,6 +1744,14 @@
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_34625_es.pdf",
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_35814_es.pdf",
   "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36021_es.pdf",
-  "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36302_es.pdf"
+  "https://dogv.gva.es/datos/2026/11/23/pdf/2026_36302_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34463_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34622_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_34623_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36307_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36323_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36324_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36326_es.pdf",
+  "https://dogv.gva.es/datos/2026/11/24/pdf/2026_36664_es.pdf"
  ]
 }

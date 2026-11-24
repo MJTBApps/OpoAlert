@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909144.pdf": {
    "days": 20,
@@ -343,6 +343,24 @@
    "kind": "naturales",
    "text": "El termini per presentar sol·licituds serà de 20 dies naturals, a comptar des de l’endemà de la última publicació de l’anunci de la convocatòria, sense perjudici de la seva publicació a la seu electrònica.",
    "page": 1
+  },
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010150.pdf": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "…figura a l’annex II d’aquestes bases en el termini de 20 dies naturals comptats des de l'endemà de la publicació de les bases reguladores de la convocatòria en el Butlletí Oficial de la Província de Girona (BOP), per qualsevol dels mitjans que preveu la llei 39/2015, d’1 d’octubre, de Procediment administratiu comú…",
+   "page": 4
+  },
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010143.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El termini per a la presentació de sol·licituds serà de 20 dies hàbils, a partir de l’endemà de la publicació de l’anunci de convocatòria al Butlletí Oficial de la Província (BOP).",
+   "page": 4
+  },
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010102.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El termini per a la presentació de sol·licituds serà de 20 dies hàbils, a partir de l’endemà de la darrera publicació de l’extracte de l’anunci de convocatòria al Diari Oficial de la Generalitat de Catalunya (DOGC).",
+   "page": 4
   }
  },
  "none": [
@@ -375,7 +393,9 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/223/202622309970.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010108.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409920.pdf",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf"
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010153.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/202622609993.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -416,7 +436,8 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409904.pdf": "https://seu-e.cat/ca/web/riudellotsdelaselva",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409906.pdf": "https://sede.sepe.gob.es/",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf": "https://www.blanes.cat/",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/225/202622509965.pdf": "https://seu-e.cat/ca/web/emdlestartit"
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/225/202622509965.pdf": "https://seu-e.cat/ca/web/emdlestartit",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010150.pdf": "https://tauler.seu.cat/"
  },
  "sedeRaw": {
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/206/202620608958.pdf": [
@@ -543,6 +564,9 @@
   ],
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/225/202622509965.pdf": [
    "https://seu-e.cat/ca/web/emdlestartit"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010150.pdf": [
+   "https://tauler.seu.cat/"
   ]
  },
  "sinSede": [
@@ -594,6 +618,10 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010059.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/2026224010108.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409910.pdf",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409920.pdf"
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409920.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010102.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010143.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010153.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/202622609993.pdf"
  ]
 }

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354": {
    "days": 20,
@@ -115,6 +115,12 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de veinte días hábiles desde la publicación de la convocatoria en el Boletín Oficial del Estado.",
    "page": 3
+  },
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905304": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "4.3.- El plazo de presentación de solicitudes será de veinte (20) días hábiles contados a partir del día siguiente al de la fecha de publicación de esta convocatoria en extracto en el “Boletín Oficial del Estado”.",
+   "page": 5
   }
  },
  "none": [
@@ -126,7 +132,8 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890884",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902907",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902910"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902910",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301"
  ],
  "tries": {},
  "sedes": {
@@ -135,7 +142,8 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887305": "https://www.almodovardelcampo.es/",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7887310": "https://herencia.sedelectronica.es/",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902907": "https://almodovardelcampo.sedelectronica.es/",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902910": "https://cincocasas.sedelectronica.es/"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902910": "https://cincocasas.sedelectronica.es/",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905304": "https://www.miguelturra.es/sede-electronica"
  },
  "sedeRaw": {
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7857881": [
@@ -188,6 +196,9 @@
   ],
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902910": [
    "https://cincocasas.sedelectronica.es/"
+  ],
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905304": [
+   "https://www.miguelturra.es/sede-electronica"
   ]
  },
  "sinSede": [
@@ -201,6 +212,7 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7871440",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7874477",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890884",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301"
  ]
 }

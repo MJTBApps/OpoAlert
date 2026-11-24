@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://www.borm.es/services/anuncio/845966/pdf": {
    "days": 15,
@@ -109,6 +109,12 @@
    "kind": "naturales",
    "text": "…consulares de España en el extranjero. • Plazo de presentación: será de 7 días naturales contados a partir del día siguiente a la publicación de esta convocatoria en el Tablón de anuncios electrónico del Ayuntamiento y el Boletín Oficial de la Región de Murcia. • Documentación a presentar junto a la solicitud: -…",
    "page": 3
+  },
+  "https://www.borm.es/services/anuncio/846488/pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de 10 días hábiles a partir del siguiente al de la publicación de este anuncio en el “Boletín Oficial de la Región de Murcia”.",
+   "page": 1
   }
  },
  "none": [
@@ -154,7 +160,9 @@
   "https://www.borm.es/services/anuncio/846463/pdf",
   "https://www.borm.es/services/anuncio/846464/pdf",
   "https://www.borm.es/services/anuncio/846465/pdf",
-  "https://www.borm.es/services/anuncio/846478/pdf"
+  "https://www.borm.es/services/anuncio/846478/pdf",
+  "https://www.borm.es/services/anuncio/846480/pdf",
+  "https://www.borm.es/services/anuncio/846487/pdf"
  ],
  "tries": {},
  "sedes": {
@@ -226,6 +234,9 @@
   "https://www.borm.es/services/anuncio/846463/pdf",
   "https://www.borm.es/services/anuncio/846464/pdf",
   "https://www.borm.es/services/anuncio/846465/pdf",
-  "https://www.borm.es/services/anuncio/846478/pdf"
+  "https://www.borm.es/services/anuncio/846478/pdf",
+  "https://www.borm.es/services/anuncio/846480/pdf",
+  "https://www.borm.es/services/anuncio/846487/pdf",
+  "https://www.borm.es/services/anuncio/846488/pdf"
  ]
 }

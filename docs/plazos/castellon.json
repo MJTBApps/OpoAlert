@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-23T17:14:59+00:00",
+ "updatedUTC": "2026-11-24T07:35:39+00:00",
  "items": {
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WFfSAA3Aez": {
    "days": 20,
@@ -61,6 +61,18 @@
    "kind": "hábiles",
    "text": "Plazo de presentación El plazo de presentación de la instancias será el de veinte días hábiles a contar desde el día siguiente a la publicación del extracto de la convocatoria en el “Boletín Oficial del Estado”.",
    "page": 3
+  },
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/RQe9QuVkKw": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "…que hayan hecho constar en su solicitud PLAZO PRESENTACIÓN SOLICITUDES TELEMÁTICASEl plazo de presentación telemáticas de solicitudes, autobaremación, documentos que acrediten requisitos y méritos será de veinte días naturales, desde el siguiente al de la publicación en el BOP de Castellón de la presente convocatoria.",
+   "page": 6
+  },
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/PQqUQbMFhw": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…las Administraciones Públicas, durante el plazo de 20 días hábiles, a partir del siguiente de la publica­ ción del extracto de esta convocatoria en el «Boletín Oficial del Estado».",
+   "page": 3
   }
  },
  "none": [
@@ -70,6 +82,7 @@
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/J1J9c0By6R",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/LeL7TJdgSg",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/NxVOnsj7NY",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/UhjHwe9vfe",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Uji5WM2mtJ",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Zr1UTMOBg9",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/epzaNg0fpC"
@@ -83,6 +96,7 @@
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/J1J9c0By6R": "https://altopalancia.sedelectronica.es/",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/LeL7TJdgSg": "https://seuelectronica.vila-real.es/",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Mf6bFK5KNH": "https://valldalba.sedelectronica.es/",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/RQe9QuVkKw": "https://chpcs.sedelectronica.es/",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Uji5WM2mtJ": "https://seuelectronica.vila-real.es/",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Zr1UTMOBg9": "https://seuelectronica.vila-real.es/"
  },
@@ -108,6 +122,9 @@
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Mf6bFK5KNH": [
    "https://valldalba.sedelectronica.es/"
   ],
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/RQe9QuVkKw": [
+   "https://chpcs.sedelectronica.es/"
+  ],
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Uji5WM2mtJ": [
    "https://seuelectronica.vila-real.es/"
   ],
@@ -120,7 +137,9 @@
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/BQ2BpFlM7f",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/G4tvW6e94w",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/NxVOnsj7NY",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/PQqUQbMFhw",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/RK1L6w4BMF",
+  "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/UhjHwe9vfe",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WC7wWQOuu8",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/WFfSAA3Aez",
   "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/epzaNg0fpC",
