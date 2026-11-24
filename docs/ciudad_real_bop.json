@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-23T16:30:11.761210+00:00",
+  "lastCheckedUTC": "2026-11-24T06:22:19.352926+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
-    "pagesVisited": 21,
-    "announcementsRead": 360,
-    "opportunities": 28
+    "bulletin": "227",
+    "pagesVisited": 22,
+    "announcementsRead": 372,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "206",
       "207",
@@ -36,7 +36,8 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
@@ -72,11 +73,31 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 360,
-    "opportunities": 28
+    "issuesRead": 22,
+    "announcementsRead": 372,
+    "opportunities": 30
   },
   "notices": [
+    {
+      "id": "CR-2026-3809",
+      "province": "Ciudad Real",
+      "title": "Bases que han de regir el proceso selectivo para la provisión como personal laboral fijo, mediante el sistema de concurso-oposición de una plaza de Técnico/a de Educación Infantil Itinerante.",
+      "entity": "MIGUELTURRA",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905304"
+    },
+    {
+      "id": "CR-2026-3806",
+      "province": "Ciudad Real",
+      "title": "Corrección en anuncio publicado en el BOP n.º 224, relativo a bases de la convocatoria de proceso selectivo para la constitución de una bolsa de empleo de Administrativo de Personal y otros servicios.",
+      "entity": "ALDEA DEL REY",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Bolsa de trabajo",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301"
+    },
     {
       "id": "CR-2026-3797",
       "province": "Ciudad Real",

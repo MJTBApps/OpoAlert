@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-23T16:32:56.284161+00:00",
+  "lastCheckedUTC": "2026-11-24T06:24:35.411569+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "235",
-    "pagesVisited": 22,
-    "announcementsRead": 415,
-    "opportunities": 59
+    "bulletin": "236",
+    "pagesVisited": 23,
+    "announcementsRead": 444,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "214",
       "215",
@@ -37,7 +37,8 @@
       "232",
       "233",
       "234",
-      "235"
+      "235",
+      "236"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -61,10 +62,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
@@ -75,11 +76,21 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 415,
-    "opportunities": 59
+    "issuesRead": 23,
+    "announcementsRead": 444,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "IC-2026-4107",
+      "province": "Canarias (BOC)",
+      "title": "RESOLUCIÓN de 13 de noviembre de 2026, por la que se corrigen errores de la Resolución de 29 de octubre de 2026, que aprueba la convocatoria de contratación para la provisión de plazas de personal docente e investigador contratado temporal, en régimen de derecho laboral, mediante procedimiento ordinario, en la figura de Profesor Ayudante Doctor, y se abre nuevo plazo de presentación de solicitudes (BOC n.º 225, de 11.11.2026).",
+      "entity": "Universidad de La Laguna",
+      "date": "24/11/2026",
+      "bulletin": "236",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-236-4107.pdf"
+    },
     {
       "id": "IC-2026-4073",
       "province": "Canarias (BOC)",

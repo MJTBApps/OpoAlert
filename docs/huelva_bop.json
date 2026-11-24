@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-23T16:35:11.558407+00:00",
+  "lastCheckedUTC": "2026-11-24T06:24:29.810851+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
-    "pagesVisited": 20,
-    "announcementsRead": 265,
-    "opportunities": 37
+    "bulletin": "226",
+    "pagesVisited": 21,
+    "announcementsRead": 284,
+    "opportunities": 43
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "206",
       "207",
@@ -35,7 +35,8 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -57,10 +58,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-02",
@@ -71,9 +72,9 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 265,
-    "opportunities": 37,
+    "issuesRead": 21,
+    "announcementsRead": 284,
+    "opportunities": 43,
     "editionPDFs": [
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_206_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
@@ -94,10 +95,71 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_222_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_223_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_224_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_225_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_225_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_226_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-385643",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para proveer como funcionarios de carrera dos plazas de Arquitectos",
+      "entity": "Ayuntamiento de Huelva",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385643_BOP-226_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385635",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para proveer como funcionario de carrera una plaza de Auxiliar Informático",
+      "entity": "Ayuntamiento de Huelva",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385635_BOP-226_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385628",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para proveer como funcionarios de carrera cinco plazas de Inspector Polivalente",
+      "entity": "Ayuntamiento de Huelva",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385628_BOP-226_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385589",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para proveer como personal laboral fijo dos plazas de Auxiliar de Mantenimiento",
+      "entity": "Ayuntamiento de Huelva",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385589_BOP-226_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385564",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para proveer como funcionarios de carrera seis plazas de Portero Mantenedor",
+      "entity": "Ayuntamiento de Huelva",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385564_BOP-226_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385559",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para proveer como funcionarios de carrera ocho plazas de Técnico de Administración General",
+      "entity": "Ayuntamiento de Huelva",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385559_BOP-226_2026.pdf"
+    },
     {
       "id": "HB-2026-386917",
       "province": "Huelva",

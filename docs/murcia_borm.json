@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-23T16:36:42.912584+00:00",
+  "lastCheckedUTC": "2026-11-24T06:26:29.433519+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "271",
-    "pagesVisited": 26,
-    "announcementsRead": 596,
-    "opportunities": 61
+    "bulletin": "272",
+    "pagesVisited": 27,
+    "announcementsRead": 621,
+    "opportunities": 64
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "247",
       "248",
@@ -41,7 +41,8 @@
       "268",
       "269",
       "270",
-      "271"
+      "271",
+      "272"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -69,20 +70,50 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-11-01",
       "2026-11-08",
       "2026-11-15",
       "2026-11-22"
     ],
-    "issuesRead": 26,
-    "announcementsRead": 596,
-    "opportunities": 61
+    "issuesRead": 27,
+    "announcementsRead": 621,
+    "opportunities": 64
   },
   "notices": [
+    {
+      "id": "MU-2026-5806",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1507/2026 de 17 de noviembre, referente a la convocatoria para proveer una plaza de Investigador/a Licenciado/a de la misma.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "24/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846488/pdf"
+    },
+    {
+      "id": "MU-2026-5805",
+      "province": "Región de Murcia (BORM)",
+      "title": "Acuerdo de Consejo de Administración de fecha 21 de octubre de 2026, por la que se aprueba la oferta de empleo público del personal técnico para el año 2026, de la sociedad instrumental y medio propio de la Universidad de Murcia, Tecnologías de la Información y la Comunicación, Aplicaciones y Redes para la Universidad de Murcia (TICARUM) SLU-MP.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "24/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846487/pdf"
+    },
+    {
+      "id": "MU-2026-5798",
+      "province": "Región de Murcia (BORM)",
+      "title": "Orden de la Consejería de Empresa, Empleo y Economía Social por la que se aprueban las bases reguladoras de las ayudas del Instituto de Fomento de la Región de Murcia para I+D+I dirigidas a los centros tecnológicos para la dotación y mejora de las infraestructuras de ensayo y experimentación para la especialización inteligente, cofinanciadas por el Fondo Europeo de Desarrollo Regional (FEDER).",
+      "entity": "Consejería de Empresa, Empleo y Economía Social",
+      "date": "24/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846480/pdf"
+    },
     {
       "id": "MU-2026-5796",
       "province": "Región de Murcia (BORM)",

@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-23T16:49:09.154476+00:00",
+  "lastCheckedUTC": "2026-11-24T06:27:12.874973+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
-    "pagesVisited": 21,
-    "announcementsRead": 623,
-    "opportunities": 43
+    "bulletin": "227",
+    "pagesVisited": 22,
+    "announcementsRead": 655,
+    "opportunities": 47
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "bulletins": [
       "206",
       "207",
@@ -36,7 +36,8 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -59,10 +60,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-31",
       "2026-11-01",
       "2026-11-07",
@@ -72,11 +73,59 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 623,
-    "opportunities": 43
+    "issuesRead": 22,
+    "announcementsRead": 655,
+    "opportunities": 47
   },
   "notices": [
+    {
+      "id": "RI-2026-f7da5162716bafb14f",
+      "province": "La Rioja (BOR)",
+      "title": "OFERTA DE EMPLEO PÚBLICO: del personal de la Universidad de La Rioja para el ejercicio 2026",
+      "entity": "UNIVERSIDAD DE LA RIOJA",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43498363-1-PDF-581087",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F24&referencia=43466015-2-HTML-581087-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-f513965e0e6cb8b931",
+      "province": "La Rioja (BOR)",
+      "title": "PINCHE: corrección de error en la convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo, OEP 2025 y 2026",
+      "entity": "SERVICIO RIOJANO DE SALUD",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43498414-1-PDF-581113",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F24&referencia=43467856-2-HTML-581113-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-e2d4115cee05f85721",
+      "province": "La Rioja (BOR)",
+      "title": "MÉDICO ESPECIALISTA MEDICINA DEL TRABAJO: convocatoria pruebas selectivas (F.12/25)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43498460-1-PDF-581110",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F24&referencia=43467498-5-HTML-581110-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-a8b6a8cf28c084ddf1",
+      "province": "La Rioja (BOR)",
+      "title": "ENFERMERO/A ESPECIALISTA EN SALUD MENTAL: relación definitiva de personas que han superado el proceso selectivo para la provisión de plazas vacantes, turno de promoción interna, OEP 2023 y 2024, así como las plazas vacantes ofertadas a las mismas",
+      "entity": "SERVICIO RIOJANO DE SALUD",
+      "date": "24/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43498450-1-PDF-581097",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F24&referencia=43463456-4-HTML-581097-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-eef413d2617be584a3",
       "province": "La Rioja (BOR)",
