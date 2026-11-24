@@ -1,12 +1,13 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T17:13:19+00:00",
+ "updatedUTC": "2026-11-24T21:51:22+00:00",
  "items": {
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473002770404": {
    "days": 20,
    "kind": "hábiles",
    "text": "Las solicitudes para tomar parte en el concurso-oposición (anexo I) se dirigirán a la Alcaldía del Ayuntamiento de El Burgo de Ebro y se presentarán en el plazo de veinte días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el BOPZ.",
-   "page": 5
+   "page": 5,
+   "hasta": "2026-12-01"
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472992670202": {
    "days": 10,
@@ -30,13 +31,15 @@
    "days": 10,
    "kind": "hábiles",
    "text": "El plazo de presentación de instancias será de diez días hábiles, contados a partir del siguiente al de la publicación del anuncio de la convocatoria en el BOPZ.",
-   "page": 3
+   "page": 3,
+   "hasta": "2026-11-19"
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473400850606": {
    "days": 10,
    "kind": "hábiles",
    "text": "El plazo de presentación de instancias será de diez días hábiles, contados a partir del siguiente al de la publicación del anuncio de la convocatoria en el BOPZ.",
-   "page": 2
+   "page": 2,
+   "hasta": "2026-11-19"
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473617140505": {
    "days": 20,
@@ -60,7 +63,8 @@
    "days": 20,
    "kind": "hábiles",
    "text": "…del Ayuntamiento de Cadrete, se abre el plazo de presentación de solicitudes, que será de veinte días hábiles a contar desde el día siguiente a la publicación de este anuncio en el BOPZ.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-12-11"
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475085914242": {
    "days": 5,
@@ -84,7 +88,8 @@
    "days": 5,
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de cinco (5) días hábiles a contar desde el día siguiente a la publicación de este anuncio.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-11-24"
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475239680909": {
    "days": 20,
@@ -102,13 +107,15 @@
    "days": 10,
    "kind": "naturales",
    "text": "El plazo de presentación de la instancia será el de diez días naturales a partir del día siguiente a la publicación de la convocatoria en el BOPZ.",
-   "page": 5
+   "page": 5,
+   "hasta": "2026-11-29"
   },
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475880981313": {
    "days": 10,
    "kind": "hábiles",
    "text": "…de las Administraciones Públicas, en el plazo de diez días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el BOPZ.",
-   "page": 2
+   "page": 2,
+   "hasta": "2026-12-04"
   }
  },
  "none": [

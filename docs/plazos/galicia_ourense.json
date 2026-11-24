@@ -1,18 +1,20 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T17:13:19+00:00",
+ "updatedUTC": "2026-11-24T21:51:22+00:00",
  "items": {
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/352942/idioma/gl": {
    "days": 15,
    "kind": "hábiles",
    "text": "Prazo de presentación de solicitudes: 15 dias hábiles seguintes contados dende a publicación deste anuncio no BOP, poderanse formular perante o Rexistro xeral do Concello de Ribadavia.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-11-20"
   },
   "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353012/idioma/gl": {
    "days": 5,
    "kind": "hábiles",
    "text": "O prazo de presentación de solicitudes será de cinco (5) días hábiles, contados a partir do día seguinte ao da publicación deste anuncio no Boletín Oficial da Provincia de Ourense.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-11-02"
   }
  },
  "none": [

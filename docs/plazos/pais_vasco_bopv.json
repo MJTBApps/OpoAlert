@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T17:13:19+00:00",
+ "updatedUTC": "2026-11-24T21:51:22+00:00",
  "items": {
   "https://www.euskadi.eus/bopv2/datos/2026/10/2604574a.pdf": {
    "days": 10,
@@ -12,7 +12,8 @@
    "days": 15,
    "kind": "hábiles",
    "text": "Las solicitudes deberán presentarse dentro del plazo de 15 días hábiles contados a partir del siguiente al de la publicación de la presente Orden en el Boletín Oficial del País Vasco.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-11-19"
   },
   "https://www.euskadi.eus/bopv2/datos/2026/10/2604480a.pdf": {
    "days": 15,
@@ -24,7 +25,8 @@
    "days": 15,
    "kind": "hábiles",
    "text": "Las solicitudes deberán presentarse dentro del plazo de 15 días hábiles contados a partir del siguiente al de la publicación de la presente Orden en el Boletín Oficial del País Vasco.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-11-16"
   },
   "https://www.euskadi.eus/bopv2/datos/2026/11/2604646a.pdf": {
    "days": 10,
@@ -42,13 +44,15 @@
    "days": 15,
    "kind": "hábiles",
    "text": "Las solicitudes deberán presentarse dentro del plazo de 15 días hábiles contados a partir del siguiente al de la publicación de la presente Orden/Resolución en el Boletín Oficial del País Vasco.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-12-02"
   },
   "https://www.euskadi.eus/bopv2/datos/2026/11/2604773a.pdf": {
    "days": 15,
    "kind": "hábiles",
    "text": "Las solicitudes deberán presentarse dentro del plazo de 15 días hábiles contados a partir del siguiente al de la publicación de la presente Orden en el Boletín Oficial del País Vasco.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-12-02"
   },
   "https://www.euskadi.eus/bopv2/datos/2026/11/2604954a.pdf": {
    "days": 15,
@@ -72,7 +76,8 @@
    "days": 15,
    "kind": "hábiles",
    "text": "Las solicitudes deberán presentarse dentro del plazo de 15 días hábiles contados a partir del siguiente al de la publicación de la presente Orden/Resolución en el Boletín Oficial del País Vasco.",
-   "page": 2
+   "page": 2,
+   "hasta": "2026-12-16"
   }
  },
  "none": [

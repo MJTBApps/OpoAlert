@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T17:13:19+00:00",
+ "updatedUTC": "2026-11-24T21:51:22+00:00",
  "items": {
   "https://www.borm.es/services/anuncio/845966/pdf": {
    "days": 15,
@@ -30,7 +30,8 @@
    "days": 10,
    "kind": "naturales",
    "text": "El plazo de presentación de solicitudes será de 10 días naturales a contar desde el día siguiente a la publicación del anuncio de convocatoria en el BORM.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-11-13"
   },
   "https://www.borm.es/services/anuncio/846106/pdf": {
    "days": 15,
@@ -54,7 +55,8 @@
    "days": 20,
    "kind": "hábiles",
    "text": "El plazo para la presentación de solicitudes será de 20 días hábiles a contar desde el día siguiente de la publicación de la convocatoria en el Boletín Oficial de la Región de Murcia (BORM).",
-   "page": 3
+   "page": 3,
+   "hasta": "2026-12-07"
   },
   "https://www.borm.es/services/anuncio/846177/pdf": {
    "days": 15,
@@ -66,7 +68,8 @@
    "days": 20,
    "kind": "hábiles",
    "text": "3.2.- El plazo de presentación de solicitudes será de 20 días hábiles a partir del día siguiente al de la publicación de la presente Orden en el Boletín Oficial de la Región de Murcia.",
-   "page": 4
+   "page": 4,
+   "hasta": "2026-12-09"
   },
   "https://www.borm.es/services/anuncio/846305/pdf": {
    "days": 20,
@@ -78,13 +81,15 @@
    "days": 10,
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de 10 días hábiles a partir del siguiente al de la publicación de este anuncio en el “Boletín Oficial de la Región de Murcia”.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-12-01"
   },
   "https://www.borm.es/services/anuncio/846356/pdf": {
    "days": 10,
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de 10 días hábiles a partir del siguiente al de la publicación de este anuncio en el “Boletín Oficial de la Región de Murcia”.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-12-01"
   },
   "https://www.borm.es/services/anuncio/846399/pdf": {
    "days": 20,
@@ -102,7 +107,8 @@
    "days": 20,
    "kind": "hábiles",
    "text": "En cuanto a las solicitudes para participar en el proceso selectivo, se presentarán en el plazo de 20 días hábiles contados a partir del siguiente al de la publicación de la convocatoria en el Boletín Oficial de la Región de Murcia, en el registro del Consorcio.",
-   "page": 3
+   "page": 3,
+   "hasta": "2026-12-18"
   },
   "https://www.borm.es/services/anuncio/846455/pdf": {
    "days": 7,
@@ -114,7 +120,8 @@
    "days": 10,
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de 10 días hábiles a partir del siguiente al de la publicación de este anuncio en el “Boletín Oficial de la Región de Murcia”.",
-   "page": 1
+   "page": 1,
+   "hasta": "2026-12-09"
   }
  },
  "none": [
