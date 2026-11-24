@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-23T16:33:13.332604+00:00",
+  "lastCheckedUTC": "2026-11-24T06:38:38.880018+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 74,
-    "opportunities": 74,
+    "announcementsRead": 71,
+    "opportunities": 71,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "publicationDates": [
-      "2026-10-26",
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
@@ -37,7 +36,7 @@
       "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
+      "2026-10-26",
       "2026-10-27",
       "2026-10-29",
       "2026-10-31",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-24"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 74,
-    "opportunities": 74
+    "announcementsRead": 71,
+    "opportunities": 71
   },
   "notices": [
     {
@@ -587,16 +587,6 @@
       "url": "https://cido.diba.cat/oposicions/20799043"
     },
     {
-      "id": "CIDO6-22469548",
-      "title": "1 plaça de Peó de brigada",
-      "entity": "Mancomunitat Intermunicipal d'Aigües i Serveis del Baix Empordà",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22469548"
-    },
-    {
       "id": "CIDO6-22447007",
       "title": "1 plaça de Peó de brigada",
       "entity": "Ajuntament de Brunyola i Sant Martí Sapresa",
@@ -737,16 +727,6 @@
       "url": "https://cido.diba.cat/oposicions/21293434"
     },
     {
-      "id": "CIDO6-20894244",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Corçà",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/20894244"
-    },
-    {
       "id": "CIDO6-20858650",
       "title": "1 plaça d'Oficial 1a - Jardineria",
       "entity": "Ajuntament de Palamós i Sant Joan",
@@ -785,16 +765,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22381543"
-    },
-    {
-      "id": "CIDO6-21254712",
-      "title": "3 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de Calonge i Sant Antoni",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21254712"
     }
   ]
 }

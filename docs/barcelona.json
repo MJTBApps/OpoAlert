@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-23T16:33:13.332604+00:00",
+  "lastCheckedUTC": "2026-11-24T06:38:38.880018+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 295,
-    "opportunities": 295,
+    "announcementsRead": 284,
+    "opportunities": 284,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
     "publicationDates": [
       "2026-10-26",
       "2026-10-27",
@@ -43,17 +43,17 @@
       "2026-11-23"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-11-01",
       "2026-11-07",
       "2026-11-08",
       "2026-11-15",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-24"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 295,
-    "opportunities": 295
+    "announcementsRead": 284,
+    "opportunities": 284
   },
   "notices": [
     {
@@ -1347,16 +1347,6 @@
       "url": "https://cido.diba.cat/oposicions/22410017"
     },
     {
-      "id": "CIDO5-22387330",
-      "title": "Borsa de treball de places de Professor llicenciat (especialitat bateria)",
-      "entity": "Ajuntament d'Igualada - Organisme Autònom Municipal d'Ensenyaments Artístics d'Igualada",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22387330"
-    },
-    {
       "id": "CIDO5-18041139",
       "title": "1 plaça de Professor d'escola d'adults",
       "entity": "Ajuntament de Palau-solità i Plegamans",
@@ -2197,16 +2187,6 @@
       "url": "https://cido.diba.cat/oposicions/22456830"
     },
     {
-      "id": "CIDO5-22429994",
-      "title": "2 places de Tècnic d'administració general de serveis jurídics",
-      "entity": "Ajuntament de Rubí",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22429994"
-    },
-    {
       "id": "CIDO5-22250125",
       "title": "1 plaça de Tècnic de Transparència i Participació Ciutadana",
       "entity": "Ajuntament de Sant Andreu de Llavaneres",
@@ -2387,16 +2367,6 @@
       "url": "https://cido.diba.cat/oposicions/18743603"
     },
     {
-      "id": "CIDO5-16757272",
-      "title": "1 plaça de Taquiller",
-      "entity": "Ajuntament de Rubí",
-      "date": "06/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16757272"
-    },
-    {
       "id": "CIDO5-13743557",
       "title": "Bases generals reguladores dels processos selectius de cobertura definitiva de places de la plantilla de l'Ajuntament per via de l'estabilització de l'ocupació temporal",
       "entity": "Ajuntament de Mataró",
@@ -2517,46 +2487,6 @@
       "url": "https://cido.diba.cat/oposicions/22418634"
     },
     {
-      "id": "CIDO5-22387342",
-      "title": "Borsa de treball de places de Professor llicenciat (especialitat vent fusta/ cant coral en anglès)",
-      "entity": "Ajuntament d'Igualada - Organisme Autònom Municipal d'Ensenyaments Artístics d'Igualada",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22387342"
-    },
-    {
-      "id": "CIDO5-22387338",
-      "title": "Borsa de treball de places de Professor llicenciat (especialitat guitarra)",
-      "entity": "Ajuntament d'Igualada - Organisme Autònom Municipal d'Ensenyaments Artístics d'Igualada",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22387338"
-    },
-    {
-      "id": "CIDO5-22387334",
-      "title": "Borsa de treball de places de Professor llicenciat (especialitat piano)",
-      "entity": "Ajuntament d'Igualada - Organisme Autònom Municipal d'Ensenyaments Artístics d'Igualada",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22387334"
-    },
-    {
-      "id": "CIDO5-22387323",
-      "title": "Borsa de treball de places de Professor llicenciat (especialitat musicoteràpia/atenció a la diversitat)",
-      "entity": "Ajuntament d'Igualada - Organisme Autònom Municipal d'Ensenyaments Artístics d'Igualada",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22387323"
-    },
-    {
       "id": "CIDO5-22368333",
       "title": "2 places de Tècnic mitjà",
       "entity": "Ajuntament de Torelló",
@@ -2577,16 +2507,6 @@
       "url": "https://cido.diba.cat/oposicions/21769318"
     },
     {
-      "id": "CIDO5-18685396",
-      "title": "1 plaça de Tècnic auxiliar - Delineant",
-      "entity": "Ajuntament de Santa Perpètua de Mogoda",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/18685396"
-    },
-    {
       "id": "CIDO5-17035449",
       "title": "5 places d'Administratiu",
       "entity": "Ajuntament de Tarragona - Institut Municipal de Serveis Socials",
@@ -2595,16 +2515,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/17035449"
-    },
-    {
-      "id": "CIDO5-22421046",
-      "title": "1 plaça de Cap del Departament de Gestió Econòmica",
-      "entity": "Ajuntament de Barcelona - Institut Municipal d'Urbanisme",
-      "date": "02/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22421046"
     },
     {
       "id": "CIDO5-22159574",
@@ -2975,26 +2885,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22380925"
-    },
-    {
-      "id": "CIDO5-22307357",
-      "title": "1 plaça d'Operari de brigada",
-      "entity": "Ajuntament de Montesquiu",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22307357"
-    },
-    {
-      "id": "CIDO5-22076147",
-      "title": "1 plaça de Tècnic de desenvolupament local",
-      "entity": "Ajuntament d'Olost",
-      "date": "26/10/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22076147"
     },
     {
       "id": "CIDO5-21627541",
