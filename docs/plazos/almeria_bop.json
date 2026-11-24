@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T13:33:59+00:00",
+ "updatedUTC": "2026-11-24T17:13:19+00:00",
  "items": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": {
    "days": 20,
@@ -103,6 +103,18 @@
    "kind": "hábiles",
    "text": "El plazo para la presentación de solicitudes de participación será de DIEZ DÍAS HÁBILES, a contar desde el siguiente a la publicación del presente Anuncio (en extracto) de convocatoria en el BOP de Almería.",
    "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…sistema de concurso-oposición, se abre el plazo de presentación de solicitudes, que será de VEINTE días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín oficial del Estado.",
+   "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3260/anuncio.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…mediante sistema de oposición libre, se abre el plazo de presentación de solicitudes, que será de 20 días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial del Estado.",
+   "page": 1
   }
  },
  "none": [
@@ -162,7 +174,9 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf": "https://www.sede.lamojonera.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3216/anuncio.pdf": "https://sede.aytoalmeria.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3217/anuncio.pdf": "https://sede.aytoalmeria.es/",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": "https://www.albanchez.es/"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": "https://www.albanchez.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3260/anuncio.pdf": "https://balanegra.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf": "https://balanegra.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf": [
@@ -227,6 +241,12 @@
   ],
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": [
    "https://www.albanchez.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3260/anuncio.pdf": [
+   "https://balanegra.sedelectronica.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf": [
+   "https://balanegra.sedelectronica.es/"
   ]
  },
  "sinSede": [
