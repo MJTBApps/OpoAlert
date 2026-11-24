@@ -81,7 +81,8 @@ SOURCES={
 ALLOW_NO_NOTICES={"CE"}
 HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE","CU"}
 # Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
-HOME_BACKUP={"RI","CC"}
+# Madrid desde el 24/11/2026: desde el 22/11 su portal no responde a GitHub.
+HOME_BACKUP={"RI","CC","MD"}
 TYPES=("Bolsa de trabajo","Plaza / oposición")
 # Sedes oficiales que sirven sus documentos en un puerto propio.
 OFFICIAL_PORTS={"se1.dipucr.es":4443}

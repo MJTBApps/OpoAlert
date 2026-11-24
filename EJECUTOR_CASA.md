@@ -1,6 +1,6 @@
 # Ejecutor de OpoAlert en el ordenador de casa
 
-Algunos boletines (Navarra, Asturias, Ceuta, y a ratos La Rioja y Cáceres) **no responden a los servidores de GitHub**, que están fuera de España, pero sí a una conexión española normal. El ordenador de casa, siempre encendido, hace solo esas lecturas: GitHub le avisa a las 6:50, 9:50, 12:50 y 16:50 (en invierno), el ordenador lee los boletines y devuelve el resultado, y GitHub lo valida y lo publica igual que el resto.
+Algunos boletines (Navarra, Asturias, Ceuta, y a ratos La Rioja, Cáceres y Madrid) **no responden a los servidores de GitHub**, que están fuera de España, pero sí a una conexión española normal. El ordenador de casa, siempre encendido, hace solo esas lecturas: GitHub le avisa a las 6:50, 9:50, 12:50 y 16:50 (en invierno), el ordenador lee los boletines y devuelve el resultado, y GitHub lo valida y lo publica igual que el resto.
 
 - No hace falta dejar ninguna sesión abierta ni tener nada a la vista: funciona como un servicio en segundo plano.
 - Si el ordenador está apagado, esas fuentes simplemente no se actualizan esa vez; el resto de la app sigue igual.
