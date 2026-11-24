@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-23T09:59:14.132120+00:00",
+  "lastCheckedUTC": "2026-11-24T06:54:15.826336+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "225",
-    "pagesVisited": 20,
-    "announcementsRead": 994,
-    "opportunities": 87,
+    "bulletin": "226",
+    "pagesVisited": 21,
+    "announcementsRead": 1044,
+    "opportunities": 92,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
-    "issuesRead": 20,
-    "pagesVisited": 20,
-    "announcementsRead": 994,
-    "opportunities": 87,
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 1044,
+    "opportunities": 92,
     "bulletins": [
       "206",
       "207",
@@ -39,7 +39,8 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -61,10 +62,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
@@ -77,6 +78,56 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-226-10153",
+      "title": "Aprovació inicial del pressupost general, la plantilla de personal i les bases d'execució del pressupost per a l'exercici 2027",
+      "entity": "AJUNTAMENT D'ESPONELLÀ",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010153.pdf"
+    },
+    {
+      "id": "GI-2026-226-10150",
+      "title": "Aprovació de la convocatòria i les bases reguladores d'una borsa de treball d'auxiliars administratius/ves",
+      "entity": "AJUNTAMENT DE CAMPLLONG",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010150.pdf"
+    },
+    {
+      "id": "GI-2026-226-10143",
+      "title": "Aprovació de la convocatòria i les bases del procés selectiu, mitjançant concurs oposició, per cobrir una plaça de personal laboral fix auxiliar administratiu/va, de l'escala d'administració general, grup C2, nivell 12, i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE PERALADA",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010143.pdf"
+    },
+    {
+      "id": "GI-2026-226-10102",
+      "title": "Convocatòria pública del procés selectiu, mitjançant concurs oposició, per cobrir definitivament una plaça de personal laboral administratiu/va, de l'escala d'administració general, grup C1, nivell 16, i la constitució d'una borsa de treball per cobrir possibles vacants o necessitats temporals que es produeixin en aquesta categoria a l'Oficina de Turisme de l'Ajuntament de Peralada, amb una dedicació de jornada complerta",
+      "entity": "AJUNTAMENT DE PERALADA",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010102.pdf"
+    },
+    {
+      "id": "GI-2026-226-09993",
+      "title": "Aprovació inicial del pressupost general de la Mancomunitat, les seves bases d'execució i la plantilla de personal per a l'exercici 2027",
+      "entity": "MANCOMUNITAT INTERMUNICIPAL VOLUNTÀRIA DEL SERVEI DE CONTROL DE MOSQUITS DE LA BADIA DE ROSES I DEL BAIX TER",
+      "date": "24/11/2026",
+      "bulletin": "226",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/202622609993.pdf"
+    },
     {
       "id": "GI-2026-225-09965",
       "title": "Aprovació de les bases i la convocatòria del procés de selecció, mitjançant concurs oposició lliure, per a la constitució d'una borsa de treball d'auxiliars administratius/ves",
