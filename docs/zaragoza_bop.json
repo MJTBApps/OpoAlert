@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-23T17:14:22.668979+00:00",
+  "lastCheckedUTC": "2026-11-24T07:30:51.442403+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "270",
+    "bulletin": "271",
     "pagesVisited": 2,
-    "announcementsRead": 817,
-    "opportunities": 82
+    "announcementsRead": 835,
+    "opportunities": 84
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-25",
-    "rangeEnd": "2026-11-23",
-    "issuesRead": 24,
+    "rangeStart": "2026-10-26",
+    "rangeEnd": "2026-11-24",
+    "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 817,
-    "opportunities": 82,
+    "announcementsRead": 835,
+    "opportunities": 84,
     "bulletins": [
       "247",
       "248",
@@ -43,7 +43,8 @@
       "267",
       "268",
       "269",
-      "270"
+      "270",
+      "271"
     ],
     "publicationDates": [
       "2026-10-26",
@@ -69,7 +70,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "issuePublicationDates": [
       "2026-10-26",
@@ -95,10 +97,10 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
-      "2026-10-25",
       "2026-11-01",
       "2026-11-02",
       "2026-11-08",
@@ -108,17 +110,37 @@
     "sectionsRead": {
       "SECCIÓN SEGUNDA": 6,
       "SECCIÓN TERCERA": 38,
-      "SECCIÓN QUINTA": 114,
-      "SECCIÓN SEXTA": 629,
+      "SECCIÓN QUINTA": 118,
+      "SECCIÓN SEXTA": 643,
       "PARTE NO OFICIAL": 19,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 6,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 104
+    "documentsVerified": 107
   },
   "notices": [
+    {
+      "id": "ZA-000345418",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a la aprobacion definitiva del presupuesto de 2027.",
+      "entity": "AYUNTAMIENTO DE LITAGO",
+      "date": "24/11/2026",
+      "bulletin": "271",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476274180404"
+    },
+    {
+      "id": "ZA-000345416",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo al señalamiento de la fecha de realización del primer ejercicio del proceso selectivo para la provisión, por turno de promoción interna y sistema selectivo de concurso-oposición, de tres plazas de técnico/a de Administración general.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "24/11/2026",
+      "bulletin": "271",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476272270303"
+    },
     {
       "id": "ZA-000345411",
       "province": "Zaragoza",
