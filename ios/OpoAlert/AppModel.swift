@@ -31,6 +31,8 @@ final class AppModel: ObservableObject {
     private var recentByDate: [String: Bool] = [:]
     private var recentDay = Calendar.current.startOfDay(for: Date())
     @Published private(set) var favorites: [Notice] = []
+    /// Seguimiento de las favoritas: plazo orientativo, «presentada» y nota (1.57.0).
+    @Published private(set) var agenda: [String: AgendaEntry] = [:]
     @Published private(set) var rules: [AlertRule] = []
     @Published private(set) var selected: Set<String> = []
     @Published private(set) var available: [Source] = []
@@ -64,6 +66,7 @@ final class AppModel: ObservableObject {
     func reload() {
         notices = store.cached
         favorites = store.favorites
+        agenda = store.agenda
         rules = store.rules
         selected = store.selected
         available = store.availableSources
@@ -130,9 +133,11 @@ final class AppModel: ObservableObject {
     }
 
     /// Las favoritas se ven aunque se deje de seguir su fuente, con la ficha más reciente si la hay.
+    /// Primero las que acaban antes (`FavoriteAgenda.sort`).
     func favoriteList(query: String, filter: NoticeFilter) -> [Notice] {
         let latest = Dictionary(notices.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
-        return filtered(favorites.map { latest[$0.id] ?? $0 }, query: query, filter: filter)
+        let list = FavoriteAgenda.sort(favorites.map { latest[$0.id] ?? $0 }, agenda: agenda)
+        return filtered(list, query: query, filter: filter)
     }
 
     private func rebuildSearchIndex() {
@@ -174,7 +179,56 @@ final class AppModel: ObservableObject {
     func toggleFavorite(_ notice: Notice) {
         store.toggleFavorite(notice)
         favorites = store.favorites
-        if isFavorite(notice) { nudgePremiumIfNeeded() }
+        if isFavorite(notice) {
+            nudgePremiumIfNeeded()
+            Task { await completeAgenda([notice]) }
+        } else {
+            store.removeAgenda(notice.id)
+            agenda = store.agenda
+            Reminders.cancel(notice.id)
+        }
+    }
+
+    // MARK: Seguimiento de favoritas
+
+    /// Guarda el plazo orientativo leído en la ficha y programa el recordatorio.
+    func remember(_ deadline: Deadline?, for notice: Notice) {
+        guard isFavorite(notice) else { return }
+        store.updateAgenda(notice.id) { entry in
+            if let until = deadline?.until { entry.until = until }
+            entry.checked = true
+        }
+        agenda = store.agenda
+        resyncReminder(notice)
+    }
+
+    func setSubmitted(_ submitted: Bool, for notice: Notice) {
+        store.updateAgenda(notice.id) { $0.submitted = submitted }
+        agenda = store.agenda
+        resyncReminder(notice)
+    }
+
+    func setNote(_ note: String, for notice: Notice) {
+        store.updateAgenda(notice.id) { $0.note = note.trimmingCharacters(in: .whitespacesAndNewlines) }
+        agenda = store.agenda
+    }
+
+    private func resyncReminder(_ notice: Notice) {
+        let entry = agenda[notice.id]
+        let favorite = isFavorite(notice)
+        Task { await Reminders.sync(notice, entry: entry, favorite: favorite) }
+    }
+
+    /// Busca la fecha orientativa de las favoritas que aún no la tienen (el plazo se lee horas
+    /// después del anuncio) y vuelve a programar los recordatorios (por si se activó Premium).
+    func completeAgenda(_ list: [Notice]? = nil) async {
+        for notice in list ?? favorites where agenda[notice.id]?.until == nil {
+            let deadline = await Deadlines.fetch(for: notice)
+            if deadline?.until != nil || agenda[notice.id]?.checked != true {
+                remember(deadline, for: notice)
+            }
+        }
+        for notice in favorites where agenda[notice.id]?.until != nil { resyncReminder(notice) }
     }
 
     /// Recordatorio de Premium tras guardar favoritas (`PremiumNudge`).

@@ -1,13 +1,23 @@
 import Foundation
 
-/// Plazo de presentación tal como lo escribe el anuncio (`DeadlineStore.kt`).
-/// OpoAlert no calcula fechas.
+/// Plazo de presentación tal como lo escribe el anuncio (`DeadlineStore.kt`). `until` es la
+/// fecha orientativa del último día, «como pronto» («AAAA-MM-DD»), que `backend/plazo_fin.py`
+/// solo calcula cuando el plazo cuenta desde este mismo boletín.
 public struct Deadline: Equatable, Sendable {
     public let days: Int
     public let kind: String
     public let text: String
     public let page: Int
+    public var until: String? = nil
     public var label: String { "\(days) días \(kind)" }
+
+    public init(days: Int, kind: String, text: String, page: Int, until: String? = nil) {
+        self.days = days
+        self.kind = kind
+        self.text = text
+        self.page = page
+        self.until = until
+    }
 }
 
 /// `docs/plazos/<feed>.json`, un archivo por fuente (lo genera `backend/plazos.py`).
@@ -32,7 +42,8 @@ public enum Deadlines {
               let page = item["page"] as? Int, page >= 1,
               let text = (item["text"] as? String)?.trimmingCharacters(in: .whitespacesAndNewlines),
               (20...400).contains(text.count) else { return nil }
-        return Deadline(days: days, kind: kind, text: text, page: page)
+        return Deadline(days: days, kind: kind, text: text, page: page,
+                        until: AgendaDates.valid(item["hasta"] as? String))
     }
 
     /// Sede electrónica de quien convoca, copiada del anuncio (campo `sedes`;

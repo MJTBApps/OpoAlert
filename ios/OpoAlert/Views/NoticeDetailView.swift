@@ -1,8 +1,8 @@
 import OpoAlertCore
 import SwiftUI
 
-/// Ficha de una convocatoria. Solo muestra lo que dice el anuncio oficial:
-/// nada de plazos calculados ni requisitos inventados.
+/// Ficha de una convocatoria. Solo muestra lo que dice el anuncio oficial (la única fecha
+/// calculada es la orientativa de `plazo_fin.py`, marcada como tal) y nada de requisitos inventados.
 struct NoticeDetailView: View {
     let notice: Notice
     @EnvironmentObject private var model: AppModel
@@ -68,6 +68,10 @@ struct NoticeDetailView: View {
                     DeadlineCard(deadline: deadline) { openOfficial(page: deadline.page) }
                 }
 
+                if favorite {
+                    TrackingCard(notice: notice, hasEstimate: deadline?.until != nil)
+                }
+
                 if let sede {
                     // Sede de quien convoca, copiada del anuncio: se abre en Safari.
                     VStack(spacing: 6) {
@@ -127,7 +131,7 @@ struct NoticeDetailView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(Color.white, in: RoundedRectangle(cornerRadius: 14))
 
-                ShareLink(item: notice.shareText, subject: Text("Convocatoria de empleo público · OpoAlert")) {
+                ShareLink(item: notice.shareText(deadline: deadline), subject: Text(ShareText.subject)) {
                     Label("Compartir convocatoria", systemImage: "square.and.arrow.up")
                         .frame(maxWidth: .infinity, minHeight: 44)
                 }
@@ -175,10 +179,19 @@ struct NoticeDetailView: View {
                 .accessibilityLabel(favorite ? "Quitar de favoritas" : "Guardar en favoritas")
             }
         }
-        .task { (deadline, sede) = await Deadlines.fetchBoth(for: notice) }
-        .onAppear { if !premium.isActive { ads.refreshDetailBanner() } }
-        // Al volver a la lista puede tocar el intersticial (cada 3 fichas).
-        .onDisappear { Ads.shared.noticeClosed(premium: PremiumStore.isActiveStored) }
+        .task {
+            (deadline, sede) = await Deadlines.fetchBoth(for: notice)
+            model.remember(deadline, for: notice)
+        }
+        .onChange(of: favorite) { saved in if saved { model.remember(deadline, for: notice) } }
+        .onAppear {
+            ReviewPrompt.noticeOpened()
+            if !premium.isActive { ads.refreshDetailBanner() }
+        }
+        // Al volver a la lista puede tocar el intersticial (cada 3 fichas); si no, quizá la valoración.
+        .onDisappear {
+            if !Ads.shared.noticeClosed(premium: PremiumStore.isActiveStored) { ReviewPrompt.maybeAsk() }
+        }
         .sheet(item: $pdfLink) { link in
             PdfViewerView(url: link.url, title: source.shortName)
         }
@@ -249,13 +262,97 @@ private struct DeadlineCard: View {
                     .font(.subheadline.bold())
             }
             .tint(Color(hex: 0xC2410C))
-            Text("OpoAlert no calcula la fecha: el plazo puede empezar con otra publicación (por ejemplo, el extracto en el BOE). Compruébalo siempre en el anuncio oficial.")
-                .font(.caption2)
-                .foregroundStyle(Color(hex: 0x8A6D3B))
+            if let until = deadline.until {
+                let left = AgendaDates.daysLeft(until) ?? 0
+                Text("Acaba como pronto el \(AgendaDates.long(until))" + (left < 0 ? " (ya ha pasado)" : ""))
+                    .font(.subheadline.bold())
+                    .foregroundStyle(Color(hex: 0x13223C))
+                Text("Fecha orientativa: cuenta desde la publicación en este boletín, sin sábados, domingos ni fiestas nacionales. Los festivos de tu comunidad o municipio pueden alargarlo unos días. Compruébalo siempre en el anuncio oficial.")
+                    .font(.caption2)
+                    .foregroundStyle(Color(hex: 0x8A6D3B))
+            } else {
+                Text("OpoAlert no calcula la fecha: el plazo puede empezar con otra publicación (por ejemplo, el extracto en el BOE). Compruébalo siempre en el anuncio oficial.")
+                    .font(.caption2)
+                    .foregroundStyle(Color(hex: 0x8A6D3B))
+            }
         }
         .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(hex: 0xFFF7E8), in: RoundedRectangle(cornerRadius: 16))
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(hex: 0xF5D9A8)))
+    }
+}
+
+/// «Mi seguimiento» de una favorita (Premium, como las alertas): recordatorio del plazo,
+/// «ya la he presentado» y una nota. Sin Premium se explica y abre la pantalla de Premium.
+private struct TrackingCard: View {
+    let notice: Notice
+    let hasEstimate: Bool
+    @EnvironmentObject private var model: AppModel
+    @ObservedObject private var premium = PremiumStore.shared
+    @State private var showPremium = false
+    @State private var editingNote = false
+    @State private var draft = ""
+
+    var body: some View {
+        let entry = model.agenda[notice.id]
+        VStack(alignment: .leading, spacing: 10) {
+            Label("MI SEGUIMIENTO", systemImage: "star.fill")
+                .font(.caption.bold())
+                .foregroundStyle(Color(hex: 0x6D28D9))
+            if !premium.isActive {
+                Text("Con OpoAlert Premium te avisamos antes de que acabe el plazo, marcas las solicitudes que ya has presentado y guardas tus notas.")
+                    .font(.subheadline)
+                    .foregroundStyle(Color(hex: 0x3B2A63))
+                Button { showPremium = true } label: {
+                    Text(premium.trialDays.map { "Probar Premium \($0) días gratis" } ?? "Ver Premium")
+                        .font(.headline).frame(maxWidth: .infinity, minHeight: 44)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(Color(hex: 0x6D28D9))
+            } else {
+                Text(reminderText(entry))
+                    .font(.subheadline)
+                    .foregroundStyle(Color(hex: 0x3B2A63))
+                Toggle("Ya he presentado la solicitud", isOn: Binding(
+                    get: { entry?.submitted ?? false },
+                    set: { model.setSubmitted($0, for: notice) }))
+                    .font(.subheadline.weight(.semibold))
+                    .tint(Color(hex: 0x6D28D9))
+                Button {
+                    draft = entry?.noteText ?? ""
+                    editingNote = true
+                } label: {
+                    Label((entry?.noteText.isEmpty ?? true) ? "Añadir una nota" : (entry?.noteText ?? ""),
+                          systemImage: "square.and.pencil")
+                        .font(.subheadline)
+                        .multilineTextAlignment(.leading)
+                }
+                .tint(Color(hex: 0x6D28D9))
+            }
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(hex: 0xF3F0FF), in: RoundedRectangle(cornerRadius: 16))
+        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(hex: 0xDDD3FB)))
+        .sheet(isPresented: $showPremium) { PremiumView() }
+        .alert("Nota de esta convocatoria", isPresented: $editingNote) {
+            TextField("Por ejemplo: pagar la tasa antes del viernes", text: $draft)
+            Button("Guardar") { model.setNote(String(draft.prefix(AgendaEntry.noteMax)), for: notice) }
+            Button("Cancelar", role: .cancel) {}
+        }
+    }
+
+    private func reminderText(_ entry: AgendaEntry?) -> String {
+        if entry?.submitted == true { return "Solicitud presentada: no hace falta recordatorio." }
+        if let at = Reminders.planned(entry, favorite: true) {
+            let f = DateFormatter()
+            f.locale = Locale(identifier: "es_ES")
+            f.timeZone = AgendaDates.calendar.timeZone
+            f.dateFormat = "EEEE d 'de' MMMM 'a las' H:mm"
+            return "🔔 Te avisaremos el \(f.string(from: at))."
+        }
+        if hasEstimate || entry?.until != nil { return "El plazo orientativo ya ha pasado." }
+        return "Sin recordatorio: este anuncio no permite estimar la fecha de fin."
     }
 }

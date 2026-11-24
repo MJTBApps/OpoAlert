@@ -14,6 +14,7 @@ object PremiumDialog {
     private const val BENEFITS =
         "• Sin publicidad: ni al abrir la app ni entre las convocatorias.\n" +
             "• Alertas personalizadas: te avisamos cuando sale una convocatoria de tu puesto y provincia.\n" +
+            "• Recordatorio antes de que acabe el plazo de tus favoritas, con notas y «ya presentada».\n" +
             "• Con tu suscripción ayudas a mantener OpoAlert, un proyecto independiente, y a seguir añadiendo boletines.\n\n"
 
     /** [changed] se llama si cambia el estado (para quitar anuncios o refrescar la pantalla). */
@@ -44,7 +45,7 @@ object PremiumDialog {
             }
             val trial = offer.trialDays?.let { "Pruébalo $it días gratis. Después, " } ?: ""
             AlertDialog.Builder(activity)
-                .setTitle("OpoAlert Premium")
+                .setTitle(offer.trialDays?.let { "Prueba Premium gratis $it días" } ?: "OpoAlert Premium")
                 .setMessage(BENEFITS + trial + offer.price + ". " +
                     "Se renueva automáticamente; puedes cancelarlo cuando quieras desde Google Play.")
                 .setPositiveButton(if (offer.trialDays != null) "Probar gratis" else "Suscribirme") { _, _ ->

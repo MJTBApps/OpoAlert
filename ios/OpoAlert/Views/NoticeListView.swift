@@ -17,6 +17,7 @@ struct NoticeListView: View {
     @State private var showPremium = false
     @ObservedObject private var ads = Ads.shared
     @ObservedObject private var premium = PremiumStore.shared
+    @ObservedObject private var update = UpdateCheck.shared
 
     private var shown: [Notice] {
         mode == .explore ? model.explore(query: query, filter: filter)
@@ -26,6 +27,10 @@ struct NoticeListView: View {
     var body: some View {
         let shown = self.shown
         List {
+            if mode == .explore && update.available {
+                Section { UpdateCard() }
+                    .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 0, trailing: 16))
+            }
             if mode == .explore {
                 Section { SummaryCard(showPicker: { model.showSourcePicker = true }) }
                     .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
@@ -54,7 +59,7 @@ struct NoticeListView: View {
                         .listRowBackground(Color.clear)
                 } else {
                     ForEach(Array(shown.prefix(limit).enumerated()), id: \.element.id) { index, notice in
-                        NoticeRow(notice: notice)
+                        NoticeRow(notice: notice, showAgenda: mode == .favorites)
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
                             .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
@@ -117,6 +122,7 @@ struct NoticeListView: View {
             }
         }
         .onAppear(perform: applyRequestedFilter)
+        .task { if mode == .favorites { await model.completeAgenda() } }
         .onChange(of: model.requestedFilter) { _ in applyRequestedFilter() }
         .onChange(of: filter) { _ in limit = AppModel.pageSize }
         .navigationDestination(for: Notice.self) { NoticeDetailView(notice: $0) }
@@ -227,5 +233,41 @@ struct SummaryCard: View {
             : (model.lastSync.isEmpty ? "Sin consultar" : SyncSummary.compactUpdated(model.lastSync))
         let source = model.lastSource.isEmpty ? "Fuentes: \(model.followingText)" : SyncSummary.describe(model.lastSource)
         return "\(updated) · \(source)"
+    }
+}
+
+/// Versión nueva en el App Store: tarjeta fija arriba de la lista hasta actualizar o cerrarla.
+/// Antes era una alerta que, si coincidía con otra ventana (anuncio de apertura, elegir
+/// boletines), iOS no llegaba a mostrar y no volvía a salir.
+struct UpdateCard: View {
+    @ObservedObject private var update = UpdateCheck.shared
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: "arrow.down.app.fill")
+                .font(.title2)
+                .foregroundStyle(Palette.blue)
+            VStack(alignment: .leading, spacing: 6) {
+                Text("Nueva versión \(update.latest) disponible")
+                    .font(.subheadline.bold())
+                    .foregroundStyle(Palette.navy)
+                Text("Actualiza OpoAlert en el App Store para tener las últimas mejoras.")
+                    .font(.caption)
+                    .foregroundStyle(Palette.slate)
+                Button("Actualizar") { update.openStore() }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.small)
+            }
+            Spacer(minLength: 0)
+            Button {
+                update.dismiss()
+            } label: {
+                Image(systemName: "xmark").font(.caption.bold()).foregroundStyle(Palette.slate)
+            }
+            .buttonStyle(.borderless)
+            .accessibilityLabel("Cerrar aviso de versión nueva")
+        }
+        .padding(12)
+        .background(Color(hex: 0xE4EDFF), in: RoundedRectangle(cornerRadius: 16))
     }
 }

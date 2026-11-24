@@ -146,8 +146,10 @@ final class Ads: ObservableObject {
 
     /// Se ha cerrado una ficha. Cada 3 sale un intersticial; si aún no ha cargado o es
     /// pronto (menos de 1 minuto desde otro a pantalla completa), sale en la siguiente.
-    func noticeClosed(premium: Bool) {
-        guard ready, !premium, !interstitialID.isEmpty else { return }
+    /// true si va a intentar mostrar el intersticial (entonces no se pide la valoración).
+    @discardableResult
+    func noticeClosed(premium: Bool) -> Bool {
+        guard ready, !premium, !interstitialID.isEmpty else { return false }
         let count = defaults.integer(forKey: noticesKey) + 1
         defaults.set(count, forKey: noticesKey)
         if interstitial != nil, Date().timeIntervalSince(interstitialLoadedAt) > Self.interstitialLifetime {
@@ -156,7 +158,7 @@ final class Ads: ObservableObject {
         guard count >= Self.noticesPerInterstitial, interstitial != nil,
               Date().timeIntervalSince1970 - defaults.double(forKey: lastFullscreenKey) >= Self.fullscreenGap else {
             loadInterstitial()
-            return
+            return false
         }
         // Antes se presentaba a los 0,5 s, a veces con la animación de volver a la lista aún
         // en marcha: iOS rechazaba la presentación sin avisar y nunca salía ninguno
@@ -179,6 +181,7 @@ final class Ads: ObservableObject {
             }
             ad.present(from: top)
         }
+        return true
     }
 
     /// Los banners se guardan por posición: si SwiftUI vuelve a dibujar la lista (por ejemplo

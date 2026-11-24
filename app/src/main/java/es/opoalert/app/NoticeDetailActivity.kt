@@ -28,6 +28,9 @@ class NoticeDetailActivity : Activity() {
     private lateinit var notice: Notice
     private lateinit var topFavorite: TextView
     private lateinit var favoriteAction: TextView
+    /** Plazo leído de `docs/plazos` (null mientras carga o si no hay). */
+    private var deadline: Deadline? = null
+    private lateinit var tracking: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +46,7 @@ class NoticeDetailActivity : Activity() {
         setContentView(createPage())
         SystemBars.fit(this)
         updateFavoriteState()
+        ReviewPrompt.noticeOpened(this)
     }
 
     private fun createPage(): LinearLayout {
@@ -61,6 +65,8 @@ class NoticeDetailActivity : Activity() {
         addHero(content)
         addOfficialButton(content)
         addDeadline(content)
+        tracking = column()
+        content.addView(tracking, LinearLayout.LayoutParams(-1, -2))
         addSede(content)
         addSummary(content)
         addBanner(content, top = 10)
@@ -273,6 +279,8 @@ class NoticeDetailActivity : Activity() {
             val deadline = DeadlineStore.find(applicationContext, province, notice.url)
             runOnUiThread {
                 if (deadline == null || isFinishing || isDestroyed) return@runOnUiThread
+                this.deadline = deadline
+                rememberDeadline()
                 card.addView(text("⏱  PLAZO DE PRESENTACIÓN", 11f, "#B45309", true))
                 card.addView(text(deadline.label, 22f, "#13223C", true).apply { setPadding(0, dp(7), 0, dp(8)) })
                 card.addView(text("Según el anuncio:", 11.5f, "#7A5A2B", true))
@@ -287,12 +295,26 @@ class NoticeDetailActivity : Activity() {
                     setPadding(0, dp(4), 0, dp(8))
                     setOnClickListener { openOfficial(deadline.page) }
                 })
-                card.addView(text(
-                    "OpoAlert no calcula la fecha: el plazo puede empezar con otra publicación (por ejemplo, " +
-                        "el extracto en el BOE). Compruébalo siempre en el anuncio oficial.",
-                    10.5f, "#8A6D3B"
-                ))
+                val until = deadline.until
+                if (until != null) {
+                    card.addView(text("Acaba como pronto el " + FavoriteAgenda.longDay(until) +
+                        if (until.isBefore(java.time.LocalDate.now())) " (ya ha pasado)" else "",
+                        14f, "#13223C", true).apply { setPadding(0, 0, 0, dp(6)) })
+                    card.addView(text(
+                        "Fecha orientativa: cuenta desde la publicación en este boletín, sin sábados, domingos ni " +
+                            "fiestas nacionales. Los festivos de tu comunidad o municipio pueden alargarlo unos días. " +
+                            "Compruébalo siempre en el anuncio oficial.",
+                        10.5f, "#8A6D3B"
+                    ))
+                } else {
+                    card.addView(text(
+                        "OpoAlert no calcula la fecha: el plazo puede empezar con otra publicación (por ejemplo, " +
+                            "el extracto en el BOE). Compruébalo siempre en el anuncio oficial.",
+                        10.5f, "#8A6D3B"
+                    ))
+                }
                 card.visibility = View.VISIBLE
+                renderTracking()
             }
         }.start()
     }
@@ -404,11 +426,109 @@ class NoticeDetailActivity : Activity() {
         val saved = FavoritesStore.contains(this, notice.id)
         topFavorite.text = if (saved) "★" else "☆"
         favoriteAction.text = if (saved) "★   Quitar de favoritas" else "☆   Guardar en favoritas"
+        renderTracking()
+    }
+
+    /** Guarda la fecha orientativa en la agenda de la favorita (para ordenar Favoritas). */
+    private fun rememberDeadline() {
+        if (!FavoritesStore.contains(this, notice.id)) return
+        val until = deadline?.until
+        FavoriteAgenda.update(this, notice.id) { it.copy(until = until ?: it.until, checked = true) }
+        DeadlineReminder.sync(this, notice)
+        // Sin permiso de notificaciones (Android 13+) el recordatorio no llegaría.
+        if (DeadlineReminder.plannedDay(this, notice) != null && android.os.Build.VERSION.SDK_INT >= 33 &&
+            checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) !=
+            android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 57)
+        }
+    }
+
+    /**
+     * «Mi seguimiento» de una favorita: recordatorio del plazo, «ya la he presentado» y una nota.
+     * Es de Premium (como las alertas); sin Premium se explica y abre la pantalla de Premium.
+     */
+    private fun renderTracking() {
+        if (!::tracking.isInitialized) return
+        tracking.removeAllViews()
+        if (!FavoritesStore.contains(this, notice.id)) return
+        val entry = FavoriteAgenda.get(this, notice.id)
+        val unlocked = Premium.alertsUnlocked(this)
+        val card = column().apply {
+            background = rounded("#F3F0FF", 16, "#DDD3FB")
+            setPadding(dp(16), dp(14), dp(16), dp(12))
+        }
+        card.addView(text("★  MI SEGUIMIENTO", 11f, "#6D28D9", true))
+        if (!unlocked) {
+            card.addView(text(
+                "Con OpoAlert Premium te avisamos antes de que acabe el plazo, marcas las solicitudes " +
+                    "que ya has presentado y guardas tus notas.", 13f, "#3B2A63"
+            ).apply { setPadding(0, dp(8), 0, dp(10)) })
+            card.addView(action("Ver Premium (prueba gratis)", "#6D28D9", "#FFFFFF") {
+                PremiumDialog.show(this) { renderTracking() }
+            }, LinearLayout.LayoutParams(-1, dp(46)))
+            tracking.addView(card, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(8); bottomMargin = dp(6) })
+            return
+        }
+        val planned = DeadlineReminder.plannedDay(this, notice)
+        val reminder = when {
+            entry.submitted -> "Solicitud presentada: no hace falta recordatorio."
+            planned != null -> "🔔 Te avisaremos el " + FavoriteAgenda.longDay(planned) + " a las 9:00."
+            deadline?.until != null -> "El plazo orientativo ya ha pasado."
+            else -> "Sin recordatorio: este anuncio no permite estimar la fecha de fin."
+        }
+        card.addView(text(reminder, 13f, "#3B2A63").apply { setPadding(0, dp(8), 0, dp(8)) })
+        card.addView(text(if (entry.submitted) "☑  Ya he presentado la solicitud" else "☐  Ya he presentado la solicitud",
+            14f, "#3B2A63", true).apply {
+            minHeight = dp(40)
+            gravity = Gravity.CENTER_VERTICAL
+            isClickable = true
+            isFocusable = true
+            setOnClickListener {
+                FavoriteAgenda.update(this@NoticeDetailActivity, notice.id) { it.copy(submitted = !it.submitted) }
+                DeadlineReminder.sync(this@NoticeDetailActivity, notice)
+                renderTracking()
+            }
+        })
+        card.addView(text(if (entry.note.isBlank()) "✎  Añadir una nota" else "✎  " + entry.note, 13.5f,
+            if (entry.note.isBlank()) "#6D28D9" else "#3B2A63", entry.note.isBlank()).apply {
+            minHeight = dp(40)
+            gravity = Gravity.CENTER_VERTICAL
+            isClickable = true
+            isFocusable = true
+            setOnClickListener { editNote(entry.note) }
+        })
+        tracking.addView(card, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(8); bottomMargin = dp(6) })
+    }
+
+    private fun editNote(current: String) {
+        val input = android.widget.EditText(this).apply {
+            setText(current)
+            hint = "Por ejemplo: pagar la tasa antes del viernes"
+            filters = arrayOf(android.text.InputFilter.LengthFilter(FavoriteAgenda.NOTE_MAX))
+            minLines = 2
+        }
+        val box = android.widget.FrameLayout(this).apply {
+            setPadding(dp(20), dp(8), dp(20), 0)
+            addView(input)
+        }
+        android.app.AlertDialog.Builder(this)
+            .setTitle("Nota de esta convocatoria")
+            .setView(box)
+            .setPositiveButton("Guardar") { _, _ ->
+                FavoriteAgenda.update(this, notice.id) { it.copy(note = input.text.toString().trim()) }
+                renderTracking()
+            }
+            .setNegativeButton("Cancelar", null)
+            .show()
     }
 
     private fun changeFavorite() {
         try {
             val saved = FavoritesStore.toggle(this, notice)
+            if (saved) rememberDeadline() else {
+                FavoriteAgenda.remove(this, notice.id)
+                DeadlineReminder.cancel(this, notice.id)
+            }
             updateFavoriteState()
             Toast.makeText(this,
                 if (saved) "Guardada en favoritas" else "Eliminada de favoritas",
@@ -420,14 +540,11 @@ class NoticeDetailActivity : Activity() {
     }
 
     private fun share() {
-        val message = NoticeText.headline(notice.title) + "\n" + notice.entity +
-            "\n" + (if (notice.id.startsWith("CIDO")) "CIDO" else if (notice.id.startsWith("BOE-A-")) "BOE" else if (notice.id.startsWith("MD-")) "BOCM" else if (notice.id.startsWith("CM-")) "DOCM" else if (notice.id.startsWith("CY-")) "BOCYL" else if (notice.id.startsWith("EX-")) "DOE" else if (notice.id.startsWith("MU-")) "BORM" else "BOP") + " " + notice.province + " · " + notice.date +
-            " · Registro " + notice.id + "\n" + notice.url +
-            "\n\nVerifica las bases y los plazos en el anuncio oficial."
+        val message = ShareText.message(notice, deadline)
         try {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
-                putExtra(Intent.EXTRA_SUBJECT, "Convocatoria de empleo público · OpoAlert")
+                putExtra(Intent.EXTRA_SUBJECT, ShareText.SUBJECT)
                 putExtra(Intent.EXTRA_TEXT, message)
             }, "Compartir convocatoria"))
         } catch (_: ActivityNotFoundException) {

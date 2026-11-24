@@ -35,10 +35,29 @@ struct AlertsView: View {
                 Section {
                     Button { showPremium = true } label: {
                         VStack(alignment: .leading, spacing: 6) {
+                            // Prueba gratuita bien a la vista (1.57.0).
+                            if let days = premium.trialDays {
+                                Label("Pruébalo gratis \(days) días", systemImage: "gift.fill")
+                                    .font(.title3.bold()).foregroundStyle(Color(hex: 0x7A4A00))
+                            }
                             Label("Las alertas son de OpoAlert Premium", systemImage: "star.fill")
                                 .font(.headline).foregroundStyle(Color(hex: 0x7A4A00))
-                            Text("Te avisamos en cuanto sale una convocatoria de tu puesto y provincia, y sin publicidad. Toca aquí para ver el precio y la prueba gratuita.")
+                            Text("Te avisamos en cuanto sale una convocatoria de tu puesto y provincia, te recordamos el plazo de tus favoritas y quitas la publicidad.")
                                 .font(.subheadline).foregroundStyle(Color(hex: 0x7A5A2B))
+                            if let days = premium.trialDays {
+                                Text("Probar gratis \(days) días")
+                                    .font(.headline).foregroundStyle(.white)
+                                    .frame(maxWidth: .infinity, minHeight: 44)
+                                    .background(Color(hex: 0xC96812), in: RoundedRectangle(cornerRadius: 12))
+                                    .padding(.top, 4)
+                                if let price = premium.priceText {
+                                    Text("Después, \(price). Cancela cuando quieras desde Ajustes.")
+                                        .font(.caption).foregroundStyle(Color(hex: 0x8A6D3B))
+                                }
+                            } else {
+                                Text("Toca aquí para ver el precio y la prueba gratuita.")
+                                    .font(.subheadline).foregroundStyle(Color(hex: 0x7A5A2B))
+                            }
                         }
                     }
                     .buttonStyle(.plain)
@@ -52,7 +71,8 @@ struct AlertsView: View {
                 Button {
                     if premium.isActive { editing = AlertDraft(rule: nil, followed: model.selected) } else { showPremium = true }
                 } label: {
-                    Label("Crear nueva alerta", systemImage: "plus")
+                    Label(!premium.isActive && premium.trialDays != nil
+                          ? "Crear alerta · \(premium.trialDays ?? 0) días gratis" : "Crear nueva alerta", systemImage: "plus")
                         .font(.headline)
                         .frame(maxWidth: .infinity, minHeight: 44)
                 }

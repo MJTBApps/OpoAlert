@@ -27,7 +27,6 @@ extension Color {
 /// Tres pestañas, como en Android: Explorar, Favoritas y Alertas.
 struct RootView: View {
     @EnvironmentObject private var model: AppModel
-    @ObservedObject private var update = UpdateCheck.shared
 
     var body: some View {
         TabView(selection: $model.tab) {
@@ -50,12 +49,6 @@ struct RootView: View {
             Button("Ahora no", role: .cancel) {}
         } message: {
             Text(PremiumNudge.message)
-        }
-        .alert("Nueva versión de OpoAlert", isPresented: $update.showAlert) {
-            Button("Actualizar") { update.openStore() }
-            Button("Más tarde", role: .cancel) {}
-        } message: {
-            Text("Ya está disponible la versión \(update.latest) en el App Store, con mejoras y correcciones. Te recomendamos actualizar.")
         }
         .sheet(item: $model.openedNotice) { notice in
             NavigationStack {

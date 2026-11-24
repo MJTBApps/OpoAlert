@@ -4,6 +4,8 @@ import SwiftUI
 /// Tarjeta de una convocatoria, con el mismo contenido que en Android.
 struct NoticeRow: View {
     let notice: Notice
+    /// En Favoritas: plazo orientativo, «presentada» y nota (1.57.0).
+    var showAgenda = false
     @EnvironmentObject private var model: AppModel
     @ObservedObject private var premium = PremiumStore.shared
 
@@ -57,6 +59,9 @@ struct NoticeRow: View {
                             .background(Color(hex: 0xF1EAFE), in: RoundedRectangle(cornerRadius: 8))
                             .accessibilityLabel("Encontrada por tus alertas: " + phrases.joined(separator: ", "))
                     }
+                    if showAgenda, let entry = model.agenda[notice.id] {
+                        AgendaLine(entry: entry)
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
@@ -67,7 +72,7 @@ struct NoticeRow: View {
                     .foregroundStyle(Palette.slate)
                     .lineLimit(1)
                 Spacer()
-                ShareLink(item: notice.shareText, subject: Text("Convocatoria de empleo público · OpoAlert")) {
+                ShareLink(item: notice.shareText, subject: Text(ShareText.subject)) {
                     Label("Compartir", systemImage: "square.and.arrow.up")
                         .font(.caption.bold())
                 }
@@ -93,5 +98,38 @@ struct NoticeTag: View {
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
             .background(fill, in: RoundedRectangle(cornerRadius: 8))
+    }
+}
+
+/// Plazo orientativo y seguimiento de una favorita, como en Android.
+struct AgendaLine: View {
+    let entry: AgendaEntry
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            if let label {
+                Text(label.text)
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(label.color)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(label.fill, in: RoundedRectangle(cornerRadius: 8))
+            }
+            if !entry.noteText.isEmpty {
+                Text("✎ " + entry.noteText)
+                    .font(.caption)
+                    .foregroundStyle(Color(hex: 0x5B4B8A))
+                    .lineLimit(2)
+            }
+        }
+    }
+
+    private var label: (text: String, color: Color, fill: Color)? {
+        if entry.submitted { return ("✓ Solicitud presentada", Color(hex: 0x13795B), Color(hex: 0xE8F5EE)) }
+        guard let until = entry.until, let left = AgendaDates.daysLeft(until) else { return nil }
+        if left < 0 { return ("⏱ Plazo orientativo pasado (\(AgendaDates.short(until)))", Color(hex: 0xB45309), Color(hex: 0xFFF7E8)) }
+        let text = left == 0 ? "⏱ Acaba como pronto hoy"
+            : "⏱ Acaba como pronto el \(AgendaDates.short(until)) · quedan \(left) días"
+        return left <= 3 ? (text, Color(hex: 0xB91C1C), Color(hex: 0xFDECEC)) : (text, Color(hex: 0xB45309), Color(hex: 0xFFF7E8))
     }
 }

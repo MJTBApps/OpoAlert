@@ -127,6 +127,8 @@ struct PremiumView: View {
                     Label("Sin publicidad: ni al abrir la app ni entre las convocatorias.", systemImage: "nosign")
                     Label("Alertas personalizadas: te avisamos cuando sale una convocatoria de tu puesto y provincia.",
                           systemImage: "bell.badge")
+                    Label("Recordatorio antes de que acabe el plazo de tus favoritas, con notas y «ya presentada».",
+                          systemImage: "timer")
                     Label("Con tu suscripción ayudas a mantener OpoAlert, un proyecto independiente, y a seguir añadiendo boletines.",
                           systemImage: "heart")
                 }
@@ -164,7 +166,8 @@ struct PremiumView: View {
                     Section { Text(message).foregroundStyle(Palette.slate) }
                 }
             }
-            .navigationTitle("OpoAlert Premium")
+            .navigationTitle(!premium.isActive && premium.trialDays != nil
+                             ? "Prueba gratis \(premium.trialDays ?? 0) días" : "OpoAlert Premium")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Cerrar") { dismiss() } } }
             .task { if premium.product == nil { await premium.loadProduct() } }

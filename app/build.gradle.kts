@@ -40,8 +40,8 @@ android {
         minSdk = 26
         // Google Play exige API 36 a las apps nuevas desde el 31/08/2026.
         targetSdk = 36
-        versionCode = 79
-        versionName = "1.56.2"
+        versionCode = 80
+        versionName = "1.57.0"
         buildConfigField("String", "FCM_APP_ID", firebase("appId"))
         buildConfigField("String", "FCM_API_KEY", firebase("apiKey"))
         buildConfigField("String", "FCM_PROJECT_ID", firebase("projectId"))
@@ -141,6 +141,9 @@ dependencies {
     implementation("com.google.android.ump:user-messaging-platform:4.0.0")
     implementation("com.android.billingclient:billing-ktx:8.0.0")
     implementation("com.google.firebase:firebase-messaging:24.1.2")
+    // Valoración y aviso de versión nueva de Google Play (1.57.0).
+    implementation("com.google.android.play:review-ktx:2.0.2")
+    implementation("com.google.android.play:app-update-ktx:2.1.0")
 }
 
 // Nunca se sube a Google Play una versión con anuncios de prueba ni sin firmar.

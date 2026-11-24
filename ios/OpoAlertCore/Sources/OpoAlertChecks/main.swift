@@ -295,6 +295,51 @@ do {
 }
 defaults.removePersistentDomain(forName: suite)
 
+// MARK: Plazo orientativo, agenda de favoritas y compartir (1.57.0)
+
+do {
+    func plazo(_ extra: String) -> Data {
+        Data(#"{"schemaVersion":1,"items":{"\#(plazoURL)":{"days":20,"kind":"hábiles","page":1,"text":"El plazo de presentación de solicitudes será de veinte días hábiles."\#(extra)}}}"#.utf8)
+    }
+    equal(Deadlines.parse(plazo(#","hasta":"2026-12-14""#), noticeURL: plazoURL)?.until, "2026-12-14", "fecha orientativa")
+    equal(Deadlines.parse(plazo(#","hasta":"14/12/2026""#), noticeURL: plazoURL)?.until, nil, "fecha con otra forma")
+    equal(Deadlines.parse(plazo(#","hasta":"2026-02-30""#), noticeURL: plazoURL)?.until, nil, "fecha que no existe")
+    equal(Deadlines.parse(plazo(""), noticeURL: plazoURL)?.until, nil, "sin fecha orientativa")
+
+    let now = AgendaDates.date("2026-11-24")!.addingTimeInterval(10 * 3600)
+    func n(_ id: String) -> Notice {
+        Notice(id: id, title: "Convocatoria \(id)", entity: "Ayuntamiento", date: "24/11/2026", bulletin: "1",
+               type: "Plaza", url: plazoURL)
+    }
+    let agenda: [String: AgendaEntry] = [
+        "A": AgendaEntry(until: "2026-12-20"), "B": AgendaEntry(),
+        "C": AgendaEntry(until: "2026-11-27"), "D": AgendaEntry(until: "2026-11-01"),
+        "E": AgendaEntry(until: "2026-11-26", submitted: true),
+    ]
+    equal(FavoriteAgenda.sort(["A", "B", "C", "D", "E"].map(n), agenda: agenda, now: now).map(\.id),
+          ["C", "A", "B", "D", "E"], "orden de favoritas por plazo")
+    equal(AgendaDates.remindDay("2026-12-14", now: now), AgendaDates.date("2026-12-12"), "aviso dos días antes")
+    equal(AgendaDates.remindDay("2026-11-25", now: now), AgendaDates.date("2026-11-24"), "aviso hoy si queda poco")
+    equal(AgendaDates.remindDay("2026-11-23", now: now), nil, "sin aviso si ya pasó")
+    equal(AgendaDates.long("2026-11-26"), "jueves 26 de noviembre", "día en castellano")
+
+    let defaults = UserDefaults(suiteName: "opoalert-checks-agenda")!
+    defaults.removePersistentDomain(forName: "opoalert-checks-agenda")
+    let store = Store(defaults: defaults)
+    store.updateAgenda("A") { $0.until = "2026-12-20"; $0.note = "pagar la tasa" }
+    // Mismo formato que Android (`FavoriteAgenda.kt`): un objeto JSON en texto.
+    defaults.set(#"{"X":{"until":"2026-12-01","checked":true,"submitted":true}}"#, forKey: "favorite_agenda_v1")
+    equal(store.agenda["X"], AgendaEntry(until: "2026-12-01", checked: true, submitted: true), "agenda guardada por Android")
+    store.updateAgenda("Y") { $0.note = "" }
+    equal(store.agenda["Y"]?.note, nil, "nota vacía no se guarda")
+    store.removeAgenda("X")
+    equal(store.agenda["X"], nil, "agenda borrada al quitar la favorita")
+
+    let shared = n("BOE-A-2026-1").shareText(deadline: Deadline(days: 20, kind: "hábiles", text: "x", page: 1))
+    check(shared.contains(plazoURL) && shared.contains("20 días hábiles (según el anuncio)") &&
+          shared.hasSuffix(ShareText.appLink) && shared.contains("BOE "), "texto al compartir")
+}
+
 // MARK: Feeds publicados (docs/)
 
 if CommandLine.arguments.count > 1 {

@@ -11,7 +11,7 @@ public struct StoreError: LocalizedError, Equatable {
 public final class Store: @unchecked Sendable {
     public static let maxRules = 20
 
-    private let defaults: UserDefaults
+    let defaults: UserDefaults
     private let lock = NSLock()
 
     public init(defaults: UserDefaults = .standard) {

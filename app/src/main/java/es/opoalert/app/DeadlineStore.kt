@@ -7,8 +7,13 @@ import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
 
-/** Plazo de presentación tal como lo escribe el anuncio. OpoAlert no calcula fechas. */
-data class Deadline(val days: Int, val kind: String, val text: String, val page: Int) {
+/**
+ * Plazo de presentación tal como lo escribe el anuncio. [until] es la fecha orientativa del
+ * último día, «como pronto», que `backend/plazo_fin.py` solo calcula cuando el plazo cuenta
+ * desde este mismo boletín (sin festivos autonómicos ni locales, que solo pueden alargarlo).
+ */
+data class Deadline(val days: Int, val kind: String, val text: String, val page: Int,
+                    val until: java.time.LocalDate? = null) {
     val label: String get() = "$days días $kind"
 }
 
@@ -76,8 +81,13 @@ object DeadlineStore {
         val page = item.optInt("page", -1)
         // Las mismas comprobaciones que el servidor: si algo no encaja, mejor no mostrarlo.
         if (days !in 1..90 || kind !in kinds || page < 1 || quote.length !in 20..400) return null
-        return Deadline(days, kind, quote, page)
+        return Deadline(days, kind, quote, page, parseUntil(item.optString("hasta")))
     }
+
+    private val isoDay = Regex("20\\d\\d-\\d\\d-\\d\\d")
+
+    fun parseUntil(raw: String): java.time.LocalDate? =
+        if (!isoDay.matches(raw)) null else try { java.time.LocalDate.parse(raw) } catch (_: Exception) { null }
 
     private fun read(context: Context, province: Province): String? {
         val address = urlFor(province)

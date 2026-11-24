@@ -289,6 +289,30 @@ def candidate_notices(feed: dict):
                 yield url
 
 
+def publication_dates(feed: dict) -> dict:
+    """Enlace del anuncio → fecha del boletín en que se publicó."""
+    from plazo_fin import parse_feed_date
+
+    out = {}
+    for value in feed.values():
+        if isinstance(value, list):
+            for item in value:
+                if isinstance(item, dict) and item.get("url"):
+                    out[str(item["url"])] = parse_feed_date(item.get("date"))
+    return out
+
+
+def add_end_dates(feed_name: str, items: dict, dates: dict) -> None:
+    """Añade «hasta» (fecha orientativa, como pronto) cuando el plazo cuenta desde este boletín."""
+    from plazo_fin import end_for
+
+    for url, item in items.items():
+        item.pop("hasta", None)
+        end = end_for(feed_name, item, dates.get(url))
+        if end:
+            item["hasta"] = end
+
+
 def download(url: str) -> bytes | None:
     import requests
 
@@ -313,6 +337,9 @@ def problem(url: str, item: dict, urls: set[str]) -> str | None:
     text = item.get("text")
     if not (isinstance(item.get("page"), int) and item["page"] >= 1 and isinstance(text, str) and 20 <= len(text) <= 400):
         return "cita no válida"
+    end = item.get("hasta")
+    if end is not None and not (isinstance(end, str) and re.fullmatch(r"20\d\d-\d\d-\d\d", end)):
+        return "fecha estimada no válida"
     if not re.search(rf"\b{item['days']}\b", text) and not any(
             re.search(rf"\b{re.escape(word)}\b", fold(text)) for word, number in WORDS.items() if number == item["days"]):
         return "la cita no contiene los días"
@@ -338,6 +365,7 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
     stats = {"leidos": 0, "con_plazo": 0, "con_sede": 0, "fallidos": 0, "pendientes": 0}
     jobs = []
     states = {}
+    dates: dict[str, dict] = {}
     for feed_path in sorted(docs.glob("*.json")):
         if feed_path.name in NOT_FEEDS:
             continue
@@ -348,6 +376,7 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
         if not isinstance(feed, dict):
             continue
         urls = list(dict.fromkeys(candidate_notices(feed)))
+        dates[feed_path.name] = publication_dates(feed)
         target = out_dir / feed_path.name
         old = json.loads(target.read_text(encoding="utf-8")) if target.exists() else {}
         # Se quedan solo los anuncios que siguen en el feed (ventana de 30 días).
@@ -397,6 +426,7 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
 
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     for name, (state, urls) in states.items():
+        add_end_dates(name, state["items"], dates.get(name, {}))
         sedes = choose_sedes(state["sedeRaw"], urls)
         stats["con_sede"] += len(sedes)
         document = {"schemaVersion": 1, "updatedUTC": now, "items": state["items"],

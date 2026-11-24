@@ -66,15 +66,19 @@ public struct Notice: Codable, Hashable, Identifiable, Sendable {
     }
 
     /// Texto para compartir: siempre con el enlace oficial y el aviso de comprobarlo.
-    public var shareText: String {
-        let kind: String
-        if id.hasPrefix("CIDO") { kind = "CIDO" }
-        else if id.hasPrefix("BOE-A-") { kind = "BOE" }
-        else if id.hasPrefix("MD-") { kind = "BOCM" }
-        else if id.hasPrefix("CM-") { kind = "DOCM" }
-        else { kind = "BOP" }
-        return "\(headline)\n\(entity)\n\(kind) \(province) · \(date) · Referencia \(id)\n\(url)\n\n" +
-            "Comprueba siempre el anuncio oficial y los plazos."
+    public var shareText: String { shareText(deadline: nil) }
+
+    /// Texto al compartir (como `ShareText.kt`): enlace oficial, plazo literal si se conoce
+    /// y el enlace para descargar OpoAlert.
+    public func shareText(deadline: Deadline?) -> String {
+        var text = "📢 \(headline)\n"
+        if !entity.isEmpty { text += "\(entity)\n" }
+        text += "\(ShareText.bulletin(id)) \(province) · \(date)\n"
+        if let deadline { text += "⏱ Plazo: \(deadline.label) (según el anuncio)\n" }
+        text += "\nAnuncio oficial: \(url)\n"
+        text += "Comprueba siempre las bases y los plazos en el anuncio oficial.\n\n"
+        text += "Visto en OpoAlert, la app gratis de oposiciones y empleo público: \(ShareText.appLink)"
+        return text
     }
 }
 

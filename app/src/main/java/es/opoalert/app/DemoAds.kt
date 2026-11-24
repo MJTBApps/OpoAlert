@@ -115,8 +115,9 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
      * sale un anuncio a pantalla completa, nunca a menos de 2 minutos de otro (apertura incluida).
      * Si aún no ha cargado o es pronto, sale en la siguiente ficha.
      */
-    fun noticeClosed() {
-        if (INTERSTITIAL_ID.isBlank() || !Premium.showsAds(activity)) return
+    /** true si se ha mostrado el anuncio a pantalla completa. */
+    fun noticeClosed(): Boolean {
+        if (INTERSTITIAL_ID.isBlank() || !Premium.showsAds(activity)) return false
         val count = prefs.getInt(NOTICES_SINCE_AD, 0) + 1
         prefs.edit().putInt(NOTICES_SINCE_AD, count).apply()
         val now = System.currentTimeMillis()
@@ -124,7 +125,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
         if (interstitial != null && now - interstitialLoadedAt > INTERSTITIAL_LIFETIME_MS) interstitial = null
         val ad = interstitial
         if (count < NOTICES_PER_INTERSTITIAL || ad == null ||
-            now - prefs.getLong(LAST_FULLSCREEN, 0L) < FULLSCREEN_MIN_GAP_MS) { loadInterstitial(); return }
+            now - prefs.getLong(LAST_FULLSCREEN, 0L) < FULLSCREEN_MIN_GAP_MS) { loadInterstitial(); return false }
         interstitial = null
         prefs.edit().putInt(NOTICES_SINCE_AD, 0).putLong(LAST_FULLSCREEN, now).apply()
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
@@ -136,6 +137,7 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
             }
         }
         ad.show(activity)
+        return true
     }
 
     /** Anuncio n.º [slot] de la lista (empieza en 0); null mientras no haya cargado. */

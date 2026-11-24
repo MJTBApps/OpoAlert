@@ -94,6 +94,7 @@ class AlertsActivity : Activity() {
             ).apply { setPadding(0, dp(6), 0, 0) })
         }
         body.addView(premiumCard, LinearLayout.LayoutParams(-1, -2).apply { bottomMargin = dp(15) })
+        showTrial()
 
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         body.addView(list)
@@ -125,6 +126,32 @@ class AlertsActivity : Activity() {
         super.onResume()
         // Al volver de los ajustes de notificaciones de Android.
         if (::list.isInitialized) render()
+    }
+
+    /**
+     * Prueba gratuita bien a la vista (1.57.0): si Google Play ofrece días gratis, la tarjeta
+     * lo dice en grande con su botón y el de crear alerta también.
+     */
+    private fun showTrial() {
+        if (!PlayBilling.enabled || Premium.alertsUnlocked(this)) return
+        PlayBilling.loadOffer(this) { offer ->
+            val days = offer?.trialDays ?: return@loadOffer
+            if (isFinishing || isDestroyed || Premium.alertsUnlocked(this)) return@loadOffer
+            addButton.text = "＋  Crear alerta · $days días gratis"
+            premiumCard.addView(text("🎁  Pruébalo gratis $days días", 17f, "#7A4A00", true).apply {
+                setPadding(0, 0, 0, dp(10))
+            }, 0)
+            premiumCard.addView(text("Probar gratis $days días", 15f, "#FFFFFF", true).apply {
+                gravity = Gravity.CENTER
+                minHeight = dp(46)
+                background = rounded("#C96812", 13)
+                isClickable = true
+                isFocusable = true
+                setOnClickListener { PremiumDialog.show(this@AlertsActivity) { render() } }
+            }, LinearLayout.LayoutParams(-1, dp(46)).apply { topMargin = dp(12) })
+            premiumCard.addView(text("Después, " + offer.price + ". Cancela cuando quieras desde Google Play.",
+                11.5f, "#8A6D3B").apply { setPadding(0, dp(8), 0, 0) })
+        }
     }
 
     private fun render() {

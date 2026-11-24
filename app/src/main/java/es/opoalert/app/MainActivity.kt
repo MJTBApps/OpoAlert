@@ -515,8 +515,12 @@ class MainActivity : Activity() {
         // Las favoritas guardadas en versiones anteriores pueden tener titulos en
         // valenciano; mostramos la ficha castellana actual cuando el feed la trae.
         val latestById = notices.associateBy { it.id }
+        val agenda = if (selectedTab == TAB_FAVORITES) FavoriteAgenda.all(this) else emptyMap()
+        // Favoritas: primero las que acaban antes (1.57.0).
         val from = if (selectedTab == TAB_FAVORITES)
-            favorites.map { latestById[it.id] ?: it } else notices
+            FavoriteAgenda.sort(favorites.map { latestById[it.id] ?: it }, agenda, java.time.LocalDate.now())
+        else notices
+        if (selectedTab == TAB_FAVORITES) refreshAgenda(favorites)
         val fresh = freshIds()
         if (selectedFilter == FILTER_ALERTS && !Premium.alertsUnlocked(this)) selectedFilter = FILTER_ALL
         // Favoritas: solo las que has marcado, sin filtros (como en iOS).
@@ -562,7 +566,7 @@ class MainActivity : Activity() {
             })
         } else {
             for ((index, item) in shown.take(displayedLimit).withIndex()) {
-                addCard(item, item.id in favoriteIds, item.id in fresh, alerts[item.id].orEmpty())
+                addCard(item, item.id in favoriteIds, item.id in fresh, alerts[item.id].orEmpty(), agenda[item.id])
                 if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == DemoAds.LIST_AD_EVERY - 1) {
                     addBannerIfAvailable(index / DemoAds.LIST_AD_EVERY)
                 }
@@ -637,7 +641,13 @@ class MainActivity : Activity() {
 
     /** Aviso de versión nueva publicada en la web (una vez por sesión y versión). */
     private fun offerUpdate() {
-        if (!BuildConfig.SELF_UPDATE || updateOffered || isFinishing) return
+        if (updateOffered || isFinishing) return
+        if (!BuildConfig.SELF_UPDATE) {
+            // Versión de Google Play: pregunta a Google Play una vez por sesión (1.57.0).
+            updateOffered = true
+            PlayUpdate.check(this)
+            return
+        }
         val version = AppUpdate.pending(this) ?: return
         updateOffered = true
         AlertDialog.Builder(this)
@@ -663,7 +673,9 @@ class MainActivity : Activity() {
         if (::demoAds.isInitialized) demoAds.resume()
         if (returningFromDetail) {
             returningFromDetail = false
-            if (::demoAds.isInitialized) demoAds.noticeClosed()
+            val adShown = ::demoAds.isInitialized && demoAds.noticeClosed()
+            // Nunca encima de un anuncio: la valoración se pide en otra vuelta.
+            if (!adShown) ReviewPrompt.maybeAsk(this)
         }
         if (::tabsRow.isInitialized) {
             // Las favoritas pueden haber cambiado desde la nueva ficha a pantalla completa.
@@ -733,7 +745,8 @@ class MainActivity : Activity() {
     private var alertHitsKey: List<Any>? = null
     private var alertHitsCache: Map<String, List<String>> = emptyMap()
 
-    private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false, alerts: List<String> = emptyList()) {
+    private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false, alerts: List<String> = emptyList(),
+                        entry: AgendaEntry? = null) {
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(11), dp(14), dp(12))
@@ -812,6 +825,35 @@ class MainActivity : Activity() {
             ).apply { topMargin = dp(7) })
         }
 
+        // Favoritas: plazo orientativo y seguimiento (1.57.0).
+        if (entry != null && selectedTab == TAB_FAVORITES) {
+            val today = java.time.LocalDate.now()
+            val until = entry.until
+            val label = when {
+                entry.submitted -> "✓ Solicitud presentada"
+                until == null -> null
+                until.isBefore(today) -> "⏱ Plazo orientativo pasado (" + FavoriteAgenda.shortDay(until) + ")"
+                until == today -> "⏱ Acaba como pronto hoy"
+                else -> "⏱ Acaba como pronto el " + FavoriteAgenda.shortDay(until) +
+                    " · quedan " + java.time.temporal.ChronoUnit.DAYS.between(today, until) + " días"
+            }
+            val urgent = !entry.submitted && until != null && !until.isBefore(today) &&
+                java.time.temporal.ChronoUnit.DAYS.between(today, until) <= 3
+            if (label != null) {
+                card.addView(text(label, 11.5f, if (entry.submitted) "#13795B" else if (urgent) "#B91C1C" else "#B45309", true).apply {
+                    setPadding(dp(8), dp(4), dp(8), dp(4))
+                    background = rounded(if (entry.submitted) "#E8F5EE" else if (urgent) "#FDECEC" else "#FFF7E8", 8)
+                }, LinearLayout.LayoutParams(-2, -2).apply { topMargin = dp(7) })
+            }
+            if (entry.note.isNotBlank()) {
+                card.addView(text("✎ " + entry.note, 11.5f, "#5B4B8A").apply {
+                    maxLines = 2
+                    ellipsize = TextUtils.TruncateAt.END
+                    setPadding(0, dp(6), 0, 0)
+                })
+            }
+        }
+
         val footer = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
@@ -838,9 +880,29 @@ class MainActivity : Activity() {
         ).apply { bottomMargin = dp(9) })
     }
 
+    private var agendaRefreshing = false
+
+    /** Busca en segundo plano la fecha orientativa de las favoritas que no la tienen. */
+    private fun refreshAgenda(favorites: List<Notice>) {
+        if (agendaRefreshing || favorites.isEmpty()) return
+        agendaRefreshing = true
+        val context = applicationContext
+        Thread {
+            val changed = try { FavoriteAgenda.refresh(context, favorites) } catch (_: Exception) { false }
+            runOnUiThread {
+                agendaRefreshing = false
+                if (changed && !isFinishing && selectedTab == TAB_FAVORITES) render(keepScroll = true)
+            }
+        }.start()
+    }
+
     private fun toggleFavorite(item: Notice) {
         try {
             val saved = FavoritesStore.toggle(this, item)
+            if (!saved) {
+                FavoriteAgenda.remove(this, item.id)
+                DeadlineReminder.cancel(this, item.id)
+            } else agendaRefreshing = false
             Toast.makeText(this, if (saved) "Guardada en favoritas ★" else "Eliminada de favoritas", Toast.LENGTH_SHORT).show()
             updateHeader()
             buildTabs()
@@ -859,13 +921,11 @@ class MainActivity : Activity() {
     }
 
     private fun share(item: Notice) {
-        val origin = if (item.id.startsWith("CIDO")) "CIDO" else if (item.id.startsWith("BOE-A-")) "BOE" else if (item.id.startsWith("MD-")) "BOCM" else if (item.id.startsWith("CM-")) "DOCM" else "BOP"
-        val message = "${NoticeText.headline(item.title)}\n${item.entity}\n$origin ${item.province} · ${item.date} · Referencia ${item.id}\n" +
-            "${item.url}\n\nComprueba siempre el anuncio oficial y los plazos."
+        val message = ShareText.message(item)
         try {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
-                putExtra(Intent.EXTRA_SUBJECT, "Convocatoria de empleo público · OpoAlert")
+                putExtra(Intent.EXTRA_SUBJECT, ShareText.SUBJECT)
                 putExtra(Intent.EXTRA_TEXT, message)
             }, "Compartir convocatoria"))
         } catch (_: ActivityNotFoundException) {
