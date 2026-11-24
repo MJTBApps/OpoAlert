@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-24T06:38:38.880018+00:00",
+  "lastCheckedUTC": "2026-11-24T09:47:50.089154+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "nonPublicationDates": [
       "2026-10-26",
@@ -47,8 +48,7 @@
       "2026-11-12",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-24"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
@@ -56,6 +56,16 @@
     "opportunities": 92
   },
   "notices": [
+    {
+      "id": "CIDO8-15229734",
+      "title": "1 plaça de Tècnic mitjà de gestió local",
+      "entity": "Ajuntament de Tarragona - Institut Municipal de Serveis Socials",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/15229734"
+    },
     {
       "id": "CIDO8-22538826",
       "title": "1 plaça de Monitor de lleure",
@@ -245,16 +255,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22469386"
-    },
-    {
-      "id": "CIDO8-15229734",
-      "title": "1 plaça de Tècnic mitjà de gestió local",
-      "entity": "Ajuntament de Tarragona - Institut Municipal de Serveis Socials",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/15229734"
     },
     {
       "id": "CIDO8-22508057",
