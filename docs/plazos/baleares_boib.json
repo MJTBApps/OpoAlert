@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T07:35:39+00:00",
+ "updatedUTC": "2026-11-24T10:28:01+00:00",
  "items": {
   "https://www.caib.es/eboibfront/pdf/es/2026/139/1231771": {
    "days": 20,
@@ -463,6 +463,24 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de diez días hábiles, contados a partir del día siguiente a la publicación de la convocatoria al Boletín Oficial de las Islas Baleares (BOIB).",
    "page": 2
+  },
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233724": {
+   "days": 7,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de SIETE DÍAS HÁBILES, contados a partir del día siguiente de su publicación en el BOIB.",
+   "page": 2
+  },
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233709": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "SOLICITUDES El plazo de presentación de solicitudes comprenderá los 10 días hábiles siguientes a la publicación de la convocatoria.",
+   "page": 2
+  },
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233656": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes de inscripción es de diez días hábiles, a contar a partir del día siguiente al de la publicación de esta convocatoria en el , y deben dirigirse al rector de la Universidad de las Illes Balears.",
+   "page": 3
   }
  },
  "none": [
@@ -561,7 +579,13 @@
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233483",
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233518",
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233590",
-  "https://www.caib.es/eboibfront/pdf/es/2026/150/1233640"
+  "https://www.caib.es/eboibfront/pdf/es/2026/150/1233640",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233168",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233355",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233482",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233486",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233647",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233676"
  ],
  "tries": {},
  "sedes": {
@@ -606,7 +630,12 @@
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233440": "https://ajsantlluis.org/",
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233478": "https://calvia.convoca.online/",
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233542": "https://palma.sedipualba.es/",
-  "https://www.caib.es/eboibfront/pdf/es/2026/150/1233580": "https://ajpollenca.sedelectronica.es/"
+  "https://www.caib.es/eboibfront/pdf/es/2026/150/1233580": "https://ajpollenca.sedelectronica.es/",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233355": "https://oposicions.caib.es/",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233647": "https://santantoni.sedelectronica.es/",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233656": "https://seu.uib.cat/",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233709": "https://emaya.convoca.online/",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233724": "https://palma.sedipualba.es/"
  },
  "sedeRaw": {
   "https://www.caib.es/eboibfront/pdf/es/2026/137/1231310": [
@@ -747,6 +776,26 @@
   ],
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233580": [
    "https://ajpollenca.sedelectronica.es/"
+  ],
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233355": [
+   "https://www.caib.es/",
+   "https://oposicions.caib.es/"
+  ],
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233482": [
+   "https://www.caib.es/"
+  ],
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233647": [
+   "https://santantoni.sedelectronica.es/"
+  ],
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233656": [
+   "https://seu.uib.cat/",
+   "https://www.caib.es/"
+  ],
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233709": [
+   "https://emaya.convoca.online/"
+  ],
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233724": [
+   "https://palma.sedipualba.es/"
   ]
  },
  "sinSede": [
@@ -877,6 +926,9 @@
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233518",
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233544",
   "https://www.caib.es/eboibfront/pdf/es/2026/150/1233590",
-  "https://www.caib.es/eboibfront/pdf/es/2026/150/1233640"
+  "https://www.caib.es/eboibfront/pdf/es/2026/150/1233640",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233168",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233486",
+  "https://www.caib.es/eboibfront/pdf/es/2026/151/1233676"
  ]
 }
