@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-24T12:47:43.643989+00:00",
+  "lastCheckedUTC": "2026-11-24T16:42:49.655476+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 95,
-    "opportunities": 95,
+    "announcementsRead": 96,
+    "opportunities": 96,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 95,
-    "opportunities": 95
+    "announcementsRead": 96,
+    "opportunities": 96
   },
   "notices": [
     {
@@ -75,6 +75,16 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22547660"
+    },
+    {
+      "id": "CIDO8-22547478",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Renau",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22547478"
     },
     {
       "id": "CIDO8-22547468",
