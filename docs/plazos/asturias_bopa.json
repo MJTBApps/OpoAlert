@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T21:51:22+00:00",
+ "updatedUTC": "2026-11-25T07:39:09+00:00",
  "items": {
   "https://www.asturias.es/bopa/2026/10/30/2026-08819.pdf": {
    "days": 10,
@@ -77,26 +77,6 @@
    "text": "…activación en el ámbito local, abriéndose un plazo de diez días naturales para la presentación de instancias, a contar dese el siguiente a la publicación de éste anuncio en el BOPA.",
    "page": 1,
    "hasta": "2026-11-06"
-  },
-  "https://www.asturias.es/bopa/2026/10/26/2026-08450.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "…dicha fecha de publicación en el BOE el plazo de 20 días hábiles para la presentación de las solicitudes de participación.",
-   "page": 1
-  },
-  "https://www.asturias.es/bopa/2026/10/26/2026-08433.pdf": {
-   "days": 10,
-   "kind": "naturales",
-   "text": "El plazo de presentación de solicitudes será de diez días naturales, contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Principado de Asturias.",
-   "page": 5,
-   "hasta": "2026-11-05"
-  },
-  "https://www.asturias.es/bopa/2026/10/26/2026-08430.pdf": {
-   "days": 10,
-   "kind": "naturales",
-   "text": "El plazo de presentación de solicitudes será de diez días naturales, contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Principado de Asturias.",
-   "page": 5,
-   "hasta": "2026-11-05"
   },
   "https://www.asturias.es/bopa/2026/11/03/2026-08769.pdf": {
    "days": 10,
@@ -304,12 +284,11 @@
   "https://www.asturias.es/bopa/2026/11/18/2026-09522.pdf",
   "https://www.asturias.es/bopa/2026/11/19/2026-09391.pdf",
   "https://www.asturias.es/bopa/2026/11/19/2026-09449.pdf",
-  "https://www.asturias.es/bopa/2026/11/23/2026-09533.pdf"
+  "https://www.asturias.es/bopa/2026/11/23/2026-09533.pdf",
+  "https://www.asturias.es/bopa/2026/11/25/2026-09486.pdf"
  ],
  "tries": {},
  "sedes": {
-  "https://www.asturias.es/bopa/2026/10/26/2026-08430.pdf": "https://colunga.sedelectronica.e-ayuntamiento.es/",
-  "https://www.asturias.es/bopa/2026/10/26/2026-08433.pdf": "https://colunga.sedelectronica.e-ayuntamiento.es/",
   "https://www.asturias.es/bopa/2026/10/27/2026-08678.pdf": "https://grandasdesalime.sedelectronica.es/",
   "https://www.asturias.es/bopa/2026/10/30/2026-08631.pdf": "https://cogersasau.sedelectronica.es/",
   "https://www.asturias.es/bopa/2026/11/03/2026-08731.pdf": "https://miprincipado.asturias.es/",
@@ -327,12 +306,6 @@
   "https://www.asturias.es/bopa/2026/11/19/2026-09376.pdf": "https://langreo.convoca.online/"
  },
  "sedeRaw": {
-  "https://www.asturias.es/bopa/2026/10/26/2026-08430.pdf": [
-   "https://colunga.sedelectronica.e-ayuntamiento.es/"
-  ],
-  "https://www.asturias.es/bopa/2026/10/26/2026-08433.pdf": [
-   "https://colunga.sedelectronica.e-ayuntamiento.es/"
-  ],
   "https://www.asturias.es/bopa/2026/10/27/2026-08678.pdf": [
    "https://grandasdesalime.sedelectronica.es/"
   ],
@@ -380,7 +353,6 @@
   ]
  },
  "sinSede": [
-  "https://www.asturias.es/bopa/2026/10/26/2026-08450.pdf",
   "https://www.asturias.es/bopa/2026/10/27/2026-08485.pdf",
   "https://www.asturias.es/bopa/2026/10/27/2026-08494.pdf",
   "https://www.asturias.es/bopa/2026/10/27/2026-08632.pdf",
@@ -429,6 +401,7 @@
   "https://www.asturias.es/bopa/2026/11/19/2026-09391.pdf",
   "https://www.asturias.es/bopa/2026/11/19/2026-09449.pdf",
   "https://www.asturias.es/bopa/2026/11/20/2026-09466.pdf",
-  "https://www.asturias.es/bopa/2026/11/23/2026-09533.pdf"
+  "https://www.asturias.es/bopa/2026/11/23/2026-09533.pdf",
+  "https://www.asturias.es/bopa/2026/11/25/2026-09486.pdf"
  ]
 }

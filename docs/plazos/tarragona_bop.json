@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T21:51:22+00:00",
+ "updatedUTC": "2026-11-25T07:39:09+00:00",
  "items": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365924": {
    "days": 15,
@@ -83,19 +83,6 @@
    "kind": "naturales",
    "text": "Donada la urgència i excepcionalitat del procés, el termini de presentació de les sol·licituds serà de 20 dies naturals comptats des de l’endemà de la data de la darrera publicació.",
    "page": 5
-  },
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365654": {
-   "days": 5,
-   "kind": "hábiles",
-   "text": "…per sistema de concurs-oposició, s’obre el termini de, presentació de sol·licituds, que serà de cinc dies hàbils a comptar des de l’endemà a la publicació d’aquest anunci al Butlletí Oficial de la Província de Tarragona.",
-   "page": 1,
-   "hasta": "2026-11-02"
-  },
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365627": {
-   "days": 20,
-   "kind": "naturales",
-   "text": "El termini de presentació de les sol·licituds serà de 20 dies naturals comptats des de l’endemà de la data de la darrera publicació.",
-   "page": 4
   },
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365960": {
    "days": 20,
@@ -392,11 +379,22 @@
    "kind": "hábiles",
    "text": "5.- PRESENTACIÓ DE SOL·LICITUDS I TERMINI Les persones interessades han de presentar la sol·licitud a la seu electrònica de l’Ajuntament, mitjançant el tràmit indicat a l’apartat municipal de convocatòries de personal, en el termini de 10 dies hàbils a comptar de l’endemà de la publicació al Diari Oficial de la…",
    "page": 5
+  },
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366971": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "Termini El termini de presentació d'instàncies s'obrirà al dia següent de la publicació del darrer anunci d'aquesta convocatòria en el BOPT o DOGC i finalitzarà transcorreguts 20 dies hàbils.",
+   "page": 6
+  },
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366713": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El termini de presentació de sol·licituds comptarà des de la publicació de la convocatòria corresponent al DOGC, fins a 10 dies hàbils a partir de l’endemà de la publicació.",
+   "page": 1
   }
  },
  "none": [
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365655",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365662",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365693",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365694",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365794",
@@ -432,12 +430,16 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366668",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366669",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366673",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366727",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366741",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366790",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366816",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366853",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366854",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366903",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934"
  ],
  "tries": {},
  "sedes": {
@@ -481,9 +483,13 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366819": "https://rodadebera.eadministracio.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366824": "https://turismevila-seca.eadministracio.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366853": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366854": "https://seu.reus.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856": "https://musicavila-seca.eadministracio.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366903": "https://seu.reus.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366913": "https://seu.reus.cat/",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923": "https://www.reus.cat/"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923": "https://www.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366971": "https://seu.cambrils.cat/"
  },
  "sedeRaw": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365547": [
@@ -612,22 +618,31 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366853": [
    "https://seu.reus.cat/"
   ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366854": [
+   "https://seu.reus.cat/"
+  ],
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856": [
    "https://musicavila-seca.eadministracio.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366903": [
+   "https://seu.reus.cat/"
   ],
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366913": [
    "https://seu.reus.cat/"
   ],
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923": [
    "https://www.reus.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934": [
+   "https://seu.reus.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366971": [
+   "https://seu.cambrils.cat/"
   ]
  },
  "sinSede": [
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365627",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365643",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365654",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365655",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365662",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365674",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365693",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365694",
@@ -683,6 +698,8 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366615",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366669",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366673",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366713",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366727",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366790",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366816",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366916"

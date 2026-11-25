@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T21:51:22+00:00",
+ "updatedUTC": "2026-11-25T07:39:09+00:00",
  "items": {
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": {
    "days": 10,
@@ -101,7 +101,6 @@
   }
  },
  "none": [
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-214-3681.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3696.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3697.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-216-3709.pdf",
@@ -145,7 +144,10 @@
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-234-4064.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-235-4072.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-235-4073.pdf",
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-236-4107.pdf"
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-236-4107.pdf",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4126.pdf",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4127.pdf",
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4128.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -163,9 +165,6 @@
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-233-4055.pdf": "https://sede.losrelejos.es/"
  },
  "sedeRaw": {
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-214-3681.pdf": [
-   "https://sede.gobiernodecanarias.org/"
-  ],
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3696.pdf": [
    "https://sede.gobiernodecanarias.org/"
   ],
@@ -353,6 +352,15 @@
    "https://sede.gobiernodecanarias.org/"
   ],
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-236-4107.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4126.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4127.pdf": [
+   "https://sede.gobiernodecanarias.org/"
+  ],
+  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4128.pdf": [
    "https://sede.gobiernodecanarias.org/"
   ]
  },

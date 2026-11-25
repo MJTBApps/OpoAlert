@@ -1,19 +1,7 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-24T21:51:22+00:00",
+ "updatedUTC": "2026-11-25T07:39:09+00:00",
  "items": {
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "…concurso-oposición, turno libre, se abre el plazo de presentación de solicitudes, que será de veinte días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial del Estado.",
-   "page": 1
-  },
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104830;0&insert_number=4850&insert_year=2026": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "3.3.- El plazo de presentación de solicitudes será de veinte días hábiles, contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
-   "page": 2
-  },
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105018;0&insert_number=5035&insert_year=2026": {
    "days": 10,
    "kind": "hábiles",
@@ -98,8 +86,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104830;0&insert_number=4850&insert_year=2026": "https://lapueblademontalban.sedelectronica.es/",
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026": "https://portillodetoledo.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": "https://navahermosa.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026": "https://navahermosa.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115143;0&insert_number=5159&insert_year=2026": "https://aytopolan.sedelectronica.es/",
@@ -111,12 +97,6 @@
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115348;0&insert_number=5363&insert_year=2026": "https://www.fuensalida.com/"
  },
  "sedeRaw": {
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104830;0&insert_number=4850&insert_year=2026": [
-   "https://lapueblademontalban.sedelectronica.es/"
-  ],
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026": [
-   "https://portillodetoledo.sedelectronica.es/"
-  ],
   "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": [
    "https://navahermosa.sedelectronica.es/"
   ],
