@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-25T06:29:39.118600+00:00",
+  "lastCheckedUTC": "2026-11-25T09:52:17.806218+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
-    "pagesVisited": 20,
-    "announcementsRead": 496,
-    "opportunities": 23
+    "bulletin": "226",
+    "pagesVisited": 21,
+    "announcementsRead": 516,
+    "opportunities": 26
   },
   "historyCoverage": {
     "complete": true,
@@ -35,7 +35,8 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
       "2026-10-27",
@@ -57,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -68,14 +70,43 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-25"
+      "2026-11-22"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 496,
-    "opportunities": 23
+    "issuesRead": 21,
+    "announcementsRead": 516,
+    "opportunities": 26
   },
   "notices": [
+    {
+      "id": "TO-2026-5472",
+      "province": "Toledo",
+      "title": "APROBACIÓN PROVISIONAL DEL PRESUPUESTO MUNICIPAL, BASES DE EJECUCIÓN Y PLANTILLA DE PERSONAL FUNCIONARIO, LABORAL Y EVENTUAL PARA EL EJERCICIO 2027.",
+      "entity": "AYUNTAMIENTO DE ALMONACID DE TOLEDO",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115456;0&insert_number=5472&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5400",
+      "province": "Toledo",
+      "title": "BASES REGULADORAS DEL PROCESO SELECTIVO PARA LA CONSTITUCIÓN DE UNA BOLSA DE TRABAJO DE AUXILIAR DEL SERVICIO DE AYUDA A DOMICILIO, POR EL SISTEMA DE CONCURSO DE MÉRITOS",
+      "entity": "AYUNTAMIENTO DE TORRE ESTEBAN HAMBRAN",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115391;0&insert_number=5400&insert_year=2026"
+    },
+    {
+      "id": "TO-2026-5380",
+      "province": "Toledo",
+      "title": "Bases de la convocatoria para la constitución de una bolsa de trabajo de auxiliar del servicio de ayuda a domicilio del Ayuntamiento de Malpica de Tajo",
+      "entity": "AYUNTAMIENTO DE MALPICA DE TAJO",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26115367;0&insert_number=5380&insert_year=2026"
+    },
     {
       "id": "TO-2026-5390",
       "province": "Toledo",

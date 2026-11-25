@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-25T06:26:41.746106+00:00",
+  "lastCheckedUTC": "2026-11-25T09:48:45.144524+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "140",
-    "pagesVisited": 12,
-    "announcementsRead": 449,
-    "opportunities": 38
+    "bulletin": "141",
+    "pagesVisited": 13,
+    "announcementsRead": 480,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
@@ -27,7 +27,8 @@
       "137",
       "138",
       "139",
-      "140"
+      "140",
+      "141"
     ],
     "publicationDates": [
       "2026-10-28",
@@ -41,7 +42,8 @@
       "2026-11-16",
       "2026-11-18",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-27",
@@ -60,14 +62,53 @@
       "2026-11-19",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-24",
-      "2026-11-25"
+      "2026-11-24"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 449,
-    "opportunities": 38
+    "issuesRead": 13,
+    "announcementsRead": 480,
+    "opportunities": 42
   },
   "notices": [
+    {
+      "id": "LP-20261125-028",
+      "province": "Las Palmas (BOP)",
+      "title": "Corrección de error en la convocatoria de 1 plaza de Técnico Medio de Administración General y lista de reserva",
+      "entity": "EXCMO. AYUNTAMIENTO DE TEGUISE",
+      "date": "25/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/25-11-26/25-11-26.pdf"
+    },
+    {
+      "id": "LP-20261125-019",
+      "province": "Las Palmas (BOP)",
+      "title": "Modificación de las bases específicas para la provisión de 4 plazas de Policía Local",
+      "entity": "ILUSTRE AYUNTAMIENTO DE INGENIO",
+      "date": "25/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/25-11-26/25-11-26.pdf"
+    },
+    {
+      "id": "LP-20261125-011",
+      "province": "Las Palmas (BOP)",
+      "title": "Modificación de las bases específicas para la selección de 5 plazas de Técnico/a Superior de Seguridad y Emergencias",
+      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
+      "date": "25/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/25-11-26/25-11-26.pdf"
+    },
+    {
+      "id": "LP-20261125-004",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases específicas de la convocatoria de 4 plazas de Cuidador/a Puericultor/a",
+      "entity": "EXCMO. CABILDO INSULAR DE GRAN CANARIA",
+      "date": "25/11/2026",
+      "bulletin": "141",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/25-11-26/25-11-26.pdf"
+    },
     {
       "id": "LP-20261123-048",
       "province": "Las Palmas (BOP)",
