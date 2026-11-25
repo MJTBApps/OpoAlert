@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-24T16:42:49.655476+00:00",
+  "lastCheckedUTC": "2026-11-25T09:53:32.813524+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -14,8 +14,8 @@
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "publicationDates": [
       "2026-10-28",
       "2026-10-30",
@@ -34,10 +34,10 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-29",
       "2026-10-31",
@@ -56,6 +56,16 @@
     "opportunities": 74
   },
   "notices": [
+    {
+      "id": "CIDO6-22553526",
+      "title": "Borsa de treball de places de Psicòleg",
+      "entity": "Ajuntament de Palafrugell",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22553526"
+    },
     {
       "id": "CIDO6-22547360",
       "title": "1 plaça d'Administratiu a l'oficina de turisme",
@@ -365,16 +375,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22512471"
-    },
-    {
-      "id": "CIDO6-22507636",
-      "title": "Borsa de treball de places de Conserge del Pavelló municipal",
-      "entity": "Ajuntament de Sant Julià de Ramis",
-      "date": "17/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22507636"
     },
     {
       "id": "CIDO6-22499838",

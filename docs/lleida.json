@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-24T16:42:49.655476+00:00",
+  "lastCheckedUTC": "2026-11-25T09:53:32.813524+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -14,8 +14,8 @@
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "publicationDates": [
       "2026-10-28",
       "2026-10-30",
@@ -32,10 +32,10 @@
       "2026-11-17",
       "2026-11-19",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-29",
       "2026-10-31",
@@ -56,6 +56,26 @@
     "opportunities": 61
   },
   "notices": [
+    {
+      "id": "CIDO7-17560905",
+      "title": "2 places de Peó de la brigada municipal",
+      "entity": "Ajuntament d'Alguaire",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17560905"
+    },
+    {
+      "id": "CIDO7-22552809",
+      "title": "1 plaça de Subaltern de la Biblioteca Municipal",
+      "entity": "Ajuntament de les Borges Blanques",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22552809"
+    },
     {
       "id": "CIDO7-22515295",
       "title": "1 plaça de Director de llar d'infants",
@@ -425,26 +445,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22382165"
-    },
-    {
-      "id": "CIDO7-22335102",
-      "title": "1 plaça de Tècnic d'urbanisme i comerç",
-      "entity": "Ajuntament de Tremp",
-      "date": "10/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22335102"
-    },
-    {
-      "id": "CIDO7-22469510",
-      "title": "1 plaça de Tècnic de Recursos Humans a la Residència de la Pobla de Lillet",
-      "entity": "Ajuntament de la Pobla de Lillet",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22469510"
     },
     {
       "id": "CIDO7-22459821",
