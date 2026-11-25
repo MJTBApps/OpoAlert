@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T07:39:09+00:00",
+ "updatedUTC": "2026-11-25T10:28:04+00:00",
  "items": {
   "https://www.dip-alicante.es/bop2/pdftotal/2026/10/28_205/2026_008224.pdf": {
    "days": 15,
@@ -268,6 +268,25 @@
    "kind": "hábiles",
    "text": "Se establece un plazo de veinte (20) días hábiles para la presentación de solicitudes, contados a partir del día siguiente al de la publicación del extracto de la convocatoria en el Boletín Oficial del Estado.",
    "page": 3
+  },
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009114.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "VI.- El plazo de presentación de instancias será de diez días hábiles, a contar desde el día siguiente al de publicación del Anuncio-extracto de la convocatoria en el B.O.E.",
+   "page": 5
+  },
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009112.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "VI.- El plazo de presentación de instancias será de diez días hábiles, a contar desde el día siguiente al de publicación del Anuncio-extracto de la convocatoria en el B.O.E.",
+   "page": 5
+  },
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009105.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes para tomar parte en las citadas pruebas selectivas será de 10 días hábiles a contar desde el día siguiente a la publicación de la convocatoria en el Boletín Oficial de la Provincia.",
+   "page": 1,
+   "hasta": "2026-12-10"
   }
  },
  "none": [
@@ -318,7 +337,9 @@
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/23_223/2026_009037.pdf": "https://polop.sedelectronica.es/",
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/23_223/2026_009038.pdf": "https://polop.sedelectronica.es/",
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009046.pdf": "https://polop.sedelectronica.es/",
-  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009070.pdf": "https://confrides.sedelectronica.es/"
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009070.pdf": "https://confrides.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009112.pdf": "https://diputacionalicante.sedelectronica.es/",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009114.pdf": "https://diputacionalicante.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://www.dip-alicante.es/bop2/pdftotal/2026/10/27_204/2026_008176.pdf": [
@@ -392,6 +413,12 @@
   ],
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009070.pdf": [
    "https://confrides.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009112.pdf": [
+   "https://diputacionalicante.sedelectronica.es/"
+  ],
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009114.pdf": [
+   "https://diputacionalicante.sedelectronica.es/"
   ]
  },
  "sinSede": [
@@ -433,6 +460,7 @@
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_008677.pdf",
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_008811.pdf",
   "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009076.pdf",
-  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009084.pdf"
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/24_224/2026_009084.pdf",
+  "https://www.dip-alicante.es/bop2/pdftotal/2026/11/25_225/2026_009105.pdf"
  ]
 }

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T07:39:09+00:00",
+ "updatedUTC": "2026-11-25T10:28:04+00:00",
  "items": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": {
    "days": 10,
@@ -89,13 +89,6 @@
    "text": "Ordenar la publicación del edicto de la convocatoria de las bases en el Boletín Oficial de la Provincia de Valencia, en la página web y en la Sede Electrónica del Ayuntamiento, a los efectos de presentar instancias en el plazo de 10 días naturales a contar desde el siguiente al de la publicación\".",
    "page": 2,
    "hasta": "2026-11-06"
-  },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12874&lang=es": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "El termini per a la presentació de sol·licituds de participació en el procés de selecció i constitució d'esta borsa és de 20 dies hàbils comptadors a partir de l'endemà de la publicació de la convocatòria en Butlletí Oficial de la Província de València.",
-   "page": 1,
-   "hasta": "2026-11-23"
   },
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es": {
    "days": 10,
@@ -371,11 +364,21 @@
    "text": "El plazo de presentación de solicitudes será de diez días hábiles contados desde el día siguiente al de la publicación de la convocatoria en el Boletín Oficial de la Provincia de Valencia.",
    "page": 1,
    "hasta": "2026-12-07"
+  },
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14395&lang=es": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de veinte días hábiles, contados desde el día siguiente al de la publicación del anuncio de la convocatoria en el «Boletín Oficial del Estado».",
+   "page": 5
+  },
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14365&lang=es": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "Las solicitudes se presentarán por medios electrónicos, en el Registro Electrónico del Ayuntamiento de Utiel, en el plazo de 10 días hábiles, contados desde el día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 4
   }
  },
  "none": [
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12914&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12915&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13079&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13080&lang=es",
@@ -404,12 +407,13 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14182&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14206&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14252&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14363&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14368&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14489&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14554&lang=es"
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12874&lang=es": "https://manra.sede.dival.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": "https://www.benaguasil.eu/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12953&lang=es": "https://www.benaguasil.eu/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12959&lang=es": "https://elperello.sedelectronica.es/",
@@ -456,13 +460,12 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14275&lang=es": "https://rafelguaraf.sedelectronica.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14280&lang=es": "https://riola.sedelectronica.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14358&lang=es": "https://bombersdv.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14363&lang=es": "https://tavernesblanques.sede.dival.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14365&lang=es": "https://utiel.sedelectronica.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14541&lang=es": "https://www.sede.dival.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14562&lang=es": "https://www.sede.dival.es/"
  },
  "sedeRaw": {
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12874&lang=es": [
-   "https://manra.sede.dival.es/"
-  ],
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": [
    "https://www.benaguasil.eu/"
   ],
@@ -608,6 +611,12 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14358&lang=es": [
    "https://bombersdv.sedelectronica.es/"
   ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14363&lang=es": [
+   "https://tavernesblanques.sede.dival.es/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14365&lang=es": [
+   "https://utiel.sedelectronica.es/"
+  ],
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14541&lang=es": [
    "https://www.sede.dival.es/",
    "https://www.dival.es/"
@@ -618,8 +627,6 @@
   ]
  },
  "sinSede": [
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12914&lang=es",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12915&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13079&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13080&lang=es",
@@ -654,6 +661,8 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14229&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14247&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14252&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14368&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14395&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14489&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14554&lang=es"
  ]
