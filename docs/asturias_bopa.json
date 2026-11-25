@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-24T16:46:44.210378+00:00",
+  "lastCheckedUTC": "2026-11-25T06:48:44.199832+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 1004,
-    "opportunities": 67
+    "announcementsRead": 986,
+    "opportunities": 65
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -36,10 +35,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,20 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 1004,
-    "opportunities": 67
+    "announcementsRead": 986,
+    "opportunities": 65
   },
   "notices": [
+    {
+      "id": "AS-2026-09486",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Bases que rigen la convocatoria del procedimiento selectivo para la creación de una bolsa de empleo en la Categoría de Trabajador/a Social.",
+      "entity": "Ayuntamiento de Castrillón",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.asturias.es/bopa/2026/11/25/2026-09486.pdf"
+    },
     {
       "id": "AS-2026-09533",
       "province": "Asturias (BOPA)",
@@ -716,36 +726,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/27/2026-08485.pdf"
-    },
-    {
-      "id": "AS-2026-08450",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Aprobación de las bases comunes y específicas que rigen la convocatoria de varias plazas incluidas en las ofertas de empleo público de 2025 y 2026 del Ayuntamiento de Llanera.",
-      "entity": "Ayuntamiento de Llanera",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/26/2026-08450.pdf"
-    },
-    {
-      "id": "AS-2026-08433",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Aprobación de las bases reguladoras y convocatoria del proceso de selección de un/a Arquitecto dentro del programa contrato formativo para la obtención de la práctica profesional adecuada al nivel de estudios. Convocatoria 2026.",
-      "entity": "Ayuntamiento de Colunga",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/26/2026-08433.pdf"
-    },
-    {
-      "id": "AS-2026-08430",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Aprobación de las bases reguladoras y convocatoria del proceso de selección de las personas a contratar dentro del Plan de Empleo en el marco de los itinerarios integrados de activación en el ámbito local, convocatoria de 2026.",
-      "entity": "Ayuntamiento de Colunga",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/26/2026-08430.pdf"
     }
   ]
 }

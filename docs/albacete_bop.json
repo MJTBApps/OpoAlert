@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-24T16:46:16.828620+00:00",
+  "lastCheckedUTC": "2026-11-25T06:48:59.064305+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "136",
-    "pagesVisited": 12,
-    "announcementsRead": 217,
-    "opportunities": 20
+    "pagesVisited": 11,
+    "announcementsRead": 197,
+    "opportunities": 17
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "125",
       "126",
       "127",
       "128",
@@ -30,7 +29,6 @@
       "136"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-28",
       "2026-10-30",
       "2026-11-04",
@@ -61,11 +59,12 @@
       "2026-11-19",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 217,
-    "opportunities": 20
+    "issuesRead": 11,
+    "announcementsRead": 197,
+    "opportunities": 17
   },
   "notices": [
     {
@@ -237,36 +236,6 @@
       "bulletin": "126",
       "type": "Plaza / oposición",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299639"
-    },
-    {
-      "id": "AB-2026-299613",
-      "province": "Albacete",
-      "title": "Bases que han de regir la convocatoria para proveer, por promoción interna, tres plazas de Técnico de Bibliotecas y Archivo, correspondiente a la Oferta de Empleo Público de 2024",
-      "entity": "Ayuntamiento de Villarrobledo",
-      "date": "26/10/2026",
-      "bulletin": "125",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299613"
-    },
-    {
-      "id": "AB-2026-299612",
-      "province": "Albacete",
-      "title": "Bases que han de regir la convocatoria para proveer, por promoción interna, cuatro plazas de Técnico Especialista de Jardín de Infancia para las Escuelas Infantiles, correspondiente a la Oferta de Empleo Público de 2023",
-      "entity": "Ayuntamiento de Villarrobledo",
-      "date": "26/10/2026",
-      "bulletin": "125",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299612"
-    },
-    {
-      "id": "AB-2026-299611",
-      "province": "Albacete",
-      "title": "Resolución de la Alcaldía-Presidencia por la que se dispone la suspensión cautelar del procedimiento selectivo convocado para la constitución de una bolsa de trabajo destinada a la provisión del puesto de Responsable de la Vivienda de Mayores",
-      "entity": "Ayuntamiento de Villamalea",
-      "date": "26/10/2026",
-      "bulletin": "125",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299611"
     }
   ]
 }

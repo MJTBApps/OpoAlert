@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-24T16:48:15.754540+00:00",
+  "lastCheckedUTC": "2026-11-25T06:50:24.868553+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "223",
+    "bulletin": "224",
     "pagesVisited": 24,
-    "announcementsRead": 676,
-    "opportunities": 12,
+    "announcementsRead": 679,
+    "opportunities": 13,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 8
+    "pdfChecked": 9
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -38,10 +37,10 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -75,10 +75,9 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 676,
-    "opportunities": 12,
+    "announcementsRead": 679,
+    "opportunities": 13,
     "regularBulletins": [
-      "203",
       "204",
       "205",
       "206",
@@ -98,11 +97,11 @@
       "220",
       "221",
       "222",
-      "223"
+      "223",
+      "224"
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-203",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-204",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-205",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-206",
@@ -122,10 +121,22 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-220",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-221",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-222",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-223"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-223",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-224"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202605196",
+      "province": "Burgos",
+      "title": "Modificación de las bases para la provisión de cinco puestos de jefaturas de negociado mediante concurso",
+      "entity": "Ayuntamiento de Miranda de Ebro",
+      "date": "25/11/2026",
+      "bulletin": "224",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-224/bopbur-2026-224-anuncio-202605196.pdf",
+      "publisherArticle": "202605196"
+    },
     {
       "id": "BU-2026-202605173",
       "province": "Burgos",

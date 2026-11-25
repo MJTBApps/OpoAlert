@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-24T17:02:20.260418+00:00",
+  "lastCheckedUTC": "2026-11-25T07:06:05.841458+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 22,
-    "announcementsRead": 655,
-    "opportunities": 47
+    "announcementsRead": 659,
+    "opportunities": 49
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -37,10 +36,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,70 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 655,
-    "opportunities": 47
+    "announcementsRead": 659,
+    "opportunities": 49
   },
   "notices": [
+    {
+      "id": "RI-2026-ee951fb15f48883431",
+      "province": "La Rioja (BOR)",
+      "title": "OFICIAL DE POLICÍA LOCAL: bases para provisión de plaza por promoción interna",
+      "entity": "AYUNTAMIENTO DE HARO",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43529144-1-PDF-581126",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F25&referencia=43493896-3-HTML-581126-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-c5596a60f98b35da08",
+      "province": "La Rioja (BOR)",
+      "title": "EDUCADOR/A: convocatoria de pruebas selectivas (TL) (FA.11/23-25)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43529255-1-PDF-581120",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F25&referencia=43488588-6-HTML-581120-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-791cc610633831a42f",
+      "province": "La Rioja (BOR)",
+      "title": "TERAPEUTA OCUPACIONAL: convocatoria de pruebas selectivas (TL) (FA.20/25-26)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43529237-1-PDF-581118",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F25&referencia=43486649-5-HTML-581118-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-0e303559e4238749ed",
+      "province": "La Rioja (BOR)",
+      "title": "EDUCADOR/A: convocatoria de pruebas selectivas (PIV) (F.16/25)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43529150-1-PDF-581125",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F25&referencia=43490008-4-HTML-581125-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-06fc98a8c89ab002ec",
+      "province": "La Rioja (BOR)",
+      "title": "ADMINISTRATIVO/A: bases de la convocatoria para la selección de una plaza como funcionario/a de carrera, mediante el sistema de concurso-oposición, turno libre. Agrupación de municipios de Bañares y Cirueña",
+      "entity": "AYUNTAMIENTO DE BAÑARES",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43529251-1-PDF-581078",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F25&referencia=43500069-4-HTML-581078-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-f7da5162716bafb14f",
       "province": "La Rioja (BOR)",
@@ -604,42 +664,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42917526-1-PDF-580436",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F27&referencia=42877926-4-HTML-580436-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-afe8d9b6898ad8a949",
-      "province": "La Rioja (BOR)",
-      "title": "ÁREA DE PSICOLOGÍA CLÍNICA: convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo de la categoría de Facultativo Especialista, OEP 2026",
-      "entity": "SERVICIO RIOJANO DE SALUD",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42883667-1-PDF-580418",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F26&referencia=42852395-4-HTML-580418-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-5fd290685fbfcca15d",
-      "province": "La Rioja (BOR)",
-      "title": "ÁREA DE PSIQUIATRÍA: convocatoria específica del proceso selectivo para el acceso a la condición de personal estatutario fijo de la categoría de Facultativo Especialista, OEP 2026",
-      "entity": "SERVICIO RIOJANO DE SALUD",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42883718-1-PDF-580417",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F26&referencia=42851325-5-HTML-580417-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-4e8289fe68658b52d9",
-      "province": "La Rioja (BOR)",
-      "title": "AGRUPACIONES PROFESIONALES: corrección de error en las bases y convocatoria de creación de bolsa de empleo temporal",
-      "entity": "AYUNTAMIENTO DE SANTO DOMINGO DE LA CALZADA",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42883797-1-PDF-580438",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F26&referencia=42878217-4-HTML-580438-X",
       "originalFormat": "pdf"
     }
   ]

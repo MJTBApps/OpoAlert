@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Valladolid",
   "source": "https://bop.sede.diputaciondevalladolid.es/",
-  "lastCheckedUTC": "2026-11-24T17:03:51.858209+00:00",
+  "lastCheckedUTC": "2026-11-25T07:06:33.273971+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
+    "bulletin": "226",
     "pagesVisited": 21,
-    "announcementsRead": 352,
-    "opportunities": 14
+    "announcementsRead": 356,
+    "opportunities": 15
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -36,10 +35,10 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,20 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 352,
-    "opportunities": 14
+    "announcementsRead": 356,
+    "opportunities": 15
   },
   "notices": [
+    {
+      "id": "VD-2026-3461",
+      "province": "Valladolid",
+      "title": "Resolución de Alcaldía n.º 636/2026, de fecha 17 de noviembre de 2026, por la que se aprueban las bases y la convocatoria para la contratación de la plaza de personal laboral fijo denominada Oficial de Servicios Múltiples/Albañil, por el sistema de concurso-oposición libre.",
+      "entity": "AYUNTAMIENTO DE PEDRAJAS DE SAN ESTEBAN",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://bop.sede.diputaciondevalladolid.es/boletines/2026/noviembre/25/BOPVA-A-2026-03461.pdf"
+    },
     {
       "id": "VD-2026-3454",
       "province": "Valladolid",

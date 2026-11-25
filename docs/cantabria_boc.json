@@ -2,23 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-24T16:53:44.134852+00:00",
+  "lastCheckedUTC": "2026-11-25T06:55:06.782305+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
-    "pagesVisited": 29,
-    "announcementsRead": 922,
-    "opportunities": 26,
+    "bulletin": "227",
+    "pagesVisited": 28,
+    "announcementsRead": 912,
+    "opportunities": 28,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "205",
-      "Ext. 28",
       "206",
       "207",
       "208",
@@ -45,11 +43,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-26",
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -76,7 +73,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -88,11 +86,10 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 29,
-    "announcementsRead": 922,
-    "opportunities": 26,
+    "issuesRead": 28,
+    "announcementsRead": 912,
+    "opportunities": 28,
     "regularBulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -113,10 +110,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "extraordinaryBulletins": [
-      "Ext. 28",
       "Ext. 29",
       "Ext. 30",
       "Ext. 31",
@@ -125,8 +122,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47265,
-      47345,
       47285,
       47305,
       47325,
@@ -153,10 +148,31 @@
       47645,
       47665,
       47685,
-      47705
+      47705,
+      47725
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9235",
+      "province": "Cantabria (BOC)",
+      "title": "Ampliación a dos (2) el número de plazas de la convocatoria para proveer en propiedad, como Oficial de 1ª Matarife, personal laboral fijo, mediante concurso-oposición. Expediente 2026/67Z.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "25/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443669"
+    },
+    {
+      "id": "CN-2026-9234",
+      "province": "Cantabria (BOC)",
+      "title": "Ampliación a cinco (5) el número de plazas de la convocatoria para proveer en propiedad, como Cabo del Servicio Contra Incendios y Salvamento, promoción interna, mediante concurso-oposición. Expediente 2023/842A.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "25/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443648"
+    },
     {
       "id": "CN-2026-9171",
       "province": "Cantabria (BOC)",

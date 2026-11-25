@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-24T16:59:33.297829+00:00",
+  "lastCheckedUTC": "2026-11-25T07:02:04.231450+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
+    "bulletin": "226",
     "pagesVisited": 23,
-    "announcementsRead": 1053,
-    "opportunities": 67
+    "announcementsRead": 1026,
+    "opportunities": 60
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -37,10 +36,10 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,30 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1053,
-    "opportunities": 67
+    "announcementsRead": 1026,
+    "opportunities": 60
   },
   "notices": [
+    {
+      "id": "LE-202622609980",
+      "province": "Lleida (BOP)",
+      "title": "Aprovació inicial del pressupost general, de les bases d’execució i plantilla de personal de l’exercici 2027",
+      "entity": "AJUNTAMENT DE GUISSONA (GUISSONA)",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/226/202622609980.pdf"
+    },
+    {
+      "id": "LE-202622609973",
+      "province": "Lleida (BOP)",
+      "title": "Bases i convocatòria del procés selectiu per a la cobertura definitiva de dues places de peó de la brigada municipal, grup AP, de la plantilla de personal laboral fix de l'Ajuntament d’Alguaire i creació d'una borsa de treball (1/2026)",
+      "entity": "AJUNTAMENT D'ALGUAIRE (ALGUAIRE)",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/226/202622609973.pdf"
+    },
     {
       "id": "LE-202622509826",
       "province": "Lleida (BOP)",
@@ -657,96 +677,6 @@
       "bulletin": "205",
       "type": "Bolsa de trabajo",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/205/202620508835.pdf"
-    },
-    {
-      "id": "LE-202620408907",
-      "province": "Lleida (BOP)",
-      "title": "Anunci d'aprovació de les bases específiques i la convocatòria que han de regir el procediment de selecció per a la creació d’una borsa de treball de tècnics superiors de gestió cultural, subgrup A1, per a l’Institut d’Estudis Ilerdencs",
-      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408907.pdf"
-    },
-    {
-      "id": "LE-202620408898",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases específiques i la convocatòria que han de regir el procediment de provisió definitiva del lloc de treball de cap de secció d’edificació de la Diputació de Lleida (PLL/18/26)",
-      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408898.pdf"
-    },
-    {
-      "id": "LE-202620408897",
-      "province": "Lleida (BOP)",
-      "title": "Anunci bases reguladores i convocatòria d'una plaça de Tècnic/a mig d'esports, vinculat al lloc de treball de Cap de la unitat d'esports, pel sistema de promoció interna, inclosa a la OPO 2026.",
-      "entity": "AJUNTAMENT DE TÀRREGA (TÀRREGA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408897.pdf"
-    },
-    {
-      "id": "LE-202620408896",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases específiques i la convocatòria que han de regir el procediment de provisió definitiva del lloc de treball de cap de secció de gestió i projectes de la Diputació de Lleida (PLL/17/26)",
-      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408896.pdf"
-    },
-    {
-      "id": "LE-202620408895",
-      "province": "Lleida (BOP)",
-      "title": "Anunci bases reguladores i convocatòria d'una borsa de tècnics/ques de promoció econòmica, amb caràcter d'urgència.",
-      "entity": "AJUNTAMENT DE TÀRREGA (TÀRREGA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408895.pdf"
-    },
-    {
-      "id": "LE-202620408894",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases específiques i la convocatòria que han de regir el procediment de provisió definitiva del lloc de treball de cap de secció de desenvolupament i integracions de la Diputació de Lleida (PLL/16/26)",
-      "entity": "DIPUTACIÓ DE LLEIDA (LLEIDA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408894.pdf"
-    },
-    {
-      "id": "LE-202620408892",
-      "province": "Lleida (BOP)",
-      "title": "Anunci bases reguladores i convocatòria d'una plaça de conserge, adscrit al lloc de treball d'auxiliar de serveis d'equipaments esportius CDS, en règim de personal laboral temporal",
-      "entity": "AJUNTAMENT DE TÀRREGA (TÀRREGA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408892.pdf"
-    },
-    {
-      "id": "LE-202620408882",
-      "province": "Lleida (BOP)",
-      "title": "Anunci de les bases i la convocatòria per proveir interinament el lloc de treball, reservat a funcionaris amb habilitació de caràcter nacional amb categoria de secretaria de classe tercera subescala secretaria intervenció.",
-      "entity": "AJUNTAMENT DE MIRALCAMP (MIRALCAMP)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408882.pdf"
-    },
-    {
-      "id": "LE-202620408848",
-      "province": "Lleida (BOP)",
-      "title": "Convocatòria concurs lliure per a la constitució d'una borsa de treball d'arxiver/a",
-      "entity": "AJUNTAMENT DE LA SEU D'URGELL (SEU D'URGELL, LA)",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/204/202620408848.pdf"
     }
   ]
 }
