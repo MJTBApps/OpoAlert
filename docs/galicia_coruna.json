@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-24T16:38:40.494120+00:00",
+  "lastCheckedUTC": "2026-11-25T06:22:36.920627+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
+    "bulletin": "226",
     "pagesVisited": 22,
-    "announcementsRead": 788,
+    "announcementsRead": 805,
     "opportunities": 65
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -37,10 +36,10 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,20 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 788,
+    "announcementsRead": 805,
     "opportunities": 65
   },
   "notices": [
+    {
+      "id": "AC-2026-7686",
+      "province": "A Coruña",
+      "title": "Caducidade parcial da Oferta de Emprego Público do ano 2023 do Concello de Fene",
+      "entity": "Secretaría",
+      "date": "25/11/2026",
+      "bulletin": "226",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/11/25/2026_0000007686.pdf"
+    },
     {
       "id": "AC-2026-7665",
       "province": "A Coruña",
@@ -717,16 +727,6 @@
       "bulletin": "205",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006874.pdf"
-    },
-    {
-      "id": "AC-2026-6860",
-      "province": "A Coruña",
-      "title": "Bases reguladoras do proceso selectivo, funcionario de carreira dunha praza da escala da administración xeral, subescala auxiliar, praza auxiliar administrativa",
-      "entity": "Recursos Humanos",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/26/2026_0000006860.pdf"
     }
   ]
 }

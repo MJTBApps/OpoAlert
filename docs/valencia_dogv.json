@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Comunidad Valenciana (DOGV)",
   "source": "https://dogv.gva.es/dogv-portal/dogv",
-  "lastCheckedUTC": "2026-11-24T16:40:30.602821+00:00",
+  "lastCheckedUTC": "2026-11-25T06:24:35.792538+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "10500",
-    "pagesVisited": 28,
-    "announcementsRead": 1181,
-    "opportunities": 270
+    "bulletin": "10501",
+    "pagesVisited": 27,
+    "announcementsRead": 1184,
+    "opportunities": 263
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "10479",
-      "10479B",
       "10480",
       "10480B",
       "10481",
@@ -43,11 +41,10 @@
       "10497",
       "10498",
       "10499",
-      "10500"
+      "10500",
+      "10501"
     ],
     "publicationDates": [
-      "2026-10-26",
-      "2026-10-26",
       "2026-10-27",
       "2026-10-27",
       "2026-10-28",
@@ -73,7 +70,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -85,11 +83,81 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 28,
-    "announcementsRead": 1181,
-    "opportunities": 270
+    "issuesRead": 27,
+    "announcementsRead": 1184,
+    "opportunities": 263
   },
   "notices": [
+    {
+      "id": "DV-2026-36535",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 18 de noviembre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación indefinida de personal de investigación de la categoría de personal investigador júnior para colaborar con la línea de investigación financiada «Ecología microbiana molecular DFGM». Referencia: I-PI 95-26.",
+      "entity": "Universidad de Alicante",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_36535_es.pdf"
+    },
+    {
+      "id": "DV-2026-36526",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 18 de noviembre de 2026, del Rectorado, por la que se convocan concursos para la provisión de plazas de profesorado asociado con plaza asistencial en los centros sanitarios concertados para el curso 2026/2027. Convocatoria temporales número 7.",
+      "entity": "Universitat de València",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_36526_es.pdf"
+    },
+    {
+      "id": "DV-2026-36518",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 18 de noviembre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación indefinida de personal de investigación de la categoría de personal tecnólogo superior para colaborar con la línea de investigación financiada «Teledetección con radar». Referencia: I-PTGAI 62-26.",
+      "entity": "Universidad de Alicante",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_36518_es.pdf"
+    },
+    {
+      "id": "DV-2026-36446",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 17 de noviembre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación indefinida de personal de investigación de la categoría de personal investigador colaborador para colaborar con la línea de investigación financiada «Estudio de mejora producción biogás». Referencia: I-PI 97-26.",
+      "entity": "Universidad de Alicante",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_36446_es.pdf"
+    },
+    {
+      "id": "DV-2026-34764",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 4 de noviembre de 2026, de la Presidencia, por la que se nombra personal laboral fijo a la persona que ha superado las pruebas selectivas de acceso a diversos puestos de trabajo.",
+      "entity": "Comité Econòmic i Social",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_34764_es.pdf"
+    },
+    {
+      "id": "DV-2026-34731",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "ANUNCIO de la convocatoria pública y de las bases reguladoras que han de regir el procedimiento para la provisión del puesto de director o directora, mediante libre designación.",
+      "entity": "Instituto de Desarrollo de Elda y Servicios Administrativos",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_34731_es.pdf"
+    },
+    {
+      "id": "DV-2026-34632",
+      "province": "Comunidad Valenciana (DOGV)",
+      "title": "RESOLUCIÓN de 2 de noviembre de 2026, del Rectorado, por la que se convocan pruebas selectivas de acceso al grupo A (subgrupo A1), por promoción interna, sector de administración especial, escala técnica superior de investigación, subescala de microscopía (A1_2649PIO).",
+      "entity": "Universitat de València",
+      "date": "25/11/2026",
+      "bulletin": "10501",
+      "type": "Plaza / oposición",
+      "url": "https://dogv.gva.es/datos/2026/11/25/pdf/2026_34632_es.pdf"
+    },
     {
       "id": "DV-2026-36664",
       "province": "Comunidad Valenciana (DOGV)",
@@ -2649,146 +2717,6 @@
       "bulletin": "10480",
       "type": "Bolsa de trabajo",
       "url": "https://dogv.gva.es/datos/2026/10/27/pdf/2026_31261_es.pdf"
-    },
-    {
-      "id": "DV-2026-33461",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 22 de octubre de 2026, de la Dirección General de Función Pública, por la que se adjudican destinos a las personas que han superado las pruebas selectivas de acceso al cuerpo de agentes tributarios de la Generalitat, C1-07, cuerpo especial, convocatorias 66/25 y 67/25, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_33461_es.pdf"
-    },
-    {
-      "id": "DV-2026-33444",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 22 de octubre de 2026, por la que se nombra personal funcionario de carrera a las personas que han superado las pruebas selectivas de acceso al cuerpo de agentes tributarios de la Generalitat, C1-07, cuerpo especial, convocatoria 66/25, turno libre y personas con discapacidad, por el sistema de oposición y convocatoria 67/25, promoción interna, por el sistema de concurso-oposición, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_33444_es.pdf"
-    },
-    {
-      "id": "DV-2026-32770",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de convocatoria del proceso selectivo para la cobertura en propiedad de tres plazas de oficial u oficiala de policía local, por el sistema de concurso-oposición, dos de ellas mediante promoción interna ordinaria y una mediante promoción interna interadministrativa.",
-      "entity": "Ayuntamiento de Bétera",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32770_es.pdf"
-    },
-    {
-      "id": "DV-2026-32769",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la convocatoria del proceso selectivo para la cobertura en propiedad de una plaza de técnico o técnica agentes de igualdad de naturaleza funcionarial, mediante el sistema de concurso-oposición, por turno libre, vacante en la plantilla municipal.",
-      "entity": "Ayuntamiento de Bétera",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32769_es.pdf"
-    },
-    {
-      "id": "DV-2026-32764",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO por el que se aprueban las bases específicas de la convocatoria para proveer varias plazas en propiedad de personal funcionario y personal laboral, que pertenecen a las ofertas públicas de empleo de 2023, 2024, 2025 y 2026.",
-      "entity": "Ayuntamiento de Santa Pola",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32764_es.pdf"
-    },
-    {
-      "id": "DV-2026-32763",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se convoca el proceso de selección del puesto de naturaleza laboral 3951, grupo profesional M2, nivel 3, solista de violonchelo, correspondiente a la oferta de empleo pública de 2026, por turno libre y por el sistema de oposición. Convocatoria 08/2026.",
-      "entity": "Palau de Les Arts Reina Sofía, Fundación de la Comunitat Valenciana",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32763_es.pdf"
-    },
-    {
-      "id": "DV-2026-32759",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, del Rectorado, por la que se convoca un proceso selectivo para la contratación temporal de personal de investigación de la categoría de personal investigador en formación para colaborar en el proyecto «Rational design of hybrid materials for lighting and photocatalysis», del Departamento de Química Inorgánica. Referencia: I-PI 83-26.",
-      "entity": "Universidad de Alicante",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32759_es.pdf"
-    },
-    {
-      "id": "DV-2026-32704",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Dirección General, por la que se hacen públicas las bases de la convocatoria aprobadas para la constitución de la bolsa de empleo temporal para la contratación laboral temporal en la categoría profesional de subdirector o subdirectora de Análisis y Audiencias.",
-      "entity": "Corporación Audiovisual de la Comunitat Valenciana, SA",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32704_es.pdf"
-    },
-    {
-      "id": "DV-2026-32645",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se publica la relación definitiva de personas que han superado las pruebas selectivas de acceso al cuerpo superior facultativo, escala medio ambiente, A1-04-11, convocatoria 19/25, promoción interna y personas con discapacidad, por el sistema de concurso-oposición, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32645_es.pdf"
-    },
-    {
-      "id": "DV-2026-32644",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se publica la relación definitiva de personas que han superado las pruebas selectivas de acceso al cuerpo superior facultativo, escala medio ambiente, A1-04-11, convocatoria 18/25, turno libre y personas por discapacidad, por el sistema de oposición, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32644_es.pdf"
-    },
-    {
-      "id": "DV-2026-32643",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se declaran desiertas las pruebas selectivas de acceso al cuerpo técnico facultativo de prevención de riesgos laborales, seguridad y salud en el trabajo, A2-03, convocatoria 47/25, turno de promoción interna, por el sistema de concurso-oposición, correspondientes a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32643_es.pdf"
-    },
-    {
-      "id": "DV-2026-32642",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "ANUNCIO de la convocatoria para la cobertura en propiedad de dos plazas de auxiliar administrativo o administrativa.",
-      "entity": "Ayuntamiento de Chiva",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32642_es.pdf"
-    },
-    {
-      "id": "DV-2026-32641",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, por la que se publica la relación definitiva de personas que han superado las pruebas selectivas de acceso al cuerpo técnico facultativo de prevención de riesgos laborales, seguridad y salud en el trabajo, A2-03, convocatoria 46/25, turno libre, por el sistema de oposición, correspondiente a la oferta de empleo público de 2025 para personal de la Administración de la Generalitat.",
-      "entity": "Conselleria de Economía, Hacienda y Administración Pública",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Plaza / oposición",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_32641_es.pdf"
-    },
-    {
-      "id": "DV-2026-31523",
-      "province": "Comunidad Valenciana (DOGV)",
-      "title": "RESOLUCIÓN de 5 de octubre de 2026, por la que se convoca la creación, con carácter urgente, de una bolsa de empleo de la escala media de prevención y salud, grupo A, subgrupo A2. Referencia: BT-09/26.",
-      "entity": "Universidad de Alicante",
-      "date": "26/10/2026",
-      "bulletin": "10479",
-      "type": "Bolsa de trabajo",
-      "url": "https://dogv.gva.es/datos/2026/10/26/pdf/2026_31523_es.pdf"
     }
   ]
 }

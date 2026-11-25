@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Santa Cruz de Tenerife (BOP)",
   "source": "https://www.bopsantacruzdetenerife.es/bopsc2/main1.php",
-  "lastCheckedUTC": "2026-11-24T16:45:10.507123+00:00",
+  "lastCheckedUTC": "2026-11-25T06:29:19.928648+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "142",
+    "bulletin": "143",
     "pagesVisited": 15,
-    "announcementsRead": 548,
-    "opportunities": 32
+    "announcementsRead": 558,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "128",
       "129",
       "130",
       "131",
@@ -30,10 +29,10 @@
       "139",
       "140",
       "141",
-      "142"
+      "142",
+      "143"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
@@ -47,7 +46,8 @@
       "2026-11-16",
       "2026-11-18",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-27",
@@ -67,10 +67,20 @@
       "2026-11-24"
     ],
     "issuesRead": 15,
-    "announcementsRead": 548,
-    "opportunities": 32
+    "announcementsRead": 558,
+    "opportunities": 33
   },
   "notices": [
+    {
+      "id": "TF-20261125-031",
+      "province": "Santa Cruz de Tenerife (BOP)",
+      "title": "Anuncio relativo a la superación del proceso selectivo convocado por esta Entidad, mediante el sistema de concurso-oposición y turno de promoción interna, para la cobertura por personal laboral fijo de una (1) plaza vacante de Encargado General, perteneciente al Grupo IV, incluida en la Oferta de Empleo Público ordinaria 2025 del Ayuntamiento de El Sauzal",
+      "entity": "AYUNTAMIENTO DE VILLA DE EL SAUZAL",
+      "date": "25/11/2026",
+      "bulletin": "143",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopsantacruzdetenerife.es/boletines/2026/25-11-26/25-11-26.pdf"
+    },
     {
       "id": "TF-20261123-015",
       "province": "Santa Cruz de Tenerife (BOP)",

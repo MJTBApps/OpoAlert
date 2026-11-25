@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-24T16:41:06.290598+00:00",
+  "lastCheckedUTC": "2026-11-25T06:24:54.838666+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 765,
+    "announcementsRead": 762,
     "opportunities": 125
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -36,10 +35,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,80 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 765,
+    "announcementsRead": 762,
     "opportunities": 125
   },
   "notices": [
+    {
+      "id": "AO-2026-007962764",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de las personas que han superado el proceso selectivo para ingreso como personal laboral fijo de la categoría profesional de Oficial Primera Conductor, de la Administración de la Comunidad Autónoma de Aragón. (Código de convocatoria 220062).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476440070808"
+    },
+    {
+      "id": "AO-2026-007962759",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de la Función Pública, por la que se aprueba la bolsa de empleo derivada del correspondiente proceso selectivo de nuevo ingreso como personal laboral fijo de la categoría profesional de Jefe de Unidad de Cocina de la Administración de la Comunidad Autónoma de Aragón. (Código de convocatoria 240093).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476430970505"
+    },
+    {
+      "id": "AO-2026-007962758",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre, de la Universidad de Zaragoza, por la que se nombra personal funcionario de carrera a las personas aspirantes que han superado el proceso selectivo para el ingreso, por el turno de acceso libre, en la Escala de Técnicos Especialistas de Laboratorio y Talleres, especialidad Mecánica de esta Universidad, mediante el sistema de oposición, convocado por Resolución de 9 de abril de 2025. (Referencia: OPO-20/2025).",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476428950505"
+    },
+    {
+      "id": "AO-2026-007962757",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 17 de noviembre de 2026, del Director General de la Función Pública, por la que se resuelve la convocatoria para la provisión, por el sistema de libre designación, de un puesto vacante en el Departamento de Medio Ambiente y Turismo. (Número de RPT: 7860).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476426930505"
+    },
+    {
+      "id": "AO-2026-007962756",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de la Función Pública, por la que se resuelve la convocatoria para la provisión, por el sistema de libre designación, de un puesto vacante en el Departamento de Sanidad. (Número RPT 18516).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476424910404"
+    },
+    {
+      "id": "AO-2026-007962755",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 11 de noviembre de 2026, del Director General de la Función Pública, por la que se resuelve la convocatoria para la provisión, por el sistema de libre designación, de un puesto vacante en el Departamento de Hacienda, Interior y Administración Pública. (RPT: 13695).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476422890303"
+    },
+    {
+      "id": "AO-2026-007962754",
+      "province": "Aragón (BOA)",
+      "title": "ORDEN HAP/1695/2026, de 9 de noviembre, por la que se nombra personal funcionario de carrera del Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala de Auxiliares Facultativos, Auxiliares de Educación Especial. (Código convocatoria 240091).",
+      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476420870303"
+    },
     {
       "id": "AO-2026-007962738",
       "province": "Aragón (BOA)",
@@ -1256,76 +1326,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472057510404"
-    },
-    {
-      "id": "AO-2026-007962004",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 1 de octubre de 2026, del Ayuntamiento de Utebo, por la que se hacen públicas las bases de la convocatoria para proveer por funcionario de carrera, dos plazas de Peón de Mantenimiento, Escala de Administración Especial, Subescala Servicios Especiales, Clase Personal de Oficios, Grupo E - Agrupaciones Profesionales.",
-      "entity": "AYUNTAMIENTO DE UTEBO",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471863430505"
-    },
-    {
-      "id": "AO-2026-007962003",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 7 de octubre de 2026, de la Universidad de Zaragoza, por la que se convoca concurso de méritos para la provisión definitiva del puesto Jefe de Área de Laboratorios EPS del Área de laboratorios y talleres de la Escuela Politécnica Superior de la Universidad.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471861410505"
-    },
-    {
-      "id": "AO-2026-007962001",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 8 octubre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de las personas que han superado el proceso selectivo para ingreso como personal laboral fijo de la categoría profesional de Jefe/a de Unidad de Cocina de la Administración de la Comunidad Autónoma de Aragón. (Código de convocatoria 240093).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471857370505"
-    },
-    {
-      "id": "AO-2026-007962000",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 8 de octubre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de la persona que ha superado el proceso selectivo para ingreso como personal laboral fijo de la categoría profesional de Oficial Segunda Laboratorio de la Administración de la Comunidad Autónoma de Aragón. (Código de convocatoria 240136).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471855350404"
-    },
-    {
-      "id": "AO-2026-007961992",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 6 de octubre de 2026, del Director General de la Función Pública, por la que se hace público el nombre de las personas que han superado la fase de oposición del proceso selectivo para ingreso en el Cuerpo Auxiliar de la Administración General de la Comunidad Autónoma de Aragón, Escala Auxiliar Administrativa, Auxiliares Administrativos.  (Código de convocatoria 250109).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471839190404"
-    },
-    {
-      "id": "AO-2026-007961991",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 16 de octubre de 2026, de la Dirección Gerencia de la Entidad Pública Aragonesa de Servicios Telemáticos, por la que se resuelve el proceso selectivo convocado por Resolución de 17 de julio de 2026, para cubrir un puesto, con carácter fijo, de Gestor/a de Servicio al Cliente, incluido en la Oferta de Empleo Público para 2026, en el ámbito de la Administración General de la Comunidad Autónoma de Aragón (05-2026-OEP).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471837170303"
-    },
-    {
-      "id": "AO-2026-007961990",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, de la Dirección Gerencia de la Entidad Pública Aragonesa de Servicios Telemáticos, por la que se resuelve el proceso selectivo convocado por Resolución de 3 de septiembre de 2026, para la cobertura, mediante contrato de alta dirección, del puesto de Director/a de Proyectos TI.",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471835150303"
     }
   ]
 }

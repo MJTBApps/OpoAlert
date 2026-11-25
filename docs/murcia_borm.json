@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-24T16:44:13.063161+00:00",
+  "lastCheckedUTC": "2026-11-25T06:28:31.077983+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "9E",
+    "bulletin": "273",
     "pagesVisited": 28,
-    "announcementsRead": 622,
-    "opportunities": 64
+    "announcementsRead": 625,
+    "opportunities": 65
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "247",
       "248",
       "249",
       "250",
@@ -43,10 +42,10 @@
       "270",
       "271",
       "272",
-      "9E"
+      "9E",
+      "273"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -73,7 +72,8 @@
       "2026-11-21",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -82,10 +82,30 @@
       "2026-11-22"
     ],
     "issuesRead": 28,
-    "announcementsRead": 622,
-    "opportunities": 64
+    "announcementsRead": 625,
+    "opportunities": 65
   },
   "notices": [
+    {
+      "id": "MU-2026-5838",
+      "province": "Región de Murcia (BORM)",
+      "title": "Bases para la provisión en propiedad de una plaza de Técnico Administrativo del Ayuntamiento de Bullas mediante concurso-oposición, por el sistema de promoción interna.",
+      "entity": "Bullas",
+      "date": "25/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846520/pdf"
+    },
+    {
+      "id": "MU-2026-5837",
+      "province": "Región de Murcia (BORM)",
+      "title": "Bases para la provisión en propiedad de una plaza de Jefe de Sección de Mobiliario Urbano y Parque Móvil del Ayuntamiento de Bullas mediante concurso-oposición, por el sistema de promoción interna.",
+      "entity": "Bullas",
+      "date": "25/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846519/pdf"
+    },
     {
       "id": "MU-2026-5806",
       "province": "Región de Murcia (BORM)",
@@ -715,16 +735,6 @@
       "bulletin": "248",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845904/pdf"
-    },
-    {
-      "id": "MU-2026-5202",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Rector de la Universidad de Murcia (R-1386/2026) de 22 de octubre de 2026, por la que se convoca concurso público para la provisión de plazas de Profesorado Ayudante Doctor.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "26/10/2026",
-      "bulletin": "247",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845884/pdf"
     }
   ]
 }

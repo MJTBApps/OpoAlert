@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-24T16:43:49.123493+00:00",
+  "lastCheckedUTC": "2026-11-25T06:28:11.899649+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 22,
-    "announcementsRead": 323,
-    "opportunities": 43
+    "pagesVisited": 21,
+    "announcementsRead": 299,
+    "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -40,7 +39,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -71,28 +69,19 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-25"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 323,
-    "opportunities": 43
+    "issuesRead": 21,
+    "announcementsRead": 299,
+    "opportunities": 38
   },
   "notices": [
-    {
-      "id": "PV-2026-5020",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo a la convocatoria de concurso de méritos para la provisión del puesto de técnica/o de administración en el Área de Personal del Ayuntamiento de Sopela.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "24/11/2026",
-      "bulletin": "225",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605020a.pdf"
-    },
     {
       "id": "PV-2026-5019",
       "province": "País Vasco (BOPV)",
       "title": "RESOLUCIÓN 1629/2026, de 5 de noviembre, del director gerente de la Organización Sanitaria Integrada Debabarrena, por la que se declara desierta la convocatoria para la provisión, mediante libre designación, del puesto de supervisor/a de Docencia, Formación Continuada y Calidad Asistencial, en la Organización Sanitaria Integrada Debabarrena de Osakidetza-Servicio vasco de salud.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Osakidetza-Servicio vasco de salud",
       "date": "24/11/2026",
       "bulletin": "225",
       "type": "Plaza / oposición",
@@ -102,7 +91,7 @@
       "id": "PV-2026-5017",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 13 de noviembre de 2026, del consejero de Industria, Transición Energética y Sostenibilidad, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «delegado/a territorial», código 511786, dotación 12, en la Delegación Territorial de Administración Industrial de Bizkaia.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Industria, Transición Energética y Sostenibilidad",
       "date": "24/11/2026",
       "bulletin": "225",
       "type": "Plaza / oposición",
@@ -467,46 +456,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604525a.pdf"
-    },
-    {
-      "id": "PV-2026-4487",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 13 de octubre de 2026, del consejero de Ciencia, Universidades e Innovación, por la que se aprueban las bases reguladoras de las ayudas para estancias en centros distintos al de aplicación del Programa Predoctoral de Formación de Personal Investigador, y su convocatoria para el año 2027.",
-      "entity": "Ciencia, Universidades e Innovación",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604487a.pdf"
-    },
-    {
-      "id": "PV-2026-4480",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN 4836/2026, de 25 de septiembre, del director gerente de la Organización Sanitaria Integrada Araba, por la que se hace pública la convocatoria para la provisión, mediante el sistema de libre designación, de un puesto de secretario/a de Dirección en la Dirección de Atención Integrada de la Organización Sanitaria Integrada Araba de Osakidetza-Servicio vasco de Salud.",
-      "entity": "Osakidetza-Servicio vasco de salud",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604480a.pdf"
-    },
-    {
-      "id": "PV-2026-4476",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 5 de octubre de 2026, del consejero de Vivienda y Agenda Urbana, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo de la Dirección de Planificación Territorial.",
-      "entity": "Vivienda y Agenda Urbana",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604476a.pdf"
-    },
-    {
-      "id": "PV-2026-4473",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 13 de octubre de 2026, del director de Gestión de Personal, por la que se da publicidad a la octava lista complementaria de personas seleccionadas en los procesos excepcionales de estabilización de empleo para la cobertura, con carácter fijo, de plazas pertenecientes a las categorías laborales de cocina y de personal de limpieza adscritas al Departamento de Educación, por reunir los requisitos exigidos en la convocatoria, y por la que se establece el plazo para la formalización de los correspondientes contratos laborales.",
-      "entity": "Educación",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604473a.pdf"
     }
   ]
 }

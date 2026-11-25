@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-24T16:42:14.798440+00:00",
+  "lastCheckedUTC": "2026-11-25T06:26:41.746106+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "140",
-    "pagesVisited": 13,
-    "announcementsRead": 463,
-    "opportunities": 41
+    "pagesVisited": 12,
+    "announcementsRead": 449,
+    "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "128",
       "129",
       "130",
       "131",
@@ -31,7 +30,6 @@
       "140"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
@@ -62,11 +60,12 @@
       "2026-11-19",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
-    "issuesRead": 13,
-    "announcementsRead": 463,
-    "opportunities": 41
+    "issuesRead": 12,
+    "announcementsRead": 449,
+    "opportunities": 38
   },
   "notices": [
     {
@@ -448,36 +447,6 @@
       "bulletin": "129",
       "type": "Bolsa de trabajo",
       "url": "https://www.boplaspalmas.net/boletines/2026/28-10-26/28-10-26.pdf"
-    },
-    {
-      "id": "LP-20261026-009",
-      "province": "Las Palmas (BOP)",
-      "title": "Bases específicas y convocatoria para cubrir 1 plaza de Sargento del servicio de extinción de incendio y salvamento",
-      "entity": "ILUSTRE AYUNTAMIENTO DE LA OLIVA",
-      "date": "26/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/26-10-26/26-10-26.pdf"
-    },
-    {
-      "id": "LP-20261026-008",
-      "province": "Las Palmas (BOP)",
-      "title": "Bases específicas y convocatoria para cubrir 5 plazas de Cabo de Bomberos",
-      "entity": "ILUSTRE AYUNTAMIENTO DE LA OLIVA",
-      "date": "26/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/26-10-26/26-10-26.pdf"
-    },
-    {
-      "id": "LP-20261026-007",
-      "province": "Las Palmas (BOP)",
-      "title": "Bases específicas y convocatoria para cubrir 5 plazas de Bombero/a Conductor",
-      "entity": "ILUSTRE AYUNTAMIENTO DE LA OLIVA",
-      "date": "26/10/2026",
-      "bulletin": "128",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/26-10-26/26-10-26.pdf"
     }
   ]
 }

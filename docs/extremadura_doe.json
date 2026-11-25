@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Extremadura (DOE)",
   "source": "https://doe.juntaex.es/",
-  "lastCheckedUTC": "2026-11-24T16:40:40.760102+00:00",
+  "lastCheckedUTC": "2026-11-25T06:24:28.130604+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226O",
+    "bulletin": "227O",
     "pagesVisited": 22,
-    "announcementsRead": 635,
-    "opportunities": 53
+    "announcementsRead": 639,
+    "opportunities": 52
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "206O",
       "207O",
       "208O",
       "4E",
@@ -37,10 +36,10 @@
       "223O",
       "224O",
       "225O",
-      "226O"
+      "226O",
+      "227O"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-28",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -75,10 +75,20 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 635,
-    "opportunities": 53
+    "announcementsRead": 639,
+    "opportunities": 52
   },
   "notices": [
+    {
+      "id": "EX-2026-26063003",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos. Elección de plazas.- Resolución de 18 de noviembre de 2026, de la Dirección General de Recursos Humanos, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para la elección de las mismas por los aspirantes que han superado el proceso selectivo en la especialidad de Análisis Clínicos, convocado por Resolución de 19 de diciembre de 2024 para el acceso a la condición de personal estatutario fijo en la categoría de Facultativo Especialista de Área, en las instituciones sanitarias del Servicio Extremeño de Salud.",
+      "entity": "SERVICIO EXTREMEÑO DE SALUD",
+      "date": "25/11/2026",
+      "bulletin": "227O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2270o/26063003.pdf"
+    },
     {
       "id": "EX-2026-26062991",
       "province": "Extremadura (DOE)",
@@ -588,26 +598,6 @@
       "bulletin": "209O",
       "type": "Plaza / oposición",
       "url": "https://doe.juntaex.es/pdfs/doe/2026/2090o/26050120.pdf"
-    },
-    {
-      "id": "EX-2026-26062639",
-      "province": "Extremadura (DOE)",
-      "title": "Procesos selectivos.- Resolución de 15 de octubre de 2026, de la Dirección del Consorcio, por la que se convocan pruebas selectivas por turno de ascenso para cubrir un puesto de trabajo vacante en la Categoría de Auxiliar de Arqueología, perteneciente al Grupo IV.",
-      "entity": "CONSORCIO CIUDAD MONUMENTAL DE MÉRIDA",
-      "date": "26/10/2026",
-      "bulletin": "206O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/2060o/26062639.pdf"
-    },
-    {
-      "id": "EX-2026-26062638",
-      "province": "Extremadura (DOE)",
-      "title": "Procesos selectivos.- Resolución de 15 de octubre de 2026, de la Dirección del Consorcio, por la que se convocan pruebas selectivas por turno libre para cubrir un puesto de trabajo vacante en la Categoría de Peón Especializado de Mantenimiento y para constituir lista de espera en dicha categoría, perteneciente al Grupo V.",
-      "entity": "CONSORCIO CIUDAD MONUMENTAL DE MÉRIDA",
-      "date": "26/10/2026",
-      "bulletin": "206O",
-      "type": "Plaza / oposición",
-      "url": "https://doe.juntaex.es/pdfs/doe/2026/2060o/26062638.pdf"
     }
   ]
 }

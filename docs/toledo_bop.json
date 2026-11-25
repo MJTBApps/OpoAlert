@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-24T16:45:14.190753+00:00",
+  "lastCheckedUTC": "2026-11-25T06:29:39.118600+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "225",
-    "pagesVisited": 21,
-    "announcementsRead": 517,
-    "opportunities": 25
+    "pagesVisited": 20,
+    "announcementsRead": 496,
+    "opportunities": 23
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -39,7 +38,6 @@
       "225"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -70,11 +68,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-25"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 517,
-    "opportunities": 25
+    "issuesRead": 20,
+    "announcementsRead": 496,
+    "opportunities": 23
   },
   "notices": [
     {
@@ -306,26 +305,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104908;0&insert_number=4946&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4865",
-      "province": "Toledo",
-      "title": "Bases Reguladoras del procedimiento para la selección de una Plaza de Técnico de Administración General para el Ayuntamiento de Portillo de Toledo",
-      "entity": "AYUNTAMIENTO DE PORTILLO DE TOLEDO",
-      "date": "26/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104850;0&insert_number=4865&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4850",
-      "province": "Toledo",
-      "title": "Bases reguladoras de la convocatoria por promoción interna de una plaza de Oficial del Cuerpo de Policía Local de La Puebla de Montalbán.",
-      "entity": "AYUNTAMIENTO DE LA PUEBLA DE MONTALBAN",
-      "date": "26/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104830;0&insert_number=4850&insert_year=2026"
     }
   ]
 }

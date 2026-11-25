@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-24T16:43:37.698597+00:00",
+  "lastCheckedUTC": "2026-11-25T06:28:16.298512+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 22,
-    "announcementsRead": 402,
+    "announcementsRead": 409,
     "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -37,10 +36,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,30 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 402,
+    "announcementsRead": 409,
     "opportunities": 37
   },
   "notices": [
+    {
+      "id": "PO-2026080866",
+      "province": "Pontevedra",
+      "title": "MODIFICACIÓN DAS BASES REGULADORAS DA BOLSA DE TRABALLO PARA A CONTRATACIÓN DE AUXILIAR DE AXUDA A DOMICILIO PARA O DPTO. DE SERVIZOS SOCIAIS, CREACIÓN DE “BOLSA B\"",
+      "entity": "Mondariz Balneario",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/25/2026080866/an.bop.PONTEVEDRA.20261125.2026080866.pdf"
+    },
+    {
+      "id": "PO-2026080856",
+      "province": "Pontevedra",
+      "title": "BASES E CONVOCATORIA DO PROCESO SELECTIVO PARA A FORMACIÓN DUNHA BOLSA DE TRABALLO DE ARQUITECTO/A TÉCNICO/A MEDIANTE O SISTEMA DE CONCURSO-OPOSICIÓN DE PERSOAL FUNCIONARIO INTERINO",
+      "entity": "Rosal, O",
+      "date": "25/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/25/2026080856/an.bop.PONTEVEDRA.20261125.2026080856.pdf"
+    },
     {
       "id": "PO-2026080238",
       "province": "Pontevedra",
@@ -427,26 +447,6 @@
       "bulletin": "207",
       "type": "Bolsa de trabajo",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/27/2026074641/an.bop.PONTEVEDRA.20261027.2026074641.pdf"
-    },
-    {
-      "id": "PO-2026074967",
-      "province": "Pontevedra",
-      "title": "RECTIFICACIÓN DA RESOLUCIÓN Nº2026008416, CORRESPONDENTE AO PROCESO SELECTIVO CONVOCADO PARA CUBRIR DÚAS PRAZAS DE TÉCNICO/A DE ADMINISTRACIÓN XERAL-A1 (CPI2024O)",
-      "entity": "Deputación Provincial",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/26/2026074967/an.bop.PONTEVEDRA.20261026.2026074967.pdf"
-    },
-    {
-      "id": "PO-2026074733",
-      "province": "Pontevedra",
-      "title": "APROBACIÓN DAS BASES E DA CONVOCATORIA DO PROCESO SELECTIVO PARA A COBERTURA, POLA QUENDA LIBRE, DE DÚAS PRAZAS DE AUXILIAR ADMINISTRATIVO/A (SUBGRUPO C2) E CREACIÓN DUNHA LISTAXE DE RESERVA.",
-      "entity": "Soutomaior",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/26/2026074733/an.bop.PONTEVEDRA.20261026.2026074733.pdf"
     }
   ]
 }

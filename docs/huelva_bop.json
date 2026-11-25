@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-24T16:41:47.539016+00:00",
+  "lastCheckedUTC": "2026-11-25T06:25:31.544179+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 21,
-    "announcementsRead": 284,
-    "opportunities": 43
+    "announcementsRead": 285,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -36,10 +35,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,9 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 284,
-    "opportunities": 43,
+    "announcementsRead": 285,
+    "opportunities": 44,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_206_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_208_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
@@ -96,10 +95,51 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_223_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_224_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_225_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_226_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_226_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_227_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-387132",
+      "province": "Huelva",
+      "title": "Decreto de aprobación de las Bases y convocatoria para la provisión temporal de dos puestos de Policía Local mediante comisión de servicio",
+      "entity": "Ayuntamiento de Lepe",
+      "date": "25/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_387132_BOP-227_2026.pdf"
+    },
+    {
+      "id": "HB-2026-386654",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para la contratación de personal de limpieza de edificios en régimen laboral temporal mediante concurso",
+      "entity": "Ayuntamiento de Lucena del Puerto",
+      "date": "25/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_386654_BOP-227_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385862",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para la selección de un empleado laboral fijo para el puesto de Limpiador de Edificios Públicos",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "25/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385862_BOP-227_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385860",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para la selección de un funcionario para el desarrollo de las funciones de la Jefatura de la Unidad Administrativa",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "25/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385860_BOP-227_2026.pdf"
+    },
     {
       "id": "HB-2026-385643",
       "province": "Huelva",
@@ -499,36 +539,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381260_BOP-208_2026.pdf"
-    },
-    {
-      "id": "HB-2026-382985",
-      "province": "Huelva",
-      "title": "Resolución de aceptación abstención y designación nuevo componente del tribunal del proceso selectivo convocado para cubrir 2 plazas de Ordenanza Subalterno (Discapacidad Intelectual) vacantes en la plantilla de personal funcionario y pertenecientes al turno libre de las O.E.P. 2025 y 2026",
-      "entity": "Diputación Provincial de Huelva",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382985_BOP-206_2026.pdf"
-    },
-    {
-      "id": "HB-2026-382983",
-      "province": "Huelva",
-      "title": "Resolución de aceptación abstención y designación nuevo componente del tribunal del proceso selectivo convocado para cubrir 8 plazas de Técnico Superior en Derecho vacantes en la plantilla de personal funcionario y pertenecientes al turno libre de las O.E.P. 2025 y 2026",
-      "entity": "Diputación Provincial de Huelva",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382983_BOP-206_2026.pdf"
-    },
-    {
-      "id": "HB-2026-382950",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la constitución de una Bolsa de trabajo temporal de Agente de Igualdad del Centro Municipal de Información a la Mujer",
-      "entity": "Ayuntamiento de Valverde del Camino",
-      "date": "26/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_382950_BOP-206_2026.pdf"
     }
   ]
 }

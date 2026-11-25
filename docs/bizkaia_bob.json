@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-24T16:38:46.445578+00:00",
+  "lastCheckedUTC": "2026-11-25T06:22:40.698417+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 22,
-    "announcementsRead": 832,
-    "opportunities": 59
+    "announcementsRead": 846,
+    "opportunities": 57
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -37,10 +36,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -61,7 +60,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,8 +74,8 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 832,
-    "opportunities": 59
+    "announcementsRead": 846,
+    "opportunities": 57
   },
   "notices": [
     {
@@ -647,26 +647,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/27/I-1206_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5446",
-      "province": "Bizkaia",
-      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la admisión y exclusión definitiva de aspirantes en el proceso selectivo convocado por el sistema de acceso libre, mediante Concurso-Oposición, para la provisión en propiedad de 1 plaza de Técnica/o media/o de Sistemas de Información Geográfica con perfil lingüístico 3 de euskera no preceptivo.",
-      "entity": "Ayuntamiento de Artzentales",
-      "date": "26/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/26/II-5446_cas.pdf"
-    },
-    {
-      "id": "BI-2026-I-1222",
-      "province": "Bizkaia",
-      "title": "ORDEN FORAL 6123/2026, de 23 de octubre, del diputado foral de Administración Pública y Relaciones Institucionales de rectificación de errores de la Orden Foral 6043/2026, de 20 de octubre, por la que se convoca el Concurso Unitario de 2026 para la provisión de puestos de trabajo vacantes en las corporaciones locales del Territorio Histórico de Bizkaia, reservados a funcionarios y funcionarias de administración local, con habilitación de carácter nacional.",
-      "entity": "Departamento de Administración Pública y Relaciones Institucionales",
-      "date": "26/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/26/I-1222_cas.pdf"
     }
   ]
 }

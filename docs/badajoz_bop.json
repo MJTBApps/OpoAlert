@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-24T16:38:27.711648+00:00",
+  "lastCheckedUTC": "2026-11-25T06:22:44.390248+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "225",
+    "bulletin": "226",
     "pagesVisited": 21,
-    "announcementsRead": 444,
-    "opportunities": 41
+    "announcementsRead": 446,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -36,10 +35,10 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,8 +73,8 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 444,
-    "opportunities": 41
+    "announcementsRead": 446,
+    "opportunities": 40
   },
   "notices": [
     {
@@ -476,16 +476,6 @@
       "bulletin": "206",
       "type": "Bolsa de trabajo",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4234.pdf"
-    },
-    {
-      "id": "BD-2026-164959",
-      "province": "Badajoz",
-      "title": "Rectificación de errores en bases de varias plazas correspondientes a la oferta de empleo público 2026",
-      "entity": "Ayuntamiento de Castuera",
-      "date": "26/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-26000000_4227.pdf"
     }
   ]
 }

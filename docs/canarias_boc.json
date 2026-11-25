@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-24T16:41:51.340700+00:00",
+  "lastCheckedUTC": "2026-11-25T06:25:52.161030+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "236",
+    "bulletin": "237",
     "pagesVisited": 23,
-    "announcementsRead": 444,
-    "opportunities": 60
+    "announcementsRead": 449,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "214",
       "215",
       "216",
       "217",
@@ -38,10 +37,10 @@
       "233",
       "234",
       "235",
-      "236"
+      "236",
+      "237"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -63,7 +62,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -77,10 +77,40 @@
       "2026-11-22"
     ],
     "issuesRead": 23,
-    "announcementsRead": 444,
-    "opportunities": 60
+    "announcementsRead": 449,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "IC-2026-4128",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 17 de noviembre de 2026, por la que se hace pública la relación con la persona aspirante seleccionada en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Facultativo Técnico de Grado Medio, Escala Arquitectura e Ingeniería Técnica, Especialidad de Ingeniería Técnica Forestal (Grupo A, Subgrupo A2), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 28 de noviembre de 2024, y se le oferta puesto de trabajo a los efectos de manifestar su preferencia.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "25/11/2026",
+      "bulletin": "237",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4128.pdf"
+    },
+    {
+      "id": "IC-2026-4127",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 17 de noviembre de 2026, por la que se hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior Facultativo, Escala Técnica Facultativa Superior, Especialidad de Ciencias del Mar (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 28 de noviembre de 2024, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "25/11/2026",
+      "bulletin": "237",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4127.pdf"
+    },
+    {
+      "id": "IC-2026-4126",
+      "province": "Canarias (BOC)",
+      "title": "Dirección General de la Función Pública.- Resolución de 17 de noviembre de 2026, por la que se hace pública la relación de personas aspirantes seleccionadas en las pruebas selectivas para ingresar, por el sistema general de acceso libre, en el Cuerpo Superior Facultativo, Escala de Archivística, Especialidad de Archivo (Grupo A, Subgrupo A1), de la Administración Pública de la Comunidad Autónoma de Canarias, convocadas por Resolución de 28 de noviembre de 2024, y se les ofertan puestos de trabajo a los efectos de manifestar sus preferencias.",
+      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
+      "date": "25/11/2026",
+      "bulletin": "237",
+      "type": "Plaza / oposición",
+      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-237-4126.pdf"
+    },
     {
       "id": "IC-2026-4107",
       "province": "Canarias (BOC)",
@@ -670,16 +700,6 @@
       "bulletin": "215",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-215-3696.pdf"
-    },
-    {
-      "id": "IC-2026-3681",
-      "province": "Canarias (BOC)",
-      "title": "Viceconsejería de la Presidencia.- Resolución de 10 de octubre de 2026, por la que se resuelve la convocatoria para la provisión, por el procedimiento de libre designación, del puesto de trabajo n.º 12349510, denominado Secretario/a Alto Cargo, adscrito a la Unidad de Apoyo al Director General, en la Dirección General de Relaciones con África, efectuada por Resolución de 24 de agosto de 2026.",
-      "entity": "Presidencia del Gobierno",
-      "date": "26/10/2026",
-      "bulletin": "214",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-214-3681.pdf"
     }
   ]
 }
