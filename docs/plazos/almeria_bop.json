@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T10:28:04+00:00",
+ "updatedUTC": "2026-11-25T13:39:33+00:00",
  "items": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": {
    "days": 20,
@@ -125,6 +125,18 @@
    "kind": "hábiles",
    "text": "…mediante sistema de oposición libre, se abre el plazo de presentación de solicitudes, que será de 20 días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial del Estado.",
    "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3288/anuncio.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…interna, mediante oposición, se abre un plazo de presentación de solicitudes que será de veinte días hábiles a contar desde el día siguiente a la publicación de este anuncio en el BOE.",
+   "page": 1
+  },
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3249/anuncio.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "3.- PLAZO Y FORMA DE PRESENTACIÓN DE INSTANCIAS Y DOCUMENTACIÓN Las solicitudes para participar en este procedimiento de provisión de puesto se presentarán, dentro del plazo de diez días hábiles a contar desde el siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial de la Provincia, en la…",
+   "page": 1
   }
  },
  "none": [
@@ -160,7 +172,14 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3190/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3216/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3217/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3250/anuncio.pdf"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3245/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3247/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3248/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3250/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3289/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3290/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3301/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3307/anuncio.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -184,8 +203,13 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3216/anuncio.pdf": "https://sede.aytoalmeria.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3217/anuncio.pdf": "https://sede.aytoalmeria.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": "https://www.albanchez.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3249/anuncio.pdf": "https://www.dipalme.org/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3260/anuncio.pdf": "https://balanegra.sedelectronica.es/",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf": "https://balanegra.sedelectronica.es/"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf": "https://balanegra.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3288/anuncio.pdf": "https://balanegra.sedelectronica.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3289/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3290/anuncio.pdf": "https://sede.elejido.es/",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3307/anuncio.pdf": "https://www.canjayar.es/"
  },
  "sedeRaw": {
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf": [
@@ -251,11 +275,26 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3234/anuncio.pdf": [
    "https://www.albanchez.es/"
   ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3249/anuncio.pdf": [
+   "https://www.dipalme.org/"
+  ],
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3260/anuncio.pdf": [
    "https://balanegra.sedelectronica.es/"
   ],
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3261/anuncio.pdf": [
    "https://balanegra.sedelectronica.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3288/anuncio.pdf": [
+   "https://balanegra.sedelectronica.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3289/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3290/anuncio.pdf": [
+   "https://sede.elejido.es/"
+  ],
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3307/anuncio.pdf": [
+   "https://www.canjayar.es/"
   ]
  },
  "sinSede": [
@@ -288,6 +327,10 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3169/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3224/anuncio.pdf",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3225/anuncio.pdf",
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/3250/anuncio.pdf"
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3245/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3247/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3248/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3250/anuncio.pdf",
+  "https://app.dipalme.org/bop/services/manager/edicto/2026/3301/anuncio.pdf"
  ]
 }
