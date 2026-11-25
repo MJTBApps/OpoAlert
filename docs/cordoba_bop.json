@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipucordoba.es/",
   "province": "Córdoba",
-  "lastCheckedUTC": "2026-11-24T17:29:34.850679+00:00",
+  "lastCheckedUTC": "2026-11-25T08:07:23.699142+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 457,
-    "opportunities": 36
+    "announcementsRead": 449,
+    "opportunities": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 457,
-    "opportunities": 36,
+    "announcementsRead": 449,
+    "opportunities": 33,
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -40,10 +39,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -63,7 +62,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -77,7 +77,6 @@
       "2026-11-22"
     ],
     "editionPDFs": [
-      "https://bop.dipucordoba.es/visor-pdf/26-10-2026/BOP-S-2026-207.pdf",
       "https://bop.dipucordoba.es/visor-pdf/27-10-2026/BOP-S-2026-208.pdf",
       "https://bop.dipucordoba.es/visor-pdf/28-10-2026/BOP-S-2026-209.pdf",
       "https://bop.dipucordoba.es/visor-pdf/29-10-2026/BOP-S-2026-210.pdf",
@@ -97,7 +96,8 @@
       "https://bop.dipucordoba.es/visor-pdf/19-11-2026/BOP-S-2026-224.pdf",
       "https://bop.dipucordoba.es/visor-pdf/20-11-2026/BOP-S-2026-225.pdf",
       "https://bop.dipucordoba.es/visor-pdf/23-11-2026/BOP-S-2026-226.pdf",
-      "https://bop.dipucordoba.es/visor-pdf/24-11-2026/BOP-S-2026-227.pdf"
+      "https://bop.dipucordoba.es/visor-pdf/24-11-2026/BOP-S-2026-227.pdf",
+      "https://bop.dipucordoba.es/visor-pdf/25-11-2026/BOP-S-2026-228.pdf"
     ]
   },
   "notices": [
@@ -430,36 +430,6 @@
       "bulletin": "209",
       "type": "Plaza / oposición",
       "url": "https://bop.dipucordoba.es/visor-pdf/28-10-2026/BOP-A-2026-3603.pdf"
-    },
-    {
-      "id": "CO-2026-3589",
-      "province": "Córdoba",
-      "title": "Convocatoria y Bases reguladoras del proceso selectivo para la cobertura de una plaza de Titulado/a de Grado Medio de Prevención de Riesgos Laborales, mediante el sistema de concurso-oposición y acceso libre",
-      "entity": "Empresa Municipal de Aguas de Córdoba, S A (EMACSA). Córdoba",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/26-10-2026/BOP-A-2026-3589.pdf"
-    },
-    {
-      "id": "CO-2026-3588",
-      "province": "Córdoba",
-      "title": "Convocatoria y Bases reguladoras del proceso selectivo para la cobertura de dos plazas Auxiliar Técnico de Logística, mediante el sistema de concurso-oposición y acceso libre",
-      "entity": "Empresa Municipal de Aguas de Córdoba, S A (EMACSA). Córdoba",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/26-10-2026/BOP-A-2026-3588.pdf"
-    },
-    {
-      "id": "CO-2026-3559",
-      "province": "Córdoba",
-      "title": "Resolución de Alcaldía nº 636/2026, de 19 de octubre de 2026, por la que se publica el desistimiento en el procedimiento de la convocatoria para la selección, mediante concurso, de un/a Especialista en Igualdad, con la categoría de funcionario interino por programas, publicado en el Boletín Oficial de la Provincia de Córdoba, de 7 de octubre de 2026",
-      "entity": "Ayuntamiento de Villaviciosa de Córdoba",
-      "date": "26/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipucordoba.es/visor-pdf/26-10-2026/BOP-A-2026-3559.pdf"
     }
   ]
 }
