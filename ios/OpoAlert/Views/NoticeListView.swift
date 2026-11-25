@@ -63,20 +63,14 @@ struct NoticeListView: View {
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear)
                             .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
-                            .onAppear {
-                                if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == Ads.listAdEvery - 1 {
-                                    ads.preload(slot: index / Ads.listAdEvery)
-                                }
-                            }
                         // Un anuncio cada 2 convocatorias, también al pulsar «Ver más» (sin anuncios con Premium).
-                        // Solo cuando ha cargado: así no queda nunca un hueco vacío.
-                        if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == Ads.listAdEvery - 1
-                            && ads.loadedSlots.contains(index / Ads.listAdEvery) {
-                            BannerAdView(slot: index / Ads.listAdEvery)
-                                .frame(width: 320, height: 50)
-                                .frame(maxWidth: .infinity)
+                        // La fila está siempre (el banner se pide ya en pantalla) y solo ocupa sitio cuando ha cargado.
+                        if mode == .explore && ads.ready && !premium.isActive && index % Ads.listAdEvery == Ads.listAdEvery - 1 {
+                            AdSlot(slot: index / Ads.listAdEvery)
+                                .padding(.vertical, ads.loadedSlots.contains(index / Ads.listAdEvery) ? 8 : 0)
                                 .listRowSeparator(.hidden)
                                 .listRowBackground(Color.clear)
+                                .listRowInsets(EdgeInsets())
                         }
                     }
                     if shown.count > limit {
@@ -103,6 +97,7 @@ struct NoticeListView: View {
             }
         }
         .listStyle(.plain)
+        .environment(\.defaultMinListRowHeight, 0)
         .background(Palette.background)
         .scrollContentBackground(.hidden)
         .navigationTitle(mode == .favorites ? "Favoritas" : "OpoAlert")

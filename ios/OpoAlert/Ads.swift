@@ -287,6 +287,29 @@ final class BannerRetry: NSObject, BannerViewDelegate {
     }
 }
 
+/// Hueco de anuncio que está siempre en pantalla: el banner se pide ya colocado en la ventana
+/// (antes se pedía fuera de pantalla y luego se movía, y muchos anuncios recibidos no se veían).
+/// Hasta que llega el anuncio no ocupa sitio ni muestra «PUBLICIDAD»: nunca un hueco vacío.
+struct AdSlot: View {
+    let slot: Int
+    @ObservedObject private var ads = Ads.shared
+
+    var body: some View {
+        let loaded = ads.loadedSlots.contains(slot)
+        VStack(spacing: 6) {
+            if loaded {
+                Text("PUBLICIDAD")
+                    .font(.system(size: 10))
+                    .foregroundStyle(Color(hex: 0x64748B))
+            }
+            BannerAdView(slot: slot)
+                .frame(width: 320, height: loaded ? 50 : 0)
+                .clipped()
+        }
+        .frame(maxWidth: .infinity)
+    }
+}
+
 /// Banner estándar (320×50) entre las convocatorias.
 struct BannerAdView: UIViewRepresentable {
     let slot: Int

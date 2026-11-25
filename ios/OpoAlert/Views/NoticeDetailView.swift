@@ -21,16 +21,9 @@ struct NoticeDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 // Banner de arriba, encima del título (el título lo separa del botón del PDF).
-                if ads.ready && !premium.isActive && ads.loadedSlots.contains(Ads.detailTopSlot) {
-                    VStack(spacing: 6) {
-                        Text("PUBLICIDAD")
-                            .font(.system(size: 10))
-                            .foregroundStyle(Color(hex: 0x64748B))
-                        BannerAdView(slot: Ads.detailTopSlot)
-                            .frame(width: 320, height: 50)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.bottom, 4)
+                if ads.ready && !premium.isActive {
+                    AdSlot(slot: Ads.detailTopSlot)
+                        .padding(.bottom, 4)
                 }
                 HStack(spacing: 6) {
                     NoticeTag(text: badge, color: notice.isPool ? Palette.poolText : Palette.blue,
@@ -103,16 +96,9 @@ struct NoticeDetailView: View {
                     .background(Color.white, in: RoundedRectangle(cornerRadius: 14))
 
                 // Banner a mitad de la ficha, entre el resumen y los datos (lejos de los botones).
-                if ads.ready && !premium.isActive && ads.loadedSlots.contains(Ads.detailMidSlot) {
-                    VStack(spacing: 6) {
-                        Text("PUBLICIDAD")
-                            .font(.system(size: 10))
-                            .foregroundStyle(Color(hex: 0x64748B))
-                        BannerAdView(slot: Ads.detailMidSlot)
-                            .frame(width: 320, height: 50)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 8)
+                if ads.ready && !premium.isActive {
+                    AdSlot(slot: Ads.detailMidSlot)
+                        .padding(.vertical, 8)
                 }
 
                 Text("Datos de la publicación")
@@ -152,16 +138,9 @@ struct NoticeDetailView: View {
 
                 // Un banner al final de la ficha, lejos de los botones (sin anuncios con Premium).
                 // Solo aparece cuando ha cargado: nunca un hueco vacío.
-                if ads.ready && !premium.isActive && ads.loadedSlots.contains(Ads.detailSlot) {
-                    VStack(spacing: 6) {
-                        Text("PUBLICIDAD")
-                            .font(.system(size: 10))
-                            .foregroundStyle(Color(hex: 0x64748B))
-                        BannerAdView(slot: Ads.detailSlot)
-                            .frame(width: 320, height: 50)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.top, 18)
+                if ads.ready && !premium.isActive {
+                    AdSlot(slot: Ads.detailSlot)
+                        .padding(.top, 18)
                 }
             }
             .padding(16)

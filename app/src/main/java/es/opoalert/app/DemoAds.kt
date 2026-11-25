@@ -253,8 +253,19 @@ class DemoAds(private val activity: Activity, private val onBannerLoaded: () -> 
             view.adUnitId = BANNER_ID
             view.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(activity, widthDp))
             view.adListener = object : AdListener() {
+                private var tries = 0
                 override fun onAdLoaded() {
+                    tries = 0
                     if (!activity.isFinishing && !activity.isDestroyed) onLoaded(view)
+                }
+                // Si no llega anuncio, se vuelve a pedir mientras la ficha siga abierta:
+                // a los 20 s, 40 s… hasta 2 min (antes ese hueco se quedaba sin anuncio).
+                override fun onAdFailedToLoad(error: LoadAdError) {
+                    tries++
+                    val delay = (20_000L * tries).coerceAtMost(120_000L)
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        if (!activity.isFinishing && !activity.isDestroyed) view.loadAd(AdRequest.Builder().build())
+                    }, delay)
                 }
             }
             view.loadAd(AdRequest.Builder().build())
