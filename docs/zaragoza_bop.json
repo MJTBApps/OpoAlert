@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-24T17:15:23.633690+00:00",
+  "lastCheckedUTC": "2026-11-25T07:33:11.329566+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "271",
+    "bulletin": "272",
     "pagesVisited": 2,
-    "announcementsRead": 835,
-    "opportunities": 84
+    "announcementsRead": 850,
+    "opportunities": 87
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 835,
-    "opportunities": 84,
+    "announcementsRead": 850,
+    "opportunities": 87,
     "bulletins": [
-      "247",
       "248",
       "249",
       "250",
@@ -44,10 +43,10 @@
       "268",
       "269",
       "270",
-      "271"
+      "271",
+      "272"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -71,10 +70,10 @@
       "2026-11-20",
       "2026-11-21",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "issuePublicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -98,7 +97,8 @@
       "2026-11-20",
       "2026-11-21",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -108,19 +108,89 @@
       "2026-11-22"
     ],
     "sectionsRead": {
-      "SECCIÓN SEGUNDA": 6,
-      "SECCIÓN TERCERA": 38,
-      "SECCIÓN QUINTA": 118,
-      "SECCIÓN SEXTA": 643,
-      "PARTE NO OFICIAL": 19,
+      "SECCIÓN SEGUNDA": 5,
+      "SECCIÓN TERCERA": 35,
+      "SECCIÓN QUINTA": 114,
+      "SECCIÓN SEXTA": 665,
+      "PARTE NO OFICIAL": 20,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 6,
       "SECCIÓN CUARTA": 1,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
     },
-    "documentsVerified": 107
+    "documentsVerified": 110
   },
   "notices": [
+    {
+      "id": "ZA-000345463",
+      "province": "Zaragoza",
+      "title": "Información pública y exposición del presupuesto general del muy ilustre Ayuntamiento de Tauste para el ejercicio 2027, junto con sus bases de ejecución y sus anexos, y de la plantilla de personal para el…",
+      "entity": "AYUNTAMIENTO DE TAUSTE",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476522341212"
+    },
+    {
+      "id": "ZA-000345457",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE MONTÓN",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476516281010"
+    },
+    {
+      "id": "ZA-000345453",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
+      "entity": "AYUNTAMIENTO DE LUNA",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476512240909"
+    },
+    {
+      "id": "ZA-000345450",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE LOBERA DE ONSELLA",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476509210808"
+    },
+    {
+      "id": "ZA-000345446",
+      "province": "Zaragoza",
+      "title": "BASES para la creación de la bolsa de operarios de limpieza de edificios e instalaciones del Ayuntamiento de La Almunia de Doña Godina. Primera. - Objeto. 1.1. Las presentes bases regulan el proceso de…",
+      "entity": "AYUNTAMIENTO DE LA ALMUNIA DE DOÑA GODINA",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476505170707"
+    },
+    {
+      "id": "ZA-000345441",
+      "province": "Zaragoza",
+      "title": "ANUNCIO relativo a la aprobación definitiva del presupuesto general para el",
+      "entity": "AYUNTAMIENTO DE AÑÓN DE MONCAYO",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476500120505"
+    },
+    {
+      "id": "ZA-000345438",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE ALHAMA DE ARAGÓN",
+      "date": "25/11/2026",
+      "bulletin": "272",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476497090404"
+    },
     {
       "id": "ZA-000345418",
       "province": "Zaragoza",
@@ -920,46 +990,6 @@
       "bulletin": "248",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472134350202"
-    },
-    {
-      "id": "ZA-000344618",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
-      "entity": "AYUNTAMIENTO DE VILLAFELICHE",
-      "date": "26/10/2026",
-      "bulletin": "247",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471931350606"
-    },
-    {
-      "id": "ZA-000344615",
-      "province": "Zaragoza",
-      "title": "Transcurrido sin reclamaciones el plazo para presentación de alegaciones al expediente de la modificación del Reglamento del Funcionamiento del Registro Electrónico del Ayuntamiento de Tauste, que incorpora…",
-      "entity": "AYUNTAMIENTO DE TAUSTE",
-      "date": "26/10/2026",
-      "bulletin": "247",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471928320505"
-    },
-    {
-      "id": "ZA-000344612",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
-      "entity": "AYUNTAMIENTO DE MONTÓN",
-      "date": "26/10/2026",
-      "bulletin": "247",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471925290505"
-    },
-    {
-      "id": "ZA-000344610",
-      "province": "Zaragoza",
-      "title": "Acuerdo del Pleno de fecha de 1 de octubre de 2026 del Ayuntamiento de Mequinenza por el que se realiza la aprobación inicial de la Ordenanza reguladora de las bases de la ayuda municipal para sufragar el…",
-      "entity": "AYUNTAMIENTO DE MEQUINENZA",
-      "date": "26/10/2026",
-      "bulletin": "247",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1471923270404"
     }
   ]
 }
