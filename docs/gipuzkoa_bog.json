@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-24T16:41:10.798658+00:00",
+  "lastCheckedUTC": "2026-11-25T12:29:10.961604+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 21,
-    "announcementsRead": 773,
+    "announcementsRead": 771,
     "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-26",
-    "rangeEnd": "2026-11-24",
+    "rangeStart": "2026-10-27",
+    "rangeEnd": "2026-11-25",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -36,10 +35,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-26",
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-25"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,30 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 773,
+    "announcementsRead": 771,
     "opportunities": 35
   },
   "notices": [
+    {
+      "id": "GP-2026-2607574",
+      "province": "Gipuzkoa",
+      "title": "Convocatoria y bases del proceso selectivo para la creación de una bolsa de trabajo de Técnico/a de Administración General (Responsable de Deportes).",
+      "entity": "AYUNTAMIENTO DE MONDRAGÓN",
+      "date": "25/11/2026",
+      "bulletin": "225",
+      "type": "Bolsa de trabajo",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/25/c2607574.pdf"
+    },
+    {
+      "id": "GP-2026-2607568",
+      "province": "Gipuzkoa",
+      "title": "Convocatoria y bases del proceso selectivo para la cobertura temporal de una plaza de Interventor/a.",
+      "entity": "AYUNTAMIENTO DE LEGAZPI",
+      "date": "25/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/25/c2607568.pdf"
+    },
     {
       "id": "GP-2026-2607553",
       "province": "Gipuzkoa",
@@ -406,26 +426,6 @@
       "bulletin": "205",
       "type": "Bolsa de trabajo",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/27/c2606784.pdf"
-    },
-    {
-      "id": "GP-2026-2606967",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria de concurso para la adjudicación, por concesión administrativa, de cuatro puestos cerrados vacantes en el mercado municipal.",
-      "entity": "AYUNTAMIENTO DE ZARAUTZ",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/26/c2606967.pdf"
-    },
-    {
-      "id": "GP-2026-2606752",
-      "province": "Gipuzkoa",
-      "title": "Modificación de las bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a cinco plazas de Agente de la Policía Local.",
-      "entity": "AYUNTAMIENTO DE OIARTZUN",
-      "date": "26/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/26/c2606752.pdf"
     }
   ]
 }
