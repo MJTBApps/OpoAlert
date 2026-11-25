@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-25T09:53:32.813524+00:00",
+  "lastCheckedUTC": "2026-11-25T12:50:16.922248+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 306,
-    "opportunities": 306,
+    "announcementsRead": 313,
+    "opportunities": 313,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,10 +52,80 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 306,
-    "opportunities": 306
+    "announcementsRead": 313,
+    "opportunities": 313
   },
   "notices": [
+    {
+      "id": "CIDO5-22555676",
+      "title": "2 places d'Administratiu OAC",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555676"
+    },
+    {
+      "id": "CIDO5-22555673",
+      "title": "1 plaça de Vigilant",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555673"
+    },
+    {
+      "id": "CIDO5-22555670",
+      "title": "1 plaça de Tècnic de medi ambient",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555670"
+    },
+    {
+      "id": "CIDO5-22555667",
+      "title": "1 plaça d'Oficial de 1a",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555667"
+    },
+    {
+      "id": "CIDO5-22555664",
+      "title": "1 plaça de Peó oficis varis",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555664"
+    },
+    {
+      "id": "CIDO5-22555661",
+      "title": "1 plaça de Guia informador turístic",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555661"
+    },
+    {
+      "id": "CIDO5-22555652",
+      "title": "1 plaça d'Administratiu d'intervenció",
+      "entity": "Ajuntament de Subirats",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22555652"
+    },
     {
       "id": "CIDO5-22553486",
       "title": "1 plaça de Tresorer municipal",
@@ -153,7 +223,7 @@
       "date": "25/11/2026",
       "bulletin": "CIDO",
       "province": "Barcelona",
-      "type": "Plaza / oposición",
+      "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22552272"
     },
     {
@@ -217,6 +287,46 @@
       "url": "https://cido.diba.cat/oposicions/22551813"
     },
     {
+      "id": "CIDO5-22537925",
+      "title": "1 plaça d'Oficial 2a administratiu",
+      "entity": "Ajuntament de Santa Perpètua de Mogoda - Mogoda Serveis, SAM",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22537925"
+    },
+    {
+      "id": "CIDO5-22512861",
+      "title": "1 plaça de Tècnic d'Administració Especial - Lletrat",
+      "entity": "Ajuntament de Gelida",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22512861"
+    },
+    {
+      "id": "CIDO5-22498191",
+      "title": "1 plaça de Director de l'Oficina de Transformació Digital (OTD)",
+      "entity": "Ajuntament d'Esplugues de Llobregat",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22498191"
+    },
+    {
+      "id": "CIDO5-22483845",
+      "title": "Borsa de treball de places d'Administratiu",
+      "entity": "Ajuntament de Montcada i Reixac",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22483845"
+    },
+    {
       "id": "CIDO5-21613925",
       "title": "1 plaça de Tècnic mitjà informàtica",
       "entity": "Ajuntament de Canet de Mar",
@@ -275,6 +385,16 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/16690006"
+    },
+    {
+      "id": "CIDO5-16484914",
+      "title": "1 plaça d'Auxiliar serveis",
+      "entity": "Ajuntament de Llinars del Vallès",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16484914"
     },
     {
       "id": "CIDO5-22547900",
@@ -555,16 +675,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22538106"
-    },
-    {
-      "id": "CIDO5-22537925",
-      "title": "1 plaça d'Oficial 2a administratiu",
-      "entity": "Ajuntament de Santa Perpètua de Mogoda - Mogoda Serveis, SAM",
-      "date": "23/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22537925"
     },
     {
       "id": "CIDO5-22537828",
@@ -1137,16 +1247,6 @@
       "url": "https://cido.diba.cat/oposicions/16607751"
     },
     {
-      "id": "CIDO5-16484914",
-      "title": "1 plaça d'Auxiliar serveis",
-      "entity": "Ajuntament de Llinars del Vallès",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16484914"
-    },
-    {
       "id": "CIDO5-16461792",
       "title": "1 plaça de Tècnic superior Activitats Culturals - Coordinador de serveis d'interpretació històrica",
       "entity": "Ajuntament de Cornellà de Llobregat",
@@ -1235,16 +1335,6 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22513062"
-    },
-    {
-      "id": "CIDO5-22512861",
-      "title": "1 plaça de Tècnic d'Administració Especial - Lletrat",
-      "entity": "Ajuntament de Gelida",
-      "date": "18/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22512861"
     },
     {
       "id": "CIDO5-22512727",
@@ -1677,16 +1767,6 @@
       "url": "https://cido.diba.cat/oposicions/22498237"
     },
     {
-      "id": "CIDO5-22498191",
-      "title": "1 plaça de Director de l'Oficina de Transformació Digital (OTD)",
-      "entity": "Ajuntament d'Esplugues de Llobregat",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22498191"
-    },
-    {
       "id": "CIDO5-22465774",
       "title": "3 places d'Agent de la Policia Local",
       "entity": "Ajuntament de Vic",
@@ -1975,16 +2055,6 @@
       "province": "Barcelona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22483874"
-    },
-    {
-      "id": "CIDO5-22483845",
-      "title": "Borsa de treball de places d'Administratiu",
-      "entity": "Ajuntament de Montcada i Reixac",
-      "date": "12/11/2026",
-      "bulletin": "CIDO",
-      "province": "Barcelona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22483845"
     },
     {
       "id": "CIDO5-22483724",

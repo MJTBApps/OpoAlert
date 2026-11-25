@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-25T09:53:32.813524+00:00",
+  "lastCheckedUTC": "2026-11-25T12:50:16.922248+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -65,6 +65,26 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22553526"
+    },
+    {
+      "id": "CIDO6-22368620",
+      "title": "1 plaça d'Ajudant d'agutzil",
+      "entity": "Ajuntament de Ventalló",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22368620"
+    },
+    {
+      "id": "CIDO6-15199257",
+      "title": "1 plaça d'Auxiliar administratiu recepcionista",
+      "entity": "Ajuntament d'Olot",
+      "date": "25/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/15199257"
     },
     {
       "id": "CIDO6-22547360",
@@ -277,16 +297,6 @@
       "url": "https://cido.diba.cat/oposicions/21398767"
     },
     {
-      "id": "CIDO6-15199257",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament d'Olot",
-      "date": "20/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/15199257"
-    },
-    {
       "id": "CIDO6-22524268",
       "title": "Borsa de treball de places d'Administratiu",
       "entity": "Ajuntament de Salt",
@@ -455,16 +465,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22459589"
-    },
-    {
-      "id": "CIDO6-22368620",
-      "title": "1 plaça d'Ajudant d'agutzil",
-      "entity": "Ajuntament de Ventalló",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22368620"
     },
     {
       "id": "CIDO6-22094691",
