@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dphuesca.es/publica/consulta-de-bops/",
   "province": "Huesca",
-  "lastCheckedUTC": "2026-11-25T17:07:47.658039+00:00",
+  "lastCheckedUTC": "2026-11-26T07:08:44.328238+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 38,
-    "announcementsRead": 590,
+    "announcementsRead": 594,
     "opportunities": 19
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "issuesRead": 21,
     "pagesVisited": 38,
-    "announcementsRead": 590,
+    "announcementsRead": 594,
     "opportunities": 19,
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -40,10 +39,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -63,7 +62,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -78,6 +78,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "HU-2026-227024",
+      "province": "Huesca",
+      "title": "Convocatoria 6 plazas de monitor de tiempo libre a tiempo parcial correspondientes a la OEP de 2024, mediante concurso-oposición",
+      "entity": "La Litera / La Llitera",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dphuesca.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1795651332806-final-76ebc5b3.pdf"
+    },
     {
       "id": "HU-2026-226019",
       "province": "Huesca",
@@ -257,16 +267,6 @@
       "bulletin": "211",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dphuesca.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1793784839293-final-4aa9f403.pdf"
-    },
-    {
-      "id": "HU-2026-206020",
-      "province": "Huesca",
-      "title": "Bases Bolsa de Empleo Limpieza Personal Laboral Temporal.",
-      "entity": "Valle de Hecho",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dphuesca.es/export/sites/bop/.galleries/Documentos-Anuncios-en-PDF/firmado-1793059303351-final-d764fcb.pdf"
     }
   ]
 }
