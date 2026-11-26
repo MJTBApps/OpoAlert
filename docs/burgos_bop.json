@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-25T16:46:35.017015+00:00",
+  "lastCheckedUTC": "2026-11-26T06:50:44.599935+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "224",
+    "bulletin": "225",
     "pagesVisited": 24,
-    "announcementsRead": 679,
-    "opportunities": 13,
+    "announcementsRead": 671,
+    "opportunities": 14,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
     "pdfChecked": 9
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -38,10 +37,10 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -75,10 +75,9 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 679,
-    "opportunities": 13,
+    "announcementsRead": 671,
+    "opportunities": 14,
     "regularBulletins": [
-      "204",
       "205",
       "206",
       "207",
@@ -98,11 +97,11 @@
       "221",
       "222",
       "223",
-      "224"
+      "224",
+      "225"
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-204",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-205",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-206",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-207",
@@ -122,10 +121,33 @@
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-221",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-222",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-223",
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-224"
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-224",
+      "https://bopbur.diputaciondeburgos.es/bopbur-2026-225"
     ]
   },
   "notices": [
+    {
+      "id": "BU-2026-202605213",
+      "province": "Burgos",
+      "title": "Bases y convocatoria del proceso selectivo para cubrir una plaza de administrativo, como personal laboral fijo, por el sistema de concurso de méritos",
+      "entity": "Ayuntamiento de Galbarros",
+      "date": "26/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-225/bopbur-2026-225-anuncio-202605213.pdf",
+      "publisherArticle": "202605213"
+    },
+    {
+      "id": "BU-2026-202605210",
+      "province": "Burgos",
+      "title": "Bases y convocatoria para la contratación de una plaza de ordenanza de Cultura, a tiempo parcial, como personal laboral fijo, mediante concurso de méritos",
+      "entity": "Ayuntamiento de Villalbilla de Burgos",
+      "date": "26/11/2026",
+      "bulletin": "225",
+      "type": "Plaza / oposición",
+      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-225/bopbur-2026-225-anuncio-202605210.pdf",
+      "publisherArticle": "202605210"
+    },
     {
       "id": "BU-2026-202605196",
       "province": "Burgos",
@@ -257,17 +279,6 @@
       "type": "Plaza / oposición",
       "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-206/bopbur-2026-206-anuncio-202604609.pdf",
       "publisherArticle": "202604609"
-    },
-    {
-      "id": "BU-2026-202604540",
-      "province": "Burgos",
-      "title": "Bases para la provisión de un puesto de jefe del Servicio de Sanidad y Medio Ambiente, mediante libre designación",
-      "entity": "Ayuntamiento de Burgos – Concejalía de Personal, Seguridad y Régimen Interior",
-      "date": "27/10/2026",
-      "bulletin": "204",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-204/bopbur-2026-204-anuncio-202604540.pdf",
-      "publisherArticle": "202604540"
     }
   ]
 }

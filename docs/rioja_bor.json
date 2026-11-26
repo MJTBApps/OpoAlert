@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-25T17:03:04.769255+00:00",
+  "lastCheckedUTC": "2026-11-26T07:09:37.705240+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 22,
-    "announcementsRead": 659,
-    "opportunities": 49
+    "announcementsRead": 658,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -37,10 +36,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,34 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 659,
-    "opportunities": 49
+    "announcementsRead": 658,
+    "opportunities": 50
   },
   "notices": [
+    {
+      "id": "RI-2026-8eb2cda18f82f1c7ce",
+      "province": "La Rioja (BOR)",
+      "title": "COORDINADOR/A Y AYUDANTE COORDINACIÓN: resolución de la convocatoria de libre designación del puesto",
+      "entity": "SERVICIO RIOJANO DE SALUD",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43560647-1-PDF-581147",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F26&referencia=43516767-3-HTML-581147-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-481eff97ea039ee49e",
+      "province": "La Rioja (BOR)",
+      "title": "TÉCNICO/A COORDINADOR/A DE INFORMÁTICA: convocatoria para la provisión de una plaza de funcionario/a mediante el sistema de oposición libre",
+      "entity": "AYUNTAMIENTO DE CALAHORRA",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43560698-1-PDF-581145",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F26&referencia=43515102-6-HTML-581145-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-ee951fb15f48883431",
       "province": "La Rioja (BOR)",
@@ -652,18 +676,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42945066-1-PDF-580468",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F28&referencia=42905592-3-HTML-580468-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-ec4745fac20a2ea191",
-      "province": "La Rioja (BOR)",
-      "title": "CUERPOS DOCENTES UNIVERSITARIOS: se convoca concurso de acceso al Cuerpo de Funcionarios Docentes Universitarios",
-      "entity": "UNIVERSIDAD DE LA RIOJA",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42917526-1-PDF-580436",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F27&referencia=42877926-4-HTML-580436-X",
       "originalFormat": "pdf"
     }
   ]

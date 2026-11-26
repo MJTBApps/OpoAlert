@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-25T16:46:01.251653+00:00",
+  "lastCheckedUTC": "2026-11-26T06:47:52.796104+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 21,
-    "announcementsRead": 986,
-    "opportunities": 65
+    "announcementsRead": 967,
+    "opportunities": 64
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -36,10 +35,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -59,7 +58,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,40 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 986,
-    "opportunities": 65
+    "announcementsRead": 967,
+    "opportunities": 64
   },
   "notices": [
+    {
+      "id": "AS-2026-09579",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 18 de noviembre de 2026, de la Presidencia del Consorcio Asturiano de Servicios Tecnológicos, por la que se convoca concurso de méritos para la provisión de un puesto de trabajo de personal funcionario en el Consorcio Asturiano de Servicios Tecnológicos: Agente Soporte Especialista 2.º Nivel.",
+      "entity": "Consorcio Asturiano de Servicios Tecnológicos (CAST)",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/26/2026-09579.pdf"
+    },
+    {
+      "id": "AS-2026-09574",
+      "province": "Asturias (BOPA)",
+      "title": "Resolución de 14 de octubre de 2026, de la Gerencia del Área de Salud III Oriente-Valle del Nalón, del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de cuatro (4) puestos de Conductor de Instalaciones, vacantes en la plantilla orgánica.",
+      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/26/2026-09574.pdf"
+    },
+    {
+      "id": "AS-2026-09468",
+      "province": "Asturias (BOPA)",
+      "title": "Anuncio. Aprobación inicial del Presupuesto General, plantilla de personal y las bases de ejecución del Ayuntamiento de Caso para el ejercicio 2027.",
+      "entity": "Ayuntamiento de Caso",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.asturias.es/bopa/2026/11/26/2026-09468.pdf"
+    },
     {
       "id": "AS-2026-09486",
       "province": "Asturias (BOPA)",
@@ -686,46 +716,6 @@
       "bulletin": "209",
       "type": "Plaza / oposición",
       "url": "https://www.asturias.es/bopa/2026/10/28/2026-08514.pdf"
-    },
-    {
-      "id": "AS-2026-08678",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Convocatoria y bases para la constitución de una bolsa de empleo adicional de Auxiliar de Ayuda a Domicilio.",
-      "entity": "Ayuntamiento de Grandas de Salime",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.asturias.es/bopa/2026/10/27/2026-08678.pdf"
-    },
-    {
-      "id": "AS-2026-08632",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 20 de octubre de 2026, de la Vicerrectora de Investigación de la Universidad de Oviedo, por la que se convoca concurso público para la contratación de personal investigador y personal técnico de apoyo a la investigación para la realización de actividades científico-técnicas, regulado en el artículo 23.bis de la Ley 14/2011, de la Ciencia, la Tecnología y la Innovación (convocatoria septiembre extra 4).",
-      "entity": "Universidad de Oviedo",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/27/2026-08632.pdf"
-    },
-    {
-      "id": "AS-2026-08494",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 15 de octubre de 2026, de la Gerencia del Área de Salud II Centro-Suroccidente del Servicio de Salud del Principado de Asturias, por la que se efectúa convocatoria pública para la cobertura de un puesto de Jefe/a de Servicio Facultativo: Laboratorio Clínico, en el Área de Gestión Clínica de Laboratorio de Medicina.",
-      "entity": "Servicio de Salud del Principado de Asturias (SESPA)",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/27/2026-08494.pdf"
-    },
-    {
-      "id": "AS-2026-08485",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases reguladoras del proceso para la selección de las personas a contratar del Plan de Empleo 2026-2027 en el marco de los itinerarios integrados de activación en el ámbito local por el Ayuntamiento de Sariego.",
-      "entity": "Ayuntamiento de Sariego",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/27/2026-08485.pdf"
     }
   ]
 }

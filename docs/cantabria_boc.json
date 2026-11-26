@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-25T16:51:20.762999+00:00",
+  "lastCheckedUTC": "2026-11-26T06:55:27.122827+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 28,
-    "announcementsRead": 912,
-    "opportunities": 28,
+    "announcementsRead": 929,
+    "opportunities": 29,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "206",
       "207",
       "208",
       "Ext. 29",
@@ -44,10 +43,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-29",
@@ -74,7 +73,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -87,10 +87,9 @@
       "2026-11-22"
     ],
     "issuesRead": 28,
-    "announcementsRead": 912,
-    "opportunities": 28,
+    "announcementsRead": 929,
+    "opportunities": 29,
     "regularBulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -111,7 +110,8 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "extraordinaryBulletins": [
       "Ext. 29",
@@ -122,7 +122,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47285,
       47305,
       47325,
       47425,
@@ -149,10 +148,41 @@
       47665,
       47685,
       47705,
-      47725
+      47725,
+      47745
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9247",
+      "province": "Cantabria (BOC)",
+      "title": "Bases reguladoras y convocatoria, mediante oposición libre, de una (1) plaza de Arquitecto Municipal, de la Oferta de Empleo Público de 2025. Expediente 2026/2519.",
+      "entity": "Ayuntamiento de Santoña",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443693"
+    },
+    {
+      "id": "CN-2026-9245",
+      "province": "Cantabria (BOC)",
+      "title": "Ampliación a dos (2) el número de plazas de la convocatoria para proveer en propiedad, como Policía Local, funcionario de carrera, mediante concurso de movilidad. Expediente 2026/10032L.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443675"
+    },
+    {
+      "id": "CN-2026-9244",
+      "province": "Cantabria (BOC)",
+      "title": "Ampliación a dos (2) el número de plazas de la convocatoria para proveer en propiedad, como Operario del Matadero, personal laboral fijo, mediante concurso-oposición. Expediente 2024/4974Y.",
+      "entity": "Ayuntamiento de Torrelavega",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443674"
+    },
     {
       "id": "CN-2026-9235",
       "province": "Cantabria (BOC)",
@@ -412,26 +442,6 @@
       "bulletin": "207",
       "type": "Bolsa de trabajo",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442285"
-    },
-    {
-      "id": "CN-2026-8321",
-      "province": "Cantabria (BOC)",
-      "title": "Resolución Rectoral (R.R. 1346/2026), por la que se convoca concurso-oposición libre para la contratación de personal indefinido para la realización de actividades científico-técnicas y de innovación.",
-      "entity": "Universidad de Cantabria",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442219"
-    },
-    {
-      "id": "CN-2026-8320",
-      "province": "Cantabria (BOC)",
-      "title": "Bases reguladoras y convocatoria del proceso selectivo para la provisión, por turno de promoción interna y mediante el sistema de concurso-oposición, de una plaza de Administrativo, personal funcionario de carrera, Escala de Administración General, Subescala Administrativa, Grupo C, Subgrupo C1.",
-      "entity": "Ayuntamiento de Valderredible",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442214"
     }
   ]
 }

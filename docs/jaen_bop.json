@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-25T16:56:42.069843+00:00",
+  "lastCheckedUTC": "2026-11-26T07:00:45.393587+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
+    "bulletin": "230",
     "pagesVisited": 20,
-    "announcementsRead": 512,
+    "announcementsRead": 517,
     "opportunities": 31,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
     "pdfLinksVerified": 31
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "210",
       "211",
       "212",
       "213",
@@ -37,10 +36,10 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -59,7 +58,8 @@
       "2026-11-19",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,15 +74,25 @@
       "2026-11-25"
     ],
     "issuesRead": 20,
-    "announcementsRead": 512,
+    "announcementsRead": 517,
     "opportunities": 31,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "209",
-      "date": "2026-10-26"
+      "number": "210",
+      "date": "2026-10-27"
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5335",
+      "province": "Jaén",
+      "title": "Aprobación de las bases y proceso de selección de dos plazas de personal laboral fijo, puesto de Monitores/as de Escuela Infantil en el Ayuntamiento de Pozo Alcón, mediante el sistema de concurso-oposición, por turno libre.",
+      "entity": "AYUNTAMIENTO DE POZO ALCÓN (JAÉN)",
+      "date": "26/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-26&numeroEdicto=5335&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5491",
       "province": "Jaén",
@@ -382,16 +392,6 @@
       "bulletin": "212",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-29&numeroEdicto=5071&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-4806",
-      "province": "Jaén",
-      "title": "Aprobación de las bases de la convocatoria para la provisión de una plaza de Administrativo/a de Prevención de Riesgos Laborales, mediante concurso-oposición, en turno de promoción interna.",
-      "entity": "AYUNTAMIENTO DE BAEZA (JAÉN)",
-      "date": "27/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-27&numeroEdicto=4806&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-25T16:48:01.380815+00:00",
+  "lastCheckedUTC": "2026-11-26T06:52:11.366427+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 21,
-    "announcementsRead": 514,
-    "opportunities": 35
+    "announcementsRead": 518,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -36,10 +35,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -59,7 +58,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,8 +73,8 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 514,
-    "opportunities": 35
+    "announcementsRead": 518,
+    "opportunities": 34
   },
   "notices": [
     {
@@ -416,16 +416,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043"
-    },
-    {
-      "id": "CC-2026-5024",
-      "province": "Cáceres",
-      "title": "Bases plazas Profesores Programa Aprendizaje a lo largo de la vida 2026/2027.",
-      "entity": "Mancomunidad de Municipios Tajosalor",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024"
     }
   ]
 }

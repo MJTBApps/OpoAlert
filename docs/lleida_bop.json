@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-25T16:58:13.451324+00:00",
+  "lastCheckedUTC": "2026-11-26T07:02:29.007188+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 23,
-    "announcementsRead": 1026,
-    "opportunities": 60
+    "announcementsRead": 1055,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -37,10 +36,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,30 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1026,
-    "opportunities": 60
+    "announcementsRead": 1055,
+    "opportunities": 61
   },
   "notices": [
+    {
+      "id": "LE-202622709909",
+      "province": "Lleida (BOP)",
+      "title": "ANUNCI pel qual es fa pública l’aprovació de la convocatòria i les bases reguladores que han de regir la creació d’una borsa de treball per cobrir vacants i substitucions per les places de secretaria intervenció de classe tercera, adscrites al Servei d’Assistència Tècnica (SAT) del Consell Comarcal del Solsonès",
+      "entity": "CONSELL COMARCAL DEL SOLSONÈS (SOLSONA)",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/227/202622709909.pdf"
+    },
+    {
+      "id": "LE-202622709888",
+      "province": "Lleida (BOP)",
+      "title": "Anunci bases específiques convocatòria concurs oposició lliure contractació amb caràcter laboral indefinit fix d’un encarregat/da del servei de neteja de l’Ajuntament de la Pobla de Segur i creació de borsa de treball.",
+      "entity": "AJUNTAMENT DE LA POBLA DE SEGUR (POBLA DE SEGUR, LA)",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/227/202622709888.pdf"
+    },
     {
       "id": "LE-202622609980",
       "province": "Lleida (BOP)",
@@ -667,16 +687,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/206/202620608856.pdf"
-    },
-    {
-      "id": "LE-202620508835",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases i la convocatòria de la borsa de treball urgent per cobrir 2 llocs de treball de peó de brigada (AP)",
-      "entity": "AJUNTAMENT DE ROSSELLÓ (ROSSELLÓ)",
-      "date": "27/10/2026",
-      "bulletin": "205",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/205/202620508835.pdf"
     }
   ]
 }
