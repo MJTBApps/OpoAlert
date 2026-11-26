@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-25T16:39:08.373788+00:00",
+  "lastCheckedUTC": "2026-11-26T06:23:12.175677+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 22,
-    "announcementsRead": 369,
+    "announcementsRead": 368,
     "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -37,10 +36,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,30 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 369,
+    "announcementsRead": 368,
     "opportunities": 30
   },
   "notices": [
+    {
+      "id": "CR-2026-3831",
+      "province": "Ciudad Real",
+      "title": "Modificación de las bases para cubrir en propiedad por turno libre, cuatro plazas de Oficial Electricista, publicadas en el BOP número 155, correspondientes a la OEP 2024-2026.",
+      "entity": "VALDEPEÑAS",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7912431"
+    },
+    {
+      "id": "CR-2026-3826",
+      "province": "Ciudad Real",
+      "title": "Bases de la convocatoria del proceso selectivo para la provisión de una plaza de Coordinador/a Técnico/a de la Universidad Popular, Digitalización y Soporte Informático.",
+      "entity": "ALCOLEA DE CALATRAVA",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7912426"
+    },
     {
       "id": "CR-2026-3809",
       "province": "Ciudad Real",
@@ -357,26 +377,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350"
-    },
-    {
-      "id": "CR-2026-3464",
-      "province": "Ciudad Real",
-      "title": "Bases para cubrir en propiedad por el sistema de acceso libre y mediante oposición, cinco plazas de Oficial Primera de Obras.",
-      "entity": "VALDEPEÑAS",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354"
-    },
-    {
-      "id": "CR-2026-3459",
-      "province": "Ciudad Real",
-      "title": "Declarar la caducidad de la Oferta de Empleo Público de 2021 y de 2022, en los puestos que no hayan sido ejecutados, por haber transcurrido el plazo máximo previsto en la Ley.",
-      "entity": "MORAL DE CALATRAVA",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349"
     }
   ]
 }

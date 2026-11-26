@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-25T16:38:38.602784+00:00",
+  "lastCheckedUTC": "2026-11-26T06:22:39.096292+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 22,
-    "announcementsRead": 846,
-    "opportunities": 57
+    "announcementsRead": 849,
+    "opportunities": 55
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -37,10 +36,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,30 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 846,
-    "opportunities": 57
+    "announcementsRead": 849,
+    "opportunities": 55
   },
   "notices": [
+    {
+      "id": "BI-2026-II-6221",
+      "province": "Bizkaia",
+      "title": "Aprobación de las bases específicas que regulan el proceso selectivo para la cobertura de una (1) plaza de Traductor/a de euskera en el Ayuntamiento de Barakaldo.",
+      "entity": "Ayuntamiento de Balmaseda",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/26/II-6221_cas.pdf"
+    },
+    {
+      "id": "BI-2026-II-6083",
+      "province": "Bizkaia",
+      "title": "Contratación laboral fija en el marco del proceso selectivo excepcional para la estabilización del empleo temporal (disposiciones adicionales 6.ª y 8.ª de la Ley 20/2021) para la provisión de una (1) plaza de Educador/a de la EIMU Txikitxu.",
+      "entity": "Consorcio de Transportes de Bizkaia",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/26/II-6083_cas.pdf"
+    },
     {
       "id": "BI-2026-II-6142",
       "province": "Bizkaia",
@@ -607,46 +627,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/28/II-5499_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5558",
-      "province": "Bizkaia",
-      "title": "Anuncio relativo a la contratación de personal laboral indefinido, con la categoría de peón/a del servicio de recogida de residuos urbanos, clase operario, con perfil lingüístico 1 de euskera no preceptivo, subgrupo AP, correspondiente a la Oferta de Empleo Público del ejercicio 2023.",
-      "entity": "Mancomunidad de Lea Artibai",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/27/II-5558_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5481",
-      "province": "Bizkaia",
-      "title": "Declaración de desierto en la convocatoria para la constitución de un listado de prelación destinado a la provisión temporal, mediante comisión de servicios, de puestos de Agente Primero/a de la Policía Local del Ayuntamiento de Etxebarri.",
-      "entity": "Ayuntamiento de Erandio",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/27/II-5481_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5463",
-      "province": "Bizkaia",
-      "title": "Aprobación de las bases generales que han de regir los procesos selectivos para el ingreso como funcionario/a de carrera o personal laboral fijo al servicio del Ayuntamiento de Berriz.",
-      "entity": "Ayuntamiento de Berango",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/27/II-5463_cas.pdf"
-    },
-    {
-      "id": "BI-2026-I-1206",
-      "province": "Bizkaia",
-      "title": "ORDEN FORAL 6007/2026, de 19 de octubre, del diputado foral de Administración Pública y Relaciones Institucionales, por la que se aprueban las listas definitivas de admisiones y exclusiones de la convocatoria para la integración mediante el procedimiento de promoción interna de la categoría de bombera o bombero conductor del subgrupo de clasificación C2 en el subgrupo C1 por el sistema de oposición, así como se corrigen las personas integrantes del tribunal encargado del proceso selectivo.",
-      "entity": "Departamento de Administración Pública y Relaciones Institucionales",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/27/I-1206_cas.pdf"
     }
   ]
 }

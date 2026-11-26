@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-25T16:42:48.962706+00:00",
+  "lastCheckedUTC": "2026-11-26T06:28:03.309507+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "273",
+    "bulletin": "274",
     "pagesVisited": 28,
-    "announcementsRead": 625,
-    "opportunities": 65
+    "announcementsRead": 622,
+    "opportunities": 62
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "248",
       "249",
       "250",
       "251",
@@ -43,10 +42,10 @@
       "271",
       "272",
       "9E",
-      "273"
+      "273",
+      "274"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -73,7 +72,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -82,10 +82,20 @@
       "2026-11-22"
     ],
     "issuesRead": 28,
-    "announcementsRead": 625,
-    "opportunities": 65
+    "announcementsRead": 622,
+    "opportunities": 62
   },
   "notices": [
+    {
+      "id": "MU-2026-5846",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1535/2026 de 20 de noviembre, referente a la convocatoria para proveer una plaza de Investigador/a Doctor/a de la misma.",
+      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
+      "date": "26/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846528/pdf"
+    },
     {
       "id": "MU-2026-5838",
       "province": "Región de Murcia (BORM)",
@@ -695,46 +705,6 @@
       "bulletin": "250",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845966/pdf"
-    },
-    {
-      "id": "MU-2026-5225",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1378/2026 de 21 de octubre, referente a la convocatoria para proveer una plaza de Titulado/a Superior de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845907/pdf"
-    },
-    {
-      "id": "MU-2026-5224",
-      "province": "Región de Murcia (BORM)",
-      "title": "Anuncio de la Resolución del Rector de la Universidad de Murcia R-1375/2026 de 21 de octubre, referente a la convocatoria para proveer cinco plazas de Titulado/a Superior de la misma.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845906/pdf"
-    },
-    {
-      "id": "MU-2026-5223",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Rector de la Universidad de Murcia (R-1388/2026) de 22 de octubre de 2026, por la que se convoca concurso público para la provisión de plazas de profesorado asociado.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845905/pdf"
-    },
-    {
-      "id": "MU-2026-5222",
-      "province": "Región de Murcia (BORM)",
-      "title": "Orden de 21 de octubre de 2026 de la Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital, por la que se convoca concurso de méritos general, concurso de méritos específico y turno de resultas para la provisión de puestos de trabajo correspondientes al Grupo A; Subgrupo de Clasificación Profesional A1, Cuerpo Superior Facultativo, Escala Superior de Salud Pública, Escala Técnica Superior y Subgrupo de Clasificación Profesional A2, Cuerpo Técnico, Escala de Diplomados de Salud Pública, Escala de Arquitectos e Ingenieros Técnicos, de la Administración Pública de la Región de Murcia. Código convocatoria: ABT26.",
-      "entity": "Consejería de Economía, Hacienda, Portavocía, Fondos Europeos y Transformación Digital",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845904/pdf"
     }
   ]
 }

@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla-La Mancha (DOCM)",
   "source": "https://docm.jccm.es/docm/",
-  "lastCheckedUTC": "2026-11-25T16:39:29.298317+00:00",
+  "lastCheckedUTC": "2026-11-26T06:25:29.379900+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 23,
-    "announcementsRead": 723,
-    "opportunities": 43
+    "announcementsRead": 720,
+    "opportunities": 44
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "206",
       "207",
       "2E",
       "208",
@@ -38,10 +37,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-28",
       "2026-10-29",
@@ -63,7 +62,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -76,10 +76,50 @@
       "2026-11-22"
     ],
     "issuesRead": 23,
-    "announcementsRead": 723,
-    "opportunities": 43
+    "announcementsRead": 720,
+    "opportunities": 44
   },
   "notices": [
+    {
+      "id": "CM-2026-8414",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Universidades. Resolución de 18/11/2026 , de la Universidad de Castilla-La Mancha, por la que se publica la composición de las bolsas de trabajo correspondientes a las escalas de Administración Especial: Técnico Auxiliar, cometido especial: Deportes, Laboratorio, Personal de Oficios, Especialidad: Química Inorgánica, Orgánica y Bioquímica y Conductor, Personal de Oficios, tras la finalización de los procesos selectivos convocados por Resoluciones de 04/12/2025 (DOCM 10/12/2025; BOE 23/12/2025). [NID 2026/8414]",
+      "entity": "Universidad de Castilla-La Mancha",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Bolsa de trabajo",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/26/pdf/2026_8414.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8412",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Provisión de Puestos de Trabajo. Resolución de 19/11/2026 , de la Gerencia de Atención Especializada de Toledo, por la que se aprueba la convocatoria para la provisión de la Jefatura de Servicio de Hematología y Hemoterapia. [NID 2026/8412]",
+      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/26/pdf/2026_8412.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8411",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Universidades. Resolución de 18/11/2026 , de la Universidad de Castilla-La Mancha, por la que se procede a nombrar funcionarios de carrera de las Escalas de Administración Especial, tras la superación de pruebas selectivas, por el sistema general de acceso libre, convocadas por Resolución de 04/12/2025 (DOCM 10/12/2025; BOE 23/12/2025). [NID 2026/8411]",
+      "entity": "Universidad de Castilla-La Mancha",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/26/pdf/2026_8411.pdf&tipo=rutaDocm"
+    },
+    {
+      "id": "CM-2026-8390",
+      "province": "Castilla-La Mancha (DOCM)",
+      "title": "Universidades. Resolución de 18/11/2026 , de la Universidad de Castilla-La Mancha, por la que se publica la composición de la bolsa de trabajo correspondiente a la escala de Laboratorio, Técnico Medio, Especialidad: Sociosanitaria, tras la finalización del proceso selectivo para la constitución de nueva bolsa de trabajo convocado por Resolución de 18/05/2026 (DOCM 27/05/2026). [NID 2026/8390]",
+      "entity": "Universidad de Castilla-La Mancha",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Bolsa de trabajo",
+      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/11/26/pdf/2026_8390.pdf&tipo=rutaDocm"
+    },
     {
       "id": "CM-2026-8364",
       "province": "Castilla-La Mancha (DOCM)",
@@ -479,36 +519,6 @@
       "bulletin": "208",
       "type": "Bolsa de trabajo",
       "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/29/pdf/2026_7856.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7630",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 19/10/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se procede a declarar la exclusión de diversas personas aspirantes del proceso selectivo convocado mediante Resolución de 23/06/2025 para el ingreso, por el sistema general de acceso libre, en la categoría de Médico/a de Emergencias de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha (OEP 2023-2024). [NID 2026/7630]",
-      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7630.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7629",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Oposiciones. Resolución de 19/10/2026 , de la Dirección General de Recursos Humanos y Transformación, por la que se procede a declarar la exclusión de una persona aspirante del proceso selectivo convocado mediante Resolución de 23/06/2025, para el ingreso por el sistema general de acceso libre, en la categoría de Facultativo/a Especialista de Área de Medicina Preventiva y Salud Pública de las instituciones sanitarias del Servicio de Salud de Castilla-La Mancha (OEP 2023-2024). [NID 2026/7629]",
-      "entity": "Servicio de Salud de Castilla-La Mancha (Sescam)",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7629.pdf&tipo=rutaDocm"
-    },
-    {
-      "id": "CM-2026-7210",
-      "province": "Castilla-La Mancha (DOCM)",
-      "title": "Anuncio de 30/09/2026 , del Ayuntamiento de Valdepeñas (Ciudad Real), sobre la publicación de las bases y modificación de las mismas, respectivamente, para la provisión, por el sistema de movilidad, de dos plazas de policía, del Cuerpo de Policía Local. [NID 2026/7210]",
-      "entity": "Ayuntamiento de Valdepeñas (Ciudad Real)",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://docm.jccm.es/docm/descargarArchivo.do?ruta=2026/10/27/pdf/2026_7210.pdf&tipo=rutaDocm"
     }
   ]
 }

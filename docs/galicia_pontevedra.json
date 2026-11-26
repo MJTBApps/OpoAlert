@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-25T16:42:49.095750+00:00",
+  "lastCheckedUTC": "2026-11-26T06:27:56.207900+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 22,
-    "announcementsRead": 409,
-    "opportunities": 37
+    "announcementsRead": 402,
+    "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -37,10 +36,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,8 +74,8 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 409,
-    "opportunities": 37
+    "announcementsRead": 402,
+    "opportunities": 34
   },
   "notices": [
     {
@@ -417,36 +417,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/28/2026075246/an.bop.PONTEVEDRA.20261028.2026075246.pdf"
-    },
-    {
-      "id": "PO-2026075003",
-      "province": "Pontevedra",
-      "title": "BASES QUE REGULARÁN OS PROCESOS SELECTIVOS PARA CUBRIR PRAZAS E POSTOS DE TRABALLO VACANTES NO CADRO DE PERSOAL DO CONCELLO DE MOAÑA, INCLUÍDAS NA OFERTA DE EMPREGO PÚBLICO DO ANO 2025",
-      "entity": "Moaña",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/27/2026075003/an.bop.PONTEVEDRA.20261027.2026075003.pdf"
-    },
-    {
-      "id": "PO-2026074984",
-      "province": "Pontevedra",
-      "title": "MODIFICACIÓN BASES QUE REGULARÁN O PROCESO SELECTIVO PARA CUBRIR PRAZAS E POSTOS DE TRABALLO VACANTES NO CADRO DE PERSOAL DO CONCELLO DE MOAÑA, INCLUÍDAS NAS OFERTAS DE EMPREGO PÚBLICO DOS ANOS 2020 E 2025",
-      "entity": "Moaña",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/27/2026074984/an.bop.PONTEVEDRA.20261027.2026074984.pdf"
-    },
-    {
-      "id": "PO-2026074641",
-      "province": "Pontevedra",
-      "title": "CONVOCATORIA DE BOLSAS DE TRABALLO, DE CARÁCTER TEMPORAL, DE SECRETARIO/A XERAL E DE TÉCNICOS/AS DE ORIENTACIÓN-PROSPECCIÓN LABORAL",
-      "entity": "Redondela",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Bolsa de trabajo",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/27/2026074641/an.bop.PONTEVEDRA.20261027.2026074641.pdf"
     }
   ]
 }

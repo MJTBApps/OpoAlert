@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-25T16:42:01.214299+00:00",
+  "lastCheckedUTC": "2026-11-26T06:26:59.241440+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "E55",
-    "pagesVisited": 16,
-    "announcementsRead": 142,
-    "opportunities": 15
+    "pagesVisited": 15,
+    "announcementsRead": 137,
+    "opportunities": 14
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "6426",
       "6427",
       "E49",
       "6428",
@@ -34,7 +33,6 @@
       "E55"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-30",
       "2026-10-30",
       "2026-11-03",
@@ -69,11 +67,12 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-26"
     ],
-    "issuesRead": 16,
-    "announcementsRead": 142,
-    "opportunities": 15
+    "issuesRead": 15,
+    "announcementsRead": 137,
+    "opportunities": 14
   },
   "notices": [
     {
@@ -215,16 +214,6 @@
       "bulletin": "6427",
       "type": "Plaza / oposición",
       "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1210.pdf"
-    },
-    {
-      "id": "ML-2026-A-1204",
-      "province": "Melilla (BOME)",
-      "title": "Apertura plazo presentación de instancias de las convocatorias para la provisión de 4 plazas de Técnico Economista, pertenecientes a la plantilla de personal funcionario, integradas en la Escala de Administración Especial, Subescala Técnica, por oposición libre y de 5 plazas de Subalterno, pertenecientes a la plantilla de personal funcionario, integradas en la Escala de Administración General, Subescala Subalterna, por oposición libre.",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
-      "date": "27/10/2026",
-      "bulletin": "6426",
-      "type": "Plaza / oposición",
-      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1204.pdf"
     }
   ]
 }

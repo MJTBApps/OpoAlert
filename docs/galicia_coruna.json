@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "A Coruña",
   "source": "https://bop.dacoruna.gal/bopportal/ultimoBoletin",
-  "lastCheckedUTC": "2026-11-25T16:38:31.094537+00:00",
+  "lastCheckedUTC": "2026-11-26T06:22:28.430880+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 22,
-    "announcementsRead": 805,
-    "opportunities": 65
+    "announcementsRead": 795,
+    "opportunities": 61
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "205",
       "206",
       "207",
       "208",
@@ -37,10 +36,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,8 +74,8 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 805,
-    "opportunities": 65
+    "announcementsRead": 795,
+    "opportunities": 61
   },
   "notices": [
     {
@@ -687,46 +687,6 @@
       "bulletin": "206",
       "type": "Plaza / oposición",
       "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/28/2026_0000006891.pdf"
-    },
-    {
-      "id": "AC-2026-6902",
-      "province": "A Coruña",
-      "title": "Rectificación de erros das bases específicas para a cobertura dunha praza de técnico/a de xestión de secretaría, intervención e tesourería, subgrupo A2, pola quenda de promoción interna",
-      "entity": "Consorcio Provincial Contra Incendios e Salvamento da Coruña",
-      "date": "27/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006902.pdf"
-    },
-    {
-      "id": "AC-2026-6892",
-      "province": "A Coruña",
-      "title": "Convocatoria e bases xerais reguladoras do proceso selectivo para a cobertura en propiedade dunha praza de policía local polo sistema de mobilidade (OPE 26)",
-      "entity": "Ribeira",
-      "date": "27/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006892.pdf"
-    },
-    {
-      "id": "AC-2026-6877",
-      "province": "A Coruña",
-      "title": "Listaxe provisional elevada a definitiva proceso selectivo 1 praza coordinador/a protección civil",
-      "entity": "Persoal",
-      "date": "27/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006877.pdf"
-    },
-    {
-      "id": "AC-2026-6874",
-      "province": "A Coruña",
-      "title": "Modificación bases procesos de selección de funcionarios de carreira correspondentes ás prazas incluídas nas ofertas de emprego público dos anos 2022 e 2023",
-      "entity": "Cambre",
-      "date": "27/10/2026",
-      "bulletin": "205",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dacoruna.gal/bopportal/publicado/2026/10/27/2026_0000006874.pdf"
     }
   ]
 }

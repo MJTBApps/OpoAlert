@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-25T16:38:22.710743+00:00",
+  "lastCheckedUTC": "2026-11-26T06:22:30.355942+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 21,
-    "announcementsRead": 446,
-    "opportunities": 40
+    "announcementsRead": 437,
+    "opportunities": 41
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -36,10 +35,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -59,7 +58,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,50 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 446,
-    "opportunities": 40
+    "announcementsRead": 437,
+    "opportunities": 41
   },
   "notices": [
+    {
+      "id": "BD-2026-165431",
+      "province": "Badajoz",
+      "title": "Bases para la convocatoria de provisión del puesto de Director/a del Área de Empleados Públicos, Seguridad y Salud en el Trabajo, reservado a Personal Directivo Profesional",
+      "entity": "Diputación de Badajoz",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-26000000_4694.pdf"
+    },
+    {
+      "id": "BD-2026-165425",
+      "province": "Badajoz",
+      "title": "Bases de la convocatoria de tres plazas de Administrativo/a por el sistema de concurso-oposición",
+      "entity": "Ayuntamiento de Don Benito",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-26000000_4687.pdf"
+    },
+    {
+      "id": "BD-2026-165423",
+      "province": "Badajoz",
+      "title": "Bases de la convocatoria para la provisión de cinco plazas vacantes de personal funcionario/a Técnico Superior Jurídico/a",
+      "entity": "Diputación de Badajoz",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-26000000_4685.pdf"
+    },
+    {
+      "id": "BD-2026-165422",
+      "province": "Badajoz",
+      "title": "Bases reguladoras de las pruebas selectivas para la provisión mediante el sistema de oposición libre de una plaza de Oficial de Mantenimiento de Instalaciones Deportivas",
+      "entity": "Ayuntamiento de Villafranca de los Barros",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-26000000_4684.pdf"
+    },
     {
       "id": "BD-2026-165352",
       "province": "Badajoz",
@@ -446,36 +486,6 @@
       "bulletin": "207",
       "type": "Bolsa de trabajo",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4269.pdf"
-    },
-    {
-      "id": "BD-2026-164993",
-      "province": "Badajoz",
-      "title": "Resolución de la convocatoria para la provisión por el sistema de concurso específico de méritos del puesto de Jefatura de Negociado Registro de Facturas, adscrito al Área de Economía Sostenible, Contratación Estratégica y Patrimonio",
-      "entity": "Diputación de Badajoz",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4261.pdf"
-    },
-    {
-      "id": "BD-2026-164992",
-      "province": "Badajoz",
-      "title": "Resolución de la convocatoria para la provisión por el sistema de concurso específico de méritos del puesto de Jefatura de Negociado Programas de Políticas Sociales y Cooperación Internacional",
-      "entity": "Diputación de Badajoz",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4260.pdf"
-    },
-    {
-      "id": "BD-2026-164966",
-      "province": "Badajoz",
-      "title": "Ampliación de las bases para la creación de una bolsa de trabajo de Dinamizador/a Deportivo/a para el servicio de dinamización deportiva de la Mancomunidad",
-      "entity": "Mancomunidad Integral de Servicios “Cíjara” (Herrera del Duque)",
-      "date": "27/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-27000000_4234.pdf"
     }
   ]
 }

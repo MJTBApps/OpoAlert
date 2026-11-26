@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-25T16:40:45.954548+00:00",
+  "lastCheckedUTC": "2026-11-26T06:25:49.562266+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 285,
-    "opportunities": 44
+    "announcementsRead": 299,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -36,10 +35,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -59,7 +58,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,9 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 285,
-    "opportunities": 44,
+    "announcementsRead": 299,
+    "opportunities": 50,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_207_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_208_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf",
@@ -96,10 +95,71 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_224_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_225_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_226_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_227_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_227_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_228_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-385975",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases de la convocatoria para cubrir una plaza de Técnico Especialista (Dirección Festival de Cine)",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385975_BOP-228_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385947",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases de la convocatoria para cubrir cuatro plazas de Auxiliar Administrativo",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385947_BOP-228_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385946",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases de la convocatoria para cubrir una plaza de Auxiliar Administrativo de Registro y Atención al Público",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385946_BOP-228_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385943",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases de la convocatoria para cubrir una plaza de Oficial 1ª Mantenimiento",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385943_BOP-228_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385942",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases de la convocatoria para cubrir una plaza de Coordinador de Mantenimiento y Obras",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385942_BOP-228_2026.pdf"
+    },
+    {
+      "id": "HB-2026-385928",
+      "province": "Huelva",
+      "title": "Corrección de error en las Bases de la convocatoria para cubrir una plaza de Ordenanza / Auxilio Administrativo",
+      "entity": "Mancomunidad de Islantilla",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385928_BOP-228_2026.pdf"
+    },
     {
       "id": "HB-2026-387132",
       "province": "Huelva",
