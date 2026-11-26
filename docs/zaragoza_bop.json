@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-25T17:14:42.877347+00:00",
+  "lastCheckedUTC": "2026-11-26T07:33:16.535396+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "272",
+    "bulletin": "273",
     "pagesVisited": 2,
-    "announcementsRead": 850,
+    "announcementsRead": 858,
     "opportunities": 87
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 850,
+    "announcementsRead": 858,
     "opportunities": 87,
     "bulletins": [
-      "248",
       "249",
       "250",
       "251",
@@ -44,10 +43,10 @@
       "269",
       "270",
       "271",
-      "272"
+      "272",
+      "273"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -71,10 +70,10 @@
       "2026-11-21",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "issuePublicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -98,7 +97,8 @@
       "2026-11-21",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -108,19 +108,80 @@
       "2026-11-22"
     ],
     "sectionsRead": {
-      "SECCIÓN SEGUNDA": 5,
-      "SECCIÓN TERCERA": 35,
-      "SECCIÓN QUINTA": 114,
-      "SECCIÓN SEXTA": 665,
-      "PARTE NO OFICIAL": 20,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 6,
+      "SECCIÓN TERCERA": 35,
       "SECCIÓN CUARTA": 1,
+      "SECCIÓN QUINTA": 113,
+      "SECCIÓN SEXTA": 675,
+      "PARTE NO OFICIAL": 19,
+      "SECCIÓN SEGUNDA": 4,
       "SECCIÓN SEPTIMA": 1,
-      "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
+      "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3,
+      "77SECCIÓN SEXTA": 1
     },
     "documentsVerified": 110
   },
   "notices": [
+    {
+      "id": "ZA-000345509",
+      "province": "Zaragoza",
+      "title": "El Consejo Comarcal de la Comarca de Campo de Borja, en sesión ordinaria del día 19 de noviembre de 2026, aprobó inicialmente el presupuesto comarcal para el ejercicio 2027, con sus bases de ejecución y…",
+      "entity": "COMARCA DE CAMPO DE BORJA",
+      "date": "26/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476745371313"
+    },
+    {
+      "id": "ZA-000345505",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE TORRALBA DE RIBOTA",
+      "date": "26/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476741331212"
+    },
+    {
+      "id": "ZA-000345495",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE NOVILLAS",
+      "date": "26/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476731240909"
+    },
+    {
+      "id": "ZA-000345489",
+      "province": "Zaragoza",
+      "title": "Al no haberse presentado reclamaciones durante el plazo de exposición al público, queda automáticamente elevado a definitivo el acuerdo de Pleno inicial por el que se aprueba la modificación de la Ordenanza…",
+      "entity": "AYUNTAMIENTO DE FIGUERUELAS",
+      "date": "26/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476725980707"
+    },
+    {
+      "id": "ZA-000345479",
+      "province": "Zaragoza",
+      "title": "Expediente 989/2022.",
+      "entity": "AYUNTAMIENTO DE BORJA",
+      "date": "26/11/2026",
+      "bulletin": "273",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476715890404"
+    },
+    {
+      "id": "ZA-000345471",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a las bases de la convocatoria para la provisión, mediante concurso específico de méritos abierto a otras Administraciones públicas, del puesto de trabajo de jefe/a del servicio de Contabilidad.",
+      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
+      "date": "26/11/2026",
+      "bulletin": "273",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476707820202"
+    },
     {
       "id": "ZA-000345463",
       "province": "Zaragoza",
@@ -930,66 +991,6 @@
       "bulletin": "249",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472317480303"
-    },
-    {
-      "id": "ZA-000344649",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
-      "entity": "AYUNTAMIENTO DE UNDUÉS DE LERDA",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472163640808"
-    },
-    {
-      "id": "ZA-000344629",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a señalamiento de fecha, lugar y hora de realización del único ejercicio del proceso selectivo para la provisión de una plaza de letrado/a asesor/a por el turno de promoción interna y el sistema selectivo de concurso-oposición.",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472143440404"
-    },
-    {
-      "id": "ZA-000344623",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a la ampliación del plazo de resolución de la convocatoria pública de autoempleo femenino en los municipios de la provincia de Zaragoza para el ejercicio de 2026.",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE CIUDADANÍA. SERVICIO DE BIENESTAR SOCIAL Y DESARROLLO",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472137380303"
-    },
-    {
-      "id": "ZA-000344622",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo al señalamiento de fecha, lugar y hora de realización del primer ejercicio de la oposición para la cobertura en turno libre dede de una plaza de conserje de plaza de toros.",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472136370202"
-    },
-    {
-      "id": "ZA-000344621",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo al señalamiento de fecha, lugar y hora de realización del primer ejercicio de la oposición para la cobertura en turno libre dede una plaza de oficial 1.ª alfarero/a ceramista Taller Escuela Cerámica de Muel",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472135360202"
-    },
-    {
-      "id": "ZA-000344620",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo al señalamiento de fecha, lugar y hora de realización del primer ejercicio de la oposición para la cobertura en turno libre de una plaza de oficial 1.ª Taller Escuela Cerámica de Muel.",
-      "entity": "EXCMA. DIPUTACIÓN PROVINCIAL DE ZARAGOZA. ÁREA DE PRESIDENCIA",
-      "date": "27/10/2026",
-      "bulletin": "248",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472134350202"
     }
   ]
 }
