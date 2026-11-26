@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T17:15:40+00:00",
+ "updatedUTC": "2026-11-26T07:37:59+00:00",
  "items": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365924": {
    "days": 15,
@@ -71,18 +71,6 @@
    "kind": "hábiles",
    "text": "…la qual s’opti, es presentaran, dins del termini de vint dies hàbils a comptar des del dia següent a la publicació al Diari Oficial de la Generalitat de Catalunya (DOGC), mitjançant el instància específica a aquests efectes que es troba a la seu electrònica de l’Ajuntament de l’Arboç,…",
    "page": 6
-  },
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365746": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "…registre electrònic de l'Ajuntament, dins el termini improrrogable de 20 dies hàbils des del següent al de la seva publicació al Diari Oficial de la Generalitat de Catalunya, a través del següent enllaç: https://seu.valls.cat/content/proc%C3%A9s-selectiu-de-personal-sol%C2%B7licitud 2 Butlletí Oficial de la Província…",
-   "page": 2
-  },
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365674": {
-   "days": 20,
-   "kind": "naturales",
-   "text": "Donada la urgència i excepcionalitat del procés, el termini de presentació de les sol·licituds serà de 20 dies naturals comptats des de l’endemà de la data de la darrera publicació.",
-   "page": 5
   },
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365960": {
    "days": 20,
@@ -391,6 +379,12 @@
    "kind": "hábiles",
    "text": "El termini de presentació de sol·licituds comptarà des de la publicació de la convocatòria corresponent al DOGC, fins a 10 dies hàbils a partir de l’endemà de la publicació.",
    "page": 1
+  },
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367004": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "l’Oferta Pública d’Ocupació de l'Ajuntament de Reus de l’any 2026 (el termini de presentació de sol·licituds començarà l’endemà de la publicació de la convocatòria juntament amb les bases específiques en el Butlletí Oficial de la Província de Tarragona (BOPT) i acabarà als vint dies naturals, comptats a partir de…",
+   "page": 5
   }
  },
  "none": [
@@ -439,12 +433,15 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366856",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366903",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366959",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366981",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366982",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367005"
  ],
  "tries": {},
  "sedes": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365547": "https://arbocenc.eadministracio.cat/",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365746": "https://seu.valls.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365794": "https://seu.reus.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365814": "https://www.ametllamar.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365815": "https://seu.cambrils.cat/",
@@ -489,14 +486,16 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366913": "https://seu.reus.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366923": "https://www.reus.cat/",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934": "https://seu.reus.cat/",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366971": "https://seu.cambrils.cat/"
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366959": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366971": "https://seu.cambrils.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366981": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366982": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367004": "https://seu.reus.cat/",
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367005": "https://seu.reus.cat/"
  },
  "sedeRaw": {
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365547": [
    "https://arbocenc.eadministracio.cat/"
-  ],
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365746": [
-   "https://seu.valls.cat/"
   ],
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365794": [
    "https://seu.reus.cat/"
@@ -636,14 +635,28 @@
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366934": [
    "https://seu.reus.cat/"
   ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366959": [
+   "https://seu.reus.cat/"
+  ],
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366971": [
    "https://seu.cambrils.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366981": [
+   "https://seu.reus.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/366982": [
+   "https://seu.reus.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367004": [
+   "https://seu.reus.cat/"
+  ],
+  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367005": [
+   "https://seu.reus.cat/"
   ]
  },
  "sinSede": [
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365643",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365655",
-  "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365674",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365693",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365694",
   "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365728",

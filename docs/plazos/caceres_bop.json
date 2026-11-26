@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T17:15:40+00:00",
+ "updatedUTC": "2026-11-26T07:37:59+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -21,12 +21,6 @@
    "kind": "hábiles",
    "text": "…por el sistema de oposición, se abre el plazo de presentación de solicitudes, que será de veinte días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial del Estado.",
    "page": 1
-  },
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": {
-   "days": 10,
-   "kind": "naturales",
-   "text": "…http://tajosalor.sedelectronica.es, en el plazo de 10 días naturales, contados a partir del siguiente de la publicación íntegra de estas bases en el BOP de Cáceres, cumplimentando los modelos de instancias según Anexo I que serán facilitados por la Mancomunidad Tajo-Salor, consignando su nombre y apellidos, DNI y que…",
-   "page": 4
   },
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5201": {
    "days": 45,
@@ -105,7 +99,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": "https://tajosalor.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": "https://riberosdeltajo.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": "https://tietar.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067": "https://valverdedelfresno.sedelectronica.es/",
@@ -127,9 +120,6 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": "https://sede.plasencia.es/"
  },
  "sedeRaw": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5024": [
-   "https://tajosalor.sedelectronica.es/"
-  ],
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": [
    "https://riberosdeltajo.sedelectronica.es/"
   ],

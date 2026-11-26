@@ -1,13 +1,7 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T17:15:40+00:00",
+ "updatedUTC": "2026-11-26T07:37:59+00:00",
  "items": {
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "3.3.- El plazo de presentación de solicitudes será de veinte días hábiles, contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
-   "page": 3
-  },
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7857881": {
    "days": 10,
    "kind": "hábiles",
@@ -123,10 +117,15 @@
    "kind": "hábiles",
    "text": "4.3.- El plazo de presentación de solicitudes será de veinte (20) días hábiles contados a partir del día siguiente al de la fecha de publicación de esta convocatoria en extracto en el “Boletín Oficial del Estado”.",
    "page": 5
+  },
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7912426": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de veinte días hábiles, contados desde el día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 1
   }
  },
  "none": [
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864889",
@@ -135,7 +134,8 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902907",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7902910",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7912431"
  ],
  "tries": {},
  "sedes": {
@@ -204,8 +204,6 @@
   ]
  },
  "sinSede": [
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845349",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7845354",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7860622",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7864886",
@@ -215,6 +213,8 @@
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7874477",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7890884",
   "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7897440",
-  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301"
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7905301",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7912426",
+  "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7912431"
  ]
 }

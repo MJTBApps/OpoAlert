@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T17:15:40+00:00",
+ "updatedUTC": "2026-11-26T07:37:59+00:00",
  "items": {
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13435&lang=es": {
    "days": 10,
@@ -68,27 +68,6 @@
    "text": "El termini per a la presentació de sol·licituds de participació en el procés de selecció i constitució d'esta borsa és de 20 dies hàbils comptadors a partir de l'endemà de la publicació de la convocatòria en Butlletí Oficial de la Província de València.",
    "page": 1,
    "hasta": "2026-11-25"
-  },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12959&lang=es": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "El termini de presentació de sol·licituds que serà de vint dies hàbils a comptar des de l'endemà a la publicació d'aquest anunci en el Butlletí Oficial de l'Estat.",
-   "page": 1,
-   "hasta": "2026-11-24"
-  },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12953&lang=es": {
-   "days": 10,
-   "kind": "naturales",
-   "text": "Ordenar la publicación del edicto de la convocatoria de las bases en el Boletín Oficial de la Provincia de Valencia, en la página web y en la Sede Electrónica del Ayuntamiento, a los efectos de presentar instancias en el plazo de 10 días naturales a contar desde el siguiente al de la publicación\".",
-   "page": 2,
-   "hasta": "2026-11-06"
-  },
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": {
-   "days": 10,
-   "kind": "naturales",
-   "text": "Ordenar la publicación del edicto de la convocatoria de las bases en el Boletín Oficial de la Provincia de Valencia, en la página web y en la Sede Electrónica del Ayuntamiento, a los efectos de presentar instancias en el plazo de 10 días naturales a contar desde el siguiente al de la publicación\".",
-   "page": 2,
-   "hasta": "2026-11-06"
   },
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13142&lang=es": {
    "days": 10,
@@ -376,10 +355,15 @@
    "kind": "hábiles",
    "text": "Las solicitudes se presentarán por medios electrónicos, en el Registro Electrónico del Ayuntamiento de Utiel, en el plazo de 10 días hábiles, contados desde el día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
    "page": 4
+  },
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14410&lang=es": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes es de 10 días hábiles contados desde el día siguiente en la publicación del extracto de la presente convocatoria en el Boletín Oficial del Estado.",
+   "page": 1
   }
  },
  "none": [
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13079&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13080&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13135&lang=es",
@@ -409,14 +393,13 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14252&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14363&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14368&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14422&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14440&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14489&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14554&lang=es"
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": "https://www.benaguasil.eu/",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12953&lang=es": "https://www.benaguasil.eu/",
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12959&lang=es": "https://elperello.sedelectronica.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13015&lang=es": "https://manra.sede.dival.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13036&lang=es": "https://sede.valencia.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13037&lang=es": "https://sede.valencia.es/",
@@ -462,19 +445,12 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14358&lang=es": "https://bombersdv.sedelectronica.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14363&lang=es": "https://tavernesblanques.sede.dival.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14365&lang=es": "https://utiel.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14410&lang=es": "https://lolleria.sedelectronica.es/",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14422&lang=es": "https://requena.sedipualba.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14541&lang=es": "https://www.sede.dival.es/",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14562&lang=es": "https://www.sede.dival.es/"
  },
  "sedeRaw": {
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12950&lang=es": [
-   "https://www.benaguasil.eu/"
-  ],
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12953&lang=es": [
-   "https://www.benaguasil.eu/"
-  ],
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12959&lang=es": [
-   "https://elperello.sedelectronica.es/"
-  ],
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13015&lang=es": [
    "https://manra.sede.dival.es/"
   ],
@@ -617,6 +593,13 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14365&lang=es": [
    "https://utiel.sedelectronica.es/"
   ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14410&lang=es": [
+   "https://lolleria.sedelectronica.es/",
+   "https://lolleria.convoca.online/"
+  ],
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14422&lang=es": [
+   "https://requena.sedipualba.es/"
+  ],
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14541&lang=es": [
    "https://www.sede.dival.es/",
    "https://www.dival.es/"
@@ -627,7 +610,6 @@
   ]
  },
  "sinSede": [
-  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F12979&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13079&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13080&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F13108&lang=es",
@@ -663,6 +645,7 @@
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14252&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14368&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14395&lang=es",
+  "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14440&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14489&lang=es",
   "https://bop.dival.es/bop/downloads?anuncioNumReg=2026%2F14554&lang=es"
  ]

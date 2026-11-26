@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-25T17:15:40+00:00",
+ "updatedUTC": "2026-11-26T07:37:59+00:00",
  "items": {
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909144.pdf": {
    "days": 20,
@@ -51,18 +51,6 @@
    "kind": "hábiles",
    "text": "El termini per a la presentació de sol·licituds serà de vint (20) dies hàbils comptats a partir de partir de l’endemà de la publicació de l’anunci de la convocatòria en el Butlletí Oficial de l’Estat, (BOE).",
    "page": 1
-  },
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709245.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "Les sol·licituds per prendre part en el procés de selecció s'han de presentar dins el termini improrrogable de 20 dies hàbils, a comptar a partir de l’endemà de la publicació de l’extracte de la convocatòria al BOE.",
-   "page": 4
-  },
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709020.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "El termini de presentació de sol·licituds serà de 20 dies hàbils, comptadors a partir de l’endemà de la publicació de la convocatòria al DOGC Les sol·licituds per a prendre part a les proves d’accés es presentaran electrònicament a la seu electrònica de l’Ajuntament de Riells i Viabrea, mitjançant instància genèrica.",
-   "page": 4
   },
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/210/202621009329.pdf": {
    "days": 20,
@@ -361,6 +349,19 @@
    "text": "El termini de presentació de sol·licituds serà de 20 dies naturals, comptadors a partir de l’endemà de la publicació de l’anunci de la convocatòria en el BOP de Girona.",
    "page": 6,
    "hasta": "2026-12-15"
+  },
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010261.pdf": {
+   "days": 10,
+   "kind": "naturales",
+   "text": "El termini de presentació d’instàncies serà de 10 dies naturals a comptar des de l’endemà de la seva publicació al BOP.",
+   "page": 6,
+   "hasta": "2026-12-06"
+  },
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010225.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…genèrica a l’Ajuntament de Terrades, en el termini de 20 dies hàbils comptats des de l'endemà de la publicació de l’extracte de la convocatòria al Diari Oficial de la Generalitat de Catalunya, o per qualsevol dels mitjans que preveu l’art. 16.4 de la Llei 39/2015, d’1 d’octubre, de Procediment administratiu comú de…",
+   "page": 5
   }
  },
  "none": [
@@ -393,7 +394,9 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/224/202622409941.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010153.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/202622609993.pdf",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010220.pdf"
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010220.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010323.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010325.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -435,7 +438,9 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/225/202622509965.pdf": "https://seu-e.cat/ca/web/emdlestartit",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010150.pdf": "https://tauler.seu.cat/",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010019.pdf": "https://seu.palafrugell.cat/",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010205.pdf": "https://seu-e.cat/ca/web/sigma"
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010205.pdf": "https://seu-e.cat/ca/web/sigma",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010225.pdf": "https://seu-e.cat/ca/web/terrades",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010261.pdf": "https://seu-e.cat/ca/web/cassadelaselva"
  },
  "sedeRaw": {
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809215.pdf": [
@@ -564,11 +569,15 @@
   ],
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010205.pdf": [
    "https://seu-e.cat/ca/web/sigma"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010225.pdf": [
+   "https://seu-e.cat/ca/web/terrades"
+  ],
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010261.pdf": [
+   "https://seu-e.cat/ca/web/cassadelaselva"
   ]
  },
  "sinSede": [
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709020.pdf",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709245.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809057.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809213.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809214.pdf",
@@ -614,6 +623,8 @@
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/2026226010153.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/226/202622609993.pdf",
   "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010034.pdf",
-  "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010220.pdf"
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/227/2026227010220.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010323.pdf",
+  "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010325.pdf"
  ]
 }
