@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-26T07:07:10.047281+00:00",
+  "lastCheckedUTC": "2026-11-26T10:20:27.861787+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "283",
-    "pagesVisited": 26,
-    "announcementsRead": 1752,
-    "opportunities": 291
+    "bulletin": "284",
+    "pagesVisited": 27,
+    "announcementsRead": 1830,
+    "opportunities": 295
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-28",
     "rangeEnd": "2026-11-26",
-    "issuesRead": 26,
-    "pagesVisited": 26,
-    "announcementsRead": 1752,
-    "opportunities": 291,
+    "issuesRead": 27,
+    "pagesVisited": 27,
+    "announcementsRead": 1830,
+    "opportunities": 295,
     "bulletins": [
       "258",
       "259",
@@ -45,7 +45,8 @@
       "280",
       "281",
       "282",
-      "283"
+      "283",
+      "284"
     ],
     "publicationDates": [
       "2026-10-28",
@@ -73,14 +74,14 @@
       "2026-11-21",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-11-01",
       "2026-11-08",
       "2026-11-15",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ],
     "editionPDFs": [
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/28/25800.PDF",
@@ -108,7 +109,8 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/21/28000.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/23/28100.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/24/28200.PDF",
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/25/28300.PDF"
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/25/28300.PDF",
+      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/26/28400.PDF"
     ],
     "parseMethods": [
       "xml",
@@ -136,10 +138,51 @@
       "xml",
       "xml",
       "xml",
-      "xml"
+      "xml",
+      "html"
     ]
   },
   "notices": [
+    {
+      "id": "MD-20261126-66",
+      "province": "Madrid",
+      "title": "– Paracuellos de Jarama. Ofertas de empleo. Proceso selectivo",
+      "entity": "Paracuellos de Jarama",
+      "date": "26/11/2026",
+      "bulletin": "284",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261126-59",
+      "province": "Madrid",
+      "title": "– Loeches. Ofertas de empleo. Proceso selectivo",
+      "entity": "Loeches",
+      "date": "26/11/2026",
+      "bulletin": "284",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261126-54",
+      "province": "Madrid",
+      "title": "– Fuenlabrada. Ofertas de empleo. Proceso selectivo",
+      "entity": "Fuenlabrada",
+      "date": "26/11/2026",
+      "bulletin": "284",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-54.PDF",
+      "type": "Plaza / oposición"
+    },
+    {
+      "id": "MD-20261126-46",
+      "province": "Madrid",
+      "title": "– Alcobendas. Ofertas de empleo. Proceso selectivo",
+      "entity": "Alcobendas",
+      "date": "26/11/2026",
+      "bulletin": "284",
+      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-46.PDF",
+      "type": "Plaza / oposición"
+    },
     {
       "id": "MD-20261125-50",
       "province": "Madrid",
