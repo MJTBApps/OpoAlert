@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T07:37:59+00:00",
+ "updatedUTC": "2026-11-26T10:29:44+00:00",
  "items": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/30/BOCM-20261030-70.PDF": {
    "days": 20,
@@ -862,6 +862,18 @@
    "kind": "hábiles",
    "text": "…Ambiente, Agricultura e Interior, en el plazo de quince días hábiles a contar desde la fecha de entrada en vigor de esta convocatoria, en el Registro Electrónico de la Comunidad de Madrid o en la forma establecida en el artículo 16 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las…",
    "page": 2
+  },
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF": {
+   "days": 5,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes de participación será de cinco días hábiles, a partir de la publicación del anuncio de la convocatoria en el BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID.",
+   "page": 1
+  },
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-46.PDF": {
+   "days": 15,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de QUINCE (15) DÍAS HÁBILES, contados desde el día hábil siguiente al de la publicación del anuncio de la convocatoria en el “Boletín Oficial del Estado”.",
+   "page": 3
   }
  },
  "none": [
@@ -980,7 +992,9 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-45.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-47.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-48.PDF",
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-50.PDF"
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-50.PDF",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-54.PDF",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF"
  ],
  "tries": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-10.PDF": 3,
@@ -1177,7 +1191,9 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-57.PDF": "https://sanmartindevaldeiglesias.sedelectronica.es/",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-52.PDF": "https://sede.ayto-alcaladehenares.es/",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-77.PDF": "https://olmedadelasfuentes.sedelectronica.es/",
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-87.PDF": "https://valdemanco.sedelectronica.es/"
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-87.PDF": "https://valdemanco.sedelectronica.es/",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-46.PDF": "https://alcobendas.convoca.online/",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF": "https://loeches.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/28/BOCM-20261028-29.PDF": [
@@ -1271,6 +1287,13 @@
   ],
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-87.PDF": [
    "https://valdemanco.sedelectronica.es/"
+  ],
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-46.PDF": [
+   "https://alcobendas.convoca.online/",
+   "https://www.alcobendas.org/"
+  ],
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF": [
+   "https://loeches.sedelectronica.es/"
   ]
  },
  "sinSede": [
@@ -1371,6 +1394,8 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-47.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-48.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-50.PDF",
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-8.PDF"
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-8.PDF",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-54.PDF",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF"
  ]
 }
