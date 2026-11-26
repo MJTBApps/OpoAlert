@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-25T13:04:33.667703+00:00",
+  "lastCheckedUTC": "2026-11-26T06:56:02.937315+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 1040,
-    "opportunities": 87,
+    "announcementsRead": 1052,
+    "opportunities": 89,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 1040,
-    "opportunities": 87,
+    "announcementsRead": 1052,
+    "opportunities": 89,
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -40,10 +39,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-30",
       "2026-11-02",
@@ -63,7 +62,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -78,6 +78,46 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-228-10325",
+      "title": "Aprovació inicial del pressupost general, les bases d'execució i la plantilla de personal per a l'exercici 2027",
+      "entity": "AJUNTAMENT D'ANGLÈS",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010325.pdf"
+    },
+    {
+      "id": "GI-2026-228-10323",
+      "title": "Aprovació inicial del pressupost general per a l'exercici 2027, les seves bases d'execució i la plantilla de personal",
+      "entity": "AJUNTAMENT DE MOLLET DE PERALADA",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010323.pdf"
+    },
+    {
+      "id": "GI-2026-228-10261",
+      "title": "Aprovació de les bases i la convocatòria per a la creació d'una borsa de treball d'agent d'ocupació i desenvolupament local, en règim de funcionari interí",
+      "entity": "AJUNTAMENT DE CASSÀ DE LA SELVA",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010261.pdf"
+    },
+    {
+      "id": "GI-2026-228-10225",
+      "title": "Convocatòria del procés de selecció pel sistema de concurs oposició, d'una  plaça d'administratiu/va, subgrup C1,  vacant a la plantilla de personal funcionari de  l'Ajuntament de Terrades, en execució de l'oferta pública de l'any 2024, i constitució d'una borsa de treball",
+      "entity": "AJUNTAMENT DE TERRADES",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/228/2026228010225.pdf"
+    },
     {
       "id": "GI-2026-227-10220",
       "title": "Aprovació incial del pressupost general, les bases d'execució i la plantilla de personal per a l'exercici 2027",
@@ -927,26 +967,6 @@
       "province": "Girona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809057.pdf"
-    },
-    {
-      "id": "GI-2026-207-09245",
-      "title": "Convocatòria per a la cobertura definitiva d'una plaça d'operari/ària menjador de les escoles bressol municipals, de règim laboral (Grup AP), fitxa SC-06 i constitució d'una borsa de treball, mitjançant contracte de relleu i pel sistema de concurs oposició (Exp. x2026002445)",
-      "entity": "AJUNTAMENT DE CELRÀ",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709245.pdf"
-    },
-    {
-      "id": "GI-2026-207-09020",
-      "title": "Aprovació de les bases i la convocatòria per una plaça de dinamitzador d'activitats culturals, esportives, infantils i juvenils, en règim de funcionari de carrera i creació d'una borsa de treball",
-      "entity": "AJUNTAMENT DE RIELLS I VIABREA",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/207/202620709020.pdf"
     }
   ]
 }
