@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-26T06:40:21.866703+00:00",
+  "lastCheckedUTC": "2026-11-26T16:42:59.998368+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 97,
-    "opportunities": 97,
+    "announcementsRead": 98,
+    "opportunities": 98,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -47,24 +48,103 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 97,
-    "opportunities": 97
+    "announcementsRead": 98,
+    "opportunities": 98
   },
   "notices": [
+    {
+      "id": "CIDO8-22563286",
+      "title": "1 plaça de Tècnic superior de projectes",
+      "entity": "Ajuntament de Reus",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22563286"
+    },
     {
       "id": "CIDO8-22555819",
       "title": "2 places de Vigilant",
       "entity": "Ajuntament de la Secuita",
-      "date": "25/11/2026",
+      "date": "26/11/2026",
       "bulletin": "CIDO",
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22555819"
+    },
+    {
+      "id": "CIDO8-22538776",
+      "title": "1 plaça de Director de l'Escola municipal de Música i del Conservatori professional de Música",
+      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22538776"
+    },
+    {
+      "id": "CIDO8-22524818",
+      "title": "Borsa de treball de places de Tècnic de dinamització de joventut",
+      "entity": "Ajuntament de la Ràpita",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22524818"
+    },
+    {
+      "id": "CIDO8-22421571",
+      "title": "1 plaça de Tècnic mitjà - joventut",
+      "entity": "Ajuntament de Reus",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421571"
+    },
+    {
+      "id": "CIDO8-22421565",
+      "title": "1 plaça de Tècnic mitjà gestió de projectes i programes serveis territorials (medi ambient)",
+      "entity": "Ajuntament de Reus",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421565"
+    },
+    {
+      "id": "CIDO8-22421553",
+      "title": "1 plaça de Tècnic superior - benestar social",
+      "entity": "Ajuntament de Reus",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421553"
+    },
+    {
+      "id": "CIDO8-22421550",
+      "title": "7 places de Tècnic especialista comeses especials - integrador social",
+      "entity": "Ajuntament de Reus",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22421550"
+    },
+    {
+      "id": "CIDO8-21030757",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Tivenys",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21030757"
     },
     {
       "id": "CIDO8-22555358",
@@ -157,6 +237,16 @@
       "url": "https://cido.diba.cat/oposicions/22547468"
     },
     {
+      "id": "CIDO8-22466718",
+      "title": "9 places de Personal de manteniment, neteja i jardineria. Línia ACOL del Programa Treball i Formació",
+      "entity": "Ajuntament de Tarragona",
+      "date": "24/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22466718"
+    },
+    {
       "id": "CIDO8-22421539",
       "title": "1 plaça de Tècnic especialista de comeses especials - tècnic auxiliar dinamitzador",
       "entity": "Ajuntament de Reus",
@@ -205,16 +295,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22538826"
-    },
-    {
-      "id": "CIDO8-22538776",
-      "title": "1 plaça de Director de l'Escola municipal de Música i del Conservatori professional de Música",
-      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
-      "date": "23/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22538776"
     },
     {
       "id": "CIDO8-22538628",
@@ -287,16 +367,6 @@
       "url": "https://cido.diba.cat/oposicions/22490512"
     },
     {
-      "id": "CIDO8-21030757",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Tivenys",
-      "date": "20/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21030757"
-    },
-    {
       "id": "CIDO8-20654966",
       "title": "1 plaça d'Agent de la Policia Local",
       "entity": "Ajuntament d'Altafulla",
@@ -315,16 +385,6 @@
       "province": "Tarragona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22525032"
-    },
-    {
-      "id": "CIDO8-22524818",
-      "title": "Borsa de treball de places de Tècnic de dinamització de joventut",
-      "entity": "Ajuntament de la Ràpita",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22524818"
     },
     {
       "id": "CIDO8-21973849",
@@ -687,16 +747,6 @@
       "url": "https://cido.diba.cat/oposicions/21131872"
     },
     {
-      "id": "CIDO8-22466718",
-      "title": "9 places de Personal de manteniment, neteja i jardineria. Línia ACOL del Programa Treball i Formació",
-      "entity": "Ajuntament de Tarragona",
-      "date": "09/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22466718"
-    },
-    {
       "id": "CIDO8-22396855",
       "title": "1 plaça de Cap de la Unitat d'Activitats",
       "entity": "Ajuntament de Cambrils",
@@ -827,26 +877,6 @@
       "url": "https://cido.diba.cat/oposicions/22421574"
     },
     {
-      "id": "CIDO8-22421571",
-      "title": "1 plaça de Tècnic mitjà - joventut",
-      "entity": "Ajuntament de Reus",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22421571"
-    },
-    {
-      "id": "CIDO8-22421565",
-      "title": "1 plaça de Tècnic mitjà - medi ambient",
-      "entity": "Ajuntament de Reus",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22421565"
-    },
-    {
       "id": "CIDO8-22421562",
       "title": "1 plaça de Tècnic superior - empresa i ocupació",
       "entity": "Ajuntament de Reus",
@@ -865,26 +895,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22421556"
-    },
-    {
-      "id": "CIDO8-22421553",
-      "title": "2 places de Tècnic superior - benestar social",
-      "entity": "Ajuntament de Reus",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22421553"
-    },
-    {
-      "id": "CIDO8-22421550",
-      "title": "7 places de Tècnic especialista comeses especials - integrador social",
-      "entity": "Ajuntament de Reus",
-      "date": "03/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22421550"
     },
     {
       "id": "CIDO8-22323088",

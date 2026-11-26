@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-26T06:40:21.866703+00:00",
+  "lastCheckedUTC": "2026-11-26T16:42:59.998368+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 72,
-    "opportunities": 72,
+    "announcementsRead": 81,
+    "opportunities": 81,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -47,15 +48,154 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 72,
-    "opportunities": 72
+    "announcementsRead": 81,
+    "opportunities": 81
   },
   "notices": [
+    {
+      "id": "CIDO6-22563492",
+      "title": "1 plaça d'Arquitecte -TP",
+      "entity": "Ajuntament de Palau-saverdera",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22563492"
+    },
+    {
+      "id": "CIDO6-22561934",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Terrades",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22561934"
+    },
+    {
+      "id": "CIDO6-22561923",
+      "title": "Borsa de treball de places d'Agent d'ocupació i desenvolupament local",
+      "entity": "Ajuntament de Cassà de la Selva",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22561923"
+    },
+    {
+      "id": "CIDO6-22547360",
+      "title": "1 plaça d'Administratiu a l'oficina de turisme",
+      "entity": "Ajuntament de Peralada",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22547360"
+    },
+    {
+      "id": "CIDO6-22525243",
+      "title": "4 places d'Agent de la Policia Local",
+      "entity": "Ajuntament de Roses",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22525243"
+    },
+    {
+      "id": "CIDO6-22524104",
+      "title": "1 plaça d'Oficial de manteniment",
+      "entity": "Ajuntament de Campllong",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22524104"
+    },
+    {
+      "id": "CIDO6-22180701",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament d'Alp",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22180701"
+    },
+    {
+      "id": "CIDO6-21869860",
+      "title": "2 places d'Auxiliar administratiu",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21869860"
+    },
+    {
+      "id": "CIDO6-21869857",
+      "title": "1 plaça de Tècnic de serveis públics",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21869857"
+    },
+    {
+      "id": "CIDO6-21869854",
+      "title": "1 plaça d'Informador turístic",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21869854"
+    },
+    {
+      "id": "CIDO6-21869851",
+      "title": "1 plaça d'Oficial de la brigada",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21869851"
+    },
+    {
+      "id": "CIDO6-21869848",
+      "title": "1 plaça d'Operari d'activitats culturals i esportives",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21869848"
+    },
+    {
+      "id": "CIDO6-21869844",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Torroella de Montgrí",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/21869844"
+    },
+    {
+      "id": "CIDO6-16732260",
+      "title": "1 plaça de Tècnic de so, llum i audiovisuals",
+      "entity": "Ajuntament de Salt",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/16732260"
+    },
     {
       "id": "CIDO6-22553526",
       "title": "Borsa de treball de places de Psicòleg",
@@ -85,16 +225,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/15199257"
-    },
-    {
-      "id": "CIDO6-22547360",
-      "title": "1 plaça d'Administratiu a l'oficina de turisme",
-      "entity": "Ajuntament de Peralada",
-      "date": "24/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22547360"
     },
     {
       "id": "CIDO6-22547333",
@@ -217,16 +347,6 @@
       "url": "https://cido.diba.cat/oposicions/22528509"
     },
     {
-      "id": "CIDO6-22525243",
-      "title": "4 places d'Agent de la Policia Local",
-      "entity": "Ajuntament de Roses",
-      "date": "20/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22525243"
-    },
-    {
       "id": "CIDO6-22525237",
       "title": "1 plaça de Cap de protecció civil",
       "entity": "Ajuntament de Blanes",
@@ -277,16 +397,6 @@
       "url": "https://cido.diba.cat/oposicions/22389617"
     },
     {
-      "id": "CIDO6-22180701",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament d'Alp",
-      "date": "20/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22180701"
-    },
-    {
       "id": "CIDO6-21398767",
       "title": "1 plaça de Tècnic de gestió per prestar serveis a la Secció de serveis educatius",
       "entity": "Ajuntament de Girona",
@@ -315,16 +425,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22524166"
-    },
-    {
-      "id": "CIDO6-22524104",
-      "title": "1 plaça d'Oficial de manteniment",
-      "entity": "Ajuntament de Campllong",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22524104"
     },
     {
       "id": "CIDO6-22500376",
@@ -505,16 +605,6 @@
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/18010859"
-    },
-    {
-      "id": "CIDO6-16732260",
-      "title": "1 plaça de Tècnic de so, llum i audiovisuals",
-      "entity": "Ajuntament de Salt",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16732260"
     },
     {
       "id": "CIDO6-22489484",

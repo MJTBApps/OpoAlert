@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-26T06:40:21.866703+00:00",
+  "lastCheckedUTC": "2026-11-26T16:42:59.998368+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 58,
-    "opportunities": 58,
+    "announcementsRead": 59,
+    "opportunities": 59,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -32,7 +32,8 @@
       "2026-11-19",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -47,15 +48,44 @@
       "2026-11-18",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 58,
-    "opportunities": 58
+    "announcementsRead": 59,
+    "opportunities": 59
   },
   "notices": [
+    {
+      "id": "CIDO7-22562116",
+      "title": "1 plaça d'Oficial paleta",
+      "entity": "Ajuntament de Cervera",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22562116"
+    },
+    {
+      "id": "CIDO7-22562087",
+      "title": "1 plaça d'Administratiu",
+      "entity": "Ajuntament de Cervera",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22562087"
+    },
+    {
+      "id": "CIDO7-22394879",
+      "title": "1 plaça d'Encarregat del servei de neteja",
+      "entity": "Ajuntament de la Pobla de Segur",
+      "date": "26/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22394879"
+    },
     {
       "id": "CIDO7-17560905",
       "title": "2 places de Peó de la brigada municipal",
@@ -477,16 +507,6 @@
       "url": "https://cido.diba.cat/oposicions/22447020"
     },
     {
-      "id": "CIDO7-22447017",
-      "title": "1 plaça d'Encarregat del servei de neteja",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "05/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22447017"
-    },
-    {
       "id": "CIDO7-22420072",
       "title": "1 plaça de Tècnic d'esports",
       "entity": "Ajuntament de Bellver de Cerdanya",
@@ -625,16 +645,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22394883"
-    },
-    {
-      "id": "CIDO7-22394879",
-      "title": "1 plaça d'Encarregat del servei de neteja",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22394879"
     }
   ]
 }
