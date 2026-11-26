@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-25T17:23:22.278759+00:00",
+  "lastCheckedUTC": "2026-11-26T07:47:39.111657+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "228",
-    "pagesVisited": 972,
-    "announcementsRead": 366,
-    "opportunities": 61
+    "pagesVisited": 911,
+    "announcementsRead": 351,
+    "opportunities": 53
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
-    "issuesRead": 21,
-    "pagesVisited": 972,
-    "announcementsRead": 366,
-    "opportunities": 61,
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
+    "issuesRead": 20,
+    "pagesVisited": 911,
+    "announcementsRead": 351,
+    "opportunities": 53,
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -43,7 +42,6 @@
       "228"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -74,13 +72,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-26"
     ],
-    "originalPdfPagesRead": 972,
+    "originalPdfPagesRead": 911,
     "archiveIndexPagesRead": 2,
     "archiveTotalIssues": 48203,
     "editionPDFs": [
-      "https://app.dipalme.org/pandora/high.raw?id=0000392781&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+27%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392782&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+28%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392783&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+29%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392784&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F10%2F2026.pdf",
@@ -633,86 +631,6 @@
       "bulletin": "210",
       "type": "Plaza / oposición",
       "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02940",
-      "province": "Almería",
-      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso de méritos para la provisión en propiedad de tres plazas de peón/a, se ha dictado resolución de la Presidencia núm. 2.664/2026, de 23 de octubre,…",
-      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2940/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02925",
-      "province": "Almería",
-      "title": "CONVOCATORIA DE LA SELECCIÓN DE TRABAJADOR/A TÉCNICO/A DE PLANIFICACIÓN Y OBRAS, PARA CUBRIR UN PUESTO DE TRABAJO, TEMPORAL, Y CREACIÓN DE BOLSA DE TRABAJO DE LA EMPRESA GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE, S.A.…",
-      "entity": "GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE S.A.",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2925/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02924",
-      "province": "Almería",
-      "title": "CONVOCATORIA DE LA SELECCIÓN DE TRABAJADOR/A OPERARIO/A DE REDES BUSCAFUGAS PARA CUBRIR UN PUESTO DE TRABAJO, TEMPORAL, Y CREACIÓN DE BOLSA DE TRABAJO DE LA EMPRESA GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE, S.A. (GALASA).…",
-      "entity": "GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE S.A.",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2924/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02923",
-      "province": "Almería",
-      "title": "CONVOCATORIA DE LA SELECCIÓN DE TRABAJADOR/A TÉCNICO/A DE SISTEMAS PARA SOPORTE INFORMÁTICO, PARA CUBRIR UN PUESTO DE TRABAJO, TEMPORAL, Y CREACIÓN DE BOLSA DE TRABAJO DE LA EMPRESA GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE,…",
-      "entity": "GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE S.A.",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2923/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02922",
-      "province": "Almería",
-      "title": "CONVOCATORIA DE LA SELECCIÓN DE TRABAJADOR/A DELINEANTE TÉCNICO/A GIS PARA CUBRIR UN PUESTO DE TRABAJO, TEMPORAL, Y CREACIÓN DE BOLSA DE TRABAJO DE LA EMPRESA GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE, S.A. (GALASA).…",
-      "entity": "GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE S.A.",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2922/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02921",
-      "province": "Almería",
-      "title": "CONVOCATORIA DE LA SELECCIÓN DE TRABAJADOR/A OPERARIO/A DE CONTROL DE ALARMAS PARA CUBRIR UN PUESTO DE TRABAJO, TEMPORAL, Y CREACIÓN DE BOLSA DE TRABAJO DE LA EMPRESA GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE, S.A. (GALASA).…",
-      "entity": "GESTIÓN DE AGUAS DEL LEVANTE ALMERIENSE S.A.",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2921/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02910",
-      "province": "Almería",
-      "title": "Documento firmado electrónicamente. Verificable en https://ov.dipalme.org/csv?id=jyJASQPu5okMcyZqPkZoLA== . Expediente nº: 255/2026 Procedimiento: Convocatoria procedimiento selectivo de personal para la provisión del puesto…",
-      "entity": "AYUNTAMIENTO DE SORBAS",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2910/anuncio.pdf"
-    },
-    {
-      "id": "AM-2026-02762",
-      "province": "Almería",
-      "title": "BASES PARA LA CONSTITUCIÓN DE UNA BOLSA DE EMPLEO DE TÉCNICO/A ADMINISTRATIVO/A COMO FUNCIONARIO INTERINO POR CONCURSO OPOSICIÓN EN EL AYUNTAMIENTO DE OLULA DEL RÍO. PRIMERA. Objeto de la Convocatoria Es objeto de las…",
-      "entity": "AYUNTAMIENTO DE OLULA DEL RIO",
-      "date": "27/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/2762/anuncio.pdf"
     }
   ]
 }
