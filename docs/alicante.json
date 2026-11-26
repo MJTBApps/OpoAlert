@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-26T06:29:55.113976+00:00",
+  "lastCheckedUTC": "2026-11-26T12:37:24.068767+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "225",
-    "pagesVisited": 21,
-    "announcementsRead": 853,
-    "opportunities": 65,
+    "bulletin": "226",
+    "pagesVisited": 22,
+    "announcementsRead": 888,
+    "opportunities": 66,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-28",
     "rangeEnd": "2026-11-26",
-    "issuesRead": 21,
-    "pagesVisited": 21,
-    "announcementsRead": 853,
-    "opportunities": 65,
+    "issuesRead": 22,
+    "pagesVisited": 22,
+    "announcementsRead": 888,
+    "opportunities": 66,
     "bulletins": [
       "205",
       "206",
@@ -40,7 +40,8 @@
       "222",
       "223",
       "224",
-      "225"
+      "225",
+      "226"
     ],
     "publicationDates": [
       "2026-10-28",
@@ -63,7 +64,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,11 +75,20 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ]
   },
   "notices": [
+    {
+      "id": "AL-2026-9146",
+      "province": "Alicante",
+      "title": "CONVOCATORIA Y BASES ESPECÍFICAS CONSTITUCIÓN BOLSA TRABAJO TÉCNICO/A ESPECIALISTA EN TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN (TIC).",
+      "entity": "AYUNTAMIENTO ELCHE",
+      "date": "26/11/2026",
+      "bulletin": "226",
+      "type": "Bolsa de trabajo",
+      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/26_226/2026_009146.pdf"
+    },
     {
       "id": "AL-2026-9114",
       "province": "Alicante",
