@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bopcadiz.es/",
   "province": "Cádiz",
-  "lastCheckedUTC": "2026-11-25T17:20:46.782457+00:00",
+  "lastCheckedUTC": "2026-11-26T07:46:37.406416+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
-    "announcementsRead": 424,
+    "bulletin": "228",
+    "announcementsRead": 416,
     "opportunities": 32,
     "pagesVisited": 21
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "issuesRead": 21,
-    "announcementsRead": 424,
+    "announcementsRead": 416,
     "opportunities": 32,
     "pagesVisited": 21,
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -40,10 +39,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -63,7 +62,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -86,6 +86,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "CA-2026-411020",
+      "province": "Cádiz",
+      "title": "Consorcio de Bomberos de la Provincia de Cádiz. Toma de posesión en el proceso selectivo para la provisión en propiedad por el procedimiento de concurso-oposición (promoción interna) de 23 plazas de cabos-jefes de dotación, grupo C, subgrupo C1, OEP 22021, 2022, 2023 y 2024, encuadradas en la escala de Administración Especial, subescala de Servicios Especiales, clase Extinción de Incendios",
+      "entity": "Consorcio de Bomberos de la Provincia de Cádiz",
+      "date": "26/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/11_noviembre/BOP228_26-11-26.pdf#page=0"
+    },
     {
       "id": "CA-2026-410575",
       "province": "Cádiz",
@@ -395,16 +405,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf#page=7"
-    },
-    {
-      "id": "CA-2026-349722",
-      "province": "Cádiz",
-      "title": "Ayuntamiento de San Roque. Bases de la convocatoria para cubrir, mediante oposición y turno libre, 1 plaza de Trabajador/a Social, vacante en la plantilla del ayuntamiento",
-      "entity": "Ayuntamiento de San Roque",
-      "date": "27/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP207_27-10-26.pdf#page=2"
     }
   ]
 }
