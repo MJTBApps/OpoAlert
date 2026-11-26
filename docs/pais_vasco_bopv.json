@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-26T06:28:15.148339+00:00",
+  "lastCheckedUTC": "2026-11-26T09:47:39.516787+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
-    "pagesVisited": 21,
-    "announcementsRead": 294,
-    "opportunities": 39
+    "bulletin": "227",
+    "pagesVisited": 22,
+    "announcementsRead": 320,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
       "2026-10-28",
@@ -59,7 +60,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -69,14 +71,23 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 294,
-    "opportunities": 39
+    "issuesRead": 22,
+    "announcementsRead": 320,
+    "opportunities": 40
   },
   "notices": [
+    {
+      "id": "PV-2026-5056",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 18 de noviembre de 2026, del vicepresidente segundo del Gobierno y consejero de Economía, Trabajo y Empleo, por la que se resuelve la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «secretario/a de alto cargo» de la Dirección de Economía Social.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "26/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605056a.pdf"
+    },
     {
       "id": "PV-2026-5036",
       "province": "País Vasco (BOPV)",
