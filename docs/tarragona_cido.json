@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-25T16:43:32.238195+00:00",
+  "lastCheckedUTC": "2026-11-26T06:40:21.866703+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 98,
-    "opportunities": 98,
+    "announcementsRead": 97,
+    "opportunities": 97,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "publicationDates": [
-      "2026-10-27",
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-26"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 98,
-    "opportunities": 98
+    "announcementsRead": 97,
+    "opportunities": 97
   },
   "notices": [
     {
@@ -1025,16 +1025,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22354012"
-    },
-    {
-      "id": "CIDO8-21301420",
-      "title": "Borsa de treball de places de Professor de turisme",
-      "entity": "Ajuntament de Vilafranca del Penedès - Institut Municipal de Formació",
-      "date": "27/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21301420"
     }
   ]
 }

@@ -2,20 +2,20 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-25T16:43:32.238195+00:00",
+  "lastCheckedUTC": "2026-11-26T06:40:21.866703+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 74,
-    "opportunities": 74,
+    "announcementsRead": 72,
+    "opportunities": 72,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "publicationDates": [
       "2026-10-28",
       "2026-10-30",
@@ -38,7 +38,6 @@
       "2026-11-25"
     ],
     "nonPublicationDates": [
-      "2026-10-27",
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-26"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 74,
-    "opportunities": 74
+    "announcementsRead": 72,
+    "opportunities": 72
   },
   "notices": [
     {
@@ -587,16 +587,6 @@
       "url": "https://cido.diba.cat/oposicions/22476326"
     },
     {
-      "id": "CIDO6-22473706",
-      "title": "Borsa de treball de places d'Operari d'obres i serveis",
-      "entity": "Ajuntament de Figueres",
-      "date": "11/11/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22473706"
-    },
-    {
       "id": "CIDO6-22466771",
       "title": "Borsa de treball de places d'Auxiliar de Serveis i Atenció al Públic",
       "entity": "Ajuntament de l'Escala",
@@ -785,16 +775,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22394715"
-    },
-    {
-      "id": "CIDO6-22381543",
-      "title": "Borsa de treball de places d'Administratiu",
-      "entity": "Ajuntament de Celrà",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22381543"
     }
   ]
 }
