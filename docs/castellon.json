@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-25T16:43:09.232939+00:00",
+  "lastCheckedUTC": "2026-11-26T06:30:07.276090+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "142",
+    "bulletin": "143",
     "pagesVisited": 13,
-    "announcementsRead": 504,
-    "opportunities": 22,
+    "announcementsRead": 513,
+    "opportunities": 23,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-27",
-    "rangeEnd": "2026-11-25",
+    "rangeStart": "2026-10-28",
+    "rangeEnd": "2026-11-26",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 504,
-    "opportunities": 22,
+    "announcementsRead": 513,
+    "opportunities": 23,
     "bulletins": [
-      "130",
       "131",
       "132",
       "133",
@@ -32,10 +31,10 @@
       "139",
       "140",
       "141",
-      "142"
+      "142",
+      "143"
     ],
     "publicationDates": [
-      "2026-10-27",
       "2026-10-29",
       "2026-10-31",
       "2026-11-03",
@@ -47,7 +46,8 @@
       "2026-11-17",
       "2026-11-19",
       "2026-11-21",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-26"
     ],
     "nonPublicationDates": [
       "2026-10-28",
@@ -70,6 +70,16 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-149821434527564529",
+      "province": "Castellón",
+      "title": "CONVOCATORIA CONSTITUCIÓN BOLSA DE TRABAJO TEMPORAL DE INFORMADOR/A TURÍSTICO/A,  MEDIANTE OPOSICIÓN",
+      "entity": "AJUNTAMENT DE CASTELLÓ DE LA PLANA",
+      "date": "26/11/2026",
+      "bulletin": "143",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/B4BON3zLBB"
+    },
     {
       "id": "CS-415660712918465714",
       "province": "Castellón",
