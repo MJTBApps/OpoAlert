@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-26T16:42:59.998368+00:00",
+  "lastCheckedUTC": "2026-11-27T06:42:30.974288+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 59,
-    "opportunities": 59,
+    "announcementsRead": 52,
+    "opportunities": 52,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "publicationDates": [
-      "2026-10-28",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -48,12 +47,13 @@
       "2026-11-18",
       "2026-11-20",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-27"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 59,
-    "opportunities": 59
+    "announcementsRead": 52,
+    "opportunities": 52
   },
   "notices": [
     {
@@ -297,16 +297,6 @@
       "url": "https://cido.diba.cat/oposicions/22524511"
     },
     {
-      "id": "CIDO7-22528472",
-      "title": "1 plaça de Tècnic d'educació infantil per a l'escola bressol",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "19/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22528472"
-    },
-    {
       "id": "CIDO7-22267222",
       "title": "1 plaça de Tècnic d'educació infantil",
       "entity": "Ajuntament de Bellpuig",
@@ -335,26 +325,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/21397114"
-    },
-    {
-      "id": "CIDO7-22474582",
-      "title": "Borsa de treball de places d'Educador de la llar d'infants municipal",
-      "entity": "Ajuntament de Sarroca de Lleida",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22474582"
-    },
-    {
-      "id": "CIDO7-22015277",
-      "title": "Borsa de treball de places de Peó de serveis múltiples - polivalent",
-      "entity": "Ajuntament de Balaguer",
-      "date": "16/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22015277"
     },
     {
       "id": "CIDO7-19976046",
@@ -605,46 +575,6 @@
       "province": "Lleida",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22199121"
-    },
-    {
-      "id": "CIDO7-22394926",
-      "title": "1 plaça de Secretari intervenció",
-      "entity": "Ajuntament de Sanaüja",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22394926"
-    },
-    {
-      "id": "CIDO7-22394889",
-      "title": "1 plaça de Netejador",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22394889"
-    },
-    {
-      "id": "CIDO7-22394886",
-      "title": "1 plaça d'Educador d'escola bressol",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22394886"
-    },
-    {
-      "id": "CIDO7-22394883",
-      "title": "1 plaça de Peó de brigada",
-      "entity": "Ajuntament de la Pobla de Segur",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22394883"
     }
   ]
 }

@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-26T16:42:59.998368+00:00",
+  "lastCheckedUTC": "2026-11-27T06:42:30.974288+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 98,
-    "opportunities": 98,
+    "announcementsRead": 93,
+    "opportunities": 93,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-27"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 98,
-    "opportunities": 98
+    "announcementsRead": 93,
+    "opportunities": 93
   },
   "notices": [
     {
@@ -985,56 +985,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22397008"
-    },
-    {
-      "id": "CIDO8-21947008",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament d'Aiguamúrcia",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/21947008"
-    },
-    {
-      "id": "CIDO8-16615670",
-      "title": "1 plaça d'Auxiliar de gestió administrativa",
-      "entity": "Ajuntament de l'Arboç",
-      "date": "29/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/16615670"
-    },
-    {
-      "id": "CIDO8-22354043",
-      "title": "1 plaça de Professor de saxòfon",
-      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22354043"
-    },
-    {
-      "id": "CIDO8-22354017",
-      "title": "1 plaça d'Administratiu",
-      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22354017"
-    },
-    {
-      "id": "CIDO8-22354012",
-      "title": "1 plaça de Director d'Escola de Música i Conservatori",
-      "entity": "Ajuntament de Vila-seca - Patronat Municipal de Música",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22354012"
     }
   ]
 }

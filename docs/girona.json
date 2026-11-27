@@ -2,22 +2,21 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-26T16:42:59.998368+00:00",
+  "lastCheckedUTC": "2026-11-27T06:42:30.974288+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 81,
-    "opportunities": 81,
+    "announcementsRead": 80,
+    "opportunities": 80,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "publicationDates": [
-      "2026-10-28",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -48,12 +47,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-27"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 81,
-    "opportunities": 81
+    "announcementsRead": 80,
+    "opportunities": 80
   },
   "notices": [
     {
@@ -855,16 +855,6 @@
       "province": "Girona",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22410335"
-    },
-    {
-      "id": "CIDO6-22394715",
-      "title": "1 plaça d'Arquitecte",
-      "entity": "Ajuntament de Peralada",
-      "date": "28/10/2026",
-      "bulletin": "CIDO",
-      "province": "Girona",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/22394715"
     }
   ]
 }
