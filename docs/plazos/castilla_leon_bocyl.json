@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-27T07:36:53+00:00",
+ "updatedUTC": "2026-11-27T10:27:51+00:00",
  "items": {
   "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-41.pdf": {
    "days": 20,
@@ -563,6 +563,19 @@
    "text": "Quienes deseen tomar parte en los concursos presentarán, para cada plaza, la correspondiente solicitud en el plazo de 20 días hábiles contados a partir del día siguiente al de publicación de esta convocatoria en el Boletín Oficial de Castilla y León.",
    "page": 4,
    "hasta": "2026-12-28"
+  },
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-23.pdf": {
+   "days": 7,
+   "kind": "hábiles",
+   "text": "Las solicitudes de participación se dirigirán a la Rectora de la Universidad de Valladolid y podrán ser presentadas en el plazo de 7 días hábiles contados a partir del día siguiente a aquel en que aparezca publicada la convocatoria en el Boletín Oficial de Castilla y León.",
+   "page": 2
+  },
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-18.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de 10 días hábiles a partir del día siguiente al de la publicación de esta convocatoria en el Boletín Oficial de Castilla y León y se dirigirán a la Dirección General de Personal y Desarrollo Profesional de la Gerencia Regional de Salud de Castilla y León.",
+   "page": 2,
+   "hasta": "2026-12-14"
   }
  },
  "none": [
@@ -661,7 +674,14 @@
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-31.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-32.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-8.pdf",
-  "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-9.pdf"
+  "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-9.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-22.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-46.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-6.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -712,7 +732,10 @@
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-31.pdf": "https://sede.diputaciondeburgos.es/",
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-36.pdf": "https://www.valladolid.gob.es/",
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-8.pdf": "https://sede.unileon.es/",
-  "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-9.pdf": "https://sede.unileon.es/"
+  "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-9.pdf": "https://sede.unileon.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-22.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-23.pdf": "https://sede.uva.es/",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-46.pdf": "https://aldeareal.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-17.pdf": [
@@ -858,6 +881,15 @@
   ],
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-9.pdf": [
    "https://sede.unileon.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-22.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-23.pdf": [
+   "https://sede.uva.es/"
+  ],
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-46.pdf": [
+   "https://aldeareal.sedelectronica.es/"
   ]
  },
  "sinSede": [
@@ -996,6 +1028,12 @@
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-34.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-35.pdf",
   "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-5.pdf",
-  "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-6.pdf"
+  "https://bocyl.jcyl.es/boletines/2026/11/26/pdf/BOCYL-D-26112026-229-6.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-18.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-2.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-3.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-4.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-5.pdf",
+  "https://bocyl.jcyl.es/boletines/2026/11/27/pdf/BOCYL-D-27112026-230-6.pdf"
  ]
 }

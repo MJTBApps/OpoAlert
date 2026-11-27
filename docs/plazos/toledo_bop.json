@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-27T07:36:53+00:00",
+ "updatedUTC": "2026-11-27T10:27:51+00:00",
  "items": {
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105018;0&insert_number=5035&insert_year=2026": {
    "days": 10,
@@ -75,6 +75,18 @@
    "text": "…Servicio de Ayuda a Domicilio, se abre el plazo de presentación de solicitudes, que será de diez días hábiles a contar desde el día siguiente a la publicación de este anuncio en el “Boletín Oficial” de la provincia de Toledo.",
    "page": 1,
    "hasta": "2026-12-10"
+  },
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115440;0&insert_number=5455&insert_year=2026": {
+   "days": 15,
+   "kind": "hábiles",
+   "text": "Las solicitudes se presentarán en el plazo de quince días hábiles, contados desde el día siguiente al de la publicación del anuncio de la convocatoria en el “Boletín Oficial del Estado”, sin perjuicio de la publicación íntegra de las bases en el “Boletín Oficial” de la provincia de Toledo y en la sede electrónica…",
+   "page": 2
+  },
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115426;0&insert_number=5441&insert_year=2026": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de veinte días hábiles, contados a partir del día siguiente al de la publicación de la convocatoria en el “Boletín Oficial” de la provincia de Toledo.",
+   "page": 1
   }
  },
  "none": [
@@ -90,6 +102,7 @@
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115367;0&insert_number=5380&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115373;0&insert_number=5389&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115374;0&insert_number=5390&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115429;0&insert_number=5434&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115456;0&insert_number=5472&insert_year=2026"
  ],
  "tries": {},
@@ -103,7 +116,8 @@
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115233;0&insert_number=5250&insert_year=2026": "https://sede.fuensalida.com/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115316;0&insert_number=5332&insert_year=2026": "https://arges.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115348;0&insert_number=5363&insert_year=2026": "https://www.fuensalida.com/",
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26115391;0&insert_number=5400&insert_year=2026": "https://www.latorredestebanhambran.es/"
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115391;0&insert_number=5400&insert_year=2026": "https://www.latorredestebanhambran.es/",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115426;0&insert_number=5441&insert_year=2026": "https://mascaraque.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": [
@@ -136,6 +150,9 @@
   ],
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115391;0&insert_number=5400&insert_year=2026": [
    "https://www.latorredestebanhambran.es/"
+  ],
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115426;0&insert_number=5441&insert_year=2026": [
+   "https://mascaraque.sedelectronica.es/"
   ]
  },
  "sinSede": [
@@ -153,6 +170,8 @@
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115367;0&insert_number=5380&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115373;0&insert_number=5389&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115374;0&insert_number=5390&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115429;0&insert_number=5434&insert_year=2026",
+  "https://bop.diputoledo.es/webEbop/DocGet?id=26115440;0&insert_number=5455&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115456;0&insert_number=5472&insert_year=2026"
  ]
 }

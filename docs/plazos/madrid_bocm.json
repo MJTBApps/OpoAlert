@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-27T07:36:53+00:00",
+ "updatedUTC": "2026-11-27T10:27:51+00:00",
  "items": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/30/BOCM-20261030-70.PDF": {
    "days": 20,
@@ -856,6 +856,12 @@
    "kind": "hábiles",
    "text": "El plazo de presentación de solicitudes será de QUINCE (15) DÍAS HÁBILES, contados desde el día hábil siguiente al de la publicación del anuncio de la convocatoria en el “Boletín Oficial del Estado”.",
    "page": 3
+  },
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-67.PDF": {
+   "days": 15,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de quince días hábiles, contados a partir del día siguiente a la publicación de la convocatoria en el “Boletín Oficial del Estado”.",
+   "page": 1
   }
  },
  "none": [
@@ -972,7 +978,8 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-48.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-50.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-54.PDF",
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF"
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-58.PDF"
  ],
  "tries": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/05/BOCM-20261105-10.PDF": 3,
@@ -1136,7 +1143,17 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-8.PDF": 3,
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-4.PDF": 3,
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-25.PDF": 3,
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-7.PDF": 3
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/23/BOCM-20261123-7.PDF": 3,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-51.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-45.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-19.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-17.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-16.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-10.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-8.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-6.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-4.PDF": 1,
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-2.PDF": 1
  },
  "sedes": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-81.PDF": "https://sede.getafe.es/",
@@ -1168,7 +1185,8 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-77.PDF": "https://olmedadelasfuentes.sedelectronica.es/",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/24/BOCM-20261124-87.PDF": "https://valdemanco.sedelectronica.es/",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-46.PDF": "https://alcobendas.convoca.online/",
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF": "https://loeches.sedelectronica.es/"
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF": "https://loeches.sedelectronica.es/",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-58.PDF": "https://aytocolladomediano.sedelectronica.es/"
  },
  "sedeRaw": {
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-81.PDF": [
@@ -1262,6 +1280,9 @@
   ],
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-59.PDF": [
    "https://loeches.sedelectronica.es/"
+  ],
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-58.PDF": [
+   "https://aytocolladomediano.sedelectronica.es/"
   ]
  },
  "sinSede": [
@@ -1360,6 +1381,7 @@
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-50.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/25/BOCM-20261125-8.PDF",
   "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-54.PDF",
-  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF"
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/26/BOCM-20261126-66.PDF",
+  "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/11/27/BOCM-20261127-67.PDF"
  ]
 }
