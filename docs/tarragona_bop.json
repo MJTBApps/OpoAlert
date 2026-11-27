@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "source": "https://aplicacions.dipta.cat/bopt/web/anteriores/",
   "province": "Tarragona (BOP)",
-  "lastCheckedUTC": "2026-11-26T17:06:38.313149+00:00",
+  "lastCheckedUTC": "2026-11-27T07:14:12.750639+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "2026-11-26",
-    "pagesVisited": 66,
-    "announcementsRead": 1078,
-    "opportunities": 112,
+    "bulletin": "2026-11-27",
+    "pagesVisited": 67,
+    "announcementsRead": 1089,
+    "opportunities": 110,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -37,7 +36,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -50,7 +50,6 @@
       "2026-11-22"
     ],
     "bulletins": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -71,14 +70,35 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "issuesRead": 22,
-    "pagesVisited": 66,
-    "announcementsRead": 1078,
-    "opportunities": 112
+    "pagesVisited": 67,
+    "announcementsRead": 1089,
+    "opportunities": 110
   },
   "notices": [
+    {
+      "id": "TA-2026-11246",
+      "title": "Plaça d'auxiliar d'escola bressol (2). Bases i convocatòria.",
+      "entity": "AJUNTAMENT FALSET",
+      "date": "27/11/2026",
+      "bulletin": "27/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367071"
+    },
+    {
+      "id": "TA-2026-11205",
+      "title": "Borsa de treball d'oficial/a de 1a administratiu/iva. Bases i convocatòria.",
+      "entity": "MERCATS DE TARRAGONA, SA",
+      "date": "27/11/2026",
+      "bulletin": "27/11/2026",
+      "province": "Tarragona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/367023"
+    },
     {
       "id": "TA-2026-11183",
       "title": "Plaça de tècnic/a superior, benestar social (1). Bases i convocatòria.",
@@ -1158,46 +1178,6 @@
       "province": "Tarragona (BOP)",
       "type": "Plaza / oposición",
       "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365794"
-    },
-    {
-      "id": "TA-2026-10039",
-      "title": "Lloc de treball d'oficial/a de 1a (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT SANT JAUME D'ENVEJA",
-      "date": "28/10/2026",
-      "bulletin": "28/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365847"
-    },
-    {
-      "id": "TA-2026-10026",
-      "title": "Lloc de treball de cap de la Unitat d'Activitats (1) + cap de la Unitat de Salut Pública (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT CAMBRILS",
-      "date": "28/10/2026",
-      "bulletin": "28/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365815"
-    },
-    {
-      "id": "TA-2026-10022",
-      "title": "Borsa de treball d'agent de la Policia Local. Bases i convocatòria.",
-      "entity": "AJUNTAMENT ROQUETES",
-      "date": "28/10/2026",
-      "bulletin": "28/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365758"
-    },
-    {
-      "id": "TA-2026-09740",
-      "title": "Plaça d'auxiliar de gestió administrativa (1). Bases i convocatòria.",
-      "entity": "AJUNTAMENT ARBOÇ, L'",
-      "date": "28/10/2026",
-      "bulletin": "28/10/2026",
-      "province": "Tarragona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://aplicacions.dipta.cat/bopt/web/anuncio/descargar-pdf/365547"
     }
   ]
 }
