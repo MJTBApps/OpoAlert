@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-26T13:33:05.681141+00:00",
+  "lastCheckedUTC": "2026-11-27T07:32:38.459745+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "273",
+    "bulletin": "274",
     "pagesVisited": 2,
-    "announcementsRead": 858,
-    "opportunities": 87
+    "announcementsRead": 875,
+    "opportunities": 90
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 858,
-    "opportunities": 87,
+    "announcementsRead": 875,
+    "opportunities": 90,
     "bulletins": [
-      "249",
       "250",
       "251",
       "252",
@@ -44,10 +43,10 @@
       "270",
       "271",
       "272",
-      "273"
+      "273",
+      "274"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
@@ -71,10 +70,10 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "issuePublicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
@@ -98,7 +97,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -108,19 +108,78 @@
       "2026-11-22"
     ],
     "sectionsRead": {
-      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 6,
-      "SECCIÓN TERCERA": 35,
-      "SECCIÓN CUARTA": 1,
-      "SECCIÓN QUINTA": 113,
-      "SECCIÓN SEXTA": 676,
-      "PARTE NO OFICIAL": 19,
+      "SECCIÓN QUINTA": 119,
+      "SECCIÓN SEXTA": 688,
       "SECCIÓN SEGUNDA": 4,
+      "SECCIÓN TERCERA": 35,
+      "PARTE NO OFICIAL": 20,
       "SECCIÓN SEPTIMA": 1,
-      "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3
+      "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3,
+      "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 5
     },
-    "documentsVerified": 110
+    "documentsVerified": 113
   },
   "notices": [
+    {
+      "id": "ZA-000345550",
+      "province": "Zaragoza",
+      "title": "Acuerdo del Pleno de fecha 17 de septiembre de 2026 del Ayuntamiento de Morata de Jalón por el que se aprueba definitivamente el expediente de aprobación del Reglamento municipal regulador del teletrabajo del…",
+      "entity": "AYUNTAMIENTO DE MORATA DE JALÓN",
+      "date": "27/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476937661616"
+    },
+    {
+      "id": "ZA-000345544",
+      "province": "Zaragoza",
+      "title": "Anuncio de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE LAS CUERLAS",
+      "date": "27/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476931621414"
+    },
+    {
+      "id": "ZA-000345530",
+      "province": "Zaragoza",
+      "title": "ANUNCIO de aprobación provisional del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE CABOLAFUENTE",
+      "date": "27/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476917570808"
+    },
+    {
+      "id": "ZA-000345527",
+      "province": "Zaragoza",
+      "title": "Aprobación definitiva del presupuesto general para el ejercicio 2027.",
+      "entity": "AYUNTAMIENTO DE ALMOCHUEL",
+      "date": "27/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476914380707"
+    },
+    {
+      "id": "ZA-000345523",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a señalamiento de la fecha para la realización del primer ejercicio para la provisión, por turno libre y sistema de oposición, de tres plazas de técnico/a medio Informática.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "27/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476910360505"
+    },
+    {
+      "id": "ZA-000345522",
+      "province": "Zaragoza",
+      "title": "Anuncio relativo a señalamiento de la fecha para la realización del primer y el segundo ejercicio para la provisión, por turno libre y sistema de oposición, de dos plazas de agente forestal.",
+      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
+      "date": "27/11/2026",
+      "bulletin": "274",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476909350505"
+    },
     {
       "id": "ZA-000345509",
       "province": "Zaragoza",
@@ -960,36 +1019,6 @@
       "bulletin": "250",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472458250505"
-    },
-    {
-      "id": "ZA-000344690",
-      "province": "Zaragoza",
-      "title": "ANUNCIO relativo a convocatoria y bases para la constitución de una bolsa de empleo de técnico del centro ocupacional A2 (personal laboral). Por resolución de Presidencia núm. 2026-0398, de fecha 20 de octubre…",
-      "entity": "COMARCA DE TARAZONA Y EL MONCAYO",
-      "date": "28/10/2026",
-      "bulletin": "249",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472346770707"
-    },
-    {
-      "id": "ZA-000344678",
-      "province": "Zaragoza",
-      "title": "ANUNCIO relativo a proceso selectivo para la provisión de tres plazas de personal funcionario: auxiliar administrativo. Por resolución de Alcaldía número 2026-2300, de 21 de octubre de 2026, se ha acordado lo…",
-      "entity": "AYUNTAMIENTO DE LA ALMUNIA DE DOÑA GODINA",
-      "date": "28/10/2026",
-      "bulletin": "249",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472334650505"
-    },
-    {
-      "id": "ZA-000344661",
-      "province": "Zaragoza",
-      "title": "Anuncio relativo a señalamiento de fecha, lugar y hora de realización del primer ejercicio de la convocatoria para la provisión de una plaza de maestro/a inspector/a.",
-      "entity": "EXCMO. AYUNTAMIENTO DE ZARAGOZA. ÁREA DE PARTICIPACIÓN CIUDADANA Y RÉGIMEN INTERIOR. OFICINA DE RECURSOS HUMANOS",
-      "date": "28/10/2026",
-      "bulletin": "249",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472317480303"
     }
   ]
 }
