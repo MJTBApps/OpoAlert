@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bender.dpteruel.es/dpt/bopt.nsf/inicio.xsp",
   "province": "Teruel",
-  "lastCheckedUTC": "2026-11-26T17:11:34.659979+00:00",
+  "lastCheckedUTC": "2026-11-27T07:20:44.140300+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 52,
-    "announcementsRead": 459,
-    "opportunities": 8
+    "announcementsRead": 461,
+    "opportunities": 6
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "issuesRead": 21,
     "pagesVisited": 52,
-    "announcementsRead": 459,
-    "opportunities": 8,
+    "announcementsRead": 461,
+    "opportunities": 6,
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -40,10 +39,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -63,7 +62,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -137,26 +137,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://bender.dpteruel.es/dpt/bopt.nsf/0/11CB184FB325EC33C1258E9E004C6FD7"
-    },
-    {
-      "id": "TE-2026-3142-703995974442276BC1258E9D003792CF",
-      "province": "Teruel",
-      "title": "Convocatoria y bases reguladora para la selección de dos plazas de auxiliar de ayuda a domicilio.",
-      "entity": "Comarca del Bajo Aragón",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bender.dpteruel.es/dpt/bopt.nsf/0/703995974442276BC1258E9D003792CF"
-    },
-    {
-      "id": "TE-2026-3129-78AF45C9E931954CC1258E9D0035774E",
-      "province": "Teruel",
-      "title": "Bases de la convocatoria para la provisión de una plaza de informador turístico, patrimonial, e histórico.",
-      "entity": "Ayto. de Iglesuela del Cid",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bender.dpteruel.es/dpt/bopt.nsf/0/78AF45C9E931954CC1258E9D0035774E"
     }
   ]
 }
