@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-27T06:30:28.864303+00:00",
+  "lastCheckedUTC": "2026-11-27T09:48:02.399168+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
-    "pagesVisited": 21,
-    "announcementsRead": 283,
-    "opportunities": 38
+    "bulletin": "228",
+    "pagesVisited": 22,
+    "announcementsRead": 307,
+    "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
@@ -36,7 +36,8 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
       "2026-10-29",
@@ -59,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -69,14 +71,53 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-27"
+      "2026-11-22"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 283,
-    "opportunities": 38
+    "issuesRead": 22,
+    "announcementsRead": 307,
+    "opportunities": 42
   },
   "notices": [
+    {
+      "id": "PV-2026-5087",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO relativo a la convocatoria para la provisión con carácter definitivo, mediante libre designación, del puesto 1679.B0 Subdirección de Aplicaciones y Procedimientos Presupuestarios, adscrito a la Dirección de Intervención General Municipal.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605087a.pdf"
+    },
+    {
+      "id": "PV-2026-5086",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO relativo a la convocatoria para la provisión con carácter definitivo, mediante libre designación, del puesto 1139.00 Subdirección de Financiación de Proyectos, adscrito a la Dirección de Hacienda.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605086a.pdf"
+    },
+    {
+      "id": "PV-2026-5085",
+      "province": "País Vasco (BOPV)",
+      "title": "ANUNCIO relativo a la convocatoria para la provisión con carácter definitivo, mediante libre designación, del puesto 1281.B0 Subdirección de Servicios Generales, adscrito a la Dirección de Hacienda.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605085a.pdf"
+    },
+    {
+      "id": "PV-2026-5083",
+      "province": "País Vasco (BOPV)",
+      "title": "ORDEN de 19 de noviembre de 2026, de la consejera de Justicia y Derechos Humanos, por la que se nombran miembros de la comisión de valoración de méritos para el concurso específico en razón de puesto y/o idioma, para la cobertura de los puestos singularizados de los Cuerpos de Gestión Procesal y Administrativa, Tramitación Procesal y Administrativa y Auxilio Judicial de los partidos judiciales de Amurrio, Azpeitia, Balmaseda, Bergara, Durango, Gernika-Lumo, Getxo, Irun, Tolosa, Eibar y Barakaldo, así como del Instituto Vasco de Medicina Legal, de Secretaría de Gobierno y de Oficina Fiscal de Vitoria-Gasteiz y Donostia / San Sebastián, y Juzgados de Paz del partido judicial de Bilbao, convocado mediante Orden de 28 de septiembre de 2026.",
+      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605083a.pdf"
+    },
     {
       "id": "PV-2026-5056",
       "province": "País Vasco (BOPV)",
