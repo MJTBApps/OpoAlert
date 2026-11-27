@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "source": "https://app.dipalme.org/pandora/results.vm?q=parent:0000010919&view=boletines",
   "province": "Almería",
-  "lastCheckedUTC": "2026-11-27T10:28:21.440958+00:00",
+  "lastCheckedUTC": "2026-11-27T13:47:38.638107+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
-    "pagesVisited": 876,
-    "announcementsRead": 338,
-    "opportunities": 53
+    "bulletin": "230",
+    "pagesVisited": 974,
+    "announcementsRead": 376,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
     "rangeStart": "2026-10-29",
     "rangeEnd": "2026-11-27",
-    "issuesRead": 19,
-    "pagesVisited": 876,
-    "announcementsRead": 338,
-    "opportunities": 53,
+    "issuesRead": 21,
+    "pagesVisited": 974,
+    "announcementsRead": 376,
+    "opportunities": 58,
     "bulletins": [
       "210",
       "211",
@@ -38,7 +38,9 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229",
+      "230"
     ],
     "publicationDates": [
       "2026-10-29",
@@ -59,7 +61,9 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -70,13 +74,11 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26",
-      "2026-11-27"
+      "2026-11-22"
     ],
-    "originalPdfPagesRead": 876,
+    "originalPdfPagesRead": 974,
     "archiveIndexPagesRead": 2,
-    "archiveTotalIssues": 48203,
+    "archiveTotalIssues": 48205,
     "editionPDFs": [
       "https://app.dipalme.org/pandora/high.raw?id=0000392783&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+29%2F10%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392784&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+30%2F10%2F2026.pdf",
@@ -96,10 +98,62 @@
       "https://app.dipalme.org/pandora/high.raw?id=0000392798&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+20%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392799&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+23%2F11%2F2026.pdf",
       "https://app.dipalme.org/pandora/high.raw?id=0000392800&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+24%2F11%2F2026.pdf",
-      "https://app.dipalme.org/pandora/high.raw?id=0000392801&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+25%2F11%2F2026.pdf"
+      "https://app.dipalme.org/pandora/high.raw?id=0000392801&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+25%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392802&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+26%2F11%2F2026.pdf",
+      "https://app.dipalme.org/pandora/high.raw?id=0000392803&name=00000001.original.pdf&attachment=Bolet%C3%ADn+Oficial+de+la+Provincia+de+Almer%C3%ADa+%28Almer%C3%ADa%29.+27%2F11%2F2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "AM-2026-03351",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de oposición para la provisión en propiedad de cuatro plazas de administrativo/a de administración general, se ha dictado resolución de la Presidencia núm.…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3351/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03336",
+      "province": "Almería",
+      "title": "De conformidad con lo establecido en las bases de la convocatoria de concurso oposición para la provisión en propiedad de dos plazas de auxiliar de formación universitaria e informática, se ha dictado resolución de la…",
+      "entity": "DIPUTACIÓN PROVINCIAL DE ALMERÍA AREA DE RECURSOS HUMANOS Y CONTRATACION",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3336/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03315",
+      "province": "Almería",
+      "title": "RESOLUCIÓN DE ALCALDÍA N.º 853/2026, DE FECHA 13 DE NOVIEMBRE, DEL AYUNTAMIENTO DE DALÍAS POR LA QUE SE APRUEBAN LAS BASES Y LA CONVOCATORIA PARA LA SELECCIÓN EN RÉGIMEN DE INTERINIDAD MEDIANTE SISTEMA DE CONCURSO-OPOSICIÓN,…",
+      "entity": "AYUNTAMIENTO DE DALIAS",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3315/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03302",
+      "province": "Almería",
+      "title": "ANUNCIO RELATIVO A RECTIFICACIÓN DE LAS BASES DE LA CONVOCATORIA PARA LA PROVISIÓN EN PROPIEDAD DE UNA PLAZA DE ADMINISTRATIVO COMO FUNCIONARIO DE CARRERA, Y LA CREACIÓN DE UNA LISTA DE ESPERA, MEDIANTE EL SISTEMA DE…",
+      "entity": "AYUNTAMIENTO DE MARIA",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3302/anuncio.pdf"
+    },
+    {
+      "id": "AM-2026-03287",
+      "province": "Almería",
+      "title": "Expediente nº: 144/2026 Unidad Gestora: LM04. PERSONAL/RRHH Asunto: Provisión de una plaza de funcionario de carrera Ingeniero Industrial y creación de bolsa Documento firmado electrónicamente. Verificable en…",
+      "entity": "AYUNTAMIENTO DE LA MOJONERA",
+      "date": "26/11/2026",
+      "bulletin": "229",
+      "type": "Bolsa de trabajo",
+      "url": "https://app.dipalme.org/bop/services/manager/edicto/2026/3287/anuncio.pdf"
+    },
     {
       "id": "AM-2026-03307",
       "province": "Almería",
