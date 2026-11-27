@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T17:19:53+00:00",
+ "updatedUTC": "2026-11-27T07:36:53+00:00",
  "items": {
   "https://www.asturias.es/bopa/2026/10/30/2026-08819.pdf": {
    "days": 10,
@@ -28,27 +28,6 @@
    "kind": "naturales",
    "text": "…Ayuntamiento de Teverga, establecien­ do un plazo de presentación de solicitudes de quince días naturales, contados a partir de la publicación de la convocatoria en el BOPA.",
    "page": 1
-  },
-  "https://www.asturias.es/bopa/2026/10/28/2026-08717.pdf": {
-   "days": 10,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de solicitudes será de diez días hábiles, comenzando su cómputo a partir del día siguiente al de la publicación de la presente convocatoria en el Boletín Oficial del Principado de Asturias.",
-   "page": 1,
-   "hasta": "2026-11-11"
-  },
-  "https://www.asturias.es/bopa/2026/10/28/2026-08524.pdf": {
-   "days": 15,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de solicitudes será de 15 días hábiles a partir del día siguiente a la publicación de las Bases en el BOPA.",
-   "page": 3,
-   "hasta": "2026-11-18"
-  },
-  "https://www.asturias.es/bopa/2026/10/28/2026-08520.pdf": {
-   "days": 15,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de solicitudes será de 15 días hábiles, contados a partir del día siguiente de la publicación de las bases en el BOPA.",
-   "page": 5,
-   "hasta": "2026-11-18"
   },
   "https://www.asturias.es/bopa/2026/11/03/2026-08769.pdf": {
    "days": 10,
@@ -243,10 +222,30 @@
    "text": "El plazo de presentación de solicitudes será de veinte días hábiles, a contar desde el siguiente al de la publicación de la presente convocatoria en el Boletín Oficial del Principado de Asturias.",
    "page": 2,
    "hasta": "2026-12-28"
+  },
+  "https://www.asturias.es/bopa/2026/11/27/2026-09735.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de 20 días hábiles desde el día siguiente al de la publicación de las presentes bases en el Boletín Oficial del Principado de Asturias (BOPA).",
+   "page": 3,
+   "hasta": "2026-12-29"
+  },
+  "https://www.asturias.es/bopa/2026/11/27/2026-09682.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de diez días hábiles, comenzando su cómputo a partir del día siguiente al de la publicación de la presente convocatoria en el Boletín Oficial del Principado de Asturias.",
+   "page": 1,
+   "hasta": "2026-12-14"
+  },
+  "https://www.asturias.es/bopa/2026/11/27/2026-09562.pdf": {
+   "days": 15,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de quince días hábiles, a contar desde el día siguiente al de publicación de la presente convocatoria en el Boletín Oficial del Principado de Asturias.",
+   "page": 3,
+   "hasta": "2026-12-21"
   }
  },
  "none": [
-  "https://www.asturias.es/bopa/2026/10/28/2026-08514.pdf",
   "https://www.asturias.es/bopa/2026/10/30/2026-08628.pdf",
   "https://www.asturias.es/bopa/2026/10/30/2026-08659.pdf",
   "https://www.asturias.es/bopa/2026/11/03/2026-08669.pdf",
@@ -272,7 +271,10 @@
   "https://www.asturias.es/bopa/2026/11/19/2026-09449.pdf",
   "https://www.asturias.es/bopa/2026/11/23/2026-09533.pdf",
   "https://www.asturias.es/bopa/2026/11/25/2026-09486.pdf",
-  "https://www.asturias.es/bopa/2026/11/26/2026-09468.pdf"
+  "https://www.asturias.es/bopa/2026/11/26/2026-09468.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09531.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09583.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09760.pdf"
  ],
  "tries": {},
  "sedes": {
@@ -290,7 +292,8 @@
   "https://www.asturias.es/bopa/2026/11/18/2026-09367.pdf": "https://ribadedeva.sedelectronica.es/",
   "https://www.asturias.es/bopa/2026/11/18/2026-09420.pdf": "https://cogersasau.sedelectronica.es/",
   "https://www.asturias.es/bopa/2026/11/19/2026-09376.pdf": "https://langreo.convoca.online/",
-  "https://www.asturias.es/bopa/2026/11/26/2026-09579.pdf": "https://cast.sedelectronica.e-ayuntamiento.es/"
+  "https://www.asturias.es/bopa/2026/11/26/2026-09579.pdf": "https://cast.sedelectronica.e-ayuntamiento.es/",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09583.pdf": "https://www.quiros.es/"
  },
  "sedeRaw": {
   "https://www.asturias.es/bopa/2026/10/30/2026-08631.pdf": [
@@ -338,13 +341,12 @@
   "https://www.asturias.es/bopa/2026/11/26/2026-09579.pdf": [
    "https://cast.sedelectronica.e-ayuntamiento.es/",
    "https://sedediatid.mineco.gob.es/"
+  ],
+  "https://www.asturias.es/bopa/2026/11/27/2026-09583.pdf": [
+   "https://www.quiros.es/"
   ]
  },
  "sinSede": [
-  "https://www.asturias.es/bopa/2026/10/28/2026-08514.pdf",
-  "https://www.asturias.es/bopa/2026/10/28/2026-08520.pdf",
-  "https://www.asturias.es/bopa/2026/10/28/2026-08524.pdf",
-  "https://www.asturias.es/bopa/2026/10/28/2026-08717.pdf",
   "https://www.asturias.es/bopa/2026/10/29/2026-08598.pdf",
   "https://www.asturias.es/bopa/2026/10/29/2026-08847.pdf",
   "https://www.asturias.es/bopa/2026/10/30/2026-08628.pdf",
@@ -389,6 +391,11 @@
   "https://www.asturias.es/bopa/2026/11/23/2026-09533.pdf",
   "https://www.asturias.es/bopa/2026/11/25/2026-09486.pdf",
   "https://www.asturias.es/bopa/2026/11/26/2026-09468.pdf",
-  "https://www.asturias.es/bopa/2026/11/26/2026-09574.pdf"
+  "https://www.asturias.es/bopa/2026/11/26/2026-09574.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09531.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09562.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09682.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09735.pdf",
+  "https://www.asturias.es/bopa/2026/11/27/2026-09760.pdf"
  ]
 }

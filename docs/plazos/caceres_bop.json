@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T17:19:53+00:00",
+ "updatedUTC": "2026-11-27T07:36:53+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -70,10 +70,22 @@
    "kind": "hábiles",
    "text": "3.3.- Plazo de presentación de instancias Las personas interesadas dispondrán de un plazo de 20 DÍAS HÁBILES, que se computará desde el siguiente al de la publicación del anuncio de estas Bases en el BOLETÍN OFICIAL DEL ESTADO.",
    "page": 5
+  },
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5564": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "…de las Administraciones Públicas, en el plazo de veinte días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 3
+  },
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5556": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "…sistema de concurso-oposición, se abre el plazo de presentación de solicitudes, que será de diez días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial de la Provincia.",
+   "page": 1,
+   "hasta": "2026-12-14"
   }
  },
  "none": [
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067",
@@ -99,7 +111,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": "https://riberosdeltajo.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": "https://tietar.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067": "https://valverdedelfresno.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068": "https://zorita.sedelectronica.es/",
@@ -117,12 +128,11 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5452": "https://aytonavalmoral.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5468": "https://aytonavalmoral.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5469": "https://sede.plasencia.es/",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": "https://sede.plasencia.es/"
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": "https://sede.plasencia.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5556": "https://casasdedonantonio.sedelectronica.es/",
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5564": "https://miajadas.sedelectronica.es/"
  },
  "sedeRaw": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043": [
-   "https://riberosdeltajo.sedelectronica.es/"
-  ],
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": [
    "https://tietar.sedelectronica.es/"
   ],
@@ -177,6 +187,12 @@
   ],
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5470": [
    "https://sede.plasencia.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5556": [
+   "https://casasdedonantonio.sedelectronica.es/"
+  ],
+  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5564": [
+   "https://miajadas.sedelectronica.es/"
   ]
  },
  "sinSede": [

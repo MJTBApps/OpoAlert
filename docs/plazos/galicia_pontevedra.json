@@ -1,14 +1,7 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T17:19:53+00:00",
+ "updatedUTC": "2026-11-27T07:36:53+00:00",
  "items": {
-  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/28/2026075246/an.bop.PONTEVEDRA.20261028.2026075246.pdf": {
-   "days": 10,
-   "kind": "hábiles",
-   "text": "O prazo de presentación de solicitudes será de dez (10) días hábiles contados a partir do seguinte ao da publicación do presente anuncio da convocatoria xunto coas súas bases no Boletín Oficial da Provincia de Pontevedra (BOPPO).",
-   "page": 1,
-   "hasta": "2026-11-11"
-  },
   "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/02/2026076098/an.bop.PONTEVEDRA.20261102.2026076098.pdf": {
    "days": 20,
    "kind": "hábiles",
@@ -107,6 +100,13 @@
    "text": "O prazo de presentación de instancias será de 10 días hábiles, a partir do día seguinte á publicación deste anuncio no Boletín Oficial da Provincia de Pontevedra.",
    "page": 1,
    "hasta": "2026-12-10"
+  },
+  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/27/2026081383/an.bop.PONTEVEDRA.20261127.2026081383.pdf": {
+   "days": 10,
+   "kind": "hábiles",
+   "text": "O prazo de presentación de instancias para participar na bolsa de traballo no posto de ADMINISTRATIVO será de 10 días hábiles, que se contarán a partir do día seguinte á publicación deste anuncio no Boletín Oficial da Provincia de Pontevedra.",
+   "page": 1,
+   "hasta": "2026-12-14"
   }
  },
  "none": [
@@ -150,12 +150,10 @@
   "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/19/2026079696/an.bop.PONTEVEDRA.20261119.2026079696.pdf": "https://alama.sedelectronica.gal/",
   "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/19/2026079697/an.bop.PONTEVEDRA.20261119.2026079697.pdf": "https://alama.sedelectronica.gal/",
   "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/20/2026080238/an.bop.PONTEVEDRA.20261120.2026080238.pdf": "https://redondela.gal/",
-  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/25/2026080856/an.bop.PONTEVEDRA.20261125.2026080856.pdf": "https://orosal.sedelectronica.es/"
+  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/25/2026080856/an.bop.PONTEVEDRA.20261125.2026080856.pdf": "https://orosal.sedelectronica.es/",
+  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/27/2026081383/an.bop.PONTEVEDRA.20261127.2026081383.pdf": "https://www.pontecesures.org/"
  },
  "sedeRaw": {
-  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/28/2026075246/an.bop.PONTEVEDRA.20261028.2026075246.pdf": [
-   "https://sede.depo.gal/"
-  ],
   "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/30/2026075825/an.bop.PONTEVEDRA.20261030.2026075825.pdf": [
    "https://sede.depo.gal/"
   ],
@@ -274,6 +272,10 @@
   ],
   "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/25/2026080866/an.bop.PONTEVEDRA.20261125.2026080866.pdf": [
    "https://sede.depo.gal/"
+  ],
+  "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/27/2026081383/an.bop.PONTEVEDRA.20261127.2026081383.pdf": [
+   "https://sede.depo.gal/",
+   "https://www.pontecesures.org/"
   ]
  },
  "sinSede": []

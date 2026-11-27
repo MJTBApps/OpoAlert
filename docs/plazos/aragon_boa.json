@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T17:19:53+00:00",
+ "updatedUTC": "2026-11-27T07:36:53+00:00",
  "items": {
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472685240404": {
    "days": 20,
@@ -164,10 +164,22 @@
    "kind": "hábiles",
    "text": "…la Dirección General de Justicia, en el plazo de cinco días hábiles a contar a partir del día siguiente a la publicación de la presente Resolución en el \"Boletín Oficial del Estado\".",
    "page": 1
+  },
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476876880707": {
+   "days": 20,
+   "kind": "naturales",
+   "text": "El plazo de presentación de solicitudes será de veinte días naturales, contados a partir del día siguiente a la fecha de publicación de la convocatoria en el \"Boletín Oficial del Estado\".",
+   "page": 3
+  },
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476874860606": {
+   "days": 15,
+   "kind": "hábiles",
+   "text": "El plazo de presentación de solicitudes será de quince días hábiles contado a partir del día siguiente al de la publicación de la presente convocatoria en el “Boletín Oficial de Aragón”.",
+   "page": 4,
+   "hasta": "2026-12-21"
   }
  },
  "none": [
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472271770404",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472502113535",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472504133535",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472506153535",
@@ -280,7 +292,8 @@
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475164530909": "https://bajoaragon.sedipualba.es/",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475797140505": "https://sede.unizar.es/",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1475807240808": "https://benabarre.sedelectronica.es/",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476235830606": "https://sede.unizar.es/"
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476235830606": "https://sede.unizar.es/",
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476876880707": "https://sede.unizar.es/"
  },
  "sedeRaw": {
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1473331120707": [
@@ -307,10 +320,12 @@
   ],
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476235830606": [
    "https://sede.unizar.es/"
+  ],
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476876880707": [
+   "https://sede.unizar.es/"
   ]
  },
  "sinSede": [
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472271770404",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472502113535",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472504133535",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472506153535",
@@ -430,6 +445,7 @@
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476657031111",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476659051111",
   "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476663091212",
-  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476665111212"
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476665111212",
+  "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476874860606"
  ]
 }

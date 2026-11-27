@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T17:19:53+00:00",
+ "updatedUTC": "2026-11-27T07:36:53+00:00",
  "items": {},
  "none": [
   "https://www.bopsantacruzdetenerife.es/boletines/2026/11-11-26/11-11-26.pdf",
@@ -11,14 +11,21 @@
   "https://www.bopsantacruzdetenerife.es/boletines/2026/20-11-26/20-11-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/23-11-26/23-11-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/25-11-26/25-11-26.pdf",
+  "https://www.bopsantacruzdetenerife.es/boletines/2026/27-11-26/27-11-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/30-10-26/30-10-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/4-11-26/4-11-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/6-11-26/6-11-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/9-11-26/9-11-26.pdf"
  ],
  "tries": {},
- "sedes": {},
- "sedeRaw": {},
+ "sedes": {
+  "https://www.bopsantacruzdetenerife.es/boletines/2026/27-11-26/27-11-26.pdf": "https://sede.puertosdetenerife.gob.es/"
+ },
+ "sedeRaw": {
+  "https://www.bopsantacruzdetenerife.es/boletines/2026/27-11-26/27-11-26.pdf": [
+   "https://sede.puertosdetenerife.gob.es/"
+  ]
+ },
  "sinSede": [
   "https://www.bopsantacruzdetenerife.es/boletines/2026/11-11-26/11-11-26.pdf",
   "https://www.bopsantacruzdetenerife.es/boletines/2026/13-11-26/13-11-26.pdf",

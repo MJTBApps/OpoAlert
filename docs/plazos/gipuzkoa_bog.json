@@ -1,13 +1,7 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-26T17:19:53+00:00",
+ "updatedUTC": "2026-11-27T07:36:53+00:00",
  "items": {
-  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/28/c2606866.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "Asimismo, el plazo de presentación de solicitudes será de 20 días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
-   "page": 1
-  },
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/03/c2607080.pdf": {
    "days": 20,
    "kind": "hábiles",
@@ -98,6 +92,12 @@
    "kind": "hábiles",
    "text": "Las personas interesadas deberán presentar su solicitud de participación desde el día siguiente a la publicación del anuncio del extracto de la convocatoria en el Boletín Oficial del Estado y durante un plazo máximo de veinte días hábiles.",
    "page": 3
+  },
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607648.pdf": {
+   "days": 20,
+   "kind": "hábiles",
+   "text": "Las solicitudes se presentarán dentro del plazo de 20 días hábiles contados a partir del día siguiente al anuncio de la convocatoria en el Boletín Oficial del Estado.",
+   "page": 4
   }
  },
  "none": [
@@ -118,11 +118,13 @@
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/23/c2607525.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/23/c2607539.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/24/c2607553.pdf",
-  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/25/c2607574.pdf"
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/25/c2607574.pdf",
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607669.pdf"
  ],
  "tries": {},
  "sedes": {
-  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/03/c2607080.pdf": "https://www.legazpi.eus/"
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/03/c2607080.pdf": "https://www.legazpi.eus/",
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607669.pdf": "https://www.gipuzkoa.eus/"
  },
  "sedeRaw": {
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/03/c2607080.pdf": [
@@ -133,10 +135,12 @@
   ],
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/20/c2607486.pdf": [
    "https://egoitza.gipuzkoa.eus/"
+  ],
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607669.pdf": [
+   "https://www.gipuzkoa.eus/"
   ]
  },
  "sinSede": [
-  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/28/c2606866.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/29/c2607074.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/03/c2607086.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/03/c2607091.pdf",
@@ -166,6 +170,7 @@
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/24/c2607553.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/25/c2607568.pdf",
   "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/25/c2607574.pdf",
-  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/26/c2607592.pdf"
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/26/c2607592.pdf",
+  "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607648.pdf"
  ]
 }
