@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-26T16:39:08.255034+00:00",
+  "lastCheckedUTC": "2026-11-27T06:27:57.386659+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 21,
-    "announcementsRead": 299,
-    "opportunities": 50
+    "announcementsRead": 300,
+    "opportunities": 48
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -36,10 +35,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -59,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,9 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 299,
-    "opportunities": 50,
+    "announcementsRead": 300,
+    "opportunities": 48,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_208_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_211_2026.pdf",
@@ -96,10 +95,21 @@
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_225_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_226_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_227_2026.pdf",
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_228_2026.pdf"
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_228_2026.pdf",
+      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_229_2026.pdf"
     ]
   },
   "notices": [
+    {
+      "id": "HB-2026-385901",
+      "province": "Huelva",
+      "title": "Aprobación de las Bases de la convocatoria para cubrir en turno de promoción interna y mediante concurso de méritos una plaza de Responsable de la OMIC-SAC y dos de Coordinador de Deportes",
+      "entity": "Ayuntamiento de Aracena",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_385901_BOP-229_2026.pdf"
+    },
     {
       "id": "HB-2026-385975",
       "province": "Huelva",
@@ -569,36 +579,6 @@
       "bulletin": "209",
       "type": "Plaza / oposición",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381561_BOP-209_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381482",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases y convocatoria para la provisión en régimen de interinidad de una plaza de Administrativo mediante concurso-oposición",
-      "entity": "Ayuntamiento de Villanueva de los Castillejos",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381482_BOP-208_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381433",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir por promoción interna una plaza de Técnico en Instalaciones Eléctricas y Automáticas Conductor mediante concurso",
-      "entity": "Ayuntamiento de Almonaster la Real",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381433_BOP-208_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381260",
-      "province": "Huelva",
-      "title": "Aprobación de las Bases de la convocatoria para cubrir mediante sistema de concurso-oposición una plaza de Arquitecto",
-      "entity": "Ayuntamiento de Gibraleón",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381260_BOP-208_2026.pdf"
     }
   ]
 }

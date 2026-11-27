@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Bizkaia",
   "source": "https://www.bizkaia.eus/es/bob",
-  "lastCheckedUTC": "2026-11-26T16:36:11.784084+00:00",
+  "lastCheckedUTC": "2026-11-27T06:25:18.362512+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 22,
-    "announcementsRead": 849,
+    "announcementsRead": 854,
     "opportunities": 55
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -37,10 +36,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -61,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,20 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 849,
+    "announcementsRead": 854,
     "opportunities": 55
   },
   "notices": [
+    {
+      "id": "BI-2026-II-6160",
+      "province": "Bizkaia",
+      "title": "Anuncio del Excmo. Ayuntamiento de Bilbao relativo a la aprobación de las bases y convocatoria del proceso selectivo por el sistema de promoción interna, mediante concurso-oposición, para la provisión en propiedad de 2 plazas de Sargento de Bomberas/os, todas ellas con exigencia de perfil lingüístico 2 de euskera preceptivo, pertenecientes a la escala de Administración Especial, subescala Servicios Especiales, clase Servicio de Extinción de Incendios, pertenecientes al grupo de clasificación profesional C, subgrupo C-1.",
+      "entity": "Ayuntamiento de Bilbao",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/11/27/II-6160_cas.pdf"
+    },
     {
       "id": "BI-2026-II-6221",
       "province": "Bizkaia",
@@ -617,16 +627,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/29/I-1212_cas.pdf"
-    },
-    {
-      "id": "BI-2026-II-5499",
-      "province": "Bizkaia",
-      "title": "Aprobación de las bases específicas que regulan el proceso selectivo para la cobertura de una (1) plaza de Médico/a, en el Ayuntamiento de Barakaldo.",
-      "entity": "Ayuntamiento de Arakaldo",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.bizkaia.eus/lehendakaritza/Bao_bob/2026/10/28/II-5499_cas.pdf"
     }
   ]
 }

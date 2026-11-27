@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-26T17:03:38.799789+00:00",
+  "lastCheckedUTC": "2026-11-27T06:31:13.311900+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
+    "bulletin": "230",
     "pagesVisited": 22,
-    "announcementsRead": 658,
-    "opportunities": 50
+    "announcementsRead": 671,
+    "opportunities": 51
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -37,10 +36,10 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -61,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,34 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 658,
-    "opportunities": 50
+    "announcementsRead": 671,
+    "opportunities": 51
   },
   "notices": [
+    {
+      "id": "RI-2026-acda4f51605c6bfaee",
+      "province": "La Rioja (BOR)",
+      "title": "TRABAJADOR/A SOCIAL: convocatoria de pruebas selectivas (PIV y PIH) (FA.10/23-26)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43593373-1-PDF-581195",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F27&referencia=43555466-8-HTML-581195-X",
+      "originalFormat": "pdf"
+    },
+    {
+      "id": "RI-2026-7158cee047277418df",
+      "province": "La Rioja (BOR)",
+      "title": "TRABAJADOR/A SOCIAL: convocatoria de pruebas selectivas (TL y RDG) (FA.14/25-26)",
+      "entity": "CONSEJERÍA DE HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=43593249-1-PDF-581193",
+      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F11%2F27&referencia=43555516-6-HTML-581193-X",
+      "originalFormat": "pdf"
+    },
     {
       "id": "RI-2026-8eb2cda18f82f1c7ce",
       "province": "La Rioja (BOR)",
@@ -664,18 +688,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42969595-1-PDF-580488",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F29&referencia=42927119-5-HTML-580488-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-d1d1b2f6c4153056e6",
-      "province": "La Rioja (BOR)",
-      "title": "TÉCNICO: se convoca el proceso selectivo para la contratación como personal indefinido de un técnico con cargo a financiación externa de carácter finalista del Proyecto de referencia SHIELD4GRAPE, titulado: \"Breeding and integrated pest management strategies to reduce reliance on chemical pesticides in grapevine\"",
-      "entity": "UNIVERSIDAD DE LA RIOJA",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42945066-1-PDF-580468",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F28&referencia=42905592-3-HTML-580468-X",
       "originalFormat": "pdf"
     }
   ]

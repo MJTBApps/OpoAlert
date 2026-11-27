@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-26T12:27:05.020816+00:00",
+  "lastCheckedUTC": "2026-11-27T06:27:18.146883+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
+    "bulletin": "230",
     "pagesVisited": 21,
-    "announcementsRead": 760,
-    "opportunities": 129
+    "announcementsRead": 750,
+    "opportunities": 130
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "209",
       "210",
       "211",
       "212",
@@ -36,10 +35,10 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -59,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,30 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 760,
-    "opportunities": 129
+    "announcementsRead": 750,
+    "opportunities": 130
   },
   "notices": [
+    {
+      "id": "AO-2026-007962834",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Universidad de Zaragoza, por la que se convoca proceso selectivo para el ingreso, por el turno de acceso libre, en la escala de Oficiales de Laboratorio y Talleres. Resto de Especialidades (puestos de Oficial de Laboratorio Dental), de la Universidad de Zaragoza, mediante el sistema de oposición y de concurso oposición.",
+      "entity": "UNIVERSIDAD DE ZARAGOZA",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476876880707"
+    },
+    {
+      "id": "AO-2026-007962833",
+      "province": "Aragón (BOA)",
+      "title": "RESOLUCIÓN de 12 de noviembre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se convoca proceso selectivo para la provisión, con carácter temporal, de un puesto de Jefe/a de Sección de Área de Preanalítica, Serología y Genómica del Servicio de Microbiología y Parasitología del Hospital Universitario \"Miguel Servet\" de Zaragoza.",
+      "entity": "DEPARTAMENTO DE SANIDAD",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1476874860606"
+    },
     {
       "id": "AO-2026-007962806",
       "province": "Aragón (BOA)",
@@ -1356,16 +1376,6 @@
       "bulletin": "210",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472502113535"
-    },
-    {
-      "id": "AO-2026-007962076",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 22 de octubre de 2026, de la Dirección Gerencia del Servicio Aragonés de Salud, por la que se publica la convocatoria abierta y permanente para la cobertura temporal de plazas estatutarias de la categoría de Técnico/a en Atención a Personas en Situación de Dependencia, en el ámbito de los centros sanitarios del Servicio Aragonés de Salud.",
-      "entity": "DEPARTAMENTO DE SANIDAD",
-      "date": "28/10/2026",
-      "bulletin": "209",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472271770404"
     }
   ]
 }

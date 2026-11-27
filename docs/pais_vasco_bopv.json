@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-26T16:41:33.905224+00:00",
+  "lastCheckedUTC": "2026-11-27T06:30:28.864303+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "227",
-    "pagesVisited": 22,
-    "announcementsRead": 320,
-    "opportunities": 40
+    "pagesVisited": 21,
+    "announcementsRead": 283,
+    "opportunities": 38
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -40,7 +39,6 @@
       "227"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -71,18 +69,19 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-27"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 320,
-    "opportunities": 40
+    "issuesRead": 21,
+    "announcementsRead": 283,
+    "opportunities": 38
   },
   "notices": [
     {
       "id": "PV-2026-5056",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 18 de noviembre de 2026, del vicepresidente segundo del Gobierno y consejero de Economía, Trabajo y Empleo, por la que se resuelve la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo «secretario/a de alto cargo» de la Dirección de Economía Social.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Economía, Trabajo y Empleo",
       "date": "26/11/2026",
       "bulletin": "227",
       "type": "Plaza / oposición",
@@ -457,26 +456,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604558a.pdf"
-    },
-    {
-      "id": "PV-2026-4540",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 15 de octubre de 2026, del director de Gestión de Personal, por la que se anuncia el sorteo de la letra que determinará el orden alfabético en el proceso de gestión de candidatas y candidatos a sustituciones durante el curso escolar 2027-2028 así como en cualquier otro proceso selectivo que pueda convocarse a lo largo de dicho curso escolar.",
-      "entity": "Educación",
-      "date": "28/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604540a.pdf"
-    },
-    {
-      "id": "PV-2026-4525",
-      "province": "País Vasco (BOPV)",
-      "title": "RESOLUCIÓN de 14 de octubre de 2026, del director de Gestión de Personal, por la que se establece el plazo para la formalización de los correspondientes contratos laborales por las personas seleccionadas que reúnen los requisitos exigidos en la convocatoria, y por la que se da publicidad a la quinta lista complementaria de personas seleccionadas en el proceso excepcional de estabilización de empleo para la cobertura, con carácter fijo, de plazas pertenecientes a las categorías laborales del personal laboral educativo del Departamento de Educación.",
-      "entity": "Educación",
-      "date": "28/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604525a.pdf"
     }
   ]
 }

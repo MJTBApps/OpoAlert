@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "province": "Melilla (BOME)",
   "source": "https://bomemelilla.es/",
-  "lastCheckedUTC": "2026-11-26T16:40:47.439665+00:00",
+  "lastCheckedUTC": "2026-11-27T06:29:03.726897+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "E55",
-    "pagesVisited": 15,
-    "announcementsRead": 137,
-    "opportunities": 14
+    "bulletin": "6435",
+    "pagesVisited": 17,
+    "announcementsRead": 156,
+    "opportunities": 15
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
       "6427",
       "E49",
@@ -30,7 +30,9 @@
       "E53",
       "E54",
       "6434",
-      "E55"
+      "E55",
+      "E56",
+      "6435"
     ],
     "publicationDates": [
       "2026-10-30",
@@ -47,10 +49,11 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-31",
       "2026-11-01",
@@ -67,14 +70,23 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-26"
+      "2026-11-22"
     ],
-    "issuesRead": 15,
-    "announcementsRead": 137,
-    "opportunities": 14
+    "issuesRead": 17,
+    "announcementsRead": 156,
+    "opportunities": 15
   },
   "notices": [
+    {
+      "id": "ML-2026-A-1333",
+      "province": "Melilla (BOME)",
+      "title": "Apertura plazo de presentación de instancias para la provisión de tres plazas de Veterinario/a de Salud Pública, pertenecientes a la plantilla de personal funcionario, integradas en la Escala de Administración Especial, Subescala Técnica, mediante el sistema de oposición libre.",
+      "entity": "CONSEJERÍA DE PRESIDENCIA, ADMINISTRACIÓN PÚBLICA E IGUALDAD",
+      "date": "27/11/2026",
+      "bulletin": "6435",
+      "type": "Plaza / oposición",
+      "url": "https://bomemelilla.es/bome/descargar/BOME-A-2026-1333.pdf"
+    },
     {
       "id": "ML-2026-A-1319",
       "province": "Melilla (BOME)",

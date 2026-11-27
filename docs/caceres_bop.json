@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-26T16:49:49.016595+00:00",
+  "lastCheckedUTC": "2026-11-27T06:26:20.680685+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 518,
-    "opportunities": 34
+    "announcementsRead": 535,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -36,10 +35,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -59,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,30 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 518,
-    "opportunities": 34
+    "announcementsRead": 535,
+    "opportunities": 35
   },
   "notices": [
+    {
+      "id": "CC-2026-5564",
+      "province": "Cáceres",
+      "title": "Bases de la Convocatoria para cubrir en propiedad 2 plazas de Conserje de Edificios, Laboral Fijo, en Turno Libre, por Sistema Oposición, pertenecientes a la Oferta de Empleo Público del año 2025.",
+      "entity": "Ayuntamiento de Miajadas",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5564"
+    },
+    {
+      "id": "CC-2026-5556",
+      "province": "Cáceres",
+      "title": "Convocatoria para cubrir la plaza de Agente de Empleo y Desarrollo Local en régimen de personal laboral temporal, por el sistema de concurso-oposición. 2026.",
+      "entity": "Ayuntamiento de Casas de Don Antonio",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5556"
+    },
     {
       "id": "CC-2026-5470",
       "province": "Cáceres",
@@ -406,16 +426,6 @@
       "bulletin": "208",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047"
-    },
-    {
-      "id": "CC-2026-5043",
-      "province": "Cáceres",
-      "title": "Convocatoria para la provisión de una plaza de Formador/a para la impartición de un programa de aprendizaje a lo largo de la vida de la mancomunidad Riberos del Tajo.",
-      "entity": "Mancomunidad Riberos del Tajo",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5043"
     }
   ]
 }

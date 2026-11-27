@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Gipuzkoa",
   "source": "https://egoitza.gipuzkoa.eus/es/bog",
-  "lastCheckedUTC": "2026-11-26T16:38:37.562295+00:00",
+  "lastCheckedUTC": "2026-11-27T06:27:10.935628+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "226",
+    "bulletin": "227",
     "pagesVisited": 21,
-    "announcementsRead": 763,
-    "opportunities": 34
+    "announcementsRead": 707,
+    "opportunities": 35
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -36,10 +35,10 @@
       "223",
       "224",
       "225",
-      "226"
+      "226",
+      "227"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -59,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,30 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 763,
-    "opportunities": 34
+    "announcementsRead": 707,
+    "opportunities": 35
   },
   "notices": [
+    {
+      "id": "GP-2026-2607669",
+      "province": "Gipuzkoa",
+      "title": "Orden Foral 2441/2026, de 20 de noviembre, por la que se efectúa la convocatoria de concurso específico para la provisión de puesto vacante reservado, en la relación de puestos de trabajo, al personal funcionario de carrera de la Diputación Foral de Gipuzkoa.",
+      "entity": "DEPARTAMENTO DE GOBERNANZA",
+      "date": "27/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607669.pdf"
+    },
+    {
+      "id": "GP-2026-2607648",
+      "province": "Gipuzkoa",
+      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a dos plazas de Profesor/a de Euskaltegi.",
+      "entity": "AYUNTAMIENTO DE BEASAIN",
+      "date": "27/11/2026",
+      "bulletin": "227",
+      "type": "Plaza / oposición",
+      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/11/27/c2607648.pdf"
+    },
     {
       "id": "GP-2026-2607592",
       "province": "Gipuzkoa",
@@ -406,16 +426,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/29/c2607074.pdf"
-    },
-    {
-      "id": "GP-2026-2606866",
-      "province": "Gipuzkoa",
-      "title": "Convocatoria y bases del proceso selectivo para el acceso, por turno libre y mediante concurso-oposición, a una plaza de Administrativo/a de Intervención.",
-      "entity": "AYUNTAMIENTO DE AZKOITIA",
-      "date": "28/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/10/28/c2606866.pdf"
     }
   ]
 }

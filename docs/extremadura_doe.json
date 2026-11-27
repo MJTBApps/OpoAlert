@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Extremadura (DOE)",
   "source": "https://doe.juntaex.es/",
-  "lastCheckedUTC": "2026-11-26T16:38:15.062755+00:00",
+  "lastCheckedUTC": "2026-11-27T06:26:57.210192+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228O",
-    "pagesVisited": 22,
-    "announcementsRead": 629,
-    "opportunities": 52
+    "bulletin": "229O",
+    "pagesVisited": 21,
+    "announcementsRead": 625,
+    "opportunities": 54
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "208O",
-      "4E",
       "209O",
       "210O",
       "211O",
@@ -37,11 +35,10 @@
       "225O",
       "226O",
       "227O",
-      "228O"
+      "228O",
+      "229O"
     ],
     "publicationDates": [
-      "2026-10-28",
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -61,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,11 +72,31 @@
       "2026-11-21",
       "2026-11-22"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 629,
-    "opportunities": 52
+    "issuesRead": 21,
+    "announcementsRead": 625,
+    "opportunities": 54
   },
   "notices": [
+    {
+      "id": "EX-2026-26063028",
+      "province": "Extremadura (DOE)",
+      "title": "Procesos selectivos. Elección de plazas.- Resolución de 20 de noviembre de 2026, de la Dirección General de Recursos Humanos, por la que se aprueba la relación de plazas que se ofertan y se establece el procedimiento para la elección de las mismas por los aspirantes que han superado el proceso selectivo para el acceso a la condición de personal estatutario fijo en la categoría de Mecánico, en las instituciones sanitarias del Servicio Extremeño de Salud.",
+      "entity": "SERVICIO EXTREMEÑO DE SALUD",
+      "date": "27/11/2026",
+      "bulletin": "229O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2290o/26063028.pdf"
+    },
+    {
+      "id": "EX-2026-26063024",
+      "province": "Extremadura (DOE)",
+      "title": "Información pública.- Resolución de 19 de noviembre de 2026, de la Secretaría General, por la que se acuerda de forma conjunta la apertura de la fase de consulta pública, de un plazo de presentación de sugerencias, así como un periodo de audiencia e información pública en relación con el proyecto de Decreto por el que se establecen las bases reguladoras de las ayudas para la preparación y ejecución de proyectos innovadores por parte de los Grupos Operativos de la Asociación Europea para la Innovación en materia de productividad y sostenibilidad agrícolas, en Extremadura, y se aprueba su primera convocatoria.",
+      "entity": "CONSEJERÍA DE AGRICULTURA, GANADERÍA Y MEDIO NATURAL",
+      "date": "27/11/2026",
+      "bulletin": "229O",
+      "type": "Plaza / oposición",
+      "url": "https://doe.juntaex.es/pdfs/doe/2026/2290o/26063024.pdf"
+    },
     {
       "id": "EX-2026-26063003",
       "province": "Extremadura (DOE)",

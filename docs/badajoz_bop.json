@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Badajoz",
   "source": "https://www.dip-badajoz.es/bop/",
-  "lastCheckedUTC": "2026-11-26T16:35:44.647879+00:00",
+  "lastCheckedUTC": "2026-11-27T06:25:01.695511+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 437,
-    "opportunities": 41
+    "announcementsRead": 442,
+    "opportunities": 40
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -36,10 +35,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -59,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,40 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 437,
-    "opportunities": 41
+    "announcementsRead": 442,
+    "opportunities": 40
   },
   "notices": [
+    {
+      "id": "BD-2026-165451",
+      "province": "Badajoz",
+      "title": "Aprobación definitiva del presupuesto general, bases de ejecución y plantilla de personal para el ejercicio 2026",
+      "entity": "Ayuntamiento de Hinojosa del Valle",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-27000000_4713.pdf"
+    },
+    {
+      "id": "BD-2026-165437",
+      "province": "Badajoz",
+      "title": "Bases para la provisión por el concurso específico de méritos del puesto de Jefatura de Sección de Régimen Jurídico",
+      "entity": "Diputación de Badajoz",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-27000000_4700.pdf"
+    },
+    {
+      "id": "BD-2026-165436",
+      "province": "Badajoz",
+      "title": "Bases para la provisión por el procedimiento de concurso específico de méritos del puesto de Jefatura de Negociado de Gestión Administrativa de Desarrollo Local",
+      "entity": "Diputación de Badajoz",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-11-27000000_4699.pdf"
+    },
     {
       "id": "BD-2026-165431",
       "province": "Badajoz",
@@ -446,46 +476,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-29000000_4259.pdf"
-    },
-    {
-      "id": "BD-2026-165010",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión temporal de un puesto de Profesor/a de Saxofón para la Escuela municipal de Música",
-      "entity": "Ayuntamiento de Villafranca de los Barros",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4278.pdf"
-    },
-    {
-      "id": "BD-2026-165007",
-      "province": "Badajoz",
-      "title": "Fecha primer examen para la provisión de una plaza de Arquitecto/a Técnico/a municipal, como personal funcionario, mediante el sistema de concurso-oposición",
-      "entity": "Ayuntamiento de Puebla de la Calzada",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4275.pdf"
-    },
-    {
-      "id": "BD-2026-165003",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión de quince plazas vacantes de personal funcionario, de Técnico/a Gestión Administrativa, de la Diputación de Badajoz",
-      "entity": "Diputación de Badajoz",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4271.pdf"
-    },
-    {
-      "id": "BD-2026-165001",
-      "province": "Badajoz",
-      "title": "Bases de la convocatoria para la provisión de una plaza de Trabajador/a Social, como personal laboral temporal, mediante sistema de concurso-oposición libre y constitución de bolsa de trabajo",
-      "entity": "Ayuntamiento de Barcarrota",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.dip-badajoz.es/ficheros/bop/bopedictos/2026-10-28000000_4269.pdf"
     }
   ]
 }

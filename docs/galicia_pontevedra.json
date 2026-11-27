@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Pontevedra",
   "source": "https://boppo.depo.gal/es/consulta-do-boppo",
-  "lastCheckedUTC": "2026-11-26T16:41:24.626697+00:00",
+  "lastCheckedUTC": "2026-11-27T06:29:48.944187+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
+    "bulletin": "230",
     "pagesVisited": 22,
-    "announcementsRead": 402,
+    "announcementsRead": 404,
     "opportunities": 34
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -37,10 +36,10 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -61,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,20 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 402,
+    "announcementsRead": 404,
     "opportunities": 34
   },
   "notices": [
+    {
+      "id": "PO-2026081383",
+      "province": "Pontevedra",
+      "title": "CONVOCATORIA DE CONSTITUCIÓN DE BOLSA DE TRABALLO PARA O POSTO DE ADMINISTRATIVO",
+      "entity": "Pontecesures",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Bolsa de trabajo",
+      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/11/27/2026081383/an.bop.PONTEVEDRA.20261127.2026081383.pdf"
+    },
     {
       "id": "PO-2026080866",
       "province": "Pontevedra",
@@ -407,16 +417,6 @@
       "bulletin": "210",
       "type": "Plaza / oposición",
       "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/30/2026075825/an.bop.PONTEVEDRA.20261030.2026075825.pdf"
-    },
-    {
-      "id": "PO-2026075246",
-      "province": "Pontevedra",
-      "title": "CONVOCATORIA E BASES DO PROCESO SELECTIVO PARA A PROVISIÓN, MEDIANTE COMISIÓN DE SERVIZOS, DUN POSTO DE POLICÍA LOCAL (SUBGRUPO C1)",
-      "entity": "Marín",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://boppo.depo.gal/web/boppo/detalle/-/boppo/2026/10/28/2026075246/an.bop.PONTEVEDRA.20261028.2026075246.pdf"
     }
   ]
 }

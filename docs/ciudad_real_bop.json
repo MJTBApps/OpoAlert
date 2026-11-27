@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ciudad Real",
   "source": "https://bop.dipucr.es/",
-  "lastCheckedUTC": "2026-11-26T16:36:31.606046+00:00",
+  "lastCheckedUTC": "2026-11-27T06:25:44.110677+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "229",
+    "bulletin": "230",
     "pagesVisited": 22,
-    "announcementsRead": 368,
+    "announcementsRead": 361,
     "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -37,10 +36,10 @@
       "226",
       "227",
       "228",
-      "229"
+      "229",
+      "230"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -61,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,20 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 368,
+    "announcementsRead": 361,
     "opportunities": 30
   },
   "notices": [
+    {
+      "id": "CR-2026-3835",
+      "province": "Ciudad Real",
+      "title": "Aprobación inicial del presupuesto general, bases de ejecución y plantilla de personal funcionario, laboral y eventual para el ejercicio económico 2027.",
+      "entity": "PUERTOLLANO",
+      "date": "27/11/2026",
+      "bulletin": "230",
+      "type": "Plaza / oposición",
+      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7914837"
+    },
     {
       "id": "CR-2026-3831",
       "province": "Ciudad Real",
@@ -367,16 +377,6 @@
       "bulletin": "211",
       "type": "Bolsa de trabajo",
       "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7857881"
-    },
-    {
-      "id": "CR-2026-3474",
-      "province": "Ciudad Real",
-      "title": "Aprobación de Adenda a las Bases para la provisión por sistema de oposición libre de un puesto de Agente de la Policía Local.",
-      "entity": "POZUELO DE CALATRAVA",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://se1.dipucr.es:4443/SIGEM_BuscadorDocsWeb/getDocument.do?entidad=005&doc=7849350"
     }
   ]
 }

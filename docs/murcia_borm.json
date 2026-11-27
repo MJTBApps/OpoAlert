@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-26T16:41:24.207848+00:00",
+  "lastCheckedUTC": "2026-11-27T06:30:16.459153+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "274",
+    "bulletin": "275",
     "pagesVisited": 28,
-    "announcementsRead": 622,
-    "opportunities": 62
+    "announcementsRead": 610,
+    "opportunities": 66
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "249",
       "250",
       "251",
       "252",
@@ -43,10 +42,10 @@
       "272",
       "9E",
       "273",
-      "274"
+      "274",
+      "275"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-10-31",
@@ -73,7 +72,8 @@
       "2026-11-24",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -82,10 +82,50 @@
       "2026-11-22"
     ],
     "issuesRead": 28,
-    "announcementsRead": 622,
-    "opportunities": 62
+    "announcementsRead": 610,
+    "opportunities": 66
   },
   "notices": [
+    {
+      "id": "MU-2026-5887",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Excmo. Ayuntamiento de Murcia sobre convocatoria de oposición para proveer en propiedad 50 plazas de Agente de Policía Local (OEP 2024 y 2025). (Ampliación número de plazas convocadas). Expte. 2026/01303/000032.",
+      "entity": "Murcia",
+      "date": "27/11/2026",
+      "bulletin": "275",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846569/pdf"
+    },
+    {
+      "id": "MU-2026-5886",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución del Ayuntamiento de Murcia por la que se aprueba la instrucción para la creación de listas de espera preferentes resultantes de los procedimientos de concurso correspondientes a la convocatoria de la oferta de empleo público extraordinaria de estabilización de empleo temporal de 2022 del Ayuntamiento de Murcia.",
+      "entity": "Murcia",
+      "date": "27/11/2026",
+      "bulletin": "275",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846568/pdf"
+    },
+    {
+      "id": "MU-2026-5873",
+      "province": "Región de Murcia (BORM)",
+      "title": "Corrección de error en Resolución R-151/26 de 6 de noviembre de 2026, del Director del Centro Universitario de la Defensa ubicado en la Academia General del Aire y del Espacio, por la que se convoca concurso de contratación de personal docente e investigador en la modalidad de Profesor Ayudante Doctor (CPD_04/2026).",
+      "entity": "Ministerio de Defensa - Centro Universitario de la Defensa en la Academia General del Aire y del Espacio de San Javier",
+      "date": "27/11/2026",
+      "bulletin": "275",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846555/pdf"
+    },
+    {
+      "id": "MU-2026-5872",
+      "province": "Región de Murcia (BORM)",
+      "title": "Resolución R-152/26 de 13 de noviembre de 2026, del Director del Centro Universitario de la Defensa ubicado en la Academia General del Aire y del Espacio, por la que se convoca concurso de contratación de personal docente e investigador en la modalidad de Profesor Permanente Laboral (CPD_03/2026).",
+      "entity": "Ministerio de Defensa - Centro Universitario de la Defensa en la Academia General del Aire y del Espacio de San Javier",
+      "date": "27/11/2026",
+      "bulletin": "275",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846554/pdf"
+    },
     {
       "id": "MU-2026-5846",
       "province": "Región de Murcia (BORM)",

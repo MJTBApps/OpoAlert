@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-26T16:42:36.468863+00:00",
+  "lastCheckedUTC": "2026-11-27T06:31:34.163096+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "226",
-    "pagesVisited": 20,
-    "announcementsRead": 500,
-    "opportunities": 26
+    "pagesVisited": 19,
+    "announcementsRead": 479,
+    "opportunities": 25
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -38,7 +37,6 @@
       "226"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -69,11 +67,12 @@
       "2026-11-15",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 500,
-    "opportunities": 26
+    "issuesRead": 19,
+    "announcementsRead": 479,
+    "opportunities": 25
   },
   "notices": [
     {
@@ -325,16 +324,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4946",
-      "province": "Toledo",
-      "title": "Modificación de la composición del Tribunal del proceso selectivo 2 plazas de Operario por turno libre reservadas a personas con discapacidad.",
-      "entity": "AYUNTAMIENTO DE TALAVERA DE LA REINA",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104908;0&insert_number=4946&insert_year=2026"
     }
   ]
 }

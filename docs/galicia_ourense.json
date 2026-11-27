@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Ourense",
   "source": "https://bop.depourense.es/portalapi/api/boletin/getFecha",
-  "lastCheckedUTC": "2026-11-26T16:40:38.778211+00:00",
+  "lastCheckedUTC": "2026-11-27T06:29:08.626221+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 21,
-    "announcementsRead": 252,
-    "opportunities": 9
+    "announcementsRead": 254,
+    "opportunities": 11
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -36,10 +35,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -59,7 +58,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -73,10 +73,30 @@
       "2026-11-22"
     ],
     "issuesRead": 21,
-    "announcementsRead": 252,
-    "opportunities": 9
+    "announcementsRead": 254,
+    "opportunities": 11
   },
   "notices": [
+    {
+      "id": "OU-2026-353491",
+      "province": "Ourense",
+      "title": "ANUNCIO APROBACIÓN DEFINITIVA BAREMACIÓN E PRELACIÓN DE ASPIRANTES, ASÍ COMO CONSTITUCIÓN DE BOLSA DE TRABALLO DE DOCENTES DE SAXOFÓN CONSERVATORIO DE XINZO DE LIMIA POR ORDE DE CHAMAMENTO",
+      "entity": "CONCELLO DE XINZO DE LIMIA",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353491/idioma/gl"
+    },
+    {
+      "id": "OU-2026-353365",
+      "province": "Ourense",
+      "title": "ANUNCIO de la aprobación de la Oferta de Empleo Público para el ejercicio 2026. Exp: 9118/2025",
+      "entity": "CONCELLO DO CARBALLIÑO",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Plaza / oposición",
+      "url": "https://bop.depourense.es/portalapi/api/edicto/descargar/pdf/353365/idioma/gl"
+    },
     {
       "id": "OU-2026-353311",
       "province": "Ourense",

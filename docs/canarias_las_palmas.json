@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Las Palmas (BOP)",
   "source": "https://www.boplaspalmas.net/nbop2/main1.php",
-  "lastCheckedUTC": "2026-11-26T16:39:55.152542+00:00",
+  "lastCheckedUTC": "2026-11-27T06:28:29.324985+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "141",
+    "bulletin": "142",
     "pagesVisited": 13,
-    "announcementsRead": 480,
+    "announcementsRead": 488,
     "opportunities": 42
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "129",
       "130",
       "131",
       "132",
@@ -28,10 +27,10 @@
       "138",
       "139",
       "140",
-      "141"
+      "141",
+      "142"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-30",
       "2026-11-02",
       "2026-11-04",
@@ -43,7 +42,8 @@
       "2026-11-18",
       "2026-11-20",
       "2026-11-23",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -65,10 +65,40 @@
       "2026-11-26"
     ],
     "issuesRead": 13,
-    "announcementsRead": 480,
+    "announcementsRead": 488,
     "opportunities": 42
   },
   "notices": [
+    {
+      "id": "LP-20261127-007",
+      "province": "Las Palmas (BOP)",
+      "title": "Corrección de error material relativo a las bases y convocatoria de 3 plazas de Arquitecta/Arquitecto Técnico",
+      "entity": "EXCMO. CABILDO INSULAR DE LANZAROTE",
+      "date": "27/11/2026",
+      "bulletin": "142",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/27-11-26/27-11-26.pdf"
+    },
+    {
+      "id": "LP-20261127-004",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases específicas de la convocatoria para cubrir 3 plazas de Capataz (OEP 2023 y 2025)",
+      "entity": "EXCMO. CABILDO INSULAR DE GRAN CANARIA",
+      "date": "27/11/2026",
+      "bulletin": "142",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/27-11-26/27-11-26.pdf"
+    },
+    {
+      "id": "LP-20261127-003",
+      "province": "Las Palmas (BOP)",
+      "title": "Bases específicas de la convocatoria para cubrir 11 plazas de Auxiliar de Administración General (OEP 2023 y 2024)",
+      "entity": "EXCMO. CABILDO INSULAR DE GRAN CANARIA",
+      "date": "27/11/2026",
+      "bulletin": "142",
+      "type": "Plaza / oposición",
+      "url": "https://www.boplaspalmas.net/boletines/2026/27-11-26/27-11-26.pdf"
+    },
     {
       "id": "LP-20261125-028",
       "province": "Las Palmas (BOP)",
@@ -458,36 +488,6 @@
       "bulletin": "130",
       "type": "Plaza / oposición",
       "url": "https://www.boplaspalmas.net/boletines/2026/30-10-26/30-10-26.pdf"
-    },
-    {
-      "id": "LP-20261028-011",
-      "province": "Las Palmas (BOP)",
-      "title": "Formalización de la contratación como personal laboral fijo, en el marco de la convocatoria de estabilización de 3 plazas de Conductor RSU del Órgano Especial de Administración del Servicio Municipal de Limpieza",
-      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
-      "date": "28/10/2026",
-      "bulletin": "129",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/28-10-26/28-10-26.pdf"
-    },
-    {
-      "id": "LP-20261028-009",
-      "province": "Las Palmas (BOP)",
-      "title": "Contratación de personal laboral fijo de los aspirantes que han superado el proceso selectivo de la convocatoria del proceso de estabilización de 2 plazas de Técnico/a Superior Administración Especial-Ingeniero",
-      "entity": "EXCMO. AYUNTAMIENTO DE LAS PALMAS DE GRAN CANARIA",
-      "date": "28/10/2026",
-      "bulletin": "129",
-      "type": "Plaza / oposición",
-      "url": "https://www.boplaspalmas.net/boletines/2026/28-10-26/28-10-26.pdf"
-    },
-    {
-      "id": "LP-20261028-005",
-      "province": "Las Palmas (BOP)",
-      "title": "Bases específicas de la convocatoria para crear bolsa de empleo para contrataciones temporales de Profesor/a de Inglés de la escuela universitaria de turismo de Lanzarote mediante el sistema de selección de concurso",
-      "entity": "EXCMO. CABILDO INSULAR DE LANZAROTE",
-      "date": "28/10/2026",
-      "bulletin": "129",
-      "type": "Bolsa de trabajo",
-      "url": "https://www.boplaspalmas.net/boletines/2026/28-10-26/28-10-26.pdf"
     }
   ]
 }
