@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.ddgi.cat/bop/",
   "province": "Girona (BOP)",
-  "lastCheckedUTC": "2026-11-26T13:04:49.725424+00:00",
+  "lastCheckedUTC": "2026-11-27T13:00:51.797109+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 21,
-    "announcementsRead": 1052,
+    "announcementsRead": 1066,
     "opportunities": 89,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "issuesRead": 21,
     "pagesVisited": 21,
-    "announcementsRead": 1052,
+    "announcementsRead": 1066,
     "opportunities": 89,
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -40,10 +39,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -63,7 +62,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -78,6 +78,96 @@
     ]
   },
   "notices": [
+    {
+      "id": "GI-2026-229-10378",
+      "title": "Informació pública de l'aprovació inicial del pressupost general, les bases d'execució, la plantilla orgànica i la relació de llocs de treball per a l'exercici 2027",
+      "entity": "CONSELL COMARCAL DEL PLA DE L'ESTANY",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010378.pdf"
+    },
+    {
+      "id": "GI-2026-229-10377",
+      "title": "Aprovació inicial del pressupost, les bases d'execució i la plantilla de personal per a l'exercici 2027",
+      "entity": "AJUNTAMENT DE CAPMANY",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010377.pdf"
+    },
+    {
+      "id": "GI-2026-229-10310",
+      "title": "Aprovació de les bases i la convocatòria del concurs oposició, promoció interna, per a la selecció de dues places d'administratiu/va",
+      "entity": "AJUNTAMENT D'ANGLÈS",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010310.pdf"
+    },
+    {
+      "id": "GI-2026-229-10301",
+      "title": "Aprovació de les bases del procés selectiu per a la cobertura definitiva d'una plaça de tècnic de recaptació en règim de funcionari/ària de carrera (grup A2)",
+      "entity": "AJUNTAMENT DE CADAQUÉS",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010301.pdf"
+    },
+    {
+      "id": "GI-2026-229-10299",
+      "title": "Aprovació de la convocatòria i les bases reguladores del procés selectiu,  mitjançant oposició, per a la constitució d'una borsa de treball d'auxiliars de serveis, grup AP, de la plantilla de personal laboral de l'Ajuntament de Castell d'Aro, Platja d'Aro i S'Agaró, per a la cobertura de substitucions transitòries",
+      "entity": "AJUNTAMENT DE CASTELL D'ARO, PLATJA D'ARO I S'AGARÓ",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010299.pdf"
+    },
+    {
+      "id": "GI-2026-229-10298",
+      "title": "Aprovació de la convocatòria i les bases del concurs oposició,  d'una plaça de funcionari/a de carrera de la subescala serveis especials, classe comeses especials, auxiliar, grup de classificació C, subgrup C2, per ocupar un lloc de treball d'agent cívic caps de setmana a l'Ajuntament de Castell d'Aro, Platja d'Aro i S'Agaró",
+      "entity": "AJUNTAMENT DE CASTELL D'ARO, PLATJA D'ARO I S'AGARÓ",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010298.pdf"
+    },
+    {
+      "id": "GI-2026-229-10291",
+      "title": "Aprovació de la convocatòria i les bases reguladores del concurs oposició, per ocupar 2 places del grup C1 integradors/es socials de la plantilla de personal laboral fix a l'Ajuntament de Castell d'Aro, Platja d'Aro i S'Agaró",
+      "entity": "AJUNTAMENT DE CASTELL D'ARO, PLATJA D'ARO I S'AGARÓ",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Plaza / oposición",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010291.pdf"
+    },
+    {
+      "id": "GI-2026-229-10276",
+      "title": "Aprovació de les bases i la convocatòria del procés selectiu per a la provisió, com a funcionari interí, d'un/a plaça d'enginyer i creació d'una borsa de treball",
+      "entity": "AJUNTAMENT DE RIBES DE FRESER",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010276.pdf"
+    },
+    {
+      "id": "GI-2026-229-10186",
+      "title": "Aprovació de les bases i la convocatòria que regiran el procés selectiu per a la creació d'una borsa de treball de personal funcionari categoria auxiliar administratiu",
+      "entity": "AJUNTAMENT DE LLANÇÀ",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "province": "Girona (BOP)",
+      "type": "Bolsa de trabajo",
+      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/229/2026229010186.pdf"
+    },
     {
       "id": "GI-2026-228-10325",
       "title": "Aprovació inicial del pressupost general, les bases d'execució i la plantilla de personal per a l'exercici 2027",
@@ -877,96 +967,6 @@
       "province": "Girona (BOP)",
       "type": "Bolsa de trabajo",
       "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/209/202620909144.pdf"
-    },
-    {
-      "id": "GI-2026-208-09325",
-      "title": "Convocatòria del procés selectiu per a la cobertura del lloc de treball de secretari/a interventor/a, de forma provisional i en comissió de serveis",
-      "entity": "AJUNTAMENT DE SANT PERE PESCADOR",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809325.pdf"
-    },
-    {
-      "id": "GI-2026-208-09310",
-      "title": "Aprovació de les bases i la convocatòria per a la provisió d'una plaça de secretaria intervenció classe tercera, amb caràcter interí",
-      "entity": "AJUNTAMENT DE LLANARS",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809310.pdf"
-    },
-    {
-      "id": "GI-2026-208-09301",
-      "title": "Convocatòria pública del procés selectiu, mitjançant concurs oposició, per cobrir definitivament una plaça de personal laboral arquitecte i la constitució d'una borsa de treball",
-      "entity": "AJUNTAMENT DE PERALADA",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Bolsa de trabajo",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809301.pdf"
-    },
-    {
-      "id": "GI-2026-208-09233",
-      "title": "Aprovació de les bases i la convocatòria del procés de selecció per a la provisió d'una plaça d'oficial primera (jardineria), grup C2",
-      "entity": "AJUNTAMENT DE PALAMÓS I SANT JOAN",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809233.pdf"
-    },
-    {
-      "id": "GI-2026-208-09231",
-      "title": "Convocatòria per cobrir les places de jutge/ssa de pau titular i substitut/a",
-      "entity": "AJUNTAMENT DE COLOMERS",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809231.pdf"
-    },
-    {
-      "id": "GI-2026-208-09215",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu, per concurs oposició pel torn de promoció interna, de tres places d'oficial 1a de la brigada d'obres de l'Ajuntament de Puigcerdà",
-      "entity": "AJUNTAMENT DE PUIGCERDÀ",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809215.pdf"
-    },
-    {
-      "id": "GI-2026-208-09214",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu, mitjançant sistema d'oposició i torn lliure, d'una plaça de peó de la brigada d'obres de l'Ajuntament de Puigcerdà",
-      "entity": "AJUNTAMENT DE PUIGCERDÀ",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809214.pdf"
-    },
-    {
-      "id": "GI-2026-208-09213",
-      "title": "Aprovació de les bases i la convocatòria del procés selectiu, mitjançant sistema d'oposició i torn lliure, d'una plaça d'oficial 1ª electricista de la brigada d'obres de l'Ajuntament de Puigcerdà",
-      "entity": "AJUNTAMENT DE PUIGCERDÀ",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809213.pdf"
-    },
-    {
-      "id": "GI-2026-208-09057",
-      "title": "Aprovació de les bases específiques i la convocatòria del procés selectiu de quatre places d'administratiu/iva, torn lliure, i una plaça d'administratiu/va, torn de reserva per a persones amb discapacitat, en règim de personal funcionari de carrera",
-      "entity": "AJUNTAMENT DE PUIGCERDÀ",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "province": "Girona (BOP)",
-      "type": "Plaza / oposición",
-      "url": "https://ssl4.ddgi.cat/bopV1/pdf/2026/208/202620809057.pdf"
     }
   ]
 }
