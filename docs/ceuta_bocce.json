@@ -2,24 +2,23 @@
   "schemaVersion": 1,
   "province": "Ceuta (BOCCE)",
   "source": "https://www.ceuta.es/ceuta/bocce",
-  "lastCheckedUTC": "2026-11-26T16:51:31.253545+00:00",
+  "lastCheckedUTC": "2026-11-27T06:54:07.639492+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "EXTRA57",
+    "bulletin": "6673",
     "pagesVisited": 15,
-    "announcementsRead": 87,
-    "opportunities": 5,
+    "announcementsRead": 94,
+    "opportunities": 6,
     "announcementsReadMeaning": "edictos del sumario de cada BOCCE (ordinarios y extraordinarios), todos localizados en el PDF completo",
     "originalFullPdfIssues": 15,
-    "pdfPagesRead": 336
+    "pdfPagesRead": 416
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "EXTRA51",
       "6665",
       "6666",
       "6667",
@@ -33,10 +32,10 @@
       "6671",
       "EXTRA56",
       "6672",
-      "EXTRA57"
+      "EXTRA57",
+      "6673"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-30",
       "2026-11-03",
       "2026-11-06",
@@ -50,7 +49,8 @@
       "2026-11-20",
       "2026-11-20",
       "2026-11-24",
-      "2026-11-24"
+      "2026-11-24",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -74,8 +74,8 @@
       "2026-11-26"
     ],
     "issuesRead": 15,
-    "announcementsRead": 87,
-    "opportunities": 5,
+    "announcementsRead": 94,
+    "opportunities": 6,
     "regularBulletins": [
       "6665",
       "6666",
@@ -84,10 +84,10 @@
       "6669",
       "6670",
       "6671",
-      "6672"
+      "6672",
+      "6673"
     ],
     "extraordinaryBulletins": [
-      "EXTRA51",
       "EXTRA52",
       "EXTRA53",
       "EXTRA54",
@@ -96,18 +96,6 @@
       "EXTRA57"
     ],
     "pdfEvidence": [
-      {
-        "number": "EXTRA51",
-        "date": "2026-10-28",
-        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1982-octubre/23304-bocce-extra51-28-10-2026?Itemid=534",
-        "sha256": "30fc036eaa0841ff29afaace3b97119993f84d0d4beeca2fdb180c26726d9f02",
-        "bytes": 488896,
-        "pages": 8,
-        "edicts": [
-          102,
-          102
-        ]
-      },
       {
         "number": "6665",
         "date": "2026-10-30",
@@ -275,10 +263,33 @@
           112,
           115
         ]
+      },
+      {
+        "number": "6673",
+        "date": "2026-11-27",
+        "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23339-bocce-6673-27-11-2026?Itemid=534",
+        "sha256": "785199614c6e221131c28ea717397b8929fb074654f86b95742810bd36d0888f",
+        "bytes": 1732248,
+        "pages": 88,
+        "edicts": [
+          789,
+          796
+        ]
       }
     ]
   },
   "notices": [
+    {
+      "id": "CE-2026-795",
+      "province": "Ceuta (BOCCE)",
+      "title": "Decreto del Consejero de Presidencia y Gobernación, D. Alberto Ramón Gaitán Rodríguez, por el que se aprueba la convocatoria de 2 puestos de Policía Local de la Ciudad de Ceuta para la Unidad de Atestados, por el procedimiento de concurso de méritos.",
+      "entity": "Ciudad Autónoma de Ceuta",
+      "date": "27/11/2026",
+      "bulletin": "6673",
+      "type": "Plaza / oposición",
+      "url": "https://www.ceuta.es/ceuta/component/jdownloads/finish/1983-noviembre/23339-bocce-6673-27-11-2026?Itemid=534",
+      "publisherArticle": "795"
+    },
     {
       "id": "CE-2026-788",
       "province": "Ceuta (BOCCE)",

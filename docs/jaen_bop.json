@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-26T16:58:22.327190+00:00",
+  "lastCheckedUTC": "2026-11-27T06:58:49.614888+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "230",
+    "bulletin": "231",
     "pagesVisited": 20,
-    "announcementsRead": 517,
-    "opportunities": 31,
+    "announcementsRead": 525,
+    "opportunities": 33,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 31
+    "pdfLinksVerified": 33
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "211",
       "212",
       "213",
       "214",
@@ -37,10 +36,10 @@
       "227",
       "228",
       "229",
-      "230"
+      "230",
+      "231"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-03",
@@ -59,7 +58,8 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,15 +74,35 @@
       "2026-11-25"
     ],
     "issuesRead": 20,
-    "announcementsRead": 517,
-    "opportunities": 31,
+    "announcementsRead": 525,
+    "opportunities": 33,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "210",
-      "date": "2026-10-27"
+      "number": "211",
+      "date": "2026-10-28"
     }
   },
   "notices": [
+    {
+      "id": "JA-2026-5544",
+      "province": "Jaén",
+      "title": "Aprobación de las bases y convocatoria para la provisión de una plaza de Policía Local del Ayuntamiento de Bedmar y Garcíez.",
+      "entity": "AYUNTAMIENTO DE BEDMAR Y GARCÍEZ (JAÉN)",
+      "date": "27/11/2026",
+      "bulletin": "231",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-27&numeroEdicto=5544&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
+    {
+      "id": "JA-2026-5535",
+      "province": "Jaén",
+      "title": "Anulación de las Bases de la convocatoria pública para la creación de tres Bolsas de Empleo en las categorías profesionales de personal directivo (Categoría A2), personal de apoyo a la orientación (Categoría A2) y personal de apoyo administrativo (Categoría C1), para la ejecución del Programa de Empleo y Formación.",
+      "entity": "AYUNTAMIENTO DE BAILÉN (JAÉN)",
+      "date": "27/11/2026",
+      "bulletin": "231",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-27&numeroEdicto=5535&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
+    },
     {
       "id": "JA-2026-5335",
       "province": "Jaén",

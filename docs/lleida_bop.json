@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-26T16:59:52.124145+00:00",
+  "lastCheckedUTC": "2026-11-27T06:59:15.411127+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "227",
+    "bulletin": "228",
     "pagesVisited": 23,
-    "announcementsRead": 1055,
-    "opportunities": 61
+    "announcementsRead": 1041,
+    "opportunities": 59
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -37,10 +36,10 @@
       "224",
       "225",
       "226",
-      "227"
+      "227",
+      "228"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-30",
       "2026-11-02",
@@ -61,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,10 +74,20 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1055,
-    "opportunities": 61
+    "announcementsRead": 1041,
+    "opportunities": 59
   },
   "notices": [
+    {
+      "id": "LE-202622809968",
+      "province": "Lleida (BOP)",
+      "title": "Anunci d'aprovació de les bases i la convocatòria per la constitució d'una borsa de treball per cobrir la plaça d'agutzil",
+      "entity": "AJUNTAMENT DE SUNYER (SUNYER)",
+      "date": "27/11/2026",
+      "bulletin": "228",
+      "type": "Bolsa de trabajo",
+      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/228/202622809968.pdf"
+    },
     {
       "id": "LE-202622709909",
       "province": "Lleida (BOP)",
@@ -657,36 +667,6 @@
       "bulletin": "207",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/207/202620708918.pdf"
-    },
-    {
-      "id": "LE-202620608985",
-      "province": "Lleida (BOP)",
-      "title": "Bases i convocatòria d'una plaça d'Encarregat de brigada, mitjançant promoció interna",
-      "entity": "AJUNTAMENT DE BELLPUIG (BELLPUIG)",
-      "date": "28/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/206/202620608985.pdf"
-    },
-    {
-      "id": "LE-202620608956",
-      "province": "Lleida (BOP)",
-      "title": "Anunci sobre l’aprovació de la convocatòria i les bases reguladores del procés de selecció per proveir definitivament com a personal funcionari el lloc de treball d’un/a tècnic/a de protecció civil (RLT 63) del Consell Comarcal del Pallars Jussà i la creació d’una borsa de treball.",
-      "entity": "CONSELL COMARCAL DEL PALLARS JUSSÀ (TREMP)",
-      "date": "28/10/2026",
-      "bulletin": "206",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/206/202620608956.pdf"
-    },
-    {
-      "id": "LE-202620608856",
-      "province": "Lleida (BOP)",
-      "title": "Aprovació de les bases i la convocatòria de concurs oposició per cobrir amb caràcter interí, la plaça de secretaria intervenció de l’Ajuntament de Sanaüja.",
-      "entity": "AJUNTAMENT DE SANAÜJA (SANAÜJA)",
-      "date": "28/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/206/202620608856.pdf"
     }
   ]
 }

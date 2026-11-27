@@ -2,22 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-26T16:53:04.511939+00:00",
+  "lastCheckedUTC": "2026-11-27T06:54:37.132428+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
+    "bulletin": "229",
     "pagesVisited": 28,
-    "announcementsRead": 929,
-    "opportunities": 29,
+    "announcementsRead": 935,
+    "opportunities": 35,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "207",
       "208",
       "Ext. 29",
       "209",
@@ -44,10 +43,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-29",
       "2026-10-30",
@@ -74,7 +73,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -87,10 +87,9 @@
       "2026-11-22"
     ],
     "issuesRead": 28,
-    "announcementsRead": 929,
-    "opportunities": 29,
+    "announcementsRead": 935,
+    "opportunities": 35,
     "regularBulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -111,7 +110,8 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "extraordinaryBulletins": [
       "Ext. 29",
@@ -122,7 +122,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47305,
       47325,
       47425,
       47365,
@@ -149,10 +148,91 @@
       47685,
       47705,
       47725,
-      47745
+      47745,
+      47765
     ]
   },
   "notices": [
+    {
+      "id": "CN-2026-9349",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución de 23 de noviembre de 2026, por la que se convoca concurso específico, para la provisión de puestos de trabajo en la Oficina Fiscal, de la Comunidad Autónoma de Cantabria.",
+      "entity": "Consejería de Presidencia, Justicia, Seguridad y Simplificación Administrativa. Dirección General de Justicia y Victimas del Terrorismo",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443806"
+    },
+    {
+      "id": "CN-2026-9342",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1488/26), por la que se convoca concurso público para la provisión de plazas de personal docente contratado temporal, en régimen de derecho laboral, en la figura de Profesor Permanente Laboral I3. Concurso número 1 P3 2026-2027.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443799"
+    },
+    {
+      "id": "CN-2026-9341",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1486/26), por la que se convoca concurso público para la provisión de plazas de personal docente contratado temporal, en régimen de derecho laboral, en la figura de Profesorado Asociado del ámbito sanitario (Facultad de Medicina). Concurso número 4 AS 2026-2027.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443798"
+    },
+    {
+      "id": "CN-2026-9340",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1469/26), por la que se convoca concurso público para la provisión de plazas de personal docente contratado, en régimen de derecho laboral, en la figura de Profesorado Permanente Laboral. Concurso número 2 PP 2026-2027.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443797"
+    },
+    {
+      "id": "CN-2026-9339",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1459/26), por la que se convocan concursos de acceso a cuerpos de funcionarios docentes universitarios. Concursos número 24/26 a 45/26.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443796"
+    },
+    {
+      "id": "CN-2026-9338",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1458/26), por la que se convocan concursos de acceso a cuerpos de funcionarios docentes universitarios. Concursos número 17/26 a 23/26 I3.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443795"
+    },
+    {
+      "id": "CN-2026-9337",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1457/26), por la que se convoca concurso de acceso a cuerpo de funcionario docente universitario. Concurso número 16/26.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443794"
+    },
+    {
+      "id": "CN-2026-9336",
+      "province": "Cantabria (BOC)",
+      "title": "Resolución Rectoral (R.R. 1456/26), por la que se convocan concursos de acceso a cuerpos de funcionarios docentes universitarios. Concursos número 1/26 a 15/26.",
+      "entity": "Universidad de Cantabria",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=443793"
+    },
     {
       "id": "CN-2026-9247",
       "province": "Cantabria (BOC)",
@@ -422,26 +502,6 @@
       "bulletin": "208",
       "type": "Bolsa de trabajo",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442318"
-    },
-    {
-      "id": "CN-2026-8390",
-      "province": "Cantabria (BOC)",
-      "title": "Bases y convocatoria para la formación de una bolsa de empleo de personal Conserje-Notificador. Expediente 2026/8616.",
-      "entity": "Ayuntamiento de Piélagos",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Bolsa de trabajo",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442311"
-    },
-    {
-      "id": "CN-2026-8369",
-      "province": "Cantabria (BOC)",
-      "title": "Resolución de Alcaldía por la que se aprueban las bases y la convocatoria para la constitución de una bolsa de empleo de personal de funcionario interino en la escala de Administración General, Subescala Administrativa (Grupo C, Subgrupo C1) mediante el sistema de oposición. Expediente 2026/563.",
-      "entity": "Ayuntamiento de Medio Cudeyo",
-      "date": "28/10/2026",
-      "bulletin": "207",
-      "type": "Bolsa de trabajo",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442285"
     }
   ]
 }

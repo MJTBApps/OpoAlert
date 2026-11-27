@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Albacete",
   "source": "https://bop.dipualba.es/",
-  "lastCheckedUTC": "2026-11-26T16:45:25.494763+00:00",
+  "lastCheckedUTC": "2026-11-27T06:50:37.675762+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "137",
-    "pagesVisited": 12,
-    "announcementsRead": 211,
-    "opportunities": 17
+    "pagesVisited": 11,
+    "announcementsRead": 195,
+    "opportunities": 15
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "126",
       "127",
       "128",
       "129",
@@ -30,7 +29,6 @@
       "137"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-30",
       "2026-11-04",
       "2026-11-06",
@@ -61,11 +59,12 @@
       "2026-11-21",
       "2026-11-22",
       "2026-11-24",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
-    "issuesRead": 12,
-    "announcementsRead": 211,
-    "opportunities": 17
+    "issuesRead": 11,
+    "announcementsRead": 195,
+    "opportunities": 15
   },
   "notices": [
     {
@@ -217,26 +216,6 @@
       "bulletin": "128",
       "type": "Bolsa de trabajo",
       "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299716"
-    },
-    {
-      "id": "AB-2026-299645",
-      "province": "Albacete",
-      "title": "Bases de la convocatoria para la cobertura, mediante acceso libre y a través del procedimiento de oposición, de una plaza en propiedad de Gestor/a Administrativo/a General",
-      "entity": "Ayuntamiento de Villamalea",
-      "date": "28/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299645"
-    },
-    {
-      "id": "AB-2026-299639",
-      "province": "Albacete",
-      "title": "Bases generales de la convocatoria para la cobertura por procedimiento de funcionarización de una plaza de Oficios Varios, Responsable del Vivero y Jardines",
-      "entity": "Ayuntamiento de Ossa de Montiel",
-      "date": "28/10/2026",
-      "bulletin": "126",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipualba.es/servicesajax/descargararchivopaginaBOP/299639"
     }
   ]
 }

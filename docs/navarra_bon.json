@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-26T17:02:47.707449+00:00",
+  "lastCheckedUTC": "2026-11-27T07:02:14.107358+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "236",
+    "bulletin": "237",
     "pagesVisited": 22,
-    "announcementsRead": 1403,
-    "opportunities": 38
+    "announcementsRead": 1351,
+    "opportunities": 41
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
+    "rangeStart": "2026-10-29",
+    "rangeEnd": "2026-11-27",
     "bulletins": [
-      "215",
       "216",
       "217",
       "218",
@@ -37,10 +36,10 @@
       "233",
       "234",
       "235",
-      "236"
+      "236",
+      "237"
     ],
     "publicationDates": [
-      "2026-10-28",
       "2026-10-29",
       "2026-10-29",
       "2026-10-30",
@@ -61,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -75,10 +75,40 @@
       "2026-11-22"
     ],
     "issuesRead": 22,
-    "announcementsRead": 1403,
-    "opportunities": 38
+    "announcementsRead": 1351,
+    "opportunities": 41
   },
   "notices": [
+    {
+      "id": "NA-2026-237-36",
+      "province": "Navarra",
+      "title": "Concurso-oposición de 1 plaza de oficial de mantenimiento, con carácter laboral fijo, al servicio del Patronato Municipal San Francisco de Asís y constitución de una relación de aspirantes en orden a la cobertura de las necesidades que se produzcan. Nombramiento",
+      "entity": "CINTRUÉNIGO",
+      "date": "27/11/2026",
+      "bulletin": "237",
+      "type": "Bolsa de trabajo",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/237/36"
+    },
+    {
+      "id": "NA-2026-237-35",
+      "province": "Navarra",
+      "title": "Concurso-oposición restringido de encargada/o limpieza",
+      "entity": "ANSOÁIN",
+      "date": "27/11/2026",
+      "bulletin": "237",
+      "type": "Plaza / oposición",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/237/35"
+    },
+    {
+      "id": "NA-2026-237-22",
+      "province": "Navarra",
+      "title": "RESOLUCIÓN 2853/2026, de 19 de noviembre, del vicerrector de Investigación de la Universidad Pública de Navarra, por la que se convoca proceso selectivo para la contratación indefinida, mediante la modalidad de contrato de actividades científico-técnicas, de personal investigador en el marco de la línea de investigación \"000/717–Recursos fitogenéticos: prospección, conservación, identificación, caracterización genética y evaluación agronómica de variedades y clones de especies leñosas\".",
+      "entity": "Comunidad Foral de Navarra",
+      "date": "27/11/2026",
+      "bulletin": "237",
+      "type": "Plaza / oposición",
+      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/237/22"
+    },
     {
       "id": "NA-2026-236-3",
       "province": "Navarra",
