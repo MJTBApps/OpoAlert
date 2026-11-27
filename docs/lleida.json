@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-27T06:42:30.974288+00:00",
+  "lastCheckedUTC": "2026-11-27T09:47:21.567559+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 52,
-    "opportunities": 52,
+    "announcementsRead": 53,
+    "opportunities": 53,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -31,8 +31,8 @@
       "2026-11-19",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -48,14 +48,34 @@
       "2026-11-20",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-27"
+      "2026-11-25"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 52,
-    "opportunities": 52
+    "announcementsRead": 53,
+    "opportunities": 53
   },
   "notices": [
+    {
+      "id": "CIDO7-22570697",
+      "title": "Borsa de treball de places d'Agutzil",
+      "entity": "Ajuntament de Sunyer",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22570697"
+    },
+    {
+      "id": "CIDO7-17560905",
+      "title": "2 places de Peó de la brigada municipal",
+      "entity": "Ajuntament d'Alguaire",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Lleida",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/17560905"
+    },
     {
       "id": "CIDO7-22562116",
       "title": "1 plaça d'Oficial paleta",
@@ -85,16 +105,6 @@
       "province": "Lleida",
       "type": "Bolsa de trabajo",
       "url": "https://cido.diba.cat/oposicions/22394879"
-    },
-    {
-      "id": "CIDO7-17560905",
-      "title": "2 places de Peó de la brigada municipal",
-      "entity": "Ajuntament d'Alguaire",
-      "date": "25/11/2026",
-      "bulletin": "CIDO",
-      "province": "Lleida",
-      "type": "Bolsa de trabajo",
-      "url": "https://cido.diba.cat/oposicions/17560905"
     },
     {
       "id": "CIDO7-22552809",

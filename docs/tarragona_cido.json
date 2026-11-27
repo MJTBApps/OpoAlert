@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-27T06:42:30.974288+00:00",
+  "lastCheckedUTC": "2026-11-27T09:47:21.567559+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 93,
-    "opportunities": 93,
+    "announcementsRead": 98,
+    "opportunities": 98,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -47,15 +48,74 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-27"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 93,
-    "opportunities": 93
+    "announcementsRead": 98,
+    "opportunities": 98
   },
   "notices": [
+    {
+      "id": "CIDO8-22570850",
+      "title": "Borsa de treball de places d'Oficial 1a administratiu",
+      "entity": "Ajuntament de Tarragona - Mercats de Tarragona, SA",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22570850"
+    },
+    {
+      "id": "CIDO8-22570766",
+      "title": "1 plaça d'Auxiliar administratiu de gestió",
+      "entity": "Ajuntament de Montbrió del Camp",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22570766"
+    },
+    {
+      "id": "CIDO8-22570763",
+      "title": "2 places de Peó especialista",
+      "entity": "Ajuntament de Montbrió del Camp",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22570763"
+    },
+    {
+      "id": "CIDO8-22570760",
+      "title": "4 places d'Operari de neteja de dependències municipals",
+      "entity": "Ajuntament de Montbrió del Camp",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22570760"
+    },
+    {
+      "id": "CIDO8-22570756",
+      "title": "1 plaça de Dinamitzador juvenil",
+      "entity": "Ajuntament de Montbrió del Camp",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22570756"
+    },
+    {
+      "id": "CIDO8-22547478",
+      "title": "1 plaça d'Auxiliar administratiu",
+      "entity": "Ajuntament de Renau",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Plaza / oposición",
+      "url": "https://cido.diba.cat/oposicions/22547478"
+    },
     {
       "id": "CIDO8-22563286",
       "title": "1 plaça de Tècnic superior de projectes",
@@ -215,16 +275,6 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22547660"
-    },
-    {
-      "id": "CIDO8-22547478",
-      "title": "1 plaça d'Auxiliar administratiu",
-      "entity": "Ajuntament de Renau",
-      "date": "24/11/2026",
-      "bulletin": "CIDO",
-      "province": "Tarragona",
-      "type": "Plaza / oposición",
-      "url": "https://cido.diba.cat/oposicions/22547478"
     },
     {
       "id": "CIDO8-22547468",

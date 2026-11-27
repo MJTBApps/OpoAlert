@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Girona",
-  "lastCheckedUTC": "2026-11-27T06:42:30.974288+00:00",
+  "lastCheckedUTC": "2026-11-27T09:47:21.567559+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 80,
-    "opportunities": 80,
+    "announcementsRead": 86,
+    "opportunities": 86,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -35,7 +35,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-29",
@@ -47,24 +48,83 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22",
-      "2026-11-27"
+      "2026-11-22"
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 80,
-    "opportunities": 80
+    "announcementsRead": 86,
+    "opportunities": 86
   },
   "notices": [
+    {
+      "id": "CIDO6-22570655",
+      "title": "Borsa de treball de places d'Auxiliar administratiu",
+      "entity": "Ajuntament de Llançà",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22570655"
+    },
+    {
+      "id": "CIDO6-22570629",
+      "title": "1 plaça d'Enginyer municipal",
+      "entity": "Ajuntament de Ribes de Freser",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22570629"
+    },
+    {
+      "id": "CIDO6-22570577",
+      "title": "1 plaça d'Agent cívic caps de setmana",
+      "entity": "Ajuntament de Castell d'Aro, Platja d'Aro i s'Agaró",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22570577"
+    },
+    {
+      "id": "CIDO6-22570539",
+      "title": "Borsa de treball de places d'Auxiliar de serveis",
+      "entity": "Ajuntament de Castell d'Aro, Platja d'Aro i s'Agaró",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/22570539"
+    },
     {
       "id": "CIDO6-22563492",
       "title": "1 plaça d'Arquitecte -TP",
       "entity": "Ajuntament de Palau-saverdera",
-      "date": "26/11/2026",
+      "date": "27/11/2026",
       "bulletin": "CIDO",
       "province": "Girona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22563492"
+    },
+    {
+      "id": "CIDO6-21654492",
+      "title": "2 places d'Integrador social",
+      "entity": "Ajuntament de Castell d'Aro, Platja d'Aro i s'Agaró",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/21654492"
+    },
+    {
+      "id": "CIDO6-18390714",
+      "title": "1 plaça de Tècnic de recaptació",
+      "entity": "Ajuntament de Cadaqués",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Girona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18390714"
     },
     {
       "id": "CIDO6-22561934",
