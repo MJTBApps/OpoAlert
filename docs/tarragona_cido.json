@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Tarragona",
-  "lastCheckedUTC": "2026-11-27T09:47:21.567559+00:00",
+  "lastCheckedUTC": "2026-11-27T12:46:05.980673+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 98,
-    "opportunities": 98,
+    "announcementsRead": 99,
+    "opportunities": 99,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 98,
-    "opportunities": 98
+    "announcementsRead": 99,
+    "opportunities": 99
   },
   "notices": [
     {
@@ -115,6 +115,16 @@
       "province": "Tarragona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/22547478"
+    },
+    {
+      "id": "CIDO8-18513140",
+      "title": "2 places d'Auxiliar d'escola bressol",
+      "entity": "Ajuntament de Falset",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Tarragona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18513140"
     },
     {
       "id": "CIDO8-22563286",

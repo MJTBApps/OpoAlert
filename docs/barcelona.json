@@ -2,13 +2,13 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Barcelona",
-  "lastCheckedUTC": "2026-11-27T09:47:21.567559+00:00",
+  "lastCheckedUTC": "2026-11-27T12:46:05.980673+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
     "bulletin": "CIDO",
-    "announcementsRead": 309,
-    "opportunities": 309,
+    "announcementsRead": 310,
+    "opportunities": 310,
     "status": "api_filtered_full_pagination"
   },
   "historyCoverage": {
@@ -52,8 +52,8 @@
     ],
     "bulletins": [],
     "issuesRead": 0,
-    "announcementsRead": 309,
-    "opportunities": 309
+    "announcementsRead": 310,
+    "opportunities": 310
   },
   "notices": [
     {
@@ -315,6 +315,16 @@
       "province": "Barcelona",
       "type": "Plaza / oposición",
       "url": "https://cido.diba.cat/oposicions/20851426"
+    },
+    {
+      "id": "CIDO5-18658128",
+      "title": "4 places de Tècnic mitjà de gestió",
+      "entity": "Ajuntament de Sabadell",
+      "date": "27/11/2026",
+      "bulletin": "CIDO",
+      "province": "Barcelona",
+      "type": "Bolsa de trabajo",
+      "url": "https://cido.diba.cat/oposicions/18658128"
     },
     {
       "id": "CIDO5-16716846",
