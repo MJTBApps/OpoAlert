@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
   "province": "Zaragoza",
-  "lastCheckedUTC": "2026-11-27T17:20:56.255596+00:00",
+  "lastCheckedUTC": "2026-11-28T07:25:49.987857+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "274",
+    "bulletin": "275",
     "pagesVisited": 2,
-    "announcementsRead": 875,
-    "opportunities": 90
+    "announcementsRead": 847,
+    "opportunities": 89
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "issuesRead": 25,
     "pagesVisited": 2,
-    "announcementsRead": 875,
-    "opportunities": 90,
+    "announcementsRead": 847,
+    "opportunities": 89,
     "bulletins": [
-      "250",
       "251",
       "252",
       "253",
@@ -44,10 +43,10 @@
       "271",
       "272",
       "273",
-      "274"
+      "274",
+      "275"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-10-31",
       "2026-11-03",
@@ -71,10 +70,10 @@
       "2026-11-24",
       "2026-11-25",
       "2026-11-26",
-      "2026-11-27"
+      "2026-11-27",
+      "2026-11-28"
     ],
     "issuePublicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-10-31",
       "2026-11-03",
@@ -98,7 +97,8 @@
       "2026-11-24",
       "2026-11-25",
       "2026-11-26",
-      "2026-11-27"
+      "2026-11-27",
+      "2026-11-28"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -108,16 +108,16 @@
       "2026-11-22"
     ],
     "sectionsRead": {
-      "SECCIÓN QUINTA": 119,
-      "SECCIÓN SEXTA": 688,
       "SECCIÓN SEGUNDA": 4,
       "SECCIÓN TERCERA": 35,
+      "SECCIÓN QUINTA": 114,
+      "SECCIÓN SEXTA": 665,
       "PARTE NO OFICIAL": 20,
       "SECCIÓN SEPTIMA": 1,
       "ELECCIONES A CORTES GENERALES DEL 29 DE NOVIEMBRE DE 2026": 3,
       "ELECCIONES A CORTES GENERALES DE 29 DE NOVIEMBRE DE 2026": 5
     },
-    "documentsVerified": 113
+    "documentsVerified": 112
   },
   "notices": [
     {
@@ -1009,16 +1009,6 @@
       "bulletin": "251",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472755940202"
-    },
-    {
-      "id": "ZA-000344714",
-      "province": "Zaragoza",
-      "title": "ANUNCIO de aprobación definitiva del presupuesto general para el ejercicio 2026.",
-      "entity": "AYUNTAMIENTO DE NAVARDUN",
-      "date": "29/10/2026",
-      "bulletin": "250",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472458250505"
     }
   ]
 }
