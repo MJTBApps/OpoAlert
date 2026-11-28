@@ -1,13 +1,7 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-28T07:29:07+00:00",
+ "updatedUTC": "2026-11-28T16:53:23+00:00",
  "items": {
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de solicitudes será de veinte días hábiles contados a partir del día siguiente al de la publicación del anuncio de la convocatoria en el Boletín Oficial del Estado.",
-   "page": 1
-  },
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2992/anuncio.pdf": {
    "days": 10,
    "kind": "hábiles",
@@ -186,7 +180,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": "https://sede.tijola.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2973/anuncio.pdf": "https://sede.tijola.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2987/anuncio.pdf": "https://sede.elejido.es/",
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2988/anuncio.pdf": "https://sede.elejido.es/",
@@ -216,9 +209,6 @@
   "https://app.dipalme.org/bop/services/manager/edicto/2026/3315/anuncio.pdf": "https://sede.dalias.es/"
  },
  "sedeRaw": {
-  "https://app.dipalme.org/bop/services/manager/edicto/2026/2950/anuncio.pdf": [
-   "https://sede.tijola.es/"
-  ],
   "https://app.dipalme.org/bop/services/manager/edicto/2026/2973/anuncio.pdf": [
    "https://sede.tijola.es/"
   ],
