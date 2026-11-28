@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://bop.dipcas.es/PortalBOP/",
   "province": "Castellón",
-  "lastCheckedUTC": "2026-11-27T16:41:10.969563+00:00",
+  "lastCheckedUTC": "2026-11-28T06:32:55.637511+00:00",
   "coverage": {
     "complete": true,
-    "bulletin": "143",
+    "bulletin": "144",
     "pagesVisited": 13,
-    "announcementsRead": 513,
-    "opportunities": 23,
+    "announcementsRead": 546,
+    "opportunities": 26,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "issuesRead": 13,
     "pagesVisited": 13,
-    "announcementsRead": 513,
-    "opportunities": 23,
+    "announcementsRead": 546,
+    "opportunities": 26,
     "bulletins": [
-      "131",
       "132",
       "133",
       "134",
@@ -32,10 +31,10 @@
       "140",
       "141",
       "142",
-      "143"
+      "143",
+      "144"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-31",
       "2026-11-03",
       "2026-11-05",
@@ -47,7 +46,8 @@
       "2026-11-19",
       "2026-11-21",
       "2026-11-24",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-28"
     ],
     "nonPublicationDates": [
       "2026-10-30",
@@ -70,6 +70,46 @@
     ]
   },
   "notices": [
+    {
+      "id": "CS-81274119804733897",
+      "province": "Castellón",
+      "title": "BASES REGULADORAS DE LA CONVOCATORIA DEL PROCEDIMIENTO SELECTIVO PARA LA COBERTURA  EN PROPIEDAD DE UNA PLAZA DE ADMINISTRATIVO (C1)  EN EL AYUNTAMIENTO DE NAVAJAS  TURNO PROMOCIÓN INTERNA.",
+      "entity": "AJUNTAMENT DE NAVAJAS",
+      "date": "28/11/2026",
+      "bulletin": "144",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/60EeSHhK5B"
+    },
+    {
+      "id": "CS-405407659256982868",
+      "province": "Castellón",
+      "title": "CONVOCATORIA PROCESO CONSTITUCIÓN BOLSA TRABAJO TÉCNICO/A ESPECIALISTA INFORMÁTICA",
+      "entity": "AJUNTAMENT DE CASTELLÓ DE LA PLANA",
+      "date": "28/11/2026",
+      "bulletin": "144",
+      "type": "Bolsa de trabajo",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/TwlpBYslcK"
+    },
+    {
+      "id": "CS-323562134085806380",
+      "province": "Castellón",
+      "title": "ANUNCIO DE APROBACIÓN INICIAL PRESUPUESTO GENERAL, BASES DE EJECUCIÓN, PLANTILLA DE PERSONAL Y RELACIÓN DE PUESTOS DE TRABAJO DEL EJERCICIO 2027",
+      "entity": "AJUNTAMENT DE XILXES/CHILCHES",
+      "date": "28/11/2026",
+      "bulletin": "144",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/NtuuojnktQ"
+    },
+    {
+      "id": "CS-269230555439186905",
+      "province": "Castellón",
+      "title": "Convocatoria dos plazas en propiedad de psicólogo/a promoción interna",
+      "entity": "AJUNTAMENT DE LA VALL D'UIXÓ",
+      "date": "28/11/2026",
+      "bulletin": "144",
+      "type": "Plaza / oposición",
+      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/Jt4suIqF6f"
+    },
     {
       "id": "CS-149821434527564529",
       "province": "Castellón",
@@ -289,16 +329,6 @@
       "bulletin": "132",
       "type": "Plaza / oposición",
       "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/I9msZebtVn"
-    },
-    {
-      "id": "CS-48877021281442993",
-      "province": "Castellón",
-      "title": "Extracto bases selección para la constitución de una bolsa de trabajo de peón/a de cementerio",
-      "entity": "AJUNTAMENT DE BORRIANA/BURRIANA",
-      "date": "29/10/2026",
-      "bulletin": "131",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipcas.es/PortalBOP/api/descargarAnuncio/es/3br9MsT1Xt"
     }
   ]
 }

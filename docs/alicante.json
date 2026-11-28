@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://sede.diputacionalicante.es/consultas.bop/",
   "province": "Alicante",
-  "lastCheckedUTC": "2026-11-27T16:40:58.818435+00:00",
+  "lastCheckedUTC": "2026-11-28T06:32:44.766366+00:00",
   "coverage": {
     "complete": true,
     "bulletin": "227",
-    "pagesVisited": 22,
-    "announcementsRead": 892,
-    "opportunities": 62,
+    "pagesVisited": 21,
+    "announcementsRead": 835,
+    "opportunities": 59,
     "status": "complete"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
-    "issuesRead": 22,
-    "pagesVisited": 22,
-    "announcementsRead": 892,
-    "opportunities": 62,
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
+    "issuesRead": 21,
+    "pagesVisited": 21,
+    "announcementsRead": 835,
+    "opportunities": 59,
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -44,7 +43,6 @@
       "227"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -75,7 +73,8 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ]
   },
   "notices": [
@@ -668,36 +667,6 @@
       "bulletin": "209",
       "type": "Plaza / oposición",
       "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/11/03_209/2026_007240.pdf"
-    },
-    {
-      "id": "AL-2026-8299",
-      "province": "Alicante",
-      "title": "AMPLIACIÓN DE 3 PLAZAS A LA CONVOCATORIA DE 13 PLAZAS DE AUXILIAR DE ADMINISTRACIÓN GENERAL",
-      "entity": "AYUNTAMIENTO TORREVIEJA",
-      "date": "29/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008299.pdf"
-    },
-    {
-      "id": "AL-2026-8298",
-      "province": "Alicante",
-      "title": "AMPLIACIÓN 1 PLAZA A LA CONVOCATORIA DE 4 PLAZAS DE PSICÓLOGO/A",
-      "entity": "AYUNTAMIENTO TORREVIEJA",
-      "date": "29/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008298.pdf"
-    },
-    {
-      "id": "AL-2026-8296",
-      "province": "Alicante",
-      "title": "AMPLIACIÓN DE 1 PLAZA DE ADMINISTRATIVO POR PROMOCIÓN INTERNA A LA CONVOCATORIA DE 16 PLAZAS.",
-      "entity": "AYUNTAMIENTO TORREVIEJA",
-      "date": "29/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://www.dip-alicante.es/bop2/pdftotal/2026/10/29_206/2026_008296.pdf"
     }
   ]
 }
