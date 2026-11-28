@@ -8,7 +8,7 @@ App Android nativa (Kotlin) que muestra convocatorias de empleo público, bolsas
   - **iMac de casa** (macOS 13, Intel x64): `/Users/jordi/Desktop/APP/OpoAlert`. Aquí `git` funciona en la terminal (Xcode Command Line Tools). Python 3.12 de python.org; entorno `~/opoalert-venv` (el mismo que usa el ejecutor de casa). En Mac Intel, `pip install` con `--only-binary=:all:` (las últimas `cryptography` y `pymupdf` ya no traen paquete para Intel y no compilan).
   - **PC Windows**: GitHub Desktop en `C:\Users\PC-02\Desktop\APP\OpoAlert`. No hay `git` en el PATH; el de GitHub Desktop está en `%LOCALAPPDATA%\GitHubDesktop\app-*\resources\app\git\cmd\git.exe`. Lo que sigue sobre `.venv\`, `.bat` y Temurin se refiere a este PC.
 - Desde el 30/10/2026 el proyecto se desarrolla **solo con Claude**: ChatGPT dejó unas 25 ramas `feature/*` sin unir y unos 200 workflows de pruebas sueltas (casi todos borrados el 30/10/2026). Su trabajo útil ya está en `main`; no hay que retomar esas ramas. Si cambian las reglas, actualiza este archivo.
-- Claude no hace push: hace los commits en local y el usuario pulsa «Push origin» en GitHub Desktop.
+- **Push**: en el iMac, Claude hace el push él mismo (desde el 28/11/2026: `gh` 2.106.0 en `~/.local/bin`, sesión de la cuenta MJTBApps en el llavero y `gh auth setup-git` como ayudante de credenciales de git). Siempre `git pull --rebase` antes y nunca `--force`. En el PC Windows sigue el «Push origin» de GitHub Desktop.
 
 ## Cómo funciona
 
@@ -136,7 +136,7 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 
 - `backend/vigilar_feeds.py` (sin token, API pública de GitHub): sale con 1 si las **dos últimas lecturas** de una fuente han fallado (juntando GitHub y el ejecutor de casa, así las de respaldo no dan falsas alarmas; cuenta también los pasos fallidos con `continue-on-error`) o si algún feed lleva más de 30 h laborables sin actualizar; 0 si todo va bien; 2 si no pudo consultar GitHub. Pruebas: `backend/tests/test_vigilar_feeds.py`.
 - Tarea programada de la app de Claude en el iMac, **«OpoAlert · vigilar y arreglar feeds»** (`~/.claude/scheduled-tasks/opoalert-vigilar-feeds/SKILL.md`), a las 9:30, 12:30, 15:30 y 19:30 hora local: ejecuta el detector y, solo si hay avería, la reproduce, arregla el lector (solo `backend/`), pasa las pruebas, hace commit y push, y avisa al móvil. Solo funciona con la app de Claude abierta.
-- Para el push sin intervención hace falta que el git de la terminal tenga credenciales (GitHub Desktop guarda las suyas aparte y el terminal no las usa).
+- El push lo hace la propia tarea con las credenciales de `gh` (GitHub Desktop guarda las suyas aparte y el terminal no las usa). Si `gh auth status` deja de estar conectado, el arreglo se queda en commit local y lo dice.
 
 ## Probar la app en el emulador (iMac)
 
