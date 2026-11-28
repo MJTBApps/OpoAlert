@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "source": "https://api.diba.cat/dadesobertes/cido/v1/oposicions",
   "province": "Lleida",
-  "lastCheckedUTC": "2026-11-27T16:44:04.646309+00:00",
+  "lastCheckedUTC": "2026-11-28T06:40:24.500879+00:00",
   "scope": "CIDO: processos selectius municipals; no equivale a BOP provincial completo",
   "coverage": {
     "complete": true,
@@ -14,8 +14,8 @@
   "historyCoverage": {
     "complete": true,
     "basis": "CIDO_API_LAST_DOCUMENT_30_DAYS",
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "publicationDates": [
       "2026-10-30",
       "2026-11-02",
@@ -35,7 +35,6 @@
       "2026-11-27"
     ],
     "nonPublicationDates": [
-      "2026-10-29",
       "2026-10-31",
       "2026-11-01",
       "2026-11-04",
@@ -48,7 +47,8 @@
       "2026-11-20",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-28"
     ],
     "bulletins": [],
     "issuesRead": 0,
