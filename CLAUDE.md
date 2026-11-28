@@ -132,6 +132,12 @@ Desde la 1.34, las fuentes nuevas no llevan un workflow cada una. Todas van en e
 - Melilla y Canarias (ocultas) aún llevan `2026` en la dirección de la fuente de `Province.kt`: corregirlo al reescribir sus lectores.
 - Workflows de investigación: el 30/10/2026 se borraron 165 `probe-*`, `diag-*`, `diagnosticar-*`, `audit-*` y `apk-privada-*` que solo se lanzaban con push a ramas `feature/*` antiguas (siguen en el historial de git). Quedan 6 porque los citan notas de `backend/*.md`. Por limpiar: `INSTRUCCIONES_GITHUB_060.txt` con la ruta antigua `C:\Users\Informatica\...`.
 
+## Vigilancia automática (desde el 28/11/2026)
+
+- `backend/vigilar_feeds.py` (sin token, API pública de GitHub): sale con 1 si las **dos últimas lecturas** de una fuente han fallado (juntando GitHub y el ejecutor de casa, así las de respaldo no dan falsas alarmas; cuenta también los pasos fallidos con `continue-on-error`) o si algún feed lleva más de 30 h laborables sin actualizar; 0 si todo va bien; 2 si no pudo consultar GitHub. Pruebas: `backend/tests/test_vigilar_feeds.py`.
+- Tarea programada de la app de Claude en el iMac, **«OpoAlert · vigilar y arreglar feeds»** (`~/.claude/scheduled-tasks/opoalert-vigilar-feeds/SKILL.md`), a las 9:30, 12:30, 15:30 y 19:30 hora local: ejecuta el detector y, solo si hay avería, la reproduce, arregla el lector (solo `backend/`), pasa las pruebas, hace commit y push, y avisa al móvil. Solo funciona con la app de Claude abierta.
+- Para el push sin intervención hace falta que el git de la terminal tenga credenciales (GitHub Desktop guarda las suyas aparte y el terminal no las usa).
+
 ## Probar la app en el emulador (iMac)
 
 - Emulador y imagen `system-images;android-34;google_apis;x86_64` en `~/Library/Android/sdk`; dispositivo `opoalert` (Pixel 6). Arrancar sin ventana: `~/Library/Android/sdk/emulator/emulator -avd opoalert -no-window -no-audio -gpu swiftshader_indirect` y esperar a `adb shell getprop sys.boot_completed` = 1. Va lento: el primer arranque puede dar «System UI isn't responding» (pulsar «Wait»).
