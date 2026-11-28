@@ -63,6 +63,19 @@ class CadizTests(unittest.TestCase):
         self.assertEqual(n["count"],2)
         self.assertEqual(n["candidates"][0]["url"],DOC.split("#")[0])
 
+    def test_skips_annulment_of_previous_notice(self):
+        annul=("<p><a href=\"/export/sites/default/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf#page=8\">"
+               "<strong> Anulación.- </strong>Anuncio nº 422.717, publicado en el BOP núm. 207, "
+               "perteneciente a la E.L.A. de Zahara de los Atunes. .</a></p>")
+        x=parse_issue(html().replace("<h2>Calendario",annul+"<h2>Calendario"),2026,208)
+        self.assertEqual(x["count"],2)
+        # Sin la referencia al anuncio anulado sigue siendo un anuncio irreconocible.
+        with self.assertRaises(ProvincialCoverageError):
+            parse_issue(html().replace("<h2>Calendario",annul.replace("Anuncio nº 422.717","Anuncio")+"<h2>Calendario"),2026,208)
+        # Y si enlaza a otro boletín, también falla.
+        with self.assertRaises(ProvincialCoverageError):
+            parse_issue(html().replace("<h2>Calendario",annul.replace("BOP208_28-10-26","BOP207_27-10-26")+"<h2>Calendario"),2026,208)
+
     def test_rejects_mismatched_edition_and_dates(self):
         with self.assertRaises(ProvincialCoverageError):
             parse_issue(html(),2026,207)
