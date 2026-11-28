@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Burgos",
   "source": "https://bopbur.diputaciondeburgos.es/",
-  "lastCheckedUTC": "2026-11-27T16:48:38.471530+00:00",
+  "lastCheckedUTC": "2026-11-28T06:48:11.727275+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "226",
-    "pagesVisited": 24,
-    "announcementsRead": 668,
-    "opportunities": 14,
+    "pagesVisited": 23,
+    "announcementsRead": 641,
+    "opportunities": 13,
     "announcementsReadMeaning": "anuncios de todos los boletines (ordinarios y extraordinarios) con su PDF oficial",
-    "pdfChecked": 9
+    "pdfChecked": 8
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -41,7 +40,6 @@
       "226"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -72,13 +70,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 668,
-    "opportunities": 14,
+    "issuesRead": 20,
+    "announcementsRead": 641,
+    "opportunities": 13,
     "regularBulletins": [
-      "206",
       "207",
       "208",
       "209",
@@ -102,7 +100,6 @@
     ],
     "extraordinaryBulletins": [],
     "issueUrls": [
-      "https://bopbur.diputaciondeburgos.es/bopbur-2026-206",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-207",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-208",
       "https://bopbur.diputaciondeburgos.es/bopbur-2026-209",
@@ -268,17 +265,6 @@
       "type": "Plaza / oposición",
       "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-208/bopbur-2026-208-anuncio-202604656.pdf",
       "publisherArticle": "202604656"
-    },
-    {
-      "id": "BU-2026-202604609",
-      "province": "Burgos",
-      "title": "Bases y convocatoria para cubrir una plaza de auxiliar administrativo como funcionario interino, por el sistema de concurso",
-      "entity": "Ayuntamiento de Hontoria del Pinar",
-      "date": "29/10/2026",
-      "bulletin": "206",
-      "type": "Plaza / oposición",
-      "url": "https://bopbur.diputaciondeburgos.es/sites/default/files/private/publicado/bopbur-2026-206/bopbur-2026-206-anuncio-202604609.pdf",
-      "publisherArticle": "202604609"
     }
   ]
 }

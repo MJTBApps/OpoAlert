@@ -2,23 +2,22 @@
   "schemaVersion": 1,
   "province": "Jaén",
   "source": "https://bop.dipujaen.es/",
-  "lastCheckedUTC": "2026-11-27T16:56:31.531649+00:00",
+  "lastCheckedUTC": "2026-11-28T06:53:58.444317+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "231",
-    "pagesVisited": 20,
-    "announcementsRead": 525,
-    "opportunities": 33,
+    "pagesVisited": 19,
+    "announcementsRead": 494,
+    "opportunities": 29,
     "announcementsReadMeaning": "edictos del sumario de cada BOP (web y sumario PDF coinciden)",
-    "pdfLinksVerified": 33
+    "pdfLinksVerified": 29
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "212",
       "213",
       "214",
       "215",
@@ -40,7 +39,6 @@
       "231"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -71,15 +69,16 @@
       "2026-11-15",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-28"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 525,
-    "opportunities": 33,
+    "issuesRead": 19,
+    "announcementsRead": 494,
+    "opportunities": 29,
     "daysRequested": 30,
     "previousBulletin": {
-      "number": "211",
-      "date": "2026-10-28"
+      "number": "212",
+      "date": "2026-10-29"
     }
   },
   "notices": [
@@ -372,46 +371,6 @@
       "bulletin": "214",
       "type": "Plaza / oposición",
       "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-11-03&numeroEdicto=4879&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-5115",
-      "province": "Jaén",
-      "title": "Res. núm. 95 de fecha 28/10/2026, de la Presidenta del Consorcio de la Vía Verde del Aceite, por la que se aprueban las bases para la creación de la bolsa de trabajo de peón del Consorcio de la Vía Verde del Aceite, mediante prueba.",
-      "entity": "CONSORCIO DE LA VÍA VERDE DEL ACEITE. JAÉN",
-      "date": "29/10/2026",
-      "bulletin": "212",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-29&numeroEdicto=5115&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-5073",
-      "province": "Jaén",
-      "title": "Res. núm. 3449 de fecha 26/10/2026, de la Sra. Diputada de Recursos Humanos por la que se convoca y aprueban las Bases para la provisión de catorce plazas de funcionarias/os de carrera de la Diputación Provincial de Jaén y sus Organismos Autónomos, denominación Técnica/o en Cuidados Auxiliares de Enfermería, mediante el sistema de Oposición Libre.",
-      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
-      "date": "29/10/2026",
-      "bulletin": "212",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-29&numeroEdicto=5073&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-5072",
-      "province": "Jaén",
-      "title": "Res. núm. 3457 de fecha 26/10/2026, de la Sra. Diputada de Recursos Humanos por la que se convoca y aprueban las bases para la provisión de cuatro plazas de funcionarias/os de carrera de la Diputación Provincial de Jaén y sus Organismos Autónomos, denominación Terapeuta Ocupacional, mediante el sistema de Oposición Libre.",
-      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
-      "date": "29/10/2026",
-      "bulletin": "212",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-29&numeroEdicto=5072&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
-    },
-    {
-      "id": "JA-2026-5071",
-      "province": "Jaén",
-      "title": "Res. núm. 3445 de fecha 26/10/2026, de la Sra. Diputada de Recursos Humanos por la que se convoca y aprueban las bases para la provisión de cuatro plazas de funcionarias/os de carrera de la Diputación Provincial de Jaén y sus Organismos Autónomos, denominación Enfermera/o, mediante el sistema de Oposición Libre.",
-      "entity": "DIPUTACIÓN PROVINCIAL DE JAÉN. Área de Recursos Humanos",
-      "date": "29/10/2026",
-      "bulletin": "212",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dipujaen.es/descargarws.dip?fechaBoletin=2026-10-29&numeroEdicto=5071&boletinSuplemento=0&ejercicioBop=2026&tipo=bop&anioExpedienteEdicto=2026"
     }
   ]
 }

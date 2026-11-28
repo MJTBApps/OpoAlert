@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Cáceres",
   "source": "https://bop.dip-caceres.es/bop/index.html",
-  "lastCheckedUTC": "2026-11-27T16:50:03.949593+00:00",
+  "lastCheckedUTC": "2026-11-28T06:48:31.603170+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "228",
-    "pagesVisited": 21,
-    "announcementsRead": 535,
-    "opportunities": 35
+    "pagesVisited": 20,
+    "announcementsRead": 509,
+    "opportunities": 30
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -39,7 +38,6 @@
       "228"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -70,11 +68,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 535,
-    "opportunities": 35
+    "issuesRead": 20,
+    "announcementsRead": 509,
+    "opportunities": 30
   },
   "notices": [
     {
@@ -376,56 +375,6 @@
       "bulletin": "209",
       "type": "Plaza / oposición",
       "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101"
-    },
-    {
-      "id": "CC-2026-5068",
-      "province": "Cáceres",
-      "title": "Aprobación bases y convocatoria para la selección de un/a Trabajador/a Social como personal funcionario interino para la ejecución del programa de carácter temporal «Servicio Social de Atención Social Básica 046 ZORABESAL» y constitución de bolsa.",
-      "entity": "Ayuntamiento de Zorita",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068"
-    },
-    {
-      "id": "CC-2026-5067",
-      "province": "Cáceres",
-      "title": "Convocatoria una plaza formador PALV curso 2026/2027",
-      "entity": "Ayuntamiento de Valverde del Fresno",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067"
-    },
-    {
-      "id": "CC-2026-5066",
-      "province": "Cáceres",
-      "title": "Bases y convocatoria para cubrir la plaza de Operario especialista de mantenimiento en régimen de personal laboral fijo, por el sistema de oposición.",
-      "entity": "Ayuntamiento de Tiétar",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066"
-    },
-    {
-      "id": "CC-2026-5048",
-      "province": "Cáceres",
-      "title": "Concurso-oposición de 21 plazas de Auxiliar Administrativo.",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048"
-    },
-    {
-      "id": "CC-2026-5047",
-      "province": "Cáceres",
-      "title": "Aprobación Bolsa Trabajo Temporal Coordinador/a Planes de Actuación Integrados",
-      "entity": "Diputación Provincial de Cáceres",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047"
     }
   ]
 }

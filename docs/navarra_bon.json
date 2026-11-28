@@ -2,22 +2,20 @@
   "schemaVersion": 1,
   "province": "Navarra",
   "source": "https://bon.navarra.es/es/indice-boletines",
-  "lastCheckedUTC": "2026-11-27T16:58:58.218012+00:00",
+  "lastCheckedUTC": "2026-11-28T06:56:12.855188+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "238",
-    "pagesVisited": 23,
-    "announcementsRead": 1352,
-    "opportunities": 41
+    "pagesVisited": 21,
+    "announcementsRead": 1311,
+    "opportunities": 36
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "216",
-      "217",
       "218",
       "219",
       "220",
@@ -41,8 +39,6 @@
       "238"
     ],
     "publicationDates": [
-      "2026-10-29",
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -74,11 +70,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 23,
-    "announcementsRead": 1352,
-    "opportunities": 41
+    "issuesRead": 21,
+    "announcementsRead": 1311,
+    "opportunities": 36
   },
   "notices": [
     {
@@ -440,56 +437,6 @@
       "bulletin": "218",
       "type": "Plaza / oposición",
       "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/218/35"
-    },
-    {
-      "id": "NA-2026-216-18",
-      "province": "Navarra",
-      "title": "Concurso-oposición de dos plazas de limpieza-servicios generales, con carácter laboral fijo, al servicio del organismo autónomo Residencia Municipal San Vicente de Paúl, y constitución de una relación de aspirantes en orden a la cobertura de las necesidades que se produzcan. Desistimiento",
-      "entity": "SANGÜESA",
-      "date": "29/10/2026",
-      "bulletin": "216",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/216/18"
-    },
-    {
-      "id": "NA-2026-216-15",
-      "province": "Navarra",
-      "title": "Convocatoria para la constitución de una relación de aspirantes a la contratación temporal del puesto de limpieza, con conocimiento de euskera",
-      "entity": "ETXARRI ARANATZ",
-      "date": "29/10/2026",
-      "bulletin": "216",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/216/15"
-    },
-    {
-      "id": "NA-2026-216-14",
-      "province": "Navarra",
-      "title": "Concurso-oposición de una plaza de agente de igualdad y constitución de una relación de aspirantes a la contratación temporal",
-      "entity": "CENDEA DE OLZA",
-      "date": "29/10/2026",
-      "bulletin": "216",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/216/14"
-    },
-    {
-      "id": "NA-2026-216-13",
-      "province": "Navarra",
-      "title": "Constitución de una relación de aspirantes para la contratación temporal como diplomado/a en relaciones laborales",
-      "entity": "BARAÑÁIN",
-      "date": "29/10/2026",
-      "bulletin": "216",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/216/13"
-    },
-    {
-      "id": "NA-2026-216-12",
-      "province": "Navarra",
-      "title": "Constitución de una relación de aspirantes para la contratación temporal como técnico/a de informática",
-      "entity": "BARAÑÁIN",
-      "date": "29/10/2026",
-      "bulletin": "216",
-      "type": "Bolsa de trabajo",
-      "url": "https://bon.navarra.es/es/anuncio/-/texto/2026/216/12"
     }
   ]
 }

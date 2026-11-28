@@ -2,25 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bocm.es/listado-de-boletines",
   "province": "Madrid",
-  "lastCheckedUTC": "2026-11-27T16:58:34.988984+00:00",
+  "lastCheckedUTC": "2026-11-28T06:55:50.840284+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "285",
-    "pagesVisited": 26,
-    "announcementsRead": 1876,
-    "opportunities": 300
+    "pagesVisited": 25,
+    "announcementsRead": 1780,
+    "opportunities": 278
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
-    "issuesRead": 26,
-    "pagesVisited": 26,
-    "announcementsRead": 1876,
-    "opportunities": 300,
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
+    "issuesRead": 25,
+    "pagesVisited": 25,
+    "announcementsRead": 1780,
+    "opportunities": 278,
     "bulletins": [
-      "260",
       "261",
       "262",
       "263",
@@ -48,7 +47,6 @@
       "285"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-10-31",
       "2026-11-02",
@@ -79,10 +77,10 @@
       "2026-11-01",
       "2026-11-08",
       "2026-11-15",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
     "editionPDFs": [
-      "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/29/26000.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/30/26100.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/10/31/26200.PDF",
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/02/26300.PDF",
@@ -110,7 +108,6 @@
       "https://www.bocm.es/boletin/CM_Boletin_BOCM/2026/11/27/28500.PDF"
     ],
     "parseMethods": [
-      "xml",
       "xml",
       "xml",
       "xml",
@@ -2917,226 +2914,6 @@
       "date": "30/10/2026",
       "bulletin": "261",
       "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/30/BOCM-20261030-2.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-92",
-      "province": "Madrid",
-      "title": "– San Sebastián de los Reyes. Ofertas de empleo. Proceso selectivo",
-      "entity": "SAN SEBASTIÁN DE LOS REYES",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-92.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-88",
-      "province": "Madrid",
-      "title": "– Paracuellos de Jarama. Ofertas de empleo. Proceso selectivo",
-      "entity": "PARACUELLOS DE JARAMA",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-88.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-85",
-      "province": "Madrid",
-      "title": "– Las Rozas de Madrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "LAS ROZAS DE MADRID",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-85.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-84",
-      "province": "Madrid",
-      "title": "– Las Rozas de Madrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "LAS ROZAS DE MADRID",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-84.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-83",
-      "province": "Madrid",
-      "title": "– Las Rozas de Madrid. Ofertas de empleo. Proceso selectivo",
-      "entity": "LAS ROZAS DE MADRID",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-83.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-81",
-      "province": "Madrid",
-      "title": "– Getafe. Ofertas de empleo. Proceso selectivo",
-      "entity": "GETAFE",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-81.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-72",
-      "province": "Madrid",
-      "title": "– Alcobendas. Ofertas de empleo. Proceso selectivo",
-      "entity": "ALCOBENDAS",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-72.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-28",
-      "province": "Madrid",
-      "title": "Convocatoria proceso selectivo – Resolución de 20 de octubre de 2026, de la Universidad Autónoma de Madrid, por la que se convoca proceso selectivo para elaborar una ampliación de la lista de espera de funcionarios/as interinos/as de la Escala Administrativa de la Universidad Autónoma de Madrid",
-      "entity": "UNIVERSIDAD AUTÓNOMA DE MADRID",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-28.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-26",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 1976/2026, de 20 de octubre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-26.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-24",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 1967/2026, de 19 de octubre, de la Consejería de Cultura, Turismo y Deporte, por la que se aprueba la convocatoria pública para la provisión de puestos de trabajo vacantes en la citada Consejería por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE CULTURA, TURISMO Y DEPORTE",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-24.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-23",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 4013/2026, de 21 de octubre, del Consejero de Medio Ambiente, Agricultura e Interior, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Medio Ambiente, Agricultura e Interior, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-23.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-21",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 3997/2026, de 20 de octubre, de la Consejería de Medio Ambiente, Agricultura e Interior, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Medio Ambiente, Agricultura e Interior por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-21.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-20",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden 3996/2026, de 20 de octubre, del Consejero de Medio Ambiente, Agricultura e Interior, por la que se aprueba convocatoria pública para la provisión de puestos de trabajo vacantes en la Consejería de Medio Ambiente, Agricultura e Interior, por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE MEDIO AMBIENTE, AGRICULTURA  E INTERIOR",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-20.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-16",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden 1550/2026, de 8 de otubre, de la Consejera de Sanidad, por la que se aprueba convocatoria pública para la provisión de puestos de trabajo vacantes en la Consejería de Sanidad por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE SANIDAD",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-16.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-15",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 16 de octubre de 2026, del Consejero de Vivienda, Transportes e Infraestructuras, por la que se aprueba convocatoria pública para la provisión de un puesto de trabajo vacante en dicha Consejería (Agencia de Vivienda Social), por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE VIVIENDA, TRANSPORTES  E INFRAESTRUCTURAS",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-15.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-11",
-      "province": "Madrid",
-      "title": "Resolución proceso selectivo – Resolución de 20 de octubre de 2026, de la Dirección General de Función Pública, por la que se procede a la adjudicación de destinos correspondiente al proceso selectivo para el acceso, por el sistema general de acceso libre y de promoción interna, a plazas de carácter laboral de la categoría profesional de Diplomado en Enfermería Especialista, Especialidad Enfermería Geriátrica (Grupo II, Nivel 8, Área D) de la Comunidad de Madrid",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-11.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-8",
-      "province": "Madrid",
-      "title": "Bolsa única personal laboral – Resolución de 19 de octubre de 2026, de la Dirección General de Función Pública, por la que se requiere la presentación de documentación acreditativa del cumplimiento de requisitos y la elección de zonas geográficas a efectos de constitución del primer bloque de la bolsa única permanentemente abierta de la categoría profesional de Titulado Superior (Grupo I, Nivel 9, Áreas C y D) de la Comunidad de Madrid",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-8.PDF",
-      "type": "Bolsa de trabajo"
-    },
-    {
-      "id": "MD-20261029-7",
-      "province": "Madrid",
-      "title": "Resolución proceso selectivo – Resolución de 19 de octubre de 2026, de la Dirección General de Función Pública, por la que se procede a la adjudicación de destinos correspondiente al proceso selectivo para el acceso, por el sistema general de acceso libre, a plazas de carácter laboral de la categoría profesional de Técnico Agropecuario, especialidad Investigación Agropecuaria, Alimentaria y Medioambiental (Grupo III, Nivel 5, Área B) de la Comunidad de Madrid",
-      "entity": "CONSEJERÍA DE ECONOMÍA, HACIENDA Y EMPLEO",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-7.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-4",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 21 de octubre de 2026, de la Consejería de Presidencia, Justica y Administración Local, por la que se resuelve la Orden de 16 de junio de 2026, del Consejero de Presidencia, Justicia y Administración Local (BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de 24 de junio), por la que se aprobó convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Presidencia, Justicia y Administración Local por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-4.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-3",
-      "province": "Madrid",
-      "title": "Concurso de méritos – Orden de 20 de octubre de 2026, del Consejero de Presidencia, Justicia y Administración Local, por la que se aprueba convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Presidencia, Justicia y Administración Local, por el procedimiento de Concurso de Méritos",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-3.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-2",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 20 de octubre de 2026, de la Consejería de Presidencia, Justica y Administración Local, por la que se resuelve la Orden de 22 de julio de 2026, del Consejero de Presidencia, Justicia y Administración Local (BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de 31 de julio), por la que se aprobó convocatoria pública para la provisión de un puesto de trabajo vacante en la Consejería de Presidencia, Justicia y Administración Local por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-2.PDF",
-      "type": "Plaza / oposición"
-    },
-    {
-      "id": "MD-20261029-1",
-      "province": "Madrid",
-      "title": "Puesto libre designación – Orden de 19 de octubre de 2026, de la Consejería de Presidencia, Justica y Administración Local, por la que se resuelve la Orden de 12 de agosto de 2026, del Consejero de Presidencia, Justicia y Administración Local, (BOLETÍN OFICIAL DE LA COMUNIDAD DE MADRID de 20 de agosto), por la que se aprobó convocatoria pública para la provisión de varios puestos de trabajo vacantes en la Consejería de Presidencia, Justicia y Administración Local por el procedimiento de Libre Designación",
-      "entity": "CONSEJERÍA DE PRESIDENCIA, JUSTICIA  Y ADMINISTRACIÓN LOCAL",
-      "date": "29/10/2026",
-      "bulletin": "260",
-      "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2026/10/29/BOCM-20261029-1.PDF",
       "type": "Plaza / oposición"
     }
   ]

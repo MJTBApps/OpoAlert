@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Asturias (BOPA)",
   "source": "https://miprincipado.asturias.es/ast/bopa-sumario",
-  "lastCheckedUTC": "2026-11-27T16:47:58.801323+00:00",
+  "lastCheckedUTC": "2026-11-28T06:47:50.756502+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "230",
-    "pagesVisited": 21,
-    "announcementsRead": 965,
-    "opportunities": 66
+    "pagesVisited": 20,
+    "announcementsRead": 914,
+    "opportunities": 64
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "210",
       "211",
       "212",
       "213",
@@ -39,7 +38,6 @@
       "230"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -70,11 +68,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 965,
-    "opportunities": 66
+    "issuesRead": 20,
+    "announcementsRead": 914,
+    "opportunities": 64
   },
   "notices": [
     {
@@ -716,26 +715,6 @@
       "bulletin": "211",
       "type": "Bolsa de trabajo",
       "url": "https://www.asturias.es/bopa/2026/10/30/2026-08628.pdf"
-    },
-    {
-      "id": "AS-2026-08847",
-      "province": "Asturias (BOPA)",
-      "title": "Resolución de 23 de octubre de 2026, de la Directora del Instituto Asturiano de Administración Pública “Adolfo Posada”, por la que se convocan pruebas selectivas para el ingreso en el Cuerpo de Gestión de la Administración del Principado de Asturias.",
-      "entity": "Instituto Asturiano de Administración Pública \"Adolfo Posada\"",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/29/2026-08847.pdf"
-    },
-    {
-      "id": "AS-2026-08598",
-      "province": "Asturias (BOPA)",
-      "title": "Anuncio. Bases y convocatoria para la selección de un/a Dinamizador/a Social en el marco de los contratos formativos para la obtención de la práctica profesional adecuada al nivel de estudios 2026-2027 del Ayuntamiento de Teverga.",
-      "entity": "Ayuntamiento de Teverga",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.asturias.es/bopa/2026/10/29/2026-08598.pdf"
     }
   ]
 }

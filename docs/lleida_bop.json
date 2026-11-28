@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Lleida (BOP)",
   "source": "https://ebop.diputaciolleida.cat/bop/",
-  "lastCheckedUTC": "2026-11-27T16:58:01.136109+00:00",
+  "lastCheckedUTC": "2026-11-28T06:55:27.785728+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "228",
-    "pagesVisited": 23,
-    "announcementsRead": 1041,
-    "opportunities": 59
+    "pagesVisited": 22,
+    "announcementsRead": 998,
+    "opportunities": 56
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -40,7 +39,6 @@
       "228"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -71,11 +69,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 1041,
-    "opportunities": 59
+    "issuesRead": 21,
+    "announcementsRead": 998,
+    "opportunities": 56
   },
   "notices": [
     {
@@ -637,36 +636,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/208/202620808944.pdf"
-    },
-    {
-      "id": "LE-202620709024",
-      "province": "Lleida (BOP)",
-      "title": "Anunci aprovació bases i convocatòria plaça operari/ària de neteja",
-      "entity": "AJUNTAMENT D'ARTESA DE SEGRE (ARTESA DE SEGRE)",
-      "date": "29/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/207/202620709024.pdf"
-    },
-    {
-      "id": "LE-202620708935",
-      "province": "Lleida (BOP)",
-      "title": "Anunci d’aprovació de bases i convocatòria que han de regir la creació d’una borsa de treball per cobrir vacants i substitucions de les places de secretaria intervenció de classe tercera, adscrites al Servei d’Assistència Tècnica (SAT) del Consell Comarcal de la Noguera",
-      "entity": "CONSELL COMARCAL DE LA NOGUERA (BALAGUER)",
-      "date": "29/10/2026",
-      "bulletin": "207",
-      "type": "Bolsa de trabajo",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/207/202620708935.pdf"
-    },
-    {
-      "id": "LE-202620708918",
-      "province": "Lleida (BOP)",
-      "title": "Bases reguladores i convocatoria del procés de selecció, mitjançant concurs oposició lliure, per proveir un lloc de treball en règim laboral indefinit fix inicialment amb modalitat de contracte de relleu, a temps complet, del lloc de treball de tècnic/a dinamitzador/a ocupacional, Grup A1",
-      "entity": "CONSELL COMARCAL DEL PALLARS JUSSÀ (TREMP)",
-      "date": "29/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://ebop.diputaciolleida.cat/aplicacions/bop/bopV1/fitxers/pdf/2026/207/202620708918.pdf"
     }
   ]
 }

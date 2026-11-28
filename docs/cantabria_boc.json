@@ -2,23 +2,21 @@
   "schemaVersion": 1,
   "province": "Cantabria (BOC)",
   "source": "https://boc.cantabria.es/boces/",
-  "lastCheckedUTC": "2026-11-27T16:51:11.714894+00:00",
+  "lastCheckedUTC": "2026-11-28T06:49:38.858405+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "229",
-    "pagesVisited": 28,
-    "announcementsRead": 935,
-    "opportunities": 35,
+    "pagesVisited": 26,
+    "announcementsRead": 874,
+    "opportunities": 31,
     "announcementsReadMeaning": "anuncios (CVE) del sumario de cada BOC, ordinarios y extraordinarios, contrastados con el XML oficial del boletín"
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "208",
-      "Ext. 29",
       "209",
       "210",
       "211",
@@ -47,8 +45,6 @@
       "229"
     ],
     "publicationDates": [
-      "2026-10-29",
-      "2026-10-29",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -84,13 +80,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 28,
-    "announcementsRead": 935,
-    "opportunities": 35,
+    "issuesRead": 26,
+    "announcementsRead": 874,
+    "opportunities": 31,
     "regularBulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -114,7 +110,6 @@
       "229"
     ],
     "extraordinaryBulletins": [
-      "Ext. 29",
       "Ext. 30",
       "Ext. 31",
       "Ext. 32",
@@ -122,8 +117,6 @@
       "Ext. 34"
     ],
     "officialIssueIds": [
-      47325,
-      47425,
       47365,
       47385,
       47405,
@@ -462,46 +455,6 @@
       "bulletin": "212",
       "type": "Plaza / oposición",
       "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442177"
-    },
-    {
-      "id": "CN-2026-8418",
-      "province": "Cantabria (BOC)",
-      "title": "Bases que han de regir la selección para la cobertura de una (1) plaza de Inspector Responsable de Instalaciones y Servicios Auxiliares del Servicio Municipal de Transportes Urbanos, Subgrupo C1, mediante el sistema de concurso-oposición, turno de promoción interna.",
-      "entity": "Ayuntamiento de Santander",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442338"
-    },
-    {
-      "id": "CN-2026-8416",
-      "province": "Cantabria (BOC)",
-      "title": "Bases y convocatoria para la cobertura de cuarenta y siete (47) plazas de Conductor-Perceptor del Servicio Municipal de Transportes Urbanos, Grupo C, Subgrupo C2, mediante el sistema de concurso-oposición, por el turno de promoción interna.",
-      "entity": "Ayuntamiento de Santander",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442337"
-    },
-    {
-      "id": "CN-2026-8415",
-      "province": "Cantabria (BOC)",
-      "title": "Bases y convocatoria de selección para la cobertura de una plaza de Oficial 1º Administrativo Contabilidad del Servicio Municipal de Transportes Urbanos, Subgrupo C1, mediante el sistema de concurso-oposición, por el turno de promoción interna.",
-      "entity": "Ayuntamiento de Santander",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442332"
-    },
-    {
-      "id": "CN-2026-8397",
-      "province": "Cantabria (BOC)",
-      "title": "Resolución de 23 de octubre de 2026, aprobando las Bases Generales de las convocatorias de pruebas selectivas, para cobertura interina y formación de Bolsas de Empleo destinadas a cubrir temporalmente plazas o puestos del Ayuntamiento.",
-      "entity": "Ayuntamiento de Valderredible",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Bolsa de trabajo",
-      "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=442318"
     }
   ]
 }

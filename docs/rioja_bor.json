@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "La Rioja (BOR)",
   "source": "https://ias1.larioja.org/boletin/ExportarBoletinServlet",
-  "lastCheckedUTC": "2026-11-27T16:59:45.147152+00:00",
+  "lastCheckedUTC": "2026-11-28T06:56:57.674219+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "230",
-    "pagesVisited": 22,
-    "announcementsRead": 671,
-    "opportunities": 51
+    "pagesVisited": 21,
+    "announcementsRead": 644,
+    "opportunities": 50
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "209",
       "210",
       "211",
       "212",
@@ -40,7 +39,6 @@
       "230"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -71,11 +69,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 671,
-    "opportunities": 51
+    "issuesRead": 21,
+    "announcementsRead": 644,
+    "opportunities": 50
   },
   "notices": [
     {
@@ -676,18 +675,6 @@
       "type": "Plaza / oposición",
       "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42998099-1-PDF-580516",
       "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F30&referencia=42955549-4-HTML-580516-X",
-      "originalFormat": "pdf"
-    },
-    {
-      "id": "RI-2026-fe0da30995ff739c17",
-      "province": "La Rioja (BOR)",
-      "title": "TÉCNICO/A: se convoca proceso selectivo para la contratación de un técnico como personal indefinido con cargo a financiación externa finalista del proyecto: Soluciones innovadoras para la mejora de la seguridad alimentaria de quesos curados producidos y comercializados en el área transfronteriza España-Francia",
-      "entity": "UNIVERSIDAD DE LA RIOJA",
-      "date": "29/10/2026",
-      "bulletin": "209",
-      "type": "Plaza / oposición",
-      "url": "https://ias1.larioja.org/boletin/Bor_Boletin_visor_Servlet?referencia=42969595-1-PDF-580488",
-      "officialHtml": "https://ias1.larioja.org/boletin/ExportarBoletinServlet?tipo=2&fecha=2026%2F10%2F29&referencia=42927119-5-HTML-580488-X",
       "originalFormat": "pdf"
     }
   ]
