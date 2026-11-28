@@ -72,6 +72,7 @@ SOURCES={
     "JA":("jaen_bop.py",[],"jaen_bop.json"),
     "LE":("lleida_bop.py",[],"lleida_bop.json"),
     "CU":("cuenca_bop.py",[],"cuenca_bop.json"),
+    "MA":("malaga_bop.py",[],"malaga_bop.json"),
 }
 # Portales que no responden a los servidores de GitHub pero sí desde una
 # conexión española: se leen con el ejecutor propio de casa
@@ -79,7 +80,15 @@ SOURCES={
 # Fuentes pequeñas que pueden pasar 30 días sin ninguna convocatoria nueva: se acepta
 # el feed vacío si la lectura es completa (Ceuta, 08/11/2026).
 ALLOW_NO_NOTICES={"CE"}
-HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE","CU"}
+HOME_ONLY={"NA","AS","CE","AB","CN","VD","BU","JA","LE","CU","MA"}
+# Fuentes que no tienen histórico público y se construyen acumulando cada día lo que
+# sí es público (Málaga: solo la portada con el sumario del día, desde el 28/11/2026).
+# Mientras no hay 30 días completos, su lector guarda el día y termina con el código
+# STILL_ACCUMULATING: no es un fallo, no se genera feed y la fuente sigue oculta en la
+# app (SourceCatalog.pendingDailyFeed y sin feed en fuentes_activas.json). Al completar
+# los 30 días el feed se valida y se publica como el de cualquier otra fuente.
+ACCUMULATING={"MA"}
+STILL_ACCUMULATING=3
 # Se leen en GitHub y, como respaldo, también desde casa (fallan a ratos en GitHub).
 # Madrid desde el 24/11/2026: desde el 22/11 su portal no responde a GitHub.
 HOME_BACKUP={"RI","CC","MD"}
@@ -214,6 +223,10 @@ def run(code,out,docs=None):
             print(line,end="",flush=True)
             tail.append(line.rstrip()[:400])
     rc=proc.returncode
+    if rc==STILL_ACCUMULATING and code in ACCUMULATING:
+        target.unlink(missing_ok=True)
+        print(f"ACUMULANDO {code}: día guardado, aún sin 30 días completos; no se publica",flush=True)
+        return None
     if rc!=0 or not target.exists():
         target.unlink(missing_ok=True)
         annotate(f"Lector {code}","\n".join(tail))

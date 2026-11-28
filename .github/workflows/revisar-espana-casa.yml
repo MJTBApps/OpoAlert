@@ -1,6 +1,7 @@
 name: OpoAlert - Revisar boletines desde el PC de casa
 # Portales que no responden a los servidores de GitHub pero sí desde una
-# conexión española (feeds_diarios.HOME_ONLY y HOME_BACKUP). La lectura se hace
+# conexión española (feeds_diarios.HOME_ONLY y HOME_BACKUP). BOP Málaga además
+# acumula aquí cada día su sumario público (feeds_diarios.ACCUMULATING). La lectura se hace
 # en el ejecutor propio de casa (etiqueta opoalert-casa, ver EJECUTOR_CASA.md);
 # la validación y la publicación, en GitHub como el resto de fuentes.
 # Seguridad: solo horario y lanzamiento manual, nunca pull requests.
@@ -53,11 +54,30 @@ jobs:
             echo 'Reintento dentro de 2 minutos'; sleep 120
             "$OPOALERT_PYTHON" -u backend/feeds_diarios.py run ${{ matrix.code }} --out out
           }
+      # Málaga (feeds_diarios.ACCUMULATING) aún acumula sus 30 días: el paso anterior
+      # termina bien sin feed, por eso aquí no se exige archivo. Las demás fuentes, si
+      # no tienen feed, ya han fallado en el paso anterior y este no se ejecuta.
       - uses: actions/upload-artifact@v4
         with:
           name: feed-${{ matrix.code }}
           path: out/*.json
           retention-days: 7
+          if-no-files-found: warn
+      # Copia de seguridad del histórico de Málaga (guardado en el iMac, en
+      # ~/OpoAlert-estado/malaga_bop): si se pierde, hay que volver a acumular 30 días.
+      - name: Copiar el histórico acumulado de Málaga
+        if: matrix.code == 'MA'
+        shell: bash
+        run: |
+          set -u
+          rm -rf estado-malaga
+          cp -R "${OPOALERT_ESTADO:-$HOME/OpoAlert-estado}/malaga_bop" estado-malaga
+      - uses: actions/upload-artifact@v4
+        if: matrix.code == 'MA'
+        with:
+          name: estado-malaga
+          path: estado-malaga
+          retention-days: 30
           if-no-files-found: error
 
   publicar:

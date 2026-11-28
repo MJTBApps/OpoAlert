@@ -1,7 +1,7 @@
 {
   "country": "ES",
-  "updated": "2026-10-30",
-  "note": "Fuentes activas: las 19 originales más las que publican feed diario desde backend/feeds_diarios.py. Las que no responden a GitHub (Navarra, Asturias, Ceuta, Albacete, Cantabria, Valladolid, Burgos, Jaén, BOP Lleida y Cuenca) se leen desde el ejecutor de casa. Málaga pendiente (verificación anti-robots).",
+  "updated": "2026-11-28",
+  "note": "Fuentes activas: las 19 originales más las que publican feed diario desde backend/feeds_diarios.py. Las que no responden a GitHub (Navarra, Asturias, Ceuta, Albacete, Cantabria, Valladolid, Burgos, Jaén, BOP Lleida y Cuenca) se leen desde el ejecutor de casa. Málaga acumula desde el 28/11/2026 el sumario público de cada día desde el ejecutor de casa y se publicará cuando tenga 30 días completos (los sumarios anteriores y los PDF piden verificación de Cloudflare, que no se elude).",
   "nationalSources": [
     {
       "code": "VA",
@@ -259,6 +259,22 @@
         "announcementsRead": 250,
         "candidates": 13,
         "publication": "home_runner"
+      }
+    },
+    {
+      "code": "MA",
+      "territory": "29",
+      "kind": "bop",
+      "name": "BOP Málaga",
+      "portal": "https://www.bopmalaga.es/",
+      "feed": "malaga_bop.json",
+      "state": "accumulating_30_days",
+      "scope": "Solo la portada con el sumario del día es pública; los sumarios anteriores, las fichas de edicto y los PDF piden la verificación de Cloudflare (Turnstile), que no se elude. El ejecutor de casa guarda cada día el sumario (feeds_diarios.ACCUMULATING) y el feed de 30 días se construye con ese histórico. Oculta en la app hasta tener 30 días completos; los enlaces irán a la ficha oficial del edicto, nunca al PDF.",
+      "audit": {
+        "status": "accumulating",
+        "checked": "2026-11-28",
+        "firstBulletin": "BOP 229 (27/11/2026)",
+        "publication": "none_until_30_days"
       }
     },
     {
@@ -703,12 +719,19 @@
       "community": "AN",
       "communityName": "Andalucía",
       "primaryGazette": "bop",
-      "state": "partial_access_security_challenge",
+      "state": "accumulating_daily_summary",
       "audit20261029": {
         "status": "blocked_or_partial",
         "checked": "2026-10-29",
         "summary": "Portal BOP Málaga responde de nuevo, sumarios 30/09 y 01/10 comprobados; en 02/10 activa verificación interactiva (Turnstile) y bloquea auditoría. Los PDFs también exigen verificación humana. NO publicar histórico parcial.",
         "reference": "https://github.com/MJTBApps/OpoAlert/actions/runs/40904996219",
+        "publication": "none",
+        "new_verified_feed": false
+      },
+      "accumulation20261128": {
+        "status": "accumulating",
+        "checked": "2026-11-28",
+        "summary": "El 28/11/2026 se comprueba que la portada (sumario del día y calendario del mes) sigue siendo pública y que los sumarios anteriores, las fichas de edicto y los PDF piden la verificación de Cloudflare. Se acumula cada día la portada desde el ejecutor de casa; no se publica nada hasta tener 30 días completos.",
         "publication": "none",
         "new_verified_feed": false
       }

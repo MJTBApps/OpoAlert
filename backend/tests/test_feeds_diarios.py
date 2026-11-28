@@ -39,8 +39,10 @@ def feed(today,**changes):
 class FeedsDiariosTest(unittest.TestCase):
     def test_registry_matches_app(self):
         codes=set(enum_codes().values());pending=pending_codes()
-        self.assertFalse(set(fd.SOURCES)&pending,"Una fuente con feed diario no debe estar oculta")
-        self.assertEqual(codes-pending-LEGACY,set(fd.SOURCES),
+        # Solo las que aún acumulan sus 30 días (Málaga) están registradas y ocultas a la vez.
+        self.assertEqual(set(fd.SOURCES)&pending,fd.ACCUMULATING,"Una fuente con feed diario no debe estar oculta")
+        self.assertLessEqual(fd.ACCUMULATING,fd.HOME_ONLY)
+        self.assertEqual(codes-pending-LEGACY,set(fd.SOURCES)-fd.ACCUMULATING,
             "Toda fuente visible en la app necesita feed diario, y viceversa")
         rules=fd.app_rules()
         for code,(script,_,name) in fd.SOURCES.items():
@@ -79,6 +81,24 @@ class FeedsDiariosTest(unittest.TestCase):
         issues=[{"day":today-timedelta(days=i),"number":100-i,"read":3,"notices":[]} for i in range(0,30,2)]
         self.assertEqual(publish_audit("s","p",issues,today=today,allow_empty=True)["notices"],[])
         with self.assertRaises(ProvincialCoverageError):publish_audit("s","p",issues,today=today)
+
+class AccumulatingTest(unittest.TestCase):
+    def test_still_accumulating_is_not_an_error(self):
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as tmp:
+            script=Path(tmp)/"acumula.py"
+            script.write_text(f"import sys;print('ACUMULANDO');sys.exit({fd.STILL_ACCUMULATING})\n",encoding="utf-8")
+            sources={**fd.SOURCES,"MA":(str(script),[],"malaga_bop.json"),"CU":(str(script),[],"cuenca_bop.json")}
+            with mock.patch.object(fd,"SOURCES",sources):
+                self.assertIsNone(fd.run("MA",Path(tmp)/"out",docs=tmp))
+                with self.assertRaises(fd.FeedError):fd.run("CU",Path(tmp)/"out",docs=tmp)
+
+    def test_health_check_ignores_missing_feed_while_accumulating(self):
+        import salud_feeds
+        with tempfile.TemporaryDirectory() as tmp:
+            stale=salud_feeds.check(tmp,datetime.now(timezone.utc))
+        self.assertFalse(any(s.startswith("malaga_bop.json") for s in stale))
+        self.assertTrue(any(s.startswith("cuenca_bop.json") for s in stale))
 
 def numbering_ok_main(main):
     from clm_common import numbering_ok

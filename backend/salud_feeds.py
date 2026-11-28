@@ -20,6 +20,11 @@ def feeds():
     text=PROVINCE.read_text(encoding="utf-8")
     return sorted(set(re.findall(r'"https://mjtbapps\.github\.io/OpoAlert/([\w./-]+\.json)"',text)))
 
+def accumulating_feeds():
+    """Fuentes que aún acumulan sus 30 días (feeds_diarios.ACCUMULATING): no tienen feed todavía."""
+    import feeds_diarios
+    return {feeds_diarios.SOURCES[c][2] for c in feeds_diarios.ACCUMULATING}
+
 def weekday_hours(start,end):
     """Horas entre start y end sin contar sábados ni domingos (UTC)."""
     total=0.0;t=start
@@ -33,6 +38,7 @@ def check(docs,now,max_hours=MAX_HOURS):
     stale=[]
     for name in feeds():
         path=Path(docs)/name
+        if name in accumulating_feeds() and not path.exists():continue
         try:
             checked=json.loads(path.read_text(encoding="utf-8"))["lastCheckedUTC"]
             when=datetime.fromisoformat(checked.replace("Z","+00:00"))

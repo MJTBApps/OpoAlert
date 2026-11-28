@@ -21,10 +21,12 @@ class CatalogTests(unittest.TestCase):
         sources=self.data["nationalSources"]
         active={x["code"] for x in sources if x["state"]=="active"}
         legacy={"VA","AL","CS","ES","CB","CG","CL","CT","TB","BB","BG","HU","TE","ZA","CA","AM","GR","SV","CO"}
-        daily={x["code"] for x in sources}&set(feeds_diarios.SOURCES)
+        daily={x["code"] for x in sources}&(set(feeds_diarios.SOURCES)-feeds_diarios.ACCUMULATING)
         self.assertEqual(active,legacy|daily)
         private={x["code"] for x in sources if x["state"]=="private_apk_snapshot"}
         self.assertEqual(private,set())
+        accumulating={x["code"] for x in sources if x["state"]=="accumulating_30_days"}
+        self.assertEqual(accumulating,feeds_diarios.ACCUMULATING)
         blocked={x["code"] for x in sources if x["state"]=="blocked_official_portal"}
         self.assertEqual(blocked,set())
         cido=[x for x in sources if x["kind"]=="catalogo_empleo"]

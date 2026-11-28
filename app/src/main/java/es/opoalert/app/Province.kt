@@ -455,6 +455,16 @@ enum class Province(
         "bop.dipujaen.es", "/descargarws.dip",
         Regex("JA-\\d{4}-\\d{1,6}"),
     ),
+    // BOP Málaga: solo la portada (sumario del día) es pública; el feed se construye
+    // acumulando cada día desde el ejecutor de casa (backend/malaga_bop.py). Los enlaces
+    // van a la ficha oficial del edicto, nunca al PDF (pide verificación de Cloudflare).
+    MALAGA_BOP(
+        "MA", "Málaga",
+        "https://mjtbapps.github.io/OpoAlert/malaga_bop.json",
+        "https://www.bopmalaga.es/",
+        "www.bopmalaga.es", "/edicto.php",
+        Regex("MA-\\d{8}-\\d{5}-\\d{2}"),
+    ),
     LLEIDA_BOP(
         "LE", "Lleida (BOP)",
         "https://mjtbapps.github.io/OpoAlert/lleida_bop.json",
@@ -543,6 +553,7 @@ enum class Province(
             id.startsWith("BU-") -> BURGOS_BOP
             id.startsWith("JA-") -> JAEN_BOP
             id.startsWith("LE-") -> LLEIDA_BOP
+            id.startsWith("MA-") -> MALAGA_BOP
             else -> VALENCIA
         }
     }

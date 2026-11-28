@@ -8,7 +8,7 @@ import org.junit.Test
 class ProvinceTest {
     @Test fun threeProvincesAndNationalBOEAvailable() {
         assertEquals(listOf("Valencia", "Alicante", "Castellón", "España (BOE)",
-            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Salamanca", "Segovia", "Soria", "Castilla y León (BOCYL)", "Badajoz", "Cáceres", "Extremadura (DOE)", "Región de Murcia (BORM)", "Álava", "Bizkaia", "Gipuzkoa", "País Vasco (BOPV)", "A Coruña", "Lugo", "Ourense", "Pontevedra", "Galicia (DOG)", "Navarra", "La Rioja (BOR)", "Melilla (BOME)", "Canarias (BOC)", "Las Palmas (BOP)", "Santa Cruz de Tenerife (BOP)", "Illes Balears (BOIB)", "Comunidad Valenciana (DOGV)", "Cataluña (DOGC)", "Aragón (BOA)", "Andalucía (BOJA)", "Asturias (BOPA)", "Ceuta (BOCCE)", "Cantabria (BOC)", "Valladolid", "Burgos", "Jaén", "Lleida (BOP)", "Cádiz"), Province.entries.map { it.label })
+            "Barcelona", "Girona", "Lleida", "Tarragona", "Tarragona (BOP)", "Barcelona (BOP)", "Girona (BOP)", "Huesca", "Teruel", "Zaragoza", "Almería", "Córdoba", "Granada", "Sevilla", "Huelva", "Madrid", "Albacete", "Ciudad Real", "Cuenca", "Guadalajara", "Toledo", "Castilla-La Mancha (DOCM)", "Ávila", "León", "Palencia", "Zamora", "Salamanca", "Segovia", "Soria", "Castilla y León (BOCYL)", "Badajoz", "Cáceres", "Extremadura (DOE)", "Región de Murcia (BORM)", "Álava", "Bizkaia", "Gipuzkoa", "País Vasco (BOPV)", "A Coruña", "Lugo", "Ourense", "Pontevedra", "Galicia (DOG)", "Navarra", "La Rioja (BOR)", "Melilla (BOME)", "Canarias (BOC)", "Las Palmas (BOP)", "Santa Cruz de Tenerife (BOP)", "Illes Balears (BOIB)", "Comunidad Valenciana (DOGV)", "Cataluña (DOGC)", "Aragón (BOA)", "Andalucía (BOJA)", "Asturias (BOPA)", "Ceuta (BOCCE)", "Cantabria (BOC)", "Valladolid", "Burgos", "Jaén", "Málaga", "Lleida (BOP)", "Cádiz"), Province.entries.map { it.label })
     }
     @Test fun keepOldValenciaIdsAndUseProvincialPrefixes() {
         assertTrue(Province.VALENCIA.idPattern.matches("2026/12855"))
@@ -95,6 +95,11 @@ class ProvinceTest {
         assertEquals(Province.LLEIDA_BOP, Province.fromNoticeId("LE-202620809071"))
         assertTrue(Province.LLEIDA_BOP.idPattern.matches("LE-20265035"))  // BOP 5 de enero
         assertEquals(Province.LLEIDA, Province.fromNoticeId("CIDO7-123"))  // el CIDO sigue aparte
+        // BOP Málaga: ficha oficial del edicto, nunca el PDF con verificación de Cloudflare.
+        assertEquals(Province.MALAGA_BOP, Province.fromNoticeId("MA-20261127-04410-00"))
+        assertTrue(Province.MALAGA_BOP.idPattern.matches("MA-20261127-04410-00"))
+        assertTrue(Province.MALAGA_BOP.allowsOfficialPath("/edicto.php"))
+        assertFalse(Province.MALAGA_BOP.allowsOfficialPath("/verificacion.php"))
         assertTrue(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/2026/10/29/2026-08847.pdf"))
         assertFalse(Province.ASTURIAS_BOPA.allowsOfficialPath("/bopa/not-original"))
         // Cambio de año: identificadores y rutas oficiales de 2027 siguen siendo válidos.
@@ -151,8 +156,8 @@ class ProvinceTest {
         assertFalse(Province.ALMERIA.allowsOfficialPath("/untrusted/notice.pdf"))
     }
     @Test fun everyFeedIsFromOurPublicSiteButOfficialSourcesDiffer() {
-        assertEquals(66, Province.entries.map { it.feedUrl }.toSet().size)
+        assertEquals(67, Province.entries.map { it.feedUrl }.toSet().size)
         assertTrue(Province.entries.all { it.feedUrl.startsWith("https://mjtbapps.github.io/OpoAlert/") })
-        assertEquals(62, Province.entries.map { it.expectedSource }.toSet().size)
+        assertEquals(63, Province.entries.map { it.expectedSource }.toSet().size)
     }
 }

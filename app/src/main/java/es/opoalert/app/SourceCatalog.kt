@@ -72,6 +72,7 @@ object SourceCatalog {
         Province.VALLADOLID_BOP -> Territory("Castilla y León", "Valladolid")
         Province.BURGOS_BOP -> Territory("Castilla y León", "Burgos")
         Province.JAEN_BOP -> Territory("Andalucía", "Jaén")
+        Province.MALAGA_BOP -> Territory("Andalucía", "Málaga")
         Province.HUESCA -> Territory("Aragón", "Huesca")
         Province.TERUEL -> Territory("Aragón", "Teruel")
         Province.ZARAGOZA -> Territory("Aragón", "Zaragoza")
@@ -113,8 +114,9 @@ object SourceCatalog {
      * Fuentes que todavía no publican un feed diario en GitHub Pages
      * (backend/feeds_diarios.py). Se ocultan hasta que su lector funcione
      * cada día; nunca se muestran datos congelados.
+     * Málaga: acumulando 30 días de sumarios desde el 28/11/2026 (feeds_diarios.ACCUMULATING).
      */
-    val pendingDailyFeed: Set<Province> = setOf()
+    val pendingDailyFeed: Set<Province> = setOf(Province.MALAGA_BOP)
 
     private const val PREFS = "opoalert_store"
     private const val ACTIVE = "active_sources_v1"

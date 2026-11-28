@@ -4,6 +4,7 @@ Algunos boletines (Navarra, Asturias, Ceuta, y a ratos La Rioja, Cáceres y Madr
 
 - No hace falta dejar ninguna sesión abierta ni tener nada a la vista: funciona como un servicio en segundo plano.
 - Si el ordenador está apagado, esas fuentes simplemente no se actualizan esa vez; el resto de la app sigue igual.
+- **BOP Málaga** es distinto: solo es público el sumario del día, así que el ordenador lo **guarda cada día** en `~/OpoAlert-estado/malaga_bop` (no lo borres) y el feed sale cuando hay 30 días seguidos. Un día con el ordenador apagado retrasa la publicación de Málaga 30 días; si se pierde la carpeta, se puede recuperar del artefacto `estado-malaga` de la última ejecución.
 - Solo ejecuta el workflow `revisar-espana-casa.yml` de este repositorio, nunca código de otras personas (ver el paso 1).
 
 ---

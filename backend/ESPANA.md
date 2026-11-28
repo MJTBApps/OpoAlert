@@ -47,7 +47,22 @@ Auditoría real de 30 días (01/10–30/10/2026), validada con las reglas de
   propio con verificación de certificado y nombre de host activadas.
 - **Jaén**: el portal devuelve HTTP 429 sin pausa entre peticiones; el
   lector espera 0,6 s. Tarda unos 2 minutos.
-- **Málaga** sigue fuera: verificación anti-robots en los PDF (no se elude).
+- **Málaga** (`malaga_bop.py`, MA): **acumulando desde el 28/11/2026, oculta**.
+  Solo la portada de `https://www.bopmalaga.es/` es pública (sumario del último
+  boletín y calendario del mes). Los sumarios de otros días (`index.php?fecha=`
+  devuelve el del día), las fichas `edicto.php` y los PDF (`verificacion.php`)
+  piden la verificación de Cloudflare, que **no se elude**. El ejecutor de casa
+  guarda cada ronda la portada en `~/OpoAlert-estado/malaga_bop` (fuera del
+  repositorio; copia de seguridad en el artefacto `estado-malaga`, 30 días):
+  `boletines/<fecha>.json` con todos los edictos, `calendario/<día observado>.json`
+  y la portada original en `html/`. El feed se construye con ese histórico solo
+  si están todos los BOP del calendario oficial de la ventana; mientras tanto el
+  lector termina con el código 3 y `feeds_diarios.run` lo trata como «acumulando»
+  (`feeds_diarios.ACCUMULATING`), sin feed y sin fallo. Si el iMac pierde un día,
+  la ventana no se completa hasta 30 días después del hueco. Enlaces: ficha
+  oficial del edicto `edicto.php?edicto=AAAAMMDD-NNNNN-AAAA-RR` (sin el `id`
+  firmado de la portada, que caduca en un día), nunca el PDF. Primer boletín
+  guardado: BOP 229 de 27/11/2026 (36 edictos).
 
 ## Próximas integraciones
 
@@ -127,10 +142,9 @@ candidata, y un validador independiente rechaza feeds parciales.
 El filtrado de empleo es conservador; candidatos no significa vacantes
 confirmadas y se debe contrastar cada anuncio oficial.
 
-**Huelva**, **Málaga** y **Jaén** aún no están activos
-como fuentes independientes: Málaga tiene conexiones intermitentes desde
-Actions, Huelva todavía requiere una auditoría completa de su archivo y
-Jaén presenta huecos de numeración.
+**Huelva**, **Málaga** y **Jaén** aún no estaban activos
+como fuentes independientes (nota del 29/10/2026; Huelva y Jaén ya tienen
+feed diario y Málaga acumula sus 30 días desde el 28/11/2026).
 
 ## Córdoba — 22 boletines y PDFs verificados (29/10/2026)
 

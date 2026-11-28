@@ -645,6 +645,16 @@ public enum Fuentes {
             fullName: "Boletín Oficial Provincial", isCido: false
         ),
         Source(
+            code: "MA", label: "Málaga",
+            feedURL: "https://mjtbapps.github.io/OpoAlert/malaga_bop.json",
+            expectedSource: "https://www.bopmalaga.es/",
+            pdfHost: "www.bopmalaga.es", pdfPathPrefix: "/edicto.php",
+            idPattern: #"MA-\d{8}-\d{5}-\d{2}"#, extraPaths: [],
+            community: "Andalucía", territory: "Málaga",
+            name: "BOP · boletín provincial", shortName: "BOP",
+            fullName: "Boletín Oficial Provincial", isCido: false
+        ),
+        Source(
             code: "LE", label: "Lleida (BOP)",
             feedURL: "https://mjtbapps.github.io/OpoAlert/lleida_bop.json",
             expectedSource: "https://ebop.diputaciolleida.cat/bop/",
@@ -733,6 +743,7 @@ public enum Fuentes {
         ("BU-", "BU"),
         ("JA-", "JA"),
         ("LE-", "LE"),
+        ("MA-", "MA"),
     ]
     public static let fallbackCode = "VA"
 
@@ -781,5 +792,5 @@ public enum Fuentes {
     ]
 
     /// Fuentes sin feed diario: se ocultan (SourceCatalog.pendingDailyFeed).
-    public static let pendingDailyFeed: Set<String> = []
+    public static let pendingDailyFeed: Set<String> = ["MA"]
 }
