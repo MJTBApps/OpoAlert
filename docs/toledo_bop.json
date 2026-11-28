@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Toledo",
   "source": "https://bop.diputoledo.es/webEbop/",
-  "lastCheckedUTC": "2026-11-27T16:41:46.055215+00:00",
+  "lastCheckedUTC": "2026-11-28T06:31:12.345005+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "227",
-    "pagesVisited": 20,
-    "announcementsRead": 505,
-    "opportunities": 28
+    "pagesVisited": 19,
+    "announcementsRead": 472,
+    "opportunities": 27
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "208",
       "209",
       "210",
       "211",
@@ -38,7 +37,6 @@
       "227"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -69,11 +67,12 @@
       "2026-11-15",
       "2026-11-21",
       "2026-11-22",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-28"
     ],
-    "issuesRead": 20,
-    "announcementsRead": 505,
-    "opportunities": 28
+    "issuesRead": 19,
+    "announcementsRead": 472,
+    "opportunities": 27
   },
   "notices": [
     {
@@ -345,16 +344,6 @@
       "bulletin": "210",
       "type": "Bolsa de trabajo",
       "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104753;0&insert_number=4977&insert_year=2026"
-    },
-    {
-      "id": "TO-2026-4944",
-      "province": "Toledo",
-      "title": "Bases proceso selectivo de dos plazas de Administrativo (Administración General) por turno libre por concurso-oposición, como funcionario de carrera",
-      "entity": "AYUNTAMIENTO DE NAVAHERMOSA",
-      "date": "29/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026"
     }
   ]
 }

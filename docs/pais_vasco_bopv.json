@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "País Vasco (BOPV)",
   "source": "https://api.euskadi.eus/bopv/administrative-acts",
-  "lastCheckedUTC": "2026-11-27T16:40:36.386908+00:00",
+  "lastCheckedUTC": "2026-11-28T06:30:06.078618+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "228",
-    "pagesVisited": 22,
-    "announcementsRead": 307,
-    "opportunities": 42
+    "pagesVisited": 21,
+    "announcementsRead": 287,
+    "opportunities": 37
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "207",
       "208",
       "209",
       "210",
@@ -40,7 +39,6 @@
       "228"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-02",
       "2026-11-03",
@@ -71,48 +69,19 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 307,
-    "opportunities": 42
+    "issuesRead": 21,
+    "announcementsRead": 287,
+    "opportunities": 37
   },
   "notices": [
-    {
-      "id": "PV-2026-5087",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo a la convocatoria para la provisión con carácter definitivo, mediante libre designación, del puesto 1679.B0 Subdirección de Aplicaciones y Procedimientos Presupuestarios, adscrito a la Dirección de Intervención General Municipal.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "27/11/2026",
-      "bulletin": "228",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605087a.pdf"
-    },
-    {
-      "id": "PV-2026-5086",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo a la convocatoria para la provisión con carácter definitivo, mediante libre designación, del puesto 1139.00 Subdirección de Financiación de Proyectos, adscrito a la Dirección de Hacienda.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "27/11/2026",
-      "bulletin": "228",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605086a.pdf"
-    },
-    {
-      "id": "PV-2026-5085",
-      "province": "País Vasco (BOPV)",
-      "title": "ANUNCIO relativo a la convocatoria para la provisión con carácter definitivo, mediante libre designación, del puesto 1281.B0 Subdirección de Servicios Generales, adscrito a la Dirección de Hacienda.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
-      "date": "27/11/2026",
-      "bulletin": "228",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/11/2605085a.pdf"
-    },
     {
       "id": "PV-2026-5083",
       "province": "País Vasco (BOPV)",
       "title": "ORDEN de 19 de noviembre de 2026, de la consejera de Justicia y Derechos Humanos, por la que se nombran miembros de la comisión de valoración de méritos para el concurso específico en razón de puesto y/o idioma, para la cobertura de los puestos singularizados de los Cuerpos de Gestión Procesal y Administrativa, Tramitación Procesal y Administrativa y Auxilio Judicial de los partidos judiciales de Amurrio, Azpeitia, Balmaseda, Bergara, Durango, Gernika-Lumo, Getxo, Irun, Tolosa, Eibar y Barakaldo, así como del Instituto Vasco de Medicina Legal, de Secretaría de Gobierno y de Oficina Fiscal de Vitoria-Gasteiz y Donostia / San Sebastián, y Juzgados de Paz del partido judicial de Bilbao, convocado mediante Orden de 28 de septiembre de 2026.",
-      "entity": "Emisor: consultar anuncio oficial (BOPV)",
+      "entity": "Justicia y Derechos Humanos",
       "date": "27/11/2026",
       "bulletin": "228",
       "type": "Plaza / oposición",
@@ -477,26 +446,6 @@
       "bulletin": "208",
       "type": "Plaza / oposición",
       "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604572a.pdf"
-    },
-    {
-      "id": "PV-2026-4563",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 13 de octubre de 2026, del consejero de Ciencia, Universidades e Innovación, por la que se aprueban las bases reguladoras de las ayudas destinadas a la realización de estancias de movilidad por parte del personal investigador doctor y su convocatoria para el año 2027.",
-      "entity": "Ciencia, Universidades e Innovación",
-      "date": "29/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604563a.pdf"
-    },
-    {
-      "id": "PV-2026-4558",
-      "province": "País Vasco (BOPV)",
-      "title": "ORDEN de 15 de octubre de 2026, del consejero de Salud, por la que se anuncia la convocatoria pública para la provisión, por el sistema de libre designación, del puesto de trabajo de secretario/a alto cargo de la Dirección de Atención Sociosanitaria.",
-      "entity": "Salud",
-      "date": "29/10/2026",
-      "bulletin": "207",
-      "type": "Plaza / oposición",
-      "url": "https://www.euskadi.eus/bopv2/datos/2026/10/2604558a.pdf"
     }
   ]
 }

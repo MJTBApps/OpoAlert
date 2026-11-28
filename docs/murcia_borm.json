@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Región de Murcia (BORM)",
   "source": "https://transparencia.carm.es/rest-services/services/restFile/BORMIndice.json",
-  "lastCheckedUTC": "2026-11-27T16:40:34.769213+00:00",
+  "lastCheckedUTC": "2026-11-28T06:29:32.061396+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "275",
+    "bulletin": "276",
     "pagesVisited": 28,
     "announcementsRead": 610,
     "opportunities": 66
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "250",
       "251",
       "252",
       "253",
@@ -43,10 +42,10 @@
       "9E",
       "273",
       "274",
-      "275"
+      "275",
+      "276"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-10-31",
       "2026-11-02",
@@ -73,7 +72,8 @@
       "2026-11-24",
       "2026-11-25",
       "2026-11-26",
-      "2026-11-27"
+      "2026-11-27",
+      "2026-11-28"
     ],
     "nonPublicationDates": [
       "2026-11-01",
@@ -86,6 +86,16 @@
     "opportunities": 66
   },
   "notices": [
+    {
+      "id": "MU-2026-5902",
+      "province": "Región de Murcia (BORM)",
+      "title": "Anuncio de bases para la provisión en propiedad de una plaza de Técnico Responsable de Actividades, Mantenimiento y Riesgos Laborales del Ayuntamiento de Bullas, mediante concurso-oposición libre.",
+      "entity": "Bullas",
+      "date": "28/11/2026",
+      "bulletin": "276",
+      "type": "Plaza / oposición",
+      "url": "https://www.borm.es/services/anuncio/846584/pdf"
+    },
     {
       "id": "MU-2026-5887",
       "province": "Región de Murcia (BORM)",
@@ -735,16 +745,6 @@
       "bulletin": "251",
       "type": "Plaza / oposición",
       "url": "https://www.borm.es/services/anuncio/845986/pdf"
-    },
-    {
-      "id": "MU-2026-5284",
-      "province": "Región de Murcia (BORM)",
-      "title": "Resolución del Rector de la Universidad de Murcia (R-1385/2026) de 22 de octubre, por la que se convoca concurso-oposición para la provisión de plazas de Profesorado Permanente Laboral.",
-      "entity": "Consejería de Medio Ambiente, Industria, Universidades, Investigación y Mar Menor - Universidad de Murcia",
-      "date": "29/10/2026",
-      "bulletin": "250",
-      "type": "Plaza / oposición",
-      "url": "https://www.borm.es/services/anuncio/845966/pdf"
     }
   ]
 }

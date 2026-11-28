@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Canarias (BOC)",
   "source": "https://www.gobiernodecanarias.org/boc/archivo/",
-  "lastCheckedUTC": "2026-11-27T16:38:26.887689+00:00",
+  "lastCheckedUTC": "2026-11-28T06:27:22.909077+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "239",
-    "pagesVisited": 23,
-    "announcementsRead": 461,
-    "opportunities": 61
+    "pagesVisited": 22,
+    "announcementsRead": 446,
+    "opportunities": 58
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "217",
       "218",
       "219",
       "220",
@@ -41,7 +40,6 @@
       "239"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -74,11 +72,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 23,
-    "announcementsRead": 461,
-    "opportunities": 61
+    "issuesRead": 22,
+    "announcementsRead": 446,
+    "opportunities": 58
   },
   "notices": [
     {
@@ -660,36 +659,6 @@
       "bulletin": "218",
       "type": "Plaza / oposición",
       "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-218-3737.pdf"
-    },
-    {
-      "id": "IC-2026-3727",
-      "province": "Canarias (BOC)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, conjunta de la Universidad de la Laguna y el Servicio Canario de la Salud, por la que se convoca concurso público, por el procedimiento ordinario, para la provisión de plazas vinculadas de personal docente e investigador contratado, en régimen de derecho laboral, en la figura de Profesor y Profesora Permanente Laboral.",
-      "entity": "Universidad de La Laguna",
-      "date": "29/10/2026",
-      "bulletin": "217",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf"
-    },
-    {
-      "id": "IC-2026-3726",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de Estudios, Formación e Investigación en Seguridad Pública.- Resolución de 14 de octubre de 2026, por la que se asigna código de puesto de trabajo y se concreta la adscripción provisional del personal funcionario en prácticas del Cuerpo General de la Policía Canaria, Escala Básica, Empleo Oficial u Oficiala (Grupo C, Subgrupo C1), nombrado mediante Resolución de 26 de junio de 2026, en el proceso selectivo, por promoción interna, convocado por Resolución de 13 de junio de 2024, y modificada por Resolución de 23 de julio de 2024.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "29/10/2026",
-      "bulletin": "217",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3726.pdf"
-    },
-    {
-      "id": "IC-2026-3725",
-      "province": "Canarias (BOC)",
-      "title": "Dirección General de Estudios, Formación e Investigación en Seguridad Pública.- Resolución de 14 de octubre de 2026, por la que se asigna código de puesto de trabajo y se acuerda la adscripción provisional de la persona nombrada funcionaria en prácticas del Cuerpo General de la Policía Canaria, Escala Básica, Empleo Oficial u Oficiala (Grupo C, Subgrupo C1), mediante Resolución de 25 de junio de 2026, en ejecución de sentencia judicial, en el proceso selectivo, por promoción interna, convocado por Resolución de 14 de abril de 2021, de la extinta Dirección General de Seguridad y Emergencias.",
-      "entity": "Consejería de Presidencia, Administraciones Públicas, Justicia y Seguridad",
-      "date": "29/10/2026",
-      "bulletin": "217",
-      "type": "Plaza / oposición",
-      "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3725.pdf"
     }
   ]
 }

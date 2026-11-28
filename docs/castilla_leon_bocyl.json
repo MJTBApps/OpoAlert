@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Castilla y León (BOCYL)",
   "source": "https://bocyl.jcyl.es/",
-  "lastCheckedUTC": "2026-11-27T16:35:57.542281+00:00",
+  "lastCheckedUTC": "2026-11-28T06:24:45.510840+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "230",
-    "pagesVisited": 21,
-    "announcementsRead": 934,
-    "opportunities": 193
+    "pagesVisited": 20,
+    "announcementsRead": 892,
+    "opportunities": 184
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "210",
       "211",
       "212",
       "213",
@@ -39,7 +38,6 @@
       "230"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -70,11 +68,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 934,
-    "opportunities": 193
+    "issuesRead": 20,
+    "announcementsRead": 892,
+    "opportunities": 184
   },
   "notices": [
     {
@@ -1916,96 +1915,6 @@
       "bulletin": "211",
       "type": "Bolsa de trabajo",
       "url": "https://bocyl.jcyl.es/boletines/2026/10/30/pdf/BOCYL-D-30102026-211-11.pdf"
-    },
-    {
-      "id": "CY-20261029-9",
-      "province": "Castilla y León (BOCYL)",
-      "title": "ORDEN SAN/1115/2026, de 23 de octubre, por la que en aplicación de la Orden SAN/1366/2025, de 28 de noviembre, se completa la relación de aspirantes que han superado el proceso selectivo para el acceso a la condición de personal estatutario fijo de gestión y servicios, mediante el sistema de concurso de méritos, en plazas de la categoría de Técnico/a Especialista de Informática del Servicio de Salud de Castilla y León, y se ofertan las vacantes correspondientes.",
-      "entity": "CONSEJERÍA DE SANIDAD Y BIENESTAR SOCIAL",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-9.pdf"
-    },
-    {
-      "id": "CY-20261029-7",
-      "province": "Castilla y León (BOCYL)",
-      "title": "ORDEN MTD/1113/2026, de 22 de octubre, por la que se anuncia convocatoria pública para cubrir, mediante el sistema de libre designación, el puesto de trabajo que se cita.",
-      "entity": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-7.pdf"
-    },
-    {
-      "id": "CY-20261029-6",
-      "province": "Castilla y León (BOCYL)",
-      "title": "ORDEN MTD/1112/2026, de 22 de octubre, por la que se anuncia convocatoria pública para cubrir, mediante el sistema de libre designación, el puesto de trabajo que se cita.",
-      "entity": "CONSEJERÍA DE MOVILIDAD, TRANSFORMACIÓN DIGITAL E INTELIGENCIA ARTIFICIAL",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-6.pdf"
-    },
-    {
-      "id": "CY-20261029-4",
-      "province": "Castilla y León (BOCYL)",
-      "title": "ORDEN PRE/1109/2026, de 23 de octubre, por la que se convoca la constitución de la bolsa de empleo temporal del Cuerpo de Ingenieros Técnicos Agrícolas de la Administración de la Comunidad de Castilla y León.",
-      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Bolsa de trabajo",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-4.pdf"
-    },
-    {
-      "id": "CY-20261029-35",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 19 de octubre de 2026, de la Alcaldía del Ayuntamiento de Toro (Zamora), por la que se aprueban las bases y la convocatoria del proceso selectivo para la provisión, mediante el sistema de oposición, de 1 plaza de Oficial 1.ª de Obras y Servicios Múltiples, vacante en la plantilla de personal laboral, y la constitución de una bolsa de empleo.",
-      "entity": "AYUNTAMIENTO DE TORO (ZAMORA)",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Bolsa de trabajo",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-35.pdf"
-    },
-    {
-      "id": "CY-20261029-33",
-      "province": "Castilla y León (BOCYL)",
-      "title": "CORRECCIÓN errores de la Resolución de 7 de septiembre de 2026, de la Presidencia de la Mancomunidad de Servicios del Alto Tiétar (Ávila), por la que se aprueban las bases y la convocatoria para cubrir, mediante el sistema de concurso-oposición, 1 plaza de Administrativo Especializado en Base de Datos. Expte.: 93/2026.",
-      "entity": "MANCOMUNIDAD DE SERVICIOS DEL ALTO TIÉTAR (ÁVILA)",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-33.pdf"
-    },
-    {
-      "id": "CY-20261029-30",
-      "province": "Castilla y León (BOCYL)",
-      "title": "EDICTO de la Dirección General de Personal y Desarrollo Profesional, por el que se declara la apertura de trámite de audiencia en el procedimiento administrativo relativo a la tramitación del recurso de reposición interpuesto contra la Resolución de 6 de mayo de 2026, de la Dirección General de Personal y Desarrollo Profesional, por la que se publicó la relación definitiva de las personas candidatas de la bolsa de empleo de personal estatutario temporal de la categoría de Técnico en Cuidados Auxiliares de Enfermería del Servicio de Salud de Castilla y León.",
-      "entity": "CONSEJERÍA DE SANIDAD Y BIENESTAR SOCIAL",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Bolsa de trabajo",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-30.pdf"
-    },
-    {
-      "id": "CY-20261029-17",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 26 de octubre de 2026, del Rectorado de la Universidad de Valladolid, por la que se convoca proceso de provisión para cubrir, mediante concurso específico, puestos de trabajo adscritos a los subgrupos A1, A2 y C1, pertenecientes a escalas del área de administración y económico-financiera, vacantes en la plantilla de personal técnico, de gestión y de administración y servicios funcionario y eventual.",
-      "entity": "UNIVERSIDAD DE VALLADOLID",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-17.pdf"
-    },
-    {
-      "id": "CY-20261029-1",
-      "province": "Castilla y León (BOCYL)",
-      "title": "RESOLUCIÓN de 23 de octubre de 2026, de la Viceconsejería de Administraciones Públicas, Relaciones Institucionales y Atención al Ciudadano, por la que se adjudican destinos a los aspirantes que han superado el proceso selectivo convocado por Resolución de 2 de diciembre de 2022, de la Viceconsejería de Administraciones Públicas y Atención al Ciudadano, para ingreso, por el sistema de acceso libre, en la competencia funcional de personal de servicios de la Administración de la Comunidad de Castilla y León.",
-      "entity": "CONSEJERÍA DE LA PRESIDENCIA",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://bocyl.jcyl.es/boletines/2026/10/29/pdf/BOCYL-D-29102026-210-1.pdf"
     }
   ]
 }

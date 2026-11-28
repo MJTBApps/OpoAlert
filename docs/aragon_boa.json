@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Aragón (BOA)",
   "source": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI",
-  "lastCheckedUTC": "2026-11-27T16:37:02.566957+00:00",
+  "lastCheckedUTC": "2026-11-28T06:25:27.358583+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "5 Extraordinario",
-    "pagesVisited": 22,
-    "announcementsRead": 751,
-    "opportunities": 130
+    "pagesVisited": 21,
+    "announcementsRead": 710,
+    "opportunities": 126
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "210",
       "211",
       "212",
       "213",
@@ -40,7 +39,6 @@
       "5 Extraordinario"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -72,11 +70,12 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 22,
-    "announcementsRead": 751,
-    "opportunities": 130
+    "issuesRead": 21,
+    "announcementsRead": 710,
+    "opportunities": 126
   },
   "notices": [
     {
@@ -1338,46 +1337,6 @@
       "bulletin": "211",
       "type": "Plaza / oposición",
       "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472667060303"
-    },
-    {
-      "id": "AO-2026-007962105",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN del 16 de octubre del 2026, de la Universidad de Zaragoza, por la que se convoca concurso de méritos para la provisión definitiva del puesto de Técnico Comunicación Redes Sociales de la Escuela de Ingeniería y Arquitectura de la Universidad.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472510193636"
-    },
-    {
-      "id": "AO-2026-007962103",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 21 de octubre de 2026, del Director General de la Función Pública, por la que se nombra personal funcionario en prácticas del Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala Auxiliar Administrativa, Auxiliares Administrativos. (Código de convocatoria 210095).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472506153535"
-    },
-    {
-      "id": "AO-2026-007962102",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN de 21 de octubre de 2026, del Director General de la Función Pública, por la que se nombra personal funcionario en prácticas del Cuerpo Auxiliar de la Administración de la Comunidad Autónoma de Aragón, Escala Auxiliar Administrativa, Auxiliares Administrativos. (Código de convocatoria 210094).",
-      "entity": "DEPARTAMENTO DE HACIENDA, INTERIOR Y ADMINISTRACIÓN PÚBLICA",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472504133535"
-    },
-    {
-      "id": "AO-2026-007962101",
-      "province": "Aragón (BOA)",
-      "title": "RESOLUCIÓN del 16 de octubre de 2026, de la Universidad de Zaragoza, por la que se resuelve el concurso específico para la provisión definitiva del puesto de Jefe de Sección de la Sección de Formación Permanente y Títulos en el Servicio de Planificación Académica de la Universidad.",
-      "entity": "UNIVERSIDAD DE ZARAGOZA",
-      "date": "29/10/2026",
-      "bulletin": "210",
-      "type": "Plaza / oposición",
-      "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1472502113535"
     }
   ]
 }

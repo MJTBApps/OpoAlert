@@ -2,21 +2,20 @@
   "schemaVersion": 1,
   "province": "Huelva",
   "source": "https://s2.diphuelva.es/servicios/bope_web/busquedaCalendario",
-  "lastCheckedUTC": "2026-11-27T16:37:47.138419+00:00",
+  "lastCheckedUTC": "2026-11-28T06:26:44.147266+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
     "bulletin": "229",
-    "pagesVisited": 21,
-    "announcementsRead": 300,
-    "opportunities": 48
+    "pagesVisited": 20,
+    "announcementsRead": 288,
+    "opportunities": 46
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-29",
-    "rangeEnd": "2026-11-27",
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
     "bulletins": [
-      "209",
       "210",
       "211",
       "212",
@@ -39,7 +38,6 @@
       "229"
     ],
     "publicationDates": [
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -70,13 +68,13 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
-    "issuesRead": 21,
-    "announcementsRead": 300,
-    "opportunities": 48,
+    "issuesRead": 20,
+    "announcementsRead": 288,
+    "opportunities": 46,
     "editionPDFs": [
-      "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_209_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_210_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_211_2026.pdf",
       "https://s2.diphuelva.es/portalweb/bope/anuncios/IndiceBOP_212_2026.pdf",
@@ -559,26 +557,6 @@
       "bulletin": "210",
       "type": "Bolsa de trabajo",
       "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_383955_BOP-210_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381581",
-      "province": "Huelva",
-      "title": "Resolución de aprobación de las Bases de la convocatoria para la contratación de personal laboral temporal en una plaza de Operario Limpieza y Cementerio mediante concurso-oposición",
-      "entity": "Ayuntamiento de Lucena del Puerto",
-      "date": "29/10/2026",
-      "bulletin": "209",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381581_BOP-209_2026.pdf"
-    },
-    {
-      "id": "HB-2026-381561",
-      "province": "Huelva",
-      "title": "Bases reguladoras del proceso de selección de personal laboral temporal a través de oferta genérica al SAE para la ejecución del Plan de desarrollo económico y social provincial",
-      "entity": "Ayuntamiento de Aroche",
-      "date": "29/10/2026",
-      "bulletin": "209",
-      "type": "Plaza / oposición",
-      "url": "https://s2.diphuelva.es/portalweb/bope/anuncios/Anuncio_381561_BOP-209_2026.pdf"
     }
   ]
 }
