@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-27T17:22:06+00:00",
+ "updatedUTC": "2026-11-28T07:29:07+00:00",
  "items": {
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105018;0&insert_number=5035&insert_year=2026": {
    "days": 10,
@@ -91,7 +91,6 @@
  },
  "none": [
   "https://bop.diputoledo.es/webEbop/DocGet?id=26104753;0&insert_number=4977&insert_year=2026",
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105010;0&insert_number=5027&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105036;0&insert_number=5054&insert_year=2026",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026",
@@ -107,7 +106,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": "https://navahermosa.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026": "https://navahermosa.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115143;0&insert_number=5159&insert_year=2026": "https://aytopolan.sedelectronica.es/",
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115144;0&insert_number=5160&insert_year=2026": "https://sonseca.sedelectronica.es/",
@@ -120,9 +118,6 @@
   "https://bop.diputoledo.es/webEbop/DocGet?id=26115426;0&insert_number=5441&insert_year=2026": "https://mascaraque.sedelectronica.es/"
  },
  "sedeRaw": {
-  "https://bop.diputoledo.es/webEbop/DocGet?id=26104930;0&insert_number=4944&insert_year=2026": [
-   "https://navahermosa.sedelectronica.es/"
-  ],
   "https://bop.diputoledo.es/webEbop/DocGet?id=26105050;0&insert_number=5067&insert_year=2026": [
    "https://navahermosa.sedelectronica.es/"
   ],

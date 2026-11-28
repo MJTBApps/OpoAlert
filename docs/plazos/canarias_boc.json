@@ -1,14 +1,7 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-27T17:22:06+00:00",
+ "updatedUTC": "2026-11-28T07:29:07+00:00",
  "items": {
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": {
-   "days": 10,
-   "kind": "hábiles",
-   "text": "…electrónica de la Universidad de La Laguna en el plazo de diez días hábiles a partir del siguiente a la publicación de la presente convocatoria en el Boletín Oficial de Canarias.",
-   "page": 4,
-   "hasta": "2026-11-12"
-  },
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-221-3799.pdf": {
    "days": 10,
    "kind": "hábiles",
@@ -94,8 +87,6 @@
   }
  },
  "none": [
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3725.pdf",
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3726.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-218-3737.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-220-3778.pdf",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-221-3819.pdf",
@@ -144,7 +135,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": "https://sede.ull.es/",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-218-3737.pdf": "https://sede.parcan.es/",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-221-3799.pdf": "https://sede.ull.es/",
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-225-3896.pdf": "https://sede.ull.es/",
@@ -155,16 +145,6 @@
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-238-4155.pdf": "https://administracion.ulpgc.es/"
  },
  "sedeRaw": {
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3725.pdf": [
-   "https://sede.gobiernodecanarias.org/"
-  ],
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3726.pdf": [
-   "https://sede.gobiernodecanarias.org/"
-  ],
-  "https://sede.gobiernodecanarias.org/boc/boc-a-2026-217-3727.pdf": [
-   "https://sede.gobiernodecanarias.org/",
-   "https://sede.ull.es/"
-  ],
   "https://sede.gobiernodecanarias.org/boc/boc-a-2026-218-3737.pdf": [
    "https://sede.gobiernodecanarias.org/",
    "https://sede.parcan.es/"

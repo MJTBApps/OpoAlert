@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "updatedUTC": "2026-11-27T17:22:06+00:00",
+ "updatedUTC": "2026-11-28T07:29:07+00:00",
  "items": {
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": {
    "days": 10,
@@ -8,19 +8,6 @@
    "text": "El plazo de presentación de solicitudes será de diez días hábiles computados desde el siguiente a la publicación de las presentes bases en el Boletín Oficial de la Provincia de Cáceres.",
    "page": 5,
    "hasta": "2026-11-13"
-  },
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068": {
-   "days": 15,
-   "kind": "hábiles",
-   "text": "El plazo de presentación de solicitudes será de quince días hábiles contados a partir del día siguiente al de la publicación de este anuncio en el Boletín Oficial de la Provincia de Cáceres.",
-   "page": 1,
-   "hasta": "2026-11-19"
-  },
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": {
-   "days": 20,
-   "kind": "hábiles",
-   "text": "…por el sistema de oposición, se abre el plazo de presentación de solicitudes, que será de veinte días hábiles a contar desde el día siguiente a la publicación de este anuncio en el Boletín Oficial del Estado.",
-   "page": 1
   },
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5201": {
    "days": 45,
@@ -86,9 +73,6 @@
   }
  },
  "none": [
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5164",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5182",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5184",
@@ -111,9 +95,6 @@
  ],
  "tries": {},
  "sedes": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": "https://tietar.sedelectronica.es/",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067": "https://valverdedelfresno.sedelectronica.es/",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068": "https://zorita.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": "https://valdecanasdetajo.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5182": "https://aytonavalmoral.sedelectronica.es/",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5184": "https://aytonavalmoral.sedelectronica.es/",
@@ -133,15 +114,6 @@
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5564": "https://miajadas.sedelectronica.es/"
  },
  "sedeRaw": {
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5066": [
-   "https://tietar.sedelectronica.es/"
-  ],
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5067": [
-   "https://valverdedelfresno.sedelectronica.es/"
-  ],
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5068": [
-   "https://zorita.sedelectronica.es/"
-  ],
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5101": [
    "https://valdecanasdetajo.sedelectronica.es/",
    "https://sede.inap.gob.es/"
@@ -196,8 +168,6 @@
   ]
  },
  "sinSede": [
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5047",
-  "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5048",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5164",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5200",
   "https://bop.dip-caceres.es/bop/services/anuncios/contenidoPdfIdAnuncio?csv=BOP-2026-5201",
