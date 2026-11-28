@@ -62,6 +62,35 @@ object DeadlineStore {
         }
     }
 
+    /**
+     * Plazas de los extractos del BOE de ayuntamientos (campo `proveer` de `plazos/boe.json`,
+     * copiado del PDF por `backend/plazos.py`). Para el seguimiento de favoritas.
+     */
+    fun boeExtracts(context: Context): Map<String, BoeExtract> = try {
+        read(context, Province.BOE)?.let { parseBoeExtracts(it) }.orEmpty()
+    } catch (_: Exception) {
+        emptyMap()
+    }
+
+    private val feedDay = Regex("\\d\\d/\\d\\d/20\\d\\d")
+
+    fun parseBoeExtracts(text: String): Map<String, BoeExtract> {
+        val root = JSONObject(text)
+        if (root.optInt("schemaVersion") != 1) return emptyMap()
+        val all = root.optJSONObject("proveer") ?: return emptyMap()
+        val out = HashMap<String, BoeExtract>()
+        for (url in all.keys()) {
+            if (!url.startsWith("https://www.boe.es/")) continue
+            val o = all.optJSONObject(url) ?: continue
+            val array = o.optJSONArray("items") ?: continue
+            val items = (0 until array.length()).map { array.optString(it).trim() }.filter { it.length in 10..300 }
+            if (items.isEmpty() || items.size > 15) continue
+            val date = o.optJSONObject("bases")?.optString("fecha")?.takeIf { feedDay.matches(it) }
+            out[url] = BoeExtract(items, date)
+        }
+        return out
+    }
+
     fun parseSede(text: String, noticeUrl: String): String? {
         val root = JSONObject(text)
         if (root.optInt("schemaVersion") != 1) return null

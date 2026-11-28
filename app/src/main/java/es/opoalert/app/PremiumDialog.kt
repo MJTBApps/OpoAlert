@@ -15,6 +15,7 @@ object PremiumDialog {
         "• Sin publicidad: ni al abrir la app ni entre las convocatorias.\n" +
             "• Alertas personalizadas: te avisamos cuando sale una convocatoria de tu puesto y provincia.\n" +
             "• Recordatorio antes de que acabe el plazo de tus favoritas, con notas y «ya presentada».\n" +
+            "• Seguimiento de tus favoritas: te avisamos si sale otro anuncio de la misma convocatoria (listas, tribunal, extracto en el BOE…).\n" +
             "• Con tu suscripción ayudas a mantener OpoAlert, un proyecto independiente, y a seguir añadiendo boletines.\n\n"
 
     /** [changed] se llama si cambia el estado (para quitar anuncios o refrescar la pantalla). */

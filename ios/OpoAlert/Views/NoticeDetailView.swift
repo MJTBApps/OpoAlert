@@ -65,6 +65,10 @@ struct NoticeDetailView: View {
                     TrackingCard(notice: notice, hasEstimate: deadline?.until != nil)
                 }
 
+                if favorite && premium.isActive {
+                    FollowUpCard(notice: notice) { openOther($0) }
+                }
+
                 if let sede {
                     // Sede de quien convoca, copiada del anuncio: se abre en Safari.
                     VStack(spacing: 6) {
@@ -172,7 +176,7 @@ struct NoticeDetailView: View {
             if !Ads.shared.noticeClosed(premium: PremiumStore.isActiveStored) { ReviewPrompt.maybeAsk() }
         }
         .sheet(item: $pdfLink) { link in
-            PdfViewerView(url: link.url, title: source.shortName)
+            PdfViewerView(url: link.url, title: link.title ?? source.shortName)
         }
         .alert("El enlace oficial no se ha podido verificar.", isPresented: $linkRejected) {
             Button("Aceptar", role: .cancel) {}
@@ -195,6 +199,16 @@ struct NoticeDetailView: View {
         return "\(source.shortName) n.º \(notice.bulletin)  ·  Registro \(notice.id)"
     }
 
+    /// Anuncio de un paso del seguimiento: mismas comprobaciones que el de la ficha.
+    private func openOther(_ other: Notice) {
+        let otherSource = Source.of(other)
+        guard otherSource.isOfficialLink(other.url), let url = URL(string: other.url) else {
+            linkRejected = true
+            return
+        }
+        if OfficialDocument.isPdf(other) { pdfLink = PdfLink(url: url, title: otherSource.shortName) } else { openURL(url) }
+    }
+
     /// Solo se abre si el enlace es HTTPS al dominio y la ruta oficiales de la fuente.
     private func openOfficial(page: Int? = nil) {
         guard source.isOfficialLink(notice.url), let url = URL(string: notice.url) else {
@@ -213,6 +227,7 @@ struct NoticeDetailView: View {
 
 private struct PdfLink: Identifiable {
     let url: URL
+    var title: String? = nil
     var id: String { url.absoluteString }
 }
 
@@ -280,7 +295,7 @@ private struct TrackingCard: View {
                 .font(.caption.bold())
                 .foregroundStyle(Color(hex: 0x6D28D9))
             if !premium.isActive {
-                Text("Con OpoAlert Premium te avisamos antes de que acabe el plazo, marcas las solicitudes que ya has presentado y guardas tus notas.")
+                Text("Con OpoAlert Premium te avisamos antes de que acabe el plazo y si sale otro anuncio de esta convocatoria, marcas las solicitudes que ya has presentado y guardas tus notas.")
                     .font(.subheadline)
                     .foregroundStyle(Color(hex: 0x3B2A63))
                 Button { showPremium = true } label: {
@@ -333,5 +348,102 @@ private struct TrackingCard: View {
         }
         if hasEstimate || entry?.until != nil { return "El plazo orientativo ya ha pasado." }
         return "Sin recordatorio: este anuncio no permite estimar la fecha de fin."
+    }
+}
+
+/// Seguimiento de la convocatoria (1.59.0, Premium): otros anuncios que pueden ser de la misma
+/// convocatoria, en orden de fecha (`renderFollowUps` en Android). Nunca se afirma: se encuentran
+/// por el organismo y el puesto, y cada uno pregunta «¿Es de esta convocatoria?».
+private struct FollowUpCard: View {
+    let notice: Notice
+    let open: (Notice) -> Void
+    @EnvironmentObject private var model: AppModel
+
+    var body: some View {
+        let state = model.followUpState(notice)
+        let steps = state.visible.reversed()
+        let local = FollowUpMatcher.localOrg(entity: notice.entity, title: notice.title) != nil
+        VStack(alignment: .leading, spacing: 10) {
+            Text("SEGUIMIENTO")
+                .font(.caption.bold())
+                .foregroundStyle(Color(hex: 0x7C3AED))
+            row(step: FollowUpMatcher.stepOf(notice.title, isBoe: Source.of(notice).isBOE) + " · la que guardaste",
+                item: notice, followUp: nil)
+            ForEach(Array(steps), id: \.notice.id) { followUp in
+                row(step: followUp.step, item: followUp.notice, followUp: followUp)
+            }
+            if let note = note(local: local, state: state, empty: steps.isEmpty) {
+                Text(note)
+                    .font(.subheadline)
+                    .foregroundStyle(Color(hex: 0x3B2A63))
+            }
+            Text("Encontrado por el organismo y el puesto. Comprueba siempre el anuncio oficial.")
+                .font(.caption)
+                .foregroundStyle(Color(hex: 0x64748B))
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.white, in: RoundedRectangle(cornerRadius: 16))
+        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color(hex: 0xDDD3FB)))
+        .onDisappear { model.markFollowUpsRead(notice) }
+    }
+
+    private func note(local: Bool, state: FollowUpState, empty: Bool) -> String? {
+        if !local {
+            return "El seguimiento solo funciona con convocatorias de ayuntamientos, diputaciones, comarcas, mancomunidades y cabildos: en las de otros organismos los títulos no permiten distinguir cada proceso."
+        }
+        if !state.initialized { return "Buscando otros anuncios de esta convocatoria…" }
+        return empty ? "Aún no hay otros anuncios de esta convocatoria. Si aparece uno posible, te avisaremos." : nil
+    }
+
+    @ViewBuilder
+    private func row(step: String, item: Notice, followUp: FollowUpItem?) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            HStack(spacing: 8) {
+                Circle()
+                    .fill(followUp == nil ? Color(hex: 0x94A3B8) : Color(hex: 0x7C3AED))
+                    .frame(width: 8, height: 8)
+                Text(step)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Palette.navy)
+                Spacer()
+                if followUp?.unread == true {
+                    NoticeTag(text: "NOVEDAD", color: .white, fill: Color(hex: 0x7C3AED))
+                }
+            }
+            Group {
+                Text("\(item.date) · \(item.province)")
+                    .font(.caption)
+                    .foregroundStyle(Palette.slate)
+                Text(item.headline)
+                    .font(.footnote)
+                    .foregroundStyle(Color(hex: 0x3B4A63))
+                    .lineLimit(3)
+                if let followUp {
+                    HStack(spacing: 6) {
+                        if followUp.state == FollowUpItem.yes {
+                            Text("✓ Es de esta convocatoria")
+                                .font(.footnote.weight(.semibold))
+                                .foregroundStyle(Color(hex: 0x13795B))
+                        } else {
+                            Text("¿Es de esta convocatoria?")
+                                .font(.footnote)
+                                .foregroundStyle(Color(hex: 0x3B2A63))
+                            Spacer(minLength: 4)
+                            Button("Sí") { model.answerFollowUp(followUp, of: notice, yes: true) }
+                                .buttonStyle(.bordered).tint(Color(hex: 0x6D28D9))
+                            Button("No") { model.answerFollowUp(followUp, of: notice, yes: false) }
+                                .buttonStyle(.bordered).tint(Color(hex: 0x475569))
+                        }
+                        if followUp.state == FollowUpItem.yes { Spacer(minLength: 4) }
+                        Button(OfficialDocument.isPdf(item) ? "Ver PDF" : "Ver anuncio") { open(item) }
+                            .buttonStyle(.bordered).tint(Palette.blue)
+                    }
+                    .font(.footnote)
+                    .padding(.top, 2)
+                }
+            }
+            .padding(.leading, 16)
+        }
     }
 }

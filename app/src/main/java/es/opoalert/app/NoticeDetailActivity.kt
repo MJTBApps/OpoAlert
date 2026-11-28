@@ -31,6 +31,7 @@ class NoticeDetailActivity : Activity() {
     /** Plazo leído de `docs/plazos` (null mientras carga o si no hay). */
     private var deadline: Deadline? = null
     private lateinit var tracking: LinearLayout
+    private lateinit var followUpBox: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,6 +68,8 @@ class NoticeDetailActivity : Activity() {
         addDeadline(content)
         tracking = column()
         content.addView(tracking, LinearLayout.LayoutParams(-1, -2))
+        followUpBox = column()
+        content.addView(followUpBox, LinearLayout.LayoutParams(-1, -2))
         addSede(content)
         addSummary(content)
         addBanner(content, top = 10)
@@ -357,12 +360,12 @@ class NoticeDetailActivity : Activity() {
     }
 
     /** Enlaces que son páginas web (fichas) y no PDF: se abren en el navegador. */
-    private fun officialIsPdf(): Boolean = !(
-        notice.id.startsWith("CIDO") ||
-            notice.province == "Teruel" ||
-            (notice.province == Province.RIOJA_BOR.label && notice.url.contains("ExportarBoletinServlet")) ||
-            notice.url.contains("dogc.gencat.cat/") ||
-            notice.url.contains("bon.navarra.es/")
+    private fun officialIsPdf(item: Notice = notice): Boolean = !(
+        item.id.startsWith("CIDO") ||
+            item.province == "Teruel" ||
+            (item.province == Province.RIOJA_BOR.label && item.url.contains("ExportarBoletinServlet")) ||
+            item.url.contains("dogc.gencat.cat/") ||
+            item.url.contains("bon.navarra.es/")
         )
 
     private fun addActions(content: LinearLayout) {
@@ -427,6 +430,122 @@ class NoticeDetailActivity : Activity() {
         topFavorite.text = if (saved) "★" else "☆"
         favoriteAction.text = if (saved) "★   Quitar de favoritas" else "☆   Guardar en favoritas"
         renderTracking()
+        renderFollowUps()
+    }
+
+    /**
+     * Seguimiento de la favorita (1.59.0, Premium): otros anuncios que pueden ser de la misma
+     * convocatoria, en orden de fecha. Cada uno pregunta «¿Es de esta convocatoria?»; «No» lo
+     * oculta para siempre. Nunca se afirma: se encuentran por el organismo y el puesto.
+     */
+    private fun renderFollowUps() {
+        if (!::followUpBox.isInitialized) return
+        followUpBox.removeAllViews()
+        if (!FavoritesStore.contains(this, notice.id) || !Premium.alertsUnlocked(this)) return
+        val state = FollowUps.state(this, notice.id)
+        val card = column().apply {
+            background = rounded("#FFFFFF", 16, "#DDD3FB")
+            setPadding(dp(16), dp(14), dp(16), dp(12))
+        }
+        card.addView(text("SEGUIMIENTO", 11f, "#7C3AED", true))
+        val local = FollowUpMatcher.localOrg(notice.entity, notice.title) != null
+        val steps = state.visible.sortedBy { FollowUps.dayKey(it.notice.date) }
+        val province = Province.fromLabel(notice.province) ?: Province.fromNoticeId(notice.id)
+        addTimelineRow(card, FollowUpMatcher.stepOf(notice.title, province == Province.BOE) + " · la que guardaste",
+            notice, null, unread = false)
+        for (item in steps) addTimelineRow(card, item.step, item.notice, item, item.unread)
+        val note = when {
+            !local -> "El seguimiento solo funciona con convocatorias de ayuntamientos, diputaciones, comarcas, " +
+                "mancomunidades y cabildos: en las de otros organismos los títulos no permiten distinguir cada proceso."
+            !state.initialized -> "Buscando otros anuncios de esta convocatoria…"
+            steps.isEmpty() -> "Aún no hay otros anuncios de esta convocatoria. Si aparece uno posible, te avisaremos."
+            else -> null
+        }
+        note?.let { card.addView(text(it, 13f, "#3B2A63").apply { setPadding(0, dp(8), 0, dp(4)) }) }
+        card.addView(text("Encontrado por el organismo y el puesto. Comprueba siempre el anuncio oficial.",
+            11.5f, "#64748B").apply { setPadding(0, dp(10), 0, 0) })
+        followUpBox.addView(card, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(6); bottomMargin = dp(6) })
+        FollowUps.markRead(this, notice.id)
+    }
+
+    private fun addTimelineRow(card: LinearLayout, step: String, item: Notice, followUp: FollowUpItem?, unread: Boolean) {
+        val row = column().apply { setPadding(0, dp(10), 0, dp(4)) }
+        val head = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+        }
+        head.addView(text("●", 10f, if (followUp == null) "#94A3B8" else "#7C3AED"))
+        head.addView(text(step, 13.5f, "#17243C", true).apply { setPadding(dp(8), 0, 0, 0) },
+            LinearLayout.LayoutParams(0, -2, 1f))
+        if (unread) head.addView(text("NOVEDAD", 9f, "#FFFFFF", true).apply {
+            setPadding(dp(7), dp(4), dp(7), dp(4))
+            background = rounded("#7C3AED", 8)
+        })
+        row.addView(head)
+        row.addView(text(item.date + " · " + item.province, 12f, "#64748B").apply { setPadding(dp(18), dp(3), 0, 0) })
+        row.addView(text(NoticeText.headline(item.title), 12.5f, "#3B4A63").apply {
+            maxLines = 3
+            ellipsize = android.text.TextUtils.TruncateAt.END
+            setPadding(dp(18), dp(3), 0, 0)
+        })
+        if (followUp != null) {
+            val buttons = LinearLayout(this).apply {
+                orientation = LinearLayout.HORIZONTAL
+                gravity = Gravity.CENTER_VERTICAL
+                setPadding(dp(18), dp(6), 0, dp(4))
+            }
+            if (followUp.state == FollowUpItem.YES) {
+                buttons.addView(text("✓ Es de esta convocatoria", 12.5f, "#13795B", true), LinearLayout.LayoutParams(0, -2, 1f))
+            } else {
+                buttons.addView(text("¿Es de esta convocatoria?", 12.5f, "#3B2A63"), LinearLayout.LayoutParams(0, -2, 1f))
+                buttons.addView(smallButton("Sí", "#EDE9FE", "#6D28D9") {
+                    FollowUps.answer(this, notice.id, item.id, yes = true)
+                    renderFollowUps()
+                })
+                buttons.addView(smallButton("No", "#F1F5F9", "#475569") {
+                    FollowUps.answer(this, notice.id, item.id, yes = false)
+                    Toast.makeText(this, "No volverá a aparecer en el seguimiento", Toast.LENGTH_SHORT).show()
+                    renderFollowUps()
+                })
+            }
+            buttons.addView(smallButton(if (officialIsPdf(item)) "Ver PDF" else "Ver anuncio", "#E4EDFF", "#1E4FD5") {
+                openNotice(item)
+            })
+            row.addView(buttons)
+        }
+        card.addView(row)
+    }
+
+    private fun smallButton(label: String, fill: String, color: String, click: () -> Unit): TextView =
+        text(label, 12.5f, color, true).apply {
+            gravity = Gravity.CENTER
+            minHeight = dp(34)
+            minWidth = dp(44)
+            setPadding(dp(10), 0, dp(10), 0)
+            background = rounded(fill, 10)
+            isClickable = true
+            isFocusable = true
+            setOnClickListener { click() }
+            layoutParams = LinearLayout.LayoutParams(-2, -2).apply { marginStart = dp(6) }
+        }
+
+    /** Abre el anuncio oficial de un paso del seguimiento (mismas comprobaciones que el de la ficha). */
+    private fun openNotice(item: Notice) {
+        val province = Province.fromLabel(item.province) ?: Province.fromNoticeId(item.id)
+        val link = Uri.parse(item.url)
+        if (link.scheme != "https" || link.host != province.pdfHost || !province.allowsOfficialPath(link.path.orEmpty())) {
+            Toast.makeText(this, "El enlace oficial no se ha podido verificar.", Toast.LENGTH_LONG).show()
+            return
+        }
+        if (officialIsPdf(item)) {
+            PdfViewerActivity.open(this, item.url, NoticeText.headline(item.title))
+            return
+        }
+        try {
+            startActivity(Intent(Intent.ACTION_VIEW, link))
+        } catch (_: ActivityNotFoundException) {
+            Toast.makeText(this, "No hay aplicación para abrir la publicación.", Toast.LENGTH_LONG).show()
+        }
     }
 
     /** Guarda la fecha orientativa en la agenda de la favorita (para ordenar Favoritas). */
@@ -460,8 +579,8 @@ class NoticeDetailActivity : Activity() {
         card.addView(text("★  MI SEGUIMIENTO", 11f, "#6D28D9", true))
         if (!unlocked) {
             card.addView(text(
-                "Con OpoAlert Premium te avisamos antes de que acabe el plazo, marcas las solicitudes " +
-                    "que ya has presentado y guardas tus notas.", 13f, "#3B2A63"
+                "Con OpoAlert Premium te avisamos antes de que acabe el plazo y si sale otro anuncio de " +
+                    "esta convocatoria, marcas las solicitudes que ya has presentado y guardas tus notas.", 13f, "#3B2A63"
             ).apply { setPadding(0, dp(8), 0, dp(10)) })
             card.addView(action("Ver Premium (prueba gratis)", "#6D28D9", "#FFFFFF") {
                 PremiumDialog.show(this) { renderTracking() }
@@ -525,9 +644,13 @@ class NoticeDetailActivity : Activity() {
     private fun changeFavorite() {
         try {
             val saved = FavoritesStore.toggle(this, notice)
-            if (saved) rememberDeadline() else {
+            if (saved) {
+                rememberDeadline()
+                searchFollowUps()
+            } else {
                 FavoriteAgenda.remove(this, notice.id)
                 DeadlineReminder.cancel(this, notice.id)
+                FollowUps.remove(this, notice.id)
             }
             updateFavoriteState()
             Toast.makeText(this,
@@ -537,6 +660,16 @@ class NoticeDetailActivity : Activity() {
         } catch (_: Exception) {
             Toast.makeText(this, "No se pudo guardar el cambio", Toast.LENGTH_LONG).show()
         }
+    }
+
+    /** Al guardarla, busca ya sus posibles pasos (en segundo plano, solo Premium). */
+    private fun searchFollowUps() {
+        if (!Premium.alertsUnlocked(this)) return
+        val context = applicationContext
+        Thread {
+            try { FollowUps.check(context, emptyMap()) } catch (_: Exception) { }
+            runOnUiThread { if (!isFinishing) renderFollowUps() }
+        }.start()
     }
 
     private fun share() {

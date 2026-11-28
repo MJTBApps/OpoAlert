@@ -340,6 +340,82 @@ do {
           shared.hasSuffix(ShareText.appLink) && shared.contains("BOE "), "texto al compartir")
 }
 
+// MARK: Seguimiento de favoritas (1.59.0)
+
+equal(FollowUpMatcher.jobKey("una plaza de trabajador/a social"), FollowUpMatcher.jobKey("una plaza de trabajadora social"),
+      "puesto sin masculino ni femenino")
+equal(FollowUpMatcher.jobKey("tres plazas de Auxiliares Administrativos"),
+      FollowUpMatcher.jobKey("una plaza de auxiliar administrativo/a"), "puesto sin plural")
+equal(FollowUpMatcher.plazasCount("de dues places de tècnic/a"), 2, "número de plazas en catalán")
+equal(FollowUpMatcher.plazasCount("Una (1) plaza de Traductor/a"), 1, "número de plazas con cifra")
+equal(FollowUpMatcher.plazasCount("bolsa de trabajo de conserje"), nil, "bolsa sin número")
+equal(FollowUpMatcher.localOrg(entity: "Ayuntamiento de Colmenar Viejo (Madrid)", title: "")?.name, "colmenar viejo", "ayuntamiento")
+equal(FollowUpMatcher.localOrg(entity: "AJUNTAMENT DE LA POBLA DE SEGUR (POBLA DE SEGUR, LA)", title: "")?.name, "pobla segur",
+      "ajuntament")
+check(FollowUpMatcher.localOrg(entity: "MINISTERIO DE HACIENDA", title: "") == nil, "ministerio: fuera")
+check(FollowUpMatcher.localOrg(entity: "Universidad de Málaga", title: "") == nil, "universidad: fuera")
+
+do {
+    let palencia = Source.code("PL")!.label
+    let bases = Notice(id: "PL-2026-1", title: "Bases y convocatoria del proceso selectivo de siete plazas de Oficial de la Policía " +
+                       "Local, mediante concurso-oposición de promoción interna", entity: "Palencia", date: "20/11/2026",
+                       bulletin: "210", type: "Plaza / oposición", url: "https://bop.dip-palencia.es/1.pdf", province: palencia)
+    let correction = Notice(id: "PL-2026-2", title: "Corrección de error al anuncio publicado el día 20 de noviembre de 2026, por el " +
+                            "que se aprueban las bases y convocatoria del proceso selectivo de siete plazas de Oficial de la Policía Local",
+                            entity: "Palencia", date: "25/11/2026", bulletin: "213", type: "Plaza / oposición",
+                            url: "https://bop.dip-palencia.es/2.pdf", province: palencia)
+    let (first, fresh1) = FollowUps.update(favorites: [bases], candidates: [bases, correction], extracts: [:], previous: [:])
+    check(fresh1.isEmpty, "la primera búsqueda no avisa")
+    equal(first[bases.id]?.items.map(\.notice.id) ?? [], [correction.id], "encuentra la corrección")
+    equal(first[bases.id]?.items.first?.step ?? "", "Corrección de errores", "tipo de trámite")
+    let (second, fresh2) = FollowUps.update(favorites: [bases], candidates: [correction], extracts: [:],
+                                            previous: [bases.id: FollowUpState(initialized: true)])
+    equal(fresh2.map(\.1.notice.id), [correction.id], "después sí avisa")
+    equal(second[bases.id]?.unreadCount ?? 0, 1, "una novedad")
+    let hidden = FollowUpState(initialized: true, items: [FollowUpItem(notice: correction, step: "x", state: FollowUpItem.no)])
+    let (third, fresh3) = FollowUps.update(favorites: [bases], candidates: [correction], extracts: [:], previous: [bases.id: hidden])
+    check(fresh3.isEmpty && third[bases.id]!.visible.isEmpty, "«No» la oculta para siempre")
+    let answered = [bases.id: FollowUpState(initialized: true, items: [FollowUpItem(notice: correction, step: "x", state: FollowUpItem.yes)])]
+    equal(FollowUps.keepAnswers(second, answered)[bases.id]?.items.first?.state ?? "", FollowUpItem.yes, "conserva la respuesta")
+    let stored = FollowUps.Stored(lastCheck: 123, favorites: second)
+    equal(FollowUps.parse(FollowUps.encode(stored)), stored, "se guarda como JSON")
+    let boe = Data(#"{"schemaVersion":1,"items":{},"proveer":{"https://www.boe.es/a.pdf":{"items":["Una plaza de Administrativo/a, en turno libre."],"bases":{"fecha":"15/10/2026"}},"https://otro.es/b.pdf":{"items":["Una plaza de Administrativo/a, en turno libre."]}}}"#.utf8)
+    let extracts = FollowUps.parseBoeExtracts(boe)
+    equal(Array(extracts.keys), ["https://www.boe.es/a.pdf"], "solo extractos del BOE")
+    equal(extracts.values.first?.basesDate, "15/10/2026", "fecha de las bases")
+    let sources = FollowUps.sources(for: Source.code("BB")!, available: Source.all).map(\.code)
+    check(sources.contains("DC") && sources.contains("ES") && !sources.contains("CB") && !sources.contains("VA"),
+          "boletines de la comunidad y BOE, sin CIDO: \(sources)")
+}
+
+// Parejas reales revisadas a mano (las mismas que Android y backend/tests/test_seguimiento.py).
+if CommandLine.arguments.count > 1 {
+    let casesURL = URL(fileURLWithPath: CommandLine.arguments[1])
+        .deletingLastPathComponent().appendingPathComponent("backend/tests/seguimiento_casos.json")
+    if let data = try? Data(contentsOf: casesURL),
+       let root = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+       let cases = root["cases"] as? [[String: Any]] {
+        func item(_ o: [String: Any]) -> FollowUpMatcher.Item {
+            let url = o["url"] as! String
+            let ex = (o["extract"] as? [String: Any]).map {
+                BoeExtract(items: $0["items"] as! [String], basesDate: $0["basesDate"] as? String)
+            }
+            return FollowUpMatcher.Item(url: url, title: o["title"] as! String, entity: o["entity"] as! String,
+                                        date: o["date"] as! String, source: o["source"] as! String,
+                                        cido: o["cido"] as? Bool ?? false, isBoe: url.hasPrefix("https://www.boe.es/"), extract: ex)
+        }
+        check(cases.count >= 20, "casos compartidos del seguimiento")
+        for c in cases {
+            let name = c["name"] as! String
+            let cand = item(c["candidate"] as! [String: Any])
+            equal(FollowUpMatcher.isFollowUp(item(c["favorite"] as! [String: Any]), cand), c["followUp"] as! Bool, name)
+            if let step = c["step"] as? String { equal(cand.step, step, "trámite: \(name)") }
+        }
+    } else {
+        check(false, "no se encuentra \(casesURL.path)")
+    }
+}
+
 // MARK: Feeds publicados (docs/)
 
 if CommandLine.arguments.count > 1 {

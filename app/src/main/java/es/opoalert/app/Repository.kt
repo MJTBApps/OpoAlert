@@ -14,6 +14,8 @@ data class SyncResult(
     val sourceMessage: String,
     val historyMessage: String,
     val alertMatches: List<Notice>,
+    /** Posibles novedades de favoritas (Premium): favorita y anuncio nuevo. */
+    val followUps: List<Pair<Notice, FollowUpItem>> = emptyList(),
 )
 
 object Repository {
@@ -128,8 +130,17 @@ object Repository {
             editor.putBoolean(INITIALIZED_PREFIX + province.code, true)
         }
         if (!editor.commit()) throw IOException("No se han podido guardar los datos")
-        val alertMatches = SmartAlertMatcher.matching(newOnes, rulesAtSyncStart, watched)
-        return SyncResult(merged, newOnes, fresh.size, status, historyMessage, alertMatches)
+        // Seguimiento de favoritas: si falla, la revisión sigue como siempre.
+        val followUps = try {
+            FollowUps.check(ctx, downloaded.associate { (province, feed) -> province to feed.notices })
+        } catch (error: Exception) {
+            android.util.Log.w("OpoAlert", "Seguimiento de favoritas", error)
+            emptyList()
+        }
+        // Un anuncio que es novedad de una favorita avisa una sola vez, como novedad.
+        val followUpIds = followUps.map { it.second.notice.id }.toSet()
+        val alertMatches = SmartAlertMatcher.matching(newOnes, rulesAtSyncStart, watched).filter { it.id !in followUpIds }
+        return SyncResult(merged, newOnes, fresh.size, status, historyMessage, alertMatches, followUps)
     }
 
     private fun dateKey(date: String): String {

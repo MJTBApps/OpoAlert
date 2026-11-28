@@ -33,6 +33,8 @@ final class AppModel: ObservableObject {
     @Published private(set) var favorites: [Notice] = []
     /// Seguimiento de las favoritas: plazo orientativo, «presentada» y nota (1.57.0).
     @Published private(set) var agenda: [String: AgendaEntry] = [:]
+    /// Seguimiento de cada favorita (1.59.0, Premium).
+    @Published private(set) var followUps: [String: FollowUpState] = [:]
     @Published private(set) var rules: [AlertRule] = []
     @Published private(set) var selected: Set<String> = []
     @Published private(set) var available: [Source] = []
@@ -67,6 +69,7 @@ final class AppModel: ObservableObject {
         notices = store.cached
         favorites = store.favorites
         agenda = store.agenda
+        followUps = store.followUps.favorites
         rules = store.rules
         selected = store.selected
         available = store.availableSources
@@ -101,8 +104,9 @@ final class AppModel: ObservableObject {
         isRefreshing = true
         defer { isRefreshing = false }
         do {
-            let result = try await Synchronizer(store: store).sync()
+            let result = try await Synchronizer(store: store, followUps: PremiumStore.isActiveStored).sync()
             await AlertNotifications.show(result.alertMatches)
+            await AlertNotifications.showFollowUps(result.followUps)
             message = nil
         } catch {
             message = "Sin conexión: se muestran los últimos datos guardados."
@@ -182,11 +186,38 @@ final class AppModel: ObservableObject {
         if isFavorite(notice) {
             nudgePremiumIfNeeded()
             Task { await completeAgenda([notice]) }
+            Task { await searchFollowUps() }
         } else {
             store.removeAgenda(notice.id)
             agenda = store.agenda
             Reminders.cancel(notice.id)
+            store.removeFollowUps(notice.id)
+            followUps = store.followUps.favorites
         }
+    }
+
+    // MARK: Seguimiento de la convocatoria (1.59.0, Premium)
+
+    /// Al guardar una favorita, busca ya sus posibles pasos.
+    func searchFollowUps() async {
+        guard PremiumStore.isActiveStored else { return }
+        _ = await Synchronizer(store: store, followUps: true).checkFollowUps()
+        followUps = store.followUps.favorites
+    }
+
+    func followUpState(_ notice: Notice) -> FollowUpState { followUps[notice.id] ?? FollowUpState() }
+
+    /// «¿Es de esta convocatoria?»: «No» la oculta para siempre.
+    func answerFollowUp(_ item: FollowUpItem, of favorite: Notice, yes: Bool) {
+        store.answerFollowUp(favorite.id, noticeId: item.notice.id, yes: yes)
+        followUps = store.followUps.favorites
+    }
+
+    /// Al abrir la ficha de la favorita, las novedades dejan de serlo.
+    func markFollowUpsRead(_ favorite: Notice) {
+        guard followUpState(favorite).unreadCount > 0 else { return }
+        store.markFollowUpsRead(favorite.id)
+        followUps = store.followUps.favorites
     }
 
     // MARK: Seguimiento de favoritas

@@ -129,6 +129,8 @@ struct PremiumView: View {
                           systemImage: "bell.badge")
                     Label("Recordatorio antes de que acabe el plazo de tus favoritas, con notas y «ya presentada».",
                           systemImage: "timer")
+                    Label("Seguimiento de tus favoritas: te avisamos si sale otro anuncio de la misma convocatoria (listas, tribunal, extracto en el BOE…).",
+                          systemImage: "point.topleft.down.curvedto.point.bottomright.up")
                     Label("Con tu suscripción ayudas a mantener OpoAlert, un proyecto independiente, y a seguir añadiendo boletines.",
                           systemImage: "heart")
                 }

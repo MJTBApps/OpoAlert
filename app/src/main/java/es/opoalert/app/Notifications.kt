@@ -84,6 +84,53 @@ object Notifications {
         NotificationManagerCompat.from(context).notify(id, notification)
     }
 
+    /**
+     * «Posible novedad en tu favorita» (seguimiento, 1.59.0, Premium). Un aviso por favorita,
+     * con su propio identificador; tocarlo abre la ficha de la favorita con la línea de tiempo.
+     */
+    fun showFollowUps(context: Context, followUps: List<Pair<Notice, FollowUpItem>>) {
+        if (followUps.isEmpty() || !Premium.alertsUnlocked(context)) return
+        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(
+                context, Manifest.permission.POST_NOTIFICATIONS
+            ) != PackageManager.PERMISSION_GRANTED
+        ) return
+        createChannel(context)
+        // Se vuelve a mirar: si se quitó la favorita o se contestó «No» mientras se buscaba, no se avisa.
+        val favorites = FavoritesStore.list(context).associateBy { it.id }
+        for ((favoriteId, items) in followUps.groupBy({ it.first.id }, { it.second })) {
+            val favorite = favorites[favoriteId] ?: continue
+            val state = FollowUps.state(context, favoriteId)
+            val live = items.filter { item -> state.items.any { it.notice.id == item.notice.id && it.state != FollowUpItem.NO } }
+            if (live.isEmpty()) continue
+            val id = followUpNotificationId(favoriteId)
+            val main = Intent(context, MainActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+                putExtra(MainActivity.EXTRA_OPEN_TAB, MainActivity.TAB_FAVORITES)
+            }
+            val detail = Intent(context, NoticeDetailActivity::class.java)
+                .putExtra(NoticeDetailActivity.EXTRA_NOTICE, favorite.toJson().toString())
+            val pending = TaskStackBuilder.create(context).addNextIntent(main).addNextIntent(detail)
+                .getPendingIntent(id, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
+            val step = live.first().step + " · " + live.first().notice.date
+            val body = if (live.size == 1) step else "${live.size} posibles novedades · $step"
+            val notification = NotificationCompat.Builder(context, CHANNEL)
+                .setSmallIcon(R.drawable.ic_notification)
+                .setContentTitle("Posible novedad en tu favorita")
+                .setContentText(body)
+                .setStyle(NotificationCompat.BigTextStyle().bigText(
+                    body + "\n" + NoticeText.headline(favorite.title).take(140) +
+                        "\nComprueba siempre el anuncio oficial."))
+                .setAutoCancel(true)
+                .setContentIntent(pending)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .build()
+            NotificationManagerCompat.from(context).notify(id, notification)
+        }
+    }
+
+    /** Distinto de los de las alertas: un aviso por favorita, que se actualiza si llega otra novedad. */
+    fun followUpNotificationId(favoriteId: String): Int = notificationId("seguimiento:$favoriteId")
+
     /** Entre 1001 y 1 001 000, estable para el mismo anuncio. */
     fun notificationId(noticeId: String): Int = 1001 + (noticeId.hashCode() and 0x7fffffff) % 1_000_000
 }

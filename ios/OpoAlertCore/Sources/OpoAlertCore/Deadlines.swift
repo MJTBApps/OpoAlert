@@ -72,6 +72,16 @@ public enum Deadlines {
         return (notice.isProcedureUpdate ? nil : parse(data, noticeURL: notice.url), parseSede(data, noticeURL: notice.url))
     }
 
+    /// Plazas de los extractos del BOE (seguimiento de favoritas).
+    public static func boeExtracts(session: URLSession = .shared) async -> [String: BoeExtract] {
+        guard let url = url(for: Source.boe), url.scheme == "https", url.host == "mjtbapps.github.io" else { return [:] }
+        var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 15)
+        request.setValue("OpoAlert-iOS/1.0", forHTTPHeaderField: "User-Agent")
+        guard let (data, response) = try? await session.data(for: request),
+              (response as? HTTPURLResponse)?.statusCode == 200, data.count < 3_000_000 else { return [:] }
+        return FollowUps.parseBoeExtracts(data)
+    }
+
     private static func file(for notice: Notice, session: URLSession) async -> Data? {
         guard OfficialDocument.isPdf(notice),
               let url = url(for: Source.of(notice)), url.scheme == "https", url.host == "mjtbapps.github.io" else { return nil }

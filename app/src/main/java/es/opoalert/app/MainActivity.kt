@@ -342,6 +342,7 @@ class MainActivity : Activity() {
                     buildTabs()
                     render(keepScroll = true)
                     Notifications.show(this, result.alertMatches)
+                    Notifications.showFollowUps(this, result.followUps)
                     finishRefresh()
                     offerUpdate()
                 }
@@ -521,6 +522,9 @@ class MainActivity : Activity() {
             FavoriteAgenda.sort(favorites.map { latestById[it.id] ?: it }, agenda, java.time.LocalDate.now())
         else notices
         if (selectedTab == TAB_FAVORITES) refreshAgenda(favorites)
+        // Seguimiento de favoritas (1.59.0, Premium): «N NOVEDAD» y último paso en la tarjeta.
+        val followUps = if (selectedTab == TAB_FAVORITES && Premium.alertsUnlocked(this))
+            FollowUps.stored(this).favorites else emptyMap()
         val fresh = freshIds()
         if (selectedFilter == FILTER_ALERTS && !Premium.alertsUnlocked(this)) selectedFilter = FILTER_ALL
         // Favoritas: solo las que has marcado, sin filtros (como en iOS).
@@ -566,7 +570,8 @@ class MainActivity : Activity() {
             })
         } else {
             for ((index, item) in shown.take(displayedLimit).withIndex()) {
-                addCard(item, item.id in favoriteIds, item.id in fresh, alerts[item.id].orEmpty(), agenda[item.id])
+                addCard(item, item.id in favoriteIds, item.id in fresh, alerts[item.id].orEmpty(), agenda[item.id],
+                    followUps[item.id])
                 if (selectedTab == TAB_ALL && index % DemoAds.LIST_AD_EVERY == DemoAds.LIST_AD_EVERY - 1) {
                     addBannerIfAvailable(index / DemoAds.LIST_AD_EVERY)
                 }
@@ -746,7 +751,7 @@ class MainActivity : Activity() {
     private var alertHitsCache: Map<String, List<String>> = emptyMap()
 
     private fun addCard(item: Notice, favorite: Boolean, fresh: Boolean = false, alerts: List<String> = emptyList(),
-                        entry: AgendaEntry? = null) {
+                        entry: AgendaEntry? = null, followUp: FollowUpState? = null) {
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(11), dp(14), dp(12))
@@ -776,6 +781,14 @@ class MainActivity : Activity() {
             }, LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
             ).apply { marginStart = dp(5) })
+        }
+        val unread = followUp?.unreadCount ?: 0
+        if (unread > 0) {
+            top.addView(text(if (unread == 1) "1 NOVEDAD" else "$unread NOVEDADES", 9f, "#FFFFFF", true).apply {
+                setPadding(dp(8), dp(5), dp(8), dp(5))
+                background = rounded("#7C3AED", 8)
+                contentDescription = "Posible novedad de esta convocatoria"
+            }, LinearLayout.LayoutParams(-2, -2).apply { marginStart = dp(5) })
         }
         if (NoticeText.isProcedureUpdate(item.title)) {
             val procedure = text("TRÁMITE", 9f, "#A16207", true).apply {
@@ -853,6 +866,16 @@ class MainActivity : Activity() {
                 })
             }
         }
+        // Seguimiento (1.59.0): el paso más reciente que puede ser de esta convocatoria.
+        if (selectedTab == TAB_FAVORITES) followUp?.visible?.firstOrNull()?.let { last ->
+            card.addView(text("Último paso: " + last.step + " · " + last.notice.date, 11.5f, "#7C3AED", true).apply {
+                maxLines = 1
+                ellipsize = TextUtils.TruncateAt.END
+                setPadding(dp(8), dp(4), dp(8), dp(4))
+                background = rounded("#F1EAFE", 8)
+                contentDescription = "Último paso posible: " + last.step + ", " + last.notice.date
+            }, LinearLayout.LayoutParams(-2, -2).apply { topMargin = dp(7) })
+        }
 
         val footer = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
@@ -902,7 +925,11 @@ class MainActivity : Activity() {
             if (!saved) {
                 FavoriteAgenda.remove(this, item.id)
                 DeadlineReminder.cancel(this, item.id)
-            } else agendaRefreshing = false
+                FollowUps.remove(this, item.id)
+            } else {
+                agendaRefreshing = false
+                searchFollowUps()
+            }
             Toast.makeText(this, if (saved) "Guardada en favoritas ★" else "Eliminada de favoritas", Toast.LENGTH_SHORT).show()
             updateHeader()
             buildTabs()
@@ -911,6 +938,17 @@ class MainActivity : Activity() {
         } catch (_: Exception) {
             Toast.makeText(this, "No se pudo guardar el cambio", Toast.LENGTH_LONG).show()
         }
+    }
+
+    /** Al guardar una favorita, busca ya sus posibles pasos (en segundo plano, solo Premium). */
+    private fun searchFollowUps() {
+        if (!Premium.alertsUnlocked(this)) return
+        val context = applicationContext
+        val known = notices.groupBy { Province.fromLabel(it.province) ?: Province.fromNoticeId(it.id) }
+        Thread {
+            try { FollowUps.check(context, known) } catch (_: Exception) { }
+            runOnUiThread { if (!isFinishing && selectedTab == TAB_FAVORITES) render(keepScroll = true) }
+        }.start()
     }
 
     private fun showDetail(item: Notice) {
@@ -963,7 +1001,7 @@ class MainActivity : Activity() {
     companion object {
         private const val PAGE_SIZE = 45
         private const val TAB_ALL = "all"
-        private const val TAB_FAVORITES = "favorites"
+        const val TAB_FAVORITES = "favorites"
         private const val TAB_ALERTS = "alerts"
         const val EXTRA_OPEN_TAB = "es.opoalert.app.open_tab"
         const val EXTRA_OPEN_FILTER = "es.opoalert.app.open_filter"

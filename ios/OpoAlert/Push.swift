@@ -52,9 +52,10 @@ enum Push {
     static func handle(_ userInfo: [AnyHashable: Any]) async -> UIBackgroundFetchResult {
         guard userInfo["tipo"] as? String == "feeds" else { return .noData }
         do {
-            let result = try await Synchronizer(store: Store()).sync()
+            let result = try await Synchronizer(store: Store(), followUps: PremiumStore.isActiveStored).sync()
             await AlertNotifications.show(result.alertMatches)
-            return result.alertMatches.isEmpty ? .noData : .newData
+            await AlertNotifications.showFollowUps(result.followUps)
+            return result.alertMatches.isEmpty && result.followUps.isEmpty ? .noData : .newData
         } catch {
             return .failed
         }

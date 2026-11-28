@@ -259,6 +259,73 @@ def sede_problem(url: str, link: object, urls: set[str]) -> str | None:
 
 
 # ---------------------------------------------------------------------------
+# Extractos del BOE de ayuntamientos y diputaciones (1.59.0, seguimiento de favoritas).
+# El título solo dice «referente a la convocatoria para proveer una plaza»; el texto
+# trae una fórmula fija: «En el «Boletín Oficial de la Provincia de Lugo» número 236,
+# de 15 de octubre de 2026, se han publicado las bases … para proveer: Una plaza de
+# Administrativo/a … El plazo …». Se copia literal la lista de plazas y el boletín
+# y la fecha de las bases, para que la app pueda relacionar el extracto con las
+# bases que alguien guardó en favoritas. No se deduce nada que no esté escrito.
+# ---------------------------------------------------------------------------
+MESES = {m: i for i, m in enumerate(
+    "enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(), 1)}
+PROVEER = re.compile(r"para proveer(?: por concurso)?:\s*(.+?)(?:\s+(?:El plazo de presentaci|Los sucesivos anuncios)|$)")
+PROVEER_END = re.compile(r"\s+(?:Dichas bases|Se ha publicado|Asimismo|Las bases)")
+PROVEER_ITEM = re.compile(
+    r"(?<=\.)\s+(?=(?:Una?|Dos|Tres|Cuatro|Cinco|Seis|Siete|Ocho|Nueve|Diez|Once|Doce|Quince|Veinte|\d+)\s)")
+BASES_REF = re.compile(r"En el «([^»]{5,90})»(?: número (\d{1,4}))?,? de (\d{1,2}) de (\w+) de (20\d\d)")
+MAX_PROVEER_ITEMS = 15
+
+
+def find_proveer_in_text(text: str) -> dict | None:
+    """Plazas que cita un extracto del BOE y dónde se publicaron sus bases (texto literal)."""
+    text = re.sub(r"\s+", " ", text)
+    found = PROVEER.search(text)
+    if not found:
+        return None
+    body = PROVEER_END.split(found.group(1))[0]
+    items = [item.strip() for item in PROVEER_ITEM.split(body) if item.strip()]
+    items = [item[:300] for item in items if len(item) >= 10][:MAX_PROVEER_ITEMS]
+    if not items:
+        return None
+    result = {"items": items}
+    ref = BASES_REF.search(text[:found.start()])
+    if ref and ref.group(4).lower() in MESES:
+        result["bases"] = {"diario": ref.group(1),
+                           "fecha": f"{int(ref.group(3)):02d}/{MESES[ref.group(4).lower()]:02d}/{ref.group(5)}"}
+        if ref.group(2):
+            result["bases"]["numero"] = ref.group(2)
+    return result
+
+
+def find_proveer_in_pdf(data: bytes) -> dict | None:
+    import pymupdf
+
+    try:
+        with pymupdf.open(stream=data, filetype="pdf") as document:
+            text = " ".join(document[i].get_text() for i in range(min(2, document.page_count)))
+    except Exception:  # no es un PDF legible: sin extracto
+        return None
+    return find_proveer_in_text(text)
+
+
+def proveer_problem(url: str, item: object, urls: set[str]) -> str | None:
+    """Lo que comprueba la app antes de usar un extracto (None si está bien)."""
+    if url not in urls or not url.startswith("https://www.boe.es/"):
+        return "extracto que no es del BOE o no está en el feed"
+    if not isinstance(item, dict) or not isinstance(item.get("items"), list):
+        return "extracto sin plazas"
+    if not 1 <= len(item["items"]) <= MAX_PROVEER_ITEMS or not all(
+            isinstance(text, str) and 10 <= len(text) <= 300 for text in item["items"]):
+        return "plazas no válidas"
+    bases = item.get("bases")
+    if bases is not None and not (isinstance(bases, dict) and isinstance(bases.get("fecha"), str)
+                                  and re.fullmatch(r"\d\d/\d\d/20\d\d", bases["fecha"])):
+        return "fecha de las bases no válida"
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Archivos diarios: docs/plazos/<feed>.json, uno por fuente (la app solo descarga
 # los de los boletines que sigue). Cada anuncio se lee una sola vez: lo que ya se
 # miró se conserva y solo se descargan los PDF de los anuncios nuevos.
@@ -357,6 +424,10 @@ def validate(document: dict, urls: set[str]) -> None:
         error = sede_problem(url, link, urls)
         if error:
             raise ValueError(f"{error}: {url[:90]}")
+    for url, item in document.get("proveer", {}).items():
+        error = proveer_problem(url, item, urls)
+        if error:
+            raise ValueError(f"{error}: {url[:90]}")
 
 
 def update(docs: Path, limit: int, workers: int = 6) -> dict:
@@ -388,11 +459,17 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
             # de existir este campo se vuelven a descargar una vez.
             "sedeRaw": {**{u: [] for u in old.get("sinSede", []) if u in urls},
                         **{u: v for u, v in old.get("sedeRaw", {}).items() if u in urls}},
+            # Solo BOE: plazas del extracto (None = leído sin fórmula). Los anuncios del BOE
+            # leídos antes de la 1.59.0 se vuelven a descargar una vez.
+            "proveer": {**{u: None for u in old.get("sinProveer", []) if u in urls},
+                        **{u: v for u, v in old.get("proveer", {}).items() if u in urls}},
         }
         states[feed_path.name] = (state, set(urls))
         done = set(state["items"]) | set(state["none"])
+        boe = feed_path.name == "boe.json"
         for url in urls:
-            if (url not in done or url not in state["sedeRaw"]) and state["tries"].get(url, 0) < MAX_TRIES:
+            pending = url not in done or url not in state["sedeRaw"] or (boe and url not in state["proveer"])
+            if pending and state["tries"].get(url, 0) < MAX_TRIES:
                 jobs.append((feed_path.name, url))
     stats["pendientes"] = max(0, len(jobs) - limit)
 
@@ -401,13 +478,14 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
         try:
             data = download(url)
             if not data:
-                return name, url, "ok", None, []
-            return name, url, "ok", find_in_pdf(data), find_sedes_in_pdf(data)
+                return name, url, "ok", None, [], None
+            proveer = find_proveer_in_pdf(data) if name == "boe.json" else None
+            return name, url, "ok", find_in_pdf(data), find_sedes_in_pdf(data), proveer
         except Exception as error:  # red, servidor o PDF dañado: se reintenta otro día
-            return name, url, type(error).__name__, None, []
+            return name, url, type(error).__name__, None, [], None
 
     with ThreadPoolExecutor(workers) as pool:
-        for name, url, status, found, sedes in pool.map(work, jobs[:limit]):
+        for name, url, status, found, sedes, proveer in pool.map(work, jobs[:limit]):
             state = states[name][0]
             if status != "ok":
                 state["tries"][url] = state["tries"].get(url, 0) + 1
@@ -416,6 +494,8 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
             stats["leidos"] += 1
             state["tries"].pop(url, None)
             state["sedeRaw"][url] = sedes
+            if name == "boe.json":
+                state["proveer"][url] = proveer if proveer and not proveer_problem(url, proveer, states[name][1]) else None
             if url in state["items"] or url in state["none"]:
                 continue  # el plazo ya estaba leído: solo faltaba la sede
             if found and not problem(url, found, states[name][1]):
@@ -434,6 +514,9 @@ def update(docs: Path, limit: int, workers: int = 6) -> dict:
                     "sedes": dict(sorted(sedes.items())),
                     "sedeRaw": {u: v for u, v in sorted(state["sedeRaw"].items()) if v},
                     "sinSede": sorted(u for u, v in state["sedeRaw"].items() if not v)}
+        if name == "boe.json":
+            document["proveer"] = {u: v for u, v in sorted(state["proveer"].items()) if v}
+            document["sinProveer"] = sorted(u for u, v in state["proveer"].items() if not v)
         validate(document, urls)
         (out_dir / name).write_text(json.dumps(document, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     # Archivos de fuentes que ya no existen.

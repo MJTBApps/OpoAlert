@@ -7,6 +7,14 @@ public struct SyncResult: Sendable {
     public let sourceMessage: String
     public let historyMessage: String
     public let alertMatches: [Notice]
+    /// Posibles novedades de favoritas (seguimiento, Premium).
+    public var followUps: [FollowUpNews] = []
+}
+
+/// Una posible novedad de una favorita, para el aviso.
+public struct FollowUpNews: Sendable {
+    public let favorite: Notice
+    public let item: FollowUpItem
 }
 
 /// Deja pasar las revisiones de una en una (el `@Synchronized` de `Repository.sync` en Android).
@@ -40,13 +48,17 @@ public struct Synchronizer: Sendable {
     let store: Store
     let fetchFeed: FeedFetcher
     let fetchActive: ActiveFetcher
+    /// Seguimiento de favoritas (1.59.0): solo con Premium; lo decide la app.
+    let followUps: Bool
 
     public init(store: Store,
                 fetchFeed: @escaping FeedFetcher = { try await FeedReader.fetch($0) },
-                fetchActive: @escaping ActiveFetcher = Synchronizer.downloadActive) {
+                fetchActive: @escaping ActiveFetcher = Synchronizer.downloadActive,
+                followUps: Bool = false) {
         self.store = store
         self.fetchFeed = fetchFeed
         self.fetchActive = fetchActive
+        self.followUps = followUps
     }
 
     /// Lista de fuentes activas de la web; sin conexión se conserva la anterior.
@@ -130,8 +142,49 @@ public struct Synchronizer: Sendable {
         store.saveSync(entries: merged, lastSync: formatter.string(from: now), source: status, history: history,
                        seen: SeenIds.merge(fresh.map(\.id), storedSeen ?? []),
                        initialized: downloaded.map(\.0.code))
+        let news = followUps ? await checkFollowUps(downloaded: downloaded, now: now) : []
+        // Un anuncio que es novedad de una favorita avisa una sola vez, como novedad.
+        let newsIds = Set(news.map(\.item.notice.id))
         let matches = SmartAlertMatcher.matching(newOnes, rules: rulesAtStart, followed: watched)
+            .filter { !newsIds.contains($0.id) }
         return SyncResult(all: merged, newOnes: newOnes, scanned: fresh.count, sourceMessage: status,
-                          historyMessage: history, alertMatches: matches)
+                          historyMessage: history, alertMatches: matches, followUps: news)
+    }
+
+    /// `FollowUps.check` de Android: con los feeds ya descargados y, como mucho cada 3 horas
+    /// (o si hay una favorita sin buscar), los boletines de la comunidad de cada favorita y el BOE.
+    public func checkFollowUps(downloaded: [(Source, RemoteFeed)] = [], now: Date = Date()) async -> [FollowUpNews] {
+        let favorites = store.favorites
+        guard !favorites.isEmpty else { return [] }
+        let stored = store.followUps
+        let pending = favorites.contains { stored.favorites[$0.id]?.initialized != true }
+        let available = store.availableSources
+        var wanted: [Source] = []
+        for favorite in favorites {
+            for source in FollowUps.sources(for: Source.of(favorite), available: available) where !wanted.contains(source) {
+                wanted.append(source)
+            }
+        }
+        var feeds: [String: [Notice]] = [:]
+        for (source, feed) in downloaded where wanted.contains(source) { feeds[source.code] = feed.notices }
+        let due = pending || now.timeIntervalSince1970 - stored.lastCheck >= FollowUps.every
+        if due {
+            let missing = wanted.filter { feeds[$0.code] == nil }
+            await withTaskGroup(of: (String, [Notice]?).self) { group in
+                for source in missing {
+                    group.addTask { (source.code, try? await fetchFeed(source).notices) }
+                }
+                for await (code, notices) in group { if let notices { feeds[code] = notices } }
+            }
+        } else if feeds.isEmpty {
+            return []
+        }
+        let extracts = feeds[Source.boe.code] != nil ? await Deadlines.boeExtracts() : [:]
+        let (next, fresh) = FollowUps.update(favorites: favorites, candidates: feeds.values.flatMap { $0 },
+                                             extracts: extracts, previous: stored.favorites)
+        // Lo que el usuario haya contestado o leído mientras se buscaba manda.
+        store.saveFollowUps(FollowUps.Stored(lastCheck: due ? now.timeIntervalSince1970 : stored.lastCheck,
+                                             favorites: FollowUps.keepAnswers(next, store.followUps.favorites)))
+        return fresh.map { FollowUpNews(favorite: $0.0, item: $0.1) }
     }
 }

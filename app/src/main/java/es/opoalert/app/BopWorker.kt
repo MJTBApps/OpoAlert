@@ -16,6 +16,7 @@ class BopWorker(ctx: Context, params: WorkerParameters) : CoroutineWorker(ctx, p
     override suspend fun doWork(): Result = try {
         val result = Repository.sync(applicationContext)
         Notifications.show(applicationContext, result.alertMatches)
+        Notifications.showFollowUps(applicationContext, result.followUps)
         Result.success()
     } catch (_: Exception) {
         Result.retry()

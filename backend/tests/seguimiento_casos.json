@@ -1,0 +1,421 @@
+{
+ "comment": "Parejas reales de noviembre de 2026 revisadas a mano. Las comprueban backend/tests/test_seguimiento.py, FollowUpMatcherTest (Android) y OpoAlertChecks (iOS).",
+ "cases": [
+  {
+   "name": "bases en el BOP y anuncio en el BOCYL",
+   "favorite": {
+    "title": "Bases por las que se regirá la convocatoria de la plaza de Operario de Servicios Múltiples por el sistema de concurso-oposición",
+    "entity": "Ayuntamiento de Aldea Real",
+    "date": "27/11/2026",
+    "url": "https://bop.example/aldea.pdf",
+    "source": "segovia_bop"
+   },
+   "candidate": {
+    "title": "RESOLUCIÓN de 20 de noviembre de 2026, de la Alcaldía del Ayuntamiento de Aldea Real (Segovia), por la que se aprueban las bases y la convocatoria del proceso selectivo para la provisión, mediante el sistema de concurso-oposición, de 1 plaza de Operario de Servicios Múltiples (Oficial 1.ª). Expte.: 132/2026.",
+    "entity": "AYUNTAMIENTO DE ALDEA REAL (SEGOVIA)",
+    "date": "27/11/2026",
+    "url": "https://bocyl.example/aldea.pdf",
+    "source": "castilla_leon_bocyl"
+   },
+   "followUp": true,
+   "step": "Bases y convocatoria"
+  },
+  {
+   "name": "bases en el BOP de Valencia y anuncio en el DOGV, sin género",
+   "favorite": {
+    "title": "Anuncio del Ayuntamiento de Alzira sobre la aprobación de las bases del proceso selectivo para la provisión de tres plazas de trabajador/a social, subgrupo A2. Convocatoria 24/2026.",
+    "entity": "Ayuntamiento de Alzira",
+    "date": "05/11/2026",
+    "url": "https://bop.example/alzira",
+    "source": "convocatorias"
+   },
+   "candidate": {
+    "title": "ANUNCIO de la convocatoria y las bases específicas del proceso selectivo para la provisión en propiedad de tres plazas de trabajador o trabajadora sociales, por sistema de concurso-oposición libre (expediente 7769/2026).",
+    "entity": "Ayuntamiento de Alzira",
+    "date": "27/11/2026",
+    "url": "https://dogv.example/alzira",
+    "source": "valencia_dogv"
+   },
+   "followUp": true,
+   "step": "Bases y convocatoria"
+  },
+  {
+   "name": "catalán: BOP y DOGC",
+   "favorite": {
+    "title": "Bases i convocatòria del procés selectiu per a la provisió de tres places d'agent de la Policia Local.",
+    "entity": "Ajuntament de Torelló",
+    "date": "17/11/2026",
+    "url": "https://bop.example/torello",
+    "source": "barcelona_bop"
+   },
+   "candidate": {
+    "title": "Edicte sobre convocatòria del procés selectiu, mitjançant el sistema de concurs oposició, de tres places d'agent de la Policia Local de l'Ajuntament de Torelló, en règim de personal funcionari de carrera (exp. X2026006081)",
+    "entity": "Ajuntament de Torelló",
+    "date": "23/11/2026",
+    "url": "https://dogc.example/torello",
+    "source": "cataluna_dogc"
+   },
+   "followUp": true,
+   "step": "Bases y convocatoria"
+  },
+  {
+   "name": "gallego y castellano",
+   "favorite": {
+    "title": "CONVOCATORIA E BASES DO PROCESO SELECTIVO PARA CUBRIR UNHA PRAZA DE ADMINISTRATIVO/A, FUNCIONARIO/A DE CARREIRA, GRUPO C1, POR OPOSICIÓN LIBRE, INCLUÍDA NA OFERTA DE EMPREGO PÚBLICO DO ANO 2023",
+    "entity": "Portas",
+    "date": "10/11/2026",
+    "url": "https://bop.example/portas",
+    "source": "galicia_pontevedra"
+   },
+   "candidate": {
+    "title": "ANUNCIO de la aprobación de las bases que regularán los procesos selectivos para cubrir la praza de administrativo/a vacante en la plantilla, incluida en la oferta de empleo público del año 2023.",
+    "entity": "Ayuntamiento de Portas",
+    "date": "12/11/2026",
+    "url": "https://dog.example/portas",
+    "source": "galicia_dog"
+   },
+   "followUp": true,
+   "step": "Bases y convocatoria"
+  },
+  {
+   "name": "BOJA sin organismo en entity: se lee del título",
+   "favorite": {
+    "title": "Anuncio de 19 de octubre de 2026, del Ayuntamiento de Villanueva del Arzobispo, sobre bases para la provisión en propiedad, mediante concurso oposición libre, de una plaza de Técnico de Empleo en el Centro Especial de Empleo «San Blas». (PP. 2109/2026).",
+    "entity": "recomendador solapa responsive",
+    "date": "13/11/2026",
+    "url": "https://boja.example/villanueva",
+    "source": "andalucia_boja"
+   },
+   "candidate": {
+    "title": "Rectificación de error en la base tercera de las bases para la provisión en propiedad, de una plaza de Técnico de Empleo en el Centro Especial de Empleo \"San Blas\".",
+    "entity": "AYUNTAMIENTO DE VILLANUEVA DEL ARZOBISPO",
+    "date": "17/11/2026",
+    "url": "https://bop.example/villanueva",
+    "source": "jaen_bop"
+   },
+   "followUp": true,
+   "step": "Corrección de errores"
+  },
+  {
+   "name": "corrección de errores en el mismo BOP",
+   "favorite": {
+    "title": "Bases y convocatoria del proceso selectivo de siete plazas de Oficial de la Policía Local, mediante concurso-oposición de promoción interna",
+    "entity": "Palencia",
+    "date": "20/11/2026",
+    "url": "https://bop.example/palencia1",
+    "source": "palencia_bop"
+   },
+   "candidate": {
+    "title": "Corrección de error al anuncio publicado el día 20 de noviembre de 2026, por el que se aprueban las bases y convocatoria del proceso selectivo de siete plazas de Oficial de la Policía Local",
+    "entity": "Palencia",
+    "date": "25/11/2026",
+    "url": "https://bop.example/palencia2",
+    "source": "palencia_bop"
+   },
+   "followUp": true,
+   "step": "Corrección de errores"
+  },
+  {
+   "name": "modificación de bases",
+   "favorite": {
+    "title": "Bases específiques i convocatòria del concurs-oposició, per cobrir una plaça d'enginyer/a.",
+    "entity": "Ajuntament del Masnou",
+    "date": "05/11/2026",
+    "url": "https://bop.example/masnou1",
+    "source": "barcelona_bop"
+   },
+   "candidate": {
+    "title": "Modificació de les bases reguladores del concurs-oposició, per a cobrir la plaça d'enginyer/a, codi plaça 1.11.2, (subgrup A1).",
+    "entity": "Ajuntament del Masnou",
+    "date": "26/11/2026",
+    "url": "https://bop.example/masnou2",
+    "source": "barcelona_bop"
+   },
+   "followUp": true,
+   "step": "Modificación de bases"
+  },
+  {
+   "name": "bolsa constituida",
+   "favorite": {
+    "title": "Resolución de Alcaldía n.º 1477-2026, de fecha 17 de noviembre de 2026, del Ayuntamiento de Bunyola por la cual se aprueban las bases y la convocatoria para la constitución de una bolsa de empleo para trabajador social",
+    "entity": "AYUNTAMIENTO DE BUNYOLA",
+    "date": "18/11/2026",
+    "url": "https://boib.example/bunyola1",
+    "source": "baleares_boib"
+   },
+   "candidate": {
+    "title": "Constitución de la bolsa de trabajo para cubrir posibles vacantes de trabajador social",
+    "entity": "AYUNTAMIENTO DE BUNYOLA",
+    "date": "26/11/2026",
+    "url": "https://boib.example/bunyola2",
+    "source": "baleares_boib"
+   },
+   "followUp": true,
+   "step": "Bolsa resultante"
+  },
+  {
+   "name": "extracto del BOE con la fecha de las bases",
+   "favorite": {
+    "title": "Bases de la convocatoria para cubrir en propiedad una plaza vacante de programador/a informático/a, mediante el sistema de oposición libre",
+    "entity": "Ayuntamiento de Miranda de Ebro",
+    "date": "24/11/2026",
+    "url": "https://bop.example/miranda",
+    "source": "burgos_bop"
+   },
+   "candidate": {
+    "title": "Resolución de 26 de noviembre de 2026, del Ayuntamiento de Miranda de Ebro (Burgos), referente a la convocatoria para proveer una plaza.",
+    "entity": "Ayuntamiento de Miranda de Ebro (Burgos)",
+    "date": "28/11/2026",
+    "url": "https://www.boe.es/boe/dias/2026/11/28/pdfs/BOE-A-2026-25100.pdf",
+    "source": "boe",
+    "extract": {
+     "items": [
+      "Una plaza de Programador/a Informático/a, perteneciente a la escala de Administración Especial, subescala Técnica, por el sistema de oposición, en turno libre."
+     ],
+     "basesDate": "24/11/2026"
+    }
+   },
+   "followUp": true,
+   "step": "Extracto en el BOE"
+  },
+  {
+   "name": "extracto del BOE de varias plazas",
+   "favorite": {
+    "title": "Bases para la provisión, mediante el sistema de oposición, de una plaza de Oficial Electricista, personal laboral fijo",
+    "entity": "AYUNTAMIENTO DE GÓJAR",
+    "date": "11/11/2026",
+    "url": "https://bop.example/gojar",
+    "source": "granada_bop"
+   },
+   "candidate": {
+    "title": "Resolución de 13 de noviembre de 2026, del Ayuntamiento de Gójar (Granada), referente a la convocatoria para proveer varias plazas.",
+    "entity": "Ayuntamiento de Gójar (Granada)",
+    "date": "20/11/2026",
+    "url": "https://www.boe.es/boe/dias/2026/11/20/pdfs/BOE-A-2026-24400.pdf",
+    "source": "boe",
+    "extract": {
+     "items": [
+      "Una plaza de oficial electricista de la plantilla de personal laboral fijo, por el sistema de concurso-oposición, en turno libre.",
+      "Una plaza de oficial de jardinería de la plantilla de personal laboral fijo, por el sistema de concurso-oposición, en turno libre."
+     ],
+     "basesDate": "11/11/2026"
+    }
+   },
+   "followUp": true,
+   "step": "Extracto en el BOE"
+  },
+  {
+   "name": "puesto sin especialidad: vale con la fecha de las bases del BOE",
+   "favorite": {
+    "title": "Bases de la convocatoria para la provisión de una plaza de Técnico de Gestión de Administración General y constitución de bolsa de trabajo",
+    "entity": "Ayuntamiento de Huesca",
+    "date": "19/11/2026",
+    "url": "https://bop.example/huesca",
+    "source": "huesca_bop"
+   },
+   "candidate": {
+    "title": "Resolución de 21 de noviembre de 2026, del Ayuntamiento de Huesca, referente a la convocatoria para proveer una plaza.",
+    "entity": "Ayuntamiento de Huesca",
+    "date": "25/11/2026",
+    "url": "https://www.boe.es/boe/dias/2026/11/25/pdfs/BOE-A-2026-24800.pdf",
+    "source": "boe",
+    "extract": {
+     "items": [
+      "Una plaza de Técnico/a de Gestión, perteneciente a la escala de Administración General, subescala Gestión, por el sistema de concurso-oposición, en turno libre."
+     ],
+     "basesDate": "19/11/2026"
+    }
+   },
+   "followUp": true,
+   "step": "Extracto en el BOE"
+  },
+  {
+   "name": "otro organismo",
+   "favorite": {
+    "title": "Bases y convocatoria del proceso selectivo de siete plazas de Oficial de la Policía Local, mediante concurso-oposición de promoción interna",
+    "entity": "Palencia",
+    "date": "20/11/2026",
+    "url": "https://bop.example/palencia1",
+    "source": "palencia_bop"
+   },
+   "candidate": {
+    "title": "Bases y convocatoria para cubrir siete plazas de Oficial de la Policía Local por promoción interna",
+    "entity": "Ayuntamiento de Valladolid",
+    "date": "21/11/2026",
+    "url": "https://bop.example/valladolid",
+    "source": "valladolid_bop"
+   },
+   "followUp": false
+  },
+  {
+   "name": "auxiliar administrativo no es administrativo",
+   "favorite": {
+    "title": "ANUNCIO de la constitución de una bolsa de trabajo para contrataciones temporales de auxiliar administrativo o administrativa (C2).",
+    "entity": "Ayuntamiento de Alcàsser",
+    "date": "23/11/2026",
+    "url": "https://dogv.example/alcasser1",
+    "source": "valencia_dogv"
+   },
+   "candidate": {
+    "title": "ANUNCIO de la constitución de una bolsa de trabajo para contrataciones temporales de administrativo o administrativa (C1).",
+    "entity": "Ayuntamiento de Alcàsser",
+    "date": "20/11/2026",
+    "url": "https://dogv.example/alcasser2",
+    "source": "valencia_dogv"
+   },
+   "followUp": false
+  },
+  {
+   "name": "técnico informático no es técnico auxiliar informático",
+   "favorite": {
+    "title": "Anunci d'aprovació de les bases i de la convocatòria que han de regir el procés de selecció, mitjançant el sistema de concurs oposició i mitjançant promoció interna, d’una plaça vacant de personal tècnic informàtic, dins el grup de classificació A, subgrup A1",
+    "entity": "CONSELL COMARCAL DE L'URGELL (TÀRREGA)",
+    "date": "30/10/2026",
+    "url": "https://bop.example/urgell",
+    "source": "lleida_bop"
+   },
+   "candidate": {
+    "title": "Anunci sobre aprovació de les bases i la convocatòria que han de regir el procés de selecció, mitjançant el sistema de concurs oposició i promoció interna, d'una plaça vacant de personal tècnic auxiliar informàtic, dins el grup de classificació B",
+    "entity": "Consell Comarcal de l'Urgell",
+    "date": "04/11/2026",
+    "url": "https://dogc.example/urgell",
+    "source": "cataluna_dogc"
+   },
+   "followUp": false
+  },
+  {
+   "name": "distinto número de plazas",
+   "favorite": {
+    "title": "Bases del procés selectiu per a la provisió d'una plaça de tècnic/a auxiliar, vinculada al lloc de treball de tècnic/a auxiliar de gestió de les persones.",
+    "entity": "Ajuntament del Prat de Llobregat",
+    "date": "13/11/2026",
+    "url": "https://bop.example/prat1",
+    "source": "barcelona_bop"
+   },
+   "candidate": {
+    "title": "Anunci sobre convocatòria del procés per a la selecció, com a funcionaris/àries de carrera, de dues places de tècnic/a auxiliar, vinculades al lloc de treball de tècnic/a auxiliar de retribucions de les persones, en torn de promoció interna",
+    "entity": "Ajuntament del Prat de Llobregat",
+    "date": "20/11/2026",
+    "url": "https://dogc.example/prat2",
+    "source": "cataluna_dogc"
+   },
+   "followUp": false
+  },
+  {
+   "name": "plazas fijas frente a bolsa del mismo puesto",
+   "favorite": {
+    "title": "2 places d'Administratiu",
+    "entity": "Ajuntament de Salt",
+    "date": "11/11/2026",
+    "url": "https://cido.example/salt",
+    "source": "girona",
+    "cido": true
+   },
+   "candidate": {
+    "title": "Aprovació de les bases i la convocatòria urgent per a l'ampliació de la borsa de treball d'administratius/ves C1",
+    "entity": "AJUNTAMENT DE SALT",
+    "date": "19/11/2026",
+    "url": "https://bop.example/salt",
+    "source": "girona_bop"
+   },
+   "followUp": false
+  },
+  {
+   "name": "técnico medio sin especialidad: no basta",
+   "favorite": {
+    "title": "Bases i convocatòria per a la creació d'una borsa de treball de tècnic/a mitjà/ana de serveis econòmics, grup A2.",
+    "entity": "Ajuntament de Rubí",
+    "date": "12/11/2026",
+    "url": "https://bop.example/rubi",
+    "source": "barcelona_bop"
+   },
+   "candidate": {
+    "title": "Anunci relatiu a les bases per a la selecció, mitjançant concurs oposició en torn lliure, d'una plaça de tècnic/a mitjà/ana, grup A2 (tècnic/a de gestió), escala d'administració general, subescala de gestió",
+    "entity": "Ajuntament de Rubí",
+    "date": "05/11/2026",
+    "url": "https://dogc.example/rubi",
+    "source": "cataluna_dogc"
+   },
+   "followUp": false
+  },
+  {
+   "name": "dos bases distintas en el mismo boletín",
+   "favorite": {
+    "title": "Borsa de treball de tècnic/a d'administració especial, àmbit econòmic. Bases i convocatòria.",
+    "entity": "AJUNTAMENT REUS",
+    "date": "16/11/2026",
+    "url": "https://bop.example/reus1",
+    "source": "tarragona_bop"
+   },
+   "candidate": {
+    "title": "Borsa de treball de tècnic/a administració especial. Bases i convocatòria.",
+    "entity": "AJUNTAMENT REUS",
+    "date": "16/11/2026",
+    "url": "https://bop.example/reus2",
+    "source": "tarragona_bop"
+   },
+   "followUp": false
+  },
+  {
+   "name": "el catálogo CIDO repite el anuncio del BOP: no es novedad",
+   "favorite": {
+    "title": "Bases i convocatòria del procés selectiu per a la provisió de tres places d'agent de la Policia Local.",
+    "entity": "Ajuntament de Torelló",
+    "date": "17/11/2026",
+    "url": "https://bop.example/torello",
+    "source": "barcelona_bop"
+   },
+   "candidate": {
+    "title": "3 places d'Agent de la Policia Local",
+    "entity": "Ajuntament de Torelló",
+    "date": "27/11/2026",
+    "url": "https://cido.example/torello",
+    "source": "barcelona",
+    "cido": true
+   },
+   "followUp": false
+  },
+  {
+   "name": "consejería: fuera del seguimiento",
+   "favorite": {
+    "title": "Orden por la que se convocan pruebas selectivas para el ingreso en el cuerpo de auxiliares administrativos",
+    "entity": "CONSEJERÍA DE HACIENDA Y ADMINISTRACIÓN PÚBLICA",
+    "date": "10/11/2026",
+    "url": "https://doe.example/a",
+    "source": "extremadura_doe"
+   },
+   "candidate": {
+    "title": "Orden por la que se aprueba la lista provisional de admitidos en el cuerpo de auxiliares administrativos",
+    "entity": "CONSEJERÍA DE HACIENDA Y ADMINISTRACIÓN PÚBLICA",
+    "date": "25/11/2026",
+    "url": "https://doe.example/b",
+    "source": "extremadura_doe"
+   },
+   "followUp": false
+  },
+  {
+   "name": "extracto del BOE de otra plaza del mismo día",
+   "favorite": {
+    "title": "Convocatoria y bases de una plaza de encargado general.",
+    "entity": "AYUNTAMIENTO DE MAYORGA",
+    "date": "09/11/2026",
+    "url": "https://bop.example/mayorga",
+    "source": "valladolid_bop"
+   },
+   "candidate": {
+    "title": "Resolución de 20 de noviembre de 2026, del Ayuntamiento de Mayorga (Valladolid), referente a la convocatoria para proveer varias plazas.",
+    "entity": "Ayuntamiento de Mayorga (Valladolid)",
+    "date": "26/11/2026",
+    "url": "https://www.boe.es/boe/dias/2026/11/26/pdfs/BOE-A-2026-24900.pdf",
+    "source": "boe",
+    "extract": {
+     "items": [
+      "Una plaza de Auxiliar Recaudador/a, perteneciente a la escala de Administración General, subescala Auxiliar, por el sistema de concurso-oposición, en turno libre."
+     ],
+     "basesDate": "09/11/2026"
+    }
+   },
+   "followUp": false
+  }
+ ]
+}

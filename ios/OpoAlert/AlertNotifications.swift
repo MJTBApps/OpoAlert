@@ -39,6 +39,33 @@ enum AlertNotifications {
         try? await center.add(request)
     }
 
+    /// «Posible novedad en tu favorita» (seguimiento, 1.59.0, Premium): un aviso por favorita,
+    /// con su propio identificador; tocarlo abre la ficha de la favorita.
+    static func showFollowUps(_ news: [FollowUpNews]) async {
+        guard !news.isEmpty, PremiumStore.isActiveStored else { return }
+        let center = UNUserNotificationCenter.current()
+        let settings = await center.notificationSettings()
+        guard settings.authorizationStatus == .authorized || settings.authorizationStatus == .provisional else { return }
+        // Se vuelve a mirar: si se quitó la favorita o se contestó «No» mientras se buscaba, no se avisa.
+        let store = Store()
+        let favorites = Dictionary(store.favorites.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        for (favoriteId, items) in Dictionary(grouping: news, by: \.favorite.id) {
+            guard let favorite = favorites[favoriteId] else { continue }
+            let state = store.followUpState(favoriteId)
+            let live = items.filter { n in state.items.contains { $0.notice.id == n.item.notice.id && $0.state != FollowUpItem.no } }
+            guard let first = live.first else { continue }
+            let content = UNMutableNotificationContent()
+            content.title = "Posible novedad en tu favorita"
+            let step = first.item.step + " · " + first.item.notice.date
+            content.body = (live.count == 1 ? step : "\(live.count) posibles novedades · \(step)") + "\n" +
+                String(favorite.headline.prefix(140)) + "\nComprueba siempre el anuncio oficial."
+            content.sound = .default
+            if let data = try? JSONEncoder().encode(favorite) { content.userInfo = [noticeKey: data] }
+            let request = UNNotificationRequest(identifier: "seguimiento-" + favoriteId, content: content, trigger: nil)
+            try? await center.add(request)
+        }
+    }
+
     static func notice(from response: UNNotificationResponse) -> Notice? {
         guard let data = response.notification.request.content.userInfo[noticeKey] as? Data else { return nil }
         return try? JSONDecoder().decode(Notice.self, from: data)
@@ -56,8 +83,9 @@ enum BackgroundRefresh {
             schedule()
             let work = Task {
                 do {
-                    let result = try await Synchronizer(store: Store()).sync()
+                    let result = try await Synchronizer(store: Store(), followUps: PremiumStore.isActiveStored).sync()
                     await AlertNotifications.show(result.alertMatches)
+                    await AlertNotifications.showFollowUps(result.followUps)
                     task.setTaskCompleted(success: true)
                 } catch {
                     task.setTaskCompleted(success: false)

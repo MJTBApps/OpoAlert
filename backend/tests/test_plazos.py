@@ -182,5 +182,71 @@ class FindSedeTest(unittest.TestCase):
         self.assertIsNotNone(plazos.sede_problem("https://otro.es/a.pdf", "https://pueblo.sedelectronica.es/", urls))
 
 
+class FindProveerTest(unittest.TestCase):
+    """Extractos reales del BOE de noviembre de 2026 (seguimiento de favoritas, 1.59.0)."""
+
+    LUGO = ("Resolución de 21 de octubre de 2026, del Ayuntamiento de Rábade (Lugo), referente a la convocatoria "
+            "para proveer una plaza. En el «Boletín Oficial de la Provincia de Lugo» número 236, de 15 de octubre "
+            "de 2026, se han publicado las bases que han de regir la convocatoria para proveer: Una plaza de "
+            "Administrativo/a adscrito/a al Servicio de Contabilidad y Tesorería, perteneciente a la escala de "
+            "Administración General, subescala Administrativa, por el sistema de oposición, en turno libre. Dichas "
+            "bases fueron rectificadas en los términos publicados en el «Boletín Oficial de la Provincia de Lugo» "
+            "número 241, de 21 de octubre de 2026. El plazo de presentación de solicitudes será de veinte días hábiles.")
+    GOJAR = ("Resolución de 13 de noviembre de 2026, del Ayuntamiento de Gójar (Granada), referente a la convocatoria "
+             "para proveer varias plazas. En el «Boletín Oficial de la Provincia de Granada» número 218, de 11 de "
+             "noviembre de 2026, se han publicado las bases que han de regir la convocatoria para proveer: Una plaza "
+             "de oficial electricista de la plantilla de personal laboral fijo, por el sistema de concurso-oposición, "
+             "en turno libre. Una plaza de oficial de jardinería de la plantilla de personal laboral fijo, por el "
+             "sistema de concurso-oposición, en turno libre. El plazo de presentación de solicitudes será de veinte "
+             "días naturales.")
+
+    def test_una_plaza_y_boletin_de_las_bases(self):
+        found = plazos.find_proveer_in_text(self.LUGO)
+        self.assertEqual(len(found["items"]), 1)
+        self.assertTrue(found["items"][0].startswith("Una plaza de Administrativo/a adscrito/a"))
+        self.assertNotIn("rectificadas", found["items"][0])
+        self.assertEqual(found["bases"], {"diario": "Boletín Oficial de la Provincia de Lugo",
+                                          "numero": "236", "fecha": "15/10/2026"})
+
+    def test_varias_plazas(self):
+        found = plazos.find_proveer_in_text(self.GOJAR)
+        self.assertEqual([item[:30] for item in found["items"]],
+                         ["Una plaza de oficial electrici", "Una plaza de oficial de jardin"])
+        self.assertEqual(found["bases"]["fecha"], "11/11/2026")
+
+    def test_sin_formula_no_hay_extracto(self):
+        self.assertIsNone(plazos.find_proveer_in_text(
+            "Resolución de 6 de noviembre de 2026, de la Universidad de Alcalá, por la que se convoca concurso."))
+        self.assertIsNone(plazos.find_proveer_in_pdf(b"no es un pdf"))
+
+    def test_validacion(self):
+        url = "https://www.boe.es/boe/dias/2026/11/28/pdfs/BOE-A-2026-25057.pdf"
+        good = plazos.find_proveer_in_text(self.LUGO)
+        self.assertIsNone(plazos.proveer_problem(url, good, {url}))
+        self.assertIsNotNone(plazos.proveer_problem("https://x.es/a.pdf", good, {"https://x.es/a.pdf"}))
+        self.assertIsNotNone(plazos.proveer_problem(url, {"items": []}, {url}))
+        self.assertIsNotNone(plazos.proveer_problem(url, dict(good, bases={"fecha": "2026-10-15"}), {url}))
+
+    def test_lee_el_extracto_de_anuncios_del_boe_ya_leidos_una_vez(self):
+        url = "https://www.boe.es/boe/dias/2026/11/28/pdfs/BOE-A-2026-25057.pdf"
+        with tempfile.TemporaryDirectory() as tmp:
+            docs = Path(tmp)
+            feed = {"notices": [{"id": "BOE-A-2026-25057", "type": "Plaza / oposición", "url": url}]}
+            (docs / "boe.json").write_text(json.dumps(feed), encoding="utf-8")
+            (docs / "plazos").mkdir()
+            (docs / "plazos" / "boe.json").write_text(json.dumps(
+                {"schemaVersion": 1, "items": {}, "none": [url], "tries": {}, "sinSede": [url]}), encoding="utf-8")
+            with mock.patch.object(plazos, "download", return_value=b"%PDF-"), \
+                    mock.patch.object(plazos, "find_in_pdf", return_value=None), \
+                    mock.patch.object(plazos, "find_sedes_in_pdf", return_value=[]), \
+                    mock.patch.object(plazos, "find_proveer_in_pdf",
+                                      return_value=plazos.find_proveer_in_text(self.LUGO)):
+                self.assertEqual(plazos.update(docs, limit=10)["leidos"], 1)
+                saved = json.loads((docs / "plazos" / "boe.json").read_text(encoding="utf-8"))
+                self.assertEqual(saved["proveer"][url]["bases"]["fecha"], "15/10/2026")
+                self.assertEqual(saved["sinProveer"], [])
+                self.assertEqual(plazos.update(docs, limit=10)["leidos"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()

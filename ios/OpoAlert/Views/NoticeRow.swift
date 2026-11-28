@@ -20,6 +20,10 @@ struct NoticeRow: View {
                     NoticeTag(text: "NUEVA", color: .white, fill: Color(hex: 0xFE4559))
                         .accessibilityLabel("Nueva desde tu última visita")
                 }
+                if showAgenda, premium.isActive, let badge = unreadBadge {
+                    NoticeTag(text: badge, color: .white, fill: Color(hex: 0x7C3AED))
+                        .accessibilityLabel("Posible novedad de esta convocatoria")
+                }
                 if notice.isProcedureUpdate {
                     NoticeTag(text: "TRÁMITE", color: Palette.procedureText, fill: Palette.procedureFill)
                 }
@@ -62,6 +66,16 @@ struct NoticeRow: View {
                     if showAgenda, let entry = model.agenda[notice.id] {
                         AgendaLine(entry: entry)
                     }
+                    if showAgenda, premium.isActive, let last = model.followUpState(notice).visible.first {
+                        Text("Último paso: \(last.step) · \(last.notice.date)")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(Color(hex: 0x7C3AED))
+                            .lineLimit(1)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color(hex: 0xF1EAFE), in: RoundedRectangle(cornerRadius: 8))
+                            .accessibilityLabel("Último paso posible: \(last.step), \(last.notice.date)")
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
@@ -83,6 +97,12 @@ struct NoticeRow: View {
         .padding(.vertical, 11)
         .background(Color.white, in: RoundedRectangle(cornerRadius: 16))
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(favorite ? Palette.favoriteBorder : Palette.border))
+    }
+
+    /// «1 NOVEDAD» del seguimiento de la favorita (1.59.0).
+    private var unreadBadge: String? {
+        let unread = model.followUpState(notice).unreadCount
+        return unread == 0 ? nil : (unread == 1 ? "1 NOVEDAD" : "\(unread) NOVEDADES")
     }
 }
 

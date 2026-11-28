@@ -187,6 +187,18 @@ object SourceCatalog {
         }.thenBy { it.name })
     }
 
+    /**
+     * Boletines donde puede salir otro paso de una convocatoria publicada en [source]
+     * (seguimiento de favoritas, 1.59.0): el propio, los de su comunidad (BOP y diario
+     * autonómico) y el BOE. Sin CIDO, que repite los anuncios del BOP.
+     */
+    fun followUpSources(source: Province, available: List<Province> = availableSources): Set<Province> {
+        val community = territoryOf(source)?.community
+        val sameCommunity = if (community == null) emptyList()
+            else available.filter { territoryOf(it)?.community == community }
+        return (sameCommunity + source + Province.BOE).filter { it in available && !isCido(it) }.toSet()
+    }
+
     fun isCido(source: Province): Boolean = source in setOf(
         Province.BARCELONA, Province.GIRONA, Province.LLEIDA, Province.TARRAGONA
     )

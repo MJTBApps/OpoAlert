@@ -36,6 +36,18 @@ class DeadlineStoreTest {
         assertNull(DeadlineStore.parseSede(file("{}"), url))
     }
 
+    @Test fun readsBoeExtractsForFollowUps() {
+        val text = """{"schemaVersion":1,"items":{},"proveer":{
+            "$url":{"items":["Una plaza de Administrativo/a, por el sistema de oposición, en turno libre."],
+                    "bases":{"diario":"Boletín Oficial de la Provincia de Lugo","numero":"236","fecha":"15/10/2026"}},
+            "https://otro.es/a.pdf":{"items":["Una plaza de Administrativo/a, en turno libre."]},
+            "https://www.boe.es/b.pdf":{"items":["corto"]}}}"""
+        val extracts = DeadlineStore.parseBoeExtracts(text)
+        assertEquals(setOf(url), extracts.keys)
+        assertEquals("15/10/2026", extracts.getValue(url).basesDate)
+        assertEquals(emptyMap<String, BoeExtract>(), DeadlineStore.parseBoeExtracts("""{"schemaVersion":1,"items":{}}"""))
+    }
+
     @Test fun oneFilePerSource() {
         assertEquals("https://mjtbapps.github.io/OpoAlert/plazos/boe.json", DeadlineStore.urlFor(Province.BOE))
         assertEquals("https://mjtbapps.github.io/OpoAlert/plazos/convocatorias.json", DeadlineStore.urlFor(Province.VALENCIA))
