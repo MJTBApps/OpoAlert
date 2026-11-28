@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "source": "https://www.bopcadiz.es/",
   "province": "Cádiz",
-  "lastCheckedUTC": "2026-11-26T17:26:15.686333+00:00",
+  "lastCheckedUTC": "2026-11-28T09:22:21.749092+00:00",
   "coverage": {
     "complete": true,
     "status": "complete",
-    "bulletin": "228",
-    "announcementsRead": 416,
-    "opportunities": 32,
-    "pagesVisited": 21
+    "bulletin": "229",
+    "announcementsRead": 402,
+    "opportunities": 34,
+    "pagesVisited": 20
   },
   "historyCoverage": {
     "complete": true,
-    "rangeStart": "2026-10-28",
-    "rangeEnd": "2026-11-26",
-    "issuesRead": 21,
-    "announcementsRead": 416,
-    "opportunities": 32,
-    "pagesVisited": 21,
+    "rangeStart": "2026-10-30",
+    "rangeEnd": "2026-11-28",
+    "issuesRead": 20,
+    "announcementsRead": 402,
+    "opportunities": 34,
+    "pagesVisited": 20,
     "bulletins": [
-      "208",
-      "209",
       "210",
       "211",
       "212",
@@ -40,11 +38,10 @@
       "225",
       "226",
       "227",
-      "228"
+      "228",
+      "229"
     ],
     "publicationDates": [
-      "2026-10-28",
-      "2026-10-29",
       "2026-10-30",
       "2026-11-03",
       "2026-11-04",
@@ -63,7 +60,8 @@
       "2026-11-23",
       "2026-11-24",
       "2026-11-25",
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-27"
     ],
     "nonPublicationDates": [
       "2026-10-31",
@@ -74,7 +72,8 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-21",
-      "2026-11-22"
+      "2026-11-22",
+      "2026-11-28"
     ],
     "sectionsRead": [
       "ADMINISTRACION DE JUSTICIA",
@@ -86,6 +85,36 @@
     ]
   },
   "notices": [
+    {
+      "id": "CA-2026-416020",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de Jerez de la Frontera. Convocatoria y bases para la provisión de 8 plazas de Oficial de la Policía Local del ayuntamiento, mediante concurso-oposición y promoción interna, correspondientes a la OEP 2025",
+      "entity": "Ayuntamiento de Jerez de la Frontera",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/11_noviembre/BOP229_27-11-26.pdf#page=14"
+    },
+    {
+      "id": "CA-2026-415991",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de Jerez de la Frontera. Convocatoria y bases para la provisión de 1 plaza de Inspector/a de la Policía Local del ayuntamiento, mediante concurso-oposición y promoción interna, correspondiente a la OEP 2025",
+      "entity": "Ayuntamiento de Jerez de la Frontera",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/11_noviembre/BOP229_27-11-26.pdf#page=9"
+    },
+    {
+      "id": "CA-2026-415367",
+      "province": "Cádiz",
+      "title": "Ayuntamiento de Jerez de la Frontera. Convocatoria y bases para la provisión de 4 plazas de Subinspector/a de la Policía Local del ayuntamiento, mediante concurso-oposición y promoción interna, correspondientes a la OEP 2024 y 2025",
+      "entity": "Ayuntamiento de Jerez de la Frontera",
+      "date": "27/11/2026",
+      "bulletin": "229",
+      "type": "Plaza / oposición",
+      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/11_noviembre/BOP229_27-11-26.pdf#page=4"
+    },
     {
       "id": "CA-2026-411020",
       "province": "Cádiz",
@@ -395,16 +424,6 @@
       "bulletin": "210",
       "type": "Plaza / oposición",
       "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP210_30-10-26.pdf#page=25"
-    },
-    {
-      "id": "CA-2026-354710",
-      "province": "Cádiz",
-      "title": "Ayuntamiento de Alcalá del Valle. Bases de la convocatoria del proceso de selección de 1 plaza de Administrativo/a (Administración General), personal funcionario del ayuntamiento",
-      "entity": "Ayuntamiento de Alcalá del Valle",
-      "date": "28/10/2026",
-      "bulletin": "208",
-      "type": "Plaza / oposición",
-      "url": "https://www.bopcadiz.es/export/sites/default/.boletines_pdf/2026/10_octubre/BOP208_28-10-26.pdf#page=7"
     }
   ]
 }
